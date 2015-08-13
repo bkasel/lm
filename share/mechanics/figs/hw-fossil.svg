@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Generator: Adobe Illustrator 11 Build 196, SVG Export Plug-In . SVG Version: 6.0.0 Build 78)  -->
+<svg:svg
+   width="292.057"
+   height="102.517"
+   viewBox="0 0 292.057 102.517"
+   style="overflow:visible;enable-background:new 0 0 292.057 102.517"
+   xml:space="preserve"
+   xmlns:xml="http://www.w3.org/XML/1998/namespace"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   id="svg1"
+   sodipodi:version="0.32"
+   inkscape:version="0.40+cvs"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   sodipodi:docname="hw-fossil.svg"
+   sodipodi:docbase="/home/bcrowell/Documents/writing/lm/trunk/1np/ch08/figs"><svg:defs
+   id="defs111">
+		
+		
+		
+		
+		
+		
+	</svg:defs>
+<svg:metadata
+   id="metadata110">
+  <rdf:RDF
+     id="RDF112">
+    <cc:Work
+       rdf:about=""
+       id="Work113">
+      <dc:format
+         id="format114">image/svg+xml</dc:format>
+      <dc:type
+         id="type116"
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    </cc:Work>
+  </rdf:RDF>
+</svg:metadata>
+<sodipodi:namedview
+   id="base"
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1.0"
+   inkscape:pageopacity="0.0"
+   inkscape:pageshadow="2"
+   inkscape:zoom="2.0070927"
+   inkscape:cx="122.07527"
+   inkscape:cy="43.762830"
+   inkscape:window-width="640"
+   inkscape:window-height="536"
+   inkscape:window-x="117"
+   inkscape:window-y="20"
+   inkscape:current-layer="svg1" />
+
+	<svg:style
+   type="text/css"
+   id="style3">
+	
+	</svg:style>
+
+	<svg:rect
+   style="fill:#e1e1e1;fill-opacity:1.0000000;stroke:none;stroke-width:1.0000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4.0000000;stroke-dashoffset:0.0000000;stroke-opacity:1.0000000;"
+   id="rect123"
+   width="292.71194"
+   height="103.38337"
+   x="-5.8523010e-06"
+   y="-0.24357438" />
+<svg:g
+   id="g7"
+   transform="translate(-3.543307,3.543307)">
+			<svg:line
+   style="fill:none;stroke:#000000;stroke-dasharray:3.0000000 "
+   x1="151.37900"
+   y1="0.66799998"
+   x2="205.49600"
+   y2="99.582001"
+   id="line9" />
+
+			<svg:g
+   id="g11">
+				<svg:line
+   style="fill:none;stroke:#000000;stroke-dasharray:3.0000000 "
+   x1="165.41600"
+   y1="26.016001"
+   x2="166.85201"
+   y2="28.877001"
+   id="line13" />
+
+				<svg:path
+   d="M 168.20900,31.576000 C 167.10100,30.544000 165.50700,29.372000 164.16700,28.824000 L 166.67800,28.526000 L 168.41700,26.691000 C 168.05600,28.093000 168.04300,30.071000 168.20900,31.576000 z "
+   id="path15" />
+
+			</svg:g>
+
+			<svg:g
+   id="g18">
+				<svg:line
+   style="fill:none;stroke:#000000;stroke-dasharray:3.0000000 "
+   x1="185.71700"
+   y1="63.374001"
+   x2="187.15300"
+   y2="66.235001"
+   id="line20" />
+
+				<svg:path
+   d="M 188.51100,68.935000 C 187.40300,67.902000 185.80900,66.731000 184.46900,66.183000 L 186.98000,65.885000 L 188.71900,64.050000 C 188.35700,65.451000 188.34400,67.429000 188.51100,68.935000 z "
+   id="path22" />
+
+			</svg:g>
+
+		</svg:g>
+<svg:g
+   id="g26">
+			<svg:line
+   style="fill:none;stroke:#000000;stroke-dasharray:3;"
+   x1="33.021"
+   y1="62.386"
+   x2="144.479"
+   y2="45.364"
+   id="line28" />
+
+			<svg:g
+   id="g30">
+				<svg:line
+   style="fill:none;stroke:#000000;stroke-dasharray:3;"
+   x1="61.641"
+   y1="57.865"
+   x2="64.821"
+   y2="57.494"
+   id="line32" />
+
+				<svg:path
+   d="M67.822,57.142c-1.349,0.688-2.995,1.785-3.969,2.857l0.579-2.461l-1.13-2.262      C64.496,56.095,66.351,56.784,67.822,57.142z"
+   id="path34" />
+
+			</svg:g>
+
+			<svg:g
+   id="g37">
+				<svg:line
+   style="fill:none;stroke:#000000;stroke-dasharray:3;"
+   x1="103.689"
+   y1="51.566"
+   x2="106.87"
+   y2="51.195"
+   id="line39" />
+
+				<svg:path
+   d="M109.87,50.843c-1.349,0.688-2.995,1.785-3.969,2.857l0.579-2.461l-1.13-2.262      C106.545,49.795,108.399,50.484,109.87,50.843z"
+   id="path41" />
+
+			</svg:g>
+
+		</svg:g>
+<svg:g
+   id="g45">
+			<svg:text
+   transform="matrix(1 0 0 1 46.5 76.5)"
+   id="text47"><svg:tspan
+     x="0"
+     y="0"
+     style="font-family:Bitstream Vera Sans; font-size:7.650000;"
+     id="tspan48">direction of motion</svg:tspan></svg:text>
+
+			<svg:text
+   transform="matrix(1 0 0 1 46.5 87.5)"
+   id="text51"><svg:tspan
+     x="0"
+     y="0"
+     style="font-family:Bitstream Vera Sans; font-size:7.650000;"
+     id="tspan52">of fossil relative to</svg:tspan></svg:text>
+
+			<svg:text
+   transform="matrix(1 0 0 1 46.5 98.5)"
+   id="text55"><svg:tspan
+     x="0"
+     y="0"
+     style="font-family:Bitstream Vera Sans; font-size:7.650000;"
+     id="tspan56">glacier</svg:tspan></svg:text>
+
+			<svg:text
+   transform="matrix(1 0 0 1 72.5171 98.5)"
+   id="text59"><svg:tspan
+     x="0"
+     y="0"
+     style="font-family:Bitstream Vera Sans; font-size:7.650000;"
+     id="tspan60">, 2.3x10</svg:tspan></svg:text>
+
+			<svg:text
+   transform="matrix(1 0 0 1 104.54 95.5)"
+   id="text63"><svg:tspan
+     x="0"
+     y="0"
+     style="font-family:Bitstream Vera Sans; font-size:7.650000;"
+     id="tspan64">-7</svg:tspan></svg:text>
+
+			<svg:text
+   transform="matrix(1 0 0 1 112.5425 98.5)"
+   id="text67"><svg:tspan
+     x="0"
+     y="0"
+     style="font-family:Bitstream Vera Sans; font-size:7.650000;"
+     id="tspan68"> m/s</svg:tspan></svg:text>
+
+		</svg:g>
+<svg:g
+   id="g72"
+   transform="translate(-3.543307,3.543307)">
+			<svg:text
+   transform="translate(188.5000,24.00000)"
+   id="text74"><svg:tspan
+     x="0"
+     y="0"
+     style="font-size:7.6500001;font-family:Bitstream Vera Sans"
+     id="tspan75">direction of motion</svg:tspan></svg:text>
+
+			<svg:text
+   transform="translate(188.5000,35.00000)"
+   id="text78"><svg:tspan
+     x="0"
+     y="0"
+     style="font-size:7.6500001;font-family:Bitstream Vera Sans"
+     id="tspan79">of glacier relative</svg:tspan></svg:text>
+
+			<svg:text
+   transform="translate(188.5000,46.00000)"
+   id="text82"><svg:tspan
+     x="0"
+     y="0"
+     style="font-size:7.6500001;font-family:Bitstream Vera Sans"
+     id="tspan83">to continent, 1.1x10</svg:tspan></svg:text>
+
+			<svg:text
+   transform="translate(267.0566,43.00000)"
+   id="text86"><svg:tspan
+     x="0"
+     y="0"
+     style="font-size:7.6500001;font-family:Bitstream Vera Sans"
+     id="tspan87">-7</svg:tspan></svg:text>
+
+			<svg:text
+   transform="translate(275.0591,46.00000)"
+   id="text90"><svg:tspan
+     x="0"
+     y="0"
+     style="font-size:7.6500001;font-family:Bitstream Vera Sans"
+     id="tspan91"> m/s</svg:tspan></svg:text>
+
+		</svg:g>
+<svg:g
+   id="g95"
+   transform="translate(7.086614,3.543307)">
+			<svg:line
+   style="stroke:#000000"
+   x1="10.000000"
+   y1="76.500000"
+   x2="10.000000"
+   y2="15.000000"
+   id="line97" />
+
+			<svg:path
+   d="M 10.000000,11.982000 C 10.527000,13.402000 11.426000,15.164000 12.377000,16.255000 L 10.000000,15.396000 L 7.6230000,16.256000 C 8.5740000,15.164000 9.4730000,13.402000 10.000000,11.982000 z "
+   id="path99" />
+
+		</svg:g>
+<svg:g
+   id="g102"
+   transform="translate(7.086614,3.543307)">
+			<svg:text
+   transform="translate(0.000000,9.000000)"
+   id="text104"><svg:tspan
+     x="0"
+     y="0"
+     style="font-size:7.6500001;font-family:Bitstream Vera Sans"
+     id="tspan105">north</svg:tspan></svg:text>
+
+		</svg:g>
+
+</svg:svg>

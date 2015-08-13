@@ -1,0 +1,57 @@
+<%
+  require "../eruby_util.rb"
+%>
+
+<% part_title("Motion in Three Dimensions") %>
+
+<%
+  chapter(
+    '06',
+    %q{Newton's Laws in Three Dimensions},
+    'ch:three-d',
+    '',
+    {'opener'=>'ringtoss'}
+  )
+%>
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+__incl(text/n3a)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+<% begin_hw_sec %>
+
+<% begin_hw('tossup') %>__incl(hw/tossup)<% end_hw() %>
+
+<% begin_hw('misslettuce') %>__incl(hw/misslettuce)<% end_hw() %>
+
+<% begin_hw('niagara') %>__incl(hw/niagara)<% end_hw() %>
+
+<% begin_hw('baseballpitch') %>__incl(hw/baseballpitch)<% end_hw() %>
+<%
+  fig(
+    'hw-baseballpitch',
+    %q{Problem \ref{hw:baseballpitch}.},
+    {
+      'width'=>'wide',
+      'sidecaption'=>true
+    }
+  )
+%>
+
+<% begin_hw('cannon-range') %>__incl(hw/cannon-range)<% end_hw() %>
+
+<% begin_hw('maxrange',nil,{'calc'=>true}) %>__incl(hw/maxrange)<% end_hw() %>
+
+<% begin_hw('speedbump') %>__incl(hw/speedbump)<% end_hw() %>
+
+<% end_hw_sec %>
+
+
+
+
+
+ %%----------------------------------------------------------
+
+<% if false then figure_in_toc("ringtoss") end %>
+<% end_chapter() %>

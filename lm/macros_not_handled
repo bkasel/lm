@@ -1,0 +1,74 @@
+Warning: the following macros were not handled in chapter 00: \includegraphics{../share/intro/figs/sc-bacteria-queue-1} \includegraphics{../share/intro/figs/sc-bacteria-queue-2} \addcontentsline{toc} \protect{Problems} \begin{handson} \onecolumn \_ \end{handson}
+Warning: the following macros were not handled in chapter 01: \addcontentsline{toc} \protect{Problems} \hwans{hwans:taxa-scaling} \begin{handson} \onecolumn \includegraphics \end{handson}
+Warning: the following macros were not handled in chapter 02: \addcontentsline{toc} \protect{Problems}
+Warning: the following macros were not handled in chapter 03: \addcontentsline{toc} \protect{Problems} \textup{m} \textup{s}
+Warning: the following macros were not handled in chapter 04: \addcontentsline{toc} \protect{Problems} \begin{handson} \onecolumn \_ \end{handson}
+Warning: the following macros were not handled in chapter 05: \begin{margtopic} \end{margtopic} \addcontentsline{toc} \protect{Problems}
+Warning: the following macros were not handled in chapter 06: \addcontentsline{toc} \protect{Problems}
+Warning: the following macros were not handled in chapter 07: \_ \notationitem{ \addcontentsline{toc} \protect{Problems}
+Warning: the following macros were not handled in chapter 08: \eqref{eqn:push-broom-x} \eqref{eqn:push-broom-fk} \addcontentsline{toc} \protect{Problems} \ifthenelse{\isodd{\value{page} \hbox{} \newpage \begin{handson} \onecolumn \end{handson}
+Warning: the following macros were not handled in chapter 09: \addcontentsline{toc} \protect{Problems}
+Warning: the following macros were not handled in chapter 10: \addcontentsline{toc} \protect{Problems} \hwhint{hwhint:receding-moon} \begin{handson} \onecolumn \includegraphics \end{handson}
+Warning: the following macros were not handled in chapter 11: \textup{C} \begin{minipagefullpagewidth} \hline \end{minipagefullpagewidth} \addcontentsline{toc} \protect{Problems}
+Warning: the following macros were not handled in chapter 12: \begin{numberedequations} \end{numberedequations} \newcommand{\qandaquestion} \newcommand{\qandaanswer} \qandaquestion \qandaanswer \addcontentsline{toc} \protect{Problems}
+Warning: the following macros were not handled in chapter 13: \begin{comment} \end{comment} \addcontentsline{toc} \protect{Problems}
+Warning: the following macros were not handled in chapter 14: \addcontentsline{toc} \protect{Problems}
+Warning: the following macros were not handled in chapter 15: \addcontentsline{toc} \protect{Problems} \hwhint{hwhint:lennardjones} \begin{handson} \onecolumn \widefignocaptionnofloat{../../../share/mechanics/figs/ex-torque} \end{handson}
+Warning: the following macros were not handled in chapter 16: \textup{C} \addcontentsline{toc} \protect{Problems} \hwans{hwans:heart-efficiency}
+Warning: the following macros were not handled in chapter 17: \addcontentsline{toc} \protect{Problems} \begin{handson} \onecolumn \inlinefignocaptionnoresize{../../../share/mechanics/figs/ex-vibrations} \end{handson}
+Warning: the following macros were not handled in chapter 18: \addcontentsline{toc} \protect{Problems} \begin{handson} \onecolumn \widefignocaptionnofloat{../../../share/mechanics/figs/ex-resonance-1} \widefignocaptionnofloat{../../../share/mechanics/figs/ex-resonance-2} \widefignocaptionnofloat{../../../share/mechanics/figs/ex-resonance-3} \end{handson}
+Warning: the following macros were not handled in chapter 19: \hspace{1.5mm} \addcontentsline{toc} \protect{Problems}
+Warning: the following macros were not handled in chapter 20: \addcontentsline{toc} \protect{Problems} \hwans{hwans:flute}
+Warning: the following macros were not handled in chapter 21: \addcontentsline{toc} \protect{Problems} \begin{handson} \onecolumn \end{handson} \twocolumn \newcommand{\circuittablestrut} \raisebox{0mm} \newcommand{\circuittabletwocols} \newcommand{\circuittableonecol} \textsf{Circuit 1} \circuittabletwocols{switch open} \textsf{Circuit 2 (Don't leave the switch closed for a long time!)} \textsf{Circuit 3} \textsf{Circuit 4} \textsf{Circuit 5} \circuittabletwocols{bulb a} \textsf{Circuit 6} \textsf{Circuit 7} \circuittableonecol \textsf{Circuit 8} \textsf{Circuit 9}
+Warning: the following macros were not handled in chapter 22: \addcontentsline{toc} \protect{Problems} \begin{handson} \onecolumn \end{handson}
+Warning: the following macros were not handled in chapter 23: \hspace{-2mm} \notationitem{&#x003B3;} \addcontentsline{toc} \protect{Problems}
+Warning: the following macros were not handled in chapter 24: \myoptionalsubsection \addcontentsline{toc} \protect{Problems} \begin{handson} \onecolumn \end{handson} \includegraphics
+Warning: the following macros were not handled in chapter 25: \addcontentsline{toc} \protect{Problems}
+Warning: the following macros were not handled in chapter 26: \footnotesize \textup{Pb} \rightarrow \bar{\nu} \textup{Bi} \myoptionalsubsection \notationitem{ \addcontentsline{toc} \protect{Problems} \begin{handson} \onecolumn \end{handson}
+Warning: the following macros were not handled in chapter 27: \addcontentsline{toc} \protect{Problems} \hwhint{hwhint:tossed-clock} \begin{handson} \onecolumn \end{handson}
+Warning: the following macros were not handled in chapter 28: \addcontentsline{toc} \protect{Problems}
+Warning: the following macros were not handled in chapter 29: \addcontentsline{toc} \protect{Problems} \begin{handson} \onecolumn \_ \end{handson}
+Warning: the following macros were not handled in chapter 30: \addcontentsline{toc} \protect{Problems} \begin{handson} \onecolumn \end{handson}
+Warning: the following macros were not handled in chapter 31: \addcontentsline{toc} \protect{Problems} \begin{handson} \onecolumn \end{handson}
+Warning: the following macros were not handled in chapter 32: \addcontentsline{toc} \protect{Problems} \ifthenelse{\isodd{\value{page} \hbox{} \newpage \begin{handson} \onecolumn \_ \end{handson}
+Warning: the following macros were not handled in chapter 33: \par \textup{C} \times10 \notationitem{<i>D</i>} \addcontentsline{toc} \protect{Problems}
+Warning: the following macros were not handled in chapter 34: \begin{margtopic} \end{margtopic} \begin{vocabw} \end{vocabw} \addcontentsline{toc} \protect{Problems}
+Warning: the following macros were not handled in chapter 35: \begin{longquote} \end{longquote} \eqref{eq:schreqna} \eqref{eq:schreqnb} \labelimportantintext{Schr&#x000F6;dinger equation} \notationitem{ \addcontentsline{toc} \protect{Problems}
+Warning: the following macros were not handled in chapter 36: \begin{subequations} \renewcommand{\theequation} \theparentequation \end{subequations} \addcontentsline{toc} \protect{Problems} \begin{handson} \onecolumn \end{handson}
+Warning: the following macros were not handled in chapter 00: \includegraphics{../share/intro/figs/sc-bacteria-queue-1} \includegraphics{../share/intro/figs/sc-bacteria-queue-2} \notationitem{m-} \notationitem{\(\mu\)-} \notationitem{n-} \addcontentsline{toc} \protect{Problems} \begin{handson} \onecolumn \_ \end{handson}
+Warning: the following macros were not handled in chapter 01: \addcontentsline{toc} \protect{Problems} \hwans{hwans:taxa-scaling} \begin{handson} \onecolumn \includegraphics \end{handson}
+Warning: the following macros were not handled in chapter 02: \int \notationitem{\(v_{AB} \addcontentsline{toc} \protect{Problems}
+Warning: the following macros were not handled in chapter 03: \int_{t_1} \addcontentsline{toc} \protect{Problems} \textup{m} \textup{s} \ell
+Warning: the following macros were not handled in chapter 04: \parallel \addcontentsline{toc} \protect{Problems} \begin{handson} \onecolumn \_ \end{handson}
+Warning: the following macros were not handled in chapter 05: \begin{margtopic} \end{margtopic} \downarrow \uparrow \addcontentsline{toc} \protect{Problems}
+Warning: the following macros were not handled in chapter 06: \addcontentsline{toc} \protect{Problems}
+Warning: the following macros were not handled in chapter 07: \overrightarrow{F} \_ \ell \notationitem{\(\mathbf{A} \notationitem{\(\overrightarrow{A} \notationitem{\(|\mathbf{A} \notationitem{\(\mathbf{r} \notationitem{\(\Delta\mathbf{r} \notationitem{\(\hat{\mathbf{x} \notationitem{\(\hat{\mathbf{i} \notationitem{displacement vector} \addcontentsline{toc} \protect{Problems}
+Warning: the following macros were not handled in chapter 08: \eqref{eqn:push-broom-x} \eqref{eqn:push-broom-fk} \int \bigl \bigr \addcontentsline{toc} \protect{Problems} \ifthenelse{\isodd{\value{page} \hbox{} \newpage \begin{handson} \onecolumn \end{handson}
+Warning: the following macros were not handled in chapter 09: \addcontentsline{toc} \protect{Problems}
+Warning: the following macros were not handled in chapter 10: \addcontentsline{toc} \protect{Problems} \hwhint{hwhint:receding-moon} \begin{handson} \onecolumn \includegraphics \end{handson}
+Warning: the following macros were not handled in chapter 11: \textup{C} \begin{minipagefullpagewidth} \hline \end{minipagefullpagewidth} \addcontentsline{toc} \protect{Problems}
+Warning: the following macros were not handled in chapter 12: \begin{numberedequations} \end{numberedequations} \newcommand{\qandaquestion} \newcommand{\qandaanswer} \qandaquestion \qandaanswer \addcontentsline{toc} \protect{Problems}
+Warning: the following macros were not handled in chapter 13: \parallel \begin{comment} \end{comment} \int_{x_1} \int_{r_1} \int \addcontentsline{toc} \protect{Problems}
+Warning: the following macros were not handled in chapter 14: \ltKE_i \int \notationitem{\(\mathbf{p} \notationitem{cm} \addcontentsline{toc} \protect{Problems}
+Warning: the following macros were not handled in chapter 15: \ell \boldsymbol{\tau} \pm1 \varphi \varphi_1 \varphi_2 \addcontentsline{toc} \protect{Problems} \hwhint{hwhint:lennardjones} \begin{handson} \onecolumn \widefignocaptionnofloat{../../../share/mechanics/figs/ex-torque} \end{handson}
+Warning: the following macros were not handled in chapter 16: \textup{C} \ge0 \addcontentsline{toc} \protect{Problems} \hwans{hwans:heart-efficiency}
+Warning: the following macros were not handled in chapter 17: \addcontentsline{toc} \protect{Problems} \begin{handson} \onecolumn \inlinefignocaptionnoresize{../../../share/mechanics/figs/ex-vibrations} \end{handson}
+Warning: the following macros were not handled in chapter 18: \pm \notationitem{\(f_\text{o} \addcontentsline{toc} \protect{Problems} \pm35 \begin{handson} \onecolumn \widefignocaptionnofloat{../../../share/mechanics/figs/ex-resonance-1} \widefignocaptionnofloat{../../../share/mechanics/figs/ex-resonance-2} \widefignocaptionnofloat{../../../share/mechanics/figs/ex-resonance-3} \end{handson}
+Warning: the following macros were not handled in chapter 19: \hspace{1.5mm} \pm \addcontentsline{toc} \protect{Problems}
+Warning: the following macros were not handled in chapter 20: \addcontentsline{toc} \protect{Problems} \hwans{hwans:flute} \flat
+Warning: the following macros were not handled in chapter 21: \notationitem{eV} \addcontentsline{toc} \protect{Problems} \begin{handson} \onecolumn \end{handson} \twocolumn \newcommand{\circuittablestrut} \raisebox{0mm} \newcommand{\circuittabletwocols} \newcommand{\circuittableonecol} \textsf{Circuit 1} \circuittabletwocols{switch open} \textsf{Circuit 2 (Don't leave the switch closed for a long time!)} \textsf{Circuit 3} \textsf{Circuit 4} \textsf{Circuit 5} \circuittabletwocols{bulb a} \textsf{Circuit 6} \textsf{Circuit 7} \circuittableonecol \textsf{Circuit 8} \textsf{Circuit 9}
+Warning: the following macros were not handled in chapter 22: \pm10 \pm7 \ell \int \int_{ r_1} \lambdad \int_{- L/2} \notationitem{\(\mathbf{g} \notationitem{\(\mathbf{E} \addcontentsline{toc} \protect{Problems} \begin{handson} \onecolumn \end{handson}
+Warning: the following macros were not handled in chapter 23: \pm10 \pm7 \hspace{-2mm} \pm \notationitem{\(\gamma\)} \addcontentsline{toc} \protect{Problems}
+Warning: the following macros were not handled in chapter 24: \ell \myoptionalsubsection \pm \notationitem{\(\mathbf{B} \addcontentsline{toc} \protect{Problems} \interval \begin{handson} \onecolumn \end{handson} \includegraphics
+Warning: the following macros were not handled in chapter 25: \leftrightarrow \tilde{V} \tilde{I} \addcontentsline{toc} \protect{Problems}
+Warning: the following macros were not handled in chapter 26: \footnotesize \bar{\nu} \textup{Pb} \textup{Bi} \myoptionalsubsection \ell_1 \ell_2 \massenergy \ltc \notationitem{\(\text{e} \notationitem{\(\bar{\nu} \addcontentsline{toc} \protect{Problems} \begin{handson} \onecolumn \end{handson}
+Warning: the following macros were not handled in chapter 27: \pm0 \addcontentsline{toc} \protect{Problems} \hwhint{hwhint:tossed-clock} \begin{handson} \onecolumn \end{handson}
+Warning: the following macros were not handled in chapter 28: \addcontentsline{toc} \protect{Problems}
+Warning: the following macros were not handled in chapter 29: \addcontentsline{toc} \protect{Problems} \begin{handson} \onecolumn \_ \end{handson}
+Warning: the following macros were not handled in chapter 30: \pm \addcontentsline{toc} \protect{Problems} \begin{handson} \onecolumn \end{handson}
+Warning: the following macros were not handled in chapter 31: \pm \addcontentsline{toc} \protect{Problems} \pm1 \begin{handson} \onecolumn \end{handson}
+Warning: the following macros were not handled in chapter 32: \leftrightarrow \addcontentsline{toc} \protect{Problems} \ifthenelse{\isodd{\value{page} \hbox{} \newpage \begin{handson} \onecolumn \_ \end{handson}
+Warning: the following macros were not handled in chapter 33: \par \textup{C} \ll \int_a \int \int_0 \notationitem{\(t_{1/2} \notationitem{\(D\)} \addcontentsline{toc} \protect{Problems}
+Warning: the following macros were not handled in chapter 34: \begin{margtopic} \end{margtopic} \int \begin{vocabw} \end{vocabw} \addcontentsline{toc} \protect{Problems}
+Warning: the following macros were not handled in chapter 35: \gtrsim \begin{longquote} \end{longquote} \begin{split} \end{split} \eqref{eq:schreqna} \eqref{eq:schreqnb} \hbar \labelimportantintext{Schr&#x000F6;dinger equation} \ltE \notationitem{\(\hbar\)} \addcontentsline{toc} \protect{Problems} \int_{-\pi/2}
+Warning: the following macros were not handled in chapter 36: \ell \hbar \gtrsim \ell_x \ell_y \ell_z \begin{subequations} \renewcommand{\theequation} \theparentequation \notag \end{subequations} \notationitem{\(\mathbf{L} \addcontentsline{toc} \protect{Problems} \begin{handson} \onecolumn \end{handson}

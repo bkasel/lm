@@ -1,0 +1,984 @@
+\begin{theindex}
+
+  \item aberration, 857
+    \subitem chromatic, 877
+  \item absorption, 817
+  \item absorption of waves, 513
+  \item absorption spectrum, 968
+  \item acceleration, 99
+    \subitem as a vector, 220
+    \subitem constant, 111
+    \subitem definition, 106
+    \subitem negative, 102
+  \item alchemists, 287
+  \item alchemy, 17, 562
+  \item alpha decay, 759
+  \item alpha particle, 746
+  \item ammeter, 570
+  \item ampere (unit), 568
+  \item amplitude
+    \subitem defined, 448
+    \subitem peak-to-peak, 448
+    \subitem related to energy, 461
+  \item anamorph, 865
+  \item angular magnification, 838
+  \item angular momentum
+    \subitem and the uncertainty principle, 987
+    \subitem choice of axis theorem, 394
+    \subitem defined, 387
+    \subitem definition, 388
+    \subitem in three dimensions, 987
+    \subitem introduction to, 385
+    \subitem quantization of, 986
+    \subitem related to area swept out, 391
+    \subitem spin theorem, 394
+  \item antielectron, 761
+  \item antimatter, 761
+  \item area, 109
+    \subitem operational definition, 41
+    \subitem scaling of, 43
+  \item area under a curve
+    \subitem area under a-t graph, 111
+    \subitem under v-t graph, 109
+  \item astrology, 17
+  \item atom
+    \subitem raisin-cookie         model of, 740
+  \item atomic number
+    \subitem defined, 750
+  \item atoms
+    \subitem helium, 995
+    \subitem lithium, 996
+    \subitem sodium, 997
+    \subitem with many electrons, 995
+  \item averages, 922
+    \subitem rule for calculating, 922
+  \item Avogadro's number, 431
+
+  \indexspace
+
+  \item Bacon, Francis, 21
+  \item Balmer, Johann, 992
+  \item beta decay, 761
+  \item beta particle, 746
+  \item Big Bang, 270
+    \subitem described in general relativity, 805
+  \item binding energy
+    \subitem nuclear, 765
+  \item black hole, 438, 778, 802
+    \subitem event horizon, 802
+    \subitem formation, 804
+    \subitem information paradox, 803
+    \subitem singularity, 804
+  \item Bohr
+    \subitem Niels, 892
+  \item Bohr, Niels, 973, 992
+  \item Boltzmann's constant, 431
+  \item bound states, 967
+  \item box
+    \subitem particle in a, 967
+  \item Brahe, Tycho, 256
+  \item brightness of light, 819
+  \item Brownian motion, 734
+
+  \indexspace
+
+  \item calculus
+    \subitem differential, 86
+    \subitem fundamental theorem of, 115
+    \subitem integral, 115
+    \subitem invention by Newton, 85
+    \subitem Leibnitz notation, 86
+    \subitem with vectors, 226
+  \item capacitor, 632, 713
+    \subitem capacitance, 713
+  \item carbon-14 dating, 928
+  \item Carnot engine, 434
+  \item cat
+    \subitem Schr\"odinger's, 972
+  \item cathode rays, 19, 737
+  \item causality, 619
+  \item Celsius (unit), 428
+  \item center of mass, 68
+    \subitem frame of reference, 367
+    \subitem motion of, 69
+    \subitem related to momentum, 365
+  \item center-of-mass motion, 69
+  \item centi- (metric prefix), 24
+  \item Chadwick, James
+    \subitem discovery of neutron, 363
+  \item chain reaction, 760
+  \item charge, 563
+    \subitem conservation of, 565
+    \subitem quantization of, 734
+  \item chemical bonds
+    \subitem quantum explanation for, 969
+  \item Chernobyl, 767
+  \item choice of axis theorem, 394
+  \item circuit, 570
+    \subitem complete, 570
+    \subitem open, 570
+    \subitem parallel, 583
+    \subitem series, 583
+    \subitem short, 581
+  \item circular motion, 239
+    \subitem nonuniform, 241
+    \subitem uniform, 241
+  \item classical physics, 918
+  \item CMB, 270
+  \item cockroaches, 51
+  \item coefficient of kinetic friction, 164
+  \item coefficient of static friction, 163
+  \item collision
+    \subitem defined, 361
+  \item color, 873
+  \item comet, 445
+  \item complete circuit, 570
+  \item complex numbers
+    \subitem use in quantum physics, 978
+  \item component
+    \subitem defined, 193
+  \item concave
+    \subitem defined, 842
+  \item conduction of heat
+    \subitem distinguished from work, 324
+  \item conductor
+    \subitem defined, 577
+  \item consonance, 525
+  \item converging, 835
+  \item conversions of units, 30
+  \item convex
+    \subitem defined, 842
+  \item coordinate system
+    \subitem defined, 74
+  \item Copenhagen interpretation, 973
+  \item Copernicus, 79
+  \item correspondence principle, 291, 892
+    \subitem defined, 619
+    \subitem for mass-energy, 780
+    \subitem for relativistic momentum, 775
+    \subitem for time dilation, 619
+  \item cosmic censorship, 806
+  \item cosmic microwave background, 270, 807
+  \item cosmological constant, 270
+  \item coulomb (unit), 564
+  \item Coulomb's law, 565
+  \item Crookes, William, 732
+  \item current
+    \subitem defined, 567
+  \item curved spacetime, 797
+
+  \indexspace
+
+  \item damping
+    \subitem defined, 462
+  \item dark energy, 269, 808
+  \item dark matter, 808
+  \item Darwin, 20
+  \item Darwin, Charles, 919
+  \item Davisson, C.J., 960
+  \item de Broglie, Louis, 960
+  \item decay
+    \subitem exponential, 926
+  \item decibel scale, 462
+  \item delta notation, 72
+  \item derivative, 86
+    \subitem second, 115
+  \item Dialogues Concerning the Two New Sciences, 44
+  \item diffraction
+    \subitem defined, 890
+    \subitem double-slit, 894
+    \subitem fringe, 891
+    \subitem scaling of, 891
+    \subitem single-slit, 899
+  \item diffraction grating, 899
+  \item diffuse reflection, 818
+  \item digital camera, 942
+  \item diopter, 853
+  \item dipole
+    \subitem electric, 628
+  \item dipole         moment, 629
+  \item dispersion, 877
+  \item dissonance, 525
+  \item diverging, 842
+  \item DNA, 767
+  \item Doppler effect, 499
+    \subitem for light, 694
+  \item Doppler shift
+    \subitem gravitational, 800
+  \item dot product of two vectors, 341
+  \item double-slit diffraction, 894
+  \item driving force, 465
+  \item duality
+    \subitem wave-particle, 949
+
+  \indexspace
+
+  \item eardrum, 465
+  \item Eddington, Arthur, 919
+  \item Einstein's ring, 796
+  \item Einstein, Albert, 446, 918, 941
+    \subitem and         Brownian motion, 734
+    \subitem and randomness, 919
+  \item electric current
+    \subitem defined, 567
+  \item electric dipole, 628
+  \item electric field, 625
+    \subitem related to voltage, 629
+  \item electric forces, 563
+  \item electrical force
+    \subitem in atoms, 363
+  \item electromagnetic spectrum, 691
+  \item electromagnetic wave
+    \subitem momentum of, 693, 789, 800
+  \item electromagnetic waves, 689
+  \item electromagnetism, 670
+  \item electron, 363, 740
+    \subitem as a wave, 960
+    \subitem spin of, 994
+    \subitem wavefunction, 963
+  \item electron capture, 761
+  \item electron decay, 761
+  \item element, chemical, 288
+  \item elements, chemical, 731
+  \item elephant, 53
+  \item elliptical orbit, 262
+  \item elliptical orbit law, 411
+  \item emission spectrum, 968
+  \item Empedocles of Acragas, 814
+  \item endoscope, 874
+  \item energy
+    \subitem distinguished from force, 141
+    \subitem equivalence to mass, 776
+    \subitem gravitational potential energy, 314
+    \subitem potential, 312
+    \subitem quantization of for bound states, 968
+    \subitem related to amplitude, 461
+    \subitem stored in fields, 631
+    \subitem stored in magnetic field, 681
+  \item engine
+    \subitem Carnot, 434
+    \subitem heat, 421
+  \item Enlightenment, 919
+  \item equilibrium
+    \subitem defined, 405
+  \item equivalence principle, 798
+  \item equivalent         resistance
+    \subitem of resistors in parallel, 586
+  \item ether, 684
+  \item Euclidean geometry, 795
+  \item event horizon, 802
+  \item evolution, 867
+    \subitem randomness in, 919
+  \item exclusion principle, 996
+  \item exponential decay, 926
+    \subitem defined, 463
+    \subitem rate of, 929
+  \item eye
+    \subitem evolution of, 867
+    \subitem human, 869
+
+  \indexspace
+
+  \item fall factor, 326
+  \item falling objects, 95
+  \item farad
+    \subitem defined, 714
+  \item Faraday, Michael, 687
+    \subitem types of         electricity, 566
+  \item Fermat's principle, \see{least time, principle of}{826}
+  \item Feynman, 98
+  \item Feynman, Richard, 98
+  \item field
+    \subitem electric, 625
+    \subitem gravitational, 622
+    \subitem magnetic, 675
+  \item fields
+    \subitem superposition of, 623
+  \item fields of force, 617
+  \item flatworm, 868
+  \item focal angle, 851
+  \item focal length, 852
+  \item focal point, 852
+  \item force
+    \subitem analysis of forces, 167
+    \subitem Aristotelian versus Newtonian, 128
+    \subitem as a vector, 223
+    \subitem contact, 130
+    \subitem distinguished from energy, 141
+    \subitem fields of, 617
+    \subitem frictional, 162
+    \subitem gravitational, 161
+    \subitem net, 132
+    \subitem noncontact, 130
+    \subitem normal, 161
+    \subitem positive and negative signs of, 131
+    \subitem transmission, 172
+  \item forces
+    \subitem classification of, 158
+  \item Fourier's theorem, 524
+  \item frame of reference
+    \subitem defined, 74
+    \subitem inertial
+      \subsubitem in general relativity, 802
+      \subsubitem in Newtonian mechanics, 144
+    \subitem preferred, 244, 271
+    \subitem rotating, 240
+  \item Franklin, Benjamin
+    \subitem definition of signs of charge, 564
+  \item French Revolution, 24
+  \item frequency
+    \subitem defined, 447
+  \item friction
+    \subitem fluid, 166
+    \subitem kinetic, 162, 163
+    \subitem static, 162, 163
+  \item fringe
+    \subitem diffraction, 891
+  \item fulcrum, 409
+  \item full width at half-maximum, 469
+  \item fundamental, 525
+  \item FWHM, 469
+
+  \indexspace
+
+  \item Galileo, 451, 815
+  \item Galileo Galilei, 43
+  \item gamma ray, 363, 746
+  \item gamma rays, 19
+  \item garage paradox, 664
+  \item gas
+    \subitem spectrum of, 968
+  \item Gauss's law, 639
+  \item Geiger-M\"uller tube, 627
+  \item general relativity, 795
+  \item generator, 688, 721
+  \item geothermal vents, 918
+  \item Germer, L., 960
+  \item goiters, 926
+  \item grand jete, 69
+  \item graphing, 77
+  \item graphs
+    \subitem of position versus time, 74
+    \subitem velocity versus time, 84
+  \item gravitational field, 622
+  \item gravitational time dilation, 800
+  \item gravitational waves, 624
+  \item Gravity Probe B, 796
+  \item group velocity, 966
+
+  \indexspace
+
+  \item half-life, 926
+  \item Halley's Comet, 445
+  \item handedness, 693
+  \item harmonics, 525
+  \item Hawking radiation, 438
+  \item Hawking singularity theorem, 806
+  \item Hawking, Stephen, 806
+  \item heat
+    \subitem as a fluid, 310
+    \subitem as a form of kinetic energy, 310
+  \item heat conduction
+    \subitem distinguished from work, 324
+  \item heat engine, 421
+  \item Heisenberg uncertainty principle, 970
+    \subitem in three dimensions, 988
+  \item Heisenberg, Werner
+    \subitem uncertainty principle, 970
+  \item helium, 995
+  \item Hertz, Heinrich, 690, 945
+    \subitem Heinrich, 894
+  \item high jump, 71
+  \item Hindenburg, 997
+  \item Hiroshima, 768
+  \item homogeneity of spacetime, 656
+  \item Hooke, 562
+  \item Hooke's law, 175, 449
+  \item hormesis, 768
+  \item Hugo, Victor, 561
+  \item Hulse, R.A., 624
+  \item Huygens' principle, 893
+  \item hydrogen atom, 989
+    \subitem angular momentum in, 986
+    \subitem classification of states, 986
+    \subitem energies of states in, 992
+    \subitem energy in, 986
+    \subitem L quantum number, 989
+    \subitem momentum in, 986
+    \subitem n quantum number, 989
+  \item hyperbolic orbit, 262
+  \item hypothesis, 16
+
+  \indexspace
+
+  \item ideal gas law, 431
+  \item images
+    \subitem formed by curved mirrors, 835
+    \subitem formed by plane mirrors, 832
+    \subitem location of, 850
+    \subitem of images, 837
+    \subitem real, 836
+    \subitem virtual, 832
+  \item impedance, 726
+    \subitem of an inductor, 727
+  \item incoherent light, 891
+  \item independence
+    \subitem statistical, 920, 921
+  \item independent probabilities
+    \subitem law of, 920
+  \item index of refraction
+    \subitem defined, 870
+    \subitem related to speed of light, 871
+  \item inductance
+    \subitem defined, 715
+  \item induction, 687, 721
+  \item inductor, 713
+    \subitem inductance, 713
+  \item inertia, principle of, 80
+  \item information paradox, 803
+  \item insulator
+    \subitem defined, 577
+  \item integral, 115
+  \item interference effects, 520
+  \item interval
+    \subitem lightlike, 706
+    \subitem spacelike, 706
+    \subitem spacetime, 706
+    \subitem timelike, 706
+  \item inverted reflection, 513
+  \item Io, 816
+  \item iodine, 926
+  \item isotopes, 756
+  \item Ives-Stilwell experiment, 696
+
+  \indexspace
+
+  \item Jeans, James, 919
+  \item joule (unit), 292
+  \item Joyce, James, 310
+  \item junction rule, 585
+  \item Jupiter, 816
+
+  \indexspace
+
+  \item kelvin (unit), 428
+  \item Kepler
+    \subitem elliptical orbit law, 411
+    \subitem law of equal areas, 391
+  \item Kepler's laws, 256, 257
+    \subitem elliptical orbit law, 257
+    \subitem equal-area law, 257
+    \subitem law of periods, 257, 259
+  \item Kepler, Johannes, 256
+  \item Keynes, John Maynard, 562
+  \item kilo- (metric prefix), 24
+  \item kilogram, 26
+  \item kinetic energy, 297
+    \subitem compared to momentum, 358
+
+  \indexspace
+
+  \item Laplace, 18
+  \item Laplace, Pierre Simon de, 917
+  \item least time, principle of, 826, 878, 901
+  \item Leibnitz, 86
+  \item lens, 875
+  \item lensmaker's equation, 876
+  \item lever, 409
+  \item light, 18, 492
+    \subitem absorption of, 817
+    \subitem brightness of, 819
+    \subitem Doppler effect for, 694
+    \subitem momentum of, 693, 789, 800
+    \subitem particle model of, 819
+    \subitem ray model of, 819
+    \subitem speed of, 815
+    \subitem wave model of, 819
+  \item light cone, 706
+  \item LIGO, 624
+  \item line of charge
+    \subitem field of, 627, 639, 640
+  \item linear no-threshold, 769
+  \item Lipkin linkage, 864
+  \item LNT, 769
+  \item longitudinal wave, 493
+  \item loop rule, 591
+  \item Lorentz transformation, 657
+  \item Lorentz, Hendrik, 657
+
+  \indexspace
+
+  \item magnetic field, 675
+    \subitem defined, 677
+  \item magnetism
+    \subitem and relativity, 668
+    \subitem caused by moving charges, 667
+    \subitem related to electricity, 670
+  \item magnetostatics, 678
+  \item magnification
+    \subitem angular, 838
+    \subitem by a converging mirror, 835
+    \subitem negative, 861
+  \item magnitude of a vector
+    \subitem defined, 202
+  \item mass
+    \subitem equivalence to energy, 776
+  \item mass-energy
+    \subitem conservation of, 778
+    \subitem correspondence principle, 780
+    \subitem of a moving particle, 780
+  \item matter, 18
+    \subitem as a wave, 959
+  \item Maxwell, James Clerk, 894
+  \item measurement in quantum physics, 972
+  \item mega- (metric prefix), 24
+  \item Mendeleev, Dmitri, 733
+  \item meter (metric unit), 25
+  \item metric system, 24
+    \subitem prefixes, 24
+  \item Michelson-Morley experiment, 684
+  \item micro- (metric prefix), 24
+  \item microwaves, 19
+  \item milli- (metric prefix), 24
+  \item Millikan, Robert, 735, 946
+  \item mirror
+    \subitem converging, 850
+  \item mks units, 26
+  \item model
+    \subitem scientific, 162
+  \item models, 69
+  \item molecules
+    \subitem nonexistence in classical physics, 959
+  \item mollusc, 868
+  \item moment
+    \subitem dipole, 629
+  \item momentum
+    \subitem compared to kinetic energy, 358
+    \subitem defined, 355
+    \subitem examples in three dimensions, 371
+    \subitem of light, 358, 693, 789, 800
+    \subitem rate of change of, 368
+    \subitem related to center of mass, 365
+    \subitem relativistic, 772
+    \subitem transfer of, 368
+  \item monopoles
+    \subitem magnetic, 675
+  \item motion
+    \subitem periodic, 447
+    \subitem rigid-body, 67
+    \subitem types of, 67
+  \item MRI scan, 681
+  \item Muybridge, Eadweard, 217
+
+  \indexspace
+
+  \item naked singularity, 806
+  \item nano- (metric prefix), 24
+  \item nautilus, 868
+  \item Neanderthals, 410
+  \item neutral (electrically), 565
+  \item neutron
+    \subitem discovery of, 363
+    \subitem spin of, 995
+  \item neutron stars, 998
+  \item Newton's laws of motion
+    \subitem first law, 131
+      \subsubitem test of, 114, 243, 271
+    \subitem in three dimensions, 195
+    \subitem second law, 135
+      \subsubitem test of, 140
+    \subitem third law, 154
+      \subsubitem test of, 784
+  \item Newton, Isaac, 24
+    \subitem alchemy, 561
+    \subitem definition of time, 27
+    \subitem determinism, 918
+    \subitem law of gravity, 258
+    \subitem laws of motion, \see{Newton's laws of motion}{131}
+    \subitem Newtonian telescope, 837
+    \subitem particle theory of light, 893
+  \item normalization, 922
+  \item nuclear forces, 694, 758
+  \item nucleus, 363
+    \subitem discovery, 748
+
+  \indexspace
+
+  \item Oersted, Hans Christian, 667
+  \item Ohm's law, 577
+  \item ohmic
+    \subitem defined, 577
+  \item op-amp, 719
+  \item open circuit, 570
+  \item operational amplifier (op-amp), 719
+  \item operational definition
+    \subitem acceleration, 103
+    \subitem energy, 301
+    \subitem none for electron's wavefunction, 964
+    \subitem power, 301
+  \item operational definitions, 25
+  \item operationalism, \see{operational definition}{964}
+  \item orbit
+    \subitem circular, 262
+    \subitem elliptical, 262
+    \subitem hyperbolic, 262
+  \item order-of-magnitude estimates, 55
+  \item overtones, 525
+  \item ozone layer, 942
+
+  \indexspace
+
+  \item parabola
+    \subitem motion of projectile on, 194
+  \item parallel circuit
+    \subitem defined, 583
+  \item particle
+    \subitem versus wave, 949
+  \item particle in a box, 967
+  \item particle model of light, 819, 893
+  \item particle zoo, 309
+  \item pascal
+    \subitem unit, 423
+  \item path of a photon undefined, 950
+  \item Pauli exclusion principle, 20, 996
+  \item Peaucellier linkage, 864
+  \item Penrose singularity theorem, 805
+  \item Penrose, Roger, 805
+  \item period
+    \subitem defined, 447
+    \subitem of uniform circular motion, 247
+  \item periodic table, 733, 750, 997
+  \item perpetual motion machine, 288
+  \item phase velocity, 966
+  \item photoelectric effect, 944
+  \item photon
+    \subitem Einstein's early theory, 944
+    \subitem energy of, 946
+    \subitem in three dimensions, 954
+    \subitem spin of, 995
+  \item physics, 18
+  \item pilot wave hypothesis, 951
+  \item pitch, 445
+  \item Planck's constant, 947
+  \item Planck, Max, 947
+  \item POFOSTITO, 156
+  \item polarization, 690
+  \item Pope, 44
+  \item Porro prism, 886
+  \item positron, 761, 778
+  \item positron decay, 761
+  \item potential energy
+    \subitem electrical, 316
+    \subitem gravitational, 314, 338
+    \subitem nuclear, 317
+    \subitem of a spring, 337
+    \subitem related to work, 337
+  \item Pound-Rebka experiment, 800
+  \item power, 299
+    \subitem electrical, 573
+  \item praxinoscope, 833
+  \item pressure, 422
+  \item principle of superposition, 483
+  \item prism
+    \subitem Porro, 886
+  \item probabilities
+    \subitem addition of, 921
+    \subitem normalization of, 922
+  \item probability distributions, 924
+    \subitem averages of, 925
+    \subitem widths of, 925
+  \item probability interpretation, 951
+  \item projectiles, 194
+  \item protein molecules, 985
+  \item proton, 363
+    \subitem spin of, 995
+  \item pulley, 176
+  \item pulse
+    \subitem defined, 483
+  \item Pythagoras, 814
+
+  \indexspace
+
+  \item quality factor
+    \subitem defined, 463
+  \item quantization, 734
+  \item quantum dot, 967
+  \item quantum moat, 986
+  \item quantum numbers, 990
+    \subitem $\ell$, 990
+    \subitem $\ell_z$, 990
+    \subitem $m_\ell$, 1000
+    \subitem $m_s$, 1000
+    \subitem $n$, 990
+    \subitem $s$, 995
+    \subitem $s_z$, 995
+  \item quantum physics, 918
+  \item quarks, 310
+
+  \indexspace
+
+  \item radar, 941
+  \item radial component
+    \subitem defined, 249
+  \item radiation hormesis, 768
+  \item radio, 941
+  \item radio waves, 19
+  \item radioactivity, 926
+  \item raisin cookie model, 740
+  \item randomness, 919
+  \item ray diagrams, 821
+  \item ray model of light, 819, 893
+  \item RC circuit, 723
+  \item RC time constant, 724
+  \item reductionism, 21
+  \item reflection
+    \subitem diffuse, 818
+    \subitem specular, 822
+  \item reflection of waves, 510
+  \item reflections
+    \subitem inverted and uninverted, 513
+  \item refraction
+    \subitem and color, 873
+    \subitem defined, 868
+  \item relativity
+    \subitem and magnetism, 668
+    \subitem general, 795
+  \item Renaissance, 15
+  \item repetition of diffracting objects, 898
+  \item resistance
+    \subitem defined, 576
+    \subitem in parallel, 585
+    \subitem in series, 590
+  \item resistivity
+    \subitem defined, 593
+  \item resistor, 581
+  \item resistors
+    \subitem in parallel, 586
+  \item resonance
+    \subitem defined, 467
+  \item retina, 837
+  \item reversibility, 824
+  \item RHIC accelerator, 665
+  \item rigid rotation
+    \subitem defined, 387
+  \item RL circuit, 724
+  \item Roemer, 816
+  \item rotation, 67
+  \item Russell, Bertrand, 919
+
+  \indexspace
+
+  \item salamanders, 51
+  \item scalar
+    \subitem defined, 204
+  \item scalar (dot) product, 341
+  \item scaling, 43
+    \subitem applied to biology, 51
+  \item schematic, 584
+  \item schematics, 584
+  \item Schr\"odinger equation, 975
+  \item Schr\"odinger's cat, 972
+  \item Schr\"odinger, Erwin, 972
+  \item scientific method, 16
+  \item sea-of-arrows representation, 623
+  \item second (unit), 25
+  \item series         circuit
+    \subitem defined, 583
+  \item shell theorem, 266
+  \item short circuit
+    \subitem defined, 581
+  \item SI units, 26
+  \item Sievert (unit), 766
+  \item significant figures, 32
+  \item simple harmonic motion
+    \subitem defined, 450
+    \subitem period of, 450
+  \item simple machine
+    \subitem defined, 176
+  \item single-slit
+    \subitem diffraction, 899
+  \item singularity
+    \subitem Big Bang, 806
+    \subitem black hole, 804
+    \subitem naked, 806
+  \item singularity theorem
+    \subitem Hawking, 806
+    \subitem Penrose, 805
+  \item sinks in fields, 623
+  \item Sirius, 968
+  \item slam dunk, 69
+  \item slingshot effect, 367
+  \item Snell's law, 870
+    \subitem derivation of, 872
+    \subitem mechanical model of, 872
+  \item sodium, 997
+  \item solenoid, 714
+  \item sound, 492
+    \subitem speed of, 486
+  \item sources of fields, 623
+  \item spacetime
+    \subitem curvature of, 797
+  \item spacetime interval, 706
+  \item spark plug, 725
+  \item spectrum
+    \subitem absorption, 968
+    \subitem electromagnetic, 691
+    \subitem emission, 968
+  \item speed of light, 659
+  \item spin, 994
+    \subitem electron's, 994
+    \subitem neutron's, 995
+    \subitem photon's, 995
+    \subitem proton's, 995
+  \item spin theorem, 394
+  \item spring
+    \subitem potential energy of, 337
+    \subitem work done by, 337
+  \item spring constant, 175, 449
+  \item Squid, 868
+  \item standing wave, 525
+  \item Stanford, Leland, 217
+  \item Star Trek, 969
+  \item states
+    \subitem bound, 967
+  \item statics, 405
+  \item steady-state behavior, 465
+  \item Stevin, Simon, 291
+  \item strain, 175
+  \item strong         nuclear force, 758
+  \item strong nuclear force, 758
+  \item superposition of fields, 623
+  \item Swift, Jonathan, 43
+  \item swing, 464
+  \item symmetry, 693
+
+  \indexspace
+
+  \item Taylor, G.I., 950
+  \item Taylor, J.H., 624
+  \item telescope, 837, 900
+  \item temperature
+    \subitem absolute zero, 428
+    \subitem as a measure of energy per atom, 311
+    \subitem Celsius, 428
+    \subitem Kelvin, 428
+    \subitem macroscopic definition, 428
+  \item tension, 173
+  \item tesla (unit), 677
+  \item theory, 16
+  \item thermodynamics, 311, 422
+    \subitem first law of, 422
+    \subitem second law of, 437
+    \subitem zeroth law of, 427
+  \item thermometer, 428
+  \item Thomson, J.J.
+    \subitem cathode ray experiments, 738
+  \item timbre, 525
+  \item time
+    \subitem duration, 72
+    \subitem point in, 72
+  \item time constant
+    \subitem RC, 724
+  \item time dilation
+    \subitem gravitational, 800
+  \item time reversal, 824
+  \item torque
+    \subitem defined, 398
+    \subitem due to gravity, 401
+    \subitem relationship to force, 399
+  \item total internal reflection, 874
+  \item transformer, 688, 721
+  \item transistor, 577
+  \item transmission of forces, 172
+  \item tuning fork, 449
+  \item tunneling, 975
+  \item tympanogram, 515
+
+  \indexspace
+
+  \item ultraviolet light, 942
+  \item uncertainty principle, 970
+    \subitem in three dimensions, 988
+  \item unit vectors, 210
+  \item units, conversion of, 30
+
+  \indexspace
+
+  \item vector
+    \subitem acceleration, 220
+    \subitem addition, 202
+      \subsubitem graphical, 208
+    \subitem defined, 202, 204
+    \subitem force, 223
+    \subitem magnitude of, 202
+    \subitem velocity, 218
+  \item velocity
+    \subitem addition of, 82
+      \subsubitem relativistic, 682, 697, 705
+    \subitem as a vector, 218
+    \subitem definition, 75
+    \subitem group, 966
+    \subitem negative, 82
+    \subitem phase, 966
+  \item vertebra, 54
+  \item vision, 814
+  \item volt         (unit)
+    \subitem defined, 571
+  \item voltage
+    \subitem defined, 572
+    \subitem related to electric field, 629
+  \item voltmeter, 582
+  \item volume
+    \subitem operational definition, 41
+    \subitem scaling of, 43
+  \item Voyager space probe, 673
+
+  \indexspace
+
+  \item watt (unit), 300
+  \item wave
+    \subitem dispersive, 877, 965
+    \subitem longitudinal, 493
+    \subitem periodic, 495
+    \subitem versus particle, 949
+  \item wave model of light, 819, 893
+  \item wave-particle duality, 949
+    \subitem pilot-wave interpretation of, 951
+    \subitem probability interpretation of, 951
+  \item wavefunction
+    \subitem complex numbers in, 978
+    \subitem of the electron, 963
+  \item wavelength, 496
+  \item waves
+    \subitem electromagnetic, 689
+    \subitem gravitational, 624
+  \item weak nuclear force, 694, 761
+  \item weight force
+    \subitem defined, 130
+    \subitem relationship to mass, 138
+  \item Wicked Witch of the West, 959
+  \item Wigner, Eugene, 849
+  \item work
+    \subitem calculated as $Fd$, 324
+    \subitem calculated with calculus, 335
+    \subitem defined, 324
+    \subitem distinguished from heat conduction, 324
+    \subitem done by a spring, 337
+    \subitem done by a varying force, 332, 446, 449, 452
+    \subitem force not collinear with motion, 331
+    \subitem in three dimensions, 330
+    \subitem not equal to $Fd$, 339
+    \subitem positive and negative, 328
+    \subitem related to potential energy, 337
+  \item work-kinetic energy theorem, 340
+
+  \indexspace
+
+  \item x-rays, 19
+
+  \indexspace
+
+  \item Young's modulus, 182
+  \item Young, Thomas, 894
+
+\end{theindex}

@@ -1,0 +1,91 @@
+<%
+  require "../eruby_util.rb"
+%>
+<%
+  chapter(
+    '14',
+    'Conservation of Momentum',
+    'ch:momentum',
+    'Pool balls exchange momentum.',
+    {'opener'=>'pool','special_width'=>'117mm'}
+  )
+%>
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+__incl(text/cld)
+__incl(text/momentum_summary)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+<% begin_hw_sec %>
+
+<% begin_hw('keintermsofp') %>__incl(hw/keintermsofp)<% end_hw() %>
+
+<% begin_hw('rowboat') %>__incl(hw/rowboat)<% end_hw() %>
+
+<% begin_hw('planes') %>__incl(hw/planes)<% end_hw() %>
+
+<% begin_hw('gun') %>__incl(hw/gun)<% end_hw() %>
+
+
+<%
+  fig(
+    'hw-rocket-f-t',
+    %q{Problem \ref{hw:rocket}},
+    {
+      'width'=>'wide',
+      'sidecaption'=>true
+    }
+  )
+%>
+
+<% begin_hw('rocket') %>__incl(hw/rocket)<% end_hw() %>
+
+
+<% begin_hw('cosmicray') %>__incl(hw/cosmicray)<% end_hw() %>
+
+<% begin_hw('cmaverage') %>__incl(hw/cmaverage)<% end_hw() %>
+
+<% marg(0) %>
+<%
+  fig(
+    'hw-hockey-pucks',
+    %q{Problem \ref{hw:hockey-pucks}}
+  )
+%>
+<% end_marg %>
+<% begin_hw('hockey-pucks') %>__incl(hw/hockey-pucks)<% end_hw() %>
+
+<% begin_hw('rope-over-edge',2,{'calc'=>true}) %>__incl(hw/rope-over-edge)<% end_hw() %>
+
+<% begin_hw('recoil-double-speed') %>__incl(hw/recoil-double-speed)<% end_hw() %>
+
+<% begin_hw('fridge-recoil') %>__incl(hw/fridge-recoil)<% end_hw() %>
+
+<% begin_hw('bowling-collision') %>
+A 10-kg bowling ball moving at 2.0 m/s hits a 1.0-kg
+bowling pin, which is initially at rest. The other pins are
+all gone already, and the collision is head-on, so that the
+motion is one-dimensional. Assume that negligible amounts of
+heat and sound are produced. Find the velocity of the pin
+immediately after the collision.
+<% end_hw() %>
+
+<% begin_hw('exhaust',2,{'calc'=>true}) %>__incl(hw/exhaust)<% end_hw() %>
+
+<% begin_hw('firework') %>__incl(hw/firework)<% end_hw() %>
+
+<% begin_hw('energy-frames',2) %>__incl(hw/energy-frames)<% end_hw() %>
+
+<% begin_hw('funkosity') %>__incl(hw/funkosity)<% end_hw() %>
+
+<% begin_hw('max-heat-released-in-collision') %>__incl(hw/max-heat-released-in-collision)<% end_hw() %>
+
+<% begin_hw('colliding-putty') %>__incl(hw/colliding-putty)<% end_hw() %>
+
+
+<% end_hw_sec %>
+
+ %%========================================== toc decoration ===============================================
+
+<% if false then figure_in_toc('pool',{'noresize'=>true}) end %>
+<% end_chapter() %>
