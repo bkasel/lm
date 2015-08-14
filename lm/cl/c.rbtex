@@ -30,6 +30,16 @@ compare? Explain. (b) Compare the times required for the boats to stop.
 <% end_hw() %>
 
 <% begin_hw('posnegwork') %>__incl(hw/posnegwork)<% end_hw() %>
+<% marg(20) %>
+<%
+  fig(
+    'hw-posnegwork-bull',
+    %q{%
+      A bull paws the ground, as in problem \ref{hw:posnegwork}.
+    }
+  )
+%>
+<% end_marg %>
 
 <% begin_hw('heliumescape') %>__incl(hw/heliumescape)<% end_hw() %>
 

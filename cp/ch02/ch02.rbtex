@@ -1305,6 +1305,16 @@ compare? Explain. (b) Compare the times required for the cars to stop.
 <% end_hw() %>
 
 <% begin_hw('posnegwork') %>__incl(hw/posnegwork)<% end_hw() %>
+<% marg(20) %>
+<%
+  fig(
+    'hw-posnegwork-bull',
+    %q{%
+      A bull paws the ground, as in problem \ref{hw:posnegwork}.
+    }
+  )
+%>
+<% end_marg %>
 
 <% begin_hw('bubba') %>__incl(hw/bubba)<% end_hw() %>
 

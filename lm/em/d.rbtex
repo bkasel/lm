@@ -1162,7 +1162,7 @@ and counterclockwise). Is there any way to do it?
 
 <% marg(0) %>
 <% fig(
-     '../../../share/mechanics/figs/swan-lake-symmetry',
+     'swan-lake-symmetry',
      %q{In this scene from Swan Lake, the choreography has a symmetry with respect to left and right.}
    )
 %>
@@ -1188,7 +1188,7 @@ mirror images of ours.
 
 <% marg(80) %>
 <% fig(
-     '../../../share/mechanics/figs/c-s-wu-with-beamline',
+     'c-s-wu-with-beamline',
      %q{C.S.~Wu},
      {'anonymous'=>true}
    )

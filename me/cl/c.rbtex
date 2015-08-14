@@ -183,12 +183,24 @@ compare? Explain. (b) Compare the times required for the boats to stop.
 <% end_hw() %>
 
 <% begin_hw('posnegwork') %>__incl(hw/posnegwork)<% end_hw() %>
+<% marg(20) %>
+<%
+  fig(
+    'hw-posnegwork-bull',
+    %q{%
+      A bull paws the ground, as in problem \ref{hw:posnegwork}.
+    }
+  )
+%>
+<% end_marg %>
 
 <% begin_hw('workreverseaxis') %>__incl(hw/workreverseaxis)<% end_hw() %>
 
 <% begin_hw('is-work-conserved') %>__incl(hw/is-work-conserved)<% end_hw() %>
 
 <% begin_hw('microwaveice') %>__incl(hw/microwaveice)<% end_hw() %>
+
+\pagebreak
 
 <% begin_hw('compound-bow') %>__incl(hw/compound-bow)<% end_hw() %>
 <% marg(100) %>
