@@ -23,38 +23,38 @@
 			c2.448-8.976,4.08-16.729,19.176-18.769s30.6-1.224,35.904,2.448C65.168,110.031,74.96,108.399,75.368,111.663z"/>
 		<g>
 			<g>
-				<text transform="matrix(1 0 0 1 19.6982 12.5757)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">kinetic</tspan></text>
+				<text transform="matrix(1 0 0 1 19.6982 12.5757)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">kinetic</tspan></text>
 			</g>
 			<g>
-				<text transform="matrix(1 0 0 1 13.6934 23.5757)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">energy of</tspan></text>
+				<text transform="matrix(1 0 0 1 13.6934 23.5757)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">energy of</tspan></text>
 			</g>
 			<g>
-				<text transform="matrix(1 0 0 1 22.4482 34.5757)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">a car</tspan></text>
-			</g>
-		</g>
-		<g>
-			<g>
-				<text transform="matrix(1 0 0 1 89.8999 28.876)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">chemical</tspan></text>
-			</g>
-			<g>
-				<text transform="matrix(1 0 0 1 90.6436 39.876)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">potential</tspan></text>
-			</g>
-			<g>
-				<text transform="matrix(1 0 0 1 93.8955 50.876)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">energy</tspan></text>
-			</g>
-			<g>
-				<text transform="matrix(1 0 0 1 103.8975 61.876)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">of</tspan></text>
-			</g>
-			<g>
-				<text transform="matrix(1 0 0 1 100.396 72.876)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">gas</tspan></text>
+				<text transform="matrix(1 0 0 1 22.4482 34.5757)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">a car</tspan></text>
 			</g>
 		</g>
 		<g>
 			<g>
-				<text transform="matrix(1 0 0 1 6.7871 122.4761)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">car&apos;s gravitational</tspan></text>
+				<text transform="matrix(1 0 0 1 89.8999 28.876)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">chemical</tspan></text>
 			</g>
 			<g>
-				<text transform="matrix(1 0 0 1 9.6392 133.4761)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">potential energy</tspan></text>
+				<text transform="matrix(1 0 0 1 90.6436 39.876)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">potential</tspan></text>
+			</g>
+			<g>
+				<text transform="matrix(1 0 0 1 93.8955 50.876)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">energy</tspan></text>
+			</g>
+			<g>
+				<text transform="matrix(1 0 0 1 103.8975 61.876)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">of</tspan></text>
+			</g>
+			<g>
+				<text transform="matrix(1 0 0 1 100.396 72.876)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">gas</tspan></text>
+			</g>
+		</g>
+		<g>
+			<g>
+				<text transform="matrix(1 0 0 1 6.7871 122.4761)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">car&apos;s gravitational</tspan></text>
+			</g>
+			<g>
+				<text transform="matrix(1 0 0 1 9.6392 133.4761)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">potential energy</tspan></text>
 			</g>
 		</g>
 		<path style="fill:#DCD2E8;stroke:#404040;stroke-width:0.5;" d="M93.25,157.477c6.8,4.4,17.2,10,20.8,1.2
@@ -62,7 +62,7 @@
 			C83.25,157.477,93.25,157.477,93.25,157.477z"/>
 		<g>
 			<g>
-				<text transform="matrix(1 0 0 1 93.1973 154.6763)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">etc.</tspan></text>
+				<text transform="matrix(1 0 0 1 93.1973 154.6763)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">etc.</tspan></text>
 			</g>
 		</g>
 		<path style="fill:#EDEDED;stroke:#404040;stroke-width:0.5;" d="M129.031,119.783c2.969-9.969,3.531-19.906,1.906-30.219
@@ -82,22 +82,22 @@
 			l19.527-7.916l-13.609-4.509C90.403,101.062,93.748,92.681,95.693,83.919z"/>
 		<g>
 			<g>
-				<text transform="matrix(1 0 0 1 22 74.8452)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans-Black'; font-size:10.200000;">work</tspan></text>
+				<text transform="matrix(1 0 0 1 22 74.8452)"><tspan x="0" y="0" style="font-family:Liberation Sans-Black'; font-size:10.200000;">work</tspan></text>
 			</g>
 		</g>
 		<g>
 			<g>
-				<text transform="matrix(1 0 0 1 70.9199 98.6226)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans-Black'; font-size:10.200000;">work</tspan></text>
+				<text transform="matrix(1 0 0 1 70.9199 98.6226)"><tspan x="0" y="0" style="font-family:Liberation Sans-Black'; font-size:10.200000;">work</tspan></text>
 			</g>
 		</g>
 		<g>
 			<g>
-				<text transform="matrix(1 0 0 1 111.4199 112.6226)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans-Black'; font-size:10.200000;">work</tspan></text>
+				<text transform="matrix(1 0 0 1 111.4199 112.6226)"><tspan x="0" y="0" style="font-family:Liberation Sans-Black'; font-size:10.200000;">work</tspan></text>
 			</g>
 		</g>
 		<g>
 			<g>
-				<text transform="matrix(1 0 0 1 53.4199 42.1226)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans-Black'; font-size:10.200000;">work</tspan></text>
+				<text transform="matrix(1 0 0 1 53.4199 42.1226)"><tspan x="0" y="0" style="font-family:Liberation Sans-Black'; font-size:10.200000;">work</tspan></text>
 			</g>
 		</g>
 		<rect y="100.033" style="fill:none;" width="147.401" height="2.834"/> 

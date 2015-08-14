@@ -23,17 +23,17 @@
 			<line style="fill:none;stroke:#000000;" x1="41" y1="95.625" x2="41" y2="129.125"/>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 45 119.875)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">+</tspan></text>
+			<text transform="matrix(1 0 0 1 45 119.875)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">+</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 26 119.875)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">&#x2013;</tspan></text>
+			<text transform="matrix(1 0 0 1 26 119.875)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">&#x2013;</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 16.3335 32.2085)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">A</tspan></text>
+			<text transform="matrix(1 0 0 1 16.3335 32.2085)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">A</tspan></text>
 		</g>
 		<rect x="45.333" y="20.344" style="fill:#FFFFFF;" width="11.333" height="16.729"/> 
 		<g>
-			<text transform="matrix(1 0 0 1 47 32.2085)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">B</tspan></text>
+			<text transform="matrix(1 0 0 1 47 32.2085)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">B</tspan></text>
 		</g>
 		<line style="fill:none;" x1="82.333" y1="71.542" x2="82.333" y2="80.875"/>
 	</g>

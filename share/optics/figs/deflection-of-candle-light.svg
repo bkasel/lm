@@ -24,7 +24,7 @@
 		<polyline style="fill:none;stroke:#000000;" points="9.908,80.781 33.658,54.115 42.741,51.115 "/>
 		<line style="fill:none;stroke:#000000;" x1="42.741" y1="51.115" x2="66.074" y2="26.448"/>
 		<g>
-			<text transform="matrix(1 0 0 1 47.4077 96.1145)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">glass</tspan></text>
+			<text transform="matrix(1 0 0 1 47.4077 96.1145)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">glass</tspan></text>
 		</g>
 		<line style="fill:none;stroke:#000000;" x1="9.908" y1="71.281" x2="53.741" y2="23.781"/>
 		<g>

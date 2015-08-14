@@ -18,14 +18,14 @@
 			<text transform="matrix(1 0 0 1 21.2036 54.77)"><tspan x="0" y="0" style="font-family:'Symbol'; font-size:9;">&#x3B8;</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 30.7036 16.27)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">h = hypotenuse</tspan></text>
+			<text transform="matrix(1 0 0 1 30.7036 16.27)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">h = hypotenuse</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 131.2036 28.27)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">o = opposite</tspan></text>
-			<text transform="matrix(1 0 0 1 131.2036 39.27)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">      side</tspan></text>
+			<text transform="matrix(1 0 0 1 131.2036 28.27)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">o = opposite</tspan></text>
+			<text transform="matrix(1 0 0 1 131.2036 39.27)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">      side</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 37.7036 70.27)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">a = adjacent side</tspan></text>
+			<text transform="matrix(1 0 0 1 37.7036 70.27)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">a = adjacent side</tspan></text>
 		</g>
 	</g>
 </svg>

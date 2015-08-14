@@ -144,7 +144,7 @@
          id="text122"><svg:tspan
            x="0"
            y="0"
-           style="font-size:7.6500001;font-family:Bitstream Vera Sans"
+           style="font-size:7.6500001;font-family:Liberation Sans"
            id="tspan123">yes</svg:tspan></svg:text>
     </svg:g>
     <svg:g
@@ -155,7 +155,7 @@
          id="text129"><svg:tspan
            x="0"
            y="0"
-           style="font-size:7.6500001;font-family:Bitstream Vera Sans"
+           style="font-size:7.6500001;font-family:Liberation Sans"
            id="tspan130">no</svg:tspan></svg:text>
     </svg:g>
     <svg:rect
@@ -515,7 +515,7 @@
     </svg:g>
     <svg:text
        xml:space="preserve"
-       style="font-size:8.0000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1.0000000;stroke:none;stroke-width:1.0000000pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1.0000000;font-family:Bitstream Vera Sans;text-anchor:start;writing-mode:lr-tb"
+       style="font-size:8.0000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1.0000000;stroke:none;stroke-width:1.0000000pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1.0000000;font-family:Liberation Sans;text-anchor:start;writing-mode:lr-tb"
        x="13.313799"
        y="184.17398"
        id="text423"
@@ -526,7 +526,7 @@
          y="184.17398">1</svg:tspan></svg:text>
     <svg:text
        xml:space="preserve"
-       style="font-size:8.0000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1.0000000;stroke:none;stroke-width:1.0000000pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1.0000000;font-family:Bitstream Vera Sans;text-anchor:start;writing-mode:lr-tb"
+       style="font-size:8.0000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1.0000000;stroke:none;stroke-width:1.0000000pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1.0000000;font-family:Liberation Sans;text-anchor:start;writing-mode:lr-tb"
        x="229.12086"
        y="184.23607"
        id="text426"

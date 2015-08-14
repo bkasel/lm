@@ -150,7 +150,7 @@
    id="text33"
    transform="translate(0,15.333)"><tspan
      id="tspan35"
-     style="font-size:10.19999981px;font-family:Bitstream Vera Sans"
+     style="font-size:10.19999981px;font-family:Liberation Sans"
      y="0"
      x="0">normal</tspan></text>
 
@@ -158,7 +158,7 @@
    id="text37"
    transform="translate(0,29.833)"><tspan
      id="tspan39"
-     style="font-size:10.19999981px;font-family:Bitstream Vera Sans"
+     style="font-size:10.19999981px;font-family:Liberation Sans"
      y="0"
      x="0">force</tspan></text>
 
@@ -168,7 +168,7 @@
    id="text43"
    transform="translate(54.0002,12)"><tspan
      id="tspan45"
-     style="font-size:10.19999981px;font-family:Bitstream Vera Sans"
+     style="font-size:10.19999981px;font-family:Liberation Sans"
      y="0"
      x="0">static</tspan></text>
 
@@ -176,7 +176,7 @@
    id="text47"
    transform="translate(54.0002,26.5)"><tspan
      id="tspan49"
-     style="font-size:10.19999981px;font-family:Bitstream Vera Sans"
+     style="font-size:10.19999981px;font-family:Liberation Sans"
      y="0"
      x="0">friction</tspan></text>
 
@@ -186,7 +186,7 @@
    id="text53"
    transform="translate(112.0002,19.333)"><tspan
      id="tspan55"
-     style="font-size:10.19999981px;font-family:Bitstream Vera Sans"
+     style="font-size:10.19999981px;font-family:Liberation Sans"
      y="0"
      x="0">kinetic</tspan></text>
 
@@ -194,7 +194,7 @@
    id="text57"
    transform="translate(112.0002,33.833)"><tspan
      id="tspan59"
-     style="font-size:10.19999981px;font-family:Bitstream Vera Sans"
+     style="font-size:10.19999981px;font-family:Liberation Sans"
      y="0"
      x="0">friction</tspan></text>
 
@@ -204,7 +204,7 @@
    id="text63"
    transform="translate(165.3333,26.667)"><tspan
      id="tspan65"
-     style="font-size:10.19999981px;font-family:Bitstream Vera Sans"
+     style="font-size:10.19999981px;font-family:Liberation Sans"
      y="0"
      x="0">fluid</tspan></text>
 
@@ -212,7 +212,7 @@
    id="text67"
    transform="translate(165.3333,41.167)"><tspan
      id="tspan69"
-     style="font-size:10.19999981px;font-family:Bitstream Vera Sans"
+     style="font-size:10.19999981px;font-family:Liberation Sans"
      y="0"
      x="0">friction</tspan></text>
 
@@ -222,7 +222,7 @@
    id="text73"
    transform="translate(226.6667,44)"><tspan
      id="tspan75"
-     style="font-size:10.19999981px;font-family:Bitstream Vera Sans"
+     style="font-size:10.19999981px;font-family:Liberation Sans"
      y="0"
      x="0">gravity</tspan></text>
 
@@ -232,7 +232,7 @@
    id="text79"
    transform="translate(291.3333,36)"><tspan
      id="tspan81"
-     style="font-size:10.19999981px;font-family:Bitstream Vera Sans"
+     style="font-size:10.19999981px;font-family:Liberation Sans"
      y="0"
      x="0">electrical</tspan></text>
 
@@ -240,7 +240,7 @@
    id="text83"
    transform="translate(291.3333,50.5)"><tspan
      id="tspan85"
-     style="font-size:10.19999981px;font-family:Bitstream Vera Sans"
+     style="font-size:10.19999981px;font-family:Liberation Sans"
      y="0"
      x="0">forces</tspan></text>
 
@@ -250,7 +250,7 @@
    id="text89"
    transform="translate(372.0002,36)"><tspan
      id="tspan91"
-     style="font-size:10.19999981px;font-family:Bitstream Vera Sans"
+     style="font-size:10.19999981px;font-family:Liberation Sans"
      y="0"
      x="0">magnetic</tspan></text>
 
@@ -258,7 +258,7 @@
    id="text93"
    transform="translate(372.0002,50.5)"><tspan
      id="tspan95"
-     style="font-size:10.19999981px;font-family:Bitstream Vera Sans"
+     style="font-size:10.19999981px;font-family:Liberation Sans"
      y="0"
      x="0">forces</tspan></text>
 
@@ -268,7 +268,7 @@
    id="text99"
    transform="translate(140.0002,212.6665)"><tspan
      id="tspan101"
-     style="font-size:7.6500001px;font-family:Bitstream Vera Sans"
+     style="font-size:7.6500001px;font-family:Liberation Sans"
      y="0"
      x="0">contact</tspan></text>
 
@@ -276,7 +276,7 @@
    id="text103"
    transform="translate(140.0002,223.6665)"><tspan
      id="tspan105"
-     style="font-size:7.6500001px;font-family:Bitstream Vera Sans"
+     style="font-size:7.6500001px;font-family:Liberation Sans"
      y="0"
      x="0">forces</tspan></text>
 
@@ -286,7 +286,7 @@
    id="text109"
    transform="translate(216.0002,228)"><tspan
      id="tspan111"
-     style="font-size:7.6500001px;font-family:Bitstream Vera Sans"
+     style="font-size:7.6500001px;font-family:Liberation Sans"
      y="0"
      x="0">noncontact</tspan></text>
 
@@ -294,7 +294,7 @@
    id="text113"
    transform="translate(216.0002,239)"><tspan
      id="tspan115"
-     style="font-size:7.6500001px;font-family:Bitstream Vera Sans"
+     style="font-size:7.6500001px;font-family:Liberation Sans"
      y="0"
      x="0">forces</tspan></text>
 
@@ -304,7 +304,7 @@
    id="text119"
    transform="translate(72.0002,160)"><tspan
      id="tspan121"
-     style="font-size:7.6500001px;font-family:Bitstream Vera Sans"
+     style="font-size:7.6500001px;font-family:Liberation Sans"
      y="0"
      x="0">forces</tspan></text>
 
@@ -312,7 +312,7 @@
    id="text123"
    transform="translate(72.0002,171)"><tspan
      id="tspan125"
-     style="font-size:7.6500001px;font-family:Bitstream Vera Sans"
+     style="font-size:7.6500001px;font-family:Liberation Sans"
      y="0"
      x="0">between</tspan></text>
 
@@ -320,7 +320,7 @@
    id="text127"
    transform="translate(72.0002,182)"><tspan
      id="tspan129"
-     style="font-size:7.6500001px;font-family:Bitstream Vera Sans"
+     style="font-size:7.6500001px;font-family:Liberation Sans"
      y="0"
      x="0">solids</tspan></text>
 
@@ -330,7 +330,7 @@
    y="152.3335"><tspan
      x="159.0002"
      y="152.3335"
-     style="font-size:7.6500001px;font-family:Bitstream Vera Sans"
+     style="font-size:7.6500001px;font-family:Liberation Sans"
      id="tspan135">forces between</tspan></text>
 <text
    id="text137"
@@ -338,7 +338,7 @@
    y="163.3335"><tspan
      x="159.0002"
      y="163.3335"
-     style="font-size:7.6500001px;font-family:Bitstream Vera Sans"
+     style="font-size:7.6500001px;font-family:Liberation Sans"
      id="tspan139">solids and</tspan></text>
 <text
    id="text141"
@@ -346,7 +346,7 @@
    y="174.3335"><tspan
      x="159.0002"
      y="174.3335"
-     style="font-size:7.6500001px;font-family:Bitstream Vera Sans"
+     style="font-size:7.6500001px;font-family:Liberation Sans"
      id="tspan143">fluids or fluids</tspan></text>
 <text
    id="text145"
@@ -354,7 +354,7 @@
    y="185.3335"><tspan
      x="159.0002"
      y="185.3335"
-     style="font-size:7.6500001px;font-family:Bitstream Vera Sans"
+     style="font-size:7.6500001px;font-family:Liberation Sans"
      id="tspan147">and fluids</tspan></text>
 <g
    id="g161">
@@ -362,7 +362,7 @@
    id="text163"
    transform="translate(49.3335,54)"><tspan
      id="tspan165"
-     style="font-size:7.6500001px;font-family:Bitstream Vera Sans"
+     style="font-size:7.6500001px;font-family:Liberation Sans"
      y="0"
      x="0">not</tspan></text>
 
@@ -370,7 +370,7 @@
    id="text167"
    transform="translate(49.3335,65)"><tspan
      id="tspan169"
-     style="font-size:7.6500001px;font-family:Bitstream Vera Sans"
+     style="font-size:7.6500001px;font-family:Liberation Sans"
      y="0"
      x="0">slipping</tspan></text>
 
@@ -380,7 +380,7 @@
    id="text173"
    transform="translate(112.0417,73.396)"><tspan
      id="tspan175"
-     style="font-size:7.6500001px;font-family:Bitstream Vera Sans"
+     style="font-size:7.6500001px;font-family:Liberation Sans"
      y="0"
      x="0">slipping</tspan></text>
 
@@ -390,7 +390,7 @@
    id="text185"
    transform="translate(234.0002,88.6665)"><tspan
      id="tspan187"
-     style="font-size:7.6500001px;font-family:Bitstream Vera Sans"
+     style="font-size:7.6500001px;font-family:Liberation Sans"
      y="0"
      x="0">always</tspan></text>
 
@@ -398,7 +398,7 @@
    id="text189"
    transform="translate(234.0002,99.6665)"><tspan
      id="tspan191"
-     style="font-size:7.6500001px;font-family:Bitstream Vera Sans"
+     style="font-size:7.6500001px;font-family:Liberation Sans"
      y="0"
      x="0">attractive,</tspan></text>
 
@@ -406,7 +406,7 @@
    id="text193"
    transform="translate(234.0002,110.6665)"><tspan
      id="tspan195"
-     style="font-size:7.6500001px;font-family:Bitstream Vera Sans"
+     style="font-size:7.6500001px;font-family:Liberation Sans"
      y="0"
      x="0">depends on</tspan></text>
 
@@ -414,7 +414,7 @@
    id="text197"
    transform="translate(234.0002,121.6665)"><tspan
      id="tspan199"
-     style="font-size:7.6500001px;font-family:Bitstream Vera Sans"
+     style="font-size:7.6500001px;font-family:Liberation Sans"
      y="0"
      x="0">the objects'</tspan></text>
 
@@ -422,7 +422,7 @@
    id="text201"
    transform="translate(234.0002,132.6665)"><tspan
      id="tspan203"
-     style="font-size:7.6500001px;font-family:Bitstream Vera Sans"
+     style="font-size:7.6500001px;font-family:Liberation Sans"
      y="0"
      x="0">masses</tspan></text>
 
@@ -432,7 +432,7 @@
    id="text207"
    transform="translate(316.0002,107.3335)"><tspan
      id="tspan209"
-     style="font-size:7.6500001px;font-family:Bitstream Vera Sans"
+     style="font-size:7.6500001px;font-family:Liberation Sans"
      y="0"
      x="0">depends on</tspan></text>
 
@@ -440,7 +440,7 @@
    id="text211"
    transform="translate(316.0002,118.3335)"><tspan
      id="tspan213"
-     style="font-size:7.6500001px;font-family:Bitstream Vera Sans"
+     style="font-size:7.6500001px;font-family:Liberation Sans"
      y="0"
      x="0">the objects'</tspan></text>
 
@@ -448,7 +448,7 @@
    id="text215"
    transform="translate(316.0002,129.3335)"><tspan
      id="tspan217"
-     style="font-size:7.6500001px;font-family:Bitstream Vera Sans"
+     style="font-size:7.6500001px;font-family:Liberation Sans"
      y="0"
      x="0">charge, an</tspan></text>
 
@@ -456,7 +456,7 @@
    id="text219"
    transform="translate(316.0002,140.3335)"><tspan
      id="tspan221"
-     style="font-size:7.6500001px;font-family:Bitstream Vera Sans"
+     style="font-size:7.6500001px;font-family:Liberation Sans"
      y="0"
      x="0">electrical</tspan></text>
 
@@ -464,14 +464,14 @@
    id="text223"
    transform="translate(316.0002,151.3335)"><tspan
      id="tspan225"
-     style="font-size:7.6500001px;font-family:Bitstream Vera Sans"
+     style="font-size:7.6500001px;font-family:Liberation Sans"
      y="0"
      x="0">property</tspan></text>
 
 		</g>
 <text
    xml:space="preserve"
-   style="font-size:7.65000057px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+   style="font-size:7.65000057px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
    x="9.398653"
    y="79.967972"
    id="text2726"
@@ -494,7 +494,7 @@
      id="tspan2730">of contact</tspan></text>
 <text
    xml:space="preserve"
-   style="font-size:7.64999962px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+   style="font-size:7.64999962px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
    x="84.828415"
    y="114.14722"
    id="text2736"
@@ -519,7 +519,7 @@
    y="72.186218"
    x="146.63704" /><text
    xml:space="preserve"
-   style="font-size:7.64999962px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;overflow:visible;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+   style="font-size:7.64999962px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;overflow:visible;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
    x="185.45322"
    y="79.431465"
    id="text2746"

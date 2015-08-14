@@ -51,23 +51,23 @@
 		<path style="fill:none;stroke:#000000;stroke-width:0.5;" d="M87.455,88.705c0,0,1.383,31.782,0,35.282s-11.383,3.75-10.883,6.5"
 			/>
 		<g>
-			<text transform="matrix(1 0 0 1 92 129.6021)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">light emitted</tspan></text>
-			<text transform="matrix(1 0 0 1 92 140.6021)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">when cathode</tspan></text>
-			<text transform="matrix(1 0 0 1 92 151.6021)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">rays hit the</tspan></text>
-			<text transform="matrix(1 0 0 1 92 162.6021)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">glass</tspan></text>
+			<text transform="matrix(1 0 0 1 92 129.6021)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">light emitted</tspan></text>
+			<text transform="matrix(1 0 0 1 92 140.6021)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">when cathode</tspan></text>
+			<text transform="matrix(1 0 0 1 92 151.6021)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">rays hit the</tspan></text>
+			<text transform="matrix(1 0 0 1 92 162.6021)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">glass</tspan></text>
 		</g>
 		<ellipse style="fill:#B4B4B4;" cx="119.051" cy="78.611" rx="1.731" ry="1.094"/> 
 		<g>
-			<text transform="matrix(1 0 0 1 13.7041 65.333)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">cathode</tspan></text>
+			<text transform="matrix(1 0 0 1 13.7041 65.333)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">cathode</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 81.2041 65.333)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">anode</tspan></text>
+			<text transform="matrix(1 0 0 1 81.2041 65.333)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">anode</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 38.0376 9)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">light emitted</tspan></text>
-			<text transform="matrix(1 0 0 1 38.0376 20)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">when cathode</tspan></text>
-			<text transform="matrix(1 0 0 1 38.0376 31)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">rays hit air</tspan></text>
-			<text transform="matrix(1 0 0 1 38.0376 42)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">molecules</tspan></text>
+			<text transform="matrix(1 0 0 1 38.0376 9)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">light emitted</tspan></text>
+			<text transform="matrix(1 0 0 1 38.0376 20)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">when cathode</tspan></text>
+			<text transform="matrix(1 0 0 1 38.0376 31)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">rays hit air</tspan></text>
+			<text transform="matrix(1 0 0 1 38.0376 42)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">molecules</tspan></text>
 		</g>
 		<path style="fill:none;stroke:#000000;" d="M105.374,57.303H16.322v0.128C7.422,58.499,0.5,66.593,0.5,76.429
 			c0,9.836,6.922,17.93,15.822,18.998v0.061h2.028v20.142c0,2.124,1.721,3.845,3.845,3.845s3.845-1.721,3.845-3.845h0.093V95.487
@@ -75,24 +75,24 @@
 			C124.466,65.851,115.918,57.303,105.374,57.303z"/>
 		<g>
 			<g>
-				<text transform="matrix(1 0 0 1 20.4536 74.6733)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">&#x2013;</tspan></text>
+				<text transform="matrix(1 0 0 1 20.4536 74.6733)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">&#x2013;</tspan></text>
 			</g>
 			<g>
-				<text transform="matrix(1 0 0 1 19.2036 87.1733)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">&#x2013;</tspan></text>
+				<text transform="matrix(1 0 0 1 19.2036 87.1733)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">&#x2013;</tspan></text>
 			</g>
 			<g>
-				<text transform="matrix(1 0 0 1 20.9536 83.6733)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">&#x2013;</tspan></text>
+				<text transform="matrix(1 0 0 1 20.9536 83.6733)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">&#x2013;</tspan></text>
 			</g>
 			<g>
-				<text transform="matrix(1 0 0 1 18.4536 78.6733)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">&#x2013;</tspan></text>
+				<text transform="matrix(1 0 0 1 18.4536 78.6733)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">&#x2013;</tspan></text>
 			</g>
 			<polygon style="fill:none;stroke:#000000;stroke-width:0.5;" points="25.91,84.787 25.91,65.412 17.634,72.237 17.634,91.612 "/>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 85.3916 75.6455)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">+</tspan></text>
+			<text transform="matrix(1 0 0 1 85.3916 75.6455)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">+</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 83.1416 87.8955)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">+</tspan></text>
+			<text transform="matrix(1 0 0 1 83.1416 87.8955)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">+</tspan></text>
 		</g>
 		<ellipse style="fill:none;stroke:#000000;stroke-width:0.5;" cx="87.822" cy="78.612" rx="1.653" ry="2.855"/> 
 		<g>

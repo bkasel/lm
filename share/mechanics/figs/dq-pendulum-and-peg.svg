@@ -44,10 +44,10 @@
 			</radialGradient>
 			<line style="fill:url(#XMLID_6_);stroke:#000000;" x1="93.653" y1="50.311" x2="95.296" y2="0.463"/>
 			<g>
-				<text transform="matrix(1 0 0 1 35.9165 36.0083)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">A</tspan></text>
+				<text transform="matrix(1 0 0 1 35.9165 36.0083)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">A</tspan></text>
 			</g>
 			<g>
-				<text transform="matrix(1 0 0 1 91.5835 71.0083)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">B</tspan></text>
+				<text transform="matrix(1 0 0 1 91.5835 71.0083)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">B</tspan></text>
 			</g>
 			<circle style="fill:#DCDCDC;stroke:#000000;" cx="95.75" cy="26.268" r="0.99"/> 
 		</g>

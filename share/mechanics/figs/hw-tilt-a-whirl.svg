@@ -38,7 +38,7 @@
 				"/>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 92.4771 12.1572)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">v</tspan></text>
+			<text transform="matrix(1 0 0 1 92.4771 12.1572)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">v</tspan></text>
 		</g>
 		<line style="fill:none;stroke:#000000;" x1="69.049" y1="52.515" x2="69.049" y2="59.456"/>
 		<line style="fill:none;stroke:#000000;" x1="135.094" y1="52.515" x2="135.094" y2="59.456"/>
@@ -50,7 +50,7 @@
 				/>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 102.9077 63.4644)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">r</tspan></text>
+			<text transform="matrix(1 0 0 1 102.9077 63.4644)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">r</tspan></text>
 		</g>
 		<line style="fill:none;stroke:#000000;" x1="0.5" y1="15.488" x2="0.5" y2="35.709"/>
 		<line style="fill:none;stroke:#000000;" x1="136.606" y1="15.488" x2="136.606" y2="34.78"/>

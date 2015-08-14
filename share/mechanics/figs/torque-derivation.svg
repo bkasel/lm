@@ -14,7 +14,7 @@
 	<g id="Layer_1">
 		<g>
 			<g>
-				<text transform="matrix(1 0 0 1 6.8467 12)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:10.200000;">axis</tspan></text>
+				<text transform="matrix(1 0 0 1 6.8467 12)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:10.200000;">axis</tspan></text>
 			</g>
 		</g>
 		<circle cx="110.43" cy="19.688" r="1.885"/> 
@@ -29,7 +29,7 @@
 		</g>
 		<g>
 			<g>
-				<text transform="matrix(1 0 0 1 126.8467 15.3335)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:10.200000;">F</tspan></text>
+				<text transform="matrix(1 0 0 1 126.8467 15.3335)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:10.200000;">F</tspan></text>
 			</g>
 		</g>
 		<circle cx="110.43" cy="67.9" r="1.885"/> 
@@ -44,7 +44,7 @@
 		</g>
 		<g>
 			<g>
-				<text transform="matrix(1 0 0 1 107.1797 106.0347)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:10.200000;">F</tspan></text>
+				<text transform="matrix(1 0 0 1 107.1797 106.0347)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:10.200000;">F</tspan></text>
 			</g>
 		</g>
 		<rect y="35.208" style="fill:none;" width="147.401" height="2.834"/> 

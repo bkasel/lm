@@ -50,8 +50,8 @@
 		<line style="fill:none;stroke:#000000;stroke-width:0.3;" x1="115.324" y1="25.421" x2="115.324" y2="78.98"/>
 		<line style="fill:none;stroke:#000000;stroke-width:0.3;" x1="117.535" y1="25.421" x2="117.535" y2="78.98"/>
 		<line style="fill:none;stroke:#000000;stroke-width:0.3;" x1="119.746" y1="25.421" x2="119.746" y2="78.98"/>
-		<text transform="matrix(1 0 0 1 133.6309 81.0605)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">x</tspan></text>
-		<text transform="matrix(1 0 0 1 58.8379 19.3184)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">y</tspan></text>
+		<text transform="matrix(1 0 0 1 133.6309 81.0605)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">x</tspan></text>
+		<text transform="matrix(1 0 0 1 58.8379 19.3184)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">y</tspan></text>
 		<line style="fill:none;stroke:#000000;" x1="60.571" y1="183.451" x2="127.497" y2="183.451"/>
 		<line style="fill:none;stroke:#000000;" x1="60.831" y1="183.712" x2="60.831" y2="121.684"/>
 		<g>
@@ -61,8 +61,8 @@
 		</g>
 		<path style="fill:#B4B4B4;stroke:#000000;" d="M140.583,171.18h12.573v-40.716h-12.573c-2.971-5.002-7.024-8.215-11.528-8.563
 			v57.842C133.559,179.395,137.612,176.183,140.583,171.18z"/>
-		<text transform="matrix(1 0 0 1 133.6309 185.5312)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">x</tspan></text>
-		<text transform="matrix(1 0 0 1 58.8379 119.3008)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">y</tspan></text>
+		<text transform="matrix(1 0 0 1 133.6309 185.5312)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">x</tspan></text>
+		<text transform="matrix(1 0 0 1 58.8379 119.3008)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">y</tspan></text>
 		<line style="fill:none;stroke:#000000;stroke-width:0.3;" x1="128.479" y1="124.067" x2="60.88" y2="124.067"/>
 		<line style="fill:none;stroke:#000000;stroke-width:0.3;" x1="128.479" y1="126.831" x2="60.88" y2="126.831"/>
 		<line style="fill:none;stroke:#000000;stroke-width:0.3;" x1="128.479" y1="129.595" x2="60.88" y2="129.595"/>
@@ -91,7 +91,7 @@
 			<path style="fill:none;stroke:#000000;" d="M59.006,153.804c-7.13-0.648-1.097-6.481-4.936-6.887"/>
 			<path style="fill:none;stroke:#000000;" d="M59.006,140.031c-7.13,0.647-1.097,6.481-4.936,6.886"/>
 		</g>
-		<text transform="matrix(1 0 0 1 66.5308 95.1836)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">x component</tspan><tspan x="7.51" y="10.8" style="font-family:Bitstream Vera Sans; font-size:7.650000;">(positive)</tspan></text>
-		<text transform="matrix(1 0 0 1 0 143.4512)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">y component</tspan><tspan x="11.509" y="10.8" style="font-family:Bitstream Vera Sans; font-size:7.650000;">(negative)</tspan></text>
+		<text transform="matrix(1 0 0 1 66.5308 95.1836)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">x component</tspan><tspan x="7.51" y="10.8" style="font-family:Liberation Sans; font-size:7.650000;">(positive)</tspan></text>
+		<text transform="matrix(1 0 0 1 0 143.4512)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">y component</tspan><tspan x="11.509" y="10.8" style="font-family:Liberation Sans; font-size:7.650000;">(negative)</tspan></text>
 	</g>
 </svg>

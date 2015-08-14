@@ -131,25 +131,25 @@
 		</radialGradient>
 		<circle style="fill:url(#XMLID_14_);" cx="269.939" cy="51.562" r="5.303"/> 
 		<g>
-			<text transform="matrix(1 0 0 1 42.752 12)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:10.200000;">A</tspan></text>
+			<text transform="matrix(1 0 0 1 42.752 12)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:10.200000;">A</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 42.5 100.3198)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:10.200000;">B</tspan></text>
+			<text transform="matrix(1 0 0 1 42.5 100.3198)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:10.200000;">B</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 0 51.8198)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:10.200000;">C</tspan></text>
+			<text transform="matrix(1 0 0 1 0 51.8198)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:10.200000;">C</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 83.5 64.3198)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:10.200000;">D</tspan></text>
+			<text transform="matrix(1 0 0 1 83.5 64.3198)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:10.200000;">D</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 17 77.3198)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:10.200000;">E</tspan></text>
+			<text transform="matrix(1 0 0 1 17 77.3198)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:10.200000;">E</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 72.5 34.8198)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:10.200000;">F</tspan></text>
+			<text transform="matrix(1 0 0 1 72.5 34.8198)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:10.200000;">F</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 266.252 70.5)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:10.200000;">G</tspan></text>
+			<text transform="matrix(1 0 0 1 266.252 70.5)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:10.200000;">G</tspan></text>
 		</g>
 	</g>
 </svg>

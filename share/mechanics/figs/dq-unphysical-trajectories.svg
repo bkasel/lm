@@ -33,10 +33,10 @@
 		<line style="fill:none;stroke:#000000;stroke-width:0.5;" x1="77.375" y1="0" x2="77.375" y2="3.667"/>
 		<line style="fill:none;stroke:#000000;stroke-width:0.5;" x1="92.574" y1="13.28" x2="95.75" y2="11.446"/>
 		<g>
-			<text transform="matrix(1 0 0 1 11.7292 63.842)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">(1)</tspan></text>
+			<text transform="matrix(1 0 0 1 11.7292 63.842)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">(1)</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 80.7292 63.842)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">(2)</tspan></text>
+			<text transform="matrix(1 0 0 1 80.7292 63.842)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">(2)</tspan></text>
 		</g>
 	</g>
 </svg>

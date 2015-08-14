@@ -510,7 +510,7 @@
      y="10.3081"><svg:tspan
        x="101.4759"
        y="10.3081"
-       style="font-size:10.200000;font-family:Bitstream Vera Sans"
+       style="font-size:10.200000;font-family:Liberation Sans"
        id="tspan288">velocity</svg:tspan></svg:text>
 <svg:text
      id="text291"
@@ -518,7 +518,7 @@
      y="10.3081"><svg:tspan
        x="202.4826"
        y="10.3081"
-       style="font-size:10.200000;font-family:Bitstream Vera Sans"
+       style="font-size:10.200000;font-family:Liberation Sans"
        id="tspan292">acceleration</svg:tspan></svg:text>
 <svg:text
      id="text295"
@@ -526,7 +526,7 @@
      y="10.3081"><svg:tspan
        x="297.39651"
        y="10.3081"
-       style="font-size:10.200000;font-family:Bitstream Vera Sans"
+       style="font-size:10.200000;font-family:Liberation Sans"
        id="tspan296">force</svg:tspan></svg:text>
 <svg:g
      id="g299"><svg:line

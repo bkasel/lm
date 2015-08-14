@@ -13,35 +13,35 @@
 	</style>
 	<g id="Layer_1">
 		<g>
-			<text transform="matrix(1 0 0 1 17.9517 36.1641)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans-Bold'; font-size:15.300000;">preliminaries</tspan></text>
-			<text transform="matrix(1 0 0 1 63.293 50.6641)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:10.200000;">chapters 0-1</tspan></text>
+			<text transform="matrix(1 0 0 1 17.9517 36.1641)"><tspan x="0" y="0" style="font-family:Liberation Sans-Bold'; font-size:15.300000;">preliminaries</tspan></text>
+			<text transform="matrix(1 0 0 1 63.293 50.6641)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:10.200000;">chapters 0-1</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 12.0015 90.2812)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans-Bold'; font-size:15.300000;">motion in one</tspan></text>
-			<text transform="matrix(1 0 0 1 39.9771 111.7812)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans-Bold'; font-size:15.300000;">dimension</tspan></text>
-			<text transform="matrix(1 0 0 1 63.293 126.2812)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:10.200000;">chapters 2-6</tspan></text>
+			<text transform="matrix(1 0 0 1 12.0015 90.2812)"><tspan x="0" y="0" style="font-family:Liberation Sans-Bold'; font-size:15.300000;">motion in one</tspan></text>
+			<text transform="matrix(1 0 0 1 39.9771 111.7812)"><tspan x="0" y="0" style="font-family:Liberation Sans-Bold'; font-size:15.300000;">dimension</tspan></text>
+			<text transform="matrix(1 0 0 1 63.293 126.2812)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:10.200000;">chapters 2-6</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 0 159.1489)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans-Bold'; font-size:15.300000;">motion in three</tspan></text>
-			<text transform="matrix(1 0 0 1 29.9707 180.6489)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans-Bold'; font-size:15.300000;">dimensions</tspan></text>
-			<text transform="matrix(1 0 0 1 63.293 195.1489)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:10.200000;">chapters 7-9</tspan></text>
+			<text transform="matrix(1 0 0 1 0 159.1489)"><tspan x="0" y="0" style="font-family:Liberation Sans-Bold'; font-size:15.300000;">motion in three</tspan></text>
+			<text transform="matrix(1 0 0 1 29.9707 180.6489)"><tspan x="0" y="0" style="font-family:Liberation Sans-Bold'; font-size:15.300000;">dimensions</tspan></text>
+			<text transform="matrix(1 0 0 1 63.293 195.1489)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:10.200000;">chapters 7-9</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 84.8623 230.7666)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:11.900000;">gravity:</tspan></text>
-			<text transform="matrix(1 0 0 1 73.2861 245.2666)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:10.200000;">chapter 10</tspan></text>
+			<text transform="matrix(1 0 0 1 84.8623 230.7666)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:11.900000;">gravity:</tspan></text>
+			<text transform="matrix(1 0 0 1 73.2861 245.2666)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:10.200000;">chapter 10</tspan></text>
 		</g>
 		<line style="fill:none;stroke:#000000;" x1="135.458" y1="26.104" x2="135.458" y2="52.504"/>
 		<line style="fill:none;stroke:#000000;" x1="135.458" y1="81.071" x2="135.458" y2="128.921"/>
 		<line style="fill:none;stroke:#000000;" x1="135.458" y1="149.938" x2="135.458" y2="197.789"/>
 		<line style="fill:none;stroke:#000000;" x1="135.458" y1="220.906" x2="135.458" y2="247.906"/>
 		<g>
-			<text transform="matrix(1 0 0 1 145.7085 14)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans-Bold'; font-size:11.900000;">kinematics</tspan></text>
+			<text transform="matrix(1 0 0 1 145.7085 14)"><tspan x="0" y="0" style="font-family:Liberation Sans-Bold'; font-size:11.900000;">kinematics</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 228.7842 14)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans-Bold'; font-size:11.900000;">dynamics</tspan></text>
+			<text transform="matrix(1 0 0 1 228.7842 14)"><tspan x="0" y="0" style="font-family:Liberation Sans-Bold'; font-size:11.900000;">dynamics</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 305.7842 14)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans-Bold'; font-size:11.900000;">vectors</tspan></text>
+			<text transform="matrix(1 0 0 1 305.7842 14)"><tspan x="0" y="0" style="font-family:Liberation Sans-Bold'; font-size:11.900000;">vectors</tspan></text>
 		</g>
 		
 			<linearGradient id="XMLID_20_" gradientUnits="userSpaceOnUse" x1="180.7397" y1="31.6641" x2="180.7397" y2="247.6641" gradientTransform="matrix(0.85 0 0 1 27.0802 1.0835)">

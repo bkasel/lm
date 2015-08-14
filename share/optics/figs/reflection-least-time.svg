@@ -610,7 +610,7 @@
    transform="translate(25.74900,9.000000)">
   <tspan
      id="tspan2030"
-     style="font-size:7.6500001px;font-family:Bitstream Vera Sans"
+     style="font-size:7.6500001px;font-family:Liberation Sans"
      y="0"
      x="0">A</tspan>
 </text>
@@ -624,7 +624,7 @@
    transform="translate(73.80860,10.08010)">
   <tspan
      id="tspan2036"
-     style="font-size:7.6500001px;font-family:Bitstream Vera Sans"
+     style="font-size:7.6500001px;font-family:Liberation Sans"
      y="0"
      x="0">B</tspan>
 </text>
@@ -640,7 +640,7 @@
        transform="matrix(0.000000,1.000000,-1.000000,0.000000,0.000000,0.000000)" />
     <text
        xml:space="preserve"
-       style="font-size:10.000000px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125.00000%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1.0000000;stroke:none;stroke-width:1.0000000pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1.0000000;font-family:Bitstream Vera Sans"
+       style="font-size:10.000000px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125.00000%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1.0000000;stroke:none;stroke-width:1.0000000pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1.0000000;font-family:Liberation Sans"
        x="207.55722"
        y="7.4157867"
        id="text3649"
@@ -651,7 +651,7 @@
          y="7.4157867">1</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:10.000000px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125.00000%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1.0000000;stroke:none;stroke-width:1.0000000pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1.0000000;font-family:Bitstream Vera Sans"
+       style="font-size:10.000000px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125.00000%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1.0000000;stroke:none;stroke-width:1.0000000pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1.0000000;font-family:Liberation Sans"
        x="207.77939"
        y="94.242317"
        id="text3653"

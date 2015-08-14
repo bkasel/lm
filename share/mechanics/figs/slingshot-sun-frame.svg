@@ -45,26 +45,26 @@
 			<rect width="147.402" height="68.031"/> 
 			<g>
 				<g>
-					<text transform="matrix(1 0 0 1 64.7598 36.0156)"><tspan x="0" y="0" style="fill:#FFFFFF; font-family:Bitstream Vera Sans; font-size:7.650000;">v</tspan></text>
+					<text transform="matrix(1 0 0 1 64.7598 36.0156)"><tspan x="0" y="0" style="fill:#FFFFFF; font-family:Liberation Sans; font-size:7.650000;">v</tspan></text>
 				</g>
 				<g>
-					<text transform="matrix(1 0 0 1 69.2598 39.0156)"><tspan x="0" y="0" style="fill:#FFFFFF; font-family:Bitstream Vera Sans; font-size:5.950000;">2</tspan></text>
-				</g>
-			</g>
-			<g>
-				<g>
-					<text transform="matrix(1 0 0 1 35.7598 59.5156)"><tspan x="0" y="0" style="fill:#FFFFFF; font-family:Bitstream Vera Sans; font-size:7.650000;">v</tspan></text>
-				</g>
-				<g>
-					<text transform="matrix(1 0 0 1 40.2598 62.5156)"><tspan x="0" y="0" style="fill:#FFFFFF; font-family:Bitstream Vera Sans; font-size:5.950000;">1i</tspan></text>
+					<text transform="matrix(1 0 0 1 69.2598 39.0156)"><tspan x="0" y="0" style="fill:#FFFFFF; font-family:Liberation Sans; font-size:5.950000;">2</tspan></text>
 				</g>
 			</g>
 			<g>
 				<g>
-					<text transform="matrix(1 0 0 1 86.314 19.4756)"><tspan x="0" y="0" style="fill:#FFFFFF; font-family:Bitstream Vera Sans; font-size:7.650000;">v</tspan></text>
+					<text transform="matrix(1 0 0 1 35.7598 59.5156)"><tspan x="0" y="0" style="fill:#FFFFFF; font-family:Liberation Sans; font-size:7.650000;">v</tspan></text>
 				</g>
 				<g>
-					<text transform="matrix(1 0 0 1 90.814 22.4756)"><tspan x="0" y="0" style="fill:#FFFFFF; font-family:Bitstream Vera Sans; font-size:5.950000;">1f</tspan></text>
+					<text transform="matrix(1 0 0 1 40.2598 62.5156)"><tspan x="0" y="0" style="fill:#FFFFFF; font-family:Liberation Sans; font-size:5.950000;">1i</tspan></text>
+				</g>
+			</g>
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 86.314 19.4756)"><tspan x="0" y="0" style="fill:#FFFFFF; font-family:Liberation Sans; font-size:7.650000;">v</tspan></text>
+				</g>
+				<g>
+					<text transform="matrix(1 0 0 1 90.814 22.4756)"><tspan x="0" y="0" style="fill:#FFFFFF; font-family:Liberation Sans; font-size:5.950000;">1f</tspan></text>
 				</g>
 			</g>
 			<path style="fill:none;stroke:#FFFFFF;" d="M146.931,35.096c-0.19-4.146-42.919-8.617-132.838-12.048"/>

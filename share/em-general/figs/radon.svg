@@ -49,7 +49,7 @@
 		<circle cx="87.041" cy="23.894" r="0.884"/> 
 		<circle cx="42.458" cy="30.873" r="0.884"/> 
 		<g>
-			<text transform="matrix(1 0 0 1 50.7913 79.9268)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">radon gas</tspan></text>
+			<text transform="matrix(1 0 0 1 50.7913 79.9268)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">radon gas</tspan></text>
 		</g>
 		<circle cx="22.337" cy="71.656" r="2.121"/> 
 		<circle cx="105.458" cy="70.322" r="2.121"/> 
@@ -76,10 +76,10 @@
 		<circle cx="36.791" cy="87.444" r="2.121"/> 
 		<circle cx="29.337" cy="60.989" r="2.121"/> 
 		<g>
-			<text transform="matrix(1 0 0 1 22.458 20.3223)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">alpha particles</tspan></text>
+			<text transform="matrix(1 0 0 1 22.458 20.3223)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">alpha particles</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 32.1245 48.3223)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">thin glass wall</tspan></text>
+			<text transform="matrix(1 0 0 1 32.1245 48.3223)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">thin glass wall</tspan></text>
 		</g>
 		<line style="fill:none;" x1="144.458" y1="27.989" x2="144.458" y2="72.656"/>
 	</g>

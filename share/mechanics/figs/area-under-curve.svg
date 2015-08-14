@@ -63,147 +63,147 @@
          d="M 35.143000,104.50000 L 61.143000,104.50000 C 61.143000,104.50000 59.292000,93.910000 83.292000,71.244000 C 93.645000,61.466000 82.940000,9.9740000 105.29200,5.9110000 C 116.29200,3.9110000 106.99400,104.42400 114.14300,104.50100 L 140.14300,104.50100"
          id="path533" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="34.646999"
          y1="104.00400"
          x2="34.646999"
          y2="0.0040000002"
          id="line535" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="60.646999"
          y1="104.00400"
          x2="60.646999"
          y2="0.0040000002"
          id="line537" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="86.647003"
          y1="104.00400"
          x2="86.647003"
          y2="0.0040000002"
          id="line539" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="113.64700"
          y1="104.00400"
          x2="113.64700"
          y2="0.0040000002"
          id="line541" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="139.64700"
          y1="104.00400"
          x2="139.64700"
          y2="0.0040000002"
          id="line543" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="47.646999"
          y1="104.00400"
          x2="47.646999"
          y2="0.0040000002"
          id="line545" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="73.647003"
          y1="104.00400"
          x2="73.647003"
          y2="0.0040000002"
          id="line547" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="100.64700"
          y1="104.00400"
          x2="100.64700"
          y2="0.0040000002"
          id="line549" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="126.64700"
          y1="104.00400"
          x2="126.64700"
          y2="0.0040000002"
          id="line551" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="34.646999"
          y1="104.00400"
          x2="139.64700"
          y2="104.00400"
          id="line553" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="34.646999"
          y1="57.004002"
          x2="139.64700"
          y2="57.004002"
          id="line555" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="34.646999"
          y1="10.004000"
          x2="139.64700"
          y2="10.004000"
          id="line557" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="34.646999"
          y1="95.003998"
          x2="139.64700"
          y2="95.003998"
          id="line559" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="34.646999"
          y1="85.003998"
          x2="139.64700"
          y2="85.003998"
          id="line561" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="34.646999"
          y1="76.003998"
          x2="139.64700"
          y2="76.003998"
          id="line563" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="34.646999"
          y1="66.003998"
          x2="139.64700"
          y2="66.003998"
          id="line565" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="34.646999"
          y1="47.004002"
          x2="139.64700"
          y2="47.004002"
          id="line567" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="34.646999"
          y1="38.004002"
          x2="139.64700"
          y2="38.004002"
          id="line569" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="34.646999"
          y1="28.004000"
          x2="139.64700"
          y2="28.004000"
          id="line571" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="34.646999"
          y1="19.004000"
          x2="139.64700"
          y2="19.004000"
          id="line573" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="34.646999"
          y1="0.0040000002"
          x2="139.64700"
@@ -314,7 +314,7 @@
            id="text607"><svg:tspan
              x="0"
              y="0"
-             style="font-size:7.6500001;font-family:Bitstream Vera Sans"
+             style="font-size:7.6500001;font-family:Liberation Sans"
              id="tspan608">0</svg:tspan></svg:text>
       </svg:g>
       <svg:g
@@ -324,7 +324,7 @@
            id="text614"><svg:tspan
              x="0"
              y="0"
-             style="font-size:7.6500001;font-family:Bitstream Vera Sans"
+             style="font-size:7.6500001;font-family:Liberation Sans"
              id="tspan615">10</svg:tspan></svg:text>
       </svg:g>
       <svg:g
@@ -334,7 +334,7 @@
            id="text621"><svg:tspan
              x="0"
              y="0"
-             style="font-size:7.6500001;font-family:Bitstream Vera Sans"
+             style="font-size:7.6500001;font-family:Liberation Sans"
              id="tspan622">20</svg:tspan></svg:text>
       </svg:g>
       <svg:g
@@ -344,7 +344,7 @@
            id="text628"><svg:tspan
              x="0"
              y="0"
-             style="font-size:7.6500001;font-family:Bitstream Vera Sans"
+             style="font-size:7.6500001;font-family:Liberation Sans"
              id="tspan629">0</svg:tspan></svg:text>
       </svg:g>
       <svg:g
@@ -354,7 +354,7 @@
            id="text635"><svg:tspan
              x="0"
              y="0"
-             style="font-size:7.6500001;font-family:Bitstream Vera Sans"
+             style="font-size:7.6500001;font-family:Liberation Sans"
              id="tspan636">2</svg:tspan></svg:text>
       </svg:g>
       <svg:g
@@ -364,7 +364,7 @@
            id="text642"><svg:tspan
              x="0"
              y="0"
-             style="font-size:7.6500001;font-family:Bitstream Vera Sans"
+             style="font-size:7.6500001;font-family:Liberation Sans"
              id="tspan643">4</svg:tspan></svg:text>
       </svg:g>
       <svg:g
@@ -374,7 +374,7 @@
            id="text649"><svg:tspan
              x="0"
              y="0"
-             style="font-size:7.6500001;font-family:Bitstream Vera Sans"
+             style="font-size:7.6500001;font-family:Liberation Sans"
              id="tspan650">6</svg:tspan></svg:text>
       </svg:g>
       <svg:g
@@ -384,7 +384,7 @@
            id="text656"><svg:tspan
              x="0"
              y="0"
-             style="font-size:7.6500001;font-family:Bitstream Vera Sans"
+             style="font-size:7.6500001;font-family:Liberation Sans"
              id="tspan657">8</svg:tspan></svg:text>
       </svg:g>
       <svg:g
@@ -394,7 +394,7 @@
            id="text663"><svg:tspan
              x="0"
              y="0"
-             style="font-size:7.6500001;font-family:Bitstream Vera Sans"
+             style="font-size:7.6500001;font-family:Liberation Sans"
              id="tspan664">t (s)</svg:tspan></svg:text>
       </svg:g>
       <svg:rect
@@ -411,7 +411,7 @@
            id="text672"><svg:tspan
              x="0"
              y="0"
-             style="font-size:7.6500001;font-family:Bitstream Vera Sans"
+             style="font-size:7.6500001;font-family:Liberation Sans"
              id="tspan673">(4)</svg:tspan></svg:text>
       </svg:g>
       <svg:g
@@ -421,7 +421,7 @@
            id="text679"><svg:tspan
              x="0"
              y="0"
-             style="font-size:7.6500001;font-family:Bitstream Vera Sans"
+             style="font-size:7.6500001;font-family:Liberation Sans"
              id="tspan680">v (m/s)</svg:tspan></svg:text>
       </svg:g>
     </svg:g>
@@ -433,147 +433,147 @@
          points="112.854,104.5     112.854,95.91 110.188,95.91 110.188,12.577 106.854,12.577 106.854,6.577 96.188,6.577 96.188,13.244 90.854,13.244     90.854,27.91 86.854,27.91 86.854,50.577 82.188,50.577 82.188,72.577 76.854,72.577 76.854,82.577 70.188,82.577 70.188,88.577     64.854,88.577 64.854,93.91 60.188,93.91 60.188,104.5 "
          id="polyline368" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="34.646999"
          y1="104.00400"
          x2="34.646999"
          y2="0.0040000002"
          id="line370" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="60.646999"
          y1="0.0040000002"
          x2="60.646999"
          y2="104.00400"
          id="line372" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="86.647003"
          y1="104.00400"
          x2="86.647003"
          y2="0.0040000002"
          id="line374" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="113.64700"
          y1="104.00400"
          x2="113.64700"
          y2="0.0040000002"
          id="line376" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="139.64700"
          y1="104.00400"
          x2="139.64700"
          y2="0.0040000002"
          id="line378" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="47.646999"
          y1="104.00400"
          x2="47.646999"
          y2="0.0040000002"
          id="line380" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="73.647003"
          y1="104.00400"
          x2="73.647003"
          y2="0.0040000002"
          id="line382" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="100.64700"
          y1="104.00400"
          x2="100.64700"
          y2="0.0040000002"
          id="line384" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="126.64700"
          y1="104.00400"
          x2="126.64700"
          y2="0.0040000002"
          id="line386" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="34.646999"
          y1="104.00400"
          x2="139.64700"
          y2="104.00400"
          id="line388" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="34.646999"
          y1="57.004002"
          x2="139.64700"
          y2="57.004002"
          id="line390" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="34.646999"
          y1="10.004000"
          x2="139.64700"
          y2="10.004000"
          id="line392" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="34.646999"
          y1="95.003998"
          x2="139.64700"
          y2="95.003998"
          id="line394" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="34.646999"
          y1="85.003998"
          x2="139.64700"
          y2="85.003998"
          id="line396" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="34.646999"
          y1="76.003998"
          x2="139.64700"
          y2="76.003998"
          id="line398" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="34.646999"
          y1="66.003998"
          x2="139.64700"
          y2="66.003998"
          id="line400" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="34.646999"
          y1="47.004002"
          x2="139.64700"
          y2="47.004002"
          id="line402" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="34.646999"
          y1="38.004002"
          x2="139.64700"
          y2="38.004002"
          id="line404" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="34.646999"
          y1="28.004000"
          x2="139.64700"
          y2="28.004000"
          id="line406" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="34.646999"
          y1="19.004000"
          x2="139.64700"
          y2="19.004000"
          id="line408" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="34.646999"
          y1="0.0040000002"
          x2="139.64700"
@@ -684,7 +684,7 @@
            id="text442"><svg:tspan
              x="0"
              y="0"
-             style="font-size:7.6500001;font-family:Bitstream Vera Sans"
+             style="font-size:7.6500001;font-family:Liberation Sans"
              id="tspan443">0</svg:tspan></svg:text>
       </svg:g>
       <svg:g
@@ -694,7 +694,7 @@
            id="text449"><svg:tspan
              x="0"
              y="0"
-             style="font-size:7.6500001;font-family:Bitstream Vera Sans"
+             style="font-size:7.6500001;font-family:Liberation Sans"
              id="tspan450">10</svg:tspan></svg:text>
       </svg:g>
       <svg:g
@@ -704,7 +704,7 @@
            id="text456"><svg:tspan
              x="0"
              y="0"
-             style="font-size:7.6500001;font-family:Bitstream Vera Sans"
+             style="font-size:7.6500001;font-family:Liberation Sans"
              id="tspan457">20</svg:tspan></svg:text>
       </svg:g>
       <svg:g
@@ -714,7 +714,7 @@
            id="text463"><svg:tspan
              x="0"
              y="0"
-             style="font-size:7.6500001;font-family:Bitstream Vera Sans"
+             style="font-size:7.6500001;font-family:Liberation Sans"
              id="tspan464">0</svg:tspan></svg:text>
       </svg:g>
       <svg:g
@@ -724,7 +724,7 @@
            id="text470"><svg:tspan
              x="0"
              y="0"
-             style="font-size:7.6500001;font-family:Bitstream Vera Sans"
+             style="font-size:7.6500001;font-family:Liberation Sans"
              id="tspan471">2</svg:tspan></svg:text>
       </svg:g>
       <svg:g
@@ -734,7 +734,7 @@
            id="text477"><svg:tspan
              x="0"
              y="0"
-             style="font-size:7.6500001;font-family:Bitstream Vera Sans"
+             style="font-size:7.6500001;font-family:Liberation Sans"
              id="tspan478">4</svg:tspan></svg:text>
       </svg:g>
       <svg:g
@@ -744,7 +744,7 @@
            id="text484"><svg:tspan
              x="0"
              y="0"
-             style="font-size:7.6500001;font-family:Bitstream Vera Sans"
+             style="font-size:7.6500001;font-family:Liberation Sans"
              id="tspan485">6</svg:tspan></svg:text>
       </svg:g>
       <svg:g
@@ -754,7 +754,7 @@
            id="text491"><svg:tspan
              x="0"
              y="0"
-             style="font-size:7.6500001;font-family:Bitstream Vera Sans"
+             style="font-size:7.6500001;font-family:Liberation Sans"
              id="tspan492">8</svg:tspan></svg:text>
       </svg:g>
       <svg:g
@@ -764,7 +764,7 @@
            id="text498"><svg:tspan
              x="0"
              y="0"
-             style="font-size:7.6500001;font-family:Bitstream Vera Sans"
+             style="font-size:7.6500001;font-family:Liberation Sans"
              id="tspan499">t (s)</svg:tspan></svg:text>
       </svg:g>
       <svg:rect
@@ -781,7 +781,7 @@
            id="text507"><svg:tspan
              x="0"
              y="0"
-             style="font-size:7.6500001;font-family:Bitstream Vera Sans"
+             style="font-size:7.6500001;font-family:Liberation Sans"
              id="tspan508">(3)</svg:tspan></svg:text>
       </svg:g>
       <svg:g
@@ -791,7 +791,7 @@
            id="text514"><svg:tspan
              x="0"
              y="0"
-             style="font-size:7.6500001;font-family:Bitstream Vera Sans"
+             style="font-size:7.6500001;font-family:Liberation Sans"
              id="tspan515">v (m/s)</svg:tspan></svg:text>
       </svg:g>
     </svg:g>
@@ -813,147 +813,147 @@
          height="93.000000"
          id="rect191" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="34.651001"
          y1="104.00400"
          x2="34.651001"
          y2="0.0040000002"
          id="line193" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="60.651001"
          y1="104.00400"
          x2="60.651001"
          y2="0.0040000002"
          id="line195" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="86.651001"
          y1="104.00400"
          x2="86.651001"
          y2="0.0040000002"
          id="line197" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="112.65100"
          y1="104.00400"
          x2="112.65100"
          y2="0.0040000002"
          id="line199" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="138.65100"
          y1="104.00400"
          x2="138.65100"
          y2="0.0040000002"
          id="line201" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="47.651001"
          y1="104.00400"
          x2="47.651001"
          y2="0.0040000002"
          id="line203" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="73.651001"
          y1="104.00400"
          x2="73.651001"
          y2="0.0040000002"
          id="line205" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="99.651001"
          y1="104.00400"
          x2="99.651001"
          y2="0.0040000002"
          id="line207" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="125.65100"
          y1="104.00400"
          x2="125.65100"
          y2="0.0040000002"
          id="line209" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="34.651001"
          y1="104.00400"
          x2="138.65100"
          y2="104.00400"
          id="line211" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="34.651001"
          y1="57.004002"
          x2="138.65100"
          y2="57.004002"
          id="line213" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="34.651001"
          y1="10.004000"
          x2="138.65100"
          y2="10.004000"
          id="line215" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="34.651001"
          y1="95.003998"
          x2="138.65100"
          y2="95.003998"
          id="line217" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="34.651001"
          y1="85.003998"
          x2="138.65100"
          y2="85.003998"
          id="line219" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="34.651001"
          y1="76.003998"
          x2="138.65100"
          y2="76.003998"
          id="line221" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="34.651001"
          y1="66.003998"
          x2="138.65100"
          y2="66.003998"
          id="line223" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="34.651001"
          y1="48.004002"
          x2="138.65100"
          y2="48.004002"
          id="line225" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="34.651001"
          y1="38.004002"
          x2="138.65100"
          y2="38.004002"
          id="line227" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="34.651001"
          y1="29.004000"
          x2="138.65100"
          y2="29.004000"
          id="line229" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="34.651001"
          y1="19.004000"
          x2="138.65100"
          y2="19.004000"
          id="line231" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="34.651001"
          y1="0.0040000002"
          x2="138.65100"
@@ -1106,7 +1106,7 @@
            id="text277"><svg:tspan
              x="0"
              y="0"
-             style="font-size:7.6500001;font-family:Bitstream Vera Sans"
+             style="font-size:7.6500001;font-family:Liberation Sans"
              id="tspan278">0</svg:tspan></svg:text>
       </svg:g>
       <svg:g
@@ -1116,7 +1116,7 @@
            id="text284"><svg:tspan
              x="0"
              y="0"
-             style="font-size:7.6500001;font-family:Bitstream Vera Sans"
+             style="font-size:7.6500001;font-family:Liberation Sans"
              id="tspan285">10</svg:tspan></svg:text>
       </svg:g>
       <svg:g
@@ -1126,7 +1126,7 @@
            id="text291"><svg:tspan
              x="0"
              y="0"
-             style="font-size:7.6500001;font-family:Bitstream Vera Sans"
+             style="font-size:7.6500001;font-family:Liberation Sans"
              id="tspan292">20</svg:tspan></svg:text>
       </svg:g>
       <svg:g
@@ -1136,7 +1136,7 @@
            id="text298"><svg:tspan
              x="0"
              y="0"
-             style="font-size:7.6500001;font-family:Bitstream Vera Sans"
+             style="font-size:7.6500001;font-family:Liberation Sans"
              id="tspan299">0</svg:tspan></svg:text>
       </svg:g>
       <svg:g
@@ -1146,7 +1146,7 @@
            id="text305"><svg:tspan
              x="0"
              y="0"
-             style="font-size:7.6500001;font-family:Bitstream Vera Sans"
+             style="font-size:7.6500001;font-family:Liberation Sans"
              id="tspan306">2</svg:tspan></svg:text>
       </svg:g>
       <svg:g
@@ -1156,7 +1156,7 @@
            id="text312"><svg:tspan
              x="0"
              y="0"
-             style="font-size:7.6500001;font-family:Bitstream Vera Sans"
+             style="font-size:7.6500001;font-family:Liberation Sans"
              id="tspan313">4</svg:tspan></svg:text>
       </svg:g>
       <svg:g
@@ -1166,7 +1166,7 @@
            id="text319"><svg:tspan
              x="0"
              y="0"
-             style="font-size:7.6500001;font-family:Bitstream Vera Sans"
+             style="font-size:7.6500001;font-family:Liberation Sans"
              id="tspan320">6</svg:tspan></svg:text>
       </svg:g>
       <svg:g
@@ -1176,7 +1176,7 @@
            id="text326"><svg:tspan
              x="0"
              y="0"
-             style="font-size:7.6500001;font-family:Bitstream Vera Sans"
+             style="font-size:7.6500001;font-family:Liberation Sans"
              id="tspan327">8</svg:tspan></svg:text>
       </svg:g>
       <svg:g
@@ -1186,7 +1186,7 @@
            id="text333"><svg:tspan
              x="0"
              y="0"
-             style="font-size:7.6500001;font-family:Bitstream Vera Sans"
+             style="font-size:7.6500001;font-family:Liberation Sans"
              id="tspan334">t (s)</svg:tspan></svg:text>
       </svg:g>
       <svg:rect
@@ -1203,7 +1203,7 @@
            id="text342"><svg:tspan
              x="0"
              y="0"
-             style="font-size:7.6500001;font-family:Bitstream Vera Sans"
+             style="font-size:7.6500001;font-family:Liberation Sans"
              id="tspan343">(2)</svg:tspan></svg:text>
       </svg:g>
       <svg:g
@@ -1213,7 +1213,7 @@
            id="text349"><svg:tspan
              x="0"
              y="0"
-             style="font-size:7.6500001;font-family:Bitstream Vera Sans"
+             style="font-size:7.6500001;font-family:Liberation Sans"
              id="tspan350">v (m/s)</svg:tspan></svg:text>
       </svg:g>
     </svg:g>
@@ -1228,147 +1228,147 @@
          height="95.000000"
          id="rect7" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="34.646999"
          y1="104.00400"
          x2="34.646999"
          y2="0.0040000002"
          id="line9" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="60.646999"
          y1="104.00400"
          x2="60.646999"
          y2="0.0040000002"
          id="line11" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="86.647003"
          y1="104.00400"
          x2="86.647003"
          y2="0.0040000002"
          id="line13" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="113.64700"
          y1="104.00400"
          x2="113.64700"
          y2="0.0040000002"
          id="line15" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="139.64700"
          y1="104.00400"
          x2="139.64700"
          y2="0.0040000002"
          id="line17" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="47.646999"
          y1="104.00400"
          x2="47.646999"
          y2="0.0040000002"
          id="line19" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="73.647003"
          y1="104.00400"
          x2="73.647003"
          y2="0.0040000002"
          id="line21" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="100.64700"
          y1="104.00400"
          x2="100.64700"
          y2="0.0040000002"
          id="line23" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="126.64700"
          y1="104.00400"
          x2="126.64700"
          y2="0.0040000002"
          id="line25" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="34.646999"
          y1="104.00400"
          x2="139.64700"
          y2="104.00400"
          id="line27" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="34.646999"
          y1="57.004002"
          x2="139.64700"
          y2="57.004002"
          id="line29" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="34.646999"
          y1="10.004000"
          x2="139.64700"
          y2="10.004000"
          id="line31" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="34.646999"
          y1="95.003998"
          x2="139.64700"
          y2="95.003998"
          id="line33" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="34.646999"
          y1="85.003998"
          x2="139.64700"
          y2="85.003998"
          id="line35" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="34.646999"
          y1="76.003998"
          x2="139.64700"
          y2="76.003998"
          id="line37" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="34.646999"
          y1="66.003998"
          x2="139.64700"
          y2="66.003998"
          id="line39" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="34.646999"
          y1="47.004002"
          x2="139.64700"
          y2="47.004002"
          id="line41" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="34.646999"
          y1="38.004002"
          x2="139.64700"
          y2="38.004002"
          id="line43" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="34.646999"
          y1="28.004000"
          x2="139.64700"
          y2="28.004000"
          id="line45" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="34.646999"
          y1="19.004000"
          x2="139.64700"
          y2="19.004000"
          id="line47" />
       <svg:line
-         style="fill:none;stroke:#000000;stroke-width:0.0077999998;stroke-linecap:square;stroke-miterlimit:1.0000000"
+         style="fill:none;stroke:#000000;0.5;stroke-linecap:square;stroke-miterlimit:1.0000000"
          x1="34.646999"
          y1="0.0040000002"
          x2="139.64700"
@@ -1521,7 +1521,7 @@
            id="text93"><svg:tspan
              x="0"
              y="0"
-             style="font-size:7.6500001;font-family:Bitstream Vera Sans"
+             style="font-size:7.6500001;font-family:Liberation Sans"
              id="tspan94">0</svg:tspan></svg:text>
       </svg:g>
       <svg:g
@@ -1531,7 +1531,7 @@
            id="text100"><svg:tspan
              x="0"
              y="0"
-             style="font-size:7.6500001;font-family:Bitstream Vera Sans"
+             style="font-size:7.6500001;font-family:Liberation Sans"
              id="tspan101">10</svg:tspan></svg:text>
       </svg:g>
       <svg:g
@@ -1541,7 +1541,7 @@
            id="text107"><svg:tspan
              x="0"
              y="0"
-             style="font-size:7.6500001;font-family:Bitstream Vera Sans"
+             style="font-size:7.6500001;font-family:Liberation Sans"
              id="tspan108">20</svg:tspan></svg:text>
       </svg:g>
       <svg:g
@@ -1551,7 +1551,7 @@
            id="text114"><svg:tspan
              x="0"
              y="0"
-             style="font-size:7.6500001;font-family:Bitstream Vera Sans"
+             style="font-size:7.6500001;font-family:Liberation Sans"
              id="tspan115">0</svg:tspan></svg:text>
       </svg:g>
       <svg:g
@@ -1561,7 +1561,7 @@
            id="text121"><svg:tspan
              x="0"
              y="0"
-             style="font-size:7.6500001;font-family:Bitstream Vera Sans"
+             style="font-size:7.6500001;font-family:Liberation Sans"
              id="tspan122">2</svg:tspan></svg:text>
       </svg:g>
       <svg:g
@@ -1571,7 +1571,7 @@
            id="text128"><svg:tspan
              x="0"
              y="0"
-             style="font-size:7.6500001;font-family:Bitstream Vera Sans"
+             style="font-size:7.6500001;font-family:Liberation Sans"
              id="tspan129">4</svg:tspan></svg:text>
       </svg:g>
       <svg:g
@@ -1581,7 +1581,7 @@
            id="text135"><svg:tspan
              x="0"
              y="0"
-             style="font-size:7.6500001;font-family:Bitstream Vera Sans"
+             style="font-size:7.6500001;font-family:Liberation Sans"
              id="tspan136">6</svg:tspan></svg:text>
       </svg:g>
       <svg:g
@@ -1591,7 +1591,7 @@
            id="text142"><svg:tspan
              x="0"
              y="0"
-             style="font-size:7.6500001;font-family:Bitstream Vera Sans"
+             style="font-size:7.6500001;font-family:Liberation Sans"
              id="tspan143">8</svg:tspan></svg:text>
       </svg:g>
       <svg:g
@@ -1601,7 +1601,7 @@
            id="text149"><svg:tspan
              x="0"
              y="0"
-             style="font-size:7.6500001;font-family:Bitstream Vera Sans"
+             style="font-size:7.6500001;font-family:Liberation Sans"
              id="tspan150">t (s)</svg:tspan></svg:text>
       </svg:g>
       <svg:rect
@@ -1618,7 +1618,7 @@
            id="text158"><svg:tspan
              x="0"
              y="0"
-             style="font-size:7.6500001;font-family:Bitstream Vera Sans"
+             style="font-size:7.6500001;font-family:Liberation Sans"
              id="tspan159">(1)</svg:tspan></svg:text>
       </svg:g>
       <svg:g
@@ -1628,7 +1628,7 @@
            id="text165"><svg:tspan
              x="0"
              y="0"
-             style="font-size:7.6500001;font-family:Bitstream Vera Sans"
+             style="font-size:7.6500001;font-family:Liberation Sans"
              id="tspan166">v (m/s)</svg:tspan></svg:text>
       </svg:g>
     </svg:g>

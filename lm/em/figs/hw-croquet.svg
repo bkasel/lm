@@ -35,7 +35,7 @@
 			<circle style="fill:#FFFFFF;stroke:#000000;stroke-width:0.5;" cx="27.062" cy="3.432" r="3.182"/> 
 			<circle style="fill:#FFFFFF;stroke:#000000;stroke-width:0.5;" cx="27" cy="107.688" r="3.182"/> 
 			<g>
-				<text transform="matrix(1 0 0 1 9 31.8696)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">b</tspan></text>
+				<text transform="matrix(1 0 0 1 9 31.8696)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">b</tspan></text>
 			</g>
 			<g>
 				<line style="fill:#FFFFFF;stroke:#000000;stroke-width:0.5;" x1="11.5" y1="58.62" x2="11.5" y2="103.62"/>
@@ -45,7 +45,7 @@
 			</g>
 			<rect x="7.5" y="74.62" style="fill:#FFFFFF;" width="7.5" height="11"/> 
 			<g>
-				<text transform="matrix(1 0 0 1 9 84.1196)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">b</tspan></text>
+				<text transform="matrix(1 0 0 1 9 84.1196)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">b</tspan></text>
 			</g>
 			<circle style="fill:#FFFFFF;stroke:#000000;stroke-width:0.5;" cx="126.625" cy="54.932" r="3.182"/> 
 		</g>

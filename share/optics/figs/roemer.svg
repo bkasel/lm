@@ -24,16 +24,16 @@
 		</g>
 		<circle cx="94.008" cy="37.338" r="1.885"/> 
 		<g>
-			<text transform="matrix(1 0 0 1 38.894 43.0884)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">sun</tspan></text>
+			<text transform="matrix(1 0 0 1 38.894 43.0884)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">sun</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 48.644 64.5884)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">earth</tspan></text>
+			<text transform="matrix(1 0 0 1 48.644 64.5884)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">earth</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 89.894 27.5884)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">Jupiter</tspan></text>
+			<text transform="matrix(1 0 0 1 89.894 27.5884)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">Jupiter</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 96.644 43.0884)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">Io</tspan></text>
+			<text transform="matrix(1 0 0 1 96.644 43.0884)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">Io</tspan></text>
 		</g>
 	</g>
 </svg>

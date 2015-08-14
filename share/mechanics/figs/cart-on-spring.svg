@@ -101,10 +101,10 @@
 			</g>
 			<g>
 				<g>
-					<text transform="matrix(1 0 0 1 31.3921 76.5137)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">x</tspan></text>
+					<text transform="matrix(1 0 0 1 31.3921 76.5137)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">x</tspan></text>
 				</g>
 				<g>
-					<text transform="matrix(1 0 0 1 35.8921 79.5137)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:5.950000;">o</tspan></text>
+					<text transform="matrix(1 0 0 1 35.8921 79.5137)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:5.950000;">o</tspan></text>
 				</g>
 			</g>
 			<g>
@@ -176,20 +176,20 @@
 			</g>
 			<g>
 				<g>
-					<text transform="matrix(1 0 0 1 91.8921 52.5137)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">equilibrium</tspan></text>
+					<text transform="matrix(1 0 0 1 91.8921 52.5137)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">equilibrium</tspan></text>
 				</g>
 				<g>
-					<text transform="matrix(1 0 0 1 91.8921 63.5137)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">position</tspan></text>
-				</g>
-			</g>
-			<g>
-				<g>
-					<text transform="matrix(1 0 0 1 72.3921 9.5137)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">compressed</tspan></text>
+					<text transform="matrix(1 0 0 1 91.8921 63.5137)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">position</tspan></text>
 				</g>
 			</g>
 			<g>
 				<g>
-					<text transform="matrix(1 0 0 1 110.3921 107.0137)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">stretched</tspan></text>
+					<text transform="matrix(1 0 0 1 72.3921 9.5137)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">compressed</tspan></text>
+				</g>
+			</g>
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 110.3921 107.0137)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">stretched</tspan></text>
 				</g>
 			</g>
 		</g>

@@ -136,29 +136,29 @@
            id="text35"><svg:tspan
              x="0"
              y="0"
-             style="font-size:7.6500001;font-family:Bitstream Vera Sans-Bold'"
+             style="font-size:7.6500001;font-family:Liberation Sans-Bold'"
              id="tspan36">a</svg:tspan><svg:tspan
              x="5.006"
              y="3"
-             style="font-size:5.9499998;font-family:Bitstream Vera Sans"
+             style="font-size:5.9499998;font-family:Liberation Sans"
              id="tspan38">r</svg:tspan></svg:text>
         <svg:text
            transform="translate(71.41110,38.83110)"
            id="text41"><svg:tspan
              x="0"
              y="0"
-             style="font-size:7.6500001;font-family:Bitstream Vera Sans-Bold'"
+             style="font-size:7.6500001;font-family:Liberation Sans-Bold'"
              id="tspan42">a</svg:tspan><svg:tspan
              x="5.006"
              y="3"
-             style="font-size:5.9499998;font-family:Bitstream Vera Sans"
+             style="font-size:5.9499998;font-family:Liberation Sans"
              id="tspan44">t</svg:tspan></svg:text>
         <svg:text
            transform="translate(26.41110,48.83110)"
            id="text47"><svg:tspan
              x="0"
              y="0"
-             style="font-size:7.6500001;font-family:Bitstream Vera Sans-Bold'"
+             style="font-size:7.6500001;font-family:Liberation Sans-Bold'"
              id="tspan48">a</svg:tspan></svg:text>
       </svg:g>
       <svg:g
@@ -195,11 +195,11 @@
            y="741.18744"><svg:tspan
              x="428.18927"
              y="741.18744"
-             style="font-size:10.144283;font-family:Bitstream Vera Sans-Bold'"
+             style="font-size:10.144283;font-family:Liberation Sans-Bold'"
              id="tspan99">a</svg:tspan><svg:tspan
              x="434.82748"
              y="745.16559"
-             style="font-size:7.8899980;font-family:Bitstream Vera Sans"
+             style="font-size:7.8899980;font-family:Liberation Sans"
              id="tspan101">r</svg:tspan></svg:text>
       </svg:g>
       <svg:g
@@ -264,11 +264,11 @@
            y="877.52332"><svg:tspan
              x="415.38062"
              y="877.52332"
-             style="font-size:10.144279;font-family:Bitstream Vera Sans-Bold'"
+             style="font-size:10.144279;font-family:Liberation Sans-Bold'"
              id="tspan145">a</svg:tspan><svg:tspan
              x="422.0188"
              y="881.50146"
-             style="font-size:7.8899946;font-family:Bitstream Vera Sans"
+             style="font-size:7.8899946;font-family:Liberation Sans"
              id="tspan147">r</svg:tspan></svg:text>
         <svg:text
            id="text150"
@@ -276,11 +276,11 @@
            y="897.7099"><svg:tspan
              x="461.42145"
              y="897.7099"
-             style="font-size:10.144279;font-family:Bitstream Vera Sans-Bold'"
+             style="font-size:10.144279;font-family:Liberation Sans-Bold'"
              id="tspan151">a</svg:tspan><svg:tspan
              x="468.05963"
              y="901.68805"
-             style="font-size:7.8899946;font-family:Bitstream Vera Sans"
+             style="font-size:7.8899946;font-family:Liberation Sans"
              id="tspan153">t</svg:tspan></svg:text>
         <svg:text
            id="text156"
@@ -288,12 +288,12 @@
            y="916.3775"><svg:tspan
              x="432.52811"
              y="916.3775"
-             style="font-size:10.144279;font-family:Bitstream Vera Sans-Bold'"
+             style="font-size:10.144279;font-family:Liberation Sans-Bold'"
              id="tspan157">a</svg:tspan></svg:text>
       </svg:g>
       <svg:text
          xml:space="preserve"
-         style="font-size:9.0000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1.0000000;stroke:none;stroke-width:1.0000000pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1.0000000;font-family:Bitstream Vera Sans;text-anchor:start;writing-mode:lr-tb"
+         style="font-size:9.0000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1.0000000;stroke:none;stroke-width:1.0000000pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1.0000000;font-family:Liberation Sans;text-anchor:start;writing-mode:lr-tb"
          x="406.36084"
          y="-253.52487"
          id="text239"
@@ -304,7 +304,7 @@
            y="-253.52487">2</svg:tspan></svg:text>
       <svg:text
          xml:space="preserve"
-         style="font-size:9.0000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1.0000000;stroke:none;stroke-width:1.0000000pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1.0000000;font-family:Bitstream Vera Sans;text-anchor:start;writing-mode:lr-tb"
+         style="font-size:9.0000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1.0000000;stroke:none;stroke-width:1.0000000pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1.0000000;font-family:Liberation Sans;text-anchor:start;writing-mode:lr-tb"
          x="406.03125"
          y="-409.69894"
          id="text242"
@@ -315,7 +315,7 @@
            y="-409.69894">1</svg:tspan></svg:text>
       <svg:text
          xml:space="preserve"
-         style="font-size:9.0000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1.0000000;stroke:none;stroke-width:1.0000000pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1.0000000;font-family:Bitstream Vera Sans;text-anchor:start;writing-mode:lr-tb"
+         style="font-size:9.0000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1.0000000;stroke:none;stroke-width:1.0000000pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1.0000000;font-family:Liberation Sans;text-anchor:start;writing-mode:lr-tb"
          x="406.33447"
          y="-77.095001"
          id="text245"

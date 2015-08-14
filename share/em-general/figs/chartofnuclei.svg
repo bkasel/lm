@@ -2049,26 +2049,26 @@
 		<rect x="431.097" y="32.377" style="fill:#DCDCDC;stroke:#000000;stroke-width:0.3;" width="2.63" height="2.63"/> 
 		<rect x="423.207" y="29.747" style="fill:#DCDCDC;stroke:#000000;stroke-width:0.3;" width="2.63" height="2.63"/> 
 		<g>
-			<text transform="matrix(1 0 0 1 118.4648 92.1455)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">nuclei that decay toward the</tspan></text>
-			<text transform="matrix(1 0 0 1 118.4648 104.1455)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">line of stability by</tspan></text>
-			<text transform="matrix(1 0 0 1 118.4648 116.1455)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">p </tspan></text>
+			<text transform="matrix(1 0 0 1 118.4648 92.1455)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">nuclei that decay toward the</tspan></text>
+			<text transform="matrix(1 0 0 1 118.4648 104.1455)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">line of stability by</tspan></text>
+			<text transform="matrix(1 0 0 1 118.4648 116.1455)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">p </tspan></text>
 			<text transform="matrix(1 0 0 1 126.8047 116.1455)"><tspan x="0" y="0" style="font-family:'Symbol'; font-size:10;">&#x2192;</tspan></text>
-			<text transform="matrix(1 0 0 1 136.6748 116.1455)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;"> n + e</tspan></text>
-			<text transform="matrix(1 0 0 1 161.9727 114.1455)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">+</tspan></text>
-			<text transform="matrix(1 0 0 1 167.8125 116.1455)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;"> + </tspan></text>
+			<text transform="matrix(1 0 0 1 136.6748 116.1455)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;"> n + e</tspan></text>
+			<text transform="matrix(1 0 0 1 161.9727 114.1455)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">+</tspan></text>
+			<text transform="matrix(1 0 0 1 167.8125 116.1455)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;"> + </tspan></text>
 			<text transform="matrix(1 0 0 1 179.209 116.1455)"><tspan x="0" y="0" style="font-family:'Symbol'; font-size:10;">&#x3BD;</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 438.894 10)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">nuclei that</tspan></text>
-			<text transform="matrix(1 0 0 1 447.7808 22)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">undergo</tspan></text>
-			<text transform="matrix(1 0 0 1 460.0073 34)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">alpha</tspan></text>
-			<text transform="matrix(1 0 0 1 457.7856 46)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">decay</tspan></text>
-			<text transform="matrix(1 0 0 1 444.4629 58)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">or fission</tspan></text>
+			<text transform="matrix(1 0 0 1 438.894 10)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">nuclei that</tspan></text>
+			<text transform="matrix(1 0 0 1 447.7808 22)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">undergo</tspan></text>
+			<text transform="matrix(1 0 0 1 460.0073 34)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">alpha</tspan></text>
+			<text transform="matrix(1 0 0 1 457.7856 46)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">decay</tspan></text>
+			<text transform="matrix(1 0 0 1 444.4629 58)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">or fission</tspan></text>
 		</g>
 		<line style="fill:none;" x1="486.802" y1="18.478" x2="486.802" y2="47.711"/>
 		<g>
 			<g>
-				<text transform="matrix(1 0 0 1 48.3022 328.0522)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">number of neutrons</tspan></text>
+				<text transform="matrix(1 0 0 1 48.3022 328.0522)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">number of neutrons</tspan></text>
 			</g>
 			<g>
 				<line style="fill:none;stroke:#000000;" x1="153.542" y1="324.264" x2="219.317" y2="324.264"/>
@@ -2078,7 +2078,7 @@
 		</g>
 		<g>
 			<g>
-				<text transform="matrix(0 -1 1 0 10 289.7705)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">number of protons</tspan></text>
+				<text transform="matrix(0 -1 1 0 10 289.7705)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">number of protons</tspan></text>
 			</g>
 			<g>
 				<line style="fill:none;stroke:#000000;" x1="6.211" y1="188.039" x2="6.211" y2="122.264"/>
@@ -2088,14 +2088,14 @@
 		</g>
 		<g>
 			<g>
-				<text transform="matrix(1 0 0 1 293.8809 213.2139)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">nuclei that</tspan></text>
-				<text transform="matrix(1 0 0 1 263.3169 225.2139)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">decay toward the</tspan></text>
-				<text transform="matrix(1 0 0 1 263.3291 237.2139)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">line of stability by</tspan></text>
-				<text transform="matrix(1 0 0 1 273.7856 249.2139)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">n </tspan></text>
+				<text transform="matrix(1 0 0 1 293.8809 213.2139)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">nuclei that</tspan></text>
+				<text transform="matrix(1 0 0 1 263.3169 225.2139)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">decay toward the</tspan></text>
+				<text transform="matrix(1 0 0 1 263.3291 237.2139)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">line of stability by</tspan></text>
+				<text transform="matrix(1 0 0 1 273.7856 249.2139)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">n </tspan></text>
 				<text transform="matrix(1 0 0 1 282.1255 249.2139)"><tspan x="0" y="0" style="font-family:'Symbol'; font-size:10;">&#x2192;</tspan></text>
-				<text transform="matrix(1 0 0 1 291.9956 249.2139)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;"> p + e</tspan></text>
-				<text transform="matrix(1 0 0 1 317.2935 247.2139)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">&#x2013;</tspan></text>
-				<text transform="matrix(1 0 0 1 322.855 249.2139)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;"> + </tspan></text>
+				<text transform="matrix(1 0 0 1 291.9956 249.2139)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;"> p + e</tspan></text>
+				<text transform="matrix(1 0 0 1 317.2935 247.2139)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">&#x2013;</tspan></text>
+				<text transform="matrix(1 0 0 1 322.855 249.2139)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;"> + </tspan></text>
 				<text transform="matrix(1 0 0 1 334.2515 249.2139)"><tspan x="0" y="0" style="font-family:'Symbol'; font-size:10;">&#x3BD;</tspan></text>
 			</g>
 			<line style="fill:none;stroke:#000000;" x1="334.598" y1="243.561" x2="338.932" y2="243.561"/>

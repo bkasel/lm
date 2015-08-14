@@ -79,13 +79,13 @@
 			<line style="fill:none;stroke:#000000;stroke-width:0.3;" x1="23.383" y1="43.102" x2="0.002" y2="42.779"/>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 112.3262 70.7148)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">a</tspan></text>
+			<text transform="matrix(1 0 0 1 112.3262 70.7148)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">a</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 111.813 93.4375)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">b</tspan></text>
+			<text transform="matrix(1 0 0 1 111.813 93.4375)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">b</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 85.2319 73.4243)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">c</tspan></text>
+			<text transform="matrix(1 0 0 1 85.2319 73.4243)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">c</tspan></text>
 		</g>
 		<path style="fill:none;stroke:#000000;" d="M111.392,3.145c-9.638,16.466-15.163,35.632-15.163,56.089
 			c0,20.795,5.709,40.257,15.645,56.904"/>

@@ -29,12 +29,12 @@
 			<polyline style="fill:none;stroke:#000000;stroke-miterlimit:1;" points="31.969,6.875 55,6.875 55,41.833 49.167,41.833 "/>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 22.8081 66.4692)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">R</tspan></text>
-			<text transform="matrix(1 0 0 1 29.3076 69.4692)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">1</tspan></text>
+			<text transform="matrix(1 0 0 1 22.8081 66.4692)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">R</tspan></text>
+			<text transform="matrix(1 0 0 1 29.3076 69.4692)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">1</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 22.8081 43.876)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">R</tspan></text>
-			<text transform="matrix(1 0 0 1 29.3076 46.876)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">2</tspan></text>
+			<text transform="matrix(1 0 0 1 22.8081 43.876)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">R</tspan></text>
+			<text transform="matrix(1 0 0 1 29.3076 46.876)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">2</tspan></text>
 		</g>
 		<line style="fill:none;" x1="60.433" y1="15.803" x2="60.433" y2="32.136"/>
 	</g>

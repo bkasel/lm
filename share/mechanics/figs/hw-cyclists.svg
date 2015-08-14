@@ -64,7 +64,7 @@
        id="text19"
        transform="translate(7.04,35.3799)"><tspan
          id="tspan21"
-         style="font-size:7.6500001px;font-family:Bitstream Vera Sans"
+         style="font-size:7.6500001px;font-family:Liberation Sans"
          y="0"
          x="0">20 m</tspan></text>
 </g><line
@@ -84,7 +84,7 @@
        id="text29"
        transform="translate(142.4014,97.1406)"><tspan
          id="tspan31"
-         style="font-size:7.6500001px;font-family:Bitstream Vera Sans"
+         style="font-size:7.6500001px;font-family:Liberation Sans"
          y="0"
          x="0">A</tspan></text>
 </g><g
@@ -92,7 +92,7 @@
        id="text35"
        transform="translate(147.2012,71.8604)"><tspan
          id="tspan37"
-         style="font-size:7.6500001px;font-family:Bitstream Vera Sans"
+         style="font-size:7.6500001px;font-family:Liberation Sans"
          y="0"
          x="0">B</tspan></text>
 </g><g
@@ -100,7 +100,7 @@
        id="text41"
        transform="translate(139.2012,32.1802)"><tspan
          id="tspan43"
-         style="font-size:7.6500001px;font-family:Bitstream Vera Sans"
+         style="font-size:7.6500001px;font-family:Liberation Sans"
          y="0"
          x="0">C</tspan></text>
 </g><g
@@ -119,14 +119,14 @@
        id="text53"
        transform="translate(0,88.8203)"><tspan
          id="tspan55"
-         style="font-size:7.6500001px;font-family:Bitstream Vera Sans"
+         style="font-size:7.6500001px;font-family:Liberation Sans"
          y="0"
          x="0">direction</tspan></text>
 <text
        id="text57"
        transform="translate(0,99.8203)"><tspan
          id="tspan59"
-         style="font-size:7.6500001px;font-family:Bitstream Vera Sans"
+         style="font-size:7.6500001px;font-family:Liberation Sans"
          y="0"
          x="0">of travel</tspan></text>
 </g><line

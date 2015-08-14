@@ -1709,7 +1709,7 @@
            id="text70"><svg:tspan
              x="0"
              y="0"
-             style="font-size:10.200000;font-family:Bitstream Vera Sans-Bold'"
+             style="font-size:10.200000;font-family:Liberation Sans-Bold'"
              id="tspan71">virus</svg:tspan></svg:text>
       </svg:g>
       <svg:rect
@@ -1737,7 +1737,7 @@
            id="text83"><svg:tspan
              x="0"
              y="0"
-             style="font-size:10.200000;fill:#ffffff;font-family:Bitstream Vera Sans-Bold'"
+             style="font-size:10.200000;fill:#ffffff;font-family:Liberation Sans-Bold'"
              id="tspan84">molecule</svg:tspan></svg:text>
       </svg:g>
       <svg:rect
@@ -1774,7 +1774,7 @@
              id="text98"><svg:tspan
                x="0"
                y="0"
-               style="font-size:10.200000;fill:#ffffff;font-family:Bitstream Vera Sans-Bold'"
+               style="font-size:10.200000;fill:#ffffff;font-family:Liberation Sans-Bold'"
                id="tspan99">quarks</svg:tspan></svg:text>
         </svg:g>
         <svg:path
@@ -1986,7 +1986,7 @@
            id="text193"><svg:tspan
              x="0"
              y="0"
-             style="font-size:20.400000;font-family:Bitstream Vera Sans-Bold'"
+             style="font-size:20.400000;font-family:Liberation Sans-Bold'"
              id="tspan194">?</svg:tspan></svg:text>
       </svg:g>
       <svg:rect
@@ -2020,7 +2020,7 @@
            id="text206"><svg:tspan
              x="0"
              y="0"
-             style="font-size:10.200000;fill:#ffffff;font-family:Bitstream Vera Sans-Bold'"
+             style="font-size:10.200000;fill:#ffffff;font-family:Liberation Sans-Bold'"
              id="tspan207">atom</svg:tspan></svg:text>
       </svg:g>
       <svg:radialGradient
@@ -2382,14 +2382,14 @@
            id="text361"><svg:tspan
              x="0"
              y="0"
-             style="font-size:10.200000;fill:#ffffff;font-family:Bitstream Vera Sans-Bold'"
+             style="font-size:10.200000;fill:#ffffff;font-family:Liberation Sans-Bold'"
              id="tspan362">neutrons</svg:tspan></svg:text>
         <svg:text
            transform="translate(64.10350,397.7834)"
            id="text365"><svg:tspan
              x="0"
              y="0"
-             style="font-size:10.200000;fill:#ffffff;font-family:Bitstream Vera Sans-Bold'"
+             style="font-size:10.200000;fill:#ffffff;font-family:Liberation Sans-Bold'"
              id="tspan366">and protons</svg:tspan></svg:text>
       </svg:g>
       <svg:radialGradient

@@ -35,16 +35,16 @@
 		<circle cx="73.196" cy="28.347" r="1.386"/> 
 		<circle cx="79.198" cy="25.478" r="1.386"/> 
 		<g>
-			<text transform="matrix(1 0 0 1 78.5195 22.3916)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">1</tspan></text>
+			<text transform="matrix(1 0 0 1 78.5195 22.3916)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">1</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 69.8394 37.2319)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">2</tspan></text>
+			<text transform="matrix(1 0 0 1 69.8394 37.2319)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">2</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 93.7798 38.772)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">3</tspan></text>
+			<text transform="matrix(1 0 0 1 93.7798 38.772)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">3</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 107.0796 74.8921)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">4</tspan></text>
+			<text transform="matrix(1 0 0 1 107.0796 74.8921)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">4</tspan></text>
 		</g>
 		<line style="fill:none;" x1="146.664" y1="36.736" x2="146.664" y2="55.986"/>
 	</g>

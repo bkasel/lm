@@ -31,19 +31,19 @@
 				C64.928,105.147,62.906,104.625,61.321,104.408z"/>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 111.9888 102.6587)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">A</tspan></text>
+			<text transform="matrix(1 0 0 1 111.9888 102.6587)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">A</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 119.9551 74.4434)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">B</tspan></text>
+			<text transform="matrix(1 0 0 1 119.9551 74.4434)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">B</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 114.0151 38.8032)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">C</tspan></text>
+			<text transform="matrix(1 0 0 1 114.0151 38.8032)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">C</tspan></text>
 		</g>
 		<line style="fill:none;stroke:#000000;" x1="11.44" y1="64.722" x2="39.195" y2="64.615"/>
 		<g>
-			<text transform="matrix(1 0 0 1 14.0249 51.8931)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">scale:</tspan></text>
-			<text transform="matrix(1 0 0 1 14.0249 62.8931)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">5 m/s</tspan></text>
-			<text transform="matrix(1 0 0 1 36.0283 61.8931)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:5.950000;">2</tspan></text>
+			<text transform="matrix(1 0 0 1 14.0249 51.8931)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">scale:</tspan></text>
+			<text transform="matrix(1 0 0 1 14.0249 62.8931)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">5 m/s</tspan></text>
+			<text transform="matrix(1 0 0 1 36.0283 61.8931)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:5.950000;">2</tspan></text>
 		</g>
 		<circle style="fill:#FFFFFF;stroke:#000000;" cx="105.27" cy="95.363" r="2.333"/> 
 		<circle style="fill:#FFFFFF;stroke:#000000;" cx="113.025" cy="69.8" r="2.333"/> 

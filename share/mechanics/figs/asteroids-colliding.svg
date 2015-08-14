@@ -29,12 +29,12 @@
 			<circle style="fill:#FFFFFF;stroke:#000000;stroke-width:0.5;" cx="16.673" cy="70.641" r="7.778"/> 
 			<g>
 				<g>
-					<text transform="matrix(1 0 0 1 13.3384 74.2407)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">A</tspan></text>
+					<text transform="matrix(1 0 0 1 13.3384 74.2407)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">A</tspan></text>
 				</g>
 			</g>
 			<g>
 				<g>
-					<text transform="matrix(1 0 0 1 70.5459 74.5405)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">B</tspan></text>
+					<text transform="matrix(1 0 0 1 70.5459 74.5405)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">B</tspan></text>
 				</g>
 			</g>
 		</g>

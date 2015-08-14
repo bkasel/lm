@@ -51,18 +51,18 @@
 		
 			<rect x="71.094" y="107.976" transform="matrix(0.2924 0.9563 -0.9563 0.2924 166.6656 7.2891)" style="fill:#FFFFFF;" width="14.626" height="16.576"/> 
 		<g>
-			<text transform="matrix(1 0 0 1 75.0798 121.1567)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">b</tspan></text>
+			<text transform="matrix(1 0 0 1 75.0798 121.1567)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">b</tspan></text>
 		</g>
 		<line style="fill:none;stroke:#000000;" x1="63.541" y1="64.599" x2="63.541" y2="71.839"/>
 		<line style="fill:none;stroke:#000000;" x1="59.921" y1="68.219" x2="67.162" y2="68.219"/>
 		<g>
-			<text transform="matrix(1 0 0 1 0 120.1816)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">Q</tspan></text>
+			<text transform="matrix(1 0 0 1 0 120.1816)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">Q</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 138.2957 87.3413)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">Q</tspan></text>
+			<text transform="matrix(1 0 0 1 138.2957 87.3413)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">Q</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 24.3767 10)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">Q</tspan></text>
+			<text transform="matrix(1 0 0 1 24.3767 10)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">Q</tspan></text>
 		</g>
 		<line style="fill:none;" x1="149.115" y1="56.505" x2="149.115" y2="109.505"/>
 	</g>

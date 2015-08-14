@@ -156,7 +156,7 @@
    id="text17"><tspan
      x="0"
      y="0"
-     style="font-family:Bitstream Vera Sans; font-size:7.650000;"
+     style="font-family:Liberation Sans; font-size:7.650000;"
      id="tspan19">S</tspan></text>
 
 
@@ -168,7 +168,7 @@
    id="text23"><tspan
      x="0"
      y="0"
-     style="font-family:Bitstream Vera Sans; font-size:7.650000;"
+     style="font-family:Liberation Sans; font-size:7.650000;"
      id="tspan25">N</tspan></text>
 
 
@@ -192,7 +192,7 @@
    id="text33"><tspan
      x="0"
      y="0"
-     style="font-family:Bitstream Vera Sans; font-size:10.200000;"
+     style="font-family:Liberation Sans; font-size:10.200000;"
      id="tspan35">x</tspan></text>
 
 
@@ -204,7 +204,7 @@
    id="text39"><tspan
      x="0"
      y="0"
-     style="font-family:Bitstream Vera Sans; font-size:10.200000;"
+     style="font-family:Liberation Sans; font-size:10.200000;"
      id="tspan41">y</tspan></text>
 
 
@@ -216,7 +216,7 @@
    id="text45"><tspan
      x="0"
      y="0"
-     style="font-family:Bitstream Vera Sans; font-size:10.200000;"
+     style="font-family:Liberation Sans; font-size:10.200000;"
      id="tspan47">z</tspan></text>
 
 
@@ -252,7 +252,7 @@
    id="text61"><tspan
      x="0"
      y="0"
-     style="font-family:Bitstream Vera Sans-Bold'; font-size:8.500000;"
+     style="font-family:Liberation Sans-Bold'; font-size:8.500000;"
      id="tspan63">B</tspan></text>
 
 
@@ -261,7 +261,7 @@
    id="text65"><tspan
      x="0"
      y="0"
-     style="font-family:Bitstream Vera Sans-Bold'; font-size:8.500000;"
+     style="font-family:Liberation Sans-Bold'; font-size:8.500000;"
      id="tspan67">B</tspan></text>
 
 
@@ -290,7 +290,7 @@
    id="text89"
    transform="translate(122.1450,21.05320)"><tspan
      id="tspan91"
-     style="font-size:7.6500001px;font-family:Bitstream Vera Sans"
+     style="font-size:7.6500001px;font-family:Liberation Sans"
      y="0"
      x="0">S</tspan></text>
 
@@ -302,7 +302,7 @@
    id="text95"
    transform="translate(122.3921,52.54250)"><tspan
      id="tspan97"
-     style="font-size:7.6500001px;font-family:Bitstream Vera Sans"
+     style="font-size:7.6500001px;font-family:Liberation Sans"
      y="0"
      x="0">N</tspan></text>
 
@@ -325,7 +325,7 @@
    id="text105"
    transform="translate(44.66700,44.33350)"><tspan
      id="tspan107"
-     style="font-size:10.200000px;font-family:Bitstream Vera Sans"
+     style="font-size:10.200000px;font-family:Liberation Sans"
      y="0"
      x="0">x</tspan></text>
 
@@ -337,7 +337,7 @@
    id="text111"
    transform="translate(14.00000,11.99950)"><tspan
      id="tspan113"
-     style="font-size:10.200000px;font-family:Bitstream Vera Sans"
+     style="font-size:10.200000px;font-family:Liberation Sans"
      y="0"
      x="0">y</tspan></text>
 
@@ -349,7 +349,7 @@
    id="text117"
    transform="translate(0.000000,54.33350)"><tspan
      id="tspan119"
-     style="font-size:10.200000px;font-family:Bitstream Vera Sans"
+     style="font-size:10.200000px;font-family:Liberation Sans"
      y="0"
      x="0">z</tspan></text>
 
@@ -385,7 +385,7 @@
    x="92.728447"
    y="88.377052"><tspan
      id="tspan135"
-     style="font-size:8.5000000px;font-family:Bitstream Vera Sans-Bold'"
+     style="font-size:8.5000000px;font-family:Liberation Sans-Bold'"
      y="88.377052"
      x="92.728447">B</tspan></text>
 
@@ -420,7 +420,7 @@
    x="76.395447"
    y="139.6895"><tspan
      id="tspan151"
-     style="font-size:8.5000000px;font-family:Bitstream Vera Sans-Bold'"
+     style="font-size:8.5000000px;font-family:Liberation Sans-Bold'"
      y="139.6895"
      x="76.395447">E</tspan></text>
 
@@ -433,7 +433,7 @@
    x="59.381748"
    y="133.9561"><tspan
      id="tspan168"
-     style="font-size:8.5000000px;font-family:Bitstream Vera Sans-Bold'"
+     style="font-size:8.5000000px;font-family:Liberation Sans-Bold'"
      y="133.9561"
      x="59.381748">E</tspan></text>
 
@@ -442,7 +442,7 @@
    x="70.715248"
    y="100.9561"><tspan
      id="tspan172"
-     style="font-size:8.5000000px;font-family:Bitstream Vera Sans-Bold'"
+     style="font-size:8.5000000px;font-family:Liberation Sans-Bold'"
      y="100.9561"
      x="70.715248">B</tspan></text>
 

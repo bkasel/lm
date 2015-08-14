@@ -23,29 +23,29 @@
 		<g>
 			<circle style="fill:#FFFFFF;stroke:#000000;" cx="77.221" cy="33.167" r="6.364"/> 
 			<g>
-				<text transform="matrix(1 0 0 1 72.2209 35.5085)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">&#x2013;e</tspan></text>
+				<text transform="matrix(1 0 0 1 72.2209 35.5085)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">&#x2013;e</tspan></text>
 			</g>
 		</g>
 		<g>
 			<circle style="fill:#FFFFFF;stroke:#000000;" cx="35.009" cy="19.246" r="6.364"/> 
 			<g>
-				<text transform="matrix(1 0 0 1 30.009 21.5867)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">&#x2013;e</tspan></text>
+				<text transform="matrix(1 0 0 1 30.009 21.5867)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">&#x2013;e</tspan></text>
 			</g>
 		</g>
 		<g>
 			<circle style="fill:#FFFFFF;stroke:#000000;" cx="25.405" cy="49.058" r="6.364"/> 
 			<g>
-				<text transform="matrix(1 0 0 1 20.4048 51.3992)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">&#x2013;e</tspan></text>
+				<text transform="matrix(1 0 0 1 20.4048 51.3992)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">&#x2013;e</tspan></text>
 			</g>
 		</g>
 		<g>
 			<circle style="fill:#FFFFFF;stroke:#000000;" cx="52.405" cy="81.954" r="6.364"/> 
 			<g>
-				<text transform="matrix(1 0 0 1 47.4048 84.2952)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">&#x2013;e</tspan></text>
+				<text transform="matrix(1 0 0 1 47.4048 84.2952)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">&#x2013;e</tspan></text>
 			</g>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 75.6995 70.2)"><tspan x="0" y="0" style="fill:#FFFFFF; font-family:Bitstream Vera Sans; font-size:8.500000;">+4e</tspan></text>
+			<text transform="matrix(1 0 0 1 75.6995 70.2)"><tspan x="0" y="0" style="fill:#FFFFFF; font-family:Liberation Sans; font-size:8.500000;">+4e</tspan></text>
 		</g>
 	</g>
 </svg>

@@ -346,14 +346,14 @@
 		<polygon style="fill:#DCDCDC;stroke:#000000;stroke-width:3;" points="110.062,8.041 110.062,8.042 110.117,8.042 110.117,23.833 
 			130.38,23.833 130.38,1.5 95.714,1.5 95.714,8.041 "/>
 		<g>
-			<text transform="matrix(1 0 0 1 114.4268 17.1421)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans-Bold'; font-size:8.500000;">T</tspan></text>
-			<text transform="matrix(1 0 0 1 120.5352 18.1421)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans-Bold'; font-size:7.650000;">H</tspan></text>
+			<text transform="matrix(1 0 0 1 114.4268 17.1421)"><tspan x="0" y="0" style="font-family:Liberation Sans-Bold'; font-size:8.500000;">T</tspan></text>
+			<text transform="matrix(1 0 0 1 120.5352 18.1421)"><tspan x="0" y="0" style="font-family:Liberation Sans-Bold'; font-size:7.650000;">H</tspan></text>
 		</g>
 		<polygon style="fill:#7F7F7F;stroke:#000000;stroke-width:3;" points="103.603,49.357 103.603,49.357 103.657,49.357 
 			103.657,33.565 123.921,33.565 123.921,55.898 89.254,55.898 89.254,49.357 "/>
 		<g>
-			<text transform="matrix(1 0 0 1 108.2168 47.7344)"><tspan x="0" y="0" style="fill:#FFFFFF; font-family:Bitstream Vera Sans-Bold'; font-size:8.500000;">T</tspan></text>
-			<text transform="matrix(1 0 0 1 114.3252 48.7344)"><tspan x="0" y="0" style="fill:#FFFFFF; font-family:Bitstream Vera Sans-Bold'; font-size:7.650000;">L</tspan></text>
+			<text transform="matrix(1 0 0 1 108.2168 47.7344)"><tspan x="0" y="0" style="fill:#FFFFFF; font-family:Liberation Sans-Bold'; font-size:8.500000;">T</tspan></text>
+			<text transform="matrix(1 0 0 1 114.3252 48.7344)"><tspan x="0" y="0" style="fill:#FFFFFF; font-family:Liberation Sans-Bold'; font-size:7.650000;">L</tspan></text>
 		</g>
 		<line style="fill:none;stroke:#000000;stroke-width:0.5;" x1="82.289" y1="40.905" x2="82.289" y2="24.533"/>
 		<g>

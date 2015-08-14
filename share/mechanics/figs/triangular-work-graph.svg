@@ -25,12 +25,12 @@
 			</g>
 			<g>
 				<g>
-					<text transform="matrix(1 0 0 1 9.3467 11)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:9.350000;">F</tspan></text>
+					<text transform="matrix(1 0 0 1 9.3467 11)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:9.350000;">F</tspan></text>
 				</g>
 			</g>
 			<g>
 				<g>
-					<text transform="matrix(1 0 0 1 111.1802 67)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:9.350000;">x</tspan></text>
+					<text transform="matrix(1 0 0 1 111.1802 67)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:9.350000;">x</tspan></text>
 				</g>
 			</g>
 			<line style="fill:none;stroke:#000000;stroke-width:1.5;" x1="21.523" y1="39.134" x2="110.323" y2="101.535"/>
@@ -44,26 +44,26 @@
 			</g>
 			<g>
 				<g>
-					<text transform="matrix(1 0 0 1 71.5137 56.6665)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">x-x</tspan></text>
+					<text transform="matrix(1 0 0 1 71.5137 56.6665)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">x-x</tspan></text>
 				</g>
 				<g>
-					<text transform="matrix(1 0 0 1 83.5083 59.6665)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:5.950000;">o</tspan></text>
-				</g>
-			</g>
-			<g>
-				<g>
-					<text transform="matrix(1 0 0 1 108.4927 82)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">k(x-x</tspan></text>
-				</g>
-				<g>
-					<text transform="matrix(1 0 0 1 127.9824 85)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:5.950000;">o</tspan></text>
-				</g>
-				<g>
-					<text transform="matrix(1 0 0 1 131.8735 82)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">)</tspan></text>
+					<text transform="matrix(1 0 0 1 83.5083 59.6665)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:5.950000;">o</tspan></text>
 				</g>
 			</g>
 			<g>
 				<g>
-					<text transform="matrix(1 0 0 1 19.8467 119)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">area = work performed</tspan></text>
+					<text transform="matrix(1 0 0 1 108.4927 82)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">k(x-x</tspan></text>
+				</g>
+				<g>
+					<text transform="matrix(1 0 0 1 127.9824 85)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:5.950000;">o</tspan></text>
+				</g>
+				<g>
+					<text transform="matrix(1 0 0 1 131.8735 82)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">)</tspan></text>
+				</g>
+			</g>
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 19.8467 119)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">area = work performed</tspan></text>
 				</g>
 			</g>
 			<path style="fill:none;stroke:#000000;stroke-width:0.5;" d="M61.91,108.685c-0.667-19.667,20.667-25.333,21-32.667"/>

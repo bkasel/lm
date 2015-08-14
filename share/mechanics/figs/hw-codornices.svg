@@ -112,11 +112,11 @@
 				"/>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 101.8276 10)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">a</tspan></text>
+			<text transform="matrix(1 0 0 1 101.8276 10)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">a</tspan></text>
 		</g>
 		<rect x="82.952" y="23.628" style="fill:#FFFFFF;" width="9.999" height="10.249"/> 
 		<g>
-			<text transform="matrix(1 0 0 1 85.5776 31.75)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">b</tspan></text>
+			<text transform="matrix(1 0 0 1 85.5776 31.75)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">b</tspan></text>
 		</g>
 		<rect y="38.812" style="fill:none;" width="147.401" height="2.834"/> 
 	</g>

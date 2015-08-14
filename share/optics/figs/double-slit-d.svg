@@ -92,7 +92,7 @@
 		<line style="fill:none;stroke:#000000;stroke-width:0.5;" x1="60.716" y1="88.325" x2="60.716" y2="94.825"/>
 		<line style="fill:none;stroke:#000000;stroke-width:0.5;" x1="86.966" y1="88.325" x2="86.966" y2="94.825"/>
 		<g>
-			<text transform="matrix(1 0 0 1 71.2158 100.7417)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">d</tspan></text>
+			<text transform="matrix(1 0 0 1 71.2158 100.7417)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">d</tspan></text>
 		</g>
 		<path style="fill:none;stroke:#FFFFFF;" d="M59.877,82.926c0.613-0.555,1.368-0.373,1.754,0.093"/>
 		<path style="fill:none;stroke:#FFFFFF;" d="M85.904,83.219c0.609-0.57,1.365-0.406,1.754,0.05"/>
@@ -100,7 +100,7 @@
 		<line style="fill:none;stroke:#000000;stroke-width:0.5;" x1="67.254" y1="192.454" x2="67.254" y2="198.954"/>
 		<line style="fill:none;stroke:#000000;stroke-width:0.5;" x1="81.587" y1="192.454" x2="81.587" y2="198.954"/>
 		<g>
-			<text transform="matrix(1 0 0 1 71.7993 204.8701)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">d</tspan></text>
+			<text transform="matrix(1 0 0 1 71.7993 204.8701)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">d</tspan></text>
 		</g>
 		<g>
 			<g>
@@ -189,32 +189,32 @@
 		<line style="stroke:#000000;stroke-width:0.5;" x1="81.033" y1="18.004" x2="76.267" y2="63.288"/>
 		<line style="stroke:#000000;stroke-width:0.5;" x1="89.254" y1="18.333" x2="79.188" y2="65.994"/>
 		<g>
-			<text transform="matrix(1 0 0 1 57.9209 13.6665)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">m=0</tspan></text>
+			<text transform="matrix(1 0 0 1 57.9209 13.6665)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">m=0</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 88.2539 13.6665)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">1</tspan></text>
+			<text transform="matrix(1 0 0 1 88.2539 13.6665)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">1</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 80.4756 8)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:6.800000;">1</tspan></text>
+			<text transform="matrix(1 0 0 1 80.4756 8)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:6.800000;">1</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 80.5874 16)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:6.800000;">2</tspan></text>
+			<text transform="matrix(1 0 0 1 80.5874 16)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:6.800000;">2</tspan></text>
 		</g>
 		<line style="fill:none;stroke:#000000;stroke-width:0.5;" x1="78.699" y1="9.333" x2="86.699" y2="9.333"/>
 		<line style="stroke:#000000;stroke-width:0.5;" x1="74.629" y1="167.354" x2="74.629" y2="122.688"/>
 		<line style="stroke:#000000;stroke-width:0.5;" x1="89.245" y1="122.357" x2="79.18" y2="170.018"/>
 		<line style="stroke:#000000;stroke-width:0.5;" x1="103.624" y1="128.547" x2="81.926" y2="172.161"/>
 		<g>
-			<text transform="matrix(1 0 0 1 58.7524 118.2129)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">m=0</tspan></text>
+			<text transform="matrix(1 0 0 1 58.7524 118.2129)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">m=0</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 103.4194 122.5464)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">1</tspan></text>
+			<text transform="matrix(1 0 0 1 103.4194 122.5464)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">1</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 87.6406 110.8799)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:6.800000;">1</tspan></text>
+			<text transform="matrix(1 0 0 1 87.6406 110.8799)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:6.800000;">1</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 87.7524 118.8799)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:6.800000;">2</tspan></text>
+			<text transform="matrix(1 0 0 1 87.7524 118.8799)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:6.800000;">2</tspan></text>
 		</g>
 		<line style="fill:none;stroke:#000000;stroke-width:0.5;" x1="85.864" y1="112.213" x2="93.864" y2="112.213"/>
 		<g>

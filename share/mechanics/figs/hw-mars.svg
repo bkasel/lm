@@ -17,13 +17,13 @@
 		<circle style="fill:#FFFFFF;stroke:#000000;" cx="57.366" cy="57.366" r="0.636"/> 
 		<path style="fill:none;stroke:#000000;" d="M20.047,58.137c0-60.967,94.064-60.727,94.064-0.48"/>
 		<g>
-			<text transform="matrix(1 0 0 1 33.6663 84.5908)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">Earth&apos;s orbit</tspan></text>
+			<text transform="matrix(1 0 0 1 33.6663 84.5908)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">Earth&apos;s orbit</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 63.7158 126.4912)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">Mars&apos; orbit</tspan></text>
+			<text transform="matrix(1 0 0 1 63.7158 126.4912)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">Mars&apos; orbit</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 43.791 11.2412)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">your orbit</tspan></text>
+			<text transform="matrix(1 0 0 1 43.791 11.2412)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">your orbit</tspan></text>
 		</g>
 	</g>
 </svg>

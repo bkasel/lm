@@ -21,10 +21,10 @@
 		<circle style="fill:none;stroke:#000000;" cx="55.654" cy="69.125" r="37.123"/> 
 		<circle style="fill:none;stroke:#000000;" cx="55.654" cy="69.125" r="55.154"/> 
 		<g>
-			<text transform="matrix(1 0 0 1 12.6543 10)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">orbiting electrons</tspan></text>
+			<text transform="matrix(1 0 0 1 12.6543 10)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">orbiting electrons</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 86.1543 133)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">nucleus</tspan></text>
+			<text transform="matrix(1 0 0 1 86.1543 133)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">nucleus</tspan></text>
 		</g>
 		<g>
 			<path style="fill:none;stroke:#000000;stroke-width:0.5;" d="M84.154,129c-47.5-39.5-6-25-25.5-55.5"/>

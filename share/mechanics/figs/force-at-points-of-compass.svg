@@ -21,7 +21,7 @@
 			</g>
 			<g>
 				<g>
-					<text transform="matrix(1 0 0 1 100 33.0264)"><tspan x="0" y="0" style="fill:#FFFFFF; font-family:Bitstream Vera Sans-Bold'; font-size:7.650000;">motion</tspan></text>
+					<text transform="matrix(1 0 0 1 100 33.0264)"><tspan x="0" y="0" style="fill:#FFFFFF; font-family:Liberation Sans-Bold'; font-size:7.650000;">motion</tspan></text>
 				</g>
 			</g>
 			<g>
@@ -50,27 +50,27 @@
 			</g>
 			<g>
 				<g>
-					<text transform="matrix(1 0 0 1 62.5 95.0264)"><tspan x="0" y="0" style="fill:#FFFFFF; font-family:Bitstream Vera Sans-Bold'; font-size:7.650000;">force</tspan></text>
+					<text transform="matrix(1 0 0 1 62.5 95.0264)"><tspan x="0" y="0" style="fill:#FFFFFF; font-family:Liberation Sans-Bold'; font-size:7.650000;">force</tspan></text>
 				</g>
 			</g>
 			<g>
 				<g>
-					<text transform="matrix(1 0 0 1 63.6865 39.0264)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">W&gt;0</tspan></text>
+					<text transform="matrix(1 0 0 1 63.6865 39.0264)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">W&gt;0</tspan></text>
 				</g>
 			</g>
 			<g>
 				<g>
-					<text transform="matrix(1 0 0 1 63.6865 151.7661)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">W&lt;0</tspan></text>
+					<text transform="matrix(1 0 0 1 63.6865 151.7661)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">W&lt;0</tspan></text>
 				</g>
 			</g>
 			<g>
 				<g>
-					<text transform="matrix(1 0 0 1 124.5 95.0264)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">W=0</tspan></text>
+					<text transform="matrix(1 0 0 1 124.5 95.0264)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">W=0</tspan></text>
 				</g>
 			</g>
 			<g>
 				<g>
-					<text transform="matrix(1 0 0 1 2.5 94.5264)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">W=0</tspan></text>
+					<text transform="matrix(1 0 0 1 2.5 94.5264)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">W=0</tspan></text>
 				</g>
 			</g>
 		</g>

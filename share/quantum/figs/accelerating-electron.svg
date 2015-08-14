@@ -371,44 +371,44 @@
 			</g>
 			<g>
 				<g>
-					<text transform="matrix(1 0 0 1 1.1562 128.3198)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">high PE</tspan></text>
+					<text transform="matrix(1 0 0 1 1.1562 128.3198)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">high PE</tspan></text>
 				</g>
 				<g>
-					<text transform="matrix(1 0 0 1 1.1562 139.3198)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">low KE</tspan></text>
+					<text transform="matrix(1 0 0 1 1.1562 139.3198)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">low KE</tspan></text>
 				</g>
 				<g>
-					<text transform="matrix(1 0 0 1 1.1562 150.3198)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">low momentum</tspan></text>
+					<text transform="matrix(1 0 0 1 1.1562 150.3198)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">low momentum</tspan></text>
 				</g>
 				<g>
-					<text transform="matrix(1 0 0 1 1.1562 161.3198)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">long wavelength</tspan></text>
+					<text transform="matrix(1 0 0 1 1.1562 161.3198)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">long wavelength</tspan></text>
 				</g>
 				<g>
-					<text transform="matrix(1 0 0 1 1.1562 172.3198)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">weak curvature</tspan></text>
-				</g>
-			</g>
-			<g>
-				<g>
-					<text transform="matrix(1 0 0 1 119.397 128.3198)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">low PE</tspan></text>
-				</g>
-				<g>
-					<text transform="matrix(1 0 0 1 115.8877 139.3198)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">high KE</tspan></text>
-				</g>
-				<g>
-					<text transform="matrix(1 0 0 1 82.896 150.3198)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">high momentum</tspan></text>
-				</g>
-				<g>
-					<text transform="matrix(1 0 0 1 79.3848 161.3198)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">short wavelength</tspan></text>
-				</g>
-				<g>
-					<text transform="matrix(1 0 0 1 82.3926 172.3198)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">strong curvature</tspan></text>
+					<text transform="matrix(1 0 0 1 1.1562 172.3198)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">weak curvature</tspan></text>
 				</g>
 			</g>
 			<g>
 				<g>
-					<text transform="matrix(1 0 0 1 41.0381 9)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">direction of motion</tspan></text>
+					<text transform="matrix(1 0 0 1 119.397 128.3198)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">low PE</tspan></text>
 				</g>
 				<g>
-					<text transform="matrix(1 0 0 1 41.0381 20)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">(speeding up)</tspan></text>
+					<text transform="matrix(1 0 0 1 115.8877 139.3198)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">high KE</tspan></text>
+				</g>
+				<g>
+					<text transform="matrix(1 0 0 1 82.896 150.3198)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">high momentum</tspan></text>
+				</g>
+				<g>
+					<text transform="matrix(1 0 0 1 79.3848 161.3198)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">short wavelength</tspan></text>
+				</g>
+				<g>
+					<text transform="matrix(1 0 0 1 82.3926 172.3198)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">strong curvature</tspan></text>
+				</g>
+			</g>
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 41.0381 9)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">direction of motion</tspan></text>
+				</g>
+				<g>
+					<text transform="matrix(1 0 0 1 41.0381 20)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">(speeding up)</tspan></text>
 				</g>
 			</g>
 		</g>

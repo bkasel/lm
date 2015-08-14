@@ -29,7 +29,7 @@
 		<path style="fill:none;stroke:#000000;stroke-miterlimit:1;" d="M68.796,61.565c2.667-3.833,1.333-14.833,4.5-14.667
 			c3.167,0.167,5.667-3,5.667-3"/>
 		<g>
-			<text transform="matrix(1 0 0 1 19.5669 61.6899)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:10.200000;">*</tspan></text>
+			<text transform="matrix(1 0 0 1 19.5669 61.6899)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:10.200000;">*</tspan></text>
 		</g>
 	</g>
 </svg>

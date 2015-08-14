@@ -22,7 +22,7 @@
 		</g>
 		<g>
 			<g>
-				<text transform="matrix(0 -1 1 0 10 96.3516)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">maximum</tspan></text>
+				<text transform="matrix(0 -1 1 0 10 96.3516)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">maximum</tspan></text>
 			</g>
 		</g>
 		<line style="fill:none;stroke:#000000;" x1="21.403" y1="74.109" x2="74.718" y2="74.109"/>
@@ -35,10 +35,10 @@
 		</g>
 		<g>
 			<g>
-				<text transform="matrix(1 0 0 1 27.5439 88.624)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">half</tspan></text>
+				<text transform="matrix(1 0 0 1 27.5439 88.624)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">half</tspan></text>
 			</g>
 			<g>
-				<text transform="matrix(1 0 0 1 27.5439 100.624)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">max.</tspan></text>
+				<text transform="matrix(1 0 0 1 27.5439 100.624)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">max.</tspan></text>
 			</g>
 		</g>
 		<line style="fill:none;stroke:#000000;" x1="76.672" y1="71.876" x2="76.672" y2="26.097"/>
@@ -51,10 +51,10 @@
 		</g>
 		<g>
 			<g>
-				<text transform="matrix(1 0 0 1 60.668 10)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">full width at half</tspan></text>
+				<text transform="matrix(1 0 0 1 60.668 10)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">full width at half</tspan></text>
 			</g>
 			<g>
-				<text transform="matrix(1 0 0 1 60.668 22)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">maximum (FWHM)</tspan></text>
+				<text transform="matrix(1 0 0 1 60.668 22)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">maximum (FWHM)</tspan></text>
 			</g>
 		</g>
 		<path style="fill:#EDEDED;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-miterlimit:1;" d="M49.528,109.709

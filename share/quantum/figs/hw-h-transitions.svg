@@ -22,22 +22,22 @@
 			<line style="fill:none;stroke:#000000;stroke-width:0.5;" x1="41.959" y1="139.091" x2="120.204" y2="139.091"/>
 			<g>
 				<g>
-					<text transform="matrix(1 0 0 1 25.2822 142.3586)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">n=1</tspan></text>
+					<text transform="matrix(1 0 0 1 25.2822 142.3586)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">n=1</tspan></text>
 				</g>
 			</g>
 			<g>
 				<g>
-					<text transform="matrix(1 0 0 1 25.2822 36.0984)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">n=2</tspan></text>
+					<text transform="matrix(1 0 0 1 25.2822 36.0984)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">n=2</tspan></text>
 				</g>
 			</g>
 			<g>
 				<g>
-					<text transform="matrix(1 0 0 1 25.2822 17.0984)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">n=3</tspan></text>
+					<text transform="matrix(1 0 0 1 25.2822 17.0984)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">n=3</tspan></text>
 				</g>
 			</g>
 			<g>
 				<g>
-					<text transform="matrix(1 0 0 1 25.2822 10.0984)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">n=4</tspan></text>
+					<text transform="matrix(1 0 0 1 25.2822 10.0984)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">n=4</tspan></text>
 				</g>
 			</g>
 			<g>
@@ -82,42 +82,42 @@
 			</g>
 			<g>
 				<g>
-					<text transform="matrix(1 0 0 1 46.6221 148.0251)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">A</tspan></text>
+					<text transform="matrix(1 0 0 1 46.6221 148.0251)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">A</tspan></text>
 				</g>
 			</g>
 			<g>
 				<g>
-					<text transform="matrix(1 0 0 1 56.2456 148.0251)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">B</tspan></text>
+					<text transform="matrix(1 0 0 1 56.2456 148.0251)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">B</tspan></text>
 				</g>
 			</g>
 			<g>
 				<g>
-					<text transform="matrix(1 0 0 1 65.6221 148.0251)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">C</tspan></text>
+					<text transform="matrix(1 0 0 1 65.6221 148.0251)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">C</tspan></text>
 				</g>
 			</g>
 			<g>
 				<g>
-					<text transform="matrix(1 0 0 1 76.1221 42.1917)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">D</tspan></text>
+					<text transform="matrix(1 0 0 1 76.1221 42.1917)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">D</tspan></text>
 				</g>
 			</g>
 			<g>
 				<g>
-					<text transform="matrix(1 0 0 1 86.3691 42.1917)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">E</tspan></text>
+					<text transform="matrix(1 0 0 1 86.3691 42.1917)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">E</tspan></text>
 				</g>
 			</g>
 			<g>
 				<g>
-					<text transform="matrix(1 0 0 1 96.6221 42.1917)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">F</tspan></text>
+					<text transform="matrix(1 0 0 1 96.6221 42.1917)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">F</tspan></text>
 				</g>
 			</g>
 			<g>
 				<g>
-					<text transform="matrix(1 0 0 1 105.6221 21.3586)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">G</tspan></text>
+					<text transform="matrix(1 0 0 1 105.6221 21.3586)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">G</tspan></text>
 				</g>
 			</g>
 			<g>
 				<g>
-					<text transform="matrix(1 0 0 1 115.6221 21.3586)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">H</tspan></text>
+					<text transform="matrix(1 0 0 1 115.6221 21.3586)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">H</tspan></text>
 				</g>
 			</g>
 		</g>

@@ -72,7 +72,7 @@
 		<ellipse style="fill:#FFFFFF;stroke:#000000;" cx="167.161" cy="67.199" rx="1.976" ry="2.546"/> 
 		<g>
 			<g>
-				<text transform="matrix(1 0 0 1 168.6738 78.6309)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">P</tspan></text>
+				<text transform="matrix(1 0 0 1 168.6738 78.6309)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">P</tspan></text>
 			</g>
 		</g>
 		<rect y="10.818" style="fill:none;" width="320.315" height="2.834"/> 

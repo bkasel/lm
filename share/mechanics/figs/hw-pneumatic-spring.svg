@@ -16,10 +16,10 @@
 			83.167,143.167 0.5,143.167 0.5,0.5 "/>
 		<rect x="10.333" y="7.667" style="fill:#B4B4B4;" width="63" height="85.5"/> 
 		<g>
-			<text transform="matrix(1 0 0 1 47.8335 119.4167)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">air</tspan></text>
+			<text transform="matrix(1 0 0 1 47.8335 119.4167)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">air</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 21.4585 117.9998)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">x</tspan></text>
+			<text transform="matrix(1 0 0 1 21.4585 117.9998)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">x</tspan></text>
 		</g>
 		<g>
 			<line style="fill:none;stroke:#000000;stroke-width:0.5;" x1="16.396" y1="131.5" x2="16.396" y2="97.5"/>

@@ -296,13 +296,13 @@
 		<rect x="248.205" y="265.246" style="fill:#FFFFFF;" width="19.278" height="16.524"/> 
 		<rect x="5.394" y="571.857" style="fill:#FFFFFF;" width="19.278" height="16.524"/> 
 		<g>
-			<text transform="matrix(1 0 0 1 13.6562 277.1797)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">1</tspan></text>
+			<text transform="matrix(1 0 0 1 13.6562 277.1797)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">1</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 255.0896 277.1797)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">2</tspan></text>
+			<text transform="matrix(1 0 0 1 255.0896 277.1797)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">2</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 14.5742 583.7905)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">3</tspan></text>
+			<text transform="matrix(1 0 0 1 14.5742 583.7905)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">3</tspan></text>
 		</g>
 	</g>
 </svg>

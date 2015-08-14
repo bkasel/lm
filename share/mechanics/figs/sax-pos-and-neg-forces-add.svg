@@ -44,16 +44,16 @@
 				z"/>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 100.2271 16.3984)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">+8 N</tspan></text>
+			<text transform="matrix(1 0 0 1 100.2271 16.3984)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">+8 N</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 80.0347 39.1177)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">+4 N</tspan></text>
+			<text transform="matrix(1 0 0 1 80.0347 39.1177)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">+4 N</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 65.4595 69.8027)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">+2 N</tspan></text>
+			<text transform="matrix(1 0 0 1 65.4595 69.8027)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">+2 N</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 0 26.6987)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">-3 N</tspan></text>
+			<text transform="matrix(1 0 0 1 0 26.6987)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">-3 N</tspan></text>
 		</g>
 	</g>
 </svg>

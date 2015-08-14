@@ -191,6 +191,16 @@ angle, but for the sake of this estimate just consider the case of a flea jumpin
 
 <% begin_hw('high-speed-chase') %>__incl(hw/high-speed-chase)<% end_hw() %>
 
+<% begin_hw('easy-area-under-v-t') %>__incl(hw/easy-area-under-v-t)<% end_hw() %>
+<% marg(50) %>
+<%
+  fig(
+    'hw-easy-area-under-v-t',
+    %q{Problem \ref{hw:easy-area-under-v-t}.}
+  )
+%>
+<% end_marg %>
+
 
 \label{end-of-accel-chapter-hw} % needed so that problems 2, 3, and 4 can refer to the page on which I give blank graphs
 

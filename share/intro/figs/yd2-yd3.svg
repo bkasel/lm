@@ -15,24 +15,24 @@
 		<g>
 			<line style="fill:none;stroke:#000000;" x1="0" y1="71.47" x2="14.28" y2="71.47"/>
 			<g>
-				<text transform="matrix(1 0 0 1 0.9985 66.519)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">1 ft</tspan></text>
+				<text transform="matrix(1 0 0 1 0.9985 66.519)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">1 ft</tspan></text>
 			</g>
 			<line style="stroke:#000000;" x1="27.566" y1="71.789" x2="72.787" y2="71.789"/>
 			<g>
-				<text transform="matrix(1 0 0 1 28.7563 67.1992)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">1 yd = 3 ft</tspan></text>
+				<text transform="matrix(1 0 0 1 28.7563 67.1992)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">1 yd = 3 ft</tspan></text>
 			</g>
 		</g>
 		<g>
 			<rect x="99.217" y="68.785" style="fill:none;stroke:#000000;" width="15.3" height="15.3"/> 
 			<g>
-				<text transform="matrix(1 0 0 1 97.772 95.4751)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">1 ft</tspan></text>
-				<text transform="matrix(1 0 0 1 111.6685 94.4751)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">2</tspan></text>
+				<text transform="matrix(1 0 0 1 97.772 95.4751)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">1 ft</tspan></text>
+				<text transform="matrix(1 0 0 1 111.6685 94.4751)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">2</tspan></text>
 			</g>
 			<g>
-				<text transform="matrix(1 0 0 1 151.79 95.4751)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">1 yd</tspan></text>
-				<text transform="matrix(1 0 0 1 170.6914 94.4751)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">2</tspan></text>
-				<text transform="matrix(1 0 0 1 176.2529 95.4751)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;"> = 9 ft</tspan></text>
-				<text transform="matrix(1 0 0 1 201.5459 94.4751)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">2</tspan></text>
+				<text transform="matrix(1 0 0 1 151.79 95.4751)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">1 yd</tspan></text>
+				<text transform="matrix(1 0 0 1 170.6914 94.4751)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">2</tspan></text>
+				<text transform="matrix(1 0 0 1 176.2529 95.4751)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;"> = 9 ft</tspan></text>
+				<text transform="matrix(1 0 0 1 201.5459 94.4751)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">2</tspan></text>
 			</g>
 			<g>
 				<rect x="152.98" y="38.184" style="fill:none;stroke:#000000;" width="15.3" height="15.3"/> 
@@ -175,13 +175,13 @@
 				<line style="fill:none;stroke:#000000;stroke-linejoin:round;" x1="239.295" y1="72.021" x2="254.596" y2="63.187"/>
 			</g>
 			<g>
-				<text transform="matrix(1 0 0 1 230.5288 98.9116)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">1 ft</tspan></text>
-				<text transform="matrix(1 0 0 1 244.4253 97.9116)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">3</tspan></text>
+				<text transform="matrix(1 0 0 1 230.5288 98.9116)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">1 ft</tspan></text>
+				<text transform="matrix(1 0 0 1 244.4253 97.9116)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">3</tspan></text>
 			</g>
 			<g>
-				<text transform="matrix(1 0 0 1 292.6938 114.4453)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">1 yd</tspan></text>
-				<text transform="matrix(1 0 0 1 311.5952 113.4453)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">3 = 27 ft</tspan></text>
-				<text transform="matrix(1 0 0 1 348.0112 111.4453)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">3</tspan></text>
+				<text transform="matrix(1 0 0 1 292.6938 114.4453)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">1 yd</tspan></text>
+				<text transform="matrix(1 0 0 1 311.5952 113.4453)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">3 = 27 ft</tspan></text>
+				<text transform="matrix(1 0 0 1 348.0112 111.4453)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">3</tspan></text>
 			</g>
 			
 				<linearGradient id="XMLID_8_" gradientUnits="userSpaceOnUse" x1="118.8164" y1="50.7388" x2="242.7911" y2="265.4745" gradientTransform="matrix(1 0 0 1 136.655 -110.2988)">

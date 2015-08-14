@@ -31,17 +31,17 @@
 		<polygon style="fill:#FFFF80;" points="66.755,13.43 64.545,11.48 66.755,11.48 "/>
 		<line style="fill:none;stroke:#000000;stroke-width:0.25;" x1="66.582" y1="13.43" x2="64.545" y2="11.48"/>
 		<g>
-			<text transform="matrix(1 0 0 1 0 118.333)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">Los</tspan></text>
-			<text transform="matrix(1 0 0 1 0 129.333)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">Angeles</tspan></text>
+			<text transform="matrix(1 0 0 1 0 118.333)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">Los</tspan></text>
+			<text transform="matrix(1 0 0 1 0 129.333)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">Angeles</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 98.6665 9)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">Las V</tspan></text>
-			<text transform="matrix(1 0 0 1 121.1855 9)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">egas</tspan></text>
+			<text transform="matrix(1 0 0 1 98.6665 9)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">Las V</tspan></text>
+			<text transform="matrix(1 0 0 1 121.1855 9)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">egas</tspan></text>
 		</g>
 		<polygon style="fill:#B4B4B4;" points="42.139,128.581 44.889,127.206 46.764,128.393 49.014,128.706 49.389,130.456 
 			49.326,131.018 43.656,131.171 41.826,128.768 "/>
 		<g>
-			<text transform="matrix(1 0 0 1 41.8262 140.6431)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">San Diego</tspan></text>
+			<text transform="matrix(1 0 0 1 41.8262 140.6431)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">San Diego</tspan></text>
 		</g>
 		<circle cx="43.656" cy="129.792" r="1.379"/> 
 		<g>

@@ -173,10 +173,10 @@
 			</radialGradient>
 			<circle style="fill:url(#XMLID_42_);" cx="77.572" cy="76.187" r="9.091"/> 
 			<g>
-				<text transform="matrix(-0.3091 0.951 -0.951 -0.3091 46.5989 61.7163)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:11.900000;">&#x2013;</tspan></text>
+				<text transform="matrix(-0.3091 0.951 -0.951 -0.3091 46.5989 61.7163)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:11.900000;">&#x2013;</tspan></text>
 			</g>
 			<g>
-				<text transform="matrix(-0.3091 0.951 -0.951 -0.3091 75.4241 71.228)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:11.900000;">+</tspan></text>
+				<text transform="matrix(-0.3091 0.951 -0.951 -0.3091 75.4241 71.228)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:11.900000;">+</tspan></text>
 			</g>
 		</g>
 	</g>

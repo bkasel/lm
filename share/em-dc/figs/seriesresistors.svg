@@ -273,14 +273,14 @@
      id="text35"><tspan
        x="0"
        y="0"
-       style="font-size:7.6500001px;font-family:Bitstream Vera Sans"
+       style="font-size:7.6500001px;font-family:Liberation Sans"
        id="tspan37">R</tspan></text>
 <text
      transform="translate(58.2856,12)"
      id="text39"><tspan
        x="0"
        y="0"
-       style="font-size:5.94999981px;font-family:Bitstream Vera Sans"
+       style="font-size:5.94999981px;font-family:Liberation Sans"
        id="tspan41">1</tspan></text>
 </g><g
    style="overflow:visible"
@@ -290,14 +290,14 @@
      id="text45"><tspan
        x="0"
        y="0"
-       style="font-size:7.6500001px;font-family:Bitstream Vera Sans"
+       style="font-size:7.6500001px;font-family:Liberation Sans"
        id="tspan47">R</tspan></text>
 <text
      transform="translate(94.4663,12)"
      id="text49"><tspan
        x="0"
        y="0"
-       style="font-size:5.94999981px;font-family:Bitstream Vera Sans"
+       style="font-size:5.94999981px;font-family:Liberation Sans"
        id="tspan51">2</tspan></text>
 </g><g
    style="overflow:visible"
@@ -307,7 +307,7 @@
      id="text69"><tspan
        x="0"
        y="0"
-       style="font-size:8.5px;font-family:Bitstream Vera Sans"
+       style="font-size:8.5px;font-family:Liberation Sans"
        id="tspan71">1</tspan></text>
 </g><g
    style="overflow:visible"
@@ -368,7 +368,7 @@
        id="text141"><tspan
          x="0"
          y="0"
-         style="font-size:8.5px;font-family:Bitstream Vera Sans"
+         style="font-size:8.5px;font-family:Liberation Sans"
          id="tspan143">2</tspan></text>
 </g></g><g
    style="overflow:visible"
@@ -746,7 +746,7 @@
      y="202.67737"
      id="text279"><tspan
        id="tspan281"
-       style="font-size:8.5px;font-family:Bitstream Vera Sans"
+       style="font-size:8.5px;font-family:Liberation Sans"
        y="202.67737"
        x="11.594717">4</tspan></text>
 </g><g
@@ -808,7 +808,7 @@
      id="text183"><tspan
        x="97.31337"
        y="60.484074"
-       style="font-size:8.89304256px;font-family:Bitstream Vera Sans"
+       style="font-size:8.89304256px;font-family:Liberation Sans"
        id="tspan185">battery</tspan></text>
 <g
      transform="matrix(1.494629,0,0,1.494629,-12.62063,-284.56)"
@@ -847,7 +847,7 @@
      id="text221"><tspan
        x="81.269264"
        y="-30.01531"
-       style="font-size:8.89304256px;font-family:Bitstream Vera Sans"
+       style="font-size:8.89304256px;font-family:Liberation Sans"
        id="tspan223">1</tspan></text>
 <g
      transform="translate(12.53324,-216.1542)"
@@ -855,7 +855,7 @@
        id="text189"
        transform="translate(0,179.7456)"><tspan
          id="tspan191"
-         style="font-size:8.5px;font-family:Bitstream Vera Sans"
+         style="font-size:8.5px;font-family:Liberation Sans"
          y="0"
          x="0">3</tspan></text>
 </g><text
@@ -876,7 +876,7 @@
      id="text221-4"><tspan
        x="128.31334"
        y="-30.01531"
-       style="font-size:8.89304256px;font-family:Bitstream Vera Sans"
+       style="font-size:8.89304256px;font-family:Liberation Sans"
        id="tspan223-8">2</tspan></text>
 <text
      sodipodi:linespacing="125%"
@@ -906,7 +906,7 @@
    y="-4.333684"
    style="font-size:17.93554878px;overflow:visible"><tspan
      id="tspan185-2"
-     style="font-size:8.89304256px;font-family:Bitstream Vera Sans"
+     style="font-size:8.89304256px;font-family:Liberation Sans"
      y="-4.333684"
      x="53.011673">battery</tspan></text>
 <text

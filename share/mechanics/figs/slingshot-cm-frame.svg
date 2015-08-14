@@ -48,18 +48,18 @@
 				C5.621,21.867,3.895,20.901,2.496,20.32z"/>
 			<g>
 				<g>
-					<text transform="matrix(1 0 0 1 11.7007 62.0156)"><tspan x="0" y="0" style="fill:#FFFFFF; font-family:Bitstream Vera Sans; font-size:7.650000;">v</tspan></text>
+					<text transform="matrix(1 0 0 1 11.7007 62.0156)"><tspan x="0" y="0" style="fill:#FFFFFF; font-family:Liberation Sans; font-size:7.650000;">v</tspan></text>
 				</g>
 				<g>
-					<text transform="matrix(1 0 0 1 16.2007 65.0156)"><tspan x="0" y="0" style="fill:#FFFFFF; font-family:Bitstream Vera Sans; font-size:5.950000;">1i</tspan></text>
+					<text transform="matrix(1 0 0 1 16.2007 65.0156)"><tspan x="0" y="0" style="fill:#FFFFFF; font-family:Liberation Sans; font-size:5.950000;">1i</tspan></text>
 				</g>
 			</g>
 			<g>
 				<g>
-					<text transform="matrix(1 0 0 1 78.7549 15.4756)"><tspan x="0" y="0" style="fill:#FFFFFF; font-family:Bitstream Vera Sans; font-size:7.650000;">v</tspan></text>
+					<text transform="matrix(1 0 0 1 78.7549 15.4756)"><tspan x="0" y="0" style="fill:#FFFFFF; font-family:Liberation Sans; font-size:7.650000;">v</tspan></text>
 				</g>
 				<g>
-					<text transform="matrix(1 0 0 1 83.2549 18.4756)"><tspan x="0" y="0" style="fill:#FFFFFF; font-family:Bitstream Vera Sans; font-size:5.950000;">1f</tspan></text>
+					<text transform="matrix(1 0 0 1 83.2549 18.4756)"><tspan x="0" y="0" style="fill:#FFFFFF; font-family:Liberation Sans; font-size:5.950000;">1f</tspan></text>
 				</g>
 			</g>
 			<line style="fill:none;stroke:#FFFFFF;" x1="25.388" y1="60.766" x2="80.888" y2="56.766"/>

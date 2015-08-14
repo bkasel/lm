@@ -93,17 +93,17 @@
 		<polygon style="fill:url(#XMLID_10_);stroke:#000000;" points="61.809,92.976 56.061,113.811 141.797,113.811 141.797,97.526 
 			137.726,97.526 137.726,106.387 85.997,106.387 81.007,93.016 "/>
 		<g>
-			<text transform="matrix(1 0 0 1 77.2197 59.6646)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">magnet</tspan></text>
+			<text transform="matrix(1 0 0 1 77.2197 59.6646)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">magnet</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 77.2197 75.7944)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">magnet</tspan></text>
+			<text transform="matrix(1 0 0 1 77.2197 75.7944)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">magnet</tspan></text>
 		</g>
 		<rect x="65.806" y="56.225" style="stroke:#000000;stroke-width:0.5;" width="9.524" height="4.37"/> 
 		<g>
-			<text transform="matrix(1 0 0 1 90.2217 20.6074)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">scale</tspan></text>
+			<text transform="matrix(1 0 0 1 90.2217 20.6074)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">scale</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 92.2744 101.0063)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">scale</tspan></text>
+			<text transform="matrix(1 0 0 1 92.2744 101.0063)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">scale</tspan></text>
 		</g>
 	</g>
 </svg>

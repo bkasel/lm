@@ -186,7 +186,7 @@
    id="text34"
    transform="translate(15.95800,223.4272)"><tspan
      id="tspan36"
-     style="font-size:7.6500001px;font-family:Bitstream Vera Sans"
+     style="font-size:7.6500001px;font-family:Liberation Sans"
      y="0"
      x="0">200</tspan></text>
 
@@ -199,7 +199,7 @@
    id="text40"
    transform="translate(39.42920,223.4272)"><tspan
      id="tspan42"
-     style="font-size:7.6500001px;font-family:Bitstream Vera Sans"
+     style="font-size:7.6500001px;font-family:Liberation Sans"
      y="0"
      x="0">400</tspan></text>
 
@@ -212,7 +212,7 @@
    id="text46"
    transform="translate(62.89990,223.4272)"><tspan
      id="tspan48"
-     style="font-size:7.6500001px;font-family:Bitstream Vera Sans"
+     style="font-size:7.6500001px;font-family:Liberation Sans"
      y="0"
      x="0">600</tspan></text>
 
@@ -225,7 +225,7 @@
    id="text52"
    transform="translate(86.37060,223.4272)"><tspan
      id="tspan54"
-     style="font-size:7.6500001px;font-family:Bitstream Vera Sans"
+     style="font-size:7.6500001px;font-family:Liberation Sans"
      y="0"
      x="0">800</tspan></text>
 
@@ -238,7 +238,7 @@
    id="text58"
    transform="translate(107.5083,223.4272)"><tspan
      id="tspan60"
-     style="font-size:7.6500001px;font-family:Bitstream Vera Sans"
+     style="font-size:7.6500001px;font-family:Liberation Sans"
      y="0"
      x="0">1000</tspan></text>
 
@@ -251,7 +251,7 @@
    id="text64"
    transform="translate(16.10790,9.000000)"><tspan
      id="tspan66"
-     style="font-size:7.6500001px;font-family:Bitstream Vera Sans"
+     style="font-size:7.6500001px;font-family:Liberation Sans"
      y="0"
      x="0">200</tspan></text>
 
@@ -264,7 +264,7 @@
    id="text70"
    transform="translate(39.57860,9.000000)"><tspan
      id="tspan72"
-     style="font-size:7.6500001px;font-family:Bitstream Vera Sans"
+     style="font-size:7.6500001px;font-family:Liberation Sans"
      y="0"
      x="0">400</tspan></text>
 
@@ -277,7 +277,7 @@
    id="text76"
    transform="translate(63.04980,9.000000)"><tspan
      id="tspan78"
-     style="font-size:7.6500001px;font-family:Bitstream Vera Sans"
+     style="font-size:7.6500001px;font-family:Liberation Sans"
      y="0"
      x="0">600</tspan></text>
 
@@ -290,7 +290,7 @@
    id="text82"
    transform="translate(86.52050,9.000000)"><tspan
      id="tspan84"
-     style="font-size:7.6500001px;font-family:Bitstream Vera Sans"
+     style="font-size:7.6500001px;font-family:Liberation Sans"
      y="0"
      x="0">800</tspan></text>
 
@@ -303,7 +303,7 @@
    id="text88"
    transform="translate(107.6582,9.000000)"><tspan
      id="tspan90"
-     style="font-size:7.6500001px;font-family:Bitstream Vera Sans"
+     style="font-size:7.6500001px;font-family:Liberation Sans"
      y="0"
      x="0">1000</tspan></text>
 
@@ -580,7 +580,7 @@
    id="text226"
    transform="translate(33.29150,92.84380)"><tspan
      id="tspan228"
-     style="font-size:7.6500001px;font-family:Bitstream Vera Sans"
+     style="font-size:7.6500001px;font-family:Liberation Sans"
      y="0"
      x="0">*</tspan></text>
 
@@ -593,7 +593,7 @@
    id="text232"
    transform="translate(68.18510,108.5386)"><tspan
      id="tspan234"
-     style="font-size:7.6500001px;font-family:Bitstream Vera Sans"
+     style="font-size:7.6500001px;font-family:Liberation Sans"
      y="0"
      x="0">*</tspan></text>
 
@@ -606,7 +606,7 @@
    id="text238"
    transform="translate(103.6665,135.8335)"><tspan
      id="tspan240"
-     style="font-size:7.6500001px;font-family:Bitstream Vera Sans"
+     style="font-size:7.6500001px;font-family:Liberation Sans"
      y="0"
      x="0">*</tspan></text>
 
@@ -619,7 +619,7 @@
    id="text244"
    transform="translate(44.91650,152.2285)"><tspan
      id="tspan246"
-     style="font-size:5.9499998px;font-family:Bitstream Vera Sans"
+     style="font-size:5.9499998px;font-family:Liberation Sans"
      y="0"
      x="0">x</tspan></text>
 
@@ -632,7 +632,7 @@
    id="text250"
    transform="translate(33.26460,152.2285)"><tspan
      id="tspan252"
-     style="font-size:5.9499998px;font-family:Bitstream Vera Sans"
+     style="font-size:5.9499998px;font-family:Liberation Sans"
      y="0"
      x="0">x</tspan></text>
 
@@ -645,7 +645,7 @@
    id="text256"
    transform="translate(49.04150,234.3438)"><tspan
      id="tspan258"
-     style="font-size:8.5000000px;font-family:Bitstream Vera Sans"
+     style="font-size:8.5000000px;font-family:Liberation Sans"
      y="0"
      x="0">frequency (Hz)</tspan></text>
 
@@ -658,7 +658,7 @@
    id="text262"
    transform="translate(128.6147,27.34380)"><tspan
      id="tspan264"
-     style="font-size:8.5000000px;font-family:Bitstream Vera Sans"
+     style="font-size:8.5000000px;font-family:Liberation Sans"
      y="0"
      x="0">G</tspan></text>
 
@@ -671,7 +671,7 @@
    id="text268"
    transform="translate(128.8945,92.21880)"><tspan
      id="tspan270"
-     style="font-size:8.5000000px;font-family:Bitstream Vera Sans"
+     style="font-size:8.5000000px;font-family:Liberation Sans"
      y="0"
      x="0">D</tspan></text>
 
@@ -684,7 +684,7 @@
    id="text274"
    transform="translate(126.1147,157.0938)"><tspan
      id="tspan276"
-     style="font-size:8.5000000px;font-family:Bitstream Vera Sans"
+     style="font-size:8.5000000px;font-family:Liberation Sans"
      y="0"
      x="0">C#</tspan></text>
 

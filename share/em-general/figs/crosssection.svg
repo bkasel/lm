@@ -53,16 +53,16 @@
 		</g>
 		<line style="fill:none;stroke:#000000;" x1="1.413" y1="59.542" x2="85.58" y2="59.542"/>
 		<g>
-			<text transform="matrix(1 0 0 1 290.4131 32)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">19</tspan></text>
-			<text transform="matrix(1 0 0 1 301.5361 32)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">&#xB0;</tspan></text>
+			<text transform="matrix(1 0 0 1 290.4131 32)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">19</tspan></text>
+			<text transform="matrix(1 0 0 1 301.5361 32)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">&#xB0;</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 281.4131 10)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">20</tspan></text>
-			<text transform="matrix(1 0 0 1 292.5361 10)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">&#xB0;</tspan></text>
+			<text transform="matrix(1 0 0 1 281.4131 10)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">20</tspan></text>
+			<text transform="matrix(1 0 0 1 292.5361 10)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">&#xB0;</tspan></text>
 		</g>
 		<line style="fill:none;stroke:#000000;stroke-dasharray:2;" x1="107.913" y1="95" x2="2.08" y2="95"/>
 		<g>
-			<text transform="matrix(1 0 0 1 219.4131 114)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">nucleus</tspan></text>
+			<text transform="matrix(1 0 0 1 219.4131 114)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">nucleus</tspan></text>
 		</g>
 		<line style="fill:none;" x1="326.413" y1="35" x2="326.413" y2="81"/>
 	</g>

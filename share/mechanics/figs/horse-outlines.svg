@@ -294,7 +294,7 @@
    id="text143"><svg:tspan
      x="0"
      y="0"
-     style="font-size:15.300000;fill:#fd8064;font-family:Bitstream Vera Sans"
+     style="font-size:15.300000;fill:#fd8064;font-family:Liberation Sans"
      id="tspan144">A</svg:tspan></svg:text>
 
 			</svg:g>
@@ -306,7 +306,7 @@
    id="text150"><svg:tspan
      x="0"
      y="0"
-     style="font-size:15.300000;fill:#4500b1;font-family:Bitstream Vera Sans"
+     style="font-size:15.300000;fill:#4500b1;font-family:Liberation Sans"
      id="tspan151">B</svg:tspan></svg:text>
 
 			</svg:g>
@@ -318,7 +318,7 @@
    id="text157"><svg:tspan
      x="0"
      y="0"
-     style="font-size:15.300000;fill:#ff0000;font-family:Bitstream Vera Sans"
+     style="font-size:15.300000;fill:#ff0000;font-family:Liberation Sans"
      id="tspan158">C</svg:tspan></svg:text>
 
 			</svg:g>
@@ -330,7 +330,7 @@
    id="text164"><svg:tspan
      x="0"
      y="0"
-     style="font-size:15.300000;fill:#00ba76;font-family:Bitstream Vera Sans"
+     style="font-size:15.300000;fill:#00ba76;font-family:Liberation Sans"
      id="tspan165">E</svg:tspan></svg:text>
 
 			</svg:g>
@@ -342,7 +342,7 @@
    id="text171"><svg:tspan
      x="0"
      y="0"
-     style="font-size:15.300000;fill:#27abd4;font-family:Bitstream Vera Sans"
+     style="font-size:15.300000;fill:#27abd4;font-family:Liberation Sans"
      id="tspan172">D</svg:tspan></svg:text>
 
 			</svg:g>
@@ -668,7 +668,7 @@
        id="text347"><svg:tspan
          x="285.92596"
          y="189.3382"
-         style="font-size:12.749770;font-family:Bitstream Vera Sans-Bold'"
+         style="font-size:12.749770;font-family:Liberation Sans-Bold'"
          id="tspan348">v</svg:tspan></svg:text>
     <svg:text
        x="294.43665"
@@ -676,7 +676,7 @@
        id="text351"><svg:tspan
          x="294.43665"
          y="189.3382"
-         style="font-size:12.749770;font-family:Bitstream Vera Sans"
+         style="font-size:12.749770;font-family:Liberation Sans"
          id="tspan352">≈0</svg:tspan></svg:text>
     <svg:path
        d="M 224.23325,267.18063 L 209.45451,258.01879 L 209.45451,257.98679 L 209.42651,258.00379 L 209.42351,258.00179 L 209.42351,258.00579 L 194.64478,267.16563 L 203.87961,267.16563 C 202.71463,282.85335 188.67289,295.24312 171.51119,295.24312 C 153.58752,295.24312 139.05578,281.72737 139.05578,265.05767 C 139.05578,264.74867 139.07078,264.44568 139.08078,264.13968 L 128.26097,264.13968 C 128.25397,264.44668 128.23597,264.74867 128.23597,265.05767 C 128.23597,287.28527 147.61062,305.30294 171.51019,305.30294 C 194.64378,305.30294 213.53644,288.42025 214.72442,267.18063 L 224.23325,267.18063 L 224.23325,267.18063 z "
@@ -698,7 +698,7 @@
    id="text363"><svg:tspan
      x="0"
      y="0"
-     style="font-size:15.300000;fill:#fd8064;font-family:Bitstream Vera Sans"
+     style="font-size:15.300000;fill:#fd8064;font-family:Liberation Sans"
      id="tspan364">A</svg:tspan></svg:text>
 
 			</svg:g>
@@ -710,7 +710,7 @@
    id="text370"><svg:tspan
      x="0"
      y="0"
-     style="font-size:15.300000;fill:#4500b1;font-family:Bitstream Vera Sans"
+     style="font-size:15.300000;fill:#4500b1;font-family:Liberation Sans"
      id="tspan371">B</svg:tspan></svg:text>
 
 			</svg:g>
@@ -722,7 +722,7 @@
    id="text377"><svg:tspan
      x="0"
      y="0"
-     style="font-size:15.300000;fill:#ff0000;font-family:Bitstream Vera Sans"
+     style="font-size:15.300000;fill:#ff0000;font-family:Liberation Sans"
      id="tspan378">C</svg:tspan></svg:text>
 
 			</svg:g>
@@ -734,7 +734,7 @@
    id="text384"><svg:tspan
      x="0"
      y="0"
-     style="font-size:15.300000;fill:#27abd4;font-family:Bitstream Vera Sans"
+     style="font-size:15.300000;fill:#27abd4;font-family:Liberation Sans"
      id="tspan385">D</svg:tspan></svg:text>
 
 			</svg:g>
@@ -746,7 +746,7 @@
    id="text391"><svg:tspan
      x="0"
      y="0"
-     style="font-size:15.300000;fill:#00ba76;font-family:Bitstream Vera Sans"
+     style="font-size:15.300000;fill:#00ba76;font-family:Liberation Sans"
      id="tspan392">E</svg:tspan></svg:text>
 
 			</svg:g>
@@ -791,7 +791,7 @@
       <svg:text
          x="133.16376"
          y="391.43549"
-         style="font-size:10.000000;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#000000;fill-opacity:1.0000000;stroke:none;stroke-width:1.0000000pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1.0000000;font-family:Bitstream Vera Sans;text-anchor:start;writing-mode:lr-tb"
+         style="font-size:10.000000;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#000000;fill-opacity:1.0000000;stroke:none;stroke-width:1.0000000pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1.0000000;font-family:Liberation Sans;text-anchor:start;writing-mode:lr-tb"
          id="text487"
          xml:space="preserve"><svg:tspan
            x="133.16376"
@@ -818,7 +818,7 @@
       <svg:text
          x="209.96861"
          y="439.77753"
-         style="font-size:10.000000;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#000000;fill-opacity:1.0000000;stroke:none;stroke-width:1.0000000pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1.0000000;font-family:Bitstream Vera Sans;text-anchor:start;writing-mode:lr-tb"
+         style="font-size:10.000000;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#000000;fill-opacity:1.0000000;stroke:none;stroke-width:1.0000000pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1.0000000;font-family:Liberation Sans;text-anchor:start;writing-mode:lr-tb"
          id="text494"
          xml:space="preserve"><svg:tspan
            x="209.96861"

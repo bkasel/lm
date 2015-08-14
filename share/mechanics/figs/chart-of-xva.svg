@@ -76,7 +76,7 @@
    id="text9"><tspan
      x="0"
      y="0"
-     style="font-size:15.300000;font-family:Bitstream Vera Sans-Bold'"
+     style="font-size:15.300000;font-family:Liberation Sans-Bold'"
      id="tspan10">position</tspan></text>
 
 		</g>
@@ -88,7 +88,7 @@
    id="text16"><tspan
      x="0"
      y="0"
-     style="font-size:15.300000;font-family:Bitstream Vera Sans-Bold'"
+     style="font-size:15.300000;font-family:Liberation Sans-Bold'"
      id="tspan17">velocity</tspan></text>
 
 		</g>
@@ -100,7 +100,7 @@
    id="text23"><tspan
      x="0"
      y="0"
-     style="font-size:15.300000;font-family:Bitstream Vera Sans-Bold'"
+     style="font-size:15.300000;font-family:Liberation Sans-Bold'"
      id="tspan24">acceleration</tspan></text>
 
 		</g>
@@ -128,7 +128,7 @@
    id="text37"><tspan
      x="0"
      y="0"
-     style="font-size:5.0999999;font-family:Bitstream Vera Sans"
+     style="font-size:5.0999999;font-family:Liberation Sans"
      id="tspan38">slope of</tspan></text>
 
 			<text
@@ -136,7 +136,7 @@
    id="text41"><tspan
      x="0"
      y="0"
-     style="font-size:5.0999999;font-family:Bitstream Vera Sans"
+     style="font-size:5.0999999;font-family:Liberation Sans"
      id="tspan42">tangent line</tspan></text>
 
 		</g>
@@ -164,7 +164,7 @@
    id="text55"><tspan
      x="0"
      y="0"
-     style="font-size:5.0999999;font-family:Bitstream Vera Sans"
+     style="font-size:5.0999999;font-family:Liberation Sans"
      id="tspan56">slope of</tspan></text>
 
 			<text
@@ -172,7 +172,7 @@
    id="text59"><tspan
      x="0"
      y="0"
-     style="font-size:5.0999999;font-family:Bitstream Vera Sans"
+     style="font-size:5.0999999;font-family:Liberation Sans"
      id="tspan60">tangent line</tspan></text>
 
 		</g>
@@ -197,7 +197,7 @@
    id="text73"><tspan
      x="0"
      y="0"
-     style="font-size:5.0999999;font-family:Bitstream Vera Sans"
+     style="font-size:5.0999999;font-family:Liberation Sans"
      id="tspan74">curvature</tspan></text>
 
 		</g>
@@ -209,7 +209,7 @@
    id="text80"><tspan
      x="0"
      y="0"
-     style="font-size:5.0999999;font-family:Bitstream Vera Sans"
+     style="font-size:5.0999999;font-family:Liberation Sans"
      id="tspan81">=rate of change of position</tspan></text>
 
 		</g>
@@ -221,7 +221,7 @@
    id="text87"><tspan
      x="0"
      y="0"
-     style="font-size:5.0999999;font-family:Bitstream Vera Sans"
+     style="font-size:5.0999999;font-family:Liberation Sans"
      id="tspan88">=rate of change of velocity</tspan></text>
 
 		</g>

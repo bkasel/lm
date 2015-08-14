@@ -36,8 +36,8 @@
 		</g>
 		<polygon style="fill:#FFFFFF;" points="135.398,0 132.413,0 93.002,46.967 93.008,46.971 95.926,46.971 95.797,47.194 "/>
 		<g>
-			<text transform="matrix(1 0 0 1 67.408 59.022)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">60</tspan></text>
-			<text transform="matrix(1 0 0 1 78.531 59.022)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">&#xB0;</tspan></text>
+			<text transform="matrix(1 0 0 1 67.408 59.022)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">60</tspan></text>
+			<text transform="matrix(1 0 0 1 78.531 59.022)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">&#xB0;</tspan></text>
 		</g>
 		<path style="fill:none;stroke:#000000;stroke-width:0.5;" d="M88.866,57.357c-3.528-1.886-5.929-5.605-5.929-9.885"/>
 		<path style="fill:none;stroke:#000000;stroke-width:0.5;" d="M102.696,37.268c2.678,2.311,4.373,5.729,4.373,9.544"/>

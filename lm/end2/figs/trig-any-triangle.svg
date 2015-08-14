@@ -14,13 +14,13 @@
 	<g id="Layer_1">
 		<polygon style="fill:none;stroke:#000000;" points="0.126,44.749 136.626,71.249 168.626,0.749 "/>
 		<g>
-			<text transform="matrix(1 0 0 1 81.1265 18.249)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">A</tspan></text>
+			<text transform="matrix(1 0 0 1 81.1265 18.249)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">A</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 158.1265 41.749)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">B</tspan></text>
+			<text transform="matrix(1 0 0 1 158.1265 41.749)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">B</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 64.6265 68.249)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">C</tspan></text>
+			<text transform="matrix(1 0 0 1 64.6265 68.249)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">C</tspan></text>
 		</g>
 		<g>
 			<text transform="matrix(1 0 0 1 127.6265 60.249)"><tspan x="0" y="0" style="font-family:'Symbol'; font-size:9;">&#x3B1;</tspan></text>

@@ -22,22 +22,22 @@
 				/>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 28.1733 9)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">0.1 nm</tspan></text>
+			<text transform="matrix(1 0 0 1 28.1733 9)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">0.1 nm</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 96.0173 61.021)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">0.1 nm</tspan></text>
+			<text transform="matrix(1 0 0 1 96.0173 61.021)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">0.1 nm</tspan></text>
 		</g>
 		<circle style="fill:none;stroke:#000000;" cx="16.805" cy="30.258" r="3.09"/> 
 		<circle style="fill:none;stroke:#000000;" cx="67.811" cy="30.258" r="3.09"/> 
 		<circle style="fill:none;stroke:#000000;" cx="68.151" cy="81.592" r="3.09"/> 
 		<g>
-			<text transform="matrix(1 0 0 1 0.2417 43.9346)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">electron</tspan></text>
+			<text transform="matrix(1 0 0 1 0.2417 43.9346)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">electron</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 52.2153 44.2681)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">nucleus</tspan></text>
+			<text transform="matrix(1 0 0 1 52.2153 44.2681)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">nucleus</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 51.3081 95.6016)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">electron</tspan></text>
+			<text transform="matrix(1 0 0 1 51.3081 95.6016)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">electron</tspan></text>
 		</g>
 		<line style="fill:none;" x1="129.654" y1="68.583" x2="129.654" y2="47.367"/>
 		<line style="fill:none;" x1="0" y1="32.254" x2="0" y2="15.92"/>

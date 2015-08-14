@@ -27,10 +27,10 @@
 			
 				<line style="fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:1;stroke-dasharray:2;" x1="87.166" y1="59.044" x2="87.166" y2="81.444"/>
 			<g>
-				<text transform="matrix(1 0 0 1 83.7012 14.5107)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">N</tspan></text>
+				<text transform="matrix(1 0 0 1 83.7012 14.5107)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">N</tspan></text>
 			</g>
 			<g>
-				<text transform="matrix(1 0 0 1 83.9648 88.9004)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">S</tspan></text>
+				<text transform="matrix(1 0 0 1 83.9648 88.9004)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">S</tspan></text>
 			</g>
 		</g>
 		<g>
@@ -40,10 +40,10 @@
 			<polygon style="fill:#B4B4B4;stroke:#000000;stroke-width:0.5;" points="25.688,70.721 25.688,21.521 19.37,25.168 19.37,74.368 
 				"/>
 			<g>
-				<text transform="matrix(1 0 0 1 9.0825 93.811)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">S</tspan></text>
+				<text transform="matrix(1 0 0 1 9.0825 93.811)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">S</tspan></text>
 			</g>
 			<g>
-				<text transform="matrix(1 0 0 1 8.6187 9.6001)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:7.650000;">N</tspan></text>
+				<text transform="matrix(1 0 0 1 8.6187 9.6001)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:7.650000;">N</tspan></text>
 			</g>
 			
 				<line style="fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:1;stroke-dasharray:2;" x1="11.999" y1="10.918" x2="11.999" y2="23.519"/>

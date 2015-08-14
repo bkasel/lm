@@ -184,7 +184,7 @@
    id="text11"
    transform="translate(14.25000,30.62550)"><tspan
      id="tspan13"
-     style="font-size:10.200000px;font-family:Bitstream Vera Sans-Bold'"
+     style="font-size:10.200000px;font-family:Liberation Sans-Bold'"
      y="0"
      x="0">ray model</tspan></text>
 
@@ -194,7 +194,7 @@
    id="text17"
    transform="translate(14.91650,110.5674)"><tspan
      id="tspan19"
-     style="font-size:10.200000px;font-family:Bitstream Vera Sans-Bold'"
+     style="font-size:10.200000px;font-family:Liberation Sans-Bold'"
      y="0"
      x="0">wave model</tspan></text>
 
@@ -205,7 +205,7 @@
    id="text23"
    transform="translate(14.25000,192.9009)"><tspan
      id="tspan25"
-     style="font-size:10.200000px;font-family:Bitstream Vera Sans-Bold'"
+     style="font-size:10.200000px;font-family:Liberation Sans-Bold'"
      y="0"
      x="0">particle model</tspan></text>
 
@@ -509,7 +509,7 @@
    style="fill:none" />
 <text
    xml:space="preserve"
-   style="font-size:10.000000px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125.00000%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1.0000000;stroke:none;stroke-width:1.0000000pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1.0000000;font-family:Bitstream Vera Sans"
+   style="font-size:10.000000px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125.00000%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1.0000000;stroke:none;stroke-width:1.0000000pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1.0000000;font-family:Liberation Sans"
    x="179.9068"
    y="29.172739"
    id="text1778"
@@ -520,7 +520,7 @@
      y="29.172739">Advantage: Simplicity.</tspan></text>
 <text
    xml:space="preserve"
-   style="font-size:10.000000px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125.00000%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1.0000000;stroke:none;stroke-width:1.0000000pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1.0000000;font-family:Bitstream Vera Sans"
+   style="font-size:10.000000px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125.00000%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1.0000000;stroke:none;stroke-width:1.0000000pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1.0000000;font-family:Liberation Sans"
    x="179.9068"
    y="90.124763"
    id="text1782"
@@ -551,7 +551,7 @@
      id="tspan1794">smaller than a wavelength of light.</tspan></text>
 <text
    xml:space="preserve"
-   style="font-size:10.000000px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125.00000%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1.0000000;stroke:none;stroke-width:1.0000000pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1.0000000;font-family:Bitstream Vera Sans"
+   style="font-size:10.000000px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125.00000%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1.0000000;stroke:none;stroke-width:1.0000000pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1.0000000;font-family:Liberation Sans"
    x="179.38434"
    y="184.30963"
    id="text1796"

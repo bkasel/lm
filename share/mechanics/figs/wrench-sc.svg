@@ -118,16 +118,16 @@
 			<path d="M281.847,69.51c0.8-1.183,2.017-2.595,3.133-3.382l-2.37,0.256l-1.985-1.319
 				C281.253,66.278,281.682,68.092,281.847,69.51z"/>
 			<g>
-				<text transform="matrix(1 0 0 1 0.0039 71.6135)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">(1)</tspan></text>
+				<text transform="matrix(1 0 0 1 0.0039 71.6135)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">(1)</tspan></text>
 			</g>
 			<g>
-				<text transform="matrix(1 0 0 1 104.481 71.6135)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">(2)</tspan></text>
+				<text transform="matrix(1 0 0 1 104.481 71.6135)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">(2)</tspan></text>
 			</g>
 			<g>
-				<text transform="matrix(1 0 0 1 214.0786 71.6135)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">(3)</tspan></text>
+				<text transform="matrix(1 0 0 1 214.0786 71.6135)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">(3)</tspan></text>
 			</g>
 			<g>
-				<text transform="matrix(1 0 0 1 302.458 33.1194)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">(4)</tspan></text>
+				<text transform="matrix(1 0 0 1 302.458 33.1194)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">(4)</tspan></text>
 			</g>
 		</g>
 		<rect y="37.123" style="fill:none;" width="320.315" height="2.835"/> 

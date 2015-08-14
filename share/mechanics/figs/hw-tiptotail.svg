@@ -21,7 +21,7 @@
 			<path d="M43.334,51.144c1.726-0.571,3.877-1.574,5.227-2.668l-1.133,2.814l0.93,2.888C47.089,52.99,45.015,51.836,43.334,51.144z
 				"/>
 		</g>
-		<text transform="matrix(1 0 0 1 1.4512 30.27)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans-Bold'; font-size:7.650000;">A</tspan></text>
-		<text transform="matrix(1 0 0 1 52.9512 66.27)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans-Bold'; font-size:7.650000;">B</tspan></text>
+		<text transform="matrix(1 0 0 1 1.4512 30.27)"><tspan x="0" y="0" style="font-family:Liberation Sans-Bold'; font-size:7.650000;">A</tspan></text>
+		<text transform="matrix(1 0 0 1 52.9512 66.27)"><tspan x="0" y="0" style="font-family:Liberation Sans-Bold'; font-size:7.650000;">B</tspan></text>
 	</g>
 </svg>

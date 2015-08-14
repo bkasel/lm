@@ -16,13 +16,13 @@
 			<g>
 				<rect x="0.5" y="0.5" style="fill:none;stroke:#000000;" width="41.813" height="20.16"/> 
 				<g>
-					<text transform="matrix(1 0 0 1 13.917 13.1702)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">C.E.</tspan></text>
+					<text transform="matrix(1 0 0 1 13.917 13.1702)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">C.E.</tspan></text>
 				</g>
 			</g>
 			<g>
 				<rect x="79.273" y="19.832" style="fill:none;stroke:#000000;" width="41.813" height="20.16"/> 
 				<g>
-					<text transform="matrix(1 0 0 1 92.6899 32.5017)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">N.D.</tspan></text>
+					<text transform="matrix(1 0 0 1 92.6899 32.5017)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">N.D.</tspan></text>
 				</g>
 			</g>
 			<circle cx="38.557" cy="16.641" r="1.22"/> 
@@ -31,8 +31,8 @@
 			<circle cx="96.237" cy="36.801" r="1.22"/> 
 			<rect x="35.427" y="62.438" style="fill:none;stroke:#000000;" width="37.6" height="21.6"/> 
 			<g>
-				<text transform="matrix(1 0 0 1 48.2266 75.238)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">P</tspan></text>
-				<text transform="matrix(1 0 0 1 53.6064 75.238)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">.S.</tspan></text>
+				<text transform="matrix(1 0 0 1 48.2266 75.238)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">P</tspan></text>
+				<text transform="matrix(1 0 0 1 53.6064 75.238)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">.S.</tspan></text>
 			</g>
 			<circle cx="41.027" cy="81.218" r="1.219"/> 
 			<circle cx="68.227" cy="81.218" r="1.219"/> 
@@ -46,13 +46,13 @@
 			<g>
 				<circle style="fill:#FFFFFF;stroke:#000000;" cx="18.244" cy="71.604" r="7.501"/> 
 				<g>
-					<text transform="matrix(1 0 0 1 15.0425 74.6042)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">A</tspan></text>
+					<text transform="matrix(1 0 0 1 15.0425 74.6042)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">A</tspan></text>
 				</g>
 			</g>
 			<g>
 				<circle style="fill:#FFFFFF;stroke:#000000;" cx="26.894" cy="53.603" r="7.501"/> 
 				<g>
-					<text transform="matrix(1 0 0 1 24.5601 57.4036)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">V</tspan></text>
+					<text transform="matrix(1 0 0 1 24.5601 57.4036)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">V</tspan></text>
 				</g>
 			</g>
 		</g>
@@ -60,13 +60,13 @@
 			<g>
 				<rect x="0.5" y="122.452" style="fill:none;stroke:#000000;" width="41.813" height="20.16"/> 
 				<g>
-					<text transform="matrix(1 0 0 1 13.917 135.1228)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">C.E.</tspan></text>
+					<text transform="matrix(1 0 0 1 13.917 135.1228)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">C.E.</tspan></text>
 				</g>
 			</g>
 			<g>
 				<rect x="79.273" y="141.784" style="fill:none;stroke:#000000;" width="41.813" height="20.16"/> 
 				<g>
-					<text transform="matrix(1 0 0 1 92.6899 154.4543)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">N.D.</tspan></text>
+					<text transform="matrix(1 0 0 1 92.6899 154.4543)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">N.D.</tspan></text>
 				</g>
 			</g>
 			<circle cx="38.557" cy="138.593" r="1.22"/> 
@@ -75,8 +75,8 @@
 			<circle cx="96.237" cy="158.753" r="1.219"/> 
 			<rect x="35.427" y="184.39" style="fill:none;stroke:#000000;" width="37.6" height="21.6"/> 
 			<g>
-				<text transform="matrix(1 0 0 1 48.2266 197.1902)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">P</tspan></text>
-				<text transform="matrix(1 0 0 1 53.6064 197.1902)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">.S.</tspan></text>
+				<text transform="matrix(1 0 0 1 48.2266 197.1902)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">P</tspan></text>
+				<text transform="matrix(1 0 0 1 53.6064 197.1902)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">.S.</tspan></text>
 			</g>
 			<circle cx="41.027" cy="203.171" r="1.22"/> 
 			<circle cx="68.227" cy="203.171" r="1.22"/> 
@@ -86,7 +86,7 @@
 			<g>
 				<circle style="fill:#FFFFFF;stroke:#000000;" cx="63.694" cy="154.307" r="7.501"/> 
 				<g>
-					<text transform="matrix(1 0 0 1 60.4927 157.3069)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">A</tspan></text>
+					<text transform="matrix(1 0 0 1 60.4927 157.3069)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">A</tspan></text>
 				</g>
 			</g>
 			<path style="fill:none;stroke:#000000;" d="M41.027,203.171c-12.133-15.732,22.667-67.333-2.133-76.533"/>
@@ -96,16 +96,16 @@
 					<circle style="fill:#FFFFFF;stroke:#000000;" cx="70.693" cy="128.489" r="7.501"/> 
 				</g>
 				<g>
-					<text transform="matrix(1 0 0 1 67.5601 132.2888)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">V</tspan></text>
+					<text transform="matrix(1 0 0 1 67.5601 132.2888)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">V</tspan></text>
 				</g>
 			</g>
 		</g>
 		<line style="fill:none;" x1="128.227" y1="41.637" x2="128.227" y2="112.038"/>
 		<g>
-			<text transform="matrix(1 0 0 1 105.439 88.2361)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">(a)</tspan></text>
+			<text transform="matrix(1 0 0 1 105.439 88.2361)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">(a)</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 105.439 209.8362)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">(b)</tspan></text>
+			<text transform="matrix(1 0 0 1 105.439 209.8362)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">(b)</tspan></text>
 		</g>
 	</g>
 </svg>

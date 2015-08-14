@@ -14,40 +14,40 @@
 	<g id="Layer_1">
 		<polyline style="fill:none;stroke:#000000;stroke-width:0.5;" points="35.521,5.175 35.521,53.175 131.44,53.175 "/>
 		<g>
-			<text transform="matrix(1 0 0 1 8.8806 30.3853)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">v</tspan></text>
-			<text transform="matrix(1 0 0 1 0 42.3853)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">(m/s)</tspan></text>
+			<text transform="matrix(1 0 0 1 8.8806 30.3853)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">v</tspan></text>
+			<text transform="matrix(1 0 0 1 0 42.3853)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">(m/s)</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 77.5808 73.6431)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:8.500000;">t (s)</tspan></text>
+			<text transform="matrix(1 0 0 1 77.5808 73.6431)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:8.500000;">t (s)</tspan></text>
 		</g>
 		<line style="fill:none;stroke:#000000;" x1="35.455" y1="52.954" x2="131.387" y2="5.31"/>
 		<g>
-			<text transform="matrix(1 0 0 1 33.1926 63.6431)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:6.800000;">0</tspan></text>
+			<text transform="matrix(1 0 0 1 33.1926 63.6431)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:6.800000;">0</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 65.2004 63.6431)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:6.800000;">1</tspan></text>
+			<text transform="matrix(1 0 0 1 65.2004 63.6431)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:6.800000;">1</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 97.2083 63.6431)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:6.800000;">2</tspan></text>
+			<text transform="matrix(1 0 0 1 97.2083 63.6431)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:6.800000;">2</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 129.2166 63.6431)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:6.800000;">3</tspan></text>
+			<text transform="matrix(1 0 0 1 129.2166 63.6431)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:6.800000;">3</tspan></text>
 		</g>
 		<line style="stroke:#000000;stroke-width:0.5;" x1="35.416" y1="52.987" x2="35.416" y2="56.654"/>
 		<line style="stroke:#000000;stroke-width:0.5;" x1="67.424" y1="52.987" x2="67.424" y2="56.654"/>
 		<line style="stroke:#000000;stroke-width:0.5;" x1="99.432" y1="52.987" x2="99.432" y2="56.654"/>
 		<line style="stroke:#000000;stroke-width:0.5;" x1="131.44" y1="52.987" x2="131.44" y2="56.654"/>
 		<g>
-			<text transform="matrix(1 0 0 1 26.3625 55.8335)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:6.800000;">0</tspan></text>
+			<text transform="matrix(1 0 0 1 26.3625 55.8335)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:6.800000;">0</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 21.9153 39.8892)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:6.800000;">10</tspan></text>
+			<text transform="matrix(1 0 0 1 21.9153 39.8892)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:6.800000;">10</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 21.9153 23.9443)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:6.800000;">20</tspan></text>
+			<text transform="matrix(1 0 0 1 21.9153 23.9443)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:6.800000;">20</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 21.9153 8)"><tspan x="0" y="0" style="font-family:Bitstream Vera Sans; font-size:6.800000;">30</tspan></text>
+			<text transform="matrix(1 0 0 1 21.9153 8)"><tspan x="0" y="0" style="font-family:Liberation Sans; font-size:6.800000;">30</tspan></text>
 		</g>
 		<line style="fill:none;stroke:#000000;stroke-width:0.5;" x1="32.705" y1="52.954" x2="35.455" y2="52.954"/>
 		<line style="fill:none;stroke:#000000;stroke-width:0.3;" x1="33.221" y1="5.143" x2="131.387" y2="5.143"/>
