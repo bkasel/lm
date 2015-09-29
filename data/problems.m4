@@ -93,6 +93,7 @@ m4_define(__hw_lm_3_punch,33)m4_dnl
 m4_define(__hw_lm_3_aircraft-carrier,34)m4_dnl
 m4_define(__hw_lm_3_baseball-pitch-ratios,35)m4_dnl
 m4_define(__hw_lm_3_high-speed-chase,36)m4_dnl
+m4_define(__hw_lm_3_easy-area-under-v-t,37)m4_dnl
 m4_define(__hw_lm_4_noforces,1)m4_dnl
 m4_define(__hw_lm_4_trailer,2)m4_dnl
 m4_define(__hw_lm_4_elevatortension,3)m4_dnl
