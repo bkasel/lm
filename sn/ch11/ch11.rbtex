@@ -3935,7 +3935,7 @@ purpose.
     %q{%
       A hollow sphere with $\mu/\mu_\zu{o}=10$, is immersed in a uniform, externally imposed magnetic field.
       The interior of the sphere is shielded from the field. The arrows map the magnetic field $\vc{B}$.
-      (See homework problem }+%q('hw:spherical-shielding')+%q{, page 
+      (See homework problem }+ref_workaround('hw:spherical-shielding')+%q{, page 
     }+pageref_workaround('hw:spherical-shielding')+'.)',
     {
       'width'=>'fullpage',
