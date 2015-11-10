@@ -89,11 +89,11 @@ frame of reference. This suggests that by analogy with the dot product
 \end{equation*}
 in the Euclidean $x$-$y$ plane, we define a similar operation in the $x$-$t$ plane,
 \begin{equation*}
-  t_1t_2-x_1x_2 \qquad .
+  t_1t_2-x_1x_2\eqquad.
 \end{equation*}
 Putting in the other two spatial dimensions, we have
 \begin{equation*}
-  t_1t_2-x_1x_2-y_1y_2-z_1z_2 \qquad .
+  t_1t_2-x_1x_2-y_1y_2-z_1z_2\eqquad.
 \end{equation*}
 A mathematical object like $(t,x,y,z)$ is referred to as a four-vector,\index{four-vector}\index{vector!four-vector}
 as opposed to a three-vector like $(x,y,z)$. The term ``dot product'' has connotations of referring only to
@@ -139,7 +139,7 @@ answer simply by assuming that these changes in velocities occur instantaneously
 
 In Euclidean geometry, the triangle inequality $|\vc{b}+\vc{c}|<|\vc{b}|+|\vc{c}|$ follows from
 \begin{equation*}
- (|\vc{b}|+|\vc{c}|)^2-(\vc{b}+\vc{c})\cdot(\vc{b}+\vc{c})=2(|\vc{b}||\vc{c}|-\vc{b}\cdot\vc{c}) \ge 0  \qquad .
+ (|\vc{b}|+|\vc{c}|)^2-(\vc{b}+\vc{c})\cdot(\vc{b}+\vc{c})=2(|\vc{b}||\vc{c}|-\vc{b}\cdot\vc{c}) \ge 0\eqquad.
 \end{equation*}
 The reason this quantity always comes out positive is that for two vectors of fixed magnitude, the
 greatest dot product is always achieved in the case where they lie along the same direction.

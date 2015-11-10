@@ -527,18 +527,18 @@ The acceleration of the segment (actually the acceleration
 of its center of mass) is
 \begin{align*}
  a &= F/m \\
- &= 4Th/\mu w^2 \qquad .
+ &= 4Th/\mu w^2\eqquad.
 \end{align*}
 The time required to move a distance $h$ under constant
 acceleration $a$ is found by solving $h=\frac{1}{2}at^2$ to yield
 \begin{align*}
  t &= \sqrt{\frac{2h}{a}}\\
-   &= w\sqrt{\frac{\mu}{2T}} \qquad .
+   &= w\sqrt{\frac{\mu}{2T}}\eqquad.
 \end{align*}
 Our final result for the velocity of the pulses is
 \begin{align*}
  |v| &= \frac{w}{t} \\
-     &= \sqrt{\frac{2T}{\mu}}\qquad .
+     &= \sqrt{\frac{2T}{\mu}}\eqquad.
 \end{align*}
 The remarkable feature of this result is that the velocity
 of the pulses does not depend at all on $w$ or $h$, i.e., any
@@ -550,7 +550,7 @@ course, after so many approximations we cannot expect to
 have gotten all the numerical factors right. The correct
 result for the velocity of the pulses is
 \begin{equation*}
-                v         =  \sqrt{\frac{T}{\mu}}      \qquad   .
+                v         =  \sqrt{\frac{T}{\mu}}\eqquad.
 \end{equation*}
 
 The importance of the above derivation lies in the insight
@@ -577,13 +577,13 @@ that the second derivative is a measure of curvature, it is
 not surprising to find that the infinitesimal force
 $\der F$ acting on an infinitesimal segment $\der x$ is given by
 \begin{equation*}
-                \der F         = T \frac{\der^2 y}{\der x^2} \der x      \qquad   .
+                \der F         = T \frac{\der^2 y}{\der x^2} \der x\eqquad.
 \end{equation*}
 (This can be proved by vector addition of the two infinitesimal
 forces acting on either side.) The acceleration is then
 $a=\der F/\der m$, or, substituting $\der m=\mu dx$,
 \begin{equation*}
-        \frac{\der^2 y}{\der t^2} = \frac{T}{\mu}\frac{\der^2 y}{\der x^2}   \qquad   .
+        \frac{\der^2 y}{\der t^2} = \frac{T}{\mu}\frac{\der^2 y}{\der x^2}\eqquad.
 \end{equation*}
 The second derivative with respect to time is related to the
 second derivative with respect to position. This is no more
@@ -606,12 +606,12 @@ function of one variable. Because of the chain rule, each
 derivative with respect to time brings out a factor of $\pm v$.
 Evaluating the second derivatives on both sides of the equation gives
 \begin{equation*}
-        \left(\pm v\right)^2\: f''                    =       \frac{T}{\mu} f''\qquad   .
+        \left(\pm v\right)^2\: f''                    =       \frac{T}{\mu} f''\eqquad.
 \end{equation*}
 Squaring gets rid of the sign, and we find that we have a
 valid solution for any function $f$, provided that $v$ is given by
 \begin{equation*}
-                        v  =  \sqrt{\frac{T}{\mu}}   \qquad   .
+                        v  =  \sqrt{\frac{T}{\mu}}\eqquad.
 \end{equation*}
 
 <% end_sec() %>
@@ -895,7 +895,7 @@ This important and useful relationship is more commonly
 written in terms of the frequency,
 
 \begin{equation*}
-                v    =    f \lambda    \qquad   .
+                v    =    f \lambda\eqquad.
 \end{equation*}
 
 \pagebreak
@@ -1095,7 +1095,7 @@ traveled by the source over the course of one period. Using
 the definition $f=1/T$ and the equation $v=f\lambda $, we
 find for the wavelength of the Doppler-shifted wave the equation
 \begin{equation*}
-        \lambda'    = \left(1-\frac{v_s}{v}\right)\lambda      \qquad   .
+        \lambda'    = \left(1-\frac{v_s}{v}\right)\lambda\eqquad.
 \end{equation*}
 A similar equation can be used for the backward-emitted
 waves, but with a plus sign rather than a minus sign.
@@ -1108,7 +1108,7 @@ observer lying along its line of motion?
 
 \eganswer For an observer whom the car is approaching, we find
 \begin{equation*}
-        1-\frac{v_s}{v}                 =    0.85   \qquad   ,
+        1-\frac{v_s}{v}                 =    0.85\eqquad,
 \end{equation*}
 so the shift in wavelength is 15\%. Since the frequency is
 inversely proportional to the wavelength for a fixed value
@@ -1127,7 +1127,7 @@ light waves emitted by a race car's headlights?
 
 \eganswer Looking up the speed of light, $v=3.0\times10^8$ m/s, we find
 \begin{equation*}
-        1-\frac{v_s}{v} =    0.99999983   \qquad   ,
+        1-\frac{v_s}{v} =    0.99999983\eqquad,
 \end{equation*}
 i.e., the percentage shift is only 0.000017\%.
 \end{eg}
@@ -1452,7 +1452,7 @@ A wave emitted by a moving source will be shifted in
 wavelength and frequency. The shifted wavelength is
 given by the equation
 \begin{equation*}
-\lambda'    = \left(1-\frac{v_s}{v}\right)\lambda \qquad ,
+\lambda'    = \left(1-\frac{v_s}{v}\right)\lambda\eqquad,
 \end{equation*}
 where $v$ is the velocity of the waves and $v_s$ is the
 velocity of the source, taken to be positive or negative so

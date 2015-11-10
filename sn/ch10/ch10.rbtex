@@ -512,7 +512,7 @@ Find an equation for the magnitude of the field of a
         a positive $x$ component. Using the answer to the self-check, we have
         \begin{align*}
                          E_{-q,x}         &=    \frac{ kq}{ b^2}  \\
-                         E_{-q,y}         &=    0   \qquad   .  
+                         E_{-q,y}         &=    0\eqquad.  
         \end{align*}
         Note that if we had blindly ignored the absolute value signs
         and plugged in $- q$ to the equation, we would have
@@ -618,7 +618,7 @@ Find an equation for the magnitude of the field of a
         respect to the field. The total torque on the dipole is
         \begin{align*}
                         \tau          &=  \frac{\ell}{2}q|\vc{E}|\sin \theta+\frac{\ell}{2}q|\vc{E}|\sin \theta    \\
-                                 &=     \ell q|\vc{E}|\sin \theta  \qquad   .  
+                                 &=     \ell q|\vc{E}|\sin \theta\eqquad.  
         \end{align*}
         (Note that even though the two forces are in opposite
         directions, the torques do not cancel, because they are both
@@ -632,13 +632,13 @@ Find an equation for the magnitude of the field of a
         Employing a little more mathematical elegance, we can define
         a dipole moment \emph{vector},
         \begin{equation*}
-                \vc{D} = \sum q_i \vc{r}_i \qquad ,
+                \vc{D} = \sum q_i \vc{r}_i\eqquad,
         \end{equation*}
         where $\vc{r}_i$ is the position vector of the charge labeled by the
         index $i$. We can then write the torque in terms of a vector
         cross product (page \pageref{vectorcrossproductdef}),
         \begin{equation*}
-                \btau = \vc{D}\times\vc{E} \qquad .
+                \btau = \vc{D}\times\vc{E}\eqquad.
         \end{equation*}
         
         No matter how we notate it, the definition of the dipole moment requires
@@ -784,19 +784,19 @@ ions shown in the figure.
         voltage and field if we start from the relationship between
         interaction energy and force,
         \begin{equation*}
-                        \der U    =    -F_x\der x \qquad ,   
+                        \der U    =    -F_x\der x\eqquad,   
         \end{equation*}
         and divide by charge,
         \begin{equation*}
-                        \frac{\der U}{q}                =    -\frac{F_x}{q}\der x \qquad ,
+                        \frac{\der U}{q}                =    -\frac{F_x}{q}\der x\eqquad,
         \end{equation*}
         giving
         \begin{equation*}
-                                \der V    =    -E_x \der x \qquad ,
+                                \der V    =    -E_x \der x\eqquad,
         \end{equation*}                                                
         or
         \begin{equation*}
-                                \frac{\der V}{\der x}    =    -E_x \qquad .
+                                \frac{\der V}{\der x}    =    -E_x\eqquad.
         \end{equation*}                                                
         The interpretation is that a strong
         electric field occurs in a region of space where the voltage is
@@ -817,7 +817,7 @@ ions shown in the figure.
         \begin{align*}
                                 |\vc{E}| &=    \frac{\der V}{\der  x}  \\
                                                 &\approx \frac{\Delta V}{\Delta  x} \qquad \text{[assumption of constant field]} \\
-                                                 &=    1000\ \zu{V/m}   \qquad   .  
+                                                 &=    1000\ \zu{V/m}\eqquad.  
         \end{align*}
 
 \end{eg}
@@ -835,7 +835,7 @@ ions shown in the figure.
         defined as electrical energy per unit charge, it has units of J/C:
         \begin{align*}
                         \frac{\zu{V}}{\zu{m}}         &=   \frac{\zu{J/C}}{\zu{m}}   \\
-                                 &=  \frac{\zu{J}}{\zu{C}\cdot\zu{m}}     \qquad   .  
+                                 &=  \frac{\zu{J}}{\zu{C}\cdot\zu{m}}\eqquad.  
         \end{align*}
         To connect joules to newtons, we recall that work equals
         force times distance, so $\zu{J}=\zu{N}\cdot\zu{m}$, so
@@ -866,12 +866,12 @@ ions shown in the figure.
                         \Delta V &= -\int_{ r_1}^{ r_2}  E_{r} \der  r \\
                                  &=   -\int_{ r_1}^{ r_2} \frac{ kQ}{ r^2} \der  r   \\
                                  &=   \left.\frac{ kQ}{ r}\right]_{ r_1}^{ r_2} \\  
-                                 &= \frac{ kQ}{ r_2}-\frac{ kQ}{ r_1} \qquad .
+                                 &= \frac{ kQ}{ r_2}-\frac{ kQ}{ r_1}\eqquad.
         \end{align*}
         The standard convention is to use $r_1=\infty$ as a reference
         point, so that the voltage at any distance $r$ from the charge is
         \begin{equation*}
-                         V         =   \frac{ kQ}{ r}    \qquad   .  
+                         V         =   \frac{ kQ}{ r}\eqquad.  
         \end{equation*}
         The interpretation is that if you bring a positive test
         charge closer to a positive charge, its electrical energy is
@@ -946,12 +946,12 @@ Show that you can recover the expression for the field of a
         \end{align*}
         This can be notated as a gradient (page \pageref{gradandlineintegral}),
         \begin{equation*}
-                        \vc{E} = \nabla V \qquad ,
+                        \vc{E} = \nabla V\eqquad,
         \end{equation*}
         and if we know the field and want to find the voltage, we can
         use a line integral,
         \begin{equation*}
-                        \Delta V         =    \int_C \vc{E}\cdot\der\vc{r}   \qquad   ,  
+                        \Delta V         =    \int_C \vc{E}\cdot\der\vc{r}\eqquad,  
         \end{equation*}
         where the quantity inside the integral is a vector dot product.
 
@@ -1053,7 +1053,7 @@ Imagine that figure \figref{topo} represents voltage rather
         $d- z$. The result is
         \begin{align*}
                          E_{z}         &=    k\lambda\left(\frac{1}{ d- z}\right)_{- L/2}^{+ L/2}   \\
-                                 &=   \frac{ kQ}{ L} \left(\frac{1}{ d- L/2}-\frac{1}{ d+ L/2}\right)   \qquad   .  
+                                 &=   \frac{ kQ}{ L} \left(\frac{1}{ d- L/2}-\frac{1}{ d+ L/2}\right)\eqquad.  
         \end{align*}
                 For large values of $d$, this expression gets
         smaller for two reasons: (1) the denominators of the
@@ -1133,7 +1133,7 @@ Imagine that figure \figref{topo} represents voltage rather
                                                                 +(1/2)(1+ L^2/4 R^2)^{-1/2}(- L^2/2 R^3)
                                                         }{%
                                                                  L/2 R+(1+ L^2/4 R^2)^{1/2}
-                                                        } \qquad , \qquad \\
+                                                        }\eqquad, \qquad \\
         \intertext{or, after some simplification,}
                          E_{R} &= \frac{ k\lambda L}{ R^2\sqrt{1+ L^2/4 R^2}}
         \end{align*}
@@ -1167,7 +1167,7 @@ Imagine that figure \figref{topo} represents voltage rather
                          V        &= \int \frac{ k\der q}{ r} \\
                                         &=  k \int \frac{\der q}{\sqrt{ b^2+ z^2}} \\
                                         &= \frac{ k}{\sqrt{ b^2+ z^2}} \int \der q \\
-                                        &= \frac{ kQ}{\sqrt{ b^2+ z^2}} \qquad ,
+                                        &= \frac{ kQ}{\sqrt{ b^2+ z^2}}\eqquad,
                 \end{align*}
                 where $Q$ is the total charge of the ring.
                 This result could have been derived without calculus, since the distance
@@ -1186,7 +1186,7 @@ Imagine that figure \figref{topo} represents voltage rather
                 contributed to the field by each infinitesimal part of the ring.
                 \begin{align*}
                          E_{z}        &= \int \der E_z \\
-                                                        &= \int |\der\vc{E}|\:\zu{cos}\:\theta \qquad ,
+                                                        &= \int |\der\vc{E}|\:\zu{cos}\:\theta\eqquad,
                 \end{align*}
                 where $\theta$ is the angle shown in the figure.
                 \begin{align*}
@@ -1407,7 +1407,7 @@ Imagine that figure \figref{topo} represents voltage rather
         At a point lying a distance $z$ from a charged surface, the component of the electric field
         perpendicular to the surface obeys
         \begin{equation*}
-                \lim_{z\rightarrow 0} E_\perp = 2\pi k\sigma \qquad ,
+                \lim_{z\rightarrow 0} E_\perp = 2\pi k\sigma\eqquad,
         \end{equation*}
         where $\sigma$ is the charge per unit area. This is true regardless of the shape or
         size of the surface.
@@ -1437,7 +1437,7 @@ Imagine that figure \figref{topo} represents voltage rather
                 For a line of charge, the result of example \ref{eg:chargedrodside} is
                 \begin{equation*}
                  E = \frac{ k\lambda L}%
-                        { d^2\sqrt{1+ L^2/4 d^2}} \qquad .
+                        { d^2\sqrt{1+ L^2/4 d^2}}\eqquad.
                 \end{equation*}
                 In the limit of $d\ll L$, the quantity inside the square root is dominated
                 by the second term, and we have $E\propto  d^{-1}$.
@@ -1551,7 +1551,7 @@ Imagine that figure \figref{topo} represents voltage rather
         The electric energy possessed by an electric field \vc{E} occupying an infinitesimal
         volume of space $\der v$ is given by
         \begin{equation*}
-                \der U_e = \frac{1}{8\pi k}E^2 \der v \qquad ,
+                \der U_e = \frac{1}{8\pi k}E^2 \der v\eqquad,
         \end{equation*}
         where $E^2=\vc{E}\cdot\vc{E}$ is the square of the magnitude of the electric field.
         \index{energy density!of electric field}\index{electric field!energy density of}
@@ -1703,7 +1703,7 @@ Show that the units in the preceding example really
                                                         0,                                                 &  r< a \\
                                                          kq/ r^2,  &  r> a
                                                 \end{array}
-                                        \right. \qquad ,
+                                        \right.\eqquad,
         \end{equation*}
         where $r$ is the distance from the center. Similarly, the magnitude of the
         \emph{inward} field contributed
@@ -1714,7 +1714,7 @@ Show that the units in the preceding example really
                                                         0,                                                 &  r< b \\
                                                          kq/ r^2,  &  r> b
                                                 \end{array}
-                                        \right. \qquad .
+                                        \right.\eqquad.
         \end{equation*}
         In the region outside the whole capacitor, the two fields are equal in
         magnitude, but opposite in direction, so they cancel. We then have for
@@ -1726,13 +1726,13 @@ Show that the units in the preceding example really
                                                          kq/ r^2,  &  a< r< b \\
                                                         0,                                          &  r> b
                                                 \end{array}
-                                        \right. \qquad ,
+                                        \right.\eqquad,
         \end{equation*}
         so to calculate the energy, we only need to worry about the
         region $a< r< b$. The energy density in this region is
         \begin{align*}
                 \frac{\der  U_{e}}{\der  v} &= \frac{1}{8\pi  k} E^2  \\
-                                &= \frac{ kq^2}{8\pi} r^{-4} \qquad .
+                                &= \frac{ kq^2}{8\pi} r^{-4}\eqquad.
         \end{align*}
         This expression only depends on $r$, so the energy density is constant across
         any sphere of radius $r$. We can slice the region $a< r< b$ into
@@ -1742,7 +1742,7 @@ Show that the units in the preceding example really
                 \der  U_{e}        &= \frac{\der  U_{e}}{\der  v} \der v \\
                                 &= \frac{\der  U_{e}}{\der  v} (\text{area of shell}) (\text{thickness of shell}) \\
                                 &= (\frac{ kq^2}{8\pi} r^{-4}) (4\pi r^2) (\der r) \\
-                                &= \frac{ kq^2}{2} r^{-2}\der r \qquad .
+                                &= \frac{ kq^2}{2} r^{-2}\der r\eqquad.
         \end{align*}
         Integrating over all the layers to find the total energy, we have
         \begin{align*}
@@ -1767,7 +1767,7 @@ Show that the units in the preceding example really
         The figure shows a spherical capacitor. In the text, the energy stored
         in its electric field is shown to be
         \begin{equation*}
-                 U_{e}        = \frac{ kq^2}{2}\left(\frac{1}{a}-\frac{1}{b}\right) \qquad . \\
+                 U_{e}        = \frac{ kq^2}{2}\left(\frac{1}{a}-\frac{1}{b}\right)\eqquad. \\
         \end{equation*}
         What happens if the difference between $b$ and $a$ is very small? Does this
         make sense in terms of the mechanical work needed in order to separate the
@@ -1825,7 +1825,7 @@ Show that the units in the preceding example really
         As a consequence of this, we need to assign a \emph{negative} energy density to the gravitational
         field! For a gravitational field, we have
         \begin{equation*}
-                \der U_g = -\frac{1}{8\pi G}g^2 \der v \qquad ,
+                \der U_g = -\frac{1}{8\pi G}g^2 \der v\eqquad,
         \end{equation*}
         where $g^2=\vc{g}\cdot\vc{g}$ is the square of the magnitude of the gravitational field.
         \index{energy density!of gravitational field}\index{gravitational field!energy density of}
@@ -1925,7 +1925,7 @@ same in magnitude, $+q$ and $-q$, then the energy stored in
 the capacitor must be proportional to $q^2$. For historical
 reasons, we write the constant of proportionality as $1/2C$, 
 \begin{equation*}
-                U_C    =   \frac{1}{2C}q^2    \qquad   .
+                U_C    =   \frac{1}{2C}q^2\eqquad.
 \end{equation*}
 The constant $C$ is a geometrical property of the
 capacitor, called its capacitance.
@@ -2034,7 +2034,7 @@ coiled wire, so the energy stored in the inductor must be
 proportional to $I^2$. We write $L/2$ for the constant of
 proportionality, giving
 \begin{equation*}
-                U_L    =    \frac{L}{2}I^2   \qquad   .  
+                U_L    =    \frac{L}{2}I^2\eqquad.  
 \end{equation*}
 
 As in the definition of capacitance, we have a
@@ -2215,7 +2215,7 @@ simply by constructing an analogy with a mechanical system.
 In a mechanical oscillator, \figref{lrcanalogy}, we have two forms of stored energy,
 \begin{align*}
                 U_{spring}         &=            \frac{1}{2}kx^2                &(1)  \\
-                K                         &=     \frac{1}{2}mv^2  \qquad   .        \qquad                &(2)  
+                K                         &=     \frac{1}{2}mv^2\eqquad.        \qquad                &(2)  
 \end{align*}
 
 In the case of a mechanical oscillator, 
@@ -2229,7 +2229,7 @@ dissipated by friction equals the mechanical work it does in
 a time interval $\der t$, divided by $\der t$,
 $P=W/\der t=F\der x/\der t=Fv=-bv^2$, so
 \begin{equation*}
-                \text{rate of heat dissipation}  =  -bv^2   \qquad   .        \qquad        (3)  
+                \text{rate of heat dissipation}  =  -bv^2\eqquad.        \qquad        (3)  
 \end{equation*}
 
 <% self_check('lrcsigns',<<-'SELF_CHECK'
@@ -2243,11 +2243,11 @@ Does this make physical sense?
 In the circuit, the stored forms of energy are
 \begin{align*}
                 U_C    &=    \frac{1}{2C}q^2                        &(1')  \\
-                U_L    &=    \frac{1}{2}LI^2 \qquad , \qquad                        &(2')  
+                U_L    &=    \frac{1}{2}LI^2\eqquad, \qquad                        &(2')  
 \end{align*}
 and the rate of heat dissipation in the resistor is
 \begin{equation*}
-                \text{rate of heat dissipation}  =  -RI^2   \qquad   .        \qquad        (3')  
+                \text{rate of heat dissipation}  =  -RI^2\eqquad.        \qquad        (3')  
 \end{equation*}
 Comparing the two sets of equations, we first form analogies
 between quantities that represent the state of the system at
@@ -2277,7 +2277,7 @@ when the context makes it clear which is being referred to.}
  $\omega\approx\sqrt{k/m}$ , we can immediately solve the
 electrical version by analogy, giving
 \begin{equation*}
-          \omega \approx \frac{1}{\sqrt{LC}} \qquad   .
+          \omega \approx \frac{1}{\sqrt{LC}}\eqquad.
 \end{equation*}
 
 Since the resistance $R$ is analogous to $b$ in the mechanical case, we
@@ -2466,9 +2466,9 @@ is taking energy from the inductor is given by $|P|=|IV|$, so
 \begin{align*}
         |IV| &= \left|\frac{\der U_L}{\der t}\right| \\
                 &= \left|\frac{\der}{\der t}\left( \frac{1}{2}LI^2\right) \right| \\
-                &= \left|LI\frac{\der I}{\der t}\right| \qquad ,\\
+                &= \left|LI\frac{\der I}{\der t}\right|\eqquad,\\
 \intertext{or}
-        |V|        &= \left|L\frac{\der I}{\der t}\right| \qquad , \\
+        |V|        &= \left|L\frac{\der I}{\der t}\right|\eqquad, \\
 \end{align*}
 which in many books is taken to be the definition of inductance. The
 direction of the voltage drop (plus or minus sign) is such
@@ -2641,7 +2641,7 @@ voltage across a capacitor:
 <% end_marg %>
 The loop rule tells us
 \begin{equation*}
-                        V_R + V_C  =  0   \qquad   ,  
+                        V_R + V_C  =  0\eqquad,  
 \end{equation*}
 and combining the three equations results in a relationship between $q$ and $I$:
 \begin{equation*}
@@ -2664,7 +2664,7 @@ constant of the circuit.\index{RC time constant}\index{time constant!RC}
 How exactly do $I$ and $q$ vary with time? Rewriting $I$ as
 $\der q/\der t$, we have
 \begin{equation*}
-                \frac{\der q}{\der t} = -\frac{1}{RC}q \qquad .
+                \frac{\der q}{\der t} = -\frac{1}{RC}q\eqquad.
 \end{equation*}
 We need a function $q(t)$ whose derivative
 equals itself, but multiplied by a negative constant.
@@ -2673,7 +2673,7 @@ is the only one that has its derivative equal to itself, and
 $ae^{bt}$ has its derivative equal to itself multiplied by $b$. Thus
 our solution is
 \begin{equation*}
-                q = q_\zu{o}\exp\left(-\frac{t}{RC}\right) \qquad .
+                q = q_\zu{o}\exp\left(-\frac{t}{RC}\right)\eqquad.
 \end{equation*}
 
 <% marg(0) %>
@@ -2706,7 +2706,7 @@ our solution is
 The RL circuit, \figref{rl}, can be attacked by similar methods, and
 it can easily be shown that it gives
 \begin{equation*}
-                I = I_\zu{o}\exp\left(-\frac{R}{L}t\right) \qquad .
+                I = I_\zu{o}\exp\left(-\frac{R}{L}t\right)\eqquad.
 \end{equation*}
 The RL time constant equals $L/R$.
 
@@ -2967,7 +2967,7 @@ A particularly beautiful thing happens with the functions $e^x$, $\sin x$, and $
 \end{align*}
 If $x=i\phi$ is an imaginary number, we have
 \begin{equation*}
-  e^{i\phi} = \cos \phi + i \sin \phi \qquad ,
+  e^{i\phi} = \cos \phi + i \sin \phi\eqquad,
 \end{equation*}
 a result known as Euler's formula.\index{Euler's formula}
 The geometrical interpretation in the complex
@@ -2978,7 +2978,7 @@ Although the result may seem like something out of a freak show at first,
 applying the definition of the exponential function
 makes it clear how natural it is:
 \begin{align*}
-  e^x = \lim_{n\rightarrow \infty} \left(1+\frac{x}{n}\right)^n \qquad .
+  e^x = \lim_{n\rightarrow \infty} \left(1+\frac{x}{n}\right)^n\eqquad.
 \end{align*}
 When $x=i\phi$ is imaginary, the quantity $(1+i\phi/n)$ represents a number
 lying just above 1 in the complex plane. For large $n$, $(1+i\phi/n)$
@@ -3057,13 +3057,13 @@ are interested only in the steady-state response.
 
 The purely resistive case is easy. Ohm's law gives
 \begin{equation*}
-                I         =    \frac{V}{R}   \qquad   .  
+                I         =    \frac{V}{R}\eqquad.  
 \end{equation*}
 
 In the purely capacitive case, the relation $V=q/C$ lets us calculate
 \begin{align*}
                 I         &=    \frac{\der q}{\der t}  \\
-                         &=    C \frac{\der V}{\der t}   \qquad   .  
+                         &=    C \frac{\der V}{\der t}\eqquad.  
 \end{align*}
 
 This is partly analogous to Ohm's law. For example, if we double the amplitude of a sinusoidally
@@ -3143,11 +3143,11 @@ in units of amperes. But comparing with our result above, we have $|\tilde{I}|=\
 Bringing together the phase and magnitude information, we have $\tilde{I}=i\omega C\tilde{V}$.
 This looks very much like Ohm's law, so we write
 \begin{equation*}
-                \tilde{I}         =    \frac{\tilde{V}}{Z_C}   \qquad   ,  
+                \tilde{I}         =    \frac{\tilde{V}}{Z_C}\eqquad,  
 \end{equation*}
 where the quantity
 \begin{equation*}
-                Z_C    =     -\frac{i}{\omega C}                   \qquad , \qquad \text{[impedance of a capacitor]}  
+                Z_C    =     -\frac{i}{\omega C}\eqquad, \qquad \text{[impedance of a capacitor]}  
 \end{equation*}
 having units of ohms, is called the \emph{impedance} of
 the capacitor at this frequency.
@@ -3211,7 +3211,7 @@ Summarizing, the impedances of resistors, capacitors, and inductors are
         \begin{align*}
                 Z_R        &= R\\
                 Z_C &= -\frac{i}{\omega C}\\
-                Z_L &= i\omega L \qquad .
+                Z_L &= i\omega L\eqquad.
         \end{align*}
 
 \begin{eg}{Low-pass and high-pass filters}
@@ -3326,7 +3326,7 @@ doesn't matter what phase we assume. Let's use a cosine. The total amount of ene
 transferred over one cycle is
 \begin{align*}
         E        &=        \int \der E \\
-                &= \int_0^T \frac{\der E}{\der t} \der t \qquad , \\
+                &= \int_0^T \frac{\der E}{\der t} \der t\eqquad, \\
 \intertext{where $T=2\pi/\omega$ is the period.}
         E        &= \int_0^T P \der t \\
                 &= \int_0^T P \der t \\
@@ -3344,7 +3344,7 @@ The average power is
 \begin{align*}
         P_{av}        &= \frac{\text{energy transferred in one full cycle}}{\text{time for one full cycle}} \\
                         &= \frac{I_\zu{o}V_\zu{o}T/2}{T} \\
-                        &= \frac{I_\zu{o}V_\zu{o}}{2} \qquad ,\\
+                        &= \frac{I_\zu{o}V_\zu{o}}{2}\eqquad,\\
 \end{align*}
 i.e., the average is half the maximum. The power
 varies from $0$ to $I_\zu{o}V_\zu{o}$, and it spends equal amounts of time above and below the
@@ -3384,7 +3384,7 @@ the relation $I=C\der V/\der t$ tells us that the current will be some
 constant multiplied by minus the sine, $-V_\zu{o}\sin \omega t$.
 The integral we did in the case of a resistor now becomes
 \begin{equation*}
-                E = \int_0^T -I_\zu{o}V_\zu{o} \sin \omega t \cos \omega t \der t \qquad ,\\
+                E = \int_0^T -I_\zu{o}V_\zu{o} \sin \omega t \cos \omega t \der t\eqquad,\\
 \end{equation*}
 and based on figure \figref{capvip}, you can easily
 convince yourself that over the course of one full cycle, the power spends two quarter-cycles
@@ -3453,11 +3453,11 @@ or capacitive load, $P_{av}$ equals zero, so the problem isn't very interesting!
 Since we're assuming both the load and the transmission line are resistive, their
 impedances add in series, and the amplitude of the current is given by
 \begin{align*}
-        I_\zu{o}        &= \frac{V_\zu{o}}{Z_\zu{o}+Z_T} \qquad ,\\
+        I_\zu{o}        &= \frac{V_\zu{o}}{Z_\zu{o}+Z_T}\eqquad,\\
 \intertext{so}
         P_{av} &= I_\zu{o}V_\zu{o}/2 \\
                         &= I_\zu{o}^2Z_\zu{o}/2 \\
-                        &= \frac{V_\zu{o}^2Z_\zu{o}}{\left(Z_\zu{o}+Z_T\right)^2}/2 \qquad .
+                        &= \frac{V_\zu{o}^2Z_\zu{o}}{\left(Z_\zu{o}+Z_T\right)^2}/2\eqquad.
 \intertext{The maximum of this expression occurs where the derivative is zero,}
         0        &= \frac{1}{2}\frac{\der}{\der Z_\zu{o}}\left[\frac{V_\zu{o}^2Z_\zu{o}}{\left(Z_\zu{o}+Z_T\right)^2}\right] \\
         0        &= \frac{1}{2}\frac{\der}{\der Z_\zu{o}}\left[\frac{Z_\zu{o}}{\left(Z_\zu{o}+Z_T\right)^2}\right] \\
@@ -3504,9 +3504,9 @@ compensate for the mismatch.
         act as if they were a single circuit element with an impedance
         \begin{align*}
                  Z        &=  Z_{L}+ Z_{C}\\
-                                &=  i\omega L-\frac{ i}{\omega C} \qquad .\\
+                                &=  i\omega L-\frac{ i}{\omega C}\eqquad.\\
         \intertext{The current is then}
-                \tilde{ I} = \frac{\tilde{ V}}{ i\omega L- i/\omega C} \qquad .
+                \tilde{ I} = \frac{\tilde{ V}}{ i\omega L- i/\omega C}\eqquad.
         \end{align*}
         We don't care about the phase of the current, only its amplitude, which is
         represented by the absolute value of the complex number $\tilde{ I}$, and
@@ -3569,20 +3569,20 @@ compensate for the mismatch.
         All the current passes through the inductor, so if the driving voltage being supplied
         on the left is $\tilde{ V}_d$, we have
         \begin{equation*}
-                        \tilde{ V}_d  =  \tilde{ I}_{L} Z   \qquad   ,  
+                        \tilde{ V}_d  =  \tilde{ I}_{L} Z\eqquad,  
         \end{equation*}
         and we also have
         \begin{equation*}
-                        \tilde{ V}_{L}  =  \tilde{ I}_{L} Z_L   \qquad   .  
+                        \tilde{ V}_{L}  =  \tilde{ I}_{L} Z_L\eqquad.  
         \end{equation*}
         The loop rule, applied to the outer perimeter of the circuit, gives
         \begin{equation*}
-                        \tilde{ V}_{d}  = \tilde{ V}_{L}+\tilde{ V}_R   \qquad   .  
+                        \tilde{ V}_{d}  = \tilde{ V}_{L}+\tilde{ V}_R\eqquad.  
         \end{equation*}
         Straightforward algebra now results in
         \begin{equation*}
                         \tilde{ V}_{R}  = \frac{\tilde{ V}_{d}}%
-                                                                        {1+ Z_L/ Z_{C}+ Z_{L}/ Z_R}   \qquad   .  
+                                                                        {1+ Z_L/ Z_{C}+ Z_{L}/ Z_R}\eqquad.  
         \end{equation*}
         At high frequencies, the $Z_{L}/ Z_C$ term, which varies as
         $\omega^2$, dominates, so $\tilde{ V}_R$ and $\tilde{ I}_R$
@@ -3621,7 +3621,7 @@ remote control, so that her the charge on her own body would be too far away to 
 effect, they would be disrupted by the ambient field of planet Flatcat. Finally, however,
 she realized that she could improve her equation by rewriting it as follows:
 \begin{equation*}
-        E_{outward,\ on\ side\ 1}+E_{outward,\ on\ side\ 2} = 4\pi k\sigma \qquad .
+        E_{outward,\ on\ side\ 1}+E_{outward,\ on\ side\ 2} = 4\pi k\sigma\eqquad.
 \end{equation*}
 The tricky thing here is that ``outward'' means a different thing, depending on which
 side of the foil we're on. On the left side, ``outward'' means to the left, while on
@@ -3640,7 +3640,7 @@ $A$, of one side of the foil:
 \begin{align*}
         \left(E_{outward,\ on\ side\ 1}+E_{outward,\ on\ side\ 2}\right)A &= 4\pi k\sigma A \\
 \intertext{or}
-        E_{outward,\ on\ side\ 1}A+E_{outward,\ on\ side\ 2}A &= 4\pi kq \qquad , \\
+        E_{outward,\ on\ side\ 1}A+E_{outward,\ on\ side\ 2}A &= 4\pi kq\eqquad, \\
 \end{align*}
 where $q$ is the charge of the foil. The reason for this modification is that
 she can now make the whole thing more attractive by 
@@ -3652,7 +3652,7 @@ that side, which is in the opposite direction. The dot product of two vectors,
 $\vc{u}\cdot\vc{v}$, can be interpreted as $u_{parallel\ to\ v}|\vc{v}|$, and she
 can therefore rewrite her equation as 
 \begin{equation*}
-        \vc{E}_1\cdot\vc{A}_1+\vc{E}_2\cdot\vc{A}_2 = 4\pi k q \qquad .
+        \vc{E}_1\cdot\vc{A}_1+\vc{E}_2\cdot\vc{A}_2 = 4\pi k q\eqquad.
 \end{equation*}
 The quantity on the left side of this equation is called the \emph{flux} through
 the surface, written $\Phi$.\index{flux!defined}
@@ -3768,33 +3768,33 @@ by
 <% if is_print then
 print %q(
 \begin{align*}
-        |\vc{E}| &= \frac{kq_{total}}{r^2} \qquad ,
+        |\vc{E}| &= \frac{kq_{total}}{r^2}\eqquad,
 \intertext{where $r$ is the radius of Flatcat. The flux is then}
-        \Phi        &= \sum \vc{E}_j\cdot\vc{A}_j \qquad , \\\\
+        \Phi        &= \sum \vc{E}_j\cdot\vc{A}_j\eqquad, \\\\
 \intertext{and since the $\vc{E}_j$ and $\vc{A}_j$ vectors are parallel, the dot
 product equals $|\vc{E}_j||\vc{A}_j|$, so}
-        \Phi        &= \sum \frac{kq_{total}}{r^2}|\vc{A}_j| \qquad .\\\\
+        \Phi        &= \sum \frac{kq_{total}}{r^2}|\vc{A}_j|\eqquad.\\\\
 \intertext{But the field strength is always the same, so we can take it outside the sum,
 giving}
         \Phi        &= \frac{kq_{total}}{r^2} \sum |\vc{A}_j| \\\\
                         &= \frac{kq_{total}}{r^2} A_{total} \\\\
                         &= \frac{kq_{total}}{r^2} 4\pi r^2 \\\\
-                        &= 4\pi kq_{total} \qquad .
+                        &= 4\pi kq_{total}\eqquad.
 \end{align*}
 )
 else
 print %q(
 \begin{equation*}
-        |\vc{E}| &= \frac{kq_{total}}{r^2} \qquad ,
+        |\vc{E}| &= \frac{kq_{total}}{r^2}\eqquad,
 \end{equation*}
 where $r$ is the radius of Flatcat. The flux is then
 \begin{equation*}
-        \Phi        &= \sum \vc{E}_j\cdot\vc{A}_j \qquad , \\
+        \Phi        &= \sum \vc{E}_j\cdot\vc{A}_j\eqquad, \\
 \end{equation*}
 and since the $\vc{E}_j$ and $\vc{A}_j$ vectors are parallel, the dot
 product equals $|\vc{E}_j||\vc{A}_j|$, so
 \begin{equation*}
-        \Phi        &= \sum \frac{kq_{total}}{r^2}|\vc{A}_j| \qquad .\\
+        \Phi        &= \sum \frac{kq_{total}}{r^2}|\vc{A}_j|\eqquad.\\
 \end{equation*}
 But the field strength is always the same, so we can take it outside the sum,
 giving
@@ -3802,7 +3802,7 @@ giving
         \Phi        &= \frac{kq_{total}}{r^2} \sum |\vc{A}_j| \\
                         &= \frac{kq_{total}}{r^2} A_{total} \\
                         &= \frac{kq_{total}}{r^2} 4\pi r^2 \\
-                        &= 4\pi kq_{total} \qquad .
+                        &= 4\pi kq_{total}\eqquad.
 \end{align*}
 )
 end
@@ -3931,7 +3931,7 @@ giving\label{tinycube}
         \Phi        &= \Phi_{left}+4\Phi_{side}+\Phi_{right} \\
                         &= |\vc{E}_{left}||\vc{A}_{left}|\cos 180\degunit
                                 +4|\vc{E}_{side}||\vc{A}_{side}|\cos \theta_{side} \\
-                                & \quad +|\vc{E}_{right}||\vc{A}_{right}|\cos 0\degunit \qquad ,\\
+                                & \quad +|\vc{E}_{right}||\vc{A}_{right}|\cos 0\degunit\eqquad,\\
 \intertext{and a little trig gives $\cos\theta_{side}\approx b/d$, so}
         \Phi        &= -|\vc{E}_{left}||\vc{A}_{left}|
                                 +4|\vc{E}_{side}||\vc{A}_{side}|\frac{b}{d}
@@ -3944,13 +3944,13 @@ giving\label{tinycube}
                                 +\frac{kq}{(d+b)^2}\right)\\
                         &= \left(\frac{4kqb^2}{d^2}\right)\left(-\frac{1}{(1-b/d)^2}
                                 +\frac{4b}{d}
-                                +\frac{1}{(1+b/d)^2}\right) \qquad .\\
+                                +\frac{1}{(1+b/d)^2}\right)\eqquad.\\
 \intertext{Using the approximation $(1+\epsilon)^{-2}\approx 1-2\epsilon$ for small $\epsilon$, this
 becomes}
         \Phi        &= \left(\frac{4kqb^2}{d^2}\right)\left(-1-\frac{2b}{d}
                                 +\frac{4b}{d}
                                 +1-\frac{2b}{d}\right) \\
-                        &= 0 \qquad .
+                        &= 0\eqquad.
 \end{align*}
 Thus in the limit of a very small cube,  $b\ll d$, we have proved that the flux due to
 this exterior charge is zero. The proof can be extended to the case where the
@@ -4144,7 +4144,7 @@ definition of the flux is $\vc{E}_j\cdot\vc{A}_j=|\vc{E}_j||\vc{A}_j||\cos\ 0\de
 Gauss' law gives
 \begin{align*}
         4\pi k q_{in}        &= \sum \vc{E}_j\cdot\vc{A}_j \\
-        4\pi k \lambda L        &= \sum |\vc{E}_j||\vc{A}_j| \qquad .\\
+        4\pi k \lambda L        &= \sum |\vc{E}_j||\vc{A}_j|\eqquad.\\
 \intertext{The magnitude of the field is the same on every strip, so we can take it outside the sum.}
         4\pi k \lambda L        &= |\vc{E}| \sum |\vc{A}_j| \\
 \intertext{In the limit where the strips are infinitely narrow, the surface becomes a
@@ -4173,10 +4173,10 @@ from the surface, and is equally strong on both sides of the surface.
 This means that the end caps contribute equally to the flux, and the curved sides have zero
 flux through them. If the area of each end cap is $A$, then
 \begin{align*}
-        4\pi k q_{in}        &=  \vc{E}_1\cdot\vc{A}_1+\vc{E}_2\cdot\vc{A}_2 \qquad , \\
+        4\pi k q_{in}        &=  \vc{E}_1\cdot\vc{A}_1+\vc{E}_2\cdot\vc{A}_2\eqquad, \\
 \intertext{where the subscripts 1 and 2 refer to the two end caps. We have $\vc{A}_2=-\vc{A}_1$, so}
         4\pi k q_{in}        &=  \vc{E}_1\cdot\vc{A}_1-\vc{E}_2\cdot\vc{A}_1 \\
-        4\pi k q_{in}        &=  \left(\vc{E}_1-\vc{E}_2\right)\cdot\vc{A}_1 \qquad , \\
+        4\pi k q_{in}        &=  \left(\vc{E}_1-\vc{E}_2\right)\cdot\vc{A}_1\eqquad, \\
 \intertext{and by symmetry the magnitudes of the two fields are equal, so}
         2|\vc{E}|A &= 4 \pi k \sigma A\\
         |\vc{E}| &= 2\pi k\sigma
@@ -4186,9 +4186,9 @@ The symmetry between the two sides could be broken by the existence of other cha
 nearby, whose fields would add onto the field of the surface itself. 
 Even then, Gauss's law still guarantees
 \begin{align*}
-4\pi k q_{in}        &=  \left(\vc{E}_1-\vc{E}_2\right)\cdot\vc{A}_1 \qquad ,
+4\pi k q_{in}        &=  \left(\vc{E}_1-\vc{E}_2\right)\cdot\vc{A}_1\eqquad,
 \intertext{or}
-  |\vc{E}_{\perp,1}-\vc{E}_{\perp,2}| &= 4\pi k \sigma \qquad ,
+  |\vc{E}_{\perp,1}-\vc{E}_{\perp,2}| &= 4\pi k \sigma\eqquad,
 \end{align*}
 where the subscript $\perp$ indicates the component of the field parallel
 to the surface (i.e., parallel to the area vectors). In other words,
@@ -4252,30 +4252,30 @@ The difference $E_x(x+\der x)-E_x(x)$ can be rewritten as
 $\der E_x=(\der E_x)/(\der x)\der x$, so the contribution to the flux
 from these two sides of the cube ends up being
 \begin{equation*}
-        \frac{\der E_x}{\der x}\der x\der y\der z \qquad .
+        \frac{\der E_x}{\der x}\der x\der y\der z\eqquad.
 \end{equation*}
 Doing the same for the other sides, we end up with a total flux
 \begin{align*}
         \der \Phi        &= \left(\frac{\der E_x}{\der x}+\frac{\der E_y}{\der y}
                                                 +\frac{\der E_z}{\der z}\right)\der x\der y\der z \\
                                 &= \left(\frac{\der E_x}{\der x}+\frac{\der E_y}{\der y}
-                                                +\frac{\der E_z}{\der z}\right)\der v \qquad ,\\
+                                                +\frac{\der E_z}{\der z}\right)\der v\eqquad,\\
 \intertext{where $\der v$ is the volume of the cube. In evaluating each of these
 three derivatives, we are going to treat the other two variables as constants,
 to emphasize this we use the partial derivative notation $\partial$ introduced
 in chapter \ref{ch:3},}
         \der \Phi        &= \left(\frac{\partial E_x}{\partial x}+\frac{\partial E_y}{\partial y}
-                                                +\frac{\partial E_z}{\partial z}\right)\der v \qquad .\\
+                                                +\frac{\partial E_z}{\partial z}\right)\der v\eqquad.\\
 \intertext{Using Gauss' law,}
         4\pi k q_{in}        &= \left(\frac{\partial E_x}{\partial x}+\frac{\partial E_y}{\partial y}
-                                                +\frac{\partial E_z}{\partial z}\right)\der v \qquad ,\\
+                                                +\frac{\partial E_z}{\partial z}\right)\der v\eqquad,\\
 \intertext{and we introduce the notation $\rho$ (Greek letter rho) for the charge
 per unit volume, giving}
         4\pi k \rho        &= \frac{\partial E_x}{\partial x}+\frac{\partial E_y}{\partial y}
-                                                +\frac{\partial E_z}{\partial z} \qquad .\\
+                                                +\frac{\partial E_z}{\partial z}\eqquad.\\
 \intertext{The quantity on the right is called the \emph{divergence} of the electric
 field, written $\divg \vc{E}$. Using this notation, we have}
-        \divg \vc{E} = 4\pi k \rho \qquad .
+        \divg \vc{E} = 4\pi k \rho\eqquad.
 \end{align*}
 This equation has all the same physical implications as Gauss' law. After all, we
 proved Gauss' law by breaking down space into little cubes like this. We therefore
@@ -4324,13 +4324,13 @@ will feel a force in the same direction, but they will neither expand nor contra
         Mathematically, let the $x$ axis be to the right and let $y$ be up.
         The field is of the form
         \begin{equation*}
-                \vc{E}        = (\zu{sin}  Kx)\: \hat{\vc{y}} \qquad ,
+                \vc{E}        = (\zu{sin}  Kx)\: \hat{\vc{y}}\eqquad,
         \end{equation*}
         where the constant $K$ is not to be confused with Coulomb's constant.
         Since the field has only a $y$ component, the only term in the divergence
         we need to evaluate is
         \begin{equation*}
-                \vc{E}        = \frac{\partial  E_{y}}{\partial  y} \qquad ,
+                \vc{E}        = \frac{\partial  E_{y}}{\partial  y}\eqquad,
         \end{equation*}
         but this vanishes, because $E_y$ depends only on $x$, not $y$\/:
         we treat $y$ as a constant when evaluating the partial derivative
@@ -4358,7 +4358,7 @@ charge in zero volume).
 
         At all other points, we have
 \begin{equation*}
-                        \vc{E}          =    \frac{ kq}{ r^2}\hat{\vc{r}}   \qquad   ,  
+                        \vc{E}          =    \frac{ kq}{ r^2}\hat{\vc{r}}\eqquad,  
 \end{equation*}
 where $\hat{\vc{r}}=\vc{r}/ r=( x\hat{\vc{x}}+ y\hat{\vc{y}}+ z\hat{\vc{z}})/ r$ 
 is the unit vector pointing radially away from
@@ -4366,14 +4366,14 @@ the charge. The field can therefore be written as
 \begin{align*}
                         \vc{E}         &=     \frac{ kq}{ r^3}\hat{\vc{r}} \\
                                  &=      \frac{ kq( x\hat{\vc{x}}+ y\hat{\vc{y}}+ z\hat{\vc{z}})}%
-                                                         {\left( x^2+ y^2+ z^2\right)^\zu{3/2}} \qquad   .  \\
+                                                         {\left( x^2+ y^2+ z^2\right)^\zu{3/2}}\eqquad.  \\
 \intertext{The three terms in the divergence are all similar, e.g.,}
         \frac{\partial  E_{x}}{\partial  x}         
                                 &=    kq\frac{\partial}{\partial  x}%
                                                 \left[\frac{ x}{\left( x^2+ y^2+ z^2\right)^\zu{3/2}}\right]  \\
                                  &=   kq\left[\frac{1}{\left( x^2+ y^2+ z^2\right)^\zu{3/2}}%
                                                 -\frac{3}{2}\:\frac{2 x^2}{\left( x^2+ y^2+ z^2\right)^\zu{5/2}}\right]    \\
-                                 &=   kq\left( r^{-3}-3 x^2 r^{-5}\right)   \qquad   .  
+                                 &=   kq\left( r^{-3}-3 x^2 r^{-5}\right)\eqquad.  
 \end{align*}
 Straightforward algebra shows that adding in the other two
 terms results in zero, which makes sense, because there is no
@@ -4400,7 +4400,7 @@ surface of the earth.)
 By symmetry we know that the field must be purely
 radial (in and out). We guess that the solution might be of the form
 \begin{equation*}
-                        \vc{E}         =     br^ p\hat{\vc{r}}   \qquad   ,  
+                        \vc{E}         =     br^ p\hat{\vc{r}}\eqquad,  
 \end{equation*}
 where $r$ is the distance from the center, and $b$ and $p$
 are constants. A negative value of $p$ would indicate a
@@ -4414,11 +4414,11 @@ we rewrite $\hat{\vc{r}}$ as $\vc{r}/ r$,
 and to simplify the writing we
 define $n= p-1$, so 
 \begin{equation*}
-                        \vc{E}         =     br^ n\vc{r}  \qquad   .
+                        \vc{E}         =     br^ n\vc{r}\eqquad.
 \end{equation*}
 Gauss' law in differential form is
 \begin{equation*}
-                        \divg\vc{E}         =     4\pi  k\rho  \qquad   ,  
+                        \divg\vc{E}         =     4\pi  k\rho\eqquad,  
 \end{equation*}
 so we want a field whose divergence is constant. For a field
 of the form we guessed, the divergence has terms in it like
@@ -4439,7 +4439,7 @@ Adding in similar expressions for the other two terms in the
 divergence, and making use of $x^2+ y^2+ z^2= r^2$,
 we have
 \begin{equation*}
-                        \divg\vc{E}         =     b( n+3) r^ n   \qquad   .  
+                        \divg\vc{E}         =     b( n+3) r^ n\eqquad.  
 \end{equation*}
 This can indeed be constant, but only if $n$ is 0 or $-3$,
 i.e., $p$ is 1 or $-2$.
@@ -4451,7 +4451,7 @@ which is what we care about right now.
 Equating the
 coefficient in front to the one in Gauss' law, the field is
 \begin{equation*}
-                        \vc{E}         =    \frac{4\pi k\rho}{3} r\:\hat{\vc{r}}\qquad .  
+                        \vc{E}         =    \frac{4\pi k\rho}{3} r\:\hat{\vc{r}}\eqquad.  
 \end{equation*}
 The field is zero at the center, and gets stronger and stronger as we approach
 the surface.

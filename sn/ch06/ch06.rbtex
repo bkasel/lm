@@ -549,19 +549,19 @@ $\sin\theta = 2h/w$, and $F=4Th/w$. The acceleration of the
 segment (actually the acceleration of its center of mass) is
 \begin{align*}
         a        &=  \frac{F}{m} \\
-                &=  \frac{4Th}{\mu w^2} \qquad .
+                &=  \frac{4Th}{\mu w^2}\eqquad.
 \end{align*}
 The time required to move a distance $h$ under constant
 acceleration $a$ is found by solving $h=(1/2)at^2$ to yield
 \begin{align*}
         t        &=  \sqrt{2h/a} \\
-                &=   w \sqrt{\frac{\mu}{2T}} \qquad .
+                &=   w \sqrt{\frac{\mu}{2T}}\eqquad.
 \end{align*}
 Our final result for the speed of the pulses
 is
 \begin{align*}
         v        &=  w/t\\
-                &=  \sqrt{\frac{2T}{\mu}} \qquad .
+                &=  \sqrt{\frac{2T}{\mu}}\eqquad.
 \end{align*}
 
 The remarkable feature of this result is that the velocity
@@ -574,7 +574,7 @@ course, after so many approximations we cannot expect to
 have gotten all the numerical factors right. The correct
 result for the speed of the pulses is
 \begin{equation*}
-        v        =  \sqrt{\frac{T}{\mu}} \qquad .
+        v        =  \sqrt{\frac{T}{\mu}}\eqquad.
 \end{equation*}
 
 The importance of the above derivation lies in the insight
@@ -601,7 +601,7 @@ is not surprising to find that the infinitesimal force $\der F$
 acting on an infinitesimal segment $\der x$ is given
 by
 \begin{equation*}
-        \der F        = T\:\frac{\partial^2y}{\partial x^2} \der x   \qquad .
+        \der F        = T\:\frac{\partial^2y}{\partial x^2} \der x\eqquad.
 \end{equation*}
 (This can be proved by vector addition of the two
 infinitesimal forces acting on either side.) The symbol $\partial$ stands
@@ -610,7 +610,7 @@ a derivative with respect to $x$ that is evaluated while treating $t$ as a const
 acceleration is then $a =\der F/\der m$, or, substituting
 $\der m=\mu \der x$,
 \begin{equation*}
-        \frac{\partial^2y}{\partial t^2}        = \frac{T}{\mu}\:\frac{\partial^2y}{\partial x^2}    \qquad .
+        \frac{\partial^2y}{\partial t^2}        = \frac{T}{\mu}\:\frac{\partial^2y}{\partial x^2}\eqquad.
 \end{equation*}
 The second derivative with respect to time is related to the
 second derivative with respect to position. This is no more
@@ -634,13 +634,13 @@ respect to time brings out a factor of $v$. Evaluating the
 second derivatives on both sides of the equation
 gives
 \begin{equation*}
-        (\pm v)^2\: f''  =  \frac{T}{\mu}\:f'' \qquad .
+        (\pm v)^2\: f''  =  \frac{T}{\mu}\:f''\eqquad.
 \end{equation*}
 Squaring gets rid of the sign, and we find that we have a
 valid solution for any function $f$, provided that $v$ is given
 by
 \begin{equation*}
-        v =  \sqrt{\frac{T}{\mu}} \qquad .
+        v =  \sqrt{\frac{T}{\mu}}\eqquad.
 \end{equation*}
 
 <% end_sec() %>
@@ -864,12 +864,12 @@ distance between pulses is $\lambda$, and the time between pulses is
 the period, $T$, so the speed of the wave is the distance
 divided by the time,
 \begin{equation*}
-        v  =  \lambda/T \qquad .
+        v  =  \lambda/T\eqquad.
 \end{equation*}
 This important and useful relationship is more commonly
 written in terms of the frequency, 
 \begin{equation*}
-        v  =  f\lambda \qquad .
+        v  =  f\lambda\eqquad.
 \end{equation*}
 <% marg() %>
 <%
@@ -1078,7 +1078,7 @@ the source over the course of one period. Using the
 definition $f=1/T$ and the equation $v=f\lambda$, we find for the
 wavelength $\lambda'$ of the Doppler-shifted wave the equation
 \begin{equation*}
-        \lambda' = \left(1-\frac{u}{v}\right)\:\lambda  \qquad .
+        \lambda' = \left(1-\frac{u}{v}\right)\:\lambda\eqquad.
 \end{equation*}
 A similar equation can be used for the backward-emitted
 waves, but with a plus sign rather than a minus sign.
@@ -1094,7 +1094,7 @@ observer lying along its line of motion?
 For an observer whom the car is approaching, we
 find
 \begin{equation*}
-        1-\frac{ u}{ v}=   0.85 \qquad  ,
+        1-\frac{ u}{ v}=   0.85\eqquad,
 \end{equation*}
 so the shift in wavelength is 15\%. Since the frequency is
 inversely proportional to the wavelength for a fixed value
@@ -1117,7 +1117,7 @@ light waves emitted by a race car's headlights?
 Looking up the speed of light in the back of the
 book, $v= 3.0\times10^8\ \zu{m/s}$, we find
 \begin{equation*}
-        1-\frac{ u}{ v} \zu{=  0.99999983}  \qquad ,
+        1-\frac{ u}{ v} \zu{=  0.99999983}\eqquad,
 \end{equation*}
 i.e., the percentage shift is only 0.000017\%.
 \end{eg}
@@ -1864,7 +1864,7 @@ On the right side immediately next to the boundary, the
 transmitted wave has a height $T$. To avoid a discontinuity,
 we must have
 \begin{equation*}
-        1+R = T \qquad .
+        1+R = T\eqquad.
 \end{equation*}
 
 Next we turn to the requirement of equal slopes on both
@@ -1883,14 +1883,14 @@ the right is therefore $s(v_1/v_2)T$, where $v_1$ is the velocity
 in the original medium and $v_2$ the velocity in the new
 medium. Equality of slopes gives $s-sR = s(v_1/v_2)T$, or
 \begin{equation*}
-        1-R = \frac{v_1}{v_2}T \qquad .
+        1-R = \frac{v_1}{v_2}T\eqquad.
 \end{equation*}
 Solving the two equations for the unknowns $R$ and $T$
 gives\label{reflected-wave-amplitude}
 \begin{align*}
         R &=  \frac{v_2-v_1}{v_2+v_1}  \\ 
 \intertext{and}
-          T &= \frac{2v_2}{v_2+v_1} \qquad .
+          T &= \frac{2v_2}{v_2+v_1}\eqquad.
 \end{align*}
 
 The first equation shows that there is no reflection unless

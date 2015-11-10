@@ -546,7 +546,7 @@ A Caltech-MIT collaboration has built
         a positive $x$ component. Using the answer to the self-check, we have
         \begin{align*}
                          E_{-q,x}         &=    \frac{ kq}{ b^2}  \\
-                         E_{-q,y}         &=    0   \qquad   .  
+                         E_{-q,y}         &=    0\eqquad.  
         \end{align*}
         Note that if we had blindly ignored the absolute value signs
         and plugged in $- q$ to the equation, we would have
@@ -567,7 +567,7 @@ A Caltech-MIT collaboration has built
         The total field is
         \begin{align*}
                          E_\zu{x}         &=   \left(1-2^{-\zu{3/2}}\right)\frac{ kq}{ b^2}   \\
-                         E_{y}         &=   \frac{ kq}{2^\zu{3/2} b^2} \qquad .
+                         E_{y}         &=   \frac{ kq}{2^\zu{3/2} b^2}\eqquad.
         \end{align*}
 \end{eg}
 
@@ -690,7 +690,7 @@ This is done in example \ref{eg:line-charge-gauss} on p.~\pageref{eg:line-charge
         respect to the field. The total torque on the dipole is
         \begin{align*}
                         \tau          &=  \frac{\ell}{2}q|\vc{E}|\sin \theta+\frac{\ell}{2}q|\vc{E}|\sin \theta    \\
-                                 &=     \ell q|\vc{E}|\sin \theta  \qquad   .  
+                                 &=     \ell q|\vc{E}|\sin \theta\eqquad.  
         \end{align*}
         (Note that even though the two forces are in opposite
         directions, the torques do not cancel, because they are both
@@ -747,16 +747,16 @@ field is force per unit charge. We can therefore relate
 voltage and field if we start from the relationship between
 potential energy and force,
 \begin{multline*}
-                \Delta PE    =    -Fd \qquad , \hfill \shoveright{\text{[assuming constant force and}}\\
+                \Delta PE    =    -Fd\eqquad, \hfill \shoveright{\text{[assuming constant force and}}\\
                                              \text{motion parallel to the force]}
 \end{multline*}
 and divide by charge,
 \begin{multline*}
-                \frac{\Delta PE}{q}    =    -\frac{F}{q}d \qquad ,\hfill
+                \frac{\Delta PE}{q}    =    -\frac{F}{q}d\eqquad,\hfill
 \end{multline*}
 giving
 \begin{multline*}
-                        \Delta V    =    -Ed \qquad , \hfill \shoveright{\text{[assuming constant force and}}\\
+                        \Delta V    =    -Ed\eqquad, \hfill \shoveright{\text{[assuming constant force and}}\\
                                              \text{motion parallel to the force]}
 \end{multline*}
 
@@ -779,7 +779,7 @@ the map where the altitude is rapidly changing.
         Subject to the possibly inaccurate assumption of a constant
         field parallel to the eel's body, we have
         \begin{equation*}
-                                |\vc{E}| =    \frac{\Delta V}{\Delta  x} =    1000\ \zu{V/m}   \qquad   .  
+                                |\vc{E}| =    \frac{\Delta V}{\Delta  x} =    1000\ \zu{V/m}\eqquad.  
         \end{equation*}
 
 \end{eg}
@@ -814,7 +814,7 @@ fields as weak as 50 \emph{pico}volts per meter!
         defined as electrical energy per unit charge, it has units of J/C:
         \begin{equation*}
                         \frac{\zu{V}}{\zu{m}}         =   \frac{\zu{J/C}}{\zu{m}}   
-                                 =  \frac{\zu{J}}{\zu{C}\cdot\zu{m}}     \qquad   .  
+                                 =  \frac{\zu{J}}{\zu{C}\cdot\zu{m}}\eqquad.  
         \end{equation*}
         To connect joules to newtons, we recall that work equals
         force times distance, so $\zu{J}=\zu{N}\cdot\zu{m}$, so
@@ -941,7 +941,7 @@ universe's energy as consisting of
  + &\text{electric potential energy based on the distances between}\\
    &\text{objects that interact electrically}\\
  + &\text{magnetic potential energy based on the distances between}\\
-   &\text{objects that interact magnetically} \qquad ,\\
+   &\text{objects that interact magnetically}\eqquad,\\
 \intertext{but in nonstatic situations we must use a different method:}
    &\text{kinetic energy}\\
  + &\text{gravitational potential energy stored in gravitational fields}\\
@@ -1095,15 +1095,15 @@ The calculus-savvy reader will have no difficulty generalizing
 the field-voltage relationship to the case of a varying
 field. The potential energy associated with a varying force is
 \begin{equation*}
-                \Delta PE         =   -\int F \der x \qquad , \qquad \text{[one dimension]}
+                \Delta PE         =   -\int F \der x\eqquad, \qquad \text{[one dimension]}
 \end{equation*}
 so for electric fields we divide by $q$ to find
 \begin{equation*}
-                \Delta V         =   -\int E \der x \qquad , \qquad \text{[one dimension]}
+                \Delta V         =   -\int E \der x\eqquad, \qquad \text{[one dimension]}
 \end{equation*}
 Applying the fundamental theorem of calculus yields
 \begin{equation*}
-  E = -\frac{\der V}{\der x} \qquad . \qquad \text{[one dimension]}
+  E = -\frac{\der V}{\der x}\eqquad. \qquad \text{[one dimension]}
 \end{equation*}
 
 \begin{eg}{Voltage associated with a point charge}
@@ -1125,12 +1125,12 @@ Applying the fundamental theorem of calculus yields
                         \Delta V &= -\int_{ r_1}^{ r_2}  E_{r} \der  r \\
                                  &=   -\int_{ r_1}^{ r_2} \frac{ kQ}{ r^2} \der  r   \\
                                  &=   \left.\frac{ kQ}{ r}\right]_{ r_1}^{ r_2} \\  
-                                 &= \frac{ kQ}{ r_2}-\frac{ kQ}{ r_1} \qquad .
+                                 &= \frac{ kQ}{ r_2}-\frac{ kQ}{ r_1}\eqquad.
         \end{align*}
         The standard convention is to use $r_1=\infty$ as a reference
         point, so that the voltage at any distance $r$ from the charge is
         \begin{equation*}
-                         V         =   \frac{ kQ}{ r}    \qquad   .  
+                         V         =   \frac{ kQ}{ r}\eqquad.  
         \end{equation*}
         The interpretation is that if you bring a positive test
         charge closer to a positive charge, its electrical energy is
@@ -1364,7 +1364,7 @@ each field is inversely proportional to the corresponding surface area. We there
 \begin{align*}
   E_A &= E_B\left(\frac{A_B}{A_A}\right) \\
       &= \left(\frac{kq}{r_B^2}\right)\left(\frac{4\pi r_B^2}{2\pi r_A L}\right) \\
-      &= \frac{2kq}{Lr_A} \qquad .
+      &= \frac{2kq}{Lr_A}\eqquad.
 \end{align*}
 The unknown numerical constant equals 2.
 \end{eg}
@@ -1441,7 +1441,7 @@ continuous case, we have three integrals.
         $d- z$. The result is
         \begin{align*}
                          E_{z}         &=    k\lambda\left(\frac{1}{ d- z}\right)_{- L/2}^{+ L/2}   \\
-                                 &=   \frac{ kQ}{ L} \left(\frac{1}{ d- L/2}-\frac{1}{ d+ L/2}\right)   \qquad   .  
+                                 &=   \frac{ kQ}{ L} \left(\frac{1}{ d- L/2}-\frac{1}{ d+ L/2}\right)\eqquad.  
         \end{align*}
                 For large values of $d$, this expression gets
         smaller for two reasons: (1) the denominators of the

@@ -113,13 +113,13 @@ for i in range(100):
 %	\begin{split}
 %		& \left[(-m\omega^2+k)\cos\delta-b\omega\sin\delta-F_m/A\right]\sin\omega t \\
 %		+ & \left[(-m\omega^2+k)\sin\delta+b\omega\cos\delta\right]\cos\omega t
-%			= 0 \qquad .
+%			= 0\eqquad.
 %	\end{split}
 %	\end{equation*}
 	\begin{gather*}
 		 \left[(-m\omega^2+k)\cos\delta-b\omega\sin\delta-F_m/A\right]\sin\omega t \\
 		+  \left[(-m\omega^2+k)\sin\delta+b\omega\cos\delta\right]\cos\omega t
-			= 0 \qquad .
+			= 0\eqquad.
 	\end{gather*}
 	Both the quantities in square brackets must equal zero, which gives us two
 	equations we can use to determine the unknowns $A$ and $\delta$. 
@@ -131,7 +131,7 @@ for i in range(100):
 	\intertext{and}
 		A &= \frac{F_m}{\sqrt{\left(m\omega^2-k\right)^2+b^2\omega^2}} \\
 			&= \frac{F_m}{m\sqrt{\left(\omega^2-\omega_\zu{o}^2\right)^2
-				+\omega_\zu{o}^2\omega^2Q^{-2}}} \qquad .
+				+\omega_\zu{o}^2\omega^2Q^{-2}}}\eqquad.
 	\end{align*}
 \label{resonance-amplitude}
 
@@ -216,7 +216,7 @@ conserved, so we have $\der\zb{L}/\der t$=0.
 From example \ref{eg:torqueproof} on page \pageref{eg:torqueproof}, this
 derivative can be rewritten as
 \begin{equation*}
-		\frac{\der\zb{L}}{\der t}	= \sum_i  \zb{r}_i\times\zb{F}_i \qquad ,
+		\frac{\der\zb{L}}{\der t}	= \sum_i  \zb{r}_i\times\zb{F}_i\eqquad,
 \end{equation*}
 where $\zb{F}_i$ is the total force acting on particle $i$. In other words, we're
 adding up all the torques on all the particles. 
@@ -231,7 +231,7 @@ In the new frame, the rate of change of the angular momentum is
 		\frac{\der\zb{L}}{\der t}	&= \sum_i
 				(\zb{r}_i+\zb{k}-\zb{u}t)\times\zb{F}_i \\
 		&= \sum_i \zb{r}_i\times\zb{F}_i
-			+ (\zb{k}-\zb{u}t) \times \sum_i \zb{F}_i \qquad .
+			+ (\zb{k}-\zb{u}t) \times \sum_i \zb{F}_i\eqquad.
 \end{align*}
 The first term is the expression for the rate of change of the angular
 momentum in the original frame of reference, which is zero by
@@ -257,16 +257,16 @@ concentrated at and moving with its center of mass.\index{spin theorem!proof}
 \mythmhdr{Proof} Let $\zb{r}_{cm}$ be the position of the center of mass.
 The total angular momentum is
 \begin{align*}
-	\zb{L}	&= \sum_i \zb{r}_i \times \zb{p}_i \qquad , \\
+	\zb{L}	&= \sum_i \zb{r}_i \times \zb{p}_i\eqquad, \\
 \intertext{which can be rewritten as}
-	\zb{L}	&= \sum_i \left(\zb{r}_{cm} + \zb{r}_i -\zb{r}_{cm}\right) \times \zb{p}_i \qquad ,\\
+	\zb{L}	&= \sum_i \left(\zb{r}_{cm} + \zb{r}_i -\zb{r}_{cm}\right) \times \zb{p}_i\eqquad,\\
 \intertext{where $\zb{r}_i -\zb{r}_{cm}$ is particle $i$'s position relative to the center of mass. We then have}
 	\zb{L}	&= \zb{r}_{cm} \times \sum_i \zb{p}_i
 				+ \sum_i \left(\zb{r}_i -\zb{r}_{cm}\right) \times \zb{p}_i  \\
 			&= \zb{r}_{cm} \times \zb{p}_{total}
 				+ \sum_i \left(\zb{r}_i -\zb{r}_{cm}\right) \times \zb{p}_i \\
 			&= \zb{r}_{cm} \times m_{total}\zb{v}_{cm}
-				+ \sum_i \left(\zb{r}_i -\zb{r}_{cm}\right) \times \zb{p}_i \qquad .
+				+ \sum_i \left(\zb{r}_i -\zb{r}_{cm}\right) \times \zb{p}_i\eqquad.
 \end{align*}
 The first and second terms in this expression correspond to the quantities
 (2) and (1), respectively.

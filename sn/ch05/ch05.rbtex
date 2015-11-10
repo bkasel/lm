@@ -298,12 +298,12 @@ forces acting on a tiny, imaginary cube of the fluid having infinitesimal
 height $\der y$ and areas $\der A$ on the top and bottom. Using positive
 numbers for upward forces, we have
 \begin{align*}
-        P_{bottom}\der A - P_{top}\der A - F_g  =  0 \qquad .
+        P_{bottom}\der A - P_{top}\der A - F_g  =  0\eqquad.
 \end{align*}
 The weight of the fluid is $F_g = mg = \rho Vg = \rho\der A\der y\:g$, where $\rho$ is
 the density of the fluid, so the difference in pressure is
 \begin{multline*}
-        \der P  =  -\rho g \der y \qquad . 
+        \der P  =  -\rho g \der y\eqquad. 
 \hfill\shoveright{\text{[variation in pressure with depth for}}\\
 \hfill\shoveright{\text{a fluid of density $\rho$ in equilibrium;}}\\
 \hfill\shoveright{\text{positive $y$ is up.]}}
@@ -736,13 +736,13 @@ is $\Delta t=2L/v_x$, and in each collision the $x$ component of
 the atom's momentum is reversed from $-mv_x$  to $mv_x$. The total
 force on the wall is
 \begin{equation*}
-        F =  \sum \frac{\Delta p_{x,i}}{\Delta t_i}  \qquad \text{[monoatomic ideal gas]} \qquad ,
+        F =  \sum \frac{\Delta p_{x,i}}{\Delta t_i}  \qquad \text{[monoatomic ideal gas]}\eqquad,
 \end{equation*}
 where the index $i$ refers to the individual atoms.
 Substituting $\Delta p_{x,i}=2mv_{x,i}$ and $\Delta t_i=2L/v_{x,i}$, we
 have
 \begin{equation*}
-                F        =  \sum \frac{mv_{x,i}^2}{L} \qquad \text{[monoatomic ideal gas]} \qquad .
+                F        =  \sum \frac{mv_{x,i}^2}{L} \qquad \text{[monoatomic ideal gas]}\eqquad.
 \end{equation*}
 The quantity $mv_{x,i}^2$ is twice the contribution to the
 kinetic energy from the part of the atoms' center of mass
@@ -757,18 +757,18 @@ rigorously on page \pageref{equipartition}.} the quantity
 inside the sum must therefore equal 2/3 of the total kinetic
 energy, so
 \begin{equation*}
-        F        =   \frac{2K_{total}}{3L} \qquad \text{[monoatomic ideal gas]} \qquad .
+        F        =   \frac{2K_{total}}{3L} \qquad \text{[monoatomic ideal gas]}\eqquad.
 \end{equation*}
 Dividing by $A$ and using $AL=V$, we have
 \begin{equation*}
-        P        =   \frac{2K_{total}}{3V} \qquad \text{[monoatomic ideal gas]} \qquad .
+        P        =   \frac{2K_{total}}{3V} \qquad \text{[monoatomic ideal gas]}\eqquad.
 \end{equation*}
 This can be connected to the empirical relation $PV \propto nT$ if we
 multiply by $V$ on both sides and rewrite $K_{total}$ as $n\bar{K}$,
 where $\bar{K}$ is the average kinetic energy per
 molecule:
 \begin{equation*}
-        PV        =          \frac{2}{3}n\bar{K} \qquad \text{[monoatomic ideal gas]} \qquad .
+        PV        =          \frac{2}{3}n\bar{K} \qquad \text{[monoatomic ideal gas]}\eqquad.
 \end{equation*}
 For the first time we have an interpretation of
 temperature based on a microscopic description of matter: in
@@ -780,7 +780,7 @@ numerical value of $1.38\times10^{-23}\ \junit/\kunit$. In terms of
 Boltzmann's constant, the relationship among the bulk
 quantities for an ideal gas becomes
 \begin{equation*}
-        PV        =  nkT \qquad , \qquad \text{[ideal gas]}
+        PV        =  nkT\eqquad, \qquad \text{[ideal gas]}
 \end{equation*}
 which is known as the ideal gas law. \index{ideal gas law}\index{Boltzmann's constant}
 Although I won't prove it here, this equation applies to all ideal gases, even
@@ -806,7 +806,7 @@ ratio of the absolute temperatures,
           P_2/ P_1
                 &= T_2/ T_1\\
                 &=(308\ \kunit)/(283\ \kunit)\\
-                &= 1.09 \qquad ,\\
+                &= 1.09\eqquad,\\
 \end{align*}
 or a 9\% increase.
 \end{eg}
@@ -948,7 +948,7 @@ amount of heat expelled into the low-temperature reservoir,
 so the efficiency of a heat engine, $W/Q_H$, can be rewritten
 as
 \begin{equation*}
-        \text{efficiency}        =  1-\frac{Q_L}{Q_H} \qquad . \qquad \text{[efficiency of any heat
+        \text{efficiency}        =  1-\frac{Q_L}{Q_H}\eqquad. \qquad \text{[efficiency of any heat
 engine]}
 \end{equation*}
 
@@ -1037,7 +1037,7 @@ As proved on page \pageref{eg:carnot-efficiency},
 this particular Carnot engine has an
 efficiency given by
 \begin{equation*}
-        \text{efficiency}        =  1 - \frac{T_L}{T_H}  \qquad , \qquad \text{[efficiency of a Carnot engine]} 
+        \text{efficiency}        =  1 - \frac{T_L}{T_H}\eqquad, \qquad \text{[efficiency of a Carnot engine]} 
 \end{equation*}
 where $T_L$ is the temperature of the cold reservoir and $T_H$ is
 the temperature of the hot reservoir.
@@ -1119,11 +1119,11 @@ is additive.
 \begin{eg}{Entropy isn't changed by a Carnot engine.}\label{eg:carnotnoentropychange}
 The efficiency of a heat engine is defined by
 \begin{equation*}
-        \text{efficiency}  =  1 -  Q_L/ Q_H  \qquad  ,
+        \text{efficiency}  =  1 -  Q_L/ Q_H\eqquad,
 \end{equation*}
 and the efficiency of a Carnot engine is
 \begin{equation*}
-        \text{efficiency}  =  1 -  T_L/ T_H \qquad  ,
+        \text{efficiency}  =  1 -  T_L/ T_H\eqquad,
 \end{equation*}
 so for a Carnot engine we have $Q_L/ Q_H =  T_L/ T_H$,
 which can be rewritten as
@@ -1303,7 +1303,7 @@ engine does mechanical work $W$, but also expels heat $Q_L$
 into the environment through the radiator and the exhaust. Conservation
 of energy gives
 \begin{equation*}
-        Q_H = Q_L+W \qquad ,
+        Q_H = Q_L+W\eqquad,
 \end{equation*}
 and the relative proportions of $Q_L$ and $W$ are usually about
 90\% to 10\%. (Actually it depends quite a bit on the type of car, the
@@ -1532,19 +1532,19 @@ $R$ in the examples of free expansion above.
 A maximum of a function occurs when the
 derivative is zero, so the maximum entropy occurs when
 \begin{equation*}
-         \frac{\der\left(S_1+S_2\right)}{\der E_1} = 0 \qquad .
+         \frac{\der\left(S_1+S_2\right)}{\der E_1} = 0\eqquad.
 \end{equation*}
 We assume the systems are only able to exchange heat
 energy with each other, $\der E_1=-\der E_2$, so
 \begin{equation*}
-        \frac{\der S_1}{\der E_1} = \frac{\der S_2}{\der E_2} \qquad ,
+        \frac{\der S_1}{\der E_1} = \frac{\der S_2}{\der E_2}\eqquad,
 \end{equation*}
 and since the energy is being exchanged in the form of heat
 we can make the equations look more familiar if we write $\der Q$
 for an amount of heat to be transferred into either
 system:
 \begin{equation*}
-        \frac{\der S_1}{\der Q_1} = \frac{\der S_2}{\der Q_2} \qquad .
+        \frac{\der S_1}{\der Q_1} = \frac{\der S_2}{\der Q_2}\eqquad.
 \end{equation*}
 In terms of our previous definition of entropy, this is
 equivalent to $1/T_1=1/T_2$, which makes perfect sense since the
@@ -1552,7 +1552,7 @@ systems are in thermal equilibrium. According to our new
 approach, entropy has already been defined in a fundamental
 manner, so we can take this as a definition of temperature:
 \begin{equation*}
-   \frac{1}{T} = \frac{\der S}{\der Q} \qquad ,
+   \frac{1}{T} = \frac{\der S}{\der Q}\eqquad,
 \end{equation*}
 where $\der S$ represents the increase in the system's entropy
 from adding heat $\der Q$ to it.\index{temperature!microscopic definition}
@@ -1668,12 +1668,12 @@ The final result for the number of available states
 is
 \begin{equation*}
         M  =  \left(\frac{V}{\Delta x^3}\right)^n\:\frac{E^{(3n-1)/2}}{\Delta p^{3n-1}}
-                        \qquad , \qquad \text{[function of $n$]}
+\eqquad, \qquad \text{[function of $n$]}
 \end{equation*}
 so the entropy is
 \begin{equation*}
         S  =  nk \ln V + \frac{3}{2}nk\ln E 
-                + \text{(function of $\Delta x$, $\Delta p$, and $n$)} \qquad ,
+                + \text{(function of $\Delta x$, $\Delta p$, and $n$)}\eqquad,
 \end{equation*}
 where the distinction between $n$ and $n-1$ has been ignored.
 Using $PV=nkT$ and $E=(3/2)nkT$, we can also rewrite this as
@@ -1739,7 +1739,7 @@ derivative equal to zero, we have
     &  \qquad \qquad  +\left.\frac{3}{2}n_1k\ln E_1+\frac{3}{2}n_2k\ln (E-E_1)+\ldots\right) \\
     &= \frac{3}{2}k \left( \frac{n_1}{E_1} -  \frac{n_2}{E-E_1}  \right) \\
   0 &= \frac{n_1}{E_1} -  \frac{n_2}{E-E_1} \\
-   \frac{n_1}{E_1} &=  \frac{n_2}{E_2} \qquad .
+   \frac{n_1}{E_1} &=  \frac{n_2}{E_2}\eqquad.
 \end{align*}
 In other words, each gas gets a share of the energy in proportion to the number of its atoms,
 and therefore every atom gets, on average, the same amount of energy, regardless of its mass.
@@ -1844,7 +1844,7 @@ using the result of homework problem \ref{hw:work-pdv} on
 page \pageref{hw:work-pdv}, the work done
 in an infinitesimal expansion equals $P\der V$, so
 \begin{equation*}
-	\der E + P \der V = 0 \qquad .
+	\der E + P \der V = 0\eqquad.
 \end{equation*}
 (If the gas had not been insulated, then there would have
 been a third term for the heat gained or lost by heat
@@ -1855,11 +1855,11 @@ monoatomic ideal gas. More generally, the equipartition theorem tells us that th
 number of degrees of freedom $\alpha$, so $\der E=(\alpha/2)P\der V+(\alpha/2)V\der P$, and the
 equation above becomes
 \begin{equation*}
-	0	=  \frac{\alpha+2}{2}P\der V+\frac{\alpha}{2}V\der P \qquad .
+	0	=  \frac{\alpha+2}{2}P\der V+\frac{\alpha}{2}V\der P\eqquad.
 \end{equation*}
 Rearranging, we have
 \begin{equation*}
-	(\alpha+2)\frac{\der V}{V}	=  -\alpha\frac{\der P}{P} \qquad .
+	(\alpha+2)\frac{\der V}{V}	=  -\alpha\frac{\der P}{P}\eqquad.
 \end{equation*}
 Integrating both sides gives
 \begin{equation*}
@@ -1867,7 +1867,7 @@ Integrating both sides gives
 \end{equation*}
 and taking exponentials on both sides yields
 \begin{equation*}
-	V^{\alpha+2} \propto P^{-\alpha} \qquad .
+	V^{\alpha+2} \propto P^{-\alpha}\eqquad.
 \end{equation*}
 
 We now wish to reexpress this in terms of pressure and
@@ -1899,12 +1899,12 @@ proportionality, and simply subsitutde $P\propto T/V$, giving
 \begin{equation*}
 	Q \propto \int \frac{T}{V} \der V 
 	 \propto T  \ln \frac{V_2}{V_1} 
-	 \propto T \ln \frac{P_1}{P_2} \qquad .
+	 \propto T \ln \frac{P_1}{P_2}\eqquad.
 \end{equation*}
 
 The efficiency of a heat engine is
 \begin{equation*}
-	\text{efficiency}	=  1 - \frac{Q_L}{Q_H} \qquad .
+	\text{efficiency}	=  1 - \frac{Q_L}{Q_H}\eqquad.
 \end{equation*}
 Making use of the result from the previous proof for a
 Carnot engine with a monoatomic ideal
@@ -1919,7 +1919,7 @@ strokes 2-3 and 4-1, the pressures must be related by
 $P_2/P_3=P_1/P_4$, which can be rearranged as $P_4/P_3=P_1/P_2$, and we
 therefore have
 \begin{equation*}
-	\text{efficiency}	=  1 - \frac{T_L}{T_H} \qquad .
+	\text{efficiency}	=  1 - \frac{T_L}{T_H}\eqquad.
 \end{equation*}
 \end{eg}
 <% end_sec() %>
@@ -2246,7 +2246,7 @@ we can replace $m$ with $AL\rho$, where $L$ is the length of the neck, and $\rho
 the density of the air. Substituting into the earlier result, we find that the
 resonant frequency is
 \begin{align*}
-  \omega^2 &= \gamma\frac{P_\zu{o}}{\rho}\:\frac{A}{LV_\zu{o}} \qquad .
+  \omega^2 &= \gamma\frac{P_\zu{o}}{\rho}\:\frac{A}{LV_\zu{o}}\eqquad.
 \end{align*}
 This is known as a Helmholtz resonator.
 As shown in figure \figref{stradivarius}, a violin or an acoustic guitar has a Helmholtz resonance,

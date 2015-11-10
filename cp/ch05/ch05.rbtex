@@ -248,7 +248,7 @@
         Coulomb's law: The magnitude of the force acting between pointlike charged
         objects at a center-to-center distance $r$ is given by the equation
         \begin{equation*}
-                        |\vc{F}|        =    k\frac{|q_1||q_2|}{r^2}  \qquad   ,  
+                        |\vc{F}|        =    k\frac{|q_1||q_2|}{r^2}\eqquad,  
         \end{equation*}
         where the constant $k$ equals $9.0\times10^9\ \zu{N}\unitdot\zu{m}^2/\zu{C}^2$.
         The force is attractive if the charges are of different
@@ -413,7 +413,7 @@ atoms, and atoms are made of particles whose charges are plus and minus this amo
         When charged particles are exchanged between regions of space
         A and B, the electric current flowing from A to B is
         \begin{equation*}
-                I = \frac{\text{change in B's charge}}{t} \qquad ,
+                I = \frac{\text{change in B's charge}}{t}\eqquad,
         \end{equation*}
         where the transfer occurs over
         a period of time $t$.
@@ -589,7 +589,7 @@ atoms, and atoms are made of particles whose charges are plus and minus this amo
         \begin{equation*}
                 \frac{\text{joules}}{\text{second}}
                  = \frac{\text{haybales}}{\text{second}}
-                         \times \frac{\text{joules}}{\text{haybale}}    \qquad   .  
+                         \times \frac{\text{joules}}{\text{haybale}}\eqquad.  
         \end{equation*}
         Similarly, the rate of energy transformation by a battery
         will not just depend on how many coulombs per second it
@@ -602,7 +602,7 @@ atoms, and atoms are made of particles whose charges are plus and minus this amo
         \end{equation*}
         \noindent or
         \begin{equation*}
-                        \text{power}         =         \text{current} \times \text{work per unit charge}   \qquad   .  
+                        \text{power}         =         \text{current} \times \text{work per unit charge}\eqquad.  
         \end{equation*}
 
 <% marg(60) %>
@@ -794,7 +794,7 @@ is proportional to the voltage difference applied to it, so that the ratio
 of voltage to current stays the same. We then use this ratio as a numerical
 definition of resistance,
 \begin{equation*}
-        R = \frac{V}{I} \qquad ,
+        R = \frac{V}{I}\eqquad,
 \end{equation*}
 which is known as Ohm's law.\index{Ohm's law}\index{ohm (unit)}
 The units of resistance are ohms, symbolized with an uppercase Greek letter
@@ -935,7 +935,7 @@ So far we have been assuming a perfect conductor. What if it's
 a good conductor, but not a perfect one? Then we can
 solve for
 \begin{equation*}
-        V=IR \qquad .
+        V=IR\eqquad.
 \end{equation*}
 An ordinary-sized current
 will make a very small result when we multiply it by the

@@ -169,13 +169,13 @@ toward us. (Galaxies at cosmological distances are always observed to be recedin
 one another, but this doesn't necessarily hold for galaxies as close as these.)
 Relating the energy shift to the velocity, we have
 \begin{equation*}
-  \frac{E'}{E} = s = \sqrt{(1+v)/(1-v)} \qquad .
+  \frac{E'}{E} = s = \sqrt{(1+v)/(1-v)}\eqquad.
 \end{equation*}
 Since the shift is only about one part per thousand, the velocity is small compared
 to $c$ --- or small compared to 1 in units where $c=1$. Therefore we can approximate
 as in example \ref{eg:low-speed-stretch}, $s\approx 1+v$, and we find
 \begin{equation*}
-  v \approx s-1 = \frac{E'}{E}-1 = 1.0\times10^{-3} \qquad .
+  v \approx s-1 = \frac{E'}{E}-1 = 1.0\times10^{-3}\eqquad.
 \end{equation*}
 This is in units where $c=1$. Converting to SI units, where $c\ne 1$, we have $v=(1.0\times10^{-3})c=300\ \zu{km}/s$.
 Although the Andromeda Galaxy's tangential motion is not accurately known, it is considered likely that it will
@@ -310,7 +310,7 @@ The energy that an object possesses because of its motion is
 called kinetic energy. Kinetic energy is related to the mass
 of the object and the magnitude of its velocity vector by the equation
 \begin{equation*}
-  KE = \frac{1}{2}mv^2\qquad .
+  KE = \frac{1}{2}mv^2\eqquad.
 \end{equation*}
 
 Power is the rate at which energy is transformed from one
@@ -319,7 +319,7 @@ form to another or transferred from one object to another,
 m4_ifelse(__me,1,[:%
   P = \frac{\der E}{\der t}
 :],[:%
- P = \frac{\Delta E}{\Delta t}\qquad . 
+ P = \frac{\Delta E}{\Delta t}\eqquad. 
         \qquad\hfill\shoveright{\text{[only for constant power]}}
 :])%
 \end{equation*}

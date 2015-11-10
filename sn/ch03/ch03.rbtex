@@ -73,7 +73,7 @@
         as in the example shown in figure \figref{poolballs}.
         Conservation of energy says
         \begin{equation*}
-                K_{1i}+K_{2i}+U_i = K_{1f}+K_{2f}+U_f \qquad .
+                K_{1i}+K_{2i}+U_i = K_{1f}+K_{2f}+U_f\eqquad.
         \end{equation*}
         For simplicity, let's assume that the interactions start after the time we're calling
         initial, and end before the instant we choose as final. This is true 
@@ -82,7 +82,7 @@
         \begin{align*}
                 K_{1i}+K_{2i} &= K_{1f}+K_{2f}  \\
                 \frac{1}{2}m_1v_{1i}^2+\frac{1}{2}m_2v_{2i}^2 
-                                &= \frac{1}{2}m_1v_{1f}^2+\frac{1}{2}m_2v_{2f}^2 \qquad .
+                                &= \frac{1}{2}m_1v_{1f}^2+\frac{1}{2}m_2v_{2f}^2\eqquad.
         \end{align*}
         As in the one-particle argument on page  \pageref{subsec:predictingdirection}, the
         trick is to require conservation of energy not just in one particular frame of reference,
@@ -101,9 +101,9 @@
         $2v_{1i}u+u^2$. Subtracting the original conservation of energy equation
         from the  version in the new frame of reference, we have
         \begin{align*}
-                m_1v_{1i}u+m_2v_{2i}u = m_1v_{1f}u+m_2v_{2f}u \qquad , \\
+                m_1v_{1i}u+m_2v_{2i}u = m_1v_{1f}u+m_2v_{2f}u\eqquad, \\
                 \intertext{or, dividing by $u$,}
-                m_1v_{1i}+m_2v_{2i} = m_1v_{1f}+m_2v_{2f} \qquad .
+                m_1v_{1i}+m_2v_{2i} = m_1v_{1f}+m_2v_{2f}\eqquad.
         \end{align*}
         This is a statement that when you add up $mv$ for the whole
         system, that total remains constant over time. In other words, this is a conservation law.
@@ -175,14 +175,14 @@
                 The law of conservation of momentum tells us that
                 \begin{equation*}
                          p_{cannon,i} +  p_{shell,i} 
-                                =  p_{cannon,f} +  p_{shell,f}   \qquad .
+                                =  p_{cannon,f} +  p_{shell,f}\eqquad.
                 \end{equation*}
                 Choosing a coordinate system in which the cannon points in
                 the positive direction, the given information is
                 \begin{align*}
                          p_{cannon,i}  &= 0 \\
                          p_shell,i   &= 0 \\
-                         p_{shell,f}  &= 2000\ \zu{kg}\cdot\zu{m/s}   \qquad .
+                         p_{shell,f}  &= 2000\ \zu{kg}\cdot\zu{m/s}\eqquad.
                 \end{align*}
                 We must have $p_{cannon,f}=-\zu{2000 kg}\cdot\zu{m/s}$, so the recoil velocity
                 of the cannon is 2 m/s.
@@ -504,12 +504,12 @@ it loses out the back?
         velocities, $v$ for Mr.\ Nelson's velocity before the crash,
         and $v'$ for their joint velocity afterward:
         \begin{equation*}
-                 m_{N} v =  m_{N} v' + m_{C} v' \qquad   .
+                 m_{N} v =  m_{N} v' + m_{C} v'\eqquad.
         \end{equation*}
         Solving for the unknown, $v$, we find
         \begin{align*}
                  v &=  \left(1+\frac{ m_C}{ m_{N}}\right) v' \\
-                        &= \zu{80\ km/hr} \qquad  .
+                        &= \zu{80\ km/hr}\eqquad.
         \end{align*}
         He is lying.
         \end{eg}
@@ -584,7 +584,7 @@ eliminate the cumbersome subscripts by replacing the symbols
 $v_{1i}$,... with the symbols $A$, $B$, $C$, and $D$:
 \begin{align*}
  A+B &= C+D \\
- A^2+B^2 &= C^2+D^2 \qquad .
+ A^2+B^2 &= C^2+D^2\eqquad.
 \end{align*}
 A little experimentation with numbers shows that given
 values of $A$ and $B$, it is impossible to find $C$ and $D$
@@ -855,7 +855,7 @@ text where it was proved that the cue ball must stop?
         uppercase sigma, $\Sigma$, to indicate addition. For example,
         the sum $1^2+2^2+3^2+4^2=30$ could be written as
         \begin{equation*}
-                \sum_{j=1}^n{j^2} = 30 \qquad ,
+                \sum_{j=1}^n{j^2} = 30\eqquad,
         \end{equation*}
         read ``the sum from $j=1$ to $n$ of $j^2$.'' The variable $j$ is
         a dummy variable, just like the $\der{}x$ in an integral that tells you you're
@@ -869,7 +869,7 @@ text where it was proved that the cue ball must stop?
         the case of an arbitrary number $n$ of identical particles moving in one
         dimension, rather than just two particles. The center of mass is at
         \begin{align*}
-                x_{cm}        &= \frac{1}{n}\sum_{j=1}^{n}{x_j} \qquad ,
+                x_{cm}        &= \frac{1}{n}\sum_{j=1}^{n}{x_j}\eqquad,
         \end{align*}
         where $x_1$ is the mass of the first particle, and so on. The velocity of the center of mass is
         \begin{align*}
@@ -937,12 +937,12 @@ text where it was proved that the cue ball must stop?
                          x_{cm}        &= \frac{\sum_{ j=1}^{2}{ m_{j} x_{j}}}
                                 {\sum_{ j=1}^{2}{ m_j}} \\
                                 &= \frac{ m_{1} x_{1}+ m_2 x_{2}}
-                                        { m_{1}+ m_2} \qquad , \\
+                                        { m_{1}+ m_2}\eqquad, \\
                 \intertext{and letting 1 be the earth and 2 the moon, we have}
                          x_{cm}        
                                 &= \frac{ m_{earth}\times0+ m_{moon} x_{moon}}
                                         { m_{earth}+ m_{moon}} \\
-                                &= 4600\ \zu{km} \qquad ,
+                                &= 4600\ \zu{km}\eqquad,
                 \end{align*}
                 or about three quarters of the way from the earth's center to its surface.
         \end{eg}                
@@ -1141,7 +1141,7 @@ duration of the impact.
          The rate of
         \emph{momentum} transfer is called force,\index{force!defined}
         \begin{equation*}
-                F = \frac{\der{}p}{\der{}t} \qquad \text{[definition of force]} \qquad .
+                F = \frac{\der{}p}{\der{}t} \qquad \text{[definition of force]}\eqquad.
         \end{equation*}
         The units of force are $\kgunit\unitdot\munit/\sunit^2$, which can be abbreviated
         as newtons, $1\ \nunit=\kgunit\unitdot\munit/\sunit^2$.\index{newton (unit)}
@@ -1226,7 +1226,7 @@ ever have.
 F &= \frac{\der p}{\der t} \\
 \der p &= F \der t \\
 p &= \int F \der t + p_\zu{o}\\
-  &= -\frac{b}{t}+p_\zu{o} \qquad ,
+  &= -\frac{b}{t}+p_\zu{o}\eqquad,
 \end{align*}
 where $p_\zu{o}$ is a constant of integration.
 The given initial condition is that $p=0$ at $t=t_\zu{o}$, so we find that $p_\zu{o}=b/t_\zu{o}$. The negative term gets closer
@@ -1753,11 +1753,11 @@ Can a frictionless surface exert a normal force? Can
         For \emph{dry} surfaces, experiments show that the following equations 
         usually work fairly well:
         \begin{equation*}
-                F_{s,max} \approx \mu_sF_n \qquad ,
+                F_{s,max} \approx \mu_sF_n\eqquad,
         \end{equation*}
         and
         \begin{equation*}
-                F_k \approx \mu_kF_n \qquad ,
+                F_k \approx \mu_kF_n\eqquad,
         \end{equation*}
         where $\mu_s$, the coefficient of
         static friction,\index{static friction!coefficient of}\index{coefficient of static friction}
@@ -2105,7 +2105,7 @@ involved, and if $m_L$ is very small, then apparently the
 total force on the leash is also very small, $F_{dL}$ +
 $F_{yL}\approx 0$, and therefore
 \begin{equation*}
- F_{dL}\approx - F_{yL} \qquad .
+ F_{dL}\approx - F_{yL}\eqquad.
 \end{equation*}
 Thus even though Newton's third law does not apply directly
 to these two forces, we can approximate the low-mass leash
@@ -2286,20 +2286,20 @@ transmitted in the sense of the word used in this section?
         \eganswer
         Integrating
         \begin{align*}
-                \der{} K        &=  F\der{} x \qquad , 
+                \der{} K        &=  F\der{} x\eqquad, 
         \intertext{we find}
                  K_{f}- K_{i}        &=  F( x_{f}- x_{i}) 
         \intertext{or}
-                \Delta K &=  F\Delta x \qquad .
+                \Delta K &=  F\Delta x\eqquad.
         \intertext{The force is}
                  F &= \Delta K/\Delta x \\
                         &= \frac{5\times10^{-16}\ \junit}{ 0.01\ \zu{m}} \\
-                        & = 5\times10^{-14}\ \nunit \qquad .
+                        & = 5\times10^{-14}\ \nunit\eqquad.
         \intertext{This may not sound like an impressive force, but it's enough to supply
                 an electron with a spectacular acceleration. Looking up the mass of an
                 electron on p. \pageref{subatomicparticlesdata}, we find}
                  a        &=  F/ m \\
-                                &= 5\times10^{16}\ \munit/\sunit^2 \qquad .
+                                &= 5\times10^{16}\ \munit/\sunit^2\eqquad.
         \end{align*}
         \end{eg}
 
@@ -2312,10 +2312,10 @@ transmitted in the sense of the word used in this section?
                 on the pellet is given by $F= bx^\zu{-7/5}$. A typical high-end
                 airgun used for competitive target shooting has
                 \begin{align*}
-                         x_1        &=  0.046\ \zu{m} \qquad , \\
-                         x_2        &=  0.41\ \zu{m} \qquad , \\
+                         x_1        &=  0.046\ \zu{m}\eqquad, \\
+                         x_2        &=  0.41\ \zu{m}\eqquad, \\
                 \intertext{and}
-                         b        &=  4.4\ \zu{N}\unitdot\munit^\zu{7/5} \qquad . 
+                         b        &=  4.4\ \zu{N}\unitdot\munit^\zu{7/5}\eqquad. 
                 \end{align*}
                 What is the kinetic energy of the pellet when it leaves the muzzle?
                 (Assume friction is negligible.)
@@ -2458,7 +2458,7 @@ transmitted in the sense of the word used in this section?
         realized \emph{can't} be calculated using the total force. The kinetic energy it
         has due to motion of its center of mass is
         \begin{align*}
-                K_{cm}        &= \frac{1}{2}m_{total}v_{cm}^2 \qquad .
+                K_{cm}        &= \frac{1}{2}m_{total}v_{cm}^2\eqquad.
         \end{align*}
         Figure \figref{kcm} shows some examples of the distinction between $K_{cm}$ and $K$.
         Differentiating $K_{cm}$, we have
@@ -2722,7 +2722,7 @@ increase at high speeds?
         force and interaction energy is $\der{}U=-F\der{}x$, or
         \begin{equation*}
                 F = -\frac{\der{}U}{\der{}x} 
-                        \qquad \text{[relationship between force and interaction energy]} \qquad .
+                        \qquad \text{[relationship between force and interaction energy]}\eqquad.
         \end{equation*}
         
         \begin{eg}{Force exerted by a spring}\label{eg:springforce}
@@ -2736,7 +2736,7 @@ increase at high speeds?
                 Differentiating, we find
                 \begin{align*}
                          F        &= -\frac{\der{} U}{\der{} x} \\
-                                        &= - kx \qquad .
+                                        &= - kx\eqquad.
                 \end{align*}
                 If $x$ is positive, then the force is negative, i.e., it acts so as to bring the
                 mass back to equilibrium, and similarly for $x<0$ we have $F>0$.
@@ -2762,7 +2762,7 @@ increase at high speeds?
                 For positive $x$, we have $r= x$, and differentiation gives
                 \begin{align*}
                          F        &= -\frac{\der{} U}{\der{} x} \\
-                                        &= - Gm_1 m_{2}/ x^2 \qquad .
+                                        &= - Gm_1 m_{2}/ x^2\eqquad.
                 \end{align*}
                 As in the preceding example, we have $F<0$ when $x$
                 is positive, because the object is being attracted back toward $x=0$.
@@ -2771,7 +2771,7 @@ increase at high speeds?
                 $r=- x$, and the result for the force is the same as before, but with
                 a minus sign. We can combine the two equations by writing
                 \begin{equation*}
-                        | F|        =  Gm_1 m_{2}/ r^2 \qquad ,
+                        | F|        =  Gm_1 m_{2}/ r^2\eqquad,
                 \end{equation*}
                 and this is the form traditionally known as Newton's law of gravity.
                 As in the preceding example, the $U$ and $F$ equations contain
@@ -2888,7 +2888,7 @@ first push to the amplitude after the second. Compare the energies as well.
         in complete generality, so for the rest of this section, we'll assume friction proportional
         to velocity
         \begin{equation*}
-                F        = -bv        \qquad ,
+                F        = -bv\eqquad,
         \end{equation*}
         simply because the resulting equations happen to be the easiest to solve.
         Even when the friction doesn't behave in exactly this way, many of our results
@@ -2976,7 +2976,7 @@ $\delta$ & phase angle of the steady-state response \\
         of motion is now
         \begin{multline}\label{eqn:resonancemotion}
                 ma+bv+kx = F_m \sin \omega t \\
-                                \qquad \text{[equation of motion for a driven oscillator]} \qquad .
+                                \qquad \text{[equation of motion for a driven oscillator]}\eqquad.
         \end{multline}
         After the driving force has been applied for a while, we expect that the amplitude
         of the oscillations will approach some constant value. This motion is known as the
@@ -2985,7 +2985,7 @@ $\delta$ & phase angle of the steady-state response \\
         only a minor variation on the steady-state motion. For the steady-state motion,
         we're going to look for a solution of the form
         \begin{equation*}
-                x = A \sin (\omega{}t+\delta) \qquad .
+                x = A \sin (\omega{}t+\delta)\eqquad.
         \end{equation*}
         In contrast to the undriven case, here it's not possible to sweep $A$ and $\delta$ 
         under the rug. The amplitude of the steady-state motion, $A$, is actually the
@@ -3004,7 +3004,7 @@ $\delta$ & phase angle of the steady-state response \\
         \begin{equation}\label{eqn:steadystate}
                 (k-m\omega^2)\sin (\omega t+\delta)
                          +\omega b \cos (\omega t+\delta) 
-                        = \frac{F_m}{A} \sin \omega t \qquad .
+                        = \frac{F_m}{A} \sin \omega t\eqquad.
         \end{equation}
         The sum of any two sinusoidal functions with the same frequency is also
         a sinusoidal, so the whole left side adds up to a sinusoidal. By fiddling with
@@ -3023,7 +3023,7 @@ $\delta$ & phase angle of the steady-state response \\
                 A                &= \frac{F_m}{m\left|\omega^2-\omega_\zu{o}^2\right|} \\
         \intertext{and}
                 \delta        &= \left\{\begin{array}{ll} 0, & \omega<\omega_\zu{o}\\
-                                                \pi, & \omega>\omega_\zu{o}\end{array}\right. \qquad .
+                                                \pi, & \omega>\omega_\zu{o}\end{array}\right.\eqquad.
         \end{align*}
 <% marg(50) %>
 <%
@@ -3186,7 +3186,7 @@ and satisfy yourself that the result is proportional to $Q$. Why is $A_{res}\pro
         show from the equations on page  \pageref{misc:steadystate} that for
         large $Q$, the FWHM is given approximately by
         \begin{equation*}
-                \Delta\omega \approx \omega_\zu{o}/Q \qquad .
+                \Delta\omega \approx \omega_\zu{o}/Q\eqquad.
         \end{equation*}
 
         Another thing we notice in figure \figref{resonance} is that for small values of $Q$
@@ -3390,7 +3390,7 @@ and satisfy yourself that the result is proportional to $Q$. Why is $A_{res}\pro
         equation of motion, and then add to it any solution to the free equation of motion,
         the result,
         \begin{equation*}
-                        x = A \sin (\omega t+\delta) + A' e^{-ct}\sin (\omega_f t+\delta') \qquad ,
+                        x = A \sin (\omega t+\delta) + A' e^{-ct}\sin (\omega_f t+\delta')\eqquad,
         \end{equation*}
         is also a solution of the driven equation. Here, as before,
         $\omega_f$
@@ -3430,7 +3430,7 @@ and satisfy yourself that the result is proportional to $Q$. Why is $A_{res}\pro
         has $Q=0$. The equation of motion
         in this case is $ma+bv=0$, or, more suggestively,
         \begin{equation*}
-                m\frac{\der{}v}{\der{}t}+bv=0 \qquad .
+                m\frac{\der{}v}{\der{}t}+bv=0\eqquad.
         \end{equation*}
         One can easily verify that this has the solution
         $v=\text{(constant)}e^{-bt/m}$, and integrating, we find 
@@ -3771,7 +3771,7 @@ and at the same horizontal speed?
         Py\-thag\-or\-e\-an theorem equals
         \begin{equation*}
                  \frac{1}{\sqrt{\Delta x^2+\Delta y^2+\Delta z^2}}
-                        \qquad .
+\eqquad.
         \end{equation*}
         Rotating a line segment doesn't change its length, so this expression
         comes out the same regardless of which way we orient our coordinate axes.
@@ -3802,13 +3802,13 @@ and at the same horizontal speed?
                 without violating rotational invariance, is to  use an expression that
                 resembles the Pythagorean theorem,
                 \begin{equation*}
-                         v=\sqrt{ v_{x}^2+ v_{y}^2+ v_z^2} \qquad ,
+                         v=\sqrt{ v_{x}^2+ v_{y}^2+ v_z^2}\eqquad,
                 \end{equation*}
                 which results in
                 \begin{equation*}
                          K=\frac{1}{2} m
                         \left( v_{x}^2+ v_{y}^2+ v_z^2\right)
-                        \qquad .
+\eqquad.
                 \end{equation*}
                 Since the velocity components are squared, the positive and negative signs
                 don't matter, and the two balls in the example behave the same way.
@@ -3868,7 +3868,7 @@ and at the same horizontal speed?
         \begin{align*}
                 \Delta p_x        &= 0 \\
                 \Delta p_y        &= 0 \\
-                \Delta p_z        &= 0 \qquad ,
+                \Delta p_z        &= 0\eqquad,
         \end{align*}
         or as a single vector equation,\footnote{The zero here is really a zero
         \emph{vector}, i.e., a vector whose components are all zero, so we should
@@ -3876,7 +3876,7 @@ and at the same horizontal speed?
         confusion, however, so most books, including this one, don't use boldface for the
         zero vector.}
         \begin{equation*}
-                \Delta \mathbf{p} = 0 \qquad .
+                \Delta \mathbf{p} = 0\eqquad.
         \end{equation*}
         The following table summarizes some vector operations.
 
@@ -3933,19 +3933,19 @@ Translate the equations $F_{x}\zu{=} ma_x$,
         \begin{align*}
                  mv_{1 x} +  mv_{2 x} +  mv_{3 x}  &=  0   \\
         \intertext{and}
-                 mv_{1 y} +  mv_{2 y} +  mv_{3 y} &=  0   \qquad ,
+                 mv_{1 y} +  mv_{2 y} +  mv_{3 y} &=  0\eqquad,
         \end{align*}
         where we have used the same symbol $m$ for all the terms,
         because the fragments all have the same mass. The masses can
         be eliminated by dividing each equation by $m$, and we find
         \begin{align*}
                  v_{3 x}  &=  -\zu{1.0x10}^4\ \zu{km/hr} \\
-                 v_{3 y}  &=  -\zu{1.0x10}^4\ \zu{km/hr} \qquad ,
+                 v_{3 y}  &=  -\zu{1.0x10}^4\ \zu{km/hr}\eqquad,
         \end{align*}
         which gives a magnitude of
         \begin{align*}
                 |\vc{v}_3|        &= \sqrt{ v_{3 x}^2+ v_{3 y}^2} \\
-                &=  \zu{1.4x10}^4\ \zu{km/hr} \qquad .
+                &=  \zu{1.4x10}^4\ \zu{km/hr}\eqquad.
         \end{align*}
         \end{eg}
 
@@ -4111,7 +4111,7 @@ Given vector \vc{Q} represented by an arrow
         any of the inverse trig functions. For example, we know the opposite and adjacent sides, so
         \begin{align*}
                 \theta         &= \zu{tan}^{-1} \frac{\Delta y}{\Delta x}\\
-                        &= 38\degunit   \qquad .
+                        &= 38\degunit\eqquad.
         \end{align*}
         
         
@@ -4160,14 +4160,14 @@ Given vector \vc{Q} represented by an arrow
         is less than her initial $x$ value. Her $\Delta y$ is positive, so we have
         \begin{align*}
                 \Delta x         &= -120\ \zu{km}\\
-                \Delta y        &= 150\ \zu{km}  \qquad  .
+                \Delta y        &= 150\ \zu{km}\eqquad.
         \end{align*}
         
         If we work by analogy with the example \ref{eg:comptopolar}, we get
         \begin{align*}
                 \theta        &= \zu{tan}^{-1} \frac{\Delta y}{\Delta x}\\
                         &= \zu{tan}^{-1}\left(- 1.25\right) \\
-                        &= -51\degunit   \qquad .
+                        &= -51\degunit\eqquad.
         \end{align*}
         According to the usual way of defining angles in trigonometry, a negative result means 
         an angle that lies clockwise from the $x$ axis, which would have her heading for the Baja
@@ -4306,7 +4306,7 @@ example \ref{eg:layback} on p.~\pageref{eg:layback}.
          $\hat{\vc{i}}$, $\hat{\vc{j}}$, and $\hat{\vc{k}}$:
         
         \begin{equation*}
-                \Delta\vc{r} = (290\ \zu{km})\hat{\vc{i}} + (230\ \zu{km})\hat{\vc{j}} \qquad   .
+                \Delta\vc{r} = (290\ \zu{km})\hat{\vc{i}} + (230\ \zu{km})\hat{\vc{j}}\eqquad.
         \end{equation*}
 
         
@@ -4329,23 +4329,23 @@ boat is capable relative to the water.
 the vector sum of its velocity with respect to the water and
 the water's velocity with respect to the land,
 \begin{equation*}
-            \vc{v}_{BL} =  \vc{v}_{BW}+  \vc{v}_{WL} \qquad     .
+            \vc{v}_{BL} =  \vc{v}_{BW}+  \vc{v}_{WL}\eqquad.
 \end{equation*}
 If the boat is to travel straight across the river, i.e.,
 along the $y$ axis, then we need to have $\vc{v}_{BL,x}=0$. This $x$
 component equals the sum of the $x$ components of the other two vectors,
 \begin{equation*}
-            \vc{v}_BL,x  =  \vc{v}_BW,x +  \vc{v}_WL,x   \qquad  ,
+            \vc{v}_BL,x  =  \vc{v}_BW,x +  \vc{v}_WL,x\eqquad,
 \end{equation*}
 or
 \begin{equation*}
-            0  =  -|\vc{v}_{BW}| \sin  \theta  + |\vc{v}_{WL}|   \qquad   .
+            0  =  -|\vc{v}_{BW}| \sin  \theta  + |\vc{v}_{WL}|\eqquad.
 \end{equation*}
 Solving for $\theta $, we find
 \begin{align*}
-            \sin  \theta  &=  |\vc{v}_{WL}|/|\vc{v}_{BW}|   \qquad ,\\
+            \sin  \theta  &=  |\vc{v}_{WL}|/|\vc{v}_{BW}|\eqquad,\\
 \intertext{so}
-            \theta &= \sin^{-1}\frac{|\vc{v}_{WL}|}{\vc{v}_{BW}}\qquad   .
+            \theta &= \sin^{-1}\frac{|\vc{v}_{WL}|}{\vc{v}_{BW}}\eqquad.
 \end{align*}
 \end{eg}
 <% marg(130) %>
@@ -4381,13 +4381,13 @@ Solving for $\theta $, we find
         equation to show the appropriate quantities notated as
         vectors,
         \begin{equation*}
-                \vc{p}_{total} =  m_{total} \vc{v}_{cm} \qquad ,
+                \vc{p}_{total} =  m_{total} \vc{v}_{cm}\eqquad,
         \end{equation*}
         we get a valid mathematical operation, the multiplication of
         a vector by a scalar. Similarly, the second equation becomes
         \begin{equation*}
                 \vc{r}_{cm} = \frac{\sum_j{ m_{j}\vc{r}_j}}{\sum_{j}{ m_j}}
-                                \qquad ,
+\eqquad,
         \end{equation*}
         which is also valid. Each term in the sum on top contains a vector multiplied by a scalar,
         which gives a vector. Adding up all these vectors gives a vector, and dividing by the
@@ -4461,7 +4461,7 @@ between the ideal extremes of 0 and 90 degrees, but comes much closer to 90.
         leaving a gap, so they form a triangle. Using trigonometry we find
         \begin{align*}
                  F_{a}         &=  F_g\ \zu{sin}\:\theta \\
-                        &=  mg\ \zu{sin}\:\theta \qquad   .
+                        &=  mg\ \zu{sin}\:\theta\eqquad.
         \end{align*}
         \end{eg}
 
@@ -4505,13 +4505,13 @@ between the ideal extremes of 0 and 90 degrees, but comes much closer to 90.
         Now suppose the object was removed, and instantly replaced with an equal volume
         of fluid. The new fluid would be in equilibrium without any force applied to hold it up, so
         \begin{equation*}
-                \vc{F}_{gf}+\vc{F}_f = 0 \qquad ,
+                \vc{F}_{gf}+\vc{F}_f = 0\eqquad,
         \end{equation*}
         where $\vc{F}_{gf}$, the weight of the fluid, is not the same as $\vc{F}_g$, the
         weight of the object, but $\vc{F}_f$ is the same as before, since the pressure of
         the surrounding fluid is the same as before at any particular depth. We therefore have
         \begin{equation*}
-                \vc{F}_a=-\left(\vc{F}_g-\vc{F}_{gf}\right) \qquad ,
+                \vc{F}_a=-\left(\vc{F}_g-\vc{F}_{gf}\right)\eqquad,
         \end{equation*}
         which is Archimedes' principle in terms of force: the force required to support the
         object is lessened by an amount equal to the weight of the fluid that would have occupied
@@ -4569,11 +4569,11 @@ between the ideal extremes of 0 and 90 degrees, but comes much closer to 90.
 
                 Conservation of momentum gives
                 \begin{align*}
-                        \vc{p}_{light,i} &= \vc{p}_{light,f}+\Delta\vc{p}_{sail} \qquad , \\
+                        \vc{p}_{light,i} &= \vc{p}_{light,f}+\Delta\vc{p}_{sail}\eqquad, \\
                 \intertext{where $\Delta\vc{p}_{sail}$ is the change in momentum picked up
                         by the sail. Breaking this down into components, we have}
                         0 &= p_{light,f,x}+\Delta p_{sail,x} \qquad \text{and} \\
-                        p_{light,i,y} &= p_{light,f,y}+\Delta p_{sail,y} \qquad .
+                        p_{light,i,y} &= p_{light,f,y}+\Delta p_{sail,y}\eqquad.
                 \end{align*}
                 As in example \ref{eg:yarkovsky} on page \pageref{eg:yarkovsky}, the component
                 of the force that is directly away from the sun (up in figure \figref{solarsail}/2)
@@ -4822,7 +4822,7 @@ let $\zb{C}=\zb{A}+\zb{B}$. Then
         \begin{equation*}
                 \frac{\der\vc{r}}{\der t} 
                         = \frac{\der x}{\der t}\hat{\vc{x}}
-                        +\frac{\der y}{\der t}\hat{\vc{y}}+\frac{\der z}{\der t}\hat{\vc{z}} \qquad .
+                        +\frac{\der y}{\der t}\hat{\vc{y}}+\frac{\der z}{\der t}\hat{\vc{z}}\eqquad.
         \end{equation*}
         All of this reasoning applies equally well to any derivative of a vector, so for
         instance we can take the second derivative,
@@ -4835,7 +4835,7 @@ let $\zb{C}=\zb{A}+\zb{B}$. Then
         \begin{equation*}
                 \frac{\der\vc{v}}{\der t} 
                         = \frac{\der v_x}{\der t}\hat{\vc{x}}+\frac{\der v_y}{\der t}\hat{\vc{y}}
-                        +\frac{\der v_z}{\der t}\hat{\vc{z}} \qquad .
+                        +\frac{\der v_z}{\der t}\hat{\vc{z}}\eqquad.
         \end{equation*}
 
         A counterintuitive consequence of this is that the acceleration vector does not
@@ -4858,7 +4858,7 @@ let $\zb{C}=\zb{A}+\zb{B}$. Then
         An object moving in a circle of radius $r$ in the $x$-$y$ plane has
         \begin{align*}
                  x        &=  r\ \zu{cos}\ \omega t \qquad \text{and}\\
-                 y        &=  r\ \zu{sin}\ \omega t \qquad ,
+                 y        &=  r\ \zu{sin}\ \omega t\eqquad,
         \end{align*} 
         where $\omega$ is the number of radians traveled per second, and the positive or negative
         sign indicates whether the motion is clockwise or counterclockwise.
@@ -4868,12 +4868,12 @@ let $\zb{C}=\zb{A}+\zb{B}$. Then
         The components of the velocity are
         \begin{align*}
                  v_{x}        &= -\omega r\ \zu{sin}\ \omega t \qquad \text{and}\\
-                 v_{y}        &= \ \ \ \omega r\ \zu{cos}\ \omega t \qquad ,
+                 v_{y}        &= \ \ \ \omega r\ \zu{cos}\ \omega t\eqquad,
         \end{align*} 
         and for the acceleration we have
         \begin{align*}
                  a_{x}        &= -\omega^2 r\ \zu{cos}\ \omega t \qquad \text{and}\\
-                 a_{y}        &= -\omega^2 r\ \zu{sin}\ \omega t \qquad .
+                 a_{y}        &= -\omega^2 r\ \zu{sin}\ \omega t\eqquad.
         \end{align*} 
         The acceleration vector has cosines and sines in the same places as the
         \vc{r} vector, but with minus signs in front, so it points in the opposite direction,
@@ -4899,14 +4899,14 @@ let $\zb{C}=\zb{A}+\zb{B}$. Then
         The magnitude of the acceleration is
         \begin{align*}
                 |\vc{a}|        &= \sqrt{ a_x^2+ a_{y}^2}\\
-                                &= \omega^2 r \qquad .
+                                &= \omega^2 r\eqquad.
         \end{align*}
         It makes sense that $\omega$ is squared, since reversing the sign of $\omega$
         corresponds to reversing the direction of motion, but the acceleration is toward the
         center of the circle, regardless of whether the motion is clockwise or counterclockwise.
         This result can also be rewritten in the form
         \begin{equation*}
-                |\vc{a}|        = \frac{|\vc{v}|^2}{r} \qquad .
+                |\vc{a}|        = \frac{|\vc{v}|^2}{r}\eqquad.
         \end{equation*}
         \end{eg}
 
@@ -4971,10 +4971,10 @@ let $\zb{C}=\zb{A}+\zb{B}$. Then
         acceleration, we find
         \begin{align*}
                  x         &= \int{\left(\int{a_x\ \zu{d}t}\right)\ \zu{d}t} \\
-                                &= \int{\left(a_xt+v_{x\zu{o}}\right)\zu{d}t} \qquad ,\\
+                                &= \int{\left(a_xt+v_{x\zu{o}}\right)\zu{d}t}\eqquad,\\
         \intertext{where $v_{ x\zu{o}}$ is a constant of integration, and}
                 x        &= \frac{1}{2}a_xt^2
-                                                + v_{x\zu{o}}t + x_\zu{o} \qquad .
+                                                + v_{x\zu{o}}t + x_\zu{o}\eqquad.
         \end{align*}
         Similarly, $y\zu{=(1/2)} a_{y} t^2+  v_{ y\zu{o}} t +  y_\zu{o}$
         and $z=\zu{(1/2)} a_{z} t^2+  v_{ z\zu{o}} t +  z_\zu{o}$.
@@ -4983,7 +4983,7 @@ let $\zb{C}=\zb{A}+\zb{B}$. Then
         \begin{align*}
                 \vc{r}        &= \int{\left(\int{\vc{a}\ \zu{d} t}\right)\ \zu{d} t} \\
                                 &= \int{\left(\vc{a} t+\vc{v}_\zu{o}\right)\zu{d} t} \\
-                        &= \frac{1}{2}\vc{a} t^2+\vc{v}_\zu{o} t+\vc{r}_\zu{o} \qquad ,
+                        &= \frac{1}{2}\vc{a} t^2+\vc{v}_\zu{o} t+\vc{r}_\zu{o}\eqquad,
         \end{align*}
         where now the constants of integration are vectors.
         \end{eg}
@@ -5141,7 +5141,7 @@ towards the center)?
                 \left( b_{x}\hat{\vc{x}}+ b_{y}\hat{\vc{y}}+ b_z\hat{\vc{z}}\right)
                 \cdot
                 \left( c_{x}\hat{\vc{x}}+ c_{y}\hat{\vc{y}}+ c_z\hat{\vc{z}}\right) \\
-                        &=  b_x c_x+ b_y c_y+ b_z c_z \qquad .
+                        &=  b_x c_x+ b_y c_y+ b_z c_z\eqquad.
         \end{align*}
         \end{eg}
 
@@ -5152,9 +5152,9 @@ towards the center)?
                 \left( b_{x}\hat{\vc{x}}+ b_{y}\hat{\vc{y}}+ b_z\hat{\vc{z}}\right)
                 \cdot
                 \left( b_{x}\hat{\vc{x}}+ b_{y}\hat{\vc{y}}+ b_z\hat{\vc{z}}\right) \\
-                        &=  b_{x}^2+ b_{y}^2+ b_z^2 \qquad ,\\
+                        &=  b_{x}^2+ b_{y}^2+ b_z^2\eqquad,\\
         \intertext{so its magnitude can be expressed as}
-                |\vc{b}| &= \sqrt{\vc{b}\cdot\vc{b}} \qquad .
+                |\vc{b}| &= \sqrt{\vc{b}\cdot\vc{b}}\eqquad.
         \end{align*}
         We will often write $b^2$ to mean $\vc{b}\cdot\vc{b}$, when the context makes it
         clear what is intended. For example, we could express kinetic energy as
@@ -5175,17 +5175,17 @@ towards the center)?
         In figure \figref{dotgeom}, vectors \vc{a}, \vc{b}, and \vc{c} represent the sides of a triangle,
         and $\vc{a}=\vc{b}+\vc{c}$. The law of cosines gives
         \begin{equation*}
-                |\vc{c}|^2 = |\vc{a}|^2+|\vc{b}|^2-2|\vc{a}||\vc{b}|\ \zu{cos}\ \theta \qquad .
+                |\vc{c}|^2 = |\vc{a}|^2+|\vc{b}|^2-2|\vc{a}||\vc{b}|\ \zu{cos}\ \theta\eqquad.
         \end{equation*}
         Using the result of example \ref{eg:magnitudedot}, we can also write this as
         \begin{align*}
                 |\vc{c}|^2        &= \vc{c}\cdot\vc{c} \\
                                         &= (\vc{a}-\vc{b})\cdot(\vc{a}-\vc{b}) \\
-                                        &= \vc{a}\cdot\vc{a}+\vc{b}\cdot\vc{b}-2\vc{a}\cdot\vc{b} \qquad .
+                                        &= \vc{a}\cdot\vc{a}+\vc{b}\cdot\vc{b}-2\vc{a}\cdot\vc{b}\eqquad.
         \end{align*}
         Matching up terms in these two expressions, we find
         \begin{equation*}
-                \vc{a}\cdot\vc{b} = |\vc{a}||\vc{b}|\ \zu{cos}\ \theta \qquad ,
+                \vc{a}\cdot\vc{b} = |\vc{a}||\vc{b}|\ \zu{cos}\ \theta\eqquad,
         \end{equation*}
         which is a geometric interpretation for the dot product.         \end{eg}
 
@@ -5216,9 +5216,9 @@ towards the center)?
         the equation $\der E=F\der x$ to three dimensions. In terms
         of a dot product, we have
         \begin{align*}
-                \der E        &= \vc{F}\cdot\der\vc{r} \qquad .\\
+                \der E        &= \vc{F}\cdot\der\vc{r}\eqquad.\\
         \intertext{If \vc{F} is a constant, integrating both sides gives}
-                \Delta E        &= \vc{F}\cdot\Delta\vc{r} \qquad .
+                \Delta E        &= \vc{F}\cdot\Delta\vc{r}\eqquad.
         \end{align*}
         (If that step seemed like black magic, try writing it out in terms
         of components.) If the force is perpendicular to the motion, as in figure
@@ -5251,7 +5251,7 @@ towards the center)?
                 K        &= \sum_{j=1}^{n}{\frac{1}{2}m_j(\vc{v}_j+\vc{u})\cdot(\vc{v}_j+\vc{u})} \\
                         &= \frac{1}{2}\left[\sum_{j=1}^{n}{m_j\vc{v}_j\cdot\vc{v}_j}
                                         +2\sum_{j=1}^{n}{m_j\vc{v}_j\cdot\vc{u}}
-                                        +\sum_{j=1}^{n}{m_j\vc{u}\cdot\vc{u}}\right]  \qquad .
+                                        +\sum_{j=1}^{n}{m_j\vc{u}\cdot\vc{u}}\right]\eqquad.
         \end{align*}
         As in the proof on page \pageref{pconsproof1d}, the first sum is simply the
         total kinetic energy in the original frame of reference, and the last sum is
@@ -5260,7 +5260,7 @@ towards the center)?
         \begin{align*}
                 2\sum_{j=1}^{n}{m_j\vc{v}_j\cdot\vc{u}}
                         &= 2\ \vc{u}\cdot\sum_{j=1}^{n}{m_j\vc{v}_j}\\
-                        &= 2\ \vc{u}\cdot\sum_{j=1}^{n}{\vc{p}_j} \qquad ,
+                        &= 2\ \vc{u}\cdot\sum_{j=1}^{n}{\vc{p}_j}\eqquad,
         \end{align*}
         so the only way energy can be conserved for all values of \vc{u} is
         if the vector sum of the momenta is conserved as well.
@@ -5316,7 +5316,7 @@ towards the center)?
         where $\theta$ is the angle between \vc{F} and $\der\vc{r}$. But
         $|\der\vc{r}|$ is simply $\der s$, so the amount of work done becomes
         \begin{equation*}
-                \Delta E = \int_{\vc{r}_1}^{\vc{r}_2}{|\vc{F}| \cos\theta}\ \der s \qquad .
+                \Delta E = \int_{\vc{r}_1}^{\vc{r}_2}{|\vc{F}| \cos\theta}\ \der s\eqquad.
         \end{equation*}
         Both \vc{F} and $\theta$ are functions of $s$.
         As a matter of notation, it's cumbersome to have to write the integral like this.
@@ -5341,7 +5341,7 @@ towards the center)?
         \begin{equation*}
                 \frac{\der U}{\der x}\hat{\vc{x}}
                 +\frac{\der U}{\der y}\hat{\vc{y}}
-                +\frac{\der U}{\der z}\hat{\vc{z}} \qquad ,
+                +\frac{\der U}{\der z}\hat{\vc{z}}\eqquad,
         \end{equation*}
         called the \emph{gradient}\index{gradient} of $U$, and written with an upside-down
         delta\footnote{The symbol $\nabla$ is called a ``nabla.'' Cool word!}
@@ -5355,7 +5355,7 @@ towards the center)?
         \begin{equation*}
                 \nabla U = \frac{\partial U}{\partial x}\hat{\vc{x}}
                 +\frac{\partial U}{\partial y}\hat{\vc{y}}
-                +\frac{\partial U}{\partial z}\hat{\vc{z}} \qquad \text{[definition of the gradient]} \qquad .
+                +\frac{\partial U}{\partial z}\hat{\vc{z}} \qquad \text{[definition of the gradient]}\eqquad.
         \end{equation*}
         The gradient looks scary, but it has a very simple physical interpretation. It's a vector
         that points in the direction in which $U$ is increasing most rapidly, and it tells you
@@ -5380,7 +5380,7 @@ towards the center)?
                 \vc{F}        &= -\nabla  U \\
                                 &= -\frac{\partial U}{\partial x}\hat{\vc{x}}
                                         -\frac{\partial U}{\partial y}\hat{\vc{y}}\\
-                                &= - kx\hat{\vc{x}}- ky\hat{\vc{y}} \qquad .
+                                &= - kx\hat{\vc{x}}- ky\hat{\vc{y}}\eqquad.
         \end{align*}
         The magnitude of this force vector is $k|\vc{r}|$, and its direction is toward
         the origin.

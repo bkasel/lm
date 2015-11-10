@@ -251,7 +251,7 @@
         Coulomb's law: The magnitude of the force acting between pointlike charged
         objects at a center-to-center distance $r$ is given by the equation
         \begin{equation*}
-                        |\vc{F}|        =    k\frac{|q_1||q_2|}{r^2}  \qquad   ,  
+                        |\vc{F}|        =    k\frac{|q_1||q_2|}{r^2}\eqquad,  
         \end{equation*}
         where the constant $k$ equals $9.0\times10^9\ \zu{N}\unitdot\zu{m}^2/\zu{C}^2$.
         The force is attractive if the charges are of different
@@ -510,7 +510,7 @@ end
         When charged particles are exchanged between regions of space
         A and B, the electric current flowing from A to B is
         \begin{equation*}
-                I = \frac{\Delta q}{\Delta t} \qquad ,
+                I = \frac{\Delta q}{\Delta t}\eqquad,
         \end{equation*}
         where $\Delta q$ is the change in region B's total charge occurring over
         a period of time $\Delta t$.
@@ -697,7 +697,7 @@ are discussed in section \ref{sec:current-calculus}.
         \begin{equation*}
                 \frac{\text{joules}}{\text{second}}
                  = \frac{\text{haybales}}{\text{second}}
-                         \times \frac{\text{joules}}{\text{haybale}}    \qquad   .  
+                         \times \frac{\text{joules}}{\text{haybale}}\eqquad.  
         \end{equation*}
         Similarly, the rate of energy transformation by a battery
         will not just depend on how many coulombs per second it
@@ -710,7 +710,7 @@ are discussed in section \ref{sec:current-calculus}.
         \end{equation*}
         \noindent or
         \begin{equation*}
-                        \text{power}         =         \text{current} \times \text{work per unit charge}   \qquad   .  
+                        \text{power}         =         \text{current} \times \text{work per unit charge}\eqquad.  
         \end{equation*}
 
         Units of joules per coulomb are abbreviated as \index{volt
@@ -793,7 +793,7 @@ are discussed in section \ref{sec:current-calculus}.
 \begin{lessimportant}[definition of voltage difference]\index{voltage!defined}
         The difference in voltage between two points in space is defined as
         \begin{equation*}
-                \Delta V=\Delta PE_{elec}/q   \qquad   ,
+                \Delta V=\Delta PE_{elec}/q\eqquad,
         \end{equation*}
         where $\Delta PE_{elec}$ is the change in the electrical
         energy of a particle with charge $q$ as it moves from the
@@ -804,7 +804,7 @@ are discussed in section \ref{sec:current-calculus}.
         The amount of power dissipated (i.e., rate at which energy is
         transformed by the flow of electricity) is then given by the equation
         \begin{equation*}
-                                P    =    I \Delta V   \qquad   .  
+                                P    =    I \Delta V\eqquad.  
         \end{equation*}\index{power!electrical}
 
 \begin{eg}{Energy stored in a battery}\label{eg:milliamp-hours}
@@ -1586,7 +1586,7 @@ definition of current as the rate of change of charge with respect to
 time must be reexpressed as a derivative in the case where the rate of
 change is not constant,
 \begin{equation*}
-  I = \frac{\der q}{\der t} \qquad .
+  I = \frac{\der q}{\der t}\eqquad.
 \end{equation*}
 
 \begin{eg}{Finding current given charge}
@@ -1693,7 +1693,7 @@ change is not constant,
         $\Delta V_2$ across the resistors must both equal the
         voltage of the battery:
         \begin{equation*}
-                \Delta V_1=\Delta V_2=\Delta V_{battery} \qquad   .
+                \Delta V_1=\Delta V_2=\Delta V_{battery}\eqquad.
         \end{equation*}
         Each resistance thus feels the same voltage difference as if
         it was the only one in the circuit, and Ohm's law tells us
@@ -1730,7 +1730,7 @@ change is not constant,
         a river that splits in half, \ref{fig:parallel-resistors}/3, and then reunites.
         The total current is
         \begin{equation*}
-                        I_{total}         =    I_1 + I_2   \qquad   .  
+                        I_{total}         =    I_1 + I_2\eqquad.  
         \end{equation*}
 
         This is an example of a general fact called the junction rule:
@@ -1745,7 +1745,7 @@ change is not constant,
         law to each resistance, resulting in
         \begin{align*}
                         I_{total}         &=    \Delta V/R_1+ \Delta V/R_2  \\
-                                 &=             \Delta V\left(\frac{1}{R_1}+\frac{1}{R_2}\right)  \qquad   .  
+                                 &=             \Delta V\left(\frac{1}{R_1}+\frac{1}{R_2}\right)\eqquad.  
         \end{align*}
 
         As far as the electric company is concerned, your whole
@@ -1754,7 +1754,7 @@ change is not constant,
         resistance!of resistors in parallel}\emph{equivalent resistance}.
         They would write Ohm's law as
         \begin{equation*}
-                                I_{total}         =    \Delta V/R   \qquad   ,  
+                                I_{total}         =    \Delta V/R\eqquad,  
         \end{equation*}
         from which we can determine the equivalent resistance by
         comparison with the previous expression:
@@ -1825,17 +1825,17 @@ change is not constant,
         parallel, we can think of two of the resistors as forming a
         single resistor, \ref{fig:eg-three-resistors-in-parallel}/2, with equivalent resistance 
         \begin{equation*}
-                         R_{12}         =    \left(\frac{1}{ R_1}+\frac{1}{ R_2}\right)^{-1}   \qquad   .  
+                         R_{12}         =    \left(\frac{1}{ R_1}+\frac{1}{ R_2}\right)^{-1}\eqquad.  
         \end{equation*}
         We can then simplify the circuit as shown in \ref{fig:eg-three-resistors-in-parallel}/3, so that it
         contains only two resistances. The equivalent resistance of
         the whole circuit is then given by
         \begin{equation*}
-                         R_{123}    =    \left(\frac{1}{ R_{12}}+\frac{1}{ R_3}\right)^{-1}   \qquad   .  
+                         R_{123}    =    \left(\frac{1}{ R_{12}}+\frac{1}{ R_3}\right)^{-1}\eqquad.  
         \end{equation*}
         Substituting for $R_{12}$ and simplifying, we find the result
         \begin{equation*}
-                         R_{123}    =  \left(\frac{1}{ R_1}+\frac{1}{ R_2}+\frac{1}{ R_3}\right)^{-1}     \qquad   ,  
+                         R_{123}    =  \left(\frac{1}{ R_1}+\frac{1}{ R_2}+\frac{1}{ R_3}\right)^{-1}\eqquad,  
         \end{equation*}
         which you probably could have guessed. The interesting point
         here is the divide-and-conquer concept, not the mathematical result.
@@ -1860,7 +1860,7 @@ change is not constant,
         \eganswer
                 Generalizing the results for two and three resistors, we have
         \begin{equation*}
-                         R_{N}         =   \left(\frac{1}{ R_1}+\frac{1}{ R_2}+\ldots\right)^{-1}    \qquad   ,  
+                         R_{N}         =   \left(\frac{1}{ R_1}+\frac{1}{ R_2}+\ldots\right)^{-1}\eqquad,  
         \end{equation*}
         where ``...'' means that the sum includes all the resistors.
         If all the resistors are identical, this becomes
@@ -2001,7 +2001,7 @@ change is not constant,
         the current that flows through one resistor must also flow
         through the other (as well as through the battery):
         \begin{equation*}
-                        I_1    =    I_2   \qquad   .  
+                        I_1    =    I_2\eqquad.  
         \end{equation*}
         The only way the information about the two resistance values
         is going to be useful is if we can apply Ohm's law, which
@@ -2021,7 +2021,7 @@ change is not constant,
         and you really only needed two of the three pieces of data
         to infer the third. In the case of our voltage differences, we have
         \begin{equation*}
-                   |\Delta V_1| + |\Delta V_2| = |\Delta V_{battery}| \qquad   .
+                   |\Delta V_1| + |\Delta V_2| = |\Delta V_{battery}|\eqquad.
         \end{equation*}
         The absolute value signs are because of the ambiguity in how
         we define our voltage differences. If we reversed the two
@@ -2057,11 +2057,11 @@ change is not constant,
         ``crossing its legs.'' With this convention, the relationship
         among the voltage drops becomes
         \begin{equation*}
-                  \Delta V_1 + \Delta V_2 = -\Delta V_{battery} \qquad   ,
+                  \Delta V_1 + \Delta V_2 = -\Delta V_{battery}\eqquad,
         \end{equation*}
         or, in more symmetrical form,
         \begin{equation*}
-                  \Delta V_1 + \Delta V_2 + \Delta V_{battery} = 0\qquad   .
+                  \Delta V_1 + \Delta V_2 + \Delta V_{battery} = 0\eqquad.
         \end{equation*}
 
         More generally, this is known as the loop rule for analyzing circuits:
@@ -2081,11 +2081,11 @@ change is not constant,
         \end{equation*}
         can now be rewritten by applying Ohm's law to each resistor:
         \begin{equation*}
-                  I_1R_1 + I_2R_2 + \Delta V_{battery} = 0 \qquad .
+                  I_1R_1 + I_2R_2 + \Delta V_{battery} = 0\eqquad.
         \end{equation*}
         The currents are the same, so we can factor them out:
         \begin{equation*}
-                  I\left(R_1 + R_2\right) + \Delta V_{battery} = 0 \qquad ,
+                  I\left(R_1 + R_2\right) + \Delta V_{battery} = 0\eqquad,
         \end{equation*}
         and this is the same result we would have gotten if we had
         been analyzing a one-resistor circuit with resistance
@@ -2505,13 +2505,13 @@ pair of resistors acts just like a single unit with a
 certain resistance value, called their equivalent resistance.
 Resistances in series add to produce a larger equivalent resistance,
 \begin{equation*}
-  R_{series} = R_1+R_2 \qquad ,
+  R_{series} = R_1+R_2\eqquad,
 \end{equation*}
 because the current has to fight its way through both
 resistances. Parallel resistors combine to produce an
 equivalent resistance that is smaller than either individual resistance,
 \begin{equation*}
- R_{parallel} = \left(\frac{1}{R_1}+\frac{1}{R_2}\right)^{-1}\qquad ,
+ R_{parallel} = \left(\frac{1}{R_1}+\frac{1}{R_2}\right)^{-1}\eqquad,
 \end{equation*}
 because the current has two different paths open to it.
 

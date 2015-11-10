@@ -47,7 +47,7 @@ behind nearly all optical devices.
 
 Snell discovered the equation for refraction,
 \begin{equation*}
-n_1 \sin \theta_1=n_2 \sin \theta_2 \qquad ,
+n_1 \sin \theta_1=n_2 \sin \theta_2\eqquad,
 \end{equation*}
 \begin{longnoteafterequation}
                 [angles measured with respect to the normal]
@@ -59,7 +59,7 @@ refraction. Snell invented this quantity to describe the
 refractive properties of various substances, but it was
 later found to be related to the speed of light in the substance,
 \begin{equation*}
-                n  =  \frac{c}{v}   \qquad   ,
+                n  =  \frac{c}{v}\eqquad,
 \end{equation*}
 where $c$ is the speed of light in a vacuum. In general a
 material's index of refraction is different for different

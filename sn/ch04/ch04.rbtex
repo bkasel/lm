@@ -189,7 +189,7 @@ in the same way makes the door rotate twice as fast, so the
 angular momentum of the putty blob must be proportional to
 mass,
 \begin{equation*}
-        L \propto m \qquad .
+        L \propto m\eqquad.
 \end{equation*}
 
 Similarly, experiments show that doubling the velocity of
@@ -197,7 +197,7 @@ the blob will have a doubling effect on the result,
 so its angular momentum must be proportional to its velocity
 as well,
 \begin{equation*}
-        L \propto mv \qquad .
+        L \propto mv\eqquad.
 \end{equation*}
 
 You have undoubtedly had the experience of approaching a
@@ -210,7 +210,7 @@ rotation the blob can give to the door is proportional to
 the distance, $r$, from the axis of rotation, so angular
 momentum must be proportional to $r$ as well,
 \begin{equation*}
-        L \propto mvr \qquad .
+        L \propto mvr\eqquad.
 \end{equation*}
 
 We are almost done, but there is one missing ingredient. We
@@ -223,7 +223,7 @@ therefore only the component of the blob's velocity vector
 perpendicular to the door that should be counted in its
 angular momentum,
 \begin{equation*}
-        L = m v_{\perp} r \qquad .
+        L = m v_{\perp} r\eqquad.
 \end{equation*}
 More generally, $v_{\perp}$ should be thought of as the
 component of the object's velocity vector that is
@@ -250,7 +250,7 @@ $\kgunit\unitdot\munit^2/\sunit$. Summarizing, we
 have\index{angular momentum!of a particle in two dimensions}
 \begin{equation*}
         L = m v_{\perp} r \qquad
-                 \text{[angular momentum of a particle in two dimensions]} \qquad ,
+                 \text{[angular momentum of a particle in two dimensions]}\eqquad,
 \end{equation*}
 where $m$ is the particle's mass, $v_{\perp}$ is the component of its
 velocity vector perpendicular to the line joining it to the axis of
@@ -424,7 +424,7 @@ swept out by the planet is very nearly a triangle. We do
 know how to compute the area of a triangle. It is one half
 the product of the base and the height:
 \begin{equation*}
-        \zu{area}        =   \frac{1}{2}bh  \qquad .
+        \zu{area}        =   \frac{1}{2}bh\eqquad.
 \end{equation*}
 We wish to relate this to angular momentum, which contains
 the variables $r$ and $v_{\perp}$. If we consider the sun to be
@@ -437,17 +437,17 @@ because the two right triangles are similar:
 \end{equation*}
 The area can thus be rewritten as
 \begin{equation*}
-        \zu{area}        =  \frac{1}{2}r\frac{v_{\perp}(\zu{distance traveled})}{|\vc{v}|}  \qquad .
+        \zu{area}        =  \frac{1}{2}r\frac{v_{\perp}(\zu{distance traveled})}{|\vc{v}|}\eqquad.
 \end{equation*}
 The distance traveled equals $|\vc{v}|\Delta t$, so this simplifies to
 \begin{equation*}
-        \zu{area}        =  \frac{1}{2}rv_{\perp}\Delta t  \qquad .
+        \zu{area}        =  \frac{1}{2}rv_{\perp}\Delta t\eqquad.
 \end{equation*}
 We have found the following relationship between angular
 momentum and the rate at which area is swept
 out:
 \begin{equation*}
-        L        =   2m \frac{\zu{area}}{\Delta t} \qquad .
+        L        =   2m \frac{\zu{area}}{\Delta t}\eqquad.
 \end{equation*}
 The factor of 2 in front is simply a matter of convention,
 since any conserved quantity would be an equally valid
@@ -655,7 +655,7 @@ is
 \begin{align*}
          L        &=   mv_{\perp} r \\
                 &=   m(2\pi  r/ T) r \\
-                &=  2\pi  mr^2/ T \qquad .
+                &=  2\pi  mr^2/ T\eqquad.
 \end{align*}
 \end{eg}
 
@@ -682,7 +682,7 @@ represented by the Greek letter tau, $\tau$, and the rate of
 change of an object's angular momentum equals the total
 torque acting on it,\index{torque!defined}
 \begin{equation*}
-        \tau_{total} = \der L/\der t \qquad .
+        \tau_{total} = \der L/\der t\eqquad.
 \end{equation*}
 
 As with force and momentum, it often happens that angular
@@ -770,31 +770,31 @@ A force perpendicular to the line connecting the axis and
 the object does, however, make the object pick up angular
 momentum. Newton's second law gives
 \begin{equation*}
-        a = F/m \qquad ,
+        a = F/m\eqquad,
 \end{equation*}
 and using $a=\der v/\der t$ we
 find the velocity the object acquires after a time $\der t$,
 \begin{equation*}
-        \der v = F\der t/m \qquad .
+        \der v = F\der t/m\eqquad.
 \end{equation*}
 We're trying to relate force to a change in angular
 momentum, so we multiply both sides of the equation by $mr$ to
 give
 \begin{align*}
         m\der v\:r &= F\der t\:r  \\
-        \der L &= F\der t\:r \qquad .
+        \der L &= F\der t\:r\eqquad.
 \end{align*}
 Dividing by $\der t$ gives the torque:
 \begin{align*}
         \frac{\der L}{\der t}& = Fr \\
-        \tau &= Fr \qquad .
+        \tau &= Fr\eqquad.
 \end{align*}
 If a force acts at an angle other than 0 or $90\degunit$ with respect
 to the line joining the object and the axis, it would be
 only the component of the force perpendicular to the line
 that would produce a torque,
 \begin{equation*}
-        \tau = F_{\perp}r \qquad .
+        \tau = F_{\perp}r\eqquad.
 \end{equation*}
 Although this result was proved under a simplified set of
 circumstances, it is more generally valid:\footnote{A proof is given
@@ -817,7 +817,7 @@ in example
 at which a force transfers angular momentum to an object, i.e.,
 the torque produced by the force, is given by
 \begin{equation*}
-        |\tau| = r |F_{\perp}| \qquad ,
+        |\tau| = r |F_{\perp}|\eqquad,
 \end{equation*}
 where $r$ is the distance from the axis to the point of application
 of the force, and $F_{\perp}$ is the component of the force that
@@ -874,7 +874,7 @@ as
 \end{equation*}
 leading to
 \begin{equation*}
-        |\tau|  =   r |\vc{F}|\ \zu{sin}\:\theta \qquad .
+        |\tau|  =   r |\vc{F}|\ \zu{sin}\:\theta\eqquad.
 \end{equation*}
 \end{eg}
 
@@ -883,7 +883,7 @@ the quantity $r_{\perp}$ shown in the figure on the left, which gives
 us a third way of expressing the relationship between torque
 and force:
 \begin{equation*}
-        |\tau|  =  r_{\perp} |F| \qquad .
+        |\tau|  =  r_{\perp} |F|\eqquad.
 \end{equation*}
 
 Of course you wouldn't want to go and memorize all three
@@ -936,7 +936,7 @@ one side, taking the shoulder to be the axis?
 The total gravitational force acting on your arm
 is
 \begin{equation*}
-        |\vc{F}| = ( 3.0\ \zu{kg})( 9.8\ \munit/\sunit^2) = 29\ \zu{N} \qquad .
+        |\vc{F}| = ( 3.0\ \zu{kg})( 9.8\ \munit/\sunit^2) = 29\ \zu{N}\eqquad.
 \end{equation*}
 For the purpose of calculating the gravitational torque, we
 can treat the force as if it acted at the arm's center of
@@ -944,12 +944,12 @@ mass. The force is straight down, which is perpendicular to
 the line connecting the shoulder to the center of mass,
 so
 \begin{equation*}
-         F_{\perp} = |\vc{F}| = 29\ \nunit \qquad .
+         F_{\perp} = |\vc{F}| = 29\ \nunit\eqquad.
 \end{equation*}
 Continuing to pretend that the force acts at the center of
 the arm, $r$ equals 30 cm = 0.30 m, so the torque is
 \begin{equation*}
-        \tau =  r\: F_{\perp} = 9\ \nunit\cdot\munit \qquad .
+        \tau =  r\: F_{\perp} = 9\ \nunit\cdot\munit\eqquad.
 \end{equation*}
 \end{eg}
 
@@ -1143,32 +1143,32 @@ clockwise torque from gravity. Choosing to represent
 counterclockwise torques as positive numbers, and using the equation
 $|\btau| =r|F| \sin \theta$, we have
 \begin{equation*}
-                r_{cable} |F_{cable}| \sin   \theta_{cable} - r_{grav}|F_{grav}|\sin  \theta_{grav}  =  0   \qquad   .
+                r_{cable} |F_{cable}| \sin   \theta_{cable} - r_{grav}|F_{grav}|\sin  \theta_{grav}  =  0\eqquad.
 \end{equation*}
 A little geometry gives $\theta_{cable}=90\degunit-\alpha$ and $\theta_{grav}=\alpha$, so
 \begin{equation*}
-                r_{cable} |F_{cable}| \sin   (90\degunit-\alpha) - r_{grav}|F_{grav}| \sin   \alpha  =  0   \qquad   .
+                r_{cable} |F_{cable}| \sin   (90\degunit-\alpha) - r_{grav}|F_{grav}| \sin   \alpha  =  0\eqquad.
 \end{equation*}
 The gravitational force can be considered as acting at the
 pole's center of mass, i.e., at its geometrical center, so
 $r_{cable}$ is twice $r_{grav}$, and we can simplify
 the equation to read
 \begin{equation*}
-                2 |F_{cable}| \sin   (90\degunit-\alpha) - |F_{grav}| \sin   \alpha =  0   \qquad   .
+                2 |F_{cable}| \sin   (90\degunit-\alpha) - |F_{grav}| \sin   \alpha =  0\eqquad.
 \end{equation*}
 These are all quantities we were given, except for $\alpha$,
 which is the angle we want to find. To solve for $\alpha$
 we need to use the trig identity
 $\sin (90\degunit-x)= \cos x$,
 \begin{equation*}
-                2 |F_{cable}| \cos  \alpha - |F_{grav}| \sin   \alpha  =  0   \qquad   ,
+                2 |F_{cable}| \cos  \alpha - |F_{grav}| \sin   \alpha  =  0\eqquad,
 \end{equation*}
 which allows us to find
 \begin{align*}
  \tan\alpha  &= 2\frac{|\vc{F}_{cable}|}{|\vc{F}_{grav}|}\\
  \alpha &= \tan^{-1}\left(2\frac{|\vc{F}_{cable}|}{|\vc{F}_{grav}|}\right)\\
         &= \tan^{-1}\left(2\times\frac{70\ \nunit}{98\ \nunit}\right)\\
-        &= 55\degunit \qquad .
+        &= 55\degunit\eqquad.
 \end{align*}
 \end{eg}
 
@@ -1213,7 +1213,7 @@ from the cylinder, $F_s$.
 
 The total force on the cube in the vertical direction is zero:
 \begin{equation*}
-  F_N-mg = 0 \qquad .
+  F_N-mg = 0\eqquad.
 \end{equation*}
 
 As our axis for defining torques, it's convenient to choose the point
@@ -1224,7 +1224,7 @@ and the cylinder's torque is clockwise. Letting counterclockwise torques be
 positive, and using the convenient equation $\tau=r_\perp F$, we find
 the equation for the total torque:
 \begin{equation*}
-  b F_T - F_N a = 0 \qquad .
+  b F_T - F_N a = 0\eqquad.
 \end{equation*}
 We could also write down the equation saying that the total horizontal
 force is zero, but that would bring in the cylinder's frictional force
@@ -1396,7 +1396,7 @@ results first and then prove them.
 gravity with less than the energy required to escape, obeys
 an equation of the form
 \begin{equation*}
-   \sin\:\varphi = \frac{1}{\sqrt{-pr^2+qr}} \qquad ,
+   \sin\:\varphi = \frac{1}{\sqrt{-pr^2+qr}}\eqquad,
 \end{equation*}
 where $p$ and $q$ are positive constants that depend on the planet's
 energy and angular momentum and $p$ is greater than zero.
@@ -1404,7 +1404,7 @@ energy and angular momentum and $p$ is greater than zero.
 (3) A curve is an ellipse if and only if its $r$-$\varphi$ equation is
 of the form
 \begin{equation*}
-   \sin\:\varphi = \frac{1}{\sqrt{-pr^2+qr}} \qquad ,
+   \sin\:\varphi = \frac{1}{\sqrt{-pr^2+qr}}\eqquad,
 \end{equation*}
 where $p$ and $q$ are positive constants that depend on the size and
 shape of the ellipse.
@@ -1416,12 +1416,12 @@ of angular momentum tells us that $L = mrv \sin \varphi$ is a
 constant. Since the planet's mass is a constant, this is the
 same as the condition
 \begin{equation*}
-        rv \sin \varphi = \text{constant} \qquad .
+        rv \sin \varphi = \text{constant}\eqquad.
 \end{equation*}
 
 Conservation of energy gives
 \begin{equation*}
-         \frac{1}{2}mv^2 - G\frac{Mm}{r}= \text{constant} \qquad .
+         \frac{1}{2}mv^2 - G\frac{Mm}{r}= \text{constant}\eqquad.
 \end{equation*}
 
 We solve the first equation for $v$ and plug into the second
@@ -1444,17 +1444,17 @@ energy is negative.
 We define the quantities $\alpha$, $d$, and $s$ as shown in figure \figref{proof-c}.
 The law of cosines gives
 \begin{equation*}
-        d^2 = r^2 + s^2 - 2rs\:\cos\:\alpha \qquad .
+        d^2 = r^2 + s^2 - 2rs\:\cos\:\alpha\eqquad.
 \end{equation*}
 Using $\alpha=180\degunit-2\varphi$ and the trigonometric identities $\cos
 (180\degunit-x)=-\cos x$ and $\cos 2x = 1-2\:\sin^2\:x$, we can rewrite this
 as
 \begin{equation*}
-        d^2 = r^2 + s^2 - 2rs\left(2\sin^2\varphi-1\right) \qquad .
+        d^2 = r^2 + s^2 - 2rs\left(2\sin^2\varphi-1\right)\eqquad.
 \end{equation*}
 Straightforward algebra transforms this into
 \begin{equation*}
-         \sin\:\varphi = \sqrt{\frac{(r+s)^2-d^2}{4rs}} \qquad .
+         \sin\:\varphi = \sqrt{\frac{(r+s)^2-d^2}{4rs}}\eqquad.
 \end{equation*}
 Since $r+s$ is constant, the top of the fraction is constant,
 and the denominator can be rewritten as $4rs=4r(\text{constant}-r)$,

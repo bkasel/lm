@@ -247,7 +247,7 @@ distance, so this made sense.
 In the approximation of a circular orbit, the magnitude of
 the sun's force on the planet would have to be
 \begin{equation}
-    F=   ma=      mv^2/r \qquad .
+    F=   ma=      mv^2/r\eqquad.
 \end{equation}
 Now although this equation has the magnitude, $v$, of the
 velocity vector in it, what Newton expected was that there
@@ -272,13 +272,13 @@ eliminate $v$ algebraically in order to find a deeper truth.
 
 To eliminate $v$, Newton used the equation
 \begin{equation}
-        v    =   \frac{\text{circumference}}{T} =    \frac{2\pi r}{T}   \qquad .
+        v    =   \frac{\text{circumference}}{T} =    \frac{2\pi r}{T}\eqquad.
 \end{equation}
 Of course this equation would also only be valid for planets
 in nearly circular orbits. Plugging this into eq. [1]
 to eliminate $v$ gives
 \begin{equation}
-        F     =  \frac{4\pi^2mr}{T^2}     \qquad   .    
+        F     =  \frac{4\pi^2mr}{T^2}\eqquad.    
 \end{equation}
 This unfortunately has the side-effect of bringing in the
 period, $T$, which we expect on similar physical grounds
@@ -288,7 +288,7 @@ laws!law of periods}Kepler's law of periods comes in. Using
 it to eliminate $T$ gives a result that depends only on the
 mass of the planet and its distance from the sun:
 \begin{multline*}
-    F\propto m/r^2   \qquad   . \hfill \shoveright{\text{[force of the sun on a planet of mass}}\\
+    F\propto m/r^2\eqquad. \hfill \shoveright{\text{[force of the sun on a planet of mass}}\\
                                        \shoveright{\text{$m$ at a distance $r$ from the sun; same}}\\
                                        \text{proportionality constant for all the planets]}
 \end{multline*}
@@ -349,12 +349,12 @@ sun and planets are so small compared to the distances
 separating them.)  Calling the proportionality constant $k$, we have
 \begin{align*}
         F_\text{earth on apple}    &=     k \: m_\text{apple} / r_\text{earth}^2  \\
-        F_\text{earth on moon}     &=     k \: m_\text{moon}  / d_\text{earth-moon}^2   \qquad   .
+        F_\text{earth on moon}     &=     k \: m_\text{moon}  / d_\text{earth-moon}^2\eqquad.
 \end{align*}
 Newton's second law says $a=F/m$, so
 \begin{align*}
         a_\text{apple}  &=  k \: / \: r_{earth}^2  \\
-        a_\text{moon}   &=  k \: / \: d_\text{earth-moon}^2 \qquad .
+        a_\text{moon}   &=  k \: / \: d_\text{earth-moon}^2\eqquad.
 \end{align*}
 The Greek astronomer Hipparchus had already found 2000 years
 before that the distance from the earth to the moon was
@@ -427,7 +427,7 @@ until long after Newton's death.
 
 \eganswer Solving for $G$ in Newton's law of gravity gives
 \begin{equation*}
-     G = \frac{Fr^2}{m_1m_2}  \qquad   ,
+     G = \frac{Fr^2}{m_1m_2}\eqquad,
 \end{equation*}
 so the units of $G$ must be $\nunit\unitdot\munit^2/\kgunit^2$. Fully
 adorned with units, the value of $G$ is $6.67\times10^{-11}\ \nunit\unitdot\munit^2/\kgunit^2$.
@@ -897,13 +897,13 @@ earth's gravitational force is the same as if its mass was
 all concentrated at its center,  the force on a falling
 object of mass $m$ is given by
 \begin{equation*}
-            F    =    G \: M_\text{earth} \: m \: / \: r_\text{earth}^2    \qquad   .
+            F    =    G \: M_\text{earth} \: m \: / \: r_\text{earth}^2\eqquad.
 \end{equation*}
 The object's acceleration equals $F/m$, so the object's mass
 cancels out and we get the same acceleration for all falling
 objects, as we knew we should:
 \begin{equation*}
-            g  =  G \: M_\text{earth} \: / \: r_\text{earth}^2     \qquad   .
+            g  =  G \: M_\text{earth} \: / \: r_\text{earth}^2\eqquad.
 \end{equation*}
 <%
   fig(
@@ -1024,11 +1024,11 @@ m4_ifelse(__me,1,[:
         The force acting on the ship is
         \begin{align*}
                  F        &= -\frac{ GM_{e} m}{ r^2}
-                                        +\frac{ GM_{m} m}{ (r_{m}- r)^2} \qquad ,
+                                        +\frac{ GM_{m} m}{ (r_{m}- r)^2}\eqquad,
         \intertext{but since everything is proportional to the mass of the ship,  m,
                 we can divide it out}
                  \frac{F}{m}        &= -\frac{ GM_{e} }{ r^2}
-                                        +\frac{ GM_{m} }{ (r_{m}- r)^2} \qquad ,
+                                        +\frac{ GM_{m} }{ (r_{m}- r)^2}\eqquad,
         \end{align*}
         and the variables \verb-F- in the program
         is actually the force per unit mass $F/m$. The program is a straightforward
@@ -1192,10 +1192,10 @@ $m$ equals $A$. Let the axis of symmetry be $x$, and let the contribution of thi
 \end{align*}
 From the law of cosines we find
 \begin{align*}
-  r^2 &= b^2 + s^2 - 2bs\cos\theta \qquad ,\\
-  b^2 &= r^2 + s^2 -2rs\cos\alpha \qquad ,\\
+  r^2 &= b^2 + s^2 - 2bs\cos\theta\eqquad,\\
+  b^2 &= r^2 + s^2 -2rs\cos\alpha\eqquad,\\
 \intertext{and differentiation of the former gives}  
-  2r\der r & =        2bs\sin\theta\der\theta \qquad .
+  2r\der r & =        2bs\sin\theta\der\theta\eqquad.
 \end{align*}
 We can now write the integrand entirely in terms of the single variable of integration $r$.
 \begin{align*}
@@ -1265,7 +1265,7 @@ these laws. Newton's law of gravity states that the
 magnitude of the attractive force between any two objects in
 the universe is given by
 \begin{equation*}
-F=Gm_1m_2/r^2   \qquad   .
+F=Gm_1m_2/r^2\eqquad.
 \end{equation*}
 Weightlessness of objects in orbit around the earth is only
 apparent. An astronaut inside a spaceship is simply falling

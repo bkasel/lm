@@ -508,7 +508,7 @@ curve to be unitless probabilities. The area of a single
 square on the graph paper is then
 \begin{multline*}
  (\text{unitless area of a square})\\
-         =  (\text{width of square with time units}) \times (\text{height of square}) \qquad .
+         =  (\text{width of square with time units}) \times (\text{height of square})\eqquad.
 \end{multline*}
 If the units are to cancel out, then the height of the
 square must evidently be a quantity with units of inverse
@@ -646,7 +646,7 @@ will survive without decaying for a period of at least $t$.
 It has been experimentally measured that half all $^{131}\zu{I}$
 atoms decay in 8 hours, so we have
 \begin{equation*}
-                P_{surv}(8\ \zu{hr})         =  0.5\qquad  .  
+                P_{surv}(8\ \zu{hr})         =  0.5\eqquad.  
 \end{equation*}
 
 Now using the law of independent probabilities, the
@@ -655,30 +655,30 @@ of surviving for the first 8 hours multiplied by the
 probability of surviving for the second 8 hours,
 \begin{align*}
                 P_{surv}(16\ \zu{hr})         &=  0.50\times0.50  \\
-                                 &=  0.25  \qquad .  
+                                 &=  0.25\eqquad.  
 \end{align*}
 Similarly we have
 \begin{align*}
                 P_{surv}(24\ \zu{hr})         &=  0.50\times0.5\times0.5  \\
-                                 &=  0.125  \qquad .  
+                                 &=  0.125\eqquad.  
 \end{align*}
 Generalizing from this pattern, the probability of surviving
 for any time $t$ that is a multiple of 8 hours is
 \begin{equation*}
-                P_{surv}(t)                 =            0.5^{t/8\ \zu{hr}} \qquad .
+                P_{surv}(t)                 =            0.5^{t/8\ \zu{hr}}\eqquad.
 \end{equation*}
 We now know how to find the probability of survival at
 intervals of 8 hours, but what about the points in time in
 between? What would be the probability of surviving for 4
 hours? Well, using the law of independent probabilities again, we have
 \begin{equation*}
-  P_{surv}(8\ \zu{hr})  =  P_{surv}(4\ \zu{hr}) \times P_{surv}(4\ \zu{hr}) \qquad   ,  
+  P_{surv}(8\ \zu{hr})  =  P_{surv}(4\ \zu{hr}) \times P_{surv}(4\ \zu{hr})\eqquad,  
 \end{equation*}
 which can be rearranged to give
 \begin{align*}
   P_{surv}(4\ \zu{hr})          &= \sqrt{P_{surv}(8\ \zu{hr})}   \\
                                  &=  \sqrt{0.5}  \\
-                                 &=  0.707  \qquad .  
+                                 &=  0.707\eqquad.  
 \end{align*}
 This is exactly what we would have found simply by plugging
 in $P_{surv}(t)=0.5^{t/8\ \zu{hr}}$ and ignoring the restriction to
@@ -749,11 +749,11 @@ about how long would it be before not a single atom was left?
 $^{90}\zu{Sr}$ nucleus has a probability of 0.1 of surviving.
 Starting with the exponential decay formula,
 \begin{equation*}
-                P_{surv}  =    0.5^{t/t_{1/2}}    \qquad   ,  
+                P_{surv}  =    0.5^{t/t_{1/2}}\eqquad,  
 \end{equation*}
 we want to solve for $t$. Taking natural logarithms of both sides,
 \begin{equation*}
-                \ln  P  = \frac{t}{t_{1/2}}\ln 0.5     \qquad   ,  
+                \ln  P  = \frac{t}{t_{1/2}}\ln 0.5\eqquad,  
 \end{equation*}
 so
 \begin{equation*}
@@ -812,7 +812,7 @@ on both sides, we have
 \begin{multline*}
         \text{(decays per unit time)} \approx\\
          \frac{(\ln 2)N(0)}{t_{1/2}}0.5^{t/t_{1/2}}  \quad 
-                  , \quad \text{if $\Delta t \ll t_{1/2}$} \qquad .
+                  , \quad \text{if $\Delta t \ll t_{1/2}$}\eqquad.
 \end{multline*}
 \label{rate-of-decay-approx}
 
@@ -891,7 +891,7 @@ integral. If we call the random number $x$ and the
 probability distribution $D(x)$, then the probability that
 $x$ lies in a certain range is given by 
 \begin{equation*}
-        \text{(probability of $a\le x \le b$)}=\int_a^b D(x) \der x      \qquad   .
+        \text{(probability of $a\le x \le b$)}=\int_a^b D(x) \der x\eqquad.
 \end{equation*}
 What about averages? If $x$ had a finite number of equally
 probable values, we would simply add them up and divide by
@@ -901,7 +901,7 @@ generalize this to a variable $x$ that can take on any of a
 continuum of values. The continuous version of a sum is an
 integral, so the average is
 \begin{equation*}
-                \text{(average value of $x$)}  = \int x D(x) \der x     \qquad   ,  
+                \text{(average value of $x$)}  = \int x D(x) \der x\eqquad,  
 \end{equation*}
 where the integral is over all possible values of $x$.
 
@@ -914,29 +914,29 @@ radioactive decay is found by substituting $N(0)=1$ into the
 equation for the rate of decay. We know that the probability
 distribution must be of the form
 \begin{equation*}
-                D(t)          =   k 0.5^{t/t_{1/2}}  \qquad   ,  
+                D(t)          =   k 0.5^{t/t_{1/2}}\eqquad,  
 \end{equation*}
 where $k$ is a constant that we need to determine. The atom
 is guaranteed to decay eventually, so normalization gives us
 \begin{align*}
         \text{(probability of $0\le t < \infty$)}
                          &=  1  \\
-                         &=  \int_0^\infty D(t) \der t \qquad .
+                         &=  \int_0^\infty D(t) \der t\eqquad.
 \end{align*}
 The integral is most easily evaluated by converting the
 function into an exponential with $e$ as the base
 \begin{align*}
                 D(t)          &=  k \exp\left[\ln\left(0.5^{t/t_{1/2}}\right)\right]  \\
                          &=  k \exp\left[\frac{t}{t_{1/2}}\ln 0.5\right]  \\
-                         &=  k \exp\left(-\frac{\ln 2}{t_{1/2}}t\right) \qquad  ,
+                         &=  k \exp\left(-\frac{\ln 2}{t_{1/2}}t\right)\eqquad,
 \end{align*}
 which gives an integral of the familiar form $\int e^{cx}\der x=(1/c)e^{cx}$. We thus have
 \begin{equation*}
-                1         =    -\frac{kt_{1/2}}{\ln 2}\exp\left(-\frac{\ln 2}{t_{1/2}}t\right) \qquad   ,  
+                1         =    -\frac{kt_{1/2}}{\ln 2}\exp\left(-\frac{\ln 2}{t_{1/2}}t\right)\eqquad,  
 \end{equation*}
 which gives the desired result:
 \begin{equation*}
-                k         =   \frac{\ln 2}{t_{1/2}}  \qquad   .  
+                k         =   \frac{\ln 2}{t_{1/2}}\eqquad.  
 \end{equation*}
 \end{eg}
 
@@ -954,7 +954,7 @@ Using the convenient base-$e$ form again, we have
 \begin{equation*}
         (\text{average lifetime})
                 = \frac{\ln 2}{t_{1/2}}
-                         \int_0^\infty t \exp\left(-\frac{\ln 2}{t_{1/2}}t\right) \der t   \qquad   .  
+                         \int_0^\infty t \exp\left(-\frac{\ln 2}{t_{1/2}}t\right) \der t\eqquad.  
 \end{equation*}
 This integral is of a form that can either be attacked with
 integration by parts or by looking it up in a table. The
@@ -964,7 +964,7 @@ purposes because it equals zero at both limits of integration. We end up with
 \begin{align*}
 \text{(average lifetime)} &= \frac{\ln 2}{t_{1/2}}\left(\frac{t_{1/2}}{\ln 2}\right)^2    \\
                          &=  \frac{t_{1/2}}{\ln 2}  \\
-                         &=  1.443 \: t_{1/2}  \qquad   ,  
+                         &=  1.443 \: t_{1/2}\eqquad,  
 \end{align*}
 which is, as expected, longer than one half-life.
 \end{eg}
@@ -1019,7 +1019,7 @@ if two random events are not related in any way, then the
 probability that they will both occur equals the product of
 the two probabilities,
 \begin{multline*}
-        \text{probability of A and B}  \\=  P_AP_B  \qquad \shoveright{\text{[if A and B are independent]}   \qquad   .}
+        \text{probability of A and B}  \\=  P_AP_B  \qquad \shoveright{\text{[if A and B are independent]}\eqquad.}
 \end{multline*}
 The most important application is to radioactive decay. The
 time that a radioactive atom has a 50\% chance of surviving
@@ -1027,7 +1027,7 @@ is called the half-life, $t_{1/2}$. The probability of surviving
 for two half-lives is $(1/2)(1/2)=1/4$, and so on. In
 general, the probability of surviving a time $t$ is given by
 \begin{equation*}
-                P_{surv}(t)  =    0.5^{t/t_{1/2}} \qquad .
+                P_{surv}(t)  =    0.5^{t/t_{1/2}}\eqquad.
 \end{equation*}
 Related quantities such as the rate of decay and probability
 distribution for the time of decay are given by the same
@@ -1052,7 +1052,7 @@ that a given child will be born albino?\answercheck
 <% begin_hw('exponentiationapprox') %>
 Use a calculator to check the approximation that 
 \begin{equation*}
-  a^b \approx  1+ b \ln a \qquad ,
+  a^b \approx  1+ b \ln a\eqquad,
 \end{equation*}
 if $b\ll 1$, using some arbitrary numbers.
 Then see how good the approximation is for values of $b$ that are

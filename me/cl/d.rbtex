@@ -83,11 +83,11 @@ the energy-momentum four-vector is simply equal to the particle's mass. If we tr
 frame of reference, the inner product stays the same. We can therefore always interpret the magnitude of
 an energy-momentum four-vector as the mass. In symbols,
 \begin{equation*}
-  m^2 = E^2 - p^2 \qquad ,
+  m^2 = E^2 - p^2\eqquad,
 \end{equation*}
 or, in units with $c \ne 1$,
 \begin{equation*}
-  (mc^2)^2 = E^2 - (pc)^2 \qquad .
+  (mc^2)^2 = E^2 - (pc)^2\eqquad.
 \end{equation*}
 
 <% self_check('massless-m-e-p',<<-'SELF_CHECK'
@@ -101,7 +101,7 @@ its velocity, we can find a similar equation for the momentum:
   p &= \sqrt{E^2-m^2} \\
     &= m\sqrt{\gamma^2-1} \\
     &= m\sqrt{\frac{1}{1-v^2}-1} \\
-    &= m\gamma v \qquad .
+    &= m\gamma v\eqquad.
 \end{align*}
 As a material particle gets closer and closer to $c$, its momentum approaches infinity,
 so that an infinite force would be required in order to reach $c$.

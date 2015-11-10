@@ -71,19 +71,19 @@ away from the other, whose energy gets boosted to $(E/2)S$. In frame B, as in A,
 O retains the same speed after emission of the light. But observers in frames
 A and B disagree on how much energy O has lost, the discrepancy being
 \begin{equation*}
-  E\left[\frac{1}{2}(S+S^{-1})-1\right] \qquad .
+  E\left[\frac{1}{2}(S+S^{-1})-1\right]\eqquad.
 \end{equation*}
 Let's consider the case where B's velocity relative to A is small. Expanding the above 
 expression in a Taylor series in $v$, the discrepancy in
 O's energy loss is approximately
 \begin{equation*}
-  \frac{1}{2}Ev^2/c^2 \qquad .
+  \frac{1}{2}Ev^2/c^2\eqquad.
 \end{equation*}
 The interpretation is that when O reduced its energy by $E$ in order to make
 the light rays, it reduced its \emph{mass} from $m_\zu{o}$ to $m_\zu{o}-m$,
 where $m=E/c^2$. Rearranging factors, we have Einstein's famous
 \begin{equation*}
-  E=mc^2 \qquad .
+  E=mc^2\eqquad.
 \end{equation*}
 This derivation entailed an approximation, and redoing it without the approximation
 entails some complexity.\footnote{See Ohanian, ``Einstein's $E=mc^2$ mistakes,'' \url{arxiv.org/abs/0805.1400}, 
@@ -112,7 +112,7 @@ difference between O's energy in frame B and its energy when it is at rest, but 
 and energy are equivalent, we assign it energy $mc^2$ when it is at rest. The result is that
 the energy is
 \begin{equation*}
-  E = m\gamma c^2 \qquad .
+  E = m\gamma c^2\eqquad.
 \end{equation*}
 
 \pagebreak
@@ -127,7 +127,7 @@ produced by annihilating 1 kg of matter with 1 kg of antimatter is
 \begin{align*}
  E &= mc^2\\
    &= (2\ \kgunit)\left(3.0\times10^8\ \munit/\sunit\right)^2\\
-   &= 2\times10^{17}\ \junit \qquad ,
+   &= 2\times10^{17}\ \junit\eqquad,
 \end{align*}
 which is on the same order of magnitude as a day's energy consumption for the
 entire world's population!
@@ -168,7 +168,7 @@ $c=3\times10^8$ meters per second, so converting to mass units, we have
 \begin{align*}
                 m         &=    \frac{E}{c^2}  \\
                         &= \frac{0.5\times10^6\ \junit}{\left(3\times10^8\ \munit/\sunit\right)^2} \\
-                         &=    6\times10^{-12}\  \text{kilograms}   \qquad   .
+                         &=    6\times10^{-12}\  \text{kilograms}\eqquad.
 \end{align*}
 The change in mass is too small to measure with any
 practical technique. This is because the square of the speed

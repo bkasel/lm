@@ -99,7 +99,7 @@ momentum, we use the symbol $\ell$ for it:
 \end{equation*}
 The angular momentum is
 \begin{equation*}
-        L     =    rp   \qquad   .
+        L     =    rp\eqquad.
 \end{equation*}
 Here, $r=C/2\pi $, and $p=h/\lambda=h\ell/C$, so
 \begin{align*}
@@ -827,7 +827,7 @@ in assuming that the electron could be described nonrelativistically?
  The wavefunction of the electron in the ground state
 of a hydrogen atom, shown in the top left of figure \figref{hydrogen-three-states} on p.~\pageref{fig:hydrogen-three-states}, is
 \begin{equation*}
-            \Psi  =  \pi^{-1/2} a^{-3/2} e^{-r/a} \qquad ,
+            \Psi  =  \pi^{-1/2} a^{-3/2} e^{-r/a}\eqquad,
 \end{equation*}
 where $r$ is the distance from the proton, and $a=\hbar^2/kme^2=5.3\times10^{-11}\ \munit$
 is a constant that sets the size of the wave. The figure doesn't show the proton; let's take the proton to be

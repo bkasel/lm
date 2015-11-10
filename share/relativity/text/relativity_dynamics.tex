@@ -165,7 +165,7 @@ hidden under his uniform --- he just doesn't seem to react to the collision as m
 As proved in section \ref{subsec:rel-dynamics-proofs},
 this extra inertia is described by redefining momentum as
 \begin{equation*}
-        p = m \mygamma v \qquad .
+        p = m \mygamma v\eqquad.
 \end{equation*}
 At very low velocities, $\mygamma$ is close to 1, and the result is very nearly $mv$, as demanded
 by the correspondence principle. But at very high velocities, $\mygamma$ gets very big --- the
@@ -325,7 +325,7 @@ $c=3\times10^8$ meters per second, so converting to mass units, we have
 \begin{align*}
                 m         &=    \frac{E}{c^2}  \\
                         &= \frac{0.5\times10^6\ \junit}{\left(3\times10^8\ \munit/\sunit\right)^2} \\
-                         &=    6\times10^{-12}\  \text{kilograms}   \qquad   .
+                         &=    6\times10^{-12}\  \text{kilograms}\eqquad.
 \end{align*}
 The change in mass is too small to measure with any
 practical technique. This is because the square of the speed
@@ -342,7 +342,7 @@ produced by annihilating 1 kg of matter with 1 kg of antimatter is
 \begin{align*}
  E &= mc^2\\
    &= (2\ \kgunit)\left(3.0\times10^8\ \munit/\sunit\right)^2\\
-   &= 2\times10^{17}\ \junit \qquad ,
+   &= 2\times10^{17}\ \junit\eqquad,
 \end{align*}
 which is on the same order of magnitude as a day's energy consumption for the
 entire world's population!
@@ -372,7 +372,7 @@ because a material object can't be made to move at the speed of light. However, 
 question of just how much mass-energy a moving object has. We know that when the object is at rest, it
 has no kinetic energy, so its mass-energy is simply equal to the energy-equivalent of its mass, $mc^2$,
 \begin{equation*}
-  \massenergy = mc^2 \ \text{when}\ v=0 \qquad ,
+  \massenergy = mc^2 \ \text{when}\ v=0\eqquad,
 \end{equation*}
 where the symbol $\massenergy$ (cursive ``E'') stands for mass-energy. The point of using the new symbol is simply
 to remind ourselves that we're talking about relativity, so an object at rest has $\massenergy=mc^2$, not
@@ -387,14 +387,14 @@ mass-energy. We can continue this process for as long as we like, and the amount
 will increase without limit. We therefore conclude that an object's mass-energy approaches infinity
 as its speed approaches the speed of light,
 \begin{equation*}
-  \massenergy \rightarrow \infty\ \text{when}\ v \rightarrow c \qquad .
+  \massenergy \rightarrow \infty\ \text{when}\ v \rightarrow c\eqquad.
 \end{equation*}
 
 \index{mass-energy!of a moving particle}
 Now that we have some idea what to expect, what is the actual equation for the mass-energy? 
 As proved in section \ref{subsec:rel-dynamics-proofs}, it is
 \begin{equation*}
-  \massenergy =m\mygamma c^2 \qquad .
+  \massenergy =m\mygamma c^2\eqquad.
 \end{equation*}
 
 <% self_check('mass-energy',<<-'SELF_CHECK'
@@ -423,14 +423,14 @@ kinetic energy,
 \begin{align*}
   KE   &= \massenergy(v)-\massenergy(v=0) \\
        &= m\mygamma c^2 - m c^2 \\
-       &= m(\mygamma-1)c^2 \qquad .
+       &= m(\mygamma-1)c^2\eqquad.
 \end{align*}
 Expressing $\mygamma$ as $\left(1-v^2/c^2\right)^{-1/2}$ and making use of the
 approximation $(1+\epsilon)^p\approx 1+p\epsilon$ for small $\epsilon$, we have
 $\mygamma\approx 1+v^2/2c^2$, so
 \begin{align*}
   KE   &\approx m(1+\frac{v^2}{2c^2}-1)c^2 \\
-       &= \frac{1}{2}mv^2 \qquad ,
+       &= \frac{1}{2}mv^2\eqquad,
 \end{align*}
 which is the classical expression. As demanded by the correspondence principle,
 relativity agrees with classical physics at speeds that are small compared to
@@ -441,11 +441,11 @@ the speed of light.
 <% begin_sec("The energy-momentum four-vector",nil,'p-four-vector',{'optional'=>true}) %>\index{momentum!relativistic}\index{four-vector!energy-momentum}\index{energy-momentum four vector}
 Starting from $\massenergy=m\mygamma$ and $p=m\mygamma v$, a little algebra allows one to prove the identity
 \begin{equation*}
-  m^2 = \massenergy^2 - p^2 \qquad .
+  m^2 = \massenergy^2 - p^2\eqquad.
 \end{equation*}
 We can define an energy-momentum four-vector,
 \begin{equation*}
-  \vc{p} = (\massenergy,p_x,p_y,p_z) \qquad ,
+  \vc{p} = (\massenergy,p_x,p_y,p_z)\eqquad,
 \end{equation*}
 and the relation $m^2 = \massenergy^2 - p^2$ then arises from the inner product $\vc{p}\cdot\vc{p}$.
 Since $\massenergy$ and $p$ are separately conserved, the energy-momentum four-vector is also conserved.
@@ -492,7 +492,7 @@ of reference, we  have $E\ne 0$.
 The relation $  m^2 = \massenergy^2 - p^2 $ is only valid in relativistic units. If we tried to apply it without
 modification to numbers expressed in metric units, we would have
 \begin{equation*}
-  \kgunit^2 = \kgunit^2\unitdot\frac{\munit^4}{\sunit^4} - \kgunit^2\unitdot\frac{\munit^2}{\sunit^2} \qquad ,
+  \kgunit^2 = \kgunit^2\unitdot\frac{\munit^4}{\sunit^4} - \kgunit^2\unitdot\frac{\munit^2}{\sunit^2}\eqquad,
 \end{equation*}
 which would be nonsense because the three terms all have different units. As usual, we need to insert factors
 of $c$ to make a metric version, and these factors of $c$ are determined by the need to fix the broken units:

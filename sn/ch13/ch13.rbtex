@@ -482,7 +482,7 @@ square on the graph paper is then
 \begin{gather*}
 \text{(unitless area of a square)}   \\
 = \text{(width of square with time units)}\\
-         \times \text{(height of square)} \qquad .
+         \times \text{(height of square)}\eqquad.
 \end{gather*}
 If the units are to cancel out, then the height of the
 square must evidently be a quantity with units of inverse
@@ -620,7 +620,7 @@ will survive without decaying for a period of at least $t$.
 It has been experimentally measured that half all $^{131}\zu{I}$
 atoms decay in 8 hours, so we have
 \begin{equation*}
-                P_{surv}(8\ \zu{hr})         =  0.5\qquad  .  
+                P_{surv}(8\ \zu{hr})         =  0.5\eqquad.  
 \end{equation*}
 
 Now using the law of independent probabilities, the
@@ -629,30 +629,30 @@ of surviving for the first 8 hours multiplied by the
 probability of surviving for the second 8 hours,
 \begin{align*}
                 P_{surv}(16\ \zu{hr})         &=  0.50\times0.50  \\
-                                 &=  0.25  \qquad .  
+                                 &=  0.25\eqquad.  
 \end{align*}
 Similarly we have
 \begin{align*}
                 P_{surv}(24\ \zu{hr})         &=  0.50\times0.5\times0.5  \\
-                                 &=  0.125  \qquad .  
+                                 &=  0.125\eqquad.  
 \end{align*}
 Generalizing from this pattern, the probability of surviving
 for any time $t$ that is a multiple of 8 hours is
 \begin{equation*}
-                P_{surv}(t)                 =            0.5^{t/8\ \zu{hr}} \qquad .
+                P_{surv}(t)                 =            0.5^{t/8\ \zu{hr}}\eqquad.
 \end{equation*}
 We now know how to find the probability of survival at
 intervals of 8 hours, but what about the points in time in
 between? What would be the probability of surviving for 4
 hours? Well, using the law of independent probabilities again, we have
 \begin{equation*}
-  P_{surv}(8\ \zu{hr})  =  P_{surv}(4\ \zu{hr}) \times P_{surv}(4\ \zu{hr}) \qquad   ,  
+  P_{surv}(8\ \zu{hr})  =  P_{surv}(4\ \zu{hr}) \times P_{surv}(4\ \zu{hr})\eqquad,  
 \end{equation*}
 which can be rearranged to give
 \begin{align*}
   P_{surv}(4\ \zu{hr})          &= \sqrt{P_{surv}(8\ \zu{hr})}   \\
                                  &=  \sqrt{0.5}  \\
-                                 &=  0.707  \qquad .  
+                                 &=  0.707\eqquad.  
 \end{align*}
 This is exactly what we would have found simply by plugging
 in $P_{surv}(t)=0.5^{t/8\ \zu{hr}}$ and ignoring the restriction to
@@ -686,11 +686,11 @@ about how long would it be before not a single atom was left?
 $^{90}\zu{Sr}$ nucleus has a probability of 0.1 of surviving.
 Starting with the exponential decay formula,
 \begin{equation*}
-                P_{surv}  =    0.5^{t/t_{1/2}}    \qquad   ,  
+                P_{surv}  =    0.5^{t/t_{1/2}}\eqquad,  
 \end{equation*}
 we want to solve for $t$. Taking natural logarithms of both sides,
 \begin{equation*}
-                \ln  P  = \frac{t}{t_{1/2}}\ln 0.5     \qquad   ,  
+                \ln  P  = \frac{t}{t_{1/2}}\ln 0.5\eqquad,  
 \end{equation*}
 so
 \begin{equation*}
@@ -753,13 +753,13 @@ in some finite time interval.
 Doing calculus on the function $e^x$ is also easier than with $0.5^x$, so we rewrite the
 function $N(t)$ as
 \begin{equation*}
-  N = N(0) e^{-t/\tau} \qquad ,
+  N = N(0) e^{-t/\tau}\eqquad,
 \end{equation*}
 where $\tau=t_{1/2}/\ln 2$ is shown in example \ref{eg:average-lifetime} on
 p.~\pageref{eg:average-lifetime} to be the average time of survival. The rate of decay
 is then
 \begin{equation*}
-  -\frac{\der N}{\der t} = \frac{N(0)}{\tau} e^{-t/\tau} \qquad .
+  -\frac{\der N}{\der t} = \frac{N(0)}{\tau} e^{-t/\tau}\eqquad.
 \end{equation*}
 Mathematically, differentating an exponential just gives back another exponential.
 Physically, this is telling us that as $N$ falls off exponentially, the rate of
@@ -832,7 +832,7 @@ integral. If we call the random number $x$ and the
 probability distribution $D(x)$, then the probability that
 $x$ lies in a certain range is given by 
 \begin{equation*}
-        \text{(probability of $a\le x \le b$)}=\int_a^b D(x) \der x      \qquad   .
+        \text{(probability of $a\le x \le b$)}=\int_a^b D(x) \der x\eqquad.
 \end{equation*}
 What about averages? If $x$ had a finite number of equally
 probable values, we would simply add them up and divide by
@@ -842,7 +842,7 @@ generalize this to a variable $x$ that can take on any of a
 continuum of values. The continuous version of a sum is an
 integral, so the average is
 \begin{equation*}
-                \text{(average value of $x$)}  = \int x D(x) \der x     \qquad   ,  
+                \text{(average value of $x$)}  = \int x D(x) \der x\eqquad,  
 \end{equation*}
 where the integral is over all possible values of $x$.
 
@@ -853,29 +853,29 @@ radioactive decay is found by substituting $N(0)=1$ into the
 equation for the rate of decay. We know that the probability
 distribution must be of the form
 \begin{equation*}
-                D(t)          =   k 0.5^{t/t_{1/2}}  \qquad   ,  
+                D(t)          =   k 0.5^{t/t_{1/2}}\eqquad,  
 \end{equation*}
 where $k$ is a constant that we need to determine. The atom
 is guaranteed to decay eventually, so normalization gives us
 \begin{align*}
         \text{(probability of $0\le t < \infty$)}
                          &=  1  \\
-                         &=  \int_0^\infty D(t) \der t \qquad .
+                         &=  \int_0^\infty D(t) \der t\eqquad.
 \end{align*}
 The integral is most easily evaluated by converting the
 function into an exponential with $e$ as the base
 \begin{align*}
                 D(t)          &=  k \exp\left[\ln\left(0.5^{t/t_{1/2}}\right)\right]  \\
                          &=  k \exp\left[\frac{t}{t_{1/2}}\ln 0.5\right]  \\
-                         &=  k \exp\left(-\frac{\ln 2}{t_{1/2}}t\right) \qquad  ,
+                         &=  k \exp\left(-\frac{\ln 2}{t_{1/2}}t\right)\eqquad,
 \end{align*}
 which gives an integral of the familiar form $\int e^{cx}\der x=(1/c)e^{cx}$. We thus have
 \begin{equation*}
-                1         =    \left.-\frac{kt_{1/2}}{\ln 2}\exp\left(-\frac{\ln 2}{t_{1/2}}t\right)\right]_0^\infty \qquad   ,  
+                1         =    \left.-\frac{kt_{1/2}}{\ln 2}\exp\left(-\frac{\ln 2}{t_{1/2}}t\right)\right]_0^\infty\eqquad,  
 \end{equation*}
 which gives the desired result:
 \begin{equation*}
-                k         =   \frac{\ln 2}{t_{1/2}}  \qquad   .  
+                k         =   \frac{\ln 2}{t_{1/2}}\eqquad.  
 \end{equation*}
 \end{eg}
 
@@ -893,7 +893,7 @@ Using the convenient base-$e$ form again, we have
 \begin{equation*}
         (\text{average lifetime})
                 = \frac{\ln 2}{t_{1/2}}
-                         \int_0^\infty t \exp\left(-\frac{\ln 2}{t_{1/2}}t\right) \der t   \qquad   .  
+                         \int_0^\infty t \exp\left(-\frac{\ln 2}{t_{1/2}}t\right) \der t\eqquad.  
 \end{equation*}
 This integral is of a form that can either be attacked with
 integration by parts or by looking it up in a table. The
@@ -903,7 +903,7 @@ purposes because it equals zero at both limits of integration. We end up with
 \begin{align*}
 \text{(average lifetime)} &= \frac{\ln 2}{t_{1/2}}\left(\frac{t_{1/2}}{\ln 2}\right)^2    \\
                          &=  \frac{t_{1/2}}{\ln 2}  \\
-                         &=  1.443 \: t_{1/2}  \qquad   ,  
+                         &=  1.443 \: t_{1/2}\eqquad,  
 \end{align*}
 which is, as expected, longer than one half-life.
 \end{eg}
@@ -1297,7 +1297,7 @@ determine this energy for a variety of wavelengths, \figref{photoelectric-graph}
 find the following simple relationship between the energy of
 a \index{photon!energy of}photon and the frequency of the light:
 \begin{equation*}
-                E  =  hf   \qquad   ,  
+                E  =  hf\eqquad,  
 \end{equation*}
 where $h$ is a constant with the value
 $6.63\times10^{-34}\ \zu{J}\cdot\zu{s}$. Note how the equation brings the
@@ -1388,7 +1388,7 @@ single photon in terms of its frequency, and in terms of its wavelength.
 \eganswer Combining the equations $p=E/c$ and $E=hf$, we find
 \begin{align*}
                 p         &=    E/c  \\
-                         &= \frac{h}{c}f       \qquad   .  
+                         &= \frac{h}{c}f\eqquad.  
 \end{align*}
 To reexpress this in terms of wavelength, we use $c=f\lambda $:
 \begin{align*}
@@ -1628,7 +1628,7 @@ More specifically, the probability distribution of the
 particle must be proportional to the \emph{square} of
 the wave's amplitude,
 \begin{equation*}
-    (\text{probability distribution}) \propto (\text{amplitude})^2   \qquad   .
+    (\text{probability distribution}) \propto (\text{amplitude})^2\eqquad.
 \end{equation*}
 This follows from the correspondence principle and from the
 fact that a wave's energy density is proportional to the
@@ -1703,13 +1703,13 @@ wave's energy that is within that volume. For a sinusoidal wave, which has
 a single, well-defined frequency $f$, this gives
 \begin{align*}
         P         &=  \frac{\text{energy in volume $v$}}{\text{energy of photon}}    \\
-                 &=  \frac{\text{energy in volume $v$}}{hf} \qquad .
+                 &=  \frac{\text{energy in volume $v$}}{hf}\eqquad.
 \end{align*}
 We assume $v$ is small enough so that the electric and
 magnetic fields are nearly constant throughout it. We then have 
 \begin{equation*}
         P         =  \frac{\left(\frac{1}{8\pi k}|\vc{E}|^2
-                        +\frac{c^2}{8\pi k}|\vc{B}|^2\right)v}{hf}     \qquad   .  
+                        +\frac{c^2}{8\pi k}|\vc{B}|^2\right)v}{hf}\eqquad.  
 \end{equation*}
 We can simplify this formidable looking expression by
 recognizing that in a plane wave, $|\vc{E}|$ and $|\vc{B}|$ are
@@ -1719,7 +1719,7 @@ the electric and magnetic fields each contribute half the
 total energy, so we can simplify the result to
 \begin{align*}
         P         &=  2\frac{\left(\frac{1}{8\pi k}|\vc{E}|^2\right)v}{hf} \\
-                 &=  \frac{v}{4\pi khf}|\vc{E}|^2     \qquad   .  
+                 &=  \frac{v}{4\pi khf}|\vc{E}|^2\eqquad.  
 \end{align*}
 The probability is proportional to the square
 of the wave's amplitude, as advertised.\footnote{But note that along the way, we had to make
@@ -2038,7 +2038,7 @@ by the nonrelativistic equation $K=p^2/2m$. Solving
 for $p$ and substituting in to the equation for the wavelength, we find
 \begin{align*}
                 \lambda          &=  \frac{h}{\sqrt{2mK}}    \\
-                         &=    1.6\times10^{-9}\ \zu{m}  \qquad .
+                         &=    1.6\times10^{-9}\ \zu{m}\eqquad.
 \end{align*}
 This is on the same order of magnitude as the size of an
 atom, which is no accident: as we will discuss in the next
@@ -2127,7 +2127,7 @@ density equal to some funny constant multiplied by $\Psi^2$,
 we simply define $\Psi $ so that the constant of
 proportionality is one:
 \begin{equation*}
-  (\text{probability distribution})  =  \Psi ^2   \qquad   .  
+  (\text{probability distribution})  =  \Psi ^2\eqquad.  
 \end{equation*}
 Since the probability distribution has units of $\zu{m}^{-3}$, the units
 of $\Psi $ must be $\zu{m}^{-3/2}$.
@@ -2169,7 +2169,7 @@ are trying to derive the relationship between wavelength and momentum:
                  &=    \frac{vh}{E}  \\
                  &=    \frac{vh}{\frac{1}{2}mv^2}  \\
                  &=    \frac{2h}{mv}  \\
-                 &=    \frac{2h}{p}   \qquad   .  
+                 &=    \frac{2h}{p}\eqquad.  
 \end{align*}
 
 The reasoning seems valid, but the result does contradict
@@ -2284,7 +2284,7 @@ $z$ of the envelope. The group velocity is $v_g=f_{envelope}\lambda_{envelope}=\
 f/\Delta $z. If $\Delta f$  and $\Delta z$ are sufficiently
 small, we can approximate this expression as a derivative,
 \begin{equation*}
-                v_g         =    \frac{\der f}{\der z}   \qquad   .  
+                v_g         =    \frac{\der f}{\der z}\eqquad.  
 \end{equation*}
 This expression is usually taken as the definition of the
 group velocity for wave patterns that consist of a
@@ -2577,7 +2577,7 @@ state, whose wavelength $\lambda =2L$ is the longest
 possible, we have an uncertainty in momentum of 
 $\Delta p=h/L$. In general, we find
 \begin{equation*}
-        \Delta p \gtrsim h/L   \qquad   ,
+        \Delta p \gtrsim h/L\eqquad,
 \end{equation*}
 with equality for the ground state and inequality for the
 higher-energy states. Thus if we reduce $L$ to improve our
@@ -2585,7 +2585,7 @@ knowledge of the electron's position, we do so at the cost
 of knowing less about its momentum. This trade-off is neatly
 summarized by multiplying the two equations to give
 \begin{equation*}
-        \Delta p\Delta x \gtrsim h \qquad .
+        \Delta p\Delta x \gtrsim h\eqquad.
 \end{equation*}
 Although we have derived this in the special case of a
 particle in a box, it is an example of a principle of
@@ -2934,9 +2934,9 @@ important insights by considering the easiest version of the
 Schr\"odinger equation, in which the interaction energy $U$ is
 constant. We can then rearrange the Schr\"odinger equation as follows:
 \begin{align*}
-   \frac{\der^2\Psi}{\der x^2} &= \frac{2m(U-E)}{\hbar^2} \Psi\qquad   ,
+   \frac{\der^2\Psi}{\der x^2} &= \frac{2m(U-E)}{\hbar^2} \Psi\eqquad,
 \intertext{which boils down to}
-   \frac{\der^2\Psi}{\der x^2} &= a\Psi \qquad   ,
+   \frac{\der^2\Psi}{\der x^2} &= a\Psi\eqquad,
 \end{align*}
 where, according to our assumptions, $a$ is independent of
 $x$. We need to find a function whose second derivative is
@@ -2977,7 +2977,7 @@ particle will make it through the barrier. If we let the
 barrier's width be $w$, then the ratio of the wavefunction
 on the left side of the barrier to the wavefunction on the right is
 \begin{equation*}
-        \frac{qe^{rx+s}}{qe^{r(x+w)+s}}  = e^{-rw}      \qquad   .  
+        \frac{qe^{rx+s}}{qe^{r(x+w)+s}}  = e^{-rw}\eqquad.  
 \end{equation*}
 \pagebreak
 Probabilities are proportional to the squares of wavefunctions,
@@ -3186,20 +3186,20 @@ In a classically allowed region with constant $U$, we expect the solutions
 to the Schr\"odinger equation to be sine waves. A sine wave in three dimensions
 has the form
 \begin{equation*}
-  \Psi = \sin\left( k_x x + k_y y + k_z z  \right) \qquad .
+  \Psi = \sin\left( k_x x + k_y y + k_z z  \right)\eqquad.
 \end{equation*}
 When we compute $\partial^2\Psi/\partial x^2$, double differentiation of
 $\sin$ gives $-\sin$, and the chain rule brings out a factor of $k_x^2$.
 Applying all three second derivative operators, we get
 \begin{align*}
   \nabla^2\Psi &= \left(-k_x^2-k_y^2-k_z^2\right)\sin\left( k_x x + k_y y + k_z z  \right) \\
-               &=  -\left(k_x^2+k_y^2+k_z^2\right)\Psi \qquad .
+               &=  -\left(k_x^2+k_y^2+k_z^2\right)\Psi\eqquad.
 \end{align*}
 The Schr\"odinger equation gives
 \begin{align*}
   E\cdot\Psi &= -\frac{\hbar^2}{2m}\nabla^2\Psi + U\cdot\Psi \\
              &= -\frac{\hbar^2}{2m}\cdot -\left(k_x^2+k_y^2+k_z^2\right)\Psi + U\cdot\Psi \\
-  E-U        &= \frac{\hbar^2}{2m}\left(k_x^2+k_y^2+k_z^2\right) \qquad ,
+  E-U        &= \frac{\hbar^2}{2m}\left(k_x^2+k_y^2+k_z^2\right)\eqquad,
 \end{align*}
 which can be satisfied since we're in a classically allowed region with $E-U>0$, and the right-hand
 side is manifestly positive.
@@ -3294,7 +3294,7 @@ The probability per unit volume is proportional to the square of the magnitude o
 wavefunction, so we have
 \begin{equation*}
   \frac{P_{\text{off center}}}{P_{\text{center}}} 
-         = \frac{|b+bi|^2}{|b+b|^2} = \frac{1^2+1^2}{2^2+0^2} = \frac{1}{2} \qquad .
+         = \frac{|b+bi|^2}{|b+b|^2} = \frac{1^2+1^2}{2^2+0^2} = \frac{1}{2}\eqquad.
 \end{equation*}
 \end{eg}
 
@@ -3467,7 +3467,7 @@ momentum, we use the symbol $\ell$ for it:
 \end{equation*}
 The angular momentum is 
 \begin{equation*}
-                L         =    rp   \qquad   .  
+                L         =    rp\eqquad.  
 \end{equation*}
 Here, $r=C/2\pi $, and $p=h/\lambda=h\ell/C$, so
 \begin{align*}
@@ -4252,7 +4252,7 @@ that the electron could be described nonrelativistically?
 The wavefunction of the electron in the ground state
 of a hydrogen atom is 
 \begin{equation*}
-  \Psi  =  \pi^{-1/2} a^{-3/2} e^{-r/a}  \qquad ,
+  \Psi  =  \pi^{-1/2} a^{-3/2} e^{-r/a}\eqquad,
 \end{equation*}
 where $r$ is the distance from the proton, and $a=5.3\times10^{-11}$ m
 is a constant that sets the size of the wave. \hwendpart

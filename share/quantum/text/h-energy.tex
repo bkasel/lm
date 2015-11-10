@@ -17,7 +17,7 @@ evidence about the underlying energy levels of the atom, and
 we rework Balmer's result into an equation for these
 atomic energy levels:
 \begin{equation*}
-                E_n    =  -\frac{2.2\times10^{-18}\ \zu{J}}{n^2}     \qquad   ,  
+                E_n    =  -\frac{2.2\times10^{-18}\ \zu{J}}{n^2}\eqquad,  
 \end{equation*}
 This energy includes both
 the kinetic energy of the electron and the electrical
@@ -31,7 +31,7 @@ come from? In 1913 the Danish theorist Niels \index{Bohr, Niels}Bohr
 realized that it was exactly numerically equal to a certain
 combination of fundamental physical constants:
 \begin{equation*}
- E_n = -\frac{mk^2e^4}{2\hbar^2}\cdot\frac{1}{n^2}     \qquad   ,  
+ E_n = -\frac{mk^2e^4}{2\hbar^2}\cdot\frac{1}{n^2}\eqquad,  
 \end{equation*}
 where $m$ is the mass of the electron,  and $k$ is the Coulomb
 force constant for electric forces.
@@ -121,7 +121,7 @@ $2r$. We are not even attempting a derivation that would
 produce all the correct numerical factors like 2 and $\pi $
 and so on, so we simply make the approximation
 \begin{equation}
-        \lambda \sim \frac{r}{n}      \qquad   .        
+        \lambda \sim \frac{r}{n}\eqquad.        
 \end{equation}
 Finally we assume that the typical kinetic energy of the
 electron is on the same order of magnitude as the absolute
@@ -143,14 +143,14 @@ We now solve the equation $ke^2/r \sim h^2n^2 / 2mr^2$ for $r$
 and throw away numerical factors we can't hope to have
 gotten right, yielding
 \begin{equation}
-        r \sim \frac{h^2n^2}{mke^2} \qquad .
+        r \sim \frac{h^2n^2}{mke^2}\eqquad.
 \end{equation}
 
 Plugging $n=1$ into this equation gives $r=2$ nm, which is
 indeed on the right order of magnitude. Finally we combine
 equations [4] and [1] to find
 \begin{equation*}
-        E \sim -\frac{mk^2e^4}{h^2n^2} \qquad ,
+        E \sim -\frac{mk^2e^4}{h^2n^2}\eqquad,
 \end{equation*}
 which is correct except for the numerical factors we
 never aimed to find.\label{end-approx-hydrogen-energies}
@@ -163,7 +163,7 @@ scope of this book, but it's fairly straightforward to verify it for a particula
 especially given a lucky guess as to what functional form to try for the wavefunction.
 The form that works for the ground state is
 \begin{equation*}
-  \Psi = ue^{-r/a} \qquad ,
+  \Psi = ue^{-r/a}\eqquad,
 \end{equation*}
 where $r=\sqrt{x^2+y^2+z^2}$ is the electron's distance from the proton, and $u$ provides for normalization.
 In the following, the result $\partial r/\partial x=x/r$ comes in handy.
@@ -173,9 +173,9 @@ $x$ term
   \frac{\partial\Psi}{\partial x}     &= \frac{\partial \Psi}{\partial r} \frac{\partial r}{\partial x} \\
                                       &= -\frac{x}{ar} \Psi \\
   \frac{\partial^2\Psi}{\partial x^2} &= -\frac{1}{ar} \Psi -\frac{x}{a}\left(\frac{\partial}{\der x}\frac{1}{r}\right)\Psi+ \left( \frac{x}{ar}\right)^2 \Psi\\
-                                      &= -\frac{1}{ar} \Psi +\frac{x^2}{ar^3}\Psi+ \left( \frac{x}{ar}\right)^2 \Psi \qquad ,
+                                      &= -\frac{1}{ar} \Psi +\frac{x^2}{ar^3}\Psi+ \left( \frac{x}{ar}\right)^2 \Psi\eqquad,
 \intertext{so}
-  \nabla^2\Psi &= \left( -\frac{2}{ar} + \frac{1}{a^2} \right) \Psi \qquad .
+  \nabla^2\Psi &= \left( -\frac{2}{ar} + \frac{1}{a^2} \right) \Psi\eqquad.
 \end{align*}
 The Schr\"odinger equation gives
 \begin{align*}
@@ -187,13 +187,13 @@ $(\text{constant})\times\Psi$ and for those of the form $(\text{constant}/r)\tim
 \begin{align*}
   E &= -\frac{\hbar^2}{2ma^2} \\
 \intertext{and}
-  0 &=  \frac{\hbar^2}{mar} -\frac{ke^2}{r} \qquad .
+  0 &=  \frac{\hbar^2}{mar} -\frac{ke^2}{r}\eqquad.
 \end{align*}
 These two equations can be solved for the unknowns $a$ and $E$, giving
 \begin{align*}
   a &= \frac{\hbar^2}{mke^2} \\
 \intertext{and}
-  E &= -\frac{mk^2e^4}{2\hbar^2} \qquad ,
+  E &= -\frac{mk^2e^4}{2\hbar^2}\eqquad,
 \end{align*}
 where the result for the energy agrees with the Bohr equation for $n=1$.
 The calculation of the normalization constant $u$ is relegated to homework problem \ref{hw:h-atom-normalization}.

@@ -73,7 +73,7 @@ mass $m$, traveling in a circle of radius $r$ at speed $v$.
 Experiments show that the conserved quantity in this situation
 is
 \begin{equation*}
-  \pm mvr \qquad .
+  \pm mvr\eqquad.
 \end{equation*}
 We call this quantity \emph{angular momentum}.\index{angular momentum}
 The symbol $\pm$ indicates that angular momentum has a positive or
@@ -254,15 +254,15 @@ The boy applies a force $F$ to the ball for a short time $t$, accelerating
 the ball from rest to a velocity $v$. Since force is the rate of transfer of
 momentum, we have
 \begin{align*}
-  F & = \frac{mv}{t} \qquad , \\
+  F & = \frac{mv}{t}\eqquad, \\
 \intertext{and multiplying both sides by $r$ gives}  
-  Fr & = \frac{mvr}{t} \qquad . \\
+  Fr & = \frac{mvr}{t}\eqquad. \\
 \end{align*}
 But $\pm mvr$ is simply the amount of angular momentum he's given
 the ball, so $\pm mvr/t$ also equals the amount of torque he applied. The result
 of this example is
 \begin{equation*}
-  \text{torque} = \pm Fr \qquad ,
+  \text{torque} = \pm Fr\eqquad,
 \end{equation*}
 where the plus or minus sign indicates whether torque would tend to create
 clockwise or counterclockwise motion.
@@ -363,7 +363,7 @@ the total torque on the forearm is zero, so the torques
 from the muscle and the load must be opposite in sign and
 equal in absolute value:
 \begin{equation*}
-                r_{muscle} F_{muscle}  =  r_{load} F_{load}   \qquad   ,
+                r_{muscle} F_{muscle}  =  r_{load} F_{load}\eqquad,
 \end{equation*}
 where $r_{muscle}$, the distance from the elbow joint to the
 biceps' point of insertion on the forearm, is only a few cm,

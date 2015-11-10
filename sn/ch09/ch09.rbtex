@@ -156,7 +156,7 @@
         When charged particles are exchanged between regions of space
         A and B, the electric current flowing from A to B is defined as
         \begin{equation*}
-                I = \frac{\der q}{\der t} \qquad ,
+                I = \frac{\der q}{\der t}\eqquad,
         \end{equation*}
         where $\der q$ is the change in region B's total charge occurring over
         a period of time $\der t$.
@@ -365,7 +365,7 @@
         \begin{equation*}
                 \frac{\text{joules}}{\text{second}}
                  = \frac{\text{haybales}}{\text{second}}
-                         \times \frac{\text{joules}}{\text{haybale}}    \qquad   .  
+                         \times \frac{\text{joules}}{\text{haybale}}\eqquad.  
         \end{equation*}
         Similarly, the rate of energy transformation by a battery
         will not just depend on how many coulombs per second it
@@ -378,7 +378,7 @@
         \end{equation*}
         \noindent or
         \begin{equation*}
-                        \text{power}         =         \text{current} \times \text{work per unit charge}   \qquad   .  
+                        \text{power}         =         \text{current} \times \text{work per unit charge}\eqquad.  
         \end{equation*}
 
         Units of joules per coulomb are abbreviated as \index{volt
@@ -452,7 +452,7 @@
 
         The difference in voltage between two points in space is defined as\index{voltage!defined}
         \begin{equation*}
-                \Delta V=\Delta U_{elec}/q   \qquad   ,
+                \Delta V=\Delta U_{elec}/q\eqquad,
         \end{equation*}
         where $\Delta U_{elec}$ is the change in the electrical
         energy of a particle with charge $q$ as it moves from the
@@ -461,7 +461,7 @@
         The amount of power dissipated (i.e., rate at which energy is
         transformed by the flow of electricity) is then given by the equation
         \begin{equation*}
-                                P    =    I \Delta V   \qquad   .  
+                                P    =    I \Delta V\eqquad.  
         \end{equation*}\index{power!electrical}
 
 <% marg(0) %>
@@ -680,7 +680,7 @@
         proportional to the voltage difference across it, then we define
         its resistance as the constant ratio
         \begin{equation*}
-                R = \Delta V / I \qquad .
+                R = \Delta V / I\eqquad.
         \end{equation*}
 
         \noindent The units of resistance are volts/ampere, usually abbreviated
@@ -842,7 +842,7 @@
         \begin{align*}
                          q         &=   \int  I \der t  \\
                                  &=    \int  a \cos  bt \der t  \\
-                                 &=    \frac{ a}{ b}\sin  bt+ q_\zu{o}   \qquad   ,  
+                                 &=    \frac{ a}{ b}\sin  bt+ q_\zu{o}\eqquad,  
         \end{align*}
         where $q_\zu{o}$ is a constant of integration.
 
@@ -1546,7 +1546,7 @@ What would happen to the battery in this kind of short
         $\Delta V_2$ across the resistors must both equal the
         voltage of the battery:
         \begin{equation*}
-                \Delta V_1=\Delta V_2=\Delta V_{battery} \qquad   .
+                \Delta V_1=\Delta V_2=\Delta V_{battery}\eqquad.
         \end{equation*}
         Each resistance thus feels the same voltage difference as if
         it was the only one in the circuit, and Ohm's law tells us
@@ -1583,7 +1583,7 @@ What would happen to the battery in this kind of short
         a river that splits in half, \figref{parallel-resistors}/3, and then reunites.
         The total current is
         \begin{equation*}
-                        I_{total}         =    I_1 + I_2   \qquad   .  
+                        I_{total}         =    I_1 + I_2\eqquad.  
         \end{equation*}
 
         This is an example of a general fact called the junction rule:
@@ -1596,7 +1596,7 @@ What would happen to the battery in this kind of short
         law to each resistance, resulting in
         \begin{align*}
                         I_{total}         &=    \Delta V/R_1+ \Delta V/R_2  \\
-                                 &=             \Delta V\left(\frac{1}{R_1}+\frac{1}{R_2}\right)  \qquad   .  
+                                 &=             \Delta V\left(\frac{1}{R_1}+\frac{1}{R_2}\right)\eqquad.  
         \end{align*}
 
         As far as the electric company is concerned, your whole
@@ -1605,7 +1605,7 @@ What would happen to the battery in this kind of short
         resistance!of resistors in parallel}\emph{equivalent resistance}.
         They would write Ohm's law as
         \begin{equation*}
-                                I_{total}         =    \Delta V/R   \qquad   ,  
+                                I_{total}         =    \Delta V/R\eqquad,  
         \end{equation*}
         from which we can determine the equivalent resistance by
         comparison with the previous expression:
@@ -1684,17 +1684,17 @@ What would happen to the battery in this kind of short
         parallel, we can think of two of the resistors as forming a
         single big resistor, \figref{eg-three-resistors-in-parallel}/2, with equivalent resistance 
         \begin{equation*}
-                         R_{12}         =    \left(\frac{1}{ R_1}+\frac{1}{ R_2}\right)^{-1}   \qquad   .  
+                         R_{12}         =    \left(\frac{1}{ R_1}+\frac{1}{ R_2}\right)^{-1}\eqquad.  
         \end{equation*}
         We can then simplify the circuit as shown in \figref{eg-three-resistors-in-parallel}/3, so that it
         contains only two resistances. The equivalent resistance of
         the whole circuit is then given by
         \begin{equation*}
-                         R_{123}    =    \left(\frac{1}{ R_{12}}+\frac{1}{ R_3}\right)^{-1}   \qquad   .  
+                         R_{123}    =    \left(\frac{1}{ R_{12}}+\frac{1}{ R_3}\right)^{-1}\eqquad.  
         \end{equation*}
         Substituting for $R_{12}$ and simplifying, we find the result
         \begin{equation*}
-                         R_{123}    =  \left(\frac{1}{ R_1}+\frac{1}{ R_2}+\frac{1}{ R_3}\right)^{-1}     \qquad   ,  
+                         R_{123}    =  \left(\frac{1}{ R_1}+\frac{1}{ R_2}+\frac{1}{ R_3}\right)^{-1}\eqquad,  
         \end{equation*}
         which you probably could have guessed. The interesting point
         here is the divide-and-conquer concept, not the mathematical result.
@@ -1707,7 +1707,7 @@ What would happen to the battery in this kind of short
         \eganswer
                 Generalizing the results for two and three resistors, we have
         \begin{equation*}
-                         R_{N}         =   \left(\frac{1}{ R_1}+\frac{1}{ R_2}+\ldots\right)^{-1}    \qquad   ,  
+                         R_{N}         =   \left(\frac{1}{ R_1}+\frac{1}{ R_2}+\ldots\right)^{-1}\eqquad,  
         \end{equation*}
         where ``...'' means that the sum includes all the resistors.
         If all the resistors are identical, this becomes
@@ -1859,7 +1859,7 @@ What would happen to the battery in this kind of short
         the current that flows through one resistor must also flow
         through the other (as well as through the battery):
         \begin{equation*}
-                        I_1    =    I_2   \qquad   .  
+                        I_1    =    I_2\eqquad.  
         \end{equation*}
         The only way the information about the two resistance values
         is going to be useful is if we can apply Ohm's law, which
@@ -1881,7 +1881,7 @@ What would happen to the battery in this kind of short
         and you really only needed two of the three pieces of data
         to infer the third. In the case of our voltage differences, we have
         \begin{equation*}
-                   |\Delta V_1| + |\Delta V_2| = |\Delta V_{battery}| \qquad   .
+                   |\Delta V_1| + |\Delta V_2| = |\Delta V_{battery}|\eqquad.
         \end{equation*}
         The absolute value signs are because of the ambiguity in how
         we define our voltage differences. If we reversed the two
@@ -1902,11 +1902,11 @@ What would happen to the battery in this kind of short
         ``crossing its legs.'' With this convention, the relationship
         among the voltage drops becomes
         \begin{equation*}
-                  \Delta V_1 + \Delta V_2 = -\Delta V_{battery} \qquad   ,
+                  \Delta V_1 + \Delta V_2 = -\Delta V_{battery}\eqquad,
         \end{equation*}
         or, in more symmetrical form,
         \begin{equation*}
-                  \Delta V_1 + \Delta V_2 + \Delta V_{battery} = 0\qquad   .
+                  \Delta V_1 + \Delta V_2 + \Delta V_{battery} = 0\eqquad.
         \end{equation*}
         More generally, this is known as the loop rule for analyzing circuits:
 
@@ -1925,11 +1925,11 @@ What would happen to the battery in this kind of short
         \end{equation*}
         can now be rewritten by applying Ohm's law to each resistor:
         \begin{equation*}
-                  I_1R_1 + I_2R_2 + \Delta V_{battery} = 0 \qquad .
+                  I_1R_1 + I_2R_2 + \Delta V_{battery} = 0\eqquad.
         \end{equation*}
         The currents are the same, so we can factor them out:
         \begin{equation*}
-                  I\left(R_1 + R_2\right) + \Delta V_{battery} = 0 \qquad ,
+                  I\left(R_1 + R_2\right) + \Delta V_{battery} = 0\eqquad,
         \end{equation*}
         and this is the same result we would have gotten if we had
         been analyzing a one-resistor circuit with resistance

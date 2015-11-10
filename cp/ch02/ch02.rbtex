@@ -587,7 +587,7 @@ The force is\footnote{This is really only an estimate of the average force over 
 to move down the barrel. The force probably starts out stronger than this, and then gets weaker because the gases
 expand and cool.}
 \begin{equation*}
-        \frac{1.0}{0.01} = 100\ \text{newtons} \qquad .
+        \frac{1.0}{0.01} = 100\ \text{newtons}\eqquad.
 \end{equation*}
 \end{eg}
 
@@ -672,7 +672,7 @@ It does make sense to add these forces, and they may possibly add up to zero, bu
 that's not guaranteed by the laws of physics. 
 If I throw the scale at you, my thumbs' force is stronger that my fingers', and the forces no longer cancel:
 \begin{equation*}
-        \text{(fingers on scale)} \ne -\text{(thumbs on scale)} \qquad .
+        \text{(fingers on scale)} \ne -\text{(thumbs on scale)}\eqquad.
 \end{equation*}
 What's guaranteed by conservation of momentum is a whole different relationship:
 \begin{align*}
@@ -687,7 +687,7 @@ additivity of forces.} Let's find the force on
 a one-kilogram object. If we release this object from rest, then after it has
 fallen one meter, its kinetic energy equals the strength of the gravitational field,
 \begin{equation*}
-10\ \text{joules per kilogram per meter}\times1\ \text{kilogram}\times1\ \text{meter} = 10\ \text{joules} \qquad .
+10\ \text{joules per kilogram per meter}\times1\ \text{kilogram}\times1\ \text{meter} = 10\ \text{joules}\eqquad.
 \end{equation*}
 Using the equation for kinetic energy and doing a little simple algebra, we find that
 its final velocity is 4.4 m/s. It starts from 0 m/s, and ends at 4.4 m/s, so
@@ -695,7 +695,7 @@ its average velocity is 2.2 m/s, and the time takes to fall one meter is therefo
 (1 m)/(2.2 m/s)=0.44 seconds. Its final momentum is 4.4 units, so the force on it was
 evidently
 \begin{equation*}
-        \frac{4.4}{0.44} = 10\ \text{newtons} \qquad .
+        \frac{4.4}{0.44} = 10\ \text{newtons}\eqquad.
 \end{equation*}
 This is like one of those card tricks where the magician makes you go through a bunch
 of steps so that you end up revealing the card you had chosen --- the result is just
@@ -705,7 +705,7 @@ that it had to come out that way. If not, then I hope the numerical result is en
 to convince you of the general fact that the force of gravity on a one-kilogram mass
 equals $g$. For masses other than one kilogram, we have the handy-dandy result that
 \begin{equation*}
-        (\text{force of gravity on a mass $m$}) = mg \qquad .
+        (\text{force of gravity on a mass $m$}) = mg\eqquad.
 \end{equation*}
 In other words, $g$ can be interpreted not just as the gravitational energy per kilogram
 per meter of height, but also as the gravitational force per kilogram.
@@ -1141,7 +1141,7 @@ orbital radius divided by Jupiter's, and what we should expect to get
 out is information about Uranus's period divided by Jupiter's. Let's
 call the latter ratio $y$. Then we're looking for a number $y$ such that
 \begin{align*}
-  y^2 &= 4^3 \qquad , \\
+  y^2 &= 4^3\eqquad, \\
 \intertext{i.e.,}
   y \times y &= 4 \times 4 \times 4 \\
   y \times y &= 64 \\

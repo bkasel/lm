@@ -183,18 +183,18 @@
         \begin{align*}
                 \lambda_{total,\ 2}        &\approx \lambda\left[1+\frac{(u-v)^2}{2c^2}\right]
                                                 -\lambda\left[1+\frac{(-u-v)^2}{2c^2}\right]\\
-                                        &= \frac{-2\lambda uv}{c^2} \qquad .
+                                        &= \frac{-2\lambda uv}{c^2}\eqquad.
         \end{align*}
         Let $R$ be the distance from the line charge to the lone charge.
         Applying Gauss' law to a cylinder of radius $R$ centered on the line charge,
         we find that the magnitude of the electric field experienced by the lone charge
         in frame 2 is
         \begin{equation*}
-                E        =        \frac{4k\lambda uv}{c^2R} \qquad ,
+                E        =        \frac{4k\lambda uv}{c^2R}\eqquad,
         \end{equation*}
         and the force acting on the lone charge $q$ is
         \begin{equation*}
-                F        =        \frac{4k\lambda quv}{c^2R} \qquad .
+                F        =        \frac{4k\lambda quv}{c^2R}\eqquad.
         \end{equation*}
         In frame 1, the current is $I=2\lambda_1 u$ (see homework problem \ref{hw:linechargecurrent}),
         which we can approximate
@@ -202,7 +202,7 @@
         vanish completely without the relativistic effect.
         The magnetic force on the lone charge $q$ due to the current $I$ is
         \begin{equation*}
-                F        =        \frac{2kI qv}{c^2R} \qquad .
+                F        =        \frac{2kI qv}{c^2R}\eqquad.
         \end{equation*}\label{wireforce}
 
 \startdq
@@ -394,7 +394,7 @@ see the electrons and protons as not being paired up, as in \subfigref{brelativi
         these reasons, we define the magnetic dipole moment of a
         square current loop as
         \begin{equation*}
-                        \vc{m}         =    I\vc{A} \qquad ,         
+                        \vc{m}         =    I\vc{A}\eqquad,         
         \end{equation*}
         where the direction of the vectors is defined as shown in figure \figref{arearh}.
         %
@@ -440,7 +440,7 @@ see the electrons and protons as not being paired up, as in \subfigref{brelativi
         dipole $\vc{m}_{t}$ consisting of a square current loop. The
         field's magnitude is
         \begin{equation*}
-                |\vc{B}| = \frac{\tau}{|\vc{m}_{t}|\sin\theta}  \qquad,
+                |\vc{B}| = \frac{\tau}{|\vc{m}_{t}|\sin\theta}\eqquad,
         \end{equation*}
         where $\theta$ is the angle between the dipole vector and the field.
         This is equivalent to the vector cross product $\btau=\vc{m}_t\times\vc{B}$.
@@ -463,10 +463,10 @@ see the electrons and protons as not being paired up, as in \subfigref{brelativi
         acting on the loop is therefore
         \begin{align*}
           |\btau|        &=2\frac{h}{2}|\vc{F}|\sin\theta \\
-                                  &=h\:qvB\:\sin\theta \qquad ,\\
+                                  &=h\:qvB\:\sin\theta\eqquad,\\
          \intertext{and substituting $q=\lambda h$ and $v=m/h^2\lambda$, we have}
                   |\btau|        &= h\:\lambda h\:\frac{m}{h^2\lambda} B\sin\theta \\
-                                  &=m B\sin\theta \qquad ,\\
+                                  &=m B\sin\theta\eqquad,\\
         \end{align*}
         which is consistent with the second definition of the field.
         
@@ -889,7 +889,7 @@ Imagine that you establish
         we only know how to calculate the magnetic field of a long, straight
         wire,
         \begin{equation*}
-                B        = \frac{2kI}{c^2R} \qquad ,
+                B        = \frac{2kI}{c^2R}\eqquad,
         \end{equation*}
         with the geometry shown in figure \figref{bwireb}. Whereas a
         charge distribution can be broken down into individual point charges,
@@ -952,11 +952,11 @@ Imagine that you establish
         symmetry.
         The magnitudes of the individual fields are equal, 
         \begin{equation*}
-                 B_1 =  B_2 = \frac{2 kI}{ c^2 R} \qquad ,\\
+                 B_1 =  B_2 = \frac{2 kI}{ c^2 R}\eqquad,\\
         \end{equation*}
         so the total field in the $z$ direction is
         \begin{equation*}
-                 B_{z} = 2\frac{2 kI}{ c^2 R}\zu{sin}\:\theta \qquad ,\\
+                 B_{z} = 2\frac{2 kI}{ c^2 R}\zu{sin}\:\theta\eqquad,\\
         \end{equation*}
         where $\theta$ is the angle the field vectors make above the $x$ axis.
         The sine of this angle equals $h/ R$, so
@@ -1062,7 +1062,7 @@ In example \ref{eg:twowires}, what
                         &= \frac{2k\eta}{c^2} \int_{-a}^{b} \frac{\cos\theta}{R}\der y \\
                         &= \frac{2k\eta}{c^2} \int_{-a}^{b}\: \frac{z\der y}{y^2+z^2} \\
                         &= \frac{2k\eta}{c^2} \left(\tan^{-1}\frac{b}{z}-\tan^{-1}\frac{-a}{z}\right) \\
-                        &= \frac{2k\eta\gamma}{c^2}\qquad ,
+                        &= \frac{2k\eta\gamma}{c^2}\eqquad,
         \end{align*}
         where in the last step
         we have used the identity $\tan^{-1}(-x)=-\tan^{-1}x$, combined with the relation
@@ -1083,7 +1083,7 @@ In example \ref{eg:twowires}, what
 <% end_marg %>
         Close to the sheet, the angle $\gamma$ approaches $\pi$, so we have
         \begin{equation*}
-                B_y = \frac{2\pi k\eta}{c^2} \qquad .
+                B_y = \frac{2\pi k\eta}{c^2}\eqquad.
         \end{equation*}
         Figure \figref{sheeteb} shows the similarity between this result
         and the result for a sheet of charge. In one case the sources are
@@ -1120,7 +1120,7 @@ In example \ref{eg:twowires}, what
         in opposite directions. Homework problem \ref{hw:bwork} is
         such a calculation, which gives the result
         \begin{equation*}
-                \der U_m        =                 \frac{c^2}{8\pi k}B^2 \der v \qquad .
+                \der U_m        =                 \frac{c^2}{8\pi k}B^2 \der v\eqquad.
         \end{equation*}
  %B energy
 <% end_sec() %>
@@ -1181,7 +1181,7 @@ In example \ref{eg:twowires}, what
         and this only works out if $g(r)$ has units of $\zu{m}^{-3}$ (homework problem
         \ref{hw:dipole-units-proof}), so our result must be of the form\label{dipolederivn}
         \begin{equation*}
-                B_z=\frac{\beta kIA}{c^2r^3} \qquad ,
+                B_z=\frac{\beta kIA}{c^2r^3}\eqquad,
         \end{equation*}
         where $\beta$ is a unitless constant. Thus our only task is to determine
         $\beta$, and we will have determined the field of the dipole (in the plane of
@@ -1228,7 +1228,7 @@ In example \ref{eg:twowires}, what
         
         Integrating as shown in figure \figref{diptowireint}, we have
         \begin{align*}
-                B_z        &=  \int_{y=0}^\infty \int_{x=-\infty}^\infty \der B_z \qquad , \\
+                B_z        &=  \int_{y=0}^\infty \int_{x=-\infty}^\infty \der B_z\eqquad, \\
         \intertext{where $\der B_z$ is the contribution to the total magnetic field
         at our point of interest, which lies a distance $R$ from the wire.}
                 B_z        &= \int_{y=0}^\infty \int_{x=-\infty}^\infty  \frac{\beta kI\der A}{c^2r^3}  \\
@@ -1249,9 +1249,9 @@ In example \ref{eg:twowires}, what
         \intertext{The $u$ integral is of the form
         $\int_{-\infty}^{\infty} (u^2+b)^{-3/2}\der u=2/b^2$, so}
                 B_z        &= \frac{\beta kI}{c^2R}\int_{v=0}^\infty  %
-                                          \frac{1}{(1+v)^2}\der v \qquad , \\
+                                          \frac{1}{(1+v)^2}\der v\eqquad, \\
         \intertext{and the remaining $v$ integral is equals 2, so}
-                B_z        &= \frac{2\beta kI}{c^2R} \qquad . \\
+                B_z        &= \frac{2\beta kI}{c^2R}\eqquad. \\
         \end{align*}
         This is the field of a wire, which we already know equals $2kI/c^2R$,
         so we have $\beta$=1. Remember, the point of this whole calculation was not to
@@ -1261,7 +1261,7 @@ In example \ref{eg:twowires}, what
         $B_z=\beta kIA/c^2r^3= kIA/c^2r^3$, or,
         in terms of the dipole moment,
         \begin{equation*}
-                B_z=\frac{km}{c^2r^3} \qquad .
+                B_z=\frac{km}{c^2r^3}\eqquad.
         \end{equation*}
         <% end_sec() %>
 <% begin_sec("The distant field of a dipole, out of its midplane") %>
@@ -1272,7 +1272,7 @@ In example \ref{eg:twowires}, what
         field of an electric dipole is\index{dipole!electric!field of}\index{electric dipole!field of}
         \begin{align*}
                 E_z        &= kD\left(3\cos^2\theta-1\right)r^{-3}\\
-                E_R        &= kD\left(3\sin\theta\:\cos\theta\right)r^{-3} \qquad ,
+                E_R        &= kD\left(3\sin\theta\:\cos\theta\right)r^{-3}\eqquad,
         \end{align*}
         where $r$ is the distance from the dipole to the point of interest, $\theta$
         is the angle between the dipole vector and the line connecting the dipole to this
@@ -1288,7 +1288,7 @@ In example \ref{eg:twowires}, what
         field of a magnetic dipole outside its midplane:\index{dipole!magnetic!field of}\index{magnetic dipole!field of}
         \begin{align*}
                 B_z        &= \frac{km}{c^2}\left(3\cos^2\theta-1\right)r^{-3}\\
-                B_R        &= \frac{km}{c^2}\left(3\sin\theta\:\cos\theta\right)r^{-3} \qquad .
+                B_R        &= \frac{km}{c^2}\left(3\sin\theta\:\cos\theta\right)r^{-3}\eqquad.
         \end{align*}
         This turns out to be correct.\label{dipolefieldeqns}
         \footnote{If you've
@@ -1329,7 +1329,7 @@ In example \ref{eg:twowires}, what
                                                 &= \int_{ r= a}^{b}%
                                                         \frac{ kI}{ c^2 r^3}\:\cdot2\pi r\der r \\
                                                 &= \frac{2\pi kI}{ c^2}\:%
-                                                                \left(\frac{1}{a}-\frac{1}{b}\right) \qquad . 
+                                                                \left(\frac{1}{a}-\frac{1}{b}\right)\eqquad. 
         \end{align*}
         The positive sign indicates that the field is out of the page.
         \end{eg}
@@ -1428,7 +1428,7 @@ In example \ref{eg:twowires}, what
         $\der\ell$ is not the only part of each U whose current is not canceled. Without going into
         the gory details, the correct general result is as follows:
         \begin{equation*}
-          \der \vc{B} = \frac{kI\der \bell\times\vc{r}}{c^2r^3} \qquad ,
+          \der \vc{B} = \frac{kI\der \bell\times\vc{r}}{c^2r^3}\eqquad,
         \end{equation*}
         which is known as the Biot-Savart law. (It rhymes with ``leo bazaar.'' Both t's are silent.)
         The distances $\der\ell$ and $ r$ are now defined as vectors, $\der\bell$ and
@@ -1490,7 +1490,7 @@ In example \ref{eg:twowires}, what
                  B_{z}        &= \int |\der\vc{B}|\:\zu{cos}\:\alpha\\
                         &= \int \frac{ kI\,r\,\der \ell}{ c^2 r^3}\frac{ a}{ r}\\
                         &= \frac{ kIa}{ c^2 r^3} \int \der \ell \\
-                        &= \frac{2\pi kIa^2}{ c^2( a^2+ z^2)^{3/2}} \qquad .
+                        &= \frac{2\pi kIa^2}{ c^2( a^2+ z^2)^{3/2}}\eqquad.
         \end{align*}
         \end{eg}
 <% marg(120) %>
@@ -1633,7 +1633,7 @@ In example \ref{eg:twowires}, what
         \begin{align*}
                 \Gamma &= |\vc{s}_1||\vc{B}_1|+|\vc{s}_2||\vc{B}_2| \\
                                 &= \frac{2\pi k\eta s}{c^2}+\frac{2\pi k\eta s}{c^2} \\
-                                &= \frac{4\pi k\eta s}{c^2} \qquad .
+                                &= \frac{4\pi k\eta s}{c^2}\eqquad.
         \end{align*}
         But $\eta s$ is (current/length)(length), i.e., it is the amount of current that pierces
         the Amp\`{e}rian surface. We'll call this current $I_{through}$. We have found one specific example
@@ -1790,7 +1790,7 @@ Surprisingly, we never needed to know the radius of the solenoid in example \ref
                 \Phi_E                &= 4\pi kq_{in}\\
                 \Phi_B                &= 0\\
                 \Gamma_E         &= 0 \\
-                \Gamma_B         &= \frac{4\pi k}{c^2}\,I_{through} \qquad .\\
+                \Gamma_B         &= \frac{4\pi k}{c^2}\,I_{through}\eqquad.\\
         \end{align*}
         This set of equations is the static case of the more general relations known as
         Maxwell's equations.\index{Maxwell's equations!for static fields}
@@ -1921,14 +1921,14 @@ You know what to do.
         in the same direction as the one defined in figure \figref{curlmeter}/3. Amp\`{e}re's
         law is
         \begin{align*}
-                \der\Gamma        &= \frac{4\pi k}{c^2}\,\der I_{through} \qquad .\\
+                \der\Gamma        &= \frac{4\pi k}{c^2}\,\der I_{through}\eqquad.\\
         \intertext{We define a current density per unit
         area\index{current density}, $\vc{j}$, which is a vector pointing in the direction of
         the current and having magnitude $\vc{j}=\der I/|\der\vc{A}|$. In terms of this quantity, we have}
                 \der\Gamma        &= \frac{4\pi k}{c^2}\,{j} |\vc{j}|\,|\der\vc{A}| \qquad \\
                 \frac{\der\Gamma}{|\der\vc{A}|}        &= \frac{4\pi k}{c^2}\, |\vc{j}| \qquad \\
         \intertext{With this motivation, we define the magnitude of the curl as}
-                |\curl\,\vc{B}|        &= \frac{\der\Gamma}{|\der\vc{A}|} \qquad . \qquad \\
+                |\curl\,\vc{B}|        &= \frac{\der\Gamma}{|\der\vc{A}|}\eqquad. \qquad \\
         \intertext{Note that the curl, just like a derivative, has a differential divided by
         another differential. In terms of this definition, we find Amp\`{e}re's law in differential form:}
                 \curl\,\vc{B} &= \frac{4\pi k}{c^2} \,\vc{j}
@@ -2006,13 +2006,13 @@ You know what to do.
                         x&=s/2        &\qquad y&=0        &\qquad \vc{F}&=(s/2)\hat{\vc{y}}        &\qquad \vc{s}_1\cdot\vc{F}&=s^2/2 \\
                         x&=0        &\qquad y&=s/2        &\qquad \vc{F}&=0                                        &\qquad \vc{s}_2\cdot\vc{F}&=0 \\
                         x&=-s/2        &\qquad y&=0        &\qquad \vc{F}&=-(s/2)\hat{\vc{y}}        &\qquad \vc{s}_3\cdot\vc{F}&=s^2/2 \\
-                        x&=0        &\qquad y&=-s/2 &\qquad \vc{F}&=0                                        &\qquad \vc{s}_4\cdot\vc{F}&=0 \qquad ,\\
+                        x&=0        &\qquad y&=-s/2 &\qquad \vc{F}&=0                                        &\qquad \vc{s}_4\cdot\vc{F}&=0\eqquad,\\
         \end{alignat*}
         which gives a circulation of $s^2$, and a curl 
         with a magnitude of $s^2/\text{area}=s^2/s^2=1$. By the right-hand rule, the
         curl points out of the page, i.e., along the positive $z$ axis, so we have
         \begin{equation*}
-                \curl\,x\hat{\vc{y}} = \hat{\vc{z}} \qquad .
+                \curl\,x\hat{\vc{y}} = \hat{\vc{z}}\eqquad.
         \end{equation*}\label{curlxy}
         
 <% marg(35) %>
@@ -2048,7 +2048,7 @@ You know what to do.
 <% begin_sec("Scaling") %>
         When you're taking an ordinary derivative, you have the rule
         \begin{equation*}
-                \frac{\der}{\der x}[cf(x)] = c\frac{\der}{\der x}f(x) \qquad .
+                \frac{\der}{\der x}[cf(x)] = c\frac{\der}{\der x}f(x)\eqquad.
         \end{equation*}
         In other words, multiplying a function by a constant results in a derivative
         that is multiplied by that constant. The curl is a kind of derivative
@@ -2082,11 +2082,11 @@ You know what to do.
         what do we get if we take the curl of $- x\hat{\vc{y}}+\hat{\vc{y}}$? The curl, like any
         god-fearing derivative operation, has the additive property 
         \begin{equation*}
-                        \curl(\vc{F}+\vc{G}) = \curl\,\vc{F}+\curl\,\vc{G}  \qquad   ,  
+                        \curl(\vc{F}+\vc{G}) = \curl\,\vc{F}+\curl\,\vc{G}\eqquad,  
         \end{equation*}
         so
         \begin{equation*}
-                        \curl(- x\hat{\vc{y}}+\hat{\vc{y}}) = \curl(- x\hat{\vc{y}})+\curl(\hat{\vc{y}})   \qquad   .   
+                        \curl(- x\hat{\vc{y}}+\hat{\vc{y}}) = \curl(- x\hat{\vc{y}})+\curl(\hat{\vc{y}})\eqquad.   
         \end{equation*}
         But the second term is zero, so we get the same result as at the origin.
         
@@ -2110,20 +2110,20 @@ You know what to do.
         Let the wire be along the $z$ axis, so $\vc{j}= j\hat{\vc{z}}$.
         Amp\`{e}re's law gives
         \begin{equation*}
-                \curl\,\vc{B}= \frac{4\pi k}{ c^2} \, j\hat{\vc{z}} \qquad .
+                \curl\,\vc{B}= \frac{4\pi k}{ c^2} \, j\hat{\vc{z}}\eqquad.
         \end{equation*}
         In other words, we need a magnetic field whose curl is a constant. We've encountered
         several fields with constant curls, but the only one that has the same symmetry as the
         cylindrical wire is $x\hat{\vc{y}}- y\hat{\vc{x}}$, so the answer must be
         this field or some constant multiplied by it,
         \begin{equation*}
-                \vc{B}=   b\left( x\hat{\vc{y}}- y\hat{\vc{x}}\right) \qquad .
+                \vc{B}=   b\left( x\hat{\vc{y}}- y\hat{\vc{x}}\right)\eqquad.
         \end{equation*}
         The curl of this field is $2 b\hat{\vc{z}}$, so
         \begin{align*}
-                2 b &= \frac{4\pi k}{ c^2} \, j \qquad ,\\
+                2 b &= \frac{4\pi k}{ c^2} \, j\eqquad,\\
         \intertext{and thus}
-                \vc{B}&=  \frac{2\pi k}{ c^2} \, j\left( x\hat{\vc{y}}- y\hat{\vc{x}}\right) \qquad .\\
+                \vc{B}&=  \frac{2\pi k}{ c^2} \, j\left( x\hat{\vc{y}}- y\hat{\vc{x}}\right)\eqquad.\\
         \end{align*}
         \end{eg}
         
@@ -2132,9 +2132,9 @@ You know what to do.
         Now consider the field
         \begin{align*}
                 F_x &= ax+by+c \\
-                F_y &= dx+ey+f \qquad ,\\
+                F_y &= dx+ey+f\eqquad,\\
         \intertext{i.e.,}
-                \vc{F} &= ax\hat{\vc{x}}+by\hat{\vc{x}}+c\hat{\vc{x}}+dx\hat{\vc{y}}+ey\hat{\vc{y}}+f\hat{\vc{y}} \qquad .
+                \vc{F} &= ax\hat{\vc{x}}+by\hat{\vc{x}}+c\hat{\vc{x}}+dx\hat{\vc{y}}+ey\hat{\vc{y}}+f\hat{\vc{y}}\eqquad.
         \end{align*}
         The only terms whose curls we haven't yet explicitly computed are the $a$, $e$, and $f$ terms, and their
         curls turn out to be zero (homework problem \ref{hw:xxhat}). Only the $b$ and $d$ terms have
@@ -2144,7 +2144,7 @@ You know what to do.
                 \curl\,\vc{F} &= \curl(by\hat{\vc{x}})+\curl(dx\hat{\vc{y}}) \\ 
                                            &= b\,\curl(y\hat{\vc{x}})+d\,\curl(x\hat{\vc{y}}) \qquad \text{[scaling]}\\ 
                                            &= b(-\hat{\vc{z}})+d(\hat{\vc{z}}) \qquad \text{[found previously]}\\ 
-                                           &= (d-b)\hat{\vc{z}} \qquad .\\ 
+                                           &= (d-b)\hat{\vc{z}}\eqquad.\\ 
         \end{align*}
         
         But \emph{any} field in the $x-y$ plane can be approximated with this type of field, as long
@@ -2184,7 +2184,7 @@ You know what to do.
         \egquestion
         Find the curl of the following electric field
         \begin{equation*}
-                \vc{E} = (\zu{sin}\, x)\hat{\vc{y}} \qquad ,
+                \vc{E} = (\zu{sin}\, x)\hat{\vc{y}}\eqquad,
         \end{equation*}
         and interpret the result.
         
@@ -2192,7 +2192,7 @@ You know what to do.
         The only nonvanishing partial derivative occurring in this curl is
         \begin{align*}
                 (\curl\,\vc{E})_z &= \frac{\partial  E_{y}}{\partial  x} \\ 
-                                                  &= \zu{cos}\, x \qquad ,\\ 
+                                                  &= \zu{cos}\, x\eqquad,\\ 
         \intertext{so}
                 \curl\,\vc{E}        &= \zu{cos}\,\hat{\vc{z}}
         \end{align*}
@@ -2329,14 +2329,14 @@ You know what to do.
         Faraday's experiment demonstrates
         a new relationship
         \begin{equation*}
-                \Gamma_E \propto -\frac{\partial B}{\partial t} \qquad ,
+                \Gamma_E \propto -\frac{\partial B}{\partial t}\eqquad,
         \end{equation*}
         where the negative sign is a way of showing the observed
         left-handed relationship, \figref{inducedegeom}.
         This is similar to the structure of of Amp\`{e}re's
         law:
         \begin{equation*}
-                \Gamma_B \propto I_{through} \qquad ,
+                \Gamma_B \propto I_{through}\eqquad,
         \end{equation*}
         which also relates the curliness of a field to something that is going on
         nearby (a current, in this case).
@@ -2645,7 +2645,7 @@ mechanical work has to be done in order to crank the generator.
                                         &= |v[B(x)-B(x+\der x)]|\der y\\
                                         &= \left|v\,\frac{\partial B}{\partial x}\right|\,\der x\der y \\
                                         &= \left|\frac{\der x}{\der t}\,\frac{\partial B}{\partial x}\right|\,\der x\der y \\
-                                        &= \left|\frac{\partial B}{\partial t}\right|\,\der A \qquad .
+                                        &= \left|\frac{\partial B}{\partial t}\right|\,\der A\eqquad.
         \end{align*}
         Using a right-hand rule, the counterclockwise
         circulation is represented by pointing one's thumb up, but the vector $\partial \vc{B}/\partial t$
@@ -2653,19 +2653,19 @@ mechanical work has to be done in order to crank the generator.
         \figref{inducedegeom} on page \pageref{fig:inducedegeom}. We can represent the opposing
         directions using a minus sign,
         \begin{equation*}
-                \Gamma_E        = -\frac{\partial B}{\partial t}\,\der A \qquad .
+                \Gamma_E        = -\frac{\partial B}{\partial t}\,\der A\eqquad.
         \end{equation*}
         Although this derivation was carried out with everything aligned in a specific way along
         the coordinate axes, it turns out that this relationship can be generalized as a vector
         dot product,
         \begin{equation*}
-                \Gamma_E        = -\frac{\partial \vc{B}}{\partial t}\cdot\der\vc{A} \qquad .
+                \Gamma_E        = -\frac{\partial \vc{B}}{\partial t}\cdot\der\vc{A}\eqquad.
         \end{equation*}
         
         Finally, we can take a finite-sized loop and break down the circulation around its edges
         into a grid of tiny loops. The circulations add, so we have
         \begin{equation*}
-                \Gamma_E        = -\sum \frac{\partial \vc{B}_j}{\partial t}\cdot\der\vc{A}_j \qquad .
+                \Gamma_E        = -\sum \frac{\partial \vc{B}_j}{\partial t}\cdot\der\vc{A}_j\eqquad.
         \end{equation*}
         This is known as Faraday's law. (I don't recommend memorizing all these names.)
         Mathematically, Faraday's law is very similar to the structure of Amp\`{e}re's law: the circulation
@@ -2710,7 +2710,7 @@ Check that the units in Faraday's law work out. An easy way to
         interior of the loop, so we can dispense with the summation, and simply write
         Faraday's law as
         \begin{equation*}
-                \Gamma_E        = -\frac{\partial\vc{B}}{\partial t}\cdot\vc{A} \qquad .
+                \Gamma_E        = -\frac{\partial\vc{B}}{\partial t}\cdot\vc{A}\eqquad.
         \end{equation*}
         Since what we estimated was the rate of change of the horizontal component, and
         the vector $\vc{A}$ is horizontal (perpendicular to the loop), we can find this
@@ -2842,11 +2842,11 @@ Check that the units in Faraday's law work out. An easy way to
         For any closed surface, the fluxes through the surface are
         \begin{align*}
                 \Phi_E                &= 4\pi kq_{in} \qquad\qquad\qquad \text{and}\\
-                \Phi_B                &= 0 \qquad .\\
+                \Phi_B                &= 0\eqquad.\\
         \intertext{For any surface that is not closed, the circulations 
         around the edges of the surface are given by}
                 \Gamma_E         &= -\frac{\partial\Phi_B}{\partial t}  \qquad\qquad\qquad \text{and} \\
-                c^2\Gamma_B         &= \frac{\partial\Phi_E}{\partial t}  + 4\pi k I_{through} \qquad .
+                c^2\Gamma_B         &= \frac{\partial\Phi_E}{\partial t}  + 4\pi k I_{through}\eqquad.
         \end{align*}
         \end{important}
         The $\Phi_E$ equation is Gauss' law: charges make diverging electric fields.
@@ -3034,7 +3034,7 @@ scenarios that could explain this field?
                 \Phi_E                &= 0 \\
                 \Phi_B                &= 0 \\
                 \Gamma_E         &= -\frac{\partial\Phi_B}{\partial t} \\
-                c^2\Gamma_B         &= \frac{\partial\Phi_E}{\partial t}  \qquad .
+                c^2\Gamma_B         &= \frac{\partial\Phi_E}{\partial t}\eqquad.
         \end{align*}
         
         The equation $\Phi=0$ has already been verified for this type of
@@ -3250,7 +3250,7 @@ wave called its polarization.
         in particular. Let's pick the wave whose fields have magnitudes
         \begin{align*}
                 E &= \tilde{E}\sin(x+vt) \qquad \text{and}\\
-                B &= \tilde{B}\sin(x+vt) \qquad ,
+                B &= \tilde{B}\sin(x+vt)\eqquad,
         \end{align*}
         which is about as simple as we can get. The peak electric field of this wave
         has a strength $\tilde{E}$, and the peak magnetic field is $\tilde{B}$. 
@@ -3304,12 +3304,12 @@ wave called its polarization.
         $\tilde{B}\ell h$ to the circulation. The left edge contributes the
         same amount, so the left side of Maxwell's equation is
         \begin{equation*}
-                c^2\Gamma_B = c^2 \cdot 2 \tilde{B}\ell h \qquad .
+                c^2\Gamma_B = c^2 \cdot 2 \tilde{B}\ell h\eqquad.
         \end{equation*}
         The other side of the equation is
         \begin{align*}
                 \frac{\partial\Phi_E}{\partial t} &= \frac{\partial}{\partial t}(EA) \\
-                         &= 2\ell h \frac{\partial E}{\partial t} \qquad ,\\
+                         &= 2\ell h \frac{\partial E}{\partial t}\eqquad,\\
         \intertext{where we can dispense with the usual sum because the strip is narrow and there is
         no variation in the field as we go up and down the strip. The derivative 
         equals $v\tilde{E}\cos(x+vt)$, and evaluating the cosine at $x=0$, $t=0$ gives}
@@ -3318,13 +3318,13 @@ wave called its polarization.
         Maxwell's equation for $\Gamma_B$ therefore results in
         \begin{align*}
                 2c^2\tilde{B}\ell h &= 2\tilde{E}\ell h  v\\
-                c^2\tilde{B} &=   v\tilde{E}\qquad .
+                c^2\tilde{B} &=   v\tilde{E}\eqquad.
         \end{align*}
         
         An application of $\Gamma_E=-\partial\Phi_B/\partial t$ gives a similar result,
         except that there is no factor of $c^2$
         \begin{equation*}
-                \tilde{E} =   v \tilde{B} \qquad .
+                \tilde{E} =   v \tilde{B}\eqquad.
         \end{equation*}
         (The minus sign simply represents the
         right-handed relationship of the fields relative to their direction of propagation.)
@@ -3333,7 +3333,7 @@ wave called its polarization.
         \begin{align*}
                 c^2\tilde{B}\tilde{E} &=   v^2\tilde{E}\tilde{B} \\
                 c^2 &=   v^2 \\
-                v &=   \pm c \qquad .
+                v &=   \pm c\eqquad.
         \end{align*} 
         This is the desired result.
         (The plus or minus sign shows that the wave can travel in either direction.)
@@ -3419,7 +3419,7 @@ wave called its polarization.
         \begin{align*}
                 |\vc{E}\times\vc{B}| &=|\vc{E}||\vc{B}|\sin 90\degunit \\
                                                          &=|\vc{E}||\vc{B}| \\
-                                                         &=\frac{|\vc{E}|^2}{c}=c|\vc{B}|^2 \qquad ,
+                                                         &=\frac{|\vc{E}|^2}{c}=c|\vc{B}|^2\eqquad,
         \end{align*}
         where in the last step the relation $|\vc{E}|=c|\vc{B}|$ has been used.
         
@@ -3473,7 +3473,7 @@ wave called its polarization.
         has lost by interacting with the wire. Dividing these two equations, we find
         \begin{align*}
                 \frac{\der p}{\der U} &= \frac{B}{E} \\
-                                &= \frac{1}{c} \qquad ,
+                                &= \frac{1}{c}\eqquad,
         \end{align*}
         which is what we expected based on relativity.
         This can now be restated in the form
@@ -3656,11 +3656,11 @@ fudge factor is greater than one. This constant is a property of the dielectric 
 how strong they are, and how easily they can be reoriented. The conventional notation is to incorporate this fudge factor into
 Gauss's law by defining an altered version of the electric field, 
 \begin{equation*}
-  \vc{D}=\epsilon \vc{E} \qquad ,
+  \vc{D}=\epsilon \vc{E}\eqquad,
 \end{equation*}
 and to rewrite Gauss's law as
 \begin{equation*}
-  \Phi_D = q_{\text{in, free}} \qquad .
+  \Phi_D = q_{\text{in, free}}\eqquad.
 \end{equation*}
 The constant $\epsilon$ is a property of the material, known as its permittivity.\index{permittivity} In a vacuum, $\epsilon$ takes on a value known as
 $\epsilon_\zu{o}$, defined as $1/(4\pi k)$. In a dielectric, $\epsilon$ is greater than $\epsilon_\zu{o}$.
@@ -3724,11 +3724,11 @@ in opposite directions repel. Therefore the bound currents in a material inserte
 free currents, and the result is to strengthen the field. The total current is $I=I_{\text{free}}+I_{\text{bound}}$,
 and we define an altered version of the magnetic field,
 \begin{equation*}
-  \vc{H}= \frac{\vc{B}}{\mu} \qquad ,
+  \vc{H}= \frac{\vc{B}}{\mu}\eqquad,
 \end{equation*}
 and rewrite Amp\`{e}re's law as
 \begin{equation*}
-  \Gamma_H = I_{\text{through, free}} \qquad .
+  \Gamma_H = I_{\text{through, free}}\eqquad.
 \end{equation*}
 The constant $\mu$ is the permeability,\index{permeability} 
 with a vacuum value of $\mu_\zu{o}=4\pi k/c^2$. Here are the magnetic permeabilities of some substances:

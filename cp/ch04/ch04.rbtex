@@ -850,7 +850,7 @@ down without realizing that the other guy had a three-hundred-pound bag full of 
 hidden under his uniform --- he just doesn't seem to react to the collision as much as he should.
 This extra inertia is described by redefining momentum as
 \begin{equation*}
-        \text{momentum} = m \gamma v \qquad .
+        \text{momentum} = m \gamma v\eqquad.
 \end{equation*}
 At very low velocities, $\gamma$ is close to 1, and the result is very nearly $mv$, as demanded
 by the correspondence principle. But at very high velocities, $\gamma$ gets very big --- the

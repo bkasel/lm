@@ -382,7 +382,7 @@ determine this energy for a variety of frequencies, \figref{photoelectric-graph}
 find the following simple relationship between the energy of
 a \index{photon!energy of}photon and the frequency of the light:
 \begin{equation*}
-        E  =  hf   \qquad   ,
+        E  =  hf\eqquad,
 \end{equation*}
 where $h$ is a constant with a numerical value of
 $6.63\times10^{-34}\ \junit\unitdot\sunit$.\linebreak[4]
@@ -444,7 +444,7 @@ number of photons is
 \begin{equation*}
     \frac{100\ \junit}{E_{photon}}
              =    \frac{100\ \junit}{hc/\lambda}
-        \approx 3\times10^{20} \qquad .
+        \approx 3\times10^{20}\eqquad.
 \end{equation*}
 This hugeness of this number is consistent with the correspondence principle.
 The experiments that established the classical theory of optics
@@ -486,7 +486,7 @@ single photon in terms of its frequency, and in terms of its wavelength.
 \eganswer Combining the equations $p=E/c$ and $E=hf$, we find
 \begin{align*}
         p     &=    \frac{E}{c}  \\
-             &=   \frac{hf}{c}    \qquad   .
+             &=   \frac{hf}{c}\eqquad.
 \end{align*}
 To reexpress this in terms of wavelength, we use $c=f\lambda $:
 \begin{align*}
@@ -725,7 +725,7 @@ More specifically, the probability distribution of the
 particle must be proportional to the \emph{square} of
 the wave's amplitude,
 \begin{equation*}
-    (\text{probability distribution}) \propto (\text{amplitude})^2   \qquad   .
+    (\text{probability distribution}) \propto (\text{amplitude})^2\eqquad.
 \end{equation*}
 This follows from the correspondence principle and from the
 fact that a wave's energy density is proportional to the
@@ -799,13 +799,13 @@ wave's energy that is within that volume. For a sinusoidal wave, which has
 a single, well-defined frequency $f$, this gives
 \begin{align*}
         P         &=  \frac{\text{energy in volume $v$}}{\text{energy of photon}}    \\
-                 &=  \frac{\text{energy in volume $v$}}{hf} \qquad .
+                 &=  \frac{\text{energy in volume $v$}}{hf}\eqquad.
 \end{align*}
 We assume $v$ is small enough so that the electric and
 magnetic fields are nearly constant throughout it. We then have 
 \begin{equation*}
         P         =  \frac{\left(\frac{1}{8\pi k}|\vc{E}|^2
-                        +\frac{c^2}{8\pi k}|\vc{B}|^2\right)v}{hf}     \qquad   .  
+                        +\frac{c^2}{8\pi k}|\vc{B}|^2\right)v}{hf}\eqquad.  
 \end{equation*}
 We can simplify this formidable looking expression by
 recognizing that in a plane wave, $|\vc{E}|$ and $|\vc{B}|$ are
@@ -815,7 +815,7 @@ the electric and magnetic fields each contribute half the
 total energy, so we can simplify the result to
 \begin{align*}
         P         &=  2\frac{\left(\frac{1}{8\pi k}|\vc{E}|^2\right)v}{hf} \\
-                 &=  \frac{v}{4\pi khf}|\vc{E}|^2     \qquad   .  
+                 &=  \frac{v}{4\pi khf}|\vc{E}|^2\eqquad.  
 \end{align*}
 The probability is proportional to the square
 of the wave's amplitude, as advertised.\footnote{But note that along the way, we had to make

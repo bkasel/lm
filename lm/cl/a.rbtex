@@ -131,7 +131,7 @@ The energy that an object possesses because of its motion is
 called kinetic energy. Kinetic energy is related to the mass
 of the object and the magnitude of its velocity vector by the equation
 \begin{equation*}
-  KE = \frac{1}{2}mv^2\qquad .
+  KE = \frac{1}{2}mv^2\eqquad.
 \end{equation*}
 
 Power is the rate at which energy is transformed from one
@@ -140,7 +140,7 @@ form to another or transferred from one object to another,
 m4_ifelse(__me,1,[:%
   P = \frac{\der E}{\der t}
 :],[:%
- P = \frac{\Delta E}{\Delta t}\qquad . 
+ P = \frac{\Delta E}{\Delta t}\eqquad. 
         \qquad\hfill\shoveright{\text{[only for constant power]}}
 :])%
 \end{equation*}

@@ -70,7 +70,7 @@ same in magnitude, $+q$ and $-q$, then the energy stored in
 the capacitor must be proportional to $q^2$. For historical
 reasons, we write the constant of proportionality as $1/2C$, 
 \begin{equation*}
-                E_C    =   \frac{1}{2C}q^2    \qquad   .
+                E_C    =   \frac{1}{2C}q^2\eqquad.
 \end{equation*}
 The constant $C$ is a geometrical property of the
 capacitor, called its capacitance.
@@ -158,7 +158,7 @@ coiled wire, so the energy stored in the inductor must be
 proportional to $I^2$. We write $L/2$ for the constant of
 proportionality, giving
 \begin{equation*}
-                E_L    =    \frac{L}{2}I^2   \qquad   .  
+                E_L    =    \frac{L}{2}I^2\eqquad.  
 \end{equation*}
 
 As in the definition of capacitance, we have a
@@ -322,7 +322,7 @@ simply by constructing an analogy with a mechanical system.
 In a mechanical oscillator, \figref{lrcanalogy}, we have two forms of stored energy,
 \begin{align*}
                 E_{spring}         &=            \frac{1}{2}kx^2                &(1)  \\
-                K                         &=     \frac{1}{2}mv^2  \qquad   .        \qquad                &(2)  
+                K                         &=     \frac{1}{2}mv^2\eqquad.        \qquad                &(2)  
 \end{align*}
 
 In the case of a mechanical oscillator, 
@@ -336,7 +336,7 @@ dissipated by friction equals the mechanical work it does in
 a time interval $\Delta t$, divided by $\Delta t$,
 $P=W/\Delta t=F\Delta x/\Delta t=Fv=-bv^2$, so
 \begin{equation*}
-                \text{rate of heat dissipation}  =  -bv^2   \qquad   .        \qquad        (3)  
+                \text{rate of heat dissipation}  =  -bv^2\eqquad.        \qquad        (3)  
 \end{equation*}
 
 <% self_check('lrcsigns',<<-'SELF_CHECK'
@@ -350,11 +350,11 @@ Does this make physical sense?
 In the circuit, the stored forms of energy are
 \begin{align*}
                 E_C    &=    \frac{1}{2C}q^2                        &(1')  \\
-                E_L    &=    \frac{1}{2}LI^2 \qquad , \qquad                        &(2')  
+                E_L    &=    \frac{1}{2}LI^2\eqquad, \qquad                        &(2')  
 \end{align*}
 and the rate of heat dissipation in the resistor is
 \begin{equation*}
-                \text{rate of heat dissipation}  =  -RI^2   \qquad   .        \qquad        (3')  
+                \text{rate of heat dissipation}  =  -RI^2\eqquad.        \qquad        (3')  
 \end{equation*}
 Comparing the two sets of equations, we first form analogies
 between quantities that represent the state of the system at
@@ -383,13 +383,13 @@ system naturally oscillates with a period
  $T=2\pi\sqrt{m/k}$ , we can immediately solve the
 electrical version by analogy, giving
 \begin{equation*}
-         T  = 2\pi\sqrt{LC} \qquad   .
+         T  = 2\pi\sqrt{LC}\eqquad.
 \end{equation*}
 Rather than period, $T$, and frequency, $f$, it turns out to be more convenient
 if we work with the quantity $\omega=2\pi f$, which can be interpreted as
 the number of radians per second. Then
 \begin{equation*}
-         \omega  = \frac{1}{\sqrt{LC}} \qquad   .
+         \omega  = \frac{1}{\sqrt{LC}}\eqquad.
 \end{equation*}
 
 Since the resistance $R$ is analogous to $b$ in the mechanical case, we
@@ -578,9 +578,9 @@ is taking energy from the inductor is given by $|P|=|IV|$, so
 \begin{align*}
         |IV| &= \left|\frac{\Delta E_L}{\Delta t}\right| \\
                 &= \left|\frac{\Delta}{\Delta t}\left( \frac{1}{2}LI^2\right) \right| \\
-                &= \left|LI\frac{\Delta I}{\Delta t}\right| \qquad ,\\
+                &= \left|LI\frac{\Delta I}{\Delta t}\right|\eqquad,\\
 \intertext{or}
-        |V|        &= \left|L\frac{\Delta I}{\Delta t}\right| \qquad , \\
+        |V|        &= \left|L\frac{\Delta I}{\Delta t}\right|\eqquad, \\
 \end{align*}
 which in many books is taken to be the definition of inductance. The
 direction of the voltage drop (plus or minus sign) is such
@@ -700,7 +700,7 @@ voltage across a capacitor:
 
 \noindent The loop rule tells us
 \begin{equation*}
-                        V_R + V_C  =  0   \qquad   ,  
+                        V_R + V_C  =  0\eqquad,  
 \end{equation*}
 and combining the three equations results in a relationship between $q$ and $I$:
 \begin{equation*}
@@ -723,7 +723,7 @@ constant of the circuit.\index{RC time constant}\index{time constant!RC}
 How exactly do $I$ and $q$ vary with time? Rewriting $I$ as
 $\Delta q/\Delta t$, we have
 \begin{equation*}
-                \frac{\Delta q}{\Delta t} = -\frac{1}{RC}q \qquad .
+                \frac{\Delta q}{\Delta t} = -\frac{1}{RC}q\eqquad.
 \end{equation*}
 This equation describes a function $q(t)$ that always gets smaller over
 time, and whose rate of decrease is big at first, when $q$ is big, but
@@ -749,7 +749,7 @@ use of base $e$ comes in handy: for base $e$, it turns out that the
 correct unitless constant \emph{is} 1. Thus
 our solution is
 \begin{equation*}
-                q = q_\zu{o}\exp\left(-\frac{t}{RC}\right) \qquad .
+                q = q_\zu{o}\exp\left(-\frac{t}{RC}\right)\eqquad.
 \end{equation*}
 The number $RC$, with units of seconds, is called the RC time constant of the circuit,
 and it tells us how long we have to wait if we want the charge to fall off by
@@ -781,7 +781,7 @@ a factor of $1/e$.
 The RL circuit, \figref{rl}, can be attacked by similar methods, and
 it can easily be shown that it gives
 \begin{equation*}
-                I = I_\zu{o}\exp\left(-\frac{R}{L}t\right) \qquad .
+                I = I_\zu{o}\exp\left(-\frac{R}{L}t\right)\eqquad.
 \end{equation*}
 The RL time constant equals $L/R$.
 
@@ -854,7 +854,7 @@ are interested only in the steady-state response.
 
 The purely resistive case is easy. Ohm's law gives
 \begin{equation*}
-                I         =    \frac{V}{R}   \qquad   .  
+                I         =    \frac{V}{R}\eqquad.  
 \end{equation*}
 
 <% marg(0) %>
@@ -868,18 +868,18 @@ The purely resistive case is easy. Ohm's law gives
 In the purely capacitive case, the relation $V=q/C$ lets us calculate
 \begin{align*}
                 I         &=    \frac{\Delta q}{\Delta t}  \\
-                         &=    C \frac{\Delta V}{\Delta t}   \qquad   .  
+                         &=    C \frac{\Delta V}{\Delta t}\eqquad.  
 \end{align*}
 If the voltage varies as, for example, $V(t)=\tilde{V}\sin (\omega t)$,
 then it can be shown using calculus that the current will be $I(t)=\omega C \tilde{V}\cos (\omega t)$,
  so the maximum current is $\tilde{I}=\omega C \tilde{V}$.
  By analogy with Ohm's law, we can then write
 \begin{equation*}
-                \tilde{I}         =    \frac{\tilde{V}}{Z_C}   \qquad   ,  
+                \tilde{I}         =    \frac{\tilde{V}}{Z_C}\eqquad,  
 \end{equation*}
 where the quantity
 \begin{equation*}
-                Z_C    =     \frac{1}{\omega C}                   \qquad , \qquad \text{[impedance of a capacitor]}  
+                Z_C    =     \frac{1}{\omega C}\eqquad, \qquad \text{[impedance of a capacitor]}  
 \end{equation*}
 having units of ohms, is called the \emph{impedance} of
 the capacitor at this frequency. Note that it is only the

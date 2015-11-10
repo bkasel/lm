@@ -544,7 +544,7 @@ created and begun heading back, for a total height of $1+R$.
 On the right side immediately next to the boundary, the
 transmitted wave has a height $T$. To avoid a discontinuity, we must have
 \begin{equation*}
-                1+R  =  T   \qquad   .
+                1+R  =  T\eqquad.
 \end{equation*}
 Next we turn to the requirement of equal slopes on both
 sides of the boundary. Let the slope of the incoming wave be
@@ -563,11 +563,11 @@ $s(v_1/v_2)T$, where $v_1$ is the velocity in the original
 medium and $v_2$ the velocity in the new medium. Equality of
 slopes gives $s-sR=s(v_1/v_2)T$, or
 \begin{equation*}
-  1-R = \frac{v_1}{v_2}T \qquad .
+  1-R = \frac{v_1}{v_2}T\eqquad.
 \end{equation*}
 Solving the two equations for the unknowns $R$ and $T$ gives
 \begin{equation*}
-  R=\frac{v_2-v_1}{v_2+v_1} \quad \text{and} \quad T=\frac{2v_2}{v_2+v_1} \qquad .
+  R=\frac{v_2-v_1}{v_2+v_1} \quad \text{and} \quad T=\frac{2v_2}{v_2+v_1}\eqquad.
 \end{equation*}
 The first equation shows that there is no reflection unless
 the two wave speeds are different, and that the reflection

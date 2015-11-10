@@ -40,7 +40,7 @@ and show examples of the power of the vector formulation of Newton's laws.
 
 For motion with constant velocity, the velocity vector is
 \begin{equation*}
-        \vc{v} = \Delta \vc{r}/\Delta t \qquad . \qquad \hfill \shoveright{\text{[only for constant velocity]}}
+        \vc{v} = \Delta \vc{r}/\Delta t\eqquad. \qquad \hfill \shoveright{\text{[only for constant velocity]}}
 \end{equation*}
 The $\Delta\vc{r}$ vector points in the direction of the motion,
 and dividing it by the scalar $\Delta t$ only changes its
@@ -51,7 +51,7 @@ m4_ifelse(__me,1,[:%
   $v_x=\der x/\der t$, $v_y=\der y/\der t$, and $v_z=\der z/\der t$.
   This set of three equations can be notated more compactly as
   \begin{equation*}
-    \vc{v}=\der\vc{r}/\der t \qquad .
+    \vc{v}=\der\vc{r}/\der t\eqquad.
   \end{equation*}
   This is an example of a more general rule about differentiating vectors: to differentiate a vector,
   take the derivative component by component.
@@ -62,7 +62,7 @@ m4_ifelse(__me,1,[:%
   \egquestion
   A car bouncing on its shock absorbers has a position as a function of time given by
   \begin{equation*}
-    \vc{r} = bt\hat{\vc{x}}+(c\sin\omega t)\hat{\vc{y}} \qquad ,
+    \vc{r} = bt\hat{\vc{x}}+(c\sin\omega t)\hat{\vc{y}}\eqquad,
   \end{equation*}
   where $b$, $c$, and $\omega$ (Greek letter omega) are constants.
   Infer the units of the constants, find the velocity, and check the units of
@@ -77,7 +77,7 @@ m4_ifelse(__me,1,[:%
 
   Differentiating component by component, we find
   \begin{equation*}
-    \vc{v} = b\hat{\vc{x}}+(c\omega\cos\omega t)\hat{\vc{y}} \qquad .
+    \vc{v} = b\hat{\vc{x}}+(c\omega\cos\omega t)\hat{\vc{y}}\eqquad.
   \end{equation*}
   The units of the first component are simply the units of $b$, $\munit/\sunit$, which makes sense.
   The units of the second component are \\
@@ -126,23 +126,23 @@ boat is capable relative to the water.
 the vector sum of its velocity with respect to the water and
 the water's velocity with respect to the land,
 \begin{equation*}
-            \vc{v}_{BL} =  \vc{v}_{BW}+  \vc{v}_{WL} \qquad     .
+            \vc{v}_{BL} =  \vc{v}_{BW}+  \vc{v}_{WL}\eqquad.
 \end{equation*}
 If the boat is to travel straight across the river, i.e.,
 along the $y$ axis, then we need to have $\vc{v}_{BL,x}=0$. This $x$
 component equals the sum of the $x$ components of the other two vectors,
 \begin{equation*}
-            \vc{v}_{BL,x}  =  \vc{v}_{BW,x} +  \vc{v}_{WL,x}   \qquad  ,
+            \vc{v}_{BL,x}  =  \vc{v}_{BW,x} +  \vc{v}_{WL,x}\eqquad,
 \end{equation*}
 or
 \begin{equation*}
-            0  =  -|\vc{v}_{BW}| \sin  \theta  + |\vc{v}_{WL}|   \qquad   .
+            0  =  -|\vc{v}_{BW}| \sin  \theta  + |\vc{v}_{WL}|\eqquad.
 \end{equation*}
 Solving for $\theta $, we find
 \begin{align*}
-            \sin  \theta  &=  |\vc{v}_{WL}|/|\vc{v}_{BW}|   \qquad ,\\
+            \sin  \theta  &=  |\vc{v}_{WL}|/|\vc{v}_{BW}|\eqquad,\\
 \intertext{so}
-            \theta &= \sin^{-1}\frac{|\vc{v}_{WL}|}{|\vc{v}_{BW}|}\qquad   .
+            \theta &= \sin^{-1}\frac{|\vc{v}_{WL}|}{|\vc{v}_{BW}|}\eqquad.
 \end{align*}
 \end{eg}
 
@@ -195,26 +195,26 @@ m4_ifelse(__me,1,[:%
 When the acceleration is constant,
 we have
 \begin{equation*}
-        \vc{a} = \Delta\vc{v}/\Delta t  \qquad , \qquad \shoveright{\text{[only for constant acceleration]}}
+        \vc{a} = \Delta\vc{v}/\Delta t\eqquad, \qquad \shoveright{\text{[only for constant acceleration]}}
 \end{equation*}
 which can be written in terms of initial and final velocities as
 \begin{equation*}
-        \vc{a} = (\vc{v}_f-\vc{v}_i)/\Delta t  \qquad . \qquad \shoveright{\text{[only for constant acceleration]}}
+        \vc{a} = (\vc{v}_f-\vc{v}_i)/\Delta t\eqquad. \qquad \shoveright{\text{[only for constant acceleration]}}
 \end{equation*}
 In general, we define the acceleration vector as the derivative
   \begin{equation*}
-    \vc{a}=\der\vc{v}/\der t \qquad .
+    \vc{a}=\der\vc{v}/\der t\eqquad.
   \end{equation*}
 :],[:%
 When all three acceleration components are constant, i.e.,
 when the $v_x-t$, $v_y-t$, and $v_z-t$ graphs are all
 linear, we can define the acceleration vector as
 \begin{equation*}
-        \vc{a} = \Delta\vc{v}/\Delta t  \qquad , \qquad \shoveright{\text{[only for constant acceleration]}}
+        \vc{a} = \Delta\vc{v}/\Delta t\eqquad, \qquad \shoveright{\text{[only for constant acceleration]}}
 \end{equation*}
 which can be written in terms of initial and final velocities as
 \begin{equation*}
-        \vc{a} = (\vc{v}_f-\vc{v}_i)/\Delta t  \qquad . \qquad \shoveright{\text{[only for constant acceleration]}}
+        \vc{a} = (\vc{v}_f-\vc{v}_i)/\Delta t\eqquad. \qquad \shoveright{\text{[only for constant acceleration]}}
 \end{equation*}
 If the acceleration is not constant, we define it as the
 vector made out of the $a_x$, $a_y$, and $a_z$ components
@@ -444,7 +444,7 @@ has zero acceleration, and the total force on it must be
 zero. From figure \figref{eg-ramp-3}, we find
 \begin{align*}
         |\vc{F}_A|      &=  |\vc{F}_W| \sin  \theta   \\
-                        &=  mg \sin  \theta    \qquad   .
+                        &=  mg \sin  \theta\eqquad.
 \end{align*}
 
 Since the sine is always less than one, the applied force is
@@ -534,7 +534,7 @@ floor's kinetic friction force & brush's kinetic friction force \\
 
 Newton's second law is:
 \begin{equation*}
-  \vc{a} = \frac{\vc{F}_H+m\vc{g}+\vc{F}_N+\vc{F}_k}{m} \qquad ,
+  \vc{a} = \frac{\vc{F}_H+m\vc{g}+\vc{F}_N+\vc{F}_k}{m}\eqquad,
 \end{equation*}
 where the addition is vector addition.
 If we actually want to carry out the vector addition of the forces, we have to do either graphical addition (as in example
@@ -564,12 +564,12 @@ Newton's second law in the $x$ direction gives:
 
 The acceleration in the vertical direction is zero, so Newton's second law in the $y$ direction tells us that
 \begin{equation}\label{eqn:push-broom-y}
-  0 = -F_H\sin\theta-mg+F_N\qquad .
+  0 = -F_H\sin\theta-mg+F_N\eqquad.
 \end{equation}
 
 Finally, we have the relationship between kinetic friction and the normal force,
 \begin{equation}\label{eqn:push-broom-fk}
-  F_k = \mu_k F_N \qquad .
+  F_k = \mu_k F_N\eqquad.
 \end{equation}
 
 Equations \eqref{eqn:push-broom-x}-\eqref{eqn:push-broom-fk} are three equations, which we can use to determine
@@ -630,7 +630,7 @@ given in chapter \ref{ch:three-d} can be translated into calculus notation as
 \begin{align*}
      \vc{v} &= \frac{\der x}{\der t} \hat{\vc{x}} + \frac{\der y}{\der t} \hat{\vc{y}} + \frac{\der z}{\der t} \hat{\vc{z}}\\
 \intertext{and}
-     \vc{a} &= \frac{\der v_x}{\der t} \hat{\vc{x}} + \frac{\der v_y}{\der t} \hat{\vc{y}} + \frac{\der v_z}{\der t} \hat{\vc{z}}       \qquad   . 
+     \vc{a} &= \frac{\der v_x}{\der t} \hat{\vc{x}} + \frac{\der v_y}{\der t} \hat{\vc{y}} + \frac{\der v_z}{\der t} \hat{\vc{z}}\eqquad. 
 \end{align*}
 To make the notation less cumbersome, we generalize the
 concept of the derivative to include derivatives of vectors,
@@ -638,7 +638,7 @@ so that we can abbreviate the above equations as
 \begin{align*}
   \vc{v} &= \frac{\der \vc{r}}{\der t} \\
 \intertext{and}
-  \vc{a} &= \frac{\der \vc{v}}{\der t}        \qquad   .
+  \vc{a} &= \frac{\der \vc{v}}{\der t}\eqquad.
 \end{align*}
 In words, to take the derivative of a vector, you take the
 derivatives of its components and make a new vector out of
@@ -650,7 +650,7 @@ the familiar properties
 \begin{align*}
   \frac{\der(c\vc{f})}{\der t} &= c \frac{\der\vc{f}}{\der t} \qquad \shoveright{\text{[$c$ is a constant]}} \\
 \intertext{and}
-  \frac{\der(\vc{f}+\vc{g})}{\der t} &=  \frac{\der\vc{f}}{\der t}  +  \frac{\der\vc{g}}{\der t} \qquad .
+  \frac{\der(\vc{f}+\vc{g})}{\der t} &=  \frac{\der\vc{f}}{\der t}  +  \frac{\der\vc{g}}{\der t}\eqquad.
 \end{align*}
 The integral of a vector is likewise defined as integrating
 component by component.
@@ -661,7 +661,7 @@ given by the equations
 \begin{align*}
         \vc{r}_1  &= 3t^2\hat{\vc{x}} + t\hat{\vc{y}}
 \intertext{and}
-        \vc{r}_2  &= 3t^4\hat{\vc{x}} + t\hat{\vc{y}} \qquad .
+        \vc{r}_2  &= 3t^4\hat{\vc{x}} + t\hat{\vc{y}}\eqquad.
 \end{align*}
 Find both objects' accelerations using calculus. Could
 either answer have been found without calculus?
@@ -669,12 +669,12 @@ either answer have been found without calculus?
 \eganswer Taking the first derivative of each component, we find
 \begin{align*}
         \vc{v}_1  &=   6t\hat{\vc{x}} + \hat{\vc{y}} \\
-        \vc{v}_2  &=   12t^3\hat{\vc{x}} + \hat{\vc{y}}  \qquad   ,
+        \vc{v}_2  &=   12t^3\hat{\vc{x}} + \hat{\vc{y}}\eqquad,
 \end{align*}
 and taking the derivatives again gives acceleration,
 \begin{align*}
         \vc{a}_1  &=    6\hat{\vc{x}}\\
-        \vc{a}_2  &=    36t^2\hat{\vc{x}} \qquad   .
+        \vc{a}_2  &=    36t^2\hat{\vc{x}}\eqquad.
 \end{align*}
 The first object's acceleration could have been found
 without calculus, simply by comparing the $x$ and $y$
@@ -690,7 +690,7 @@ we really did need calculus to find the corresponding acceleration.
 is observed to vary its propulsion
 with mathematical precision according to the equation
 \begin{equation*}
-  \vc{F} = bt^{42}\hat{\vc{x}} + ct^{137}\hat{\vc{y}} \qquad . \\
+  \vc{F} = bt^{42}\hat{\vc{x}} + ct^{137}\hat{\vc{y}}\eqquad. \\
 \end{equation*}
 (The aliens inform us that the numbers 42 and 137 have a special religious
 significance for them.) Find the saucer's velocity as a function of time.
@@ -698,16 +698,16 @@ significance for them.) Find the saucer's velocity as a function of time.
 \eganswer From the given force, we can easily find the acceleration
 \begin{align*}
   \vc{a} &= \frac{\vc{F}}{m} \\
-         &= \frac{b}{m}t^{42}\hat{\vc{x}} + \frac{c}{m}t^{137}\hat{\vc{y}} \qquad . 
+         &= \frac{b}{m}t^{42}\hat{\vc{x}} + \frac{c}{m}t^{137}\hat{\vc{y}}\eqquad. 
 \end{align*}
 The velocity vector $\vc{v}$ is the integral with respect
 to time of the acceleration,
 \begin{align*}
   \vc{v} &= \int \vc{a} \der t \\
-         &= \int \left( \frac{b}{m}t^{42}\hat{\vc{x}} + \frac{c}{m}t^{137}\hat{\vc{y}} \right) \der t \qquad , \\
+         &= \int \left( \frac{b}{m}t^{42}\hat{\vc{x}} + \frac{c}{m}t^{137}\hat{\vc{y}} \right) \der t\eqquad, \\
 \intertext{and integrating component by component gives}
          &= \left( \int \frac{b}{m}t^{42} \der t \right) \hat{\vc{x}} + \left( \int \frac{c}{m}t^{137} \der t\right) \hat{\vc{y}}\\
-         &= \frac{b}{43m}t^{43} \hat{\vc{x}} + \frac{c}{138m}t^{138}\hat{\vc{y}} \qquad ,
+         &= \frac{b}{43m}t^{43} \hat{\vc{x}} + \frac{c}{138m}t^{138}\hat{\vc{y}}\eqquad,
 \end{align*}
 where we have omitted the constants of integration, since the saucer was starting from rest.
 \end{eg}
@@ -732,16 +732,16 @@ force down into $x$ and $y$ components, we have
         F_x     &=    |\vc{F}| \cos  315\degunit  \\
              &=     (b-ct)  \\
         F_y     &=    |\vc{F}| \sin  315\degunit  \\
-             &=     (-b+ct)   \qquad   .
+             &=     (-b+ct)\eqquad.
 \end{align*}
 In unit vector notation, this is
 \begin{equation*}
-        F     =     (b-ct)\hat{\vc{x}} +  (-b+ct)\hat{\vc{y}}   \qquad   .
+        F     =     (b-ct)\hat{\vc{x}} +  (-b+ct)\hat{\vc{y}}\eqquad.
 \end{equation*}
 Newton's second law gives
 \begin{align*}
         \vc{a}     &=    \vc{F}/m \\
-                   &=    \frac{b-ct}{\sqrt{2}m}\hat{\vc{x}} + \frac{-b+ct}{\sqrt{2}m}\hat{\vc{y}}   \qquad   .
+                   &=    \frac{b-ct}{\sqrt{2}m}\hat{\vc{x}} + \frac{-b+ct}{\sqrt{2}m}\hat{\vc{y}}\eqquad.
 \end{align*}
 To find the velocity vector as a function of time, we need
 to integrate the acceleration vector with respect to time,
@@ -764,7 +764,7 @@ integration is that they give the initial velocity. Constant
 $v_\zu{o}$. The final result is
 \begin{equation*}
         \vc{v}     =      \left(\frac{bt-\frac{1}{2}ct^2}{\sqrt{2}m}\right)\hat{\vc{x}} 
-                 + \left(\frac{-bt+\frac{1}{2}ct^2}{\sqrt{2}m}+v_\zu{o}\right)\hat{\vc{y}}    \qquad   .
+                 + \left(\frac{-bt+\frac{1}{2}ct^2}{\sqrt{2}m}+v_\zu{o}\right)\hat{\vc{y}}\eqquad.
 \end{equation*}
 \end{eg}
 

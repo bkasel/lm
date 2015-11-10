@@ -170,7 +170,7 @@ squared, which is the same as the area of the loop. For
 these reasons, we define the magnetic dipole moment of a
 square current loop as
 \begin{multline*}
-                D_m         =    IA \qquad , \hfill\shoveright{\text{[definition of the magnetic}}\\
+                D_m         =    IA\eqquad, \hfill\shoveright{\text{[definition of the magnetic}}\\
                                                             \text{ dipole moment of a square current loop]}
 \end{multline*}
 We now define the \index{magnetic field!defined}magnetic
@@ -327,7 +327,7 @@ There is no simple equation for a field at an arbitrary point in space, but
 for a point lying \emph{along the central axis} perpendicular to the loop,
 the field is
 \begin{equation*}
-  B = \frac{k}{c^2}\cdot 2\pi Ib^2\left(b^2+z^2\right)^{-3/2} \qquad ,
+  B = \frac{k}{c^2}\cdot 2\pi Ib^2\left(b^2+z^2\right)^{-3/2}\eqquad,
 \end{equation*}
 where $b$ is the radius of the loop and $z$ is the distance of the point
 from the plane of the loop.
@@ -338,7 +338,7 @@ the paths of the field vectors become very straight on the inside of the coil
 and on the outside immediately next to the coil. For a sufficiently long solenoid,
 the interior field also becomes very nearly uniform, with a magnitude of
 \begin{equation*}
-  B = \frac{k}{c^2}\cdot 4\pi I N/\ell \qquad ,
+  B = \frac{k}{c^2}\cdot 4\pi I N/\ell\eqquad,
 \end{equation*}
 where $N$ is the number of turns of wire and $\ell$ is the length of the
 solenoid. The field near the mouths or outside the coil is not constant, and
@@ -368,7 +368,7 @@ it paints a picture.
 Experiments show that the magnetic force on a moving charged
 particle has a magnitude given by
 \begin{equation*}
- |\vc{F}|    = q|\vc{v}||\vc{B}|\sin\theta      \qquad   ,
+ |\vc{F}|    = q|\vc{v}||\vc{B}|\sin\theta\eqquad,
 \end{equation*}
 where $\vc{v}$ is the velocity vector of the particle, and
 $\theta $ is the angle between the $\vc{v}$ and $\vc{B}$ vectors.
@@ -1272,7 +1272,7 @@ To get this as a general equation for velocities other than 3/5, one can show by
 part c of problem \ref{hw:gamma-derivation} on p.~\pageref{hw:gamma-derivation} that
 the Doppler shift is
 \begin{equation*}
-  D(v) = \sqrt{\frac{1-v}{1+v}} \qquad .
+  D(v) = \sqrt{\frac{1-v}{1+v}}\eqquad.
 \end{equation*}
 Here $v>0$ is the case where the source and receiver are getting farther apart, $v<0$ the case where they are approaching.
 (This is the opposite of the sign convention used in section \ref{sec:doppler}. It is convenient to change conventions here so that we can

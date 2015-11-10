@@ -187,7 +187,7 @@ is therefore roughly
           &=    \frac{h}{mv}  \\
   &= \frac{6.63\times10^{-34}\ \zu{J}\unitdot\sunit}{(10^3\ \kgunit)(10\ \munit/\sunit)} \\
   &\sim 10^{-37}\ \frac{\left(\kgunit\unitdot\munit^2/\sunit^2\right)\unitdot\sunit}{\kgunit\unitdot\munit/\sunit} \\
-        &= 10^{-37}\ \munit \qquad .
+        &= 10^{-37}\ \munit\eqquad.
 \end{align*}
 \end{eg}
 
@@ -217,7 +217,7 @@ by the nonrelativistic equation $KE=p^2/2m$. Solving
 for $p$ and substituting in to the equation for the wavelength, we find
 \begin{align*}
                 \lambda          &=  \frac{h}{\sqrt{2m\cdot KE}}    \\
-                         &=    1.6\times10^{-9}\ \zu{m}  \qquad .
+                         &=    1.6\times10^{-9}\ \zu{m}\eqquad.
 \end{align*}
 This is on the same order of magnitude as the size of an
 atom, which is no accident: as we will discuss in the next
@@ -307,7 +307,7 @@ distribution equal to some funny constant multiplied by
 $\Psi^2$, we simply define $\Psi $ so that the constant of
 proportionality is one:
 \begin{equation*}
-        (\text{probability distribution})  =  \Psi ^2   \qquad   .
+        (\text{probability distribution})  =  \Psi ^2\eqquad.
 \end{equation*}
 Since the probability distribution has units of $\munit^{-3}$, the units
 of $\Psi$ must be $\munit^{-3/2}$.
@@ -467,7 +467,7 @@ $z$ of the envelope. The group velocity is $v_g=f_{envelope}\lambda_{envelope}=\
 f/\Delta $z. If $\Delta f$  and $\Delta z$ are sufficiently
 small, we can approximate this expression as a derivative,
 \begin{equation*}
-                v_g         =    \frac{\der f}{\der z}   \qquad   .  
+                v_g         =    \frac{\der f}{\der z}\eqquad.  
 \end{equation*}
 This expression is usually taken as the definition of the
 group velocity for wave patterns that consist of a
@@ -769,7 +769,7 @@ state, whose wavelength $\lambda =2L$ is the longest
 possible, we have an uncertainty in momentum of 
 $\Delta p=h/L$. In general, we find
 \begin{equation*}
-        \Delta p \gtrsim h/L   \qquad   ,
+        \Delta p \gtrsim h/L\eqquad,
 \end{equation*}
 with equality for the ground state and inequality for the
 higher-energy states. Thus if we reduce $L$ to improve our
@@ -777,7 +777,7 @@ knowledge of the electron's position, we do so at the cost
 of knowing less about its momentum. This trade-off is neatly
 summarized by multiplying the two equations to give
 \begin{equation*}
-        \Delta p\Delta x \gtrsim h \qquad .
+        \Delta p\Delta x \gtrsim h\eqquad.
 \end{equation*}
 Although we have derived this in the special case of a
 particle in a box, it is an example of a principle of
@@ -788,7 +788,7 @@ and the position of a particle simultaneously and with
 perfect accuracy. The uncertainties in these two quantities
 are always such that
 \begin{equation*}
-  \Delta p\Delta x \gtrsim h \qquad .
+  \Delta p\Delta x \gtrsim h\eqquad.
 \end{equation*}
 \end{important}
 \noindent (This approximation can be made into a strict inequality,
@@ -1152,9 +1152,9 @@ important insights by considering the easiest version of the
 Schr\"odinger equation, in which the potential energy is
 constant. We can then rearrange the Schr\"odinger equation as follows:
 \begin{align*}
-   \frac{\der^2\Psi}{\der x^2} &= \frac{2m(PE-E)}{\hbar^2}\Psi\qquad   ,
+   \frac{\der^2\Psi}{\der x^2} &= \frac{2m(PE-E)}{\hbar^2}\Psi\eqquad,
 \intertext{which boils down to}
-   \frac{\der^2\Psi}{\der x^2} &= a\Psi \qquad   ,
+   \frac{\der^2\Psi}{\der x^2} &= a\Psi\eqquad,
 \end{align*}
 where, according to our assumptions, $a$ is independent of
 $x$. We need to find a function whose second derivative is
@@ -1193,7 +1193,7 @@ particle will make it through the barrier. If we let the
 barrier's width be $w$, then the ratio of the wavefunction
 on the left side of the barrier to the wavefunction on the right is
 \begin{equation*}
-        \frac{qe^{rx+s}}{qe^{r(x+w)+s}}  = e^{-rw}      \qquad   .  
+        \frac{qe^{rx+s}}{qe^{r(x+w)+s}}  = e^{-rw}\eqquad.  
 \end{equation*}
 Probabilities are proportional to the squares of wavefunctions,
 so the probability of making it through the barrier is
@@ -1302,7 +1302,7 @@ particle simultaneously with perfect accuracy. The
 uncertainties in these two quantities must satisfy the
 approximate inequality
 \begin{equation*}
-    \Delta p\Delta x \gtrsim h     \qquad .
+    \Delta p\Delta x \gtrsim h\eqquad.
 \end{equation*}
 
 When an electron is subjected to electric forces, its

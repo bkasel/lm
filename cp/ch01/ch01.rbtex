@@ -469,7 +469,7 @@ were variables as used in algebra (which they're really
 not), you can then cancel the kg on top with the kg on the
 bottom, resulting in
 \begin{equation*}
-  0.7\ \cancel{\kgunit} \times \frac{10^3\ \gunit}{1\ \cancel{\kgunit}}  = 700\ \gunit   \qquad   .
+  0.7\ \cancel{\kgunit} \times \frac{10^3\ \gunit}{1\ \cancel{\kgunit}}  = 700\ \gunit\eqquad.
 \end{equation*}
 To convert grams to kilograms, you would simply flip the
 fraction upside down.
@@ -484,7 +484,7 @@ one year to units of seconds,
 \frac{24\ \cancel{\text{hours}}}{1\ \cancel{\text{day}}} \times
 \frac{60\ \cancel{\text{min}}}{1\ \cancel{\text{hour}}} \times
 \frac{60\ \sunit}{1\ \cancel{\text{min}}} = \\
-= 3.15 \times 10^7\ \sunit   \qquad   .
+= 3.15 \times 10^7\ \sunit\eqquad.
 \end{multline*}
 
 <% begin_sec("Should that exponent be positive or negative?") %>
@@ -498,7 +498,7 @@ does not equal one, because $10^3$  kg is the mass of a car,
 and 1 g is the mass of a raisin. One correct way of
 setting up the conversion factor would be
 \begin{equation*}
-  \frac{10^{-3}\ \kgunit}{1\ \gunit} \qquad \text{(correct)} \qquad .
+  \frac{10^{-3}\ \kgunit}{1\ \gunit} \qquad \text{(correct)}\eqquad.
 \end{equation*}
 You can usually detect such a mistake if you take the time
 to check your answer and see if it is reasonable.
@@ -862,7 +862,7 @@ kinetic energy is then transformed into heat and sound when the rock hits the gr
 
 Stated in the language of algebra, the formula for gravitational energy is
 \begin{equation*}
-  GE = mgh \qquad ,
+  GE = mgh\eqquad,
 \end{equation*}
 where $m$ is the mass of an object, $g$ is the gravitational field, and $h$ is the
 object's height.
@@ -912,7 +912,7 @@ general rule. The proportionality factor equals 0.5 because
 of the design of the metric system, so the kinetic energy of
 a moving object is given by
 \begin{equation*}
-                KE    =    \frac{1}{2}mv^2   \qquad   .
+                KE    =    \frac{1}{2}mv^2\eqquad.
 \end{equation*}
 
 <%
@@ -1061,7 +1061,7 @@ In fact, your body uses up even more than 200 J of food energy, because it's not
 of the energy goes into heat, which is why you'll need a shower after you work out. We can summarize this
 as
 \begin{equation*}
-\text{food energy} \rightarrow \text{gravitational energy} + \text{heat} \qquad .
+\text{food energy} \rightarrow \text{gravitational energy} + \text{heat}\eqquad.
 \end{equation*}
 \end{eg}
 
@@ -1191,7 +1191,7 @@ Isaac Newton, by working backwards
 from the observed motion of the planets:\footnote{Example \ref{eg:moonorbit} on page \pageref{eg:moonorbit} shows
 the type of reasoning that Newton had to go through.}
 \begin{equation*}
-        g = \frac{GM}{d^2} \qquad ,
+        g = \frac{GM}{d^2}\eqquad,
 \end{equation*}
 where $M$ is the mass of the object, $d$ is the distance from the object, and $G$ is
 a constant that is the same everywhere in the universe. This is known as Newton's
@@ -1439,7 +1439,7 @@ $c=3\times10^8$ meters per second (scientific notation for
 \begin{align*}
                 m         &=    \frac{E}{c^2}  \\
                         &= \frac{500,000}{\left(3\times10^8\right)^2} \\
-                         &=    0.000000000006\  \text{kilograms}   \qquad   .
+                         &=    0.000000000006\  \text{kilograms}\eqquad.
 \end{align*}
 (The design of the metric system is based on the meter, the kilogram, and the
 second. The joule is designed to fit into this system, so the result comes

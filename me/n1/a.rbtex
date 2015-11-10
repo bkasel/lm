@@ -101,7 +101,7 @@ Time and space as seen by one
 observer are distorted compared to another observer's perceptions if they are moving
 relative to each other. This distortion is quantified by the factor
 \begin{equation*}
-  \gamma = \frac{1}{\sqrt{1-\frac{v^2}{c^2}}} \qquad ,
+  \gamma = \frac{1}{\sqrt{1-\frac{v^2}{c^2}}}\eqquad,
 \end{equation*}
 where $v$ is the relative velocity of the two observers, and $c$ is a universal velocity
 that is the same in all frames of reference. Light travels at $c$. A clock appears to run fastest to an

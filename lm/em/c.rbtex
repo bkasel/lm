@@ -403,7 +403,7 @@ defined in the figure \figref{gamma-as-projection} to measure this unequal rate 
 With a little algebra and geometry (homework problem \ref{hw:gamma-derivation}, page \pageref{hw:gamma-derivation}),
 one can use the equal-area property to show that this ratio is given by
 \begin{equation*}
-  \mygamma = \frac{1}{\sqrt{1-v^2}} \qquad .
+  \mygamma = \frac{1}{\sqrt{1-v^2}}\eqquad.
 \end{equation*}
 If you've had good training in physics, the first thing you probably think when you look at this equation is that it must be
 nonsense, because its units don't make sense. How can we take something with units of velocity squared, and subtract it from
@@ -414,7 +414,7 @@ forms of the same thing, so instead of measuring them both in units of joules as
 one unit (such as calories) and mechanical energy in another (such as foot-pounds). In ordinary metric units, we just need
 an extra conversion factor, called $c$, and the equation becomes
 \begin{equation*}
-  \mygamma = \frac{1}{\sqrt{1-\left(\frac{v}{c}\right)^2}} \qquad .
+  \mygamma = \frac{1}{\sqrt{1-\left(\frac{v}{c}\right)^2}}\eqquad.
 \end{equation*}
 <% marg(200) %>
 <%
@@ -1105,7 +1105,7 @@ Time and space as seen by one
 observer are distorted compared to another observer's perceptions if they are moving
 relative to each other. This distortion is quantified by the factor
 \begin{equation*}
-  \mygamma = \frac{1}{\sqrt{1-\frac{v^2}{c^2}}} \qquad ,
+  \mygamma = \frac{1}{\sqrt{1-\frac{v^2}{c^2}}}\eqquad,
 \end{equation*}
 where $v$ is the relative velocity of the two observers, and $c$ is a universal velocity
 that is the same in all frames of reference. Light travels at $c$. A clock appears to run fastest to an

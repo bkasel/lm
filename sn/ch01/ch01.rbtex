@@ -815,7 +815,7 @@ it appears to him, standing on the ground?
         other, and the constant $b$ tells us how far apart the origins of the two coordinate
         systems were at $t=0$. The velocities are different in the two frames of reference:
         \begin{equation*}
-             \frac{\der x_2}{\der t} = \frac{\der x_1}{\der t} + u \qquad ,
+             \frac{\der x_2}{\der t} = \frac{\der x_1}{\der t} + u\eqquad,
         \end{equation*}
         Suppose, for example, frame 1 is defined from the sidewalk, and frame 2 
         is fixed to a float in a parade that is moving to our left at a velocity
@@ -825,7 +825,7 @@ it appears to him, standing on the ground?
 
         For acceleration, however, we have
         \begin{equation*}
-             \frac{\der^2 x_2}{\der t^2} = \frac{\der^2 x_1}{\der t^2} \qquad ,
+             \frac{\der^2 x_2}{\der t^2} = \frac{\der^2 x_1}{\der t^2}\eqquad,
         \end{equation*}
         since the derivative of the constant $u$ is zero. Thus an acceleration, unlike
         a velocity, can have

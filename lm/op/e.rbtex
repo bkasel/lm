@@ -69,7 +69,7 @@ from each slit. The angles of the maxima (brightest points
 in the bright fringes) and minima (darkest points in the
 dark fringes) are given by the equation
 \begin{equation*}
-        \frac{\lambda}{d} = \frac{\sin\theta}{m} \qquad ,
+        \frac{\lambda}{d} = \frac{\sin\theta}{m}\eqquad,
 \end{equation*}
 where $d$ is the center-to-center spacing of the slits, and
 $m$ is an integer at a maximum or an integer plus 1/2 at a minimum.

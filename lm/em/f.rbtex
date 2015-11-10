@@ -289,12 +289,12 @@ Er	& 167.3	&Mn	& 54.9	&Sb 	& 121.8 	& & \\
         Setting the total force equal to zero when the drop is at
         terminal velocity gives
         \begin{equation*}
-                   bvr^2 - mg = 0\qquad   ,
+                   bvr^2 - mg = 0\eqquad,
         \end{equation*}
         and setting the known density of oil equal to the drop's
         mass divided by its volume gives a second equation,
         \begin{equation*}
-                   \rho = \frac{m}{\frac{4}{3}\pi r^3}\qquad   .
+                   \rho = \frac{m}{\frac{4}{3}\pi r^3}\eqquad.
         \end{equation*}
         Everything in these equations can be measured directly
         except for $m$ and $r$, so these are two equations in two
@@ -545,7 +545,7 @@ Er	& 167.3	&Mn	& 54.9	&Sb 	& 121.8 	& & \\
         beam. The electric force acting on a cathode ray particle
         while it was between the plates was
         \begin{equation*}
-                        F_{elec}        =  qE      \qquad   .  
+                        F_{elec}        =  qE\eqquad.  
         \end{equation*}
         By Newton's second law, $a=F/m$, we can find
         $m/q$:
@@ -574,7 +574,7 @@ Er	& 167.3	&Mn	& 54.9	&Sb 	& 121.8 	& & \\
         allowing him to solve for the speed,
 
         \begin{equation*}
-                        v    =     \frac{E}{B}  \qquad   .  
+                        v    =     \frac{E}{B}\eqquad.  
         \end{equation*}
 
         Knowing the speed (which was on the order of 10\% of the
@@ -981,7 +981,7 @@ down without realizing that the other guy had a three-hundred-pound bag full of 
 hidden under his uniform --- he just doesn't seem to react to the collision as much as he should.
 This extra inertia is described\footnote{See p.~\pageref{rel-momentum-proof} for a proof.} by redefining momentum as
 \begin{equation*}
-        p = m \mygamma v \qquad .
+        p = m \mygamma v\eqquad.
 \end{equation*}
 At very low velocities, $\mygamma$ is close to 1, and the result is very nearly $mv$, as demanded
 by the correspondence principle. But at very high velocities, $\mygamma$ gets very big --- the
@@ -1140,7 +1140,7 @@ $c=3\times10^8$ meters per second, so converting to mass units, we have
 \begin{align*}
                 m         &=    \frac{E}{c^2}  \\
                         &= \frac{0.5\times10^6\ \junit}{\left(3\times10^8\ \munit/\sunit\right)^2} \\
-                         &=    6\times10^{-12}\  \text{kilograms}   \qquad   .
+                         &=    6\times10^{-12}\  \text{kilograms}\eqquad.
 \end{align*}
 The change in mass is too small to measure with any
 practical technique. This is because the square of the speed
@@ -1157,7 +1157,7 @@ produced by annihilating 1 kg of matter with 1 kg of antimatter is
 \begin{align*}
  E &= mc^2\\
    &= (2\ \kgunit)\left(3.0\times10^8\ \munit/\sunit\right)^2\\
-   &= 2\times10^{17}\ \junit \qquad ,
+   &= 2\times10^{17}\ \junit\eqquad,
 \end{align*}
 which is on the same order of magnitude as a day's energy consumption for the
 entire world's population!
@@ -1187,7 +1187,7 @@ because a material object can't be made to move at the speed of light. However, 
 question of just how much mass-energy a moving object has. We know that when the object is at rest, it
 has no kinetic energy, so its mass-energy is simply equal to the energy-equivalent of its mass, $mc^2$,
 \begin{equation*}
-  \massenergy = mc^2 \ \text{when}\ v=0 \qquad ,
+  \massenergy = mc^2 \ \text{when}\ v=0\eqquad,
 \end{equation*}
 where the symbol $\massenergy$ (cursive ``E'') stands for mass-energy. The point of using the new symbol is simply
 to remind ourselves that we're talking about relativity, so an object at rest has $\massenergy=mc^2$, not
@@ -1202,14 +1202,14 @@ mass-energy. We can continue this process for as long as we like, and the amount
 will increase without limit. We therefore conclude that an object's mass-energy approaches infinity
 as its speed approaches the speed of light,
 \begin{equation*}
-  \massenergy \rightarrow \infty\ \text{when}\ v \rightarrow c \qquad .
+  \massenergy \rightarrow \infty\ \text{when}\ v \rightarrow c\eqquad.
 \end{equation*}
 
 \index{mass-energy!of a moving particle}
 Now that we have some idea what to expect, what is the actual equation for the mass-energy? 
 As proved in my book \emph{Simple Nature}, it is
 \begin{equation*}
-  \massenergy =m\mygamma c^2 \qquad .
+  \massenergy =m\mygamma c^2\eqquad.
 \end{equation*}
 
 <% self_check('mass-energy',<<-'SELF_CHECK'
@@ -1238,13 +1238,13 @@ kinetic energy,
 \begin{align*}
   KE   &= \massenergy(v)-\massenergy(v=0) \\
        &= m\mygamma c^2 - m c^2 \\
-       &= m(\mygamma-1)c^2 \qquad .
+       &= m(\mygamma-1)c^2\eqquad.
 \end{align*}
 In example \ref{eg:gamma-for-low-v} on page \pageref{eg:gamma-for-low-v}, we found
 $\mygamma\approx 1+v^2/2c^2$, so
 \begin{align*}
   KE   &\approx m(1+\frac{v^2}{2c^2}-1)c^2 \\
-       &= \frac{1}{2}mv^2 \qquad ,
+       &= \frac{1}{2}mv^2\eqquad,
 \end{align*}
 which is the nonrelativistic expression. As demanded by the correspondence principle,
 relativity agrees with nonrelativistic physics at speeds that are small compared to

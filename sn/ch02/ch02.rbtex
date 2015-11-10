@@ -288,7 +288,7 @@ What important insight was he missing?
                 \text{gravitational energy}  \rightarrow & \text{kinetic energy} \\
                  \rightarrow & \text{heat energy} \\
                         & + \text{sound energy} \\
-                         & + \text{energy of partial evaporation} \qquad .
+                         & + \text{energy of partial evaporation}\eqquad.
         \end{align*}
 <% marg(50) %>
 <%
@@ -333,7 +333,7 @@ What important insight was he missing?
         laws from the conservation laws in chapter \ref{ch:3}. From the modern perspective, conservation
         laws are more fundamental, because they apply in cases where Newton's laws don't.}  is
         \begin{equation*}
-                K = \frac{1}{2}mv^2 \qquad \text{[kinetic energy]} \qquad .
+                K = \frac{1}{2}mv^2 \qquad \text{[kinetic energy]}\eqquad.
         \end{equation*}
 <%
   fig(
@@ -422,7 +422,7 @@ What important insight was he missing?
                  Conservation of energy tells us
                 \begin{align*}
                         0        &=        \Delta{} E \\
-                                        &=        \Delta{} K+\Delta{} E_{heat} \qquad .
+                                        &=        \Delta{} K+\Delta{} E_{heat}\eqquad.
                 \end{align*}
                 In the plane's frame of reference, the air's initial velocity is
                 $v_i$=270 m/s, and its final velocity is zero, so the change
@@ -430,7 +430,7 @@ What important insight was he missing?
                 \begin{align*}
                         \Delta{} K        &=         K_{f} -  K_{i} \\
                                                 &=        0-\zu{(1/2)} m{ v_{i}}^2 \\
-                                                &=        -\zu{(1/2)} m{ v_i}^2 \qquad .
+                                                &=        -\zu{(1/2)} m{ v_i}^2\eqquad.
                 \end{align*}
                 Assuming that the specific heat of air is roughly independent of
                 temperature (which is why the number was stated with the word
@@ -440,7 +440,7 @@ What important insight was he missing?
                         0 = -\frac{1}{2} m{ v_{i}}^2+ mc\Delta{} T 
                 \end{equation*}
                 \begin{equation*}
-                        \frac{1}{2}{ v_{i}}^2        =  c\Delta{} T \qquad .
+                        \frac{1}{2}{ v_{i}}^2        =  c\Delta{} T\eqquad.
                 \end{equation*}
                 Note how the mass cancels out. This is a big advantage of solving problems
                 algebraically first, and waiting until the end to plug in numbers. With a purely
@@ -452,7 +452,7 @@ What important insight was he missing?
                 for simplicity, we find
                 \begin{align*}
                         \Delta{} T & = \frac{ v^2}{2 c} \\
-                                        &\approx 40^{\circ}\zu{C} \qquad .
+                                        &\approx 40^{\circ}\zu{C}\eqquad.
                 \end{align*}
                 The passengers would be boiled alive if not for the refrigeration. The
                 first
@@ -585,12 +585,12 @@ What important insight was he missing?
         Writing $y$ for the height, and $g$ for the
         overall constant of proportionality, we have
         %\begin{multline*}%
-        %        \shoveright{U_g=mgy \qquad . \qquad \text{[gravitational energy;  $x$=height;}}\\ 
+        %        \shoveright{U_g=mgy\eqquad. \qquad \text{[gravitational energy;  $x$=height;}}\\ 
         %                \text{only accurate within a small range of heights]}%
         %\end{multline}%
         \begin{equation*}
                 \begin{array}{cr}
-                        U_g=mgy \qquad . & \text{[gravitational energy;  $y$=height; only ac-} \\
+                        U_g=mgy\eqquad. & \text{[gravitational energy;  $y$=height; only ac-} \\
                                 & \text{curate within a small range of heights]}
                 \end{array}
         \end{equation*}
@@ -615,7 +615,7 @@ What important insight was he missing?
                                                         + mgy_f - mgy_i  
                                                                                         & \text{(because $K_i$=0)} \\
                                         &=        \frac{1}{2} m { v_f }^2
-                                                        + mg \Delta y  \qquad , 
+                                                        + mg \Delta y\eqquad, 
                                                                                         & \text{($\Delta y<$0)} 
                         \intertext{so}
                          v         &=        \sqrt{-2 g \Delta y} \\
@@ -654,7 +654,7 @@ What important insight was he missing?
                                 \left(\frac{\der{}U}{\der{}y}\right)% 
                                 \left(\frac{\der{}y}{\der{}t}\right) \\
                         &= \left(\frac{1}{mv}\right)(-1)(mg)(v) \\
-                        &= -g \qquad ,
+                        &= -g\eqquad,
         \end{align*}
         where I've calculated $\der{}v/\der{}K$ as $1/(\der{}K/\der{}v)$, and $\der{}K/\der{}U=-1$
         can be found by differentiating $K+U=\text{(constant)}$ to give $\der{}K+\der{}U=0$.\footnote{There
@@ -667,7 +667,7 @@ What important insight was he missing?
                 \frac{\junit}{\kgunit\unitdot\munit} = 
                                 \frac{\kgunit\unitdot\munit^2/\sunit^2}
                                 {\kgunit\unitdot\munit} \\
-                        = \frac{\munit}{\sunit^2} \qquad ,
+                        = \frac{\munit}{\sunit^2}\eqquad,
         \end{equation*}
         and therefore the strength of the gravitational field near the earth's surface
          can just as well be stated as $10\ \munit/\sunit^2$.
@@ -778,7 +778,7 @@ What important insight was he missing?
         by $\rho V' gb=\rho g b^3\Delta y$, so the net change in energy is
         \begin{align*}
                 \Delta  E        &=  mg\Delta y-\rho g b^3\Delta y \\
-                                        &= ( m-\rho V) g\Delta y \qquad .
+                                        &= ( m-\rho V) g\Delta y\eqquad.
         \end{align*}
         In other words, it's as if the mass of the box had been reduced by an amount equal
         to the fluid that otherwise would have occupied that volume. This is known as Archimedes'
@@ -826,7 +826,7 @@ What important insight was he missing?
         \begin{align*}
                 \Delta U                &=        \Delta U_{1} + \Delta U_{2} \\
                         &=         g( m_1\Delta y_{1} + m_{2}\Delta y_2 )
-                                        \qquad ,
+\eqquad,
         \end{align*}
         but $\Delta y_1$ and $\Delta y_2$ have opposite signs and
         are in the proportion of two to one,
@@ -1068,18 +1068,18 @@ What is wrong with the following definitions of $g$?\\
         frame of reference. These coordinates are related to the ground-fixed coordinates
         $(x,y)$ by the equations
         \begin{equation*}
-                x=x^*+vt \qquad and \qquad y=y^* \qquad ,
+                x=x^*+vt \qquad and \qquad y=y^*\eqquad,
         \end{equation*}
         where $v$ is the velocity of one
         frame with respect to the other. We therefore have
         \begin{equation*}
-                x=vt \ , \qquad y=\frac{1}{2}gt^2 \qquad ,
+                x=vt \ , \qquad y=\frac{1}{2}gt^2\eqquad,
         \end{equation*}
         in our
         original frame of reference. Eliminating $t$, we can see that this has the
         form of a parabola:
         \begin{equation*}
-                y=\frac{g}{2v^2}x^2 \qquad .
+                y=\frac{g}{2v^2}x^2\eqquad.
         \end{equation*}
 
         <% self_check('cardiag',<<-'SELF_CHECK'
@@ -1290,7 +1290,7 @@ def time3(h,n):
         There are infinitely many possible curves for which we could calculate the
         time, but let's look at third-order polynomials,
         \begin{equation*}
-                y = c_1x+c_2x^2+c_3x^3 \qquad ,
+                y = c_1x+c_2x^2+c_3x^3\eqquad,
         \end{equation*}
         where we require $c_3=(b-c_1a-c_2a^2)/a^3$ in order to make the curve
         pass through the point $(a,b)$. The Python program, below, is not much
@@ -1546,7 +1546,7 @@ def timeb(a,b,c1,c2,n):
         $y\approx{}r-(1/2r)x^2$. Setting this equal to the equation of the parabola,
         we have $g/2v^2=(1/2r)$, or
         \begin{equation*}
-                v = \sqrt{gr} \qquad \text{[condition for a circular orbit]} \qquad .
+                v = \sqrt{gr} \qquad \text{[condition for a circular orbit]}\eqquad.
         \end{equation*}
 
         \begin{eg}{Low-earth orbit}
@@ -1630,7 +1630,7 @@ def timeb(a,b,c1,c2,n):
                 \int{\der{}U}        &= \int{m_2g_1\der{}r}\\
                 U                        &= m_2\int{g_1\der{}r}\\
                 U                        &\propto m_1m_2\int{\frac{1}{r^2}\der{}r}\\
-                U                        &\propto -\frac{m_1m_2}{r} \qquad ,
+                U                        &\propto -\frac{m_1m_2}{r}\eqquad,
         \end{align*}
         where we're free to take the constant of integration to be equal to zero, since
         gravitational energy is never a well-defined quantity in absolute terms. Writing $G$
@@ -1684,7 +1684,7 @@ def timeb(a,b,c1,c2,n):
         \begin{equation*}
                 -2\frac{ GMm}{ r_{BA}}  -2\frac{ GMm}{ r_{BD}} =
                         -2\frac{ GMm}{ r_{CA}}  -2\frac{ GMm}{ r_{CD}}
-                        + 2 K \qquad ,
+                        + 2 K\eqquad,
         \end{equation*}
         where $M$ is the mass of one of the large balls, $m$ is the mass of one of the small ones,
         and the factors of two, which will cancel, occur because every energy is mirrored on the
@@ -1751,7 +1751,7 @@ def timeb(a,b,c1,c2,n):
                 \frac{1}{2} mv^2-\frac{ GMm}{ r_{i}} &=
                         -\frac{ GMm}{ r_{f}} \\
                 \frac{1}{2} v^2-\frac{ GM}{ r_{i}} &=
-                        -\frac{ GM}{ r_f} \qquad ,
+                        -\frac{ GM}{ r_f}\eqquad,
         \end{align*}
         where $M$ is the mass of the sun, $m$ is the (irrelevant) mass of the probe, and
         $r_f$ is the distance from the sun of the hypothetical turnaround point.
@@ -1855,20 +1855,20 @@ their surfaces rather than their centers?
         The gravitational energy of the ring interacting with mass $m$ is therefore
         \begin{align*}
                 \der{}U        &= -\frac{Gm\der{}M}{r} \\
-                                &= -2\pi{}G\rho{}b^2hm\frac{\sin{}\theta\der{}\theta}{r} \qquad .
+                                &= -2\pi{}G\rho{}b^2hm\frac{\sin{}\theta\der{}\theta}{r}\eqquad.
         \intertext{Integrating both sides, we find the total gravitational energy of the shell:}
                 U                &= -2\pi{}G\rho{}b^2hm\int_0^\pi{\frac{\sin{}\theta\der{}\theta}{r}}
         \end{align*}
         The integral has a mixture of the variables $r$ and $\theta$, which are related
         by the law of cosines,
         \begin{equation*}
-                r^2        =        b^2 + s^2 - 2bs\cos\theta \qquad ,
+                r^2        =        b^2 + s^2 - 2bs\cos\theta\eqquad,
         \end{equation*}
         and to evaluate the integral, we need to get everything in terms of either $r$ and $\der{}r$
         or $\theta$ and $\der{}\theta$. The relationship
         between the differentials is found by differentiating the law of cosines,
         \begin{equation*}
-                2r\der{}r        =        2bs\sin\theta\der\theta \qquad ,
+                2r\der{}r        =        2bs\sin\theta\der\theta\eqquad,
         \end{equation*}
         and since $\sin\theta\der\theta$ occurs in the integral, the easiest path
         is to substitute for it, and get everything in terms of $r$ and $\der{}r$:
@@ -1979,15 +1979,15 @@ their surfaces rather than their centers?
         Under the assumption of constant density,
         this mass is related to the total mass of the earth by
         \begin{equation*}
-                \frac{ M_{< r}}{ M} = \frac{ r^3}{\zu{b}^3} \qquad ,
+                \frac{ M_{< r}}{ M} = \frac{ r^3}{\zu{b}^3}\eqquad,
         \end{equation*}
         and by the same reasoning as in example \ref{eg:weighearth},
         \begin{equation*}
-                 g = \frac{ GM_{< r}}{ r^2} \qquad ,
+                 g = \frac{ GM_{< r}}{ r^2}\eqquad,
         \end{equation*}
         so
         \begin{equation*}
-                 g = \frac{ GMr}{ b^3} \qquad .
+                 g = \frac{ GMr}{ b^3}\eqquad.
         \end{equation*}
         In other words, the gravitational field interpolates linearly between zero at
         $r=0$ and its ordinary surface value at $r= b$.
@@ -2029,12 +2029,12 @@ their surfaces rather than their centers?
         \begin{align*}
                  E        &= -\frac{ GM_{e} m}{ r}
                                         -\frac{ GM_{m} m}{ r_{m}- r}
-                                        +\frac{1}{2} mv^2 \qquad ,
+                                        +\frac{1}{2} mv^2\eqquad,
         \intertext{but since everything is proportional to the mass of the ship,  m,
                 we can divide it out}
                 \frac{ E}{ m}        &= -\frac{ GM_{e}}{ r}
                                         -\frac{ GM_{m}}{ r_{m}- r}
-                                        +\frac{1}{2} v^2 \qquad ,
+                                        +\frac{1}{2} v^2\eqquad,
         \end{align*}
         and the energy variables in the program with names like \verb-e-, \verb-k-, 
         and \verb-u- are actually energies per unit mass. The program is a straightforward
@@ -2423,7 +2423,7 @@ on this.
         derivative is a measure of curvature. We write $k$ for the second derivative
         of the energy at an equilibrium point,
         \begin{equation*}
-                \frac{\der{}^2U}{\der{}x^2}(0) = k \qquad .
+                \frac{\der{}^2U}{\der{}x^2}(0) = k\eqquad.
         \end{equation*}
         Physically, $k$ is a measure of stiffness. For example, the heavy-duty springs
         in a car's shock absorbers would have a high value of $k$. It is often referred to as
@@ -2596,11 +2596,11 @@ warning, K= -5.7482907323e-12 <0
         $(L/b)x$, so the energy in the spring is
         \begin{align*}
                 U        &= \frac{1}{2}k\left(\frac{L}{b}x\right)^2 \\
-                        &= \frac{kL^2}{2b^2}x^2 \qquad , \\
+                        &= \frac{kL^2}{2b^2}x^2\eqquad, \\
         \end{align*}
         and the $k$ we have to put in $T=2\pi\sqrt{m/k}$ is
         \begin{equation*}
-                \frac{\der^2 U}{\der x^2}        =  \frac{kL^2}{b^2} \qquad . \\
+                \frac{\der^2 U}{\der x^2}        =  \frac{kL^2}{b^2}\eqquad. \\
         \end{equation*}
         The result is
         \begin{align*}
@@ -2621,7 +2621,7 @@ warning, K= -5.7482907323e-12 <0
         isn't a spring constant here at all, is
         \begin{align*}
                  k        &= \frac{\zu{d}^2 U}{\zu{d} y^2} \\
-                                &= 2\rho gA \qquad .
+                                &= 2\rho gA\eqquad.
         \end{align*}
         This is an interesting example, because $k$ can be calculated without any
         approximations, but the kinetic energy requires an approximation, because we
@@ -2635,7 +2635,7 @@ warning, K= -5.7482907323e-12 <0
         \begin{align*}
                  T        &= 2\pi\sqrt{ m/ k} \\
                                 &= 2\pi\sqrt{\frac{\rho LA}{2\rho gA}} \\
-                                &= 2\pi\sqrt{\frac{ L}{2 g}} \qquad .
+                                &= 2\pi\sqrt{\frac{ L}{2 g}}\eqquad.
         \end{align*}
         \end{eg}
 

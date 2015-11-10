@@ -252,7 +252,7 @@ Criticize the following statement: ``There are two types of
         Coulomb's law: The magnitude of the force acting between pointlike charged
         objects at a center-to-center distance $r$ is given by the equation
         \begin{equation*}
-                        |\vc{F}|        =    k\frac{|q_1||q_2|}{r^2}  \qquad   ,  
+                        |\vc{F}|        =    k\frac{|q_1||q_2|}{r^2}\eqquad,  
         \end{equation*}
         where the constant $k$ equals $9.0\times10^9\ \zu{N}\unitdot\zu{m}^2/\zu{C}^2$.
         The force is attractive if the charges are of different
@@ -824,12 +824,12 @@ What would have happened if the tape was negatively charged?
         Setting the total force equal to zero when the drop is at
         terminal velocity gives
         \begin{equation*}
-                   bvr^2 - mg = 0\qquad   ,
+                   bvr^2 - mg = 0\eqquad,
         \end{equation*}
         and setting the known density of oil equal to the drop's
         mass divided by its volume gives a second equation,
         \begin{equation*}
-                   \rho = \frac{m}{\frac{4}{3}\pi r^3}\qquad   .
+                   \rho = \frac{m}{\frac{4}{3}\pi r^3}\eqquad.
         \end{equation*}
         Everything in these equations can be measured directly
         except for $m$ and $r$, so these are two equations in two
@@ -860,7 +860,7 @@ What would have happened if the tape was negatively charged?
         electrical force experienced by a pointlike charged object
         at a certain point in space is proportional to its charge,
         \begin{equation*}
-                   \frac{F}{q} = \text{constant} \qquad   .
+                   \frac{F}{q} = \text{constant}\eqquad.
         \end{equation*}
         With a given amount of charge on the plates, this constant
         could be determined for instance by discarding the oil drop,
@@ -1113,7 +1113,7 @@ Is money quantized? What is the quantum of money?
         beam. The electric force acting on a cathode ray particle
         while it was between the plates would be proportional to its charge,
         \begin{equation*}
-                        F_{elec}        = \text{(known constant)} \cdot q      \qquad   .  
+                        F_{elec}        = \text{(known constant)} \cdot q\eqquad.  
         \end{equation*}
 
         Application of Newton's second law, $a=F/m$, would allow
@@ -1144,7 +1144,7 @@ Is money quantized? What is the quantum of money?
         allowing him to solve for the velocity,
 
         \begin{equation*}
-                        v    =     \frac{\text{(known constant)}}{\text{(known constant \#2)}}  \qquad   .  
+                        v    =     \frac{\text{(known constant)}}{\text{(known constant \#2)}}\eqquad.  
         \end{equation*}
 
         Knowing the velocity (which was on the order of 10\% of the
