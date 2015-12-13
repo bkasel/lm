@@ -101,7 +101,7 @@ wave speed is different.
 <%
   fig(
     'circular-reflection',
-    %q{Circular water waves are reflected from a boundary on the left.}
+    %q{Circular water waves are reflected from a boundary on the top.}
   )
 %>
 \spacebetweenfigs
@@ -1025,6 +1025,16 @@ individual overtones.
     }
   )
 %>
+\spacebetweenfigs
+<%
+  fig(
+    'add-sine-and-square',
+    %q{%
+      Sine waves add to make
+      sine waves. Other functions don't have this property.
+    }
+  )
+%>
 <% end_marg %>
 First, the relative strengths of the overtones is an
 important part of the personality of a sound, called its
@@ -1111,14 +1121,11 @@ corresponds to raising the pitch by an octave. The technique can be used
 in order to make it easier to play high notes in rapid passages, or for
 its own sake, because of the change in timbre.
 \end{eg}
-<% marg(180) %>
+<% marg(-300) %>
 <%
   fig(
-    'add-sine-and-square',
-    %q{%
-      Sine waves add to make
-      sine waves. Other functions don't have this property.
-    }
+    'salamander',
+    %q{A salamander crawls across a person's palm. Its spine oscillates as a standing wave.}
   )
 %>
 \spacebetweenfigs
@@ -1242,7 +1249,20 @@ greater will its frequency be?
 <% end_marg %>
 
 <% end_sec() %>
-<% end_sec() %>\begin{summary}
+\startdq
+
+\begin{dq}
+Figure \figref{salamander} on p.~\pageref{fig:salamander} shows the salamander in the salamander's
+frame of reference, so that the palm moves. In the palm's frame, would this be a traveling wave?
+Would the worm in example \ref{eg:worm} on p.~\pageref{eg:worm} execute a standing wave in its
+own frame? Is there anything qualitatively different about
+these two animals' patterns of motion, other than the fact that one wave is transverse
+and the other longitudinal?
+\end{dq}
+
+<% end_sec() %>
+
+\begin{summary}
 
 \begin{vocab}
 
