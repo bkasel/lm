@@ -25,6 +25,8 @@ Photo credits to NEI refer to photos from the National Eye Institute, part of th
 <% if false then toc_photo_credit("Radio telescopes","Wikimedia Commons, CC-BY-SA, user Hajor") end %>%http://commons.wikimedia.org/wiki/Image:USA.NM.VeryLargeArray.02.jpg
 <% if false then toc_photo_credit("Soap bubble","Wikimedia Commons, CC-BY-SA, user Tagishsimon") end %>%http://commons.wikimedia.org/wiki/Image:Soap_Bubble_-_foliage_background_-_iridescent_colours_-_Traquair_040801.jpg
 <% if false then toc_photo_credit("Colliding nuclei","courtesy of RHIC") end %>
+<% photo_credit("salamander","Salamander","Redrawn from an 18th century illustration by J.D.~Meyer") %>% https://commons.wikimedia.org/wiki/File:Meyer_Zeit-Vertreib_1_Tafel_054.jpg
+<% photo_credit("salamander","Hand","Redrawn from a photo by Wikimedia Commons user Evan-Amos, CC-BY-SA") %>% https://commons.wikimedia.org/wiki/File:Human-Hands-Front-Back.jpg
 <% photo_credit("machine-gun-ftl","Machine gunner's body","Redrawn from a public-domain photo by Cpl.~Sheila Brooks") %>% http://commons.wikimedia.org/wiki/File:V-22_M240_machine_gun.jpg
 <% photo_credit("machine-gun-ftl","Machine gunner's head","Redrawn from a sketch by Wenceslas Hollar, 17th century") %>% http://commons.wikimedia.org/wiki/File:Wenceslas_Hollar_-_Woman%27s_head_seen_from_behind.jpg
 <% photo_credit("c-s-wu-with-beamline","C.S.~Wu","Smithsonian Institution, believed to be public domain") %>% http://en.wikipedia.org/wiki/File:Chien-shiung_Wu_%281912-1997%29.jpg
