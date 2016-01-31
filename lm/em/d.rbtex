@@ -670,8 +670,6 @@ as they cruised past each other. Wouldn't they have to
 agree on whether B had already happened?
 \end{dq}
 
-\pagebreak
-
 \begin{dq}\label{dq:machine-gun-ftl}
 The machine-gunner in the figure sends out a spray of bullets. Suppose that the bullets are being shot into
        outer space, and that the distances traveled are trillions of miles (so that the human figure
@@ -693,6 +691,33 @@ The machine-gunner in the figure sends out a spray of bullets. Suppose that the 
     }
   )
 %>
+
+\pagebreak
+
+\begin{dq}\label{dq:galaxies-signaling}
+The graph shows three galaxies. The axes are drawn according to an observer at rest relative to
+the galaxy 2, so that that galaxy is always at the same $x$ coordinate. Events a, b, and c
+mark the points at which intelligent species in the three different galaxies develop radio technology
+and their signals begin spreading out across the universe at the speed of light. Find the events
+at which the inhabitants of galaxy 2 detect
+the signals from galaxies 1 and 3. According to 2, who developed radio
+first, 1 or 3? Sketch the position and time axes for the frame in which galaxy 3 is at rest.
+According to 3, in what order did events a, b, and c happen?
+\end{dq}
+
+<%
+  fig(
+    'galaxies-signaling',
+    %q{Discussion question \ref{dq:galaxies-signaling}.
+    },
+    {
+      'width'=>'wide',
+      'sidecaption'=>true,
+      'anonymous'=>true
+    }
+  )
+%>
+
 
 
 <% begin_sec("Induction",4,'induction') %>\index{induction}
