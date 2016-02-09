@@ -3994,7 +3994,7 @@ bounces and tumbles. [Based on an example by Kleppner and Kolenkow.]
         by lengthening the arrow by that factor, and similarly for
         division.
 
-        <% self_check('graphicalscalarmult',<<-'SELF_CHECK'
+        <% self_check('scale-vector',<<-'SELF_CHECK'
 Given vector \vc{Q} represented by an arrow
         below, draw arrows representing the vectors 1.5\vc{Q} and $-\vc{Q}$.\\
         \begin{center}\anonymousinlinefig{graphicalscalarmult}\end{center}

@@ -162,8 +162,7 @@ the correspondence principle.
 
 \enlargethispage{\baselineskip}
 
-<% begin_hw('cycloid') %>__incl(hw/cycloid)<% end_hw() %>
-<% marg(20) %>
+<% marg(-300) %>
 <%
   fig(
     'hw-cycloid',
@@ -171,6 +170,7 @@ the correspondence principle.
   )
 %>
 <% end_marg %>
+<% begin_hw('cycloid') %>__incl(hw/cycloid)<% end_hw() %>
 
 %----------- relativity
 
