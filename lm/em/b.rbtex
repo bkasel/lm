@@ -437,16 +437,7 @@ we didn't measure it.
         specific properties of the electrical interaction. We therefore expect
         energy-carrying gravitational waves to exist, and Einstein's general theory of relativity does
         describe such waves and their properties.
-        J.H. Taylor and
-        R.A. Hulse \index{Taylor, J.H.}\index{Hulse, R.A.}
-        were awarded the Nobel Prize in 1993 for giving
-        indirect evidence to confirm Einstein's prediction. They
-        discovered a pair of exotic, ultra-dense stars called
-        neutron stars orbiting one another very closely, and showed
-        that they were losing orbital energy at the rate predicted
-        by general relativity.
 
-        %
 <%
   fig(
     'ligo',
@@ -465,24 +456,18 @@ we didn't measure it.
 
 A Caltech-MIT collaboration has built
         a pair of gravitational wave detectors
-        called LIGO\index{LIGO} to search for more direct evidence of gravitational
+        called LIGO\index{LIGO} to search for direct evidence of gravitational
         waves. Since they are essentially the most sensitive
         vibration detectors ever made, they are located in quiet
-        rural areas, and signals will be compared between them to
-        make sure that  they were not due to passing trucks. The
-        project began operating at full sensitivity in 2005, and is now able to
-        detect a vibration that causes a change of $10^{-18}$ m in the distance between
+        rural areas, and signals are compared between them to
+        make sure that  they were not due to passing trucks. 
+        The signature of a gravitational wave is if the same wiggle is seen in both detectors within
+        a short time. The detectors are able to
+        sense a vibration that causes a change of $10^{-18}$ m in the distance between
         the mirrors at the ends of the 4-km vacuum tunnels. This is a thousand times
         less than the size of an atomic nucleus!
-        There is only enough funding to keep the detectors
-        operating for a few more years, so
-        the physicists can only hope that during that time,
-        somewhere in the universe, a sufficiently violent cataclysm
-        will occur to make a detectable gravitational wave. (More
-        accurately, they want the wave to arrive in our solar system
-        during that time, although it will have been produced
-        millions of years before.)
-
+        In 2016, the collaboration announced the first detection of a gravitational wave, which is believed
+        to have originated from the collision of two black holes.
 
 <% end_sec() %>
 <% end_sec() %>
