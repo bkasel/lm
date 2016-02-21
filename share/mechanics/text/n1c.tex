@@ -665,13 +665,13 @@ ever have.
 F &= m\frac{\der v}{\der t} \\
 \der v &= \frac{F}{m} \der t \\
 \int \der v &= \int \frac{F}{m} \der t\\
-v  &= -\frac{b}{m}t^{-1}+v_\zu{o}\eqquad,
+v  &= -\frac{b}{m}t^{-1}+v^*\eqquad,
 \end{align*}
-where $v_\zu{o}$ is a constant of integration.
-The given initial condition is that $v=0$ at $t=t_\zu{o}$, so we find that $v_\zu{o}=b/mt_\zu{o}$. The negative term gets closer
+where $v^*$ is a constant of integration with units of velocity.
+The given initial condition is that $v=0$ at $t=t_\zu{o}$, so we find that $v^*=b/mt_\zu{o}$. The negative term gets closer
 to zero with increasing time, so the maximum velocity is achieved by letting $t$ approach infinity. That is, the
 object will never stop speeding up, but it will also never surpass a certain speed. In the limit $t\rightarrow\infty$,
-we identify $v_\zu{o}$ as the velocity that the object will approach asymptotically.
+we identify $v^*$ as the velocity that the object will approach asymptotically.
 \end{eg}
 
 <% end_sec %>
@@ -692,7 +692,7 @@ line of motion according to $a=F_\parallel/m$,
 where $F_\parallel$ is the sum of the forces parallel to the line.
 \end{lessimportant}
 
-m4_ifelse(__me,1,[:\pagebreak[4]:],[:\vspace{10mm}:])
+m4_ifelse(__me,1,[::],[:\vspace{10mm}:])
 \begin{eg}{A coin sliding across a table}
 Suppose a coin is sliding to the right across a table, \figref{coin-no-p}, and let's choose a positive
 $x$ axis that points to the right. The coin's velocity is positive, and we expect based on 
@@ -720,7 +720,7 @@ the acceleration along the horizontal direction is the horizontal force: $a=F_1/
 
 <% end_sec() %>
 
-<% begin_sec("The relationship between mass and weight",4) %>
+<% begin_sec("The relationship between mass and weight",m4_ifelse(__me,1,[:nil:],[:4:])) %>
 \index{weight force!relationship to mass}
 
 Mass is different from weight, but they're related. An
@@ -732,7 +732,22 @@ same. Astronauts assembling the International Space Station
 in zero gravity couldn't just pitch massive modules back and
 forth with their bare hands; the modules were weightless, but not massless.
 
-<% marg(m4_ifelse(__me,1,20,55)) %>
+We have already seen the experimental evidence that when
+weight (the force of the earth's gravity) is the only force
+acting on an object, its acceleration equals the constant
+$g$, and $g$ depends on where you are on the surface of the
+earth, but not on the mass of the object. Applying Newton's
+second law then allows us to calculate the magnitude of the
+gravitational force on any object in terms of its mass:
+\begin{equation*}
+  |F_W|=mg\eqquad.
+\end{equation*}
+(The equation only gives the magnitude, i.e. the absolute
+value, of $F_W$, because we're defining $g$ as a positive
+number, so it equals the absolute value of a falling
+object's acceleration.)
+
+<% marg(300) %>
 <%
   fig(
     'double-pan-balance',
@@ -757,20 +772,6 @@ forth with their bare hands; the modules were weightless, but not massless.
   )
 %>
 <% end_marg %>
-We have already seen the experimental evidence that when
-weight (the force of the earth's gravity) is the only force
-acting on an object, its acceleration equals the constant
-$g$, and $g$ depends on where you are on the surface of the
-earth, but not on the mass of the object. Applying Newton's
-second law then allows us to calculate the magnitude of the
-gravitational force on any object in terms of its mass:
-\begin{equation*}
-  |F_W|=mg\eqquad.
-\end{equation*}
-(The equation only gives the magnitude, i.e. the absolute
-value, of $F_W$, because we're defining $g$ as a positive
-number, so it equals the absolute value of a falling
-object's acceleration.)
 
 \worked{time-to-brake}{Decelerating a car}
 
@@ -867,6 +868,8 @@ tiny rotation that would result if the accelerations of the copper and tungsten 
 different. The results were statistically consistent with zero rotation, and put an upper limit
 of $1\times10^{-9}$ on the fractional difference in acceleration $|g_\text{copper}-g_{\text{tungsten}}|/g$.
 \end{eg}
+
+m4_ifelse(__me,1,[:\pagebreak[4]:])
 
 \startdqs
 
