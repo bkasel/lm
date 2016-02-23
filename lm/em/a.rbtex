@@ -2561,15 +2561,21 @@ circuit being tested.
 
 <% begin_hw('neuron-stick') %>__incl(../../share/em-general/hw/neuron-stick)<% end_hw() %>
 
+\vfill
+
 <% begin_hw('heline') %>__incl(../../share/em-general/hw/heline)<% end_hw() %>
+
+\vfill
 
 <% begin_hw('hetriangle') %>__incl(../../share/em-general/hw/hetriangle)<% end_hw() %>
 
+\vfill
+
 <% begin_hw('hands-repulsion') %>__incl(../../share/em-general/hw/hands-repulsion)<% end_hw() %>
 
-<% begin_hw('leadbound') %>__incl(../../share/em-general/hw/leadbound)<% end_hw() %>
-
 \pagebreak
+
+<% begin_hw('leadbound') %>__incl(../../share/em-general/hw/leadbound)<% end_hw() %>
 
 <% begin_hw('muonic') %>__incl(../../share/em-general/hw/muonic)<% end_hw() %>
 
@@ -2606,6 +2612,8 @@ however, are canceled by a force from an ion on the opposite
 side of the lithium.]
 <% end_hw() %>
 
+\pagebreak
+
 <% marg(10) %>
 <%
   fig(
@@ -2613,7 +2621,15 @@ side of the lithium.]
     %q{Problem \ref{hw:croquet}.}
   )
 %>
+\spacebetweenfigs
+<%
+  fig(
+    'hw-neuroncurrent',
+    %q{Problem \ref{hw:neuroncurrent}.}
+  )
+%>
 <% end_marg %>
+
 <% begin_hw('croquet',nil,{'calc'=>true}) %> In the semifinals of an electrostatic croquet
 tournament, Jessica hits her positively charged ball,
 sending it across the playing field, rolling to the left
@@ -2628,17 +2644,7 @@ a problem by Halliday and Resnick.]\answercheck
 
 <% begin_hw('hail-an-electron-cab') %>__incl(hw/hail-an-electron-cab)<% end_hw() %>
 
-\pagebreak
-
 <% begin_hw('neuroncurrent') %>__incl(hw/neuroncurrent)<% end_hw() %>
-<% marg(80) %>
-<%
-  fig(
-    'hw-neuroncurrent',
-    %q{Problem \ref{hw:neuroncurrent}.}
-  )
-%>
-<% end_marg %>
 
 <% begin_hw('bulbresistance') %>__incl(hw/bulbresistance)<% end_hw() %>
 
@@ -2647,6 +2653,8 @@ a problem by Halliday and Resnick.]\answercheck
 <% begin_hw('drier') %>__incl(hw/drier)<% end_hw() %>
 
 <% begin_hw('pointchargevoltage') %>__incl(hw/pointchargevoltage)<% end_hw() %>
+
+\pagebreak
 
 <% begin_hw('battery-and-bulb') %>__incl(hw/battery-and-bulb)<% end_hw() %>
 
@@ -2664,6 +2672,21 @@ a problem by Halliday and Resnick.]\answercheck
     %q{A printed circuit board, like the kind referred to in problem \ref{hw:measure-on-printed-circuit}.}
   )
 %>
+\spacebetweenfigs
+<%
+  fig(
+    'hw-lpcurrent',
+    %q{An LP record, problem \ref{hw:lpcurrent}.}
+  )
+%>
+\spacebetweenfigs
+<%
+  fig(
+    'hw-nacl',
+    %q{Problem \ref{hw:vnacl}.},
+    {'suffix'=>2}
+  )
+%>
 <% end_marg %>
 <% begin_hw('measure-on-printed-circuit') %>
 <% hw_solution %> You have to do different things with a circuit to
@@ -2673,31 +2696,12 @@ which the wires are actually strips of metal inlaid on the
 surface of the board?
 <% end_hw() %>
 
-\pagebreak
-
 <% begin_hw('teardrop') %>Problem \ref{hw:teardrop} has been replaced with problem \ref{hw:lightning-rod}.<% end_hw() %>
-<% marg(90) %>
-<%
-  fig(
-    'hw-lpcurrent',
-    %q{An LP record, problem \ref{hw:lpcurrent}.}
-  )
-%>
-<% end_marg %>
 
 <% begin_hw('lpcurrent',2) %>__incl(hw/lpcurrent)<% end_hw() %>
 
 <% begin_hw('equilateralcharges') %>__incl(hw/equilateralcharges)<% end_hw() %>
 
-<% marg(0) %>
-<%
-  fig(
-    'hw-nacl',
-    %q{Problem \ref{hw:vnacl}.},
-    {'suffix'=>2}
-  )
-%>
-<% end_marg %>
 
 <% begin_hw('vnacl',2) %>
         Referring back to problem \ref{hw:nacl} on page \pageref{hw:nacl}
@@ -2713,15 +2717,27 @@ surface of the board?
 
 <% begin_hw('negative-resistance') %>__incl(hw/negative-resistance)<% end_hw() %>
 
+\pagebreak
+
 <% begin_hw('car') %>__incl(hw/car)<% end_hw() %>
+
+\vfill
 
 <% begin_hw('eel') %>__incl(hw/eel)<% end_hw() %>
 
+\vfill
+
 <% begin_hw('stove') %>__incl(hw/stove)<% end_hw() %>
+
+\pagebreak
 
 <% begin_hw('toaster') %>__incl(hw/toaster)<% end_hw() %>
 
+\vfill
+
 <% begin_hw('wiregauges') %>__incl(hw/wiregauges)<% end_hw() %>
+
+\vfill
 
 <% marg(0) %>
 <%
@@ -2730,22 +2746,28 @@ surface of the board?
     %q{Problem \ref{hw:two-switching-methods}.}
   )
 %>
-<% end_marg %>
-
-<% begin_hw('two-switching-methods') %>__incl(hw/two-switching-methods)<% end_hw() %>
-
-\pagebreak
-
-<% begin_hw('short-across-bulb') %>__incl(hw/short-across-bulb)<% end_hw() %>
-
-<% marg(50) %>
+\spacebetweenfigs
 <%
   fig(
     'hw-short-across-bulb',
     %q{Problem \ref{hw:short-across-bulb}.}
   )
 %>        
-\spacebetweenfigs
+<% end_marg %>
+
+<% begin_hw('two-switching-methods') %>__incl(hw/two-switching-methods)<% end_hw() %>
+
+\vfill
+
+<% begin_hw('short-across-bulb') %>__incl(hw/short-across-bulb)<% end_hw() %>
+
+\vfill
+
+<% begin_hw('circuit-puzzle') %>__incl(hw/circuit-puzzle)<% end_hw() %>
+
+\pagebreak
+
+<% marg(0) %>
 <%
   fig(
     'hw-messy-wires',
@@ -2754,15 +2776,18 @@ surface of the board?
 %>
 <% end_marg %>
 
-<% begin_hw('circuit-puzzle') %>__incl(hw/circuit-puzzle)<% end_hw() %>
 
 <% begin_hw('messy-wires') %>__incl(hw/messy-wires)<% end_hw() %>
 
+\vfill
+
 <% begin_hw('combineresistors') %>__incl(hw/combineresistors)<% end_hw() %>
+
+\vfill
 
 <% begin_hw('extensioncord',nil,{'calc'=>true}) %>__incl(hw/extensioncord)<% end_hw() %>
 
-\pagebreak
+\vfill
 
 <% begin_hw('combine-unequal-resistors') %>__incl(hw/combine-unequal-resistors)<% end_hw() %>
 
@@ -2770,7 +2795,8 @@ surface of the board?
 
 <% begin_hw('tetrahedron-resistors',2) %>__incl(hw/tetrahedron-resistors)<% end_hw() %>
 
-\vfill
+\pagebreak
+
 
 <% marg(65) %>
 <%
@@ -2837,7 +2863,7 @@ wires in the circuit?
 <% begin_hw('pe-of-point-charges') %>__incl(hw/pe-of-point-charges)<% end_hw() %>
 
 <% begin_hw('lightning-rod') %>__incl(hw/lightning-rod)<% end_hw() %>
-<% marg(0) %>
+<% marg(40) %>
 <%
   fig(
     'hw-disguised-parallel',
