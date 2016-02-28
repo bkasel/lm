@@ -147,6 +147,7 @@ m4_define(__hw_lm_6_baseballpitch,4)m4_dnl
 m4_define(__hw_lm_6_cannon-range,5)m4_dnl
 m4_define(__hw_lm_6_maxrange,6)m4_dnl
 m4_define(__hw_lm_6_speedbump,7)m4_dnl
+m4_define(__hw_lm_6_skee-ball,8)m4_dnl
 m4_define(__hw_lm_7_tiptotail,1)m4_dnl
 m4_define(__hw_lm_7_bangkok,2)m4_dnl
 m4_define(__hw_lm_7_walking,3)m4_dnl
@@ -737,6 +738,7 @@ m4_define(__hw_me_6_baseballpitch,3)m4_dnl
 m4_define(__hw_me_6_speedbump,4)m4_dnl
 m4_define(__hw_me_6_baseballrange,5)m4_dnl
 m4_define(__hw_me_6_tossup,6)m4_dnl
+m4_define(__hw_me_6_skee-ball,7)m4_dnl
 m4_define(__hw_me_7_tiptotail,1)m4_dnl
 m4_define(__hw_me_7_bangkok,2)m4_dnl
 m4_define(__hw_me_7_walking,3)m4_dnl
@@ -1161,6 +1163,7 @@ m4_define(__hw_sn_3_wall-of-death,82)m4_dnl
 m4_define(__hw_sn_3_death-triangle,83)m4_dnl
 m4_define(__hw_sn_3_beer-stability,84)m4_dnl
 m4_define(__hw_sn_3_haul-bag,85)m4_dnl
+m4_define(__hw_sn_3_skee-ball,86)m4_dnl
 m4_define(__hw_sn_4_pliers,1)m4_dnl
 m4_define(__hw_sn_4_rv,2)m4_dnl
 m4_define(__hw_sn_4_therapy,3)m4_dnl

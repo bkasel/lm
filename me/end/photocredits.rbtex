@@ -18,6 +18,7 @@
 <% if false then photo_credit("iss","International Space Station","NASA") end %>
 <% if false then photo_credit("space-ship-one","Space Ship One","courtesy of Scaled Composites LLC") end %>
 \textbf{Contents} See photo credits below, referring to the places where the images appear in the main text.
+<% photo_credit("hw-skee-ball","Skee ball","Photo by Wikipedia user Joyous!, CC-BY-SA") %> % https://commons.wikimedia.org/wiki/File:Skee_Ball.JPG
 <% photo_credit("hw-posnegwork-bull","Bull","Photo by Wikimedia Commons user Bart Hiddink, CC-BY") %> % https://upload.wikimedia.org/wikipedia/commons/f/fd/Angry_Bull_in_Pasture.jpg
 <% photo_credit("eg-push-broom","Man pushing broom","Line art by the author, based on a public-domain photo by a U.S.~National Park Service employee, CC-BY licensed") %> % http://commons.wikimedia.org/wiki/File:Grain_off-loading_procedure,_workmen_using_hand_shovels_and_push_brooms_to_load_marine_leg_during_final_stages_of_off_loading_-_Buffalo_Grain_Elevators,_Buffalo,_Erie_County,_NY_HAER_NY,15-BUF,27-37.tif
 <% photo_credit("greyhound","Greyhound","Line art by the author, based on a photo by Alex Lapuerta, CC-BY licensed") %> % http://commons.wikimedia.org/wiki/File:Greyhound_racing_turn.jpg

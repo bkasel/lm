@@ -18,6 +18,7 @@
 <% if false then photo_credit("iss","International Space Station","NASA") end %>
 <% if false then photo_credit("space-ship-one","Space Ship One","courtesy of Scaled Composites LLC") end %>
 \textbf{Contents} See photo credits below, referring to the places where the images appear in the main text.
+<% photo_credit("hw-skee-ball","Skee ball","Photo by Wikipedia user Joyous!, CC-BY-SA") %> % https://commons.wikimedia.org/wiki/File:Skee_Ball.JPG
 <% photo_credit("hw-posnegwork-bull","Bull","Photo by Wikimedia Commons user Bart Hiddink, CC-BY") %> % https://upload.wikimedia.org/wikipedia/commons/f/fd/Angry_Bull_in_Pasture.jpg
 <% photo_credit("hw-car-in-mud","Man pushing car","Line art by the author, based on a photo by Wikimedia Commons user Auregann, CC-BY-SA") %> % http://commons.wikimedia.org/wiki/File:Voiture_embourb%C3%A9e.JPG
 <% photo_credit("hw-lowering-climber","Climber being lowered","Art by the author, based on photos by Wikimedia Commons users  Alexander Stohr and Absinthologue, CC-BY-SA") %> % http://commons.wikimedia.org/wiki/File:Grottes_du_Loup_-_Main_sector-Portail_Alpinisme_et_escalade_01.jpg http://commons.wikimedia.org/wiki/File:Abseilen_einer_Person.jpg

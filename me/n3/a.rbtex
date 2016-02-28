@@ -46,6 +46,19 @@ __incl(text/n3a)
 
 <% begin_hw('tossup') %>__incl(hw/tossup)<% end_hw() %>
 
+<% begin_hw('skee-ball') %>__incl(hw/skee-ball)<% end_hw() %>
+
+<%
+  fig(
+    'hw-skee-ball',
+    %q{Problem \ref{hw:skee-ball}.},
+    {
+      'width'=>'wide',
+      'sidecaption'=>true
+    }
+  )
+%>
+
 <% end_hw_sec %>
 
 

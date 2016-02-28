@@ -5828,9 +5828,28 @@ of energy. Solve the same problem using Newton's laws.
 %>
 <% end_marg %>
 
+\vfill
+
 <% begin_hw('beer-stability') %>__incl(hw/beer-stability)<% end_hw() %>
 
+\vfill
+
 <% begin_hw('haul-bag') %>__incl(hw/haul-bag)<% end_hw() %>
+
+\pagebreak
+
+<% begin_hw('skee-ball') %>__incl(hw/skee-ball)<% end_hw() %>
+
+<%
+  fig(
+    'hw-skee-ball',
+    %q{Problem \ref{hw:skee-ball}.},
+    {
+      'width'=>'wide',
+      'sidecaption'=>true
+    }
+  )
+%>
 
 <% end_hw_sec %>
 
