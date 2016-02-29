@@ -147,7 +147,6 @@ m4_define(__hw_lm_6_baseballpitch,4)m4_dnl
 m4_define(__hw_lm_6_cannon-range,5)m4_dnl
 m4_define(__hw_lm_6_maxrange,6)m4_dnl
 m4_define(__hw_lm_6_speedbump,7)m4_dnl
-m4_define(__hw_lm_6_skee-ball,8)m4_dnl
 m4_define(__hw_lm_7_tiptotail,1)m4_dnl
 m4_define(__hw_lm_7_bangkok,2)m4_dnl
 m4_define(__hw_lm_7_walking,3)m4_dnl
@@ -173,6 +172,7 @@ m4_define(__hw_lm_8_slide-uphill-with-pulley,17)m4_dnl
 m4_define(__hw_lm_8_layback,18)m4_dnl
 m4_define(__hw_lm_8_death-triangle,19)m4_dnl
 m4_define(__hw_lm_8_telephone-wire,20)m4_dnl
+m4_define(__hw_lm_8_skee-ball,21)m4_dnl
 m4_define(__hw_lm_9_mixer,1)m4_dnl
 m4_define(__hw_lm_9_circularaccelunits,2)m4_dnl
 m4_define(__hw_lm_9_loop,3)m4_dnl
@@ -738,7 +738,6 @@ m4_define(__hw_me_6_baseballpitch,3)m4_dnl
 m4_define(__hw_me_6_speedbump,4)m4_dnl
 m4_define(__hw_me_6_baseballrange,5)m4_dnl
 m4_define(__hw_me_6_tossup,6)m4_dnl
-m4_define(__hw_me_6_skee-ball,7)m4_dnl
 m4_define(__hw_me_7_tiptotail,1)m4_dnl
 m4_define(__hw_me_7_bangkok,2)m4_dnl
 m4_define(__hw_me_7_walking,3)m4_dnl
@@ -770,6 +769,7 @@ m4_define(__hw_me_8_slide-uphill-with-pulley,21)m4_dnl
 m4_define(__hw_me_8_layback,22)m4_dnl
 m4_define(__hw_me_8_death-triangle,23)m4_dnl
 m4_define(__hw_me_8_telephone-wire,24)m4_dnl
+m4_define(__hw_me_8_skee-ball,25)m4_dnl
 m4_define(__hw_me_9_circularaccelunits,1)m4_dnl
 m4_define(__hw_me_9_loop,2)m4_dnl
 m4_define(__hw_me_9_tilt-a-whirl,3)m4_dnl
