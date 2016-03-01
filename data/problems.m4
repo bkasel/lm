@@ -334,6 +334,10 @@ m4_define(__hw_lm_16_igm,7)m4_dnl
 m4_define(__hw_lm_16_cracking-gas-molecules,8)m4_dnl
 m4_define(__hw_lm_16_magdeburg,9)m4_dnl
 m4_define(__hw_lm_16_heart-efficiency,10)m4_dnl
+m4_define(__hw_lm_16_challenger-deep,11)m4_dnl
+m4_define(__hw_lm_16_fusion,12)m4_dnl
+m4_define(__hw_lm_16_half-brick,13)m4_dnl
+m4_define(__hw_lm_16_inversion-layer,14)m4_dnl
 m4_define(__hw_lm_17_shmfreq,1)m4_dnl
 m4_define(__hw_lm_17_sperm,2)m4_dnl
 m4_define(__hw_lm_17_pendulum,3)m4_dnl
@@ -1215,6 +1219,10 @@ m4_define(__hw_sn_5_fluorocarbon,7)m4_dnl
 m4_define(__hw_sn_5_airconditioner,8)m4_dnl
 m4_define(__hw_sn_5_heart-efficiency,9)m4_dnl
 m4_define(__hw_sn_5_violin-helmholtz,10)m4_dnl
+m4_define(__hw_sn_5_challenger-deep,11)m4_dnl
+m4_define(__hw_sn_5_fusion,12)m4_dnl
+m4_define(__hw_sn_5_half-brick,13)m4_dnl
+m4_define(__hw_sn_5_inversion-layer,14)m4_dnl
 m4_define(__hw_sn_6_middlec,1)m4_dnl
 m4_define(__hw_sn_6_changesinewave,2)m4_dnl
 m4_define(__hw_sn_6_reversepulse,3)m4_dnl

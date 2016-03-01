@@ -2373,5 +2373,13 @@ consistent with the second law of thermodynamics? \answercheck
 
 <% begin_hw('violin-helmholtz') %>__incl(hw/violin-helmholtz)<% end_hw() %>
 
+<% begin_hw('challenger-deep') %>__incl(hw/challenger-deep)<% end_hw() %>
+
+<% begin_hw('fusion') %>__incl(hw/fusion)<% end_hw() %>
+
+<% begin_hw('half-brick') %>__incl(hw/half-brick)<% end_hw() %>
+
+<% begin_hw('inversion-layer') %>__incl(hw/inversion-layer)<% end_hw() %>
+
 <% end_hw_sec %>
 <% end_chapter() %>

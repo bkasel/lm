@@ -1,3 +1,7 @@
+<%
+  require "../eruby_util.rb"
+%>
+
 \refstepcounter{appendixctr}\label{hwansappendix}%
 \appendix\chapter{Appendix \ref{hwansappendix}: Hints and Solutions}
 
@@ -1320,6 +1324,13 @@ little too weak (by a factor of $1.23^{1/2}=1.11$) will cause
 a fairly obvious qualitative change in the results. This is easily observed
 if you try it a few times with a pencil.
 
+
+\noindent\formatlikesubsection{Solutions for Chapter \ref{ch:thermo}}\\
+
+\hwsolnhdr{challenger-deep} m4_include(../share/answers/challenger-deep.tex)
+\hwsolnhdr{fusion} m4_include(../share/answers/fusion.tex)
+\hwsolnhdr{half-brick} m4_include(../share/answers/half-brick.tex)
+\hwsolnhdr{inversion-layer} m4_include(../share/answers/inversion-layer.tex)
 
 \noindent\formatlikesubsection{Solutions for Chapter \ref{ch:rel}}\\
 \hwsolnhdr{rel-vel-addition}

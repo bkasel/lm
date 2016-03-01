@@ -62,6 +62,8 @@ be the effect on the total entropy of the universe? Is your answer
 consistent with the second law of thermodynamics? \answercheck
 <% end_hw() %>
 
+\pagebreak
+
 <% begin_hw('centerofearth',nil,{'calc'=>true}) %>
 (a) Estimate the pressure at the center of the Earth,
 assuming it is of constant density throughout. 
@@ -92,6 +94,8 @@ magnitude.
 
 <% begin_hw('cracking-gas-molecules') %>__incl(hw/cracking-gas-molecules)<% end_hw() %>
 
+\pagebreak
+
 <%
   fig(
     'magdeburg',
@@ -104,6 +108,15 @@ magnitude.
 <% begin_hw('magdeburg') %>__incl(hw/magdeburg)<% end_hw() %>
 
 <% begin_hw('heart-efficiency') %>__incl(hw/heart-efficiency)<% end_hw() %>
+
+<% begin_hw('challenger-deep') %>__incl(hw/challenger-deep)<% end_hw() %>
+
+<% begin_hw('fusion') %>__incl(hw/fusion)<% end_hw() %>
+
+<% begin_hw('half-brick') %>__incl(hw/half-brick)<% end_hw() %>
+
+<% begin_hw('inversion-layer') %>__incl(hw/inversion-layer)<% end_hw() %>
+
 
 <% end_hw_sec %>
 <% end_chapter() %>
