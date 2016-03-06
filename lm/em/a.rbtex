@@ -2232,6 +2232,34 @@ The total power dissipated by the circuit is $I\Delta V$.
 
 <%
   fig(
+    'qbert',
+    '',
+    {
+      'width'=>'fullpage',
+      'anonymous'=>true
+    }
+  )
+%>
+        
+
+
+\begin{eg}{Two ways of handling signs}\label{eg:qbert}
+The figure above shows two ways of visualizing the loop rule and handling the signs involved.
+In panel 1, each circuit element is labeled with the voltage drop across it.
+
+In 2, the crab is a voltmeter whose reading is the voltage on the white claw
+minus the voltage on the black claw. The crab can't flip over. It can only scuttle sideways as it moves around
+the loop that we've chosen, consisting of four resistors. The sum of the four readings is zero.
+
+Panel 3 shows a visualization of the same circuit in which voltage is like height. The stick figure on the ledge
+wants to get down to the ground by doing a series of hops. He has two ways: do the 3 V drop and then the 1 V drop,
+or do the 2 V and the other 2 V. Here we treat all the voltage differences as positive numbers.
+This method works nicely if you're pretty sure for each resistor in the circuit which end is the higher
+voltage.
+\end{eg}
+
+<%
+  fig(
     'eg-close-switch',
     %q{%
       Example \ref{eg:close-switch}.
@@ -2244,6 +2272,7 @@ The total power dissipated by the circuit is $I\Delta V$.
     }
   )
 %>
+
 
 \begin{eg}{A complicated circuit}\label{eg:close-switch}
 \egquestion
