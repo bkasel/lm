@@ -392,6 +392,11 @@ up and to the left or down and to the right. Normal forces are
 repulsive, so the ball is pushing the bat away from
 itself. Therefore the ball's force is down and to the right on this diagram.
 
+\scanshdr{scale-vector}
+% ../share/../share//../../../share/answers/scale-vector.tex
+__incl(answers/scale-vector)
+
+
 \scanshdr{swing-energy}
 The dashed lines on the graph are about twice as far apart in the second cycle compared
 to the first, so the amplitude has doubled. For sufficiently small oscillations around an equilibrium
