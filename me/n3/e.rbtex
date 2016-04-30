@@ -204,7 +204,7 @@ that each group can work in parallel with the others.
 2. Each group should write its results on the board in units
 of piconewtons, retaining five significant figures of precision.
 Everyone will need to use
-the same value for the gravitational constant, $G=6.6755\times10^{-11}\ \nunit\unitdot\munit^2/\kgunit^2$.
+the same value for the gravitational constant, $G=6.6743\times10^{-11}\ \nunit\unitdot\munit^2/\kgunit^2$.
 
 3. The class will determine the vector sum and compare with
 the result that would be obtained with the shell theorem.

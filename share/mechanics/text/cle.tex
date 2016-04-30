@@ -752,12 +752,18 @@ pulling on something, torque indicates how hard we are
 twisting on it. Torque is represented by the Greek letter
 tau, $\tau $, and the rate of change of an object's angular
 momentum equals the total torque acting on it,
+m4_ifelse(__calc,1,[:%
+\begin{equation*}
+                \tau_{total}  =  \frac{\der L}{\der t}\eqquad.
+\end{equation*}
+:],[:%
 \begin{equation*}
                 \tau_{total}  =  \frac{\Delta L}{\Delta t}\eqquad.
 \end{equation*}
 (If the angular momentum does not change at a constant rate,
 the total torque equals the slope of the tangent line on a
 graph of $L$ versus $t$.)
+:])
 
 <% marg(10) %>
 <%

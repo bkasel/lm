@@ -1019,7 +1019,7 @@ colors) only if it is a sine wave.
 
 <% end_sec() %>
 <% end_sec() %>
-<% begin_sec("The Doppler effect",nil,'doppler') %>\index{Doppler effect}
+<% begin_sec("The Doppler effect",nil,'doppler') %>\index{Doppler shift}
 Figure \figref{doppler} shows the wave pattern made by the tip of a
 vibrating rod which is moving across the water. If the rod
 had been vibrating in one place, we would have seen the
