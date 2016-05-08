@@ -514,7 +514,7 @@
     },
     {
       'width'=>'wide',
-      'sidecaption'=>true,
+      'sidecaption'=>m4_ifelse(__sn,1,[:false:],[:true:]),
       'suffix'=>'b'
     }
   )
@@ -915,7 +915,7 @@
         mass-63 and mass-65 varieties.  The different mass varieties
         of a given element are called \index{isotopes}\emph{isotopes} of that element.
 
-\pagebreak
+m4_ifelse(__sn,1,[::],[:\pagebreak:])
 
         Isotopes can be named by giving the mass number as a
         subscript to the left of the chemical symbol, e.g.,
@@ -1170,7 +1170,7 @@
 
     <% end_sec('randomness') %>
   <% end_sec('strong-force') %>
-  <% begin_sec("The weak nuclear force; beta decay",4,'weak-force') %>\index{weak nuclear force}
+  <% begin_sec("The weak nuclear force; beta decay",m4_ifelse(__sn,1,[:nil:],[:4:]),'weak-force') %>\index{weak nuclear force}
 
         All the nuclear processes we've discussed so far have
         involved rearrangements of neutrons and protons, with no
