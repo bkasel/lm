@@ -1429,7 +1429,7 @@ result will be valid for any location at that distance from the center.
 \begin{align*}
 	E	&= -\frac{\der V}{\der x} \\
 		&= -\frac{\der}{\der x}\left(x^{-1}e^{-x}\right) \\
-		&= -x^{-2}e^{-x}-x^{-1}e^{-x} \\
+		&= x^{-2}e^{-x}+x^{-1}e^{-x} \\
 \end{align*}
 At small $x$, near the proton, the first term dominates, and the exponential
 is essentially 1, so we have $E\propto x^{-2}$, as we expect from the Coulomb
