@@ -347,7 +347,8 @@ to determine these two unknowns.]
 
 <% begin_hw('complex-cross-product',2) %>
 A certain function $f$ takes two vectors as inputs and gives an output that is also a vector.
-The function can be defined in such a way that it is rotationally invariant.
+The function can be defined in such a way that it is rotationally invariant, and it is also
+well defined regardless of the units of the vectors.
 It takes on the following values for the following inputs:
 \begin{align*}
 f(\hat{\vc{x}},\hat{\vc{y}})&=-\hat{\vc{z}} \\
