@@ -21,6 +21,13 @@ def slurp_file(file)
   return x[0]
 end
 
+def slurp_or_die(file)
+  x = slurp_file_with_detailed_error_reporting(file)
+  x = x[0]
+  if x.nil? then fatal_error("file #{file} not found") end
+  return x
+end
+
 # returns [contents,nil] normally [nil,error message] otherwise
 def slurp_file_with_detailed_error_reporting(file)
   begin
@@ -52,7 +59,6 @@ def get_problems_data(problems_csv) # used in order to determine which problems 
   # return value is a hash like {"mg-to-kg"=>true,...}
   # lm,0,1,calculator,0
   # book,chapter,number,label,solution
-  $stderr.print "in get_problems_data\n"
   result = {}
   csv = slurp_file(problems_csv)
   csv.split(/\n/).each { |line|
@@ -405,14 +411,25 @@ def find_fig_for_problem(prob,files)
   return [false,nil,nil]
 end
 
+def generate_chapter_header(title,path_label)
+  boilerplate = slurp_file("#{$original_dir}/../chapter_header_boilerplate.tex")
+  if boilerplate.nil? then boilerplate='' end
+  print <<-HEADER
+
+      %%%%%%%%%%% ch: #{title} %%%%%%%%%%%
+      \\chapter{#{title}}\\label{ch:#{path_label}}
+      #{boilerplate}
+    HEADER
+end
+
 def generate_content(what,depth,json,files,group,path,solutions,answers_dir)
   # depth 0=book, 1=chapter, 2=section, 3=problem group
-  debug = true
+  debug = false
   path_label = path.join('-')
   print "\\renewcommand{\\sharedfigs}{#{files}/figs}"
   if what=="text" then
     title = json["title"]
-    if depth==1 then print "\n%%%%%%%%%%% ch: #{title} %%%%%%%%%%%\n\\chapter{#{title}}\\label{ch:#{path_label}}\n" end
+    if depth==1 then print generate_chapter_header(title,path_label) end
     if depth==2 then print "\n%%%%%%%%%%% sec: #{title} %%%%%%%%%%%\n\\section{#{title}}\\label{sec:#{path_label}}\n" end
     if File.exist?("text.tex") then print slurp_file("text.tex") end
   end
@@ -422,7 +439,7 @@ def generate_content(what,depth,json,files,group,path,solutions,answers_dir)
         order = json["order"]
         k = 1
         order.each { |prob|
-          $stderr.print "prob=#{prob} group=#{group} files=#{files}\n" if debug
+          $stderr.print "        prob=#{prob} group=#{group} files=#{files}\n" if debug
           file,err = find_problem_file(prob,files)
           if file.nil? then warning(err); next end
           label = group+k.to_s
@@ -431,7 +448,7 @@ def generate_content(what,depth,json,files,group,path,solutions,answers_dir)
           $save_meta[prob] = meta
           t = clean_up_hw(filter_out_eruby(t))
           # $stderr.print "meta=#{JSON.generate(meta)}\n"
-          stars = 1 # default
+          stars = 0 # default
           if meta.key?("stars") then stars=meta["stars"] end
           print "\n\n%%%%%%%%%%%%%%%% #{prob} %%%%%%%%%%%%%%%%\n"
           print "\\begin{hw}{#{prob}}{#{stars}}{0}{#{label}}\n"
@@ -441,6 +458,10 @@ def generate_content(what,depth,json,files,group,path,solutions,answers_dir)
           has_fig,fig_file,fig_path = find_fig_for_problem(prob,files)
           if has_fig then
             print "\\fignarrow{#{fig_file}}{}{Problem \\ref{hw:#{prob}}.}\n"
+            if $credits.key?(fig_file) then
+              description,credit = $credits[fig_file]
+              $credits_tex = $credits_tex + "\\cred{#{fig_file}}{#{description}}{#{credit}}"
+            end
           end
           k = k+1
         }
@@ -471,7 +492,7 @@ end
 
 def do_stuff(what,depth,files,group,path,solutions,answers_dir) # recursive
   # depth 0=book, 1=chapter, 2=section, 3=problem group
-  debug = true
+  debug = false
   indent = "  "*depth
   $stderr.print "#{indent}what=#{what}, depth=#{depth}\n" if debug
   json = get_json_data_from_file_or_die("this.config")
@@ -513,16 +534,22 @@ end
 
 def main()
   $original_dir = Dir.getwd
+  $credits_tex = "\\input{../credits_header.tex}"
+  $credits = get_json_data_from_file_or_die($original_dir+"/../photocredits.json")
   $save_meta = {}
+  book_config = get_json_data_from_file_or_die("#{$original_dir}/this.config")
+  title = book_config["title"]
   solutions = get_problems_data($original_dir+"/../../data/problems.csv")
   answers_dir = $original_dir+"/../../share/answers"
   print <<-'TOP'
     \documentclass{problems}
     \begin{document}
     TOP
+  print slurp_or_die($original_dir+"/front_matter.tex").gsub!(/__title__/) {title}
   ["text","hints","answers"].each { |what| # there is also "problems", which is triggered after the text for a chapter
     do_stuff(what,0,'','',[],solutions,answers_dir)
   }
+  print $credits_tex
   print <<-'BOTTOM'
     \input{../postamble.tex}
     \end{document}
