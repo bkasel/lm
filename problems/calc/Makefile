@@ -9,6 +9,7 @@ TEX_INTERPRETER = pdflatex
 DO_PDFLATEX_RAW = $(TEX_INTERPRETER) -shell-escape -interaction=nonstopmode $(BOOK) >err
 
 default:
+	@make preflight
 	cp ../preamble.tex $(BOOK).m4
 	$(SCRIPTS)/generate_problems.rb >>$(BOOK).m4
 	m4 -P ../problems.m4 book.m4 $(BOOK).m4 >$(BOOK).tex
@@ -23,3 +24,6 @@ default:
 clean:
 	rm -f $(BOOK).aux $(BOOK).log err *~
 	$(RM_CLS)
+
+preflight:
+	chmod +x $(SCRIPTS)/generate_problems.rb
