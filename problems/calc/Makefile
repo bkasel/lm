@@ -21,5 +21,5 @@ default:
 	$(RM_CLS)
 
 clean:
-	rm -f $(BOOK).aux $(BOOK).log errs *~
+	rm -f $(BOOK).aux $(BOOK).log err *~
 	$(RM_CLS)
