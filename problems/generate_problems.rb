@@ -528,6 +528,7 @@ def do_stuff(what,depth,files,group,path,solutions,answers_dir) # recursive
     end
   end
   if what=="text" && depth==1 then
+    print "\\vfill\\clearpage\n"
     print "\\section*{Problems}\n"
     do_stuff("problems",depth,files,group,path,solutions,answers_dir)
     print "\\vfill" # end of chapter, prevent ugly whitespace
