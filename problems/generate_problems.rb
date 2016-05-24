@@ -387,6 +387,7 @@ def find_problem_file(prob,location)
   # if not, then look in shared directory:
   file = $original_dir+"/../../"+location+"/hw/"+prob+".tex"
   if File.exist?(file) then return [file,nil] end
+  if prob=~/\.tex$/ then return [nil,"file #{file} not found, probably because you shouldn't have included .tex in this.config"] end
   return [nil,"file #{prob}.tex not found in #{Dir.getwd} or #{$original_dir+"/../../"+location+"/hw"}"]
 end
 
@@ -529,6 +530,7 @@ def do_stuff(what,depth,files,group,path,solutions,answers_dir) # recursive
   if what=="text" && depth==1 then
     print "\\section*{Problems}\n"
     do_stuff("problems",depth,files,group,path,solutions,answers_dir)
+    print "\\vfill" # end of chapter, prevent ugly whitespace
   end
 end
 
