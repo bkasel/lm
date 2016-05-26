@@ -400,16 +400,35 @@ def extract_meta(t)
   return h
 end
 
-def find_fig_for_problem(prob,files)
-  dir = files+"/figs"
+def find_fig_file_in_dir(dir,f)
   ["png","jpg","pdf"].each { |type|
-    ['','hw-'].each { |prefix|
-      f = "#{prefix}#{prob}"
-      g = $original_dir+"/../../#{dir}/#{f}.#{type}"
-      if File.exist?(g) then return [true,f,g] end
+    g = "#{dir}/#{f}.#{type}"
+    if File.exist?(g) then return [true,f,g] end
+  }
+  return [false,nil,nil]
+end
+
+def find_fig_for_problem(prob,files) # returns [boolean,"foo","/.../.../foo.png"]
+  ['','hw-'].each { |prefix|
+    f = "#{prefix}#{prob}"
+    places = []
+    if !(files.nil?) then places.push($original_dir+"/../../"+files+"/figs") end
+    places.push($original_dir+"/../../me/end/figs") # me/end/figs has some figures for solutions
+    places.each { |dir| 
+      r = find_fig_file_in_dir(dir,f)
+      if r[0] then return r end
     }
   }
   return [false,nil,nil]
+end
+
+def find_anonymous_inline_figs(tex)
+  return tex.gsub(/\\anonymousinlinefig{([^}]*)}/) {
+    f = ''
+    find = find_fig_for_problem($1,nil)
+    if find[0] then f=find[2] end
+    "\\anonymousinlinefig{#{f}}"
+  }
 end
 
 def generate_chapter_header(title,path_label)
@@ -446,6 +465,7 @@ def generate_content(what,depth,json,files,group,path,solutions,answers_dir)
           label = group+k.to_s
           t = slurp_file(file)
           meta = extract_meta(t)
+          if $save_meta.key?(prob) then fatal_error("problem #{prob} occurs twice; second time is in prob=#{prob} group=#{group} files=#{files}") end
           $save_meta[prob] = meta
           t = clean_up_hw(filter_out_eruby(t))
           # $stderr.print "meta=#{JSON.generate(meta)}\n"
@@ -478,7 +498,7 @@ def generate_content(what,depth,json,files,group,path,solutions,answers_dir)
           if solutions[prob] || $save_meta[prob]["solution"]==1 then
             file = answers_dir+"/"+prob+".tex"
             label = group+k.to_s
-            soln = slurp_file(file)
+            soln = find_anonymous_inline_figs(slurp_file(file))
             print "\n\n%%%%%%%%%%%%%%%% solution to #{prob} %%%%%%%%%%%%%%%%\n"
             #print "solution to problem \\ref{ch:#{path[0]}}-#{label}\\label{soln:#{label}}\n"
             print "\\solnhdr{\\ref{ch:#{path[0]}}-#{label}}\\label{soln:#{label}}\n"
