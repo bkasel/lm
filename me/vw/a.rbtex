@@ -43,7 +43,7 @@ __incl(text/vwa)
 <%
   fig(
     'hw-pneumatic-spring',
-    %q{Problem \ref{hw:piston}.}
+    %q{Problem \ref{hw:piston-calculus}.}
   )
 %>
 <% end_marg %>
@@ -54,7 +54,7 @@ __incl(text/vwa)
 
 \vfill
 
-<% begin_hw('piston') %>__incl(hw/piston-calculus)<% end_hw() %>
+<% begin_hw('piston-calculus') %>__incl(hw/piston-calculus)<% end_hw() %>
 
 \pagebreak
 

@@ -26,6 +26,15 @@
 \newcommand{\fignarrow}[3]{\figraw{#2}{#1}{#3}{width=52mm}}
 %\newcommand{\fignarrow}[3]{}
 %%%%%%%%%%%%%%%%% problems %%%%%%%%%%%%%%%%%%%
+\newenvironment{hwsection}{
+    \vfill\clearpage
+    \setcounter{secnumdepth}{0}          % Don't number this section.
+    \section{Problems}
+    \setcounter{secnumdepth}{2}          % Start numbering sections again.
+}%
+{%
+    \vfill
+}
 \newcommand{\hwtriangle}{$\triangleright$}
 \newcommand{\hwsoln}{\hwaddtrailingstuff{\hwtriangle\ Solution, p. \pageref{soln:\currenthwlabel}}}
 \newcommand{\answercheck}{\hwaddtrailingstuff{\hwcheckmark}}

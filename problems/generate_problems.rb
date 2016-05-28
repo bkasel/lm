@@ -1,5 +1,9 @@
 #!/usr/bin/ruby
 
+# generate_problems.rb /path/to/spotter/dir
+# prints m4/latex output to stdout
+# as a side-effect, writes a spotter answer file to spotter.m4
+
 require 'json'
 
 def fatal_error(message)
@@ -442,7 +446,7 @@ def generate_chapter_header(title,path_label)
     HEADER
 end
 
-def generate_content(what,depth,json,files,group,path,solutions,answers_dir)
+def generate_content(what,depth,json,files,group,path,solutions,answers_dir,counters)
   # depth 0=book, 1=chapter, 2=section, 3=problem group
   debug = false
   path_label = path.join('-')
@@ -484,6 +488,10 @@ def generate_content(what,depth,json,files,group,path,solutions,answers_dir)
               $credits_tex = $credits_tex + "\\cred{#{fig_file}}{#{description}}{#{credit}}"
             end
           end
+          if !($spotter_dir.nil?) && File.exist?("#{$spotter_dir}/xml/#{prob}.xml") then
+            $spotter1 = $spotter1 + "<num id=\"#{prob}\" label=\"#{label}\"/>\n"
+            $spotter2 = $spotter2 + "m4_include(xml/#{prob}.xml)\n"
+          end
           k = k+1
         }
       end
@@ -511,9 +519,10 @@ def generate_content(what,depth,json,files,group,path,solutions,answers_dir)
   end
 end
 
-def do_stuff(what,depth,files,group,path,solutions,answers_dir) # recursive
+def do_stuff(what,depth,files,group,path,solutions,answers_dir,counters) # recursive
   # depth 0=book, 1=chapter, 2=section, 3=problem group
   debug = false
+  counters[depth+1] = 0 # e.g., if depth=0 then set the chapter number to 0
   indent = "  "*depth
   $stderr.print "#{indent}what=#{what}, depth=#{depth}\n" if debug
   json = get_json_data_from_file_or_die("this.config")
@@ -521,7 +530,7 @@ def do_stuff(what,depth,files,group,path,solutions,answers_dir) # recursive
   if what=="answers" && depth==0 then
     print "\\chapter*{Answers}\n"
   end
-  generate_content(what,depth,json,files,group,path,solutions,answers_dir)
+  generate_content(what,depth,json,files,group,path,solutions,answers_dir,counters)
   if json.key?("order") then
     order = json["order"]
     if depth <= 2 then
@@ -541,42 +550,61 @@ def do_stuff(what,depth,files,group,path,solutions,answers_dir) # recursive
         g = group
         if depth==2 then g=order.key(dir) end
         path.push(dir)
-        do_stuff(what,depth+1,files,g,path,solutions,answers_dir) # recursion
+        counters[depth+1] = counters[depth+1]+1
+        do_stuff(what,depth+1,files,g,path,solutions,answers_dir,counters) # recursion
         path.pop
         Dir.chdir(save_dir)
       }
     end
   end
   if what=="text" && depth==1 then
-    print "\\vfill\\clearpage\n"
-    print "\\section*{Problems}\n"
-    do_stuff("problems",depth,files,group,path,solutions,answers_dir)
-    print "\\vfill" # end of chapter, prevent ugly whitespace
+    print "\\begin{hwsection}\n"
+    ch = counters[1]
+    $spotter1 = $spotter1+"\n\n<!-- ch #{ch}, #{json["title"]} -->\n\n"
+    $spotter2 = $spotter2+"\n\n<toc type=\"chapter\" num=\"#{ch}\" title=\"#{json["title"]}\">\n\n"
+    do_stuff("problems",depth,files,group,path,solutions,answers_dir,counters)
+    print "\\end{hwsection}\n"
+    $spotter2 = $spotter2+"\n\n</toc>\n\n"
   end
 end
 
 def main()
+  $spotter_dir = ARGV[0]
+  if !($spotter_dir.nil?) && !(Dir.exist?($spotter_dir)) then 
+    warning("spotter directory #{$spotter_dir} doesn't exist") 
+    $spotter_dir = nil
+  end
   $original_dir = Dir.getwd
   $credits_tex = "\\input{../credits_header.tex}"
   $credits = get_json_data_from_file_or_die($original_dir+"/../photocredits.json")
   $save_meta = {}
+  $spotter1 = '' # header info for spotter .xml file
+  $spotter2 = '' # body of spotter .xml file
   book_config = get_json_data_from_file_or_die("#{$original_dir}/this.config")
   title = book_config["title"]
   solutions = get_problems_data($original_dir+"/../../data/problems.csv")
   answers_dir = $original_dir+"/../../share/answers"
+  $spotter1 = slurp_or_die($original_dir+"/../spotter_header") 
+  $spotter1 = $spotter1 + "<spotter title=\"Light and Matter\">\n<log_file ext=\"log\"/>\n"
+  $spotter2 = ''
   print <<-'TOP'
     \documentclass{problems}
     \begin{document}
     TOP
   print slurp_or_die($original_dir+"/front_matter.tex").gsub!(/__title__/) {title}
   ["text","hints","answers"].each { |what| # there is also "problems", which is triggered after the text for a chapter
-    do_stuff(what,0,'','',[],solutions,answers_dir)
+    do_stuff(what,0,'','',[],solutions,answers_dir,[])
   }
   print $credits_tex
   print <<-'BOTTOM'
     \input{../postamble.tex}
     \end{document}
     BOTTOM
+  if !($spotter_dir.nil?) then
+    File.open('spotter.m4','w') { |f|
+      f.print $spotter1+$spotter2+"\n</spotter>\n"
+    }
+  end
 end
 
 main()

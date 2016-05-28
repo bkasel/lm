@@ -7,11 +7,12 @@ RM_CLS = rm -f problems.cls shaddap.sty lmmath.sty
 SCRIPTS = ..
 TEX_INTERPRETER = pdflatex
 DO_PDFLATEX_RAW = $(TEX_INTERPRETER) -shell-escape -interaction=nonstopmode $(BOOK) >err
+SPOTTER_DIR = /home/bcrowell/Documents/programming/spotter/answers
 
 default: $(SCRIPTS)/photocredits.json
 	@make preflight
 	@cp ../preamble.tex $(BOOK).m4
-	$(SCRIPTS)/generate_problems.rb >>$(BOOK).m4
+	$(SCRIPTS)/generate_problems.rb $(SPOTTER_DIR) >>$(BOOK).m4
 	m4 -P ../problems.m4 book.m4 $(BOOK).m4 >$(BOOK).tex
 	@$(GET_CLS)
 	@echo "" >errs
@@ -22,6 +23,8 @@ default: $(SCRIPTS)/photocredits.json
 	@$(DO_PDFLATEX_RAW)
 	@makeindex $(BOOK) >/dev/null 2>/dev/null
 	@$(RM_CLS)
+	@cp spotter.m4 $(SPOTTER_DIR)/$(BOOK).m4
+	@cd $(SPOTTER_DIR) ; make ; cd -
 
 post:
 	cp problems.pdf ~/Lightandmatter/problems
