@@ -446,6 +446,51 @@ def generate_chapter_header(title,path_label)
     HEADER
 end
 
+def get_meta_data_with_default(meta,key,default)
+  result = default
+  if meta.key?(key) then result=meta[key] end
+  return result
+end
+
+def generate_prob_tex(tex,prob,meta,label,solutions,file,files,counters)
+  # returns latex for the problem
+  # side-effects (when appropriate):
+  #   adds to $credits_tex
+  #   adds to spotter output in $spotter1 and $spotter2
+  stars = get_meta_data_with_default(meta,"stars",0)
+  result = <<-RESULT
+    \n\n%%%%%%%%%%%%%%%% #{prob} %%%%%%%%%%%%%%%%
+    \\begin{hw}{#{prob}}{#{stars}}{0}{#{label}}
+    #{tex}\n
+    RESULT
+  if solutions[prob] || meta["solution"]==1 then result =result+"\\hwsoln\n" end
+  result = result + "\\end{hw}\n"
+  has_fig,fig_file,fig_path = find_fig_for_problem(prob,files)
+  if has_fig then
+    result = result+"\\fignarrow{#{fig_file}}{}{Problem \\ref{hw:#{prob}}.}\n"
+    if $credits.key?(fig_file) then
+      description,credit = $credits[fig_file]
+      $credits_tex = $credits_tex + "\\cred{#{fig_file}}{#{description}}{#{credit}}"
+    end
+  end
+  if !($spotter_dir.nil?) then
+    xml_fragment = "#{$spotter_dir}/xml/#{prob}.xml"
+    check_exists = File.exist?(xml_fragment)
+    claims_check_exists = (tex =~ /\\answercheck/)
+    if check_exists then
+      $spotter1 = $spotter1 + "<num id=\"#{prob}\" label=\"#{label}\"/>\n"
+      $spotter2 = $spotter2 + "m4_include(xml/#{prob}.xml)\n"
+    end
+    if check_exists && !claims_check_exists then
+      warning("problem #{prob} has an answer check in #{xml_fragment},\n  but file #{file} doesn't have \\answercheck")
+    end
+    if !check_exists && claims_check_exists then
+      warning("for problem #{counters[1]}-#{label}, #{prob},\n  file #{file} has \\answercheck,\n  but no file #{xml_fragment} exists")
+    end
+  end
+  return result
+end
+
 def generate_content(what,depth,json,files,group,path,solutions,answers_dir,counters)
   # depth 0=book, 1=chapter, 2=section, 3=problem group
   debug = false
@@ -471,27 +516,8 @@ def generate_content(what,depth,json,files,group,path,solutions,answers_dir,coun
           meta = extract_meta(t)
           if $save_meta.key?(prob) then fatal_error("problem #{prob} occurs twice; second time is in prob=#{prob} group=#{group} files=#{files}") end
           $save_meta[prob] = meta
-          t = clean_up_hw(filter_out_eruby(t))
-          # $stderr.print "meta=#{JSON.generate(meta)}\n"
-          stars = 0 # default
-          if meta.key?("stars") then stars=meta["stars"] end
-          print "\n\n%%%%%%%%%%%%%%%% #{prob} %%%%%%%%%%%%%%%%\n"
-          print "\\begin{hw}{#{prob}}{#{stars}}{0}{#{label}}\n"
-          print t+"\n"
-          if solutions[prob] || meta["solution"]==1 then print "\\hwsoln\n" end
-          print "\\end{hw}\n"
-          has_fig,fig_file,fig_path = find_fig_for_problem(prob,files)
-          if has_fig then
-            print "\\fignarrow{#{fig_file}}{}{Problem \\ref{hw:#{prob}}.}\n"
-            if $credits.key?(fig_file) then
-              description,credit = $credits[fig_file]
-              $credits_tex = $credits_tex + "\\cred{#{fig_file}}{#{description}}{#{credit}}"
-            end
-          end
-          if !($spotter_dir.nil?) && File.exist?("#{$spotter_dir}/xml/#{prob}.xml") then
-            $spotter1 = $spotter1 + "<num id=\"#{prob}\" label=\"#{label}\"/>\n"
-            $spotter2 = $spotter2 + "m4_include(xml/#{prob}.xml)\n"
-          end
+          print generate_prob_tex(clean_up_hw(filter_out_eruby(t)),prob,meta,label,solutions,file,files,counters)
+                  # ... has side effects of adding to $credits_tex, $spotter1, and $spotter2, if appropriate
           k = k+1
         }
       end
@@ -585,7 +611,7 @@ def main()
   solutions = get_problems_data($original_dir+"/../../data/problems.csv")
   answers_dir = $original_dir+"/../../share/answers"
   $spotter1 = slurp_or_die($original_dir+"/../spotter_header") 
-  $spotter1 = $spotter1 + "<spotter title=\"Light and Matter\">\n<log_file ext=\"log\"/>\n"
+  $spotter1 = $spotter1 + "<spotter title=\"#{title}\">\n<log_file ext=\"log\"/>\n"
   $spotter2 = ''
   print <<-'TOP'
     \documentclass{problems}
@@ -602,7 +628,7 @@ def main()
     BOTTOM
   if !($spotter_dir.nil?) then
     File.open('spotter.m4','w') { |f|
-      f.print $spotter1+$spotter2+"\n</spotter>\n"
+      f.print $spotter1+"\n\n<toc_level level=\"0\" type=\"chapter\"/>"+$spotter2+"\n</spotter>\n"
     }
   end
 end

@@ -20,6 +20,7 @@ scripts/custom/enable
 */.xvpics/*
 a.a
 
+spotter.m4
 *problems.csv
 spotter_labels
 save.ref
