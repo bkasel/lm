@@ -1,6 +1,8 @@
 #!/usr/bin/ruby
 
-# generate_problems.rb /path/to/spotter/dir
+# generate_problems.rb /path/to/spotter/dir instr instr_dir
+# second arg is 0 or 1, indicates whether this is the instructor's version
+# third arg is directory where the solutions are
 # prints m4/latex output to stdout
 # as a side-effect, writes a spotter answer file to spotter.m4
 
@@ -452,11 +454,19 @@ def get_meta_data_with_default(meta,key,default)
   return result
 end
 
-def generate_prob_tex(tex,prob,meta,label,solutions,file,files,counters)
+def generate_prob_tex(prob,group,k,solutions,files,counters)
   # returns latex for the problem
   # side-effects (when appropriate):
   #   adds to $credits_tex
   #   adds to spotter output in $spotter1 and $spotter2
+  file,err = find_problem_file(prob,files)
+  if file.nil? then warning(err); return '' end
+  label = group+k.to_s
+  tex = slurp_file(file)
+  meta = extract_meta(tex)
+  if $save_meta.key?(prob) then fatal_error("problem #{prob} occurs twice; second time is in prob=#{prob} group=#{group} files=#{files}") end
+  $save_meta[prob] = meta
+  tex = clean_up_hw(filter_out_eruby(tex))
   stars = get_meta_data_with_default(meta,"stars",0)
   result = <<-RESULT
     \n\n%%%%%%%%%%%%%%%% #{prob} %%%%%%%%%%%%%%%%
@@ -491,6 +501,36 @@ def generate_prob_tex(tex,prob,meta,label,solutions,file,files,counters)
   return result
 end
 
+def generate_solution_tex(answers_dir,prob,group,k,path)
+  file = answers_dir+"/"+prob+".tex"
+  label = group+k.to_s
+  soln = find_anonymous_inline_figs(slurp_file(file))
+  result = ''
+  result = result+"\n\n%%%%%%%%%%%%%%%% solution to #{prob} %%%%%%%%%%%%%%%%\n"
+  result = result+"\\solnhdr{\\ref{ch:#{path[0]}}-#{label}}\\label{soln:#{label}}\n"
+  result = result+soln+"\n"
+  return result
+end
+
+def generate_instructor_solution_tex(answers_dir,prob,group,k,path)
+  topics = ["intro","mechanics","waves","em-dc","em-fields","em-general","optics","relativity","quantum"]
+  found = false
+  file = nil
+  topics.each { |subdir|
+    file = "#{answers_dir}/#{subdir}/#{prob}.tex"
+    if File.exist?(file) then found=true; break end
+  }
+  if !found then warning("no solution found for problem #{group}#{k}, #{prob}"); return '' end
+  label = group+k.to_s
+  soln = find_anonymous_inline_figs(slurp_file(file))
+  soln.gsub!(/\\(begin|end){soln}/) {''}
+  result = ''
+  result = result+"\n\n%%%%%%%%%%%%%%%% solution to #{prob} %%%%%%%%%%%%%%%%\n"
+  result = result+"\\solnhdr{\\ref{ch:#{path[0]}}-#{label}}\\label{soln:#{label}}\n"
+  result = result+soln+"\n"
+  return result
+end
+
 def generate_content(what,depth,json,files,group,path,solutions,answers_dir,counters)
   # depth 0=book, 1=chapter, 2=section, 3=problem group
   debug = false
@@ -502,45 +542,26 @@ def generate_content(what,depth,json,files,group,path,solutions,answers_dir,coun
     if depth==2 then print "\n%%%%%%%%%%% sec: #{title} %%%%%%%%%%%\n\\section{#{title}}\\label{sec:#{path_label}}\n" end
     if File.exist?("text.tex") then print slurp_file("text.tex") end
   end
-  if what=="problems" then
-    if depth==3 then
-      if json.key?("order") then
-        order = json["order"]
-        k = 1
-        order.each { |prob|
-          $stderr.print "        prob=#{prob} group=#{group} files=#{files}\n" if debug
-          file,err = find_problem_file(prob,files)
-          if file.nil? then warning(err); next end
-          label = group+k.to_s
-          t = slurp_file(file)
-          meta = extract_meta(t)
-          if $save_meta.key?(prob) then fatal_error("problem #{prob} occurs twice; second time is in prob=#{prob} group=#{group} files=#{files}") end
-          $save_meta[prob] = meta
-          print generate_prob_tex(clean_up_hw(filter_out_eruby(t)),prob,meta,label,solutions,file,files,counters)
+  if depth==3 then
+    if json.key?("order") then
+      order = json["order"]
+      k = 0
+      order.each { |prob|
+        k = k+1
+        if what=="problems" then
+          print generate_prob_tex(prob,group,k,solutions,files,counters)
                   # ... has side effects of adding to $credits_tex, $spotter1, and $spotter2, if appropriate
-          k = k+1
-        }
-      end
-    end
-  end
-  if what=="answers" then
-    if depth==3 then
-      if json.key?("order") then
-        order = json["order"]
-        k = 1
-        order.each { |prob|
+        end
+        if what=="answers" then
           if solutions[prob] || $save_meta[prob]["solution"]==1 then
-            file = answers_dir+"/"+prob+".tex"
-            label = group+k.to_s
-            soln = find_anonymous_inline_figs(slurp_file(file))
-            print "\n\n%%%%%%%%%%%%%%%% solution to #{prob} %%%%%%%%%%%%%%%%\n"
-            #print "solution to problem \\ref{ch:#{path[0]}}-#{label}\\label{soln:#{label}}\n"
-            print "\\solnhdr{\\ref{ch:#{path[0]}}-#{label}}\\label{soln:#{label}}\n"
-            print soln+"\n"
+            print generate_solution_tex(answers_dir,prob,group,k,path)
+            next
           end
-          k = k+1
-        }
-      end
+          if $instructor then
+            print generate_instructor_solution_tex($instr_dir,prob,group,k,path)
+          end
+        end
+      }
     end
   end
 end
@@ -600,6 +621,12 @@ def main()
     warning("spotter directory #{$spotter_dir} doesn't exist") 
     $spotter_dir = nil
   end
+  $instructor = ARGV[1]=='1' # is this the instructor's version?
+  $instr_dir = ARGV[2]
+  if $instructor && !(Dir.exist?($instr_dir)) then
+    warning("directory #{$instr_dir} doesn't exist")
+    $instructor = false
+  end
   $original_dir = Dir.getwd
   $credits_tex = "\\input{../credits_header.tex}"
   $credits = get_json_data_from_file_or_die($original_dir+"/../photocredits.json")
@@ -608,6 +635,7 @@ def main()
   $spotter2 = '' # body of spotter .xml file
   book_config = get_json_data_from_file_or_die("#{$original_dir}/this.config")
   title = book_config["title"]
+  if $instructor then title = title+", Instructor's Edition" end
   solutions = get_problems_data($original_dir+"/../../data/problems.csv")
   answers_dir = $original_dir+"/../../share/answers"
   $spotter1 = slurp_or_die($original_dir+"/../spotter_header") 
@@ -618,7 +646,8 @@ def main()
     \begin{document}
     TOP
   print slurp_or_die($original_dir+"/front_matter.tex").gsub!(/__title__/) {title}
-  ["text","hints","answers"].each { |what| # there is also "problems", which is triggered after the text for a chapter
+  stuff_to_do = ["text","hints","answers"] # there is also "problems", which is triggered after the text for a chapter
+  stuff_to_do.each { |what| 
     do_stuff(what,0,'','',[],solutions,answers_dir,[])
   }
   print $credits_tex
