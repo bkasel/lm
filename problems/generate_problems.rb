@@ -454,6 +454,19 @@ def get_meta_data_with_default(meta,key,default)
   return result
 end
 
+def die_if_bogus_xml(xml_file,prob)
+  xml = slurp_or_die(xml_file)
+  # look for, e.g., <problem id="avg-velocity-bike-ride">
+  if !(xml=~/(<problem\s+id="([^"]+)">)/) then
+    warning("file xml_file does not appear to have a <problem id=\"...\">")
+    return
+  end
+  id_inside_file = $2
+  if prob!=id_inside_file then
+    fatal_error("in file #{xml_file}, #{$1} says id is #{$2}, should be #{prob}")
+  end
+end
+
 def generate_prob_tex(prob,group,k,solutions,files,counters)
   # returns latex for the problem
   # side-effects (when appropriate):
@@ -468,9 +481,10 @@ def generate_prob_tex(prob,group,k,solutions,files,counters)
   $save_meta[prob] = meta
   tex = clean_up_hw(filter_out_eruby(tex))
   stars = get_meta_data_with_default(meta,"stars",0)
+  ch = counters[1]
   result = <<-RESULT
     \n\n%%%%%%%%%%%%%%%% #{prob} %%%%%%%%%%%%%%%%
-    \\begin{hw}{#{prob}}{#{stars}}{0}{#{label}}
+    \\begin{hw}{#{prob}}{#{stars}}{0}{#{ch}-#{label}}
     #{tex}\n
     RESULT
   if solutions[prob] || meta["solution"]==1 then result =result+"\\hwsoln\n" end
@@ -490,44 +504,60 @@ def generate_prob_tex(prob,group,k,solutions,files,counters)
     if check_exists then
       $spotter1 = $spotter1 + "<num id=\"#{prob}\" label=\"#{label}\"/>\n"
       $spotter2 = $spotter2 + "m4_include(xml/#{prob}.xml)\n"
+      die_if_bogus_xml(xml_fragment,prob)
     end
     if check_exists && !claims_check_exists then
       warning("problem #{prob} has an answer check in #{xml_fragment},\n  but file #{file} doesn't have \\answercheck")
     end
     if !check_exists && claims_check_exists then
-      warning("for problem #{counters[1]}-#{label}, #{prob},\n  file #{file} has \\answercheck,\n  but no file #{xml_fragment} exists")
+      warning("for problem #{ch}-#{label}, #{prob},\n  file #{File.expand_path(file)} has \\answercheck,\n  but no file #{xml_fragment} exists")
     end
   end
   return result
 end
 
-def generate_solution_tex(answers_dir,prob,group,k,path)
-  file = answers_dir+"/"+prob+".tex"
-  label = group+k.to_s
-  soln = find_anonymous_inline_figs(slurp_file(file))
-  result = ''
-  result = result+"\n\n%%%%%%%%%%%%%%%% solution to #{prob} %%%%%%%%%%%%%%%%\n"
-  result = result+"\\solnhdr{\\ref{ch:#{path[0]}}-#{label}}\\label{soln:#{label}}\n"
-  result = result+soln+"\n"
-  return result
+def find_instructor_solution(prob,instr_dir)
+  # returns [found,file,figs_dir]
+  found = false
+  found_file = nil
+  topics = ["intro","mechanics","waves","em-dc","em-fields","em-general","optics","relativity","quantum"]
+  topics.each { |subdir|
+    found_file = "#{instr_dir}/#{subdir}/#{prob}.tex"
+    if File.exist?(found_file) then return[true,found_file,"#{instr_dir}/#{subdir}/figs"] end
+  }
+  return [false,nil,nil]
 end
 
-def generate_instructor_solution_tex(answers_dir,prob,group,k,path)
-  topics = ["intro","mechanics","waves","em-dc","em-fields","em-general","optics","relativity","quantum"]
+def generate_solution_tex(answers_dir,prob,group,k,path,counters,instr=false,instr_dir=nil) # qwe
+  debug = false
+  $stderr.print "entering generate_solution_tex, prob=#{prob}\n" if debug
+  ch = counters[1]
   found = false
-  file = nil
-  topics.each { |subdir|
-    file = "#{answers_dir}/#{subdir}/#{prob}.tex"
-    if File.exist?(file) then found=true; break end
-  }
-  if !found then warning("no solution found for problem #{group}#{k}, #{prob}"); return '' end
+  instr_only = nil
+  file = answers_dir+"/"+prob+".tex" # student solution
+  figs_dir = nil
+  if File.exist?(file) then
+    found=true
+    instr_only = false
+  else
+    found,file,figs_dir = find_instructor_solution(prob,instr_dir)
+    instr_only = true
+  end
+  if instr && !found then warning("no solution found for problem #{ch}-#{group}#{k}, #{prob}"); return '' end
   label = group+k.to_s
-  soln = find_anonymous_inline_figs(slurp_file(file))
-  soln.gsub!(/\\(begin|end){soln}/) {''}
+  if instr_only then
+    soln = slurp_file(file)
+    # bug: doesn't handle figures in instructor's solutions; they use different macros, and files are
+    #       in a different place; when fixing this, make use of figs_dir, generated above
+  else
+    soln = find_anonymous_inline_figs(slurp_file(file))
+  end
+  # soln.gsub!(/\\(begin|end){soln}/) {''} # these are no longer present in individual files
   result = ''
   result = result+"\n\n%%%%%%%%%%%%%%%% solution to #{prob} %%%%%%%%%%%%%%%%\n"
-  result = result+"\\solnhdr{\\ref{ch:#{path[0]}}-#{label}}\\label{soln:#{label}}\n"
+  result = result+"\\solnhdr{\\ref{ch:#{path[0]}}-#{label}}\\label{soln:#{ch}-#{label}}\n"
   result = result+soln+"\n"
+  $stderr.print "done with generate_solution_tex, result=#{result}\n" if debug
   return result
 end
 
@@ -553,12 +583,12 @@ def generate_content(what,depth,json,files,group,path,solutions,answers_dir,coun
                   # ... has side effects of adding to $credits_tex, $spotter1, and $spotter2, if appropriate
         end
         if what=="answers" then
-          if solutions[prob] || $save_meta[prob]["solution"]==1 then
-            print generate_solution_tex(answers_dir,prob,group,k,path)
-            next
-          end
           if $instructor then
-            print generate_instructor_solution_tex($instr_dir,prob,group,k,path)
+            print generate_solution_tex(answers_dir,prob,group,k,path,counters,true,$instr_dir)
+          else
+            if solutions[prob] || $save_meta[prob]["solution"]==1 then
+              print generate_solution_tex(answers_dir,prob,group,k,path,counters)
+            end
           end
         end
       }

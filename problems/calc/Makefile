@@ -29,24 +29,28 @@ default: $(SCRIPTS)/photocredits.json
 	@cd $(SPOTTER_DIR) ; make ; cd -
 
 instr:
-	@cp ../preamble.tex $(BOOK).m4
-	$(SCRIPTS)/generate_problems.rb $(SPOTTER_DIR) 1 $(SOLUTIONS_DIR) >>$(BOOK).m4
-	m4 -P ../problems.m4 book.m4 $(BOOK).m4 >$(BOOK).tex
-	@$(GET_CLS)
-	@echo "Running pdflatex..."
-	@$(DO_PDFLATEX_RAW)
-	@makeindex $(BOOK) >/dev/null 2>/dev/null
-	@echo "Running pdflatex again..."
-	@$(DO_PDFLATEX_RAW)
-	@makeindex $(BOOK) >/dev/null 2>/dev/null
-	@$(RM_CLS)
-	pdftk $(BOOK).pdf output $(INSTR).pdf encrypt_128bit user_pw $(PASSWORD_UNQUOTED) # should do this with qpdf instead
+	cp ../preamble.tex temp.m4
+	$(SCRIPTS)/generate_problems.rb $(SPOTTER_DIR) 1 $(SOLUTIONS_DIR) >>temp.m4
+	m4 -P ../problems.m4 book.m4 temp.m4 >temp.tex
+	$(GET_CLS)
+	pdflatex temp >err
+	makeindex temp >/dev/null 2>/dev/null
+	pdflatex temp >err
+	makeindex temp >/dev/null 2>/dev/null
+	$(RM_CLS)
+	pdftk temp.pdf output $(INSTR).pdf encrypt_128bit user_pw $(PASSWORD_UNQUOTED) # should do this with qpdf instead
+
+all:
+	make
+	make instr
+	make post
 
 post:
 	cp problems.pdf ~/Lightandmatter/problems
+	-cp $(INSTR).pdf ~/Lightandmatter/problems
 
 clean:
-	rm -f $(BOOK).aux $(BOOK).log err *~
+	rm -f $(BOOK).aux $(BOOK).log $(INSTR).pdf err *~ temp.*
 	$(RM_CLS)
 
 preflight:
