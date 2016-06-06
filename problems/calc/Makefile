@@ -10,9 +10,16 @@ TEX_INTERPRETER = pdflatex
 DO_PDFLATEX_RAW = $(TEX_INTERPRETER) -shell-escape -interaction=nonstopmode $(BOOK) >err
 SPOTTER_DIR = /home/bcrowell/Documents/programming/spotter/answers
 
+.SILENT: # suppress messages such as "entering directory"
+
 -include ../password.make # - means don't throw an error if it's not present
 
-default: $(SCRIPTS)/photocredits.json
+all: $(SCRIPTS)/photocredits.json
+	make student
+	make instr
+	@make post
+
+student: $(SCRIPTS)/photocredits.json
 	@make preflight
 	@cp ../preamble.tex $(BOOK).m4
 	$(SCRIPTS)/generate_problems.rb $(SPOTTER_DIR) 0 >>$(BOOK).m4
@@ -25,10 +32,11 @@ default: $(SCRIPTS)/photocredits.json
 	@$(DO_PDFLATEX_RAW)
 	@makeindex $(BOOK) >/dev/null 2>/dev/null
 	@$(RM_CLS)
+	@echo "Making new version of $(SPOTTER_DIR)/$(BOOK).xml"
 	@cp spotter.m4 $(SPOTTER_DIR)/$(BOOK).m4
 	@cd $(SPOTTER_DIR) ; make ; cd -
 
-instr:
+instr: $(SCRIPTS)/photocredits.json
 	cp ../preamble.tex temp.m4
 	$(SCRIPTS)/generate_problems.rb $(SPOTTER_DIR) 1 $(SOLUTIONS_DIR) >>temp.m4
 	m4 -P ../problems.m4 book.m4 temp.m4 >temp.tex
@@ -39,15 +47,11 @@ instr:
 	makeindex temp >/dev/null 2>/dev/null
 	$(RM_CLS)
 	pdftk temp.pdf output $(INSTR).pdf encrypt_128bit user_pw $(PASSWORD_UNQUOTED) # should do this with qpdf instead
-
-all:
-	make
-	make instr
-	make post
+	@echo "An unencrypted copy of the instructor's version is in temp.pdf. An encrypted one is in $(INSTR).pdf."
 
 post:
-	cp problems.pdf ~/Lightandmatter/problems
-	-cp $(INSTR).pdf ~/Lightandmatter/problems
+	@cp problems.pdf ~/Lightandmatter/problems
+	@-cp $(INSTR).pdf ~/Lightandmatter/problems
 
 clean:
 	rm -f $(BOOK).aux $(BOOK).log $(INSTR).pdf err *~ temp.*

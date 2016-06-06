@@ -415,10 +415,18 @@ def find_fig_file_in_dir(dir,f)
 end
 
 def find_fig_for_problem(prob,files) # returns [boolean,"foo","/.../.../foo.png"]
+  # files = a directory, can be relative, with /figs implied on the end, or absolute
   ['','hw-'].each { |prefix|
     f = "#{prefix}#{prob}"
     places = []
-    if !(files.nil?) then places.push($original_dir+"/../../"+files+"/figs") end
+    if !(files.nil?) then 
+      # detect whether it's relative or absolute
+      if Dir.exist?(files) then
+        places.push(files)
+      else
+        places.push($original_dir+"/../../"+files+"/figs")
+      end
+    end
     places.push($original_dir+"/../../me/end/figs") # me/end/figs has some figures for solutions
     places.each { |dir| 
       r = find_fig_file_in_dir(dir,f)
@@ -435,6 +443,31 @@ def find_anonymous_inline_figs(tex)
     if find[0] then f=find[2] end
     "\\anonymousinlinefig{#{f}}"
   }
+end
+
+def find_figs_for_solution(prob,orig,instr_dir=nil)
+  #debug = (prob=~/truck/)
+  debug = false
+  $stderr.print "in find_figs_for_solution, prob=#{prob}" if debug
+  tex = orig.clone
+  figs_dir = nil
+  if !(instr_dir.nil?) then found,solution,figs_dir = find_instructor_solution(prob,instr_dir) end
+  macros = ["anonymousinlinefig","fig"]
+  macros.each { |m|
+    tex.gsub!(/\\#{m}{([^}]*)}/) {
+      fig_name = $1
+      f = ''
+      find = find_fig_for_problem(fig_name,figs_dir)
+      if find[0] then 
+        f=find[2]
+      else
+        fatal_error("fig not found by find_figs_for_solution, prob=#{prob}, fig_name=#{fig_name}, figs_dir=#{figs_dir}")
+      end
+      $stderr.print "in find_figs_for_solution, prob=#{prob}, f=#{f}" if debug
+      "\\anonymousinlinefig{#{f}}"
+    }
+  }
+  return tex
 end
 
 def generate_chapter_header(title,path_label)
@@ -474,6 +507,7 @@ def generate_prob_tex(prob,group,k,solutions,files,counters)
   #   adds to spotter output in $spotter1 and $spotter2
   file,err = find_problem_file(prob,files)
   if file.nil? then warning(err); return '' end
+  debug = false # (prob=~/pluto/)
   label = group+k.to_s
   tex = slurp_file(file)
   meta = extract_meta(tex)
@@ -498,6 +532,9 @@ def generate_prob_tex(prob,group,k,solutions,files,counters)
     end
   end
   if !($spotter_dir.nil?) then
+    if debug then $stderr.print "looking for spotter stuff for #{prob}" end
+    bogus_xml_filename = "#{$spotter_dir}/xml/#{prob}.tex" # misnaming it .tex, which I always do by mistake
+    if File.exist?(bogus_xml_filename) then fatal_error("File #{bogus_xml_filename} exists, should end in .xml, not .tex") end
     xml_fragment = "#{$spotter_dir}/xml/#{prob}.xml"
     check_exists = File.exist?(xml_fragment)
     claims_check_exists = (tex =~ /\\answercheck/)
@@ -530,6 +567,7 @@ end
 
 def generate_solution_tex(answers_dir,prob,group,k,path,counters,instr=false,instr_dir=nil) # qwe
   debug = false
+  #debug = (prob=~/truck/)
   $stderr.print "entering generate_solution_tex, prob=#{prob}\n" if debug
   ch = counters[1]
   found = false
@@ -546,11 +584,10 @@ def generate_solution_tex(answers_dir,prob,group,k,path,counters,instr=false,ins
   if instr && !found then warning("no solution found for problem #{ch}-#{group}#{k}, #{prob}"); return '' end
   label = group+k.to_s
   if instr_only then
-    soln = slurp_file(file)
-    # bug: doesn't handle figures in instructor's solutions; they use different macros, and files are
-    #       in a different place; when fixing this, make use of figs_dir, generated above
+    $stderr.print "calling find_figs_for_solution, prob=#{prob}\n" if debug
+    soln = find_figs_for_solution(prob,slurp_file(file),instr_dir)
   else
-    soln = find_anonymous_inline_figs(slurp_file(file))
+    soln = find_figs_for_solution(prob,slurp_file(file))
   end
   # soln.gsub!(/\\(begin|end){soln}/) {''} # these are no longer present in individual files
   result = ''
