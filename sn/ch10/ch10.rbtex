@@ -360,7 +360,7 @@
         gravitational field.
 
 <% end_sec() %>
-<% begin_sec("Superposition of \index{superposition of fields}\index{fields!superposition of}fields") %>
+<% begin_sec("Superposition of fields") %>\index{superposition of fields}\index{fields!superposition of}
 
         A very important fact about all fields of force is that when
         there is more than one source (or sink), the fields add

@@ -277,7 +277,7 @@ Criticize the following statement: ``There are two types of
         internally are zero.
 
 <% end_sec() %>
-<% begin_sec("Conservation of \index{charge!conservation of}charge") %>
+<% begin_sec("Conservation of charge") %>\index{charge!conservation of}
 
         An even more fundamental reason for using positive and
         negative signs for electrical charge is that experiments
@@ -449,7 +449,7 @@ What would have happened if the tape was negatively charged?
         \epigraph{I was brought up to look at the atom as a nice, hard fellow,
         red or grey in color according to taste.}{Rutherford}
 
-<% begin_sec("\index{Atomism}Atomism") %>
+<% begin_sec("Atomism") %>\index{Atomism}
 
         The Greeks have been kicked around a lot in the last couple
         of millennia: dominated by the Romans, bullied during the
@@ -575,7 +575,7 @@ What would have happened if the tape was negatively charged?
         \end{itemize}
 
 <% end_sec() %>
-<% begin_sec("The chemical \index{elements, chemical}elements") %>
+<% begin_sec("The chemical elements") %>\index{elements, chemical}
 
         How would one find out what types of atoms there were?
         Today, it doesn't seem like it should have been very
@@ -1160,7 +1160,7 @@ Is money quantized? What is the quantum of money?
         end of Thomson's range.
 
 <% end_sec() %>
-<% begin_sec("The cathode ray as a subatomic particle: the \index{electron}electron") %>
+<% begin_sec("The cathode ray as a subatomic particle: the electron") %>\index{electron}
 
         What was significant about Thomson's experiment was not the
         actual numerical value of $m/q$, however, so much as the
