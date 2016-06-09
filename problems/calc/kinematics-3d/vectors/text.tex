@@ -47,3 +47,26 @@ along the pier as positive, then the component has a sign. If we pick a coordina
 with $x$, $y$, and $z$ axes, then any vector can be specified according to its
 $x$, $y$, and $z$ coordinates. We have previously given a graphical definition for
 vector addition. This is equivalent to adding components.
+
+\subsection{Rotational invariance}
+
+Certain vector operations
+are useful and others are not. Consider the operation of
+multiplying two vectors component by component to produce a third vector:
+\begin{align*}
+        R_x    &=    P_x Q_x  \\
+        R_y    &=    P_y Q_y  \\
+        R_z    &=    P_z Q_z.
+\end{align*}
+This operation will never be useful in physics because it can give different
+results depending on our choice of coordinates. That is, if we change our coordinate
+system by rotating the axes, then the resulting vector
+$\vc{R}$ will of course have different components, but these will not (except in exceptional cases)
+be the components of the same vector expressed in the new coordinates. We say that this
+operation is not \intro{rotationally invariant}.\index{rotational invariance}
+
+The universe doesn't come equipped with coordinates, so if any vector operation is to be useful in
+physics, it must be rotationally invariant. Vector addition, for example, is rotationally invariant, since we
+can define it using tip-to-tail graphical addition, and this definition doesn't even refer to any coordinate
+system. This rotational invariance might not have been so obvious
+if we had defined it in terms of addition of components.

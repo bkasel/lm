@@ -416,7 +416,7 @@ end
 
 def find_fig_for_problem(prob,files) # returns [boolean,"foo","/.../.../foo.png"]
   # files = a directory, can be relative, with /figs implied on the end, or absolute
-  ['','hw-'].each { |prefix|
+  ['','hw-','eg-'].each { |prefix|
     f = "#{prefix}#{prob}"
     places = []
     if !(files.nil?) then 
@@ -449,7 +449,7 @@ def find_figs_for_solution(prob,orig,instr_dir=nil)
   #debug = (prob=~/truck/)
   debug = false
   $stderr.print "in find_figs_for_solution, prob=#{prob}" if debug
-  tex = orig.clone
+  tex = orig.clone # qwe
   figs_dir = nil
   if !(instr_dir.nil?) then found,solution,figs_dir = find_instructor_solution(prob,instr_dir) end
   macros = ["anonymousinlinefig","fig"]
@@ -567,7 +567,7 @@ end
 
 def generate_solution_tex(answers_dir,prob,group,k,path,counters,instr=false,instr_dir=nil) # qwe
   debug = false
-  #debug = (prob=~/truck/)
+  #debug = (prob=~/cross/)
   $stderr.print "entering generate_solution_tex, prob=#{prob}\n" if debug
   ch = counters[1]
   found = false
@@ -581,10 +581,12 @@ def generate_solution_tex(answers_dir,prob,group,k,path,counters,instr=false,ins
     found,file,figs_dir = find_instructor_solution(prob,instr_dir)
     instr_only = true
   end
+  $stderr.print "file=#{file}, #{file.nil?}, found=#{found}\n" if debug
+  if !instr && !found then warning("no solution found for problem #{ch}-#{group}#{k}, #{prob}, which is supposed to have a solution in the back of the student's version; solutions should typically go in physics/share/answers"); return '' end
   if instr && !found then warning("no solution found for problem #{ch}-#{group}#{k}, #{prob}"); return '' end
   label = group+k.to_s
   if instr_only then
-    $stderr.print "calling find_figs_for_solution, prob=#{prob}\n" if debug
+    $stderr.print "calling find_figs_for_solution, prob=#{prob}, file=#{file}\n" if debug
     soln = find_figs_for_solution(prob,slurp_file(file),instr_dir)
   else
     soln = find_figs_for_solution(prob,slurp_file(file))

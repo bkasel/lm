@@ -113,6 +113,8 @@ __incl(text/n1a_summary)
 
 <% begin_hw('earth-stepwise-fullerton') %>__incl(hw/earth-stepwise-fullerton)<% end_hw() %>
 
+<% begin_hw('average-velocity-from-halves') %>__incl(hw/average-velocity-from-halves)<% end_hw() %>
+
 <% end_hw_sec %>
 
 <% end_chapter() %>

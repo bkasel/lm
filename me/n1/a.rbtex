@@ -246,8 +246,40 @@ by fiddling with the result of part c of problem \ref{hw:gamma-derivation} that 
 
 <% begin_hw('door-closer',nil,{'calc'=>true}) %>__incl(hw/door-closer)<% end_hw() %>
 
+\enlargethispage{\baselineskip}
+
 <% begin_hw('beer-stability') %>__incl(hw/beer-stability)<% end_hw() %>
 
+<% begin_hw('average-velocity-from-halves') %>__incl(hw/average-velocity-from-halves)<% end_hw() %>
+
+\enlargethispage{\baselineskip}
+
+<% begin_hw('earth-stepwise-equator') %>__incl(hw/earth-stepwise-equator)<% end_hw() %>
+
+<% begin_hw('earth-stepwise-fullerton') %>__incl(hw/earth-stepwise-fullerton)<% end_hw() %>
+
+<% marg(300) %>
+<%
+  fig(
+    'passing-in-race',
+    %q{Problem \ref{hw:passing-in-race}.}
+  )
+%>
+<% end_marg %>
+
+<% begin_hw('passing-in-race') %>__incl(hw/passing-in-race)<% end_hw() %>
+
+
+<% marg(300) %>
+<%
+  fig(
+    'hw-fizeau-cogwheel',
+    %q{Problem \ref{hw:fizeau-cogwheel}.}
+  )
+%>
+<% end_marg %>
+
+<% begin_hw('fizeau-cogwheel') %>__incl(hw/fizeau-cogwheel)<% end_hw() %>
 
 <% end_hw_sec %>
 <% end_chapter() %>

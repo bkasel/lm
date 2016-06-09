@@ -57,6 +57,7 @@ m4_define(__hw_lm_2_passing-in-race,16)m4_dnl
 m4_define(__hw_lm_2_fizeau-cogwheel,17)m4_dnl
 m4_define(__hw_lm_2_earth-stepwise-equator,18)m4_dnl
 m4_define(__hw_lm_2_earth-stepwise-fullerton,19)m4_dnl
+m4_define(__hw_lm_2_average-velocity-from-halves,20)m4_dnl
 m4_define(__hw_lm_3_honeybee,1)m4_dnl
 m4_define(__hw_lm_3_pond,2)m4_dnl
 m4_define(__hw_lm_3_warships,3)m4_dnl
@@ -658,6 +659,11 @@ m4_define(__hw_me_2_six-tenths-c-twice,21)m4_dnl
 m4_define(__hw_me_2_me-vel-addition,22)m4_dnl
 m4_define(__hw_me_2_door-closer,23)m4_dnl
 m4_define(__hw_me_2_beer-stability,24)m4_dnl
+m4_define(__hw_me_2_average-velocity-from-halves,25)m4_dnl
+m4_define(__hw_me_2_earth-stepwise-equator,26)m4_dnl
+m4_define(__hw_me_2_earth-stepwise-fullerton,27)m4_dnl
+m4_define(__hw_me_2_passing-in-race,28)m4_dnl
+m4_define(__hw_me_2_fizeau-cogwheel,29)m4_dnl
 m4_define(__hw_me_3_stupid,1)m4_dnl
 m4_define(__hw_me_3_caracceleration,2)m4_dnl
 m4_define(__hw_me_3_well,3)m4_dnl
@@ -962,7 +968,7 @@ m4_define(__hw_me_16_deleted,1)m4_dnl
 m4_define(__hw_me_16_sperm,2)m4_dnl
 m4_define(__hw_me_16_whistle,3)m4_dnl
 m4_define(__hw_me_16_pendulum,4)m4_dnl
-m4_define(__hw_me_16_piston,5)m4_dnl
+m4_define(__hw_me_16_piston-calculus,5)m4_dnl
 m4_define(__hw_me_16_shm-verify-energy-conserved,6)m4_dnl
 m4_define(__hw_me_16_pistonxt,7)m4_dnl
 m4_define(__hw_me_16_bobbing,8)m4_dnl
