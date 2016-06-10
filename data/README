@@ -1,3 +1,21 @@
+========problems.csv========
 format:
   book,chapter,number,label,solution
 More detailed info in ../INTERNALS.
+
+========fig_widths=========
+purpose:
+  Make it easy for the problems book to be automatically generated, without having
+  to specify widths of figures in the code.
+format:
+  JSON
+  is a hash with name of fig as key, width as value, e.g., "jovian-moons":"wide"
+  if they're normal width, they're omitted from the file, so explicit widths are either "wide" or "fullpage"
+to regenerate it:
+  Edit /home/bcrowell/Documents/programming/eruby_util_for_books/eruby_util.rb
+  Find the block of code that refers to fig_widths
+  Do what the comments say there.
+  Make books_all
+  Change the code back.
+  sort <~/fig_widths | uniq >~/Documents/writing/books/physics/data/fig_widths
+  Delete the final comma. Add curly braces at top and bottom. It's now valid JSON.

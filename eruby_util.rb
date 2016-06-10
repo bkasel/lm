@@ -528,13 +528,6 @@ def fig(name,caption=nil,options={})
                            # default is false, except if caption is a null string, in which case it defaults to true
     'width'=>'narrow',     # 'narrow'=52 mm, 'wide'=113 mm, 'fullpage'=171 mm
                            #   refers to graphic, not graphic plus caption (which is greater for sidecaption option)
-                           #   may get automagically changed for 2-column layout
-    'width2'=>'auto',      # width for 2-col layout;
-                           #   width='narrow',  width2='auto'  --  narrow figure stays same width, is not as wide as text colum
-                           #   width='fullpage',width2='auto'  --  nothing special
-                           #   width='wide',    width2='auto'  --  makes it a sidecaption regardless of whether sidecaption was actually set
-                           #   width2='column' -- generates a warning if an explicitly created 82.5-mm wide figure doesn't exist
-                           #   width2='column_auto' -- like column, but expands automatically, and warns if an explicit alternative *does* exist
     'sidecaption'=>false,
     'sidepos'=>'t',        # positioning of the side caption relative to the figure; can also be b, c
     'float'=>'default',    # defaults to false for narrow, true for wide or fullpage (because I couldn't get odd-even to work reliably for those if not floating)
@@ -577,6 +570,15 @@ def fig(name,caption=nil,options={})
   if options['narrowfigwidecaption'] then
     options['width']='wide'; options['sidecaption']=true; options['float']=false; options['anonymous']=false
   end
+
+  # Generate fig_widths. To regenerate these, change false to true below, and then follow
+  # directions in ~/Documents/writing/books/physics/data/README. This data file is used by problems book.
+  if true && width!='narrow' then
+    File.open('/home/bcrowell/fig_widths','a') { |f|
+      f.print "\"#{name}\":\"#{width}\",\n"
+    }
+  end
+
   if options['float']=='default' then
     options['float']=(width=='wide' or width=='fullpage')
   end
