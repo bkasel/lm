@@ -1,8 +1,10 @@
 #!/usr/bin/ruby
 
-# generate_problems.rb /path/to/spotter/dir instr instr_dir
-# second arg is 0 or 1, indicates whether this is the instructor's version
-# third arg is directory where the solutions are
+# generate_problems.rb /path/to/spotter/dir instr data_dir instr_dir 
+#   first arg is where spotter dir is
+#   instr = 0 or 1, indicates whether this is the instructor's version
+#   data_dir is where fig_widths and fig_widths_by_hand files are
+#   instr_dir is directory where the solutions are
 # prints m4/latex output to stdout
 # as a side-effect, writes a spotter answer file to spotter.m4
 
@@ -406,16 +408,25 @@ def extract_meta(t)
   return h
 end
 
-def find_fig_file_in_dir(dir,f)
-  ["png","jpg","pdf"].each { |type|
-    g = "#{dir}/#{f}.#{type}"
-    if File.exist?(g) then return [true,f,g] end
-  }
-  return [false,nil,nil]
+def fig_width(fig) # fig is the bare name of the figure, e.g., "weasel", not "weasel.jpg"
+  # return value is "narrow", "wide", or "fullpage"
+  result = 'narrow'
+  if $fig_widths.key?(fig) then result = $fig_widths[fig] end
+  return result
 end
 
-def find_fig_for_problem(prob,files) # returns [boolean,"foo","/.../.../foo.png"]
+def find_fig_file_in_dir(dir,f) # returns [boolean,"foo","/.../.../foo.png",width]
+  # return value width is "narrow", "wide", or "fullpage"
+  ["png","jpg","pdf"].each { |type|
+    g = "#{dir}/#{f}.#{type}"
+    if File.exist?(g) then return [true,f,g,fig_width(f)] end
+  }
+  return [false,nil,nil,nil]
+end
+
+def find_fig_for_problem(prob,files) # returns [boolean,"foo","/.../.../foo.png",width]
   # files = a directory, can be relative, with /figs implied on the end, or absolute
+  # return value width is "narrow", "wide", or "fullpage"
   ['','hw-','eg-'].each { |prefix|
     f = "#{prefix}#{prob}"
     places = []
@@ -523,9 +534,11 @@ def generate_prob_tex(prob,group,k,solutions,files,counters)
     RESULT
   if solutions[prob] || meta["solution"]==1 then result =result+"\\hwsoln\n" end
   result = result + "\\end{hw}\n"
-  has_fig,fig_file,fig_path = find_fig_for_problem(prob,files)
+  has_fig,fig_file,fig_path,width = find_fig_for_problem(prob,files)
   if has_fig then
-    result = result+"\\fignarrow{#{fig_file}}{}{Problem \\ref{hw:#{prob}}.}\n"
+    macro = 'fignarrow'
+    if width!='narrow' then macro='figwide' end
+    result = result+"\\#{macro}{#{fig_file}}{}{Problem \\ref{hw:#{prob}}.}\n"
     if $credits.key?(fig_file) then
       description,credit = $credits[fig_file]
       $credits_tex = $credits_tex + "\\cred{#{fig_file}}{#{description}}{#{credit}}"
@@ -691,11 +704,14 @@ def main()
     $spotter_dir = nil
   end
   $instructor = ARGV[1]=='1' # is this the instructor's version?
-  $instr_dir = ARGV[2]
+  $data_dir = ARGV[2] # contains fig_widths file
+  $instr_dir = ARGV[3]
   if $instructor && !(Dir.exist?($instr_dir)) then
     warning("directory #{$instr_dir} doesn't exist")
     $instructor = false
   end
+  $fig_widths = get_json_data_from_file_or_die("#{$data_dir}/fig_widths")
+  $fig_widths = $fig_widths.merge(get_json_data_from_file_or_die("#{$data_dir}/fig_widths_by_hand"))
   $original_dir = Dir.getwd
   $credits_tex = "\\input{../credits_header.tex}"
   $credits = get_json_data_from_file_or_die($original_dir+"/../photocredits.json")

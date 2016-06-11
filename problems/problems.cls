@@ -4,7 +4,7 @@
 \ProvidesClass{problems}
 \LoadClass[twocolumn]{book}
 \usepackage[paperwidth=8.5in,paperheight=11in]{geometry}
-\usepackage{shaddap,lmmath,amsmath,amssymb,cancel,titlesec,ifthen,makeidx,graphicx}
+\usepackage{shaddap,lmmath,amsmath,amssymb,cancel,titlesec,ifthen,makeidx,graphicx,cuted,caption}
 %
 \newcommand{\intro}[1]{\emph{#1}}
 %%%%%%%%%%%%%%%%% sectioning %%%%%%%%%%%%%
@@ -28,8 +28,19 @@
     \caption[]{#3}\label{fig:#2} % empty [] is a workaround for this bug: http://tex.stackexchange.com/a/227840/6853
     \end{figure}
   }
+\newcommand{\figrawwide}[4]%
+  % #1=placement (ignored), #2=file, #3=caption, #4=width
+  {%
+    % http://tex.stackexchange.com/questions/3173/how-to-make-a-figure-span-on-two-columns-in-a-scientific-paper
+    % strip is provided by cuted, captionof by caption
+    \begin{strip}
+    \begin{center}\includegraphics[#4]{../../\sharedfigs/#2}\end{center}   
+    \captionof{figure}{#3}\label{fig:#2}
+    \end{strip}
+  }
 \newcommand{\fig}[3]{\figraw{#2}{#1}{#3}{width=0.5\textwidth}} % file, placement (ignored), caption
 \newcommand{\fignarrow}[3]{\figraw{#2}{#1}{#3}{width=52mm}}
+\newcommand{\figwide}[3]{\figrawwide{#2}{#1}{#3}{width=152mm}}
 %\newcommand{\fignarrow}[3]{}
 %%%%%%%%%%%%%%%%% problems %%%%%%%%%%%%%%%%%%%
 \newenvironment{hwsection}{

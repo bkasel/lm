@@ -9,6 +9,7 @@ SCRIPTS = ..
 TEX_INTERPRETER = pdflatex
 DO_PDFLATEX_RAW = $(TEX_INTERPRETER) -shell-escape -interaction=nonstopmode $(BOOK) >err
 SPOTTER_DIR = /home/bcrowell/Documents/programming/spotter/answers
+DATA_DIR = ../../data
 
 .SILENT: # suppress messages such as "entering directory"
 
@@ -22,7 +23,7 @@ all: $(SCRIPTS)/photocredits.json
 student: $(SCRIPTS)/photocredits.json
 	@make preflight
 	@cp ../preamble.tex $(BOOK).m4
-	$(SCRIPTS)/generate_problems.rb $(SPOTTER_DIR) 0 >>$(BOOK).m4
+	$(SCRIPTS)/generate_problems.rb $(SPOTTER_DIR) 0 $(DATA_DIR) >>$(BOOK).m4
 	m4 -P ../problems.m4 book.m4 $(BOOK).m4 >$(BOOK).tex
 	@$(GET_CLS)
 	@echo "Running pdflatex..."
@@ -38,7 +39,7 @@ student: $(SCRIPTS)/photocredits.json
 
 instr: $(SCRIPTS)/photocredits.json
 	cp ../preamble.tex temp.m4
-	$(SCRIPTS)/generate_problems.rb $(SPOTTER_DIR) 1 $(SOLUTIONS_DIR) >>temp.m4
+	$(SCRIPTS)/generate_problems.rb $(SPOTTER_DIR) 1 $(DATA_DIR) $(SOLUTIONS_DIR) >>temp.m4
 	m4 -P ../problems.m4 book.m4 temp.m4 >temp.tex
 	$(GET_CLS)
 	pdflatex temp >err

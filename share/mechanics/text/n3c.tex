@@ -36,7 +36,7 @@ acceleration, and force vectors. No new principles are
 introduced, but an attempt is made to tie things together
 and show examples of the power of the vector formulation of Newton's laws.
 
-<% begin_sec("The Velocity Vector",0) %>\index{velocity!as a vector}\index{vector!velocity}
+<% begin_sec("The Velocity Vector",0,'velocity-vector') %>\index{velocity!as a vector}\index{vector!velocity}
 
 For motion with constant velocity, the velocity vector is
 \begin{equation*}
@@ -138,12 +138,10 @@ or
 \begin{equation*}
             0  =  -|\vc{v}_{BW}| \sin  \theta  + |\vc{v}_{WL}|\eqquad.
 \end{equation*}
-Solving for $\theta $, we find
-\begin{align*}
-            \sin  \theta  &=  |\vc{v}_{WL}|/|\vc{v}_{BW}|\eqquad,\\
-\intertext{so}
-            \theta &= \sin^{-1}\frac{|\vc{v}_{WL}|}{|\vc{v}_{BW}|}\eqquad.
-\end{align*}
+Solving for $\theta $, we find $\sin  \theta  =  |\vc{v}_{WL}|/|\vc{v}_{BW}|,$ so
+\begin{equation*}
+            \theta = \sin^{-1}\frac{|\vc{v}_{WL}|}{|\vc{v}_{BW}|}\eqquad.
+\end{equation*}
 \end{eg}
 
 \worked{annie-oakley}{Annie Oakley}
@@ -165,10 +163,10 @@ way for two cities to have the same velocity vector?
 \end{dq}
 
 <% end_sec() %>
-\vfill
-<% begin_sec("The Acceleration Vector",4) %>\index{acceleration!as a vector}\index{vector!acceleration}
 
-<% marg(50) %>
+<% begin_sec("The Acceleration Vector",nil) %>\index{acceleration!as a vector}\index{vector!acceleration}
+
+<% marg(0) %>
 <%
   fig(
     'delta-v-arrows-1',
@@ -206,9 +204,7 @@ In general, we define the acceleration vector as the derivative
     \vc{a}=\der\vc{v}/\der t\eqquad.
   \end{equation*}
 :],[:%
-When all three acceleration components are constant, i.e.,
-when the $v_x-t$, $v_y-t$, and $v_z-t$ graphs are all
-linear, we can define the acceleration vector as
+When the acceleration is constant, we can define the acceleration vector as
 \begin{equation*}
         \vc{a} = \Delta\vc{v}/\Delta t\eqquad, \qquad \shoveright{\text{[only for constant acceleration]}}
 \end{equation*}
@@ -216,10 +212,8 @@ which can be written in terms of initial and final velocities as
 \begin{equation*}
         \vc{a} = (\vc{v}_f-\vc{v}_i)/\Delta t\eqquad. \qquad \shoveright{\text{[only for constant acceleration]}}
 \end{equation*}
-If the acceleration is not constant, we define it as the
-vector made out of the $a_x$, $a_y$, and $a_z$ components
-found by applying the slope-of-the-tangent-line technique to
-the $v_x-t$, $v_y-t$, and $v_z-t$ graphs.
+Otherwise, we can use the type of graphical definition described in section
+\ref{sec:velocity-vector} for the velocity vector.
 :])
 
 Now there are two ways in which we could have a nonzero
@@ -241,33 +235,24 @@ different depending on whether an object is speeding up or slowing down.
   SELF_CHECK
   ) %>
 
-If this all seems a little strange and abstract to you,
-you're not alone. It doesn't mean much to most physics
-students the first time someone tells them that acceleration
-is a vector, and that the acceleration vector does not have
-to be in the same direction as the velocity vector.  One way
-to understand those statements better is to imagine an
-object such as an air freshener or a pair of fuzzy dice
-hanging from the rear-view mirror of a car.  Such a hanging
-object, called a bob, constitutes an accelerometer.  If you
-watch the bob as you accelerate from a stop light, you'll
-see it swing backward.  The horizontal direction in which
-the bob tilts is opposite to the direction of the acceleration.
-If you apply the brakes and the car's acceleration vector
-points backward, the bob tilts forward.
+\pagebreak
 
-After accelerating and slowing down a few times, you think
-you've put your accelerometer through its paces, but then
-you make a right turn.  Surprise!  Acceleration is a vector,
-and needn't point in the same direction as the velocity
-vector.  As you make a right turn, the bob swings outward,
-to your left.  That means the car's acceleration vector is
-to your right, perpendicular to your velocity vector. A
-useful definition of an acceleration vector should relate in
-a systematic way to the actual physical effects produced by
-the acceleration, so a physically reasonable definition of
-the acceleration vector must allow for cases where it is not
-in the same direction as the motion.
+The acceleration vector points in the direction that an accelerometer would point,
+as in figure \ref{fig:accelerometer}.
+
+
+<%
+  fig(
+    'accelerometer',
+    %q{The car has just swerved to the right. The air freshener hanging from the
+        rear-view mirror acts as an accelerometer, showing that the acceleration vector is to the right.},
+    {
+      'width'=>'wide',
+      'sidecaption'=>true
+    }
+  )
+%>
+
 
 <% self_check('projectile-a-vector',<<-'SELF_CHECK'
 In projectile motion, what direction does the acceleration vector have?
@@ -345,7 +330,10 @@ suddenly? Its acceleration vector? Its direction of motion?
 
 
 <% end_sec() %>
-<% begin_sec("The force vector and simple machines",4,'force-vector') %>%
+
+\vfill
+
+<% begin_sec("The force vector and simple machines",nil,'force-vector') %>%
 \index{force!as a vector}\index{vector!force}
 
 Force is relatively easy to intuit as a vector. The force
@@ -459,6 +447,7 @@ Essentially the same analysis applies to several other
 simple machines, such as the wedge and the screw.
 \end{eg}
 
+\pagebreak
 
 <%
   fig(
@@ -497,6 +486,15 @@ $\cos\theta\approx 1$, while $\sin\theta$ is small. Therefore
 the $x$ component must be $-F_{N1}\cos\theta$.
 \end{eg}
 
+<% marg(-300) %>
+<%
+  fig(
+    'eg-push-broom',
+    %q{Example \ref{eg:push-broom}.}
+  )
+%>
+<% end_marg %>
+
 \begin{eg}{Pushing a broom}\label{eg:push-broom}
 \egquestion Figure \figref{eg-push-broom} shows a man pushing a broom at an angle $\theta$ relative to the horizontal. The mass $m$
 of the broom is concentrated at the brush. If the magnitude of the broom's acceleration is $a$, find the force $F_H$ that the
@@ -522,15 +520,6 @@ floor's kinetic friction force & brush's kinetic friction force \\
   on brush, $F_k$, \hfill $\leftarrow$ & on floor, \hfill $\rightarrow$ \\
 \hline
 \end{tabular}
-
-<% marg(300) %>
-<%
-  fig(
-    'eg-push-broom',
-    %q{Example \ref{eg:push-broom}.}
-  )
-%>
-<% end_marg %>
 
 Newton's second law is:
 \begin{equation*}
@@ -599,7 +588,10 @@ the three unknowns, $F_H$, $F_N$, and $F_k$. Straightforward algebra gives
 <%
   fig(
     'dq-roller-coaster',
-    %q{Discussion question \ref{dq:roller-coaster}.}
+    %q{Discussion question \ref{dq:roller-coaster-mechanics}.},
+    {
+      'anonymous'=>true
+    }
   )
 %>
 <% end_marg %>
@@ -609,7 +601,7 @@ against a wall, causing it to slide up the wall. Analyze the
 forces involved, including their directions.
 \end{dq}
 
-\begin{dq}\label{dq:roller-coaster}
+\begin{dq}\label{dq:roller-coaster-mechanics}
 The figure shows a roller coaster car rolling down and
 then up under the influence of gravity. Sketch the car's
 velocity vectors and acceleration vectors. Pick an

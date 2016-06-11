@@ -573,7 +573,7 @@ def fig(name,caption=nil,options={})
 
   # Generate fig_widths. To regenerate these, change false to true below, and then follow
   # directions in ~/Documents/writing/books/physics/data/README. This data file is used by problems book.
-  if true && width!='narrow' then
+  if false && width!='narrow' then
     File.open('/home/bcrowell/fig_widths','a') { |f|
       f.print "\"#{name}\":\"#{width}\",\n"
     }

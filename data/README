@@ -3,7 +3,7 @@ format:
   book,chapter,number,label,solution
 More detailed info in ../INTERNALS.
 
-========fig_widths=========
+========fig_widths, fig_widths_by_hand=========
 purpose:
   Make it easy for the problems book to be automatically generated, without having
   to specify widths of figures in the code.
@@ -19,3 +19,5 @@ to regenerate it:
   Change the code back.
   sort <~/fig_widths | uniq >~/Documents/writing/books/physics/data/fig_widths
   Delete the final comma. Add curly braces at top and bottom. It's now valid JSON.
+In a few cases, I've used something like raw_fig() in eruby, so width won't automatically
+be put in fig_widths. For these cases, there is a separate file fig_widths_by_hand.
