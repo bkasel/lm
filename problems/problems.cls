@@ -1,3 +1,4 @@
+%% current
 \pdfminorversion=4 % force pdf 1.4 output; http://tex.stackexchange.com/questions/95973/is-pdftex-1-40-13-outputting-malformed-pdfs
 \RequirePackage{pdf14}% workaround for a bug in older pdftex; http://tex.stackexchange.com/a/87946/6853
 \NeedsTeXFormat{LaTeX2e}

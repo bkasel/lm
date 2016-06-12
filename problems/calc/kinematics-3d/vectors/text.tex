@@ -24,7 +24,7 @@ but it's not a vector, because it doesn't behave the way an arrow would under a
 In kinematics, the simplest example of a vector is a motion from one place to another,
 called a displacement vector.
 
-A vector has a magnitude, which means its size, length, or amount. Rotating a vector
+A vector $\vc{A}$ has a magnitude $|\vc{A}|$, which means its size, length, or amount. Rotating a vector
 can change the vector, but it will never change its magnitude.
 
 Scalars are just numbers, and we do arithmetic on them in the usual
@@ -48,6 +48,14 @@ with $x$, $y$, and $z$ axes, then any vector can be specified according to its
 $x$, $y$, and $z$ coordinates. We have previously given a graphical definition for
 vector addition. This is equivalent to adding components.
 
+\subsection{Unit vector notation}
+Suppose we want to tell someone that a certain vector $\vc{A}$ in two dimensions
+has components $A_x=3$ and $A_y=7$. A more compact way of notating this is
+$\vc{A}=3\hat{\vc{x}}+7\hat{\vc{y}}$, where $\hat{\vc{x}}$ and $\hat{\vc{y}}$, read ``x-hat'' and ``y-hat,''
+are the vectors with magnitude one that point in the positive $x$ and $y$
+directions. Some authors notate the unit vectors as $\hat{\vc{i}}$, $\hat{\vc{j}}$, and $\hat{\vc{k}}$
+rather than $\hat{\vc{x}}$, $\hat{\vc{y}}$, and $\hat{\vc{z}}$.
+
 \subsection{Rotational invariance}
 
 Certain vector operations
@@ -68,5 +76,40 @@ operation is not \intro{rotationally invariant}.\index{rotational invariance}
 The universe doesn't come equipped with coordinates, so if any vector operation is to be useful in
 physics, it must be rotationally invariant. Vector addition, for example, is rotationally invariant, since we
 can define it using tip-to-tail graphical addition, and this definition doesn't even refer to any coordinate
-system. This rotational invariance might not have been so obvious
-if we had defined it in terms of addition of components.
+system. This rotational invariance would still have held, but might not have been so obvious,
+if we had defined addition in terms of addition of components.
+
+\subsection{Dot and cross product}
+
+The vector \intro{dot product}\index{dot product} $\vc{A}\cdot\vc{B}$ is defined as the (signed) component of $\vc{A}$
+parallel to $\vc{B}$. It is a scalar. If we know the magnitudes of the vectors and the angle $\theta_{AB}$ between them,
+we can compute the dot product as $|\vc{A}||\vc{B}|\cos\theta_{AB}$. If we know the components of
+the vectors in a particular coordinate system, we can express the dot product as
+$A_xB_x+A_yB_y+A_zB_z$.
+
+The dot product is useful simply as a geometrical tool, but later in this course we will also see that it
+has physical applications that include mechanical work, as well as many examples in electricity and magnetism,
+such as electric flux.
+
+There is also a way of multiplying two vectors to obtain a vector result. This is called the
+vector \intro{cross product}\index{cross product}, $\vc{C}=\vc{A}\times\vc{B}$.
+The magnitude of the cross product is the area of the parallelogram
+illustrated in figure \ref{fig:parallelogram}.
+The direction of the cross product is perpendicular to the plane in which $\vc{A}$ and $\vc{B}$ lie.
+There are two such directions, and of these two, we choose the one defined by the right-hand rule
+illustrated in figure \ref{fig:righthandxprod}.
+
+\fignarrow{parallelogram}{}{The magnitude of the cross product is the area of the shaded parallelogram.}
+
+\fignarrow{righthandxprod}{}{The right-hand rule for the direction of the vector cross product.}
+
+Important physical applications of the cross product include torque, angular momentum, and magnetic forces.
+
+Unlike ordinary multiplication of real numbers, the cross product is anticommutative,
+$\vc{A}\times\vc{B}=-\vc{B}\times\vc{A}$. The magnitude of the cross product can be expressed as
+$|\vc{A}||\vc{B}|\sin\theta_{AB}$. In terms of the components, we have
+\begin{align*}
+        \vc{C}_x        &=  A_yB_z - B_yA_z\\
+        \vc{C}_y        &=  A_zB_x - B_zA_x\\
+        \vc{C}_z        &=  A_xB_y - B_xA_y.
+\end{align*}
