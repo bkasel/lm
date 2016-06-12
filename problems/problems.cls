@@ -32,6 +32,15 @@
 \newcommand{\figrawwide}[4]%
   % #1=placement (ignored), #2=file, #3=caption, #4=width
   {%
+    \begin{figure*}[] % putting h in positioning parameter sometimes causes figure to disappear??
+    \begin{center}\includegraphics[#4]{../../\sharedfigs/#2}\end{center}
+    \caption[]{#3}\label{fig:#2} % empty [] is a workaround for this bug: http://tex.stackexchange.com/a/227840/6853
+    \end{figure*}
+  }
+% The following seems buggy, sometimes randomly causes LaTeX to die with mysterious error messages:
+\newcommand{\figrawwidex}[4]%
+  % #1=placement (ignored), #2=file, #3=caption, #4=width
+  {%
     % http://tex.stackexchange.com/questions/3173/how-to-make-a-figure-span-on-two-columns-in-a-scientific-paper
     % strip is provided by cuted, captionof by caption
     \begin{strip}
