@@ -537,8 +537,9 @@ def generate_prob_tex(prob,group,k,solutions,files,counters)
   has_fig,fig_file,fig_path,width = find_fig_for_problem(prob,files)
   if has_fig then
     macro = 'fignarrow'
-    if width!='narrow' then macro='figwide' end
-    result = result+"\\#{macro}{#{fig_file}}{}{Problem \\ref{hw:#{prob}}.}\n"
+    add_before,add_after = '',''
+    if width!='narrow' then macro='figwide';add_before="\n\\begin{timetravel}\n";add_after="\n\\end{timetravel}\n" end
+    result = result+"#{add_before}\\#{macro}{#{fig_file}}{}{Problem \\ref{hw:#{prob}}.}#{add_after}\n"
     if $credits.key?(fig_file) then
       description,credit = $credits[fig_file]
       $credits_tex = $credits_tex + "\\cred{#{fig_file}}{#{description}}{#{credit}}"
@@ -731,6 +732,7 @@ def main()
     \begin{document}
     TOP
   print slurp_or_die($original_dir+"/front_matter.tex").gsub!(/__title__/) {title}
+  print "\\timetravelenable"
   stuff_to_do = ["text","hints","answers"] # there is also "problems", which is triggered after the text for a chapter
   stuff_to_do.each { |what| 
     do_stuff(what,0,'','',[],solutions,answers_dir,[])
