@@ -637,7 +637,7 @@ def process_text(tex)
     fig_data = parse_json_or_die($1)
     fig = fig_data["name"]
     caption = fig_data["caption"]
-    width = fig_width(fig)
+    if fig_data.key?("width") then width=fig_data["width"] else width = fig_width(fig) end
     process_fig(fig,width,caption)
   }
   return tex

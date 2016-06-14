@@ -27,12 +27,14 @@
 
 % NewEnviron is provided by package environ. Allows access to \BODY.
 \NewEnviron{timetravel}{%
+  \timetraveltohere % as a fallback, make sure we can always cancel the time-travel
   \timetraveldisable
   \stepcounter{timetravelctr}\label{timetravelinvoked\thetimetravelctr}%
   \ifnum\timetravelpass=1\BODY\fi
 }%
 [%
   \timetravelenable
+  \timetraveltohere % another fallback option
 ]
 
 \AtBeginDocument{

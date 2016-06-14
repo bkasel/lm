@@ -18,6 +18,7 @@ def main()
   if !(File.exist?(in_file)) then fatal_error("input file #{in_file} does not exist") end
   aux_file = File.basename(in_file, ".tex") + ".aux"
   $temp_dir = "timetravel" # subdirectory of current working directory
+  $log_file = $temp_dir + "/" + File.basename(in_file, ".tex") + ".log"
 
   $pass_file = "#{$temp_dir}/pass.tex" # This filename is also set in timetravel.sty.
     # ...Keep track of which pass we're on.
@@ -47,11 +48,13 @@ def main()
   if reset_count then set_count(0) end
   File.open($pass_file,'w') { |f|  f.print "\\newcommand{\\timetravelpass}{#{pass}}\n"}
   if debug then $stderr.print "pass=#{pass}\n" end
+  log("pass=#{pass}, file=#{in_file}, count=#{get_count}")
 
   page_numbers = {}
   if pass>=2 then
+    get_page_numbers_from_aux_file(aux_file) # $aux_invoked, $aux_par, $aux_landed; the first two of these
+                                             # may be overwritten below if we calll remember_page_numbers()
     if pass<=$freeze_at_pass then 
-      get_page_numbers_from_aux_file(aux_file)
       save_page_numbers
     else
       # Try to make sure it converges rather than oscillating indefinitely.
@@ -80,22 +83,38 @@ def main()
       #$stderr.print "hash=#{key}, code=#{code}=\n"
       if pass==1 then
         code_file = "#{$temp_dir}/#{key}.tex"
-        File.open(code_file,'w') { |code_f| code_f.print "\\timetraveldisable#{code}\\timetravelenable" }
+        File.open(code_file,'w') { |code_f| code_f.print "\\timetraveldisable{}\\label{timetravellanded#{key}}#{code}\\timetravelenable{}" }
         code = ''
       end
       if pass>=2 then
         if !$aux_invoked.key?(key.to_s) then fatal_error("aux file #{aux_file} doesn't contain key #{key}") end
-        page = $aux_invoked[key.to_s]
-        if page>1 then page=page-1 end
         if pass==2 then
-          par = $aux_par[page]
+          par = find_target($aux_invoked[key.to_s],key,line_num)
           File.open("#{$temp_dir}/par#{par}.tex",'a') { |f_par| f_par.print "\\input{timetravel/#{key}}"}
         end
+        log("key #{key}, invoked at #{$aux_invoked[key.to_s]}, landed at #{$aux_landed[key.to_s]}")
       end
-      %%%%% f_out.print "\\label{timetravelinvoked#{key}}" # This will be immediately followed by the % end-timetravel.
+      %%%%% f_out.print "\\label{timetravelinvoked#{key}}"
     end
   }
-  if inside then fatal_error("\\end{timetravel} ended at end of file") end
+  if inside then fatal_error("\\begin{timetravel} ended at end of file") end
+end
+
+def find_target(invocation_page,key,line_num)
+  # invocation_page = page on which the timetravel environment was invoked
+  # return value is paragraph key of the target that we want to travel back in time to
+  page = invocation_page
+  if page>1 then page=page-1 end
+  par = $aux_par[page]
+  if par.nil? then
+    par = $aux_par[invocation_page] 
+            # as a backup, admit defeat and don't time-travel; a target paragraph
+            # should always exist on the invocation page, because we issue a \timetraveltohere
+            # as part of the timetravel environment
+    log("fallback, #{key}.tex from line #{line_num} invoked on page #{invocation_page} rather than the previous one")
+  end
+  if par.nil? then fatal_error("no target found for timetravel environment whose code is in #{key}.tex, line #{line_num} of source file, invoked on page #{invocation_page}") end
+  return par
 end
 
 def set_count(n)
@@ -126,19 +145,22 @@ def remember_page_numbers
   ]
 end
 
-# Initializes $aux_invoked and $aux_par.
+# Initializes $aux_invoked, $aux_par, and $aux_landed
 # Lines in aux file look like this: 
 #   \newlabel{timetravelinvoked1}{{}{2}}
 #   \newlabel{timetravelpar14}{{}{2}}
+#   \newlabel{timetravellanded1}{{2.2.1}{14}} ... the number such as 2.2.1 is meaningless
 def get_page_numbers_from_aux_file(aux_file)
-  $aux_invoked = {} # key=hash, value=page
+  $aux_invoked = {} # key=key, value=page
+  $aux_landed = {}  # key=key, value=page
   $aux_par = {}     # key=page, value=paragraph number
   File.readlines(aux_file).each { |line|
     if line=~/\\newlabel{([^}]+)}{{([^}]*)}{([^}]+)}}/ then
-      label,number,page = $1,$2,$3.to_i
-      if label=~/\Atimetravel(invoked|par)([^}]*)/ then
+      label,number,page = $1,$2,$3.to_i # number is either null or meaningless
+      if label=~/\Atimetravel(invoked|par|landed)([^}]*)/ then
         type,key=$1,$2
         if type=="invoked" then $aux_invoked[key]=page end
+        if type=="invoked" then $aux_landed[key]=page end
         if type=="par" then
           if $aux_par.key?(page) then
             if key<$aux_par[page] then $aux_par[page]=key end
@@ -151,12 +173,20 @@ def get_page_numbers_from_aux_file(aux_file)
   }
 end
 
+def log(message)
+  File.open($log_file,'a') { |f|
+    f.print message+"\n"
+  }
+end
+
 def fatal_error(message)
+  log(message)
   $stderr.print "generate_problems.rb: #{$verb} fatal error: #{message}\n"
   exit(-1)
 end
 
 def warning(message)
+  log(message)
   $stderr.print "generate_problems.rb: #{$verb} warning: #{message}\n"
 end
 
