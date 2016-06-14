@@ -44,13 +44,19 @@ student: $(SCRIPTS)/photocredits.json
 	@cd $(SPOTTER_DIR) ; make ; cd -
 
 instr: $(SCRIPTS)/photocredits.json
+	@make preflight
 	@make init-timetravel
 	cp ../preamble.tex temp.m4
 	$(SCRIPTS)/generate_problems.rb $(SPOTTER_DIR) 1 $(DATA_DIR) $(SOLUTIONS_DIR) >>temp.m4
 	m4 -P ../problems.m4 book.m4 temp.m4 >temp.tex
 	$(GET_CLS)
+	@$(SCRIPTS)/timetravel.rb temp.tex
 	pdflatex temp >err
 	makeindex temp >/dev/null 2>/dev/null
+	@$(SCRIPTS)/timetravel.rb temp.tex
+	pdflatex temp >err
+	makeindex temp >/dev/null 2>/dev/null
+	@$(SCRIPTS)/timetravel.rb temp.tex
 	pdflatex temp >err
 	makeindex temp >/dev/null 2>/dev/null
 	$(RM_CLS)
@@ -66,8 +72,8 @@ clean:
 	$(RM_CLS)
 
 init-timetravel:
-	rm *.aux
-	rm -Rf timetravel
+	@rm -f *.aux
+	@rm -Rf timetravel
 
 preflight:
 	# make sure we always have latest version of timetravel package:

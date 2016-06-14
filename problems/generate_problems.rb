@@ -45,7 +45,7 @@ def slurp_file_with_detailed_error_reporting(file)
       return [t,nil]
     }
   rescue
-    return [nil,"Error opening file #{file} for input: #{$!}."]
+    return [nil,"Error opening file #{file} for input, cwd=#{Dir.pwd}: #{$!}."]
   end
 end
 
@@ -511,6 +511,13 @@ def die_if_bogus_xml(xml_file,prob)
   end
 end
 
+def generate_photo_credit(fig_file)
+  if $credits.key?(fig_file) then
+    description,credit = $credits[fig_file]
+    $credits_tex = $credits_tex + "\\cred{#{fig_file}}{#{description}}{#{credit}}"
+  end
+end
+
 def generate_prob_tex(prob,group,k,solutions,files,counters)
   # returns latex for the problem
   # side-effects (when appropriate):
@@ -536,14 +543,7 @@ def generate_prob_tex(prob,group,k,solutions,files,counters)
   result = result + "\\end{hw}\n"
   has_fig,fig_file,fig_path,width = find_fig_for_problem(prob,files)
   if has_fig then
-    macro = 'fignarrow'
-    add_before,add_after = '',''
-    if width!='narrow' then macro='figwide';add_before="\n\\begin{timetravel}\n";add_after="\n\\end{timetravel}\n" end
-    result = result+"#{add_before}\\#{macro}{#{fig_file}}{}{Problem \\ref{hw:#{prob}}.}#{add_after}\n"
-    if $credits.key?(fig_file) then
-      description,credit = $credits[fig_file]
-      $credits_tex = $credits_tex + "\\cred{#{fig_file}}{#{description}}{#{credit}}"
-    end
+    result = result+process_fig(fig_file,width,"Problem \\ref{hw:#{prob}}.")
   end
   if !($spotter_dir.nil?) then
     if debug then $stderr.print "looking for spotter stuff for #{prob}" end
@@ -614,6 +614,35 @@ def generate_solution_tex(answers_dir,prob,group,k,path,counters,instr=false,ins
   return result
 end
 
+def process_fig(fig_file,width,caption)
+  # returns latex code for the figure
+  # has the side-effect of generating a photo credit
+  # width can be narrow (52 mm), medium (1 column), wide, or fullpage
+  macro = 'fignarrow'
+  add_before,add_after = '',''
+  if width=='medium' then
+    macro='fig'
+  else
+    if width!='narrow' then macro='figwide';add_before="\n\\begin{timetravel}\n";add_after="\n\\end{timetravel}\n" end
+  end
+  generate_photo_credit(fig_file)
+  return "#{add_before}\\#{macro}{#{fig_file}}{}{#{caption}}#{add_after}\n"
+end
+
+def process_text(tex)
+  # handles figures, which look like this:
+  #       % fig {"name":"munchausen","caption":"Escaping from a swamp."}
+  # has the side effect of generating photo credits
+  tex.gsub!(/^%\s*fig\s*(.*)$/) { |line|
+    fig_data = parse_json_or_die($1)
+    fig = fig_data["name"]
+    caption = fig_data["caption"]
+    width = fig_width(fig)
+    process_fig(fig,width,caption)
+  }
+  return tex
+end
+
 def generate_content(what,depth,json,files,group,path,solutions,answers_dir,counters)
   # depth 0=book, 1=chapter, 2=section, 3=problem group
   debug = false
@@ -623,7 +652,7 @@ def generate_content(what,depth,json,files,group,path,solutions,answers_dir,coun
     title = json["title"]
     if depth==1 then print generate_chapter_header(title,path_label) end
     if depth==2 then print "\n%%%%%%%%%%% sec: #{title} %%%%%%%%%%%\n\\section{#{title}}\\label{sec:#{path_label}}\n" end
-    if File.exist?("text.tex") then print slurp_file("text.tex") end
+    if File.exist?("text.tex") then print process_text(slurp_file("text.tex")) end
   end
   if depth==3 then
     if json.key?("order") then

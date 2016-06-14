@@ -8,6 +8,7 @@ def photo_credit(file,description,credit)
   $credits[file] = [description,credit]
 end
 
+photo_credit("munchausen","Baron von Munchausen","Theodor Hosemann, public domain")
 photo_credit("hw-skee-ball","Skee ball","Photo by Wikipedia user Joyous!, CC-BY-SA") # https://commons.wikimedia.org/wiki/File:Skee_Ball.JPG
 photo_credit("hw-posnegwork-bull","Bull","Photo by Wikimedia Commons user Bart Hiddink, CC-BY") # https://upload.wikimedia.org/wikipedia/commons/f/fd/Angry_Bull_in_Pasture.jpg
 photo_credit("hw-car-in-mud","Man pushing car","Line art by the author, based on a photo by Wikimedia Commons user Auregann, CC-BY-SA") # http://commons.wikimedia.org/wiki/File:Voiture_embourb%C3%A9e.JPG

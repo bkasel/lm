@@ -81,6 +81,7 @@ def main()
       if pass==1 then
         code_file = "#{$temp_dir}/#{key}.tex"
         File.open(code_file,'w') { |code_f| code_f.print "\\timetraveldisable#{code}\\timetravelenable" }
+        code = ''
       end
       if pass>=2 then
         if !$aux_invoked.key?(key.to_s) then fatal_error("aux file #{aux_file} doesn't contain key #{key}") end

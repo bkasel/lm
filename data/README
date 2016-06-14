@@ -10,7 +10,8 @@ purpose:
 format:
   JSON
   is a hash with name of fig as key, width as value, e.g., "jovian-moons":"wide"
-  if they're normal width, they're omitted from the file, so explicit widths are either "wide" or "fullpage"
+  if they're normal width, they're omitted from the file, so explicit widths are "medium", "wide", or "fullpage"
+  medium width is 1 column, used only in problems book, and only occurs in fig_widths_by_hand
 to regenerate it:
   Edit /home/bcrowell/Documents/programming/eruby_util_for_books/eruby_util.rb
   Find the block of code that refers to fig_widths
