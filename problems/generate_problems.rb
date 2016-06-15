@@ -664,6 +664,8 @@ def generate_content(what,depth,json,files,group,path,solutions,answers_dir,coun
   end
   if depth==3 then
     if json.key?("order") && !(json["order"].nil?) then
+      if what=="problems" && File.exist?("text.tex") then print "\\emph{"+slurp_file("text.tex")+"}" end
+                       # ... instructions for a block of homework problems
       order = json["order"]
       k = 0
       order.each { |prob|

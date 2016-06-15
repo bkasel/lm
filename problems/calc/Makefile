@@ -74,6 +74,7 @@ post:
 clean:
 	rm -f $(BOOK).aux $(BOOK).log $(INSTR).pdf err *~ temp.*
 	$(RM_CLS)
+	rm -Rf timetravel
 
 init-timetravel:
 	@rm -f *.aux
