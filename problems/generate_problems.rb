@@ -668,7 +668,7 @@ def generate_content(what,depth,json,files,group,path,solutions,answers_dir,coun
     title = json["title"]
     if depth==1 then print generate_chapter_header(title,path_label) end
     if depth==2 then print "\n%%%%%%%%%%% sec: #{title} %%%%%%%%%%%\n\\section{#{title}}\\label{sec:#{path_label}}\n" end
-    if File.exist?("text.tex") then print process_text(slurp_file("text.tex")) end
+    if File.exist?("text.tex") && depth<3 then print process_text(slurp_file("text.tex")) end
   end
   if depth==3 then
     if json.key?("order") && !(json["order"].nil?) then
@@ -727,6 +727,9 @@ def do_stuff(what,depth,files,group,path,solutions,answers_dir,counters) # recur
       end
       subdirs.each { |dir|
         save_dir = Dir.getwd
+        if !File.exist?(dir) || !File.directory?(dir) then
+          fatal_error("subdirectory #{dir} doesn't exist, cwd=#{save_dir}")
+        end
         Dir.chdir(dir)
         g = group
         if depth==2 then g=order.key(dir) end
