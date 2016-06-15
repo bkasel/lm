@@ -7,9 +7,9 @@ require 'fileutils'
 require 'digest'
 require 'json'
 
-$freeze_at_pass = 3
+$freeze_at_pass = 4
   # Recompiling more than this many times should not change what pages floats land on.
-  # This is normally 3, must be at least 2.
+  # This is normally 4, must be at least 2.
 
 def main()
   debug = false
@@ -65,6 +65,7 @@ def main()
   line_num = 0
   code = '' # if inside a block, start accumulating a copy of the code here
   key = get_count()
+  par_stuff = {}
   File.readlines(in_file).each { |line|
     line_num = line_num+1
     line_type = 'normal'
@@ -88,30 +89,48 @@ def main()
       end
       if pass>=2 then
         if !$aux_invoked.key?(key.to_s) then fatal_error("aux file #{aux_file} doesn't contain key #{key}") end
-        if pass==2 then
-          par = find_target($aux_invoked[key.to_s],key,line_num)
-          File.open("#{$temp_dir}/par#{par}.tex",'a') { |f_par| f_par.print "\\input{timetravel/#{key}}"}
+        inv,land = $aux_invoked[key.to_s],$aux_landed[key.to_s]
+        offset = -1
+        if pass>=3 then
+          log("key #{key}, invoked at #{inv}, landed at #{land}")
+          if pass>=4 && land<=inv-3 then # empirically, -1 is normal, i.e., tex thinks it landed on the invoking page
+                              # -2 isn't unusual
+            log("  ...warning, this is much too early")
+            # offset = 0 # Don't do this, actually screws things up.
+          end
         end
-        log("key #{key}, invoked at #{$aux_invoked[key.to_s]}, landed at #{$aux_landed[key.to_s]}")
+        par = find_target(inv,offset,key,line_num)
+        par_file = "#{$temp_dir}/par#{par}.tex"
+        if !(par_stuff.key?(par_file)) then par_stuff[par_file]='' end
+        par_stuff[par_file] = par_stuff[par_file]+"\\input{timetravel/#{key}}"
       end
       %%%%% f_out.print "\\label{timetravelinvoked#{key}}"
     end
   }
+  if pass>=2 then
+    # Remove and then replace the par files. The only reason they should actually ever change from one
+    # iteration to the next is of a placement was detected to be way off at pass 3, so we change it
+    # at pass 4.
+    FileUtils.rm Dir.glob("#{$temp_dir}/par*.tex")
+    par_stuff.each { |par_file,tex|
+      File.open(par_file,'w') { |f_par| f_par.print tex}
+    }
+  end
   if inside then fatal_error("\\begin{timetravel} ended at end of file") end
 end
 
-def find_target(invocation_page,key,line_num)
+def find_target(invocation_page,offset,key,line_num)
   # invocation_page = page on which the timetravel environment was invoked
   # return value is paragraph key of the target that we want to travel back in time to
   page = invocation_page
-  if page>1 then page=page-1 end
+  if page+offset>=1 then page=page+offset end
   par = $aux_par[page]
   if par.nil? then
     par = $aux_par[invocation_page] 
             # as a backup, admit defeat and don't time-travel; a target paragraph
             # should always exist on the invocation page, because we issue a \timetraveltohere
             # as part of the timetravel environment
-    log("fallback, #{key}.tex from line #{line_num} invoked on page #{invocation_page} rather than the previous one")
+    log("fallback, #{key}.tex from line #{line_num}, offset=#{offset}, invoked on page #{invocation_page} rather than the previous one, where there was no \\timetraveltohere")
   end
   if par.nil? then fatal_error("no target found for timetravel environment whose code is in #{key}.tex, line #{line_num} of source file, invoked on page #{invocation_page}") end
   return par
@@ -160,7 +179,7 @@ def get_page_numbers_from_aux_file(aux_file)
       if label=~/\Atimetravel(invoked|par|landed)([^}]*)/ then
         type,key=$1,$2
         if type=="invoked" then $aux_invoked[key]=page end
-        if type=="invoked" then $aux_landed[key]=page end
+        if type=="landed" then $aux_landed[key]=page end
         if type=="par" then
           if $aux_par.key?(page) then
             if key<$aux_par[page] then $aux_par[page]=key end

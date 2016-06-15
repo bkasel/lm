@@ -31,13 +31,17 @@ student: $(SCRIPTS)/photocredits.json
 	@echo "Running pdflatex..."
 	@$(SCRIPTS)/timetravel.rb $(BOOK).tex
 	@$(DO_PDFLATEX_RAW)
-	@makeindex $(BOOK) >/dev/null 2>/dev/null
-	@echo "Running pdflatex two more times..."
-	@$(SCRIPTS)/timetravel.rb $(BOOK).tex
-	@$(DO_PDFLATEX_RAW)
+	@echo "Running pdflatex three more times..."
 	@$(SCRIPTS)/timetravel.rb $(BOOK).tex
 	@$(DO_PDFLATEX_RAW)
 	@makeindex $(BOOK) >/dev/null 2>/dev/null
+	@$(SCRIPTS)/timetravel.rb $(BOOK).tex
+	@$(DO_PDFLATEX_RAW)
+	@makeindex $(BOOK) >/dev/null 2>/dev/null
+	# one more time...? --
+	@$(DO_PDFLATEX_RAW)
+	@makeindex $(BOOK) >/dev/null 2>/dev/null
+        #
 	@$(RM_CLS)
 	@echo "Making new version of $(SPOTTER_DIR)/$(BOOK).xml"
 	@cp spotter.m4 $(SPOTTER_DIR)/$(BOOK).m4

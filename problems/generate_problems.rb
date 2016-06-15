@@ -543,7 +543,7 @@ def generate_prob_tex(prob,group,k,solutions,files,counters)
   result = result + "\\end{hw}\n"
   has_fig,fig_file,fig_path,width = find_fig_for_problem(prob,files)
   if has_fig then
-    result = result+process_fig(fig_file,width,"Problem \\ref{hw:#{prob}}.")
+    result = result+process_fig(fig_file,width,"Problem \\ref{hw:#{prob}}.",true)
   end
   if !($spotter_dir.nil?) then
     if debug then $stderr.print "looking for spotter stuff for #{prob}" end
@@ -614,7 +614,7 @@ def generate_solution_tex(answers_dir,prob,group,k,path,counters,instr=false,ins
   return result
 end
 
-def process_fig(fig_file,width,caption)
+def process_fig(fig_file,width,caption,allow_time_travel)
   # returns latex code for the figure
   # has the side-effect of generating a photo credit
   # width can be narrow (52 mm), medium (1 column), wide, or fullpage
@@ -623,7 +623,12 @@ def process_fig(fig_file,width,caption)
   if width=='medium' then
     macro='fig'
   else
-    if width!='narrow' then macro='figwide';add_before="\n\\begin{timetravel}\n";add_after="\n\\end{timetravel}\n" end
+    if width!='narrow' then
+      macro='figwide'
+      if allow_time_travel then
+        add_before="\n\\begin{timetravel}\n";add_after="\n\\end{timetravel}\n" 
+      end
+    end
   end
   generate_photo_credit(fig_file)
   return "#{add_before}\\#{macro}{#{fig_file}}{}{#{caption}}#{add_after}\n"
@@ -638,7 +643,10 @@ def process_text(tex)
     fig = fig_data["name"]
     caption = fig_data["caption"]
     if fig_data.key?("width") then width=fig_data["width"] else width = fig_width(fig) end
-    process_fig(fig,width,caption)
+    allow_time_travel = true
+    #if fig_data.key?("timetravel") then allow_time_travel=(fig_data["width"]!=0) end
+    if fig_data.key?("timetravel") then allow_time_travel=false end
+    process_fig(fig,width,caption,allow_time_travel)
   }
   return tex
 end
@@ -655,10 +663,11 @@ def generate_content(what,depth,json,files,group,path,solutions,answers_dir,coun
     if File.exist?("text.tex") then print process_text(slurp_file("text.tex")) end
   end
   if depth==3 then
-    if json.key?("order") then
+    if json.key?("order") && !(json["order"].nil?) then
       order = json["order"]
       k = 0
       order.each { |prob|
+        if prob=='' then fatal_error("problem is a null string, problem group=#{group}, counters=#{counters.join(',')}") end
         k = k+1
         if what=="problems" then
           print generate_prob_tex(prob,group,k,solutions,files,counters)
@@ -668,6 +677,9 @@ def generate_content(what,depth,json,files,group,path,solutions,answers_dir,coun
           if $instructor then
             print generate_solution_tex(answers_dir,prob,group,k,path,counters,true,$instr_dir)
           else
+            if $save_meta[prob].nil? then
+              $stderr.print "qwe prob=#{prob}\n"
+            end
             if solutions[prob] || $save_meta[prob]["solution"]==1 then
               print generate_solution_tex(answers_dir,prob,group,k,path,counters)
             end
