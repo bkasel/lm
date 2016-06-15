@@ -33,6 +33,9 @@ code_listing*
 code_listings.zip
 *.cmd
 learned_commands.json
+macros_not_handled
+problems/photocredits.json
+problems/clean_up.rb
 
 figfeedback*
 *.pos
