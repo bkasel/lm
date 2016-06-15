@@ -579,6 +579,14 @@ def find_instructor_solution(prob,instr_dir)
   return [false,nil,nil]
 end
 
+def clean_up_soln(orig)
+  tex = orig.clone
+  # \includegraphics{\chdir/figs/10-oclock-short} in, e.g., problem "row"
+  tex.gsub!(/\\includegraphics{\\chdir\/figs\/.*}/) {''}
+  tex.gsub!(/forcetablelmonly/) {'forcetable'}
+  return tex
+end
+
 def generate_solution_tex(answers_dir,prob,group,k,path,counters,instr=false,instr_dir=nil) # qwe
   debug = false
   #debug = (prob=~/cross/)
@@ -605,7 +613,7 @@ def generate_solution_tex(answers_dir,prob,group,k,path,counters,instr=false,ins
   else
     soln = find_figs_for_solution(prob,slurp_file(file))
   end
-  # soln.gsub!(/\\(begin|end){soln}/) {''} # these are no longer present in individual files
+  soln = clean_up_soln(soln)
   result = ''
   result = result+"\n\n%%%%%%%%%%%%%%%% solution to #{prob} %%%%%%%%%%%%%%%%\n"
   result = result+"\\solnhdr{\\ref{ch:#{path[0]}}-#{label}}\\label{soln:#{ch}-#{label}}\n"

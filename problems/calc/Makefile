@@ -8,7 +8,6 @@ RM_CLS = rm -f problems.cls shaddap.sty lmmath.sty timetravel.sty
 SCRIPTS = ..
 TEX_INTERPRETER = pdflatex
 DO_PDFLATEX_RAW = $(TEX_INTERPRETER) -shell-escape -interaction=nonstopmode $(BOOK) >err
-#DO_PDFLATEX_RAW = $(TEX_INTERPRETER) -shell-escape -interaction=nonstopmode $(BOOK)
 SPOTTER_DIR = /home/bcrowell/Documents/programming/spotter/answers
 DATA_DIR = ../../data
 

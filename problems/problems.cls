@@ -107,6 +107,32 @@
 %
 %%%%%%%%%%%%%%%%% answers %%%%%%%%%%%%%%%%%%%
 \newcommand{\solnhdr}[1]{\noindent\textbf{#1}\quad}
+\newcommand{\ifchunk}[2]{#2}
+\newenvironment{forcesoln}[3]{%
+  % #1 is ignored
+  \begin{figure*}
+  \noindent\textbf{Problem ??:}\par
+  #2
+  \begin{forcetable}{#3}
+}{%
+  \end{forcetable}
+  \end{figure*}
+}
+\newenvironment{forcetable}[1]{
+  \par\noindent\begin{tabular}{|lll|lll|}
+  \hline
+  & & & \multicolumn{3}{c|}{\emph{equal and opposite force}} \\
+  \multicolumn{3}{|c|}{\emph{force acting on #1}} &
+  \multicolumn{3}{c|}{\emph{involved in Newton's 3rd law}} \\
+  \hline
+  \emph{type of} &                & \emph{object exerting} & {} & {} & \emph{object}  \\ 
+  \emph{force}	& \emph{direction} & \emph{the force}        & \emph{type}	& \emph{direction} &\emph{exerting it} \\
+  \hline
+}{%
+  \hline
+  \end{tabular}
+}
+
 %%%%%%%%%%%%%%%%% titlesec %%%%%%%%%%%%%%%%%%%
 \titleformat{\chapter}
   {\normalfont\huge\bfseries}
