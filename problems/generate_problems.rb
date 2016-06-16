@@ -3,7 +3,7 @@
 # generate_problems.rb /path/to/spotter/dir instr data_dir instr_dir 
 #   first arg is where spotter dir is
 #   instr = 0 or 1, indicates whether this is the instructor's version
-#   data_dir is where fig_widths and fig_widths_by_hand files are
+#   data_dir is where the following files are: fig_widths, fig_widths_by_hand, fig_exceptional_captions
 #   instr_dir is directory where the solutions are
 # prints m4/latex output to stdout
 # as a side-effect, writes a spotter answer file to spotter.m4
@@ -518,6 +518,11 @@ def generate_photo_credit(fig_file)
   end
 end
 
+def generate_caption_for_hw_fig(prob,fig_file)
+  if $fig_exceptional_captions.key?(fig_file) then return $fig_exceptional_captions[fig_file] end
+  return "Problem \\ref{hw:#{prob}}."
+end
+
 def generate_prob_tex(prob,group,k,solutions,files,counters)
   # returns latex for the problem
   # side-effects (when appropriate):
@@ -543,7 +548,7 @@ def generate_prob_tex(prob,group,k,solutions,files,counters)
   result = result + "\\end{hw}\n"
   has_fig,fig_file,fig_path,width = find_fig_for_problem(prob,files)
   if has_fig then
-    result = result+process_fig(fig_file,width,"Problem \\ref{hw:#{prob}}.",true)
+    result = result+process_fig(fig_file,width,generate_caption_for_hw_fig(prob,fig_file),true)
   end
   if !($spotter_dir.nil?) then
     if debug then $stderr.print "looking for spotter stuff for #{prob}" end
@@ -767,6 +772,7 @@ def main()
   end
   $fig_widths = get_json_data_from_file_or_die("#{$data_dir}/fig_widths")
   $fig_widths = $fig_widths.merge(get_json_data_from_file_or_die("#{$data_dir}/fig_widths_by_hand"))
+  $fig_exceptional_captions = get_json_data_from_file_or_die("#{$data_dir}/fig_exceptional_captions")
   $original_dir = Dir.getwd
   $credits_tex = "\\input{../credits_header.tex}"
   $credits = get_json_data_from_file_or_die($original_dir+"/../photocredits.json")

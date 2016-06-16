@@ -3,6 +3,13 @@ format:
   book,chapter,number,label,solution
 More detailed info in ../INTERNALS.
 
+========fig_exceptional_captions========
+Normally the figures for homework problems just refer to the problem, and
+don't really need to be written by hand; for problems book, they're automatically
+generated.
+This file is used for figures where a script can't infer what caption to make up.
+An example is a figure that is used by more than one problem.
+
 ========fig_widths, fig_widths_by_hand=========
 purpose:
   Make it easy for the problems book to be automatically generated, without having
