@@ -19,6 +19,7 @@ all: $(SCRIPTS)/photocredits.json
 	make student
 	make instr
 	@make post
+	@echo "Both versions of the book are made and posted. You can do a make clean if you like."
 
 student: $(SCRIPTS)/photocredits.json
 	@make preflight
@@ -76,7 +77,7 @@ clean:
 	rm -Rf timetravel
 
 init-timetravel:
-	@rm -f *.aux
+	@rm -f *.aux *.ind
 	@rm -Rf timetravel
 
 preflight:

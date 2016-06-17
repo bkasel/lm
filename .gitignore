@@ -15,6 +15,7 @@ scripts/custom/enable
 *.toc
 *.ilg
 *.bak
+*.ind
 
 *~
 */.xvpics/*
