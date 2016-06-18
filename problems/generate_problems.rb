@@ -56,10 +56,11 @@ def get_json_data_from_file_or_die(file)
 end
 
 def parse_json_or_die(json)
+  m = JSMin.minify(json) # use minifier to get rid of comments
   begin
-    return JSON.parse(JSMin.minify(json)) # use minifier to get rid of comments
+    return JSON.parse(m)
   rescue JSON::ParserError
-    fatal_error("syntax error in JSON string '#{json}'")
+    fatal_error("syntax error in JSON string '#{m}'")
   end
 end
 
@@ -693,9 +694,9 @@ def generate_content(what,depth,json,files,group,path,solutions,answers_dir,coun
             print generate_solution_tex(answers_dir,prob,group,k,path,counters,true,$instr_dir)
           else
             if $save_meta[prob].nil? then
-              $stderr.print "qwe prob=#{prob}\n"
+              warning("save_meta is nil for problem #{prob} -- why?")
             end
-            if solutions[prob] || $save_meta[prob]["solution"]==1 then
+            if (solutions.key?(prob) && solutions[prob]) || (!$save_meta[prob].nil? && $save_meta[prob]["solution"]==1) then
               print generate_solution_tex(answers_dir,prob,group,k,path,counters)
             end
           end

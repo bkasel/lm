@@ -43,6 +43,7 @@
 \newcommand{\fignarrow}[3]{\figraw{#2}{#1}{#3}{width=52mm}}
 \newcommand{\figwide}[3]{\figrawwide{#2}{#1}{#3}{width=152mm}}
 %\newcommand{\fignarrow}[3]{}
+\newcommand{\figref}[1]{\ref{fig:#1}}
 %%%%%%%%%%%%%%%%% problems %%%%%%%%%%%%%%%%%%%
 \newenvironment{hwsection}{
     \vfill\clearpage
@@ -132,7 +133,6 @@
   \hline
   \end{tabular}
 }
-
 %%%%%%%%%%%%%%%%% titlesec %%%%%%%%%%%%%%%%%%%
 \titleformat{\chapter}
   {\normalfont\huge\bfseries}
