@@ -38,6 +38,7 @@ macros_not_handled
 problems/photocredits.json
 problems/clean_up.rb
 
+*/timetravel/*
 figfeedback*
 *.pos
 *.postm4

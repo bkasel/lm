@@ -651,7 +651,7 @@ def process_text(tex)
   # handles figures, which look like this:
   #       % fig {"name":"munchausen","caption":"Escaping from a swamp."}
   # has the side effect of generating photo credits
-  tex.gsub!(/^%\s*fig\s*(.*)$/) { |line|
+  tex.gsub!(/^%\s*fig\s*({.*})$/) { |line|
     fig_data = parse_json_or_die($1)
     fig = fig_data["name"]
     caption = fig_data["caption"]
