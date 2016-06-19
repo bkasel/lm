@@ -22,7 +22,6 @@ scripts/custom/enable
 a.a
 password.make
 spotter.m4
-*problems.csv
 spotter_labels
 save.ref
 temp

@@ -3,7 +3,7 @@
 # generate_problems.rb /path/to/spotter/dir instr data_dir instr_dir 
 #   first arg is where spotter dir is
 #   instr = 0 or 1, indicates whether this is the instructor's version
-#   data_dir is where the following files are: fig_widths, fig_widths_by_hand, fig_exceptional_captions
+#   data_dir is where the following files are: fig_widths, fig_widths_by_hand, fig_exceptional_captions, fig_exceptional_naming
 #   instr_dir is directory where the solutions are
 # prints m4/latex output to stdout
 # as a side-effect, writes a spotter answer file to spotter.m4
@@ -428,18 +428,27 @@ end
 def find_fig_for_problem(prob,files) # returns [boolean,"foo","/.../.../foo.png",width]
   # files = a directory, can be relative, with /figs implied on the end, or absolute
   # return value width is "narrow", "wide", or "fullpage"
-  ['','hw-','eg-'].each { |prefix|
-    f = "#{prefix}#{prob}"
-    places = []
-    if !(files.nil?) then 
-      # detect whether it's relative or absolute
-      if Dir.exist?(files) then
-        places.push(files)
-      else
-        places.push($original_dir+"/../../"+files+"/figs")
-      end
+  # For exceptions to the naming convention (e.g., figures that need to be duplicated in the book
+  # in more than one place), edit fig_exceptional_naming.
+  places = []
+  if !(files.nil?) then 
+    # detect whether it's relative or absolute
+    if Dir.exist?(files) then
+      places.push(files)
+    else
+      places.push($original_dir+"/../../"+files+"/figs")
     end
-    places.push($original_dir+"/../../me/end/figs") # me/end/figs has some figures for solutions
+  end
+  places.push($original_dir+"/../../me/end/figs") # me/end/figs has some figures for solutions
+  possible_names = []
+  if $fig_exceptional_naming.key?(prob) then
+    possible_names.push($fig_exceptional_naming[prob])
+  else
+    ['','hw-','eg-'].each { |prefix|
+      possible_names.push("#{prefix}#{prob}")
+    }
+  end
+  possible_names.each { |f|
     places.each { |dir| 
       r = find_fig_file_in_dir(dir,f)
       if r[0] then return r end
@@ -775,6 +784,7 @@ def main()
   $fig_widths = $fig_widths.merge(get_json_data_from_file_or_die("#{$data_dir}/fig_widths_by_hand"))
   $fig_widths = $fig_widths.merge(get_json_data_from_file_or_die("../override_fig_widths"))
   $fig_exceptional_captions = get_json_data_from_file_or_die("#{$data_dir}/fig_exceptional_captions")
+  $fig_exceptional_naming = get_json_data_from_file_or_die("#{$data_dir}/fig_exceptional_naming")
   $original_dir = Dir.getwd
   $credits_tex = "\\input{../credits_header.tex}"
   $credits = get_json_data_from_file_or_die($original_dir+"/../photocredits.json")
