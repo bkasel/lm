@@ -54,7 +54,7 @@ __incl(text/energy_zoo_summary)
 
 <% begin_hw('throw-down-and-up') %>__incl(hw/throw-down-and-up)<% end_hw() %>
 
-<% begin_hw('hoop',2) %>__incl(hw/hoop)<% end_hw() %>
+<% begin_hw('hoop',2) %>Problem \ref{hw:hoop} has been deleted.<% end_hw() %>
 
 \pagebreak
 

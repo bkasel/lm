@@ -189,7 +189,7 @@ __incl(text/momentum_summary)
 
 <%
   fig(
-    'hw-rocket-f-t',
+    'hw-rocket',
     %q{Problem \ref{hw:rocket}},
     {
       'width'=>'wide',

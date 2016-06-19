@@ -773,6 +773,7 @@ def main()
   end
   $fig_widths = get_json_data_from_file_or_die("#{$data_dir}/fig_widths")
   $fig_widths = $fig_widths.merge(get_json_data_from_file_or_die("#{$data_dir}/fig_widths_by_hand"))
+  $fig_widths = $fig_widths.merge(get_json_data_from_file_or_die("../override_fig_widths"))
   $fig_exceptional_captions = get_json_data_from_file_or_die("#{$data_dir}/fig_exceptional_captions")
   $original_dir = Dir.getwd
   $credits_tex = "\\input{../credits_header.tex}"
