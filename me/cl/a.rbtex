@@ -378,12 +378,7 @@ your answer in units of minutes.
 
 \vspace{12mm}
 
-<% begin_hw('bulletthroughbook') %>
-A bullet flies through the air, passes through a
-paperback book, and then continues to fly through the air
-beyond the book. When is there a force? When is there energy?
-<% hw_solution %>
-<% end_hw() %>
+<% begin_hw('bulletthroughbook') %>__incl(hw/bulletthroughbook)<% end_hw() %>
 
 <% begin_hw('boatengine') %>__incl(hw/boatengine)<% end_hw() %>
 

@@ -61,14 +61,7 @@ __incl(text/momentum_summary)
 
 <% begin_hw('fridge-recoil') %>__incl(hw/fridge-recoil)<% end_hw() %>
 
-<% begin_hw('bowling-collision') %>
-A 10-kg bowling ball moving at 2.0 m/s hits a 1.0-kg
-bowling pin, which is initially at rest. The other pins are
-all gone already, and the collision is head-on, so that the
-motion is one-dimensional. Assume that negligible amounts of
-heat and sound are produced. Find the velocity of the pin
-immediately after the collision.
-<% end_hw() %>
+<% begin_hw('bowling-collision') %>__incl(hw/bowling-collision)<% end_hw() %>
 
 <% begin_hw('exhaust',2,{'calc'=>true}) %>__incl(hw/exhaust)<% end_hw() %>
 

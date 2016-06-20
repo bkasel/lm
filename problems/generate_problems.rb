@@ -470,7 +470,7 @@ def find_figs_for_solution(prob,orig,instr_dir=nil)
   #debug = (prob=~/truck/)
   debug = false
   $stderr.print "in find_figs_for_solution, prob=#{prob}" if debug
-  tex = orig.clone # qwe
+  tex = orig.clone
   figs_dir = nil
   if !(instr_dir.nil?) then found,solution,figs_dir = find_instructor_solution(prob,instr_dir) end
   macros = ["anonymousinlinefig","fig"]
@@ -539,7 +539,7 @@ def generate_prob_tex(prob,group,k,solutions,files,counters)
   #   adds to $credits_tex
   #   adds to spotter output in $spotter1 and $spotter2
   file,err = find_problem_file(prob,files)
-  if file.nil? then warning(err); return '' end
+  if file.nil? then fatal_error(err) end
   debug = false # (prob=~/pluto/)
   label = group+k.to_s
   tex = slurp_file(file)
