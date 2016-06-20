@@ -1,0 +1,26 @@
+Assigning difficulty levels to problems:
+  % meta {"stars":1} // super hard problem
+Figures:
+  % fig {"name":"greyhound","caption":"The racing greyhound's velocity vector is
+  % in the direction of its motion, i.e., tangent to its curved path."}
+In the above syntax, the active latex comments contain a keyword followed by a
+JSON string. The JSON string can extend over multiple lines; input will be read
+until a complete and syntactically valid JSON string is built up. Newlines are
+eliminated, so in the example above, with a multiline string, the space after
+the % on the second line is significant. Javascript-style comments are allowed,
+but watch out when combining multiline blocks with //-style comments, because the 
+newlines  are removed before the comments are removed. It may be safer to use
+/*...*/ comments.
+
+The book is arranged in a tree structure of chapters, sections, and problem groups.
+Each node in the tree has a configuration file called this.config in its directory.
+The configuration file is in JSON format, with comments allowed. Newlines are not
+removed, and multiline strings are not allowed.
+
+In most cases, it's OK to associate all the problem groups with the final section
+of the chapter.
+
+Explanatory text is in files called text.tex, at the section level. If you want
+a remark above a problem group (such as general instructions that apply to all
+the problems in the group), you can put the text in a text.tex file at the
+problem-group level.

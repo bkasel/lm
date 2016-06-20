@@ -63,12 +63,64 @@ def preprocess_json(json)
 end
 
 def parse_json_or_die(json)
-  m = preprocess_json(json)
   begin
-    return JSON.parse(m)
+    return JSON.parse(preprocess_json(json))
   rescue JSON::ParserError
     fatal_error("syntax error in JSON string '#{m}'")
   end
+end
+
+def is_valid_json(json)
+  begin   
+    JSON.parse(preprocess_json(json)) # throw away result
+    return true
+  rescue JSON::ParserError
+    return false
+  end
+end
+
+# Example:
+#   text looks like this:
+#     foo
+#     % meta {"stars":
+#     % 1}
+#     bar
+#   keyword="meta"
+#   The two % lines are recognized as a single block containing some JSON.
+#   We know that it isn't a single line, because that wouldn't be syntactically valid JSON.
+#   The code block is invoked with this hash as an argument. It will normally return a null string,
+#   which means that the json blocks are filtered out. If it returns a string, then the json block
+#   is replaced with that string.
+def json_block(text,keyword)
+  # expects a code block as 3rd param
+  # returns [transformed text,err,error message]
+  accum_block = ''
+  result = ''
+  line_count = 0
+  text.split(/\n/).each { |line|
+    line_count = line_count+1
+    if line=~/\r/ then return [nil,true,"line #{line_count} contains \\r"] end
+    if accum_block=='' && !(line=~/^%\s*#{keyword}[^a-zA-Z].*/) then
+      result = result + accum_block + line + "\n"
+    else
+      if accum_block=='' then 
+        line=~/^%\s*#{keyword}([^a-zA-Z].*)/
+        accum_block = $1
+      else
+        if line =~/^%(.*)/ then
+          accum_block = accum_block+$1
+        else
+          return [nil,true,"invalid JSON syntax in block ending at line #{line_count-1}"]
+        end
+      end
+      if is_valid_json(accum_block) then
+        result = result + yield(parse_json_or_die(accum_block)).to_s
+        accum_block = ''
+      end
+    end
+  }
+  result = result + accum_block + "\n"
+  return [result,false,nil]
 end
 
 def get_problems_data(problems_csv) # used in order to determine which problems have publicly available solutions
@@ -102,7 +154,8 @@ end
 
 def clean_up_hw(t)
   result = t.gsub(/^%%%%%(.*)\n/) {''}
-  result.gsub!(/%\s*meta\s*(.*)/) {''}
+  result,err,message = json_block(result,"meta") { |data| ''} # eliminate meta blocks
+  if err then fatal_error(message) end
   result.gsub!(/\A\s+/) {''}
   result.gsub!(/\n*\Z/) {''}
   return result
@@ -122,10 +175,11 @@ end
 
 def extract_meta(t)
   h = {}
-  t.scan(/%\s*meta\s*(.*)/) { |x|
-    json = x[0]
-    h = h.merge(parse_json_or_die(json))
+  t,err,message = json_block(t,"meta") { |data|
+    h = h.merge(data)
+    '' # filter the block out of the source code
   }
+  if err then fatal_error(message) end
   return h
 end
 
@@ -378,9 +432,21 @@ def process_fig(fig_file,width,caption,allow_time_travel)
 end
 
 def process_text(tex)
-  # handles figures, which look like this:
-  #       % fig {"name":"munchausen","caption":"Escaping from a swamp."}
-  # has the side effect of generating photo credits
+  # Handles figures, which look like this:
+  #       % fig {"name":"munchausen","caption":"Escaping from a 
+  #       %      swamp."}
+  # Has the side effect of generating photo credits.
+  tex,err,message = json_block(tex,"fig") { |fig_data|
+    fig = fig_data["name"]
+    caption = fig_data["caption"]
+    if fig_data.key?("width") then width=fig_data["width"] else width = fig_width(fig) end
+    allow_time_travel = true
+    if fig_data.key?("timetravel") then allow_time_travel=false end
+    process_fig(fig,width,caption,allow_time_travel) # replaces original code with this
+  }
+  if err then fatal_error(message) end
+
+  if false then
   tex.gsub!(/^%\s*fig\s*({.*})$/) { |line|
     fig_data = parse_json_or_die($1)
     fig = fig_data["name"]
@@ -391,6 +457,8 @@ def process_text(tex)
     if fig_data.key?("timetravel") then allow_time_travel=false end
     process_fig(fig,width,caption,allow_time_travel)
   }
+  end
+
   return tex
 end
 

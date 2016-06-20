@@ -217,3 +217,10 @@ Renumbering a problem:
   - reorder it in book's source code
   - change it in spotter file (or run howdy --renumber)
   - change syllabi
+
+=============
+problems book
+=============
+
+The problems book, in the subdirectory problems, has its own, different software
+setup. See problems/README for an explanation of how it works.
