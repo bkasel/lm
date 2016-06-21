@@ -103,5 +103,6 @@ more about problems
              from the fact that there is a <% hw_solution %> in the .tex file;
              for problems that are only in the problems book, not one of the textbooks,
              do % meta {"solution":1}, and put solution in physics/share/answers
+             (e.g., prove-mg)
   not needed
     answer check -- infer this from the presence of an \answercheck macro

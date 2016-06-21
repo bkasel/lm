@@ -107,13 +107,14 @@ $config = {
   # In the following, nil means that there is no default and it's an error if it's not given explicitly.
   # If adding a new config variable here, then also add it below (why did I do this?).
   'titlecase_above'=>nil, # e.g., 1 means titlecase for chapters but not for sections or subsections
-  'hw_block_style'=>0 # 1 means hw numbered like a7, as in Fundamentals of Calculus
+  'hw_block_style'=>0, # 1 means hw numbered like a7, as in Fundamentals of Calculus
+  'allow_renumbering'=>0 # if a homework problem gets renumbered, is it ok in merge_problems_data.rb ?
 }
 File.open(config_file,'r') { |f|
   c = f.gets(nil) # nil means read whole file
   c.scan(/(\w+),(.*)/) { |var,value|
     if ! $config.has_key?(var) then fatal_error("Error in config file #{config_file}, illegal variable '#{var}'") end
-    if {'titlecase_above'=>nil,'hw_block_style'=>nil}.has_key?(var) then
+    if {'titlecase_above'=>nil,'hw_block_style'=>nil,'allow_renumbering'=>nil}.has_key?(var) then
       value = value.to_i
     end
     $config[var] = value

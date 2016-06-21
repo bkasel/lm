@@ -108,6 +108,10 @@ book:
 	@rm -f $(TERMINAL_OUTPUT) # If pdflatex has a nonzero exit code, we don't get here, so the output file is available for inspection.
 	@$(RM_CLS)
 	@perl -e 'if (-e "eruby_complaints") {system "cat eruby_complaints"}'
+	make update_problems
+
+update_problems:
+	../scripts/merge_problems_data.rb $(BOOK) ../data
 
 web:
 	@[ `which footex` ] || echo "******** footex is not installed, so html cannot be generated; get footex from http://www.lightandmatter.com/footex/footex.html"

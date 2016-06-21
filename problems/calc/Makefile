@@ -46,6 +46,7 @@ student: $(SCRIPTS)/photocredits.json
 	@echo "Making new version of $(SPOTTER_DIR)/$(BOOK).xml"
 	@cp spotter.m4 $(SPOTTER_DIR)/$(BOOK).m4
 	@cd $(SPOTTER_DIR) ; make ; cd -
+	make update_problems
 
 instr: $(SCRIPTS)/photocredits.json
 	@make preflight
@@ -72,20 +73,25 @@ post:
 	@-cp $(INSTR).pdf ~/Lightandmatter/problems
 
 clean:
-	rm -f $(BOOK).aux $(BOOK).log $(INSTR).pdf err *~ temp.*
+	rm -f $(BOOK).aux $(BOOK).log $(INSTR).pdf err *~ temp.* own_problems_solns.csv
 	$(RM_CLS)
 	rm -Rf timetravel
+
+update_problems:
+	../harvest_aux.rb $(DATA_DIR)
+	../../scripts/merge_problems_data.rb $(BOOK) $(DATA_DIR)
 
 init-timetravel:
 	@rm -f *.aux *.ind
 	@rm -Rf timetravel
 
 preflight:
+	@rm -f own_problems_solns.csv
 	# make sure we always have latest version of timetravel package:
 	@-cp ~/Documents/programming/timetravel/timetravel.rb $(SCRIPTS) 
 	@-cp ~/Documents/programming/timetravel/timetravel.sty $(SCRIPTS) 
 	# make sure scripts are executable:
-	@chmod +x $(SCRIPTS)/generate_problems.rb $(SCRIPTS)/photocredits.rb $(SCRIPTS)/timetravel.rb
+	@chmod +x $(SCRIPTS)/generate_problems.rb $(SCRIPTS)/photocredits.rb $(SCRIPTS)/timetravel.rb $(SCRIPTS)/harvest_aux.rb
 
 $(SCRIPTS)/photocredits.json: $(SCRIPTS)/photocredits.rb
 	@make preflight

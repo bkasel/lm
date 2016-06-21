@@ -131,10 +131,10 @@ def get_problems_data(problems_csv) # used in order to determine which problems 
   csv = slurp_file(problems_csv)
   csv.split(/\n/).each { |line|
     if line=~/\A([^,]*),([^,]*),([^,]*),([^,]*),([^,]*)\Z/ then
-      book,chapter,number,label,solution = [$1,$2.to_i,$3,$4,$5.to_i]
-      debug = false # (label=="mg-to-kg")
-      result[label] = (solution==1)
-      if debug then $stderr.print "result[label]=#{result[label]}\n" end
+      book,chapter,number,label,solution = [$1,$2.to_i,$3,$4,$5]
+      if solution!='' then
+        result[label] = (solution.to_i==1)
+      end
     else
       fatal_error("can't parse this line in #{infile}: #{line}")
     end
@@ -312,6 +312,7 @@ def generate_prob_tex(prob,group,k,solutions,files,counters)
   # side-effects (when appropriate):
   #   adds to $credits_tex
   #   adds to spotter output in $spotter1 and $spotter2
+  #   appends to own_problems_solns.csv if the problem is marked with a meta tag as having a solution
   file,err = find_problem_file(prob,files)
   if file.nil? then fatal_error(err) end
   debug = false # (prob=~/pluto/)
@@ -329,6 +330,14 @@ def generate_prob_tex(prob,group,k,solutions,files,counters)
     #{tex}\n
     RESULT
   if solutions[prob] || meta["solution"]==1 then result =result+"\\hwsoln\n" end
+  if prob=='prove-mg' then
+    $stderr.print "============ prob=#{prob}, meta=#{meta} cwd=#{Dir.pwd}\n"
+  end
+  if meta["solution"]==1 then
+    File.open("#{$original_dir}/own_problems_solns.csv",'a') { |f|
+      f.print ",#{ch},#{label},#{prob},1\n"
+    }
+  end
   result = result + "\\end{hw}\n"
   has_fig,fig_file,fig_path,width = find_fig_for_problem(prob,files)
   if has_fig then
@@ -607,6 +616,7 @@ def main()
       f.print $spotter1+"\n\n<toc_level level=\"0\" type=\"chapter\"/>"+$spotter2+"\n</spotter>\n"
     }
   end
+  $original_dir = Dir.pwd
 end
 
 main()
