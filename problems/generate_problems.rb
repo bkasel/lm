@@ -6,8 +6,11 @@
 #   data_dir is where the following files are: fig_widths, fig_widths_by_hand, fig_exceptional_captions, fig_exceptional_naming
 #   instr_dir is directory where the solutions are
 # prints m4/latex output to stdout
-# as a side-effect, writes a spotter answer file to spotter.m4
+# side-effects:
+#   writes a spotter answer file to spotter.m4
+#   writes to files missing_solutions and missing_checks
 
+require 'fileutils'
 require 'json'
 
 def fatal_error(message)
@@ -330,9 +333,6 @@ def generate_prob_tex(prob,group,k,solutions,files,counters)
     #{tex}\n
     RESULT
   if solutions[prob] || meta["solution"]==1 then result =result+"\\hwsoln\n" end
-  if prob=='prove-mg' then
-    $stderr.print "============ prob=#{prob}, meta=#{meta} cwd=#{Dir.pwd}\n"
-  end
   if meta["solution"]==1 then
     File.open("#{$original_dir}/own_problems_solns.csv",'a') { |f|
       f.print ",#{ch},#{label},#{prob},1\n"
@@ -356,13 +356,29 @@ def generate_prob_tex(prob,group,k,solutions,files,counters)
       die_if_bogus_xml(xml_fragment,prob)
     end
     if check_exists && !claims_check_exists then
-      warning("problem #{prob} has an answer check in #{xml_fragment},\n  but file #{file} doesn't have \\answercheck")
+      log_warning('check',"missing \\answercheck for #{prob}","problem #{prob} has an answer check in #{xml_fragment},\n  but file #{file} doesn't have \\answercheck")
     end
     if !check_exists && claims_check_exists then
-      warning("for problem #{ch}-#{label}, #{prob},\n  file #{File.expand_path(file)} has \\answercheck,\n  but no file #{xml_fragment} exists")
+      log_warning('check',"missing answer check for #{prob}","for problem #{ch}-#{label}, #{prob},\n  file #{File.expand_path(file)} has \\answercheck,\n  but no file #{xml_fragment} exists")
     end
   end
   return result
+end
+
+def log_warning(type,brief,message)
+  if type=='check' then
+    file = $missing_checks_file
+    $n_missing_checks = $n_missing_checks+1
+    n = $n_missing_checks
+  end
+  if type=='solution' then
+    file = $missing_solutions_file
+    $n_missing_solutions = $n_missing_solutions+1
+    n = $n_missing_solutions
+  end
+  if n==1 then warning(brief) end
+  if n==2 then warning("There are additional missing #{type}s recorded in the file #{file}.") end
+  File.open(file,'a') { |f| f.print message }
 end
 
 def find_instructor_solution(prob,instr_dir)
@@ -402,8 +418,8 @@ def generate_solution_tex(answers_dir,prob,group,k,path,counters,instr=false,ins
     instr_only = true
   end
   $stderr.print "file=#{file}, #{file.nil?}, found=#{found}\n" if debug
-  if !instr && !found then warning("no solution found for problem #{ch}-#{group}#{k}, #{prob}, which is supposed to have a solution in the back of the student's version; solutions should typically go in physics/share/answers"); return '' end
-  if instr && !found then warning("no solution found for problem #{ch}-#{group}#{k}, #{prob}"); return '' end
+  if !instr && !found then log_warning('solution',"missing solution for #{prob}","no solution found for problem #{ch}-#{group}#{k}, #{prob}, which is supposed to have a solution in the back of the student's version; solutions should typically go in physics/share/answers"); return '' end
+  if instr && !found then log_warning('solution',"missing solution for #{prob}","no solution found for problem #{ch}-#{group}#{k}, #{prob}"); return '' end
   label = group+k.to_s
   if instr_only then
     $stderr.print "calling find_figs_for_solution, prob=#{prob}, file=#{file}\n" if debug
@@ -565,6 +581,11 @@ def do_stuff(what,depth,files,group,path,solutions,answers_dir,counters) # recur
 end
 
 def main()
+  $n_missing_solutions = 0
+  $n_missing_checks = 0
+  $missing_solutions_file = "missing_solutions"
+  $missing_checks_file = "missing_checks"
+  FileUtils.rm_f [$missing_solutions_file,$missing_checks_file]
   $spotter_dir = ARGV[0]
   if !($spotter_dir.nil?) && !(Dir.exist?($spotter_dir)) then 
     warning("spotter directory #{$spotter_dir} doesn't exist") 
@@ -617,6 +638,7 @@ def main()
     }
   end
   $original_dir = Dir.pwd
+  if $n_missing_checks>0 || $n_missing_solutions>0 then warning("#{$n_missing_solutions} missing solutions and #{$n_missing_checks} missing checks") end
 end
 
 main()
