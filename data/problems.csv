@@ -1288,10 +1288,10 @@ problems,6,a8,car-top-of-hill,0
 problems,6,a9,nose-dive,0
 problems,6,d1,circularcalculus,0
 problems,6,g1,tilt-a-whirl,0
-problems,6,g2,conicalpendulum,0
-problems,6,g3,circling-blocks,0
-problems,6,g4,wall-of-death,0
-problems,6,g5,brick-circle,0
+problems,6,g2,brick-circle,0
+problems,6,g3,conicalpendulum,0
+problems,6,g4,circling-blocks,0
+problems,6,g5,wall-of-death,0
 problems,6,g6,toy-no-slide-merry-go-round,0
 problems,6,j1,mixer,0
 problems,6,j2,paradox,0
@@ -1356,7 +1356,7 @@ problems,7,j5,paper-falling-work-symbolic,0
 problems,7,j6,ramp-slide-friction,0
 problems,7,j7,spring-game,0
 problems,7,j8,bikeloop,0
-problems,7,j9,roller-coaster-loop-2v,0
+problems,7,j9,bikeloop-2v,0
 problems,7,j10,pulley-table-two-blocks-energy,0
 problems,7,j11,rolling-hoop,0
 problems,7,j12,vertical-spring-drop,0

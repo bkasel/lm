@@ -1288,10 +1288,10 @@ m4_define(__hw_problems_6_car-top-of-hill,a8)m4_dnl
 m4_define(__hw_problems_6_nose-dive,a9)m4_dnl
 m4_define(__hw_problems_6_circularcalculus,d1)m4_dnl
 m4_define(__hw_problems_6_tilt-a-whirl,g1)m4_dnl
-m4_define(__hw_problems_6_conicalpendulum,g2)m4_dnl
-m4_define(__hw_problems_6_circling-blocks,g3)m4_dnl
-m4_define(__hw_problems_6_wall-of-death,g4)m4_dnl
-m4_define(__hw_problems_6_brick-circle,g5)m4_dnl
+m4_define(__hw_problems_6_brick-circle,g2)m4_dnl
+m4_define(__hw_problems_6_conicalpendulum,g3)m4_dnl
+m4_define(__hw_problems_6_circling-blocks,g4)m4_dnl
+m4_define(__hw_problems_6_wall-of-death,g5)m4_dnl
 m4_define(__hw_problems_6_toy-no-slide-merry-go-round,g6)m4_dnl
 m4_define(__hw_problems_6_mixer,j1)m4_dnl
 m4_define(__hw_problems_6_paradox,j2)m4_dnl
@@ -1356,7 +1356,7 @@ m4_define(__hw_problems_7_paper-falling-work-symbolic,j5)m4_dnl
 m4_define(__hw_problems_7_ramp-slide-friction,j6)m4_dnl
 m4_define(__hw_problems_7_spring-game,j7)m4_dnl
 m4_define(__hw_problems_7_bikeloop,j8)m4_dnl
-m4_define(__hw_problems_7_roller-coaster-loop-2v,j9)m4_dnl
+m4_define(__hw_problems_7_bikeloop-2v,j9)m4_dnl
 m4_define(__hw_problems_7_pulley-table-two-blocks-energy,j10)m4_dnl
 m4_define(__hw_problems_7_rolling-hoop,j11)m4_dnl
 m4_define(__hw_problems_7_vertical-spring-drop,j12)m4_dnl
