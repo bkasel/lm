@@ -29,3 +29,6 @@ to regenerate it:
   Delete the final comma. Add curly braces at top and bottom. It's now valid JSON.
 In a few cases, I've used something like raw_fig() in eruby, so width won't automatically
 be put in fig_widths. For these cases, there is a separate file fig_widths_by_hand.
+
+For figures in solutions, run scripts/detect_wide_solutions.rb from ~ and cut and paste
+into fig_widths_by_hand.

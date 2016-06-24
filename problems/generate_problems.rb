@@ -243,7 +243,7 @@ def find_anonymous_inline_figs(tex)
   }
 end
 
-def find_figs_for_solution(prob,orig,instr_dir=nil)
+def find_figs_for_solution(prob,orig,label,instr_dir=nil)
   #debug = (prob=~/truck/)
   debug = false
   $stderr.print "in find_figs_for_solution, prob=#{prob}" if debug
@@ -262,7 +262,12 @@ def find_figs_for_solution(prob,orig,instr_dir=nil)
         fatal_error("fig not found by find_figs_for_solution, prob=#{prob}, fig_name=#{fig_name}, figs_dir=#{figs_dir}")
       end
       $stderr.print "in find_figs_for_solution, prob=#{prob}, f=#{f}" if debug
-      "\\anonymousinlinefig{#{f}}"
+      result = "\n\n\\noindent\\begin{center}\\anonymousinlinefig{#{f}}\\end{center}\n\n" # narrow, not floating
+      width = fig_width(fig_name)
+      if width!='narrow' then
+        result = process_fig(f,width,"Problem #{label}.",true,true,true) # floating, wide fig
+      end
+      result
     }
   }
   return tex
@@ -341,7 +346,7 @@ def generate_prob_tex(prob,group,k,solutions,files,counters)
   result = result + "\\end{hw}\n"
   has_fig,fig_file,fig_path,width = find_fig_for_problem(prob,files)
   if has_fig then
-    result = result+process_fig(fig_file,width,generate_caption_for_hw_fig(prob,fig_file),true)
+    result = result+process_fig(fig_file,width,generate_caption_for_hw_fig(prob,fig_file),true,false,true)
   end
   if !($spotter_dir.nil?) then
     if debug then $stderr.print "looking for spotter stuff for #{prob}" end
@@ -422,25 +427,27 @@ def generate_solution_tex(answers_dir,prob,group,k,path,counters,instr=false,ins
   if !instr && !found then log_warning('solution',"missing solution for #{label}, #{prob}","no solution found for problem #{label}, #{prob}, which is supposed to have a solution in the back of the student's version; solutions should typically go in physics/share/answers"); return '' end
   if instr && !found then log_warning('solution',"missing solution for #{label}, #{prob}","no solution found for problem #{label}, #{prob}"); return '' end
   label = group+k.to_s
+  complete_label = "#{ch}-#{label}"
   if instr_only then
     $stderr.print "calling find_figs_for_solution, prob=#{prob}, file=#{file}\n" if debug
-    soln = find_figs_for_solution(prob,slurp_file(file),instr_dir)
+    soln = find_figs_for_solution(prob,slurp_file(file),complete_label,instr_dir)
   else
-    soln = find_figs_for_solution(prob,slurp_file(file))
+    soln = find_figs_for_solution(prob,slurp_file(file),complete_label)
   end
   soln = clean_up_soln(soln)
   result = ''
   result = result+"\n\n%%%%%%%%%%%%%%%% solution to #{prob} %%%%%%%%%%%%%%%%\n"
   result = result+"\\solnhdr{\\ref{ch:#{path[0]}}-#{label}}\\label{soln:#{ch}-#{label}}\n"
-  result = result+soln+"\n"
+  result = result+soln+"\n\n\\timetraveltohere\n\n"
   $stderr.print "done with generate_solution_tex, result=#{result}\n" if debug
   return result
 end
 
-def process_fig(fig_file,width,caption,allow_time_travel)
-  # returns latex code for the figure
+def process_fig(fig_file,width,caption,allow_time_travel,if_path,anonymous=false)
+  # returns latex code for the figure; the result is floating; in solutions, this is only called for wide figs
   # has the side-effect of generating a photo credit
   # width can be narrow (52 mm), medium (1 column), wide, or fullpage
+  # if_path=true means that the figure is in the usual shared figs directory; false means fig_file is a pathname
   macro = 'fignarrow'
   add_before,add_after = '',''
   if width=='medium' then
@@ -448,12 +455,14 @@ def process_fig(fig_file,width,caption,allow_time_travel)
   else
     if width!='narrow' then
       macro='figwide'
+      if if_path then macro='figwidepath' end
       if allow_time_travel then
         add_before="\n\\begin{timetravel}\n";add_after="\n\\end{timetravel}\n" 
       end
     end
   end
   generate_photo_credit(fig_file)
+  if anonymous then macro=macro+'anon' end
   return "#{add_before}\\#{macro}{#{fig_file}}{}{#{caption}}#{add_after}\n"
 end
 
@@ -468,7 +477,7 @@ def process_text(tex)
     if fig_data.key?("width") then width=fig_data["width"] else width = fig_width(fig) end
     allow_time_travel = true
     if fig_data.key?("timetravel") then allow_time_travel=false end
-    process_fig(fig,width,caption,allow_time_travel) # replaces original code with this
+    process_fig(fig,width,caption,allow_time_travel,false) # replaces original code with this
   }
   if err then fatal_error(message) end
 
@@ -481,7 +490,7 @@ def process_text(tex)
     allow_time_travel = true
     #if fig_data.key?("timetravel") then allow_time_travel=(fig_data["width"]!=0) end
     if fig_data.key?("timetravel") then allow_time_travel=false end
-    process_fig(fig,width,caption,allow_time_travel)
+    process_fig(fig,width,caption,allow_time_travel,false)
   }
   end
 

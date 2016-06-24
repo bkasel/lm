@@ -31,17 +31,41 @@
     \end{figure}
   }
 % The following is always placed inside a timetravel environment.
-\newcommand{\figrawwide}[4]%
+\newcommand{\figrawwidepath}[4]%
   % #1=placement (ignored), #2=file, #3=caption, #4=width
   {%
     \begin{figure*}[]
-    \begin{center}\includegraphics[#4]{../../\sharedfigs/#2}\end{center}
+    \begin{center}\includegraphics[#4]{#2}\end{center}
     \caption[]{#3}\label{fig:#2} % empty [] is a workaround for this bug: http://tex.stackexchange.com/a/227840/6853
     \end{figure*}
   }
+\newcommand{\figrawanon}[4]%
+  % #1=placement (ignored), #2=file, #3=caption, #4=width
+  {%
+    \begin{figure}[h]
+    \begin{center}\includegraphics[#4]{../../\sharedfigs/#2}\\#3\end{center}
+    \label{fig:#2} % empty [] is a workaround for this bug: http://tex.stackexchange.com/a/227840/6853
+    \end{figure}
+  }
+% The following is always placed inside a timetravel environment.
+\newcommand{\figrawwidepathanon}[4]%
+  % #1=placement (ignored), #2=file, #3=caption, #4=width
+  {%
+    \begin{figure*}[]
+    \begin{center}\includegraphics[#4]{#2}\\#3\end{center}
+    \label{fig:#2} % empty [] is a workaround for this bug: http://tex.stackexchange.com/a/227840/6853
+    \end{figure*}
+  }
+\newcommand{\figrawwide}[4]{\figrawwidepath{#1}{../../\sharedfigs/#2}{#3}{#4}}
+\newcommand{\figrawwideanon}[4]{\figrawwidepathanon{#1}{../../\sharedfigs/#2}{#3}{#4}}
 \newcommand{\fig}[3]{\figraw{#2}{#1}{#3}{width=0.5\textwidth}} % file, placement (ignored), caption
+\newcommand{\figanon}[3]{\figrawanon{#2}{#1}{#3}{width=0.5\textwidth}} % file, placement (ignored), caption
 \newcommand{\fignarrow}[3]{\figraw{#2}{#1}{#3}{width=52mm}}
+\newcommand{\fignarrowanon}[3]{\figrawanon{#2}{#1}{#3}{width=52mm}}
 \newcommand{\figwide}[3]{\figrawwide{#2}{#1}{#3}{width=152mm}}
+\newcommand{\figwideanon}[3]{\figrawwideanon{#2}{#1}{#3}{width=152mm}}
+\newcommand{\figwidepath}[3]{\figrawwidepath{#2}{#1}{#3}{width=152mm}}
+\newcommand{\figwidepathanon}[3]{\figrawwidepathanon{#2}{#1}{#3}{width=152mm}}
 %\newcommand{\fignarrow}[3]{}
 \newcommand{\figref}[1]{\ref{fig:#1}}
 %%%%%%%%%%%%%%%%% problems %%%%%%%%%%%%%%%%%%%

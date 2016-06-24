@@ -84,6 +84,7 @@ more about figures
     looks at source code of solutions for the macros \anonymousinlinefig and \fig; filters out this
          macro and replaces it with \anonymousinlinefig{/.../.../solns/mechanics/figs/foo}
     this generates an inline figure, not a floating one
+    Doesn't work properly for wide figs, e.g., fossil. Howdy also botches these.
   sizes
     automatically known based on data/fig_widths and data/fig_widths_by_hand
     can be narrow (52 mm), medium (1 column, used only in problems book),
