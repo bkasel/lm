@@ -166,11 +166,20 @@ end
 
 #-------------------------------------------------------------
 def find_problem_file(prob,location)
-  # look first in current directory:
-  file = Dir.getwd+"/"+prob+".tex"
-  if File.exist?(file) then return [file,nil] end
-  # if not, then look in shared directory:
   file = $original_dir+"/../../"+location+"/hw/"+prob+".tex"
+  # I put some in problems book directory before, but that was a bad idea.
+  file_own = Dir.getwd+"/"+prob+".tex"
+  if File.exist?(file_own) && File.exist?(file) then
+    # warning("You have two versions of #{prob}; this is a bad idea; do a conditional:\n  mg #{file} #{file_own}\n  m4_ifelse(__problems,1,[:foo:],[:bar:])\n")
+    # Don't throw a warning. I only have one of these left, tiptotail, and it's too complicated to be a conditional
+    # without being really awkward.
+    return [file_own,nil]
+  end
+  if File.exist?(file_own) && !(File.exist?(file)) then
+    warning("You have #{prob} in the wrong place; do:\n  git mv #{file_own} #{file}\n")
+    return [file_own,nil]
+  end
+  # if not, then look in shared directory:
   if File.exist?(file) then return [file,nil] end
   if prob=~/\.tex$/ then return [nil,"file #{file} not found, probably because you shouldn't have included .tex in this.config"] end
   return [nil,"file #{prob}.tex not found in #{Dir.getwd} or #{$original_dir+"/../../"+location+"/hw"}"]
@@ -382,7 +391,7 @@ def log_warning(type,brief,message)
     n = $n_missing_solutions
   end
   if n==1 then warning(brief) end
-  if n==2 then warning("There are additional missing #{type}s recorded in the file #{file}.") end
+  if n==2 then warning("There are additional missing #{type}s recorded in the file #{File.basename(file)}.") end
   File.open(file,'a') { |f| f.print message+"\n" }
 end
 
@@ -400,6 +409,7 @@ end
 
 def clean_up_soln(orig)
   tex = orig.clone
+  tex.sub!(/\A\s+/,'') # eliminate leading blank lines
   # \includegraphics{\chdir/figs/10-oclock-short} in, e.g., problem "row"
   tex.gsub!(/\\includegraphics{\\chdir\/figs\/.*}/) {''}
   tex.gsub!(/forcetablelmonly/) {'forcetable'}

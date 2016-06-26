@@ -147,6 +147,7 @@ lm,6,4,baseballpitch,0
 lm,6,5,cannon-range,1
 lm,6,6,maxrange,0
 lm,6,7,speedbump,0
+lm,6,8,cliff-pond,0
 lm,7,1,tiptotail,0
 lm,7,2,bangkok,0
 lm,7,3,walking,0

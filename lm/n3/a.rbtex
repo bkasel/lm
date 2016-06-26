@@ -45,6 +45,15 @@ __incl(text/n3a)
 
 <% begin_hw('speedbump') %>__incl(hw/speedbump)<% end_hw() %>
 
+<% begin_hw('cliff-pond') %>__incl(hw/cliff-pond)<% end_hw() %>
+<% marg(45) %>
+<%
+  fig(
+    'hw-cliff-pond',
+    %q{Problem \ref{hw:cliff-pond}.}
+  )
+%>
+<% end_marg %>
 
 <% end_hw_sec %>
 
