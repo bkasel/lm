@@ -38,6 +38,7 @@
 3,dodge-viper,answer
 3,mars-drop-time,answer
 3,ramp-half-speed,answer
+3,vee-track-minimum-time,answer
 4,interpret-terminal-v,self_check
 4,force-or-not,self_check
 4,time-to-brake,answer

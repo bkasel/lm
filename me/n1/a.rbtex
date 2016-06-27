@@ -281,5 +281,6 @@ by fiddling with the result of part c of problem \ref{hw:gamma-derivation} that 
 
 <% begin_hw('fizeau-cogwheel') %>__incl(hw/fizeau-cogwheel)<% end_hw() %>
 
+
 <% end_hw_sec %>
 <% end_chapter() %>

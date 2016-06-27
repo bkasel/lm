@@ -166,29 +166,6 @@ way for two cities to have the same velocity vector?
 
 <% begin_sec("The Acceleration Vector",nil) %>\index{acceleration!as a vector}\index{vector!acceleration}
 
-<% marg(0) %>
-<%
-  fig(
-    'delta-v-arrows-1',
-    %q{%
-      A change in the magnitude of the
-      velocity vector implies an acceleration.
-    }
-  )
-%>
-\spacebetweenfigs
-<%
-  fig(
-    'delta-v-arrows-2',
-    %q{%
-      A change in the direction of the
-      velocity vector also produces a nonzero 
-      $\Delta\vc{v}$ vector, and thus a nonzero
-      acceleration vector, $\Delta\vc{v}/\Delta t$.
-    }
-  )
-%>
-<% end_marg %>
 m4_ifelse(__me,1,[:%
 When the acceleration is constant,
 we have
@@ -215,6 +192,30 @@ which can be written in terms of initial and final velocities as
 Otherwise, we can use the type of graphical definition described in section
 \ref{sec:velocity-vector} for the velocity vector.
 :])
+
+<% marg(0) %>
+<%
+  fig(
+    'delta-v-arrows-1',
+    %q{%
+      A change in the magnitude of the
+      velocity vector implies an acceleration.
+    }
+  )
+%>
+\spacebetweenfigs
+<%
+  fig(
+    'delta-v-arrows-2',
+    %q{%
+      A change in the direction of the
+      velocity vector also produces a nonzero 
+      $\Delta\vc{v}$ vector, and thus a nonzero
+      acceleration vector, $\Delta\vc{v}/\Delta t$.
+    }
+  )
+%>
+<% end_marg %>
 
 Now there are two ways in which we could have a nonzero
 acceleration. Either the magnitude or the direction of the

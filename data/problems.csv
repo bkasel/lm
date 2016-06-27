@@ -766,6 +766,7 @@ me,3,28,punch,0
 me,3,29,aircraft-carrier,0
 me,3,30,baseball-pitch-ratios,0
 me,3,31,high-speed-chase,0
+me,3,32,vee-track-minimum-time,1
 me,4,1,time-to-brake,1
 me,4,2,elevatortension,0
 me,4,3,noforces,0
@@ -1127,6 +1128,7 @@ problems,2,i9,car-and-truck-near-collision-numerical,0
 problems,2,i10,throw-or-drop-from-building-numerical,0
 problems,2,i11,throw-or-drop-from-building-symbolic,0
 problems,2,i12,alphac,0
+problems,2,i13,vee-track-minimum-time,1
 problems,2,k1,mars-drop-time,1
 problems,2,k2,ramp-half-speed,0
 problems,2,k3,tennis-ball-pluto,0

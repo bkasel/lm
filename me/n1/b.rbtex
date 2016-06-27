@@ -169,6 +169,8 @@ angle, but for the sake of this estimate just consider the case of a flea jumpin
 
 <% begin_hw('high-speed-chase') %>__incl(hw/high-speed-chase)<% end_hw() %>
 
+<% begin_hw('vee-track-minimum-time',2) %>__incl(hw/vee-track-minimum-time)<% end_hw() %>
+
 
 <% end_hw_sec %>
 
