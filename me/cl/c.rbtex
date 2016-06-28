@@ -300,7 +300,11 @@ __incl(text/work_summary)
 
 <% begin_hw('sliding-oscillator') %>__incl(hw/sliding-oscillator)<% end_hw() %>
 
+\pagebreak
+
 <% begin_hw('haul-bag') %>__incl(hw/haul-bag)<% end_hw() %>
+
+<% begin_hw('perp-in-plane') %>__incl(hw/perp-in-plane)<% end_hw() %>
 
 <% end_hw_sec %>
 

@@ -968,6 +968,7 @@ m4_define(__hw_me_13_space-probe,24)m4_dnl
 m4_define(__hw_me_13_tides,25)m4_dnl
 m4_define(__hw_me_13_sliding-oscillator,26)m4_dnl
 m4_define(__hw_me_13_haul-bag,27)m4_dnl
+m4_define(__hw_me_13_perp-in-plane,28)m4_dnl
 m4_define(__hw_me_14_keintermsofp,1)m4_dnl
 m4_define(__hw_me_14_rowboat,2)m4_dnl
 m4_define(__hw_me_14_firework,3)m4_dnl
@@ -1163,13 +1164,15 @@ m4_define(__hw_problems_3_walking,a3)m4_dnl
 m4_define(__hw_problems_3_drill,a4)m4_dnl
 m4_define(__hw_problems_3_vector-plus-scalar,a5)m4_dnl
 m4_define(__hw_problems_3_anglebetween,d1)m4_dnl
+m4_define(__hw_problems_3_perp-in-plane,d2)m4_dnl
 m4_define(__hw_problems_3_findperp,g1)m4_dnl
 m4_define(__hw_problems_3_xnonsense,g2)m4_dnl
 m4_define(__hw_problems_3_vector-computations,g3)m4_dnl
 m4_define(__hw_problems_3_proveanticommutative,g4)m4_dnl
 m4_define(__hw_problems_3_vector-true-false,g5)m4_dnl
 m4_define(__hw_problems_3_xnotassociative,g6)m4_dnl
-m4_define(__hw_problems_3_complex-cross-product,g7)m4_dnl
+m4_define(__hw_problems_3_cross-4d,g7)m4_dnl
+m4_define(__hw_problems_3_complex-cross-product,g8)m4_dnl
 m4_define(__hw_problems_3_annie-oakley,j1)m4_dnl
 m4_define(__hw_problems_3_cross-river,j2)m4_dnl
 m4_define(__hw_problems_3_car-rain,j3)m4_dnl
@@ -1213,10 +1216,10 @@ m4_define(__hw_problems_4_elevator-2,g3)m4_dnl
 m4_define(__hw_problems_4_force-on-bullet-symbolic,g4)m4_dnl
 m4_define(__hw_problems_4_friction-pushing-cup-symbolic,g5)m4_dnl
 m4_define(__hw_problems_4_two-masses-two-accelerations,g6)m4_dnl
-m4_define(__hw_problems_4_trailer,j1)m4_dnl
 m4_define(__hw_problems_4_third-law-partners,j1)m4_dnl
-m4_define(__hw_problems_4_formula-one-tires,j2)m4_dnl
+m4_define(__hw_problems_4_trailer,j1)m4_dnl
 m4_define(__hw_problems_4_oldlady,j2)m4_dnl
+m4_define(__hw_problems_4_formula-one-tires,j2)m4_dnl
 m4_define(__hw_problems_4_earthaccelup,j3)m4_dnl
 m4_define(__hw_problems_4_langley-catapult,j3)m4_dnl
 m4_define(__hw_problems_4_gravityvsnormal,j4)m4_dnl

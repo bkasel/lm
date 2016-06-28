@@ -1189,7 +1189,7 @@ def sectioning_command_with_href(cmd,section_level,label,label_level,title)
   if section_level==0 then anchor_command_2=anchor_command else anchor_command_1=anchor_command end
   if is_prepress then toc_macro="toclinewithoutlink" else toc_macro="toclinewithlink" end
   # In the following, I had been using begingroup/endgroup to temporarily disable \addcontentsline,
-  # but that had the side-effect that had the side effect of causing a \label{} that came after
+  # but that had the side-effect of causing a \label{} that came after
   # begin_sec to have a null string as the label instead of the section number.
   # - 
   # similar code in begin_hw_sec
