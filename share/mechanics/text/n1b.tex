@@ -1281,7 +1281,6 @@ distance traveled.
 :])
 <% end_sec %>
 %----------------------------------------------------------------------------
-m4_ifelse(__me,0,[:%
 <% begin_sec("A test of the principle of inertia",nil,'galileo-ramps-inertia',{'optional'=>true}) %>
 Historically, the first quantitative and well 
 documented experimental test\index{Newton's laws of motion!first law!test of}
@@ -1310,8 +1309,51 @@ idealized conditions of zero friction. He then reasoned that if a ball was rolle
 \emph{horizontal} ramp, with $\theta=0$, its acceleration would be zero. This is exactly
 what is required by the principle of inertia: in the absence of friction, motion continues
 indefinitely.
-<% end_sec %> % A test of the principle of inertia
+
+m4_ifelse(__me,1,[:
+<% marg(-8) %>
+<%
+  fig(
+    'eg-sin-theta-proof',
+    %q{%
+      Example \ref{eg:sin-theta-proof}.
+    }
+  )
+%>
+<% end_marg %>
+
+
+\begin{eg}{Reversing the logic}\label{eg:sin-theta-proof}
+If we assume that the principle of inertia holds, then we can reverse the direction of Galileo's
+reasoning. Rather than a rolling ball, it's simpler to consider a bead sliding frictionlessly
+on a wire. We will show that the bead's acceleration is $g\sin\theta$.
+
+In figure \subfigref{eg-sin-theta-proof}{1}, the bead starts at rest from A
+and travels to B by first falling
+a height $h$ with acceleration $g$, and then sliding horizontally. (We assume that the bead
+turns the corner smoothly and without any loss of speed.) By the principle of inertia,
+the frictionless horizontal motion has constant velocity, so the bead's final velocity at B
+is the same velocity it would have achieved simply by falling through the difference in height
+between A and B.
+
+In \subfigref{eg-sin-theta-proof}{2}, the dark line shows a staircase made out of many small
+copies of the original ``L''-shaped wire. The final velocity is the same as before.
+
+But if we make the steps of the staircase sufficiently small, we can get as good an
+approximation as we like to a the straight, sloping ramp in \subfigref{eg-sin-theta-proof}{3}.
+Therefore the final velocity in this case is the same as in \subfigref{eg-sin-theta-proof}{1}.
+
+Applying the appropriate constant-acceleration equation, we have $v_f^2=2a\ell$, where
+$\ell$ is the length of the ramp. But since $v_f$ is the same for the ramp as for a free-fall
+through a similar height, we have $a\propto\ell^{-1}$, so that $a/g=(\ell/h)^{-1}=\sin\theta$.
+
+For an object such as a sphere or a cylinder that rolls down a ramp without slipping, a similar proportionality holds between
+$a$ and $g\sin\theta$, but the acceleration is smaller by a unitless factor that depends on the
+object's shape. The difference comes about because of the frictional force (the ``traction'') between
+the object and the ramp.
+\end{eg}
 :])
+<% end_sec %> % A test of the principle of inertia
 %----------------------------------------------------------------------------
 m4_ifelse(__me,0,[:
 %-------------- start of optional LM section on applications of calculus

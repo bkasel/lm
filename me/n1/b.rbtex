@@ -171,6 +171,18 @@ angle, but for the sake of this estimate just consider the case of a flea jumpin
 
 <% begin_hw('vee-track-minimum-time',2) %>__incl(hw/vee-track-minimum-time)<% end_hw() %>
 
+\pagebreak
+
+<% marg(40) %>
+<%
+  fig(
+    'hw-galileo-chord-of-circle',
+    %q{Problem \ref{hw:galileo-chord-of-circle}.}
+  )
+%>
+<% end_marg %>
+
+<% begin_hw('galileo-chord-of-circle',2) %>__incl(hw/galileo-chord-of-circle)<% end_hw() %>
 
 <% end_hw_sec %>
 

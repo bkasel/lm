@@ -17,6 +17,8 @@ DATA_DIR = ../../data
 
 all: $(SCRIPTS)/photocredits.json
 	make student
+	make update_spotter
+	make update_data
 	make instr
 	@make post
 	@echo "Both versions of the book are made and posted. You can do a make clean if you like."
@@ -43,10 +45,6 @@ student: $(SCRIPTS)/photocredits.json
 	@makeindex $(BOOK) >/dev/null 2>/dev/null
         #
 	@$(RM_CLS)
-	@echo "Making new version of $(SPOTTER_DIR)/$(BOOK).xml"
-	@cp spotter.m4 $(SPOTTER_DIR)/$(BOOK).m4
-	@cd $(SPOTTER_DIR) ; make ; cd -
-	make update_problems
 
 instr: $(SCRIPTS)/photocredits.json
 	@make preflight
@@ -67,6 +65,7 @@ instr: $(SCRIPTS)/photocredits.json
 	$(RM_CLS)
 	pdftk temp.pdf output $(INSTR).pdf encrypt_128bit user_pw $(PASSWORD_UNQUOTED) # should do this with qpdf instead
 	@echo "An unencrypted copy of the instructor's version is in temp.pdf. An encrypted one is in $(INSTR).pdf."
+	@echo "Making new version of $(SPOTTER_DIR)/$(BOOK).xml"
 
 post:
 	@cp problems.pdf ~/Lightandmatter/problems
@@ -77,7 +76,12 @@ clean:
 	$(RM_CLS)
 	rm -Rf timetravel
 
-update_problems:
+update_spotter:
+	# Doing just an update_spotter works if you're modifying an answer check, but not if you're adding a new one.
+	cp spotter.m4 $(SPOTTER_DIR)/$(BOOK).m4
+	cd $(SPOTTER_DIR) ; make ; cd -
+
+update_data:
 	../harvest_aux.rb $(DATA_DIR)
 	../../scripts/merge_problems_data.rb $(BOOK) $(DATA_DIR)
 

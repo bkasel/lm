@@ -35,6 +35,8 @@ newlines  are removed before the comments are removed. It may be safer to use
 
 special casing for problems book versus other books
   m4_ifelse(__problems,1,[:foo:],[:bar:])
+  This should also work in solutions; if the solution isn't going into the problems
+  book, then __problems is simply a literal string, which doesn't equal the string 1.
 
 format of config files:
   this.config for the whole book

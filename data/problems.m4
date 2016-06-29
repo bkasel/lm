@@ -767,6 +767,7 @@ m4_define(__hw_me_3_aircraft-carrier,29)m4_dnl
 m4_define(__hw_me_3_baseball-pitch-ratios,30)m4_dnl
 m4_define(__hw_me_3_high-speed-chase,31)m4_dnl
 m4_define(__hw_me_3_vee-track-minimum-time,32)m4_dnl
+m4_define(__hw_me_3_galileo-chord-of-circle,33)m4_dnl
 m4_define(__hw_me_4_time-to-brake,1)m4_dnl
 m4_define(__hw_me_4_elevatortension,2)m4_dnl
 m4_define(__hw_me_4_noforces,3)m4_dnl
@@ -1129,7 +1130,6 @@ m4_define(__hw_problems_2_car-and-truck-near-collision-numerical,i9)m4_dnl
 m4_define(__hw_problems_2_throw-or-drop-from-building-numerical,i10)m4_dnl
 m4_define(__hw_problems_2_throw-or-drop-from-building-symbolic,i11)m4_dnl
 m4_define(__hw_problems_2_alphac,i12)m4_dnl
-m4_define(__hw_problems_2_vee-track-minimum-time,i13)m4_dnl
 m4_define(__hw_problems_2_mars-drop-time,k1)m4_dnl
 m4_define(__hw_problems_2_ramp-half-speed,k2)m4_dnl
 m4_define(__hw_problems_2_tennis-ball-pluto,k3)m4_dnl
@@ -1142,6 +1142,8 @@ m4_define(__hw_problems_2_high-speed-chase,k9)m4_dnl
 m4_define(__hw_problems_2_droppingballs,n1)m4_dnl
 m4_define(__hw_problems_2_estimate-flea-accel,n2)m4_dnl
 m4_define(__hw_problems_2_railgun,n3)m4_dnl
+m4_define(__hw_problems_2_vee-track-minimum-time,n4)m4_dnl
+m4_define(__hw_problems_2_galileo-chord-of-circle,n5)m4_dnl
 m4_define(__hw_problems_2_bounce-graph,o1)m4_dnl
 m4_define(__hw_problems_2_x-graph-to-v-graph,o2)m4_dnl
 m4_define(__hw_problems_2_easy-area-under-v-t,o3)m4_dnl

@@ -1140,17 +1140,11 @@ still exists, and since it is no longer being counteracted
 by the wind's forward force, the boat stops. To disprove the
 principle of inertia, we would have to find an example where
 a moving object slowed down even though no forces whatsoever were acting on it.
-m4_ifelse(__me,0,[:%
 Over the years since Galileo's lifetime, physicists have done more and more precise
 experiments to search for such a counterexample, but the results have always been negative.
 Three such tests are described on pp.~\pageref{sec:galileo-ramps-inertia},
-\pageref{eg:clock-comparison-inertia}, and \pageref{sec:battat}.\label{first-law-evidence}
-:],[:%
-Over the years since Galileo's lifetime, physicists have done more and more precise
-experiments to search for such a counterexample, but the results have always been negative.
-Two such tests are described on pp.~\pageref{battat} 
-and \pageref{eg:clock-comparison-inertia}.\label{first-law-evidence}
-:])
+\pageref{eg:clock-comparison-inertia}, and
+m4_ifelse(__lm_series,1,[:\pageref{sec:battat}:],[:\pageref{battat}:]).\label{first-law-evidence}
 
 m4_ifelse(__me,1,[:\enlargethispage{\baselineskip}:])
 
