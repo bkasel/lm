@@ -1325,31 +1325,58 @@ m4_ifelse(__me,1,[:
 
 \begin{eg}{Reversing the logic}\label{eg:sin-theta-proof}
 If we assume that the principle of inertia holds, then we can reverse the direction of Galileo's
-reasoning. Rather than a rolling ball, it's simpler to consider a bead sliding frictionlessly
-on a wire. We will show that the bead's acceleration is $g\sin\theta$.
+reasoning and show that the acceleration of an object moving frictionlessly
+on an inclined plane is proportional to
+$\sin\theta$, which is a useful practical result for skateboarders or for mountaineers worried
+about sliding down an icy slope.
 
-In figure \subfigref{eg-sin-theta-proof}{1}, the bead starts at rest from A
-and travels to B by first falling
-a height $h$ with acceleration $g$, and then sliding horizontally. (We assume that the bead
-turns the corner smoothly and without any loss of speed.) By the principle of inertia,
-the frictionless horizontal motion has constant velocity, so the bead's final velocity at B
-is the same velocity it would have achieved simply by falling through the difference in height
-between A and B.
+Figure \subfigref{eg-sin-theta-proof}{1} shows beads sliding frictionlessly down three wires
+inclined at different angles, each losing the same amount of height as it travels from one end
+of its wire to the other. How do their speeds compare when they reach the bottom?
+It seems likely that the bead on the vertical wire will have the greatest
+acceleration, but that doesn't necessarily mean that its final speed will be greater, because
+it will also have less time available to accelerate. In fact, we will show that the final speed
+is the same regardless of the angle.
 
-In \subfigref{eg-sin-theta-proof}{2}, the dark line shows a staircase made out of many small
-copies of the original ``L''-shaped wire. The final velocity is the same as before.
+To demonstrate this, we assume that it is \emph{not} true and show that it leads to an impossible
+result. Suppose that the final speed is greater, for the same vertical drop, when the slope is steeper
+(which is probably what most people intuitively expect, and is true when there is friction).
+In figure \subfigref{eg-sin-theta-proof}{2}, we join together two pieces of wire with different
+slopes, and let a bead ride down the steep side and then coast back \emph{up} the less steep one.
+Under our assumption, the \emph{loss} of speed on the way back up must be smaller than the gain
+on the way down, so that there is a net gain in speed. If we released the bead on the right and
+let it travel to the left, there would be a net loss.
 
-But if we make the steps of the staircase sufficiently small, we can get as good an
-approximation as we like to a the straight, sloping ramp in \subfigref{eg-sin-theta-proof}{3}.
-Therefore the final velocity in this case is the same as in \subfigref{eg-sin-theta-proof}{1}.
+Now suppose that we join together a series of these shapes, making a kind of asymmetric sawtooth
+pattern, \subfigref{eg-sin-theta-proof}{3}. A bead released on the left near the top of one of
+the steep sections will speed up indefinitely as it travels to the right. There is no limit to
+how much speed can be gained if we extend the wire far enough.
+We could use this arrangement to launch satellites into orbit,
+without the need for fuel or rocket engines. If we instead start the bead heading to the left
+with an initial push, it will gradually slow down, turn around, and then speed up indefinitely
+to the right as in the case considered earlier.
 
+This is not just an absurd conclusion but one that in some sense violates the principle of inertia,
+if we state the principle loosely as a rule that motion doesn't naturally speed up or slow down
+in the absence of friction. We therefore conclude that the assumption was false: an object moving
+frictionlessly down an inclined plane does \emph{not} gain a different amount of speed, for a fixed
+loss of height, depending on the slope.
+
+It is now straightforward to show that the acceleration equals $g\sin\theta$.
 Applying the appropriate constant-acceleration equation, we have $v_f^2=2a\ell$, where
-$\ell$ is the length of the ramp. But since $v_f$ is the same for the ramp as for a free-fall
-through a similar height, we have $a\propto\ell^{-1}$, so that $a/g=(\ell/h)^{-1}=\sin\theta$.
+$\ell$ is the distance traveled along the slope.
+Since $v_f$ is the same regardless of angle,
+we have $a\propto\ell^{-1}$, but for a change in height $h$, we have $h/\ell=\sin\theta$,
+so $a\propto\sin\theta$, which is what we wanted to prove.
+
+For the bead on the wire, or for an object sliding down a ramp,
+we can fix the constant of proportionality because $\theta=90\degunit$ should give $a=g$,
+so we have $a=g\sin\theta$.
 
 For an object such as a sphere or a cylinder that rolls down a ramp without slipping, a similar proportionality holds between
-$a$ and $g\sin\theta$, but the acceleration is smaller by a unitless factor that depends on the
-object's shape. The difference comes about because of the frictional force (the ``traction'') between
+$a$ and $\sin\theta$, but the constant of proportionality is smaller by a unitless factor that depends on the
+object's shape and how its mass is distributed.
+The difference comes about because of the frictional force (the ``traction'') between
 the object and the ramp.
 \end{eg}
 :])
