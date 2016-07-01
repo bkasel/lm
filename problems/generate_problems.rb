@@ -341,6 +341,9 @@ def generate_prob_tex(prob,group,k,solutions,files,counters)
   tex = clean_up_hw(filter_out_eruby(tex))
   stars = get_meta_data_with_default(meta,"stars",0)
   ch = counters[1]
+  full_label = "#{ch}-#{label}"
+  if $labels.key?(full_label) then fatal_error("label #{full_label} defined twice, as #{$labels[full_label]} and #{prob}") end
+  $labels[full_label] = prob
   result = <<-RESULT
     \n\n%%%%%%%%%%%%%%%% #{prob} %%%%%%%%%%%%%%%%
     \\begin{hw}{#{prob}}{#{stars}}{0}{#{ch}-#{label}}
@@ -605,6 +608,7 @@ def main()
   $n_missing_checks = 0
   $missing_solutions_file = "#{Dir.pwd}/missing_solutions"
   $missing_checks_file = "#{Dir.pwd}/missing_checks"
+  $labels = {} # used to check for uniqueness
   FileUtils.rm_f [$missing_solutions_file,$missing_checks_file]
   $spotter_dir = ARGV[0]
   if !($spotter_dir.nil?) && !(Dir.exist?($spotter_dir)) then 
