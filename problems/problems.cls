@@ -133,10 +133,10 @@
 %%%%%%%%%%%%%%%%% answers %%%%%%%%%%%%%%%%%%%
 \newcommand{\solnhdr}[1]{\noindent\textbf{#1}\quad}
 \newcommand{\ifchunk}[2]{#2}
-\newenvironment{forcesoln}[3]{%
+\newenvironment{forcesoln}[4]{%
   % #1 is ignored
   \begin{figure*}
-  \noindent\textbf{Problem ??:}\par
+  \noindent\textbf{Problem \ref{hw:#4}:}\par
   #2
   \begin{forcetable}{#3}
 }{%

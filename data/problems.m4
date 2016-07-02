@@ -854,6 +854,7 @@ m4_define(__hw_me_8_layback,22)m4_dnl
 m4_define(__hw_me_8_death-triangle,23)m4_dnl
 m4_define(__hw_me_8_telephone-wire,24)m4_dnl
 m4_define(__hw_me_8_skee-ball,25)m4_dnl
+m4_define(__hw_me_8_slide-uphill-optimization,26)m4_dnl
 m4_define(__hw_me_9_circularaccelunits,1)m4_dnl
 m4_define(__hw_me_9_loop,2)m4_dnl
 m4_define(__hw_me_9_tilt-a-whirl,3)m4_dnl
@@ -1237,7 +1238,6 @@ m4_define(__hw_problems_4_copter,p3)m4_dnl
 m4_define(__hw_problems_4_alphastopping,p4)m4_dnl
 m4_define(__hw_problems_4_car-pushing-truck,p5)m4_dnl
 m4_define(__hw_problems_4_three-blocks-stacked-symbolic,p6)m4_dnl
-m4_define(__hw_problems_4_two-blocks-pushed-symbolic,p7)m4_dnl
 m4_define(__hw_problems_4_rice-sticks,s1)m4_dnl
 m4_define(__hw_problems_4_baseballparadox,s2)m4_dnl
 m4_define(__hw_problems_5_magnetundercar,a1)m4_dnl
@@ -1272,7 +1272,8 @@ m4_define(__hw_problems_5_backpack-ramp-constant-force,m8)m4_dnl
 m4_define(__hw_problems_5_blocks-sliding-tension,m9)m4_dnl
 m4_define(__hw_problems_5_ramp-force-probe,m10)m4_dnl
 m4_define(__hw_problems_5_terminal-velocity,m11)m4_dnl
-m4_define(__hw_problems_5_board-on-counterrotating-wheels,m12)m4_dnl
+m4_define(__hw_problems_5_slide-uphill-optimization,m12)m4_dnl
+m4_define(__hw_problems_5_board-on-counterrotating-wheels,m13)m4_dnl
 m4_define(__hw_problems_5_tugboat,p1)m4_dnl
 m4_define(__hw_problems_5_atwood,p2)m4_dnl
 m4_define(__hw_problems_5_crevasse,p3)m4_dnl

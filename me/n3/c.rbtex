@@ -220,9 +220,24 @@ __incl(text/n3c)
   )
 %>
 
+\pagebreak
+
+<% marg(90) %>
+<%
+  fig(
+    'hw-slide-uphill-optimization',
+    %q{Problem \ref{hw:slide-uphill-optimization}.}
+  )
+%>
+<% end_marg %>
+<% begin_hw('slide-uphill-optimization') %>__incl(hw/slide-uphill-optimization)<% end_hw() %>
+
 <% end_hw_sec %>
 
-% Advance to an even-numbered (left) page:
+
+<% end_hw_sec %>
+
+% Advance to an even-numbered (left) page so the following ex comes out on facing pages:
 \ifthenelse{\isodd{\value{page}}}{}{\pagebreak\hbox{}\newpage}
 
 
