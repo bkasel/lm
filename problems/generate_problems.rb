@@ -415,7 +415,8 @@ def clean_up_soln(orig)
   tex.sub!(/\A\s+/,'') # eliminate leading blank lines
   # \includegraphics{\chdir/figs/10-oclock-short} in, e.g., problem "row"
   tex.gsub!(/\\includegraphics{\\chdir\/figs\/.*}/) {''}
-  tex.gsub!(/forcetablelmonly/) {'forcetable'}
+  tex.gsub!(/\\begin{forcetablelmonly}{([^}]*)}/) {"\\begin{forcesoln}{}{}{#{$1}}{}"}
+  tex.gsub!(/\\end{forcetablelmonly}/) {"\\end{forcesoln}"}
   return tex
 end
 
