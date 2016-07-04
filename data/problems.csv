@@ -1310,9 +1310,11 @@ problems,6,j4,governor,0
 problems,6,j5,car-turning-pine-tree,0
 problems,6,j6,bead-on-vee,0
 problems,6,j7,spiral-terminal-velocity,0
-problems,6,m1,earthangkinematics,0
-problems,6,m2,bug-turntable,0
-problems,6,m3,bug-turntable-accelerating,0
+problems,6,m1,tilden-merry-go-round,0
+problems,6,m2,pulsar-deceleration,0
+problems,6,m3,earthangkinematics,0
+problems,6,m4,bug-turntable,0
+problems,6,m5,bug-turntable-accelerating,0
 problems,7,a1,haul-bag,0
 problems,7,a2,crosswind,0
 problems,7,a3,horsepower,0

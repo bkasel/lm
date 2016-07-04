@@ -1310,9 +1310,11 @@ m4_define(__hw_problems_6_governor,j4)m4_dnl
 m4_define(__hw_problems_6_car-turning-pine-tree,j5)m4_dnl
 m4_define(__hw_problems_6_bead-on-vee,j6)m4_dnl
 m4_define(__hw_problems_6_spiral-terminal-velocity,j7)m4_dnl
-m4_define(__hw_problems_6_earthangkinematics,m1)m4_dnl
-m4_define(__hw_problems_6_bug-turntable,m2)m4_dnl
-m4_define(__hw_problems_6_bug-turntable-accelerating,m3)m4_dnl
+m4_define(__hw_problems_6_tilden-merry-go-round,m1)m4_dnl
+m4_define(__hw_problems_6_pulsar-deceleration,m2)m4_dnl
+m4_define(__hw_problems_6_earthangkinematics,m3)m4_dnl
+m4_define(__hw_problems_6_bug-turntable,m4)m4_dnl
+m4_define(__hw_problems_6_bug-turntable-accelerating,m5)m4_dnl
 m4_define(__hw_problems_7_haul-bag,a1)m4_dnl
 m4_define(__hw_problems_7_crosswind,a2)m4_dnl
 m4_define(__hw_problems_7_horsepower,a3)m4_dnl
