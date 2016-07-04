@@ -12,6 +12,7 @@ end
 
 photo_credit("pulley-table-two-blocks-sloth","Sloth","Redrawn from a photo by Christian Mehlfuhrer, CC-BY-SA") # https://en.wikipedia.org/wiki/File:MC_Drei-Finger-Faultier.jpg
 photo_credit("hw-cliff-pond","Diver","Redrawn from a photo provided by the Deutsches Bundesarchiv cooperation project, CC-BY-SA") # https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-C0821-0013-001,_Interpress-Foto_66%22_in_Moskau%22.jpg
+photo_credit("hw-bug-turntable","Ladybug","Redrawn from a photo by Wikimedia Commons user Gilles San Martin, CC-BY-SA") # http://commons.wikimedia.org/wiki/File:Coccinella_magnifica01.jpg
 photo_credit("bug-pe","Ladybug","Redrawn from a photo by Wikimedia Commons user Gilles San Martin, CC-BY-SA") # http://commons.wikimedia.org/wiki/File:Coccinella_magnifica01.jpg
 photo_credit("bug-pe","Hand","Biswarup Ganguly, CC-BY-SA") # https://commons.wikimedia.org/wiki/File:Left_Hand_-_Kolkata_2011-04-20_2351.JPG
 photo_credit("munchausen","Baron von Munchausen","Theodor Hosemann, public domain")
