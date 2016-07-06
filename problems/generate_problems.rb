@@ -229,7 +229,11 @@ def find_fig_for_problem(prob,files) # returns [boolean,"foo","/.../.../foo.png"
       places.push($original_dir+"/../../"+files+"/figs")
     end
   end
-  places.push($original_dir+"/../../me/end/figs") # me/end/figs has some figures for solutions
+  # Books have their own figures for some solutions:
+  places.push($original_dir+"/../../me/end/figs")
+  places.push($original_dir+"/../../lm/end1/figs")
+  places.push($original_dir+"/../../lm/end2/figs")
+  places.push($original_dir+"/../../sn/ch99/figs")
   possible_names = []
   if $fig_exceptional_naming.key?(prob) then
     possible_names.push($fig_exceptional_naming[prob])
@@ -455,7 +459,7 @@ def generate_solution_tex(answers_dir,prob,group,k,path,counters,instr=false,ins
   soln = clean_up_soln(soln)
   result = ''
   result = result+"\n\n%%%%%%%%%%%%%%%% solution to #{prob} %%%%%%%%%%%%%%%%\n"
-  result = result+"\\solnhdr{\\ref{ch:#{path[0]}}-#{label}}\\label{soln:#{ch}-#{label}}\n"
+  result = result+"\\solnhdr{#{ch}-#{label}}\\label{soln:#{ch}-#{label}}\n"
   result = result+soln+"\n\n\\timetraveltohere\n\n"
   $stderr.print "done with generate_solution_tex, result=#{result}\n" if debug
   return result
@@ -699,13 +703,18 @@ def do_solutions_manual_main(title)
   print "\\timetravelenable\n\n"
 
   ['lm','sn','me','cp'].each { |book|
+      title = {'lm'=>'Light and Matter','sn'=>'Simple Nature','me'=>'Mechanics','cp'=>'Conceptual Physics'}[book]
       n_good_lines = 0
+      print "\\chapter{#{title}}" # using chapter* to avoid numbers messes up header; try this: http://tex.stackexchange.com/a/89928/6853
       File.readlines($problems_csv).each { |line|
         if line=~/(.*),(.*),(.*),(.*),(.*)/ then
           n_good_lines = n_good_lines+1
           b,ch,num,label,soln = [$1,$2.to_i,$3,$4,$5.to_i] # note num is string, since "number" can be like "g7"
-          if b==book && label!="deleted" then
-            print "solution for #{ch}-#{num}, #{label}\n\n"
+          if b==book && label!="deleted" && label !="dummy" then
+            num =~ /([a-zA-Z]*)(\d+)/
+            group,k = [$1,$2] # group will normally be null unless I change numbering scheme in books
+            tex = generate_solution_tex(answers_dir,label,group,k,nil,[0,ch],true,$instr_dir)
+            print tex
           end
        end
       }
