@@ -604,21 +604,18 @@ def do_stuff(what,depth,files,group,path,solutions,answers_dir,counters) # recur
   end
 end
 
-def main()
+# Initialize globals, delete scratch files, check for some errors such as directories that don't exist.
+# spotter_dir can be nil or "" if not doing spotter stuff
+def init(spotter_dir,require_instructor,data_dir,instr_dir,title)
   $n_missing_solutions = 0
   $n_missing_checks = 0
   $missing_solutions_file = "#{Dir.pwd}/missing_solutions"
   $missing_checks_file = "#{Dir.pwd}/missing_checks"
   $labels = {} # used to check for uniqueness
   FileUtils.rm_f [$missing_solutions_file,$missing_checks_file]
-  $spotter_dir = ARGV[0]
-  if !($spotter_dir.nil?) && !(Dir.exist?($spotter_dir)) then 
-    warning("spotter directory #{$spotter_dir} doesn't exist") 
-    $spotter_dir = nil
-  end
-  $instructor = ARGV[1]=='1' # is this the instructor's version?
-  $data_dir = ARGV[2] # contains fig_widths file
-  $instr_dir = ARGV[3]
+  $instructor = require_instructor # is this the instructor's version?
+  $data_dir = data_dir # contains fig_widths file
+  $instr_dir = instr_dir
   if $instructor && !(Dir.exist?($instr_dir)) then
     warning("directory #{$instr_dir} doesn't exist")
     $instructor = false
@@ -629,19 +626,39 @@ def main()
   $fig_exceptional_captions = get_json_data_from_file_or_die("#{$data_dir}/fig_exceptional_captions")
   $fig_exceptional_naming = get_json_data_from_file_or_die("#{$data_dir}/fig_exceptional_naming")
   $original_dir = Dir.getwd
+
+  # spotter stuff
+  $spotter_dir = nil
+  if !(spotter_dir.nil?) && !(spotter_dir=='') then
+    $spotter_dir = spotter_dir
+    if !($spotter_dir.nil?) && !(Dir.exist?($spotter_dir)) then 
+      warning("spotter directory #{$spotter_dir} doesn't exist") 
+      $spotter_dir = nil
+    else
+      $spotter1 = '' # header info for spotter .xml file
+      $spotter2 = '' # body of spotter .xml file
+      $spotter1 = slurp_or_die($original_dir+"/../spotter_header") 
+      $spotter1 = $spotter1 + "<spotter title=\"#{title}\">\n<log_file ext=\"log\"/>\n"
+      $spotter2 = ''
+    end
+  end
+end
+
+def finish_up()
+  if !($spotter_dir.nil?) then
+    File.open('spotter.m4','w') { |f|
+      f.print $spotter1+"\n\n<toc_level level=\"0\" type=\"chapter\"/>"+$spotter2+"\n</spotter>\n"
+    }
+  end
+end
+
+def do_problems_book_main(title)
   $credits_tex = "\\input{../credits_header.tex}"
   $credits = get_json_data_from_file_or_die($original_dir+"/../photocredits.json")
   $save_meta = {}
-  $spotter1 = '' # header info for spotter .xml file
-  $spotter2 = '' # body of spotter .xml file
-  book_config = get_json_data_from_file_or_die("#{$original_dir}/this.config")
-  title = book_config["title"]
   if $instructor then title = title+", Instructor's Edition" end
   solutions = get_problems_data($original_dir+"/../../data/problems.csv")
   answers_dir = $original_dir+"/../../share/answers"
-  $spotter1 = slurp_or_die($original_dir+"/../spotter_header") 
-  $spotter1 = $spotter1 + "<spotter title=\"#{title}\">\n<log_file ext=\"log\"/>\n"
-  $spotter2 = ''
   print <<-'TOP'
     \documentclass{problems}
     \begin{document}
@@ -657,13 +674,21 @@ def main()
     \input{../postamble.tex}
     \end{document}
     BOTTOM
-  if !($spotter_dir.nil?) then
-    File.open('spotter.m4','w') { |f|
-      f.print $spotter1+"\n\n<toc_level level=\"0\" type=\"chapter\"/>"+$spotter2+"\n</spotter>\n"
-    }
-  end
+
   $original_dir = Dir.pwd
   if $n_missing_checks>0 || $n_missing_solutions>0 then warning("#{$n_missing_solutions} missing solutions and #{$n_missing_checks} missing checks") end
+end
+
+def do_problems_book(spotter_dir,require_instructor,data_dir,instr_dir)
+  book_config = get_json_data_from_file_or_die("this.config")
+  title = book_config["title"]
+  init(spotter_dir,require_instructor,data_dir,instr_dir,title)
+  do_problems_book_main(title)
+  finish_up()
+end
+
+def main()
+  do_problems_book(ARGV[0],ARGV[1]=='1',ARGV[2],ARGV[3]) # spotter_dir,require_instructor,data_dir,instr_dir
 end
 
 main()
