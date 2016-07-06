@@ -27,7 +27,7 @@ student: $(SCRIPTS)/photocredits.json
 	@make preflight
 	@make init-timetravel
 	@cp ../preamble.tex $(BOOK).m4
-	$(SCRIPTS)/generate_problems.rb $(SPOTTER_DIR) 0 $(DATA_DIR) >>$(BOOK).m4
+	$(SCRIPTS)/generate_problems.rb problems $(SPOTTER_DIR) 0 $(DATA_DIR) >>$(BOOK).m4
 	m4 -P ../problems.m4 book.m4 $(BOOK).m4 >$(BOOK).tex
 	@$(GET_CLS)
 	@echo "Running pdflatex..."
@@ -50,7 +50,7 @@ instr: $(SCRIPTS)/photocredits.json
 	@make preflight
 	@make init-timetravel
 	cp ../preamble.tex temp.m4
-	$(SCRIPTS)/generate_problems.rb $(SPOTTER_DIR) 1 $(DATA_DIR) $(SOLUTIONS_DIR) >>temp.m4
+	$(SCRIPTS)/generate_problems.rb problems $(SPOTTER_DIR) 1 $(DATA_DIR) $(SOLUTIONS_DIR) >>temp.m4
 	m4 -P ../problems.m4 book.m4 temp.m4 >temp.tex
 	$(GET_CLS)
 	@$(SCRIPTS)/timetravel.rb temp.tex

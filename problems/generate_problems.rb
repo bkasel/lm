@@ -1,13 +1,17 @@
 #!/usr/bin/ruby
 
-# generate_problems.rb /path/to/spotter/dir instr data_dir instr_dir 
-#   first arg is where spotter dir is
+# generate_problems.rb problems  /path/to/spotter/dir instr data_dir instr_dir 
+# generate_problems.rb solutions ""                   1     data_dir instr_dir 
+#   1st arg says what we're doing
+#     problems = generate the problems book (either student or instructor's edition)
+#     solutions = generate instructor's solutions manual for textbooks
+#   2nd arg is where spotter dir is
 #   instr = 0 or 1, indicates whether this is the instructor's version
 #   data_dir is where the following files are: fig_widths, fig_widths_by_hand, fig_exceptional_captions, fig_exceptional_naming
 #   instr_dir is directory where the solutions are
 # prints m4/latex output to stdout
-# side-effects:
-#   writes a spotter answer file to spotter.m4
+# side-effects if 1st arg is "problems":
+#   writes a spotter answer file to spotter.m4 (if path to spotter dir was not null)
 #   writes to files missing_solutions and missing_checks
 
 require 'fileutils'
@@ -420,7 +424,7 @@ def clean_up_soln(orig)
   return tex
 end
 
-def generate_solution_tex(answers_dir,prob,group,k,path,counters,instr=false,instr_dir=nil) # qwe
+def generate_solution_tex(answers_dir,prob,group,k,path,counters,instr=false,instr_dir=nil)
   debug = false
   #debug = (prob=~/cross/)
   $stderr.print "entering generate_solution_tex, prob=#{prob}\n" if debug
@@ -606,7 +610,10 @@ end
 
 # Initialize globals, delete scratch files, check for some errors such as directories that don't exist.
 # spotter_dir can be nil or "" if not doing spotter stuff
-def init(spotter_dir,require_instructor,data_dir,instr_dir,title)
+def init(spotter_dir,require_instructor,data_dir,instr_dir,title,problems_main_dir)
+  $original_dir = Dir.getwd
+  $problems_csv = $original_dir+"/../../data/problems.csv"
+  $problems_main_dir = problems_main_dir
   $n_missing_solutions = 0
   $n_missing_checks = 0
   $missing_solutions_file = "#{Dir.pwd}/missing_solutions"
@@ -622,10 +629,9 @@ def init(spotter_dir,require_instructor,data_dir,instr_dir,title)
   end
   $fig_widths = get_json_data_from_file_or_die("#{$data_dir}/fig_widths")
   $fig_widths = $fig_widths.merge(get_json_data_from_file_or_die("#{$data_dir}/fig_widths_by_hand"))
-  $fig_widths = $fig_widths.merge(get_json_data_from_file_or_die("../override_fig_widths"))
+  $fig_widths = $fig_widths.merge(get_json_data_from_file_or_die("#{$problems_main_dir}/override_fig_widths"))
   $fig_exceptional_captions = get_json_data_from_file_or_die("#{$data_dir}/fig_exceptional_captions")
   $fig_exceptional_naming = get_json_data_from_file_or_die("#{$data_dir}/fig_exceptional_naming")
-  $original_dir = Dir.getwd
 
   # spotter stuff
   $spotter_dir = nil
@@ -654,10 +660,10 @@ end
 
 def do_problems_book_main(title)
   $credits_tex = "\\input{../credits_header.tex}"
-  $credits = get_json_data_from_file_or_die($original_dir+"/../photocredits.json")
+  $credits = get_json_data_from_file_or_die("#{$problems_main_dir}/photocredits.json")
   $save_meta = {}
   if $instructor then title = title+", Instructor's Edition" end
-  solutions = get_problems_data($original_dir+"/../../data/problems.csv")
+  solutions = get_problems_data($problems_csv)
   answers_dir = $original_dir+"/../../share/answers"
   print <<-'TOP'
     \documentclass{problems}
@@ -679,16 +685,68 @@ def do_problems_book_main(title)
   if $n_missing_checks>0 || $n_missing_solutions>0 then warning("#{$n_missing_solutions} missing solutions and #{$n_missing_checks} missing checks") end
 end
 
+def do_solutions_manual_main(title)
+  $credits_tex = "\\input{../credits_header.tex}"
+  $credits = get_json_data_from_file_or_die($original_dir+"/../photocredits.json")
+  $save_meta = {}
+  solutions = get_problems_data($original_dir+"/../../data/problems.csv")
+  answers_dir = $original_dir+"/../../share/answers"
+  print <<-'TOP'
+    \documentclass{problems}
+    \begin{document}
+    TOP
+  print slurp_or_die($original_dir+"/front_matter.tex").gsub!(/__title__/) {title}
+  print "\\timetravelenable\n\n"
+
+  ['lm','sn','me','cp'].each { |book|
+      n_good_lines = 0
+      File.readlines($problems_csv).each { |line|
+        if line=~/(.*),(.*),(.*),(.*),(.*)/ then
+          n_good_lines = n_good_lines+1
+          b,ch,num,label,soln = [$1,$2.to_i,$3,$4,$5.to_i] # note num is string, since "number" can be like "g7"
+          if b==book && label!="deleted" then
+            print "solution for #{ch}-#{num}, #{label}\n\n"
+          end
+       end
+      }
+      if n_good_lines==0 then fatal_error("in do_solutions_manual_main, reading file #{$problems_csv}, no good lines read") end
+  }
+
+  print $credits_tex
+  print <<-'BOTTOM'
+    \input{postamble.tex}
+    \end{document}
+    BOTTOM
+  if $n_missing_checks>0 || $n_missing_solutions>0 then warning("#{$n_missing_solutions} missing solutions and #{$n_missing_checks} missing checks") end
+end
+
 def do_problems_book(spotter_dir,require_instructor,data_dir,instr_dir)
   book_config = get_json_data_from_file_or_die("this.config")
   title = book_config["title"]
-  init(spotter_dir,require_instructor,data_dir,instr_dir,title)
+  init(spotter_dir,require_instructor,data_dir,instr_dir,title,"..")
   do_problems_book_main(title)
   finish_up()
 end
 
+# Solutions manual for one of the textbooks (not instructor's edition of the problems book).
+def do_solutions_manual(spotter_dir,require_instructor,data_dir,instr_dir)
+  title = "Instructor's Solutions Manual"
+  init(spotter_dir,require_instructor,data_dir,instr_dir,title,"..")
+  do_solutions_manual_main(title)
+  finish_up()
+end
+
 def main()
-  do_problems_book(ARGV[0],ARGV[1]=='1',ARGV[2],ARGV[3]) # spotter_dir,require_instructor,data_dir,instr_dir
+  what=ARGV[0]
+  if what=='problems' then
+    do_problems_book(ARGV[1],ARGV[2]=='1',ARGV[3],ARGV[4]) # spotter_dir,require_instructor,data_dir,instr_dir
+    return
+  end
+  if what=='solutions' then
+    do_solutions_manual(ARGV[1],ARGV[2]=='1',ARGV[3],ARGV[4]) # spotter_dir,require_instructor,data_dir,instr_dir
+    return
+  end
+  fatal_error("argv[0]=#{what} not recognized in main()")
 end
 
 main()
