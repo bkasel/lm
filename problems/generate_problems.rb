@@ -260,6 +260,7 @@ def find_anonymous_inline_figs(tex)
   }
 end
 
+# This function is duplicated in whiz.rb.
 def find_figs_for_solution(prob,orig,label,instr_dir=nil)
   #debug = (prob=~/truck/)
   debug = false
@@ -406,6 +407,7 @@ def log_warning(type,brief,message)
   File.open(file,'a') { |f| f.print message+"\n" }
 end
 
+# This function is duplicated in whiz.rb.
 def find_instructor_solution(prob,instr_dir)
   # returns [found,file,figs_dir]
   found = false
@@ -418,11 +420,12 @@ def find_instructor_solution(prob,instr_dir)
   return [false,nil,nil]
 end
 
-def clean_up_soln(orig)
+# This function is duplicated in whiz.rb.
+def clean_up_soln(orig,figs_dir)
   tex = orig.clone
   tex.sub!(/\A\s+/,'') # eliminate leading blank lines
   # \includegraphics{\chdir/figs/10-oclock-short} in, e.g., problem "row"
-  tex.gsub!(/\\includegraphics{\\chdir\/figs\/.*}/) {''}
+  tex.gsub!(/\\includegraphics{\\chdir\/figs\/([^}]*)}/) {"\\includegraphics{#{figs_dir}/#{$1}}"} # fixme
   tex.gsub!(/\\begin{forcetablelmonly}{([^}]*)}/) {"\\begin{forcesoln}{}{}{#{$1}}{}"}
   tex.gsub!(/\\end{forcetablelmonly}/) {"\\end{forcesoln}"}
   return tex
@@ -456,7 +459,7 @@ def generate_solution_tex(answers_dir,prob,group,k,path,counters,instr=false,ins
   else
     soln = find_figs_for_solution(prob,slurp_file(file),complete_label)
   end
-  soln = clean_up_soln(soln)
+  soln = clean_up_soln(soln,figs_dir)
   result = ''
   result = result+"\n\n%%%%%%%%%%%%%%%% solution to #{prob} %%%%%%%%%%%%%%%%\n"
   result = result+"\\solnhdr{#{ch}-#{label}}\\label{soln:#{ch}-#{label}}\n"

@@ -41,3 +41,6 @@ problems/clean_up.rb
 figfeedback*
 *.pos
 *.postm4
+
+solns.tex
+solns.m4
