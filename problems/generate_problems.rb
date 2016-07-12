@@ -73,7 +73,7 @@ def parse_json_or_die(json)
   begin
     return JSON.parse(preprocess_json(json))
   rescue JSON::ParserError
-    fatal_error("syntax error in JSON string '#{m}'")
+    fatal_error("syntax error in JSON string '#{json}'")
   end
 end
 
@@ -236,6 +236,7 @@ def find_fig_for_problem(prob,files) # returns [boolean,"foo","/.../.../foo.png"
   places.push($original_dir+"/../../sn/ch99/figs")
   possible_names = []
   if $fig_exceptional_naming.key?(prob) then
+    if $fig_exceptional_naming[prob]=='' then return [false,nil,nil] end
     possible_names.push($fig_exceptional_naming[prob])
   else
     ['','hw-','eg-'].each { |prefix|

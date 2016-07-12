@@ -48,13 +48,7 @@ __incl(text/angular_momentum_summary)
 
 \vspace{5mm}
 
-<% begin_hw('pliers') %>
-<% hw_solution %> The figure shows scale drawing of a pair of pliers
-being used to crack a nut, with an appropriately reduced
-centimeter grid. Warning: do not attempt this at home; it is
-bad manners. If the force required to crack the nut is 300
-N, estimate the force required of the person's hand.
-<% end_hw() %>
+<% begin_hw('pliers') %>__incl(hw/pliers)<% end_hw() %>
 
 \vspace{5mm}
 
@@ -97,14 +91,7 @@ N, estimate the force required of the person's hand.
 
 \vspace{3mm}
 
-<% begin_hw('tiptoe') %>
-A person of weight $W$ stands on the ball of one foot.
-Find the tension in the calf muscle and the force exerted by
-the shinbones on the bones of the foot, in terms of $W,a$,
-and $b$. For simplicity, assume that all the forces are at
-90-degree angles to the foot, i.e., neglect the angle between
-the foot and the floor.\answercheck
-<% end_hw() %>
+<% begin_hw('tiptoe') %>__incl(hw/tiptoe)<% end_hw() %>
 
 \pagebreak
 
@@ -277,20 +264,7 @@ Prove the parallel axis theorem stated on page
 
 \pagebreak
 
-<% begin_hw('centrifuge') %>
-When we talk about rigid-body rotation, the concept of a perfectly rigid body can only be
-an idealization. In reality, any object will compress, expand, or deform to some extent when
-subjected to the strain of rotation. However, if we let it settle down for a while, perhaps
-it will reach a new equilibrium. As an example, suppose we fill a centrifuge tube with some
-compressible substance like shaving cream or Wonder Bread. We can model the contents of the
-tube as a one-dimensional line of mass, extending from $r=0$ to $r=\ell$. Once the rotation starts,
-we expect that the contents will be most compressed near the ``floor'' of the tube at $r=\ell$; this
-is both because the inward force required for circular motion increases with $r$ for a fixed $\omega$,
-and because the part at the floor has the greatest amount of material pressing ``down'' (actually
-outward) on it. The linear density $\der m/\der r$, in units of kg/m, should therefore increase
-as a function of $r$. Suppose that we have $\der m/\der r=\mu e^{r/\ell}$, where $\mu$ is a constant.
-Find the moment of inertia.\answercheck
-<% end_hw() %>
+<% begin_hw('centrifuge') %>__incl(hw/centrifuge)<% end_hw() %>
 
 <% marg(-10) %>
 <%
@@ -302,20 +276,7 @@ Find the moment of inertia.\answercheck
 <% end_marg %>
 <% begin_hw('hinge-on-cylinder',2) %>__incl(hw/hinge-on-cylinder)<% end_hw() %>
 
-<% begin_hw('triangle-moment-of-inertia',2) %>
-Let two sides of a triangle be given by the vectors $\vc{A}$ and $\vc{B}$, with their tails
-at the origin, and
-let mass $m$ be uniformly distributed
-on the interior of the triangle.
-(a) Show that the distance of the triangle's center of mass from the intersection
-of sides $\vc{A}$ and $\vc{B}$ is given by $\frac{1}{3}|\vc{A}+\vc{B}|$.\hwendpart
-(b) Consider the quadrilateral with mass $2m$, and vertices at the origin, $\vc{A}$, $\vc{B}$, and $\vc{A}+\vc{B}$.
-Show that its moment of inertia, for rotation about an axis perpendicular to it and passing through its center of mass,
-is $\frac{m}{6}(A^2+B^2)$.\hwendpart
-(c) Show that the moment of inertia for rotation about an axis perpendicular to
-the plane of the original triangle, and passing through its center of mass, is $\frac{m}{18}(A^2+B^2-\vc{A}\cdot\vc{B})$.
-Hint: Combine the results of parts a and b with the result of problem \ref{hw:parallel-axis-theorem}.
-<% end_hw() %>
+<% begin_hw('triangle-moment-of-inertia',2) %>__incl(hw/triangle-moment-of-inertia)<% end_hw() %>
 
 <% begin_hw('toppling-rod',2) %>
 <% hw_solution %> In example \ref{eg:toppling-rod} on page \pageref{eg:toppling-rod}, prove that if the rod is sufficiently thin, it can
@@ -324,27 +285,13 @@ be toppled without scraping on the floor.
 
 \pagebreak
 
-<% begin_hw('yoyo',2) %>
-A yo-yo of total mass $m$ consists of two solid
-cylinders of radius $R$, connected by a small spindle of
-negligible mass and radius $r$. The top of the string is
-held motionless while the string unrolls from the spindle.
-Show that the acceleration of the yo-yo is $g/(1+R^2/2r^2)$.
-[Hint: The acceleration and the tension in the string are
-unknown. Use $\tau =\Delta L/\Delta t$ and $F=ma$
-to determine these two unknowns.]
-<% end_hw() %>
+<% begin_hw('yoyo',2) %>__incl(hw/yoyo)<% end_hw() %>
 
 <% begin_hw('books-at-edge-of-table',2) %>__incl(hw/books-at-edge-of-table)<% end_hw() %>
 
 <% begin_hw('complex-cross-product',2) %>__incl(hw/complex-cross-product)<% end_hw() %>
 
-<% begin_hw('toppling-square-omega',2) %>
-(a) Find the moment of inertia of a uniform square of mass $m$ and with sides of length $b$,
-for rotation in its own plane, about one of its corners.\\
-(b) The square is balanced on one corner on a frictionless surface. An infinitesimal perturbation
-causes it to topple. Find its angular velocity at the moment when its side slaps the surface.
-<% end_hw() %>
+<% begin_hw('toppling-square-omega',2) %>__incl(hw/toppling-square-omega)<% end_hw() %>
 
 
 <% end_hw_sec %>

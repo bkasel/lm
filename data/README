@@ -10,6 +10,13 @@ generated.
 This file is used for figures where a script can't infer what caption to make up.
 An example is a figure that is used by more than one problem.
 
+========fig_exceptional_naming========
+This is for exceptions to the naming convention (e.g., figures that
+need to be duplicated in the book in more than one place). It's a hash whose keys are
+the names of problems, and whose values are the filenames. If the filename is a null
+string, this prevents a figure from being displayed even though it has a name that
+seems right.
+
 ========fig_widths, fig_widths_by_hand=========
 purpose:
   Make it easy for the problems book to be automatically generated, without having
