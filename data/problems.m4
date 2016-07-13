@@ -1462,8 +1462,11 @@ m4_define(__hw_problems_9_tipbox,v3)m4_dnl
 m4_define(__hw_problems_9_barandrope,v4)m4_dnl
 m4_define(__hw_problems_9_hangingbars,v5)m4_dnl
 m4_define(__hw_problems_9_hinge-on-cylinder,v6)m4_dnl
-m4_define(__hw_problems_10_centerofearth,a1)m4_dnl
-m4_define(__hw_problems_10_inversion-layer,a2)m4_dnl
+m4_define(__hw_problems_10_inversion-layer,a1)m4_dnl
+m4_define(__hw_problems_10_centerofearth,a2)m4_dnl
+m4_define(__hw_problems_10_floating-sphere,d1)m4_dnl
+m4_define(__hw_problems_10_beer-can-on-venus,d2)m4_dnl
+m4_define(__hw_problems_10_firehose,k1)m4_dnl
 m4_define(__hw_sn_0_calculator,1)m4_dnl
 m4_define(__hw_sn_0_units,2)m4_dnl
 m4_define(__hw_sn_0_backyard,3)m4_dnl

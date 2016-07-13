@@ -10,6 +10,7 @@ def photo_credit(file,description,credit)
   $credits[file] = [description,credit]
 end
 
+photo_credit("hw-firehose","Firehose","Public-domain work of the U.S. Navy") # https://commons.wikimedia.org/wiki/File:DN-SN-87-07338_USS_Claude_V._Ricketts_sprays_to_USS_Belknap_19751122.jpeg
 photo_credit("pulley-table-two-blocks-sloth","Sloth","Redrawn from a photo by Christian Mehlfuhrer, CC-BY-SA") # https://en.wikipedia.org/wiki/File:MC_Drei-Finger-Faultier.jpg
 photo_credit("hw-cliff-pond","Diver","Redrawn from a photo provided by the Deutsches Bundesarchiv cooperation project, CC-BY-SA") # https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-C0821-0013-001,_Interpress-Foto_66%22_in_Moskau%22.jpg
 photo_credit("hw-bug-turntable","Ladybug","Redrawn from a photo by Wikimedia Commons user Gilles San Martin, CC-BY-SA") # http://commons.wikimedia.org/wiki/File:Coccinella_magnifica01.jpg

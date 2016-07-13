@@ -1462,8 +1462,11 @@ problems,9,v3,tipbox,0
 problems,9,v4,barandrope,0
 problems,9,v5,hangingbars,0
 problems,9,v6,hinge-on-cylinder,0
-problems,10,a1,centerofearth,0
-problems,10,a2,inversion-layer,1
+problems,10,a1,inversion-layer,1
+problems,10,a2,centerofearth,0
+problems,10,d1,floating-sphere,0
+problems,10,d2,beer-can-on-venus,0
+problems,10,k1,firehose,0
 sn,0,1,calculator,0
 sn,0,2,units,0
 sn,0,3,backyard,0
