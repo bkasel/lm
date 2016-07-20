@@ -79,6 +79,7 @@
 {%
     \vfill
 }
+\newcommand{\hwremark}[1]{\par\noindent\footnotesize{\textit{Remark:\/} #1}}
 \newcommand{\hwtriangle}{$\triangleright$}
 \newcommand{\hwsoln}{\hwaddtrailingstuff{\hwtriangle\ Solution, p. \pageref{soln:\currenthwlabel}}}
 \newcommand{\answercheck}{\hwaddtrailingstuff{\hwcheckmark}}
