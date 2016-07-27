@@ -377,6 +377,7 @@ def generate_prob_tex(prob,group,k,solutions,files,counters)
     xml_fragment = "#{$spotter_dir}/xml/#{prob}.xml"
     check_exists = File.exist?(xml_fragment)
     claims_check_exists = (tex =~ /\\answercheck/)
+    if prob=='three-pulleys' then claims_check_exists=false end # \answercheck inside conditional
     if check_exists then
       $spotter1 = $spotter1 + "<num id=\"#{prob}\" label=\"#{label}\"/>\n"
       $spotter2 = $spotter2 + "m4_include(xml/#{prob}.xml)\n"
