@@ -440,6 +440,7 @@ def generate_solution_tex(answers_dir,prob,group,k,path,counters,instr=false,ins
   ch = counters[1]
   found = false
   instr_only = nil
+
   file = answers_dir+"/"+prob+".tex" # student solution
   figs_dir = nil
   if File.exist?(file) then
@@ -449,6 +450,21 @@ def generate_solution_tex(answers_dir,prob,group,k,path,counters,instr=false,ins
     found,file,figs_dir = find_instructor_solution(prob,instr_dir)
     instr_only = true
   end
+
+  # The following is a kludgy but convenient way of pulling in new solutions that Brian sends me, which
+  # I put in ~/a. Mechanics subdirectory is hardcoded.
+  if true then
+    f = "/home/bcrowell/a/#{prob}.tex"
+    if instr && !found && File.exist?(f) then
+      dest = "#{instr_dir}/mechanics"
+      found = true
+      instr_only = true
+      file = "#{dest}/#{prob}.tex"
+      $stderr.print "Found solution file #{f}, moving it to #{file}.\n"
+      FileUtils.mv(f,dest)
+    end
+  end
+
   $stderr.print "file=#{file}, #{file.nil?}, found=#{found}\n" if debug
   label = "#{ch}-#{group}#{k}"
   if !instr && !found then log_warning('solution',"missing solution for #{label}, #{prob}","no solution found for problem #{label}, #{prob}, which is supposed to have a solution in the back of the student's version; solutions should typically go in physics/share/answers"); return '' end

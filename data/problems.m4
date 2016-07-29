@@ -1311,11 +1311,11 @@ m4_define(__hw_problems_6_car-turning-pine-tree,j5)m4_dnl
 m4_define(__hw_problems_6_bead-on-vee,j6)m4_dnl
 m4_define(__hw_problems_6_spiral-terminal-velocity,j7)m4_dnl
 m4_define(__hw_problems_6_disk-slow-easy-1,m1)m4_dnl
-m4_define(__hw_problems_6_disk-slow-easy-2,m2)m4_dnl
-m4_define(__hw_problems_6_tilden-merry-go-round,m3)m4_dnl
-m4_define(__hw_problems_6_pulsar-deceleration,m4)m4_dnl
-m4_define(__hw_problems_6_flywheel-stopping,m5)m4_dnl
-m4_define(__hw_problems_6_theta-as-a-function-of-time,m6)m4_dnl
+m4_define(__hw_problems_6_tilden-merry-go-round,m2)m4_dnl
+m4_define(__hw_problems_6_pulsar-deceleration,m3)m4_dnl
+m4_define(__hw_problems_6_flywheel-stopping,m4)m4_dnl
+m4_define(__hw_problems_6_theta-as-a-function-of-time,m5)m4_dnl
+m4_define(__hw_problems_6_disk-slow-easy-2,m6)m4_dnl
 m4_define(__hw_problems_6_earthangkinematics,m7)m4_dnl
 m4_define(__hw_problems_6_bug-turntable,m8)m4_dnl
 m4_define(__hw_problems_6_bug-turntable-accelerating,m9)m4_dnl

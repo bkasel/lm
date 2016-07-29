@@ -1311,11 +1311,11 @@ problems,6,j5,car-turning-pine-tree,0
 problems,6,j6,bead-on-vee,0
 problems,6,j7,spiral-terminal-velocity,0
 problems,6,m1,disk-slow-easy-1,0
-problems,6,m2,disk-slow-easy-2,0
-problems,6,m3,tilden-merry-go-round,0
-problems,6,m4,pulsar-deceleration,0
-problems,6,m5,flywheel-stopping,0
-problems,6,m6,theta-as-a-function-of-time,0
+problems,6,m2,tilden-merry-go-round,0
+problems,6,m3,pulsar-deceleration,0
+problems,6,m4,flywheel-stopping,0
+problems,6,m5,theta-as-a-function-of-time,0
+problems,6,m6,disk-slow-easy-2,0
 problems,6,m7,earthangkinematics,0
 problems,6,m8,bug-turntable,0
 problems,6,m9,bug-turntable-accelerating,0
