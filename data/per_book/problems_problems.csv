@@ -250,11 +250,12 @@ problems,6,m3,pulsar-deceleration,0
 problems,6,m4,flywheel-stopping,0
 problems,6,m5,theta-as-a-function-of-time,0
 problems,6,m6,disk-slow-easy-2,0
-problems,6,m7,earthangkinematics,0
-problems,6,m8,bug-turntable,0
-problems,6,m9,bug-turntable-accelerating,0
-problems,6,m10,cockroach-in-microwave,0
-problems,6,m11,cd-spinning-nonuniform,0
+problems,6,p1,earthangkinematics,0
+problems,6,p2,bug-turntable,0
+problems,6,p3,bug-turntable-accelerating,0
+problems,6,p4,cockroach-in-microwave,0
+problems,6,p5,cd-spinning-nonuniform,0
+problems,6,s1,cd-constant-linear-velocity,0
 problems,7,a1,haul-bag,0
 problems,7,a2,crosswind,0
 problems,7,a3,horsepower,0

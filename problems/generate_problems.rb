@@ -387,7 +387,7 @@ def generate_prob_tex(prob,group,k,solutions,files,counters)
       log_warning('check',"missing \\answercheck for #{prob}, #{ch}-#{label}","problem #{prob} has an answer check in #{xml_fragment},\n  but file #{file} doesn't have \\answercheck")
     end
     if !check_exists && claims_check_exists then
-      log_warning('check',"missing answer check for #{prob}, #{ch}-#{label}","for problem #{ch}-#{label}, #{prob},\n  file #{File.expand_path(file)} has \\answercheck,\n  but no file #{xml_fragment} exists")
+      log_warning('check',"missing answer check for #{ch}-#{label}, #{prob}","missing answer check for #{ch}-#{label}, #{prob}")
     end
   end
   return result

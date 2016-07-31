@@ -1,5 +1,6 @@
 {
   "tetherball":"",
   "tipbox":"hwtipbox",
-  "pulley-table-two-blocks-rotation":"pulley-table-two-blocks-energy"
+  "pulley-table-two-blocks-rotation":"pulley-table-two-blocks-energy",
+  "atwood-energy":"hw-atwood"
 }

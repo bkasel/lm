@@ -1316,11 +1316,12 @@ m4_define(__hw_problems_6_pulsar-deceleration,m3)m4_dnl
 m4_define(__hw_problems_6_flywheel-stopping,m4)m4_dnl
 m4_define(__hw_problems_6_theta-as-a-function-of-time,m5)m4_dnl
 m4_define(__hw_problems_6_disk-slow-easy-2,m6)m4_dnl
-m4_define(__hw_problems_6_earthangkinematics,m7)m4_dnl
-m4_define(__hw_problems_6_bug-turntable,m8)m4_dnl
-m4_define(__hw_problems_6_bug-turntable-accelerating,m9)m4_dnl
-m4_define(__hw_problems_6_cockroach-in-microwave,m10)m4_dnl
-m4_define(__hw_problems_6_cd-spinning-nonuniform,m11)m4_dnl
+m4_define(__hw_problems_6_earthangkinematics,p1)m4_dnl
+m4_define(__hw_problems_6_bug-turntable,p2)m4_dnl
+m4_define(__hw_problems_6_bug-turntable-accelerating,p3)m4_dnl
+m4_define(__hw_problems_6_cockroach-in-microwave,p4)m4_dnl
+m4_define(__hw_problems_6_cd-spinning-nonuniform,p5)m4_dnl
+m4_define(__hw_problems_6_cd-constant-linear-velocity,s1)m4_dnl
 m4_define(__hw_problems_7_haul-bag,a1)m4_dnl
 m4_define(__hw_problems_7_crosswind,a2)m4_dnl
 m4_define(__hw_problems_7_horsepower,a3)m4_dnl
