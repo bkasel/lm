@@ -1517,9 +1517,10 @@ m4_define(__hw_problems_11_alien-gangster,d2)m4_dnl
 m4_define(__hw_problems_11_laurie,d3)m4_dnl
 m4_define(__hw_problems_11_uranus,d4)m4_dnl
 m4_define(__hw_problems_11_iss-g,d5)m4_dnl
-m4_define(__hw_problems_11_eclipse,d6)m4_dnl
-m4_define(__hw_problems_11_moon2,d7)m4_dnl
-m4_define(__hw_problems_11_new-horizons,d8)m4_dnl
+m4_define(__hw_problems_11_bowling-balls-in-space,d6)m4_dnl
+m4_define(__hw_problems_11_eclipse,d7)m4_dnl
+m4_define(__hw_problems_11_moon2,d8)m4_dnl
+m4_define(__hw_problems_11_new-horizons,d9)m4_dnl
 m4_define(__hw_problems_11_receding-moon,g1)m4_dnl
 m4_define(__hw_problems_11_rocketweight,g2)m4_dnl
 m4_define(__hw_problems_11_mars-trip,g3)m4_dnl
@@ -1531,10 +1532,13 @@ m4_define(__hw_problems_11_rotatinggravitatingbody,j4)m4_dnl
 m4_define(__hw_problems_11_ida,j5)m4_dnl
 m4_define(__hw_problems_11_ground-skimming,j6)m4_dnl
 m4_define(__hw_problems_11_escapevelocity,j7)m4_dnl
+m4_define(__hw_problems_11_planet-x-centripetal-force,j8)m4_dnl
+m4_define(__hw_problems_11_planet-z-virial-theorem,j9)m4_dnl
 m4_define(__hw_problems_11_g-in-au-system,m1)m4_dnl
 m4_define(__hw_problems_11_alternateuniverse,m2)m4_dnl
 m4_define(__hw_problems_11_collapse-time-scaling,m3)m4_dnl
 m4_define(__hw_problems_11_constant-density-maximum-gravity,m4)m4_dnl
+m4_define(__hw_problems_11_escape-speed-black-hole,m5)m4_dnl
 m4_define(__hw_problems_11_mineshaft,p1)m4_dnl
 m4_define(__hw_problems_11_shell-theorem-exponent,p2)m4_dnl
 m4_define(__hw_problems_11_shell-theorem-outside-only,p3)m4_dnl

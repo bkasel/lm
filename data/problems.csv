@@ -1517,9 +1517,10 @@ problems,11,d2,alien-gangster,1
 problems,11,d3,laurie,0
 problems,11,d4,uranus,0
 problems,11,d5,iss-g,0
-problems,11,d6,eclipse,0
-problems,11,d7,moon2,0
-problems,11,d8,new-horizons,0
+problems,11,d6,bowling-balls-in-space,0
+problems,11,d7,eclipse,0
+problems,11,d8,moon2,0
+problems,11,d9,new-horizons,0
 problems,11,g1,receding-moon,1
 problems,11,g2,rocketweight,0
 problems,11,g3,mars-trip,0
@@ -1531,10 +1532,13 @@ problems,11,j4,rotatinggravitatingbody,0
 problems,11,j5,ida,1
 problems,11,j6,ground-skimming,0
 problems,11,j7,escapevelocity,0
+problems,11,j8,planet-x-centripetal-force,0
+problems,11,j9,planet-z-virial-theorem,0
 problems,11,m1,g-in-au-system,0
 problems,11,m2,alternateuniverse,0
 problems,11,m3,collapse-time-scaling,0
 problems,11,m4,constant-density-maximum-gravity,0
+problems,11,m5,escape-speed-black-hole,0
 problems,11,p1,mineshaft,0
 problems,11,p2,shell-theorem-exponent,0
 problems,11,p3,shell-theorem-outside-only,0

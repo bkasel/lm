@@ -7,7 +7,10 @@ GET_CLS = perl -e 'foreach $$f($(CLS_FILES)) {$$cmd="cp ../$$f ."; system $$cmd}
 RM_CLS = rm -f problems.cls shaddap.sty lmmath.sty timetravel.sty
 SCRIPTS = ..
 TEX_INTERPRETER = pdflatex
-DO_PDFLATEX_RAW = $(TEX_INTERPRETER) -shell-escape -interaction=nonstopmode $(BOOK) >err
+# DO_PDFLATEX_RAW = $(TEX_INTERPRETER) -shell-escape -interaction=nonstopmode $(BOOK) >err
+# ... I don't understand why, but this causes it to freeze when there's an error, and sometimes
+#     to write a truncated .aux file. All of this is confusing and causes problems that are hard to debug.
+DO_PDFLATEX_RAW = $(TEX_INTERPRETER) $(BOOK)
 SPOTTER_DIR = /home/bcrowell/Documents/programming/spotter/answers
 DATA_DIR = ../../data
 
