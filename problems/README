@@ -96,6 +96,8 @@ more about figures
            in the standard way from the names of one of the two problems
   hw figures to be duplicated on different pages
     edit data/fig_exceptional_naming
+  figures that erroneously show up below a problem because they happen to match naming convention
+    edit data/fig_exceptional_naming, set value to null string (examples: tetherball, fwhm)
 
 more about problems
   We filter out any eruby, such as <% hw_solution %> or <% hw_hint %>

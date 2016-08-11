@@ -2,5 +2,6 @@
   "tetherball":"",
   "tipbox":"hwtipbox",
   "pulley-table-two-blocks-rotation":"pulley-table-two-blocks-energy",
-  "atwood-energy":"hw-atwood"
+  "atwood-energy":"hw-atwood",
+  "fwhm":""
 }
