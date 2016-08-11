@@ -5,7 +5,9 @@ systems have mechanisms such as friction that dissipate energy. These mechanisms
 are referred to as damping.
 A simple mathematical model that incorporates this behavior is
 to incorporate a frictional force that is proportional to velocity. The equation of motion
-then becomes $mx''+bx'+kx=0$. The solutions are decaying exponentials of the form
+then becomes $mx''+bx'+kx=0$. In the most common case, where $b<2\sqrt{km}$.
+In this \intro{underdamped} case,
+the solutions are decaying exponentials of the form
 \begin{equation*}
   x = A e^{-ct}\sin \omega t,
 \end{equation*}
@@ -17,4 +19,7 @@ as the number of cycles required for the energy to fall off by a
 factor of $e^{2\pi}\approx 535$. The terminology arises from the fact
 that friction is often considered a bad thing, so a mechanical device
 that can vibrate for many oscillations before it loses a significant
-fraction of its energy would be considered a high-quality device. 
+fraction of its energy would be considered a high-quality device.
+
+Underdamped motion occurs for $Q>1/2$. For the case $Q<1/2$, referred to as \intro{overdamped},
+there are no oscillations, and the motion is a decaying exponential.
