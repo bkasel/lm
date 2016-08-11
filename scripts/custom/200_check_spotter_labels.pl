@@ -94,7 +94,7 @@ foreach my $label(keys %$nums) {
     barf("There only seems to be one <num> in $xml_file, which I can't handle due to an idiosyncrasy in XML::Simple.");
   }
   if (!exists $csv_info{$label}) {
-    push @errors,"label $label exists in $xml_file , but not in $csv_file ; if the problem is new, do a make problems to fix this";
+    push @errors,"label $label exists in $xml_file , but not in $csv_file ; if the problem is new, do a make update_problems (?) to fix this";
   } 
   else {
     my $x = $csv_info{$label};
