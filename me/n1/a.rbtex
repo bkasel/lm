@@ -159,9 +159,6 @@ the correspondence principle.
 <% begin_hw('inside-freight-train') %>__incl(hw/inside-freight-train)<% end_hw() %>
 
 <% begin_hw('decel-accel-frames') %>__incl(hw/decel-accel-frames)<% end_hw() %>
-
-\enlargethispage{\baselineskip}
-
 <% marg(-300) %>
 <%
   fig(
@@ -171,6 +168,9 @@ the correspondence principle.
 %>
 <% end_marg %>
 <% begin_hw('cycloid') %>__incl(hw/cycloid)<% end_hw() %>
+
+\enlargethispage{2\baselineskip}
+
 
 %----------- relativity
 

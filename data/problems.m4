@@ -943,6 +943,7 @@ m4_define(__hw_me_12_enterprise-ke,17)m4_dnl
 m4_define(__hw_me_12_freeneutron,18)m4_dnl
 m4_define(__hw_me_12_jack-on-hill,19)m4_dnl
 m4_define(__hw_me_12_atwood-energy,20)m4_dnl
+m4_define(__hw_me_12_norton-dome,21)m4_dnl
 m4_define(__hw_me_13_stoppingdistances,1)m4_dnl
 m4_define(__hw_me_13_posnegwork,2)m4_dnl
 m4_define(__hw_me_13_workreverseaxis,3)m4_dnl
@@ -1040,6 +1041,14 @@ m4_define(__hw_me_15_yoyo,47)m4_dnl
 m4_define(__hw_me_15_books-at-edge-of-table,48)m4_dnl
 m4_define(__hw_me_15_complex-cross-product,49)m4_dnl
 m4_define(__hw_me_15_toppling-square-omega,50)m4_dnl
+m4_define(__hw_me_15_cd-constant-linear-velocity,51)m4_dnl
+m4_define(__hw_me_15_pulsar-deceleration,52)m4_dnl
+m4_define(__hw_me_15_disk-slow-easy-1,53)m4_dnl
+m4_define(__hw_me_15_tilden-merry-go-round,54)m4_dnl
+m4_define(__hw_me_15_flywheel-stopping,55)m4_dnl
+m4_define(__hw_me_15_theta-as-a-function-of-time,56)m4_dnl
+m4_define(__hw_me_15_bug-turntable,57)m4_dnl
+m4_define(__hw_me_15_bug-turntable-accelerating,58)m4_dnl
 m4_define(__hw_me_16_sperm,2)m4_dnl
 m4_define(__hw_me_16_whistle,3)m4_dnl
 m4_define(__hw_me_16_pendulum,4)m4_dnl

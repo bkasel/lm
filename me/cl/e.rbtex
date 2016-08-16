@@ -293,6 +293,43 @@ be toppled without scraping on the floor.
 
 <% begin_hw('toppling-square-omega',2) %>__incl(hw/toppling-square-omega)<% end_hw() %>
 
+\pagebreak
+
+<% begin_hw('cd-constant-linear-velocity',2) %>__incl(hw/cd-constant-linear-velocity)<% end_hw() %>
+
+<% marg(300) %>
+<%
+  fig(
+    'hw-cd-constant-linear-velocity',
+    %q{Problem \ref{hw:cd-constant-linear-velocity}.}
+  )
+%>
+<% end_marg %>
+
+<% begin_hw('pulsar-deceleration') %>__incl(hw/pulsar-deceleration)<% end_hw() %>
+
+<% begin_hw('disk-slow-easy-1') %>__incl(hw/disk-slow-easy-1)<% end_hw() %>
+
+<% begin_hw('tilden-merry-go-round') %>__incl(hw/tilden-merry-go-round)<% end_hw() %>
+
+<% begin_hw('flywheel-stopping') %>__incl(hw/flywheel-stopping)<% end_hw() %>
+
+<% begin_hw('theta-as-a-function-of-time') %>__incl(hw/theta-as-a-function-of-time)<% end_hw() %>
+
+<% marg() %>
+<%
+  fig(
+    'hw-bug-turntable',
+    %q{Problems \ref{hw:bug-turntable} and \ref{hw:bug-turntable-accelerating}.}
+  )
+%>
+<% end_marg %>
+
+<% begin_hw('bug-turntable') %>__incl(hw/bug-turntable)<% end_hw() %>
+
+<% begin_hw('bug-turntable-accelerating',2) %>__incl(hw/bug-turntable-accelerating)<% end_hw() %>
+
+
 
 <% end_hw_sec %>
 

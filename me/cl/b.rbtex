@@ -303,6 +303,8 @@ does it hit the ground?
 
 <% begin_hw('atwood-energy') %>__incl(hw/atwood-energy)<% end_hw() %>
 
+<% begin_hw('norton-dome',2) %>__incl(hw/norton-dome)<% end_hw() %>
+
 <% end_hw_sec %>
 
  %%========================================== toc decoration ===============================================

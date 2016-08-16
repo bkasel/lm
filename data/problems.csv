@@ -943,6 +943,7 @@ me,12,17,enterprise-ke,0
 me,12,18,freeneutron,0
 me,12,19,jack-on-hill,0
 me,12,20,atwood-energy,0
+me,12,21,norton-dome,0
 me,13,1,stoppingdistances,0
 me,13,2,posnegwork,0
 me,13,3,workreverseaxis,0
@@ -1040,6 +1041,14 @@ me,15,47,yoyo,0
 me,15,48,books-at-edge-of-table,0
 me,15,49,complex-cross-product,0
 me,15,50,toppling-square-omega,0
+me,15,51,cd-constant-linear-velocity,0
+me,15,52,pulsar-deceleration,0
+me,15,53,disk-slow-easy-1,0
+me,15,54,tilden-merry-go-round,0
+me,15,55,flywheel-stopping,0
+me,15,56,theta-as-a-function-of-time,0
+me,15,57,bug-turntable,0
+me,15,58,bug-turntable-accelerating,0
 me,16,2,sperm,0
 me,16,3,whistle,0
 me,16,4,pendulum,0
