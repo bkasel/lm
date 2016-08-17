@@ -183,9 +183,9 @@ italicized object participates.}
 <% end_marg %>
 <% begin_hw('bondstretching') %>__incl(hw/bondstretching)<% end_hw() %>
 
-\pagebreak
-
 <% begin_hw('skier-hits-dirt',2) %>__incl(hw/skier-hits-dirt)<% end_hw() %>            
+
+<% begin_hw('other-pulleys') %>__incl(hw/other-pulleys)<% end_hw() %>
 
 <% marg(80) %>
 <%
@@ -201,11 +201,18 @@ italicized object participates.}
     %q{Problem \ref{hw:evil-pulleys}.}
   )
 %>
+\spacebetweenfigs
+<%
+  fig(
+    'hw-rappel-from-fridge',
+    %q{Problem \ref{hw:rappel-from-fridge}.}
+  )
+%>
 <% end_marg %>
 
-<% begin_hw('other-pulleys') %>__incl(hw/other-pulleys)<% end_hw() %>
-
 <% begin_hw('evil-pulleys',2) %>__incl(hw/evil-pulleys)<% end_hw() %>
+
+<% begin_hw('rappel-from-fridge') %>__incl(hw/rappel-from-fridge)<% end_hw() %>
 
 <% end_hw_sec %>
 

@@ -212,6 +212,7 @@ m4_define(__hw_lm_5_crevasse,28)m4_dnl
 m4_define(__hw_lm_5_caryatid,29)m4_dnl
 m4_define(__hw_lm_5_lowering-climber-detailed,30)m4_dnl
 m4_define(__hw_lm_5_car-in-mud,31)m4_dnl
+m4_define(__hw_lm_5_rappel-from-fridge,32)m4_dnl
 m4_define(__hw_lm_6_tossup,1)m4_dnl
 m4_define(__hw_lm_6_misslettuce,2)m4_dnl
 m4_define(__hw_lm_6_niagara,3)m4_dnl
@@ -815,6 +816,7 @@ m4_define(__hw_me_5_bondstretching,29)m4_dnl
 m4_define(__hw_me_5_skier-hits-dirt,30)m4_dnl
 m4_define(__hw_me_5_other-pulleys,31)m4_dnl
 m4_define(__hw_me_5_evil-pulleys,32)m4_dnl
+m4_define(__hw_me_5_rappel-from-fridge,33)m4_dnl
 m4_define(__hw_me_6_niagara,1)m4_dnl
 m4_define(__hw_me_6_misslettuce,2)m4_dnl
 m4_define(__hw_me_6_baseballpitch,3)m4_dnl
@@ -1263,6 +1265,7 @@ m4_define(__hw_problems_5_angle-of-repose,d5)m4_dnl
 m4_define(__hw_problems_5_pressblock,d6)m4_dnl
 m4_define(__hw_problems_5_telephone-wire,d7)m4_dnl
 m4_define(__hw_problems_5_capstan,d8)m4_dnl
+m4_define(__hw_problems_5_rappel-from-fridge,d9)m4_dnl
 m4_define(__hw_problems_5_combine-springs,g1)m4_dnl
 m4_define(__hw_problems_5_combinesprings,g2)m4_dnl
 m4_define(__hw_problems_5_youngs-modulus,g3)m4_dnl

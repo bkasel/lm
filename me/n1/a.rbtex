@@ -246,15 +246,15 @@ by fiddling with the result of part c of problem \ref{hw:gamma-derivation} that 
 
 <% begin_hw('door-closer',nil,{'calc'=>true}) %>__incl(hw/door-closer)<% end_hw() %>
 
-\enlargethispage{\baselineskip}
+\enlargethispage{2\baselineskip}
 
 <% begin_hw('beer-stability') %>__incl(hw/beer-stability)<% end_hw() %>
 
 <% begin_hw('average-velocity-from-halves') %>__incl(hw/average-velocity-from-halves)<% end_hw() %>
 
-\enlargethispage{\baselineskip}
-
 <% begin_hw('earth-stepwise-equator') %>__incl(hw/earth-stepwise-equator)<% end_hw() %>
+
+\enlargethispage{\baselineskip}
 
 <% begin_hw('earth-stepwise-fullerton') %>__incl(hw/earth-stepwise-fullerton)<% end_hw() %>
 
@@ -269,6 +269,7 @@ by fiddling with the result of part c of problem \ref{hw:gamma-derivation} that 
 
 <% begin_hw('passing-in-race') %>__incl(hw/passing-in-race)<% end_hw() %>
 
+\pagebreak
 
 <% marg(300) %>
 <%

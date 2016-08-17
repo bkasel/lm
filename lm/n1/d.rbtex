@@ -204,11 +204,30 @@ italicized object participates.}
 
 <% begin_hw('crevasse') %>__incl(hw/crevasse)<% end_hw() %>
 
+\vfill
+
 <% begin_hw('caryatid') %>__incl(hw/caryatid)<% end_hw() %>
+
+\vfill
 
 <% begin_hw('lowering-climber-detailed') %>__incl(hw/lowering-climber-detailed)<% end_hw() %>
 
+\vfill
+
 <% begin_hw('car-in-mud') %>__incl(hw/car-in-mud)<% end_hw() %>
+
+\pagebreak
+
+<% begin_hw('rappel-from-fridge') %>__incl(hw/rappel-from-fridge)<% end_hw() %>
+
+<% marg(300) %>
+<%
+  fig(
+    'hw-rappel-from-fridge',
+    %q{Problem \ref{hw:rappel-from-fridge}.}
+  )
+%>
+<% end_marg %>
 
 <% end_hw_sec %>
 

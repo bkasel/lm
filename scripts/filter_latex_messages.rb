@@ -74,7 +74,6 @@ def do_filtering(t)
   t.gsub!(/<\n?#{path}\n?>/,'') # <...>
   t.gsub!(/{\n?#{path}\n?}/,'')
 
-
   t.gsub!(/\n{2,}/,"\n") # blank lines
 
   return t
