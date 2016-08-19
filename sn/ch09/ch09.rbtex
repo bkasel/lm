@@ -1185,7 +1185,7 @@ What would happen to the battery in this kind of short
 
         A voltmeter is nothing more than an ammeter with an
         additional high-value resistor through which the current is
-        also forced to flow. Ohm's law relates the current through
+        also forced to flow. Ohm's law states that the current through
         the resistor is related directly to the voltage difference
         across it, so the meter can be calibrated in units of volts
         based on the known value of the resistor. The voltmeter's

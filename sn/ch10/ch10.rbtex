@@ -630,7 +630,7 @@ Find an equation for the magnitude of the field of a
         \end{equation*}
         
         No matter how we notate it, the definition of the dipole moment requires
-        that we choose point from which we measure all the position vectors
+        that we choose a point from which we measure all the position vectors
         of the charges. However, in the commonly encountered special case where
          the total charge of the object is zero, 
         the dipole moment is the same regardless of this choice.
