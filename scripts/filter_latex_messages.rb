@@ -73,6 +73,23 @@ def do_filtering(t)
   t.gsub!(/<\n?<\n?#{path}\n?>\n?>/,'') # <<...>>
   t.gsub!(/<\n?#{path}\n?>/,'') # <...>
   t.gsub!(/{\n?#{path}\n?}/,'')
+  t.gsub!(/^OMS.*/,'')
+  t.gsub!(/OT1\/cmr.*/,'')
+  t.gsub!(/OML\/cmm.*/,'')
+  t.gsub!(/OMS\/cmsy.*/,'')
+  t.gsub!(/y=t /,'')
+  t.gsub!(/10 \)/,'')
+  t.gsub!(/.*\\$/,'')
+
+  t.gsub!(/^\s*\[\d+\]$/,'') # lines like [1359] -- these should actually have been eliminated earlier...??
+  t.gsub!(/^\s*(\[\d+\]\s*)+$/,'') # multiple entries, similar...??
+
+  t.gsub!(/^Overfull.*/,'')
+  t.gsub!(/.*There were undefined references.*/,'')
+  t.gsub!(/.*Rerun to get cross.*/,'')
+  t.gsub!(/^\<\/home\/.*\>$/,'')
+  t.gsub!(/^\]$/,'')
+
 
   t.gsub!(/\n{2,}/,"\n") # blank lines
 
