@@ -15,6 +15,7 @@
 # See INTERNALS for documentation on all the files: geom.pos, marg.pos, chNN.pos,
 # figfeedbackNN, all.pos.
 
+require 'tempfile'
 require 'json'
 
 $label_counter = 0 # for generating labels when the user doesn't supply one
@@ -1023,8 +1024,26 @@ def set_answer_text(label,long_label,text,type)
   # short label is used only for latex references
   if long_label==nil then long_label = label end
   text = handle_answer_text_caching(long_label,text,type)
+  text = handle_m4_in_answer_file(text)
   $answer_text[type][long_label] = text
   $answer_long_label_to_short[long_label] = label 
+end
+
+def handle_m4_in_answer_file(text)
+  # This happens in lowering-climber.
+  return text unless text=~/m4_/;
+  run_m4 = whichever_file_exists(["../scripts/run_m4.pl","scripts/run_m4.pl"])
+  if run_m4.nil? then save_complaint("couldn't find scripts/run_m4.pl in handle_m4_in_answer_file"); return text end
+  result = text
+  temp_file_name = "handle_m4_in_answer_file.temp"
+  File.open(temp_file_name,'w') { |f|
+    f.print text
+  }
+  cmd = "#{run_m4} #{temp_file_name} dummy ."
+  result = `#{cmd}`
+  if result=='' then $stderr.print "error in handle_m4_in_answer_file, result is null string" end
+  File.delete(temp_file_name)
+  return result
 end
 
 def handle_answer_text_caching(label,text,type)
