@@ -361,6 +361,10 @@
 }
 %
 %=========================
+\newcommand{\eqquad}{}
+% I used to have flying punctuation after displayed math, e.g.,
+%      x=7 \qquad .
+% I decided that looked bad, so I replaced the qquads with this do-nothing macro.
 \newcommand{\mynormaltype}{\normalsize\normalfont\myeqnspacing}
 \newcommand{\myeqnspacing}{
 	\setlength{\abovedisplayskip}{4mm plus 1mm minus 3mm}
