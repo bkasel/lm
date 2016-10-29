@@ -1198,29 +1198,25 @@ each case, explain what the error is.
 <% end_sec() %>
 <% begin_sec("Significant Figures",0,'sig-figs') %>\index{significant figures}
 
-An engineer is designing a car engine, and has been told
-that the diameter of the pistons (which are being designed
-by someone else) is 5.0 cm. He knows that 0.02 cm of clearance
-is required for a piston of this size, so he designs the
-cylinder to have an inside diameter of 5.02 cm. Luckily, his
-supervisor catches his mistake before the car goes into
-production. She explains his error to him, and mentally puts
-him in the ``do not promote'' category.
+The international governing body for football (``soccer'' in the US) says
+the ball should have a circumference of 68 to 70 cm. Taking the middle of
+this range and dividing by $\pi$ gives a diameter of approximately
+$21.96338214668155633610595934540698196\ \zu{cm}$.
+The digits after the first few are completely meaningless. Since the
+circumference could have varied by about a centimeter in either direction,
+the diameter is fuzzy by something like a third of a centimeter. We say that
+the additional, random digits are not \intro{significant figures}.
+If you write down a number with a lot of gratuitous insignificant figures,
+it shows a lack of scientific literacy and imples to other people a greater
+precision than you really have.
 
-What was his mistake? The person who told him the diameter
-of the piston intentionally said ``5.0 cm,'' not ``5.00 cm,''
-specifically to avoid creating the
-impression that the number was extremely accurate. In
-reality, the piston's diameter was 5.04 cm. They would never
-have fit in the 5.02 cm cylinders.
-
-In most cases, the result
-of a calculation involving several pieces of data can be no
-more accurate than the least accurate piece of data. 
-``Garbage in, garbage out.'' Since the 5.0 cm figure for the
-diameter of the pistons was not very accurate, the result of
-the engineer's calculation, 5.04 cm, was really not as
-accurate as he thought. 
+As a rule of thumb, the result of a calculation has as many significant
+figures, or ``sig figs,'' as the least accurate piece of data that went
+in. In the example with the soccer ball, it didn't do us any good to know
+$\pi$ to dozens of digits, because the bottleneck in the precision of the
+result was the figure for the circumference, which was two sig figs.
+The result is $22\ \zu{cm}$.
+The rule of thumb works best for multiplication and division.
 
 \enlargethispage{-2\baselineskip}
 
