@@ -2619,27 +2619,7 @@ circuit being tested.
   )
 %>
 <% end_marg %>
-<% begin_hw('nacl',2) %>
-\answercheck The figure shows one layer of the three-dimensional
-structure of a salt crystal. The atoms extend much farther
-off in all directions, but only a six-by-six square is shown
-here. The larger circles are the chlorine ions, which have
-charges of $-e$, where $e=1.60\times10^{-19}\ \zu{C}$. The smaller circles are sodium ions, with
-charges of $+e$. The center-to-center distance between
-neighboring ions is about 0.3 nm. Real crystals are never
-perfect, and the crystal shown here has two defects: a
-missing atom at one location, and an extra lithium atom,
-shown as a grey circle, inserted in one of the small gaps.
-If the lithium atom has a charge of $+e$, what is the
-direction and magnitude of the total force on it? Assume
-there are no other defects nearby in the crystal besides the
-two shown here. [Hints: The force on the lithium ion is the
-vector sum of all the forces of all the quadrillions of
-sodium and chlorine atoms, which would obviously be too
-laborious to calculate. Nearly all of these forces,
-however, are canceled by a force from an ion on the opposite
-side of the lithium.]
-<% end_hw() %>
+<% begin_hw('nacl',2) %>__incl(../../share/em-general/hw/nacl)<% end_hw() %>
 
 \pagebreak
 
@@ -2659,17 +2639,7 @@ side of the lithium.]
 %>
 <% end_marg %>
 
-<% begin_hw('croquet',nil,{'calc'=>true}) %> In the semifinals of an electrostatic croquet
-tournament, Jessica hits her positively charged ball,
-sending it across the playing field, rolling to the left
-along the $x$ axis. It is repelled by two other positive
-charges. These two equal charges are fixed on the $y$ axis
-at the locations shown in the figure. (a) Express the force
-on the ball in terms of the ball's position, $x$. (b) At
-what value of $x$ does the ball experience the greatest
-deceleration? Express you answer in terms of $b$. [Based on
-a problem by Halliday and Resnick.]\answercheck
-<% end_hw() %>
+<% begin_hw('croquet',nil,{'calc'=>true}) %>__incl(../../share/em-general/hw/croquet)<% end_hw() %>
 
 <% begin_hw('hail-an-electron-cab') %>__incl(hw/hail-an-electron-cab)<% end_hw() %>
 

@@ -252,6 +252,29 @@ def find_fig_for_problem(prob,files_list) # returns [boolean,"foo","/.../.../foo
   return [false,nil,nil]
 end
 
+def find_fig_for_text(name,files_list) # returns [boolean,"foo","/.../.../foo.png",width]
+  # files_list = a list of directories, can be relative, with /figs implied on the end, or absolute
+  # return value width is "narrow", "wide", or "fullpage"
+  # For exceptions to the naming convention (e.g., figures that need to be duplicated in the book
+  # in more than one place), edit fig_exceptional_naming.
+  places = []
+  files_list.each { |files|
+    if !files.nil? then
+      # detect whether it's relative or absolute
+      if Dir.exist?(files) then
+        places.push(files)
+      else
+        places.push($original_dir+"/../../"+files+"/figs")
+      end
+    end
+  }
+  places.each { |dir| 
+    r = find_fig_file_in_dir(dir,name)
+    if r[0] then return r end
+  }
+  return [false,nil,nil]
+end
+
 def find_anonymous_inline_figs(tex)
   return tex.gsub(/\\anonymousinlinefig{([^}]*)}/) {
     f = ''
@@ -284,6 +307,7 @@ def find_figs_for_solution(prob,orig,label,instr_dir=nil)
       result = "\n\n\\noindent\\begin{center}\\anonymousinlinefig{#{f}}\\end{center}\n\n" # narrow, not floating
       width = fig_width(fig_name)
       if width!='narrow' then
+        if f.nil? || f=='' then fatal_error("error in find_figs_for_solution, f is null, prob=#{prob}") end
         result = process_fig(f,width,"Problem #{label}.",true,true,true) # floating, wide fig
       end
       result
@@ -368,7 +392,8 @@ def generate_prob_tex(prob,group,k,solutions,files_list,counters)
   result = result + "\\end{hw}\n"
   has_fig,fig_file,fig_path,width = find_fig_for_problem(prob,files_list)
   if has_fig then
-    result = result+process_fig(fig_file,width,generate_caption_for_hw_fig(prob,fig_file),true,false,true)
+    if fig_path.nil? || fig_path=='' then fatal_error("error in generate_prob_tex, fig_path is null, prob=#{prob}") end
+    result = result+process_fig(fig_path,width,generate_caption_for_hw_fig(prob,fig_file),true,true,true)
   end
   if !($spotter_dir.nil?) then
     if debug then $stderr.print "looking for spotter stuff for #{prob}" end
@@ -486,21 +511,32 @@ def generate_solution_tex(answers_dir,prob,group,k,path,counters,instr=false,ins
   return result
 end
 
-def process_fig(fig_file,width,caption,allow_time_travel,if_path,anonymous=false)
+def process_fig(fig_file,width,caption,allow_time_travel,if_path,anonymous)
   # returns latex code for the figure; the result is floating; in solutions, this is only called for wide figs
   # has the side-effect of generating a photo credit
   # width can be narrow (52 mm), medium (1 column), wide, or fullpage
-  # if_path=true means that the figure is in the usual shared figs directory; false means fig_file is a pathname
+  # if_path=false means that the figure is in the usual shared figs directory; true means fig_file is a pathname
+  #       ... this mechanism doesn't work now that I allow a list of directories, so if_path should always be true
+  if fig_file.nil? || fig_file=='' then
+    fatal_error("error in process_fig, fig_file is null, caption=#{caption}")
+  end
+  fig_file=~Regexp.new("([^/]*)$")
+  bare_name = $1
+  bare_name.gsub!(/\.[a-zA-Z]*$/,'') # remove trailing .png, etc.
   macro = 'fignarrow'
   add_before,add_after = '',''
   if width=='medium' then
-    macro='fig'
+    macro='figpath'
+    add_after = add_after+"{#{bare_name}}"
   else
-    if width!='narrow' then
+    if width=='narrow' then
+      macro = macro+'path'
+      add_after = add_after+"{#{bare_name}}"
+    else
       macro='figwide'
       if if_path then macro='figwidepath' end
       if allow_time_travel then
-        add_before="\n\\begin{timetravel}\n";add_after="\n\\end{timetravel}\n" 
+        add_before="\n\\begin{timetravel}\n"+add_before;add_after=add_after+"\n\\end{timetravel}\n" 
       end
     end
   end
@@ -509,7 +545,7 @@ def process_fig(fig_file,width,caption,allow_time_travel,if_path,anonymous=false
   return "#{add_before}\\#{macro}{#{fig_file}}{}{#{caption}}#{add_after}\n"
 end
 
-def process_text(tex)
+def process_text(tex,files_list)
   # Handles figures, which look like this:
   #       % fig {"name":"munchausen","caption":"Escaping from a 
   #       %      swamp."}
@@ -520,22 +556,12 @@ def process_text(tex)
     if fig_data.key?("width") then width=fig_data["width"] else width = fig_width(fig) end
     allow_time_travel = true
     if fig_data.key?("timetravel") then allow_time_travel=false end
-    process_fig(fig,width,caption,allow_time_travel,false) # replaces original code with this
+    has_fig,fig_file,fig_path,width = find_fig_for_text(fig,files_list)
+           # qwe
+    if fig_path.nil? || fig_path=='' then fatal_error("error in find_figs_for_solution, fig_path is null, fig=#{fig}") end
+    process_fig(fig_path,width,caption,allow_time_travel,true,false) # replaces original code with this
   }
   if err then fatal_error(message) end
-
-  if false then
-  tex.gsub!(/^%\s*fig\s*({.*})$/) { |line|
-    fig_data = parse_json_or_die($1)
-    fig = fig_data["name"]
-    caption = fig_data["caption"]
-    if fig_data.key?("width") then width=fig_data["width"] else width = fig_width(fig) end
-    allow_time_travel = true
-    #if fig_data.key?("timetravel") then allow_time_travel=(fig_data["width"]!=0) end
-    if fig_data.key?("timetravel") then allow_time_travel=false end
-    process_fig(fig,width,caption,allow_time_travel,false)
-  }
-  end
 
   return tex
 end
@@ -549,7 +575,7 @@ def generate_content(what,depth,json,files_list,group,path,solutions,answers_dir
     title = json["title"]
     if depth==1 then print generate_chapter_header(title,path_label) end
     if depth==2 then print "\n%%%%%%%%%%% sec: #{title} %%%%%%%%%%%\n\\section{#{title}}\\label{sec:#{path_label}}\n" end
-    if File.exist?("text.tex") && depth<3 then print process_text(slurp_file("text.tex")) end
+    if File.exist?("text.tex") && depth<3 then print process_text(slurp_file("text.tex"),files_list) end
   end
   if depth==3 then
     if json.key?("order") && !(json["order"].nil?) then

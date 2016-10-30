@@ -31,6 +31,14 @@
     \caption[]{#3}\label{fig:#2} % empty [] is a workaround for this bug: http://tex.stackexchange.com/a/227840/6853
     \end{figure}
   }
+\newcommand{\figrawpath}[5]%
+  % #1=placement (ignored), #2=file, #3=caption, #4=width, #5=bare name
+  {%
+    \begin{figure}[h]
+    \begin{center}\includegraphics[#4]{#2}\end{center}
+    \caption[]{#3}\label{fig:#5} % empty [] is a workaround for this bug: http://tex.stackexchange.com/a/227840/6853
+    \end{figure}
+  }
 % The following is always placed inside a timetravel environment.
 \newcommand{\figrawwidepath}[5]%
   % #1=placement (ignored), #2=file, #3=caption, #4=width, #5=bare name
@@ -48,6 +56,13 @@
     \label{fig:#2} % empty [] is a workaround for this bug: http://tex.stackexchange.com/a/227840/6853
     \end{figure}
   }
+\newcommand{\figrawpathanon}[4]%
+  % #1=placement (ignored), #2=file, #3=caption, #4=width
+  {%
+    \begin{figure}[h]
+    \begin{center}\includegraphics[#4]{#2}\\#3\end{center}
+    \end{figure}
+  }
 % The following is always placed inside a timetravel environment.
 \newcommand{\figrawwidepathanon}[5]%
   % #1=placement (ignored), #2=file, #3=caption, #4=width, #5=bare name
@@ -60,9 +75,13 @@
 \newcommand{\figrawwide}[4]{\figrawwidepath{#1}{../../\sharedfigs/#2}{#3}{#4}{#2}}
 \newcommand{\figrawwideanon}[4]{\figrawwidepathanon{#1}{../../\sharedfigs/#2}{#3}{#4}{#2}}
 \newcommand{\fig}[3]{\figraw{#2}{#1}{#3}{width=0.5\textwidth}} % file, placement (ignored), caption
+\newcommand{\figpath}[4]{\figrawpath{#2}{#1}{#3}{width=0.5\textwidth}{#4}}
 \newcommand{\figanon}[3]{\figrawanon{#2}{#1}{#3}{width=0.5\textwidth}} % file, placement (ignored), caption
+\newcommand{\figpathanon}[3]{\figrawpathanon{#2}{#1}{#3}{width=0.5\textwidth}} % file, placement (ignored), caption
 \newcommand{\fignarrow}[3]{\figraw{#2}{#1}{#3}{width=52mm}}
 \newcommand{\fignarrowanon}[3]{\figrawanon{#2}{#1}{#3}{width=52mm}}
+\newcommand{\fignarrowpathanon}[4]{\figrawpathanon{#2}{#1}{#3}{width=52mm}}
+\newcommand{\fignarrowpath}[4]{\figrawpath{#2}{#1}{#3}{width=52mm}{#4}}
 \newcommand{\figwide}[3]{\figrawwide{#2}{#1}{#3}{width=152mm}}
 \newcommand{\figwideanon}[3]{\figrawwideanon{#2}{#1}{#3}{width=152mm}}
 \newcommand{\figwidepath}[3]{\figrawwidepath{#2}{#1}{#3}{width=152mm}{#1}}
