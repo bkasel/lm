@@ -49,7 +49,7 @@ format of config files:
   this.config for a chapter
     {
       "title":"Geometric optics",
-      "files":"share/optics", ... text in optics/hw, figures in optics/figs
+      "files":["share/optics"],     ... text in optics/hw, figures in optics/figs
       "order":["ray-model",...]
     }
   this.config for a section
@@ -69,7 +69,7 @@ format of config files:
 
 more about figures
   wide figures
-    These are hard to place appropriate in 2-column text. See
+    These are hard to place appropriately in 2-column text. See
     http://tex.stackexchange.com/questions/314257/time-travel-in-latex
     and https://github.com/bcrowell/timetravel .
   belonging to problems

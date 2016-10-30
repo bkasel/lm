@@ -169,24 +169,22 @@ def clean_up_hw(t)
 end
 
 #-------------------------------------------------------------
-def find_problem_file(prob,location)
-  file = $original_dir+"/../../"+location+"/hw/"+prob+".tex"
-  # I put some in problems book directory before, but that was a bad idea.
+def find_problem_file(prob,files_list)
+  if prob=~/\.tex$/ then return [nil,"file #{file} shouldn't have included .tex in this.config"] end
+
+  # First check for problems in book directory.
+  # It's possible to do this, but not normally a good idea.
+  # I only have one of these left, tiptotail, and it's too complicated to be a conditional.
   file_own = Dir.getwd+"/"+prob+".tex"
-  if File.exist?(file_own) && File.exist?(file) then
-    # warning("You have two versions of #{prob}; this is a bad idea; do a conditional:\n  mg #{file} #{file_own}\n  m4_ifelse(__problems,1,[:foo:],[:bar:])\n")
-    # Don't throw a warning. I only have one of these left, tiptotail, and it's too complicated to be a conditional
-    # without being really awkward.
+  if File.exist?(file_own) then
     return [file_own,nil]
   end
-  if File.exist?(file_own) && !(File.exist?(file)) then
-    warning("You have #{prob} in the wrong place; do:\n  git mv #{file_own} #{file}\n")
-    return [file_own,nil]
-  end
-  # if not, then look in shared directory:
-  if File.exist?(file) then return [file,nil] end
-  if prob=~/\.tex$/ then return [nil,"file #{file} not found, probably because you shouldn't have included .tex in this.config"] end
-  return [nil,"file #{prob}.tex not found in #{Dir.getwd} or #{$original_dir+"/../../"+location+"/hw"}"]
+
+  files_list.each { |location|
+    file = $original_dir+"/../../"+location+"/hw/"+prob+".tex"
+    if File.exist?(file) then return [file,nil] end
+  }
+  return [nil,"file #{prob}.tex not found in #{Dir.getwd} or #{$original_dir+"/../../"+files_list[0]+"/hw"} or any other directory in the list #{files_list}"]
 end
 
 def extract_meta(t)
@@ -215,20 +213,22 @@ def find_fig_file_in_dir(dir,f) # returns [boolean,"foo","/.../.../foo.png",widt
   return [false,nil,nil,nil]
 end
 
-def find_fig_for_problem(prob,files) # returns [boolean,"foo","/.../.../foo.png",width]
-  # files = a directory, can be relative, with /figs implied on the end, or absolute
+def find_fig_for_problem(prob,files_list) # returns [boolean,"foo","/.../.../foo.png",width]
+  # files_list = a list of directories, can be relative, with /figs implied on the end, or absolute
   # return value width is "narrow", "wide", or "fullpage"
   # For exceptions to the naming convention (e.g., figures that need to be duplicated in the book
   # in more than one place), edit fig_exceptional_naming.
   places = []
-  if !(files.nil?) then 
-    # detect whether it's relative or absolute
-    if Dir.exist?(files) then
-      places.push(files)
-    else
-      places.push($original_dir+"/../../"+files+"/figs")
+  files_list.each { |files|
+    if !files.nil? then
+      # detect whether it's relative or absolute
+      if Dir.exist?(files) then
+        places.push(files)
+      else
+        places.push($original_dir+"/../../"+files+"/figs")
+      end
     end
-  end
+  }
   # Books have their own figures for some solutions:
   places.push($original_dir+"/../../me/end/figs")
   places.push($original_dir+"/../../lm/end1/figs")
@@ -255,7 +255,7 @@ end
 def find_anonymous_inline_figs(tex)
   return tex.gsub(/\\anonymousinlinefig{([^}]*)}/) {
     f = ''
-    find = find_fig_for_problem($1,nil)
+    find = find_fig_for_problem($1,[])
     if find[0] then f=find[2] end
     "\\anonymousinlinefig{#{f}}"
   }
@@ -274,7 +274,7 @@ def find_figs_for_solution(prob,orig,label,instr_dir=nil)
     tex.gsub!(/\\#{m}{([^}]*)}/) {
       fig_name = $1
       f = ''
-      find = find_fig_for_problem(fig_name,figs_dir)
+      find = find_fig_for_problem(fig_name,[figs_dir])
       if find[0] then 
         f=find[2]
       else
@@ -334,19 +334,19 @@ def generate_caption_for_hw_fig(prob,fig_file)
   return "Problem \\ref{hw:#{prob}}."
 end
 
-def generate_prob_tex(prob,group,k,solutions,files,counters)
+def generate_prob_tex(prob,group,k,solutions,files_list,counters)
   # returns latex for the problem
   # side-effects (when appropriate):
   #   adds to $credits_tex
   #   adds to spotter output in $spotter1 and $spotter2
   #   appends to own_problems_solns.csv if the problem is marked with a meta tag as having a solution
-  file,err = find_problem_file(prob,files)
+  file,err = find_problem_file(prob,files_list)
   if file.nil? then fatal_error(err) end
   debug = false # (prob=~/pluto/)
   label = group+k.to_s
   tex = slurp_file(file)
   meta = extract_meta(tex)
-  if $save_meta.key?(prob) then fatal_error("problem #{prob} occurs twice; second time is in prob=#{prob} group=#{group} files=#{files}") end
+  if $save_meta.key?(prob) then fatal_error("problem #{prob} occurs twice; second time is in prob=#{prob} group=#{group} files_list=#{files_list}") end
   $save_meta[prob] = meta
   tex = clean_up_hw(filter_out_eruby(tex))
   stars = get_meta_data_with_default(meta,"stars",0)
@@ -366,7 +366,7 @@ def generate_prob_tex(prob,group,k,solutions,files,counters)
     }
   end
   result = result + "\\end{hw}\n"
-  has_fig,fig_file,fig_path,width = find_fig_for_problem(prob,files)
+  has_fig,fig_file,fig_path,width = find_fig_for_problem(prob,files_list)
   if has_fig then
     result = result+process_fig(fig_file,width,generate_caption_for_hw_fig(prob,fig_file),true,false,true)
   end
@@ -540,11 +540,11 @@ def process_text(tex)
   return tex
 end
 
-def generate_content(what,depth,json,files,group,path,solutions,answers_dir,counters)
+def generate_content(what,depth,json,files_list,group,path,solutions,answers_dir,counters)
   # depth 0=book, 1=chapter, 2=section, 3=problem group
   debug = false
   path_label = path.join('-')
-  print "\\renewcommand{\\sharedfigs}{#{files}/figs}"
+  print "\\renewcommand{\\sharedfigs}{#{files_list[0]}/figs}" # what does this do? is it OK to use [0]?
   if what=="text" then
     title = json["title"]
     if depth==1 then print generate_chapter_header(title,path_label) end
@@ -561,7 +561,7 @@ def generate_content(what,depth,json,files,group,path,solutions,answers_dir,coun
         if prob=='' then fatal_error("problem is a null string, problem group=#{group}, counters=#{counters.join(',')}") end
         k = k+1
         if what=="problems" then
-          print generate_prob_tex(prob,group,k,solutions,files,counters)
+          print generate_prob_tex(prob,group,k,solutions,files_list,counters)
                   # ... has side effects of adding to $credits_tex, $spotter1, and $spotter2, if appropriate
         end
         if what=="answers" then
@@ -581,18 +581,18 @@ def generate_content(what,depth,json,files,group,path,solutions,answers_dir,coun
   end
 end
 
-def do_stuff(what,depth,files,group,path,solutions,answers_dir,counters) # recursive
+def do_stuff(what,depth,files_list,group,path,solutions,answers_dir,counters) # recursive
   # depth 0=book, 1=chapter, 2=section, 3=problem group
   debug = false
   counters[depth+1] = 0 # e.g., if depth=0 then set the chapter number to 0
   indent = "  "*depth
   $stderr.print "#{indent}what=#{what}, depth=#{depth}\n" if debug
   json = get_json_data_from_file_or_die("this.config")
-  if json.key?("files") then files=json["files"] end
+  if json.key?("files") then files_list=json["files"] end
   if what=="answers" && depth==0 then
     print "\\chapter*{Answers}\n"
   end
-  generate_content(what,depth,json,files,group,path,solutions,answers_dir,counters)
+  generate_content(what,depth,json,files_list,group,path,solutions,answers_dir,counters)
   if json.key?("order") then
     order = json["order"]
     if depth <= 2 then
@@ -616,7 +616,7 @@ def do_stuff(what,depth,files,group,path,solutions,answers_dir,counters) # recur
         if depth==2 then g=order.key(dir) end
         path.push(dir)
         counters[depth+1] = counters[depth+1]+1
-        do_stuff(what,depth+1,files,g,path,solutions,answers_dir,counters) # recursion
+        do_stuff(what,depth+1,files_list,g,path,solutions,answers_dir,counters) # recursion
         path.pop
         Dir.chdir(save_dir)
       }
@@ -627,7 +627,7 @@ def do_stuff(what,depth,files,group,path,solutions,answers_dir,counters) # recur
     ch = counters[1]
     $spotter1 = $spotter1+"\n\n<!-- ch #{ch}, #{json["title"]} -->\n\n"
     $spotter2 = $spotter2+"\n\n<toc type=\"chapter\" num=\"#{ch}\" title=\"#{json["title"]}\">\n\n"
-    do_stuff("problems",depth,files,group,path,solutions,answers_dir,counters)
+    do_stuff("problems",depth,files_list,group,path,solutions,answers_dir,counters)
     print "\\end{hwsection}\n"
     $spotter2 = $spotter2+"\n\n</toc>\n\n"
   end
