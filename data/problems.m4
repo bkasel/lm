@@ -681,6 +681,7 @@ m4_define(__hw_me_0_horizon,8)m4_dnl
 m4_define(__hw_me_0_sars,9)m4_dnl
 m4_define(__hw_me_0_triangle-formula,10)m4_dnl
 m4_define(__hw_me_0_pretzels,11)m4_dnl
+m4_define(__hw_me_0_units-taylor,12)m4_dnl
 m4_define(__hw_me_1_liter-cube,1)m4_dnl
 m4_define(__hw_me_1_square-mm-to-cm,2)m4_dnl
 m4_define(__hw_me_1_light-bucket,3)m4_dnl
@@ -1639,6 +1640,7 @@ m4_define(__hw_sn_0_great-wall,41)m4_dnl
 m4_define(__hw_sn_0_e-coli,42)m4_dnl
 m4_define(__hw_sn_0_droppingballs,43)m4_dnl
 m4_define(__hw_sn_0_jelly-beans,44)m4_dnl
+m4_define(__hw_sn_0_units-taylor,45)m4_dnl
 m4_define(__hw_sn_1_thermometer-m-conservation,1)m4_dnl
 m4_define(__hw_sn_1_atomic-mass-ratio,2)m4_dnl
 m4_define(__hw_sn_1_alpha-decay-m-conservation,3)m4_dnl

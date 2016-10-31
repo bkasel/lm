@@ -171,6 +171,7 @@ information to NASA. Conversions are important!},
 
 <% begin_hw('jelly-beans') %>__incl(hw/jelly-beans)<% end_hw() %>
 
+<% begin_hw('units-taylor') %>__incl(hw/units-taylor)<% end_hw() %>
 
 <% end_hw_sec %>
 
