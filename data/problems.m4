@@ -1083,6 +1083,7 @@ m4_define(__hw_problems_1_geometric-mean,d1)m4_dnl
 m4_define(__hw_problems_1_triangle-formula,d2)m4_dnl
 m4_define(__hw_problems_1_check-units-of-cone,d3)m4_dnl
 m4_define(__hw_problems_1_horizon,d4)m4_dnl
+m4_define(__hw_problems_1_units-taylor,d5)m4_dnl
 m4_define(__hw_problems_1_sars,g1)m4_dnl
 m4_define(__hw_problems_1_pretzels,g2)m4_dnl
 m4_define(__hw_problems_1_liter-cube,j1)m4_dnl
@@ -1596,6 +1597,15 @@ m4_define(__hw_problems_12_qcorrection,s2)m4_dnl
 m4_define(__hw_problems_12_maxampatdc,s3)m4_dnl
 m4_define(__hw_problems_12_fwhm,s4)m4_dnl
 m4_define(__hw_problems_12_qsix,s5)m4_dnl
+m4_define(__hw_problems_13_neuron-stick,a1)m4_dnl
+m4_define(__hw_problems_13_heline,a2)m4_dnl
+m4_define(__hw_problems_13_hetriangle,a3)m4_dnl
+m4_define(__hw_problems_13_hands-repulsion,a4)m4_dnl
+m4_define(__hw_problems_13_leadbound,a5)m4_dnl
+m4_define(__hw_problems_13_muonic,a6)m4_dnl
+m4_define(__hw_problems_13_earthmoonelec,a7)m4_dnl
+m4_define(__hw_problems_13_nacl,a8)m4_dnl
+m4_define(__hw_problems_13_croquet,a9)m4_dnl
 m4_define(__hw_sn_0_calculator,1)m4_dnl
 m4_define(__hw_sn_0_units,2)m4_dnl
 m4_define(__hw_sn_0_backyard,3)m4_dnl

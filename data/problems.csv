@@ -1083,6 +1083,7 @@ problems,1,d1,geometric-mean,1
 problems,1,d2,triangle-formula,1
 problems,1,d3,check-units-of-cone,1
 problems,1,d4,horizon,0
+problems,1,d5,units-taylor,0
 problems,1,g1,sars,0
 problems,1,g2,pretzels,0
 problems,1,j1,liter-cube,1
@@ -1596,6 +1597,15 @@ problems,12,s2,qcorrection,0
 problems,12,s3,maxampatdc,0
 problems,12,s4,fwhm,0
 problems,12,s5,qsix,0
+problems,13,a1,neuron-stick,0
+problems,13,a2,heline,0
+problems,13,a3,hetriangle,0
+problems,13,a4,hands-repulsion,0
+problems,13,a5,leadbound,0
+problems,13,a6,muonic,0
+problems,13,a7,earthmoonelec,0
+problems,13,a8,nacl,0
+problems,13,a9,croquet,0
 sn,0,1,calculator,0
 sn,0,2,units,0
 sn,0,3,backyard,0

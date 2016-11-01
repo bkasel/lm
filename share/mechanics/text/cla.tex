@@ -347,6 +347,12 @@ the \index{joule (unit)}joule, J, (rhymes with ``cool''),
 named after the British physicist James Joule. One Joule is
 the amount of energy required in order to heat 0.24 g of
 water by $1\degcunit$. The number 0.24 is not worth memorizing.
+A convenient way of restating this definition is that
+when heating water, $\text{heat}=cm\Delta T$, where $\Delta T$ is
+the change in temperature in $\degcunit$, $m$ is the mass, and
+we have defined the joule by defining the constant $c$, called
+the specific heat capacity of water,\index{specific heat capacity}
+to have the value $4.2\times10^3\ \junit/\kgunit\unitdot\degcunit$.
 
 Note that heat, which is a form of energy, is completely
 different from temperature, which is not. Twice as much heat
@@ -362,7 +368,6 @@ whereas ``thermal energy'' indicates an amount of energy
 contained in an object. I'm informal on this point, and
 refer to both as heat, but you should be aware of the
 distinction.}
-
 
 Later we will encounter other quantities that are conserved
 in physics, such as momentum and angular momentum, and the
@@ -384,22 +389,20 @@ megajoule = $10^6$ J), how much does it cost to heat a
             =  9.8\times10^7\ \zu{cm}^3\eqquad.
 \end{equation*}
 Water has a density of 1 gram per cubic centimeter, so the
-mass of the water is $9.8\times10^7$ g. One joule is
-sufficient to heat 0.24 g by 1\degcunit, so the energy needed
+mass of the water is $9.8\times10^4\ \kgunit$. The energy needed
 to heat the swimming pool is
-\begin{align*}
- 1\ \junit \times \frac{9.8\times10^7\ \zu{g}}{0.24\ \zu{g}} \times \frac{8\degcunit}{1\degcunit}
- &= 3.3\times10^9\ \junit \\
- &= 3.3\times10^3\ \zu{MJ}\eqquad.
-\end{align*}
+\begin{equation*}
+  mc\Delta T= 3.3\times10^3\ \zu{MJ}\eqquad.
+\end{equation*}
+% calc -e "rho=1 g/cm3; v=9.8 10^7 cm3; m=rhov->kg; c=4.2 10^3 J/kg; T=8; mcT->MJ"
 The cost of the electricity is ($3.3\times10^3$ MJ)(\$0.039/MJ)=\$130.
 \end{eg}
 
 \begin{eg}{Irish coffee}
 \egquestion You make a cup of Irish coffee out of 300 g of
 coffee at $100\degcunit\ $ and 30 g of pure ethyl alcohol at
-20\degcunit. One Joule is enough energy to produce a change of
-1\degcunit\ in 0.42 g of ethyl alcohol (i.e., alcohol is easier
+20\degcunit. The specific heat capacity of ethanol is
+$2.4\times10^3\ \junit/\kgunit\unitdot\degcunit$ (i.e., alcohol is easier
 to heat than water). What temperature is the final mixture?
 
 \eganswer Adding up all the energy after mixing has to give
@@ -420,24 +423,24 @@ of energy differences:
 \begin{equation*}
                 E_{af}-E_{ai} =    E_{ci}-E_{cf}\eqquad.
 \end{equation*}
-Using the given ratios of temperature change to energy change, we have
+Using the heat capacities $c_c$ for coffee (water) and $c_a$ for alcohol, we have
 \begin{align*}
- E_{ci}-E_{cf} &= (T_{ci}-T_{cf})(m_c)/(0.24\ \gunit) \\
- E_{af}-E_{ai} &= (T_{af}-T_{ai})(m_a)/(0.42\ \gunit)
+ E_{ci}-E_{cf} &= (T_{ci}-T_{cf})m_c c_c \qquad \text{and} \\
+ E_{af}-E_{ai} &= (T_{af}-T_{ai})m_a c_a .
 \end{align*}
 Setting these two quantities to be equal, we have
 \begin{equation*}
-        (T_{af}-T_{ai})(m_a)/(0.42\ \gunit)         =      (T_{ci}-T_{cf})(m_c)/(0.24\ \gunit)\eqquad.
+        (T_{af}-T_{ai})m_a c_a         =      (T_{ci}-T_{cf})m_c c_c\eqquad.
 \end{equation*}
 In the final mixture the two substances must be at the same
 temperature, so we can use a single symbol $T_f=T_{cf}=T_{af}$
 for the two quantities previously represented by two different symbols,
 \begin{equation*}
-                (T_f-T_{ai})(m_a)/(0.42\ \gunit)         =      (T_{ci}-T_f)(m_c)/(0.24\ \gunit)\eqquad.
+                (T_f-T_{ai})m_a c_a         =      (T_{ci}-T_f)m_c c_c\eqquad.
 \end{equation*}
 Solving for $T_f$ gives
 \begin{align*}
- T_f &= \frac{T_{ci}\frac{m_c}{0.24}+T_{ai}\frac{m_a}{0.42}}{\frac{m_c}{0.24}+\frac{m_a}{0.42}}\\
+ T_f &= \frac{T_{ci}m_c c_c+T_{ai}m_a c_a}{m_c c_c+m_a c_a}\\
  &= 96\degcunit\eqquad.
 \end{align*}
 \end{eg}
