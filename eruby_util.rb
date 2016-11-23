@@ -588,7 +588,7 @@ def fig(name,caption=nil,options={})
     options['anonymous']=(!caption)
   end
   dir = find_directory_where_figure_is(name)
-  if dir.nil? && options['text'].nil? then save_complaint("figure #{name} not found in #{dir()}/figs, #{shared_figs()[0]}, or #{shared_figs()[1]}") end
+  if dir.nil? && options['text'].nil? then fatal_error("figure #{name} not found in #{dir()}/figs, #{shared_figs()[0]}, or #{shared_figs()[1]}") end
   #------------------------------------------------------------
   if is_print then fig_print(name,caption,options,dir) end
   #------------------------------------------------------------
