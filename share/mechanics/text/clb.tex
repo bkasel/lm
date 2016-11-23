@@ -313,6 +313,8 @@ Making use of equations [1] and [4] gives the simple result
 \end{multline*}
 \index{potential energy!gravitational}\index{energy!gravitational potential energy}
 
+\vfill
+
 \begin{eg}{Dropping a rock}
 \egquestion If you drop a 1-kg rock from a height of 1 m,
 how many joules of KE does it have on impact with the
@@ -330,6 +332,8 @@ of this amount of PE must be accompanied by a corresponding
 increase in KE of 10 J.
 \end{eg}
 
+\vfill
+
 It may be dismaying to note how many minus signs had to be
 handled correctly even in this relatively simple example: a
 total of four. Rather than depending on yourself to avoid
@@ -342,6 +346,8 @@ derived by imagining a situation where it was transformed
 into kinetic energy, the equation can be used in any
 context, because all the types of energy are freely
 convertible into each other.
+
+\pagebreak
 
 \begin{eg}{Gravitational PE converted directly into heat}
 \egquestion A 50-kg firefighter slides down a 5-m pole at
@@ -464,8 +470,6 @@ feather up --- is energy not conserved in this case?
 \end{dq}
 
 <% end_sec() %>
-<% end_sec() %>
-<% begin_sec("All Energy is Potential or Kinetic",0) %>
 
 <% marg(28.5) %>
 <%
@@ -481,6 +485,10 @@ feather up --- is energy not conserved in this case?
   )
 %>
 <% end_marg %>
+
+<% end_sec() %>
+<% begin_sec("All Energy is Potential or Kinetic",4) %>
+
 In the same way that we found that a change in temperature
 is really only a change in kinetic energy at the atomic
 level, we now find that every other form of energy turns out
@@ -517,13 +525,13 @@ there still turn out to be only four fundamental types of energy:
 \textbf{kinetic energy} (including heat)
 \end{indentedblock}
 \begin{indentedblock}
-\textbf{gravitational potential energy}
+\textbf{gravitational PE}
 \end{indentedblock}
 \begin{indentedblock}
-\textbf{electrical and magnetic potential energy}
+\textbf{electrical and magnetic PE} (including light)
 \end{indentedblock}
 \begin{indentedblock}
-\textbf{nuclear potential energy}
+\textbf{nuclear PE}
 \end{indentedblock}
 
 m4_ifelse(__me,1,[:%
@@ -577,5 +585,52 @@ Referring back to the pictures at the beginning of the
 chapter, how do all these forms of energy fit into the
 shortened list of categories given above?
 \end{dq}
-
 <% end_sec() %>
+
+<% begin_sec("Applications",4,'energy-zoo-applications') %>
+
+<% begin_sec("Heat transfer",nil,'heat-transfer') %>
+
+When you hold a hot potato in your hand, energy is transferred from the hot object to
+the cooler one. Our microscopic picture of this process (figure \figref{random-motion}, p.~\pageref{fig:random-motion})
+tells us that the heat transfer can only occur at the surface of contact, where one layer of atoms in the
+potato skin make contact with one such layer in the hand. This type of heat transfer is called
+\emph{conduction},\index{conduction of heat}\index{heat transfer!by conduction}
+and its rate is proportional to both the surface area and the temperature difference.
+
+In a gas or a liquid, a faster method of heat transfer can occur, because hotter or colder parts
+of the fluid can flow, physically transporting their heat energy from one place to another. This
+mechanism of heat transfer, \emph{convection},\index{convection}\index{heat transfer!by convection}
+is at work in Los Angeles when hot Santa Ana winds blow in from the Mojave Desert. On a cold day,
+the reason you feel warmer when there is no wind is that your skin warms a thin layer of air near
+it by conduction. If a gust of wind comes along, convection robs you of this layer.
+
+The glow of the sun or a candle flame is an example of heat transfer by \emph{radiation}.\index{radiation of heat}\index{heat transfer!by radiation}
+In this context, ``radiation'' just means anything that radiates outward from a source, including, in these examples, ordinary
+visible light. The power is proportional to the surface area. It also depends very dramatically on the
+absolute temperature, $P\propto T^4$. We can easily understand the reason for radiation based on the
+picture of heat as random kinetic energy at the atomic scale. Atoms are made out of subatomic particles,
+such as electrons and nuclei, that carry electric charge. When a charged particle vibrates, it creates
+wave disturbances in the electric and magnetic fields, and the waves have a frequency (number of vibrations
+per second) that matches the frequency of the particle's motion. If this frequency is in the right range,
+they constitute visible light. In figure \figref{plutonium-glowing}, the nuclear and electrical potential energy
+in the plutonium pellet cause the pellet to heat up, and an equilibrium is reached, in which the heat is radiated
+away just as quickly as it is produced. When an object is closer to room temperature, it glows in the invisible
+infrared part of the spectrum (figure \figref{irface}).
+<% marg(15) %>
+<%
+  fig(
+    'irface',
+    %q{%
+      A portrait of a man's face made with infrared light, a color of light that lies beyond the red end of
+              the visible rainbow.
+              His warm skin emits quite a bit of infrared light energy, while his
+              hair, at a lower temperature, emits less.
+    }
+  )
+%>
+<% end_sec('heat-transfer') %>
+
+<% end_marg %>
+
+<% end_sec('energy-zoo-applications') %>
