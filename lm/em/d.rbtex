@@ -1027,7 +1027,7 @@ light. Hertz's results were convincing evidence that light
 and electromagnetic waves were one and the same.
 
 <% end_sec() %>
-<% begin_sec("The electromagnetic spectrum") %>\index{spectrum!electromagnetic}\index{electromagnetic spectrum}
+<% begin_sec("The electromagnetic spectrum",nil,'em-spectrum') %>\index{spectrum!electromagnetic}\index{electromagnetic spectrum}
 
 Today, electromagnetic waves with frequencies in the range
 employed by Hertz are known as radio waves. Any remaining
@@ -1126,7 +1126,7 @@ red, and that's why the sky is blue.
 
 \vfill
 
-<% end_sec() %> % The electromagnetic spectrum
+<% end_sec('em-spectrum') %> % The electromagnetic spectrum
 
 
 <%

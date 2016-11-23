@@ -173,6 +173,8 @@ __incl(text/n3c)
   )
 %>
 
+<% end_hw_sec %>
+
 % Advance to an even-numbered (left) page so the following ex comes out on facing pages:
 \ifthenelse{\isodd{\value{page}}}{}{\pagebreak\hbox{}\newpage}
 
