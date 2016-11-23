@@ -629,8 +629,38 @@ infrared part of the spectrum (figure \figref{irface}).
     }
   )
 %>
+<% end_marg %>
+
 <% end_sec('heat-transfer') %>
 
-<% end_marg %>
+<% begin_sec("Global warming",nil,'global-warming') %>
+Our planet receives a nearly constant amount of energy from the sun (about $1.8\times10^{17}\ \zu{W}$).
+If it hadn't had any mechanism for getting rid of that energy, the result would have been some kind of catastrophic explosion
+soon after its formation. Even a 10\% imbalance between energy input and output, if maintained steadily from the time
+of the Roman Empire until the present, would have been enough to raise the oceans to a boil.
+So evidently the earth does dump this energy somehow. How does it do it?
+Our planet is surrounded by the vacuum of outer space, so it can't expel heat by conduction or convection, but
+it does radiate in the infrared, and this is the \emph{only} available mechanism for cooling.
+
+% calc -xe "m=1.4 10^21 kg; c=4 10^3 J/kg; T=100; P=1.8 10^17 W; t=(mcT)/P; t/[365*24*3600]"
+% 99 years
+
+It was realized starting around 1930 that this created a dangerous vulnerability in our biosphere.
+Our atmosphere is only about 0.04\% carbon dioxide, but carbon dioxide is an extraordinarily efficient
+absorber of infrared light. It is, however, transparent to visible light. Therefore any increase
+in the concentration of carbon dioxide would decrease the efficiency of cooling by radiation, while
+allowing in just as much heat input from visible light. When we burn fossil fuels such as gasoline
+or coal, we release into the atmosphere carbon that had previously been locked away underground.
+
+By about 1980, a clear scientific consensus had emerged that this effect was real, that it was
+caused by human activity, and that it had resulted in an abrupt increase in the earth's
+average temperature. We know, for example,  from radioisotope studies that the effect has not been caused by the release of
+carbon dioxide in volcanic eruptions. The temperature increase has been verified by multiple independent
+methods, including studies of tree rings and coral reefs. Detailed computer models have correctly
+predicted a number of effects that were later verified empirically, including a rise in sea levels,
+day-night and pole-equator variations.
+
+
+<% end_sec('global-warming') %>
 
 <% end_sec('energy-zoo-applications') %>
