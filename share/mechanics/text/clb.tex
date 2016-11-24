@@ -616,7 +616,13 @@ picture of heat as random kinetic energy at the atomic scale. Atoms are made out
 such as electrons and nuclei, that carry electric charge. When a charged particle vibrates, it creates
 wave disturbances in the electric and magnetic fields, and the waves have a frequency (number of vibrations
 per second) that matches the frequency of the particle's motion. If this frequency is in the right range,
-they constitute visible light (see section \ref{sec:em-spectrum}, p.~\pageref{sec:em-spectrum}). In figure \figref{plutonium-glowing}, the nuclear and electrical potential energy
+they constitute visible light %
+m4_ifelse(__lm_series,1,[:%
+(see section \ref{subsec:em-spectrum}, p.~\pageref{subsec:em-spectrum}).
+:],[:%
+.
+:])%
+In figure \figref{plutonium-glowing}, the nuclear and electrical potential energy
 in the plutonium pellet cause the pellet to heat up, and an equilibrium is reached, in which the heat is radiated
 away just as quickly as it is produced. When an object is closer to room temperature, it glows in the invisible
 infrared part of the spectrum (figure \figref{irface}).
@@ -659,7 +665,7 @@ or coal, we release into the atmosphere carbon that had previously been locked a
 This results in a shift to a new energy balance. The average temperature $T$ of the land increases
 until the $T^4$ dependence of radiation compensates for the additional absorption of infrared light.
 
-<% marg(0) %>
+<% marg(300) %>
 <%
   fig(
     'greenhouse-effect',
@@ -692,8 +698,13 @@ about the existence or cause of the effect.
 
 One solution to the problem is to replace fossil fuels with renewable sources of energy such as
 solar power and wind. However, these cannot be brought online fast enough to prevent severe
-warming all by themselves, so nuclear power is also a critical piece of the puzzle (see also
-section \ref{subsec:biological-effects-radiation}, p.~\pageref{subsec:biological-effects-radiation})
+warming all by themselves, so nuclear power is also a critical piece of the
+m4_ifelse(__lm_series,1,[:%
+puzzle (see
+section \ref{subsec:biological-effects-radiation}, p.~\pageref{subsec:biological-effects-radiation}).
+:],[:%
+puzzle.
+:])
 
 <% end_sec('global-warming') %>
 
