@@ -10,6 +10,7 @@ def photo_credit(file,description,credit)
   $credits[file] = [description,credit]
 end
 
+photo_credit("hw-moment-of-inertia-lab","Terrier","Redrawn from a painting by Frederick August Wenderoth, 1875") # http://en.wikipedia.org/wiki/File:Frederick_August_Wenderoth_1875,_Little_Terrier.jpg
 photo_credit("hw-rappel-from-fridge","Rappelling","Redrawn from a photo by Jarek Tuszymski, CC-BY-SA") # https://commons.wikimedia.org/wiki/File:Elizabeth_Furnace_-_Repeling.JPG
 photo_credit("hw-cd-constant-linear-velocity","CD","Wikimedia Commons user Zaphraud, CC-BY-SA") # https://en.wikipedia.org/wiki/File:CDRomPits.jpg
 photo_credit("hw-firehose","Firehose","Public-domain work of the U.S. Navy") # https://commons.wikimedia.org/wiki/File:DN-SN-87-07338_USS_Claude_V._Ricketts_sprays_to_USS_Belknap_19751122.jpeg

@@ -190,6 +190,16 @@ be toppled without scraping on the floor.
 
 <% begin_hw('motorcycle-jump') %>__incl(hw/motorcycle-jump)<% end_hw() %>
 
+<% marg() %>
+<%
+  fig(
+    'barandrope',
+    %q{Problem \ref{hw:barandrope}.}
+  )
+%>
+<% end_marg %>
+<% begin_hw('barandrope') %>__incl(hw/barandrope)<% end_hw() %>
+
 <% end_hw_sec %>
 
 <% begin_ex("Torque") %>

@@ -398,6 +398,7 @@ m4_define(__hw_lm_15_corkscrew,27)m4_dnl
 m4_define(__hw_lm_15_toppling-rod,28)m4_dnl
 m4_define(__hw_lm_15_check-mg-at-cm,29)m4_dnl
 m4_define(__hw_lm_15_motorcycle-jump,30)m4_dnl
+m4_define(__hw_lm_15_barandrope,31)m4_dnl
 m4_define(__hw_lm_16_stpvol,1)m4_dnl
 m4_define(__hw_lm_16_workpdv,2)m4_dnl
 m4_define(__hw_lm_16_he,3)m4_dnl
@@ -1052,6 +1053,7 @@ m4_define(__hw_me_15_flywheel-stopping,55)m4_dnl
 m4_define(__hw_me_15_theta-as-a-function-of-time,56)m4_dnl
 m4_define(__hw_me_15_bug-turntable,57)m4_dnl
 m4_define(__hw_me_15_bug-turntable-accelerating,58)m4_dnl
+m4_define(__hw_me_15_moment-of-inertia-lab,59)m4_dnl
 m4_define(__hw_me_16_sperm,2)m4_dnl
 m4_define(__hw_me_16_whistle,3)m4_dnl
 m4_define(__hw_me_16_pendulum,4)m4_dnl

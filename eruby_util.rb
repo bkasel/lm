@@ -1180,9 +1180,11 @@ def begin_hw_sec(title='Problems')
     t = t + "\\addcontentsline{toc}{section}{\\protect\\link{#{label}}{#{title}}}"
   end
   print t
+  $inside_hw_sec = true
 end
 
 def end_hw_sec
+  $inside_hw_sec = false
   print '\end{hwsection}'
 end
 
@@ -1322,6 +1324,9 @@ def initial_cap(x)
 end
 
 def end_chapter
+  if $inside_hw_sec then
+    fatal_error("begin_hw_sec not matched by any end_hw_sec before end_chapter")
+  end
   $section_level -= 1
   if $section_level != -1 then
     $stderr.print "warning, at end_chapter, ch #{$ch}, section level at end of chapter is #{$section_level}, should be -1; probably begin_sec's and end_sec's are not properly balanced (happens in NP preface)\n"

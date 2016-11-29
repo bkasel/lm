@@ -591,13 +591,17 @@ shortened list of categories given above?
 
 <% begin_sec("Heat transfer",nil,'heat-transfer') %>
 
+<% begin_sec("Conduction",nil,'heat-conduction') %>
+
 When you hold a hot potato in your hand, energy is transferred from the hot object to
 the cooler one. Our microscopic picture of this process (figure \figref{random-motion}, p.~\pageref{fig:random-motion})
 tells us that the heat transfer can only occur at the surface of contact, where one layer of atoms in the
 potato skin make contact with one such layer in the hand. This type of heat transfer is called
 \emph{conduction},\index{conduction of heat}\index{heat transfer!by conduction}
 and its rate is proportional to both the surface area and the temperature difference.
+<% end_sec('heat-conduction') %>
 
+<% begin_sec("Convection",nil,'convection') %>
 In a gas or a liquid, a faster method of heat transfer can occur, because hotter or colder parts
 of the fluid can flow, physically transporting their heat energy from one place to another. This
 mechanism of heat transfer, \emph{convection},\index{convection}\index{heat transfer!by convection}
@@ -607,11 +611,15 @@ it by conduction. If a gust of wind comes along, convection robs you of this lay
 A thermos bottle has inner and outer walls separated by a layer of vacuum, which prevents heat transport
 by conduction or convection, except for a tiny amount of conduction through the thin connection between the walls, near the neck, which has
 a small cross-sectional area.
+<% end_sec('convection') %>
 
+<% begin_sec("Radiation",nil,'heat-radiation') %>
 The glow of the sun or a candle flame is an example of heat transfer by \emph{radiation}.\index{radiation of heat}\index{heat transfer!by radiation}
 In this context, ``radiation'' just means anything that radiates outward from a source, including, in these examples, ordinary
 visible light. The power is proportional to the surface area. It also depends very dramatically on the
-absolute temperature, $P\propto T^4$. We can easily understand the reason for radiation based on the
+absolute temperature, $P\propto T^4$. 
+
+We can easily understand the reason for radiation based on the
 picture of heat as random kinetic energy at the atomic scale. Atoms are made out of subatomic particles,
 such as electrons and nuclei, that carry electric charge. When a charged particle vibrates, it creates
 wave disturbances in the electric and magnetic fields, and the waves have a frequency (number of vibrations
@@ -640,6 +648,11 @@ infrared part of the spectrum (figure \figref{irface}).
 %>
 <% end_marg %>
 
+<% end_sec('heat-radiation') %>
+
+<% end_sec('heat-transfer') %>
+
+<% begin_sec("Earth's energy equilibrium",nil,'earth-energy-equilibrium') %>
 Our planet receives a nearly constant amount of energy from the sun (about $1.8\times10^{17}\ \zu{W}$).
 If it hadn't had any mechanism for getting rid of that energy, the result would have been some kind of catastrophic explosion
 soon after its formation. Even a 10\% imbalance between energy input and output, if maintained steadily from the time
@@ -651,8 +664,7 @@ it does radiate in the infrared, and this is the \emph{only} available mechanism
 
 % calc -xe "m=1.4 10^21 kg; c=4 10^3 J/kg; T=100; P=1.8 10^17 W; t=(mcT)/P; t/[365*24*3600]"
 % 99 years
-
-<% end_sec('heat-transfer') %>
+<% end_sec('earth-energy-equilibrium') %>
 
 <% begin_sec("Global warming",nil,'global-warming') %>\index{global warming}\index{climate change}
 
@@ -665,7 +677,7 @@ or coal, we release into the atmosphere carbon that had previously been locked a
 This results in a shift to a new energy balance. The average temperature $T$ of the land increases
 until the $T^4$ dependence of radiation compensates for the additional absorption of infrared light.
 
-<% marg(300) %>
+<% marg(-300) %>
 <%
   fig(
     'greenhouse-effect',

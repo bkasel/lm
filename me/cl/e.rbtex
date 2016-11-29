@@ -329,6 +329,19 @@ be toppled without scraping on the floor.
 
 <% begin_hw('bug-turntable-accelerating',2) %>__incl(hw/bug-turntable-accelerating)<% end_hw() %>
 
+\pagebreak
+
+<% marg(300) %>
+<%
+  fig(
+    'hw-moment-of-inertia-lab',
+    %q{Problem \ref{hw:moment-of-inertia-lab}.}
+  )
+%>
+<% end_marg %>
+
+<% begin_hw('moment-of-inertia-lab') %>__incl(hw/moment-of-inertia-lab)<% end_hw() %>
+
 
 
 <% end_hw_sec %>

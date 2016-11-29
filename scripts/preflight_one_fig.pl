@@ -112,7 +112,7 @@ sub check_pdf_version {
 sub check_for_stale_pdf {
   my ($svg,$pdf) = @_;
   # -M is relative age of file in days, floating point
-  (-M $svg) > (-M $pdf) or return 
+  (-M $svg) > ((-M $pdf)+0.0001) or return 
          "file $pdf is older than file $svg, ".(-M $svg)." < ".(-M $pdf);
   return undef;
 }
