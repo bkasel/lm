@@ -1148,11 +1148,44 @@ allow most of the ambiguity to be cleared up.
 The change in kinetic energy associated with the motion of
 an object's center of mass is related to the total force acting
 on it and to the distance traveled by its center of mass
-according to the equation $\Delta KE_{cm}=F_{total}d_{cm}$.
+according to the equation $\Delta KE_{cm}=F_\text{total}d_{cm}$.
 \end{lessimportant}
 
-This can be proved based on Newton's second law and the
-equation $KE=(1/2)mv^2$. Note that despite the traditional
+<% marg(300) %>
+\formatlikecaption{%
+\begin{flushleft}\textbf{The work-KE theorem}\end{flushleft}
+\begin{flushleft}\textit{Proof}\end{flushleft}
+      For simplicity, we have assumed $F_\text{total}$ to be constant, and therefore
+      $a_\text{cm}=F_\text{total}/m$ is also constant, and the constant-acceleration equation
+      \begin{equation*}
+        v_\text{cm,f}^2=v_\text{cm,i}^2+2a_\text{cm}\Delta x_\text{cm}
+      \end{equation*}
+      applies. Multiplying by $m/2$ on both sides and applying Newton's second law gives
+      \begin{equation*}
+        KE_\text{cm,f}^2=KE_\text{cm,i}^2+F_\text{total}\Delta x_\text{cm},
+      \end{equation*}
+      which is the result that was to be proved.
+
+\begin{flushleft}\textit{Further interpretation}\end{flushleft}
+The logical structure of this book is that although Newton's laws are discussed
+before conservation laws, the conservation laws are taken to be fundamental, since
+they are true even in cases where Newton's laws fail.
+Many treatments of this subject present the work-KE theorem as a proof that kinetic
+energy behaves as $(1/2)mv^2$. This is a matter of taste, but
+one can just as well rearrange the equations in the proof above
+to solve for the unknown $a_\text{cm}$ and prove Newton's second law as a
+consequence of conservation of energy. Ultimately we have a great deal of freedom
+in choosing which equations to take as definitions, which to take as empirically
+verified laws of nature, and which to take as theorems.
+
+\noindent Regardless of how we slice things, we require both mathematical consistency and consistency
+with experiment. As described on p.~\pageref{ke-logic}, the work-KE theorem is
+an important part of this interlocking system of relationships.\label{work-ke-logic}
+}%
+<% end_marg %>
+
+A proof is given in the sidebar, along with some interpretation of how this result relates to the
+logical structure of our presentation. Note that despite the traditional
 name, it does not necessarily tell the amount of work done,
 since the forces acting on the object could be changing
 other types of energy besides the KE associated with

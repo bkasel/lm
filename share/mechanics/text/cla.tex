@@ -685,28 +685,6 @@ the units on the left and right sides of the equation shows
 that the joule can be reexpressed in terms of the basic
 units as $\kgunit\unitdot\munit^2/\sunit^2$.
 
-Students are often mystified by the occurrence of the factor\label{ke-why-one-half}
-of 1/2, but it is less obscure than it looks. The metric
-system was designed so that some of the equations relating
-to energy would come out looking simple, at the expense of
-some others, which had to have inconvenient conversion
-factors in front. If we were using the old British
-Engineering System of units in this course, then we'd have
-the British Thermal Unit (BTU) as our unit of energy. In
-that system, the equation you'd learn for kinetic energy
-would have an inconvenient proportionality constant,
-$KE=\left(1.29\times10^{-3}\right)mv^2$, with $KE$ measured
-in units of BTUs, $v$ measured in feet per second, and so on.
-At the expense of this inconvenient equation for kinetic
-energy, the designers of the British Engineering System got
-a simple rule for calculating the energy required to heat
-water: one BTU per degree Fahrenheit per pound. The
-inventor of kinetic energy, Thomas Young, actually defined
-it as $KE=mv^2$, which meant that all his other
-equations had to be different from ours by a factor of two.
-All these systems of units work just fine as long as they
-are not combined with one another in an inconsistent way.
-
 \begin{eg}{Energy released by a comet impact}
 \egquestion Comet Shoemaker-Levy, which struck the planet
 Jupiter in 1994, had a mass of roughly $4\times10^{13}$ kg,
@@ -755,11 +733,28 @@ given in the back of the book).
 <% begin_sec("Why kinetic energy obeys the equation it does") %>\label{galilean-energy}
 I've presented the magic expression for kinetic energy, $(1/2)mv^2$, as a purely empirical fact.
 Does it have any deeper reason that might be knowable to us mere mortals? Yes and no. It contains
-three factors, and we need to
-consider each separately.
+three factors, and we need to consider each separately.
 
 The reason for the factor of 1/2 is understandable, but only as an arbitrary historical choice.
-As described on p.~\pageref{ke-why-one-half}, it's different in different systems of units. 
+The metric system was designed so that some of the equations relating
+to energy would come out looking simple, at the expense of
+some others, which had to have inconvenient conversion
+factors in front. If we were using the old British
+Engineering System of units in this course, then we'd have
+the British Thermal Unit (BTU) as our unit of energy. In
+that system, the equation you'd learn for kinetic energy
+would have an inconvenient proportionality constant,
+$KE=\left(1.29\times10^{-3}\right)mv^2$, with $KE$ measured
+in units of BTUs, $v$ measured in feet per second, and so on.
+At the expense of this inconvenient equation for kinetic
+energy, the designers of the British Engineering System got
+a simple rule for calculating the energy required to heat
+water: one BTU per degree Fahrenheit per pound. The
+inventor of kinetic energy, Thomas Young, actually defined
+it as $KE=mv^2$, which meant that all his other
+equations had to be different from ours by a factor of two.
+All these systems of units work just fine as long as they
+are not combined with one another in an inconsistent way.
 
 The proportionality to $m$ is inevitable because the energy concept is based on the idea
 that we add up energy contributions from all the objects
@@ -780,33 +775,34 @@ kinetic energy as two 1 kg objects moving side-by-side at the same speed.
 %>
 <% end_marg %>
 
-What about the proportionality it $v^2$? Here are some points to consider:
+What about the proportionality to $v^2$? Consider:\label{ke-logic}
 \begin{enumerate}
 \item It's surprisingly hard to tamper with this factor without breaking things: see discussion
 questions \ref{dq:why-ke-not-first-order} and \ref{dq:why-no-fourth-order-term-in-ke} on
 p.~\pageref{dq:why-ke-not-first-order}.
-\item The proportionality to $v^2$ is not even quite
-correct; experiments show deviations from the $v^2$
+\item The proportionality to $v^2$ is not even correct, except as a low-velocity approximation.
+Experiments show deviations from the $v^2$
 rule at high speeds (figure \figref{ke-of-electrons}), an effect that is related to Einstein's
 theory of relativity.
-\item As described in the preceding subsection,
+\item As described on p.~\pageref{galilean-energy},
 we want conservation of energy to keep working when we switch frames of reference.
 The fact that this does work for $KE\propto v^2$ is intimately connected with the
 assumption that when we change frames,
 velocities add as described in section \ref{sec:addition-of-velocities}.
 This assumption turns out to be an approximation, which only works well at low velocities.
+\item Conservation laws are of more general validity than Newton's laws, which apply
+to material objects moving at low speeds. Under the conditions where Newton's laws are accurate,
+they follow logically from the conservation laws.
+Therefore we need kinetic energy to have low-velocity behavior that ends up correctly reproducing Newton's laws.
 \end{enumerate}
-The most we can say is that \emph{under a certain set of low-velocity approximations}, $KE\propto v^2$
-is what works.
-
-Some people like to say that $KE=(1/2)mv^2$ is just a theorem that can be proved mathematically.
-This is known as the work-energy theorem. The fact that $KE\propto v^2$ is only approximately true
-should remind us that a proof is only as good as the assumptions that went into it. This approach is
-also, in my opinion, a little backwards, because it purports to derive a conservation law from Newton's
-laws --- conservation laws are more general than Newton's laws.
+So \emph{under a certain set of low-velocity approximations}, $KE\propto v^2$
+is what works. We verify in problem \ref{hw:energy-frames}, p.~\pageref{hw:energy-frames}, that it satisfies criterion 3,
+and we show in section \ref{sec:when-is-work-fd}, p.~\pageref{work-ke-logic}, that it is the \emph{only} such relation that satisfies
+criterion 4.
 
 <% end_sec() %>
 
+\pagebreak
 
 \startdqs
 
