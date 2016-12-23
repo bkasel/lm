@@ -348,41 +348,8 @@ accelerate the object it is acting on.
     %q{Example \ref{eg:sled}.}
   )
 %>
-\spacebetweenfigs
-<%
-  fig(
-    'eg-ramp-1',
-    %q{%
-      The applied force
-      $\vc{F}_A$ pushes the
-      block up the frictionless ramp.
-    }
-  )
-%>
-\spacebetweenfigs
-<%
-  fig(
-    'eg-ramp-3',
-    %q{%
-      If the block is to move at constant
-      velocity, Newton's first law says that
-      the three force vectors acting on it
-      must add up to zero. To perform 
-      vector addition, we put the vectors tip to
-      tail, and in this case we are adding
-      three vectors, so each one's tail goes
-      against the tip of the previous one.
-      Since they are supposed to add up to
-      zero, the third vector's tip must come
-      back to touch the tail of the first 
-      vector. They form a triangle, and since the
-      applied force is perpendicular to the
-      normal force, it is a right triangle.
-    }
-  )
-%>
-
 <% end_marg %>
+
 Since force vectors are so much easier to visualize than
 acceleration vectors, it is often helpful to first find the
 direction of the (total) force vector acting on an object,
@@ -428,6 +395,7 @@ planet earth's gravitational force on block, $\vc{F}_W$ \hfill $\downarrow$  &  
 \hline
 \end{tabular}
 
+
 Because the block is being pushed up at constant speed, it
 has zero acceleration, and the total force on it must be
 zero. From figure \figref{eg-ramp-3}, we find
@@ -447,6 +415,41 @@ weight of the huge blocks of stone.
 Essentially the same analysis applies to several other
 simple machines, such as the wedge and the screw.
 \end{eg}
+
+<% marg(300) %>
+<%
+  fig(
+    'eg-ramp-1',
+    %q{%
+      The applied force
+      $\vc{F}_A$ pushes the
+      block up the frictionless ramp.
+    }
+  )
+%>
+\spacebetweenfigs
+<%
+  fig(
+    'eg-ramp-3',
+    %q{%
+      If the block is to move at constant
+      velocity, Newton's first law says that
+      the three force vectors acting on it
+      must add up to zero. To perform 
+      vector addition, we put the vectors tip to
+      tail, and in this case we are adding
+      three vectors, so each one's tail goes
+      against the tip of the previous one.
+      Since they are supposed to add up to
+      zero, the third vector's tip must come
+      back to touch the tail of the first 
+      vector. They form a triangle, and since the
+      applied force is perpendicular to the
+      normal force, it is a right triangle.
+    }
+  )
+%>
+<% end_marg %>
 
 \pagebreak
 

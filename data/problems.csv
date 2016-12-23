@@ -1054,6 +1054,7 @@ me,15,56,theta-as-a-function-of-time,0
 me,15,57,bug-turntable,0
 me,15,58,bug-turntable-accelerating,0
 me,15,59,moment-of-inertia-lab,0
+me,15,60,cube-statics,0
 me,16,2,sperm,0
 me,16,3,whistle,0
 me,16,4,pendulum,0
@@ -1401,6 +1402,7 @@ problems,7,s10,pulley-table-two-blocks-energy,0
 problems,7,s11,rolling-hoop,0
 problems,7,s12,vertical-spring-drop,0
 problems,7,s13,skater-rolls-off-pipe,0
+problems,7,s14,rollers-on-inclined-plane,0
 problems,7,v1,magnetpe,0
 problems,7,v2,find-force-from-given-polynomial-potential,0
 problems,7,v3,find-force-and-motion-from-given-polynomial-potential,0
@@ -1511,6 +1513,7 @@ problems,9,v4,tipbox,0
 problems,9,v5,hangingbars,0
 problems,9,v6,hinge-on-cylinder,0
 problems,9,v7,books-at-edge-of-table,0
+problems,9,v8,cube-statics,0
 problems,10,a1,gremlin-wing,0
 problems,10,a2,hydraulic-jack,0
 problems,10,d1,drinking-straw-superman,0
@@ -1836,6 +1839,8 @@ sn,4,38,parallel-axis-theorem,0
 sn,4,39,triangle-moment-of-inertia,0
 sn,4,40,centrifuge,0
 sn,4,41,rolling-coin,0
+sn,4,42,moment-of-inertia-lab,0
+sn,4,43,cube-statics,0
 sn,5,1,stpvol,0
 sn,5,2,work-pdv,0
 sn,5,3,he,0

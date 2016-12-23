@@ -63,15 +63,6 @@ handheld_all:
 	cd sn && make handheld && cd ..
 	cd me && make handheld && cd ..
 
-problems:
-	# For some reason, this always fails the first time -- do it twice!?
-	cat */ch*_problems.csv | sort >temp.csv
-	mv data/problems.csv data/problems.bak
-	scripts/sort_problems.pl <temp.csv >data/problems.csv
-	rm temp.csv
-	diff data/problems.bak data/problems.csv
-	ssed -R -e "s/(\w+),(\d+),(\d+),(.*),\d/m4_define(__hw_\1_\2_\4,\3)m4_dnl/g" data/problems.csv >data/problems.m4
-
 all_figures:
 	make lm_cover
 	make me_cover

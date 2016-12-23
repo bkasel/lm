@@ -1054,6 +1054,7 @@ m4_define(__hw_me_15_theta-as-a-function-of-time,56)m4_dnl
 m4_define(__hw_me_15_bug-turntable,57)m4_dnl
 m4_define(__hw_me_15_bug-turntable-accelerating,58)m4_dnl
 m4_define(__hw_me_15_moment-of-inertia-lab,59)m4_dnl
+m4_define(__hw_me_15_cube-statics,60)m4_dnl
 m4_define(__hw_me_16_sperm,2)m4_dnl
 m4_define(__hw_me_16_whistle,3)m4_dnl
 m4_define(__hw_me_16_pendulum,4)m4_dnl
@@ -1401,6 +1402,7 @@ m4_define(__hw_problems_7_pulley-table-two-blocks-energy,s10)m4_dnl
 m4_define(__hw_problems_7_rolling-hoop,s11)m4_dnl
 m4_define(__hw_problems_7_vertical-spring-drop,s12)m4_dnl
 m4_define(__hw_problems_7_skater-rolls-off-pipe,s13)m4_dnl
+m4_define(__hw_problems_7_rollers-on-inclined-plane,s14)m4_dnl
 m4_define(__hw_problems_7_magnetpe,v1)m4_dnl
 m4_define(__hw_problems_7_find-force-from-given-polynomial-potential,v2)m4_dnl
 m4_define(__hw_problems_7_find-force-and-motion-from-given-polynomial-potential,v3)m4_dnl
@@ -1511,6 +1513,7 @@ m4_define(__hw_problems_9_tipbox,v4)m4_dnl
 m4_define(__hw_problems_9_hangingbars,v5)m4_dnl
 m4_define(__hw_problems_9_hinge-on-cylinder,v6)m4_dnl
 m4_define(__hw_problems_9_books-at-edge-of-table,v7)m4_dnl
+m4_define(__hw_problems_9_cube-statics,v8)m4_dnl
 m4_define(__hw_problems_10_gremlin-wing,a1)m4_dnl
 m4_define(__hw_problems_10_hydraulic-jack,a2)m4_dnl
 m4_define(__hw_problems_10_drinking-straw-superman,d1)m4_dnl
@@ -1836,6 +1839,8 @@ m4_define(__hw_sn_4_parallel-axis-theorem,38)m4_dnl
 m4_define(__hw_sn_4_triangle-moment-of-inertia,39)m4_dnl
 m4_define(__hw_sn_4_centrifuge,40)m4_dnl
 m4_define(__hw_sn_4_rolling-coin,41)m4_dnl
+m4_define(__hw_sn_4_moment-of-inertia-lab,42)m4_dnl
+m4_define(__hw_sn_4_cube-statics,43)m4_dnl
 m4_define(__hw_sn_5_stpvol,1)m4_dnl
 m4_define(__hw_sn_5_work-pdv,2)m4_dnl
 m4_define(__hw_sn_5_he,3)m4_dnl

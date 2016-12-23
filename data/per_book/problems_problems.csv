@@ -321,6 +321,7 @@ problems,7,s10,pulley-table-two-blocks-energy,0
 problems,7,s11,rolling-hoop,0
 problems,7,s12,vertical-spring-drop,0
 problems,7,s13,skater-rolls-off-pipe,0
+problems,7,s14,rollers-on-inclined-plane,0
 problems,7,v1,magnetpe,0
 problems,7,v2,find-force-from-given-polynomial-potential,0
 problems,7,v3,find-force-and-motion-from-given-polynomial-potential,0
@@ -431,6 +432,7 @@ problems,9,v4,tipbox,0
 problems,9,v5,hangingbars,0
 problems,9,v6,hinge-on-cylinder,0
 problems,9,v7,books-at-edge-of-table,0
+problems,9,v8,cube-statics,0
 problems,10,a1,gremlin-wing,0
 problems,10,a2,hydraulic-jack,0
 problems,10,d1,drinking-straw-superman,0

@@ -1741,6 +1741,27 @@ parameters that determine which behavior occurs. Try to form a conjecture about 
 using simple closed-form expressions. Test your conjecture experimentally.
 <% end_hw() %>
 
+\pagebreak
+
+<% marg(300) %>
+<%
+  fig(
+    'hw-moment-of-inertia-lab',
+    %q{Problem \ref{hw:moment-of-inertia-lab}.}
+  )
+%>
+\spacebetweenfigs
+<%
+  fig(
+    'hw-cube-statics',
+    %q{Problem \ref{hw:cube-statics}.}
+  )
+%>
+<% end_marg %>
+
+<% begin_hw('moment-of-inertia-lab') %>__incl(hw/moment-of-inertia-lab)<% end_hw() %>
+
+<% begin_hw('cube-statics') %>__incl(hw/cube-statics)<% end_hw() %>
 
 
 <% end_hw_sec %>

@@ -685,7 +685,7 @@ the units on the left and right sides of the equation shows
 that the joule can be reexpressed in terms of the basic
 units as $\kgunit\unitdot\munit^2/\sunit^2$.
 
-Students are often mystified by the occurrence of the factor
+Students are often mystified by the occurrence of the factor\label{ke-why-one-half}
 of 1/2, but it is less obscure than it looks. The metric
 system was designed so that some of the equations relating
 to energy would come out looking simple, at the expense of
@@ -724,70 +724,104 @@ comet's kinetic energy was roughly $7\times10^{22}$ J, or about
 3000 times the energy in the world's nuclear arsenals.
 \end{eg}
 
-Is there any way to derive the equation $KE=(1/2)mv^2$
-mathematically from first principles? No, it is purely
-empirical. The factor of 1/2 in front is definitely not
-derivable, since it is different in different systems of
-units. The proportionality to $v^2$ is not even quite
-correct; experiments have shown deviations from the $v^2$
-rule at high speeds, an effect that is related to Einstein's
-theory of relativity. Only the proportionality to $m$ is
-inevitable. The whole energy concept is based on the idea
-that we add up energy contributions from all the objects
-within a system. Based on this philosophy, it is logically
-necessary that a 2-kg object moving at 1 m/s have the same
-kinetic energy as two 1-kg objects moving side-by-side at the same speed.
-
 <% begin_sec("Energy and relative motion") %>\label{galilean-energy}
-
-Although I mentioned Einstein's theory of relativity above,
-it's more relevant right now to consider how conservation of
-energy relates to the simpler Galilean idea, which we've
-already studied, that motion is relative. Galileo's
-Aristotelian enemies (and it is no exaggeration to call them
+Galileo's Aristotelian enemies (and it is no exaggeration to call them
 enemies!) would probably have objected to conservation of
-energy. After all, the Galilean idea that an object in
-motion will continue in motion indefinitely in the absence
-of a force is not so different from the idea that an
+energy. Galilean got in trouble by claiming that an object in
+motion would continue in motion indefinitely in the absence
+of a force.  This is not so different from the idea that an
 object's kinetic energy stays the same unless there is a
 mechanism like frictional heating for converting that energy
 into some other form.
 
 More subtly, however, it's not immediately obvious that what
 we've learned so far about energy is strictly mathematically
-consistent with the principle that motion is relative.
+consistent with Galileo's principle that motion is relative.
 Suppose we verify that a certain process, say the collision
 of two pool balls, conserves energy as measured in a certain
 frame of reference: the sum of the balls' kinetic energies
 before the collision is equal to their sum after the
-collision. (In reality we'd need to add in other forms of
-energy, like heat and sound, that are liberated by the
-collision, but let's keep it simple.) But what if we were to
+collision. But what if we were to
 measure everything in a frame of reference that was in a
-different state of motion? A particular pool ball might have
-less kinetic energy in this new frame; for example, if the
-new frame of reference was moving right along with it, its
-kinetic energy in that frame would be zero. On the other
-hand, some other balls might have a greater kinetic energy
-in the new frame. It's not immediately obvious that the
+different state of motion? It's not immediately obvious that the
 total energy before the collision will still equal the total
-energy after the collision. After all, the equation for
-kinetic energy is fairly complicated, since it involves the
-square of the velocity, so it would be surprising if
-everything still worked out in the new frame of reference.
-It \emph{does} still work out. Homework problem \ref{hw:balls} in this
-chapter gives a simple numerical example, and the general
+energy after the collision. 
+It \emph{does} still work out. Homework problem \ref{hw:balls}, p.~\pageref{hw:balls},
+gives a simple numerical example, and the general
 proof is taken up in problem \ref{hw:energy-frames} on p.~\pageref{hw:energy-frames} (with the solution
 given in the back of the book).
+<% end_sec() %>
+
+<% begin_sec("Why kinetic energy obeys the equation it does") %>\label{galilean-energy}
+I've presented the magic expression for kinetic energy, $(1/2)mv^2$, as a purely empirical fact.
+Does it have any deeper reason that might be knowable to us mere mortals? Yes and no. It contains
+three factors, and we need to
+consider each separately.
+
+The reason for the factor of 1/2 is understandable, but only as an arbitrary historical choice.
+As described on p.~\pageref{ke-why-one-half}, it's different in different systems of units. 
+
+The proportionality to $m$ is inevitable because the energy concept is based on the idea
+that we add up energy contributions from all the objects
+within a system. Therefore it is logically
+necessary that a 2 kg object moving at 1 m/s have the same
+kinetic energy as two 1 kg objects moving side-by-side at the same speed.
+
+<% marg(0) %>
+
+<%
+  fig(
+    'ke-of-electrons',
+    %q{%
+      Kinetic energies of electrons measured in three experiments. At high velocities,
+      the equation $KE=(1/2)mv^2$ becomes a poor approximation.
+    }
+  )
+%>
+<% end_marg %>
+
+What about the proportionality it $v^2$? Here are some points to consider:
+\begin{enumerate}
+\item It's surprisingly hard to tamper with this factor without breaking things: see discussion
+questions \ref{dq:why-ke-not-first-order} and \ref{dq:why-no-fourth-order-term-in-ke} on
+p.~\pageref{dq:why-ke-not-first-order}.
+\item The proportionality to $v^2$ is not even quite
+correct; experiments show deviations from the $v^2$
+rule at high speeds (figure \figref{ke-of-electrons}), an effect that is related to Einstein's
+theory of relativity.
+\item As described in the preceding subsection,
+we want conservation of energy to keep working when we switch frames of reference.
+The fact that this does work for $KE\propto v^2$ is intimately connected with the
+assumption that when we change frames,
+velocities add as described in section \ref{sec:addition-of-velocities}.
+This assumption turns out to be an approximation, which only works well at low velocities.
+\end{enumerate}
+The most we can say is that \emph{under a certain set of low-velocity approximations}, $KE\propto v^2$
+is what works.
+
+Some people like to say that $KE=(1/2)mv^2$ is just a theorem that can be proved mathematically.
+This is known as the work-energy theorem. The fact that $KE\propto v^2$ is only approximately true
+should remind us that a proof is only as good as the assumptions that went into it. This approach is
+also, in my opinion, a little backwards, because it purports to derive a conservation law from Newton's
+laws --- conservation laws are more general than Newton's laws.
+
+<% end_sec() %>
+
 
 \startdqs
 
-\begin{dq}
+\begin{dq}\label{dq:why-ke-not-first-order}
 Suppose that, like Young or Einstein, you were trying out
 different equations for kinetic energy to see if they agreed
 with the experimental data. Based on the meaning of positive
 and negative signs of velocity, why would you suspect that
-a proportionality to \emph{mv} would be less likely than $mv^2?$
+a proportionality to $mv$ would be less likely than $mv^2?$
+\end{dq}
+
+\begin{dq}\label{dq:why-no-fourth-order-term-in-ke}
+As in discussion question \ref{dq:why-ke-not-first-order}, try to
+think of an argument showing that $m(v^2+v^4)$ is not a possible
+formula for kinetic energy.
 \end{dq}
 
 <% marg(30) %>
@@ -808,7 +842,6 @@ caught by a peg as it passes through the vertical, B. To
 what height will the bob rise on the right?
 \end{dq}
 
-<% end_sec() %>
 <% end_sec() %>
 <% begin_sec("Power",3) %>
 

@@ -225,6 +225,8 @@ sn,4,38,parallel-axis-theorem,0
 sn,4,39,triangle-moment-of-inertia,0
 sn,4,40,centrifuge,0
 sn,4,41,rolling-coin,0
+sn,4,42,moment-of-inertia-lab,0
+sn,4,43,cube-statics,0
 sn,5,1,stpvol,0
 sn,5,2,work-pdv,0
 sn,5,3,he,0
