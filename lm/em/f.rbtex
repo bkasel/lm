@@ -998,7 +998,24 @@ momentum, which could only be caused by an infinite force.
 
 m4_include(../share/relativity/eg/bertozzi.tex)
 
- %
+Figure \figref{relativistic-momentum-tests} shows experimental data confirming the relativistic
+equation for momentum.
+
+<% marg(300) %>
+<%
+  fig(
+    'relativistic-momentum-tests',
+    %q{Two early high-precision tests of the relativistic equation $p=m\mygamma v$ for momentum.
+       Graphing $p/m$ rather than $p$ allows the data for electrons and protons to be placed on the same graph.
+       Natural units are used, so that the horizontal axis is the velocity in units of $c$, and
+       the vertical axis is the unitless quantity $p/mc$. The very small error bars for the data point from
+       Zrelov are represented by the height of the black rectangle.
+       }
+  )
+%>
+<% end_marg %>
+
+
   <% end_sec('rel-momentum') %>
   <% begin_sec("Equivalence of mass and energy",nil,'mass-energy') %>\index{energy!equivalence to mass}\index{mass!equivalence to energy}\label{mass-energy-equivalence}
 Now we're ready to see why mass and energy must be equivalent as claimed

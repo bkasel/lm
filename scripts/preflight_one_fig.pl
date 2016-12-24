@@ -75,8 +75,9 @@ sub err {
 
 sub check_pdf {
   my ($svg,$pdf) = @_;
-  my $err = check_for_stale_pdf($svg,$pdf);
-  return $err if $err;
+  # The following check did not seem reliable, possibly because modification dates are unreliable or change in git??
+  #  my $err = check_for_stale_pdf($svg,$pdf);
+  #  return $err if $err;
   my $err = check_pdf_version($svg,$pdf);
   return $err if $err;
   my $err = check_pdf_for_fonts($svg,$pdf);
@@ -112,8 +113,9 @@ sub check_pdf_version {
 sub check_for_stale_pdf {
   my ($svg,$pdf) = @_;
   # -M is relative age of file in days, floating point
-  (-M $svg) > ((-M $pdf)+0.0001) or return 
-         "file $pdf is older than file $svg, ".(-M $svg)." < ".(-M $pdf);
+  my $diff = ((-M $svg)-(-M $pdf));
+  $diff<0.000001 or return 
+         "file $pdf is older than file $svg, ".(-M $svg)." > ".(-M $pdf).", diff=".$diff;
   return undef;
 }
 

@@ -105,6 +105,22 @@ its velocity, we can find a similar equation for the momentum:
 \end{align*}
 As a material particle gets closer and closer to $c$, its momentum approaches infinity,
 so that an infinite force would be required in order to reach $c$.
+Figure \figref{relativistic-momentum-tests} shows experimental data confirming the relativistic
+equation for momentum.
+
+<% marg(300) %>
+<%
+  fig(
+    'relativistic-momentum-tests',
+    %q{Two early high-precision tests of the relativistic equation $p=m\mygamma v$ for momentum.
+       Graphing $p/m$ rather than $p$ allows the data for electrons and protons to be placed on the same graph.
+       Natural units are used, so that the horizontal axis is the velocity in units of $c$, and
+       the vertical axis is the unitless quantity $p/mc$. The very small error bars for the data point from
+       Zrelov are represented by the height of the black rectangle.
+       }
+  )
+%>
+<% end_marg %>
 
 \begin{eg}{Light rays don't interact}\label{eg:light-rays-do-not-interact}
 We observe that when two rays of light cross paths, they continue through one another
