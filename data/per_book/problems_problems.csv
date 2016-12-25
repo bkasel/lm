@@ -392,6 +392,7 @@ problems,9,e3,conemoi,0
 problems,9,e4,boxmoi,0
 problems,9,e5,ellipsoidmoi,0
 problems,9,e6,triangle-moment-of-inertia,0
+problems,9,e7,division-by-a-vector,0
 problems,9,g1,pliers,1
 problems,9,g2,corkscrew,0
 problems,9,g3,const-l-no-torques,0

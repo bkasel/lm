@@ -351,7 +351,7 @@ be toppled without scraping on the floor.
 
 <% begin_hw('cube-statics') %>__incl(hw/cube-statics)<% end_hw() %>
 
-
+<% begin_hw('division-by-a-vector') %>__incl(hw/division-by-a-vector)<% end_hw() %>
 
 <% end_hw_sec %>
 

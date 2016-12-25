@@ -1473,6 +1473,7 @@ m4_define(__hw_problems_9_conemoi,e3)m4_dnl
 m4_define(__hw_problems_9_boxmoi,e4)m4_dnl
 m4_define(__hw_problems_9_ellipsoidmoi,e5)m4_dnl
 m4_define(__hw_problems_9_triangle-moment-of-inertia,e6)m4_dnl
+m4_define(__hw_problems_9_division-by-a-vector,e7)m4_dnl
 m4_define(__hw_problems_9_pliers,g1)m4_dnl
 m4_define(__hw_problems_9_corkscrew,g2)m4_dnl
 m4_define(__hw_problems_9_const-l-no-torques,g3)m4_dnl
