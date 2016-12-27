@@ -876,6 +876,7 @@ me,9,14,governor,0
 me,9,15,bead-on-vee,0
 me,9,16,spiral-terminal-velocity,0
 me,9,17,wall-of-death,0
+me,9,18,bead-on-circular-wire,0
 me,10,1,ceres,1
 me,10,2,laurie,0
 me,10,3,alien-gangster,1
@@ -1055,6 +1056,8 @@ me,15,57,bug-turntable,0
 me,15,58,bug-turntable-accelerating,0
 me,15,59,moment-of-inertia-lab,0
 me,15,60,cube-statics,0
+me,15,61,division-by-a-vector,0
+me,15,62,rollers-on-inclined-plane,0
 me,16,2,sperm,0
 me,16,3,whistle,0
 me,16,4,pendulum,0
@@ -1341,6 +1344,7 @@ problems,6,p3,bug-turntable-accelerating,0
 problems,6,p4,cockroach-in-microwave,0
 problems,6,p5,cd-spinning-nonuniform,0
 problems,6,s1,cd-constant-linear-velocity,0
+problems,6,s2,bead-on-circular-wire,0
 problems,7,a1,haul-bag,0
 problems,7,a2,crosswind,0
 problems,7,a3,horsepower,0

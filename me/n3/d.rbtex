@@ -145,14 +145,25 @@ This problem is now number \ref{hw:jack-on-hill} in ch.~\ref{ch:energy-zoo}, p.~
 
 <% begin_hw('spiral-terminal-velocity',2) %>__incl(hw/spiral-terminal-velocity)<% end_hw() %>            
 
+
 \pagebreak
 
 <% begin_hw('wall-of-death') %>__incl(hw/wall-of-death)<% end_hw() %>
+
+<% begin_hw('bead-on-circular-wire',2) %>__incl(hw/bead-on-circular-wire)<% end_hw() %>            
+
 <% marg(80) %>
 <%
   fig(
     'hw-wall-of-death',  
     %q{Problem \ref{hw:wall-of-death}.}  
+  )
+%>
+\spacebetweenfigs
+<%
+  fig(
+    'hw-bead-on-circular-wire',  
+    %q{Problem \ref{hw:bead-on-circular-wire}.}  
   )
 %>
 <% end_marg %>

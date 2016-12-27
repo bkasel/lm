@@ -345,13 +345,22 @@ be toppled without scraping on the floor.
     %q{Problem \ref{hw:cube-statics}.}
   )
 %>
+\spacebetweenfigs
+<%
+  fig(
+    'hw-rollers-on-inclined-plane',
+    %q{Problem \ref{hw:rollers-on-inclined-plane}.}
+  )
+%>
 <% end_marg %>
 
 <% begin_hw('moment-of-inertia-lab') %>__incl(hw/moment-of-inertia-lab)<% end_hw() %>
 
 <% begin_hw('cube-statics') %>__incl(hw/cube-statics)<% end_hw() %>
 
-<% begin_hw('division-by-a-vector') %>__incl(hw/division-by-a-vector)<% end_hw() %>
+<% begin_hw('division-by-a-vector',2) %>__incl(hw/division-by-a-vector)<% end_hw() %>
+
+<% begin_hw('rollers-on-inclined-plane',2) %>__incl(hw/rollers-on-inclined-plane)<% end_hw() %>
 
 <% end_hw_sec %>
 

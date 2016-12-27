@@ -876,6 +876,7 @@ m4_define(__hw_me_9_governor,14)m4_dnl
 m4_define(__hw_me_9_bead-on-vee,15)m4_dnl
 m4_define(__hw_me_9_spiral-terminal-velocity,16)m4_dnl
 m4_define(__hw_me_9_wall-of-death,17)m4_dnl
+m4_define(__hw_me_9_bead-on-circular-wire,18)m4_dnl
 m4_define(__hw_me_10_ceres,1)m4_dnl
 m4_define(__hw_me_10_laurie,2)m4_dnl
 m4_define(__hw_me_10_alien-gangster,3)m4_dnl
@@ -1055,6 +1056,8 @@ m4_define(__hw_me_15_bug-turntable,57)m4_dnl
 m4_define(__hw_me_15_bug-turntable-accelerating,58)m4_dnl
 m4_define(__hw_me_15_moment-of-inertia-lab,59)m4_dnl
 m4_define(__hw_me_15_cube-statics,60)m4_dnl
+m4_define(__hw_me_15_division-by-a-vector,61)m4_dnl
+m4_define(__hw_me_15_rollers-on-inclined-plane,62)m4_dnl
 m4_define(__hw_me_16_sperm,2)m4_dnl
 m4_define(__hw_me_16_whistle,3)m4_dnl
 m4_define(__hw_me_16_pendulum,4)m4_dnl
@@ -1341,6 +1344,7 @@ m4_define(__hw_problems_6_bug-turntable-accelerating,p3)m4_dnl
 m4_define(__hw_problems_6_cockroach-in-microwave,p4)m4_dnl
 m4_define(__hw_problems_6_cd-spinning-nonuniform,p5)m4_dnl
 m4_define(__hw_problems_6_cd-constant-linear-velocity,s1)m4_dnl
+m4_define(__hw_problems_6_bead-on-circular-wire,s2)m4_dnl
 m4_define(__hw_problems_7_haul-bag,a1)m4_dnl
 m4_define(__hw_problems_7_crosswind,a2)m4_dnl
 m4_define(__hw_problems_7_horsepower,a3)m4_dnl

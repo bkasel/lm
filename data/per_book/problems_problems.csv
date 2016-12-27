@@ -260,6 +260,7 @@ problems,6,p3,bug-turntable-accelerating,0
 problems,6,p4,cockroach-in-microwave,0
 problems,6,p5,cd-spinning-nonuniform,0
 problems,6,s1,cd-constant-linear-velocity,0
+problems,6,s2,bead-on-circular-wire,0
 problems,7,a1,haul-bag,0
 problems,7,a2,crosswind,0
 problems,7,a3,horsepower,0
