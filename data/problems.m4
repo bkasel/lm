@@ -1218,9 +1218,9 @@ m4_define(__hw_problems_3_tennis-ball-numerical,s5)m4_dnl
 m4_define(__hw_problems_3_tossup,s6)m4_dnl
 m4_define(__hw_problems_3_kim-jong-un,s7)m4_dnl
 m4_define(__hw_problems_3_two-footballs,s8)m4_dnl
-m4_define(__hw_problems_3_2d-rock-roof-1,s9)m4_dnl
-m4_define(__hw_problems_3_2d-rock-roof-2,s10)m4_dnl
-m4_define(__hw_problems_3_2d-rock-roof-3,s11)m4_dnl
+m4_define(__hw_problems_3_rock-roof-1,s9)m4_dnl
+m4_define(__hw_problems_3_rock-roof-2,s10)m4_dnl
+m4_define(__hw_problems_3_rock-roof-3,s11)m4_dnl
 m4_define(__hw_problems_3_skee-ball,s12)m4_dnl
 m4_define(__hw_problems_3_acceleration-xy-plane,s13)m4_dnl
 m4_define(__hw_problems_3_launch-from-ramp-1,s14)m4_dnl

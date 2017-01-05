@@ -849,6 +849,14 @@ context. How generally important is this equation?
 
 m4_ifelse(__lm_series,1,[:\pagebreak[4]:])
 
+<% marg(-300) %>
+<%
+  fig(
+    'carusotto',
+    %q{A simplified diagram of the experiment described in example \ref{eg:carusotto}.}
+  )
+%>
+<% end_marg %>
 
 \begin{eg}{A test of the second law}\label{eg:carusotto}\index{Newton's laws of motion!second law!test of}
 Because the force $mg$ of gravity on an object of mass $m$ is proportional to $m$,
@@ -871,6 +879,43 @@ of $1\times10^{-9}$ on the fractional difference in acceleration $|g_\text{coppe
 \end{eg}
 
 m4_ifelse(__me,1,[:\pagebreak[4]:])
+
+m4_ifelse(__me,1,[:
+<% marg(300) %>
+<%
+  fig(
+    '../../../share/relativity/figs/electrons-limiting-speed',
+    %q{Example \ref{eg:bertozzi-graph}.}
+  )
+%>
+<% end_marg %>
+
+\begin{eg}{A failure of the second law}\label{eg:bertozzi-graph}
+The graph in the figure displays data from a 1964 experiment by Bertozzi that
+shows how Newton's second law fails if you keep on applying a force to an object indefinitely.
+Electrons were accelerated by a constant electrical force through a certain distance.
+Applying Newton's laws
+gives Newtonian predictions $a_N$ for the acceleration and $t_N$ for the time 
+required.
+The electrons were then allowed to fly down a pipe for a further distance of 8.4 m
+without being acted on by any force. The time of flight for this second distance
+was used to find the final
+velocity $v$ to which they had actually been accelerated.
+
+According to Newton, an acceleration $a_N$ acting for a time $t_N$ should produce a final velocity
+$a_N t_N$. The solid line in the
+graph shows the prediction of Newton's laws, which is that a constant force exerted steadily over
+time will produce a velocity that rises linearly and without limit.
+
+The experimental data, shown as black dots, clearly tell a different story. The velocity never goes
+above a certain maximum value, which turns out to be the speed of light.
+The dashed line shows the predictions of Einstein's theory of special relativity, which
+are in good agreement with the experimental results. This experiment is an example of
+a general fact, which is that Newton's laws are only good approximations when objects
+move at velocities that are small compared to the speed of light. This is discussed further
+on p.~\pageref{subsec:tests-of-second-law}.
+\end{eg}
+:])
 
 \startdqs
 
@@ -1570,23 +1615,47 @@ light. This is only one particular experiment involving gravity, but many differ
 given any evidence for a preferred frame.
 <% end_sec %> % An example of an empirical test
 <% end_sec %> % Newton's first law
-<% begin_sec("Newton's second law") %>
+<% begin_sec("Newton's second law",nil,'tests-of-second-law') %>
 Newton's second law, $a=F/m$, is false in general.
 
-If it were always valid, then by applying a constant force we could accelerate
-an object continuously until it was moving faster than the speed of light (relative to us). But this can't be so, because
-we've seen in section \ref{sec:relativity} that relativity forbids objects from moving relative to one another at speeds
+It fails at the microscopic level because particles are not just particles, they're also waves.
+One consequence is that they do not have exactly well defined positions, so that the acceleration $a$
+appearing in $a=F/m$ is not even well defined.
+
+Example \ref{eg:bertozzi-graph} on p.~\pageref{eg:bertozzi-graph} shows an example of the failure of the second
+law as electrons approach the speed of light.
+We've seen in section \ref{sec:relativity} that relativity forbids objects from moving at speeds
 faster than the speed of light. We will see in section \ref{sec:rel-momentum} that an object's inertia 
 $F/a$ is larger for an object moving closer to the speed of light (relative to the observer who measures $F$ and $a$).
-It is not equal to a constant $m$ as claimed by the second law. These variations in inertia have been measured experimentally, and
-they can be huge --- as much as a factor of $3\times 10^{11}$ for a cosmic ray detected in the sky 
-over Utah in 1994.\footnote{Bird et al., \url{http://arxiv.org/abs/astro-ph/9410067v1}}
+It is not a velocity-independent constant $m$ as in the usual interpretation of the second law.
 The second law is nevertheless highly accurate within
 its domain of validity, i.e., small relative speeds.
 
-The second law also fails at the microscopic level because particles are not just particles, they're also waves.
-One consequence of their wavelike nature is that they do not have exactly well defined positions, so that the acceleration $a$
-appearing in $a=F/m$ is not even well defined.
+It is difficult in general to design an unambiguous test of the second law because if we like, we can take
+$F=ma$ to be a definition of force. For example, in the experiment with the electrons,
+we could simply say that the force must have been mysteriously decreasing, despite our best efforts to keep it constant.
+One way around this is to use the fact that the second law should be \emph{reproducible}. For example, if the earth
+makes a certain gravitational force on the moon at a certain point in the moon's orbit, then it is to be expected that
+one month later, when the moon has revolved once around the earth and is back at the same point, we should 
+again obtain the same force and acceleration. If, for example, we saw that the moon had a slightly larger
+acceleration this time around, we could interpret this as evidence for a gradual trend of reducing mass, or
+increasing force. But either way, this trend over time would be a violation of Newton's laws, because it would
+not have been caused by any change in the conditions to which the moon was subjected. Lunar laser ranging experiments
+of the type described above show that if any such trend in acceleration exists, it must be less than about
+one part in $10^{12}$ per year.
+
+Newton's second law refers to the total force acting on an object, so it predicts that forces
+are exactly additive. If we apply two forces of exactly
+1 N to an object, the result is supposed to be
+exactly 2 N, not 1.999997 N or 2.00002 N. An alternative physical theory called
+MOND has been proposed, in an attempt to avoid the need for invoking exotic ``dark matter'' in order to correctly
+describe the rotation of galaxies. MOND is only approximately additive, so one of its predictions is
+that the gravitational forces exerted by the galaxy on the planets of the solar system would interact in
+complicated ways with the solar system's internal gravitational forces, producing tiny discrepancies with
+the predictions of Newton's laws. High-precision data from spacecraft have failed to detect this 
+effect,\footnote{Iorio, \url{arxiv.org/abs/0906.2937}}
+and have limited any such anomalous accelerations of the planets to no more than about $10^{-14}\ \munit/\sunit^2$.
+
 <% end_sec %> % Newton's second law
 <% end_sec %> % Do Newton's laws mean anything, and if so, are they true?
 %--------------------- "Do Newton's laws mean anything?
