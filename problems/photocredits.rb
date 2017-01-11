@@ -10,6 +10,7 @@ def photo_credit(file,description,credit)
   $credits[file] = [description,credit]
 end
 
+photo_credit("hw-iss-apparent-gravity","ISS","NASA/Crew of STS-132, public domain") # https://commons.wikimedia.org/wiki/File:International_Space_Station_after_undocking_of_STS-132.jpg
 photo_credit("hw-moment-of-inertia-lab","Terrier","Redrawn from a painting by Frederick August Wenderoth, 1875") # http://en.wikipedia.org/wiki/File:Frederick_August_Wenderoth_1875,_Little_Terrier.jpg
 photo_credit("hw-rappel-from-fridge","Rappelling","Redrawn from a photo by Jarek Tuszymski, CC-BY-SA") # https://commons.wikimedia.org/wiki/File:Elizabeth_Furnace_-_Repeling.JPG
 photo_credit("hw-cd-constant-linear-velocity","CD","Wikimedia Commons user Zaphraud, CC-BY-SA") # https://en.wikipedia.org/wiki/File:CDRomPits.jpg

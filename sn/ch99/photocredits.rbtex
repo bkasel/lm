@@ -43,6 +43,7 @@ me permission to use it, but that doesn't mean you have permission to use it.
 \noindent
 \textbf{Cover} Eclipse: Luc Viatour, CC-BY-SA licensed.\quad%http://commons.wikimedia.org/wiki/Image:Solar_eclips_1999_4_NR.jpg
 <% if false then photo_credit("raft","Raft in neutrino detector","Kamioka Observatory, ICRR (Institute for Cosmic Ray Research), The University of Tokyo") end %>
+<% photo_credit("hw-iss-apparent-gravity","ISS","NASA/Crew of STS-132, public domain") %> % https://commons.wikimedia.org/wiki/File:International_Space_Station_after_undocking_of_STS-132.jpg
 <% photo_credit("hw-skee-ball","Skee ball","Photo by Wikipedia user Joyous!, CC-BY-SA") %> % https://commons.wikimedia.org/wiki/File:Skee_Ball.JPG
 <% photo_credit("greyhound","Greyhound","Line art by the author, based on a photo by Alex Lapuerta, CC-BY licensed") %> % http://commons.wikimedia.org/wiki/File:Greyhound_racing_turn.jpg
 <% photo_credit("machine-gun-ftl","Machine gunner's body","Redrawn from a public-domain photo by Cpl.~Sheila Brooks") %>% http://commons.wikimedia.org/wiki/File:V-22_M240_machine_gun.jpg

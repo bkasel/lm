@@ -135,6 +135,8 @@ __incl(text/work_summary)
 
 <% begin_hw('haul-bag') %>__incl(hw/haul-bag)<% end_hw() %>
 
+<% begin_hw('triple-speed-of-soccer-ball-work',nil,{'credit'=>'B.~Shotwell'}) %>__incl(hw/triple-speed-of-soccer-ball-work)<% end_hw() %>
+
 <% end_hw_sec %>
 
  %%========================================== toc decoration ===============================================

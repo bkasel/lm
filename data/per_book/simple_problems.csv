@@ -184,6 +184,7 @@ sn,3,83,death-triangle,0
 sn,3,84,beer-stability,0
 sn,3,85,haul-bag,0
 sn,3,86,skee-ball,0
+sn,3,87,iss-apparent-gravity,0
 sn,4,1,pliers,1
 sn,4,2,rv,0
 sn,4,3,therapy,0
@@ -227,6 +228,7 @@ sn,4,40,centrifuge,0
 sn,4,41,rolling-coin,0
 sn,4,42,moment-of-inertia-lab,0
 sn,4,43,cube-statics,0
+sn,4,44,division-by-a-vector,0
 sn,5,1,stpvol,0
 sn,5,2,work-pdv,0
 sn,5,3,he,0
@@ -303,6 +305,7 @@ sn,8,13,uelec,0
 sn,8,14,hydrogencancelforce,0
 sn,8,15,nacl,0
 sn,8,16,hands-repulsion,0
+sn,8,17,molecule-in-beta-decay,0
 sn,9,1,timebetweenelectrons,1
 sn,9,2,neuroncurrent,0
 sn,9,3,bulbresistance,0

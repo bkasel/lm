@@ -98,6 +98,9 @@ me,3,30,baseball-pitch-ratios,0
 me,3,31,high-speed-chase,0
 me,3,32,vee-track-minimum-time,1
 me,3,33,galileo-chord-of-circle,0
+me,3,34,box-slides-to-a-stop,0
+me,3,35,gravitational-acceleration-planet-x,0
+me,3,36,golf-ball-seen-through-window,0
 me,4,1,time-to-brake,1
 me,4,2,elevatortension,0
 me,4,3,noforces,0
@@ -113,6 +116,8 @@ me,4,12,python-factorial,0
 me,4,13,air-resistance-falling-ball-force,0
 me,4,14,formula-one-tires,0
 me,4,15,langley-catapult,0
+me,4,16,force-on-bullet-symbolic,0
+me,4,17,three-blocks-stacked-symbolic,0
 me,5,1,third-law-partners,1
 me,5,2,box-uphill-partners,1
 me,5,3,waterbottle-in-space,1
@@ -146,6 +151,9 @@ me,5,30,skier-hits-dirt,0
 me,5,31,other-pulleys,0
 me,5,32,evil-pulleys,0
 me,5,33,rappel-from-fridge,0
+me,5,34,tissue-box-simple-friction,0
+me,5,35,blocks-sliding-tension,0
+me,5,36,mechanical-advantage,0
 me,6,1,niagara,0
 me,6,2,misslettuce,0
 me,6,3,baseballpitch,0
@@ -153,6 +161,9 @@ me,6,4,speedbump,0
 me,6,5,baseballrange,0
 me,6,6,tossup,0
 me,6,7,cliff-pond,0
+me,6,8,two-footballs,0
+me,6,9,rock-roof-2,0
+me,6,10,shoot-bullet-from-cylinder,0
 me,7,1,tiptotail,0
 me,7,2,bangkok,0
 me,7,3,walking,0
@@ -186,6 +197,9 @@ me,8,23,death-triangle,0
 me,8,24,telephone-wire,0
 me,8,25,skee-ball,0
 me,8,26,slide-uphill-optimization,0
+me,8,27,plane-wind-symbolic,0
+me,8,28,applied-force-below-horizontal,0
+me,8,29,ramp-force-probe,0
 me,9,1,circularaccelunits,0
 me,9,2,loop,0
 me,9,3,tilt-a-whirl,1
@@ -204,6 +218,8 @@ me,9,15,bead-on-vee,0
 me,9,16,spiral-terminal-velocity,0
 me,9,17,wall-of-death,0
 me,9,18,bead-on-circular-wire,0
+me,9,19,car-top-of-hill,0
+me,9,20,brick-circle,0
 me,10,1,ceres,1
 me,10,2,laurie,0
 me,10,3,alien-gangster,1
@@ -237,6 +253,7 @@ me,10,30,ground-skimming,0
 me,10,31,overlapping-shells,0
 me,10,32,mineshaft-half-way-to-center,0
 me,10,33,earth-layers,0
+me,10,34,iss-apparent-gravity,0
 me,11,1,negativeke,0
 me,11,2,sprinter,0
 me,11,3,crash,0
@@ -304,6 +321,7 @@ me,13,25,tides,0
 me,13,26,sliding-oscillator,0
 me,13,27,haul-bag,0
 me,13,28,perp-in-plane,0
+me,13,29,triple-speed-of-soccer-ball-work,0
 me,14,1,keintermsofp,0
 me,14,2,rowboat,0
 me,14,3,firework,1
@@ -323,6 +341,9 @@ me,14,16,funkosity,1
 me,14,17,exhaust,0
 me,14,18,rope-over-edge,0
 me,14,19,vintermsofp,0
+me,14,20,force-to-momentum-2,0
+me,14,21,ballistic-pendulum,0
+me,14,22,car-truck-crash,0
 me,15,1,motorcycle-jump,0
 me,15,2,equilibrium-top-of-arc,0
 me,15,3,const-l-no-torques,0
@@ -385,6 +406,8 @@ me,15,59,moment-of-inertia-lab,0
 me,15,60,cube-statics,0
 me,15,61,division-by-a-vector,0
 me,15,62,rollers-on-inclined-plane,0
+me,15,63,vector-computations,0
+me,15,64,work-done-by-torque-in-second-revolution,0
 me,16,2,sperm,0
 me,16,3,whistle,0
 me,16,4,pendulum,0

@@ -362,6 +362,12 @@ be toppled without scraping on the floor.
 
 <% begin_hw('rollers-on-inclined-plane',2) %>__incl(hw/rollers-on-inclined-plane)<% end_hw() %>
 
+<% begin_hw('vector-computations',nil,{'credit'=>'B.~Shotwell'}) %>__incl(hw/vector-computations)<% end_hw() %>
+
+\pagebreak
+
+<% begin_hw('work-done-by-torque-in-second-revolution',nil,{'credit'=>'B.~Shotwell'}) %>__incl(hw/work-done-by-torque-in-second-revolution)<% end_hw() %>
+
 <% end_hw_sec %>
 
 <% begin_ex("Torque") %>

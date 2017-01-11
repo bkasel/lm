@@ -229,8 +229,28 @@ __incl(text/n3c)
     %q{Problem \ref{hw:slide-uphill-optimization}.}
   )
 %>
+\spacebetweenfigs
+<%
+  fig(
+    'hw-applied-force-below-horizontal',
+    %q{Problem \ref{hw:applied-force-below-horizontal}.}
+  )
+%>
+\spacebetweenfigs
+<%
+  fig(
+    'hw-ramp-force-probe',
+    %q{Problem \ref{hw:ramp-force-probe}.}
+  )
+%>
 <% end_marg %>
-<% begin_hw('slide-uphill-optimization') %>__incl(hw/slide-uphill-optimization)<% end_hw() %>
+<% begin_hw('slide-uphill-optimization',2) %>__incl(hw/slide-uphill-optimization)<% end_hw() %>
+
+<% begin_hw('plane-wind-symbolic',nil,{'credit'=>'B.~Shotwell'}) %>__incl(hw/plane-wind-symbolic)<% end_hw() %>
+
+<% begin_hw('applied-force-below-horizontal',nil,{'credit'=>'B.~Shotwell'}) %>__incl(hw/applied-force-below-horizontal)<% end_hw() %>
+
+<% begin_hw('ramp-force-probe',nil,{'credit'=>'B.~Shotwell'}) %>__incl(hw/ramp-force-probe)<% end_hw() %>
 
 <% end_hw_sec %>
 

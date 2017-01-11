@@ -214,6 +214,30 @@ italicized object participates.}
 
 <% begin_hw('rappel-from-fridge') %>__incl(hw/rappel-from-fridge)<% end_hw() %>
 
+\pagebreak
+
+<% begin_hw('tissue-box-simple-friction',nil,{'credit'=>'B.~Shotwell'}) %>__incl(hw/tissue-box-simple-friction)<% end_hw() %>
+
+<% marg(300) %>
+<%
+  fig(
+    'hw-blocks-sliding-tension',
+    %q{Problem \ref{hw:blocks-sliding-tension}.}
+  )
+%>
+\spacebetweenfigs
+<%
+  fig(
+    'hw-mechanical-advantage',
+    %q{Problem \ref{hw:mechanical-advantage}.}
+  )
+%>
+<% end_marg %>
+
+<% begin_hw('blocks-sliding-tension',nil,{'credit'=>'B.~Shotwell'}) %>__incl(hw/blocks-sliding-tension)<% end_hw() %>
+
+<% begin_hw('mechanical-advantage',nil,{'credit'=>'B.~Shotwell'}) %>__incl(hw/mechanical-advantage)<% end_hw() %>
+
 <% end_hw_sec %>
 
  %%----------------------------------------------------------

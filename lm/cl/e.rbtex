@@ -200,6 +200,12 @@ be toppled without scraping on the floor.
 <% end_marg %>
 <% begin_hw('barandrope') %>__incl(hw/barandrope)<% end_hw() %>
 
+\pagebreak
+
+<% begin_hw('vector-computations',nil,{'credit'=>'B.~Shotwell'}) %>__incl(hw/vector-computations)<% end_hw() %>
+
+<% begin_hw('work-done-by-torque-in-second-revolution',nil,{'credit'=>'B.~Shotwell'}) %>__incl(hw/work-done-by-torque-in-second-revolution)<% end_hw() %>
+
 <% end_hw_sec %>
 
 <% begin_ex("Torque") %>

@@ -96,6 +96,18 @@ in the self-check on page \pageref{sc:interpret-terminal-v}.)
 <% end_marg %>
 <% begin_hw('langley-catapult') %>__incl(hw/langley-catapult)<% end_hw() %>
 
+<% begin_hw('force-on-bullet-symbolic',nil,{'credit'=>'B.~Shotwell'}) %>__incl(hw/force-on-bullet-symbolic)<% end_hw() %>
+
+<% begin_hw('three-blocks-stacked-symbolic',nil,{'credit'=>'B.~Shotwell'}) %>__incl(hw/three-blocks-stacked-symbolic)<% end_hw() %>
+<% marg(30) %>
+<%
+  fig(
+    'hw-three-blocks-stacked-symbolic',
+    %q{Problem \ref{hw:three-blocks-stacked-symbolic}.}
+  )
+%>
+<% end_marg %>
+
 <% end_hw_sec %>
 
 <% begin_ex("Force and Motion") %>

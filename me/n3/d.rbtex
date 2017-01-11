@@ -166,7 +166,18 @@ This problem is now number \ref{hw:jack-on-hill} in ch.~\ref{ch:energy-zoo}, p.~
     %q{Problem \ref{hw:bead-on-circular-wire}.}  
   )
 %>
+\spacebetweenfigs
+<%
+  fig(
+    'hw-brick-circle',  
+    %q{Problem \ref{hw:brick-circle}.}  
+  )
+%>
 <% end_marg %>
+
+<% begin_hw('car-top-of-hill',nil,{'credit'=>'B.~Shotwell'}) %>__incl(hw/car-top-of-hill)<% end_hw() %>
+
+<% begin_hw('brick-circle',nil,{'credit'=>'B.~Shotwell'}) %>__incl(hw/brick-circle)<% end_hw() %>
 
 <% end_hw_sec %>
 

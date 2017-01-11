@@ -1525,6 +1525,8 @@ __incl(text/nucleosynthesis)
 
 <% begin_hw('hands-repulsion') %>__incl(hw/hands-repulsion)<% end_hw() %>
 
+<% begin_hw('molecule-in-beta-decay',2) %>__incl(hw/molecule-in-beta-decay)<% end_hw() %>
+
 
         <% end_hw_sec %>
 \begin{exsection}

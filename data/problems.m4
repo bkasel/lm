@@ -167,6 +167,9 @@ m4_define(__hw_lm_3_aircraft-carrier,34)m4_dnl
 m4_define(__hw_lm_3_baseball-pitch-ratios,35)m4_dnl
 m4_define(__hw_lm_3_high-speed-chase,36)m4_dnl
 m4_define(__hw_lm_3_easy-area-under-v-t,37)m4_dnl
+m4_define(__hw_lm_3_box-slides-to-a-stop,38)m4_dnl
+m4_define(__hw_lm_3_gravitational-acceleration-planet-x,39)m4_dnl
+m4_define(__hw_lm_3_golf-ball-seen-through-window,40)m4_dnl
 m4_define(__hw_lm_4_noforces,1)m4_dnl
 m4_define(__hw_lm_4_trailer,2)m4_dnl
 m4_define(__hw_lm_4_elevatortension,3)m4_dnl
@@ -182,6 +185,8 @@ m4_define(__hw_lm_4_rice-sticks,12)m4_dnl
 m4_define(__hw_lm_4_langley-catapult,13)m4_dnl
 m4_define(__hw_lm_4_formula-one-tires,14)m4_dnl
 m4_define(__hw_lm_4_lowering-climber,15)m4_dnl
+m4_define(__hw_lm_4_force-on-bullet-symbolic,16)m4_dnl
+m4_define(__hw_lm_4_three-blocks-stacked-symbolic,17)m4_dnl
 m4_define(__hw_lm_5_oldlady,1)m4_dnl
 m4_define(__hw_lm_5_earthaccelup,2)m4_dnl
 m4_define(__hw_lm_5_gravityvsnormal,3)m4_dnl
@@ -213,6 +218,9 @@ m4_define(__hw_lm_5_caryatid,29)m4_dnl
 m4_define(__hw_lm_5_lowering-climber-detailed,30)m4_dnl
 m4_define(__hw_lm_5_car-in-mud,31)m4_dnl
 m4_define(__hw_lm_5_rappel-from-fridge,32)m4_dnl
+m4_define(__hw_lm_5_tissue-box-simple-friction,33)m4_dnl
+m4_define(__hw_lm_5_blocks-sliding-tension,34)m4_dnl
+m4_define(__hw_lm_5_mechanical-advantage,35)m4_dnl
 m4_define(__hw_lm_6_tossup,1)m4_dnl
 m4_define(__hw_lm_6_misslettuce,2)m4_dnl
 m4_define(__hw_lm_6_niagara,3)m4_dnl
@@ -221,6 +229,9 @@ m4_define(__hw_lm_6_cannon-range,5)m4_dnl
 m4_define(__hw_lm_6_maxrange,6)m4_dnl
 m4_define(__hw_lm_6_speedbump,7)m4_dnl
 m4_define(__hw_lm_6_cliff-pond,8)m4_dnl
+m4_define(__hw_lm_6_two-footballs,9)m4_dnl
+m4_define(__hw_lm_6_rock-roof-2,10)m4_dnl
+m4_define(__hw_lm_6_shoot-bullet-from-cylinder,11)m4_dnl
 m4_define(__hw_lm_7_tiptotail,1)m4_dnl
 m4_define(__hw_lm_7_bangkok,2)m4_dnl
 m4_define(__hw_lm_7_walking,3)m4_dnl
@@ -247,6 +258,9 @@ m4_define(__hw_lm_8_layback,18)m4_dnl
 m4_define(__hw_lm_8_death-triangle,19)m4_dnl
 m4_define(__hw_lm_8_telephone-wire,20)m4_dnl
 m4_define(__hw_lm_8_skee-ball,21)m4_dnl
+m4_define(__hw_lm_8_plane-wind-symbolic,22)m4_dnl
+m4_define(__hw_lm_8_applied-force-below-horizontal,23)m4_dnl
+m4_define(__hw_lm_8_ramp-force-probe,24)m4_dnl
 m4_define(__hw_lm_9_mixer,1)m4_dnl
 m4_define(__hw_lm_9_circularaccelunits,2)m4_dnl
 m4_define(__hw_lm_9_loop,3)m4_dnl
@@ -262,6 +276,8 @@ m4_define(__hw_lm_9_circling-blocks,12)m4_dnl
 m4_define(__hw_lm_9_paradox,13)m4_dnl
 m4_define(__hw_lm_9_sirius-centrifugal,14)m4_dnl
 m4_define(__hw_lm_9_wall-of-death,15)m4_dnl
+m4_define(__hw_lm_9_car-top-of-hill,16)m4_dnl
+m4_define(__hw_lm_9_brick-circle,17)m4_dnl
 m4_define(__hw_lm_10_laurie,1)m4_dnl
 m4_define(__hw_lm_10_eclipse,2)m4_dnl
 m4_define(__hw_lm_10_moon2,3)m4_dnl
@@ -289,6 +305,7 @@ m4_define(__hw_lm_10_ground-skimming,24)m4_dnl
 m4_define(__hw_lm_10_overlapping-shells,25)m4_dnl
 m4_define(__hw_lm_10_mineshaft-half-way-to-center,26)m4_dnl
 m4_define(__hw_lm_10_earth-layers,27)m4_dnl
+m4_define(__hw_lm_10_iss-apparent-gravity,28)m4_dnl
 m4_define(__hw_lm_11_sweatold,1)m4_dnl
 m4_define(__hw_lm_11_negativeke,2)m4_dnl
 m4_define(__hw_lm_11_sprinter,3)m4_dnl
@@ -350,6 +367,7 @@ m4_define(__hw_lm_13_maserati,23)m4_dnl
 m4_define(__hw_lm_13_compound-bow,24)m4_dnl
 m4_define(__hw_lm_13_sliding-oscillator,25)m4_dnl
 m4_define(__hw_lm_13_haul-bag,26)m4_dnl
+m4_define(__hw_lm_13_triple-speed-of-soccer-ball-work,27)m4_dnl
 m4_define(__hw_lm_14_keintermsofp,1)m4_dnl
 m4_define(__hw_lm_14_rowboat,2)m4_dnl
 m4_define(__hw_lm_14_planes,3)m4_dnl
@@ -368,6 +386,9 @@ m4_define(__hw_lm_14_energy-frames,15)m4_dnl
 m4_define(__hw_lm_14_funkosity,16)m4_dnl
 m4_define(__hw_lm_14_max-heat-released-in-collision,17)m4_dnl
 m4_define(__hw_lm_14_colliding-putty,18)m4_dnl
+m4_define(__hw_lm_14_force-to-momentum-2,19)m4_dnl
+m4_define(__hw_lm_14_ballistic-pendulum,20)m4_dnl
+m4_define(__hw_lm_14_car-truck-crash,21)m4_dnl
 m4_define(__hw_lm_15_rv,1)m4_dnl
 m4_define(__hw_lm_15_therapy,2)m4_dnl
 m4_define(__hw_lm_15_equilibrium-top-of-arc,3)m4_dnl
@@ -399,6 +420,8 @@ m4_define(__hw_lm_15_toppling-rod,28)m4_dnl
 m4_define(__hw_lm_15_check-mg-at-cm,29)m4_dnl
 m4_define(__hw_lm_15_motorcycle-jump,30)m4_dnl
 m4_define(__hw_lm_15_barandrope,31)m4_dnl
+m4_define(__hw_lm_15_vector-computations,32)m4_dnl
+m4_define(__hw_lm_15_work-done-by-torque-in-second-revolution,33)m4_dnl
 m4_define(__hw_lm_16_stpvol,1)m4_dnl
 m4_define(__hw_lm_16_workpdv,2)m4_dnl
 m4_define(__hw_lm_16_he,3)m4_dnl
@@ -771,6 +794,9 @@ m4_define(__hw_me_3_baseball-pitch-ratios,30)m4_dnl
 m4_define(__hw_me_3_high-speed-chase,31)m4_dnl
 m4_define(__hw_me_3_vee-track-minimum-time,32)m4_dnl
 m4_define(__hw_me_3_galileo-chord-of-circle,33)m4_dnl
+m4_define(__hw_me_3_box-slides-to-a-stop,34)m4_dnl
+m4_define(__hw_me_3_gravitational-acceleration-planet-x,35)m4_dnl
+m4_define(__hw_me_3_golf-ball-seen-through-window,36)m4_dnl
 m4_define(__hw_me_4_time-to-brake,1)m4_dnl
 m4_define(__hw_me_4_elevatortension,2)m4_dnl
 m4_define(__hw_me_4_noforces,3)m4_dnl
@@ -786,6 +812,8 @@ m4_define(__hw_me_4_python-factorial,12)m4_dnl
 m4_define(__hw_me_4_air-resistance-falling-ball-force,13)m4_dnl
 m4_define(__hw_me_4_formula-one-tires,14)m4_dnl
 m4_define(__hw_me_4_langley-catapult,15)m4_dnl
+m4_define(__hw_me_4_force-on-bullet-symbolic,16)m4_dnl
+m4_define(__hw_me_4_three-blocks-stacked-symbolic,17)m4_dnl
 m4_define(__hw_me_5_third-law-partners,1)m4_dnl
 m4_define(__hw_me_5_box-uphill-partners,2)m4_dnl
 m4_define(__hw_me_5_waterbottle-in-space,3)m4_dnl
@@ -819,6 +847,9 @@ m4_define(__hw_me_5_skier-hits-dirt,30)m4_dnl
 m4_define(__hw_me_5_other-pulleys,31)m4_dnl
 m4_define(__hw_me_5_evil-pulleys,32)m4_dnl
 m4_define(__hw_me_5_rappel-from-fridge,33)m4_dnl
+m4_define(__hw_me_5_tissue-box-simple-friction,34)m4_dnl
+m4_define(__hw_me_5_blocks-sliding-tension,35)m4_dnl
+m4_define(__hw_me_5_mechanical-advantage,36)m4_dnl
 m4_define(__hw_me_6_niagara,1)m4_dnl
 m4_define(__hw_me_6_misslettuce,2)m4_dnl
 m4_define(__hw_me_6_baseballpitch,3)m4_dnl
@@ -826,6 +857,9 @@ m4_define(__hw_me_6_speedbump,4)m4_dnl
 m4_define(__hw_me_6_baseballrange,5)m4_dnl
 m4_define(__hw_me_6_tossup,6)m4_dnl
 m4_define(__hw_me_6_cliff-pond,7)m4_dnl
+m4_define(__hw_me_6_two-footballs,8)m4_dnl
+m4_define(__hw_me_6_rock-roof-2,9)m4_dnl
+m4_define(__hw_me_6_shoot-bullet-from-cylinder,10)m4_dnl
 m4_define(__hw_me_7_tiptotail,1)m4_dnl
 m4_define(__hw_me_7_bangkok,2)m4_dnl
 m4_define(__hw_me_7_walking,3)m4_dnl
@@ -859,6 +893,9 @@ m4_define(__hw_me_8_death-triangle,23)m4_dnl
 m4_define(__hw_me_8_telephone-wire,24)m4_dnl
 m4_define(__hw_me_8_skee-ball,25)m4_dnl
 m4_define(__hw_me_8_slide-uphill-optimization,26)m4_dnl
+m4_define(__hw_me_8_plane-wind-symbolic,27)m4_dnl
+m4_define(__hw_me_8_applied-force-below-horizontal,28)m4_dnl
+m4_define(__hw_me_8_ramp-force-probe,29)m4_dnl
 m4_define(__hw_me_9_circularaccelunits,1)m4_dnl
 m4_define(__hw_me_9_loop,2)m4_dnl
 m4_define(__hw_me_9_tilt-a-whirl,3)m4_dnl
@@ -877,6 +914,8 @@ m4_define(__hw_me_9_bead-on-vee,15)m4_dnl
 m4_define(__hw_me_9_spiral-terminal-velocity,16)m4_dnl
 m4_define(__hw_me_9_wall-of-death,17)m4_dnl
 m4_define(__hw_me_9_bead-on-circular-wire,18)m4_dnl
+m4_define(__hw_me_9_car-top-of-hill,19)m4_dnl
+m4_define(__hw_me_9_brick-circle,20)m4_dnl
 m4_define(__hw_me_10_ceres,1)m4_dnl
 m4_define(__hw_me_10_laurie,2)m4_dnl
 m4_define(__hw_me_10_alien-gangster,3)m4_dnl
@@ -910,6 +949,7 @@ m4_define(__hw_me_10_ground-skimming,30)m4_dnl
 m4_define(__hw_me_10_overlapping-shells,31)m4_dnl
 m4_define(__hw_me_10_mineshaft-half-way-to-center,32)m4_dnl
 m4_define(__hw_me_10_earth-layers,33)m4_dnl
+m4_define(__hw_me_10_iss-apparent-gravity,34)m4_dnl
 m4_define(__hw_me_11_negativeke,1)m4_dnl
 m4_define(__hw_me_11_sprinter,2)m4_dnl
 m4_define(__hw_me_11_crash,3)m4_dnl
@@ -977,6 +1017,7 @@ m4_define(__hw_me_13_tides,25)m4_dnl
 m4_define(__hw_me_13_sliding-oscillator,26)m4_dnl
 m4_define(__hw_me_13_haul-bag,27)m4_dnl
 m4_define(__hw_me_13_perp-in-plane,28)m4_dnl
+m4_define(__hw_me_13_triple-speed-of-soccer-ball-work,29)m4_dnl
 m4_define(__hw_me_14_keintermsofp,1)m4_dnl
 m4_define(__hw_me_14_rowboat,2)m4_dnl
 m4_define(__hw_me_14_firework,3)m4_dnl
@@ -996,6 +1037,9 @@ m4_define(__hw_me_14_funkosity,16)m4_dnl
 m4_define(__hw_me_14_exhaust,17)m4_dnl
 m4_define(__hw_me_14_rope-over-edge,18)m4_dnl
 m4_define(__hw_me_14_vintermsofp,19)m4_dnl
+m4_define(__hw_me_14_force-to-momentum-2,20)m4_dnl
+m4_define(__hw_me_14_ballistic-pendulum,21)m4_dnl
+m4_define(__hw_me_14_car-truck-crash,22)m4_dnl
 m4_define(__hw_me_15_motorcycle-jump,1)m4_dnl
 m4_define(__hw_me_15_equilibrium-top-of-arc,2)m4_dnl
 m4_define(__hw_me_15_const-l-no-torques,3)m4_dnl
@@ -1058,6 +1102,8 @@ m4_define(__hw_me_15_moment-of-inertia-lab,59)m4_dnl
 m4_define(__hw_me_15_cube-statics,60)m4_dnl
 m4_define(__hw_me_15_division-by-a-vector,61)m4_dnl
 m4_define(__hw_me_15_rollers-on-inclined-plane,62)m4_dnl
+m4_define(__hw_me_15_vector-computations,63)m4_dnl
+m4_define(__hw_me_15_work-done-by-torque-in-second-revolution,64)m4_dnl
 m4_define(__hw_me_16_sperm,2)m4_dnl
 m4_define(__hw_me_16_whistle,3)m4_dnl
 m4_define(__hw_me_16_pendulum,4)m4_dnl
@@ -1545,9 +1591,10 @@ m4_define(__hw_problems_11_laurie,d3)m4_dnl
 m4_define(__hw_problems_11_uranus,d4)m4_dnl
 m4_define(__hw_problems_11_iss-g,d5)m4_dnl
 m4_define(__hw_problems_11_bowling-balls-in-space,d6)m4_dnl
-m4_define(__hw_problems_11_eclipse,d7)m4_dnl
-m4_define(__hw_problems_11_moon2,d8)m4_dnl
-m4_define(__hw_problems_11_new-horizons,d9)m4_dnl
+m4_define(__hw_problems_11_iss-apparent-gravity,d7)m4_dnl
+m4_define(__hw_problems_11_eclipse,d8)m4_dnl
+m4_define(__hw_problems_11_moon2,d9)m4_dnl
+m4_define(__hw_problems_11_new-horizons,d10)m4_dnl
 m4_define(__hw_problems_11_receding-moon,g1)m4_dnl
 m4_define(__hw_problems_11_rocketweight,g2)m4_dnl
 m4_define(__hw_problems_11_mars-trip,g3)m4_dnl
@@ -1803,6 +1850,7 @@ m4_define(__hw_sn_3_death-triangle,83)m4_dnl
 m4_define(__hw_sn_3_beer-stability,84)m4_dnl
 m4_define(__hw_sn_3_haul-bag,85)m4_dnl
 m4_define(__hw_sn_3_skee-ball,86)m4_dnl
+m4_define(__hw_sn_3_iss-apparent-gravity,87)m4_dnl
 m4_define(__hw_sn_4_pliers,1)m4_dnl
 m4_define(__hw_sn_4_rv,2)m4_dnl
 m4_define(__hw_sn_4_therapy,3)m4_dnl
@@ -1846,6 +1894,7 @@ m4_define(__hw_sn_4_centrifuge,40)m4_dnl
 m4_define(__hw_sn_4_rolling-coin,41)m4_dnl
 m4_define(__hw_sn_4_moment-of-inertia-lab,42)m4_dnl
 m4_define(__hw_sn_4_cube-statics,43)m4_dnl
+m4_define(__hw_sn_4_division-by-a-vector,44)m4_dnl
 m4_define(__hw_sn_5_stpvol,1)m4_dnl
 m4_define(__hw_sn_5_work-pdv,2)m4_dnl
 m4_define(__hw_sn_5_he,3)m4_dnl
@@ -1922,6 +1971,7 @@ m4_define(__hw_sn_8_uelec,13)m4_dnl
 m4_define(__hw_sn_8_hydrogencancelforce,14)m4_dnl
 m4_define(__hw_sn_8_nacl,15)m4_dnl
 m4_define(__hw_sn_8_hands-repulsion,16)m4_dnl
+m4_define(__hw_sn_8_molecule-in-beta-decay,17)m4_dnl
 m4_define(__hw_sn_9_timebetweenelectrons,1)m4_dnl
 m4_define(__hw_sn_9_neuroncurrent,2)m4_dnl
 m4_define(__hw_sn_9_bulbresistance,3)m4_dnl

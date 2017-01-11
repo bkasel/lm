@@ -280,6 +280,14 @@ hits the ground? (Give an angle.)
 
 <% begin_hw('vintermsofp',2) %>__incl(../../share/relativity/hw/vintermsofp)<% end_hw() %>
 
+\pagebreak
+
+<% begin_hw('force-to-momentum-2',nil,{'calc'=>true,'credit'=>'B.~Shotwell'}) %>__incl(hw/force-to-momentum-2)<% end_hw() %>
+
+<% begin_hw('ballistic-pendulum',nil,{'credit'=>'B.~Shotwell'}) %>__incl(hw/ballistic-pendulum)<% end_hw() %>
+
+<% begin_hw('car-truck-crash',nil,{'credit'=>'B.~Shotwell'}) %>__incl(hw/car-truck-crash)<% end_hw() %>
+
 <% end_hw_sec %>
 
  %%========================================== toc decoration ===============================================

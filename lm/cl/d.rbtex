@@ -75,6 +75,11 @@ __incl(text/momentum_summary)
 
 <% begin_hw('colliding-putty') %>__incl(hw/colliding-putty)<% end_hw() %>
 
+<% begin_hw('force-to-momentum-2',nil,{'calc'=>true,'credit'=>'B.~Shotwell'}) %>__incl(hw/force-to-momentum-2)<% end_hw() %>
+
+<% begin_hw('ballistic-pendulum',nil,{'credit'=>'B.~Shotwell'}) %>__incl(hw/ballistic-pendulum)<% end_hw() %>
+
+<% begin_hw('car-truck-crash',nil,{'credit'=>'B.~Shotwell'}) %>__incl(hw/car-truck-crash)<% end_hw() %>
 
 <% end_hw_sec %>
 

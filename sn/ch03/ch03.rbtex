@@ -5851,6 +5851,19 @@ of energy. Solve the same problem using Newton's laws.
   )
 %>
 
+<% marg(-30) %>
+<%
+  fig(
+    'hw-iss-apparent-gravity',
+    %q{%
+      Problem \ref{hw:iss-apparent-gravity}.
+    }
+  )   
+%>   
+<% end_marg %>
+
+<% begin_hw('iss-apparent-gravity') %>__incl(hw/iss-apparent-gravity)<% end_hw() %>
+
 <% end_hw_sec %>
 
  % ==================================================================== 

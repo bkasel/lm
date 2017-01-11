@@ -167,6 +167,9 @@ lm,3,34,aircraft-carrier,0
 lm,3,35,baseball-pitch-ratios,0
 lm,3,36,high-speed-chase,0
 lm,3,37,easy-area-under-v-t,0
+lm,3,38,box-slides-to-a-stop,0
+lm,3,39,gravitational-acceleration-planet-x,0
+lm,3,40,golf-ball-seen-through-window,0
 lm,4,1,noforces,0
 lm,4,2,trailer,0
 lm,4,3,elevatortension,0
@@ -182,6 +185,8 @@ lm,4,12,rice-sticks,0
 lm,4,13,langley-catapult,0
 lm,4,14,formula-one-tires,0
 lm,4,15,lowering-climber,1
+lm,4,16,force-on-bullet-symbolic,0
+lm,4,17,three-blocks-stacked-symbolic,0
 lm,5,1,oldlady,0
 lm,5,2,earthaccelup,0
 lm,5,3,gravityvsnormal,0
@@ -213,6 +218,9 @@ lm,5,29,caryatid,1
 lm,5,30,lowering-climber-detailed,0
 lm,5,31,car-in-mud,0
 lm,5,32,rappel-from-fridge,0
+lm,5,33,tissue-box-simple-friction,0
+lm,5,34,blocks-sliding-tension,0
+lm,5,35,mechanical-advantage,0
 lm,6,1,tossup,0
 lm,6,2,misslettuce,0
 lm,6,3,niagara,0
@@ -221,6 +229,9 @@ lm,6,5,cannon-range,1
 lm,6,6,maxrange,0
 lm,6,7,speedbump,0
 lm,6,8,cliff-pond,0
+lm,6,9,two-footballs,0
+lm,6,10,rock-roof-2,0
+lm,6,11,shoot-bullet-from-cylinder,0
 lm,7,1,tiptotail,0
 lm,7,2,bangkok,0
 lm,7,3,walking,0
@@ -247,6 +258,9 @@ lm,8,18,layback,0
 lm,8,19,death-triangle,0
 lm,8,20,telephone-wire,0
 lm,8,21,skee-ball,0
+lm,8,22,plane-wind-symbolic,0
+lm,8,23,applied-force-below-horizontal,0
+lm,8,24,ramp-force-probe,0
 lm,9,1,mixer,0
 lm,9,2,circularaccelunits,0
 lm,9,3,loop,0
@@ -262,6 +276,8 @@ lm,9,12,circling-blocks,0
 lm,9,13,paradox,0
 lm,9,14,sirius-centrifugal,0
 lm,9,15,wall-of-death,0
+lm,9,16,car-top-of-hill,0
+lm,9,17,brick-circle,0
 lm,10,1,laurie,0
 lm,10,2,eclipse,0
 lm,10,3,moon2,0
@@ -289,6 +305,7 @@ lm,10,24,ground-skimming,0
 lm,10,25,overlapping-shells,0
 lm,10,26,mineshaft-half-way-to-center,0
 lm,10,27,earth-layers,0
+lm,10,28,iss-apparent-gravity,0
 lm,11,1,sweatold,0
 lm,11,2,negativeke,0
 lm,11,3,sprinter,0
@@ -350,6 +367,7 @@ lm,13,23,maserati,0
 lm,13,24,compound-bow,0
 lm,13,25,sliding-oscillator,0
 lm,13,26,haul-bag,0
+lm,13,27,triple-speed-of-soccer-ball-work,0
 lm,14,1,keintermsofp,0
 lm,14,2,rowboat,0
 lm,14,3,planes,0
@@ -368,6 +386,9 @@ lm,14,15,energy-frames,1
 lm,14,16,funkosity,1
 lm,14,17,max-heat-released-in-collision,0
 lm,14,18,colliding-putty,0
+lm,14,19,force-to-momentum-2,0
+lm,14,20,ballistic-pendulum,0
+lm,14,21,car-truck-crash,0
 lm,15,1,rv,0
 lm,15,2,therapy,0
 lm,15,3,equilibrium-top-of-arc,0
@@ -399,6 +420,8 @@ lm,15,28,toppling-rod,1
 lm,15,29,check-mg-at-cm,0
 lm,15,30,motorcycle-jump,0
 lm,15,31,barandrope,0
+lm,15,32,vector-computations,0
+lm,15,33,work-done-by-torque-in-second-revolution,0
 lm,16,1,stpvol,0
 lm,16,2,workpdv,0
 lm,16,3,he,0
@@ -771,6 +794,9 @@ me,3,30,baseball-pitch-ratios,0
 me,3,31,high-speed-chase,0
 me,3,32,vee-track-minimum-time,1
 me,3,33,galileo-chord-of-circle,0
+me,3,34,box-slides-to-a-stop,0
+me,3,35,gravitational-acceleration-planet-x,0
+me,3,36,golf-ball-seen-through-window,0
 me,4,1,time-to-brake,1
 me,4,2,elevatortension,0
 me,4,3,noforces,0
@@ -786,6 +812,8 @@ me,4,12,python-factorial,0
 me,4,13,air-resistance-falling-ball-force,0
 me,4,14,formula-one-tires,0
 me,4,15,langley-catapult,0
+me,4,16,force-on-bullet-symbolic,0
+me,4,17,three-blocks-stacked-symbolic,0
 me,5,1,third-law-partners,1
 me,5,2,box-uphill-partners,1
 me,5,3,waterbottle-in-space,1
@@ -819,6 +847,9 @@ me,5,30,skier-hits-dirt,0
 me,5,31,other-pulleys,0
 me,5,32,evil-pulleys,0
 me,5,33,rappel-from-fridge,0
+me,5,34,tissue-box-simple-friction,0
+me,5,35,blocks-sliding-tension,0
+me,5,36,mechanical-advantage,0
 me,6,1,niagara,0
 me,6,2,misslettuce,0
 me,6,3,baseballpitch,0
@@ -826,6 +857,9 @@ me,6,4,speedbump,0
 me,6,5,baseballrange,0
 me,6,6,tossup,0
 me,6,7,cliff-pond,0
+me,6,8,two-footballs,0
+me,6,9,rock-roof-2,0
+me,6,10,shoot-bullet-from-cylinder,0
 me,7,1,tiptotail,0
 me,7,2,bangkok,0
 me,7,3,walking,0
@@ -859,6 +893,9 @@ me,8,23,death-triangle,0
 me,8,24,telephone-wire,0
 me,8,25,skee-ball,0
 me,8,26,slide-uphill-optimization,0
+me,8,27,plane-wind-symbolic,0
+me,8,28,applied-force-below-horizontal,0
+me,8,29,ramp-force-probe,0
 me,9,1,circularaccelunits,0
 me,9,2,loop,0
 me,9,3,tilt-a-whirl,1
@@ -877,6 +914,8 @@ me,9,15,bead-on-vee,0
 me,9,16,spiral-terminal-velocity,0
 me,9,17,wall-of-death,0
 me,9,18,bead-on-circular-wire,0
+me,9,19,car-top-of-hill,0
+me,9,20,brick-circle,0
 me,10,1,ceres,1
 me,10,2,laurie,0
 me,10,3,alien-gangster,1
@@ -910,6 +949,7 @@ me,10,30,ground-skimming,0
 me,10,31,overlapping-shells,0
 me,10,32,mineshaft-half-way-to-center,0
 me,10,33,earth-layers,0
+me,10,34,iss-apparent-gravity,0
 me,11,1,negativeke,0
 me,11,2,sprinter,0
 me,11,3,crash,0
@@ -977,6 +1017,7 @@ me,13,25,tides,0
 me,13,26,sliding-oscillator,0
 me,13,27,haul-bag,0
 me,13,28,perp-in-plane,0
+me,13,29,triple-speed-of-soccer-ball-work,0
 me,14,1,keintermsofp,0
 me,14,2,rowboat,0
 me,14,3,firework,1
@@ -996,6 +1037,9 @@ me,14,16,funkosity,1
 me,14,17,exhaust,0
 me,14,18,rope-over-edge,0
 me,14,19,vintermsofp,0
+me,14,20,force-to-momentum-2,0
+me,14,21,ballistic-pendulum,0
+me,14,22,car-truck-crash,0
 me,15,1,motorcycle-jump,0
 me,15,2,equilibrium-top-of-arc,0
 me,15,3,const-l-no-torques,0
@@ -1058,6 +1102,8 @@ me,15,59,moment-of-inertia-lab,0
 me,15,60,cube-statics,0
 me,15,61,division-by-a-vector,0
 me,15,62,rollers-on-inclined-plane,0
+me,15,63,vector-computations,0
+me,15,64,work-done-by-torque-in-second-revolution,0
 me,16,2,sperm,0
 me,16,3,whistle,0
 me,16,4,pendulum,0
@@ -1545,9 +1591,10 @@ problems,11,d3,laurie,0
 problems,11,d4,uranus,0
 problems,11,d5,iss-g,0
 problems,11,d6,bowling-balls-in-space,0
-problems,11,d7,eclipse,0
-problems,11,d8,moon2,0
-problems,11,d9,new-horizons,0
+problems,11,d7,iss-apparent-gravity,0
+problems,11,d8,eclipse,0
+problems,11,d9,moon2,0
+problems,11,d10,new-horizons,0
 problems,11,g1,receding-moon,1
 problems,11,g2,rocketweight,0
 problems,11,g3,mars-trip,0
@@ -1803,6 +1850,7 @@ sn,3,83,death-triangle,0
 sn,3,84,beer-stability,0
 sn,3,85,haul-bag,0
 sn,3,86,skee-ball,0
+sn,3,87,iss-apparent-gravity,0
 sn,4,1,pliers,1
 sn,4,2,rv,0
 sn,4,3,therapy,0
@@ -1846,6 +1894,7 @@ sn,4,40,centrifuge,0
 sn,4,41,rolling-coin,0
 sn,4,42,moment-of-inertia-lab,0
 sn,4,43,cube-statics,0
+sn,4,44,division-by-a-vector,0
 sn,5,1,stpvol,0
 sn,5,2,work-pdv,0
 sn,5,3,he,0
@@ -1922,6 +1971,7 @@ sn,8,13,uelec,0
 sn,8,14,hydrogencancelforce,0
 sn,8,15,nacl,0
 sn,8,16,hands-repulsion,0
+sn,8,17,molecule-in-beta-decay,0
 sn,9,1,timebetweenelectrons,1
 sn,9,2,neuroncurrent,0
 sn,9,3,bulbresistance,0

@@ -184,6 +184,12 @@ angle, but for the sake of this estimate just consider the case of a flea jumpin
 
 <% begin_hw('galileo-chord-of-circle',2) %>__incl(hw/galileo-chord-of-circle)<% end_hw() %>
 
+<% begin_hw('box-slides-to-a-stop',nil,{'credit'=>'B.~Shotwell'}) %>__incl(hw/box-slides-to-a-stop)<% end_hw() %>
+
+<% begin_hw('gravitational-acceleration-planet-x',nil,{'credit'=>'B.~Shotwell'}) %>__incl(hw/gravitational-acceleration-planet-x)<% end_hw() %>
+
+<% begin_hw('golf-ball-seen-through-window',nil,{'credit'=>'B.~Shotwell'}) %>__incl(hw/golf-ball-seen-through-window)<% end_hw() %>
+
 <% end_hw_sec %>
 
 

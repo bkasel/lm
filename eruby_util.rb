@@ -26,6 +26,7 @@ $store_hw_label = []
 $hw_block = 0 # for style used in Fundamentals of Calculus
 $hw = []
 $hw_has_solution = []
+$hw_trailing = []
 $hw_names_referred_to = []
 $hw_freeze = 0
 $tex_points_to_mm = (25.4)/(65536.*72.27)
@@ -888,6 +889,10 @@ def begin_hw(name,difficulty=1,options={})
   label = hw_label()
   $store_hw_label[$hw_number] = label
   print "\\begin{homeworkforcelabel}{#{name}}{#{difficulty}}{#{calc}}{#{label}}"
+  $hw_trailing[$hw_number] = ''
+  if !(options['credit'].nil?) then 
+     $hw_trailing[$hw_number] =  $hw_trailing[$hw_number] + "\\hwaddtrailingstuff{\\hwcredit{#{options['credit']}}}"
+  end
 end
 
 def hw_solution()
@@ -1000,6 +1005,7 @@ def hw_ref(name)
 end
 
 def end_hw()
+  print $hw_trailing[$hw_number]
   print "\\end{homeworkforcelabel}"
 end
 

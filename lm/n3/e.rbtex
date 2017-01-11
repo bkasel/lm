@@ -165,6 +165,19 @@ New Horizons: 465.0 kg
 
 <% begin_hw('earth-layers') %>__incl(hw/earth-layers)<% end_hw() %>
 
+<% marg() %>
+<%
+  fig(
+    'hw-iss-apparent-gravity',
+    %q{%
+      Problem \ref{hw:iss-apparent-gravity}.
+    }
+  )   
+%>   
+<% end_marg %>
+
+<% begin_hw('iss-apparent-gravity') %>__incl(hw/iss-apparent-gravity)<% end_hw() %>
+
 <% end_hw_sec %>
 
 <% begin_ex("The Shell Theorem") %>

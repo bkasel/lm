@@ -128,6 +128,21 @@ __incl(text/n3d)
 %>
 <% end_marg %>
 
+<% begin_hw('car-top-of-hill',nil,{'credit'=>'B.~Shotwell'}) %>__incl(hw/car-top-of-hill)<% end_hw() %>
+
+\pagebreak
+
+<% begin_hw('brick-circle',nil,{'credit'=>'B.~Shotwell'}) %>__incl(hw/brick-circle)<% end_hw() %>
+
+<% marg(73) %>
+<%
+  fig(
+    'hw-brick-circle',  
+    %q{Problem \ref{hw:brick-circle}.}  
+  )
+%>
+<% end_marg %>
+
 <% end_hw_sec %>
 
 
