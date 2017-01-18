@@ -228,7 +228,7 @@ def pos_file
 end
 
 def strip_leading_zero_from_ch(ch)
-  if ch=~/\A(([a-z])(\d+))\Z/ then
+  if ch=~/\A(([a-z]?)(\d+))\Z/ then
     whole,prefix,num = $1,$2,$3
     return prefix+num.to_i.to_s
   end
@@ -249,7 +249,7 @@ def previous_pos_file
     return "ch#{p}.pos"
   end
   # can have, e.g., 'a01' in fp
-  if $ch=~/\A(([a-z])(\d+))\Z/ then
+  if $ch=~/\A(([a-z]?)(\d+))\Z/ then
     whole,prefix,num = $1,$2,$3
     return "ch"+prefix+decrement_ch_num(num)+".pos"
   end
