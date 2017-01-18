@@ -227,11 +227,34 @@ def pos_file
   return "ch#{$ch}.pos"
 end
 
-def previous_pos_file
-  p = $ch.to_i-1
+def strip_leading_zero_from_ch(ch)
+  if ch=~/\A(([a-z])(\d+))\Z/ then
+    whole,prefix,num = $1,$2,$3
+    return prefix+num.to_i.to_s
+  end
+  save_complaint("warning: in strip_leading_zero_from_ch(), illegal chapter number #{ch}")
+  return nil
+end
+
+def decrement_ch_num(n) # don't use directly, use previous_pos_file(), which calls this
+  p = n.to_i-1
   if p<0 then return nil end
   if p<10 then p = '0'+p.to_s end
-  return "ch#{p}.pos"
+  return p
+end
+
+def previous_pos_file
+  if $ch=~/\A\d+\Z/ then
+    p = decrement_ch_num($ch)
+    return "ch#{p}.pos"
+  end
+  # can have, e.g., 'a01' in fp
+  if $ch=~/\A(([a-z])(\d+))\Z/ then
+    whole,prefix,num = $1,$2,$3
+    return "ch"+prefix+decrement_ch_num(num)+".pos"
+  end
+  save_complaint("warning: in previous_pos_file(), illegal chapter number #{$ch}")
+  return nil
 end
 
 # returns data in units of mm, in the coordinate system used by pdfsavepos (positive y up)
@@ -368,7 +391,7 @@ def warn_marg(severity,nmarg,page,message)
   if File.exist?($marg_file) then
     File.open($marg_file,'r') do |f|
       f.each_line { |line|
-        if line=~/fig:(.*),nmarg=(\d+),ch=(\d+)/ then
+        if line=~/fig:(.*),nmarg=(\d+),ch=([a-z]?\d+)/ then
           fig,gr,ch = $1,$2.to_i,$3
           mine[fig]=1 if (gr==nmarg.to_i && ch==$ch)
         else
@@ -411,7 +434,7 @@ def height_of_marg
     # ************ Bug: if the same figure is used in two different chapters, I think this will mess up **************************
     # ************ It's inefficient to call this many times. ********************
     f.each_line { |line|
-      if line=~/(.*),nmarg=(\d+),ch=(\d+)/ then
+      if line=~/(.*),nmarg=(\d+),ch=([a-z]?\d+)/ then
         fig,gr,ch = $1,$2.to_i,$3
         mine[fig] = 1 if (gr==$n_marg.to_i and ch==$ch)
         $stderr.print "#{fig} is mine!\n" if debug and mine[fig]
@@ -923,7 +946,7 @@ end
 def write_to_answer_data(type,label=nil)
   if label==nil then label = $hw[$hw_number] end
   File.open($answer_data_file,'a') { |f|
-    f.print "#{$ch.to_i},#{label},#{type}\n"
+    f.print "#{strip_leading_zero_from_ch($ch)},#{label},#{type}\n"
   }
 end
 
@@ -1343,7 +1366,7 @@ def end_chapter
   File.open("ch#{$ch}_problems.csv",'w') { |f|
     # book,ch,num,name
     book = ENV['BK']
-    chnum = $ch.to_i
+    chnum = strip_leading_zero_from_ch($ch)
     if $ch=='002' then chnum=0 end
     1.upto($hw_number) { |i| # output doesn't always get sorted correctly; see fund/solns/prep_solutions for perl code that sorts it correctly
       name = $hw[i]

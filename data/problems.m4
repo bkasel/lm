@@ -1555,8 +1555,7 @@ m4_define(__hw_problems_9_unbalanced-meter-stick,s5)m4_dnl
 m4_define(__hw_problems_9_walk-across-rod,s6)m4_dnl
 m4_define(__hw_problems_9_weight-hangs-from-suspended-bar,s7)m4_dnl
 m4_define(__hw_problems_9_statics-stop-light,s8)m4_dnl
-m4_define(__hw_problems_9_hanging-from-ropes-theta-and-2theta,s9)m4_dnl
-m4_define(__hw_problems_9_ladderwarmup,s10)m4_dnl
+m4_define(__hw_problems_9_ladderwarmup,s9)m4_dnl
 m4_define(__hw_problems_9_ladder,v1)m4_dnl
 m4_define(__hw_problems_9_climb-ladder-until-it-slips,v2)m4_dnl
 m4_define(__hw_problems_9_ship-in-bottle,v3)m4_dnl

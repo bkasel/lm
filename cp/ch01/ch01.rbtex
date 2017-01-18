@@ -964,7 +964,7 @@ a moving object is given by
 <% end_marg %>
 
 By this point, I've casually mentioned several forms of energy: kinetic, gravitational, heat, and
-sound. This might be disconcerting, since we can get throughly messed up if don't realize that
+sound. This might be disconcerting, since we can get thoroughly messed up if we don't realize that
 a certain form of energy is important in a particular situation. For instance, the spinning coin in figure
 \figref{coin-duh} gradually loses its kinetic energy, and we might think that conservation of energy was
 therefore being violated. However, whenever two surfaces rub together, friction acts to create heat.
@@ -1364,7 +1364,7 @@ We won't examine relativity in detail in this book, but mass-energy
 equivalence is an inevitable implication of the theory, and it's the only part of the
 theory that most people have heard of, via the famous equation $E=mc^2$. This equation
 tells us how much energy is equivalent to how much mass: the conversion factor is the square
-of the speed of light, $c$. Since $c$ a big number, you get a really really big number
+of the speed of light, $c$. Since $c$ is a big number, you get a really really big number
 when you multiply it by itself to get $c^2$. This means that even a small amount of mass
 is equivalent to a very large amount of energy. 
 
