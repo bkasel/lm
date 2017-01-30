@@ -434,7 +434,7 @@ def height_of_marg
     # ************ Bug: if the same figure is used in two different chapters, I think this will mess up **************************
     # ************ It's inefficient to call this many times. ********************
     f.each_line { |line|
-      if line=~/(.*),nmarg=(\d+),ch=([a-z]?\d+)/ then
+      if !line.nil? && line=~/(.*),nmarg=(\d+),ch=([a-z]?\d+)/ then
         fig,gr,ch = $1,$2.to_i,$3
         mine[fig] = 1 if (gr==$n_marg.to_i and ch==$ch)
         $stderr.print "#{fig} is mine!\n" if debug and mine[fig]
