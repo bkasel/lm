@@ -547,7 +547,7 @@ and 58.
 <% begin_sec("Absolute zero and the Kelvin scale") %>
 We find that if we extrapolate a graph of volume versus
 temperature, the volume becomes zero at nearly the same
-temperature for all gases: -273\degcunit. Real gases will all
+temperature for all gases: $-273\degcunit$. Real gases will all
 condense into liquids at some temperature above this, but an
 ideal gas would achieve zero volume at this temperature,
 known as absolute zero. The most useful temperature scale in
@@ -742,7 +742,7 @@ where the index $i$ refers to the individual atoms.
 Substituting $\Delta p_{x,i}=2mv_{x,i}$ and $\Delta t_i=2L/v_{x,i}$, we
 have
 \begin{equation*}
-                F        =  \sum \frac{mv_{x,i}^2}{L} \qquad \text{[monoatomic ideal gas]}\eqquad.
+                F        =  \frac{1}{L} \sum mv_{x,i}^2 \qquad \text{[monoatomic ideal gas]}\eqquad.
 \end{equation*}
 The quantity $mv_{x,i}^2$ is twice the contribution to the
 kinetic energy from the part of the atoms' center of mass
@@ -750,7 +750,7 @@ motion that is parallel to the $x$ axis. Since we're assuming
 a monoatomic gas, center of mass motion is the only type of
 motion that gives rise to kinetic energy. (A more complex
 molecule could rotate and vibrate as well.) If the quantity
-inside the sum included the $y$ and $z$ components, it would be
+inside the sum included the $y$ and $z$ components, the sum would be
 twice the total kinetic energy of all the molecules. Since we expect
 the energy to be equally shared among $x$, $y$, and $z$ motion,\footnote{This equal sharing will be justified more
 rigorously on page \pageref{equipartition}.} the quantity
@@ -776,14 +776,31 @@ a monoatomic ideal gas, the temperature is a measure of the
 average kinetic energy per molecule. The proportionality
 between the two is $\bar{K}=(3/2)kT$, where the constant of
 proportionality $k$, known as Boltzmann's constant, has a
-numerical value of $1.38\times10^{-23}\ \junit/\kunit$. In terms of
-Boltzmann's constant, the relationship among the bulk
-quantities for an ideal gas becomes
+numerical value of $1.38\times10^{-23}\ \junit/\kunit$.
+
+The Boltzmann constant has the value it does because the celsius and kelvin scales were 
+defined before the microscopic picture of thermodynamics had been discovered. For some
+calculations, it is more convenient to work in more natural units where $k=1$ by definition, and then
+the units of temperature and energy are the same.\index{Boltzmann's constant}
+The Boltzmann constant is small because our energy scale of joules is a macroscopic scale,
+so that when we express the thermal energy of a single atom in joules, the number is very small.
+
+Summarizing, we have the following two important facts.
+
+\begin{important}[Microscopic model of an ideal gas]
+For an ideal gas,
 \begin{equation*}
-        PV        =  nkT\eqquad, \qquad \text{[ideal gas]}
+        PV        =  nkT,
 \end{equation*}
-which is known as the ideal gas law. \index{ideal gas law}\index{Boltzmann's constant}
-Although I won't prove it here, this equation applies to all ideal gases, even
+which is known as the ideal gas law.\index{ideal gas law}
+The temperature of the gas is a measure of the average kinetic energy
+per atom,
+\begin{equation*}
+        \bar{K}   =  \frac{3}{2}kT.
+\end{equation*}
+\end{important}
+
+Although I won't prove it here, the ideal gas law applies to all ideal gases, even
 though the derivation assumed a monoatomic ideal gas in a cubical box.
  (You may have seen it
 written elsewhere as $PV=NRT$, where $N=n/N_A$ is the number of
