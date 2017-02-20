@@ -2412,7 +2412,7 @@ Many books
 use this as the definition of capacitance. This equation, by
 the way, probably explains the historical reason why $C$ was
 defined so that the energy was \emph{inversely} proportional
-to $C$ for a given value of $C$: the people who invented the
+to $C$ for a given value of $q$: the people who invented the
 definition were thinking of a capacitor as a device for
 storing charge rather than energy, and the amount of charge
 stored for a fixed voltage (the charge ``capacity'') is
