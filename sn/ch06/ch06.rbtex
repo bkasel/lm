@@ -2471,7 +2471,7 @@ so the wave pattern is pinched off at the ends.
 Comparing panels 1 and 2 of the figure, we see that although the wave pattens
 are different, in both cases the wavelength is the same: in the lowest-frequency
 standing wave, half a wavelength fits inside the tube. Thus, it isn't necessary
-to memorize which type of reflection is inverting and which is inverting. It's
+to memorize which type of reflection is inverting and which is uninverting. It's
 only necessary to know that the tubes are symmetric.
 
 Finally, we can have an asymmetric tube: closed at one end and open at the
@@ -2486,7 +2486,7 @@ Sometimes an instrument's physical appearance can be misleading. A concert flute
 to behave like an asymmetric air column; in reality, it behaves like a symmetric
 air column open at both ends, because the embouchure hole (the hole the player blows
 over) acts like an open end. The clarinet and the saxophone look similar,
-having a moutpiece and reed at one end and an open end at the other, but they act
+having a mouthpiece and reed at one end and an open end at the other, but they act
 different. In fact the clarinet's air column has patterns of vibration that are asymmetric, the
 saxophone symmetric. The discrepancy comes from the difference between the conical
 tube of the sax and the cylindrical tube of the clarinet. The adjustment of the wave
