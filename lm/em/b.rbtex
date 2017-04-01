@@ -474,7 +474,7 @@ A Caltech-MIT collaboration has built
 \vfill
 <% begin_sec("The electric field") %>\index{electric field}\index{field!electric}
 
-        <% begin_sec("Definition") %>
+        <% begin_sec("Definition",nil,'e-field-defined') %>
 
         The definition of the electric field is directly analogous
         to, and has the same motivation as, the definition of the

@@ -174,8 +174,8 @@ square current loop as
                                                             \text{ dipole moment of a square current loop]}
 \end{multline*}
 We now define the \index{magnetic field!defined}magnetic
-field in a manner entirely analogous to the second
-definition of the electric field:
+field in a manner entirely analogous to the alternative
+definition of the electric field on p.~\pageref{subsec:efielddipoledef}:
 
 \begin{lessimportant}[definition of the magnetic field]
 The magnetic field vector, $\vc{B}$, at any location in space is
@@ -398,7 +398,11 @@ magnetic field never does work on it.\label{geom-mag-force-on-charge}
 %>
 <% end_marg %>
 
-\enlargethispage{-2\baselineskip}
+If we place a moving test charge in a magnetic field, we can use
+the equation $|\vc{F}|    = q|\vc{v}||\vc{B}|\sin\theta$ and the geometrical relationship
+discussed above to indirectly determine $\vc{B}$. (More than one measurement
+will in general be required.) This can also serve as a definition of the magnetic field,
+analogous to the one on p.~\pageref{subsec:e-field-defined} for the electric field.
 
 \begin{eg}{Magnetic levitation}\label{eg:battery-wire-magnet}
       In figure \figref{battery-wire-magnet}, a small, disk-shaped permanent magnet is stuck on the side of a
