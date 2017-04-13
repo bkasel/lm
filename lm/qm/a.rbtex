@@ -794,7 +794,7 @@ number of decays in one second is therefore $3.2\times10^5$, not zero.
 
 Well, my calculator only does eight digits of precision,
 just like yours, so how did I know the right answer? The way
-to do it is to use the following approximation:
+to do it is to use the following approximation (see p.~\pageref{math-approx-exp-and-log}):
 \begin{equation*}
          a^b \approx 1 + b\;\ln  a, \quad \text{if } b \ll 1
 \end{equation*}

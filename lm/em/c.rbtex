@@ -408,7 +408,9 @@ one can use the equal-area property to show that this ratio is given by
 If you've had good training in physics, the first thing you probably think when you look at this equation is that it must be
 nonsense, because its units don't make sense. How can we take something with units of velocity squared, and subtract it from
 a unitless 1? But remember that this is expressed in our new relativistic units, in which the same units are used for
-distance and time. In this system, velocities are always unitless. This sort of thing happens frequently in physics. For
+distance and time. We refer to
+these as \emph{natural} units.\index{units!natural relativistic}\index{natural units}\label{natural-units}
+In this system, velocities are always unitless. This sort of thing happens frequently in physics. For
 instance, before James Joule discovered conservation of energy, nobody knew that heat and mechanical energy were different
 forms of the same thing, so instead of measuring them both in units of joules as we would do now, they measured heat in
 one unit (such as calories) and mechanical energy in another (such as foot-pounds). In ordinary metric units, we just need
@@ -428,10 +430,12 @@ an extra conversion factor, called $c$, and the equation becomes
 
 When we say, ``It's five hours from LA to Vegas,'' we're using a unit of time as a unit of distance. This works because
 there is a standard speed implied: the speed of a car on the freeway. Similarly, the conversion factor $c$ can be interpreted
-as a speed, so that $v/c$ is the unitless ratio of two speeds. As argued on p.~\pageref{subsec:time-delays},
+as a speed, so that $v/c$ is the unitless ratio of two speeds.
+
+As argued on p.~\pageref{subsec:time-delays},
 cause and effect can never be propagated instantaneously; $c$ turns out to be the specific numerical speed limit on
-cause and effect. In particular, we'll see in section \ref{sec:universal-speed-c} that light travels at $c$, which has a numerical
-value of $3.0\times10^8\ \munit/\sunit$.\index{speed of light}
+cause and effect. In particular, we'll see in section \ref{sec:universal-speed-c} that light travels at $c$, which has 
+a numerical value in SI units of $3.0\times10^8\ \munit/\sunit$.\index{speed of light}
 <% marg(20) %>
 <%
   fig(
@@ -451,7 +455,15 @@ A clock runs fastest in the frame of reference of an observer who is at rest rel
 in motion relative to the clock at speed $v$ perceives the clock as running more slowly by a factor of $\mygamma$.
 \end{lessimportant}
 
-<% marg(100) %>
+
+\noindent As proved in figures \figref{length-contraction} and \figref{length-contraction-proof}, lengths are also distorted:
+
+\begin{lessimportant}[Length contraction]
+A meter-stick appears longest to an observer who is at rest relative to it. An observer moving relative to the
+meter-stick at $v$ observes the stick to be shortened by a factor of $\mygamma$.
+\end{lessimportant}
+
+<% marg(0) %>
 <%
   fig(
     'length-contraction',
@@ -480,23 +492,33 @@ in motion relative to the clock at speed $v$ perceives the clock as running more
   )
 %>
 
-\noindent As proved in figures \figref{length-contraction} and \figref{length-contraction-proof}, lengths are also distorted:
-
-\begin{lessimportant}[Length contraction]
-A meter-stick appears longest to an observer who is at rest relative to it. An observer moving relative to the
-meter-stick at $v$ observes the stick to be shortened by a factor of $\mygamma$.
-\end{lessimportant}
-
-\vfill
-
 <% self_check('gammaatvzero',<<-'SELF_CHECK'
 What is $\mygamma$ when $v=0$? What does this mean?
   SELF_CHECK
   ) %>
 
-\vfill
+\begin{eg}{Changing an equation from natural units to SI}\label{eg:natural-to-si-1}
+Often it is easier to do all of our algebra in natural units, which are simpler because $c=1$, and
+all factors of $c$ can therefore be omitted. For example, suppose we want to solve for $v$ in terms of $\mygamma$.
+In natural units, we have $\mygamma=1/\sqrt{1-v^2}$, so $\mygamma^{-2}=1-v^2$, and $v=\sqrt{1-\mygamma^{-2}}$.
+
+This form of the result might be fine for many purposes, but if we wanted to find a value of $v$ in SI units,
+we would need to reinsert factors of $c$ in the final result. There is no need to do this throughout the whole
+derivation. By looking at the final result, we see that there is only one possible way to do this so that the
+results make sense in SI, which is to write $v=c\sqrt{1-\mygamma^{-2}}$.
+\end{eg}
 
 \pagebreak
+
+
+\begin{eg}{Motion of a ray of light}\label{eg:natural-to-si-2}
+\egquestion The motion of a certain ray of light is given by the equation $x=-t$. Is this expressed in
+natural units, or in SI units? Convert to the other system.
+
+\eganswer The equation is in natural units. It wouldn't make sense in SI units, because we would have
+meters on the left and seconds on the right. To convert to SI units, we insert a factor of $c$ in the only
+possible place that will cause the equation to make sense: $x=-ct$.
+\end{eg}
 
 <%
   fig('interstellar-road-trip',
@@ -515,7 +537,7 @@ away, so even though Betty travels at 87\% of the speed of light, it will take
 her a long time to get there: 14 years, according to Alice.
 
 Betty
-experiences time dilation. At this speed, her $\gamma$ is 2.0, so that the voyage will
+experiences time dilation. At this speed, her $\mygamma$ is 2.0, so that the voyage will
 only seem to her to last 7 years. But there is perfect symmetry between Alice's
 and Betty's frames of reference, so Betty agrees with Alice on their relative speed;
 Betty sees herself as being at rest, while the sun and Tau Ceti both move backward
@@ -532,28 +554,33 @@ Betty and her spaceship to be foreshortened.
 \pagebreak
 
 \begin{eg}{The correspondence principle}\label{eg:gamma-for-low-v}
-The correspondence principle requires that $\mygamma$ be close to 1 for the velocities much less than $c$ encountered
-in everyday life. Let's explicitly find the amount $\epsilon$ by which $\mygamma$ differs from 1, when $v$ is small. Let $\mygamma=1+\epsilon$.
-The definition of $\mygamma$ gives $1=\mygamma^2(1-v^2/c^2)$, so $1=(1+2\epsilon+\epsilon^2)(1-v^2/c^2)\approx 1+2\epsilon-v^2/c^2$, where
-the approximation comes from discarding very small terms such as $\epsilon^2$ and $\epsilon v^2/c^2$. We find $\epsilon=v^2/2c^2$.
-As expected, this will be small when $v$ is small compared to $c$.
+The correspondence principle requires that $\mygamma$ be close to 1
+for the velocities much less than $c$ encountered in everyday life.
+In natural units, $\mygamma=(1-v^2)^{-1/2}$.
+For small values of $\epsilon$, the approximation 
+$(1+\epsilon)^p\approx 1+p\epsilon$ holds (see p.~\pageref{math-approx-exp-and-log}).
+Applying this approximation, we find $\mygamma\approx1+v^2/2$.
+
+As expected, this gives approximately 1 when $v$ is small compared to 1 (i.e., compared to $c$, which equals 1
+in natural units).
+
+In problem \ref{hw:gamma-approx-si} on p.~\pageref{hw:gamma-approx-si} we rewrite
+this in SI units.
+
+Figure \figref{gamma-graph-small} on p.~\pageref{fig:gamma-graph-small} shows that the approximation
+is \emph{not} valid for large values of $v/c$. In fact, $\mygamma$
+blows up to infinity as $v$ gets closer and closer to $c$.
 \end{eg}
 
 \vfill
 
-Figure \figref{gamma-graph-small} shows that the approximation found
-in example \ref{eg:gamma-for-low-v} is \emph{not} valid for large values of $v/c$. In fact, $\gamma$
-blows up to infinity as $v$ gets closer and closer to $c$.
-
-\vfill
-
-<% marg(130) %>
+<% marg() %>
 <%
   fig(
     'atomic-clock-gamma',
-    %q{Time dilation measured with an atomic clock at low speeds. The theoretical curve, shown with a dashed line,
+    %q{Example \ref{eg:chou}, time dilation measured with an atomic clock at low speeds. The theoretical curve, shown with a dashed line,
        is calculated from $\mygamma=1/\sqrt{1-(v/c)^2}$; at these small velocities, the approximation of example
-       \ref{eg:gamma-for-low-v} is an excellent one, so $\mygamma\approx 1+v^2/2c^2$, and the graph is indistinguishable
+       \ref{eg:gamma-for-low-v} is an excellent one, so the graph is indistinguishable
        from a parabola. This graph corresponds to an extreme close-up view of the lower left corner of 
        figure \figref{gamma-graph-small}.  The error bars on the experimental points are about the same size as the dots.}
   )
@@ -576,6 +603,17 @@ Since it was not practical to move the entire clock, the experimenters only move
 clock that actually made it ``tick.''
 \end{eg}
 
+\vfill
+
+\begin{eg}{Large time dilation}\label{eg:cern-muons}
+The time dilation effect in the Hafele-Keating experiment was very small. If we want to see a large time dilation
+effect, we can't do it with something the size of the atomic clocks they used; the kinetic energy would be
+greater than the total megatonnage of all the world's nuclear arsenals. We can, however, accelerate subatomic particles
+to speeds at which $\mygamma$ is large. For experimental particle physicists, relativity is something you do all day
+before heading home and stopping off at the store for milk. An early, low-precision experiment of this kind was
+performed by Rossi and Hall in 1941, using naturally occurring cosmic rays. 
+
+\pagebreak
 
 <%
   fig(
@@ -592,17 +630,9 @@ clock that actually made it ``tick.''
   )
 %>
 
-\begin{eg}{Large time dilation}\label{eg:cern-muons}
-The time dilation effect in the Hafele-Keating experiment was very small. If we want to see a large time dilation
-effect, we can't do it with something the size of the atomic clocks they used; the kinetic energy would be
-greater than the total megatonnage of all the world's nuclear arsenals. We can, however, accelerate subatomic particles
-to speeds at which $\mygamma$ is large. For experimental particle physicists, relativity is something you do all day
-before heading home and stopping off at the store for milk. An early, low-precision experiment of this kind was
-performed by Rossi and Hall in 1941, using naturally occurring cosmic rays. Figure \figref{cern-muon-storage-ring} shows
-a 1974 experiment\footnote{Bailey at al., Nucl. Phys. B150(1979) 1}
-of a similar type which verified the time dilation predicted by relativity to a precision of about
-one part per thousand.
-<% marg(-4) %>
+\vfill
+
+<% marg(-300) %>
 <%
   fig(
     'cern-muon-graph',
@@ -616,20 +646,29 @@ one part per thousand.
 %>
 <% end_marg %>
 
-\vspace{30mm}
-
-Particles called muons (named after the Greek letter $\mu$, ``myoo'') were produced by an
-accelerator at CERN, near Geneva. A muon is essentially a heavier version
-of the electron. Muons undergo radioactive decay,
-lasting an average of only 2.197 $\mu\sunit$ before they evaporate into an electron and two neutrinos.
-The 1974 experiment was actually built in order to measure the magnetic properties of muons, but it produced a high-precision
-test of time dilation as a byproduct. Because muons have the same electric charge as electrons, they can be trapped using
-magnetic fields. Muons were injected into the ring shown in figure \figref{cern-muon-storage-ring}, circling around it until they underwent radioactive decay.
-At the speed at which these muons were traveling, they had $\mygamma=29.33$, so on the average they lasted 29.33 times
-longer than the normal lifetime. In other words, they were like tiny alarm clocks that self-destructed at a randomly
-selected time. Figure \figref{cern-muon-graph} shows the number of radioactive decays counted, as a function of the
-time elapsed after a given stream of muons was injected into the storage ring. The two dashed lines show the rates
-of decay predicted with and without relativity. The relativistic line is the one that agrees with experiment.
+Figure \figref{cern-muon-storage-ring} shows a 1974
+experiment\footnote{Bailey at al., Nucl. Phys. B150(1979) 1} of a
+similar type which verified the time dilation predicted by relativity
+to a precision of about one part per thousand.  Particles called muons
+(named after the Greek letter $\mu$, ``myoo'') were produced by an
+accelerator at CERN, near Geneva. A muon is essentially a heavier
+version of the electron. Muons undergo radioactive decay, lasting an
+average of only 2.197 $\mu\sunit$ before they evaporate into an
+electron and two neutrinos.  The 1974 experiment was actually built in
+order to measure the magnetic properties of muons, but it produced a
+high-precision test of time dilation as a byproduct. Because muons
+have the same electric charge as electrons, they can be trapped using
+magnetic fields. Muons were injected into the ring shown in figure
+\figref{cern-muon-storage-ring}, circling around it until they
+underwent radioactive decay.  At the speed at which these muons were
+traveling, they had $\mygamma=29.33$, so on the average they lasted
+29.33 times longer than the normal lifetime. In other words, they were
+like tiny alarm clocks that self-destructed at a randomly selected
+time. Figure \figref{cern-muon-graph} shows the number of radioactive
+decays counted, as a function of the time elapsed after a given stream
+of muons was injected into the storage ring. The two dashed lines show
+the rates of decay predicted with and without relativity. The
+relativistic line is the one that agrees with experiment. 
 \end{eg}
 
 \pagebreak
@@ -1154,6 +1193,7 @@ moving charges with other moving charges.
 
 <% begin_hw('sr-from-length-contraction') %>__incl(../../share/relativity/hw/sr-from-length-contraction)<% end_hw() %>
 
+<% begin_hw('gamma-approx-si') %>__incl(../../share/relativity/hw/gamma-approx-si)<% end_hw() %>
 
 
 <% end_hw_sec %>

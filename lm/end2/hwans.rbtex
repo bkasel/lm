@@ -29,6 +29,7 @@
 <% answer("b-from-photo") %>
 <% answer("corkscrew") %>
 <% answer("field-at-mouth-of-solenoid") %>
+<% answer("gamma-approx-si") %>
 <% answer("rel-vel-addition") %>
 <% answer("tossed-clock") %>
 <% answer("angular-defect") %>

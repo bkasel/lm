@@ -134,6 +134,7 @@
 22,topointerp,self_check
 22,zero-e-center-of-square,answer
 23,gammaatvzero,self_check
+23,gamma-approx-si,answer
 24,alternator,self_check
 24,doppler-approaching,self_check
 24,force-on-wire-in-b,answer

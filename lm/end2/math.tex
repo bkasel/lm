@@ -99,14 +99,54 @@ $\frac{\der}{\der x}e^x = e^x$ &
 $\frac{\der}{\der x}\ln x = \frac{1}{x} $
 \end{tabular}
 
-\noindent The fundamental theorem of calculus:
-\begin{equation*} \int \frac{\der f}{\der x}\der x = f \end{equation*}
-
 \noindent Linearity of the integral:
 \begin{equation*} \int cf(x)\der x = c\int f(x)\der x\end{equation*}
 \begin{equation*} \int\left[f(x)+g(x)\right] = \int f(x) \der x + \int g(x) \der x \end{equation*}
 
-\noindent Integration by parts:
-\begin{equation*} \int f \der g = fg - \int g \der f \end{equation*}
+\noindent The fundamental theorem of calculus:\\
+The derivative and the integral undo each other, in the following sense:
+\begin{equation*} \int_a^b f'(x)\der x = f(b)-f(a) \end{equation*}
+
 
 \normalsize\normalfont
+
+\twocolumn[\begin{center}\huge{\bfseries{\sffamily{Approximations to Exponents and Logarithms}}}\end{center}]\normalsize\normalfont
+\label{math-approx-exp-and-log}
+
+It is often useful to have certain approximations involving exponents and logarithms.
+As a simple numerical example, suppose that your bank balance grows by 1\% for two
+years in a row. Then the result of compound interest is growth by a factor of $1.01^2=1.0201$,
+but the compounding effect is quite small, and the result is essentially 2\% growth.
+That is, $1.01^2\approx1.02$. This is a special case of the more general approximation
+\begin{equation*}
+  (1+\epsilon)^p\approx 1+p\epsilon,
+\end{equation*}
+which holds for small values of $\epsilon$ and is used in example \ref{eg:gamma-for-low-v}
+on p.~\pageref{eg:gamma-for-low-v} relating to relativity.
+Proof: Any real exponent $p$ can be
+approximated to the desired precision as $p=a/b$, where $a$ and $b$ are integers.
+Let $(1+\epsilon)^p=1+x$.
+Then $(1+\epsilon)^a=(1+x)^b$. Multiplying out both sides gives
+$1+a\epsilon+\ldots= 1+bx+\ldots$, where $\ldots$ indicates higher powers. Neglecting
+these higher powers gives $x\approx(a/b)\epsilon\approx p\epsilon$.
+
+We have considered an approximation that can be found by restricting the \emph{base} of
+an exponential to be close to 1. It is often of interest as well to consider the case
+where the \emph{exponent} is restricted to be small. Consider the base-$e$ case. One
+way of defining $e$ is that when we use it as a base, the rate of growth of the function
+$e^x$, for small $x$, equals 1. That is,
+\begin{equation*}
+  e^x \approx 1+x
+\end{equation*}
+for small $x$. This can easily be generalized to other bases, since $a^x=e^{\ln(a^x)}=e^{x\ln a}$,
+giving
+\begin{equation*}
+  a^x \approx 1+x\ln a.
+\end{equation*}
+We use this approximation on p.~\pageref{rate-of-decay-approx} in connection with radioactive decay.
+
+Finally, since $e^x \approx 1+x$, we also have
+\begin{equation*}
+  \ln(1+x) \approx x,
+\end{equation*}
+which is used in problem \ref{hw:qproof} on p.~\pageref{hw:qproof}, relating to damped oscillations.
