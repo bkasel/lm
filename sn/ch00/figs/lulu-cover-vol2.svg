@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
+
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -9,12 +10,11 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="1655"
+   width="1644.1875"
    height="1012.5"
    id="svg1363"
    sodipodi:version="0.32"
-   inkscape:version="0.46"
-   sodipodi:docbase="/home/bcrowell/Documents/writing/books/physics/0sn/ch00/figs"
+   inkscape:version="0.48.4 r9939"
    sodipodi:docname="lulu-cover-vol2.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    version="1.0">
@@ -56,17 +56,18 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.46020219"
-     inkscape:cx="820.37684"
-     inkscape:cy="343.93806"
+     inkscape:zoom="0.53945742"
+     inkscape:cx="854.30139"
+     inkscape:cy="534.70662"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      inkscape:window-width="1278"
-     inkscape:window-height="996"
+     inkscape:window-height="900"
      inkscape:window-x="1"
      inkscape:window-y="1"
      showgrid="false"
-     units="pt" />
+     units="pt"
+     inkscape:window-maximized="0" />
   <metadata
      id="metadata1368">
     <rdf:RDF>
@@ -75,6 +76,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -83,16 +85,16 @@
      inkscape:groupmode="layer"
      id="layer1">
     <image
-       y="-0.17718506"
-       x="7.3258986"
-       id="image2460"
+       sodipodi:absref="/home/bcrowell/Documents/writing/books/physics/sn/ch00/figs/black_strip_matching_photo.jpg"
+       xlink:href="black_strip_matching_photo.jpg"
+       width="1644.1975"
        height="1012.6772"
-       width="1647.4003"
-       sodipodi:absref="/home/bcrowell/Documents/writing/books/physics/0sn/ch00/figs/eclipse_photo.jpg"
-       xlink:href="eclipse_photo.jpg" />
+       id="image2510"
+       x="0"
+       y="-0.17718506" />
     <text
        xml:space="preserve"
-       style="font-size:72px;font-style:oblique;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#d4d4d4;fill-opacity:1;stroke:none;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Liberation Sans"
+       style="font-size:72px;font-style:oblique;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#d4d4d4;fill-opacity:1;stroke:none;font-family:Liberation Sans"
        x="1039.4323"
        y="219.08804"
        id="text1305"
@@ -101,9 +103,16 @@
          id="tspan1307"
          x="1039.4323"
          y="219.08804">Simple Nature</tspan></text>
+    <image
+       y="232.1698"
+       x="928.59387"
+       id="image3059"
+       xlink:href="file:///home/bcrowell/Documents/writing/books/physics/sn/ch00/figs/eclipse_photo.jpg"
+       height="659.37677"
+       width="664.71155" />
     <text
        xml:space="preserve"
-       style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#a3a3a3;fill-opacity:1;stroke:none;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Liberation Sans"
+       style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#a3a3a3;fill-opacity:1;stroke:none;font-family:Liberation Sans"
        x="1040.4043"
        y="264.96658"
        id="text2046"
@@ -114,42 +123,42 @@
          id="tspan1433">Crowell</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:60px;font-style:oblique;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#d4d4d4;fill-opacity:1;stroke:none;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Liberation Sans"
+       style="font-size:60px;font-style:oblique;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#d4d4d4;fill-opacity:1;stroke:none;font-family:Liberation Sans"
        x="83.904907"
-       y="-799.87415"
+       y="-805.87415"
        id="text1362"
        sodipodi:linespacing="125%"
        transform="matrix(0,1,-1,0,0,0)"><tspan
          sodipodi:role="line"
          id="tspan1364"
          x="83.904907"
-         y="-799.87415">Simple Nature</tspan></text>
+         y="-805.87415">Simple Nature</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:60px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#a3a3a3;fill-opacity:1;stroke:none;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Liberation Sans"
+       style="font-size:60px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#a3a3a3;fill-opacity:1;stroke:none;font-family:Liberation Sans"
        x="576.46509"
-       y="-799.67023"
+       y="-805.67023"
        id="text1366"
        sodipodi:linespacing="125%"
        transform="matrix(0,1,-1,0,0,0)"><tspan
          sodipodi:role="line"
          x="576.46509"
-         y="-799.67023"
+         y="-805.67023"
          id="tspan1368">Crowell</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:50px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Liberation Sans"
-       x="802.00122"
+       style="font-size:50px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Liberation Sans"
+       x="808.00122"
        y="953.91046"
        id="text1363"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan1365"
-         x="802.00122"
+         x="808.00122"
          y="953.91046">2</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#a3a3a3;fill-opacity:1;stroke:none;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Liberation Sans"
+       style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#a3a3a3;fill-opacity:1;stroke:none;font-family:Liberation Sans"
        x="1040.3671"
        y="311.47812"
        id="text2094"
@@ -158,13 +167,5 @@
          x="1040.3671"
          y="311.47812"
          id="tspan2096">volume 2</tspan></text>
-    <image
-       y="-0.17718506"
-       x="0"
-       id="image2510"
-       height="1012.6772"
-       width="220.77321"
-       sodipodi:absref="/home/bcrowell/Documents/writing/books/physics/0sn/ch00/figs/black_strip_matching_photo.jpg"
-       xlink:href="black_strip_matching_photo.jpg" />
   </g>
 </svg>
