@@ -532,6 +532,7 @@ m4_define(__hw_lm_23_agreeontime,3)m4_dnl
 m4_define(__hw_lm_23_voyagergamma,4)m4_dnl
 m4_define(__hw_lm_23_earth-lorentz-contraction,5)m4_dnl
 m4_define(__hw_lm_23_sr-from-length-contraction,6)m4_dnl
+m4_define(__hw_lm_23_gamma-approx-si,7)m4_dnl
 m4_define(__hw_lm_24_six-tenths-c-twice,1)m4_dnl
 m4_define(__hw_lm_24_side-by-side-lasers,2)m4_dnl
 m4_define(__hw_lm_24_nestedsolenoids,3)m4_dnl
