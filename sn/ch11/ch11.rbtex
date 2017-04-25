@@ -3376,7 +3376,8 @@ wave called its polarization.
         Thus a light wave carries energy with it when it travels from one place to another.
         If a material object has kinetic energy and moves from one place to another, it must
         also have momentum, so it is logical to ask whether light waves have momentum as well.
-        It can be proved based on relativity that it does, and that the momentum and energy
+        It can be proved based on relativity\footnote{See problem \ref{hw:ultrarelativistic} on p.~\pageref{hw:ultrarelativistic},
+        or example \ref{eg:light-p-from-four-vector} on p.~\pageref{eg:light-p-from-four-vector}.} that it does, and that the momentum and energy
         are related by the equation $U=p/c$, where $p$ is the magnitude of the momentum
         vector, and $U=U_e+U_m$ is the
         sum of the energy of the electric and magnetic fields.
@@ -3488,8 +3489,8 @@ wave called its polarization.
        bell jar. A 150 mW beam of light was shone on one of the mirrors for 6 s, producing a tiny rotation,  
        which was measurable by an optical lever (not shown). The force was within 0.6\%
        of the theoretically predicted value    
-       (problem \ref{hw:ultrarelativistic} on p.~\pageref{hw:ultrarelativistic})                                 
-       of $0.001\ \mu\nunit$.      
+       (problem \ref{hw:ultrarelativistic} on p.~\pageref{hw:ultrarelativistic}) 
+       of $0.001\ \mu\nunit$.\index{Nichols-Hull experiment on momentum of light}
        For comparison, a short clipping of a single human hair weighs $\sim 1\ \mu\nunit$.}
   )
 %>
@@ -4266,6 +4267,8 @@ compass's orientation to be determined in two or (for aircraft) three dimensions
 
 <% begin_hw('minimum-em-force') %>__incl(hw/minimum-em-force)<% end_hw() %>
 
+\pagebreak
+
 <% marg(3) %>
 <%
   fig(
@@ -4281,6 +4284,8 @@ compass's orientation to be determined in two or (for aircraft) three dimensions
 <% begin_hw('everyday-maxwell') %>__incl(hw/everyday-maxwell)<% end_hw() %>
 
 <% begin_hw('poynting') %>__incl(hw/poynting)<% end_hw() %>
+
+\pagebreak
 
 <% begin_hw('solarconstant') %>__incl(hw/solarconstant)<% end_hw() %>
 
@@ -4303,6 +4308,8 @@ compass's orientation to be determined in two or (for aircraft) three dimensions
 <% begin_hw('boundary-eb') %>__incl(hw/boundary-eb)<% end_hw() %>
 
 <% begin_hw('spherical-shielding',3) %>__incl(hw/spherical-shielding)<% end_hw() %>
+
+\pagebreak
 
 <% begin_hw('sandwich') %>__incl(hw/sandwich)<% end_hw() %>
 

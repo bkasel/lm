@@ -116,6 +116,9 @@ a free proton. (If it could, hydrogen would be radioactive, and you
 wouldn't exist!)
 <% end_hw() %>
 
+
+\vfill
+
 <% begin_hw('vintermsofp',2) %>
 (a) Find a relativistic equation for the velocity of an
 object in terms of its mass and momentum (eliminating
@@ -127,10 +130,14 @@ low velocities.\hwendpart
 speeds close to the speed of light.
 <% end_hw() %>
 
+\vfill
+
 <% begin_hw('gammasimplefraction') %>
 (a) Show that for $v=(3/5)c$, $\gamma$ comes out to be a simple fraction.\\
 (b) Find another value of $v$ for which $\gamma$ is a simple fraction.
 <% end_hw() %>
+
+\pagebreak
 
 <% begin_hw('ultrarelativistic') %>\index{momentum!of light}\index{light!momentum of}
 An object moving at a speed very close to the speed of light is referred to as
@@ -147,24 +154,32 @@ assume that it's ultrarelativistic.\answercheck\hwendpart
 that's sufficiently close to the speed of light! Suppose you turn on a one-watt flashlight, leave it
 on for one second, and then turn it off. Compute the momentum of the recoiling flashlight, in units
 of $\kgunit\unitdot\munit/\sunit$.\answercheck\hwendpart
-(f) Discuss how your answer in part e relates to the correspondence principle.
+(f) Discuss how part e relates to the correspondence principle.
 <% end_hw() %>
 
 <% begin_hw('relativity-max-tension') %>__incl(hw/relativity-max-tension)<% end_hw() %>
 
-\vspace{-3mm}
+\enlargethispage{\baselineskip}
 
 <% begin_hw('double-voltage') %>__incl(hw/double-voltage)<% end_hw() %>
 
+\vfill
+
 <% begin_hw('velocity-addition-double-limit') %>Problem \ref{hw:velocity-addition-double-limit} has been deleted.<% end_hw() %>
 
-\pagebreak
+\vfill
 
 <% begin_hw('ke-taylor') %>__incl(hw/ke-taylor)<% end_hw() %>
 
+\vfill
+
 <% begin_hw('p-rel-taylor') %>__incl(hw/p-rel-taylor)<% end_hw() %>
 
+\vfill
+
 <% begin_hw('rel-vel-addition') %>__incl(hw/rel-vel-addition)<% end_hw() %>
+
+\vfill
 
 <% begin_hw('congruent-four-vectors') %>__incl(hw/congruent-four-vectors)<% end_hw() %>
 <% marg(17) %>
@@ -176,11 +191,13 @@ of $\kgunit\unitdot\munit/\sunit$.\answercheck\hwendpart
 %>
 <% end_marg %>
 
+\vfill
+
 <% begin_hw('momentum-cone') %>__incl(hw/momentum-cone)<% end_hw() %>
 
-<% begin_hw('no-pe-in-vacuum') %>__incl(hw/no-pe-in-vacuum)<% end_hw() %>
-
 \pagebreak
+
+<% begin_hw('no-pe-in-vacuum') %>__incl(hw/no-pe-in-vacuum)<% end_hw() %>
 
 <% begin_hw('doppler-taylor') %>__incl(hw/doppler-taylor)<% end_hw() %>
 
@@ -201,6 +218,8 @@ of $\kgunit\unitdot\munit/\sunit$.\answercheck\hwendpart
   )
 %>
 <% end_marg %>
+
+\pagebreak
 
 <% begin_hw('iss-time-dilation') %> __incl(hw/iss-time-dilation)<% end_hw() %>
 
