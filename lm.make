@@ -114,15 +114,32 @@ update_problems:
 	../scripts/merge_problems_data.rb $(BOOK) ../data
 
 web:
+	# To make html versions for blind people, don't do this; do 'make blind.'
 	@[ `which footex` ] || echo "******** footex is not installed, so html cannot be generated; get footex from http://www.lightandmatter.com/footex/footex.html"
 	@[ `which footex` ] || exit 1
 	@make preflight
 	@cp ../custom_html.yaml .
 	@../scripts/translate_to_html.rb --write_config_and_exit
 	@rm -f macros_not_handled
-	WOPT='$(WOPT) --html5' $(RUN_ERUBY)  w $(FIRST_CHAPTER) $(DIRECTORIES)  #... html 5 with mathml
-	WOPT='$(WOPT) --mathjax' $(RUN_ERUBY) w $(FIRST_CHAPTER) $(DIRECTORIES) #... html 4 with mathjax
+	# In the following, --test suppresses ads and make css file local.
+	WOPT='$(WOPT) --test --html5' $(RUN_ERUBY)  w $(FIRST_CHAPTER) $(DIRECTORIES)  #... html 5 with mathml
+	WOPT='$(WOPT) --test --mathjax' $(RUN_ERUBY) w $(FIRST_CHAPTER) $(DIRECTORIES) #... html 4 with mathjax
 	# To set options, do, e.g., "WOPT='--no_write' make web". Options are documented in translate_to_html.rb.
+
+blind:
+	# Html output with no figures, for use by blind people.
+	@[ `which footex` ] || echo "******** footex is not installed, so html cannot be generated; get footex from http://www.lightandmatter.com/footex/footex.html"
+	@[ `which footex` ] || exit 1
+	@make preflight
+	@cp ../custom_html.yaml .
+	@../scripts/translate_to_html.rb --write_config_and_exit
+	@rm -f macros_not_handled
+	# In the following, --test suppresses ads and make css file local.
+	WOPT='$(WOPT) --blind --test --html5' $(RUN_ERUBY)  w $(FIRST_CHAPTER) $(DIRECTORIES)  #... html 5 with mathml
+	# When done generating all books, make a Windows-compatible zip archive like this:
+	#   cd ~/Generated
+	#   zip -9 -y -r -q light_and_matter.zip html_books/
+	#   windows compatibility: https://superuser.com/questions/5155/how-to-create-a-zip-file-compatible-with-windows-under-linux
 
 wiki:
 	WOPT='$(WOPT) --wiki' $(RUN_ERUBY) w

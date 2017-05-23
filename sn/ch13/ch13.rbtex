@@ -4313,13 +4313,7 @@ become a famous physicist.
 
 <% begin_hw('h-atom-normalization') %>__incl(hw/h-atom-normalization)<% end_hw() %>
 
-<% begin_hw('three-d-forbidden') %>
-Show that a wavefunction of the form
-$\Psi = e^{by} \sin ax $ is a possible solution of the Schr\"odinger equation
-in two dimensions, with a constant potential.
-Can we tell whether it would apply to a classically allowed
-region, or a classically forbidden one?
-<% end_hw %>
+<% begin_hw('three-d-forbidden') %>__incl(hw/three-d-forbidden)<% end_hw %>
 
 <% begin_hw('three-d-box') %>
 Find the energy levels of a particle in a three-dimensional rectangular box with sides
@@ -4342,17 +4336,7 @@ tritium emission is almost unknown in nature; this is mainly because the tritium
 than the helium-4 nucleus, and the difference in binding energy reduces the energy available for the decay.
 <% end_hw %>
 
-<% begin_hw('photon-mass') %>
-As far as we know, the mass of the photon is zero. However, it's not possible to prove by experiments that
-anything is zero; all we can do is put an upper limit on the number. As of 2008, the best experimental upper limit on
-the mass of the photon is about $1\times 10^{-52}$ kg. Suppose that the photon's mass really isn't zero, and that
-the value is at the top of the range that is consistent with the present experimental evidence.
-In this case, the $c$ occurring in relativity would no longer be interpreted as the speed of light.
-As with material particles, the speed $v$ of a photon would depend on its
-energy, and could never be as great as $c$. Estimate the relative size $(c-v)/c$ of the discrepancy in speed,
-in the case of a photon with a frequency of 1 kHz, lying in the very low frequency radio range.
-\hwans{hwans:photon-mass}
-<% end_hw %>
+<% begin_hw('photon-mass') %>__incl(hw/photon-mass)<% end_hw %>
 
 <% begin_hw('hydrogen-ratio') %>__incl(hw/hydrogen-ratio)<% end_hw() %>
 

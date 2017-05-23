@@ -11,3 +11,13 @@ acceleration of the spinning earth out from under it, but also to the greater ra
 the earth at the equator. What is the accuracy with which the period
 of a one-second pendulum would have to be measured in order to prove that the earth
 was not a sphere, and that it bulged at the equator?\answercheck
+%
+% It's easy to get confused about this. The oblateness effect is basically an effect
+% because you're farther from the earth's mass. (It also increases the centrifugal
+% effect, but that's a second-order effect.)
+% Effect for a spherical earth:
+% calc -e "T=24*(3600 s); omega=2pi/T; r=6370 km->m; ; g=9.8 m/s2; a=omega^2r; a[cos(70deg)-1]"
+% -0.0221658445133495 m/s2
+% Actual difference between equator and poles:
+%   https://en.wikipedia.org/wiki/Gravity_of_Earth#Latitude
+%   .052 m/s2
