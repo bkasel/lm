@@ -1560,3 +1560,16 @@ equal, the quantity $1/r_1-1/r_2$ equals zero, and the resulting focal
 length is infinite. A big focal length indicates a weak lens. An infinite
 focal length tells us that the lens is infinitely weak --- it doesn't
 focus or defocus rays at all.
+
+\noindent\formatlikesubsection{Solutions for Chapter \ref{ch:quantum}}\\
+
+\hwsolnhdr{square-wavefunction}
+The expressions $|\Psi|^2$ and $|\Psi^2|$ are identical, because the
+magnitude of a product is the product of the magnitudes. These expressions
+give positive real numbers as their results, which makes sense for
+a probability density. The expression $\Psi^2$ need not be real, and
+if it is real, it may be negative. It cannot be interpreted as a probability
+density. As a concrete example, suppose that $\Psi= b i$, where $b$ is a real
+number with units.
+Then $|\Psi|^2=|\Psi^2|=b^2$, which is real and positive, but $\Psi^2=-b^2$,
+which clearly can't be interpreted probabilistically, because it's negative.
