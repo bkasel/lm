@@ -209,6 +209,12 @@ First find the energy stored in a spherical shell extending
 from $r$ to $r+\der r$, then integrate to find the total
 energy.
 
+\hwsolnhdr{dipole-in-nonuniform-field}
+We have $D=q\ell$ and $F_x=qb\ell=D\partial E_x/\partial x$, which, as
+claimed, is consistent with the result of example
+\ref{eg:dipole-in-nonuniform-field-fancy} on p.~\pageref{eg:dipole-in-nonuniform-field-fancy}
+and depends on $q$ and $\ell$ only via $D$.
+
 \noindent\formatlikesubsection{Hints for Chapter \ref{ch:em}}\\
 \hwanshdr{nestedsolenoids}\label{hwhint:nestedsolenoids}
 A stable system has low energy; energy would have to be added to

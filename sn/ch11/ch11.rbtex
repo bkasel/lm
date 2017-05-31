@@ -3714,6 +3714,7 @@ energy transformations involved, and determine whether positive or negative work
 <% end_sec() %>
 <% begin_sec("Magnetic materials") %>
 
+<% begin_sec("Magnetic permeability") %>
 Atoms and molecules may have magnetic dipole moments as well as electric dipole moments. Just as an electric dipole contains
 bound charges, a magnetic dipole has bound currents, which come from
 the motion of the electrons as they orbit the nucleus, \subfigref{permeability}{1}. Such a substance, subjected to a magnetic field, tends to align
@@ -3944,7 +3945,9 @@ purpose.
     }
   )
 %>
+<% end_sec() %>
 
+<% begin_sec("Ferromagnetism") %>
 The very last magnetic phenomenon we'll discuss is probably the very first experience you ever had of magnetism.\index{ferromagnetism}
 Ferromagnetism is a phenomenon in which a material tends to organize itself so that it has a nonvanishing magnetic field.
 It is exhibited strongly by iron and nickel, which explains the origin of the name.
@@ -4027,17 +4030,49 @@ compass's orientation to be determined in two or (for aircraft) three dimensions
 %>
 <% end_marg %>
 
- % <% end_sec() %>
-<% begin_sec("Maxwell's equations in differential form") %> 
- % show E and B are really perpendicular to each other in em wave: proof is trivial, 
- % since only some partial derivatives exist; don't even need to evaluate the curl 
- % \label{eg:ebperp} 
- % 
- % show that a sine wave is a solution of M's eqns 
- % \label{eg:ebsinesoln} 
- %  
- % 
- %  
+\begin{eg}{Sharp magnet poles}\label{eg:sharp-magnet-poles}
+Although a ferromagnetic material does not really have a single value of the magnetic permeability,
+there is still a strong tendency to have $\vc{B}_\parallel\approx 0$ just outside the magnet's surface,
+for the same reasons as discussed above for high-permeability substances in general. For example, if
+we have a cylindrical bar magnet about the size and shape of your finger, magnetized lengthwise, then the field
+near the ends is nearly perpendicular to the surfaces, while the field near the sides, although it may be
+oriented nearly parallel to the surface, is very weak, so that we still have $\vc{B}_\parallel\approx 0$.
+This is in close analogy to the situation for the \emph{electric} field near the surface of a conductor in
+equilibrium, for which $\vc{E}_\parallel=0$. This analogy is close enough so that we can recycle much
+of our knowledge about electrostatics.
+
+For example, we saw in example \ref{eg:lightning-rod}, p.~\pageref{eg:lightning-rod},
+and problem \ref{hw:lightning-rod}, p.~\pageref{hw:lightning-rod},
+that charge tends to collect on the most highly curved portions of a conductor, and therefore
+becomes especially dense near a corner or knife-edge. This gives us a way of making especially
+intense magnetic fields. Most people would imagine that a very intense field could be made simply
+by using a very large and bulky permanent magnet, but this doesn't actually work very well, because
+magnetic dipole fields fall off as $1/r^3$, so that at a point near the surface,
+nearly all the field is contributed by atoms near the surface. Our analogy with electrostatics suggests that
+we should instead construct a permanent magnet with a sharp edge.
+
+Figure \figref{sharp-magnet-poles} shows the cross-sectional shapes of two magnet poles used
+in the historic Stern-Gerlach experiment. The external magnetic field is represented using field lines.
+The field lines enter and exit the surfaces perpendicularly, and they are particularly dense
+near the corner of the upper pole, indicating a strong field. The spreading of the field lines
+indicates that the field is strongly nonuniform, becoming much weaker toward the bottom of the
+gap between the poles. This strong nonuniformity was crucial for the experiment, in which the
+magnets were used as part of a dipole spectrometer. See example \ref{eg:dipole-in-nonuniform-field-fancy}
+and figure \figref{dipole-spectrometer} on p.~\pageref{fig:dipole-spectrometer} for an explanation of
+an electric version of such a spectrometer.
+\end{eg}
+
+<% marg(50) %>
+<%
+  fig(
+    'sharp-magnet-poles',
+    %q{Example \ref{eg:sharp-magnet-poles}.}
+  )
+%>
+<% end_marg %>
+
+<% end_sec() %>
+
 
 \backofchapterboilerplate{em}
 

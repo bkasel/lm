@@ -2068,7 +2068,8 @@ sn,10,54,div-rot-invariant,0
 sn,10,55,cylindrical-charge-given-field,0
 sn,10,56,addition-theorem-for-sine,1
 sn,10,57,cube-roots-of-unity,1
-sn,10,58,factor-cubic,1
+sn,10,58,factor-cubic,0
+sn,10,59,dipole-in-nonuniform-field,1
 sn,11,1,ebforce,0
 sn,11,2,righthandmodel,0
 sn,11,3,moveandcurve,0
@@ -2232,3 +2233,4 @@ sn,13,45,easy-electron-normalization,0
 sn,13,46,easy-partials,0
 sn,13,47,am-radio-photon-density,0
 sn,13,48,square-wavefunction,1
+sn,13,49,bogus-laplacian,1

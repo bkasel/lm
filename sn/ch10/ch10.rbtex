@@ -565,21 +565,6 @@ Find an equation for the magnitude of the field of a
         dipole because the electrons tend to shift away from the
         hydrogen atoms and onto the oxygen atom.
         
-        %
-<%
-  fig(
-    'dipoleinfield',
-    %q{%
-      1. A uniform electric field created by some charges 
-               ``off-stage.'' 2. A dipole is placed in the field. 3. The dipole aligns with the field.
-    },
-    {
-      'width'=>'wide',
-      'floatpos'=>'b'
-    }
-  )
-%>
-
         Your microwave oven acts on water molecules with electric
         fields. Let us imagine what happens if we start with a
         uniform electric field, \figref{dipoleinfield}/1, made by some external charges,
@@ -595,6 +580,20 @@ Find an equation for the magnitude of the field of a
         amount of random motion. The slightly vague definition of a
         dipole given above can be improved by saying that a dipole
         is any object that experiences a torque in an electric field.
+%
+<%
+  fig(
+    'dipoleinfield',
+    %q{%
+      1. A uniform electric field created by some charges 
+               ``off-stage.'' 2. A dipole is placed in the field. 3. The dipole aligns with the field.
+    },
+    {
+      'width'=>'wide',
+      'floatpos'=>'t'
+    }
+  )
+%>
         
         What determines the torque on a dipole placed in an
         externally created field? Torque depends on the force, the
@@ -634,7 +633,6 @@ Find an equation for the magnitude of the field of a
         of the charges. However, in the commonly encountered special case where
          the total charge of the object is zero, 
         the dipole moment is the same regardless of this choice.
-        
         
 
 \begin{eg}{Dipole moment of a molecule of NaCl gas}
@@ -691,6 +689,70 @@ moment.
         The main reason for introducing a second definition for the
         same concept is that the magnetic field is most easily
         defined using a similar approach.
+<% end_sec() %>
+<% begin_sec("Energy of a dipole in a field") %>
+        A dipole in an external field has a stable equilibrium orientation in which
+        $\vc{D}$ is parallel to $\vc{E}$. Since the vector cross product vanishes for parallel
+        vectors, the field's torque on the dipole is zero.
+        (There is also an unstable equilibrium with $\vc{D}$ and $\vc{E}$ antiparallel.)
+        This fact is probably more familiar from the magnetic context, where a magnetic dipole such
+        as a compass needle tends to align itself with an external magnetic field. We will encounter
+        magnetic fields and dipoles later, and they have many properties analogous to those of their
+        electric counterparts. Depending on its orientation, the dipole will have some interaction
+        energy $U$ when it interacts with the field. If the physical size of the dipole is small, the
+        electric field can be approximated as having a single value throughout.
+        Since energy is a scalar, and the dot product is
+        the only way (up to a multiplicative constant) to multiply two vectors to get a scalar
+        (sec.~\ref{subsec:dotproduct}, p.~\pageref{subsec:dotproduct}), we must
+        have $U\propto \vc{D}\cdot\vc{E}$. Because the energy is minimized when $\vc{D}$ and $\vc{E}$ are
+        parallel, the constant of proportionality must be negative, and one can easily show by considering
+        a concrete example that this constant equals $-1$. Therefore we have
+        \begin{equation*}
+                U = -\vc{D}\cdot\vc{E}\eqquad. \qquad\text{[energy of a pointlike dipole in a field]}
+        \end{equation*}\index{dipole!electric!energy due to orientation}
+
+        \vfill
+
+        \begin{eg}{Force on a dipole in a nonuniform field}\label{eg:dipole-in-nonuniform-field-fancy}
+        If a dipole with zero total charge is placed in a uniform field, it may experience a torque, but
+         it will not experience any \emph{force}. The situation changes if the field is nonuniform.
+        The force can be nonzero, and, perhaps more surprisingly, the force depends only on the dipole moment,
+        not on the details of the arrangement of the charges inside the dipole, provided that the dipole is
+        small enough. This can be shown either
+        by a brute-force calculation (problem \ref{hw:dipole-in-nonuniform-field}, \pageref{hw:dipole-in-nonuniform-field})
+        or by the following slightly slicker technique. The force in the $x$ direction is
+        \begin{equation*}
+          F_x = -\frac{\partial U}{\partial x},
+        \end{equation*}
+        where the symbol $\partial$ indicates a derivative with respect to the $x$ coordinate only, holding $y$ and
+        $z$ constant. (This is referred to as a partial derivative.) We then have
+        \begin{equation*}
+          F_x = -\frac{\partial }{\partial x}(\vc{D}\cdot\vc{E}) = \vc{D}\cdot\frac{\partial \vc{E}}{\partial x},
+        \end{equation*}
+        which depends on the dipole's properties only through $\vc{D}$. Similar expressions apply for the $y$ and $z$
+        components.
+
+        This principle can be used as a way of measuring the unknown dipole moments of a beam of particles, as
+        in figure \figref{dipole-spectrometer}.
+        \end{eg}
+
+<% marg(0) %>
+<%
+  fig(
+    'dipole-spectrometer',
+    %q{An electric dipole spectrometer. A beam of randomly oriented dipoles is shot through a ``croquet hoop''
+       consisting of two fixed positive charges. Although the field along the central axis of symmetry equals zero,
+       the field is nonuniform, and therefore the dipoles feel a nonvanishing force, and are sorted out according
+       to their orientations. A magnetic version of this device, described on p.~\pageref{eg:sharp-magnet-poles},
+       was used in the historic Stern-Gerlach experiment.}
+  )
+%>
+<% end_marg %>
+
+
+<% end_sec() %>
+
+\pagebreak
 
 \startdqs
 
@@ -760,7 +822,6 @@ ions shown in the figure.
 \end{dq}
 
  % ------------------------------------------------------------------------------------ 
-<% end_sec() %>
 <% end_sec() %>
 <% end_sec %>
 <% begin_sec("Voltage Related to Field") %>%
@@ -874,7 +935,7 @@ Show that you can recover the expression for the field of a
   ) %>
 
 <% end_sec() %>
-<% begin_sec("Two or three dimensions",4,'evthreed') %>
+<% begin_sec("Two or three dimensions",nil,'evthreed') %>
         The topographical map in figure \figref{topo} suggests a good
         way to visualize the relationship between field and voltage
         in two dimensions. Each contour on the map is a line of
@@ -976,7 +1037,8 @@ Imagine that figure \figref{topo} represents voltage rather
       really two-dimensional voltage patterns being represented. The third (up-down) dimension represents voltage, not position.
     },
     {
-      'width'=>'wide'
+      'width'=>'wide',
+      'sidecaption'=>true
     }
   )
 %>
@@ -1447,7 +1509,7 @@ Imagine that figure \figref{topo} represents voltage rather
 
 <% end_sec() %>
 <% end_sec() %>
-<% begin_sec("Energy in Fields",4,'fieldenergy') %>
+<% begin_sec("Energy in Fields",nil,'fieldenergy') %>
         <% begin_sec("Electric field energy") %>
         Fields possess energy, as argued on page \pageref{fieldenergy}, but how much energy?
         The answer can be found using the following elegant approach. We assume that the electric energy
@@ -1464,14 +1526,6 @@ Imagine that figure \figref{topo} represents voltage rather
         the only scalar we can form is $\vc{E}\cdot\vc{E}$, which is the square of the magnitude
         of the electric field vector.
         
-<% marg(0) %>
-<%
-  fig(
-    'pullplates',
-    %q{Two oppositely charged capacitor plates are pulled apart.}
-  )
-%>
-<% end_marg %>
         In principle, the energy function we are seeking could
         be proportional to $\vc{E}\cdot\vc{E}$, or to any function computed from it, such as
         $\sqrt{\vc{E}\cdot\vc{E}}$ or $(\vc{E}\cdot\vc{E})^7$. On physical grounds, however,
@@ -1487,6 +1541,16 @@ Imagine that figure \figref{topo} represents voltage rather
         touching, their fields cancel everywhere, and there is zero electrical energy.
         When they are separated, there is still approximately zero field on the outside, but the field
         between the plates is nonzero, and holds some energy.
+
+<% marg(0) %>
+<%
+  fig(
+    'pullplates',
+    %q{Two oppositely charged capacitor plates are pulled apart.}
+  )
+%>
+<% end_marg %>
+
         Now suppose we carry out the whole process, but with the plates carrying double
         their previous charges. Since Coulomb's law involves the product $q_1q_2$ of two
         charges, we have quadrupled the force between any given pair of charged particles,
@@ -4726,10 +4790,19 @@ Find every complex number $z$ such that $z^3=1$.
 Factor the expression $x^3-y^3$ into factors of the lowest possible
 order, using complex coefficients. (Hint: use the result of problem \ref{hw:cube-roots-of-unity}.) Then do the same using real
 coefficients.
-<% hw_solution %>
 <% end_hw() %>
 
 
+<% begin_hw('dipole-in-nonuniform-field') %>
+A dipole consists of two point charges lying on the $x$ axis,
+a charge $-q$ at the origin, and a $+q$ at $x=\ell$.  The dipole is
+immersed in an externally imposed, nonuniform electric field with $E_x=bx$, where
+$b$ is a constant. Add the forces acting on the dipole. Verify that
+the total force depends only on the dipole moment, not on $q$ or $\ell$ individually,
+and that the result is the same as the one found by a fancier method in example
+\ref{eg:dipole-in-nonuniform-field-fancy} on p.~\pageref{eg:dipole-in-nonuniform-field-fancy}.
+<% hw_solution %>
+<% end_hw() %>
 
 
 

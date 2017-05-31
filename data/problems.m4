@@ -2069,6 +2069,7 @@ m4_define(__hw_sn_10_cylindrical-charge-given-field,55)m4_dnl
 m4_define(__hw_sn_10_addition-theorem-for-sine,56)m4_dnl
 m4_define(__hw_sn_10_cube-roots-of-unity,57)m4_dnl
 m4_define(__hw_sn_10_factor-cubic,58)m4_dnl
+m4_define(__hw_sn_10_dipole-in-nonuniform-field,59)m4_dnl
 m4_define(__hw_sn_11_ebforce,1)m4_dnl
 m4_define(__hw_sn_11_righthandmodel,2)m4_dnl
 m4_define(__hw_sn_11_moveandcurve,3)m4_dnl
@@ -2232,3 +2233,4 @@ m4_define(__hw_sn_13_easy-electron-normalization,45)m4_dnl
 m4_define(__hw_sn_13_easy-partials,46)m4_dnl
 m4_define(__hw_sn_13_am-radio-photon-density,47)m4_dnl
 m4_define(__hw_sn_13_square-wavefunction,48)m4_dnl
+m4_define(__hw_sn_13_bogus-laplacian,49)m4_dnl
