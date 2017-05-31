@@ -2231,3 +2231,4 @@ m4_define(__hw_sn_13_neutron-as-proton-plus-electron,44)m4_dnl
 m4_define(__hw_sn_13_easy-electron-normalization,45)m4_dnl
 m4_define(__hw_sn_13_easy-partials,46)m4_dnl
 m4_define(__hw_sn_13_am-radio-photon-density,47)m4_dnl
+m4_define(__hw_sn_13_square-wavefunction,48)m4_dnl

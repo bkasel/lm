@@ -4366,6 +4366,8 @@ than the helium-4 nucleus, and the difference in binding energy reduces the ener
 
 <% begin_hw('square-wavefunction') %>__incl(hw/square-wavefunction)<% end_hw() %>
 
+<% begin_hw('bogus-laplacian') %>__incl(hw/bogus-laplacian)<% end_hw() %>
+
 
 <% end_hw_sec %>
 
