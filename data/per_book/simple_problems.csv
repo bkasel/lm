@@ -277,7 +277,7 @@ sn,7,14,velocity-addition-double-limit,0
 sn,7,15,ke-taylor,0
 sn,7,16,p-rel-taylor,0
 sn,7,17,rel-vel-addition,1
-sn,7,18,congruent-four-vectors,0
+sn,7,18,congruent-four-vectors,1
 sn,7,19,momentum-cone,0
 sn,7,20,no-pe-in-vacuum,0
 sn,7,21,doppler-taylor,0

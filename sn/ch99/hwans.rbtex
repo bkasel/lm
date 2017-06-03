@@ -176,18 +176,6 @@ $y$ in terms of $x$ in order to evaluate the right-hand side.
 \hwanshdr{tossed-clock}\label{hwhint:tossed-clock}
  Apply the equivalence principle.
 
-
-\noindent\formatlikesubsection{Hints for Chapter \ref{ch:atomem}}\\
-\hwanshdr{nacl}\label{hwhint:nacl}
-The force
-on the lithium ion is the vector sum of all the forces of
-all the quadrillions of sodium and chlorine atoms, which
-would obviously be too laborious to calculate.  Nearly all
-of these forces, however, are canceled by a force from an
-ion on the opposite side of the lithium.
-
-
-
 \noindent\formatlikesubsection{Hints for Chapter \ref{ch:efield}}\\
 \hwanshdr{dipolev}\label{hwhint:dipolev}
 Use the approximation $(1+\epsilon)^p\approx1+p\epsilon$, 
@@ -1369,6 +1357,21 @@ Solving for $w$,\index{velocity!addition of!relativistic}
 both $u$ and $v$ are small compared to 1. Under those circumstances, $uv$ is the product of two very small
 numbers, which makes it very, very small. Neglecting this term in the denominator, we recover the nonrelativistic result.
 
+\hwsolnhdr{congruent-four-vectors}
+Among the spacelike vectors, $\vc{a}$ and $\vc{e}$ are clearly congruent,
+because they're the same except for a rotation in space; this is the same
+as the definition of congruence in ordinary Euclidean geometry, where rotation
+doesn't matter. Vector $\vc{b}$ is also congruent to these, since it
+represents an interval $3^2-5^2=-4^2$, just like the other two.
+
+The lightlike vectors $\vc{c}$ and $\vc{d}$ both represent intervals of
+zero, so they're congruent, even though $\vc{c}$ is a double-scale version
+of $\vc{d}$.
+
+The timelike vectors $\vc{f}$ and $\vc{g}$ are not congruent to each other
+or to any of the others; $\vc{f}$ represents an interval of $2^2$, while
+$\vc{g}$'s interval is $4^2$.
+
 
 \hwsolnhdr{angular-defect}
       At the center of each of the
@@ -1381,6 +1384,16 @@ frame there is no gravitational field. We see a desk and clock A go by. The desk
 a force to clock A, decelerating it and then reaccelerating it so that it comes back.
 We've already established that the effect of motion is to slow down time, so clock
 A reads a smaller time interval.
+
+
+\noindent\formatlikesubsection{Hints for Chapter \ref{ch:atomem}}\\
+\hwanshdr{nacl}\label{hwhint:nacl}
+The force
+on the lithium ion is the vector sum of all the forces of
+all the quadrillions of sodium and chlorine atoms, which
+would obviously be too laborious to calculate.  Nearly all
+of these forces, however, are canceled by a force from an
+ion on the opposite side of the lithium.
 
 \noindent\formatlikesubsection{Solutions for Chapter \ref{ch:dccircuits}}\\
 \hwsolnhdr{timebetweenelectrons}

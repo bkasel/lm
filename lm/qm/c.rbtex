@@ -912,7 +912,7 @@ to himself that the cat is still living, if in that time no
 atom has disintegrated. The first atomic disintegration
 would have poisoned it.
 \end{longquote}
-
+%
 <% marg(50) %>
 <%
   fig(
@@ -921,6 +921,7 @@ would have poisoned it.
   )
 %>
 <% end_marg %>
+%
 \noindent Now comes the strange part. Quantum mechanics says that the
 particles the cat is made of have wave properties,
 including the property of superposition. Schr\"odinger
