@@ -1,5 +1,5 @@
-require 'chunky_png' # ubuntu package ruby-chunky-png
-
+require 'chunky_png'
+  # ubuntu package ruby-chunky-png
 require 'hsluv' 
   # http://www.hsluv.org
   # https://github.com/hsluv/hsluv-ruby
@@ -33,7 +33,99 @@ $color_lut = [
 def main
   w = $default_width
   h = 100
-  type = 'standing'
+  type = 'moat'
+  if type=='traveling' then
+    image = ChunkyPNG::Image.new(w,h,$bg_color)
+    freq = 4.0 # spatial frequency
+    0.upto(w-1) { |x|
+      0.upto(h-1) { |y|
+        phase = index_to_phase(x,w,freq)
+        image[x,y] = color([1.0,phase])
+      }
+    }
+  end
+  if type=='standing' then
+    image = ChunkyPNG::Image.new(w,h,$bg_color)
+    freq = 4.0 # spatial frequency
+    0.upto(w-1) { |x|
+      0.upto(h-1) { |y|
+        phase1 = index_to_phase(x,w,freq)
+        phase2 = index_to_phase((w-1)-x,w,freq)
+        a = 0.5*(euler(phase1)+euler(phase2))
+        image[x,y] = color([a.magnitude,a.arg])
+      }
+    }
+  end
+  if type=='moat' then
+    h = (0.8*w).to_i
+    image = ChunkyPNG::Image.new(w,h,$bg_color)
+    freq = 8.0 # spatial frequency
+    r = (w*0.4).to_i
+    s = r*0.8 # width of strip
+    alpha = 0.5 # aspect ratio of moat
+    0.upto(1) { |layer|
+      0.upto(w-1) { |x|
+        xx = (x.to_f-w/2.0)
+        next if xx.abs>r
+        theta = Math::acos(xx/r) # 0 to pi
+        if layer==1 then theta=2.0*$PI-theta end
+        0.upto(h-1) { |y|
+          yy = -(y.to_f-h/2.0)
+          z = yy-alpha*r*Math::sin(theta) # distance from midline of strip
+          if z>-s/2.0 && z<s/2.0 then image[x,y] = color([1.0,8.0*theta]) end
+        }
+      }
+    }
+  end
+  if type=='reflection' then
+    h = 25
+    image = ChunkyPNG::Image.new(w,h,$bg_color)
+    # https://en.wikipedia.org/wiki/Solution_of_Schr%C3%B6dinger_equation_for_a_step_potential
+    k1 = 20
+    k2 = k1*0.2
+    incident = 0.85
+    reflected = -(k1-k2)/(k1+k2) # they have the expression without the -, which seems wrong
+    transmitted = incident+reflected # continuous function
+    0.upto(w-1) { |x|
+      0.upto(h-1) { |y|
+        xx = (x-w/2.0)/(w/2.0)
+        if xx<0.0 then
+          a = incident*euler(k1*xx)+reflected*euler(-k1*xx)
+        else
+          a = transmitted*euler(k2*xx)
+        end
+        mag = a.magnitude**0.25 # otherwise it's hard to see the transmitted wave
+        image[x,y] = color([mag,a.arg])
+      }
+    }
+  end
+  if type=='box' then
+    h = (w*0.67).to_i
+    image = ChunkyPNG::Image.new(w,h,$bg_color)
+    0.upto(w-1) { |x|
+      0.upto(h-1) { |y|
+        phase1 = index_to_phase(x,w,1.0)
+        phase2 = index_to_phase(y,h,1.5)
+        image[x,y] = color([Math::sin(phase1)*Math::sin(phase2),0.0]) # OK if mag<0, will get fixed by color()
+      }
+    }
+  end
+  if type=='complex_plane' then
+    h = w
+    image = ChunkyPNG::Image.new(w,h,$bg_color)
+    0.upto(w-1) { |x|
+      0.upto(h-1) { |y|
+        xx = (x.to_f-h/2.0)/(h/2.0)
+        yy = -(y.to_f-h/2.0)/(h/2.0)
+        r = Math::sqrt(xx*xx+yy*yy)
+        # if true then 
+        if r<=1.0 then
+          arg = Math::atan2(yy,xx)
+          image[x,y] = color([r,arg])
+        end
+      }
+    }
+  end
   if type=='double_slit' then
     w = $default_width
     h = w
@@ -90,77 +182,6 @@ def main
             mag = 0.25*mag+0.75*mag2
           end  
           image[x,y] = color([mag,a.arg])
-        end
-      }
-    }
-  end
-  if type=='traveling' then
-    image = ChunkyPNG::Image.new(w,h,$bg_color)
-    freq = 4.0 # spatial frequency
-    0.upto(w-1) { |x|
-      0.upto(h-1) { |y|
-        phase = index_to_phase(x,w,freq)
-        image[x,y] = color([1.0,phase])
-      }
-    }
-  end
-  if type=='standing' then
-    image = ChunkyPNG::Image.new(w,h,$bg_color)
-    freq = 4.0 # spatial frequency
-    0.upto(w-1) { |x|
-      0.upto(h-1) { |y|
-        phase1 = index_to_phase(x,w,freq)
-        phase2 = index_to_phase((w-1)-x,w,freq)
-        a = 0.5*(euler(phase1)+euler(phase2))
-        image[x,y] = color([a.magnitude,a.arg])
-      }
-    }
-  end
-  if type=='reflection' then
-    h = 25
-    image = ChunkyPNG::Image.new(w,h,$bg_color)
-    # https://en.wikipedia.org/wiki/Solution_of_Schr%C3%B6dinger_equation_for_a_step_potential
-    k1 = 20
-    k2 = k1*0.2
-    incident = 0.85
-    reflected = -(k1-k2)/(k1+k2) # they have the expression without the -, which seems wrong
-    transmitted = incident+reflected # continuous function
-    0.upto(w-1) { |x|
-      0.upto(h-1) { |y|
-        xx = (x-w/2.0)/(w/2.0)
-        if xx<0.0 then
-          a = incident*euler(k1*xx)+reflected*euler(-k1*xx)
-        else
-          a = transmitted*euler(k2*xx)
-        end
-        mag = a.magnitude**0.25 # otherwise it's hard to see the transmitted wave
-        image[x,y] = color([mag,a.arg])
-      }
-    }
-  end
-  if type=='box' then
-    h = (w*0.67).to_i
-    image = ChunkyPNG::Image.new(w,h,$bg_color)
-    0.upto(w-1) { |x|
-      0.upto(h-1) { |y|
-        phase1 = index_to_phase(x,w,1.0)
-        phase2 = index_to_phase(y,h,1.5)
-        image[x,y] = color([Math::sin(phase1)*Math::sin(phase2),0.0]) # OK if mag<0, will get fixed by color()
-      }
-    }
-  end
-  if type=='complex_plane' then
-    h = w
-    image = ChunkyPNG::Image.new(w,h,$bg_color)
-    0.upto(w-1) { |x|
-      0.upto(h-1) { |y|
-        xx = (x.to_f-h/2.0)/(h/2.0)
-        yy = -(y.to_f-h/2.0)/(h/2.0)
-        r = Math::sqrt(xx*xx+yy*yy)
-        # if true then 
-        if r<=1.0 then
-          arg = Math::atan2(yy,xx)
-          image[x,y] = color([r,arg])
         end
       }
     }

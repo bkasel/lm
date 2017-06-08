@@ -3329,7 +3329,9 @@ wavefunction, so we have
 Figure \figref{rainbow} shows a method for visualizing complex wavefunctions. The idea
 is to use colors to represent complex numbers, according to the arbitrary convention
 defined in figure \subfigref{rainbow}{1}. Brightness indicates magnitude, and the rainbow
-hue shows the argument. To avoid any confusion, we note that the use of rainbow colors does
+hue shows the argument. Because this representation can't be understood in a black and white
+printed book, the figure is also reproduced on the back cover of printed copies.
+To avoid any confusion, note that the use of rainbow colors does
 not mean that we are representing actual visible light. In fact, we will be using these
 visual conventions to represent the wavefunctions of a material particle such as an electron.
 It is arbitrary that we use red for positive real numbers and blue-green for negative numbers,
@@ -3598,8 +3600,11 @@ good approximation.)
 <% marg(0) %>
 <%
   fig(
-    'wrapping-wave',
-    %q{Eight wavelengths fit around this circle ($\ell=8$).}
+    'moat-rainbow',
+    %q{1.~Eight wavelengths fit around this circle ($\ell=8$). This is a standing wave.
+       2.~A traveling wave with $\ell=8$, depicted according to the color conventions
+          defined in figure \figref{rainbow}, p.~\pageref{fig:rainbow}.
+      }
   )
 %>
 <% end_marg %>
@@ -3719,13 +3724,69 @@ not restrict the accuracy of our knowledge of angular
 momenta as severely as might be imagined. However, it does
 prevent us from knowing all three components of an angular
 momentum vector simultaneously. The most general statement
-about this is the following theorem, which we present without proof:
+about this is the following theorem:
 
 \begin{important}[The angular momentum vector in quantum physics]
-The most that can be known about an angular momentum vector
+The most that can be known about a (nonzero) orbital angular momentum vector
 is its magnitude and one of its three vector components.
 Both are quantized in units of $\hbar$.
 \end{important}
+
+<% marg() %>
+<%
+  fig(
+    'spherical-harmonic',
+    %q{%
+      A wavefunction on the sphere with $|\vc{L}|=11\hbar$ and $L_z=8\hbar$, shown using the color conventions
+          defined in figure \figref{rainbow}, p.~\pageref{fig:rainbow}.
+    }
+  )
+%>
+<% end_marg %>
+
+To see why this is true, consider the example wavefunction shown in figure \figref{spherical-harmonic}.
+This is the like the quantum moat of figure \figref{moat-rainbow}, p.~\pageref{fig:moat-rainbow},
+but extended to one more dimension.
+If we slice the sphere in any plane perpendicular to the $z$ axis, we get an 8-cycle circular rainbow exactly
+like figure \figref{moat-rainbow}. This is required because $L_z=8\hbar$. But if we take a slice perpendicular
+to some other axis, such as the $y$ axis, we don't get a circular rainbow as we would for a state with a
+definite value of $L_y$. It is obviously not possible to get circular rainbows for slices perpendicular to more
+than one axis.
+
+For those with a taste for rigor, here is a
+complete argument:
+
+\noindent Theorem: On the sphere, if a wavefunction has
+definite values of both $L_z$ and $L_x$, then it is a wavefunction
+that is constant everywhere, so $\vc{L}=0$.
+
+\noindent Lemma 1: If component of $\ell_A$ 
+along a certain axis A has a definite value and is nonzero, then (a)
+$\Psi=0$ at the poles, and (b) $\Psi$ is of the form $Ae^{i\ell_A\phi}$ on any circle in
+a plane perpendicular to the axis. Part a holds because $\vc{L}=0$ if $r_\perp=0$.
+For b, see p.~\pageref{fig:moat-rainbow}.
+
+\noindent Lemma 2: If the component of $\vc{L}$ along a certain axis has a
+definite value and is zero, then $\Psi$ is constant in any plane perpendicular to that axis.
+This follows from lemma 1 in the case where $\ell_A=0$.
+
+\noindent \emph{Case I: $\ell_z$ and $\ell_x$ are both nonzero.}
+We have $\Psi=0$ at the poles along both the $x$ axis and
+the $z$ axis. The $z$-axis pole is a point on the great circle
+perpendicular to the $x$ axis, and vice versa, so applying 1b, $A=0$ and $\Psi$
+vanishes on both of these great circles. But now if we apply 1b along
+any slice perpendicular to either axis, we get $\Psi=0$ everywhere on
+that slice, so $\Psi=0$ everywhere.
+
+\noindent \emph{Case II: $\ell_z$ and $\ell_x$ are both zero.}
+By lemma 2, $\Psi$ is a constant everywhere.
+
+\noindent \emph{Case III: One component is zero and the other nonzero.}
+Let $\ell_z$ be the one that is zero.
+By 1a, $\Psi=0$ at the $x$-axis pole, so by 2, $\Psi=0$ on the great circle perpendicular to $z$.
+But then 1b tells us that $\Psi=0$ everywhere.
+
+\pagebreak
 
  % Used this figure at beginning of section, without caption 
  % or label. 
