@@ -3007,7 +3007,7 @@ From these, find the real and imaginary parts of $1/(1+i)$.
 \end{dq}
 
 <% end_sec() %>
-<% begin_sec("Euler's formula") %>\index{Euler's formula}\index{Euler, Leonhard}
+<% begin_sec("Euler's formula",nil,'euler-formula') %>\index{Euler's formula}\index{Euler, Leonhard}
 Having expanded our horizons to include the complex numbers, it's natural to want to extend
 functions we knew and loved from the world of real numbers so that they can also operate on
 complex numbers. The only really natural way to do this in general is to use Taylor series.
@@ -3090,7 +3090,7 @@ be a constant, which could be subsumed within the usual constant of integration.
 
 \end{eg}
 
-<% end_sec() %>
+<% end_sec('euler-formula') %>
 <% begin_sec("Impedance",nil,'impedance') %>\index{impedance}
  % 
 So far we have been thinking in terms of the free oscillations

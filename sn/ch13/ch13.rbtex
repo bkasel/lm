@@ -3325,6 +3325,92 @@ wavefunction, so we have
          = \frac{|b+bi|^2}{|b+b|^2} = \frac{1^2+1^2}{2^2+0^2} = \frac{1}{2}\eqquad.
 \end{equation*}
 \end{eg}
+
+Figure \figref{rainbow} shows a method for visualizing complex wavefunctions. The idea
+is to use colors to represent complex numbers, according to the arbitrary convention
+defined in figure \subfigref{rainbow}{1}. Brightness indicates magnitude, and the rainbow
+hue shows the argument. To avoid any confusion, we note that the use of rainbow colors does
+not mean that we are representing actual visible light. In fact, we will be using these
+visual conventions to represent the wavefunctions of a material particle such as an electron.
+It is arbitrary that we use red for positive real numbers and blue-green for negative numbers,
+and that we pick a handedness for the diagram such that going from red toward yellow means
+going counterclockwise. Although physically the rainbow is a linear spectrum, we are not
+representing physical colors here, and we are exploiting the fact that the human brain
+tends to perceive color as a circle rather than a line, with violet and red being perceptually
+similar. One of the limitations of this representation is that brightness is limited, so we
+can't represent complex numbers with arbitrarily large magnitudes.
+%
+<%
+  fig(
+    'rainbow',
+    %q{%
+      1.~An arbitrary representation of complex numbers using color and brightness.
+      2.~A wave traveling toward the right.
+      3.~A wave traveling toward the left.
+      4.~A standing wave formed by superposition of waves 2 and 3.
+      5.~A two-dimensional standing wave.
+      6.~A double-slit diffraction pattern.
+    },
+    {
+      'width'=>'wide',
+      'sidecaption'=>true
+    }
+  )
+%>
+
+Figure \subfigref{rainbow}{2} shows a traveling wave as it propagates to the right.
+The standard convention in physics is that for a wave moving in a certain direction,
+the phase in the forward direction is farther counterclockwise in the complex plane, and
+you can verify for yourself that this is the case by comparing with the convention
+defined by \subfigref{rainbow}{1}. The function being plotted here is $\Psi=e^{ikx}$,
+where $k=2\pi/\lambda$ is the spatial analog of frequency, with an extra factor of $2\pi$ for
+convenience. For the use of the complex exponential, see sec.~\ref{subsec:euler-formula},
+p~.\pageref{subsec:euler-formula}; it simply represents a point on the unit circle in the
+complex plane. The wavelength $\lambda$
+is a constant and can be measured, for example, from one yellow point to the next. The wavelength
+is \emph{not} different at different points on the figure, because we are using the colors merely
+as a visual encoding of the complex numbers --- so, for example, a red point on the figure is
+not a point where the wave has a longer wavelength than it does at a blue point.
+
+Figure \subfigref{rainbow}{3} represents a wave travaling to the left.
+
+Figure \subfigref{rainbow}{4} shows a standing wave created by superimposing the traveling
+waves from \subfigref{rainbow}{2} and \subfigref{rainbow}{3}, $\Psi_4=(\Psi_2+\Psi_3)/2$. (The reason
+for the factor of 2 is simply that otherwise some portions of $\Psi_4$ would have magnitudes too great to be
+represented using the available range of brightness.) All points on this wave have real values,
+represented by red and blue-green. We made the superposition real by an appropriate choice of
+the phases of $\Psi_2$ and $\Psi_3$. This is always possible to do when we have a standing wave,
+but it is \emph{only} possible for a standing wave, and this is the reason for all of the disclaimers
+in the captions of previous figures in which I took the liberty of representing a traveling wave as
+a sine-wave graph.
+
+\begin{eg}{A paradox resolved}
+Consider the following paradox. Suppose we have an electron that is traveling wave, and
+its wavefunction looks like a wave-train consisting of 5 cycles of a sine wave. Call the distance
+between the leading and trailing edges of the wave-train $L$, so that $\lambda=L/5$.
+By sketching the wave, you can easily check that
+there are 11 points where its value equals zero. Therefore at a particular moment in time, there are 11 points
+where a detector has zero probability of detecting the electron.
+
+But now consider how this would look in a frame of reference where the electron is moving
+more slowly, at one fifth of the speed we saw in the original frame. In this frame, $L$ is
+the same, but $\lambda$ is five times greater, because $\lambda=h/p$. Therefore in this frame
+we see only one cycle in the wave-train. Now there are only 3 points where the probability
+of detection is zero. But how can this be? All observers, regardless of their frames of reference, should agree
+on whether a particular detector detects the electron.
+
+The resolution to this paradox is that it starts from the assumption that we can depict
+a traveling wave as a real-valued sine wave, which is zero in certain places. Actually, we can't.
+It has to be a complex number with a rotating phase angle in the complex plane, as in figure
+\subfigref{rainbow}{2}, and a
+\emph{constant} magnitude.
+\end{eg}
+
+Figure \subfigref{rainbow}{5} shows a two-dimensional standing wave of a particle in a box,
+and \subfigref{rainbow}{6} shows a double-slit interference pattern. (In the latter, I've cheated
+by making the amplitude of the wave on the right-hand half of the picture much greater than it
+would actually be.)
+
 <% end_sec('complex-wavefunction') %>
 <% begin_sec("Linearity of the Schr\\\"odinger equation",nil,'linearity-of-schrodinger') %>
 Some mathematical relationships and operations are \emph{linear}, and some are not.
