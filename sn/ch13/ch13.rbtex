@@ -3346,7 +3346,7 @@ can't represent complex numbers with arbitrarily large magnitudes.
   fig(
     'rainbow',
     %q{%
-      1.~An arbitrary representation of complex numbers using color and brightness.
+      1.~A representation of complex numbers using color and brightness.
       2.~A wave traveling toward the right.
       3.~A wave traveling toward the left.
       4.~A standing wave formed by superposition of waves 2 and 3.
