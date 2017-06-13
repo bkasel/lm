@@ -3448,7 +3448,9 @@ an approximation to some more precise, nonlinear theory. This is not currently b
 case. If we are to make sense of Schr\"odinger's cat
 (p.~\pageref{subsubsec:qm-measurement}), then the experimenter who sees a live cat and the one
 who sees a dead cat must remain oblivious to their other selves, like the ripples on the pond
-that intersect without ``seeing'' each other.
+that intersect without ``seeing'' each other. Attempts to create slightly nonlinear versions
+of standard quantum mechanics have been shown to have implausible physical properties, such as
+allowing the propagation of signals faster than $c$.
 
 If you have had a course in linear algebra, then it is worth noting that the
 linearity of the Schr\"odinger equation allows us to talk about its solutions as vectors in a vector
@@ -3494,8 +3496,6 @@ What happens with standing waves?
   )
 %>
 <% end_marg %>
-
-\pagebreak
 
 \begin{dq}
 The figure shows a skateboarder tipping over into a swimming pool with zero
@@ -3785,6 +3785,56 @@ By lemma 2, $\Psi$ is a constant everywhere.
 Let $\ell_z$ be the one that is zero.
 By 1a, $\Psi=0$ at the $x$-axis pole, so by 2, $\Psi=0$ on the great circle perpendicular to $z$.
 But then 1b tells us that $\Psi=0$ everywhere.
+
+<%
+  fig(
+    'completeness-ylm',
+    %q{%
+      Example \ref{eg:completeness-ylm}.
+    },
+    {
+      'width'=>'wide',
+      'sidecaption'=>true
+    }
+  )
+%>
+
+\begin{eg}{Completeness}\label{eg:completeness-ylm}
+For a given value of $\ell$, consider the set of angular momentum states with $|\vc{L}|=\hbar\ell$
+and the various possible values of the angular momentum's component along some fixed axis.
+This set of states is \emph{complete}, meaning that they encompass all the possible states with this
+$\ell$.
+
+For example, figure \figref{completeness-ylm} shows wavefunctions with $\ell=1$ that are solutions of
+the Schr\"odinger equation for a particle that is confined to the surface of a sphere. Although the
+formulae for these wavefunctions are not particularly complicated,\footnote{They are 
+$\Psi_{1,-1}=\sin\theta e^{-i\phi}$, $\Psi_{10}=\sqrt{2}\cos\theta$,
+and $\Psi_{11}=\sin\theta e^{i\phi}$, wher $\theta$ is the angle measured down from the $z$
+axis, and $\phi$ is the angle running counterclockwise around the $z$ axis.} they are not our main
+focus here, so to help with getting a feel for the idea of completeness, I have simply
+selected three points on the sphere at which to give numerical samples of the value of the wavefunction.
+These are the top (where the sphere is intersected by the positive $z$ axis),
+left ($x$), and front ($y$). (Although the wavefunctions are shown using the
+color conventions defined in figure \figref{rainbow}, p.~\pageref{fig:rainbow},
+these numerical samples should make the example understandable if you're looking at a black and white
+copy of the book.)
+
+Suppose we arbitrarily choose the $z$ axis as the one along which to quantize the component
+of the angular momentum. With this choice, we have three possible values for $\ell_z$: $-1$, $0$,
+and $1$. These three states are shown in the three boxes surrounded by the black rectangle.
+This set of three states is complete. 
+
+Consider, for example, the fourth state, shown on the
+right outside the box. This state is clearly identifiable as a copy of the $\ell_z=0$ state,
+rotated by 90 degrees counterclockwise, so it is the $\ell_x=0$ state. We might imagine that
+this would be an entirely new prize to be added to our stamp collection. But it is actually
+not a state that we didn't possess before. We can obtain it as the sum of the
+$\ell_z=-1$ and $\ell_z=1$ states, divided by an appropriate normalization factor. Although
+I'm avoiding making this example an exercise in manipulating formulae, it is easy to check
+that the sum does work out properly at the three sample points.
+\end{eg}
+
+\vfill
 
 \pagebreak
 

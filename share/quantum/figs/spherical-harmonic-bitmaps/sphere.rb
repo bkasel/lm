@@ -8,9 +8,10 @@ require 'hsluv'
   # https://github.com/hsluv/hsluv-ruby
   # sudo gem install hsluv
 
-$resolution = 20 # a multiplier; typical values are 1 for draft, 5 for medium resolution, 20 for high resolution
+$resolution = 20 # a multiplier; typical values are 1 for draft, 5 for medium resolution, 30 for high resolution
 $gamma = 2.0 # https://en.wikipedia.org/wiki/Gamma_correction
    # ... bug: seems to have no effect?
+$if_color = true # if false, graph the real part as grayscale, -1=black, 1=white
 
 # Graph a complex-valued function such as a spherical harmonic on the sphere,
 # with magnitude represented by brightness and phase by hue.
@@ -21,16 +22,21 @@ $PI=3.1415926535
 
 $view = 25.0 # angle above equator in degrees
 $distortion = 0.0 # over-all control of distortion; 0=none, 0.3 is a moderate amount
-$phase = 0.1 # 0.1 puts violet in front
 
 # complex-valued function to graph
 # returns [mag,arg]
 def f(theta,phi)
 
-  return ylm(11,8,theta,phi)
+  # Ylm
+  return ylm(1,-1,theta,phi+3.3)
 
-  # Y11, normalized to 1, http://mathworld.wolfram.com/SphericalHarmonic.html
-  # return [Math::sin(theta),phi]
+  #return [1.0,16.0*phi] # unphysical, watermelon stripes with no longitudinal variation
+
+  # unphysical, like Ylm but with long variation too tight
+  z= ylm(16,16,theta,phi)
+  z[0] = z[0]*(Math::sin(theta))**300
+  return z
+
 
 end
 
@@ -53,9 +59,15 @@ $color_lut = [
 
 
 def ylm(l,m,theta,phi)
+  m = m.abs
+    # legendre_Plm chokes on negative m; using |m| is OK as long as we omit Condon-Shortley phase and normalization
   mag = GSL::Sf::legendre_Plm(l,m,Math::cos(theta)).abs
   arg = put_in_range(m*phi,2.0*$PI)
   return [mag,arg]
+end
+
+def euler(theta)
+  return Complex(Math::cos(theta),Math::sin(theta))
 end
 
 def clean_up_complex(z)
@@ -67,9 +79,19 @@ end
 
 def color(z)
   z = clean_up_complex(z)
-  hue,saturation,value = complex_to_hsluv(z)
-  r,g,b = Hsluv::hsluv_to_rgb(hue, saturation, value)
-  return "rgb <#{r}, #{g}, #{b}>"
+  if $if_color then
+    hue,saturation,value = complex_to_hsluv(z)
+    r,g,b = Hsluv::hsluv_to_rgb(hue, saturation, value)
+    return "rgb <#{r}, #{g}, #{b}>"
+  else
+    # Re(z)=-1 gives black, Re(z)=1 gives white
+    v = mag_arg_to_value(z)
+    v = 0.5*(1.0+v) # nominal range of 0 to 1
+    if v<0.0 then v=0.0 end
+    if v>1.0 then v=1.0 end
+    v = v**$gamma
+    return "rgb <#{v}, #{v}, #{v}>"
+  end
 end
 
 def complex_to_hsluv(z)
@@ -139,7 +161,8 @@ def main
   (0..(n-1)).each { |i|
     theta = 2.0*$PI*i/n.to_f
     z = f(theta,0.0)
-    if z[0]>$normalization then $normalization=z[0] end
+    value = mag_arg_to_value(z).abs
+    if value>$normalization then $normalization=value end
   }
   $stderr.print "estimated greatest magnitude achieved by the function = #{$normalization}; normalizing to this\n"
   $force_norm = $normalization
@@ -156,6 +179,11 @@ def main
   }
   print template().gsub!(/BLANK/,$graphic)
   $stderr.print "actual greatest magnitude achieved by the function = #{$normalization}\n"
+end
+
+def mag_arg_to_value(z)
+  if $if_color then value=z[0] else value=z[0]*Math::cos(z[1]) end
+  return value
 end
 
 def do_triangle(i1,j1,i2,j2,i3,j3)
