@@ -4052,7 +4052,8 @@ nearly all the field is contributed by atoms near the surface. Our analogy with 
 we should instead construct a permanent magnet with a sharp edge.
 
 Figure \figref{sharp-magnet-poles} shows the cross-sectional shapes of two magnet poles used
-in the historic Stern-Gerlach experiment. The external magnetic field is represented using field lines.
+in the historic Stern-Gerlach experiment (sec.~\ref{sec:stern-gerlach}, p.~\pageref{sec:stern-gerlach}). 
+The external magnetic field is represented using field lines.
 The field lines enter and exit the surfaces perpendicularly, and they are particularly dense
 near the corner of the upper pole, indicating a strong field. The spreading of the field lines
 indicates that the field is strongly nonuniform, becoming much weaker toward the bottom of the

@@ -3810,7 +3810,8 @@ the Schr\"odinger equation for a particle that is confined to the surface of a s
 formulae for these wavefunctions are not particularly complicated,\footnote{They are 
 $\Psi_{1,-1}=\sin\theta e^{-i\phi}$, $\Psi_{10}=\sqrt{2}\cos\theta$,
 and $\Psi_{11}=\sin\theta e^{i\phi}$, wher $\theta$ is the angle measured down from the $z$
-axis, and $\phi$ is the angle running counterclockwise around the $z$ axis.} they are not our main
+axis, and $\phi$ is the angle running counterclockwise around the $z$ axis. These functions are
+called spherical harmonics.\index{spherical harmonics}} they are not our main
 focus here, so to help with getting a feel for the idea of completeness, I have simply
 selected three points on the sphere at which to give numerical samples of the value of the wavefunction.
 These are the top (where the sphere is intersected by the positive $z$ axis),
@@ -4020,6 +4021,8 @@ with other things that they have an intrinsic spin of their
 own. Experiments show that even when an \index{electron!spin
 of}\index{spin!of electron}electron is not moving through
 space, it still has angular momentum amounting to $\hbar/2$.
+An important historical experiment of this type, the Stern-Gerlach
+experiment, is described in detail in section \ref{sec:stern-gerlach}.
 
 <% marg(m4_ifelse(__sn,1,[:30:],[:0:])) %>
 <%
@@ -4302,7 +4305,119 @@ many different directions and cancel out partially.
  % ============================================================= 
 <% end_sec() %>
 <% end_sec() %>
-<% end_sec() %><% begin_hw_sec %>
+<% end_sec() %>
+
+<% begin_sec("The Stern-Gerlach experiment",4,'stern-gerlach') %>
+In 1921, Otto Stern proposed an experiment about angular momentum, shown in figure \figref{stern-gerlach}, that his
+boss at the University of Frankfurt
+and many of his colleagues were certain wouldn't work. At this time, quantization of
+angular momentum had been proposed by Niels Bohr, but most physicists, if they had heard of
+it at all, thought of the idea as a philosophical metaphor or a mathematical trick that
+just happened to give correct results. World War I was over, hyperinflation was getting
+under way in Germany (a paper mark was worth a few percent of its prewar value), and
+the Nazi coup was still in the future, so that Stern, a Jew, had not yet been forced to flee to America.
+Because of the difficult economic situation, Stern and his colleague Walther Gerlach scraped
+up some of the funds to carry out the experiment from US banker Henry Goldman, cofounder of the
+investment house Goldman-Sachs.
+%
+<% marg(300) %>
+<%
+  fig(
+    'stern-gerlach',
+    %q{%
+      Bottom: A schematic diagram of the Stern-Gerlach experiment. The $z$ direction is out of the page.
+      Top: A portion of Gerlach's celebratory 1922 postcard to Niels Bohr, with a photo showing the results.
+      A coordinate system is superimposed. The orientation is flipped downward by 90 degrees compared to the
+      schematic.
+    }
+  )
+%>
+<% end_marg %>
+
+The entire apparatus was sealed inside a vacuum chamber with the best vacuum obtainable
+at the time. Inside the oven, a sample of silver was heated to $1000\degcunit$, evaporating it.
+The atoms leaving the oven encountered two narrow slits, so that what emerged was a beam with
+a width of only $0.03\ \zu{mm}$, or about a third of the width of a human hair. The atoms then
+encountered a magnetic field. Because the atoms were electrically neutral, we would normally
+expect them to be unaffected by a magnetic field. But in the planetary model of the atom, we
+imagine the electrons as orbiting in circles like little current loops, which would give
+the atom a magnetic dipole moment $\vc{m}$. Even if we are sophisticated enough about quantum mechanics not to
+believe in the circular orbits, it is reasonable to imagine that such a dipole moment would exist.
+When a dipole encounters a \emph{nonuniform}
+field, it experiences a force
+(example \ref{eg:dipole-in-nonuniform-field-fancy}, p.~\pageref{eg:dipole-in-nonuniform-field-fancy}).
+In this example, the forces in the $x$ and $z$ directions would be
+$F_x=\vc{m}\cdot(\partial\vc{B_x}/\partial x)$
+and $F_z=\vc{m}\cdot(\partial\vc{B_z}/\partial z)$. (Because of Gauss's law for magnetism,
+these two derivatives are not independent --- 
+we have $\partial\vc{B_x}/\partial x+\partial\vc{B_z}/\partial z=0$.) 
+The rapidly varying magnetic field for this experiment
+was provided by a pair of specially shaped magnet poles, described in
+example \ref{eg:sharp-magnet-poles}, p.~\pageref{eg:sharp-magnet-poles}.
+
+Because electrons have charge, we expect the motion of an electron to give it a magnetic dipole moment $\vc{m}$.
+But they also have mass, so for exactly the same reasons, we expect there to be some angular momentum $\vc{L}$ as well.
+The analogy is in fact mathematically exact ---
+charge is to mass as $\vc{m}$ is to $\vc{L}$ ---
+so that classically we expect $\vc{m}$ and $\vc{L}$ to be exactly the same vector, except for a rescaling
+by the charge-to-mass ratio $-e/m$. Therefore this experiment with dipoles and magnetic fields is actually
+a probe of the behavior of angular momentum at the atomic level.
+
+Luckily for Stern and Gerlach, who had no modern knowledge of atomic structure, the silver atoms that
+they chose to use do happen
+to have nonzero total $\vc{L}$, and therefore nonzero $\vc{m}$.
+The atoms come out of the oven with random orientations. 
+
+Classically, we would expect the following.
+Each atom has an energy $\vc{m}\cdot\vc{B}$ due to its interaction with the magnetic field, and
+this energy is conserved, so that the component $m_x$ stays constant. However, there is a
+torque $\vc{m}\times\vc{B}$, and this causes the direction of the atom's angular momentum to
+precess, i.e., wobble like a top, with its angular momentum forming a cone centered on the $x$ axis
+(example \ref{eg:precession}, p.~\pageref{eg:precession}). This precession is extremely fast, carrying
+out about $10^{10}$ wobbles per second, so that the atom precesses about $10^6$ times while traveling the
+3.5 cm length of the spectrometer. So even though the forces $F_x$ and $F_z$ are typically about
+the same size, the rapid precession causes $F_z$ to average out to nearly zero, and only a deflection
+in the $x$ direction is expected. Because the orientations of the atoms are random as they enter the
+magnetic field, they will have every possible value of $L_x$ ranging from $-|\vc{L}|$
+to $+|\vc{L}|$, and therefore we expect that when the magnetic field is turned on, the effect should
+be to smear out the image on the glass plate from a vertical line to a somewhat wider oval. The atoms
+are dispersed from left to right along a certain scale of measurement according to their random
+value of $L_x$. The spectrometer is a device for determining $L_x$,
+a continuously varying number.
+
+But that's all the classical theory. Quantum mechanically, $L_x$ is
+quantized, so that only certain very specific values of $F_x$ can
+occur. Although the discussion of precession above is really classical
+rather than quantum-mechanical, the result of $F_z$ averaging out to
+zero turns out to be approximately right if the field is strong.
+Therefore we expect to see well separated vertical bands on the glass
+plate corresponding to the quantized values of $L_x$.  This is
+approximately what is seen in figure \figref{stern-gerlach},
+although the field is not quite strong enough, so we get the slightly
+more complicated pattern like a sideways lipstick kiss. Since we
+observe two values of $L_x$ (the two ``lips''), we conclude from these
+results that a silver atom has spin $1/2$, so that $L_x$ takes on the
+values $-\hbar/2$ and $+\hbar/2$. Although it took about five years for
+the experiment to be interpreted completely correctly, we now understand
+the Stern-Gerlach experiment to be not just a confirmation of the quantization
+of angular momentum along any given axis but also the first experimental
+evidence that the electron has an intrinsic spin of 1/2.
+
+\startdq
+
+\begin{dq}
+Suppose we send a beam of silver atoms through a Stern-Gerlach spectrometer,
+splitting it into well separated parts with $s_x=+1/2$ and $s_x=-1/2$.
+We then throw away one of the beams, so we have a beam of the pure $s_x=+1/2$ state.
+Now we let this beam pass through a second spectrometer that is identical
+but oriented along the $z$ axis. Does this produce a beam in which
+every atom has both $s_x=+1/2$ and $s_z=+1/2$?
+\end{dq}
+
+
+<% end_sec() %>
+
+<% begin_hw_sec %>
 
 <% begin_hw('wholelife') %>__incl(hw/wholelife)<% end_hw() %>
  % 
