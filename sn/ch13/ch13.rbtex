@@ -4406,12 +4406,12 @@ evidence that the electron has an intrinsic spin of 1/2.
 \startdq
 
 \begin{dq}
-Suppose we send a beam of silver atoms through a Stern-Gerlach spectrometer,
-splitting it into well separated parts with $s_x=+1/2$ and $s_x=-1/2$.
-We then throw away one of the beams, so we have a beam of the pure $s_x=+1/2$ state.
+Suppose we send a beam of atoms with $L=\hbar$ through a Stern-Gerlach spectrometer,
+throwing away the emerging parts with $\ell_x=-1$ and 0 to make a beam of the pure $\ell_x=0$ state.
 Now we let this beam pass through a second spectrometer that is identical
-but oriented along the $z$ axis. Does this produce a beam in which
-every atom has both $s_x=+1/2$ and $s_z=+1/2$?
+but oriented along the $z$ axis. Can we produce a beam in which
+every atom has both $\ell_x=0$ and $\ell_z=+1$? 
+Hint: See example \ref{eg:completeness-ylm}, p.~\pageref{eg:completeness-ylm}.
 \end{dq}
 
 
