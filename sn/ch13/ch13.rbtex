@@ -4307,7 +4307,7 @@ many different directions and cancel out partially.
 <% end_sec() %>
 <% end_sec() %>
 
-<% begin_sec("The Stern-Gerlach experiment",4,'stern-gerlach') %>
+<% begin_sec("The Stern-Gerlach experiment",4,'stern-gerlach',{'optional'=>true}) %>
 In 1921, Otto Stern proposed an experiment about angular momentum, shown in figure \figref{stern-gerlach}, that his
 boss at the University of Frankfurt
 and many of his colleagues were certain wouldn't work. At this time, quantization of
@@ -4335,7 +4335,7 @@ investment house Goldman-Sachs.
 <% end_marg %>
 
 The entire apparatus was sealed inside a vacuum chamber with the best vacuum obtainable
-at the time. Inside the oven, a sample of silver was heated to $1000\degcunit$, evaporating it.
+at the time. A sample of silver was heated to $1000\degcunit$, evaporating it.
 The atoms leaving the oven encountered two narrow slits, so that what emerged was a beam with
 a width of only $0.03\ \zu{mm}$, or about a third of the width of a human hair. The atoms then
 encountered a magnetic field. Because the atoms were electrically neutral, we would normally
@@ -4347,10 +4347,10 @@ When a dipole encounters a \emph{nonuniform}
 field, it experiences a force
 (example \ref{eg:dipole-in-nonuniform-field-fancy}, p.~\pageref{eg:dipole-in-nonuniform-field-fancy}).
 In this example, the forces in the $x$ and $z$ directions would be
-$F_x=\vc{m}\cdot(\partial\vc{B_x}/\partial x)$
-and $F_z=\vc{m}\cdot(\partial\vc{B_z}/\partial z)$. (Because of Gauss's law for magnetism,
+$F_x=\vc{m}\cdot(\partial\vc{B}/\partial x)$
+and $F_z=\vc{m}\cdot(\partial\vc{B}/\partial z)$. (Because of Gauss's law for magnetism,
 these two derivatives are not independent --- 
-we have $\partial\vc{B_x}/\partial x+\partial\vc{B_z}/\partial z=0$.) 
+we have $\partial B_x/\partial x+\partial B_z/\partial z=0$.) 
 The rapidly varying magnetic field for this experiment
 was provided by a pair of specially shaped magnet poles, described in
 example \ref{eg:sharp-magnet-poles}, p.~\pageref{eg:sharp-magnet-poles}.
@@ -4413,6 +4413,126 @@ but oriented along the $z$ axis. Can we produce a beam in which
 every atom has both $\ell_x=0$ and $\ell_z=+1$? 
 Hint: See example \ref{eg:completeness-ylm}, p.~\pageref{eg:completeness-ylm}.
 \end{dq}
+
+<% end_sec() %>
+
+<% begin_sec("Rotation and vibration",4,'qm-rot-and-vib',{'optional'=>true}) %>
+
+Figure \figref{n2-spectrum} shows the visible-light spectrum of the molecule $\zu{N}_2$.
+Because this particular chemical bond is unusually strong, the molecule does not break apart, even at the high
+temperature of a gas discharge tube, so we see the spectrum of the molecule, not of monoatomic nitrogen.
+This spectrum is more complex than the spectrum of the hydrogen atom, and that's not surprising,
+because the number of different states grows exponentially with the number of particles (here, 14 electrons
+plus 2 nuclei).
+
+<%
+  fig(
+    'n2-spectrum',
+    %q{%
+      Visible spectrum of $\zu{N}_2$. Violet is on the left, red on the right.
+    },
+    {
+      'width'=>'wide',
+      'sidecaption'=>true
+    }
+  )
+%>
+
+What is more surprising is that there are some clear, simple patterns in this spectrum --- patterns
+simpler than any that we would see in the spectrum of a monoatomic gas with the same number of particles.
+To start to understand this, we note that the $\zu{N}_2$ lacks the spherical symmetry of an individual
+atom, but it does have an axis of symmetry, \subfigref{axial-symmetry}{1}. These properties are also possessed
+by many nuclei, e.g., \subfigref{axial-symmetry}{2}. We now consider three different ways in which an excited
+energy state could occur in $\zu{N}_2$:
+
+\begin{itemize}
+\item Individual \emph{particles} (electrons) can be raised to a higher energy level.
+\item The molecule can \emph{vibrate} along its long axis, so that the nuclei (which have nearly all the inertia)
+       move back and forth, elongating and compressing the system.
+\item The molecule can \emph{rotate}.
+\end{itemize}
+
+<% marg(50) %>
+<%
+  fig(
+    'axial-symmetry',
+    %q{%
+      1.~The molecule $\zu{N}_2$. 2.~The nucleus ${}^{178}\zu{Hf}$. 
+    }
+  )
+%>
+<% end_marg %>
+
+Particle excitations would produce the type of very complex, disorganized spectrum that we normally see in atoms
+that have many electrons, so that isn't what we're seeing in figure \figref{n2-spectrum}. What about vibrations?
+For a classical harmonic oscillator, we know that the frequency of vibration is independent of the amplitude.
+If a classical oscillator contains electric charge, it will emit electromagnetic radiation at this frequency,
+smoothly and continuously draining itself of energy. As the energy is lost, the frequency stays the same. 
+By the correspondence principle, we expect that when the quantum mechanical version of such a system is highly
+excited, it should emit a large number of photons of this frequency $\omega$, so that the discrete quantum jumps
+are undetectable and the radiation appears as a classical wave. We can thus infer that for a quantum vibrator,
+the excited states should show an \emph{evenly spaced} ladder of energy levels.
+It is the transitions going down this ladder what we are seeing in figure \figref{n2-spectrum}. For example,
+the set of lines at the red end of the spectrum all turn out to be ones in which the system hops down four steps
+of the ladder by emitting one photon, of frequency $4\hbar\omega$. (Single step hops emitting energy $\hbar\omega$
+also exist, but they lie in the infrared spectrum.) If $\zu{N}_2$ were a perfect harmonic oscillator, then these
+photons would all have exactly the same energy. In reality, they very nearly do, but not exactly, so we are
+able to see them as separate lines lying close together in the spectrum.
+
+What about rotation? An interesting thing happens here due to the structure of quantum mechanics. Quantum
+mechanics can describe motion only as a wave, with the value of the wave oscillating from one place to another.
+But this implies that according to quantum mechanics, no object can rotate about one
+of its axes of symmetry, for the rotated version of a state would then be the same state.
+This is why rotational excitations are never seen in individual atoms, or in nuclei
+that have spherical shapes. In examples like the ones in figure \figref{axial-symmetry}, which have a single
+axis of symmetry, we can therefore have end-over-end rotation, but never rotation about the symmetry axis.
+Such end-over-end rotational states are observed in $\zu{N}_2$, for example, but because this involves
+large motions by the high-mass nuclei, the moment of inertia $I$ is quite large, and therefore the rotational
+energies --- classically, $K=L^2/2I$ --- are very small, and infrared rather than visible photons are emitted.
+If rotation about the symmetry axis were possible, then the moment of inertia would be thousands of times smaller,
+because in such a rotation the nuclei would not move. The energies involved would be thousands of times higher,
+and the photons would lie approximately in the visible region of the spectrum. No such visible lines are actually observed,
+in agreement with the predictions of quantum mechanics. They do not exist.
+
+<% marg(-300) %>
+<%
+  fig(
+    'hf-rotation',
+    %q{%
+      Excited states of the nucleus ${}^{178}\zu{Hf}$. Black squares represent states that are interpreted
+      as end-over-end rotation, while white diamonds show particle excitations. For each angular momentum,
+      the graph shows the lowest-energy state of each type, where known. 
+    }
+  )
+%>
+<% end_marg %>
+
+Perhaps more vivid evidence for the nonexistence of rotation about a symmetry axis is shown in figure
+\figref{hf-rotation}. The states involving end-over-end rotation of the nucleus as a whole (``collective'' rotation)
+are approximately a parabola on this graph, which is reasonable given the classical relation $K=L^2/2I$.
+But angular momentum cannot be generated along the symmetry axis through collective rotation. Instead,
+we see an irregular set of energy levels in which first one particle (for $L\le8\hbar$) and then two
+(14 and 16 $\hbar$) are excited.
+
+Note that only even multiples of $\hbar$ are observed in collective rotation in figure \figref{hf-rotation}.
+This is because the nucleus's shape has an additional mirror symmetry, so that it is unaffected by
+a 180-degree rotation. This means that the wavefunction describing the collective rotation
+must oscillate twice as we pass through a full rotation.
+
+<%
+  fig(
+    'rot-and-vib-corrections',
+    %q{%
+      Quantum-mechanical corrections to the semiclassical results for the energy of a vibrator and a rotor.
+      The rotational levels are shown for the case of a rotor with mirror symmetry, so that only even values of
+      $\ell$ occur.
+    },
+    {
+      'width'=>'wide',
+      'sidecaption'=>true
+    }
+  )
+%>
 
 
 <% end_sec() %>
