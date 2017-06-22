@@ -4022,7 +4022,7 @@ own. Experiments show that even when an \index{electron!spin
 of}\index{spin!of electron}electron is not moving through
 space, it still has angular momentum amounting to $\hbar/2$.
 An important historical experiment of this type, the Stern-Gerlach
-experiment, is described in detail in section \ref{sec:stern-gerlach}.
+experiment, is described in detail in section \ref{subsec:stern-gerlach}.
 
 <% marg(m4_ifelse(__sn,1,[:30:],[:0:])) %>
 <%
@@ -4307,7 +4307,8 @@ many different directions and cancel out partially.
 <% end_sec() %>
 <% end_sec() %>
 
-<% begin_sec("The Stern-Gerlach experiment",4,'stern-gerlach',{'optional'=>true}) %>
+<% begin_sec("Some optional topics",4,'stern-gerlach',{'optional'=>true}) %>
+<% begin_sec("The Stern-Gerlach experiment",nil,'stern-gerlach') %>
 In 1921, Otto Stern proposed an experiment about angular momentum, shown in figure \figref{stern-gerlach}, that his
 boss at the University of Frankfurt
 and many of his colleagues were certain wouldn't work. At this time, quantization of
@@ -4416,7 +4417,7 @@ Hint: See example \ref{eg:completeness-ylm}, p.~\pageref{eg:completeness-ylm}.
 
 <% end_sec() %>
 
-<% begin_sec("Rotation and vibration",4,'qm-rot-and-vib',{'optional'=>true}) %>
+<% begin_sec("Rotation and vibration",4,'qm-rot-and-vib') %>
 
 Figure \figref{n2-spectrum} shows the visible-light spectrum of the molecule $\zu{N}_2$.
 Because this particular chemical bond is unusually strong, the molecule does not break apart, even at the high
@@ -4469,15 +4470,29 @@ For a classical harmonic oscillator, we know that the frequency of vibration is 
 If a classical oscillator contains electric charge, it will emit electromagnetic radiation at this frequency,
 smoothly and continuously draining itself of energy. As the energy is lost, the frequency stays the same. 
 By the correspondence principle, we expect that when the quantum mechanical version of such a system is highly
-excited, it should emit a large number of photons of this frequency $\omega$, so that the discrete quantum jumps
+excited, it should emit a large number of photons of this frequency $f$, so that the discrete quantum jumps
 are undetectable and the radiation appears as a classical wave. We can thus infer that for a quantum vibrator,
 the excited states should show an \emph{evenly spaced} ladder of energy levels.
-It is the transitions going down this ladder what we are seeing in figure \figref{n2-spectrum}. For example,
-the set of lines at the red end of the spectrum all turn out to be ones in which the system hops down four steps
-of the ladder by emitting one photon, of frequency $4\hbar\omega$. (Single step hops emitting energy $\hbar\omega$
-also exist, but they lie in the infrared spectrum.) If $\zu{N}_2$ were a perfect harmonic oscillator, then these
-photons would all have exactly the same energy. In reality, they very nearly do, but not exactly, so we are
-able to see them as separate lines lying close together in the spectrum.
+
+Figure \figref{n2-level-scheme} shows how the series of red lines in figure \figref{n2-spectrum} arises.
+For an excitation consisting only of vibrational motion, we
+expect based on the correspondence principle to see the evenly spaced ladder of states shown in a stack
+built above the ground state, with all of the photons having the same energy. These states and transitions
+do exist, but the light lies in the infrared spectrum and so is not seen in figure \figref{n2-spectrum}.
+The red visible-light lines arise as shown in the second box, from states that involve both a certain
+particle excitation and some vibration. Because the spacing of the two ladders is slightly unequal, the
+red lines all have slightly different wavelengths.
+
+<% marg(300) %>
+<%
+  fig(
+    'n2-level-scheme',
+    %q{%
+      Energy levels of the $\zu{N}_2$ molecule. 
+    }
+  )
+%>
+<% end_marg %>
 
 What about rotation? An interesting thing happens here due to the structure of quantum mechanics. Quantum
 mechanics can describe motion only as a wave, with the value of the wave oscillating from one place to another.
@@ -4534,6 +4549,7 @@ must oscillate twice as we pass through a full rotation.
   )
 %>
 
+<% end_sec() %>
 
 <% end_sec() %>
 
