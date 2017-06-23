@@ -4419,6 +4419,7 @@ Hint: See example \ref{eg:completeness-ylm}, p.~\pageref{eg:completeness-ylm}.
 
 <% begin_sec("Rotation and vibration",4,'qm-rot-and-vib') %>
 
+<% begin_sec("Types of excitations",nil,'types-of-excitations') %>
 Figure \figref{n2-spectrum} shows the visible-light spectrum of the molecule $\zu{N}_2$.
 Because this particular chemical bond is unusually strong, the molecule does not break apart, even at the high
 temperature of a gas discharge tube, so we see the spectrum of the molecule, not of monoatomic nitrogen.
@@ -4464,6 +4465,9 @@ energy state could occur in $\zu{N}_2$:
 %>
 <% end_marg %>
 
+<% end_sec('types-of-excitations') %>
+
+<% begin_sec("Vibration",nil,'qm-vibration') %>
 Particle excitations would produce the type of very complex, disorganized spectrum that we normally see in atoms
 that have many electrons, so that isn't what we're seeing in figure \figref{n2-spectrum}. What about vibrations?
 For a classical harmonic oscillator, we know that the frequency of vibration is independent of the amplitude.
@@ -4494,6 +4498,9 @@ red lines all have slightly different wavelengths.
 %>
 <% end_marg %>
 
+<% end_sec('qm-vibration') %>
+
+<% begin_sec("Rotation",nil,'qm-rotation') %>
 What about rotation? An interesting thing happens here due to the structure of quantum mechanics. Quantum
 mechanics can describe motion only as a wave, with the value of the wave oscillating from one place to another.
 But this implies that according to quantum mechanics, no object can rotate about one
@@ -4506,8 +4513,7 @@ large motions by the high-mass nuclei, the moment of inertia $I$ is quite large,
 energies --- classically, $K=L^2/2I$ --- are very small, and infrared rather than visible photons are emitted.
 If rotation about the symmetry axis were possible, then the moment of inertia would be thousands of times smaller,
 because in such a rotation the nuclei would not move. The energies involved would be thousands of times higher,
-and the photons would lie approximately in the visible region of the spectrum. No such visible lines are actually observed,
-in agreement with the predictions of quantum mechanics. They do not exist.
+and the photons would lie approximately in the visible region of the spectrum. No such visible lines are actually observed.
 
 <% marg(-300) %>
 <%
@@ -4533,6 +4539,16 @@ Note that only even multiples of $\hbar$ are observed in collective rotation in 
 This is because the nucleus's shape has an additional mirror symmetry, so that it is unaffected by
 a 180-degree rotation. This means that the wavefunction describing the collective rotation
 must oscillate twice as we pass through a full rotation.
+<% end_sec('qm-rotation') %>
+
+<% begin_sec("Corrections to semiclassical energies",nil,'qm-corrections') %>
+
+So far we've been using the correspondence principle to make educated guesses about quantum-mechanical
+expressions for the energies of vibrators and rotors. This style of reasoning is called semiclassical,
+because it combines ideas from classical and quantum physics. These expressions are guaranteed to be good approximations 
+in the classical limit obtained when
+the quantum numbers are large, but figure \figref{rot-and-vib-corrections} shows that the approximations
+can be poorer when the quantum numbers are small.
 
 <%
   fig(
@@ -4548,6 +4564,71 @@ must oscillate twice as we pass through a full rotation.
     }
   )
 %>
+
+In the case of the $n$th excited state of a vibrator, the energy is $(n+1/2)hf$, where the $+1/2$ term represents
+a quantum correction to the semiclassical approximation. This shifts the entire ladder upward in energy by half
+a step. In particular, the energy of the ground state is not zero but rather $(1/2)hf$. This can be verified
+quantitatively by calculating the energy for the solution to the Schr\"odinger discussed using the guess-and-check method
+in problem \ref{hw:quantumho}, p.~\pageref{hw:quantumho}. It is easy to see why the answer cannot be zero, for
+if it were, then the particle in the ground state would have zero kinetic energy and zero potential energy.
+To have zero kinetic energy, it would have to have a momentum of exactly zero, so $\Delta p=0$, but to have
+zero potential energy it would also have to sit still at exactly the equilibrium position, so $\Delta x=0$. But
+this would violate the Heisenberg uncertainty principle and so is impossible.
+
+The inevitable motion that
+is present even in the ground state is known as zero-point motion, and its energy is the zero-point energy.
+Relativity tells us that $E=mc^2$, so the zero-point energy of particles is equivalent to a certain amount of
+mass. In fact, nearly all the mass of ordinary matter arises from the zero-point energy of the quarks inside
+the neutrons and protons. Another interesting application is to spontaneous nuclear fission, which is the basis
+for nuclear energy, providing the kick-off for a chain reaction. Spontaneous fission requires that a
+nucleus become more and more elongated until it breaks apart into two pieces. The very elongated shapes have
+a high potential energy, so that spontaneous fission requires quantum-mechanical tunneling. If it were not for
+the zero-point vibrational energy associated with this motion, the tunneling probability for uranium and
+plutonium isotopes would be extremely small. These isotopes would decay only by alpha emission, and nuclear
+reactors and bombs would not work.
+
+<%
+  fig(
+    'j-jplus1-visual',
+    %q{%
+      Each panel of the figure shows a standing wave on a sphere, with the convention that gray is zero, white is a
+      positive real number, and black is a negative real number. (These could instead have been drawn as traveling
+      waves, but then we would have needed to represent complex numbers using color, as in figure \figref{spherical-harmonic}
+      on p.~\pageref{fig:spherical-harmonic}.) 
+      Only 2 is a solution of the Schr\"odinger equation.
+    },
+    {
+      'width'=>'wide',
+      'sidecaption'=>true
+    }
+  )
+%>
+
+Figure \figref{j-jplus1-visual} shows visually the reason for the correction of $\ell^2$ to $\ell(\ell+1)$.
+Each of these standing waves has $|\ell_z|=16$, where $z$ is the vertical
+axis. But only \subfigref{j-jplus1-visual}{2} is a solution of the Schr\"odinger equation or a state of definite
+angular momentum.
+To be a solution of the Schr\"odinger equation, such a wave must have the same kinetic energy everywhere. 
+Each of these three has the same kinetic energy associated
+with its wavelength in the ``east-west,'' or azimuthal, direction.
+Wave
+\subfigref{j-jplus1-visual}{1} is not a solution, because near the equator, it has an extremely short wavelength
+in the ``north-south,'' or longitudinal, direction, and this gives it a greater kinetic energy near the equator than
+elsewhere. The opposite problem occurs in \subfigref{j-jplus1-visual}{3}, where the wave varies infinitely rapidly near
+the poles, and therefore the kinetic energy blows up to infinity there. The only valid solution is
+\subfigref{j-jplus1-visual}{2}, which has a fairly long, but not too long, wavelength in the longitudinal direction.
+The kinetic energy associated with this wavelength is the difference between the semiclassical
+$\ell^2$ and the correct quantum mechanical $\ell(\ell+1)$. 
+
+A different example that is particularly easy
+to reason about is the wavefunction $\Psi_{10}$ shown in figure \figref{completeness-ylm}
+on p.~\pageref{fig:completeness-ylm}, for $\ell=1$ and $\ell_z=0$. (The odd value of $\ell$ is possible for
+a rotor that doesn't have mirror symmetry, e.g., the carbon monoxide molecule CO.) The ratio of the
+correct quantum mechanical energy to the semiclassical one is $\ell(\ell+1)/\ell^2=2$, and the factor of
+two  makes sense because at the poles, the wave has equal contributions to its kinetic energy due to
+oscillations in the two perpendicular directions that occur in the Laplacian $\partial^2/\partial x^2+\partial^2/\partial y^2$.
+
+<% end_sec('qm-corrections') %>
 
 <% end_sec() %>
 
