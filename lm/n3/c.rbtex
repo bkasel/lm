@@ -179,6 +179,8 @@ __incl(text/n3c)
 
 <% begin_hw('ramp-force-probe',nil,{'credit'=>'B.~Shotwell'}) %>__incl(hw/ramp-force-probe)<% end_hw() %>
 
+<% begin_hw('stemming') %>__incl(hw/stemming)<% end_hw() %>
+
 <% marg(300) %>
 <%
   fig(
@@ -191,6 +193,13 @@ __incl(text/n3c)
   fig(
     'hw-ramp-force-probe',
     %q{Problem \ref{hw:ramp-force-probe}.}
+  )
+%>
+\spacebetweenfigs
+<%
+  fig(
+    'hw-stemming',
+    %q{Problem \ref{hw:stemming}.}
   )
 %>
 <% end_marg %>

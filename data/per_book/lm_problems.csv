@@ -189,6 +189,7 @@ lm,8,21,skee-ball,0
 lm,8,22,plane-wind-symbolic,0
 lm,8,23,applied-force-below-horizontal,0
 lm,8,24,ramp-force-probe,0
+lm,8,25,stemming,1
 lm,9,1,mixer,0
 lm,9,2,circularaccelunits,0
 lm,9,3,loop,0

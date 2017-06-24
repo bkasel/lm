@@ -261,6 +261,7 @@ m4_define(__hw_lm_8_skee-ball,21)m4_dnl
 m4_define(__hw_lm_8_plane-wind-symbolic,22)m4_dnl
 m4_define(__hw_lm_8_applied-force-below-horizontal,23)m4_dnl
 m4_define(__hw_lm_8_ramp-force-probe,24)m4_dnl
+m4_define(__hw_lm_8_stemming,25)m4_dnl
 m4_define(__hw_lm_9_mixer,1)m4_dnl
 m4_define(__hw_lm_9_circularaccelunits,2)m4_dnl
 m4_define(__hw_lm_9_loop,3)m4_dnl
