@@ -4307,9 +4307,13 @@ many different directions and cancel out partially.
 <% end_sec() %>
 <% end_sec() %>
 
-<% begin_sec("Some optional topics",4,'stern-gerlach',{'optional'=>true}) %>
+\vfill
+
+<% begin_sec("Some optional topics",nil,'stern-gerlach',{'optional'=>true}) %>
+
 <% begin_sec("The Stern-Gerlach experiment",nil,'stern-gerlach') %>
-In 1921, Otto Stern proposed an experiment about angular momentum, shown in figure \figref{stern-gerlach}, that his
+In 1921, Otto Stern proposed an experiment about angular momentum, shown in figure \figref{stern-gerlach}
+on p.~\pageref{fig:stern-gerlach}, that his
 boss at the University of Frankfurt
 and many of his colleagues were certain wouldn't work. At this time, quantization of
 angular momentum had been proposed by Niels Bohr, but most physicists, if they had heard of
@@ -4320,7 +4324,10 @@ the Nazi coup was still in the future, so that Stern, a Jew, had not yet been fo
 Because of the difficult economic situation, Stern and his colleague Walther Gerlach scraped
 up some of the funds to carry out the experiment from US banker Henry Goldman, cofounder of the
 investment house Goldman-Sachs.
-%
+
+
+\pagebreak
+
 <% marg(300) %>
 <%
   fig(
@@ -4330,7 +4337,8 @@ investment house Goldman-Sachs.
       The entire apparatus is about 10 cm long.
       Top: A portion of Gerlach's celebratory 1922 postcard to Niels Bohr, with a photo showing the results.
       A coordinate system is superimposed. The orientation is flipped downward by 90 degrees compared to the
-      schematic.
+      schematic. The photo was taken through a microscope, and Gerlach drew the 1.0 mm scale on after the 
+      magnified photo had been printed.
     }
   )
 %>
@@ -4405,11 +4413,35 @@ the Stern-Gerlach experiment to be not just a confirmation of the quantization
 of angular momentum along any given axis but also the first experimental
 evidence that the electron has an intrinsic spin of 1/2.
 
-\startdq
+\startdqs
+
+\begin{dq}
+Could the Stern-Gerlach experiment be carried out with a beam of electrons?
+\end{dq}
+
+\begin{dq}
+A few weeks after the Stern-Gerlach experiment's results became
+public, Einstein and Ehrenfest carried out the following reasoning,
+which seemed to them to make the results inexplicable.
+Before a particular silver atom enters the magnetic
+field, its magnetic moment $\vc{m}$ is randomly oriented. Once it
+enters the magnetic field, it has an energy $\vc{m}\cdot\vc{B}$.
+Unless there is a mechanism for the transfer of energy in or out of
+the atom, this energy can't change, and therefore the magnetic moment
+can only precess about the $\vc{B}$ vector, but the angle between
+$\vc{m}$ and $\vc{B}$ must remain the same. Therefore the atom cannot
+align itself with the field. (They considered various mechanisms of
+energy loss, such as collisions and radiation, and concluded that all
+of them were too slow by orders of magnitude to have an effect during
+the atom's time of flight.) It seemed to them that as soon as the atom left
+the oven, it was somehow required
+to have anticipated the direction of the field and picked one of two orientations
+with respect to it. How can this paradox be resolved?
+\end{dq}
 
 \begin{dq}
 Suppose we send a beam of atoms with $L=\hbar$ through a Stern-Gerlach spectrometer,
-throwing away the emerging parts with $\ell_x=-1$ and 0 to make a beam of the pure $\ell_x=0$ state.
+throwing away the emerging parts with $\ell_x=-1$ and $+1$ to make a beam of the pure $\ell_x=0$ state.
 Now we let this beam pass through a second spectrometer that is identical
 but oriented along the $z$ axis. Can we produce a beam in which
 every atom has both $\ell_x=0$ and $\ell_z=+1$? 
@@ -4608,16 +4640,17 @@ reactors and bombs would not work.
 Figure \figref{j-jplus1-visual} shows visually the reason for the correction of $\ell^2$ to $\ell(\ell+1)$.
 Each of these standing waves has $|\ell_z|=16$, where $z$ is the vertical
 axis. But only \subfigref{j-jplus1-visual}{2} is a solution of the Schr\"odinger equation or a state of definite
-angular momentum.
+$\ell$.
 To be a solution of the Schr\"odinger equation, such a wave must have the same kinetic energy everywhere. 
 Each of these three has the same kinetic energy associated
 with its wavelength in the ``east-west,'' or azimuthal, direction.
 Wave
 \subfigref{j-jplus1-visual}{1} is not a solution, because near the equator, it has an extremely short wavelength
 in the ``north-south,'' or longitudinal, direction, and this gives it a greater kinetic energy near the equator than
-elsewhere. The opposite problem occurs in \subfigref{j-jplus1-visual}{3}, where the wave varies infinitely rapidly near
-the poles, and therefore the kinetic energy blows up to infinity there. The only valid solution is
-\subfigref{j-jplus1-visual}{2}, which has a fairly long, but not too long, wavelength in the longitudinal direction.
+elsewhere. The opposite problem occurs in \subfigref{j-jplus1-visual}{3}, where the wave is constant in the longitudinal
+direction; at the poles, the wavefunction varies infinitely rapidly,
+and therefore the kinetic energy blows up to infinity there. The only valid solution is
+\subfigref{j-jplus1-visual}{2}, which has a Goldilocks-style just-right wavelength in the longitudinal direction,
 The kinetic energy associated with this wavelength is the difference between the semiclassical
 $\ell^2$ and the correct quantum mechanical $\ell(\ell+1)$. 
 
