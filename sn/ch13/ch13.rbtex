@@ -4327,6 +4327,7 @@ investment house Goldman-Sachs.
     'stern-gerlach',
     %q{%
       Bottom: A schematic diagram of the Stern-Gerlach experiment. The $z$ direction is out of the page.
+      The entire apparatus is about 10 cm long.
       Top: A portion of Gerlach's celebratory 1922 postcard to Niels Bohr, with a photo showing the results.
       A coordinate system is superimposed. The orientation is flipped downward by 90 degrees compared to the
       schematic.
@@ -4394,7 +4395,7 @@ zero turns out to be approximately right if the field is strong.
 Therefore we expect to see well separated vertical bands on the glass
 plate corresponding to the quantized values of $L_x$.  This is
 approximately what is seen in figure \figref{stern-gerlach},
-although the field is not quite strong enough, so we get the slightly
+although the field rapidly weakens outside the $x$-$y$ plane, so we get the slightly
 more complicated pattern like a sideways lipstick kiss. Since we
 observe two values of $L_x$ (the two ``lips''), we conclude from these
 results that a silver atom has spin $1/2$, so that $L_x$ takes on the
