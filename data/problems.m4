@@ -897,6 +897,7 @@ m4_define(__hw_me_8_slide-uphill-optimization,26)m4_dnl
 m4_define(__hw_me_8_plane-wind-symbolic,27)m4_dnl
 m4_define(__hw_me_8_applied-force-below-horizontal,28)m4_dnl
 m4_define(__hw_me_8_ramp-force-probe,29)m4_dnl
+m4_define(__hw_me_8_stemming,30)m4_dnl
 m4_define(__hw_me_9_circularaccelunits,1)m4_dnl
 m4_define(__hw_me_9_loop,2)m4_dnl
 m4_define(__hw_me_9_tilt-a-whirl,3)m4_dnl
@@ -1322,6 +1323,7 @@ m4_define(__hw_problems_5_pressblock,d6)m4_dnl
 m4_define(__hw_problems_5_telephone-wire,d7)m4_dnl
 m4_define(__hw_problems_5_capstan,d8)m4_dnl
 m4_define(__hw_problems_5_rappel-from-fridge,d9)m4_dnl
+m4_define(__hw_problems_5_stemming,d10)m4_dnl
 m4_define(__hw_problems_5_combine-springs,g1)m4_dnl
 m4_define(__hw_problems_5_combinesprings,g2)m4_dnl
 m4_define(__hw_problems_5_youngs-modulus,g3)m4_dnl

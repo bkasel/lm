@@ -897,6 +897,7 @@ me,8,26,slide-uphill-optimization,0
 me,8,27,plane-wind-symbolic,0
 me,8,28,applied-force-below-horizontal,0
 me,8,29,ramp-force-probe,0
+me,8,30,stemming,1
 me,9,1,circularaccelunits,0
 me,9,2,loop,0
 me,9,3,tilt-a-whirl,1
@@ -1322,6 +1323,7 @@ problems,5,d6,pressblock,0
 problems,5,d7,telephone-wire,0
 problems,5,d8,capstan,0
 problems,5,d9,rappel-from-fridge,0
+problems,5,d10,stemming,1
 problems,5,g1,combine-springs,0
 problems,5,g2,combinesprings,0
 problems,5,g3,youngs-modulus,0

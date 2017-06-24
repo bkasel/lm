@@ -243,6 +243,13 @@ __incl(text/n3c)
     %q{Problem \ref{hw:ramp-force-probe}.}
   )
 %>
+\spacebetweenfigs
+<%
+  fig(
+    'hw-stemming',
+    %q{Problem \ref{hw:stemming}.}
+  )
+%>
 <% end_marg %>
 <% begin_hw('slide-uphill-optimization',2) %>__incl(hw/slide-uphill-optimization)<% end_hw() %>
 
@@ -251,6 +258,8 @@ __incl(text/n3c)
 <% begin_hw('applied-force-below-horizontal',nil,{'credit'=>'B.~Shotwell'}) %>__incl(hw/applied-force-below-horizontal)<% end_hw() %>
 
 <% begin_hw('ramp-force-probe',nil,{'credit'=>'B.~Shotwell'}) %>__incl(hw/ramp-force-probe)<% end_hw() %>
+
+<% begin_hw('stemming') %>__incl(hw/stemming)<% end_hw() %>
 
 <% end_hw_sec %>
 
