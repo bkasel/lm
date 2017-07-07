@@ -2674,7 +2674,8 @@ mind.'' Although this mental cartoon usually works fairly
 well as a description of things they experience in the lab,
 it cannot ultimately be correct, because it attributes a
 special role to measurement, which is really just a physical
-process like all other physical processes.\footnote{This interpretation of quantum
+process like all other physical\label{copenhagen}
+processes.\footnote{This interpretation of quantum
 mechanics is called the Copenhagen interpretation, because it was originally developed by a
 school of physicists centered in Copenhagen and led by Niels Bohr.}\index{Copenhagen interpretation}\index{Bohr, Niels}
 
@@ -4742,7 +4743,7 @@ from knowledge of its present state. Thus there is never any loss of information
 it can be shown that probability is always conserved, in the sense that if the wavefunction is initially
 normalized, it will also be normalized at all later times. 
 
-\begin{important}[Unitary evolution of the wavefunction]
+\begin{important}[Unitary evolution of the wavefunction]\index{unitary evolution of the wavefunction}
 The wavefunction evolves over time, according to the Schr\"odinger equation, in a deterministic
 and \emph{unitary} manner,
 meaning that probability is conserved and information is never lost.
@@ -4757,6 +4758,22 @@ whole system (atom plus you) at the end. We know for sure what it looks like.
 It consists of an equal superposition of two states,
 one in which the atom has decayed and your brain has observed that fact, and one in which the atom has
 not yet decayed and that fact is instead recorded in your brain. 
+
+To get more of a feeling for what is meant by unitarity, it may be helpful to consider some examples of
+how it could be violated. In the Copenhagen interpretation of quantum mechanics
+(p.~\pageref{copenhagen}), measurement causes the wavefunction to collapse to one randomly chosen
+possibility. The other possibilities disappear, and there is no way to tell that they ever existed.
+Along with the many other problems with the Copenhagen interpretation, this shows that it requires
+nonunitarity.\index{Copenhagen interpretation!nonunitary}
+
+Another interesting example is the disappearance of matter into a black hole.
+If I throw my secret teenage diary into a black hole, then it contributes a little bit to the black
+hole's mass, but the embarrassing information on the pages is lost forever. This loss of information
+seems to imply nonunitarity. This is one of several arguments suggesting that quantum mechanics cannot
+fully handle the gravitational force. Thus although physicists currently seem to possess a completely successful
+theory of gravity (Einstein's theory of general relativity) and a completely successful theory of
+the microscopic world (quantum mechanics), the two theories are irreconcilable, and
+we can only make educated guesses, for example, about the behavior of a hypothetical microscopic black hole.
 
 \begin{eg}{A plane wave}\label{eg:t-dep-s-eqn-plane-wave}
 Consider a free particle of mass $m$ in one dimension, with the wavefunction $\Psi=e^{ikx-i\omega t}$.
@@ -4777,22 +4794,30 @@ An annoying feature of example \ref{eg:t-dep-s-eqn-plane-wave} is that the wavef
 because it extends in all directions to infinity. This type of infinite plane wave
 is at best an idealization of the wavefunction for a realistic example such an electron launched by a cathode
 ray tube, or an alpha particle emitted by a nucleus. As a more realistic example, we might try something
-like this:
+like a wave packet, such as a pulse with a certain shape, traveling in a certain direction.
+This works for waves on a string or for electromagnetic waves: the pulse or packet simply glides along
+while rigidly maintaining its shape. To investigate this idea using the time-dependent Schr\"odinger equation,
+it will be convenient to adopt the frame of reference in which the particle is at rest. In this frame,
+we would expect the wave to look frozen, just as an ocean wave looks frozen in place to a surfer who is
+riding it. It must therefore be of the form
 \begin{equation*}
-  \Psi = A e^{-i\omega t}f(x-vt),
+  \Psi = e^{-i\omega t}f(x),
 \end{equation*}
-where $A$ can be adjusted for normalization, the exponential is intended to give an oscillating time-dependence as required by
-the Schr\"odinger equation, and the function $f$ gives the shape of a wave packet. For example, $f$
-could be chosen to represent a wave pulse with the the bell-curve or ``Gaussian'' shape $f(u)=e^{-bu^2}$.
-This kind of approach works with electromagnetic waves or waves on a string. But if you crank out the
-messy math, you will find that this wavefunction is \emph{not} a solution to the Schr\"odinger equation.
-One way to see this failure is to check that with the Gaussian pulse,
-the second spatial derivative $\partial^2\Psi/\partial x^2$ contains a term that looks like
-$t^2\Psi$, but there is no similar term in $\partial\Psi/\partial t$.
+where $f$ is some function specifying the shape of the wave packet.
+But this $\Psi$ is not a solution to the Schr\"odinger equation. On the left-hand side
+of the Schr\"odinger equation, evaluating the time derivative gives
+$\hbar\omega\Psi$, which is just the original wavefunction multiplied by a constant.
+If we are to satisfy the Schr\"odinger equation, then the right-hand side, which is the second derivative
+with respect to $x$, must also
+be equal to the original wavefunction multiplied by a constant. But the only functions for which
+$(\der^2/\der x^2)(\ldots)=(\text{constant})(\ldots)$ are exponentials and sine waves. An exponential shape
+can't be a physical realization of a wave packet, because it can't even be a normalized. A sine wave
+works, but it just describes an infinite plane wave like the one in example \ref{eg:t-dep-s-eqn-plane-wave}, not
+a wave packet that can be localized and normalized.
 
-The reason for this result is that the Schr\"odinger equation is dispersive: waves with different wavelengths
+The underlying reason for this result is that the Schr\"odinger equation is dispersive: waves with different wavelengths
 travel at different speeds (because they correspond to different momenta). Suppose a pulse has the
-shape $Af(x)$ at $t=0$. Since a pulse is not a sine wave, it doesn't have a single well-defined wavelength, and therefore
+shape $f(x)$ at $t=0$. Since a pulse is not a sine wave, it doesn't have a single well-defined wavelength, and therefore
 it doesn't have a definite momentum or velocity. In fact, the spread in momentum must be at least a certain
 size due to the Heisenberg uncertainty principle $\Delta p\Delta x\gtrsim h$. This causes the pulse to spread out over time.
 
@@ -4836,8 +4861,8 @@ independently dial in the desired values of a particle's position and momentum. 
 two variables that are independent of one another. Therefore we don't have a phase space, so an observable
 has to be represented by a function whose input is a wavefunction.
 Furthermore, we expect that:
-\begin{itemize}
-\item The output shouldn't depend on the phase of the wavefunction.
+\begin{itemize}\label{operator-criteria}
+\item The output shouldn't depend on the phase\footnote{``Phase'' as in the phase of a wave, not as in ``phase space.''} of the wavefunction.
 \item The output shouldn't depend on amplitude (because a different amplitude might just mean an incorrectly normalized state).
 \item The output should be well defined when we superpose any two states.
 \end{itemize}
@@ -4870,7 +4895,7 @@ $A$ is any constant.
 Such an equation says that applying the operator to the input just gives back the
 \emph{input itself}, multiplied by some constant. For this reason, this type of
 equation is called an \emph{eigenvalue equation}, because ``\emph{eigen}'' is the
-German word for ``self.'' We say that 3 is the only eigenvalue of 
+German word for ``self.'' We say that 3 is the eigenvalue of 
 the eigenvalue equation $(\der/\der x)f=3f$.
 In the time-independent Schr\"odinger equation, the eigenvalue is the energy,
 and a solution $\Psi$ is called a state of definite energy (or
@@ -4881,7 +4906,10 @@ The second derivative (with the appropriate factor
 of $-h^2/2m$) is the kinetic energy operator in quantum mechanics.
 Given an operator $\mathcal{O}$ that describes a certain observable,
 a state $\Psi$ with a definite value $c$ of that observable is one for which
-$\mathcal{O}\Psi=c\Psi$.
+$\mathcal{O}(\Psi)=c\Psi$. Although it's common to use parentheses when notating functions,
+as in $\cos(\pi)=-1$, they are optional, and we can write $\cos\pi=-1$, so we will often
+use notationa like $\mathcal{O}\Psi$ instead of $\mathcal{O}(\Psi)$, but keep in mind
+that this not multiplication, just as $\cos\pi$ doesn't mean multiplying $\cos$ by $\pi$.
 
 When we carried over the classical kinetic energy observable to quantum mechanics, we weren't
 going blind. For example, the factor of $-h^2/2m$ in front is tightly
@@ -4949,10 +4977,13 @@ Define an operator $\mathcal{O}$ by the rule
   \mathcal{O}(\eqnimage{eqn-wave1}) &= \eqnimage{eqn-wave2} \\
   \mathcal{O}(\eqnimage{eqn-wave2}) &= -(\eqnimage{eqn-wave1}) .
 \end{align*}
-This
+Since $\mathcal{O}$ is linear, defining its action on $\eqnimage{eqn-wave1}$ and
+$\eqnimage{eqn-wave2}$ suffices to define its action on the superpositions of these
+states as well.
+This operator
 has eigenvalues, one of which is $i$, corresponding to the state
 $\eqnimage{eqn-wave1}-i\eqnimage{eqn-wave2}$.
-(It also has a second eigenvalue, which is also non-real.)
+(It also has a second eigenvalue, which is imaginary as well.)
 Because this operator doesn't have real eigenvalues, it is not a valid
 observable.
 \end{eg}
@@ -4965,7 +4996,7 @@ eigenvalues are real, so that's OK. The operator $\mathcal{O}$ in
 example \ref{eg:not-an-observable} was defined using only real
 numbers, but its eigenvalues are not real. 
 
-\begin{eg}{Position is an observable}\label{eg:x-is-observale}
+\begin{eg}{Position is an observable}\label{eg:x-is-observable}
 If we have a wavefunction $\Psi(x)$ expressed as a function of position $x$, then
 we simply take the operator for position $\mathcal{O}_x$ to be multiplication by the number $x$,
 \begin{equation*}
@@ -4976,11 +5007,9 @@ This operator is definitely linear, because multiplication by a number is linear
 $7(a+b)=7a+7b$. The only question is whether it has eigenvalues, and whether those are
 real. A state of definite $x$, say a state with $x=0$, would have to be represented by a wavefunction $\Psi(x)$
 for which there was zero probability of having $x\ne0$, and this requires us to have
-\begin{equation*}
-  \Psi(x)=0 \qquad \text{for $x\ne0$}.
-\end{equation*}
+$\Psi(x)=0$ for nonzero $x$.
 But what would be the value of $\Psi(0)$? It has to be \emph{infinite} if $\Psi$ is to be properly
-normalized. The wavefunction defined in this way, with an infinite value of $\Psi(0)$, is called the
+normalized. With this motivation, the physicist P.A.M.~Dirac defined
 Dirac delta function,
 \begin{equation*}
   \delta(x)=\begin{cases}
@@ -4988,30 +5017,129 @@ Dirac delta function,
     +\infty & \text{for $x=0$}
   \end{cases}
 \end{equation*}
-Its graph is an infinitely narrow, infinitely tall spike at $x=0$.
+Its graph is an infinitely narrow, infinitely tall spike at $x=0$, and it has
+$\int_{-\infty}^{+\infty}\delta(x)\der x=1$.
 Mathematicians will shake their heads and say that this is not a definition of a function, but
 it's very useful to pretend that it is, and the delta ``function'' is widely used in a variety of
 fields such as electrical engineering. Because it was useful, mathematicians felt obliged to
-define a theory in which functions are generalized to things called distributions.
+define a theory in which functions are generalized to things called distributions or generalized functions.
 \end{eg}
 
-\begin{eg}{Time is not an observable}\label{eg:t-not-observale}
+Becase we represent an observable as an operator that changes a wavefunction into a new wavefunction,
+a common misconception is that this change represents the effect of measurement on the system.
+Although it is often true that microscopic systems are delicate, so that the act of measurement may have a
+significant effect on them, that action of the operator on the wavefunction does not represent
+that effect. For example, the position operator $\mathcal{O}_x$ from example \ref{eg:x-is-observable} consists simply
+of multiplication of the wavefunction by $x$. Suppose we have a particle in a box with a wavefunction
+given by $\Psi=\sin x$, where we ignore units and normalization, and the box is defined by
+$0\le x\le \pi$. Then $\mathcal{O}_x\Psi$ eats the
+input wavefunction $\sin x$ and poops out the new function $x\sin x$. But the act of measuring the
+particle's position clearly can't do anything like this --- for one thing, the function $x\sin x$ 
+has larger values on the right side of the box than on the left, but there is nothing to create
+such an asymmetry in either the original state or the measuring process. The real-world effect of
+the measurement would probably be to knock the particle out of the box completely, since a high-resolution
+measurement will have a small uncertainty $\Delta x$, which by the Heisenberg uncertainty principle
+means creating a large $\Delta p$.
+
+Nor is it always true that measuring a system disturbs it. For example, suppose that we prepare a
+beam of silver atoms, as in the Stern-Gerlach experiment, in such a way that every atom is guaranteed
+to be in either a state of definite $L_x=+1/2$ or $L_x=-1/2$. That is, the beam may be a mixture of
+both of these possibilities, but each atom is guaranteed have its spin either exactly aligned with
+the magnetic field or exactly antiparallel to it. Then the effect of the magnetic field is simply
+to sort out the two types of atoms according to spin, without having the slightest effect on those spins.
+
+\begin{eg}{Phase is not an observable}\label{eg:phase-not-observable}
+On p.~\pageref{operator-criteria} we listed three criteria for implementing the concept
+of an observable in quantum mechanics, and one of these was that since wavefunctions that differ
+only by a phase describe the same state, the result of an observation should not depend on phase.
+For this reason, it should not be a surprise that the mathematical definition of an observable
+that we came up with does not allow for the creation of an observable to describe measurement of
+a phase.
+
+By way of rigorous proof, suppose to the contrary that we did have such an observable
+$\mathcal{O}_\zu{ph}$. By our definition of an observable, it would have to have some set of
+eigenvalues that were real numbers. Consider such an eigenvalue $\varphi$, which might perhaps be
+the argument of the wavefunction in the complex plane, although we will not need to assume that.
+Let $\Psi$ be the state of definite phase having the phase $\varphi$, so that 
+\begin{equation}\label{eqn:phase-not-observable-1}
+  \mathcal{O}_\zu{ph}\Psi = \varphi\Psi.
+\end{equation}
+We can change the phase of $\Psi$ to create a new wavefunction. Let's retard its
+phase by 90 degrees, creating $i\Psi$. Since $\Psi$ was a state of definite phase, clearly
+$i\Psi$ is as well, and and it must have some different eigenvalue $\varphi'$.
+Perhaps $\varphi'=\varphi+\pi/2$, but in any case we must have $\varphi'\ne\varphi$. Then
+\begin{equation}\label{eqn:phase-not-observable-2}
+  \mathcal{O}_\zu{ph}(i\Psi) = \varphi'(i\Psi).
+\end{equation}
+But by linearity equation \eqref{eqn:phase-not-observable-2} is equivalent to $i\mathcal{O}_\zu{ph}\Psi=i\varphi'\Psi$, or
+$\mathcal{O}_\zu{ph}\Psi=\varphi'\Psi$, and therefore by comparison with
+equation \eqref{eqn:phase-not-observable-1}, $\varphi=\varphi'$, which is a contradiction, so
+we conclude that there cannot be an observable representing phase.
+\end{eg}
+
+The result of example \ref{eg:phase-not-observable} was a bit of a
+foregone conclusion, since we specifically designed our notion of an
+observable to be insensitive to phase. Therefore this argument is
+subject to the objection that perhaps there is some way to measure a
+quantum-mechanical phase, but our definition of an observable is just
+too restrictive to describe it.  However, we will see later that there
+are more concrete reasons why phase cannot be measured. 
+
+\begin{eg}{Time is not an observable}\label{eg:t-not-observable}
 We do not expect to have a time operator in quantum mechanics. This
 follows simply because an operator is supposed to be a function that takes a
 wavefunction as an input, but we typically can't tell what time it is by looking at the
-wavefunction. For example, if a free particle is at rest, then we
-could say its energy is zero, so its frequency is zero, and its wavefunction doesn't
-vary at all with time.
+wavefunction. For example, if the electron in a hydrogen atom is in its ground state, then we
+could say its energy is zero, so its frequency is zero, the period is infinite,
+and the wavefunction doesn't vary at all with time. (We can choose our
+reference level for the electrical energy $U_\zu{elec}$ to be anything we like.
+Even if we choose it such that the energy of the ground state
+is nonzero, the only change in the electron's wavefunction over time will be
+a phase rotation, which by example \ref{eg:phase-not-observable} is not observable.)
+
+Of course this doesn't mean that quantum mechanics forbids us from building clocks.
+It just tells us that many
+quantum mechanical systems are too simple to function as clocks. In particular,
+we would be misled if we pictured a hydrogen atom classically in terms of an
+electron traveling in a circular orbit around a proton, in which case it really
+could act like the hand on a tiny clock.
 \end{eg}
 
 Since you've already studied relativity, you've been carefully inculcated with the
-idea that space and time are to be treated symmetrically, and part of a more general
-thing called spacetime. The differing results of examples \ref{eg:x-is-observale} and \ref{eg:t-not-observale}
-are clearly not consistent with relativity. This is to be expected because, as we've already noted,
-the Schr\"odinger equation is nonrelativistic.
+idea that space and time are to be treated symmetrically, as parts of a more general
+thing called spacetime. The differing results of examples \ref{eg:x-is-observable} and \ref{eg:t-not-observable}
+are clearly not consistent with relativity. This is to be expected because
+the Schr\"odinger equation is nonrelativistic
+(cf.~self-check \ref{sc:schrodingerassumptions}, p.~\pageref{sc:schrodingerassumptions}), and
+the principles laid out in this section are the principles of \emph{nonrelativistic} quantum mechanics.
+
+\begin{eg}{Parity}
+In freshman calculus you will have encountered the notion of even and odd functions. In quantum
+mechanics, we can have even and odd wavefunctions, and they can be distinguished from one another
+using the parity operator $\mathcal{P}$.\index{parity!operator in quantum mechanics}
+If $\Psi(x)$ is a wavefunction, then $\mathcal{P}\Psi$ is a new wavefunction, call it $\Psi'$,
+such that $\Psi'(x)=\Psi(-x)$. In other words, the parity operator flips the wavefunction
+across the origin. (In three dimensions, we negate all three coordinates.) States of definite
+parity are represented by wavefunctions that are even (eigenvalue $+1$) or odd ($-1$).
+\end{eg}
+
+\begin{eg}{States of definite angular momentum}
+In section \ref{subsubsec:qm-corrections}, p.~\pageref{subsubsec:qm-corrections}, we saw that the kinetic
+energy of a quantum mechanical rotor is proportional not to $\ell^2$ but instead to 
+$\ell(\ell+1)$. This was justified qualitatively in terms of the solutions of the 
+Schr\"odinger equation for a particle on a sphere, but in fact there is a deeper reason, which is
+that the eigenvalues of the orbital angular momentum operator turn out to be $\ell(\ell+1)$.
+The parity of such a state is $(-1)^\ell$, which can be seen in figure \figref{hydrogen-three-states}
+on p.~\pageref{fig:hydrogen-three-states}.
+\end{eg}
 
 <% end_sec('qm-observables') %>
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% example \ref{eg:t-not-observable}: state of def energy can't be a clock, need to compare phases; E-t uncertainty
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 <% end_sec('qm-structure') %>
 
