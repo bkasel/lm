@@ -1442,7 +1442,7 @@ a low-entropy value like $R=0$ or $R=6$.
 
  % 
 <% end_sec() %>
-<% begin_sec("Phase space") %>
+<% begin_sec("Phase space",nil,'phase-space') %>
 There is a problem with making this description of entropy into a mathematical
 definition. The problem is that it refers to the number of possible states, but that number
 is theoretically infinite. To get around the problem, we coarsen our description of the
@@ -1475,7 +1475,11 @@ Now let's do a real calculation. Suppose there are only two atoms in the box,
 with coordinates $x_1$ and $x_2$. We can give all the relevant information
 about the state of the system by specifying one of the cells in the grid
 shown in figure \figref{twobytwo}. This grid is known as the 
- \emph{phase space} of the system. The lower right cell, for instance,
+ \emph{phase space} of the system.\footnote{The term is a little obscure. Basically the
+idea is the same as in ``my toddler is going through a phase where he always says no.''
+The ``phase'' is a stage in the evolution of the system, a snapshot of its state at a moment
+in time. The usage is also related to the concept of Lissajous figures, in which a particular
+point on the trajectory is defined by the phases of the oscillations along the $x$ and $y$ axes.} The lower right cell, for instance,
 describes a state in which atom number 1 is in the right side of the box
 and atom number 2 in the left. Since there are two possible states with
 $R=1$ and only one state with $R=2$, we are twice as likely to observe
@@ -1495,7 +1499,7 @@ has six dimensions per atom (one for each coordinate
 and one for each momentum component).
 
  % 
-<% end_sec() %>
+<% end_sec('phase-space') %>
 <% begin_sec("Microscopic definitions of entropy and temperature") %>
 Two more issues need to be resolved in order to make a microscopic
 definition of entropy.

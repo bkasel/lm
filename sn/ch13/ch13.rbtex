@@ -1559,7 +1559,7 @@ we will discuss the Heisenberg uncertainty
 principle, which gives a numerical way of approaching this issue.)
 
 <% end_sec() %>
-<% begin_sec("Another wrong interpretation: the pilot wave hypothesis") %>\index{pilot wave hypothesis}\index{wave-particle duality!pilot-wave interpretation of}
+<% begin_sec("Another wrong interpretation: the pilot wave hypothesis",nil,'pilot-wave') %>\index{pilot wave hypothesis}\index{wave-particle duality!pilot-wave interpretation of}
 A second possible explanation of wave-particle duality was
 taken seriously in the early history of quantum mechanics.
 What if the photon \emph{particle} is like a surfer riding
@@ -2917,7 +2917,7 @@ with a slash through it, read ``h-bar'') as an abbreviation
 for $h/2\pi $. We then have the important result known as
 the \labelimportantintext{Schr\"odinger equation}:
 
-\begin{important}
+\begin{important}\label{s-eqn-simplest-initial-statement}
 \begin{equation*}
         E \cdot \Psi = -\frac{\hbar^2}{2m}\frac{\der^2\Psi}{\der x^2}  +   U \cdot \Psi
 \end{equation*}
@@ -3386,6 +3386,11 @@ but it is \emph{only} possible for a standing wave, and this is the reason for a
 in the captions of previous figures in which I took the liberty of representing a traveling wave as
 a sine-wave graph.
 
+Figure \subfigref{rainbow}{5} shows a two-dimensional standing wave of a particle in a box,
+and \subfigref{rainbow}{6} shows a double-slit interference pattern. (In the latter, I've cheated
+by making the amplitude of the wave on the right-hand half of the picture much greater than it
+would actually be.)
+
 \begin{eg}{A paradox resolved}
 Consider the following paradox. Suppose we have an electron that is traveling wave, and
 its wavefunction looks like a wave-train consisting of 5 cycles of a sine wave. Call the distance
@@ -3408,10 +3413,6 @@ It has to be a complex number with a rotating phase angle in the complex plane, 
 \emph{constant} magnitude.
 \end{eg}
 
-Figure \subfigref{rainbow}{5} shows a two-dimensional standing wave of a particle in a box,
-and \subfigref{rainbow}{6} shows a double-slit interference pattern. (In the latter, I've cheated
-by making the amplitude of the wave on the right-hand half of the picture much greater than it
-would actually be.)
 
 <% end_sec('complex-wavefunction') %>
 <% begin_sec("Linearity of the Schr\\\"odinger equation",nil,'linearity-of-schrodinger') %>
@@ -4665,6 +4666,354 @@ oscillations in the two perpendicular directions that occur in the Laplacian $\p
 <% end_sec('qm-corrections') %>
 
 <% end_sec() %>
+
+<% begin_sec("The underlying structure of quantum mechanics",nil,'qm-structure') %>
+
+So far we have been building up the structure of quantum mechanics by casually laying
+one brick on top of another, but at this point it will be advantageous to pause and
+consider the broader blueprint.
+
+<% begin_sec("The time-dependent Schr\\\"odinger equation",nil,'time-dependent-s-eqn') %>
+For simplicity our discussion of the Schr\"odinger equation in section
+\ref{subsec:schrodinger}, p.~\pageref{s-eqn-simplest-initial-statement}, was limited to standing waves, allowing us to avoid
+explicitly discussing how the wavefunction changed with passing time. Let's consider
+the generalization to the full time-dependent case.
+
+Classically, suppose I show you a picture of a baseball next to a tree, and I ask you how
+long it will take to hit the ground. You can't tell, because you also need information about the ball's initial
+velocity. That is, the future time-evolution of the system $x(t)$ depends not just on the initial position $x(0)$
+but also on its initial time derivative $x'(0)$.
+
+But if I show you a uranium atom in its lowest energy state, you don't
+need to know any other information to predict everything that can be
+predicted about its future decay. Whereas the baseball could be thrown downward
+in order to make it reach the ground more quickly, nobody knows of any way to
+prepare the uranium nucleus in such a way that it is any more likely to decay
+sooner. Knowing the initial wavefunction $\Psi(0)$ to be that of the ground state
+lets us say as much as can be said about the future time-evolution $\Psi(t)$, and it's
+neither necessary nor helpful to know the time derivative $\Psi'(t)$.
+
+This is an example of a more general idea about the interpretation of quantum mechanics,
+which is that the wavefunction is a complete description of any
+system. There isn't more information that can be known about the system.
+(The phase and normalization of the wavefunction are not considered to give
+any information, since the phase is unobservable, and the normalization can be standardized
+so that the total probability is 1.) This principle seems to be widely agreed upon by
+physicists, but doesn't seem to have a standard name.
+
+\begin{important}[Wavefunction fundamentalism]
+All knowable information about a system is encoded in its wavefunction (ignoring phase
+and normalization).
+\end{important}
+
+\noindent The pilot wave hypothesis, discussed on p.~\pageref{subsubsec:pilot-wave},
+is an example of an idea that would violate this principle.
+
+Another example that shows the contrast with the classical description is that
+if I show you a snapshot of a wave on a string, you can't tell which
+direction it's going --- as with the baseball, you need to know its
+initial velocity in addition. But
+if I show you a snapshot of a quantum-mechanical traveling wave, you \emph{can} tell which
+direction it's going, because of the complex phase, as shown in figures
+\subfigref{rainbow}{2} and \subfigref{rainbow}{3} on page \pageref{fig:rainbow}.
+Note that this mechanism wouldn't work if wavefunctions were always real numbers,
+so wavefunction fundamentalism implies complex wavefunctions.
+
+Given the wavefunction at some initial time, we can predict its evolution into the future
+by making use of the principle that $E=hf$. Suppose for example that we have a sinusoidal plane wave
+traveling to the right. Then we expect the value of the wavefunction at a particular point in space
+to rotate clockwise about the origin in the complex plane at the appropriate freqency $f$, showing
+a time dependence $e^{-i\omega t}$ (where, as usual, $\omega=2\pi f$). Thus the time derivative
+of the wavefunction is $\Psi'=-i\omega\Psi=-i(E/\hbar)\Psi$, so that $E\Psi=i\hbar\Psi'$. Then to
+generalize the time-independent Schr\"odinger equation to its time-dependent version, the most
+obvious thing to try is simply to substitute $i\hbar\partial\Psi/\partial t$ for $E\Psi$, which gives
+\begin{equation*}\index{Schr\"odinger equation!time-dependent}
+  i\hbar\frac{\partial\Psi}{\partial t} = 
+              -\frac{\hbar^2}{2m}\nabla^2 \Psi  +   U \Psi   .
+\end{equation*}
+Unlike Newton's laws of motion, which refer to a second derivative with respect to time, the Schr\"odinger equation
+involves only a first time derivative. This is why we don't need initial data on $\partial\Psi/\partial t$, but only
+$\Psi$: if we know $\Psi$, then the right-hand side of the Schr\"odinger equation is what \emph{gives}
+us $\partial\Psi/\partial t$. But the Schr\"odinger equation has some other properties
+that match up with those of Newton's laws. It is completely deterministic, so that if we know
+$\Psi$ initially, we can always predict it in the future. We can also ``predict'' backward in time,
+so that the system's history can always be recovered
+from knowledge of its present state. Thus there is never any loss of information over time. Furthermore,
+it can be shown that probability is always conserved, in the sense that if the wavefunction is initially
+normalized, it will also be normalized at all later times. 
+
+\begin{important}[Unitary evolution of the wavefunction]
+The wavefunction evolves over time, according to the Schr\"odinger equation, in a deterministic
+and \emph{unitary} manner,
+meaning that probability is conserved and information is never lost.
+\end{important}
+
+Since we think of quantum mechanics as being all about randomness, this determinism may seem surprising.
+But determinism in the time-evolution of the wavefunction isn't the same as determinism in the results
+of experiments as perceived and recorded by a human brain. Suppose that you prepare a uranium atom in
+its ground state, then wait one half-life and observe whether or not it has decayed, as in the thought
+experiment of Schr\"odinger's cat. There is no uncertainty or randomness about the wavefunction of the
+whole system (atom plus you) at the end. We know for sure what it looks like.
+It consists of an equal superposition of two states,
+one in which the atom has decayed and your brain has observed that fact, and one in which the atom has
+not yet decayed and that fact is instead recorded in your brain. 
+
+\begin{eg}{A plane wave}\label{eg:t-dep-s-eqn-plane-wave}
+Consider a free particle of mass $m$ in one dimension, with the wavefunction $\Psi=e^{ikx-i\omega t}$.
+Then application of the Schr\"odinger equation, $i\hbar\partial\Psi/\partial t=-(\hbar^2/2m)\partial^2\Psi/\partial x^2$,
+gives
+\begin{equation*}
+  \hbar\omega e^{(\ldots)} = \frac{\hbar^2k^2}{2m} e^{(\ldots)},
+\end{equation*}
+and if this is to hold true for all values of $x$ and $t$, then we must have
+\begin{equation*}
+  \hbar\omega = \frac{\hbar^2k^2}{2m},
+\end{equation*}
+which is simply an expression of the Newtonian relation $K=p^2/2m$, since $k\lambda=2\pi$ and $p=h/\lambda$.
+\end{eg}
+
+\begin{eg}{Dispersion of a wave packet}
+An annoying feature of example \ref{eg:t-dep-s-eqn-plane-wave} is that the wavefunction cannot be normalized
+because it extends in all directions to infinity. This type of infinite plane wave
+is at best an idealization of the wavefunction for a realistic example such an electron launched by a cathode
+ray tube, or an alpha particle emitted by a nucleus. As a more realistic example, we might try something
+like this:
+\begin{equation*}
+  \Psi = A e^{-i\omega t}f(x-vt),
+\end{equation*}
+where $A$ can be adjusted for normalization, the exponential is intended to give an oscillating time-dependence as required by
+the Schr\"odinger equation, and the function $f$ gives the shape of a wave packet. For example, $f$
+could be chosen to represent a wave pulse with the the bell-curve or ``Gaussian'' shape $f(u)=e^{-bu^2}$.
+This kind of approach works with electromagnetic waves or waves on a string. But if you crank out the
+messy math, you will find that this wavefunction is \emph{not} a solution to the Schr\"odinger equation.
+One way to see this failure is to check that with the Gaussian pulse,
+the second spatial derivative $\partial^2\Psi/\partial x^2$ contains a term that looks like
+$t^2\Psi$, but there is no similar term in $\partial\Psi/\partial t$.
+
+The reason for this result is that the Schr\"odinger equation is dispersive: waves with different wavelengths
+travel at different speeds (because they correspond to different momenta). Suppose a pulse has the
+shape $Af(x)$ at $t=0$. Since a pulse is not a sine wave, it doesn't have a single well-defined wavelength, and therefore
+it doesn't have a definite momentum or velocity. In fact, the spread in momentum must be at least a certain
+size due to the Heisenberg uncertainty principle $\Delta p\Delta x\gtrsim h$. This causes the pulse to spread out over time.
+
+This leads to a strange thought experiment. Suppose that a uranium atom in the Andromeda galaxy emits an alpha particle,
+which then travels thousands of light years and eventually flies past the earth. Its wave packet may initially have
+been as narrow as the diameter of an atomic nucleus, $\sim 10^{-15}\ \munit$, but by the time it arrives perhaps it
+is the size of an aircraft carrier. Will an observer see a gigantic alpha particle flying by? No, because observing
+it constitutes a measurement of its position, and by the probability interpretation of the wavefunction this
+measurement simply has a certain probability of giving a result that is anywhere within some region the size of
+an aircraft carrier.
+\end{eg}
+
+<% end_sec('time-dependent-s-eqn') %>
+
+<% begin_sec("Observables",nil,'qm-observables') %>
+By the time my first-year mechanics students have been in class for a week, they know how to answer
+when I ask them the velocity of the tape dispenser at the front of the classroom: ``We don't know, it
+depends on your frame of reference.'' The \emph{absolute} velocity of an object is a meaningless concept,
+part of the mythical dungeons-and-dragons cosmology of Aristotelian physics. Quantum mechanics is as great
+a break from Newton as Newton was from Aristotle, and similar care is required in redefining what concepts
+are \emph{observables} --- meaningful things to talk about measuring.
+
+\newcommand{\eqnimage}[1]{\raisebox{-.2\height}{\includegraphics[resolution=300]{../share/quantum/figs/#1}}}
+
+Classically, we describe the state of the system as a point in phase
+space (sec.~\ref{subsec:phase-space}, p.~\pageref{subsec:phase-space}) --- which is just a fancy way of
+saying that we specify all the positions and momenta of its particles ---
+and an observable is defined as a function that takes that
+point as an input and produces a real number as an output. (By the way, the word ``phase'' in ``phase space''
+doesn't refer directly to the phase of a wave, which we'll also be discussing below.)
+For example, kinetic energy is a classical observable, and 
+$K(\eqnimage{eqn-tennis-ball})=0$, where the picture represents
+a tennis ball at rest. For a moving tennis ball with one unit of energy, 
+$K(\eqnimage{eqn-tennis-ball-moving})=1$.
+For a vibrating violin string, we could have 
+$U(\eqnimage{eqn-wave2-small-amp})=1$, and $U(\eqnimage{eqn-wave2})=4$ (where doubling the amplitude gives
+four times the energy).
+
+Quantum-mechanically, the Heisenberg uncertainty principle tells us that we can't
+independently dial in the desired values of a particle's position and momentum. They aren't
+two variables that are independent of one another. Therefore we don't have a phase space, so an observable
+has to be represented by a function whose input is a wavefunction.
+Furthermore, we expect that:
+\begin{itemize}
+\item The output shouldn't depend on the phase of the wavefunction.
+\item The output shouldn't depend on amplitude (because a different amplitude might just mean an incorrectly normalized state).
+\item The output should be well defined when we superpose any two states.
+\end{itemize}
+\noindent These requirements are hard to reconcile with the idea that
+the output of the observable is just a real number representing the
+result of the measurement. We could decree that the input wavefunction is just
+required to be have the standard normalization, but there's no obvious
+way to define a standardization of phase. And suppose we have a
+particle in a one-dimensional box, with the two lowest energies being
+$E(\eqnimage{eqn-wave1})=1$ and $E(\eqnimage{eqn-wave2})=4$.
+Then what should we define
+for the superposition $E(\eqnimage{eqn-wave1}+\eqnimage{eqn-wave2})$?
+We could define it to be the average, 2.5, but
+that isn't even a possible value of the measurement; in reality, the
+result of the measurement would be either 1 or 4, with equal
+probability.
+
+For a clue as to a better way to proceed, note the structure of the
+time-independent Schr\"odinger equation for a free particle, omitting all constant
+factors like $m$, 2, and $\hbar$. It isn't $(\der^2/\der x^2)\Psi=E$, it's
+$(\der^2/\der x^2)\Psi=E\Psi$. This fixes all the problems. For example,
+if we change the phase of the wavefunction by flipping its sign, the equation
+still holds with the same value of $E$. This equation is a specific example
+of a more general type of equation that looks like
+\begin{equation*}
+  \text{operator}(\text{input}) = \text{number}\times\text{input}.
+\end{equation*}
+Another, simpler example is $(\der/\der x)f=3f$, which is satisfied if $f=Ae^{3x}$, where
+$A$ is any constant.
+Such an equation says that applying the operator to the input just gives back the
+\emph{input itself}, multiplied by some constant. For this reason, this type of
+equation is called an \emph{eigenvalue equation}, because ``\emph{eigen}'' is the
+German word for ``self.'' We say that 3 is the only eigenvalue of 
+the eigenvalue equation $(\der/\der x)f=3f$.
+In the time-independent Schr\"odinger equation, the eigenvalue is the energy,
+and a solution $\Psi$ is called a state of definite energy (or
+``eigenstate''). 
+
+All observables in quantum mechanics are described by operators such as derivatives.
+The second derivative (with the appropriate factor
+of $-h^2/2m$) is the kinetic energy operator in quantum mechanics.
+Given an operator $\mathcal{O}$ that describes a certain observable,
+a state $\Psi$ with a definite value $c$ of that observable is one for which
+$\mathcal{O}\Psi=c\Psi$.
+
+When we carried over the classical kinetic energy observable to quantum mechanics, we weren't
+going blind. For example, the factor of $-h^2/2m$ in front is tightly
+constrained by requirements like units and the need for a traveling
+sine wave to have positive energy. But for the superposition of two
+states, classical mechanics will never give us any guidance. For
+example, what is the body temperature of Schr\"odinger's cat? For the
+energy operators appearing in the Schr\"odinger equation, we used linear operators.
+The
+result was that our law of physics was perfectly linear, and this is a
+hard requirement, for the reasons described on p.~\pageref{subsubsec:linearity-of-schrodinger}.
+It therefore seems natural to require that \emph{all} observables be represented by
+linear operators,
+\begin{equation*}
+  \mathcal{O}(\Psi_1+\Psi_2)=\mathcal{O}\Psi_1+\mathcal{O}\Psi_2.
+\end{equation*}
+Indeed, if they were not linear, then quantum mechanics would lack
+self-consistency, for the act of measurement can be described by applying the Schr\"odinger equation
+to a big system consisting of the
+system being observed interacting with the measuring device.
+
+Finally, we have one more requirement, which is that the linear
+operator representing an observable should have eigenvalues that are
+real. This isn't because the results of a measurement must logically
+be real --- e.g., we can measure complex impedances. But in any
+real-world application of the complex number system, we must always
+choose some arbitrary phase conventions, such as that an inductor has a
+positive imaginary impedance to represent the fact that the voltage
+leads the current by 90 degrees. (Such phase conventions are always
+arbitrary because we
+define $i$ as $\sqrt{-1}$, but this doesn't distinguish $i$ from $-i$.)
+These phase conventions are all independent of one another, and the
+classical ones are independent of the convention used for
+wavefunctions in quantum mechanics, which is that a state with positive
+energy spins clockwise in the complex plane.
+
+\begin{important}[Observables]
+In quantum mechanics, any observable is represented by a linear operator that takes
+a wavefunction as an input and has real eigenvalues.
+\end{important}
+
+\begin{eg}{The momentum operator}\label{eg:momentum-operator}
+Quantum mechanics represents motion as a dependence of the wavefunction on
+position, so that a constant wavefunction has no motion.
+This suggests defining
+the momentum operator as the derivative with respect to position.
+This almost works, but needs to be tweaked a little.
+We expect that a state of
+definite momentum is a sine wave of the form $\Psi=e^{ikx}$. We have $k\lambda=2\pi$
+and $p=h/\lambda=\hbar k$, and the sign is a matter of convention. Taking the
+derivative of $\Psi$ gives an eigenvalue $ik$, which has the wrong units
+(easily fixed by tacking on a factor of $\hbar$), but more
+importantly is not real. This suggests defining the momentum operator
+as 
+\begin{equation*}
+  \mathcal{O}_p=-i\hbar\frac{\der}{\der x}.
+\end{equation*}
+\end{eg}
+
+\begin{eg}{A nonexample}\label{eg:not-an-observable}
+Consider the one-dimensional particle in a box, and restrict our attention to
+the two lowest-energy states and their superpositions.
+Define an operator $\mathcal{O}$ by the rule
+\begin{align*}
+  \mathcal{O}(\eqnimage{eqn-wave1}) &= \eqnimage{eqn-wave2} \\
+  \mathcal{O}(\eqnimage{eqn-wave2}) &= -(\eqnimage{eqn-wave1}) .
+\end{align*}
+This
+has eigenvalues, one of which is $i$, corresponding to the state
+$\eqnimage{eqn-wave1}-i\eqnimage{eqn-wave2}$.
+(It also has a second eigenvalue, which is also non-real.)
+Because this operator doesn't have real eigenvalues, it is not a valid
+observable.
+\end{eg}
+
+Note that in examples \ref{eg:momentum-operator} and
+\ref{eg:not-an-observable}, it doesn't matter whether the operator is
+\emph{defined} using complex numbers. Our definition of the momentum
+operator was stated using an equation that had an $i$ in it, but its
+eigenvalues are real, so that's OK. The operator $\mathcal{O}$ in
+example \ref{eg:not-an-observable} was defined using only real
+numbers, but its eigenvalues are not real. 
+
+\begin{eg}{Position is an observable}\label{eg:x-is-observale}
+If we have a wavefunction $\Psi(x)$ expressed as a function of position $x$, then
+we simply take the operator for position $\mathcal{O}_x$ to be multiplication by the number $x$,
+\begin{equation*}
+  \mathcal{O}_x(\Psi)=x\Psi .
+\end{equation*}
+For example, if $\Psi=e^{ix}$ (ignoring units), then \mathcal{O}_x(\Psi)=xe^{ix}$.
+This operator is definitely linear, because multiplication by a number is linear, e.g.,
+$7(a+b)=7a+7b$. The only question is whether it has eigenvalues, and whether those are
+real. A state of definite $x$, say a state with $x=0$, would have to be represented by a wavefunction $\Psi(x)$
+for which there was zero probability of having $x\ne0$, and this requires us to have
+\begin{equation*}
+  \Psi(x)=0 \qquad \text{for $x\ne0$}.
+\end{equation*}
+But what would be the value of $\Psi(0)$? It has to be \emph{infinite} if $\Psi$ is to be properly
+normalized. The wavefunction defined in this way, with an infinite value of $\Psi(0)$, is called the
+Dirac delta function,
+\begin{equation*}
+  \delta(x)=\begin{cases}
+    0 & \text{for $x\ne0$} \\
+    +\infty & \text{for $x=0$}
+  \end{cases}
+\end{equation*}
+Its graph is an infinitely narrow, infinitely tall spike at $x=0$.
+Mathematicians will shake their heads and say that this is not a definition of a function, but
+it's very useful to pretend that it is, and the delta ``function'' is widely used in a variety of
+fields such as electrical engineering. Because it was useful, mathematicians felt obliged to
+define a theory in which functions are generalized to things called distributions.
+\end{eg}
+
+\begin{eg}{Time is not an observable}\label{eg:t-not-observale}
+We do not expect to have a time operator in quantum mechanics. This
+follows simply because an operator is supposed to be a function that takes a
+wavefunction as an input, but we typically can't tell what time it is by looking at the
+wavefunction. For example, if a free particle is at rest, then we
+could say its energy is zero, so its frequency is zero, and its wavefunction doesn't
+vary at all with time.
+\end{eg}
+
+Since you've already studied relativity, you've been carefully inculcated with the
+idea that space and time are to be treated symmetrically, and part of a more general
+thing called spacetime. The differing results of examples \ref{eg:x-is-observale} and \ref{eg:t-not-observale}
+are clearly not consistent with relativity. This is to be expected because, as we've already noted,
+the Schr\"odinger equation is nonrelativistic.
+
+<% end_sec('qm-observables') %>
+
+
+<% end_sec('qm-structure') %>
 
 <% end_sec() %>
 
