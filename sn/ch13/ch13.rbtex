@@ -5135,6 +5135,106 @@ on p.~\pageref{fig:hydrogen-three-states}.
 
 <% end_sec('qm-observables') %>
 
+<% begin_sec("The inner product",nil,'qm-inner-product') %>
+We've defined the normalization of a wavefunction as the requirement $\int_{-\infty}^{+\infty}\Psi^*\Psi\der x=1$,
+which means that the total probability that the particle is \emph{somewhere} equals 1.
+(Another way of writing $\Psi^*\Psi$ would be $|\Psi|^2$.) This assumes that the wavefunction is written as
+a function of the position $x$. But it is also possible to have a wavefunction that depends on some other
+variable, such as spin or momentum, or on some combination of variables, e.g., both the spin $s$ and the position $x$
+of an electron, $\Psi(x,s)$. We can also use a wavefunction to describe a correlation between
+multiple particles, in which case the wavefunction might look like $\Psi(x_1,x_2)$. The variables that the wavefunction
+depends on may be either continuous, like position and momentum, or discrete, like spin or angular momentum.
+Given all of these possibilities, we need to figure out an appropriate generalization of the integral over $x$
+that we originally used to define our normalization condition. To provide for flexibility and generality, we
+will start by simply defining a new notation that looks like this:
+\begin{equation*}
+  \langle \Psi | \Psi \rangle = 1.
+\end{equation*}
+In the case where $\Psi$ is a function of $x$ alone, the angle brackets $\langle\ldots|\ldots\rangle$ basically
+mean just an integral over $x$, and we think of the $\langle\ldots|$ part as automatically implying the complex
+conjugation of the thing inside it. The operation $\langle\ldots|\ldots\rangle$ is called the
+\emph{inner product}.\index{inner product!in quantum mechanics}
+
+Because negative probabilities don't make sense, we require that the inner product of a wavefunction with itself
+always be positive,
+\begin{equation*}
+  \langle u | u \rangle \ge 0.
+\end{equation*}
+This makes it similar to the dot product used with vectors in Euclidean geometry.
+
+In the case of Euclidean geometry, the ability to add vectors and measure their lengths automatically
+gives us a way to judge the similarity of two vectors. For example, if $|u|=1$, $|v|=1$, and $|u+v|=2$,
+then we conclude that $u$ and $v$ are in the same direction. On the other hand, if
+$|u|=1$, $|v|=1$, and $|u+v|=\sqrt{2}$, then we can tell that $u$ and $v$ are perpendicular, which makes
+them as different as two unit-length vectors can be. More generally, $(u+v)\cdot(u+v)=|u|^2+|v|^2+2u\cdot v$,
+because the dot product is linear, so we can see that the information about how similar $u$ and $v$ are
+is all contained in their dot product $u\cdot v$. Making the analogy with quantum mechanics, we expect that
+since we can define normalization of wavefunctions, we should automatically get, ``for free,'' a way of
+measuring how similar two states are.
+
+With this motivation, we assume that there is an inner product on wavefunctions that has properties
+analogous to those of the dot product. We assume linearity, so that if $u$, $v$, and $w$ are wavefunctions,
+then
+\begin{align*}
+  \langle u | \alpha v+\beta w \rangle = \alpha\langle u | v \rangle + \beta\langle u | w \rangle \\
+\intertext{and}
+  \langle \alpha u+\beta v | w \rangle = \alpha^*\langle u | w \rangle + \beta^*\langle v | w \rangle .
+\end{align*}
+In the second equation, we need to take the complex conjugates $\alpha^*$ and $\beta^*$, for if we omitted the
+conjugation, then when $\langle u | u \rangle=1$ we would have $\langle iu | iu \rangle=-1$, describing a negative
+probability.
+
+\begin{important}[Inner product]
+Wavefunctions come equipped with an inner product that has the properties described above.
+\end{important}
+
+If we're dealing with wavefunctions that are expressed as functions of position, then it's pretty clear
+how to define an appropriate inner product: $\langle u | v \rangle = \int u^*v \der x$.
+The inner product axiom stated above then requires that this (possibly improper) integral converge in all cases, which
+means, for example, that we have to exclude infinite plane waves from consideration. However, because it's
+so convenient sometimes to talk about plane waves, we may break this rule when nobody is looking.
+Note the similarity between the expression $\int u^*v \der x$ and the expression
+$u_xv_x+u_y+v_y+u_zv_z$ for a dot product; the integral is a continuous sum, and the dot product is
+a discrete sum. A set of wavefunctions that obeys our inner product postulate is called a Hilbert space,
+after mathematician David Hilbert.
+
+Two wavefunctions have a zero inner product if and only if they are completely distinguishable from each other
+by the measurement of some observable.
+For example, $\langle \eqnimage{eqn-wave1} | \eqnimage{eqn-wave2} \rangle=0$, as can be verified
+from the integral $\int_0^\pi \sin x \sin 2x \der x=0$. These states are also distinguishable by measuring
+either their momentum or their energy. Let's consider more carefully the general justification for this
+assertion that perfect distinguishability is logically equivalent to a zero inner product.
+
+We have described valid observables in quantum mechanics as being represented by operators that have
+real eigenvalues. An alternative description of such an operator $\mathcal{O}$,
+called a Hermitian operator after Charles Hermite,
+is that it is one such that $\langle \mathcal{O} u|v\rangle = \langle  u|\mathcal{O} v\rangle$ for any $u$ and $v$.
+To see this, let $e$ be an eigenvalue, $\mathcal{O}u=eu$ for $u\ne0$. Then
+$\langle \mathcal{O} u|u\rangle = \langle  u|\mathcal{O} u\rangle$, so
+$\langle e u|u\rangle = \langle  u|e u\rangle$, and
+$e^*\langle u|u\rangle = e\langle  u| u\rangle$,                   
+so $e^*=e$, meaning that $e$ is real.
+
+Using this fact about observables, we now consider states $u$ and $v$ that can be distinguished
+empirically because they are states with different values of some observable, $\mathcal{O} u=e_1 u$
+and $\mathcal{O} v=e_2 v$. Because $\mathcal{O}$ is Hermitian, we have
+$\langle \mathcal{O} u|v\rangle = \langle u|\mathcal{O}v\rangle$, so
+$e_1^*\langle u|v\rangle=e_2 \langle u|v\rangle$. But since $e_1$ and $e_2$ are real and unequal, we must have
+$\langle u|v\rangle=0$.
+
+Going in the opposite direction, suppose that $\langle u|v\rangle=0$. How can we then conclude that
+there exists some observable $\mathcal{O}$ that can distinguish them? There is no straightforward
+mathematical reason why
+this must be true, but it would not make sense physically to talk about two states that were utterly distinct
+and yet indistinguishable by any experiment. We therefore take this as a postulate.
+
+\begin{important}[Dirac's requirement]
+There exists a set of observables such that each of these observables can be simultaneously measured along
+with all the others, and all states can be expressed as a superposition of the eigenstates of these observables.
+\end{important}
+
+<% end_sec('qm-inner-product') %>
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % example \ref{eg:t-not-observable}: state of def energy can't be a clock, need to compare phases; E-t uncertainty
