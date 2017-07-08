@@ -809,7 +809,7 @@ Draw a Gaussian surface on the electric dipole field
         \end{eg}
 
 <% end_sec() %>
-<% begin_sec("Symmetry and handedness") %>\index{symmetry}\index{handedness}
+<% begin_sec("Symmetry and handedness",nil,'em-parity') %>\index{symmetry}\index{handedness}
 
 Imagine that you establish
         radio contact with an alien on another planet. Neither of

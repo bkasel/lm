@@ -2564,7 +2564,7 @@ standing wave patterns pretty much fill the box, so our
 knowledge of the electron's position is of limited accuracy.
 If we write $\Delta x$ for the range of uncertainty in our
 knowledge of its position, then $\Delta x$ is roughly the
-same as the length of the box:
+same as the length of the box:\label{heisenberg-argument}
 \begin{equation*}
         \Delta x \approx L
 \end{equation*}
@@ -3756,7 +3756,7 @@ definite value of $L_y$. It is obviously not possible to get circular rainbows f
 than one axis.
 
 For those with a taste for rigor, here is a
-complete argument:
+complete argument:\label{proof-lx-and-lz-incompatible}
 
 \noindent Theorem: On the sphere, if a wavefunction has
 definite values of both $L_z$ and $L_x$, then it is a wavefunction
@@ -4811,7 +4811,7 @@ If we are to satisfy the Schr\"odinger equation, then the right-hand side, which
 with respect to $x$, must also
 be equal to the original wavefunction multiplied by a constant. But the only functions for which
 $(\der^2/\der x^2)(\ldots)=(\text{constant})(\ldots)$ are exponentials and sine waves. An exponential shape
-can't be a physical realization of a wave packet, because it can't even be a normalized. A sine wave
+obviously isn't a physical realization of a wave packet. A sine wave
 works, but it just describes an infinite plane wave like the one in example \ref{eg:t-dep-s-eqn-plane-wave}, not
 a wave packet that can be localized and normalized.
 
@@ -5113,7 +5113,7 @@ the Schr\"odinger equation is nonrelativistic
 (cf.~self-check \ref{sc:schrodingerassumptions}, p.~\pageref{sc:schrodingerassumptions}), and
 the principles laid out in this section are the principles of \emph{nonrelativistic} quantum mechanics.
 
-\begin{eg}{Parity}
+\begin{eg}{Parity}\label{eg:parity}
 In freshman calculus you will have encountered the notion of even and odd functions. In quantum
 mechanics, we can have even and odd wavefunctions, and they can be distinguished from one another
 using the parity operator $\mathcal{P}$.\index{parity!operator in quantum mechanics}
@@ -5132,6 +5132,14 @@ that the eigenvalues of the orbital angular momentum operator turn out to be $\e
 The parity of such a state is $(-1)^\ell$, which can be seen in figure \figref{hydrogen-three-states}
 on p.~\pageref{fig:hydrogen-three-states}.
 \end{eg}
+
+If we have two observables, it may or may not be possible to measure them both on the same state
+and get exact and meaningful results. Position and momentum $p$ and $x$ are incompatible observables, as expressed
+by the Heisenberg uncertainty principle. No state is simultaneously a state of definite $p$ and of definite
+$x$. The magnitude of an angular momentum $L$ and its component along
+some axis $L_z$ are compatible. It is common to have a state thare is simultaneously a state of definite
+$L$ and of definite $L_z$. Another example of \emph{incompatible} observables is $L_z$ and $L_x$, as proved
+on p.~\pageref{proof-lx-and-lz-incompatible}.
 
 <% end_sec('qm-observables') %>
 
@@ -5182,7 +5190,11 @@ then
 \end{align*}
 In the second equation, we need to take the complex conjugates $\alpha^*$ and $\beta^*$, for if we omitted the
 conjugation, then when $\langle u | u \rangle=1$ we would have $\langle iu | iu \rangle=-1$, describing a negative
-probability.
+probability. For similar reasons, we require that
+\begin{equation*}
+  \langle u | v \rangle = \langle v | u \rangle^*
+\end{equation*}
+rather than the more familiar property of the Euclidean dot product $u\cdot v=v\cdot u$.
 
 \begin{important}[Inner product]
 Wavefunctions come equipped with an inner product that has the properties described above.
@@ -5194,12 +5206,12 @@ The inner product axiom stated above then requires that this (possibly improper)
 means, for example, that we have to exclude infinite plane waves from consideration. However, because it's
 so convenient sometimes to talk about plane waves, we may break this rule when nobody is looking.
 Note the similarity between the expression $\int u^*v \der x$ and the expression
-$u_xv_x+u_y+v_y+u_zv_z$ for a dot product; the integral is a continuous sum, and the dot product is
-a discrete sum. A set of wavefunctions that obeys our inner product postulate is called a Hilbert space,
-after mathematician David Hilbert.
+$u_xv_x+u_yv_y+u_zv_z$ for a dot product; the integral is a continuous sum, and the dot product is
+a discrete sum.
 
 Two wavefunctions have a zero inner product if and only if they are completely distinguishable from each other
-by the measurement of some observable.
+by the measurement of some observable. By analogy with vectors in Euclidean space, we say that
+the two wavefunctions are orthogonal.
 For example, $\langle \eqnimage{eqn-wave1} | \eqnimage{eqn-wave2} \rangle=0$, as can be verified
 from the integral $\int_0^\pi \sin x \sin 2x \der x=0$. These states are also distinguishable by measuring
 either their momentum or their energy. Let's consider more carefully the general justification for this
@@ -5228,10 +5240,33 @@ mathematical reason why
 this must be true, but it would not make sense physically to talk about two states that were utterly distinct
 and yet indistinguishable by any experiment. We therefore take this as a postulate.
 
-\begin{important}[Dirac's requirement]
-There exists a set of observables such that each of these observables can be simultaneously measured along
-with all the others, and all states can be expressed as a superposition of the eigenstates of these observables.
+\begin{important}[Completeness]
+For any system of interest, there
+exists a set of compatible observables, called a complete set, such that
+any state of the system can be expressed as a sum of wavefunctions having definite values of these observables.
 \end{important}
+
+For example, we have seen in example \ref{eg:completeness-ylm} on p.~\pageref{eg:completeness-ylm}
+that for a rotor, the state with $\ell=1$ and $\ell_x=0$ can be written as a sum of the states with
+$\ell_z=-1$ and $\ell_z=1$. In the language of the completeness postulate, we can express this as
+follows. Let our system be the set of possible states of a rotor. The observables $L$ and $L_z$
+are compatible, and they turn out (although we will not prove it here) to be
+a complete set of observables for this system. The completeness postulate is satisfied in this
+example because, as shown in example \ref{eg:completeness-ylm}, the state with $\ell_x=0$ can
+be expressed as $\Psi_{\ell_z=-1}/\sqrt{2}+\Psi_{\ell_z=1}/\sqrt{2}$.
+
+Because the physical motivation for this postulate is so appealing, physicists are willing to
+stretch the definition of the word ``sum'' in order to make it true. The sum can be an infinite sum,
+and in certain cases we may even need to make it an integral, which is a kind of continuous sum.
+For example, consider a one-dimensional particle in a box.
+A complete set of observables for this
+system can be found by picking the energy operator alone. Now
+suppose we throw a particle in the box, in such a way that its
+position is equally likely to be anywhere in the box, i.e., its wavefunction is supposed to
+be constant throughout the box. Ignoring normalization, this constant wavefunction can be expressed as an infinite
+series in terms of the states of definite energy as
+$\eqnimage{eqn-wave1}+\frac{1}{3}\eqnimage{eqn-wave3}+\frac{1}{5}\eqnimage{eqn-wave5}+\ldots$
+This kind of representation of a function as an infinite sum of sine waves is called a Fourier series.
 
 <% end_sec('qm-inner-product') %>
 
@@ -5242,6 +5277,125 @@ with all the others, and all states can be expressed as a superposition of the e
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 <% end_sec('qm-structure') %>
+
+<% begin_sec("Energy-time uncertainty",nil,'et-uncertainty') %>
+Consider the following classical systems of analogies.
+
+\begin{tabular}{llll}
+space & $x$ & $k$      & $\Delta x\Delta k \gtrsim 1$ \\
+time  & $t$ & $\omega$ & $\Delta t\Delta \omega \gtrsim 1$ 
+\end{tabular}
+
+Here the quantity $k=2\pi/lambda$ is called the wavenumber.\index{wavenumber}
+The inequality $\Delta x\Delta k \gtrsim 1$ is a kind of classical uncertainty
+relation that is closely related to the Heisenberg uncertainty principle.
+Its classical nature is immediately apparent because it doesn't involve Planck's constant.
+If you look back at the argument given on p.~\pageref{heisenberg-argument}
+to justify the Heisenberg uncertainty principle, you will see that it carries
+through equally well if we simply omit the quantum-mechanical ingredients and
+use it to put a bound on $\Delta x\Delta k$ instead of $\Delta x\Delta p$. Once
+we've established the bound on $\Delta x\Delta k$, the one on $\Delta x\Delta p$
+follows immediately because $p=h/\lambda=\hbar k$.
+
+The second line of the table is in strict analogy to the first line.
+A good practical example is the high-speed transmission of digital
+data over transmission lines such as fiber-optic cables. Suppose that
+we wish to send a string of 0's and 1's, and a 1 is to be represented
+by a square pulse. If we want to transmit the data at high speed, then
+we need the duration $\Delta t$ of this pulse to be short, perhaps in
+the microsecond or even nanosecond range. This cannot be done if the
+signal consists only of a single frequency. A signal that only
+contains a single, pure frequency is just a sinusoidal wave that has
+existed infinitely far back in the past and will exist infinitely far
+into the future. Such a wave carries no information at all. Out
+frequency-time uncertainty relation tells us that if the duration of a
+pulse is to be, say, a microsecond, then the signal's spread in
+frequency much be at least on the order of 1 MHz. This is why we use
+the term ``bandwidth'' to describe the speed of a communication
+channel. 
+
+In a quantum-mechanical context, we have $E=\hbar\omega$, so there is
+an energy-time uncertainty relation,
+\begin{equation*}
+  \Delta E\Delta t \gtrsim \hbar.
+\end{equation*}
+As with the Heisenberg uncertainty principle for momentum and position,
+the symbol $\gtrsim$ means that we leave out a numerical factor, which can
+only be precisely defined if we fix some specific statistical definition of
+$\Delta$, e.g., a standard deviation.
+
+The interpretation of the energy-time uncertainty relation is a little
+tricky, because although the classical analogy between space and time
+is exact, the quantum-mechanical analogy breaks down. This is because
+time in nonrelativistic quantum mechanics, unlike position, is not an
+observable (example \ref{eg:t-not-observable}).  Time in this theory
+is just a universal parameter. The physicist Lev Landau liked to tell
+his students that there was no energy-time uncertainty relation,
+because ``I can measure the energy, and look at my watch; then I know
+both energy and time!'' One good way of interpreting it is that if
+there is a transfer of energy between two systems, then it relates
+the uncertainty $\Delta E$ in the amount of energy transferred to the
+duration $\Delta t$ of the interaction.
+
+For example, suppose we wish to bounce a photon off of a hydrogen atom
+in order to determine whether the atom is in its ground state. This is
+not necessarily an easy thing to do by extracting whatever information
+we get from the reflected photon, but the ground state is orthogonal
+to the other states, so we are at least encouraged to believe that it
+is not theoretically impossible. But there is a hard theoretical limit
+on how \emph{quickly} we can make such a determination. The difference
+in energy between the ground state and the first excited state is
+$1.6\times10^{-18}\ \junit$, so we must use a photon with an energy
+less than this amount, or else the act of observing the atom may in
+fact destroy the property we were hoping to measure. By the
+energy-time uncertainty relation, this implies that the measurement
+process cannot be done in less than about $10^{-15}$ seconds.  This
+example may seem impractical, but in fact computer memories are
+starting to reach the level of speed and miniaturization at which such
+fundamental constraints become relevant.
+
+% calc -x -e "A=2.2 10^-18 J; E=A(1-1/4); t=h/E"
+
+\begin{eg}{Mortality for hydrogen}
+In atomic physics, when a photon is emitted or absorbed it is almost always
+in a wave pattern with angular momentum 1 (i.e., $1\hbar$) and negative parity (example \ref{eg:parity}).
+Classically, this is the type of radiation pattern that we would get from an electric dipole spinning
+end over end, so we call it an electric dipole transition.
+Because the electromagnetic interaction has a symmetry between left- and right-handedness
+(section \ref{subsec:em-parity}, p.~\pageref{subsec:em-parity}), this means that
+an electric dipole transition can never cause a transition from one state of an atom to another
+state with the same parity.
+
+Now the ground state of the hydrogen atom has $\ell=0$ and is therefore a state of positive parity.
+One of the first excited states, referred to as the 2s state, also has these properties, and therefore
+it is impossible for the 2s state to decay to the ground state by emitting an electric dipole photon.
+The happy atom probably believes that once it's in the exalted 2s state, it can stay that way forever.
+One way for it to be cheated of immortality is if it undergoes a collision with another atom, but
+in some so-called planetary nebulae (hot clouds of gas cast off by dying stars), the density
+can be so low that collisions are very infrequent. In this situation, the dominant process for
+decay of the 2s state can be the simultaneous emission of \emph{two} photons. An exact and rigorous
+calculation of the rate of decay for this process is quite technical, but a fairly reasonable estimate
+can be obtained by the following semiclassical argument based on the energy-time uncertainty relation.
+
+The typical rate of emission for a photon, when not forbidden by
+parity, is $R\sim10^9\ \sunit^{-1}$, i.e., it takes about a nanosecond.
+We can think of the two-photon decay as an energy-nonconserving jump
+up to some \emph{higher}-energy state, with the emission of a photon,
+followed by the emission of a second photon leading down to the ground
+state. The first jump can happen because of the energy-time
+uncertainty relation, which allows the electron to stay in the
+intermediate state for a time $t\sim h/E$, which is on the order of
+$10^{-15}\ \sunit$.  The probability for the second photon to be
+emitted within this time is $Rt$, so the rate for the whole two-photon
+process is $R^2t\sim 10\ \sunit^{-1}$.  Considering the extremely
+crude nature of this calculation, the result is in good agreement with
+the observed rate of about $0.1\ \sunit^{-1}$. The process is actually
+observed, and contributes a continuous background spectrum in addition to
+the discrete line spectrum when such nebulae are observed with a spectrometer
+through a telescope.
+\end{eg}
+
+<% end_sec('et-uncertainty') %>
 
 <% end_sec() %>
 
