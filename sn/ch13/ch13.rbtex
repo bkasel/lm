@@ -4743,7 +4743,7 @@ from knowledge of its present state. Thus there is never any loss of information
 it can be shown that probability is always conserved, in the sense that if the wavefunction is initially
 normalized, it will also be normalized at all later times. 
 
-\begin{important}[Unitary evolution of the wavefunction]\index{unitary evolution of the wavefunction}
+\begin{important}[Unitary evolution of the wavefunction]\index{unitary evolution of the wavefunction}\label{unitarity-postulate}
 The wavefunction evolves over time, according to the Schr\"odinger equation, in a deterministic
 and \emph{unitary} manner,
 meaning that probability is conserved and information is never lost.
@@ -5256,7 +5256,7 @@ a complete set of observables for this system. The completeness postulate is sat
 example because, as shown in example \ref{eg:completeness-ylm}, the state with $\ell_x=0$ can
 be expressed as $\Psi_{\ell_z=-1}/\sqrt{2}+\Psi_{\ell_z=1}/\sqrt{2}$.
 
-Because the physical motivation for this postulate is so appealing, physicists are willing to
+Because the physical motivation for the completeness postulate is so appealing, physicists are willing to
 stretch the definition of the word ``sum'' in order to make it true. The sum can be an infinite sum,
 and in certain cases we may even need to make it an integral, which is a kind of continuous sum.
 For example, consider a one-dimensional particle in a box.
@@ -5411,6 +5411,17 @@ a double-slit interference pattern. But if we watch one slit, then half of the t
 see that the electron did not go through it, and therefore the slit's existence is of no importance,
 and we can't possible get a double-slit interference pattern.
 
+<% marg(300) %>
+<%
+  fig(
+    'double-slit-spying-on-one-slit',
+    %q{%
+      Spying on one slit in the double-slit experiment.
+    }
+  )
+%>
+<% end_marg %>
+
 To avoid this contradiction, it appears that nature must conspire\label{measurement-randomizes-phase}
 against us in such a way that observing the slit inevitably
 \emph{does} disturb the electron. The energy-time uncertainty relation
@@ -5490,6 +5501,93 @@ of a clock.
 <% end_sec('et-phase-randomization') %>
 
 <% end_sec('et-uncertainty') %>
+
+<% begin_sec("Quantum computing and the no-cloning theorem",nil,'no-cloning') %>
+Computers and information transmission systems such as the internet are currently implemented
+as classical devices. For example, the wavelengths of the electrons that carry signals in a computer
+chip are currently orders of magnitude shorter than the size of the logic gates, so that
+wave effects such as diffraction and interference are not important (problem \ref{hw:chip-qm},
+p.~\pageref{hw:chip-qm}). Even if the current devices such as silicon chips and fiber-optic
+cables could simply be scaled down to sizes comparable to the electrons' wavelengths, quantum
+effects would at some point simply make them start breaking down or behaving unreliably.
+
+It is possible, however, to design qualitatively different devices in which information and
+signals are intentionally manipulated in an explicitly quantum-mechanical fashion. This is
+the frontier known as quantum computing. In a quantum computer, the basic unit of information is
+not the classical bit but the quantum bit or \emph{qubit}. A qubit can exist in a superposition
+of the 0 and 1 states, with a well defined phase, e.g., $\Psi_0+\Psi_1$ is a different state
+than $\Psi_0-\Psi_1$ or $\Psi_0+i\Psi_1$. Furthermore, one qubit can have its state entangled
+with another's. For example, $\Psi_{01}+\Psi_{10}$ describes a state in which we have two bits,
+neither in a definite 0 or 1 state, but which are guaranteed to add up to 1. That is, if one is
+true, then the other is guaranteed to be false. It has been shown that some problems that are
+hard for classical computers are more tractable for a quantum computer. For example, there is a
+known quantum computing algorithm that is capable of efficiently factoring large integers, and when
+this is eventually implemented in a practical device, it will have the effect of breaking the
+cryptographic algorithms that you currently use for online privacy and security, since the security of those
+algorithms is predicated on the assumption that factorization is hard. This would be a disaster for
+online economic activity and could have effects such as unmasking political dissidents.
+
+A different application, and one that is easier to explain, is that quantum computing
+makes it possible in theory to make copy-proof information. This would not be useful
+to Hollywood studios trying to prevent copying of their movies, since the images have
+to pass through classical devices anyway in order to be displayed, but it means that one might
+be able to send private information through a quantum internet in such a way that it could not be copied
+by snoops, even in theory. In contrast, current classical methods of encryption are designed to allow
+eavesdropping on an information packet as it hops across the internet, but to make the copy
+useless to prying eyes because it cannot be decoded.
+
+The theoretical key to this application of quantum computing is the counterintuitive \emph{no-cloning theorem}, which
+states that it is not possible to make a copy of an unknown quantum state.
+To see why this works, suppose that we implement a qubit using the spin 1/2 of a silver atom,
+with the convention that the 0 state is represented by $s_x=-1/2$ and 1 by $s_x=+1/2$.
+If you provide me with an atom that you have prepared, then it might seem straightforward, at least
+in principle, for me to copy its state. I can shoot it through a magnetic spectrometer, as in the
+Stern-Gerlach experiment, and measure its $s_x$. Then I prepare
+another silver atom in the same state. What's the problem?
+
+The problem is that if the state of the atom is truly unknown to me, then I have no way of knowing
+that it is actually in one of the two states $s_x=-1/2$ and $s_x=+1/2$. It could instead be
+in some superposition of these, such as $\Psi_{s_x=-1/2}/\sqrt{2}+i\Psi_{s_x=+1/2}/\sqrt{2}$, with
+a 90-degree phase angle between the two components.
+Then when I send your atom through the spectrometer, the world becomes one in which both the spectrometer
+and my brain are in a superposition of the two states. In one of these worlds, I then go ahead and
+prepare my copy-atom in the $s_x=-1/2$ state, and in the other one I set it up as a $+1/2$.
+You could say that my copy-atom is, like the original, in a superposition of the two $s_x$ states, but
+there is no reason to think that it will be the \emph{same} superposition, with the same 90-degree
+phase angle. In fact, by the argument on p.~\pageref{subsubsec:et-phase-randomization} we know
+that it is not possible by \emph{any} measurement to extract this phase information and convert it
+into classical information. Furthermore, our final result is not really as simple as a copy-atom
+in some unknown superposition of the two $s_x$ states. It is a silver atom whose spin is correlated
+with the state of the original, but also correlated with the state of the spectrometer and the state
+of my brain.
+
+The impossibility of copying an unknown quantum state is enforced by nature in full generality, not
+just by the specific mechanisms described in the artificial scenario described above. To see why, consider what
+would happen to the state of the ``blank'' atom on which we had hoped to impose the copied state.
+Its state would have been overwritten, but this would imply a loss of information, which is forbidden
+by the unitarity postulate of quantum mechanics (p.~\pageref{unitarity-postulate}).
+
+The no-cloning theorem would seem to severely limit the practicability of a quantum computing.
+When you run a program on a classical computer, the very first step to be performed by the operating
+system is to copy the program's code and data from storage into random-access memory. If a quantum
+computer can't copy anything, then how do we perform this initial step? But the no-cloning theorem doesn't
+actually forbid copying \emph{any} quantum state --- it forbids copying an \emph{unknown} state.
+Going back to the example of the silver atom, imagine that rather than presenting me with a silver
+atom in a completely unknown quantum state, you give me a solemn promise that it will be either
+in the state $s_x=-1/2$ or the state $s_x=+1/2$ --- not some superposition of these. Then if you
+trace back through the logic of the scenario, you will find that there is absolutely nothing preventing
+me from making an accurate copy.
+
+Once the software on a quantum computer starts running, its qubits will certainly start
+going into superpositions of the 0 state and the 1 state. By the no-cloning theorem,
+these cannot be copied from one
+memory location to another, overwriting the previous contents of the target location. But that
+simply isn't how quantum computing works. Rather than attempting to copy, erase, and overwrite
+bits as in a classical computer, the software is designed to create complicated correlations
+between the different bits. This model of computing is not necessarily better or worse over all than classical digital
+computing, but it differs from it as much as an iPhone's model of computing differs from that
+of a slide rule.
+<% end_sec('no-cloning') %>
 
 <% end_sec() %>
 
