@@ -1768,7 +1768,7 @@ the particle and wave theories.
 Can a white photon exist?
 \end{dq}
 
-\begin{dq}
+\begin{dq}\label{dq:cover-one-slit}
 In double-slit diffraction of photons, would you get the
 same pattern of dots on the digital camera image if you
 covered one slit? Why should it matter whether you give the
@@ -4944,7 +4944,7 @@ define $i$ as $\sqrt{-1}$, but this doesn't distinguish $i$ from $-i$.)
 These phase conventions are all independent of one another, and the
 classical ones are independent of the convention used for
 wavefunctions in quantum mechanics, which is that a state with positive
-energy spins clockwise in the complex plane.
+energy twirls clockwise in the complex plane.
 
 \begin{important}[Observables]
 In quantum mechanics, any observable is represented by a linear operator that takes
@@ -5082,7 +5082,7 @@ foregone conclusion, since we specifically designed our notion of an
 observable to be insensitive to phase. Therefore this argument is
 subject to the objection that perhaps there is some way to measure a
 quantum-mechanical phase, but our definition of an observable is just
-too restrictive to describe it.  However, we will see later that there
+too restrictive to describe it.  However, we will see on p.~\pageref{measurement-randomizes-phase} that there
 are more concrete reasons why phase cannot be measured. 
 
 \begin{eg}{Time is not an observable}\label{eg:t-not-observable}
@@ -5102,7 +5102,8 @@ It just tells us that many
 quantum mechanical systems are too simple to function as clocks. In particular,
 we would be misled if we pictured a hydrogen atom classically in terms of an
 electron traveling in a circular orbit around a proton, in which case it really
-could act like the hand on a tiny clock.
+could act like the hand on a tiny clock. For further discussion of this idea, see
+p.~\pageref{et-too-simple-to-be-a-clock}
 \end{eg}
 
 Since you've already studied relativity, you've been carefully inculcated with the
@@ -5270,23 +5271,19 @@ This kind of representation of a function as an infinite sum of sine waves is ca
 
 <% end_sec('qm-inner-product') %>
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% example \ref{eg:t-not-observable}: state of def energy can't be a clock, need to compare phases; E-t uncertainty
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 <% end_sec('qm-structure') %>
 
 <% begin_sec("Energy-time uncertainty",nil,'et-uncertainty') %>
-Consider the following classical systems of analogies.
+<% begin_sec("Classical uncertainty relations",nil,'classical-uncertainty') %>
+Consider the following classical system of analogies.
 
 \begin{tabular}{llll}
 space & $x$ & $k$      & $\Delta x\Delta k \gtrsim 1$ \\
 time  & $t$ & $\omega$ & $\Delta t\Delta \omega \gtrsim 1$ 
 \end{tabular}
 
-Here the quantity $k=2\pi/lambda$ is called the wavenumber.\index{wavenumber}
+\noindent Here the quantity $k=2\pi/lambda$ is called the wavenumber.\index{wavenumber}
 The inequality $\Delta x\Delta k \gtrsim 1$ is a kind of classical uncertainty
 relation that is closely related to the Heisenberg uncertainty principle.
 Its classical nature is immediately apparent because it doesn't involve Planck's constant.
@@ -5313,7 +5310,9 @@ pulse is to be, say, a microsecond, then the signal's spread in
 frequency much be at least on the order of 1 MHz. This is why we use
 the term ``bandwidth'' to describe the speed of a communication
 channel. 
+<% end_sec('classical-uncertainty') %>
 
+<% begin_sec("Energy-time uncertainty",nil,'et-uncertainty-subsubsec') %>
 In a quantum-mechanical context, we have $E=\hbar\omega$, so there is
 an energy-time uncertainty relation,
 \begin{equation*}
@@ -5394,6 +5393,101 @@ observed, and contributes a continuous background spectrum in addition to
 the discrete line spectrum when such nebulae are observed with a spectrometer
 through a telescope.
 \end{eg}
+<% end_sec('et-uncertainty-subsubsec') %>
+
+<% begin_sec("Randomization of phase in a measurement",nil,'et-phase-randomization') %>
+The energy-time uncertainty relation can help us to understand one of the most
+puzzling issues in quantum mechanics, which is the problem of measurement. What happens
+when we use a macroscopic measuring device, which is well described by classical physics,
+to observe a microscopic system, which is quantum-mechanical? How do we reconcile these two seemingly
+incompatible descriptions of reality when both appear to be in play simultaneously?
+
+Consider an electron passing through a double-slit apparatus. We have already considered
+the possibility of covering one slit (discussion question \ref{dq:cover-one-slit}, p.~\pageref{dq:cover-one-slit}).
+Suppose instead that we carefully watch one slit through a microscope, and see whether or not the electron
+passed through it. If we could perform this observation without disturbing the electron, then
+a paradox would arise. For if we haven't disturbed the electron, then there should still be
+a double-slit interference pattern. But if we watch one slit, then half of the time we should
+see that the electron did not go through it, and therefore the slit's existence is of no importance,
+and we can't possible get a double-slit interference pattern.
+
+To avoid this contradiction, it appears that nature must conspire\label{measurement-randomizes-phase}
+against us in such a way that observing the slit inevitably
+\emph{does} disturb the electron. The energy-time uncertainty relation
+explains why this is so. Our observation of the electron is an
+interaction between the electron and our macroscopic measuring device.
+This interaction will presumably transfer some amount of energy $E$
+into or out of the electron, and if our goal was to avoid disturbing
+the electron, we would imagine that it would be best to make $E$ very
+small. But the energy-time uncertainty $\Delta E\Delta t\gtrsim h$
+relation tells us that if this energy is to have a value that is
+confined to some small range $\Delta E$, then the time $\Delta t$ it
+takes for the interaction to occur must be at least $\sim h/\Delta E$.
+While the electron is being subjected to this interaction, its
+phase is rotating around the complex plane like $e^{i\omega t}=e^{i
+Et/\hbar}$.  The total change in the phase angle $\phi=E\Delta
+t/\hbar$ is uncertain because $E$ is uncertain, so our observation
+will inevitably change the phase by some random amount, which is
+uncertain by an amount $\Delta\phi=\Delta E \Delta t/\hbar$, so
+$\Delta\phi \gtrsim 1$.
+
+Thus is won't actually help us if we make the
+interaction very gentle, because the lengthening of the time has a
+compensating effect. Any slight alteration in the frequency will have more
+time to accumulate into a big phase difference, and we still end up with a phase uncertainty that
+is at least on the order of 1. Although we haven't stated our
+uncertainty relations with enough mathematical precision to state this
+lower bound with all the right factors of 2 and $\pi$, it turns out
+that $\Delta\phi \ge 2\pi$. That is, any such observation will have
+the effect of \emph{completely} randomizing the phase of the thing
+being observed. In fact, macroscopic measuring devices normally exceed
+the bounds set by the uncertainty relations by many orders of
+magnitude, so there will typically be a vast amount of overkill in
+this randomization. This is a general rule for reasoning about quantum-mechanical
+measurements: they always completely randomize the quantum-mechanical phase of the thing being
+measured. This provides a more physical justification for our more abstract mathematical proof
+in example \ref{eg:phase-not-observable} on p.~\pageref{eg:phase-not-observable} that phase is
+not an observable.
+
+In our example of the double slit, what will be the effect of this randomization of the electron's
+phase? In our usual description of the double slit, we assume that the circular waves emerging
+from one slit are in phase with those that come out through the other one,
+so that the double-slit interference pattern has a maximum in the
+center. But if, for example, one of the waves has its phase inverted, then all the maxima of our
+interference pattern will become minima and vice versa. If the phase is randomized, then the positions
+of the maxima and minima are randomized as well, and thus if we try to collect data on enough electrons
+to see an interference pattern, we will not see maxima and minima at all.
+
+<% marg(-25) %>
+<%
+  fig(
+    'lissajous-figure',
+    %q{%
+      The Lissajous figure $x=\cos t$, $y=\sin 2t$.
+    }
+  )
+%>
+<% end_marg %>
+
+Another fundamental application of the energy-time uncertainty relation is to the explication of
+what it means to measure time in quantum mechanics. In example \ref{eg:t-not-observable}
+on p.~\pageref{eg:t-not-observable} we argued that time is not an observable in quantum mechanics
+because time cannot in general be measured by looking at a quantum-mechanical system:
+many quantum-mechanical systems are too simple to function as clocks.\label{et-too-simple-to-be-a-clock}
+We can now see in more detail what ``too simple'' might mean here. Microscopic systems, unlike
+macroscopic ones, are often encountered in a definite state of energy, such as the ground state.
+Such a state has $\Delta E=0$ and therefore by the energy-time uncertainty relation it has
+$\Delta t=\infty$. In other words, the only time evolution in such a system consists of the system's
+over-all phase twirling in the complex plane at a steady rate, but phase isn't measurable, so we
+can't use this rotation like the hand on a clock. To make a clock, we need, at a bare minimum, a
+system that is in a superposition of \emph{two} different energy levels. We then have two independent
+phases. Although absolute phases are not measurable, relative ones are, and for example when we measure
+a double-slit interference pattern, that is exactly what we are doing: observing (statistically) the
+difference between two phases. As a loose conceptual analogy, this is like the idea that a figure-eight
+Lissajous pattern has an identifiable feature where it crosses itself, the crossing being like the tick
+of a clock.
+
+<% end_sec('et-phase-randomization') %>
 
 <% end_sec('et-uncertainty') %>
 
