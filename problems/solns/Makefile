@@ -1,5 +1,9 @@
 # See README for information about what this is used for.
 
+# To make and post encrypted solutions, don't use this directly. Do a
+# make in the teaching/solns directory. That will indirectly invoke this
+# makefile.
+
 CLS_FILES = "problems.cls","../shaddap.sty","../lmmath.sty","timetravel.sty"
 # ... a list of files that's assumed to exist in the parent dir, which we
 #     copy into the working dir when building the book; "CLS_" is really a misnomer
@@ -19,7 +23,9 @@ BOOK = solns
 default:
 	@make init-timetravel
 	$(GET_CLS)
+	@echo "Running $(SCRIPTS)/generate_problems.rb..."
 	$(SCRIPTS)/generate_problems.rb solutions "" 1 $(DATA_DIR) $(SOLUTIONS_DIR) >$(BOOK).m4
+	@echo "Running m4..."
 	m4 -P ../problems.m4 $(BOOK).m4 >$(BOOK).tex
 	@echo "Running pdflatex..."
 	@$(SCRIPTS)/timetravel.rb $(BOOK).tex

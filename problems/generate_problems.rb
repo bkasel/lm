@@ -492,8 +492,8 @@ def generate_solution_tex(answers_dir,prob,group,k,path,counters,instr=false,ins
 
   $stderr.print "file=#{file}, #{file.nil?}, found=#{found}\n" if debug
   label = "#{ch}-#{group}#{k}"
-  if !instr && !found then log_warning('solution',"missing solution for #{label}, #{prob}","no solution found for problem #{label}, #{prob}, which is supposed to have a solution in the back of the student's version; solutions should typically go in physics/share/answers"); return '' end
-  if instr && !found then log_warning('solution',"missing solution for #{label}, #{prob}","no solution found for problem #{label}, #{prob}"); return '' end
+  if !instr && !found then log_warning('solution',"missing solution for #{file} #{label}, #{prob}","no solution found for problem #{label}, #{prob}, which is supposed to have a solution in the back of the student's version; solutions should typically go in physics/share/answers"); return '' end
+  if instr && !found then log_warning('solution',"missing solution for #{file} #{label}, #{prob}","no solution found for problem #{label}, #{prob}"); return '' end
   label = group+k.to_s
   complete_label = "#{ch}-#{label}"
   if instr_only then

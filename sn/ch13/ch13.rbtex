@@ -4311,7 +4311,7 @@ many different directions and cancel out partially.
 
 \vfill
 
-<% begin_sec("Some optional topics",nil,'stern-gerlach',{'optional'=>true}) %>
+<% begin_sec("Some optional topics",nil,'qm-optional-topics',{'optional'=>true}) %>
 
 <% begin_sec("The Stern-Gerlach experiment",nil,'stern-gerlach') %>
 In 1921, Otto Stern proposed an experiment about angular momentum, shown in figure \figref{stern-gerlach}
@@ -4442,11 +4442,11 @@ with respect to it. How can this paradox be resolved?
 \end{dq}
 
 \begin{dq}
-Suppose we send a beam of atoms with $L=\hbar$ through a Stern-Gerlach spectrometer,
+Suppose we send a beam of oxygen molecules, with $L=\hbar$, through a Stern-Gerlach spectrometer,
 throwing away the emerging parts with $\ell_x=-1$ and $+1$ to make a beam of the pure $\ell_x=0$ state.
 Now we let this beam pass through a second spectrometer that is identical
 but oriented along the $z$ axis. Can we produce a beam in which
-every atom has both $\ell_x=0$ and $\ell_z=+1$? 
+every molecule has both $\ell_x=0$ and $\ell_z=+1$? 
 Hint: See example \ref{eg:completeness-ylm}, p.~\pageref{eg:completeness-ylm}.
 \end{dq}
 
@@ -5212,7 +5212,7 @@ a discrete sum.
 
 Two wavefunctions have a zero inner product if and only if they are completely distinguishable from each other
 by the measurement of some observable. By analogy with vectors in Euclidean space, we say that
-the two wavefunctions are orthogonal.
+the two wavefunctions are orthogonal.\label{orthogonal-wavefunctions}
 For example, $\langle \eqnimage{eqn-wave1} | \eqnimage{eqn-wave2} \rangle=0$, as can be verified
 from the integral $\int_0^\pi \sin x \sin 2x \der x=0$. These states are also distinguishable by measuring
 either their momentum or their energy. Let's consider more carefully the general justification for this
@@ -5926,6 +5926,18 @@ than the helium-4 nucleus, and the difference in binding energy reduces the ener
 
 <% begin_hw('bogus-laplacian') %>__incl(hw/bogus-laplacian)<% end_hw() %>
 
+\pagebreak
+
+\noindent \emph{Problems \ref{hw:ho-orthogonal}-\ref{hw:ho-orthogonal2} draw on optional topics from
+section \ref{sec:qm-optional-topics}, p.~\pageref{sec:qm-optional-topics}.}
+
+<% begin_hw('ho-orthogonal') %>__incl(hw/ho-orthogonal)<% end_hw() %>
+
+<% begin_hw('trivial-observable') %>__incl(hw/trivial-observable)<% end_hw() %>
+
+<% begin_hw('nucleus-et-uncertainty') %>__incl(hw/nucleus-et-uncertainty)<% end_hw() %>
+
+<% begin_hw('ho-orthogonal2') %>__incl(hw/ho-orthogonal2)<% end_hw() %>
 
 <% end_hw_sec %>
 
