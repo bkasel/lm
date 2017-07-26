@@ -5002,7 +5002,7 @@ we simply take the operator for position $\mathcal{O}_x$ to be multiplication by
 \begin{equation*}
   \mathcal{O}_x(\Psi)=x\Psi .
 \end{equation*}
-For example, if $\Psi=e^{ix}$ (ignoring units), then \mathcal{O}_x(\Psi)=xe^{ix}$.
+For example, if $\Psi=e^{ix}$ (ignoring units), then $\mathcal{O}_x(\Psi)=xe^{ix}$.
 This operator is definitely linear, because multiplication by a number is linear, e.g.,
 $7(a+b)=7a+7b$. The only question is whether it has eigenvalues, and whether those are
 real. A state of definite $x$, say a state with $x=0$, would have to be represented by a wavefunction $\Psi(x)$

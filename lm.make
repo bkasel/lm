@@ -30,7 +30,7 @@ DO_PDFLATEX_RAW = $(NICE) $(TEX_INTERPRETER) -shell-escape -interaction=$(MODE) 
 # -shell-escape is so that write18 will be allowed
 # environment variable  openout_any=a is so that we can write to ../share/end
 SHOW_ERRORS = \
-        system("../scripts/filter_latex_messages.rb <$(TERMINAL_OUTPUT) >a.a && mv a.a $(TERMINAL_OUTPUT)")
+        system("../scripts/filter_latex_messages.rb <$(TERMINAL_OUTPUT) >a.a && mv a.a $(TERMINAL_OUTPUT)"); \
         print "========error========\n"; \
         open(F,"$(TERMINAL_OUTPUT)"); \
         while ($$line = <F>) { \

@@ -6029,7 +6029,9 @@ Invent a physical situation.
 
 \vfill\pagebreak[4]
 
-\fullpagewidthfignocaption{ex-knightish}\label{fig:ex-knightish}
+\fullpagewidthfigx{ex-knightish}{}{0mm}{fig}{\figprefix\chapdir/figs}\label{fig:ex-knightish}
+%\fullpagewidthfignocaption{ex-knightish}\label{fig:ex-knightish}
+% ... why doesn't this work right?
 
 \vfill\pagebreak[4]
 
