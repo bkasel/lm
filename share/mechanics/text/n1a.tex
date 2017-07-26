@@ -596,7 +596,7 @@ m4_ifelse(__lm_series,1,[:
 :])
 <% end_marg %>%
 
-<% begin_sec("Motion with constant velocity") %>
+<% begin_sec("Motion with constant velocity",nil,'constant-velocity-motion') %>
 
 In example \figref{xt-graph-1}, an object is moving at constant speed in one
 direction.  We can tell this because every two seconds, its
@@ -644,8 +644,8 @@ m4_ifelse(__lm_series,1,[:\worked{light-year-to-meters}{light-years}:])
 
 m4_ifelse(__me,1,[:\pagebreak[4]:])
 
-<% end_sec() %>
-<% begin_sec("Motion with changing velocity") %>
+<% end_sec('constant-velocity-motion') %>
+<% begin_sec("Motion with changing velocity",nil,'changing-velocity') %>
 m4_ifelse(__lm_series,1,,[:
 <% marg(m4_ifelse(__me,1,50,80)) %>
 <%
@@ -715,7 +715,7 @@ result is proportional to $s^2$. This suggests that anything that could be
 done to reduce $s$ would be very helpful. For instance, a measure that cut
 $s$ in half would reduce $\der a/\der t$ by a factor of four.
 \end{eg}
-<% end_sec %>
+<% end_sec('changing-velocity') %>
 %------------------------ end ME version ------------------------
 :],[:
 %------------------------ begin LM version ------------------------
@@ -838,8 +838,8 @@ and that no-cut line is the tangent line. It's as though the region below the cu
 a solid block of wood, and the tangent line were the edge of a ruler. The ruler can't penetrate
 the block.
 
-<% end_sec() %>
-<% begin_sec("Conventions about graphing") %>\index{graphing}
+<% end_sec('changing-velocity') %>
+<% begin_sec("Conventions about graphing",nil,'conventions-about-graphing') %>\index{graphing}
 
 The placement of $t$ on the horizontal axis and $x$ on the
 upright axis may seem like an arbitrary convention, or may
@@ -991,14 +991,14 @@ he turned around and left at a velocity of, oh, I'd guess
 maybe +20 or +25 mi/hr.''  Is their testimony contradictory?  Explain.
 \end{dq}
 
-<% end_sec() %>
+<% end_sec('conventions-about-graphing') %>
 %------------------------ end LM version ------------------------
 :])
 
 <% end_sec('graphs-of-motion') %>
 <% begin_sec("The Principle of Inertia",m4_ifelse(__me,1,0,4),'principle-of-inertia') %>
 
-<% begin_sec("Physical effects relate only to a change in velocity") %>
+<% begin_sec("Physical effects relate only to a change in velocity",nil,'effects-from-changing-v') %>
 
 Consider two statements of a kind that was at one time made with
 the utmost seriousness:
@@ -1100,8 +1100,8 @@ relative to the earth-object.
   )
 %>
 
-<% end_sec() %>
-<% begin_sec("Motion is relative") %>
+<% end_sec('effects-from-changing-v') %>
+<% begin_sec("Motion is relative",nil,'motion-is-relative') %>
 
 m4_ifelse(__me,1,[:\enlargethispage{\baselineskip}:])
 
@@ -1237,11 +1237,11 @@ you infer about the motion of the train?
 %>
 <% end_marg %>
 
-<% end_sec() %>
+<% end_sec('motion-is-relative') %>
 <% end_sec('principle-of-inertia') %>
 <% begin_sec("Addition of Velocities",m4_ifelse(__me,1,0,4),'addition-of-velocities') %>\index{velocity!addition of}
 
-<% begin_sec("Addition of velocities to describe relative motion") %>\label{vel-addition-newtonian}
+<% begin_sec("Addition of velocities to describe relative motion",nil,'newtonian-v-addition') %>\label{vel-addition-newtonian}
 
 Since absolute motion cannot be unambiguously measured, the
 only way to describe motion unambiguously is to describe the
@@ -1289,8 +1289,8 @@ the subscripts on the right, but with the two T's eliminated.
   )
 %>
 
-<% end_sec() %>
-<% begin_sec("Negative velocities in relative motion") %>\index{velocity!negative}
+<% end_sec('newtonian-v-addition') %>
+<% begin_sec("Negative velocities in relative motion",nil,'negative-v') %>\index{velocity!negative}
 
 My discussion of how to interpret positive and negative
 signs of velocity may have left you wondering why we should
@@ -1377,8 +1377,8 @@ up the down escalator, so that she stays in one place. Write
 this in terms of symbols.
 \end{dq}
 
-<% end_sec() %>
-<% end_sec() %>
+<% end_sec('negative-v') %>
+<% end_sec('addition-of-velocities') %>
 m4_ifelse(__me,1,,[:
 %----- LM only -------
 <% begin_sec("Graphs of Velocity Versus Time",0,'v-t-graphs') %>\index{graphs!velocity versus time}

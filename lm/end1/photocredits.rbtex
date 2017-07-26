@@ -22,7 +22,7 @@
 <% photo_credit("global-warming","Global warming graph","Robert A.~Rohde, GFDL licensed") %> % https://commons.wikimedia.org/wiki/File:2000_Year_Temperature_Comparison.png
 <% photo_credit("irface","Infrared photographs","Courtesy of M. Vollmer and K.P. M\"{o}llmann, Univ. Appl. Sciences, Brandenburg, Germany") %> % http://www.fh-brandenburg.de/~piweb/projekte/thermo_galerie_eng.html
 <% photo_credit("hw-rappel-from-fridge","Rappelling","Redrawn from a photo by Jarek Tuszymski, CC-BY-SA") %> % https://commons.wikimedia.org/wiki/File:Elizabeth_Furnace_-_Repeling.JPG
-<% photo_credit("hw-cliff-pond","Diver","Redrawn from a photo provided by the Deutsches Bundesarchiv cooperation project, CC-BY-SA") %> https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-C0821-0013-001,_Interpress-Foto_66%22_in_Moskau%22.jpg
+<% photo_credit("hw-cliff-pond","Diver","Redrawn from a photo provided by the Deutsches Bundesarchiv cooperation project, CC-BY-SA") %> % https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-C0821-0013-001,_Interpress-Foto_66%22_in_Moskau%22.jpg
 <% photo_credit("hw-skee-ball","Skee ball","Photo by Wikipedia user Joyous!, CC-BY-SA") %> % https://commons.wikimedia.org/wiki/File:Skee_Ball.JPG
 <% photo_credit("hw-posnegwork-bull","Bull","Photo by Wikimedia Commons user Bart Hiddink, CC-BY") %> % https://upload.wikimedia.org/wikipedia/commons/f/fd/Angry_Bull_in_Pasture.jpg
 <% photo_credit("hw-car-in-mud","Man pushing car","Line art by the author, based on a photo by Wikimedia Commons user Auregann, CC-BY-SA") %> % http://commons.wikimedia.org/wiki/File:Voiture_embourb%C3%A9e.JPG

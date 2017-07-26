@@ -1,4 +1,4 @@
-<% begin_sec("Time Is Not Absolute") %>\label{sec:time-not-absolute}
+<% begin_sec("Time Is Not Absolute",nil,'time-not-absolute') %>
 
 m4_ifelse(__me,1,[: %
 So far we've been discussing relativity according to Galileo and Newton, but there is also relativity according to Einstein.
@@ -42,7 +42,7 @@ m4_ifelse(__me,1,[: % --- occurs later in LM
 :]) %
 <% end_marg %>
 
-<% begin_sec("The correspondence principle") %>
+  <% begin_sec("The correspondence principle",nil,'relativity-correspondence-principle') %>
 This establishes that time doesn't work the way Newton believed it did when he wrote that
 ``Absolute, true, and mathematical time, of itself, and from its own nature flows equably without regard to anything external\ldots''
 We are used to thinking of time as absolute and universal, so it is
@@ -53,9 +53,9 @@ This makes sense: Newton's laws have already been thoroughly tested by experimen
 so a new theory like relativity must agree with Newton's to a good approximation, within the Newtonian theory's
 realm of applicability. This requirement of backward-compatibility is known as
 the correspondence principle.\index{correspondence principle!for time dilation}\index{correspondence principle!defined}
-<% end_sec %>
+  <% end_sec('relativity-correspondence-principle') %>
 
-<% begin_sec("Causality") %>\label{causality-defined}
+  <% begin_sec("Causality",nil,'causality') %>\label{causality-defined}
 It's also reassuring that the effects on time were
 small compared to the three-day lengths of the plane trips. There was therefore no
 opportunity for paradoxical scenarios such as one in which the east-going experimenter arrived
@@ -76,7 +76,7 @@ in a certain frame of reference observes that event A causes event B, then obser
 that A causes B, not the other way around. This is merely a generalization about a large body of experimental results, not a logically necessary
 assumption. If Keating had gone around the world and arrived back in Washington before he left, it would have disproved
 this statement about causality.
-<% end_sec %>
+  <% end_sec('causality') %>
 
 m4_ifelse(__me,1,,[: % -- occurs earlier in Me
 <% marg(300) %>
@@ -89,7 +89,7 @@ m4_ifelse(__me,1,,[: % -- occurs earlier in Me
 <% end_marg %>
 :]) %
 
-<% begin_sec("Time distortion arising from motion and gravity") %>
+  <% begin_sec("Time distortion arising from motion and gravity",nil,'time-distortion') %>
 Hafele and Keating were testing specific quantitative predictions of relativity, and they verified them to within
 their experiment's error bars. Let's work backward instead, and
 inspect the empirical results for clues as to how time works.
@@ -194,12 +194,12 @@ By the way, don't get an inflated idea of the importance of the Hafele-Keating
 experiment. Special relativity had already been confirmed by a vast and varied body of experiments decades
 before 1971. The only reason I'm giving such a prominent role to this experiment, which was actually more important as a test of
 general relativity, is that it is conceptually very direct.
-<% end_sec %> % Time distortion arising from motion and gravity
+  <% end_sec('time-distortion') %> % Time distortion arising from motion and gravity
 
-<% end_sec %> % Time Is Not Absolute
+<% end_sec('time-not-absolute') %> % Time Is Not Absolute
 
-<% begin_sec("Distortion of Space and Time") %>\label{sec:x-t-distortion}
-<% begin_sec("The Lorentz transformation",nil,'lorentz') %>
+<% begin_sec("Distortion of Space and Time",nil,'x-t-distortion') %>
+  <% begin_sec("The Lorentz transformation",nil,'lorentz') %>
 Relativity says that when two observers are in different frames of reference, each observer considers
 the other one's perception of time to be distorted. We'll also
 see that something similar happens to their observations of distances, so both space and
@@ -467,7 +467,7 @@ size of the original one. Although the drawing of the hands in figure \figref{sm
 a framework made of rigid coat-hanger wire, that is not the case. If you look carefully at the figure, you'll see that the edges
 of the smooshed parallelogram are actually a little longer than the edges of the original rectangle. In fact what stays the same
 is not lengths but \emph{areas}, as proved in the caption to figure \figref{area-proof}.
-<% end_sec %> % The Lorentz transformation
+  <% end_sec('lorentz') %> % The Lorentz transformation
 
 <%
   fig('area-proof',
@@ -483,7 +483,7 @@ is not lengths but \emph{areas}, as proved in the caption to figure \figref{area
   )
 %>
 
-<% begin_sec("The $\\mygamma$ factor") %>\label{sec:gamma}
+  <% begin_sec("The $\\mygamma$ factor",nil,'gamma') %>
 With a little algebra and geometry (homework problem \ref{hw:gamma-derivation}, page \pageref{hw:gamma-derivation}),
 one can use the equal-area property to show that the factor $\mygamma$ (Greek letter gamma)
 defined in figure \figref{gamma-as-projection} is given by the equation
@@ -719,9 +719,9 @@ perceive the door as having shut long after she plowed
 through the back wall.
 \end{eg}
 
-<% end_sec %> % The $\mygamma$ factor
+  <% end_sec('gamma') %> % The $\mygamma$ factor
 
-<% begin_sec("The universal speed $c$",nil,'universal-speed') %>
+  <% begin_sec("The universal speed $c$",nil,'universal-speed') %>
 Let's think a little more about the role of the 45-degree diagonal in the Lorentz transformation.
 Slopes on these graphs are interpreted as velocities.
 This line has a slope of 1 in relativistic units, but that slope corresponds to $c$ in ordinary metric units.
@@ -732,7 +732,7 @@ of the line lies right on top of the old one, and its slope stays the
 same. In other words, if one observer says  that something has a velocity equal to $c$, every other observer will agree
 on that velocity as well. (The same thing happens with $-c$.) 
 
-<% begin_sec("Velocities don't simply add and subtract.") %>\label{relativistic-combination-of-vel}
+    <% begin_sec("Velocities don't simply add and subtract.",nil,'v-not-simple-addition') %>\label{relativistic-combination-of-vel}
 m4_ifelse(__me,1,[: %
 This is surprising, since we expect, as in section \ref{vel-addition-newtonian}, that a velocity $c$
 in one frame should become $c+v$ in a frame moving at velocity $v$ relative to the first one.
@@ -753,11 +753,9 @@ both distance and time are distorted by relativistic effects, so we actually sho
 arithmetic addition of velocities to hold in relativity; it's an approximation that's valid at velocities
 that are small compared to $c$.
 :])
-<% end_sec %>
+    <% end_sec('v-not-simple-addition') %>
 
-m4_ifelse(__me,1,[::],[::])
-
-<% begin_sec("A universal speed limit") %>
+    <% begin_sec("A universal speed limit",nil,'speed-limit') %>
 For example, suppose Janet takes a trip in a
 spaceship, and accelerates until she is moving at $0.6c$ relative to the
 earth. She then launches a space probe in the forward
@@ -766,7 +764,7 @@ probe was then moving at a velocity of $1.2c$, but in fact the answer is still l
 than $c$ (problem \ref{hw:six-tenths-c-twice}, page \pageref{hw:six-tenths-c-twice}).
 This is an example of a more general fact about relativity, which is that $c$ represents
 a universal speed limit. This is required by causality, as shown in figure \figref{speed-limit}.
-<% end_sec %>
+    <% end_sec('speed-limit') %>
 <% marg(140) %>
 <%
   fig(
@@ -810,7 +808,7 @@ a universal speed limit. This is required by causality, as shown in figure \figr
   )
 %>
 
-<% begin_sec("Light travels at $c$.") %>
+    <% begin_sec("Light travels at $c$.",nil,'light-travels-at-c') %>
 Now consider a beam of light. We're used to talking casually about the ``speed of light,'' but what does that really
 mean? Motion is relative, so normally if we want to talk about a velocity, we have to specify what it's measured
 relative to. A sound wave has a certain speed relative to the air, and a water wave has its own speed relative to the
@@ -820,9 +818,9 @@ as when rays of sunlight travel to earth. This seems like a paradox: light is su
 but there is no way to decide what frame of reference to measure it in. The way out of the paradox is that light
 must travel at a velocity equal to $c$. Since all observers agree on a velocity of $c$, regardless of their frame
 of reference, everything is consistent.
-<% end_sec %>
+    <% end_sec('light-travels-at-c') %>
 
-<% begin_sec("The Michelson-Morley experiment") %>
+    <% begin_sec("The Michelson-Morley experiment",nil,'michelson-morley') %>
 The constancy of the speed of light had in fact already been
 observed when Einstein was an 8-year-old boy, but because nobody could
 figure out how to interpret it, the result was largely ignored.
@@ -842,7 +840,7 @@ speed because the earth was chasing it through the ether.
 They were surprised when they found that the expected 0.01\%
 change in the speed of light did not occur.\index{Michelson-Morley experiment}\index{ether}
 
-<% end_sec %> % The Michelson-Morley experiment
+    <% end_sec('michelson-morley') %> % The Michelson-Morley experiment
 
 \begin{eg}{The ring laser gyroscope}
 If you've flown in a jet plane, you can thank relativity for helping you to avoid
@@ -877,7 +875,7 @@ differed by no more than 2 seconds out of a total time in flight on the order
 of ten billion years!
 \end{eg}
 
-<% end_sec %> % Universality of $c$
+  <% end_sec('universal-speed') %> % Universality of $c$
 
 \vfill
 
@@ -993,5 +991,5 @@ m4_ifelse(__lm_series,1,\vspace{30mm})
 
 % In SN, we have another subsection, relativity_no_action_at_a_distance.tex, after this.
 m4_ifelse(__sn,0,[:
-<% end_sec %> % Distortion of Space and Time
+<% end_sec('x-t-distortion') %> % Distortion of Space and Time
 :])
