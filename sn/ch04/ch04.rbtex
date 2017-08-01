@@ -1765,6 +1765,8 @@ using simple closed-form expressions. Test your conjecture experimentally.
 
 <% begin_hw('division-by-a-vector') %>__incl(hw/division-by-a-vector)<% end_hw() %>
 
+<% begin_hw('ring-moi-about-diameter') %>__incl(hw/ring-moi-about-diameter)<% end_hw() %>
+
 <% end_hw_sec %>
 
  % ==================================================================== 

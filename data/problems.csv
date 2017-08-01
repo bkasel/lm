@@ -1107,6 +1107,7 @@ me,15,61,division-by-a-vector,0
 me,15,62,rollers-on-inclined-plane,0
 me,15,63,vector-computations,0
 me,15,64,work-done-by-torque-in-second-revolution,0
+me,15,65,ring-moi-about-diameter,1
 me,16,2,sperm,0
 me,16,3,whistle,0
 me,16,4,pendulum,0
@@ -1521,6 +1522,7 @@ problems,9,d9,sphere-rolls-up-ramp,0
 problems,9,d10,roll-down-without-slipping-up-with-slipping,0
 problems,9,d11,three-objects-race-down-ramp,0
 problems,9,d12,moment-of-inertia-lab,0
+problems,9,d13,ring-moi-about-diameter,1
 problems,9,e1,erbium,0
 problems,9,e2,centrifuge,0
 problems,9,e3,conemoi,0
@@ -1898,6 +1900,7 @@ sn,4,41,rolling-coin,0
 sn,4,42,moment-of-inertia-lab,0
 sn,4,43,cube-statics,0
 sn,4,44,division-by-a-vector,0
+sn,4,45,ring-moi-about-diameter,1
 sn,5,1,stpvol,0
 sn,5,2,work-pdv,0
 sn,5,3,he,0
