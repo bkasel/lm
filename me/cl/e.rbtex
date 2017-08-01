@@ -368,6 +368,8 @@ be toppled without scraping on the floor.
 
 <% begin_hw('work-done-by-torque-in-second-revolution',nil,{'credit'=>'B.~Shotwell'}) %>__incl(hw/work-done-by-torque-in-second-revolution)<% end_hw() %>
 
+<% begin_hw('ring-moi-about-diameter') %>__incl(hw/ring-moi-about-diameter)<% end_hw() %>
+
 <% end_hw_sec %>
 
 <% begin_ex("Torque") %>

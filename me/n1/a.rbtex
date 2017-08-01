@@ -205,7 +205,7 @@ the correspondence principle.
 \pagebreak
 
 <% begin_hw('six-tenths-c-twice') %>
-The figure illustrates a Lorentz transformation using the conventions employed in section \ref{sec:x-t-distortion}.
+The figure illustrates a Lorentz transformation using the conventions employed in section \ref{subsec:x-t-distortion}.
 For simplicity, the transformation chosen is one that lengthens one diagonal by a factor of 2. Since Lorentz transformations
 preserve area, the other diagonal is shortened by a factor of 2. Let the original frame of reference, depicted with the square,
 be A, and the new one B. (a) By measuring with a ruler on the figure, show that the velocity of frame B relative to frame A is $0.6c$.
