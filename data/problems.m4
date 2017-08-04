@@ -421,8 +421,7 @@ m4_define(__hw_lm_15_toppling-rod,28)m4_dnl
 m4_define(__hw_lm_15_check-mg-at-cm,29)m4_dnl
 m4_define(__hw_lm_15_motorcycle-jump,30)m4_dnl
 m4_define(__hw_lm_15_barandrope,31)m4_dnl
-m4_define(__hw_lm_15_vector-computations,32)m4_dnl
-m4_define(__hw_lm_15_work-done-by-torque-in-second-revolution,33)m4_dnl
+m4_define(__hw_lm_15_work-done-by-torque-in-second-revolution,32)m4_dnl
 m4_define(__hw_lm_16_stpvol,1)m4_dnl
 m4_define(__hw_lm_16_workpdv,2)m4_dnl
 m4_define(__hw_lm_16_he,3)m4_dnl
