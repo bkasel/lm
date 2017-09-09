@@ -258,7 +258,7 @@ by fiddling with the result of part c of problem \ref{hw:gamma-derivation} that 
 
 <% begin_hw('earth-stepwise-fullerton') %>__incl(hw/earth-stepwise-fullerton)<% end_hw() %>
 
-<% marg(300) %>
+<% marg(-300) %>
 <%
   fig(
     'passing-in-race',

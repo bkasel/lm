@@ -145,12 +145,12 @@ wiki:
 	WOPT='$(WOPT) --wiki' $(RUN_ERUBY) w
 
 prepress:
+	cd .. ; make preflight_figs ; cd -
 	PREPRESS=1 make book
 	# Filtering through gs used to be necessary to convince Lulu not to complain about missing fonts.
 	# Now that should no longer be necessary, because recent versions of pdftex embed all fonts, and fullembed.map prevents subsetting.
 	# See meki:computer:apps:ghostscript, scripts/create_fullembed_file, and http://tex.stackexchange.com/questions/24002/turning-off-font-subsetting-in-pdftex
 	../scripts/preflight_pdf.pl $(BOOK).pdf
-	cd .. ; make preflight_figs ; cd -
 	perl -e 'if ("$(BOOK)" eq 'cp' || "$(BOOK)" eq 'me') {system("make prepress_single_vol")} else {system("make prepress_splits")}'
 	
 prepress_single_vol:
