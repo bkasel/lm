@@ -40,18 +40,18 @@ italicized object participates.}
   )
 %>
 \spacebetweenfigs
-<%
-  fig(
-    'hw-airplaneforces',
-    %q{Problem \ref{hw:airplaneforces}.}
-  )
-%>
-\spacebetweenfigs
 <% 
   fig(
     'hw-cowcrush',
     %q{Problem \ref{hw:cowcrush}.}
   )   
+%>
+\spacebetweenfigs
+<%
+  fig(
+    'hw-airplaneforces',
+    %q{Problem \ref{hw:airplaneforces}.}
+  )
 %>
 <% end_marg %>
 
