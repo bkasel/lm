@@ -10,7 +10,7 @@ books_all:
 	cd me && make book && cd ..
 
 setup:
-	chmod +x scripts/* eruby_util.rb fruby mv_silent process_geom_file.pl ./*.rb ./*.pl
+	chmod +x scripts/* eruby_util.rb fruby mv_silent process_geom_file.pl ./*.rb ./*.pl problems/*.rb
 	@echo "If the following command doesn't give a compiler error, you have a sufficiently up to date version of ruby (1.9.2 or later)."
 	ruby -e 'x=("ab" =~ /(?<!a)b/); require "psych"; require "yaml"'
 	@echo "If the following command doesn't give a compiler error, you have a sufficiently up to date version of libjson-perl."
