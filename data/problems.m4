@@ -230,13 +230,13 @@ m4_define(__hw_lm_6_maxrange,6)m4_dnl
 m4_define(__hw_lm_6_speedbump,7)m4_dnl
 m4_define(__hw_lm_6_cliff-pond,8)m4_dnl
 m4_define(__hw_lm_6_two-footballs,9)m4_dnl
-m4_define(__hw_lm_6_rock-roof-2,10)m4_dnl
 m4_define(__hw_lm_6_shoot-bullet-from-cylinder,11)m4_dnl
 m4_define(__hw_lm_7_tiptotail,1)m4_dnl
 m4_define(__hw_lm_7_bangkok,2)m4_dnl
 m4_define(__hw_lm_7_walking,3)m4_dnl
 m4_define(__hw_lm_7_drill,4)m4_dnl
 m4_define(__hw_lm_7_vector-plus-scalar,5)m4_dnl
+m4_define(__hw_lm_7_rock-roof-2,6)m4_dnl
 m4_define(__hw_lm_8_fossil,1)m4_dnl
 m4_define(__hw_lm_8_oppositevanda,2)m4_dnl
 m4_define(__hw_lm_8_bird,3)m4_dnl
@@ -859,7 +859,6 @@ m4_define(__hw_me_6_baseballrange,5)m4_dnl
 m4_define(__hw_me_6_tossup,6)m4_dnl
 m4_define(__hw_me_6_cliff-pond,7)m4_dnl
 m4_define(__hw_me_6_two-footballs,8)m4_dnl
-m4_define(__hw_me_6_rock-roof-2,9)m4_dnl
 m4_define(__hw_me_6_shoot-bullet-from-cylinder,10)m4_dnl
 m4_define(__hw_me_7_tiptotail,1)m4_dnl
 m4_define(__hw_me_7_bangkok,2)m4_dnl
@@ -868,6 +867,7 @@ m4_define(__hw_me_7_drill,4)m4_dnl
 m4_define(__hw_me_7_vector-plus-scalar,5)m4_dnl
 m4_define(__hw_me_7_baseballrangeair,6)m4_dnl
 m4_define(__hw_me_7_sine-of-vector,7)m4_dnl
+m4_define(__hw_me_7_rock-roof-2,8)m4_dnl
 m4_define(__hw_me_8_oppositevanda,1)m4_dnl
 m4_define(__hw_me_8_hurricane-track,2)m4_dnl
 m4_define(__hw_me_8_annie-oakley,3)m4_dnl

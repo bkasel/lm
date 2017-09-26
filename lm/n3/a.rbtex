@@ -56,7 +56,7 @@ __incl(text/n3a)
 <% end_marg %>
 <% begin_hw('two-footballs',nil,{'credit'=>'B.~Shotwell'}) %>__incl(hw/two-footballs)<% end_hw() %>
 
-<% begin_hw('rock-roof-2',nil,{'credit'=>'B.~Shotwell'}) %>__incl(hw/rock-roof-2)<% end_hw() %>
+<% begin_hw('deleted') %>This problem is now problem \ref{hw:rock-roof-2} on p.~\pageref{hw:rock-roof-2}.<% end_hw() %>
 
 <% begin_hw('shoot-bullet-from-cylinder',2) %>__incl(hw/shoot-bullet-from-cylinder)<% end_hw() %>
 <% marg(-300) %>

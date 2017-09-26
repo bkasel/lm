@@ -1690,7 +1690,7 @@ make this percentage difference equal to zero?
 
 \pagebreak
 
-<% begin_hw('deleted') %>This problem is now problem \ref{hw:cosmic-ray-lightning} on p.~\pageref{hw:cosmic-ray-lightning}<% end_hw() %>
+<% begin_hw('deleted') %>This problem is now problem \ref{hw:cosmic-ray-lightning} on p.~\pageref{hw:cosmic-ray-lightning}.<% end_hw() %>
 
 \vfill
 

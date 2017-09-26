@@ -230,13 +230,13 @@ lm,6,6,maxrange,0
 lm,6,7,speedbump,0
 lm,6,8,cliff-pond,0
 lm,6,9,two-footballs,0
-lm,6,10,rock-roof-2,0
 lm,6,11,shoot-bullet-from-cylinder,0
 lm,7,1,tiptotail,0
 lm,7,2,bangkok,0
 lm,7,3,walking,0
 lm,7,4,drill,0
 lm,7,5,vector-plus-scalar,0
+lm,7,6,rock-roof-2,0
 lm,8,1,fossil,0
 lm,8,2,oppositevanda,0
 lm,8,3,bird,0
@@ -859,7 +859,6 @@ me,6,5,baseballrange,0
 me,6,6,tossup,0
 me,6,7,cliff-pond,0
 me,6,8,two-footballs,0
-me,6,9,rock-roof-2,0
 me,6,10,shoot-bullet-from-cylinder,0
 me,7,1,tiptotail,0
 me,7,2,bangkok,0
@@ -868,6 +867,7 @@ me,7,4,drill,0
 me,7,5,vector-plus-scalar,0
 me,7,6,baseballrangeair,0
 me,7,7,sine-of-vector,1
+me,7,8,rock-roof-2,0
 me,8,1,oppositevanda,0
 me,8,2,hurricane-track,0
 me,8,3,annie-oakley,1
