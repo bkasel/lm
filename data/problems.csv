@@ -236,7 +236,6 @@ lm,7,2,bangkok,0
 lm,7,3,walking,0
 lm,7,4,drill,0
 lm,7,5,vector-plus-scalar,0
-lm,7,6,rock-roof-2,0
 lm,8,1,fossil,0
 lm,8,2,oppositevanda,0
 lm,8,3,bird,0
@@ -262,6 +261,7 @@ lm,8,22,plane-wind-symbolic,0
 lm,8,23,applied-force-below-horizontal,0
 lm,8,24,ramp-force-probe,0
 lm,8,25,stemming,1
+lm,8,26,rock-roof-2,0
 lm,9,1,mixer,0
 lm,9,2,circularaccelunits,0
 lm,9,3,loop,0
@@ -867,7 +867,6 @@ me,7,4,drill,0
 me,7,5,vector-plus-scalar,0
 me,7,6,baseballrangeair,0
 me,7,7,sine-of-vector,1
-me,7,8,rock-roof-2,0
 me,8,1,oppositevanda,0
 me,8,2,hurricane-track,0
 me,8,3,annie-oakley,1
@@ -898,6 +897,7 @@ me,8,27,plane-wind-symbolic,0
 me,8,28,applied-force-below-horizontal,0
 me,8,29,ramp-force-probe,0
 me,8,30,stemming,1
+me,8,31,rock-roof-2,0
 me,9,1,circularaccelunits,0
 me,9,2,loop,0
 me,9,3,tilt-a-whirl,1

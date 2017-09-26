@@ -206,6 +206,8 @@ __incl(text/n3c)
 
 <% end_hw_sec %>
 
+<% begin_hw('rock-roof-2',nil,{'credit'=>'B.~Shotwell'}) %>__incl(hw/rock-roof-2)<% end_hw() %>
+
 % Advance to an even-numbered (left) page so the following ex comes out on facing pages:
 \ifthenelse{\isodd{\value{page}}}{}{\pagebreak\hbox{}\newpage}
 

@@ -261,6 +261,10 @@ __incl(text/n3c)
 
 <% begin_hw('stemming') %>__incl(hw/stemming)<% end_hw() %>
 
+\pagebreak
+
+<% begin_hw('rock-roof-2',nil,{'credit'=>'B.~Shotwell'}) %>__incl(hw/rock-roof-2)<% end_hw() %>
+
 <% end_hw_sec %>
 
 % Advance to an even-numbered (left) page so the following ex comes out on facing pages:

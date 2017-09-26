@@ -236,7 +236,6 @@ m4_define(__hw_lm_7_bangkok,2)m4_dnl
 m4_define(__hw_lm_7_walking,3)m4_dnl
 m4_define(__hw_lm_7_drill,4)m4_dnl
 m4_define(__hw_lm_7_vector-plus-scalar,5)m4_dnl
-m4_define(__hw_lm_7_rock-roof-2,6)m4_dnl
 m4_define(__hw_lm_8_fossil,1)m4_dnl
 m4_define(__hw_lm_8_oppositevanda,2)m4_dnl
 m4_define(__hw_lm_8_bird,3)m4_dnl
@@ -262,6 +261,7 @@ m4_define(__hw_lm_8_plane-wind-symbolic,22)m4_dnl
 m4_define(__hw_lm_8_applied-force-below-horizontal,23)m4_dnl
 m4_define(__hw_lm_8_ramp-force-probe,24)m4_dnl
 m4_define(__hw_lm_8_stemming,25)m4_dnl
+m4_define(__hw_lm_8_rock-roof-2,26)m4_dnl
 m4_define(__hw_lm_9_mixer,1)m4_dnl
 m4_define(__hw_lm_9_circularaccelunits,2)m4_dnl
 m4_define(__hw_lm_9_loop,3)m4_dnl
@@ -867,7 +867,6 @@ m4_define(__hw_me_7_drill,4)m4_dnl
 m4_define(__hw_me_7_vector-plus-scalar,5)m4_dnl
 m4_define(__hw_me_7_baseballrangeair,6)m4_dnl
 m4_define(__hw_me_7_sine-of-vector,7)m4_dnl
-m4_define(__hw_me_7_rock-roof-2,8)m4_dnl
 m4_define(__hw_me_8_oppositevanda,1)m4_dnl
 m4_define(__hw_me_8_hurricane-track,2)m4_dnl
 m4_define(__hw_me_8_annie-oakley,3)m4_dnl
@@ -898,6 +897,7 @@ m4_define(__hw_me_8_plane-wind-symbolic,27)m4_dnl
 m4_define(__hw_me_8_applied-force-below-horizontal,28)m4_dnl
 m4_define(__hw_me_8_ramp-force-probe,29)m4_dnl
 m4_define(__hw_me_8_stemming,30)m4_dnl
+m4_define(__hw_me_8_rock-roof-2,31)m4_dnl
 m4_define(__hw_me_9_circularaccelunits,1)m4_dnl
 m4_define(__hw_me_9_loop,2)m4_dnl
 m4_define(__hw_me_9_tilt-a-whirl,3)m4_dnl

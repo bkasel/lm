@@ -53,7 +53,5 @@ __incl(text/n3b)
 
 <% begin_hw('vector-plus-scalar') %>__incl(hw/vector-plus-scalar)<% end_hw() %>
 
-<% begin_hw('rock-roof-2',nil,{'credit'=>'B.~Shotwell'}) %>__incl(hw/rock-roof-2)<% end_hw() %>
-
 <% end_hw_sec %>
 <% end_chapter() %>

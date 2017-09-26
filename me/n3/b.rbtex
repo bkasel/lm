@@ -60,7 +60,6 @@ __incl(text/n3b)
 
 <% begin_hw('sine-of-vector') %>__incl(hw/sine-of-vector)<% end_hw() %>
 
-<% begin_hw('rock-roof-2',nil,{'credit'=>'B.~Shotwell'}) %>__incl(hw/rock-roof-2)<% end_hw() %>
 
 \pagebreak
 

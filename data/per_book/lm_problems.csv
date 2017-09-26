@@ -164,7 +164,6 @@ lm,7,2,bangkok,0
 lm,7,3,walking,0
 lm,7,4,drill,0
 lm,7,5,vector-plus-scalar,0
-lm,7,6,rock-roof-2,0
 lm,8,1,fossil,0
 lm,8,2,oppositevanda,0
 lm,8,3,bird,0
@@ -190,6 +189,7 @@ lm,8,22,plane-wind-symbolic,0
 lm,8,23,applied-force-below-horizontal,0
 lm,8,24,ramp-force-probe,0
 lm,8,25,stemming,1
+lm,8,26,rock-roof-2,0
 lm,9,1,mixer,0
 lm,9,2,circularaccelunits,0
 lm,9,3,loop,0
