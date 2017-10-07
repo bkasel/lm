@@ -4203,6 +4203,16 @@ and $\sin\phi$ is small. We conclude that $\Delta x = -\ell \cos\phi$.
 A typical application of this technique to force vectors is given in
 example \ref{eg:layback} on p.~\pageref{eg:layback}.
 \end{eg}
+<% marg(130) %>
+<%
+  fig(
+    'eg-component-shortcut',
+    %q{%
+      Example \ref{eg:component-shortcut}.
+    }
+  )
+%>
+<% end_marg %>
 
         <% end_sec() %>
 <% begin_sec("Addition of vectors given their components") %>\label{subsec:vector-addition}\index{analytic addition of vectors}\index{vector addition!analytic}
