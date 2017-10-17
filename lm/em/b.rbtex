@@ -467,7 +467,10 @@ A Caltech-MIT collaboration has built
         the mirrors at the ends of the 4-km vacuum tunnels. This is a thousand times
         less than the size of an atomic nucleus!
         In 2016, the collaboration announced the first detection of a gravitational wave, which is believed
-        to have originated from the collision of two black holes.
+        to have originated from the collision of two black holes. Propagation of gravitational waves
+        at $c$ was verified through multiple methods both by study of the 2016 event and through
+        an event in 2017, interpreted as a collision of two neutron stars, in which both gravitational
+        waves and electromagnetic waves were detected simultaneously.
 
 <% end_sec() %>
 <% end_sec() %>
