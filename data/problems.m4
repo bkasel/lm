@@ -221,6 +221,7 @@ m4_define(__hw_lm_5_rappel-from-fridge,32)m4_dnl
 m4_define(__hw_lm_5_tissue-box-simple-friction,33)m4_dnl
 m4_define(__hw_lm_5_blocks-sliding-tension,34)m4_dnl
 m4_define(__hw_lm_5_mechanical-advantage,35)m4_dnl
+m4_define(__hw_lm_5_squeeze-blocks,36)m4_dnl
 m4_define(__hw_lm_6_tossup,1)m4_dnl
 m4_define(__hw_lm_6_misslettuce,2)m4_dnl
 m4_define(__hw_lm_6_niagara,3)m4_dnl
@@ -952,6 +953,8 @@ m4_define(__hw_me_10_overlapping-shells,31)m4_dnl
 m4_define(__hw_me_10_mineshaft-half-way-to-center,32)m4_dnl
 m4_define(__hw_me_10_earth-layers,33)m4_dnl
 m4_define(__hw_me_10_iss-apparent-gravity,34)m4_dnl
+m4_define(__hw_me_10_g-field-of-straight-mass-filament,35)m4_dnl
+m4_define(__hw_me_10_g-field-of-curved-mass-filament,36)m4_dnl
 m4_define(__hw_me_11_negativeke,1)m4_dnl
 m4_define(__hw_me_11_sprinter,2)m4_dnl
 m4_define(__hw_me_11_crash,3)m4_dnl
@@ -1961,6 +1964,7 @@ m4_define(__hw_sn_7_earth-black-hole,27)m4_dnl
 m4_define(__hw_sn_7_tossed-clock,28)m4_dnl
 m4_define(__hw_sn_7_sphere-angular-defect,29)m4_dnl
 m4_define(__hw_sn_7_side-by-side-lasers,30)m4_dnl
+m4_define(__hw_sn_7_gamma-decay-energy-comparisons,31)m4_dnl
 m4_define(__hw_sn_8_neuron-stick,1)m4_dnl
 m4_define(__hw_sn_8_earthmoonelec,2)m4_dnl
 m4_define(__hw_sn_8_heline,3)m4_dnl

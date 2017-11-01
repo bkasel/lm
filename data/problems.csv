@@ -221,6 +221,7 @@ lm,5,32,rappel-from-fridge,0
 lm,5,33,tissue-box-simple-friction,0
 lm,5,34,blocks-sliding-tension,0
 lm,5,35,mechanical-advantage,0
+lm,5,36,squeeze-blocks,0
 lm,6,1,tossup,0
 lm,6,2,misslettuce,0
 lm,6,3,niagara,0
@@ -952,6 +953,8 @@ me,10,31,overlapping-shells,0
 me,10,32,mineshaft-half-way-to-center,0
 me,10,33,earth-layers,0
 me,10,34,iss-apparent-gravity,0
+me,10,35,g-field-of-straight-mass-filament,1
+me,10,36,g-field-of-curved-mass-filament,0
 me,11,1,negativeke,0
 me,11,2,sprinter,0
 me,11,3,crash,0
@@ -1961,6 +1964,7 @@ sn,7,27,earth-black-hole,0
 sn,7,28,tossed-clock,1
 sn,7,29,sphere-angular-defect,0
 sn,7,30,side-by-side-lasers,0
+sn,7,31,gamma-decay-energy-comparisons,0
 sn,8,1,neuron-stick,0
 sn,8,2,earthmoonelec,0
 sn,8,3,heline,0

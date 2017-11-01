@@ -26,6 +26,7 @@
 %==================================================================
 %==================================================================
 
+<% answer("g-field-of-straight-mass-filament") %>
 <% answer("ring-moi-about-diameter") %>
 <% answer("stemming") %>
 <% answer("vee-track-minimum-time") %>

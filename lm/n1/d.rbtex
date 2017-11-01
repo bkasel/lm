@@ -249,6 +249,21 @@ italicized object participates.}
 
 <% begin_hw('mechanical-advantage',nil,{'credit'=>'B.~Shotwell'}) %>__incl(hw/mechanical-advantage)<% end_hw() %>
 
+\pagebreak
+
+<% begin_hw('squeeze-blocks') %>__incl(hw/squeeze-blocks)<% end_hw() %>
+
+
+
+<% marg(300) %>
+<%
+  fig(
+    'hw-squeeze-blocks',
+    %q{Problem \ref{hw:squeeze-blocks}.}
+  )
+%>
+<% end_marg %>
+
 <% end_hw_sec %>
 
  %%----------------------------------------------------------

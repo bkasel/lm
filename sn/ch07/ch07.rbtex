@@ -231,6 +231,8 @@ of $\kgunit\unitdot\munit/\sunit$.\answercheck\hwendpart
 
 <% begin_hw('side-by-side-lasers') %> __incl(hw/side-by-side-lasers) <% end_hw() %>
 
+<% begin_hw('gamma-decay-energy-comparisons') %> __incl(hw/gamma-decay-energy-comparisons) <% end_hw() %>
+
 <% end_hw_sec %>
 
 \begin{exsection}

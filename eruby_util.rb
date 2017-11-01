@@ -78,7 +78,7 @@ end
 
 def save_complaint(message)
   File.open('eruby_complaints','a') { |f| 
-    f.print message,"\n"
+    f.print "eruby_util.rb: ",message,"\n"
   }
 end
 
@@ -991,7 +991,7 @@ def print_answers_of_one_type(lo_ch,hi_ch,type,header)
         last_ch = ch
         long = answer_short_label_to_long(name,type)
         if long==nil then
-          save_complaint("No answer text available for problem #{name}, type #{type}")
+          save_complaint("No answer text available for problem #{name}, type #{type}; this may be because you didn't put an appropriate line in hwans.rbtex")
         else
           print answer_header(long,type)+$answer_text[type][long]
         end
