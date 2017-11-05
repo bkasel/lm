@@ -689,6 +689,64 @@ This is done in example \ref{eg:line-charge-gauss} on p.~\pageref{eg:line-charge
         the same dipole moment as the two-charge dipole that would
         experience the same torque.)
         
+
+\begin{eg}{Molecules with zero and nonzero dipole moments}\label{eg:molecular-dipoles}
+In the definition of the dipole, we can take the distance to be a vector $\bell$,
+in which case the dipole moment $\vc{D}=\bell q$ is a vector by definition. It
+then adds according to the usual rules of vector addition. Figure \figref{molecular-dipoles}
+shows the application to some small molecules. 
+
+<%
+  fig(
+    'molecular-dipoles',
+    %q{%
+      Example \ref{eg:molecular-dipoles}. The positive $x$ axis is to the right, $y$ is up,
+      and $z$ is out of the page. Dark gray atoms are carbon, and the small light gray ones are hydrogen.
+      Some other elements are labeled when their identity would otherwise not be clear.
+    },
+    {
+      'width'=>'wide',
+      'sidecaption'=>true,
+      'sidepos'=>'b'
+    }
+  )
+%>
+
+In a symmetric molecule such as carbon disulfide, figure
+\subfigref{molecular-dipoles}{1}, the dipole moment vanishes by symmetry. For if we rotate the
+molecule end-over-end by 180 degrees, the molecule is unchanged, which means that its dipole moment
+is unchanged. But a zero vector is the only vector that can stay the same when its direction is reversed.
+
+If we wish, we can think of this as arising from a cancellation of two dipole vectors, one for
+each of the molecular bonds. Each chemical element has a certain affinity
+for electrons, which is represented by the column in which it lies on the periodic table,
+and is ultimately determined by quantum physics (section \ref{subsec:deriving-periodic-table},
+p.~\pageref{subsec:deriving-periodic-table}). 
+Sulfur ``likes'' electrons just slightly more than carbon, so that the electron cloud shifts outward
+somewhat from the center. This gives rise to two dipole vectors, each of which points inward, toward
+the positive charge. (Chemists use an opposite convention for the direction.) These two vectors add up
+to zero.
+
+Similar symmetry arguments show that sulfur hexafluoride, \subfigref{molecular-dipoles}{2}, and
+benzene \subfigref{molecular-dipoles}{3}, have vanishing dipole moments.
+
+The formaldehyde molecule, \subfigref{molecular-dipoles}{4}, does not have enough symmetry to guarantee
+that its dipole moment must vanish, but it does have enough to dictate that the dipole vector
+must lie along the $x$ axis. To determine the sign of $D_x$, we must use the fact that
+oxygen has a much higher electron affinity than carbon, so this creates
+a strong contribution to the dipole moment in the negative $x$ direction. Carbon in turn has a higher
+electron affinity than hydrogen, so there is also a dipole moment associated with each CH bond,
+pointing toward the hydrogen and therefore contributing a further negative $D_x$. The $y$ components
+cancel. A similar analysis for chloroform, \subfigref{molecular-dipoles}{5},
+shows that the dipole moment points in the positive $z$ direction.
+
+It can be useful to know whether or not a molecule is polar, i.e., has a nonzero dipole moment.
+A polar molecule such as water is readily heated in a microwave oven, while a nonpolar one is not.
+Polar molecules are attracted to one another, so polar substances dissolve in other polar substances,
+but not in nonpolar substances, i.e., ``like dissolves like.'' Thus we can tell, for example, that
+carbon disulfide will be soluble in benzene, but chloroform will not.
+\end{eg}
+
 \begin{eg}{Dipole moment of a molecule of NaCl gas}
         \egquestion
         In a molecule of NaCl gas, the center-to-center
@@ -709,33 +767,6 @@ This is done in example \ref{eg:line-charge-gauss} on p.~\pageref{eg:line-charge
         \end{align*}
 
 \end{eg}
-
-\begin{eg}{Molecules with zero and nonzero dipole moments}\label{eg:molecular-dipoles}
-In the definition of the dipole, we can take the distance to be a vector $\bell$,
-in which case the dipole moment $\vc{D}=\bell q$ is a vector by definition. It
-then adds according to the usual rules of vector addition. Figure \figref{molecular-dipoles}
-shows the application to some small molecules. 
-
-<%
-  fig(
-    'molecular-dipoles',
-    %q{%
-      Example \ref{eg:molecular-dipoles}.
-    },
-    {
-      'width'=>'wide',
-      'sidecaption'=>true,
-      'sidepos'=>'b'
-    }
-  )
-%>
-
-Each chemical element has a certain affinity
-for electrons, which is represented by the column in which it lies on the periodic table,
-and is ultimately determined by quantum physics (section \ref{subsec:deriving-periodic-table},
-p.~\pageref{subsec:deriving-periodic-table}). In a symmetric molecule such as 
-\end{eg}
-
 
 
         <% end_sec() %>
@@ -922,7 +953,7 @@ gravitational field.
 
 <% end_sec() %>
 <% end_sec() %>
-<% begin_sec("Calculating energy in fields",nil,'energy-in-fields') %>\index{energy!stored in fields}
+<% begin_sec("Calculating energy in fields",4,'energy-in-fields') %>\index{energy!stored in fields}
 We found on p.~\pageref{fieldenergy} that fields have energy, and we now know as well that fields
 act like vectors. Presumably there is a relationship between the strength of a field and its energy
 density. Flipping the direction of the field can't change the density of energy, which is a scalar
@@ -1031,6 +1062,8 @@ shrinks the high-energy unshaded region and enlarges the
 low-energy shaded region.
 \end{eg}
 
+\pagebreak
+
 \begin{eg}{Energy transmitted by ripples in the electric and magnetic fields}
 We'll see in chapter \ref{ch:em} that phenomena like light, radio waves, and x-rays are all
 ripples in the electric and magnetic fields.
@@ -1106,7 +1139,7 @@ the gravitational energy of two equal masses.
 
 <% end_sec() %> % Calculating energy in fields
 
-<% begin_sec("Voltage for Nonuniform Fields",3,'v-e-nonuniform',{'calc'=>true}) %>
+<% begin_sec("Voltage for Nonuniform Fields",4,'v-e-nonuniform',{'calc'=>true}) %>
 
 The calculus-savvy reader will have no difficulty generalizing
 the field-voltage relationship to the case of a varying
@@ -1291,6 +1324,8 @@ are called field lines, and they have a direction, shown by the arrowheads.
     {'width'=>'fullpage'}
   )
 %>
+
+\pagebreak
 
 \begin{eg}{An avalanche transceiver}\label{eg:avalanche-transceiver}
 The dipole field pattern is universal: it always has the same mathematical shape,
