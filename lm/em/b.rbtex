@@ -709,6 +709,35 @@ This is done in example \ref{eg:line-charge-gauss} on p.~\pageref{eg:line-charge
         \end{align*}
 
 \end{eg}
+
+\begin{eg}{Molecules with zero and nonzero dipole moments}\label{eg:molecular-dipoles}
+In the definition of the dipole, we can take the distance to be a vector $\bell$,
+in which case the dipole moment $\vc{D}=\bell q$ is a vector by definition. It
+then adds according to the usual rules of vector addition. Figure \figref{molecular-dipoles}
+shows the application to some small molecules. 
+
+<%
+  fig(
+    'molecular-dipoles',
+    %q{%
+      Example \ref{eg:molecular-dipoles}.
+    },
+    {
+      'width'=>'wide',
+      'sidecaption'=>true,
+      'sidepos'=>'b'
+    }
+  )
+%>
+
+Each chemical element has a certain affinity
+for electrons, which is represented by the column in which it lies on the periodic table,
+and is ultimately determined by quantum physics (section \ref{subsec:deriving-periodic-table},
+p.~\pageref{subsec:deriving-periodic-table}). In a symmetric molecule such as 
+\end{eg}
+
+
+
         <% end_sec() %>
 <% begin_sec("Alternative definition of the electric field",nil,'efielddipoledef') %>
 
