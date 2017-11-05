@@ -684,17 +684,45 @@ This is done in example \ref{eg:line-charge-gauss} on p.~\pageref{eg:line-charge
         directions, the torques do not cancel, because they are both
         trying to twist the dipole in the same direction.) The
         quantity $\ell q$ is called the dipole \index{moment!dipole}\index{dipole
-        moment}moment, notated $D$. (More complex dipoles can also
+        moment}moment, notated $D$.
+
+\begin{eg}{Dipole moment of a molecule of NaCl gas}
+        \egquestion
+        In a molecule of NaCl gas, the center-to-center
+        distance between the two atoms is about 0.24 nm. Assuming
+        that the chlorine completely steals one of the sodium's
+        electrons, compute the magnitude of this molecule's dipole moment.
+
+        \eganswer
+        The total charge is zero, so it doesn't matter where we choose the
+        origin of our coordinate system. For convenience, let's choose
+        it to be at one of the atoms, so that the charge on that atom 
+        doesn't contribute to the dipole moment.
+         The magnitude of the dipole moment is then
+        \begin{align*}
+                         D         &=    (2.4\times10^{-10}\ \zu{m})( e)  \\
+                                 &=    (2.4\times10^{-10}\ \zu{m})( 1.6\times10^{-19}\ \zu{C})  \\
+                                 &\approx    4\times10^{-29}\ \zu{C}\cdot\zu{m}
+        \end{align*}
+        The experimentally measured value is $3.0\times10^{-29}\ \zu{C}\cdot\zu{m}$, which shows
+        that the electron is not completely ``stolen.''
+% McCaffrey, https://www.era.lib.ed.ac.uk/bitstream/1842/2601/2/McCaffrey%20PD%20thesis%2007.pdf
+% someone else's measurement, quoted on p. 167 of pdf
+% 8.97 Debye units; 1 D=10^-18 statC.cm
+% calc -e "d=3.3 10^-30 C.m; 8.97d"
+\end{eg}
+
+ More complex dipoles can also
         be assigned a dipole moment --- they are defined as having
         the same dipole moment as the two-charge dipole that would
-        experience the same torque.)
+        experience the same torque.
         
 
 \begin{eg}{Molecules with zero and nonzero dipole moments}\label{eg:molecular-dipoles}
-In the definition of the dipole, we can take the distance to be a vector $\bell$,
-in which case the dipole moment $\vc{D}=\bell q$ is a vector by definition. It
-then adds according to the usual rules of vector addition. Figure \figref{molecular-dipoles}
-shows the application to some small molecules. 
+It can be useful to know whether or not a molecule is polar, i.e., has a nonzero dipole moment.
+A polar molecule such as water is readily heated in a microwave oven, while a nonpolar one is not.
+Polar molecules are attracted to one another, so polar substances dissolve in other polar substances,
+but not in nonpolar substances, i.e., ``like dissolves like.'' 
 
 <%
   fig(
@@ -713,60 +741,32 @@ shows the application to some small molecules.
 %>
 
 In a symmetric molecule such as carbon disulfide, figure
-\subfigref{molecular-dipoles}{1}, the dipole moment vanishes by symmetry. For if we rotate the
-molecule end-over-end by 180 degrees, the molecule is unchanged, which means that its dipole moment
-is unchanged. But a zero vector is the only vector that can stay the same when its direction is reversed.
-
-If we wish, we can think of this as arising from a cancellation of two dipole vectors, one for
-each of the molecular bonds. Each chemical element has a certain affinity
-for electrons, which is represented by the column in which it lies on the periodic table,
-and is ultimately determined by quantum physics (section \ref{subsec:deriving-periodic-table},
-p.~\pageref{subsec:deriving-periodic-table}). 
-Sulfur ``likes'' electrons just slightly more than carbon, so that the electron cloud shifts outward
-somewhat from the center. This gives rise to two dipole vectors, each of which points inward, toward
-the positive charge. (Chemists use an opposite convention for the direction.) These two vectors add up
-to zero.
+\subfigref{molecular-dipoles}{1}, the dipole moment vanishes.
+For if we rotate the molecule by 180 degrees about any one
+of the three coordinate axes defined in the caption of the figure, the molecule is unchanged, which means
+that its dipole moment is unchanged. This means that $\zu{C}\zu{S}_2$ cannot
+be equivalent to any simple, two-charge dipole, because a simple dipole
+can only stay the same under a 180 degree rotation if the rotation is about
+the line connecting the two charges.
 
 Similar symmetry arguments show that sulfur hexafluoride, \subfigref{molecular-dipoles}{2}, and
 benzene \subfigref{molecular-dipoles}{3}, have vanishing dipole moments.
 
 The formaldehyde molecule, \subfigref{molecular-dipoles}{4}, does not have enough symmetry to guarantee
-that its dipole moment must vanish, but it does have enough to dictate that the dipole vector
-must lie along the $x$ axis. To determine the sign of $D_x$, we must use the fact that
-oxygen has a much higher electron affinity than carbon, so this creates
-a strong contribution to the dipole moment in the negative $x$ direction. Carbon in turn has a higher
-electron affinity than hydrogen, so there is also a dipole moment associated with each CH bond,
-pointing toward the hydrogen and therefore contributing a further negative $D_x$. The $y$ components
-cancel. A similar analysis for chloroform, \subfigref{molecular-dipoles}{5},
-shows that the dipole moment points in the positive $z$ direction.
+that its dipole moment must vanish, but it does have enough to dictate it must be equivalent
+to a two-charge dipole lying along the left-right axis.
+Chloroform, \subfigref{molecular-dipoles}{5}, is a front-to-back dipole for the
+orientation drawn in the figure.
 
-It can be useful to know whether or not a molecule is polar, i.e., has a nonzero dipole moment.
-A polar molecule such as water is readily heated in a microwave oven, while a nonpolar one is not.
-Polar molecules are attracted to one another, so polar substances dissolve in other polar substances,
-but not in nonpolar substances, i.e., ``like dissolves like.'' Thus we can tell, for example, that
+From these considerations we can tell, for example, that
 carbon disulfide will be soluble in benzene, but chloroform will not.
+
+Symmetry arguments are not enough to determine, for example, whether 
+formaldehyde is equivalent to a dipole whose positive charge lies to
+the left of its negative one or to the right. This requires some knowledge of
+chemistry and the periodic table.
 \end{eg}
 
-\begin{eg}{Dipole moment of a molecule of NaCl gas}
-        \egquestion
-        In a molecule of NaCl gas, the center-to-center
-        distance between the two atoms is about 0.6 nm. Assuming
-        that the chlorine completely steals one of the sodium's
-        electrons, compute the magnitude of this molecule's dipole moment.
-
-        \eganswer
-        The total charge is zero, so it doesn't matter where we choose the
-        origin of our coordinate system. For convenience, let's choose
-        it to be at one of the atoms, so that the charge on that atom 
-        doesn't contribute to the dipole moment.
-         The magnitude of the dipole moment is then
-        \begin{align*}
-                         D         &=    (6\times10^{-10}\ \zu{m})( e)  \\
-                                 &=    (6\times10^{-10}\ \zu{m})( 1.6\times10^{-19}\ \zu{C})  \\
-                                 &=    1\times10^{-28}\ \zu{C}\cdot\zu{m}
-        \end{align*}
-
-\end{eg}
 
 
         <% end_sec() %>
@@ -874,6 +874,7 @@ fields as weak as 50 \emph{pico}volts per meter!
         quickly begins to recognize frequently occurring combinations.
 \end{eg}
 
+\pagebreak
 
 \startdqs
 

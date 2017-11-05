@@ -4211,7 +4211,7 @@ half-integer spin. Thus two neutrons can never occupy the
 same state, and likewise for two protons. Photons, however,
 are immune to the exclusion principle because their spin is an integer.
 
-<% begin_sec("Deriving the periodic table") %>\index{periodic table}
+<% begin_sec("Deriving the periodic table",nil,'deriving-periodic-table') %>\index{periodic table}
 We can now account for the structure of the periodic table,
 which seemed so mysterious even to its inventor Mendeleev.
 The first row consists of atoms with electrons only
