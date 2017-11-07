@@ -691,7 +691,7 @@ but not in nonpolar substances, i.e., ``like dissolves like.''
 In a symmetric molecule such as carbon disulfide, figure
 \subfigref{molecular-dipoles}{1}, the dipole moment vanishes by
 symmetry. For if we rotate the molecule by 180 degrees about any one
-of the three coordinate axes, the molecule is unchanged, which means
+of the three coordinate axes defined in the caption of the figure, the molecule is unchanged, which means
 that its dipole moment is unchanged. A zero vector is the only
 vector that can stay the same under all these rotations.
 
