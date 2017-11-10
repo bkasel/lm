@@ -4477,7 +4477,7 @@ plus 2 nuclei).
 
 What is more surprising is that there are some clear, simple patterns in this spectrum --- patterns
 simpler than any that we would see in the spectrum of a monoatomic gas with the same number of particles.
-To start to understand this, we note that the $\zu{N}_2$ lacks the spherical symmetry of an individual
+To start to understand this, we note that $\zu{N}_2$ lacks the spherical symmetry of an individual
 atom, but it does have an axis of symmetry, \subfigref{axial-symmetry}{1}. These properties are also possessed
 by many nuclei, e.g., \subfigref{axial-symmetry}{2}. We now consider three different ways in which an excited
 energy state could occur in $\zu{N}_2$:
@@ -4568,7 +4568,7 @@ Perhaps more vivid evidence for the nonexistence of rotation about a symmetry ax
 are approximately a parabola on this graph, which is reasonable given the classical relation $K=L^2/2I$.
 But angular momentum cannot be generated along the symmetry axis through collective rotation. Instead,
 we see an irregular set of energy levels in which first one particle (for $L\le8\hbar$) and then two
-(14 and 16 $\hbar$) are excited.
+(14 and $16\hbar$) are excited.
 
 Note that only even multiples of $\hbar$ are observed in collective rotation in figure \figref{hf-rotation}.
 This is because the nucleus's shape has an additional mirror symmetry, so that it is unaffected by
@@ -4641,7 +4641,7 @@ reactors and bombs would not work.
 
 Figure \figref{j-jplus1-visual} shows visually the reason for the correction of $\ell^2$ to $\ell(\ell+1)$.
 Each of these standing waves has $|\ell_z|=16$, where $z$ is the vertical
-axis. But only \subfigref{j-jplus1-visual}{2} is a solution of the Schr\"odinger equation or a state of definite
+axis. But only \subfigref{j-jplus1-visual}{2} is a solution of the Schr\"odinger equation for a state of definite
 $\ell$.
 To be a solution of the Schr\"odinger equation, such a wave must have the same kinetic energy everywhere. 
 Each of these three has the same kinetic energy associated
@@ -4652,7 +4652,7 @@ in the ``north-south,'' or longitudinal, direction, and this gives it a greater 
 elsewhere. The opposite problem occurs in \subfigref{j-jplus1-visual}{3}, where the wave is constant in the longitudinal
 direction; at the poles, the wavefunction varies infinitely rapidly,
 and therefore the kinetic energy blows up to infinity there. The only valid solution is
-\subfigref{j-jplus1-visual}{2}, which has a Goldilocks-style just-right wavelength in the longitudinal direction,
+\subfigref{j-jplus1-visual}{2}, which has a Goldilocks-style just-right wavelength in the longitudinal direction.
 The kinetic energy associated with this wavelength is the difference between the semiclassical
 $\ell^2$ and the correct quantum mechanical $\ell(\ell+1)$. 
 
@@ -4675,7 +4675,7 @@ one brick on top of another, but at this point it will be advantageous to pause 
 consider the broader blueprint.
 
 <% begin_sec("The time-dependent Schr\\\"odinger equation",nil,'time-dependent-s-eqn') %>
-For simplicity our discussion of the Schr\"odinger equation in section
+For simplicity, our discussion of the Schr\"odinger equation in section
 \ref{subsec:schrodinger}, p.~\pageref{s-eqn-simplest-initial-statement}, was limited to standing waves, allowing us to avoid
 explicitly discussing how the wavefunction changed with passing time. Let's consider
 the generalization to the full time-dependent case.
@@ -5010,7 +5010,7 @@ for which there was zero probability of having $x\ne0$, and this requires us to 
 $\Psi(x)=0$ for nonzero $x$.
 But what would be the value of $\Psi(0)$? It has to be \emph{infinite} if $\Psi$ is to be properly
 normalized. With this motivation, the physicist P.A.M.~Dirac defined
-Dirac delta function,
+the Dirac delta function,\index{Dirac delta function}\index{delta function (Dirac)}
 \begin{equation*}
   \delta(x)=\begin{cases}
     0 & \text{for $x\ne0$} \\
@@ -5283,7 +5283,7 @@ space & $x$ & $k$      & $\Delta x\Delta k \gtrsim 1$ \\
 time  & $t$ & $\omega$ & $\Delta t\Delta \omega \gtrsim 1$ 
 \end{tabular}
 
-\noindent Here the quantity $k=2\pi/lambda$ is called the wavenumber.\index{wavenumber}
+\noindent Here the quantity $k=2\pi/\lambda$ is called the wavenumber.\index{wavenumber}
 The inequality $\Delta x\Delta k \gtrsim 1$ is a kind of classical uncertainty
 relation that is closely related to the Heisenberg uncertainty principle.
 Its classical nature is immediately apparent because it doesn't involve Planck's constant.
@@ -5409,7 +5409,7 @@ passed through it. If we could perform this observation without disturbing the e
 a paradox would arise. For if we haven't disturbed the electron, then there should still be
 a double-slit interference pattern. But if we watch one slit, then half of the time we should
 see that the electron did not go through it, and therefore the slit's existence is of no importance,
-and we can't possible get a double-slit interference pattern.
+and we can't possibly get a double-slit interference pattern.
 
 <% marg(300) %>
 <%
