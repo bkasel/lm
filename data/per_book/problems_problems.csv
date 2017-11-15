@@ -484,6 +484,9 @@ problems,11,m2,alternateuniverse,0
 problems,11,m3,collapse-time-scaling,0
 problems,11,m4,constant-density-maximum-gravity,0
 problems,11,m5,escape-speed-black-hole,0
+problems,11,m6,g-field-of-straight-mass-filament,1
+problems,11,m7,g-field-of-filament-order-of-limits,0
+problems,11,m8,g-field-of-curved-mass-filament,0
 problems,11,p1,mineshaft,0
 problems,11,p2,shell-theorem-exponent,0
 problems,11,p3,shell-theorem-outside-only,0

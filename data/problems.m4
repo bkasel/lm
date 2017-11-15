@@ -1621,6 +1621,9 @@ m4_define(__hw_problems_11_alternateuniverse,m2)m4_dnl
 m4_define(__hw_problems_11_collapse-time-scaling,m3)m4_dnl
 m4_define(__hw_problems_11_constant-density-maximum-gravity,m4)m4_dnl
 m4_define(__hw_problems_11_escape-speed-black-hole,m5)m4_dnl
+m4_define(__hw_problems_11_g-field-of-straight-mass-filament,m6)m4_dnl
+m4_define(__hw_problems_11_g-field-of-filament-order-of-limits,m7)m4_dnl
+m4_define(__hw_problems_11_g-field-of-curved-mass-filament,m8)m4_dnl
 m4_define(__hw_problems_11_mineshaft,p1)m4_dnl
 m4_define(__hw_problems_11_shell-theorem-exponent,p2)m4_dnl
 m4_define(__hw_problems_11_shell-theorem-outside-only,p3)m4_dnl
