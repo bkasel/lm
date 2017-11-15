@@ -194,6 +194,8 @@ New Horizons: 465.0 kg
 
 \pagebreak
 
+<% begin_hw('g-field-of-filament-order-of-limits',2) %>__incl(hw/g-field-of-filament-order-of-limits)<% end_hw() %>
+
 <% begin_hw('g-field-of-curved-mass-filament',2) %>__incl(hw/g-field-of-curved-mass-filament)<% end_hw() %>
 
 
