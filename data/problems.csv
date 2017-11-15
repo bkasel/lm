@@ -954,7 +954,8 @@ me,10,32,mineshaft-half-way-to-center,0
 me,10,33,earth-layers,0
 me,10,34,iss-apparent-gravity,0
 me,10,35,g-field-of-straight-mass-filament,1
-me,10,36,g-field-of-curved-mass-filament,0
+me,10,36,g-field-of-filament-order-of-limits,0
+me,10,37,g-field-of-curved-mass-filament,0
 me,11,1,negativeke,0
 me,11,2,sprinter,0
 me,11,3,crash,0

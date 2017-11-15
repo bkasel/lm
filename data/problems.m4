@@ -954,7 +954,8 @@ m4_define(__hw_me_10_mineshaft-half-way-to-center,32)m4_dnl
 m4_define(__hw_me_10_earth-layers,33)m4_dnl
 m4_define(__hw_me_10_iss-apparent-gravity,34)m4_dnl
 m4_define(__hw_me_10_g-field-of-straight-mass-filament,35)m4_dnl
-m4_define(__hw_me_10_g-field-of-curved-mass-filament,36)m4_dnl
+m4_define(__hw_me_10_g-field-of-filament-order-of-limits,36)m4_dnl
+m4_define(__hw_me_10_g-field-of-curved-mass-filament,37)m4_dnl
 m4_define(__hw_me_11_negativeke,1)m4_dnl
 m4_define(__hw_me_11_sprinter,2)m4_dnl
 m4_define(__hw_me_11_crash,3)m4_dnl
