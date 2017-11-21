@@ -5874,6 +5874,12 @@ of energy. Solve the same problem using Newton's laws.
 
 <% begin_hw('iss-apparent-gravity') %>__incl(hw/iss-apparent-gravity)<% end_hw() %>
 
+<% begin_hw('g-field-of-straight-mass-filament') %>__incl(hw/g-field-of-straight-mass-filament)<% end_hw() %>
+
+<% begin_hw('g-field-of-filament-order-of-limits',2) %>__incl(hw/g-field-of-filament-order-of-limits)<% end_hw() %>
+
+<% begin_hw('g-field-of-curved-mass-filament',2) %>__incl(hw/g-field-of-curved-mass-filament)<% end_hw() %>
+
 <% end_hw_sec %>
 
  % ==================================================================== 

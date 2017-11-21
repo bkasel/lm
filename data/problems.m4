@@ -1862,6 +1862,9 @@ m4_define(__hw_sn_3_beer-stability,84)m4_dnl
 m4_define(__hw_sn_3_haul-bag,85)m4_dnl
 m4_define(__hw_sn_3_skee-ball,86)m4_dnl
 m4_define(__hw_sn_3_iss-apparent-gravity,87)m4_dnl
+m4_define(__hw_sn_3_g-field-of-straight-mass-filament,88)m4_dnl
+m4_define(__hw_sn_3_g-field-of-filament-order-of-limits,89)m4_dnl
+m4_define(__hw_sn_3_g-field-of-curved-mass-filament,90)m4_dnl
 m4_define(__hw_sn_4_pliers,1)m4_dnl
 m4_define(__hw_sn_4_rv,2)m4_dnl
 m4_define(__hw_sn_4_therapy,3)m4_dnl

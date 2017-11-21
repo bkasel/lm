@@ -4011,7 +4011,7 @@ cloud in of the $n=2$, $\ell=1$ state is split into two parts.
 __incl(text/h-energy)
 
 <% end_sec() %>
-<% begin_sec("Electron spin") %>\index{spin}
+<% begin_sec("Electron spin",nil,'electron-spin') %>\index{spin}
 
 It's disconcerting to the novice ping-pong player to
 encounter for the first time a more skilled player who can
