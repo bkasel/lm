@@ -2251,7 +2251,7 @@ m4_define(__hw_sn_13_easy-partials,46)m4_dnl
 m4_define(__hw_sn_13_am-radio-photon-density,47)m4_dnl
 m4_define(__hw_sn_13_square-wavefunction,48)m4_dnl
 m4_define(__hw_sn_13_bogus-laplacian,49)m4_dnl
-m4_define(__hw_sn_13_ho-orthogonal,50)m4_dnl
-m4_define(__hw_sn_13_trivial-observable,51)m4_dnl
-m4_define(__hw_sn_13_nucleus-et-uncertainty,52)m4_dnl
-m4_define(__hw_sn_13_ho-orthogonal2,53)m4_dnl
+m4_define(__hw_sn_14_ho-orthogonal,1)m4_dnl
+m4_define(__hw_sn_14_trivial-observable,2)m4_dnl
+m4_define(__hw_sn_14_nucleus-et-uncertainty,3)m4_dnl
+m4_define(__hw_sn_14_ho-orthogonal2,4)m4_dnl

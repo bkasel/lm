@@ -75,7 +75,10 @@
 
 \usepackage[french,english]{babel}
 
-\RequirePackage{makeidx,wrapfig,fancyhdr,calc,titlesec,titletoc,amssymb,moreverb,ifthen,framed,alphalph,cancel,learn-cmd-syntax,url,xstring,comment,navigator}
+\RequirePackage{makeidx,wrapfig,fancyhdr,calc,titlesec,titletoc,amssymb,moreverb,ifthen,framed,alphalph,
+                cancel,learn-cmd-syntax,url,xstring,comment,navigator,dutchcal}
+% dutchcal is for lowercase mathcal, used in SN 4 for \fmat
+%   https://tex.stackexchange.com/questions/231322/how-to-get-the-lowercase-calligraphic-symbols
 \RequirePackage{color}%see pdftex mailing list, 2004 May 22-23
 %====================== counters =====================================================
 \newcounter{dqctr}[subsection]

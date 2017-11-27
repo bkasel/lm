@@ -817,7 +817,7 @@ carbon disulfide will be soluble in benzene, but chloroform will not.
        consisting of two fixed positive charges. Although the field along the central axis of symmetry equals zero,
        the field is nonuniform, and therefore the dipoles feel a nonvanishing force, and are sorted out according
        to their orientations. A magnetic version of this device, described on p.~\pageref{eg:sharp-magnet-poles},
-       was used in the historic Stern-Gerlach experiment, sec.~\ref{subsec:stern-gerlach}, p.~\pageref{subsec:stern-gerlach}.}
+       was used in the historic Stern-Gerlach experiment, sec.~\ref{sec:stern-gerlach}, p.~\pageref{sec:stern-gerlach}.}
   )
 %>
 <% end_marg %>

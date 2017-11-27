@@ -115,7 +115,7 @@ update_problems:
 
 web:
 	# To make html versions for blind people, don't do this; do 'make blind.'
-	@[ `which footex` ] || echo "******** footex is not installed, so html cannot be generated; get footex from http://www.lightandmatter.com/footex/footex.html"
+	#@[ `which footex` ] || echo "******** footex is not installed, so html cannot be generated; get footex from http://www.lightandmatter.com/footex/footex.html"
 	@[ `which footex` ] || exit 1
 	@make preflight
 	@cp ../custom_html.yaml .
