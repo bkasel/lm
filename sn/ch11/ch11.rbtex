@@ -1366,6 +1366,80 @@ In example \ref{eg:twowires}, what
  %Superposition of dipoles
 <% end_sec() %>
 <% end_sec() %>
+
+<% begin_sec("The g factor (optional)",nil,'g-factor') %>
+
+In section \ref{subsec:superposdip} we exploited a particular trick for
+superimposing dipoles consisting of small square current loops.  Let's
+now turn to a somewhat different way of superimposing dipoles. The
+idea is that matter is made out of atoms, which may act like little
+magnetic dipoles, but atoms are themselves made out of subatomic
+particles such as electrons, neutrons and protons --- and there is no
+obvious way that we can ever know whether we have taken this process
+of reductionism (p.~\pageref{subsubsec:reductionism}) to its
+conclusion. We can, however, look for clues in the electrical and
+mechanical properties of matter. Suppose that a particle of charge $q$
+and mass $m$ is whizzing around and around some closed path. We don't
+even care whether the trajectory is a square or a circle, an orbit or a random wiggle.
+But let's say for convenience that it's a planar shape. The magnetic
+dipole moment (averaged over time) is $\vc{m}=I\vc{A}$. But the angular
+momentum of a unit mass can also be interpreted (sec.~\ref{subsec:ang-mom-planetary},
+p.~\pageref{subsec:ang-mom-planetary}) as twice the area it sweeps out per unit time.
+Aside from the factor of two, which is just a historical glitch in the definitions,
+this mathematical analogy is exact: mass is to
+charge as angular momentum $\vc{L}$ is to magnetic dipole moment $\vc{m}$. Therefore we
+have the identity
+\begin{equation*}
+  \frac{q}{m}\cdot\frac{|\vc{L}|}{|\vc{m}|} = 2
+\end{equation*}
+(where $\vc{m}$ is the dipole moment, while $m$ is the mass). The left-hand side
+is called the $g$ factor. We expect $g=2$
+for single orbiting particle.
+
+Now suppose that we have a collection of particles with identical values of $q/m$ (or
+a continuous distribution of charge and mass in which the ratio of the charge and mass
+densities is constant). Then vector addition of the $\vc{L}$ and $\vc{m}$ values
+gives the same $g=2$ for the system as a whole. On the other hand, if the different
+members of the system do \emph{not} all have the same $q/m$, then the $g$ of the system
+as a whole need not be 2. For example, a collection of positive and negative charges
+could easily have zero net charge but $\vc{m}\ne0$, giving $g=0$.
+
+Particles such as the electron, the neutron, and the proton may be pointlike, or they
+may be composites of other particles.
+The electon and proton, which are charged, have the expected $g$ factors
+of exactly 2 when we measure the $\vc{L}$ and $\vc{m}$ that they have due
+to their motion through space. But we also find that electrons, neutrons, and protons all come equipped
+with a built-in angular momentum, present even when they are at rest.
+This intrinsic angular momentum, called spin,\index{spin}
+is fixed in magnitude but can vary in direction, like that of a gyroscope.
+Thus if we measure the $\vc{L}$ and $\vc{m}$ of these particles when they
+are \emph{at rest}, they have fixed $g$ factors, which are as follows:
+
+\begin{tabular}{ll}
+electron & 2.002319304361 \\
+neutron & 0 \\
+proton & 5.58569471 
+\end{tabular}
+
+The electron's intrinsic $g$ factor is extremely close to 2, and if we ignore the small discrepancy for
+now, we are led to imagine that the electron is either a pointlike particle or a composite
+of smaller particles, each of which has the same charge-to-mass ratio. The neutron does have a
+nonvanishing dipole moment, so its zero $g$ factor suggests that it is a composite of other
+particles whose charges cancel. The proton's $g$ factor is quite different from 2, so we
+infer that it, too, is composite. The current theory is that protons and neutrons
+are clusters of particles called quarks.\index{quark} Quarks come in different types,
+and the different types have different values of $q/m$.
+
+It is remarkable that we can infer these facts about the internal structures of neutrons and
+protons without having to do any experiments that directly probe their interior structure.
+We don't need a super-powerful microscope, nor do we need a particle accelerator that can
+supply enough energy to shake up their internal structure, like shaking a gift-wrapped box to tell what's inside.
+Merely by measuring the external, aggregate properties of the ``box,'' we can get clues about the
+structure inside. This is closely analogous to the Tolman-Stewart experiment (example \ref{eg:tolman-stewart}, p.~\pageref{eg:tolman-stewart}),
+in which the subatomic structure of metals was probed by measuring inertial effects in an electric circuit.
+
+<% end_sec('g-factor') %>
+
 <% begin_sec("The Biot-Savart law (optional)",nil,'biot') %>
         In section \ref{subsec:superposdip} we developed a method for finding the field due to a 
         given current distribution by tiling a plane with square dipoles. This method 

@@ -1007,6 +1007,32 @@ Show that you can recover the expression for the field of a
   SELF_CHECK
   ) %>
 
+\begin{eg}{Weighing an electron}\label{eg:tolman-stewart}
+J.J.~Thomson (p.~\pageref{subsubsec:thomson-experiment}) is considered to have discovered the electron because he measured its
+charge-to-mass ratio $q/m$ and found it to be much larger than that of an ionized atom,
+interpreting this as evidence that he was seeing a subatomic particle with a mass much small than an atom's.
+But not only is the electron's $q/m$ relatively large compared to that of an atom, it is simply a huge number ($\sim-10^{11}\ \zu{C}/\kgunit$) when expressed
+in SI units. SI units are designed for human scales of experience, so this suggests that in everyday life we should expect it to be very
+difficult to detect any effect from the weight or inertia of an electron.
+
+As an example, suppose that a metal rod of length $L$ is
+oriented upright. The conduction electrons are free to move, so they would tend to drop to the bottom of the rod. Electrical forces will
+however resist this segregation of positive and negative charges. To estimate how hard it would be to observe such an effect, let us
+imagine connecting the probes of a voltmeter to the ends of the rod. In equilibrium, the electrical and gravitational fields must have effects
+on an electron that cancel out. Setting the magnitudes of these forces equal to each other, we have $eE=mg$, and since $E=\Delta V/L$, we predict
+a voltage difference $\Delta V=(m/q)gL$. For a one-meter rod, the predicted effect is $\sim10^{-10}\ \zu{V}$.
+
+This is quite small, but not
+impossible to measure, and the theoretical prediction was confirmed for a similar experiment by Tolman and Stewart in a 1916 experiment at Berkeley.
+This was the first direct evidence that the charge carriers inside a metal wire are in fact electrons.
+Similarly, we do expect mechanical side-effects in any electrical circuit, e.g., a slight twitching of a flashlight when we turn it on or off,
+but these will be much too small to notice except with exceptionally delicate and sensitive tools.\index{Tolman-Stewart experiment}
+% calc -x -e "m=9.1 10^-31 kg; g=9.8 m/s2; L=1 m; V=(m/e)gL->V"
+%    V = 5.56617829287959*10^-11 V
+It is surprising that we can get information about the microscopic structure of a metal merely by measuring
+its properties in this way. Another, similar example along these lines is described in sec.~\ref{subsec:g-factor}, p.~\pageref{subsec:g-factor}.
+\end{eg}
+
 <% end_sec() %>
 <% begin_sec("Two or three dimensions",nil,'evthreed') %>
         The topographical map in figure \figref{topo} suggests a good

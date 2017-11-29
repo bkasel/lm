@@ -1063,16 +1063,16 @@ Is money quantized? What is the quantum of money?
         charge were being used, so the forces were unusually intense.)
 
 <% end_sec() %>
-<% begin_sec("Thomson's experiments") %>\index{Thomson, J.J.!cathode ray experiments}
+<% begin_sec("Thomson's experiments",nil,'thomson-experiment') %>\index{Thomson, J.J.!cathode ray experiments}
 <% marg(0) %>
 <%
   fig(
     'thomson',
-    %q{J.J. Thomson in the lab.}
+    %q{J.J.~Thomson in the lab.}
   )
 %>
 <% end_marg %>
-        Physicist J.J. Thomson at Cambridge carried out a series of
+        Physicist J.J.~Thomson at Cambridge carried out a series of
         definitive experiments on cathode rays around the year 1897.
         By turning them slightly off course with electrical forces, \figref{deflect},
         he showed that they were indeed
