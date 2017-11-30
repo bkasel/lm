@@ -1,3 +1,5 @@
+# See notes.txt for notes on how I did this.
+
 default:
 	povray Height=6000 Width=6000 molecular-dipoles.pov
 	convert molecular-dipoles.png molecular-dipoles-bitmap.jpg

@@ -1437,7 +1437,8 @@ supply enough energy to shake up their internal structure, like shaking a gift-w
 Merely by measuring the external, aggregate properties of the ``box,'' we can get clues about the
 structure inside. This is closely analogous to the Tolman-Stewart experiment (example \ref{eg:tolman-stewart}, p.~\pageref{eg:tolman-stewart}),
 in which the subatomic structure of metals was probed by measuring inertial effects in an electric circuit.
-
+A more famous and important imperiment using these ideas, by Stern and Gerlach, is described in
+sec.~\ref{sec:stern-gerlach}, p.~\pageref{sec:stern-gerlach}.
 <% end_sec('g-factor') %>
 
 <% begin_sec("The Biot-Savart law (optional)",nil,'biot') %>
