@@ -2255,3 +2255,5 @@ m4_define(__hw_sn_14_ho-orthogonal,1)m4_dnl
 m4_define(__hw_sn_14_trivial-observable,2)m4_dnl
 m4_define(__hw_sn_14_nucleus-et-uncertainty,3)m4_dnl
 m4_define(__hw_sn_14_ho-orthogonal2,4)m4_dnl
+m4_define(__hw_sn_14_ammonia,5)m4_dnl
+m4_define(__hw_sn_14_ammonia2,6)m4_dnl
