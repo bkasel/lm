@@ -2255,5 +2255,6 @@ sn,14,1,ho-orthogonal,0
 sn,14,2,trivial-observable,0
 sn,14,3,nucleus-et-uncertainty,0
 sn,14,4,ho-orthogonal2,0
-sn,14,5,ammonia,0
-sn,14,6,ammonia2,0
+sn,14,5,trivial-nonhermitian,0
+sn,14,6,ammonia,0
+sn,14,7,ammonia2,0
