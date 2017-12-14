@@ -3452,7 +3452,9 @@ case. If we are to make sense of Schr\"odinger's cat
 who sees a dead cat must remain oblivious to their other selves, like the ripples on the pond
 that intersect without ``seeing'' each other. Attempts to create slightly nonlinear versions
 of standard quantum mechanics have been shown to have implausible physical properties, such as
-allowing the propagation of signals faster than $c$.
+allowing the propagation of signals faster than $c$. (This is known as Gisin's theorem.\label{gisin-theorem}
+The original paper, ``Weinberg's non-linear quantum mechanics and supraluminal communications,''
+is surprisingly readable and nonmathematical.)\index{Gisin's theorem}
 
 If you have had a course in linear algebra, then it is worth noting that the
 linearity of the Schr\"odinger equation allows us to talk about its solutions as vectors in a vector
@@ -3474,7 +3476,7 @@ pattern like the one in figure \figref{ccd-diffraction} on p.~\pageref{fig:ccd-d
 if we then redefine the zero-level of $U$ so that the electrons have $E<0$?
 \end{dq}
 
-\begin{dq}
+\begin{dq}\label{dq:qm-cons-of-prob}
 The figure shows a series of snapshots in the motion of two pulses on a coil spring, one negative and one positive,
 as they move toward one another and superpose. The final image is very close to the moment at which
 the two pulses cancel completely. 
