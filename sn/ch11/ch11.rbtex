@@ -1568,7 +1568,7 @@ sec.~\ref{sec:stern-gerlach}, p.~\pageref{sec:stern-gerlach}.
                         &= \frac{2\pi kIa^2}{ c^2( a^2+ z^2)^{3/2}}\eqquad.
         \end{align*}
         \end{eg}
-<% marg(120) %>
+<% marg(-300) %>
 <%
   fig(
     'biotloopaxis',
@@ -1635,7 +1635,7 @@ sec.~\ref{sec:stern-gerlach}, p.~\pageref{sec:stern-gerlach}.
 <% end_sec() %>
 <% end_sec() %>
 <% end_sec %>
-<% begin_sec("Magnetic Fields by Amp\\\`ere's Law",4,'ampere') %>
+<% begin_sec("Magnetic Fields by Amp\\\`ere's Law",nil,'ampere') %>
 <% begin_sec("Amp\\\`ere's law") %>
         As discussed at the end of subsection \ref{subsec:biot}, 
         our goal now is to find an equation
@@ -1880,9 +1880,6 @@ Surprisingly, we never needed to know the radius of the solenoid in example \ref
         even refer to time, so if the magnetic field is changing over time, they will
         not do anything special. The extension of Maxwell's equations to nonstatic fields
         is discussed in section \ref{sec:maxwell}.
- %static Maxwell
-
-\vfill\pagebreak[4]
 
 \startdqs
 
