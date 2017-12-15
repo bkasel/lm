@@ -2259,3 +2259,4 @@ m4_define(__hw_sn_14_trivial-nonhermitian,5)m4_dnl
 m4_define(__hw_sn_14_ammonia,6)m4_dnl
 m4_define(__hw_sn_14_ammonia2,7)m4_dnl
 m4_define(__hw_sn_14_particle-in-a-box-superpos,8)m4_dnl
+m4_define(__hw_sn_14_funky-norm,9)m4_dnl

@@ -15,6 +15,8 @@ my $csv_file = $ARGV[1];
 my $xml_fragment_file = "spotter_labels"; # created in cwd, which is the main dir, not scripts/custom
 my $book_name_for_xml_file = $book;
 if ($book eq 'simple') {$book_name_for_xml_file='sn'}
+my $book_name_for_csv_file = $book;
+if ($book eq 'simple') {$book_name_for_csv_file='sn'}
 my $xml_file = "/home/bcrowell/Documents/programming/spotter/answers/$book_name_for_xml_file.xml";
 
 my $whoami = basename($0); # http://stackoverflow.com/questions/4600192/how-to-get-the-name-of-perl-script-that-is-running
@@ -54,7 +56,7 @@ open(F,"<$csv_file") or barf("error opening $csv_file for input, $!");
 while(my $line=<F>) {
   if ($line =~ /(.*),(.*),(.*),(.*),(.*)/) { 
     my ($csv_book,$ch,$num,$label,$solution) = ($1,$2,$3,$4,$5);
-    if ($csv_book eq $book && $label ne 'deleted') {
+    if ($csv_book eq $book_name_for_csv_file && $label ne 'deleted') {
       if (exists $csv_info{$label}) {
         push @errors,"label $label is defined more than once in $csv_file ; this means that the xml fragment in $xml_fragment_file will not work";
       }

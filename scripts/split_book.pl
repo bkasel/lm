@@ -23,6 +23,7 @@ if (@ARGV) {
 die "illegal chunk size=$chunk_size" unless $chunk_size>=1;
 
 my $npages = `$Bin/pdf_page_count.rb $input_pdf`;
+die if $npages eq '';
 unless ($npages>=1 && $npages<=10000) {die "split_book.pl: npages=$npages fails sanity check for input file $input_pdf"}
 
 # The following works, but takes n^2 time, where n is the number of pages.
