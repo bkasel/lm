@@ -551,8 +551,13 @@ possible in a collision, so under the assumption that no
 kinetic energy is converted to any other form of energy,
 what can we predict about the results of such a collision?
 <% marg(40) %>
-\formatlikecaption{%
-\begin{flushleft}\textit{Gory Details of the Proof in Example \ref{eg:pool-balls}}\end{flushleft}
+<% fig('eg-pool-balls-details','',{'anonymous'=>true,
+    'title'=>
+    %q{%
+      Gory details of the proof in example \ref{eg:pool-balls}
+    },
+    'text'=>
+    %q{%
 The equation $A+B = C+D$ says that
 the change in one ball's velocity is
 equal and opposite to the change
@@ -569,7 +574,10 @@ ghosts. Assuming $x\ne 0$, we can divide by $x$ and solve for $x=B-A$. This
 means that ball 1 has gained an
 amount of velocity exactly sufficient to mat\-ch ball 2's
 initial velocity, and vice-versa. The
-balls must have swap\-ped velocities.}%
+balls must have swap\-ped velocities.
+    }}
+   )
+%>
 <% end_marg %>
 
 \eganswer Pool balls have identical masses, so we use the

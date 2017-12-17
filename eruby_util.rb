@@ -563,8 +563,10 @@ def fig(name,caption=nil,options={})
                            #   typically 'suffix'=>'2'; don't need this option on the first fig, only the second
     'text'=>nil,           # if it exists, puts the text in the figure rather than a graphic (name is still required for labeling)
                            #      see macros \starttextfig and \finishtextfig
+                           # For an example of how to do this, see SN ch. 3, "Gory details of the proof..."
+    'title'=>nil,          # for use with 'text', goes above the text
     'raw'=>false,          # used for anonymous inline figures, e.g., check marks; generates a raw call to includegraphics
-    'textbox'=>false       # marginbox(), as used in Fund.
+    'textbox'=>false       # marginbox(), as used in Fund.; won't work in other books, which don't have the macros in their cls files
     # not yet implemeted: 
     #    translated=false
     #      or just have the script autodetect whether a translated version exists!
@@ -584,7 +586,7 @@ def fig(name,caption=nil,options={})
     #    resize=true
     #      see macros \fignoresize, \inlinefignocaptionnoresize
   }
-  caption.gsub!(/\A\s+/,'') # blank lines on the front make latex freak out
+  unless caption.nil? then caption.gsub!(/\A\s+/,'') end # blank lines on the front make latex freak out
   if caption=='' then caption=nil end
   default_options.each { 
     |option,default|
@@ -608,8 +610,9 @@ def fig(name,caption=nil,options={})
   if options['float']=='default' then
     options['float']=(width=='wide' or width=='fullpage')
   end
+  has_caption = !(caption.nil?)
   if options['anonymous']=='default' then
-    options['anonymous']=(!caption)
+    options['anonymous']=!has_caption
   end
   dir = find_directory_where_figure_is(name)
   if dir.nil? && options['text'].nil? then fatal_error("figure #{name} not found in #{dir()}/figs, #{shared_figs()[0]}, or #{shared_figs()[1]}") end
@@ -641,6 +644,7 @@ end
 
 # sets $page_rendered_on as a side-effect (or sets it to nil if all.pos isn't available yet)
 def fig_print(name,caption,options,dir)
+  has_caption = !(caption.nil?)
   if options['raw'] then spit("\\includegraphics{#{dir}/#{name}}"); return end
   width=options['width']
   $fig_handled = false
@@ -691,22 +695,25 @@ def fig_print(name,caption,options,dir)
   #============================================================================
   #----------------------- text ----------------------
   if options['text']!=nil then
+    text = options['text']
+    if options['title'] then text="\\noindent\\textit{#{options['title']}}\\\\"+text end
     if options['textbox'] then
-      spit("\\startmargintextbox{#{name}}{#{caption}}\n#{options['text']}\n\\finishmargintextbox{#{name}}\n")
+      spit("\\startmargintextbox{#{name}}{#{caption}}\n#{text}\n\\finishmargintextbox{#{name}}\n")
     else
-      spit("\\starttextfig{#{name}}#{options['text']}\n\\finishtextfig{#{name}}{%\n#{caption}}\n")
+      if has_caption then m = "finishtextfig" else m = "finishtextfignocaption" end
+      spit("\\starttextfig{#{name}}#{text}\n\\#{m}{#{name}}{%\n#{caption}}\n")
     end
   end
   #----------------------- narrow ----------------------
   if width=='narrow' and options['text']==nil then
     if options['anonymous'] then
-      if caption then
+      if has_caption then
         spit("\\anonymousfig{#{name}}{%\n#{caption}}{#{dir}}\n")
       else
         spit("\\fignocaption{#{name}}{#{dir}}\n")
       end
     else # not anonymous
-      if caption then
+      if has_caption then
         spit("\\fig{#{name}}{%\n#{caption}}{#{suffix}}{#{dir}}\n")
       else
         die(name,"no caption, but not anonymous")
@@ -718,7 +725,7 @@ def fig_print(name,caption,options,dir)
     if options['anonymous'] then
       if options['narrowfigwidecaption'] then die(name,'narrowfigwidecaption requires anonymous=false, and float=false') end
       if options['float']  then
-        if caption || true then # see einstein-train
+        if has_caption || true then # see einstein-train
           if options['sidecaption'] then
             spit("\\widefigsidecaption{#{sidepos}}{#{name}}{%\n#{caption}}{anonymous}{#{floatpos}}{float}{#{suffix}}{#{dir}}\n")
           else
@@ -728,7 +735,7 @@ def fig_print(name,caption,options,dir)
           die(name,"widefignocaption is currently only implemented as a nonfloating figure")
         end
       else # not floating
-        if caption then
+        if has_caption then
           #die(name,"widefig is currently only implemented as a floating figure, because I couldn't get it to work right unless it was floating (see comments in lmcommon.sty)")
         else
           spit("\\widefignocaptionnofloat[#{dir}]{#{name}}\n")
@@ -737,7 +744,7 @@ def fig_print(name,caption,options,dir)
     else # not anonymous
       if options['float'] then
         if options['narrowfigwidecaption'] then die(name,'narrowfigwidecaption requires anonymous=false, and float=false') end
-        if caption then
+        if has_caption then
           if options['sidecaption'] then
             spit("\\widefigsidecaption{#{sidepos}}{#{name}}{%\n#{caption}}{labeled}{#{floatpos}}{float}{#{suffix}}{#{dir}}\n")
           else
@@ -758,13 +765,13 @@ def fig_print(name,caption,options,dir)
   #----------------------- fullpage ----------------------
   if width=='fullpage' and options['text']==nil then
     if options['anonymous'] then
-      if caption then
+      if has_caption then
         die(name,"the combination of options fullpage+anonymous+caption is not currently supported")
       else
         spit("\\fullpagewidthfignocaption[#{dir}]{#{name}}\n")
       end
     else # not anonymous
-      if caption then
+      if has_caption then
         spit("\\fullpagewidthfig[#{dir}]{#{name}}{%\n#{caption}}\n")
       else
         die(name,"no caption, but not anonymous")

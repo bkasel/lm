@@ -271,14 +271,24 @@
 \newcommand{\starttextfig}[1]{%
           % #1 = name
         \recordpos{fig:#1}{begintextfig}\break% Without the break, we record the height at the middle of the table, not the top.
+        \begin{sloppypar}\setlength\parindent{0cm}
 }
 \newcommand{\finishtextfig}[2]{%
           % #1 = name
           % #2 = caption
+        \end{sloppypar}
 	\break\noindent\docaption{%
           #2%
           \recordpos{fig:#1}{endtextfig}%
         } %
+	\label{fig:#1} %
+        \normalfont\normalsize
+}
+\newcommand{\finishtextfignocaption}[2]{%
+        % #1 = name
+        % #2 = caption (should be null)
+        \end{sloppypar}
+        \recordpos{fig:#1}{endtextfig}%
 	\label{fig:#1} %
         \normalfont\normalsize
 }
