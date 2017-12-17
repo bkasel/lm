@@ -2341,7 +2341,7 @@ that differs by a factor of two from what we would have expected,
 but the phase velocity is not the physically important thing.
 
 <% end_sec() %>
-<% begin_sec("Bound states") %>
+<% begin_sec("Bound states",nil,'qm-bound-states') %>
 \index{states!bound}\index{bound states}
 Electrons are at their most interesting when they're in
 atoms, that is, when they are bound within a small region of
@@ -2366,7 +2366,7 @@ undergoes 100\% reflection at the boundaries of the box.
   )
 %>
 <% end_marg %>
-Like a generation of physics students before me, I rolled my
+Like generations of physics students before me, I rolled my
 eyes when initially introduced to the unrealistic idea of
 putting a particle in a box. It seemed completely impractical,
 an artificial textbook invention. Today, however, it has
@@ -2524,7 +2524,7 @@ that have similar structures, e.g., they are all spherical in shape.)
 \noindent Explain the trend in the data.
 \end{dq}
 
-<% end_sec() %>
+<% end_sec('qm-bound-states') %>
 <% begin_sec('The uncertainty principle and measurement',nil,'uncertainty-principle') %>
 \index{Heisenberg!Werner}\index{Heisenberg uncertainty
 principle}\index{uncertainty principle}
@@ -3091,7 +3091,7 @@ because $U-E$ is fairly big, typically about 30 MeV at the peak of the barrier.
 
 \pagebreak
 
-\begin{eg}{The correspondence principle for $E>U$}
+\begin{eg}{The correspondence principle for $E>U$}\label{eg:step-correspondence}
 The correspondence principle demands that in the classical limit $h\rightarrow0$,
 we recover the correct result for a particle encountering a barrier $U$,
 for both $E<U$ and $E>U$.
@@ -3144,13 +3144,17 @@ possibility that the particle will turn around, no matter how wide the
 barrier. We then have the situation shown in figure
 \figref{step-potential}.\footnote{As in several previous examples, we
 cheat by representing a traveling wave as a real-valued function. See
-p.~\pageref{cheat-with-real-psi}.}
+pp.~\pageref{cheat-with-real-psi} and \pageref{subsubsec:s-eqn-partial-refl}.}
 
-The analysis is the same as for any other wave being partially reflected at the boundary
-between two regions where its velocity differs, and the result is the same as the one
-found on  p.~\pageref{reflected-wave-amplitude}. The ratio of the amplitude of the reflected
-wave to that of the incident wave is $R =  (v_2-v_1)/(v_2+v_1)$. The probability
-of reflection is $R^2$. (Counterintuitively, $R^2$ is nonzero even if $U<0$, i.e., $v_2>v_1$.)
+The analysis is similar to that for any other wave being partially
+reflected at the boundary between two regions where its velocity
+differs, and the result is the same as the one found on
+p.~\pageref{reflected-wave-amplitude}. (There are some technical
+differences, which don't turn out to matter. This is discussed in more
+detail on p.~\pageref{subsubsec:s-eqn-partial-refl}.) The ratio of the amplitude of the reflected
+wave to that of the incident wave is $R = (v_2-v_1)/(v_2+v_1)$. The
+probability of reflection is $R^2$. (Counterintuitively, $R^2$ is
+nonzero even if $U<0$, i.e., $v_2>v_1$.) 
 
 \vfill
 

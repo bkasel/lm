@@ -1819,7 +1819,7 @@ valid solution involving a reflected pulse, we will have
 ended up with what amounts to a proof of reflection.
 
 <% end_sec() %>
-<% begin_sec("Intensity of reflection") %>
+<% begin_sec("Intensity of reflection",nil,'intensity-of-reflection') %>
 I will now show, in the case of waves on a string, that it
 is possible to satisfy the physical requirements given above
 by constructing a reflected wave, and as a bonus this will
@@ -1910,7 +1910,7 @@ second string is less massive, reducing its kinetic energy,
 and the transmitted pulse is broader and less strongly
 curved, which lessens its potential energy.
 
-<% end_sec() %>
+<% end_sec('intensity-of-reflection') %>
 <% begin_sec("Inverted and uninverted reflections in general (optional)") %>\label{subsec:invanduninv}
 For waves on a string, reflections back into a faster medium
 are inverted, while those back into a slower medium are
