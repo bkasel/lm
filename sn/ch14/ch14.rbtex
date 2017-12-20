@@ -2384,12 +2384,21 @@ experiments give deterministic results, then it seems that we are
 forced to introduce randomness. That is, some kind of randomness seems
 to be an \emph{emergent} property of quantum mechanics. We could then
 think about whether it is possible to have randomness but with
-probabilities defined by some other probability measure than the
+probabilities defined by some other probability rule than the
 standard $P = |\langle\Psi|\Psi\rangle|^2$. 
-It turns out that there are ``no-go'' theorems that prove that 
-this will not work.\footnote{See Wilce, ``Quantum Logic and Probability
-Theory,'' \url{plato.stanford.edu/archives/spr2017/entries/qt-quantlog}, section 1.4.}
-We therefore find that
+It turns out that there is a ``no-go'' theorem, called Gleason's theorem, proving that 
+this will not work. Furthermore, the mere assumption that probabilities exist,
+along with a few other very basic assumptions, is enough to recover essentially the
+entire structure of quantum mechanics.\footnote{See Wilce, ``Quantum Logic and Probability
+Theory,'' \url{plato.stanford.edu/archives/spr2017/entries/qt-quantlog}, section 1.4.
+In nontechnical language, we have to assume 
+some basic facts about logic, such as the fact that if X is
+true, then ``X and X'' is also true, and we also have to assume that the following are
+well-defined things and have the usual properties:
+probability, superposition, and an inner product. From these assumptions, we can recover
+the following principles of quantum mechanics: the standard rule for probabilities;
+unitary evolution of the wavefunction; and the use of hermitian operators to represent
+observables.} We therefore find that
 not only does quantum mechanics imply probability, but probability
 implies quantum mechanics, at least in this technical sense. 
 <% end_sec('qm-meas-random-emergent') %>
