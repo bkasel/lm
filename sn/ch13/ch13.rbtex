@@ -337,32 +337,7 @@ is why physics seemed deterministic before physicists
 learned techniques for studying atoms individually.
 
 <% marg(300) %>
-<% fig('kolmogorov','',{'anonymous'=>true,
-    'title'=>
-    %q{%
-      Probability axioms
-    },
-    'text'=>
-    %q{%
-\begin{enumerate}
-    \setlength{\itemsep}{0pt}
-    \setlength{\parskip}{0pt}
-    \setlength{\parsep}{0pt}
-\item Positivity: Probabilities are positive.
-\item Normalization: The total probability is 1.
-\item Additivity: Mutually exclusive probabilities are additive.
-\item Independence: Independent systems obey the definition of statistical independence,
-        i.e., their probabilities multiply.
-\item The weak law of large numbers: In the limit of a large number of trials, the frequency of a certain
-         event converges to its probability.
-\end{enumerate}
-
-Statements 1-3 are called the Kolmogorov axioms. In 3, for technical reasons,
-``additive'' is usually taken to include infinite sums, such as $1+1/2+1/4+\ldots$,
-but not continuous sums such as integrals.
-    }}
-   )
-%>
+<% fig('kolmogorov','',{__incl(text/kolmogorov)})%>
 <% end_marg %>
 
 We can achieve great precision with averages in quantum
