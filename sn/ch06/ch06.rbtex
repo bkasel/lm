@@ -1467,10 +1467,12 @@ rebound from the water-air boundary!
 What is it about the difference between two media that
 causes waves to be partly reflected at the boundary between
 them? Is it their density? Their chemical composition?
-Ultimately all that matters is the speed of the wave in the
-two media. A wave is partially reflected and partially
+Typically all that matters is the speed of the wave in the
+two media.\footnote{Some exceptions are described in sec.~\ref{subsec:technical-reflection},
+p.~\pageref{subsec:technical-reflection}.}
+\emph{A wave is partially reflected and partially
 transmitted at the boundary between media in which it has
-different speeds. For example, the speed of light waves in
+different speeds.} For example, the speed of light waves in
 window glass is about 30\% less than in air, which explains
 why windows always make reflections. Figure \figref{reflspring}
 shows examples of wave pulses being reflected at the boundary
@@ -1755,12 +1757,12 @@ energy will eventually exit through the antenna.
 <% end_sec() %>
 <% end_sec() %>
 <% begin_sec("Quantitative treatment of reflection") %>
-In this subsection we analyze the reasons why
-reflections occur at a speed-changing boundary, predict
-quantitatively the intensities of reflection and
-transmission, and discuss how to predict for any type of
-wave which reflections are inverting and which are
-uninverting.  
+In this section we use the example of waves on a string to analyze the reasons why a
+reflection occurs at the boundary between media, predict
+quantitatively the intensities of reflection and transmission,
+and discuss how to tell which
+reflections are inverting and which are noninverting. Some technical details
+are relegated to sec.~\ref{subsec:technical-reflection}, p.~\pageref{subsec:technical-reflection}.
 
 <% begin_sec("Why reflection occurs") %>
 To understand the fundamental reasons for what does occur at
@@ -1910,101 +1912,50 @@ second string is less massive, reducing its kinetic energy,
 and the transmitted pulse is broader and less strongly
 curved, which lessens its potential energy.
 
+We have attempted to develop some general facts about wave reflection by using
+the specific example of a wave on a string, which raises the question of whether
+these facts really are general. These issues are discussed in more detail in
+optional section \ref{subsec:technical-reflection}, p.~\pageref{subsec:technical-reflection},
+but here is a brief summary.
+
+The following facts are more generally true for wave reflection in one dimension.
+
+\begin{itemize}
+\item The wave is partially reflected and partially transmitted, with the reflected and transmitted
+        parts sharing the energy.
+\item For an interface between media 1 and 2, there are two possible reflections: back into 1,
+        and back into 2. One of these is inverting ($R<0$) and the other is noninverting ($R>0$).
+\end{itemize}
+
+The following aspects of our analysis may need to be modified for different types of waves.
+
+\begin{itemize} 
+\item In some cases, the expressions for the reflected and transmitted amplitudes depend
+        not on the ratio $v_1/v_2$ but on some more complicated ratio $v_1\ldots/v_2\ldots$,
+        where $\ldots$ stands for some additional property of the medium.
+\item The sign of $R$, depends not just on this ratio but also on the
+        type of the wave and on what we choose as a measure of amplitude.
+\end{itemize}
+
 <% end_sec('intensity-of-reflection') %>
-<% begin_sec("Inverted and uninverted reflections in general (optional)") %>\label{subsec:invanduninv}
-For waves on a string, reflections back into a faster medium
-are inverted, while those back into a slower medium are
-uninverted. Is this true for all types of waves? The rather
-subtle answer is that it depends on what property of the
-wave you are discussing.
+<% end_sec() %>
+<% begin_sec("Interference effects") %>\index{waves!interference}
+If you look at the front of a pair of high-quality
+binoculars, you will notice a greenish-blue coating on the
+lenses. This is advertised as a coating to prevent
+reflection. Now reflection is clearly undesirable --- we want
+the light to go in the binoculars --- but so far I've
+described reflection as an unalterable fact of nature,
+depending only on the properties of the two wave media. The
+coating can't change the speed of light in air or in glass,
+so how can it work? The key is that the coating itself is a
+wave medium. In other words, we have a three-layer sandwich
+of materials: air, coating, and glass. We will analyze the
+way the coating works, not because optical coatings are an
+important part of your education but because it provides a
+good example of the general phenomenon of wave interference
+effects.
 
-<% marg(0) %>
-<%
-  fig(
-    'freeway-graphs',
-    %q{A wave pattern in freeway traffic.}
-  )
-%>
-<% end_marg %>
-Let's start by considering wave disturbances of freeway
-traffic. Anyone who has driven frequently on crowded
-freeways has observed the phenomenon in which one driver
-taps the brakes, starting a chain reaction that travels
-backward down the freeway as each person in turn exercises
-caution in order to avoid rear-ending anyone. The reason why
-this type of wave is relevant is that it gives a simple,
-easily visualized example of how our description of a wave
-depends on which aspect of the wave we have in mind. In
-steadily flowing freeway traffic, both the density of cars
-and their velocity are constant all along the road. Since
-there is no disturbance in this pattern of constant velocity
-and density, we say that there is no wave. Now if a wave is
-touched off by a person tapping the brakes, we can either
-describe it as a region of high density or as a region of
-decreasing velocity.
-
-The freeway traffic wave is in fact a good model of a sound
-wave, and a sound wave can likewise be described either by
-the density (or pressure) of the air or by its speed.
-Likewise many other types of waves can be described by
-either of two functions, one of which is often the
-derivative of the other with respect to position.
-
-Now let's consider reflections. If we observe the freeway
-wave in a mirror, the high-density area will still appear
-high in density, but velocity in the opposite direction will
-now be described by a negative number. A person  observing
-the mirror image will draw the same density graph, but the
-velocity graph will be flipped across the $x$ axis, and its
-original region of negative slope will now have positive
-slope. Although I don't know any physical situation that
-would correspond to the reflection of a traffic wave, we can
-immediately apply the same reasoning to sound waves, which
-often do get reflected, and determine that a reflection can
-either be density-inverting and velocity-uninverting or
-density-uninverting and velocity-inverting.
-<% marg(50) %>
-<%
-  fig(
-    'traffic',
-    %q{In the mirror image, the areas of positive excess traffic density are still positive, but the velocities of the cars
-       have all been reversed, so areas of positive excess velocity have been turned into negative ones.}
-  )
-%>
-<% end_marg %>
-
-This same type of situation will occur over and over as one
-encounters new types of waves, and to apply the analogy we
-need only determine which quantities, like velocity, become
-negated in a mirror image and which, like density, stay the
-same.
-
-A light wave, for instance, consists of a traveling pattern
-of electric and magnetic fields. All you need to know in
-order to analyze the reflection of light waves is how
-electric and magnetic fields behave under reflection; you
-don't need to know any of the detailed physics of
-electricity and magnetism. An electric field can be
-detected, for example, by the way one's hair stands on end.
-The direction of the hair indicates the direction of the
-electric field. In a mirror image, the hair points the other
-way, so the electric field is apparently reversed in a
-mirror image. The behavior of magnetic fields, however, is a
-little tricky. The magnetic properties of a bar magnet, for
-instance, are caused by the aligned rotation of the
-outermost orbiting electrons of the atoms. In a mirror
-image, the direction of rotation is reversed, say from
-clockwise to counterclockwise, and so the magnetic field is
-reversed twice: once simply because the whole picture is
-flipped and once because of the reversed rotation of the
-electrons. In other words, magnetic fields do not reverse
-themselves in a mirror image. We can thus predict that there
-will be two possible types of reflection of light waves. In
-one, the electric field is
-inverted and the magnetic field 
-uninverted (example \ref{eg:em-wave-refl-conductor}, p.~\pageref{eg:em-wave-refl-conductor}).
-In the other,
-the electric field is uninverted and the magnetic field inverted.
 <% marg(40) %>
 <%
   fig(
@@ -2023,24 +1974,6 @@ the electric field is uninverted and the magnetic field inverted.
   )
 %>
 <% end_marg %>
-<% end_sec() %>
-<% end_sec() %>
-<% begin_sec("Interference effects") %>\index{waves!interference}
-If you look at the front of a pair of high-quality
-binoculars, you will notice a greenish-blue coating on the
-lenses. This is advertised as a coating to prevent
-reflection. Now reflection is clearly undesirable --- we want
-the light to go in the binoculars --- but so far I've
-described reflection as an unalterable fact of nature,
-depending only on the properties of the two wave media. The
-coating can't change the speed of light in air or in glass,
-so how can it work? The key is that the coating itself is a
-wave medium. In other words, we have a three-layer sandwich
-of materials: air, coating, and glass. We will analyze the
-way the coating works, not because optical coatings are an
-important part of your education but because it provides a
-good example of the general phenomenon of wave interference
-effects.
 
 There are two different interfaces between media: an
 air-coating boundary and a coating-glass boundary. Partial
@@ -2431,6 +2364,26 @@ in metal than in air, so there is a strong reflection at the closed ends,
 and we can have standing waves. These reflections are both density-noninverting,
 so we get symmetric standing-wave patterns, such as the one shown in figure
 \subfigref{lowest-modes-of-air-column}{1}.
+
+Figure \figref{shakuhachi} shows the sound waves in and around a bamboo
+Japanese flute called a shakuhachi, which is \emph{open} at both ends of the air
+column. We can only have a standing wave pattern if there are reflections at the
+ends, but that is very counterintuitive --- why is there any reflection at all,
+if the sound wave is free to emerge into open space, and
+there is no change in medium? Recall the reason why we got reflections at
+a change in medium: because the wavelength changes, so the wave has to
+readjust itself from one pattern to another, and the only way it can do
+that without developing a kink is if there is a reflection.
+Something similar is happening here. The only difference is that the wave
+is adjusting from being a plane wave to being a spherical wave.
+The reflections at
+the open ends are density-inverting, \subfigref{lowest-modes-of-air-column}{2},
+so the wave pattern is pinched off at the ends.
+Comparing panels 1 and 2 of the figure, we see that although the wave pattens
+are different, in both cases the wavelength is the same: in the lowest-frequency
+standing wave, half a wavelength fits inside the tube. Thus, it isn't necessary
+to memorize which type of reflection is inverting and which is uninverting. It's
+only necessary to know that the tubes are symmetric.
 <% marg(80) %>
 <%
   fig(
@@ -2453,26 +2406,6 @@ so we get symmetric standing-wave patterns, such as the one shown in figure
   )
 %>
 <% end_marg %>
-
-Figure \figref{shakuhachi} shows the sound waves in and around a bamboo
-Japanese flute called a shakuhachi, which is \emph{open} at both ends of the air
-column. We can only have a standing wave pattern if there are reflections at the
-ends, but that is very counterintuitive --- why is there any reflection at all,
-if the sound wave is free to emerge into open space, and
-there is no change in medium? Recall the reason why we got reflections at
-a change in medium: because the wavelength changes, so the wave has to
-readjust itself from one pattern to another, and the only way it can do
-that without developing a kink is if there is a reflection.
-Something similar is happening here. The only difference is that the wave
-is adjusting from being a plane wave to being a spherical wave.
-The reflections at
-the open ends are density-inverting, \subfigref{lowest-modes-of-air-column}{2},
-so the wave pattern is pinched off at the ends.
-Comparing panels 1 and 2 of the figure, we see that although the wave pattens
-are different, in both cases the wavelength is the same: in the lowest-frequency
-standing wave, half a wavelength fits inside the tube. Thus, it isn't necessary
-to memorize which type of reflection is inverting and which is uninverting. It's
-only necessary to know that the tubes are symmetric.
 
 Finally, we can have an asymmetric tube: closed at one end and open at the
 other. A common example is the pan pipes, \figref{pan-pipes}, which are closed
@@ -2505,6 +2438,24 @@ wave, shown in the figure? Based on this, how many times
 greater will its frequency be?
   SELF_CHECK
   ) %>
+
+\begin{eg}{The speed of sound}\label{eg:speed-of-sound}\index{sound!speed of}
+We can get a rough and ready derivation of the equation for the speed of
+sound by analyzing the standing waves in a cylindrical air column as a special type of
+Helmholtz resonance (example \ref{eg:helmholtz-resonator} on page \pageref{eg:helmholtz-resonator}),
+in which the cavity happens to have the same cross-sectional area as the neck. Roughly speaking,
+the regions of maximum density variation act like the cavity. The regions of minimum density
+variation, on the other hand, are the places where the velocity of the air is varying the most;
+these regions throttle back the speed of the vibration, because of the inertia of the moving air.
+If the cylinder has cross-sectional area $A$, then the ``cavity'' and ``neck'' parts of the wave
+both have lengths of something like $\lambda/2$, and the volume of the ``cavity'' is about
+$A\lambda/2$. We get $v=f\lambda=(\ldots)\sqrt{\gamma P_\zu{o}/\rho}$, where the factor
+$(\ldots)$ represents numerical stuff that we can't possibly hope to have gotten right with
+such a crude argument. The correct result is in fact $v=\sqrt{\gamma P_\zu{o}/\rho}$. Isaac
+Newton attempted the same calculation, but didn't understand the thermodynamic effects involved,
+and therefore got a result that didn't have the correct factor of $\sqrt{\gamma}$.
+\end{eg}
+
 <% marg(80) %>
 <%
   fig(
@@ -2526,29 +2477,149 @@ greater will its frequency be?
 %>
 <% end_marg %>
 
-\begin{eg}{The speed of sound}\label{eg:speed-of-sound}\index{sound!speed of}
-We can get a rough and ready derivation of the equation for the speed of
-sound by analyzing the standing waves in a cylindrical air column as a special type of
-Helmholtz resonance (example \ref{eg:helmholtz-resonator} on page \pageref{eg:helmholtz-resonator}),
-in which the cavity happens to have the same cross-sectional area as the neck. Roughly speaking,
-the regions of maximum density variation act like the cavity. The regions of minimum density
-variation, on the other hand, are the places where the velocity of the air is varying the most;
-these regions throttle back the speed of the vibration, because of the inertia of the moving air.
-If the cylinder has cross-sectional area $A$, then the ``cavity'' and ``neck'' parts of the wave
-both have lengths of something like $\lambda/2$, and the volume of the ``cavity'' is about
-$A\lambda/2$. We get $v=f\lambda=(\ldots)\sqrt{\gamma P_\zu{o}/\rho}$, where the factor
-$(\ldots)$ represents numerical stuff that we can't possibly hope to have gotten right with
-such a crude argument. The correct result is in fact $v=\sqrt{\gamma P_\zu{o}/\rho}$. Isaac
-Newton attempted the same calculation, but didn't understand the thermodynamic effects involved,
-and therefore got a result that didn't have the correct factor of $\sqrt{\gamma}$.
-\end{eg}
-
  % 
 \backofchapterboilerplate{waves}
  % ============================= homework ==============================  
 
 <% end_sec() %>
 <% end_sec() %>
+<% begin_sec("Some Technical Aspects of Reflection",nil,'technical-reflection',{'optional'=>true}) %>
+In this section we address some technical details of the treatment of reflection
+and transmission of waves.
+<% begin_sec("Dependence of reflection on other variables besides velocity",nil,'wave-reflection-impedance') %>
+In section \ref{sec:quantitative-reflection} we derived the expressions for the transmitted
+and reflected amplitudes by demanding that two things match up on both sides of the boundary:
+the height of the wave and the slope of the wave. These requirements were stated purely
+in terms of kinematics (the description of how the wave moves) rather than dynamics (the
+explanation for the wave motion in terms of Newton's laws). For this reason, the results
+depended only on the purely kinematic quantity $\alpha=v_2/v_1$, as can be seen more clearly
+if we rewrite the expressions in the following form:
+\begin{equation*}
+  R=\frac{\alpha-1}{\alpha+1} \quad \text{and} \quad T=\frac{2\alpha}{\alpha+1}\eqquad.
+\end{equation*}
+
+But this purely kinematical treatment only worked because of a dynamical fact that we didn't
+emphasize. We assumed equality of the slopes, $s_1=s_2$, because waves don't like to have kinks. The
+underlying dynamical reason for this, in the case of a wave on a string, is that a kink is pointlike, so the portion of the string
+at the kink is infinitesimal in size, and therefore has essentially zero mass. If the transverse forces
+acting on it differed by some finite amount, then its acceleration would be infinite, which is
+not possible. The difference between the two forces is $Ts_1-Ts_2$, so $s_1=s_2$. But this
+relies on the assumption that $T$ is the same on both sides of the boundary. Now this is true,
+because we can't put different amounts of tension on two ropes that are tied together end to end.
+Any excess tension applied to one tope is distributed equally to the other. For other types of
+waves, however, we cannot make a similar argument, and therefore it need not be true that $s_1=s_2$.
+
+A more detailed analysis shows that in general we have not $\alpha=v_2/v_1$ but
+$\alpha=z_2/z_1$, where $z$ is a quantity called impedance which is defined for this purpose.
+In a great many examples, as for the waves on a string, it is true that $v_2/v_1=z_2/z_1$, but
+this is not a universal fact. Most of the exceptions are rather specialized and technical, such
+as the reflection of light waves when the media have magnetic properties, but one fairly common
+and important example is the case of sound waves, for which $z=\rho v$ depends not just on the
+wave velocity $v$ but also on the density $\rho$. A practical example occurs in medical ultrasound
+scans, where the contrast of the image is made possible because of the very large differences in
+impedance between different types of tissue. The speed of sound in various tissues such as bone
+and muscle varies by abount a factor of 2, which is not a particularly huge factor, but there are
+also large variations in density. The lung, for example, is basically a sponge or sack filled with
+air. For this reason, the acoustic impedances of the tissues show a huge amount of variation,
+with, e.g., $z_\zu{bone}/z_\zu{lung}\approx 40$.
+
+
+<% end_sec('wave-reflection-impedance') %>
+<% begin_sec("Inverted and uninverted reflections in general",nil,'wave-inversion-in-general') %>
+
+For waves on a string, reflections back into a faster medium
+are inverted, while those back into a slower medium are
+uninverted. Is this true for all types of waves? The rather
+subtle answer is that it depends on what property of the
+wave you are discussing.
+
+<% marg(0) %>
+<%
+  fig(
+    'freeway-graphs',
+    %q{A disturbance in freeway traffic.}
+  )
+%>
+\spacebetweenfigs
+<%
+  fig(
+    'traffic',
+    %q{In the mirror image, the areas of positive excess traffic density are still positive, but the velocities of the cars
+       have all been reversed, so areas of positive excess velocity have been turned into negative ones.}
+  )
+%>
+<% end_marg %>
+Let's start by considering wave disturbances of freeway
+traffic. Anyone who has driven frequently on crowded
+freeways has observed the phenomenon in which one driver
+taps the brakes, starting a chain reaction that travels
+backward down the freeway as each person in turn exercises
+caution in order to avoid rear-ending anyone. The reason why
+this type of wave is relevant is that it gives a simple,
+easily visualized example of how our description of a wave
+depends on which aspect of the wave we have in mind. In
+steadily flowing freeway traffic, both the density of cars
+and their velocity are constant all along the road. Since
+there is no disturbance in this pattern of constant velocity
+and density, we say that there is no wave. Now if a wave is
+touched off by a person tapping the brakes, we can either
+describe it as a region of high density or as a region of
+decreasing velocity.
+
+The freeway traffic wave is in fact a good model of a sound
+wave, and a sound wave can likewise be described either by
+the density (or pressure) of the air or by its speed.
+Likewise many other types of waves can be described by
+either of two functions, one of which is often the
+derivative of the other with respect to position.
+
+Now let's consider reflections. If we observe the freeway
+wave in a mirror, the high-density area will still appear
+high in density, but velocity in the opposite direction will
+now be described by a negative number. A person observing
+the mirror image will draw the same density graph, but the
+velocity graph will be flipped across the $x$ axis, and its
+original region of negative slope will now have positive
+slope. Although I don't know any physical situation that
+would correspond to the reflection of a traffic wave, we can
+immediately apply the same reasoning to sound waves, which
+often do get reflected, and determine that a reflection can
+either be density-inverting and velocity-noninverting or
+density-noninverting and velocity-inverting.
+
+This same type of situation will occur over and over as one
+encounters new types of waves, and to apply the analogy we
+need only determine which quantities, like velocity, become
+negated in a mirror image and which, like density, stay the same.
+
+A light wave, for instance, consists of a traveling pattern
+of electric and magnetic fields. All you need to know in
+order to analyze the reflection of light waves is how
+electric and magnetic fields behave under reflection; you
+don't need to know any of the detailed physics of electricity
+and magnetism. An electric field can be detected, for
+example, by the way one's hair stands on end. The direction
+of the hair indicates the direction of the electric field.
+In a mirror image, the hair points the other way, so the
+electric field is apparently reversed in a mirror image. The
+behavior of magnetic fields, however, is a little tricky.
+The magnetic properties of a bar magnet, for instance, are
+caused by the aligned rotation of the outermost orbiting
+electrons of the atoms. In a mirror image, the direction of
+rotation is reversed, say from clockwise to counterclockwise,
+and so the magnetic field is reversed twice: once simply
+because the whole picture is flipped and once because of the
+reversed rotation of the electrons. In other words, magnetic
+fields do not reverse themselves in a mirror image. We can
+thus predict that there will be two possible types of
+reflection of light waves. In one, the electric field is
+inverted and the magnetic field 
+uninverted (example \ref{eg:em-wave-refl-conductor}, p.~\pageref{eg:em-wave-refl-conductor}).
+In the other,
+the electric field is uninverted and the magnetic field inverted.
+
+<% end_sec('wave-inversion-in-general') %>
+<% end_sec('technical-reflection') %>
 <% end_sec() %>
 <% begin_hw_sec %>
 
@@ -2670,6 +2741,10 @@ the incident energy.
 <% end_marg %>
 
 <% begin_hw('maxtransmission',2) %>__incl(hw/maxtransmission)<% end_hw() %>
+
+\pagebreak
+
+<% begin_hw('half-reflected') %>__incl(hw/half-reflected)<% end_hw() %>
 
 <% end_hw_sec %>
 <% end_chapter() %>

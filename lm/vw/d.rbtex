@@ -89,10 +89,11 @@ What is it about the difference between two media that
 causes waves to be partly reflected at the boundary between
 them? Is it their density? Their chemical composition?
 Typically what matters is the speed of the wave in the
-two media. \emph{A wave is partially reflected and partially
+two media.\footnote{Some exceptions are described in sec.~\ref{sec:technical-reflection},
+p.~\pageref{sec:technical-reflection}.}
+\emph{A wave is partially reflected and partially
 transmitted at the boundary between media in which it has
-different speeds.}\footnote{Some exceptions are described in sec.~\ref{sec:technical-reflection},
-p.~\pageref{sec:technical-reflection}.} For example, the speed of light waves in
+different speeds.} For example, the speed of light waves in
 window glass is about 30\% less than in air, which explains
 why windows always make reflections. Figures \figref{coil-spring-reflections}/1 and 2
 show examples of wave pulses being reflected at the boundary

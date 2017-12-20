@@ -1942,6 +1942,7 @@ m4_define(__hw_sn_6_freaknotes,14)m4_dnl
 m4_define(__hw_sn_6_dissonance,15)m4_dnl
 m4_define(__hw_sn_6_fabryperot,16)m4_dnl
 m4_define(__hw_sn_6_maxtransmission,17)m4_dnl
+m4_define(__hw_sn_6_half-reflected,18)m4_dnl
 m4_define(__hw_sn_7_six-tenths-c-twice,1)m4_dnl
 m4_define(__hw_sn_7_agreeontime,2)m4_dnl
 m4_define(__hw_sn_7_gammafornegativev,3)m4_dnl
