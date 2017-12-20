@@ -1383,6 +1383,8 @@ superposition of sine waves moving in opposite direction.
 
 <% begin_hw_sec %>
 
+\vfill
+
 <% begin_hw('mirage') %>
 Light travels faster in warmer air. Use this fact to
 explain the formation of a mirage appearing like the shiny
@@ -1392,19 +1394,23 @@ is actually a sharp boundary between the hot layer and the
 cooler layer above it.)
 <% end_hw() %>
 
+\vfill
+
 <% begin_hw('airwaterrefl') %>
-(a) Using the equations from optional section \ref{sec:quantitative-reflection},
-compute the amplitude of light that is reflected back into
+(a) Compute the amplitude of light that is reflected back into
 air at an air-water interface, relative to the amplitude of
 the incident wave. The speeds of light in air and water are
-$3.0\times10^8$ and $2.2\times10^8$ m/s, respectively.
-
+$3.0\times10^8$ and $2.2\times10^8$ m/s, respectively.\hwendpart
 (b) Find the energy of the reflected wave as a fraction of \answercheck
 the incident energy. [Hint: The answers to the two
 parts are not the same.]
 <% end_hw() %>
 
+\vfill
+
 <% begin_hw('flute') %>__incl(hw/flute)<% end_hw() %>
+
+\vfill
 
 <% begin_hw('freaknotes') %>__incl(hw/freaknotes)<% end_hw() %>
 
@@ -1428,11 +1434,17 @@ parts are not the same.]
 %>
 <% end_marg %>
 
+\vfill
+
 <% begin_hw('dissonance') %>__incl(hw/dissonance)<% end_hw() %>
+
+\pagebreak
 
 <% begin_hw('warmup') %>__incl(hw/warmup)<% end_hw() %>
 
 <% begin_hw('exhale') %>__incl(hw/exhale)<% end_hw() %>
+
+<% begin_hw('half-reflected') %>__incl(hw/half-reflected)<% end_hw() %>
 
 <% end_hw_sec %>
 <% end_chapter() %>

@@ -467,6 +467,7 @@ m4_define(__hw_lm_20_freaknotes,4)m4_dnl
 m4_define(__hw_lm_20_dissonance,5)m4_dnl
 m4_define(__hw_lm_20_warmup,6)m4_dnl
 m4_define(__hw_lm_20_exhale,7)m4_dnl
+m4_define(__hw_lm_20_half-reflected,8)m4_dnl
 m4_define(__hw_lm_21_neuron-stick,1)m4_dnl
 m4_define(__hw_lm_21_heline,2)m4_dnl
 m4_define(__hw_lm_21_hetriangle,3)m4_dnl
