@@ -1092,7 +1092,7 @@ Einstein wrote, ``There are therefore now two theories of
 light, both indispensable, and --- as one must admit today
 despite twenty years of tremendous effort on the part of
 theoretical physicists --- without any logical connection.''
-In the remainder of this chapter we will learn how the
+In the remainder of this section we will learn how the
 seeming paradox was eventually resolved.
 
 \startdqs
@@ -1112,7 +1112,7 @@ observations and concepts discussed in this section.
 \end{dq}
 
 <% end_sec() %>
-<% begin_sec("How much light is one photon?",nil,'how-much-light-is-one-photon') %>
+<% begin_sec("How much light is one photon?",4,'how-much-light-is-one-photon') %>
 <% begin_sec("The photoelectric effect") %>\index{photoelectric effect}
 We have seen evidence that light energy comes in little
 chunks, so the next question to be asked is naturally how
@@ -1254,19 +1254,9 @@ frequency of the light because of effects (1) and (3).
 
 <% end_sec() %>
 <% begin_sec("Numerical relationship between energy and frequency") %>
-Prompted by Einstein's photon paper, Robert \index{Millikan, Robert}Millikan
-(whom we first encountered in chapter \ref{ch:atomem}) figured out
-how to use the photoelectric effect to probe precisely the
-link between frequency and photon energy. Rather than going
-into the historical details of Millikan's actual experiments
-(a lengthy experimental program that occupied a large part
-of his professional career) we will describe a simple
-version, shown in figure \figref{photoelectric-apparatus-b}, that is used sometimes in
-college laboratory courses.\footnote{
-What I'm presenting in this chapter is a simplified explanation of how the photon could have been discovered. The actual history is more complex.
-Max Planck (1858-1947) began the photon saga with a theoretical investigation of the spectrum of light emitted by a hot, glowing object. He introduced quantization of the energy of light waves, in multiples of $hf$, purely as a mathematical trick that happened to produce the right results. Planck did not believe that his procedure could have any physical significance. In his 1905 paper Einstein took Planck's quantization as a description of reality, and applied it to various theoretical and experimental puzzles, including the photoelectric effect.
-Millikan then subjected Einstein's ideas to a series of rigorous experimental tests. Although his results matched Einstein's predictions perfectly, Millikan was skeptical about photons, and his papers conspicuously omit  any reference to them. Only in his autobiography did Millikan rewrite history and claim that he had given experimental proof for photons.
-} The idea is simply to illuminate
+Figure \figref{photoelectric-apparatus-b} shows an experiment that is used sometimes in
+college laboratory courses to probe the relationship between the energy and frequency
+of a photon. The idea is simply to illuminate
 one plate of the vacuum tube with light of a single
 wavelength and monitor the voltage difference between the
 two plates as they charge up. Since the resistance of a
@@ -1320,8 +1310,6 @@ interpreted as a \emph{wave}. The constant $h$ is known as
 for historical reasons explained in the footnote beginning on the preceding
 page.
 
-\pagebreak
-
 <% self_check('extracth',<<-'SELF_CHECK'
 
 How would you extract $h$ from the graph in figure \figref{photoelectric-graph}?
@@ -1338,8 +1326,10 @@ fact that it quantizes quantities like energy, momentum, and
 angular momentum that had previously been thought to be
 smooth, continuous and infinitely divisible.
 
-\begin{eg}{Number of photons emitted by a lightbulb per second}\label{eg:photons-from-lightbulb}
-\egquestion Roughly how many photons are emitted by a 100-W
+\pagebreak
+
+\begin{eg}{Photons from a lightbulb}\label{eg:photons-from-lightbulb}
+\egquestion Roughly how many photons are emitted by a 100 watt
 lightbulb in 1 second?
 
 \eganswer People tend to remember wavelengths rather than
@@ -1454,340 +1444,15 @@ substance with a different index of refraction?
 
 <% end_sec() %>
 <% end_sec() %>
-<% begin_sec("Wave-particle duality") %>
-\index{duality!wave-particle}\index{wave-particle duality}
 
-How can light be both a particle and a wave? We are now
-ready to resolve this seeming contradiction. Often in
-science when something seems paradoxical, it's because we
-(1) don't define our terms carefully, or (2) don't test our
-ideas against any specific real-world situation. Let's
-define particles and waves as follows:
+<% begin_sec("Wave-particle duality",4,'wave-particle-duality') %>
+__incl(text/wave-particle-duality)
+<% end_sec('wave-particle-duality') %>
 
-\begin{itemize}
-\item \index{wave!definition of}Waves exhibit superposition, and
-specifically interference phenomena.
-\item \index{particle!definition of}Particles can only exist in
-whole numbers, not fractions.
-\end{itemize}
+<% begin_sec("Nonlocality",nil,'nonlocality') %>
+__incl(text/nonlocality)
+<% end_sec('nonlocality') %>
 
-As a real-world check on our philosophizing, there is one
-particular experiment that works perfectly. We set up a
-double-slit interference experiment that we know will
-produce a diffraction pattern if light is an honest-to-goodness
-wave, but we detect the light with a detector that is
-capable of sensing individual photons, e.g., a digital
-camera. To make it possible to pick out individual dots due to
-individual photons, we must use filters to cut down the
-intensity of the light to a very low level, just as in the
-photos by Prof. Page on p.~\pageref{lymanpage}. The whole thing is
-sealed inside a light-tight box. The results are shown in
-figure \figref{ccd-diffraction}. (In fact, the similar
-figures in on page \pageref{lymanpage}
- are simply cutouts from these figures.)
-
-<%
-  fig(
-    'ccd-diffraction',
-    %q{%
-      Wave interference patterns photographed by Prof. Lyman
-       Page with a digital camera. Laser light with a single well-defined wavelength
-       passed through a series of absorbers to cut down its intensity, then through a
-       set of slits to produce interference, and finally into
-       a digital camera chip. (A triple slit was actually
-       used, but for conceptual simplicity we discuss the results
-       in the main text as if it was a
-       double slit.) In panel 2 the intensity has been
-       reduced relative to 1, and even more so for panel 3.
-    },
-    {
-      'width'=>'wide',
-      'sidecaption'=>true
-    }
-  )
-%>
-
-Neither the pure wave theory nor the pure particle theory
-can explain the results. If light was only a particle and
-not a wave, there would be no interference effect. The
-result of the experiment would be like firing a hail of
-bullets through a double slit, \figref{double-slit-bullets}. Only two spots directly
-behind the slits would be hit.
-
-If, on the other hand, light was only a wave and not a
-particle, we would get the same kind of diffraction pattern
-that would happen with a water wave, \figref{interference}. There would be no
-discrete dots in the photo, only a  diffraction pattern that
-shaded smoothly between light and dark.
-
-Applying the definitions to this experiment, light must be
-both a particle and a wave. It is a wave because it exhibits
-interference effects. At the same time, the fact that the
-photographs contain discrete dots is a direct demonstration
-that light refuses to be split into units of less than a
-single photon. There can only be whole numbers of photons:
-four photons in figure \figref{ccd-diffraction}/3, for example.
-
-<% begin_sec("A wrong interpretation: photons interfering with each other") %>
-One possible interpretation of wave-particle duality that
-occurred to physicists early in the game was that perhaps
-the interference effects came from photons interacting with
-each other. By analogy, a water wave consists of moving
-water molecules, and interference of water waves results
-ultimately from all the mutual pushes and pulls of the
-molecules. This interpretation was conclusively disproved by
-G.I. \index{Taylor, G.I.}Taylor, a student at \index{Cambridge}Cambridge.
-The demonstration by Prof. Page that we've just been
-discussing is essentially a modernized version of Taylor's
-work. Taylor reasoned that if interference effects came from
-photons interacting with each other, a bare minimum of two
-photons would have to be present at the same time to produce
-interference. By making the light source extremely dim, we
-can be virtually certain that there are never two photons in
-the box at the same time. In figure \figref{ccd-diffraction}/3, however, the
-intensity of the light has been cut down so much by the
-absorbers that if it was in the open, the average separation
-between photons would be on the order of a kilometer! At any
-given moment, the number of photons in the box is most
-likely to be zero. It is virtually certain that there were
-never two photons in the box at once.
-
-\subsubsection{The concept of a photon's
- \index{path of a photon undefined}path is undefined.}
-If a single photon can demonstrate double-slit interference,
-then which slit did it pass through? The unavoidable answer
-must be that it passes through both! This might not seem so
-strange if we think of the photon as a wave, but it is
-highly counterintuitive if we try to visualize it as a
-particle. The moral is that we should not think in terms of
-the path of a photon. Like the fully human and fully divine
-Jesus of Christian theology, a photon is supposed to be
-100\% wave and 100\% particle. If a photon had a well
-defined path, then it would not demonstrate wave superposition
-and interference effects, contradicting its wave nature. (In
-subsection \ref{subsec:uncertainty-principle}
-we will discuss the Heisenberg uncertainty
-principle, which gives a numerical way of approaching this issue.)
-
-<% end_sec() %>
-<% begin_sec("Another wrong interpretation: the pilot wave hypothesis",nil,'pilot-wave') %>\index{pilot wave hypothesis}\index{wave-particle duality!pilot-wave interpretation of}
-A second possible explanation of wave-particle duality was
-taken seriously in the early history of quantum mechanics.
-What if the photon \emph{particle} is like a surfer riding
-on top of its accompanying \emph{wave}? As the wave travels
-along, the particle is pushed, or ``piloted'' by it.
-Imagining the particle and the wave as two separate entities
-allows us to avoid the seemingly paradoxical idea that a
-photon is both at once. The wave happily does its wave
-tricks, like superposition and interference, and the
-particle acts like a respectable particle, resolutely
-refusing to be in two different places at once. If the wave,
-for instance, undergoes destructive interference, becoming
-nearly zero in a particular region of space, then the
-particle simply is not guided into that region.
-<% marg(100) %>
-<%
-  fig(
-    'double-slit-bullets',
-    %q{Bullets pass through a double slit. }
-  )
-%>
-\spacebetweenfigs
-<%
-  fig(
-    'interference',
-    %q{A water wave passes through a double slit.}
-  )
-%>
-\spacebetweenfigs
-<%
-  fig(
-    'skier',
-    %q{A single photon can go through both slits.}
-  )
-%>
-<% end_marg %>
-
-The problem with the pilot wave interpretation is that the
-only way it can be experimentally tested or verified is if
-someone manages to detach the particle from the wave, and
-show that there really are two entities involved, not just
-one. Part of the scientific method is that hypotheses are
-supposed to be experimentally testable. Since nobody has
-ever managed to separate the wavelike part of a photon from
-the particle part, the interpretation is not useful or
-meaningful in a scientific sense.
-
-<% end_sec() %>
-<% begin_sec("The probability interpretation") %>
-\index{wave-particle duality!probability interpretation of}\index{probability interpretation}
-
-The correct interpretation of wave-particle duality is
-suggested by the random nature of the experiment we've been
-discussing: even though every photon wave/particle is
-prepared and released in the same way, the location at which
-it is eventually detected by the digital camera is different
-every time. The idea of the probability interpretation of
-wave-particle duality is that the location of the photon-particle
-is random, but the probability that it is in a certain
-location is higher where the photon-wave's amplitude is greater.
-
-\enlargethispage{-3\baselineskip}
-
-
-More specifically, the probability distribution of the
-particle must be proportional to the \emph{square} of
-the wave's amplitude,
-\begin{equation*}
-    (\text{probability distribution}) \propto (\text{amplitude})^2\eqquad.
-\end{equation*}
-This follows from the correspondence principle and from the
-fact that a wave's energy density is proportional to the
-square of its amplitude. If we run the double-slit
-experiment for a long enough time, the pattern of dots fills
-in and becomes very smooth as would have been expected in
-classical physics. To preserve the correspondence between
-classical and quantum physics, the amount of energy
-deposited in a given region of the picture over the long run
-must be proportional to the square of the wave's amplitude.
-The amount of energy deposited in a certain area depends on
-the number of photons picked up, which is proportional to
-the probability of finding any given photon there.
-
-
-<% marg(0) %>
-<%
-  fig(
-    'carrot',
-    %q{Example \ref{eg:carrot}.}
-  )
-%>
-<% end_marg %>
-
-\begin{eg}{A microwave oven}\label{eg:carrot}
-\egquestion The figure shows two-dimensional (top) and
-one-dimensional (bottom) representations of the standing
-wave inside a microwave oven. Gray represents zero field,
-and white and black signify the strongest fields, with white
-being a field that is in the opposite direction compared to
-black. Compare the probabilities of detecting a microwave
-photon at points A, B, and C.
-
-\eganswer A and C are both extremes of the wave, so the
-probabilities of detecting a photon at A and C are equal.
-It doesn't matter that we have represented C as negative
-and A as positive, because it is the square of the amplitude
-that is relevant. The amplitude at B is about 1/2 as much
-as the others, so the probability of detecting a photon
-there is about 1/4 as much.
-\end{eg}
-
-The probability interpretation was disturbing to physicists
-who had spent their previous careers working in the
-deterministic world of classical physics, and ironically the
-most strenuous objections against it were raised by
-Einstein, who had invented the photon concept in the first
-place. The probability interpretation has nevertheless
-passed every experimental test, and is now as well
-established as any part of physics.
-
-An aspect of the probability interpretation that has made
-many people uneasy is that the process of detecting and
-recording the photon's position seems to have a magical
-ability to get rid of the wavelike side of the photon's
-personality and force it to decide for once and for all
-where it really wants to be. But detection or measurement is
-after all only a physical process like any other, governed
-by the same laws of physics. We will postpone a detailed
-discussion of this issue until p.~\pageref{qm-measurement}, since
-a measuring device like a digital camera is made of matter,
-but we have so far only discussed how quantum mechanics relates to light.\label{postpone-measurement}
-
-\begin{eg}{What is the proportionality constant?}
-\egquestion What is the proportionality constant that would
-make an actual equation out of 
-$(\text{probability distribution})\propto(\text{amplitude})^2$?
-
-\eganswer The probability that the photon is in a certain
-small region of volume $v$ should equal the fraction of the
-wave's energy that is within that volume. For a sinusoidal wave, which has
-a single, well-defined frequency $f$, this gives
-\begin{align*}
-        P         &=  \frac{\text{energy in volume $v$}}{\text{energy of photon}}    \\
-                 &=  \frac{\text{energy in volume $v$}}{hf}\eqquad.
-\end{align*}
-We assume $v$ is small enough so that the electric and
-magnetic fields are nearly constant throughout it. We then have 
-\begin{equation*}
-        P         =  \frac{\left(\frac{1}{8\pi k}|\vc{E}|^2
-                        +\frac{c^2}{8\pi k}|\vc{B}|^2\right)v}{hf}\eqquad.  
-\end{equation*}
-We can simplify this formidable looking expression by
-recognizing that in a plane wave, $|\vc{E}|$ and $|\vc{B}|$ are
-related by $|\vc{E}|=c|\vc{B}|$. This implies (problem \ref{hw:poynting},
-p.~\pageref{hw:poynting}), that
-the electric and magnetic fields each contribute half the
-total energy, so we can simplify the result to
-\begin{align*}
-        P         &=  2\frac{\left(\frac{1}{8\pi k}|\vc{E}|^2\right)v}{hf} \\
-                 &=  \frac{v}{4\pi khf}|\vc{E}|^2\eqquad.  
-\end{align*}
-The probability is proportional to the square
-of the wave's amplitude, as advertised.\footnote{But note that along the way, we had to make
-two crucial assumptions: that the wave was sinusoidal, and that it was a plane wave.
-These assumptions will not prevent us from describing examples such as double-slit diffraction, 
-in which the wave is approximately sinusoidal within some sufficiently small region such as
-one pixel of a camera's imaging chip. Nevertheless, these issues turn out to be symptoms of
-deeper problems, beyond the scope of this book, involving the way in which relativity and quantum
-mechanics should be combined. As a taste of the ideas involved, consider what happens when a photon
-is reflected from a conducting surface, as in example \ref{eg:em-wave-refl-conductor} on 
-p.~\pageref{eg:em-wave-refl-conductor}, so that the electric field at the surface is zero, but the magnetic
-field isn't. The superposition is a standing wave, not a plane wave, so $|\vc{E}|=c|\vc{B}|$ need not
-hold, and doesn't. A detector's probability of detecting a photon near the surface could be zero if
-the detector sensed electric fields, but nonzero if it sensed magnetism. It doesn't make sense to
-say that either of these is the probability that the photon ``was really there.''}
-\end{eg}
-
-\pagebreak
-
-\startdqs
-
-\begin{dq}
-Referring back to the example of the carrot in the
-microwave oven, show that it would be nonsensical to have
-probability be proportional to the field itself, rather than
-the square of the field.
-\end{dq}
-
-\begin{dq}
-Einstein did not try to reconcile the wave and particle
-theories of light, and did not say much about their apparent
-inconsistency. Einstein basically visualized a beam of light
-as a stream of bullets coming from a machine gun. In the
-photoelectric effect, a photon ``bullet'' would only hit one
-atom, just as a real bullet would only hit one person.
-Suppose someone reading his 1905 paper wanted to interpret
-it by saying that Einstein's so-called particles of light
-are simply short wave-trains that only occupy a small
-region of space.  Comparing the wavelength of visible light
-(a few hundred nm) to the size of an atom (on the order of
-0.1 nm), explain why this poses a difficulty for reconciling
-the particle and wave theories.
-\end{dq}
-
-\begin{dq}
-Can a white photon exist?
-\end{dq}
-
-\begin{dq}\label{dq:cover-one-slit}
-In double-slit diffraction of photons, would you get the
-same pattern of dots on the digital camera image if you
-covered one slit? Why should it matter whether you give the
-photon two choices or only one?
-\end{dq}
-
-<% end_sec() %>
-<% end_sec() %>
 <% begin_sec("Photons in three dimensions") %>
 \index{photon!in three dimensions}
 
@@ -1797,10 +1462,6 @@ interpretation. The example of the carrot in the microwave
 oven, for example, reduced to a one-dimensional situation
 because we were considering three points along the same line
 and because we were only comparing ratios of probabilities.
-The purpose of bringing it up now is to head off any feeling
-that you've been cheated conceptually rather than to prepare
-you for mathematical problem solving in three dimensions,
-which would not be appropriate for the level of this course.
 
 A typical example of a probability distribution in section \ref{sec:randomness}
 was the distribution of heights of human beings. The thing
