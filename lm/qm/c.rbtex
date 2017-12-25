@@ -674,7 +674,6 @@ that have similar structures, e.g., they are all spherical in shape.)
 <% end_sec() %>
 <% begin_sec("The Uncertainty Principle",3,'uncertainty-principle') %>
 
-<% begin_sec("The uncertainty principle") %>
 \index{Heisenberg, Werner!uncertainty principle}\index{Heisenberg uncertainty principle}\index{uncertainty principle}
 
 <% begin_sec("Eliminating randomness through measurement?") %>
@@ -872,7 +871,6 @@ atom lie on it? An elephant? Can either $p$ or $x$ be
 measured with perfect accuracy if we don't care about the other?
 \end{dq}
 
-<% end_sec() %>
 <% end_sec() %>
 <% begin_sec("Electrons in Electric Fields",0,'e-in-e-fields') %>
 
