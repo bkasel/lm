@@ -96,7 +96,7 @@ new about light by using a digital camera to detect smaller
 and smaller amounts of light, as shown in figures \subfigref{ccd-spot}{1}
 through \subfigref{ccd-spot}{3}. Figure 1 is fake, but 2 and 3 are
 real digital-camera images made by Prof. Lyman Page of
-Princeton University as a classroom demonstration. Figure
+Princeton University as a classroom demonstration.\label{lymanpage} Figure
 1 is what we would see if we used the digital camera to
 take a picture of a fairly dim source of light. In figures
 2 and 3, the intensity of the light was  drastically
@@ -384,8 +384,8 @@ wave and particle models of light under the same roof: the
 left side is the energy of one \emph{particle} of light,
 while the right side is the frequency of the same light,
 interpreted as a \emph{wave}. The constant $h$ is known as
-\index{Planck, Max}\index{Planck's constant}Planck's constant
-(see historical note on page \pageref{historical-planck}).
+\index{Planck, Max}\index{Planck's constant}Planck's constant,
+after theorist Max Planck.
 
 <% self_check('extract-planck-from-graph',<<-'SELF_CHECK'
 How would you extract $h$ from the graph in figure \figref{photoelectric-graph}?

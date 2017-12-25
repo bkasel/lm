@@ -544,18 +544,20 @@ Since we think of quantum mechanics as being all about randomness, this determin
 But determinism in the time-evolution of the wavefunction isn't the same as determinism in the results
 of experiments as perceived and recorded by a human brain. Suppose that you prepare a uranium atom in
 its ground state, then wait one half-life and observe whether or not it has decayed, as in the thought
-experiment of Schr\"odinger's cat. There is no uncertainty or randomness about the wavefunction of the
+experiment of Schr\"odinger's cat (p.~\pageref{schrodingers-cat}). There is no uncertainty or randomness about the wavefunction of the
 whole system (atom plus you) at the end. We know for sure what it looks like.
 It consists of an equal superposition of two states,
 one in which the atom has decayed and your brain has observed that fact, and one in which the atom has
 not yet decayed and that fact is instead recorded in your brain. 
 
 To get more of a feeling for what is meant by unitarity, it may be helpful to consider some examples of
-how it could be violated. In the Copenhagen interpretation of quantum mechanics
-(p.~\pageref{copenhagen}), measurement causes the wavefunction to collapse to one randomly chosen
+how it could be violated. Because physicists in the early days of quantum mechanics were
+offended by examples like Schr\"odinger's cat, they came up with an idea called the
+Copenhagen interpretation, according to which
+measurement causes the wavefunction to collapse to one randomly chosen
 possibility. The other possibilities disappear, and there is no way to tell that they ever existed.
 Along with the many other problems with the Copenhagen interpretation, this shows that it requires
-nonunitarity.\index{Copenhagen interpretation!nonunitary} Another example of nonunitarity is
+nonunitarity.\index{Copenhagen interpretation} Another example of nonunitarity is
 given in example \ref{eg:non-hermitian-energy} on p.~\pageref{eg:non-hermitian-energy}.
 
 A more exotic example is the disappearance of matter into a black hole.
