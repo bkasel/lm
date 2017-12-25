@@ -1,15 +1,17 @@
-We sometimes say that quantum mechanics is the set of rules for
-describing the world of the very small, but this is a sketchy
-generalization, like saying that terriers are untrainable.  How small
-is very small? The only distance scales we've discussed have been
-wavelengths, and there is no upper limit on wavelengths. The
-wavelength of an FM radio photon is bigger than my terrier, who is
-very obedient to Newton's laws.  The only scale built in to the
-structure of quantum mechanics is Planck's constant, and Planck's
-constant has units of joules per hertz, not meters, so it can't be
-converted into a distance. 
+People sometimes say that quantum mechanics is the set of rules for
+describing the world of the very small, but this is a false
+generalization, like saying that terriers are untrainable. How do we
+define our measure of how small is small? The only distance scales
+we've discussed have been wavelengths, and there is no upper limit on
+wavelengths. The wavelength of an FM radio photon is bigger than my
+terrier, who is very obedient to Newton's laws.  The only scale built
+in to the structure of quantum mechanics is Planck's constant, and
+Planck's constant has units of joules per hertz, not meters, so it
+can't be converted into a distance. Quantum mechanics is, as far as we
+can tell, a valid tool for describing systems at scales from
+quarks to galaxies. 
 
-<% marg(50) %>
+<% marg() %>
 <%
   fig(
     'beam-splitter',
@@ -22,26 +24,48 @@ converted into a distance.
 <% end_marg %>
 
 So quantum behavior can occur at any scale, even large ones. For an example
-that may be more disturbing, consider the arrangement shown in figure
+that may be a little disturbing, consider the arrangement shown in figure
 \figref{beam-splitter}.  A single photon comes
 in from the left and encounters a diagonal piece of glass. The glass reflects half
-the light and transmits half of it. The photon is a wave, and this is normal wave
+the light and transmits half of it. The photon is a wave, and this is expected wave
 behavior. But the photon is also a particle, and we can't have half a particle.
 Therefore either camera A will detect a whole photon and B will see none, or it
-will be the other way around. The result is random.
+will be the other way around. If we repeat the experiment many times times, we might
+come up with a list of results like this:
 
+\begin{tabular}{ll}
+A & B \\
+\hline
+no & yes \\
+yes & no \\
+yes & no \\
+no & yes \\
+no & yes \\
+yes & no \\
+no & yes \\
+yes & no 
+\end{tabular}
+
+\noindent There is no discernible pattern. The results appear random. 
 There is no limit in principle on how far away the two cameras can be
 placed.  (Real-world experiments of this type have been done over
 distances of a thousand kilometers, with the photons traveling either
-through outer space or through fiber-optic cables.) What may be
-disquieting is the question of when the photon ``decides'' which
-possibility to do. Clearly there is nothing to trigger this until the
-photon interacts with something, presumably one of the cameras. But it
-then seems as though the two parts of the wave are like a pair of
+through outer space or through fiber-optic cables.)
+
+What we \emph{never} observe is an outcome in which both A and B detect
+a photon, or one in which neither detects it. That is, the occurrence
+of event A (camera A sees a photon) and event B (camera B sees one)
+are both random, but they are not independent. Intuitively this may
+seem as though there is some sort of conspiracy being carried out
+over arbitrarily large distances and with no time delay. It
+seems as though the two parts of the wave are like a pair of
 criminal suspects who would like to line up their stories but are
 being kept in separate jail cells so that they can't communicate.  If
-the part of the wave at A is going to be detected, how does the part
-at B get the message that it had better not be detected? 
+the part of the wave at A is going to be detected (at full strength,
+carrying 100\% of the energy $E=hf$), how does the part
+at B get the message that it had better not be detected, fading away
+like the Cheshire cat? Einstein derisively referred to this apparent coordination
+as ``spooky action at a distance.''
 
 Niels Bohr and two collaborators proposed in 1924 the
 seemingly reasonable solution that there \emph{can't} be any such
@@ -73,29 +97,113 @@ this difficulty cannot be overcome unless the description of the
 process in terms of the \ldots wave is supplemented by some detailed
 specification of the [trajectory of the particle]. \ldots If one works
 only with \ldots waves, the interpretation \ldots, I think,
-contradicts the postulate of relativity.'' Over the next decade he continued to work
-up more detailed arguments to the effect that there was a problem with
-this kind of faster-than-light ``spooky action at a distance.''
+contradicts the postulate of relativity.''
 
-The experimental fact ends up being that the spooky action at a distance
-exists, and it does go faster than light. In 2012, Guerreiro 
-\emph{et al.}\footnote{\url{arxiv.org/abs/1204.1712}. The paper is very readable.}
-carried out a very direct and conceptually simple enactment of exactly the experiment
-in figure \figref{beam-splitter}, with electronic timing precise enough to
-prove that the detection events at A and B were separated from each other by
-too great a distance to have been linked by any influence traveling at $\le c$.
-These findings are summarized by saying that quantum mechanics is \emph{nonlocal}.
-A single wave-particle can have be spread out over an arbitrarily
-large region of space, but its interactions that transfer energy and momentum
-are always correlated over these distances in such a way that the conservation
-laws are maintained.
+The experimental fact ends up being that the spooky action at a
+distance exists, and it does go faster than light. In 2012, Guerreiro
+\emph{et al.}\footnote{\url{arxiv.org/abs/1204.1712}. The paper is
+very readable.} carried out a very direct and conceptually simple
+enactment of exactly the experiment in figure \figref{beam-splitter},
+with electronic timing precise enough to prove that the detection
+events at A and B were separated from each other by too great a
+distance to have been linked by any influence traveling at $\le c$.
+These findings are summarized by saying that quantum mechanics is
+\emph{nonlocal}.  A single wave-particle can have be spread out over
+an arbitrarily large region of space, but its interactions that
+transfer energy and momentum are always correlated over these
+distances in such a way that the conservation laws are maintained. 
 
-What Einstein had not originally appreciated was that these correlations do
-not violate relativity because they do not actually transport any energy, or even any
-information, between A and B. For example, if Alice is at detector A, and Bob is at B,
-a million kilometers away, Alice can detect the photon and know immediately that
-Bob did not detect it. She learns something seemingly instantaneously about Bob --- Bob
-is probably sad and disappointed right now. But because Bob does not have any
-control over the result, he cannot use this fact to send a message to Alice,
-so there is no transmission of information.
+What Einstein had not originally appreciated was that these
+correlations do not violate relativity because they do not actually
+transport any energy, or even any information, between A and B. For
+example, if Alice is at detector A, and Bob is at B, a million
+kilometers away, Alice can detect the photon and know immediately that
+Bob did not detect it. She learns something seemingly instantaneously
+about Bob --- Bob is probably sad and disappointed right now. But
+because Bob does not have any control over the result, he cannot use
+this fact to send a message to Alice, so there is no transmission of
+information.
 
+As a useful analogy, suppose that you head off to work on a winter day
+in New York. As you step out of the subway station into the cold air,
+you reach into your coat pockets for your gloves, but you find that
+you only have your left glove. Oh, you must have dropped your right
+glove while you were petting your adorable terrier on the way out the
+door. The presence of your left glove tells you that your right glove
+must be lying on the floor by the front door. But there has been no
+spooky action at a distance. You have simply recovered some
+information about a region of space that lies at some distance from
+you.
+
+Everything I've said so far in this section has been a matter of objective
+facts. But it's natural at this point to see if we can form a better
+mental picture of what's going on. Einstein and Bohr had strong physical
+intuitions that led them to incorrect predictions about experiments, and
+these predictions were the fruits of inappropriate mental pictures. The
+picture we will adopt instead is the following. Before the photon hits the glass
+diagonal, the state of things is the following.
+\begin{equation*}
+\fbox{\parbox{60mm}{A photon is headed to the right.}}
+\end{equation*}
+Our photon is then partially reflected and partially transmitted. Now we have
+a superposition of two wave patterns:
+\begin{equation*}
+ c\fbox{\parbox{35mm}{The photon has been reflected upward.}}
++c'\fbox{\parbox{35mm}{The photon has continue to the right.}},
+\end{equation*}
+where the amplitudes $c$ and $c'$ are equal in absolute value.\footnote{
+Conservation of energy requires $c^2=1/2$ and $c'^2=1/2$,
+even in classical physics. We could have, for
+example, $c=1/\sqrt{2}$ and $c'=-1/\sqrt{2}$. Such a possible difference in
+signs wouldn't concern us in this example. It would only be relevant if there
+were some later opportunity for the two parts of the wave to recombine and
+superimpose on one another, producing interference effects.}
+Let's say that the cameras are at equal distances from the glass diagonal,
+so that their chances to detect the photon occur simultaneously.\footnote{
+According to special relativity, this simultaneity holds only in one frame
+of reference, say the lab frame. But if simultaneity does hold in one frame,
+then we can also say that in \emph{all} frames, the distance between the two
+events is ``spacelike,'' i.e., they are too far apart to have been connected
+by any causal influence propagating at $\le c$.
+}
+After detection, we have this:
+\begin{equation*}
+ c\fbox{\parbox{35mm}{Camera A detected a photon and B didn't.}}
++c'\fbox{\parbox{35mm}{B detected a photon and A didn't.}},
+\end{equation*}
+Here we have made the nontrivial assumption that material objects like
+cameras obey the same wave-superposition rules as photons. This turns out
+to be true. Cameras are made out of things like electrons,
+and as we'll see in __section_or_chapter(matter-as-a-wave), things like
+electrons are also wave-particles, and they obey all the same wave-particle rules
+as photons.
+
+You can see where this is headed.  Alice had been standing by camera A,
+watching anxiously, while Bob, a million kilometers away, was
+breathlessly observing camera B. 
+\begin{equation*}
+ c\fbox{\parbox{35mm}{Alice saw a photon and Bob didn't. They consider this result to have been random.}}
++c'\fbox{\parbox{35mm}{Bob saw a photon and Alice didn't. They consider this result to have been random.}},
+\end{equation*}
+It doesn't \emph{seem} to Alice and Bob as though their brains are in
+a superposition of two states. They \emph{feel} as though they have only
+experienced the one possibility that actually happened, not a mixture of
+both at the same time. And yet this cartoon of the physics explains very nicely
+how the deterministic laws of physics produces a result that \emph{seems}
+to them to have been random.
+
+One could object that we are not free to adopt this description as a
+useful cartoon, without considering its testable consequences. If
+Alice and Bob have been split into two ghostlike halves of themselves,
+then conceivably these half-selves could undergo interference, as in
+the double-slit experiment. But there are practical reasons why we
+cannot actually detect such interference effects. For one thing, Alice
+and Bob are macroscopic objects, with energies $E$ on the order of
+many joules. Because Planck's constant is small, their wave
+frequencies $f=E/h$ are extremely high, and their wavelengths
+incredibly short (on the order of $10^{-34}\ \munit$!). We have seen
+that diffraction becomes undetectable when wavelengths are too short.
+Furthermore, there is a phenomenon called decoherence, in which
+interactions with the environment tend to rapidly randomize the
+wave-phases of large objects. When phases are randomized, interference and diffraction
+effects become undetectable.
