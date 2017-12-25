@@ -11,7 +11,7 @@ can't be converted into a distance. Quantum mechanics is, as far as we
 can tell, a valid tool for describing systems at scales from
 quarks to galaxies. 
 
-<% marg() %>
+<% marg(-5) %>
 <%
   fig(
     'beam-splitter',
@@ -46,26 +46,27 @@ no & yes \\
 yes & no 
 \end{tabular}
 
-\noindent There is no discernible pattern. The results appear random. 
-There is no limit in principle on how far away the two cameras can be
-placed.  (Real-world experiments of this type have been done over
-distances of a thousand kilometers, with the photons traveling either
-through outer space or through fiber-optic cables.)
+\noindent One camera always detects the photon, but there seems to be
+no way to predict which.  There is no limit in principle on how far
+away the two cameras can be placed.  (Real-world experiments of this
+type have been done over distances of a thousand kilometers, with the
+photons traveling either through outer space or through fiber-optic
+cables.) 
 
-What we \emph{never} observe is an outcome in which both A and B detect
-a photon, or one in which neither detects it. That is, the occurrence
-of event A (camera A sees a photon) and event B (camera B sees one)
-are both random, but they are not independent. Intuitively this may
-seem as though there is some sort of conspiracy being carried out
-over arbitrarily large distances and with no time delay. It
-seems as though the two parts of the wave are like a pair of
-criminal suspects who would like to line up their stories but are
-being kept in separate jail cells so that they can't communicate.  If
-the part of the wave at A is going to be detected (at full strength,
-carrying 100\% of the energy $E=hf$), how does the part
-at B get the message that it had better not be detected, fading away
-like the Cheshire cat? Einstein derisively referred to this apparent coordination
-as ``spooky action at a distance.''
+What we \emph{never} observe is an outcome in which both A and B
+detect a photon, or one in which neither detects it. That is, the
+occurrence of event A (camera A sees a photon) and event B (camera B
+sees one) are both random, but they are not independent. Intuitively
+this may seem as though there is some sort of conspiracy being carried
+out over arbitrarily large distances and with no time delay. It seems
+as though the two parts of the wave are like a pair of criminal
+suspects who would like to line up their stories but are being kept in
+separate jail cells so that they can't communicate.  If the part of
+the wave at A is going to be detected (at full strength, carrying
+100\% of the energy $E=hf$), how does the part at B get the message
+that it had better not be detected, fading away like the Cheshire cat?
+Einstein derisively referred to this apparent coordination as ``spooky
+action at a distance.''
 
 Niels Bohr and two collaborators proposed in 1924 the
 seemingly reasonable solution that there \emph{can't} be any such
@@ -108,7 +109,7 @@ with electronic timing precise enough to prove that the detection
 events at A and B were separated from each other by too great a
 distance to have been linked by any influence traveling at $\le c$.
 These findings are summarized by saying that quantum mechanics is
-\emph{nonlocal}.  A single wave-particle can have be spread out over
+\emph{nonlocal}.  A single wave-particle can be spread out over
 an arbitrarily large region of space, but its interactions that
 transfer energy and momentum are always correlated over these
 distances in such a way that the conservation laws are maintained. 
@@ -135,12 +136,11 @@ spooky action at a distance. You have simply recovered some
 information about a region of space that lies at some distance from
 you.
 
-Everything I've said so far in this section has been a matter of objective
-facts. But it's natural at this point to see if we can form a better
-mental picture of what's going on. Einstein and Bohr had strong physical
-intuitions that led them to incorrect predictions about experiments, and
-these predictions were the fruits of inappropriate mental pictures. The
-picture we will adopt instead is the following. Before the photon hits the glass
+Einstein and Bohr had strong physical intuitions that led them to
+incorrect predictions about experiments, and these predictions were
+the fruits of inappropriate mental pictures of what was going on. If we take
+the principles of quantum mechanics seriously, then the correct picture
+is the following. Before the photon hits the glass
 diagonal, the state of things is the following.
 \begin{equation*}
 \fbox{\parbox{60mm}{A photon is headed to the right.}}
@@ -188,22 +188,61 @@ breathlessly observing camera B.
 It doesn't \emph{seem} to Alice and Bob as though their brains are in
 a superposition of two states. They \emph{feel} as though they have only
 experienced the one possibility that actually happened, not a mixture of
-both at the same time. And yet this cartoon of the physics explains very nicely
+both at the same time. And yet this picture of the physics explains very nicely
 how the deterministic laws of physics produces a result that \emph{seems}
 to them to have been random.
 
-One could object that we are not free to adopt this description as a
-useful cartoon, without considering its testable consequences. If
-Alice and Bob have been split into two ghostlike halves of themselves,
-then conceivably these half-selves could undergo interference, as in
-the double-slit experiment. But there are practical reasons why we
-cannot actually detect such interference effects. For one thing, Alice
-and Bob are macroscopic objects, with energies $E$ on the order of
-many joules. Because Planck's constant is small, their wave
-frequencies $f=E/h$ are extremely high, and their wavelengths
-incredibly short (on the order of $10^{-34}\ \munit$!). We have seen
-that diffraction becomes undetectable when wavelengths are too short.
-Furthermore, there is a phenomenon called decoherence, in which
-interactions with the environment tend to rapidly randomize the
-wave-phases of large objects. When phases are randomized, interference and diffraction
-effects become undetectable.
+If Alice and Bob have been split into two ghostlike halves of
+themselves, then conceivably these half-selves could undergo
+interference, as in the double-slit experiment. But there are
+practical reasons why we cannot actually detect such interference
+effects. For one thing, Alice and Bob are macroscopic objects, with
+energies $E$ on the order of many joules. Because Planck's constant is
+small, their wave frequencies $f=E/h$ are extremely high, and their
+wavelengths incredibly short (on the order of $10^{-34}\ \munit$!). We
+have seen that diffraction becomes undetectable when wavelengths are
+too short.  Furthermore, there is a phenomenon called decoherence,
+m4_ifelse(__sn,1,[:discussed further in sec.~\ref{subsec:decoherence}, p.~\pageref{subsec:decoherence},:],[:%:]) 
+in which interactions with the environment tend to rapidly randomize
+the wave-phases of large objects. When phases are randomized,
+interference and diffraction effects become undetectable. 
+
+Historically, it seemed absurd to the originators of quantum mechanics
+to imagine a macroscopic object in a superposition of states.
+The most celebrated example is called the Schr\"odinger's cat
+experiment. Luckily for the cat, there probably was no
+actual experiment --- it was simply a ``thought experiment''
+that the German theorist Schr\"odinger discussed
+with his colleagues. Schr\"odinger wrote:
+
+\begin{quote}
+One can even construct quite burlesque cases. A cat is shut
+up in a steel container, together with the following
+diabolical apparatus (which one must keep out of the direct
+clutches of the cat): In a Geiger tube [radiation detector]
+there is a tiny mass of radioactive substance, so little
+that in the course of an hour perhaps one atom of it
+disintegrates, but also with equal probability not even one;
+if it does happen, the counter [detector] responds and ...
+activates a hammer that shatters a little flask of prussic
+acid [filling the chamber with poison gas]. If one has left
+this entire system to itself for an hour, then one will say
+to himself that the cat is still living, if in that time no
+atom has disintegrated. The first atomic disintegration
+would have poisoned it.
+\end{quote}
+
+<% marg(50) %>
+<%
+  fig(
+    'cat',
+    %q{Schr\"odinger's cat.}
+  )
+%>
+<% end_marg %>
+
+\noindent It seemed ridiculous to Schr\"odinger that at the end of
+the hour, ``The uncertainty originally restricted to the atomic domain
+has been transformed into a macroscopic uncertainty...,'' and the cat
+would be in a superposed state.
+

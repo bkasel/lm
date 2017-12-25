@@ -404,8 +404,11 @@ All knowable information about a system is encoded in its wavefunction (ignoring
 and normalization).
 \end{important}
 
-\noindent The pilot wave hypothesis, discussed on p.~\pageref{subsubsec:pilot-wave},
-is an example of an idea that would violate this principle.
+\noindent An example of an idea that would violate this principle is
+the pilot wave\index{pilot wave theory} theory proposed by de Broglie
+around 1927, and improved by Bohm in the 1950's. In this theory, an electron-particle
+is a separate object from an electron-wave, with the particle surfing
+the wave along a deterministic trajectory.
 
 Another example that shows the contrast with the classical description is that
 if I show you a snapshot of a wave on a string, you can't tell which

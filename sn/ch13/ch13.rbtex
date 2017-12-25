@@ -2161,7 +2161,7 @@ that have similar structures, e.g., they are all spherical in shape.)
 \end{dq}
 
 <% end_sec('qm-bound-states') %>
-<% begin_sec('The uncertainty principle and measurement',nil,'uncertainty-principle') %>
+<% begin_sec('The uncertainty principle',nil,'uncertainty-principle') %>
 \index{Heisenberg!Werner}\index{Heisenberg uncertainty
 principle}\index{uncertainty principle}
 
@@ -2326,99 +2326,6 @@ numerical value of Planck's constant?
 
 
 <% end_sec() %>
-<% begin_sec("Measurement and Schr\\\"odinger's cat",nil,'qm-measurement') %>\label{qm-measurement}
-\index{measurement in quantum physics}
-\index{cat!Schr\"odinger's}\index{Schr\"odinger's cat}
-\index{Schr\"odinger!Erwin}
-On p.~\pageref{postpone-measurement} I briefly mentioned an issue
-concerning measurement that we are now ready to address
-carefully. If you hang around a laboratory where quantum-physics
-experiments are being done and secretly record the
-physicists' conversations, you'll hear them say many things
-that assume the probability interpretation of quantum
-mechanics. Usually they will speak as though the randomness
-of quantum mechanics enters the picture when something is
-measured. In the digital camera experiments of section \ref{sec:light-as-a-particle},
-for example, they would casually describe the
-detection of a photon at one of the pixels as if the moment
-of detection was when the photon was forced to ``make up its
-mind.'' Although this mental cartoon usually works fairly
-well as a description of things they experience in the lab,
-it cannot ultimately be correct, because it attributes a
-special role to measurement, which is really just a physical
-process like all other physical\label{copenhagen}
-processes.\footnote{This interpretation of quantum
-mechanics is called the Copenhagen interpretation, because it was originally developed by a
-school of physicists centered in Copenhagen and led by Niels Bohr.}\index{Copenhagen interpretation}\index{Bohr, Niels}
-
-If we are to find an interpretation that avoids giving any
-special role to measurement processes, then we must think of
-the entire laboratory, including the measuring devices and
-the physicists themselves, as one big quantum-mechanical
-system made out of protons, neutrons, electrons, and
-photons. In other words, we should take quantum physics
-seriously as a description not just of microscopic objects
-like atoms but of human-scale (``macroscopic'') things like
-the apparatus, the furniture, and the people.
-
-The most celebrated example is called the Schr\"odinger's cat
-experiment. Luckily for the cat, there probably was no
-actual experiment --- it was simply a ``thought experiment''
-that the German theorist Schr\"odinger discussed
-with his colleagues. Schr\"odinger wrote:
-
-\begin{quote}
-One can even construct quite burlesque cases. A cat is shut
-up in a steel container, together with the following
-diabolical apparatus (which one must keep out of the direct
-clutches of the cat): In a Geiger tube [radiation detector]
-there is a tiny mass of radioactive substance, so little
-that in the course of an hour perhaps one atom of it
-disintegrates, but also with equal probability not even one;
-if it does happen, the counter [detector] responds and ...
-activates a hammer that shatters a little flask of prussic
-acid [filling the chamber with poison gas]. If one has left
-this entire system to itself for an hour, then one will say
-to himself that the cat is still living, if in that time no
-atom has disintegrated. The first atomic disintegration
-would have poisoned it.
-\end{quote}
-
-<% marg(50) %>
-<%
-  fig(
-    'cat',
-    %q{Schr\"odinger's cat.}
-  )
-%>
-<% end_marg %>
-
-Now comes the strange part. Quantum mechanics describes the
-particles the cat is made of as having wave properties,
-including the property of superposition. Schr\"odinger
-describes the wavefunction of the box's contents at
-the end of the hour:
-
-The wavefunction of the entire system would express this
-situation by having the living and the dead cat mixed ... in
-equal parts [50/50 proportions]. The uncertainty originally
-restricted to the atomic domain has been transformed into a
-macroscopic uncertainty...
-
- At first Schr\"odinger's description seems like nonsense.
-When you opened the box, would you see two ghostlike cats,
-as in a doubly exposed photograph, one dead and one alive?
-Obviously not. You would have a single, fully material cat,
-which would either be dead or very, very upset. But
-Schr\"odinger has an equally strange and logical answer for
-that objection. In the same way that the quantum randomness
-of the radioactive atom spread to the cat and made its
-wavefunction a random mixture of life and death, the
-randomness spreads wider once you open the box, and your own
-wavefunction becomes a mixture of a person who has just
-killed a cat and a person who hasn't.\footnote{This interpretation, known as the
-many-worlds interpretation, was developed by Hugh Everett in 1957.}\label{many-worlds interpretation}\label{Everett, Hugh}
-
 \startdqs
 
 \begin{dq}
@@ -2435,7 +2342,6 @@ atom lie on it? An elephant? Can either $p$ or $x$ be
 measured with perfect accuracy if we don't care about the other?
 \end{dq}
 
-<% end_sec('qm-measurement') %>
 <% end_sec() %>
 <% begin_sec("Electrons in electric fields",nil,'electrons-in-fields') %>
 
