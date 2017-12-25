@@ -1,3 +1,5 @@
+<% begin_sec("Nonlocality and entanglement",nil,'nonlocality-and-entanglement') %>
+<% begin_sec("Nonlocality",nil,'nonlocality') %>
 People sometimes say that quantum mechanics is the set of rules for
 describing the world of the very small, but this is a false
 generalization, like saying that terriers are untrainable. How do we
@@ -88,7 +90,9 @@ figure \figref{beam-splitter}, but with x-rays rather than visible
 light.  Their results, published in 1926, showed that if one detector
 saw the x-ray photon, the other did not, so that energy was always
 conserved at the microscopic level, not just on the average.
+<% end_sec('nonlocality') %>
 
+<% begin_sec("Entanglement",nil,'entanglement') %>
 At a 1927 conference in Brussels, Einstein protested that this was a
 problem, because the two detectors could in principle make their
 observations simultaneously, and it would then seem that some
@@ -123,7 +127,7 @@ Bob did not detect it. She learns something seemingly instantaneously
 about Bob --- Bob is probably sad and disappointed right now. But
 because Bob does not have any control over the result, he cannot use
 this fact to send a message to Alice, so there is no transmission of
-information.
+information. Alice and Bob's states are said to be \emph{entangled}.\index{entanglement}
 
 As a useful analogy, suppose that you head off to work on a winter day
 in New York. As you step out of the subway station into the cold air,
@@ -145,6 +149,7 @@ diagonal, the state of things is the following.
 \begin{equation*}
 \fbox{\parbox{60mm}{A photon is headed to the right.}}
 \end{equation*}
+
 Our photon is then partially reflected and partially transmitted. Now we have
 a superposition of two wave patterns:
 \begin{equation*}
@@ -158,6 +163,7 @@ example, $c=1/\sqrt{2}$ and $c'=-1/\sqrt{2}$. Such a possible difference in
 signs wouldn't concern us in this example. It would only be relevant if there
 were some later opportunity for the two parts of the wave to recombine and
 superimpose on one another, producing interference effects.}
+
 Let's say that the cameras are at equal distances from the glass diagonal,
 so that their chances to detect the photon occur simultaneously.\footnote{
 According to special relativity, this simultaneity holds only in one frame
@@ -176,7 +182,7 @@ cameras obey the same wave-superposition rules as photons. This turns out
 to be true. Cameras are made out of things like electrons,
 and as we'll see in __section_or_chapter(matter-as-a-wave), things like
 electrons are also wave-particles, and they obey all the same wave-particle rules
-as photons.
+as photons. The states of the two cameras are now entangled.
 
 You can see where this is going.  Alice had been standing by camera A,
 watching anxiously, while Bob, a million kilometers away, was
@@ -201,7 +207,7 @@ energies $E$ on the order of many joules. Because Planck's constant is
 small, their wave frequencies $f=E/h$ are extremely high, and their
 wavelengths incredibly short (on the order of $10^{-34}\ \munit$!). We
 have seen that diffraction becomes undetectable when wavelengths are
-too short.  Furthermore, there is a phenomenon called decoherence,
+too short.  Furthermore, there is a phenomenon called decoherence,\index{decoherence}\label{decoherence-brief}
 m4_ifelse(__sn,1,[:discussed further in sec.~\ref{subsec:decoherence}, p.~\pageref{subsec:decoherence},:],[:%:]) 
 in which interactions with the environment tend to rapidly randomize
 the wave-phases of large objects. When phases are randomized,
@@ -244,5 +250,35 @@ would have poisoned it.
 \noindent It seemed ridiculous to Schr\"odinger that at the end of
 the hour, ``The uncertainty originally restricted to the atomic domain
 has been transformed into a macroscopic uncertainty...,'' and the cat
-would be in a superposed state.
+would be in a superposed state. 
 
+In modern language, people like Einstein and Schr\"odinger didn't feel
+comfortable with nonlocality, or with entanglement of subatomic
+particles, and they felt even less comfortable with applying these
+concepts to macroscopic objects. Today, entanglement has been
+demonstrated using objects that clearly deserve to be called
+macroscopic. For example, in 2012, K.C.~Lee \emph{et al.} created a
+version of the experiment in figure \figref{beam-splitter} in which
+the cameras were replaced by small diamonds, about 1 mm in size.  They
+were separated by 15 cm, which is a macroscopic distance. When a
+photon hit one of the diamonds, it produced a vibration in the crystal
+lattice.  This vibration was localized to a relatively small region
+within the diamond, but this region was still large enough that one
+has to admit that it qualifies as macroscopic. Its atoms had a total
+weight of about 0.1 nanograms, which is a quantity big enough to weigh
+on a state-of-the-art balance, and the region was about 0.01 mm in
+size, which would make it visible with a magnifying glass. 
+
+The quantum states of the two diamonds became entangled: if one had
+detected the photon, the other hadn't. This entangled state was
+maintained for only about 7 picoseconds before decoherence destroyed
+the phase relationship between one diamond and the other. But Lee was
+able to use additional photons to ``read out'' the quantum states in
+only 0.5 ps, before decoherence occurred, and verify that there were
+wave interference effects in which one diamond's quantum-mechanical
+wave had a definite phase relationship with the other's.  Although
+these experiments are difficult, they show that there is no
+obstruction in principle to observing quantum-mechanical effects such
+as superposition in arbitrarily large objects. 
+<% end_sec('entanglement') %>
+<% end_sec('nonlocality-and-entanglement') %>

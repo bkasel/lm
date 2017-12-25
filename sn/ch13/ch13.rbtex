@@ -1449,9 +1449,7 @@ substance with a different index of refraction?
 __incl(text/wave-particle-duality)
 <% end_sec('wave-particle-duality') %>
 
-<% begin_sec("Nonlocality",nil,'nonlocality') %>
 __incl(text/nonlocality)
-<% end_sec('nonlocality') %>
 
 <% begin_sec("Photons in three dimensions") %>
 \index{photon!in three dimensions}

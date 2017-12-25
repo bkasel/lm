@@ -2010,7 +2010,8 @@ be $180\degunit$ out of phase.
 <% begin_sec("Decoherence",nil,'decoherence') %>\index{decoherence}
 Starting around 1970, physicists began to realize that ideas involve a loss of coherence,
 or ``decoherence,'' could help to explain some things about quantum mechanics that
-had previously seemed mysterious. One example is the fact that it is difficult to
+had previously seemed mysterious. (Decoherence was briefly introduced on p.~\pageref{decoherence-brief}.)
+One example is the fact that it is difficult to
 demonstrate wave interference effects with large objects. This is partly because
 the wavelength $\lambda=h/p=h/mv$ tends to be small for an object with a large mass.
 But even taking this into account, we do not seem to have much luck observing,
