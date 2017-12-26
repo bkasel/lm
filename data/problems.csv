@@ -2261,6 +2261,8 @@ sn,14,5,trivial-nonhermitian,0
 sn,14,6,ammonia,0
 sn,14,7,ammonia2,0
 sn,14,8,particle-in-a-box-superpos,0
-sn,14,9,nucleus-separable,0
-sn,14,10,funky-norm,0
-sn,14,11,sinusoidal-no-preferred-basis,0
+sn,14,9,electrons-in-a-box,0
+sn,14,10,nucleus-separable,0
+sn,14,11,three-entangled-spins,0
+sn,14,12,funky-norm,0
+sn,14,13,sinusoidal-no-preferred-basis,0
