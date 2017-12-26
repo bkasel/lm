@@ -795,6 +795,68 @@ microwave photons in a microwave oven.
 <% end_sec('s-eqn-separability') %>
 <% end_sec('solving-s-eqn') %>
 
+
+<% begin_sec("More about entanglement",nil,'entanglement') %>
+
+The opposite of separability (sec.~\ref{subsec:s-eqn-separability}) is entanglement
+(sec.\ref{subsec:nonlocality-and-entanglement}, p.~\pageref{subsubsec:entanglement}).
+To see what is meant by this statement, consider figure \figref{separable}. In
+\subfigref{separable}{1}, we have the function $\Psi_1=\sin x\sin 4y$. This could be a two-dimensional
+particle in a box, with a certain amount of momentum in the $x$ direction, and four times
+that momentum in the $y$ direction. It is because the Schr\"odinger equation for the particle
+in a box is separable in $x$ and $y$ that we can write down this wavefunction
+by multiplying two different one-dimensional wavefunctions. In figure
+\subfigref{separable}{2}, $\Psi_2$ is like $\Psi_1$ but
+with $x$ and $y$ interchanged, while \subfigref{separable}{3} shows the superposition
+$\Psi_3=(\Psi_1+\Psi_2)/\sqrt2$.
+
+<%
+  fig(
+    'separable',
+    %q{%
+      States of a particle in a box that are separable in terms of $p_x$ and $p_y$ (1 and 2)
+      and entangled (3, a superposition of 1 and 2).
+    },
+    {
+      'width'=>'wide',
+      'sidecaption'=>true
+    }
+  )
+%>
+
+From a fancier theoretical point of view, we could say that this
+system, which seems like a single thing (the particle), is actually
+built out of two subsystems. One subsystem is the motion in the $x$
+direction, and the other is the $y$. The fact that the Schr\"odinger
+equation is separable can be interpreted as being because the $x$ and
+$y$ motion are independent of one another. Exactly the same thing
+would happen if this were a classical pool ball on a square table. Its
+$x$ and $y$ motion don't affect each other, and, e.g., if the ball
+hits the right-hand cushion and has its $x$ momentum reflected, that
+doesn't change its $y$ momentum. It's as if the pool ball in two
+dimensions were really two different beads, one sliding along a wire
+parallel to the $x$ axis and the other sliding up and down. In either
+the classical case or the quantum-mechanical case, we have built a
+composite system out of two independent subsystems.
+
+In an example like $\Psi_1$, it is possible to assign a definite state to the subsystems:
+continuing to ignore units, we can write $p_x=\pm 1$ and $p_y=\pm 4$. The state
+with wavefunction $\Psi_2$ has the same energy as $\Psi_1$, and again the subsystems
+have a definite state, $p_x=\pm 4$ and $p_y=\pm 1$.
+
+But for the superposition $\Psi_3$, this is no longer true. If we
+measure either $p_x$ or $p_y$ for this state, we may get either $\pm1$
+or $\pm4$, with equal probability. We say that this state is entangled in the same
+way that Alice and Bob were entangled on p.~\pageref{bob-alice-entangled}.
+Neither Bob nor Alice is in a definite state of I-saw-a-photon or I-never-saw-a-photon.
+However, if we \emph{ask} Bob whether he saw a photon, and he says yes, then
+we gain information about Alice: that she didn't see a photon. Similarly, if we
+measure $p_x$ for the particle in state $\Psi_3$ and get $-4$, then we gain information
+about $p_y$: we know that it is $\pm1$.
+
+<% end_sec('entanglement') %>
+
+
 <% begin_sec("The underlying structure of quantum mechanics, part 2",nil,'qm-structure-2') %>
 
 <% begin_sec("Observables",nil,'qm-observables') %>
