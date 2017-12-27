@@ -2060,7 +2060,7 @@ long wavelengths give lower energies.
   )
 %>
 <% end_marg %>
-\begin{eg}{Spectra of thin gases}
+\begin{eg}{Spectra of thin gases}\label{eg:spectra-of-thin-gases}
 \index{spectrum!absorption}\index{spectrum!emission}\index{absorption}
 \index{emission spectrum}\index{gas!spectrum of}
 A fact that was inexplicable by classical physics was
@@ -3242,6 +3242,47 @@ the beginning of the section?
   SELF_CHECK
   ) %>
 
+<% begin_sec("Degeneracy",nil,'degeneracy') %>
+Comparing the oversimplified figure \subfigref{moat-rainbow}{1} with the more realistic
+depiction in \subfigref{moat-rainbow}{2} using complex numbers, we see that there is
+a direction of rotation, which was drawn as counterclockwise in the figure. As in figures
+\subfigref{rainbow}{2} and \subfigref{rainbow}{3} on p.~\pageref{fig:rainbow}, we could
+have drawn the clockwise version by putting the rainbow colors in the opposite order, i.e.,
+by letting the phase spin in the opposite direction in the complex plane. This feature
+was hidden in \subfigref{moat-rainbow}{1}, where in order to get a depiction using real
+numbers, we had to use a standing wave. A standing wave, however, can be constructed as
+a superposition of two traveling waves, so the issue was still there, just hidden. We really
+have \emph{two} quantum-mechanical states here, regardless of whether we use standing waves
+or traveling waves. If we use standing waves, they are of the form $\sin 8\theta$ and $\cos 8\theta$,
+while in terms of the traveling waves we have $e^{8i\theta}$ and $e^{-8i\theta}$. By Euler's
+formula (sec.~\ref{subsec:euler-formula}, p.~\pageref{subsec:euler-formula}), either traveling
+wave can be expressed as a superposition of the two standing waves, and vice versa. (Physically,
+there are not four different states here but two. The situation is a bit like choosing a
+Cartesian coordinate system in the plane, where we could choose one coordinate system $(x,y)$,
+or some other coordinates system $(x',y')$ rotated with respect to the first one; but this does
+not mean there are four coordinates needed to describe a plane.)
+
+These two states are simplified models of states in an atom, so it's worth thinking about how we could
+tell, for a real atom, whether the electron had angular momentum in one direction or the
+other. One technique would be to look at absorption or emission spectra of thin gases,
+as in example \ref{eg:spectra-of-thin-gases} on p.~\pageref{eg:spectra-of-thin-gases}.
+But this only distinguishes states according to their energies, and since these two states
+have the same kinetic energy, that would not necessarily help. In quantum mechanics, when we
+have more than one state with the same energy, they are said to be \emph{degenerate}.\index{degeneracy}
+In our example, the degeneracy of the $\ell=8$ state is 2. This degeneracy arises from the
+symmetry of space, which does not distinguish one direction from another. Degeneracies often, but not
+always, arise from symmetries. (Cf.~p.~\pageref{accidental-degeneracy}.)
+
+If we wanted to distinguish these two degenerate states observationally, one way to do it
+would be to ``lift'' the degeneracy by applying an external magnetic field.
+Since an electron has an electric charge, it acts like a current loop, and
+the two states behave like oppositely oriented magnetic dipoles with an additional
+potential energy $-\vc{m}\cdot\vc{B}$, which lowers the energy of one state and raises the
+energy of the other. The existence of the magnetic field breaks the symmetry, which was the
+reason for the degeneracy.
+<% end_sec('degeneracy') %>
+
+
 <% end_sec() %>
 <% begin_sec("Three dimensions") %>
 \index{angular momentum!and the uncertainty principle}\index{angular
@@ -3504,7 +3545,7 @@ energy. Thus it is not possible to have a given amount of
 angular momentum without having a certain amount of kinetic
 energy as well. Since energy relates to the $n$ quantum
 number, this means that for a given $n$ value there will be
-a maximum possible . It turns out that this maximum
+a maximum possible $\ell$. It turns out that this maximum
 value of  equals $n-1$.
 
 In general, we can list the possible combinations of
@@ -3533,6 +3574,23 @@ $n=2$, & $\ell=1$, & $\ell_z=-1$, 0, or 1 &        three states\\
 Continue the list for $n=3$.
   SELF_CHECK
   ) %>
+
+Because the energy only depends on $n$, we have degeneracies.
+For example, the $n=2$ energy level is 4-fold degenerate (and in fact
+this degeneracy will be doubled to 8 when we take into account the intrinsic
+spin of the electron, sec.~\ref{subsec:electron-spin}, p.~\pageref{subsec:electron-spin}).
+The degeneracy of the different $\ell_z$ states follows from symmetry, as in our
+original example of degeneracy on p.~\pageref{subsubsec:degeneracy}, and is therefore
+exact. The degeneracy with respect to different values of $\ell$ for the same $n$
+is not at all obvious, and is in fact not exact when effects such as relativity
+are taken into account. We refer to this as an ``accidental'' degeneracy.\label{accidental-degeneracy}
+The very high level of degeneracy in the hydrogen atom means that when you observe it the hydrogen spectrum
+in your lab course, there is a great deal of structure that is effectively
+hidden from you. Historically, physicists were fooled by the apparent simplicity of the
+spectrum, and more than 70 years passed between the measurement of the
+spectrum and the time when the degeneracies were fully recognized and understood.
+
+% Angstron 1853, Uhlenbeck-Goudsmit 1925
 
 Figure \figref{hydrogen-three-states} on page \pageref{fig:hydrogen-three-states}
 shows the lowest-energy states

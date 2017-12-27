@@ -361,6 +361,20 @@ correct quantum mechanical energy to the semiclassical one is $\ell(\ell+1)/\ell
 two  makes sense because at the poles, the wave has equal contributions to its kinetic energy due to
 oscillations in the two perpendicular directions that occur in the Laplacian $\partial^2/\partial x^2+\partial^2/\partial y^2$.
 
+\startdq
+
+\begin{dq}
+The correction of the semiclassical proportionality for the energy of a rotor from $\ell^2$ to $\ell(\ell+1)$
+is effectively the addition of a correction equal to $\ell$. What if someone tells you that there is 
+an additional correction term that depends only on $\ell_z$ (for a fixed $\ell$)? Is this plausible?
+\end{dq}
+
+\begin{dq}
+Can the correction $\ell^2\rightarrow\ell(\ell+1)$ be tested experimentally by measuring the energy
+of a spinning steel ring in the laboratory? Can the correction $n\rightarrow n+1/2$ be tested
+using a cart on an air track that vibrates back and forth between two springs?
+\end{dq}
+
 <% end_sec('qm-corrections') %>
 
 <% end_sec() %>
@@ -1273,6 +1287,25 @@ It can be shown that if the Hamiltonian is hermitian, then the evolution of the 
 over time is a unitary operation. This protects us from bad scenarios like the one described
 in example \ref{eg:non-hermitian-energy}, p.~\pageref{eg:non-hermitian-energy}.
 
+\begin{eg}{Traveling waves in the quantum moat}\label{eg:moat-orthogonal-traveling-waves}
+On p.~\pageref{subsubsec:degeneracy} we discussed the ``quantum moat,'' in which
+a particle is constrained to a circle like the moat around a castle. For the $\ell=1$
+state, the two degenerate traveling wave solutions to the Schr\"odinger equation
+are (ignoring normalization) the counterclockwise $|\text{ccw}\rangle=e^{i\theta}$
+and the clockwise $|\text{cw}\rangle=e^{-i\theta}$. These states are distinguishable
+by their angular momenta $\ell_z=\pm 1$, so we expect them to be orthogonal. Let's
+check that directly.
+\begin{align*}
+  \langle \text{ccw} | \text{cw} \rangle &= \int_0^{2\pi} \left[(e^{i\theta})^*\right]e^{-i\theta} \der x \\
+            &= \int_0^{2\pi} e^{-i\theta}e^{-i\theta} \der x \\
+            &= \int_0^{2\pi} e^{-2i\theta} \der x \\
+\end{align*}
+This is easily seen to be zero without an explicit calculation,
+because when we take the antiderivative of $e^{-2i\theta}$, we will get the same
+type of exponential, whose values when we plug in the upper and lower
+limits of integration will cancel each other out.
+\end{eg}
+
 <% end_sec('qm-inner-product') %>
 
 <% begin_sec("Completeness",nil,'qm-completeness') %>
@@ -1312,6 +1345,11 @@ observables'' are nearly synonyms, so we will usually use the shorter
 phrase.  Normally there is more than one possible choice of basis.
 The choice from among these possibilities is arbitrary, and nature doesn't
 care which one we pick. That is, there is \emph{no preferred basis}.\label{no-preferred-basis}
+An example of this principle is the fact that we habitually talk about ``up'' and
+``down'' for the spin of an electron, which we are free to do, although it would
+be equally permissible to talk about left and right. Another good example
+is the discussion of the double degeneracy of the quantum moat on p.~\pageref{subsubsec:degeneracy},
+where we were free to talk about a basis consistig of either two standing waves or two traveling waves.
 
 As an example of the completeness principle, we have seen in example
 \ref{eg:completeness-ylm} on p.~\pageref{eg:completeness-ylm} that for
@@ -2595,7 +2633,13 @@ implies quantum mechanics, at least in this technical sense.
 
 <% begin_hw('funky-norm') %>__incl(hw/funky-norm)<% end_hw() %>
 
+<% begin_hw('moat-normalize-traveling-waves') %>__incl(hw/moat-normalize-traveling-waves)<% end_hw() %>
+
+<% begin_hw('moat-orthogonal-standing-waves') %>__incl(hw/moat-orthogonal-standing-waves)<% end_hw() %>
+
 <% begin_hw('sinusoidal-no-preferred-basis') %>__incl(hw/sinusoidal-no-preferred-basis)<% end_hw() %>
+
+
 
 
 <% end_hw_sec %>

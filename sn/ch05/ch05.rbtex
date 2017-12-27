@@ -2383,6 +2383,8 @@ consistent with the second law of thermodynamics? \answercheck
 
 <% begin_hw('fusion') %>__incl(hw/fusion)<% end_hw() %>
 
+\pagebreak
+
 <% begin_hw('half-brick') %>__incl(hw/half-brick)<% end_hw() %>
 
 <% begin_hw('inversion-layer') %>__incl(hw/inversion-layer)<% end_hw() %>
