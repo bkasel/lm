@@ -2387,5 +2387,7 @@ consistent with the second law of thermodynamics? \answercheck
 
 <% begin_hw('inversion-layer') %>__incl(hw/inversion-layer)<% end_hw() %>
 
+<% begin_hw('photon-gas-equipartition') %>__incl(hw/photon-gas-equipartition)<% end_hw() %>
+
 <% end_hw_sec %>
 <% end_chapter() %>
