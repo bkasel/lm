@@ -2266,4 +2266,6 @@ sn,14,9,electrons-in-a-box,0
 sn,14,10,nucleus-separable,0
 sn,14,11,three-entangled-spins,0
 sn,14,12,funky-norm,0
-sn,14,13,sinusoidal-no-preferred-basis,0
+sn,14,13,moat-normalize-traveling-waves,0
+sn,14,14,moat-orthogonal-standing-waves,0
+sn,14,15,sinusoidal-no-preferred-basis,0

@@ -2617,6 +2617,8 @@ implies quantum mechanics, at least in this technical sense.
 
 <% begin_hw('ho-orthogonal2') %>__incl(hw/ho-orthogonal2)<% end_hw() %>
 
+\pagebreak
+
 <% begin_hw('trivial-nonhermitian') %>__incl(hw/trivial-nonhermitian)<% end_hw() %>
 
 <% begin_hw('ammonia') %>__incl(hw/ammonia)<% end_hw() %>
@@ -2625,6 +2627,8 @@ implies quantum mechanics, at least in this technical sense.
 
 <% begin_hw('particle-in-a-box-superpos') %>__incl(hw/particle-in-a-box-superpos)<% end_hw() %>
 
+\pagebreak
+
 <% begin_hw('electrons-in-a-box') %>__incl(hw/electrons-in-a-box)<% end_hw() %>
 
 <% begin_hw('nucleus-separable') %>__incl(hw/nucleus-separable)<% end_hw() %>
@@ -2632,6 +2636,8 @@ implies quantum mechanics, at least in this technical sense.
 <% begin_hw('three-entangled-spins') %>__incl(hw/three-entangled-spins)<% end_hw() %>
 
 <% begin_hw('funky-norm') %>__incl(hw/funky-norm)<% end_hw() %>
+
+\pagebreak
 
 <% begin_hw('moat-normalize-traveling-waves') %>__incl(hw/moat-normalize-traveling-waves)<% end_hw() %>
 

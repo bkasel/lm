@@ -2266,4 +2266,6 @@ m4_define(__hw_sn_14_electrons-in-a-box,9)m4_dnl
 m4_define(__hw_sn_14_nucleus-separable,10)m4_dnl
 m4_define(__hw_sn_14_three-entangled-spins,11)m4_dnl
 m4_define(__hw_sn_14_funky-norm,12)m4_dnl
-m4_define(__hw_sn_14_sinusoidal-no-preferred-basis,13)m4_dnl
+m4_define(__hw_sn_14_moat-normalize-traveling-waves,13)m4_dnl
+m4_define(__hw_sn_14_moat-orthogonal-standing-waves,14)m4_dnl
+m4_define(__hw_sn_14_sinusoidal-no-preferred-basis,15)m4_dnl
