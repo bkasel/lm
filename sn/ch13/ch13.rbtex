@@ -3028,7 +3028,8 @@ through without ``seeing'' each other.
 It is therefore natural to ask whether the apparent linearity of the Schr\"odinger equation is only
 an approximation to some more precise, nonlinear theory. This is not currently believed to be the
 case. If we are to make sense of Schr\"odinger's cat
-(p.~\pageref{subsubsec:qm-measurement}), then the experimenter who sees a live cat and the one
+(sec.~\ref{subsec:nonlocality-and-entanglement}, p.~\pageref{schrodingers-cat}),
+then the experimenter who sees a live cat and the one
 who sees a dead cat must remain oblivious to their other selves, like the ripples on the pond
 that intersect without ``seeing'' each other. Attempts to create slightly nonlinear versions
 of standard quantum mechanics have been shown to have implausible physical properties, such as

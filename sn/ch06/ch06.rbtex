@@ -1756,7 +1756,7 @@ energy will eventually exit through the antenna.
 
 <% end_sec() %>
 <% end_sec() %>
-<% begin_sec("Quantitative treatment of reflection") %>
+<% begin_sec("Quantitative treatment of reflection",nil,'quantitative-reflection') %>
 In this section we use the example of waves on a string to analyze the reasons why a
 reflection occurs at the boundary between media, predict
 quantitatively the intensities of reflection and transmission,
@@ -1938,7 +1938,7 @@ The following aspects of our analysis may need to be modified for different type
 \end{itemize}
 
 <% end_sec('intensity-of-reflection') %>
-<% end_sec() %>
+<% end_sec('quantitative-reflection') %>
 <% begin_sec("Interference effects") %>\index{waves!interference}
 If you look at the front of a pair of high-quality
 binoculars, you will notice a greenish-blue coating on the
@@ -2245,7 +2245,7 @@ column within the human vocal tract. Because sounds composed
 of this kind of pattern of frequencies are so common, our
 ear-brain system has evolved so as to perceive them as a
 single, fused sensation of tone.
-<% marg(0) %>
+<% marg(300) %>
 <%
   fig(
     'fourier-spectra',
@@ -2298,18 +2298,6 @@ knowledgeable people do not usually use the word
 they are really saying is that the dissonance has been used in a
 clumsy way, or without providing any contrast between
 dissonance and consonance.
-<% marg(-130) %>
-<%
-  fig(
-    'add-sine-and-square',
-    %q{%
-      If you take a sine wave and make a copy of it shifted over,
-      their sum is still a sine wave. The same is not true for a
-      square wave.
-    }
-  )
-%>
-<% end_marg %>
 <%
   fig(
     'standing-waves-on-floor',
@@ -2346,6 +2334,19 @@ sine waves of equal wavelength is simply a new sine wave
 with the same wavelength. As the two sine waves go  back and
 forth, they always cancel perfectly at the ends, and their
 sum appears to stand still.
+
+<% marg(300) %>
+<%
+  fig(
+    'add-sine-and-square',
+    %q{%
+      If you take a sine wave and make a copy of it shifted over,
+      their sum is still a sine wave. The same is not true for a
+      square wave.
+    }
+  )
+%>
+<% end_marg %>
 
 Standing wave patterns are rather important, since atoms are
 really standing-wave patterns of electron waves. You are a
@@ -2487,7 +2488,7 @@ and therefore got a result that didn't have the correct factor of $\sqrt{\gamma}
 In this section we address some technical details of the treatment of reflection
 and transmission of waves.
 <% begin_sec("Dependence of reflection on other variables besides velocity",nil,'wave-reflection-impedance') %>
-In section \ref{sec:quantitative-reflection} we derived the expressions for the transmitted
+In section \ref{subsec:quantitative-reflection} we derived the expressions for the transmitted
 and reflected amplitudes by demanding that two things match up on both sides of the boundary:
 the height of the wave and the slope of the wave. These requirements were stated purely
 in terms of kinematics (the description of how the wave moves) rather than dynamics (the

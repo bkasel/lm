@@ -425,7 +425,7 @@ This is only an approximation, because we had to assume early on that $Q$ was la
 
 \scanshdr{translatefvector} $\zb{F}=m\zb{a}$
 
-\scanshdr{graphicalscalarmult} \\
+\scanshdr{scale-vector} \\
 \begin{center}\anonymousinlinefig{graphicalscalarmultans}\end{center}
 
 \noindent\formatlikesubsection{Answers to Self-Checks for Chapter \ref{ch:4}}\\
