@@ -379,6 +379,89 @@ using a cart on an air track that vibrates back and forth between two springs?
 
 <% end_sec() %>
 
+<% begin_sec("A tiny bit of linear algebra",nil,'linear-algebra',{'optional'=>true}) %>
+This optional section is a self-contained presentation of a very small amount of
+linear algebra. None of the later physics requires this material, but reading it
+may be helpful as review for the reader who has already had an entire linear algebra
+course, or to help make connections for the one who is taking such a course concurrently
+or will take it in the future.
+
+A \emph{vector space} is a set of objects, which we refer to as vectors,\index{vector space}
+along with operations of addition and scalar multiplication
+defined on the vectors. The scalars may be the real numbers or the complex numbers.
+We require that the addition and scalar multiplication operations have the properties
+that addition is commutative ($\vc{u}+\vc{v}=\vc{v}+\vc{u}$), that we have an additive
+identity $\vc{0}$ and additive inverses ($\vc{v}+(-\vc{v})=\vc{0}$), and that both operations
+are associative and distributive in the ways that we would expect from the notation.
+The prototypical example of a vector space is vectors in three-dimensional space, with
+the scalars being the real numbers.
+
+\begin{eg}{The vector space of polynomials}
+Consider the set of all polynomials.
+If we define addition of polynomials and multiplication of a polynomial by a real
+number in the obvious ways, then these functions are a vector space. Note that
+there is no well-defined division operation, since dividing
+a polynomial by a polynomial typically does not give a polynomial.
+\end{eg}
+
+In quantum mechanics, we are interested in the vector space of wavefunctions, with the
+scalars being the complex numbers.
+
+A set of vectors is said to be \emph{linearly independent} if it is not possible to form
+the zero vector as a linear combination of them. 
+For vectors in three-dimensional
+space, a set of three vectors is not linearly independent if they lie in the same plane.
+The set of polynomials $\{1,x\}$ is
+linearly independent, but the set $\{P,Q,R\}$, where $P=1$, $Q=1-x$, and $R=1+x$,
+is not, because $-2P+Q+R=0$.\index{linear independence} 
+
+A \emph{basis} for a vector space is a linearly independent set of
+vectors, called basis vectors, such that any vector can be formed as a
+linear combination of basis vectors. The standard basis for vectors in
+two-dimensional space is $\{\hat{x},\hat{y}\}$, while a possible basis
+for the polynomials is the infinite set $\{1,x,x^2,x^3,\ldots\}$.  
+A basis exists for any vector space, and in fact there are normally
+many different bases to choose from, with none being preferred. In the
+plane, for example, we can choose to rotate the standard $\{\hat{x},\hat{y}\}$ basis by any angle we like.
+Every basis for a given vector space has the same number of elements, and this number is
+called the \emph{dimension} of the vector space. The plane is a two-dimensional
+vector space. The polynomials are an infinite-dimensional 
+vector space.\index{basis of a vector space}\index{dimension of a vector space}
+
+A \emph{linear operator} is a function $\mathcal{O}$ that takes a vector as an
+input and gives a vector as an output, with the properties
+$\mathcal{O}(\vc{u}+\vc{v})=\mathcal{O}(\vc{u})+\mathcal{O}(\vc{v})$ and
+$\mathcal{O}(\alpha\vc{u})=\alpha\mathcal{O}(\vc{u})$.\index{linear operator}
+A rotation in the plane is a linear operator.
+
+\begin{eg}{Differentiation as a linear operator}
+Consider the set of all differentiable functions, taken as a vector space over either
+the real numbers or the complex numbers. Then the derivative is a linear operator,
+as is the second derivative.
+The kinetic energy term in the Schr\"odinger equation is built out of second derivatives,
+so it is a linear operator.
+\end{eg}
+
+For vectors in three-dimensional space, we have a dot product, which is a function
+that takes two vectors as inputs and gives a scalar as its output. A vector space
+may or may not come equipped with such an operation. If it does, we call the
+operation an \emph{inner product}. The inner product on wavefunctions is introduced
+in section \ref{subsec:qm-inner-product}, p.~\pageref{subsec:qm-inner-product}.
+In quantum mechanics, the inner product is a basic tool used to define probabilities,
+and for example normalization becomes the requirement that a wavefunction have an
+inner product with itself that equals 1. That is, a normalized wavefunction is a kind
+of unit vector.\index{inner product!on a general vector space}
+
+When a vector space is finite-dimensional and a basis has been chosen, then if we wish we can represent
+vectors in column vector notation. For example, in the space of first-order polynomials
+with the basis $\{1,x\}$, the polynomial $3+5x$ can be represented by
+$\left(\begin{smallmatrix} 3 \\ 5 \end{smallmatrix}\right)$. Linear operators can
+similarly be represented by matrices, but we will seldom find this possible or useful in this
+book. For example, we can't represent the derivative as a matrix, because the vector space
+is infinite-dimensional.
+
+<% end_sec('linear-algebra') %>
+
 <% begin_sec("The underlying structure of quantum mechanics, part 1",nil,'qm-structure-1') %>
 
 So far we have been building up the structure of quantum mechanics by casually laying

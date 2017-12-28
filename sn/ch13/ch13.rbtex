@@ -3425,6 +3425,8 @@ But then 1b tells us that $\Psi=0$ everywhere.
   )
 %>
 
+\pagebreak
+
 \begin{eg}{Completeness}\label{eg:completeness-ylm}
 For a given value of $\ell$, consider the set of angular momentum states with $|\vc{L}|=\hbar\ell$
 and the various possible values of the angular momentum's component along some fixed axis.
@@ -4203,9 +4205,9 @@ searching for muonic atoms in the sun or in the earth's
 atmosphere by spectroscopy, in what part of the electromagnetic
 spectrum would you expect to find the absorption lines?
 <% end_hw() %>
- % 
- % 
- % 
+
+\pagebreak
+
 <% begin_hw('compton') %>__incl(hw/compton)<% end_hw() %>
  % 
 <% begin_hw('compton-any-angle') %>__incl(hw/compton-any-angle)<% end_hw() %>
