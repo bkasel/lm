@@ -386,7 +386,7 @@ may be helpful as review for the reader who has already had an entire linear alg
 course, or to help make connections for the one who is taking such a course concurrently
 or will take it in the future.
 
-A \emph{vector space} is a set of objects, which we refer to as vectors,\index{vector space}
+A \emph{vector space} is a set of objects, which we refer to as vectors,\index{vector space}\label{lin-alg-vector-space}
 along with operations of addition and scalar multiplication
 defined on the vectors. The scalars may be the real numbers or the complex numbers.
 We require that the addition and scalar multiplication operations have the properties
@@ -431,7 +431,7 @@ vector space.\index{basis of a vector space}\index{dimension of a vector space}
 A \emph{linear operator} is a function $\mathcal{O}$ that takes a vector as an
 input and gives a vector as an output, with the properties
 $\mathcal{O}(\vc{u}+\vc{v})=\mathcal{O}(\vc{u})+\mathcal{O}(\vc{v})$ and
-$\mathcal{O}(\alpha\vc{u})=\alpha\mathcal{O}(\vc{u})$.\index{linear operator}
+$\mathcal{O}(\alpha\vc{u})=\alpha\mathcal{O}(\vc{u})$.\index{linear operator}\label{lin-alg-linear-operator}
 A rotation in the plane is a linear operator.
 
 \begin{eg}{Differentiation as a linear operator}
@@ -458,7 +458,7 @@ with the basis $\{1,x\}$, the polynomial $3+5x$ can be represented by
 $\left(\begin{smallmatrix} 3 \\ 5 \end{smallmatrix}\right)$. Linear operators can
 similarly be represented by matrices, but we will seldom find this possible or useful in this
 book. For example, we can't represent the derivative as a matrix, because the vector space
-is infinite-dimensional.
+is infinite-dimensional.\label{lin-alg-column-vec-notation}
 
 <% end_sec('linear-algebra') %>
 
@@ -495,6 +495,18 @@ system. There isn't more information that can be known about the system.
 any information, since the phase is unobservable, and the normalization can be standardized
 so that the total probability is 1.) This principle seems to be widely agreed upon by
 physicists, but doesn't seem to have a standard name.
+
+<% marg() %>
+<% fig(
+  'vec-app-v-space','',{'anonymous'=>true,'title'=>"Linear algebra application",
+  'text'=>
+    %q{%
+      States can be described by vectors in a vector space (p.~\pageref{lin-alg-vector-space}).
+    }
+  })
+%>
+<% end_marg %>
+
 
 \begin{important}[Wavefunction fundamentalism]
 All knowable information about a system is encoded in its wavefunction (ignoring phase
@@ -627,6 +639,18 @@ so that the system's history can always be recovered
 from knowledge of its present state. Thus there is never any loss of information over time. Furthermore,
 it can be shown that probability is always conserved, in the sense that if the wavefunction is initially
 normalized, it will also be normalized at all later times. 
+
+<% marg() %>
+<% fig(
+  'vec-app-time-evol-linear','',{'anonymous'=>true,'title'=>"Linear algebra application",
+  'text'=>
+    %q{%
+      Time evolution is represented by a linear operator (p.~\pageref{lin-alg-linear-operator}).
+      Unitarity is an additional requirement for this linear operator.
+    }
+  })
+%>
+<% end_marg %>
 
 \begin{important}[Unitary
          evolution of the wavefunction]\index{unitary evolution of the wavefunction}\label{unitarity-postulate}
@@ -1012,10 +1036,24 @@ classical ones are independent of the convention used for
 wavefunctions in quantum mechanics, which is that a state with positive
 energy twirls clockwise in the complex plane. (See also example \ref{eg:non-hermitian-energy}, p.~\pageref{eg:non-hermitian-energy}.)
 
+<% marg() %>
+<% fig(
+  'vec-app-lin-observables','',{'anonymous'=>true,'title'=>"Linear algebra application",
+  'text'=>
+    %q{%
+      Observables are represented a linear operators (p.~\pageref{lin-alg-linear-operator}).
+      We also require that this operator have real eigenvalues.
+    }
+  })
+%>
+<% end_marg %>
+
+
 \begin{important}[Observables]
 In quantum mechanics, any observable is represented by a linear operator that takes
 a wavefunction as an input and has real eigenvalues.
 \end{important}
+
 
 \begin{eg}{The momentum operator}\label{eg:momentum-operator}
 Quantum mechanics represents motion as a dependence of the wavefunction on
@@ -1230,6 +1268,26 @@ mean just an integral over $x$, and we think of the $\langle\ldots|$ part as aut
 conjugation of the thing inside it. The operation $\langle\ldots|\ldots\rangle$ is called the
 \emph{inner product}.\index{inner product!in quantum mechanics}
 
+<% marg() %>
+<% fig(
+  'vec-app-bra-ket','',{'anonymous'=>true,'title'=>"Linear algebra application",
+  'text'=>
+    %q{%
+      The vectors notated with right-hand angle brackets like $|\ldots\rangle$ are the ones that
+      we could represent as column vectors (p.~\pageref{lin-alg-column-vec-notation}) if the vector space is finite-dimensional.
+      Left-hand angle brackets are like row vectors. A row vector multiplied by a column vector
+      is a way of notating an inner product,
+      which is the same idea as a notation like $\langle\ldots|\ldots\rangle$. To turn a column vector
+      into a row vector, we transpose it and take complex conjugates of its elements. This is analogous
+      to the rule of taking complex conjugates when converting back and forth between left-hand angle
+      brackets (``bras'') and right-hand ones (``kets''). In both contexts, the basic reason for the
+      complex conjugation is that we want the inner product of a vector with itself to be a positive real number.
+    }
+  })
+%>
+<% end_marg %>
+
+
 Because negative probabilities don't make sense, we require that the inner product of a wavefunction with itself
 always be positive,
 \begin{equation*}
@@ -1266,6 +1324,18 @@ rather than the more familiar property of the Euclidean dot product $u\cdot v=v\
 \begin{important}[Inner product]
 Wavefunctions come equipped with an inner product that has the properties described above.
 \end{important}
+
+<% marg(20) %>
+<% fig(
+  'vec-app-inner-product','',{'anonymous'=>true,'title'=>"Linear algebra application",
+  'text'=>
+    %q{%
+      The properties listed here for inner products in quantum mechanics are just standard rules
+      for inner products in linear algebra.
+    }
+  })
+%>
+<% end_marg %>
 
 If we're dealing with wavefunctions that are expressed as functions of position, then it's pretty clear
 how to define an appropriate inner product: $\langle u | v \rangle = \int u^*v \der x$.
