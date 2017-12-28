@@ -415,7 +415,8 @@ The set of polynomials $\{1,x\}$ is
 linearly independent, but the set $\{P,Q,R\}$, where $P=1$, $Q=1-x$, and $R=1+x$,
 is not, because $-2P+Q+R=0$.\index{linear independence} 
 
-A \emph{basis} for a vector space is a linearly independent set of
+A \emph{basis}\index{basis for a vector space}\label{lin-alg-basis}
+for a vector space is a linearly independent set of
 vectors, called basis vectors, such that any vector can be formed as a
 linear combination of basis vectors. The standard basis for vectors in
 two-dimensional space is $\{\hat{x},\hat{y}\}$, while a possible basis
@@ -1489,6 +1490,18 @@ any state of the system can be expressed as a sum of wavefunctions having defini
 observables. 
 \end{important}
 
+<% marg(30) %>
+<% fig(
+  'vec-app-basis','',{'anonymous'=>true,'title'=>"Linear algebra application",
+  'text'=>
+    %q{%
+      A basis is one of the most fundamental concepts in linear algebra (p.~\pageref{lin-alg-basis}).
+      We don't always need to choose a basis, and if we do, the choice is ours to make.
+    }
+  })
+%>
+<% end_marg %>
+
 The set of wavefunctions referred to above is called a basis. (The terminology
 comes from linear algebra.) If we
 require normalization and ignore the undetectable phase, then choosing
@@ -1674,24 +1687,29 @@ observables.
 <% end_sec('qm-structure-2') %>
 
 <% begin_sec("Applications to the two-state system",nil,'qm-2-state') %>
-<% begin_sec("An electron in a magnetic field",nil,'qm-electron-in-b') %>
+<% begin_sec("A proton in a magnetic field",nil,'qm-proton-in-b') %>
 As an application of the ideas discussed in section \ref{sec:qm-structure-2}, let us consider the example
-of an electron at rest in a uniform magnetic field. We will find that this very simple example
+of a proton at rest in a uniform magnetic field. We will find that this very simple example
 has surprising properties, and also that it throws light on much more general ideas than
-would be expected, given how specific the situation is.
+would be expected, given how specific the situation is. We discuss the proton because the
+physics is then the physics of nuclear magnetic resonance (NMR), which is the technology used
+for, among other things, medical MRI scans.
+\index{NMR (nuclear magnetic resonance)}\index{MRI (magnetic resonance imaging)|see {NMR}}
 
-Classically, the electron feels no magnetic force because it is at rest, and also because the
+% SN doesn't have the semiclassical description that LM has as eg:nmr.
+
+Classically, the proton feels no magnetic force because it is at rest, and also because the
 field is uniform (unlike the one in the Stern-Gerlach experiment). Therefore we expect it to stay
 at rest. Its energy is $-\vc{m}\cdot\vc{B}$, and for the reasons discussed 
 in sec.~\ref{subsec:g-factor}, p.~\pageref{subsec:g-factor},
 the magnetic dipole moment $\vc{m}$ is proportional
 to the spin angular momentum vector $\vc{s}$, so that the energy can be broken up into a sum of
-three terms as $ks_xB_x+ks_yB_y+ks_zB_z$, where $k$ is $-1/g$ times the electron's charge-to-mass ratio.
+three terms as $ks_xB_x+ks_yB_y+ks_zB_z$, where $k$ is $-1/g$ times the proton's charge-to-mass ratio.
 
 Quantum-mechanically, the components of the magnetic field will act
 like ordinary numbers (since the field is static, and we aren't trying
 to describe its dynamics quantum-mechanically), but the components of
-the angular momentum are observable properties of the electron, to be
+the angular momentum are observable properties of the proton, to be
 represented by operators.  There is not always a foolproof procedure
 for translating a classical expression into something
 quantum-mechanical, but in this example it seems sensible to imagine
@@ -1709,7 +1727,7 @@ magnetic field.
 \newcommand{\fmat}{\mathcal{f}} % lowercase script, requires package dutchcal, see simple.cls
 
 From our previous study of angular momentum in quantum mechanics, we
-know that a full description of our electron's angular momentum can be given by
+know that a full description of our proton's angular momentum can be given by
 specifying the magnitude of the angular momentum, which is a fixed $\hbar/2$,
 and its component along some arbitrarily chosen axis, say $z$. We have a state
 $|\uparrow\rangle$ which has eigenvalue $s_z=+\hbar/2$, and
@@ -1749,27 +1767,60 @@ We could go ahead and work out the eigenvalues of this operator by writing down 
 equation and solving it by brute force, but the result is likely to seem less mysterious if
 we instead apply the following physical argument.
 
-Although $\fmat$ lies at some point in the complex plane with some phase angle $\operatorname{arg}\fmat$,
-such phase angles in quantum mechanics are not directly observable.
-Since energies \emph{are} observable, it follows that the two eigenvalues of energy can
-only depend on the magnitude of $\fmat$, not on its phase. By rotational invariance
-(sec.~\ref{subsec:rotationalinvariance}, p.~\pageref{subsec:rotationalinvariance}), we also
-know that these energies can only depend on $|\vc{B}|=\sqrt{B_x^2+B_y^2+B_z^2}$, and in fact when the direction of the field is fixed
-they must be proportional to $|\vc{B}|$  (not to, e.g., the cube of the field). We have already interpreted $\emat$ as being
-essentially $B_z$, except for a constant of proportionality, so it follows from units that the
-energies must be of the form $E=\pm\sqrt{\emat^2+(\ldots)|\fmat|^2}=\pm\sqrt{\emat^2+(\ldots)\fmat^*\fmat}$,
-where $(\ldots)$ represents a universal unitless constant, which turns out to be 1. We
-therefore have for the energies the result
+<% marg() %>
+<% fig(
+  'nmr-applications','',{'anonymous'=>true,'title'=>"Application to MRI scans",
+  'text'=>
+    %q{%
+      In nuclear magnetic resonance (NMR), which is the technological basis for medical MRI scans,
+      a very large DC magnetic field, $\sim 3\ \zu{T}$, is applied to the sample using a superconducting magnet.
+      Protons in hydrogen atoms have their spin states split in energy by 
+      by $\Delta E=2\emat=k\hbar$. After $\sim1\ \sunit$, the protons reach a new thermal equilibrium state in which
+      the probability of $|\downarrow\rangle$ and $|\uparrow\rangle$ differ by $\sim10^{-5}$.
+
+      A brief radio-frequency pulse
+      is then applied at the frequency $\omega$ such that $\Delta E=\hbar\omega$, so that a radio photon
+      has the correct energy to cause a transition between the two spin states. Since there is a large
+      number of protons, and they interact with one another, their response can be described semiclassically.
+      The magnetization vector of the sample precesses in a complicated manner, which can be affected
+      by the polarization and duration of the pulse.
+
+      After the radio pulse has stopped, the protons return to equilibrium again, and this changing magnetic
+      field causes induced electric fields in a coil, which picks up a signal at the frequency $\omega$.
+      Spatial resolution for imaging is accomplished by adding a gradient to the magnetic field, amounting
+      to a few percent over a distance of one meter, so that $\omega$ has different values for different
+      points in space.
+    }
+  })
+%>
+<% end_marg %>
+
+Although $\fmat$ lies at some point in the complex plane with some
+phase angle $\operatorname{arg}\fmat$, such phase angles in quantum
+mechanics are not directly observable.  Since energies \emph{are}
+observable, it follows that the two eigenvalues of energy can only
+depend on the magnitude of $\fmat$, not on its phase. By rotational
+invariance (sec.~\ref{subsec:rotationalinvariance},
+p.~\pageref{subsec:rotationalinvariance}), we also know that these
+energies can only depend on $|\vc{B}|=\sqrt{B_x^2+B_y^2+B_z^2}$, and
+in fact when the direction of the field is fixed they must be
+proportional to $|\vc{B}|$ (not to, e.g., the cube of the field). We
+have already interpreted $\emat$ as being essentially $B_z$, except
+for a constant of proportionality, so it follows from units that the
+energies must be of the form
+$E=\pm\sqrt{\emat^2+(\ldots)|\fmat|^2}=\pm\sqrt{\emat^2+(\ldots)\fmat^*\fmat}$,
+where $(\ldots)$ represents a universal unitless constant, which turns
+out to be 1. We therefore have for the energies the result
 \begin{equation*}
   E=\pm\sqrt{\emat^2+\fmat^*\fmat}.
 \end{equation*}
 Note that our earlier result of $E=\pm \emat$ is recovered when $\fmat=0$.
 
-<% end_sec('qm-electron-in-b') %>
+<% end_sec('qm-proton-in-b') %>
 
 <% begin_sec("The ammonia molecule",nil,'qm-ammonia') %>
 
-I chose the example of the electron in a magnetic field in the preceding section for ease
+I chose the example of the proton in a magnetic field in the preceding section for ease
 of computation, but the treatment of the general case where $\fmat\ne0$ may not have seemed
 especially compelling, since we would always have the freedom to align our $z$ axis with the
 field, giving $\fmat=0$. But our results from that analysis are of much greater generality.
@@ -1804,7 +1855,7 @@ in this case is rather intricate, and depends on the Pauli exclusion principle a
 the fact that the hydrogen atoms are all identical, that there are three of them,
 and that their nuclei are fermions. See Townes and Schawlow, Microwave 
 Spectroscopy, 1955, pp.~69-71.} For a fixed angular momentum, we
-have a two-state system, as in section \ref{subsec:qm-electron-in-b}. 
+have a two-state system, as in section \ref{subsec:qm-proton-in-b}. 
 
 Classically, the molecule's moment of inertia is the same for
 orientations \subfigref{ammonia}{1} and \subfigref{ammonia}{2}, so we

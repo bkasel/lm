@@ -583,7 +583,7 @@ magnetic in another?
       By the right-hand rule (figure \figref{vbf} on page \pageref{fig:vbf}), the field must be toward the battery.
 \end{eg}
 
-\begin{eg}{Nervous-system effects during an MRI scan}\index{MRI scan}
+\begin{eg}{Nervous-system effects during an MRI scan}\index{NMR (nuclear magnetic resonance)}\index{MRI (magnetic resonance imaging)|see {NMR}}
 During an MRI scan of the head, the patient's nervous system
 is exposed to intense magnetic fields, and there are ions moving
 around in the nerves. The resulting forces on the ions can cause
