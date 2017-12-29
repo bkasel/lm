@@ -2825,13 +2825,13 @@ implies quantum mechanics, at least in this technical sense.
 
 <% begin_hw('ho-orthogonal') %>__incl(hw/ho-orthogonal)<% end_hw() %>
 
-<% begin_hw('trivial-observable') %>__incl(hw/trivial-observable)<% end_hw() %>
-
 <% begin_hw('nucleus-et-uncertainty') %>__incl(hw/nucleus-et-uncertainty)<% end_hw() %>
 
 <% begin_hw('ho-orthogonal2') %>__incl(hw/ho-orthogonal2)<% end_hw() %>
 
 <% begin_hw('trivial-nonhermitian') %>__incl(hw/trivial-nonhermitian)<% end_hw() %>
+
+\pagebreak
 
 <% begin_hw('ammonia') %>__incl(hw/ammonia)<% end_hw() %>
 
