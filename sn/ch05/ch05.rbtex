@@ -60,7 +60,7 @@ the direction of time's arrow --- why we can remember the past
 but not the future, and why it's easier to break Humpty Dumpty than
 to put him back together again.
 
-<% begin_sec("Pressure and Temperature",0) %>\index{pressure}\index{temperature}
+<% begin_sec("Pressure and temperature",0) %>\index{pressure}\index{temperature}
 When we heat an object, we speed up the mind-bogglingly
 complex random motion of its molecules. One method for
 taming complexity is the conservation laws, since they tell
@@ -544,7 +544,7 @@ and 58.
 <% end_marg %>
 
 <% end_sec() %>
-<% begin_sec("Absolute zero and the Kelvin scale") %>
+<% begin_sec("Absolute zero and the kelvin scale") %>
 We find that if we extrapolate a graph of volume versus
 temperature, the volume becomes zero at nearly the same
 temperature for all gases: $-273\degcunit$. Real gases will all
@@ -646,7 +646,7 @@ compare an elephant to a shrew?
 \end{dq}
 
 <% end_sec %>
-<% begin_sec("Microscopic Description of an Ideal Gas",nil,'microscopicidealgas') %>
+<% begin_sec("Microscopic description of an ideal gas",nil,'microscopicidealgas') %>
 <% begin_sec("Evidence for the kinetic theory") %>
 Why does matter have the thermal properties it does? The
 basic answer must come from the fact that matter is made of
@@ -851,7 +851,7 @@ volume of 1 liter. (This could be a piston, or a balloon.)
 
 \pagebreak
 
-<% begin_sec("Entropy as a Macroscopic Quantity") %>
+<% begin_sec("Entropy as a macroscopic quantity") %>
 <% begin_sec("Efficiency and grades of energy",0) %>
 Some forms of energy are more convenient than others in
 certain situations. You can't run a spring-powered
@@ -1354,7 +1354,7 @@ which ones keep the same entropy. During which of the four strokes do these chan
 
 <% end_sec() %>
 <% end_sec() %>
-<% begin_sec("Entropy as a Microscopic Quantity",nil,'mic-entropy') %>
+<% begin_sec("Entropy as a microscopic quantity",nil,'mic-entropy') %>
 <% begin_sec("A microscopic view of entropy") %>
 To understand why the second law of thermodynamics is always true, we need
 to see what entropy really means at the microscopic level. An example that is
@@ -1946,7 +1946,7 @@ therefore have
 <% end_sec() %>
 
 <% end_sec() %>
-<% begin_sec("The arrow of time, or ``This way to the Big Bang''") %>\index{Big Bang!and the arrow of time}
+<% begin_sec("The arrow of time, or ``this way to the Big Bang''") %>\index{Big Bang!and the arrow of time}
 Now that we have a microscopic understanding of entropy, what does that tell us about
 the second law of thermodynamics? The second law
 defines a forward direction to time, ``time's arrow.'' The microscopic
@@ -2105,7 +2105,7 @@ mechanics in the 1920's would have done the same for the third law.
 
 <% end_sec() %>
 <% end_sec() %>
-<% begin_sec("More about Heat Engines",0) %>
+<% begin_sec("More about heat engines",0) %>
 
 So far, the only heat engine we've discussed in any detail has been a fictitious Carnot engine,
 with a monoatomic ideal gas as its working gas. As a more realistic example,

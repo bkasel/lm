@@ -11,7 +11,7 @@
   )
 %>
 
-<% begin_sec("Rules of Randomness",0,'randomness') %>
+<% begin_sec("Rules of randomness",0,'randomness') %>
 \epigraphlong{Given for one instant an intelligence which could comprehend
 all the forces by which nature is animated and the
 respective positions of the things which compose it...nothing
@@ -937,7 +937,7 @@ which is, as expected, longer than one half-life.
 %>
 <% end_sec() %>
 <% end_sec() %>
-<% begin_sec("Light as a Particle",0,'light-as-a-particle') %>
+<% begin_sec("Light as a particle",0,'light-as-a-particle') %>
 
 \epigraph{The only thing that interferes with my learning is my 
 education.}{Albert \index{Einstein, Albert}Einstein}
@@ -1514,7 +1514,7 @@ $P\:=\:\int D\der x \der y\der z$.
 \inlinefignocaption{melting-witch}
 <% end_sec() %>
 <% end_sec() %>
-<% begin_sec("Matter as a Wave",0,'matter-as-a-wave') %>\index{matter!as a wave}
+<% begin_sec("Matter as a wave",0,'matter-as-a-wave') %>\index{matter!as a wave}
 
 \epigraphlong{[In] a few minutes I shall be all melted... I have been
 wicked in my day, but I never thought a little girl like you
@@ -3126,7 +3126,7 @@ of finding the electron in one side or the other? Does this obey the corresponde
 %>
 <% end_sec() %>
 <% end_sec %>
-<% begin_sec("The Atom",0,'atom') %>
+<% begin_sec("The atom",0,'atom') %>
 You can learn a lot by taking a car engine apart, but you
 will have learned a lot more if you can put it all back
 together again and make it run. Half the job of reductionism

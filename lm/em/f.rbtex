@@ -1351,7 +1351,7 @@ has energy $\mygamma E$ in a frame moving at velocity $v$ relative to the first 
 it follows that even an object at rest has some nonzero energy. We define this energy-at-rest as its mass,
 i.e., $E=m$ in units where $c=1$.
 <% end_sec('rel-energy-proof') %>
-<% begin_sec("$p=m\\mygamma v$",nil,'rel-momentum-proof') %>\label{rel-momentum-proof}
+<% begin_sec("$P=m\\mygamma v$",nil,'rel-momentum-proof') %>\label{rel-momentum-proof}
 Defining an object's energy-at-rest as its mass only works if this same mass is also a valid measure of inertia.
 More specifically, we should be able to use this mass
 to construct a self-consistent logical system in which (1) momentum is conserved, (2) conservation of momentum

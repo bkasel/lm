@@ -64,7 +64,7 @@
         Cosmic Stories in 1941, you now have enough technical
         background to understand what a ``force field'' really is.
 
-<% begin_sec("The Stage and the Actors",4) %>
+<% begin_sec("The stage and the actors",4) %>
 <% begin_sec("Newton's instantaneous action at a distance") %>
 The Newtonian picture has particles interacting with each other by exerting
 forces from a distance, and these forces are imagined to occur without any time
@@ -1140,7 +1140,7 @@ the gravitational energy of two equal masses.
 
 <% end_sec() %> % Calculating energy in fields
 
-<% begin_sec("Voltage for Nonuniform Fields",4,'v-e-nonuniform',{'calc'=>true}) %>
+<% begin_sec("Voltage for nonuniform fields",4,'v-e-nonuniform',{'calc'=>true}) %>
 
 The calculus-savvy reader will have no difficulty generalizing
 the field-voltage relationship to the case of a varying
@@ -1212,7 +1212,7 @@ Show that you can recover the expression for the field of a
 %>
 
 <% end_sec() %>
-<% begin_sec("Two or Three Dimensions",0) %>
+<% begin_sec("Two or three dimensions",0) %>
 The topographical map shown in figure \figref{topo-map} suggests a good
 way to visualize the relationship between field and voltage
 in two dimensions. Each contour on the map is a line of
@@ -1435,7 +1435,7 @@ an \emph{external} set of charges cannot form this kind of inward-pointing pincu
 law would require there to be some \emph{negative} charge \emph{inside} the pincusion.
 \end{eg}
 <% end_sec() %> % Field lines and Gauss's law
-<% begin_sec("Electric Field of a Continuous Charge Distribution",nil,'',{'optional'=>true,'calc'=>true}) %>
+<% begin_sec("Electric field of a continuous charge distribution",nil,'',{'optional'=>true,'calc'=>true}) %>
 
 Charge really comes in discrete chunks, but often it is
 mathematically convenient to treat a set of charges as if

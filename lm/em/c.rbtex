@@ -20,7 +20,7 @@ even less exotic than that. Every time you stick a magnet to your refrigerator, 
 relativity. The title of this chapter is ``Electromagnetism,'' but we'll start out by digging a little deeper
 into relativity as preparation for understanding what magnetism is and where it comes from.
 
-<% begin_sec("Relativistic distortion of Space and Time") %>\label{sec:x-t-distortion}
+<% begin_sec("Relativistic distortion of space and time") %>\label{sec:x-t-distortion}
 <% begin_sec("Time distortion arising from motion and gravity") %>
 Let's refer back to the results of the Hafele-Keating experiment described on
 p.~\pageref{hafele-keating}. Hafele and Keating were testing specific quantitative predictions of relativity, and they verified them to within
@@ -857,7 +857,7 @@ the person on the left to decide to pick up the hammer and use it?
 
 \vfill
 
-<% begin_sec("Magnetic Interactions",4,'magnetic-interactions') %>
+<% begin_sec("Magnetic interactions",4,'magnetic-interactions') %>
         \epigraph{Think not that I am come to destroy the law, or the prophets:
         I am not come to destroy, but to fulfill.}{Matthew 5:17}
 

@@ -1092,7 +1092,7 @@ What would the car's motion be like in the * frame of reference if it
 
 <% end_sec() %>
 <% end_sec() %>
-<% begin_sec("Numerical Techniques",4) %>\label{numsection}
+<% begin_sec("Numerical techniques",4) %>\label{numsection}
 
         Engineering majors are a majority of the students in the kind of physics
         course for which this book is designed, so most likely you fall into that category.
@@ -1358,7 +1358,7 @@ def timeb(a,b,c1,c2,n):
         shown in the figure came from a straightforward extension of the same program.
 
 <% end_sec() %>
-<% begin_sec("Gravitational Phenomena",4) %>\label{gravphenomenasection}
+<% begin_sec("Gravitational phenomena",4) %>\label{gravphenomenasection}
         Cruise your radio dial today and try to find any popular song that would
         have been imaginable without Louis Armstrong. By introducing solo
         improvisation into jazz, Armstrong took apart the jigsaw puzzle of
@@ -2092,7 +2092,7 @@ def tmoon(vi,ri,rf,n):
         \end{eg}  
 
 <% end_sec() %>
-<% begin_sec("Evidence for Repulsive Gravity",nil,'',{'optional'=>true}) %>
+<% begin_sec("Evidence for repulsive gravity",nil,'',{'optional'=>true}) %>
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 __incl(text/dark_energy)
@@ -2100,7 +2100,7 @@ __incl(text/dark_energy)
 
 <% end_sec() %>
 <% end_sec() %>
-<% begin_sec("Atomic Phenomena") %>\label{atomicphenomenasection}
+<% begin_sec("Atomic phenomena") %>\label{atomicphenomenasection}
         Variety is the spice of life, not of science. So far this
         chapter has focused on heat energy, kinetic energy, and
         gravitational energy, but it might seem that in addition to

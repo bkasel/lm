@@ -454,7 +454,7 @@ restricted to low-power applications.\index{op-amp}\index{operational amplifier 
 
  % ------------------------------------------ 
 <% end_sec() %>
-<% begin_sec("Voltage and Current",0) %>
+<% begin_sec("Voltage and current",0) %>
  % 
 What is physically happening in one of these oscillating
 circuits? Let's first look at the mechanical case, and then

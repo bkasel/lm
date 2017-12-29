@@ -22,11 +22,11 @@ information to NASA. Conversions are important!},
 %>
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-<% begin_sec('Introduction and Review') %>
+<% begin_sec("Introduction and review") %>
   __incl(text/1_intro_and_review)
 <% end_sec %> % end intro and review
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-<% begin_sec('Scaling and Order-of-Magnitude Estimates',4,'scaling') %>
+<% begin_sec("Scaling and order-of-magnitude estimates",4,'scaling') %>
   __incl(text/2_scaling_and_estimation)
 <% end_sec %>
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

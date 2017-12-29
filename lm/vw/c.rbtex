@@ -75,7 +75,7 @@ formed, (b). This effect cascades outward, producing ripples.
   )
 %>
 
-<% begin_sec("Wave Motion",0) %>
+<% begin_sec("Wave motion",0) %>
 
 There are three main ways in which wave motion differs from
 the motion of objects made of matter.
@@ -380,7 +380,7 @@ would the energy of the wave fall off with distance?
 
 <% end_sec() %>
 <% end_sec() %>
-<% begin_sec("Waves on a String",3,'waves-on-a-string') %>
+<% begin_sec("Waves on a string",3,'waves-on-a-string') %>
 
 So far you have learned some counterintuitive things about
 the behavior of waves, but intuition can be trained. The
@@ -637,7 +637,7 @@ in lead to compare with their speed in aluminum?
   ) %>
 <% end_sec() %>
 <% end_sec() %>
-<% begin_sec("Sound and Light Waves",3) %>\index{sound}\index{light}
+<% begin_sec("Sound and light waves",3) %>\index{sound}\index{light}
 
 <% begin_sec("Sound waves") %>
 
@@ -759,7 +759,7 @@ explained as a wave pattern made up of electrical and magnetic fields.
 
 <% end_sec() %>
 <% end_sec() %>
-<% begin_sec("Periodic Waves",4) %>\index{wave!periodic}
+<% begin_sec("Periodic waves",4) %>\index{wave!periodic}
 
 <% begin_sec("Period and frequency of a periodic wave") %>
 
@@ -1037,7 +1037,7 @@ like if they were sound waves?
 
 <% end_sec() %>
 <% end_sec() %>
-<% begin_sec("The Doppler Effect",0,'doppler') %>
+<% begin_sec("The Doppler effect",0,'doppler') %>
 <% marg(3) %>
 <%
   fig(
@@ -1300,7 +1300,7 @@ direct evidence of the red shifts and the cosmic microwave
 background radiation.
 
 <% end_sec() %>
-<% begin_sec("What the big bang is not") %>
+<% begin_sec("What the Big Bang is not") %>
 
 Finally it should be noted what the Big Bang theory is not.
 It is not an explanation of \emph{why} the universe exists.

@@ -193,7 +193,7 @@ where $k$ is the spring constant, and $m$ is the mass that is vibrating.
 %>
 
 <% end_sec() %>
-<% begin_sec("Wave Motion",0) %>
+<% begin_sec("Wave motion",0) %>
 
 There are three main ways in which wave motion differs from
 the motion of objects made of matter.
@@ -505,7 +505,7 @@ would the energy of the wave fall off with distance?
 
 <% end_sec() %>
 <% end_sec() %>
-<% begin_sec("Sound and Light Waves",3) %>\index{sound}\index{light}
+<% begin_sec("Sound and light waves",3) %>\index{sound}\index{light}
 
 <% begin_sec("Sound waves") %>
 
@@ -614,7 +614,7 @@ explained as a wave pattern made up of electrical and magnetic fields.
 
 <% end_sec() %>
 <% end_sec() %>
-<% begin_sec("Periodic Waves",3) %>
+<% begin_sec("Periodic waves",3) %>
 
 <% begin_sec("Period and frequency of a periodic wave") %>
 

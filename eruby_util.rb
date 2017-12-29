@@ -1286,12 +1286,22 @@ end
 
 # The following allows me to control what's titlecase and what's not, simply by changing book.config. Since text can be shared between books,
 # and the same title may be a section in LM but a subsection in SN, this needs to be done on the fly.
+# As of Dec. 2017, I've switched all books to not using titlecase anywhere. The source-code files now
+# all have non-titlecase in all begin_secs. Some chapter titles still have titlecase in the source
+# files, but that gets converted to non-titlecase here. We now throw a warning if alter_titlecase
+# actually produces a change other than removing titlecase from a chapter title.
 def alter_titlecase(title,section_level)
+  result = title
+  warn = false
   if section_level>=$config['titlecase_above'] then
-    return remove_titlecase(title) 
+    result = remove_titlecase(title) 
+    warn = (result != title) && section_level>0
   else
-    return add_titlecase(title)
+    result = add_titlecase(title)
+    warn = (result != title)
   end
+  if warn then $stderr.print "warning from alter_titlecase in eruby_util.rb: title #{title} has wrong case, was automatically fixed; ch=#{$ch}\n" end
+  return result
 end
 
 def add_titlecase(title)

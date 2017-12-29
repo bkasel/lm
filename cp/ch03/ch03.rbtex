@@ -11,7 +11,7 @@
   )
 %>
 
-<% begin_sec("Angular Momentum",0) %>
+<% begin_sec("Angular momentum",0) %>
 
 \index{angular momentum!introduction to}
 
@@ -424,7 +424,7 @@ rotate in opposite directions. Why is this a good design?
 
 <% end_sec() %>
 <% end_sec() %>
-<% begin_sec("Noether's Theorem for Angular Momentum",0,'noether-ang-mom') %>\index{Noether's theorem!for angular momentum}
+<% begin_sec("Noether's theorem for angular momentum",0,'noether-ang-mom') %>\index{Noether's theorem!for angular momentum}
 
 Suppose a sunless planet is sitting all by itself in interstellar space,
 not rotating. Then, one day, it decides to start spinning. This doesn't

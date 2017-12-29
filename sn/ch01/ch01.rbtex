@@ -312,7 +312,7 @@ $\Delta t=0$ and $\Delta x\ne0$?
 
 <% end_sec() %>
 <% end_sec() %>
-<% begin_sec("Equivalence of Gravitational and Inertial Mass") %>\label{gravinersection}
+<% begin_sec("Equivalence of gravitational and inertial mass") %>\label{gravinersection}
         We find experimentally that both gravitational and inertial mass are conserved to a
         high degree of precision for a great number of processes, including chemical
         reactions, melting, boiling, soaking up water with a sponge, and rotting of meat
@@ -481,7 +481,7 @@ $\Delta t=0$ and $\Delta x\ne0$?
         turns out to be due to a defect in your experiment, then you've made a fool of yourself.
         
 <% end_sec() %>
-<% begin_sec("Galilean Relativity",nil,'galileanrelativity') %>
+<% begin_sec("Galilean relativity",nil,'galileanrelativity') %>
 <% marg() %>
 <%
   fig(
@@ -855,7 +855,7 @@ The figure shows a bottle of beer sitting on a table in
 
 <% end_sec() %>
 <% end_sec() %>
-<% begin_sec("A Preview of Some Modern Physics",0,'modernmasspreview') %>
+<% begin_sec("A preview of some modern physics",0,'modernmasspreview') %>
         ``Mommy, why do you and Daddy have to go to work?'' ``To make money, sweetie-pie.''
         ``Why do we need money?'' ``To buy food.'' ``Why does food cost money?''
         When small children ask a chain of ``why'' questions like this, it usually isn't

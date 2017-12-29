@@ -13,23 +13,23 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-<% begin_sec('The Ray Model of Light',0,'ray-model') %>
+<% begin_sec("The ray model of light",0,'ray-model') %>
   __incl(text/1_ray_model)
 <% end_sec %>
 
-<% begin_sec('Images by Reflection',4,'images-1') %>
+<% begin_sec("Images by reflection",4,'images-1') %>
 __incl(text/2_images_by_reflection)
 <% end_sec %>
 
-<% begin_sec('Images, Quantitatively',4,'images-2') %>
+<% begin_sec("Images, quantitatively",4,'images-2') %>
 __incl(text/3_images_quantitatively)
 <% end_sec %>
 
-<% begin_sec('Refraction',4,'refraction') %>
+<% begin_sec("Refraction",4,'refraction') %>
 __incl(text/4_refraction)
 <% end_sec %>
 
-<% begin_sec('Wave Optics',4,'wave-optics') %>
+<% begin_sec("Wave optics",4,'wave-optics') %>
 __incl(text/5_wave_optics)
 <% end_sec %>
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

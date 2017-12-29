@@ -13,7 +13,7 @@
 
         \epigraph{Think not that I am come to destroy the law, or the prophets:
         I am not come to destroy, but to fulfill.}{Matthew 5:17}
-<% begin_sec("More About the Magnetic Field",0) %>
+<% begin_sec("More about the magnetic field",0) %>
         <% begin_sec("Magnetic forces") %>
         In this chapter, I assume you know a few basic ideas about Einstein's theory of relativity,
         as described in sections \ref{sec:time-not-absolute} and \ref{sec:x-t-distortion}. 
@@ -880,7 +880,7 @@ Imagine that you establish
  % 
 <% end_sec() %>
 <% end_sec() %>
-<% begin_sec("Magnetic Fields by Superposition",4) %>
+<% begin_sec("Magnetic fields by superposition",4) %>
 <% begin_sec("Superposition of straight wires",nil,'superposwires') %>
         In chapter \ref{ch:efield}, one of the most important goals was to learn
         how to calculate the electric field for a given charge distribution.
@@ -1635,7 +1635,7 @@ sec.~\ref{sec:stern-gerlach}, p.~\pageref{sec:stern-gerlach}.
 <% end_sec() %>
 <% end_sec() %>
 <% end_sec %>
-<% begin_sec("Magnetic Fields by Amp\\\`ere's Law",nil,'ampere') %>
+<% begin_sec("Magnetic fields by amp\\\`ere's law",nil,'ampere') %>
 <% begin_sec("Amp\\\`ere's law") %>
         As discussed at the end of subsection \ref{subsec:biot}, 
         our goal now is to find an equation
@@ -1952,7 +1952,7 @@ You know what to do.
  % 
 <% end_sec() %>
 <% end_sec() %>
-<% begin_sec("Amp\\\`{e}re's Law in Differential Form (optional)",4,'amperediff') %>
+<% begin_sec("Amp\\\`{e}re's law in differential form (optional)",4,'amperediff') %>
 <% begin_sec("The curl operator") %>
         The differential form of Gauss' law is more physically satisfying than the integral
         form, because it relates the charges that are present at some point to the
@@ -2306,7 +2306,7 @@ You know what to do.
 <% end_sec() %>
 <% end_sec() %>
 <% end_sec %>
-<% begin_sec("Induced Electric Fields",4,'induction') %>
+<% begin_sec("Induced electric fields",4,'induction') %>
 <% begin_sec("Faraday's experiment") %>
         Nature is simple, but the simplicity may not become evident until a hundred
         years after the discovery of some new piece of physics. We've already seen,
@@ -2903,7 +2903,7 @@ Check that the units in Faraday's law work out. An easy way to
  % 
 <% end_sec() %>
 <% end_sec() %>
-<% begin_sec("Maxwell's Equations",4,'maxwell') %>\index{Maxwell's equations}
+<% begin_sec("Maxwell's equations",4,'maxwell') %>\index{Maxwell's equations}
 <% begin_sec("Induced magnetic fields") %>
         We are almost, but not quite, done figuring out the complete set of physical
         laws, called Maxwell's equations, governing electricity and magnetism. We are only
@@ -3649,7 +3649,7 @@ frame of reference moving along with the wave.
 
 
 
-<% begin_sec("Electromagnetic Properties of Materials",4) %>
+<% begin_sec("Electromagnetic properties of materials",4) %>
 
 Different types of matter have a variety of useful electrical and magnetic properties. Some are conductors, and some are insulators.
 Some, like iron and nickel, can be magnetized, while others have useful electrical properties, e.g., dielectrics, discussed

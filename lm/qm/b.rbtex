@@ -53,7 +53,7 @@ is not at all what ultraviolet light does when it passes
 through the ozone layer, or the layer would offer no protection at all!
 
 
-<% begin_sec("Evidence for Light as a Particle",0,'photon-evidence') %>
+<% begin_sec("Evidence for light as a particle",0,'photon-evidence') %>
 
 <%
   fig(
@@ -187,7 +187,7 @@ observations and concepts discussed in this section.
 \end{dq}
 
 <% end_sec() %>
-<% begin_sec("How Much Light Is One Photon?",3,'how-much-light-is-one-photon') %>
+<% begin_sec("How much light is one photon?",3,'how-much-light-is-one-photon') %>
 
 <% begin_sec("The photoelectric effect") %>\index{photoelectric effect}
 
@@ -511,14 +511,14 @@ substance with a different index of refraction?
 <% end_sec() %>
 <% end_sec() %>
 
-<% begin_sec("Wave-Particle Duality",3,'wave-particle-duality') %>
+<% begin_sec("Wave-particle duality",3,'wave-particle-duality') %>
 __incl(text/wave-particle-duality)
 <% end_sec('wave-particle-duality') %>
 
 __incl(text/nonlocality)          
 
 
-<% begin_sec("Photons in Three Dimensions",3) %>\index{photon!in three dimensions}
+<% begin_sec("Photons in three dimensions",3) %>\index{photon!in three dimensions}
 
 Up until now I've been sneaky and avoided a full discussion
 of the three-dimensional aspects of the probability

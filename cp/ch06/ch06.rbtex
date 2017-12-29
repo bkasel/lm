@@ -13,7 +13,7 @@
 %>
 \label{sunspotphoto}
 
-<% begin_sec("Farewell to the Mechanical Universe",0) %>\index{field}
+<% begin_sec("Farewell to the mechanical universe",0) %>\index{field}
 
 As late as 1900, physicists generally conceived of the universe in mechanical terms.
 Newton had revealed the solar system as a collection of material objects interacting

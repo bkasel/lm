@@ -11,7 +11,7 @@
   )
 %>
 
-<% begin_sec("Angular Momentum in Two Dimensions",0,'ang-mom-2d') %>
+<% begin_sec("Angular momentum in two dimensions",0,'ang-mom-2d') %>
   <% begin_sec("Angular momentum",nil,'ang-mom') %>
 ``Sure, and maybe the sun won't come up tomorrow.'' Of
 course, the sun only appears to go up and down because the
@@ -507,7 +507,7 @@ constant if we consider the center to be the axis of rotation?
 \end{dq}
 
   <% end_sec('ang-mom-planetary') %>
-  <% begin_sec("Two Theorems About Angular Momentum",nil,'ang-mom-theorems') %>
+  <% begin_sec("Two theorems about angular momentum",nil,'ang-mom-theorems') %>
 With plain old momentum, $\vc{p}$, we had the freedom to work in
 any inertial frame of reference we liked. The same object
 could have different values of momentum in two different

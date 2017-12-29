@@ -38,7 +38,7 @@ is just barely feasible with their fastest machines. The
 goal of this chapter is to give a gentle and visually
 oriented guide to some of the simpler results about atoms.
 
-<% begin_sec("Classifying States",3) %>
+<% begin_sec("Classifying states",3) %>
 
 We'll focus our attention first on the simplest atom,
 \index{hydrogen atom!classification of states}hydrogen, with
@@ -128,7 +128,7 @@ on page \pageref{ch:qm-atom}?
 \index{angular momentum!and the uncertainty principle}\index{angular
 momentum!in three dimensions}
 <% end_sec() %>
-<% begin_sec("Angular Momentum in Three Dimensions",0) %>
+<% begin_sec("Angular momentum in three dimensions",0) %>
 
 Up until now we've only worked with angular momentum in the
 context of rotation in a plane, for which we could simply
@@ -251,7 +251,7 @@ Both are quantized in units of $\hbar$.
 
 <% end_sec() %>
 <% end_sec() %>
-<% begin_sec("The Hydrogen Atom",nil,'hydrogen') %>
+<% begin_sec("The hydrogen atom",nil,'hydrogen') %>
 \index{hydrogen atom}\index{hydrogen atom!L quantum number}\index{hydrogen atom!n quantum number}
 
 Deriving the wavefunctions of the states of the hydrogen
@@ -409,11 +409,11 @@ cloud in of the $n=2$, $\ell=1$ state is split into two parts.
 \end{dq}
 
 <% end_sec() %>
-<% begin_sec("Energies of States in Hydrogen",4,'hydrogen-energies',{'optional'=>true}) %>
+<% begin_sec("Energies of states in hydrogen",4,'hydrogen-energies',{'optional'=>true}) %>
 __incl(text/h-energy)
 
 <% end_sec() %>
-<% begin_sec("Electron Spin",3) %>
+<% begin_sec("Electron spin",3) %>
 \index{spin}\index{electron!spin of}\index{spin!electron's}
 
 It's disconcerting to the novice ping-pong player to
@@ -495,7 +495,7 @@ doubling of the numbers of states:
 \end{tabular}
 
 <% end_sec() %>
-<% begin_sec("Atoms With More Than One Electron",3) %>
+<% begin_sec("Atoms with more than one electron",3) %>
 \index{atoms!with many electrons}
 
 What about other atoms besides hydrogen? It would seem that

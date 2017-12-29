@@ -49,7 +49,7 @@
         }
 \normalsize\normalfont
         
-<% begin_sec("Fields of Force",0) %>\index{force!fields of}\index{fields of force}
+<% begin_sec("Fields of force",0) %>\index{force!fields of}\index{fields of force}
 
         Cutting-edge science readily infiltrates popular culture,
         though sometimes in garbled form. The Newtonian imagination
@@ -897,7 +897,7 @@ ions shown in the figure.
  % ------------------------------------------------------------------------------------ 
 <% end_sec() %>
 <% end_sec %>
-<% begin_sec("Voltage Related to Field") %>%
+<% begin_sec("Voltage related to field") %>%
         \index{electric field!related to voltage}\index{voltage!related to electric field}
         <% begin_sec("One dimension") %>
         Voltage is electrical energy per unit charge, and electric
@@ -1144,7 +1144,7 @@ Imagine that figure \figref{topo} represents voltage rather
 
 <% end_sec() %>
 <% end_sec() %>
-<% begin_sec("Fields by Superposition",4) %>
+<% begin_sec("Fields by superposition",4) %>
 <% begin_sec("Electric field of a continuous charge distribution") %>
 
         Charge really comes in discrete chunks, but often it is
@@ -1608,7 +1608,7 @@ Imagine that figure \figref{topo} represents voltage rather
 
 <% end_sec() %>
 <% end_sec() %>
-<% begin_sec("Energy in Fields",nil,'fieldenergy') %>
+<% begin_sec("Energy in fields",nil,'fieldenergy') %>
         <% begin_sec("Electric field energy") %>
         Fields possess energy, as argued on page \pageref{fieldenergy}, but how much energy?
         The answer can be found using the following elegant approach. We assume that the electric energy
@@ -2015,7 +2015,7 @@ Show that the units in the preceding example really
  % 
 <% end_sec() %>
 <% end_sec() %>
-<% begin_sec("LRC Circuits",4) %>
+<% begin_sec("Lrc circuits",4) %>
 The long road leading from the light bulb to the computer
 started with one very important step: the introduction of
 feedback into electronic circuits. Although the principle of
@@ -2923,7 +2923,7 @@ $RC$ time constant?
  % ------------------------------------------ 
 <% end_sec() %>
 <% end_sec() %>
-<% begin_sec("Review of Complex Numbers",nil,'complex-numbers') %>\index{complex numbers}
+<% begin_sec("Review of complex numbers",nil,'complex-numbers') %>\index{complex numbers}
 For a more detailed treatment of complex numbers, see ch. 3 of
 James Nearing's free book at \\
 http://www.physics.miami.edu/nearing/mathmethods/.
@@ -3507,7 +3507,7 @@ the maximum. Summarizing, we have
 for a resistor.
 
 <% end_sec() %>
-<% begin_sec("RMS quantities") %>
+<% begin_sec("Rms quantities") %>
 Suppose one day the electric company decided to start supplying your electricity as
 DC rather than AC. How would the DC voltage have to be related to the amplitude
 $V_\zu{o}$ of the AC voltage previously used if they wanted your lightbulbs to
@@ -3575,7 +3575,7 @@ over one cycle is zero. Again, we're merely storing energy temporarily in a fiel
  % 
 <% end_sec() %>
 <% end_sec() %>
-<% begin_sec("Impedance Matching") %>\index{impedance matching}
+<% begin_sec("Impedance matching") %>\index{impedance matching}
 <% marg(0) %>
 <%
   fig(
@@ -3747,7 +3747,7 @@ compensate for the mismatch.
  % 
 <% end_sec() %>
 <% end_sec() %>
-<% begin_sec("Fields by Gauss' Law",4,'gauss') %>
+<% begin_sec("Fields by Gauss' law",4,'gauss') %>
 <% begin_sec("Gauss' law") %>
 The flea of subsection \ref{subsec:surfacefield} had a long and illustrious
 scientific career, and we're now going to pick up her story where we left off.
@@ -4354,7 +4354,7 @@ any charged surface, regardless of the existence of other charges nearby.\label{
 <% end_sec() %>
 <% end_sec() %>
 <% end_sec %>
-<% begin_sec("Gauss' Law in Differential Form",4,'gaussdiff') %>
+<% begin_sec("Gauss' law in differential form",4,'gaussdiff') %>
 Gauss' law is a bit spooky. It relates the field on the Gaussian surface
 to the charges inside the surface. What if the charges have been moving
 around, and the field at the surface right now is the one that was created

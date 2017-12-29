@@ -46,7 +46,7 @@ authorities refuse to prosecute, because no crime was committed. You're
 convinced of the need for a new law against vandalism. Similarly, the story of
 Jen Yu and Iron Arm Lu shows that we need a new conservation law.
 
-<% begin_sec("Translation Symmetry",0,'translation-symmetry') %>\index{symmetry!translation}
+<% begin_sec("Translation symmetry",0,'translation-symmetry') %>\index{symmetry!translation}
 The most fundamental laws of physics are conservation laws, and Noether's theorem
 tells us that conservation laws are the way they are because of symmetry. Time
 symmetry is responsible for conservation of energy, but time is like a
@@ -101,7 +101,7 @@ whole solar system is in motion. To him, the earth's motion around our sun looks
 corkscrew, since the sun is itself moving.
 
 <% end_sec() %>
-<% begin_sec("The Principle of Inertia",0,'principle-of-inertia') %>\index{inertia!principle of}
+<% begin_sec("The principle of inertia",0,'principle-of-inertia') %>\index{inertia!principle of}
 <% begin_sec("Symmetry and inertia") %>
 This story shows that translation symmetry is closely related to the relative nature
 of motion, as expressed by the principle of inertia. Riding in a train on a long, straight track at constant speed, how can you even
@@ -942,7 +942,7 @@ with the asphalt.\index{frame of reference!noninertial}
 <% end_sec() %>
 <% end_sec() %>
 <% end_sec('momentum') %>\label{end-of-momentum-section}
-<% begin_sec("Newton's Triumph",0) %>
+<% begin_sec("Newton's triumph",0) %>
 
 Isaac Newton's greatest triumph was his explanation of the motion of the planets
 in terms of universal physical laws. It was a tremendous psychological revolution:

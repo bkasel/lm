@@ -52,7 +52,7 @@ whole problem is solved by applying the same quantum
 concepts to electrons that we have already used for photons.
 
 
-<% begin_sec("Electrons as Waves",0) %>\index{electron!as a wave}
+<% begin_sec("Electrons as waves",0) %>\index{electron!as a wave}
 
 We started our journey into quantum physics by studying the
 random behavior of \emph{matter} in radioactive decay, and
@@ -329,7 +329,7 @@ separate.)
 
 <% end_sec() %>
 <% end_sec() %>
-<% begin_sec("Dispersive Waves",nil,'dispersive-waves',{'optional'=>true,'calc'=>true}) %>\index{wave!dispersive}
+<% begin_sec("Dispersive waves",nil,'dispersive-waves',{'optional'=>true,'calc'=>true}) %>\index{wave!dispersive}
 
 A colleague of mine who teaches chemistry loves to tell the
 story about an exceptionally bright student who, when told
@@ -481,7 +481,7 @@ that differs by a factor of two from what we would have expected,
 but the phase velocity is not the physically important thing.
 
 <% end_sec() %>
-<% begin_sec("Bound States",0) %>\index{states!bound}\index{bound states}
+<% begin_sec("Bound states",0) %>\index{states!bound}\index{bound states}
 
 Electrons are at their most interesting when they're in
 atoms, that is, when they are bound within a small region of
@@ -672,7 +672,7 @@ that have similar structures, e.g., they are all spherical in shape.)
 \end{dq}
 
 <% end_sec() %>
-<% begin_sec("The Uncertainty Principle",3,'uncertainty-principle') %>
+<% begin_sec("The uncertainty principle",3,'uncertainty-principle') %>
 
 \index{Heisenberg, Werner!uncertainty principle}\index{Heisenberg uncertainty principle}\index{uncertainty principle}
 
@@ -872,7 +872,7 @@ measured with perfect accuracy if we don't care about the other?
 \end{dq}
 
 <% end_sec() %>
-<% begin_sec("Electrons in Electric Fields",0,'e-in-e-fields') %>
+<% begin_sec("Electrons in electric fields",0,'e-in-e-fields') %>
 
 
 <% marg(0) %>
@@ -968,7 +968,7 @@ Tunneling is discussed in more detail in the next section.
 
 <% end_sec() %>
 <% end_sec() %>
-<% begin_sec("The Schr\\\"odinger Equation",nil,'schrodinger',{'optional'=>true,'calc'=>true}) %>
+<% begin_sec("The schr\\\"odinger Equation",nil,'schrodinger',{'optional'=>true,'calc'=>true}) %>
 \index{Schr\"odinger equation}
 
 In section \ref{sec:e-in-e-fields} we were able to apply conservation

@@ -12,7 +12,7 @@
 %>
 
         \inlinefignocaption{lightning}
-<% begin_sec("The Electric Glue",0,'electric-glue') %>
+<% begin_sec("The electric glue",0,'electric-glue') %>
         \epigraph{Where the telescope ends, the microscope begins. Which of
         the two has the grander view?}{Victor Hugo}\index{Hugo, Victor}
 

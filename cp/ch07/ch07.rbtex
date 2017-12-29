@@ -12,7 +12,7 @@
   )
 %>
 
-<% begin_sec("Light Rays",0) %>
+<% begin_sec("Light rays",0) %>
 
 Ads for one Macintosh computer bragged that it could do an
 arithmetic calculation in less time than it took for the
@@ -909,7 +909,7 @@ radar corner be useful for?
 <% end_sec() %>
 <% end_sec() %>
 <% end_sec %>
-<% begin_sec("The Principle of Least Time for Reflection",nil,'least-time-reflection',{'optional'=>true}) %>
+<% begin_sec("The principle of least time for reflection",nil,'least-time-reflection',{'optional'=>true}) %>
 
 There is another way of stating the rules of reflection that
 is very simple and beautiful, and turns out to have deep
@@ -1012,7 +1012,7 @@ physicists understand that both maxima and minima are possible.
 
 
 <% end_sec() %>
-<% begin_sec("Images by Reflection",0) %>
+<% begin_sec("Images by reflection",0) %>
 
 Infants are always fascinated by the antics of the Baby in
 the Mirror. Now if you want to know something about mirror

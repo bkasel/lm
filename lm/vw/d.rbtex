@@ -51,7 +51,7 @@ encounters a glass windowpane.
   )
 %>
 
-<% begin_sec("Reflection, Transmission, and Absorption",0,'reflection-and-transmission') %>
+<% begin_sec("Reflection, transmission, and absorption",0,'reflection-and-transmission') %>
 
 <% begin_sec("Reflection and transmission") %>
 
@@ -433,7 +433,7 @@ stereo speaker, resulting in waves that vibrate in the opposite way?
 
 <% end_sec() %>
 <% end_sec() %>
-<% begin_sec("Quantitative Treatment of Reflection",4,'quantitative-reflection') %>
+<% begin_sec("Quantitative treatment of reflection",4,'quantitative-reflection') %>
 
 In this section we use the example of waves on a string to analyze the reasons why a
 reflection occurs at the boundary between media, predict
@@ -613,7 +613,7 @@ The following aspects of our analysis may need to be modified for different type
 
 <% end_sec() %>
 <% end_sec() %>
-<% begin_sec("Interference Effects",4,'interference-effects') %>\index{interference effects}
+<% begin_sec("Interference effects",4,'interference-effects') %>\index{interference effects}
 
 <% marg() %>
 <%
@@ -779,7 +779,7 @@ the air layer had zero or nearly zero thickness?
 \end{dq}
 
 <% end_sec() %>
-<% begin_sec("Waves Bounded on Both Sides",4) %>
+<% begin_sec("Waves bounded on both sides",4) %>
 
 In the examples discussed in section \ref{sec:interference-effects}, it was theoretically
 true that a pulse would be trapped permanently in the middle
@@ -1193,7 +1193,7 @@ and the other longitudinal?
 
 <% end_sec() %>
 
-<% begin_sec("Some Technical Aspects of Reflection",nil,'technical-reflection',{'optional'=>true}) %>
+<% begin_sec("Some technical aspects of reflection",nil,'technical-reflection',{'optional'=>true}) %>
 In this optional section we address some technical details of the treatment of reflection
 and transmission of waves. These gory details are likely to be of interest mainly to
 students majoring in the physical sciences.

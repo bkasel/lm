@@ -85,7 +85,7 @@ atom by the particular arrangement of its electrons at
 some instant in time?
 \end{dq}
 
-<% begin_sec("Randomness Isn't Random",3) %>
+<% begin_sec("Randomness isn't random",3) %>
 
 \index{Einstein, Albert!and randomness}Einstein's distaste for
 \index{randomness}randomness, and his association of
@@ -151,7 +151,7 @@ determinism in economics?
 \end{dq}
 
 <% end_sec() %>
-<% begin_sec("Calculating Randomness",3) %>
+<% begin_sec("Calculating randomness",3) %>
 
 You should also realize that even if something is random, we
 can still understand it, and we can still calculate
@@ -428,7 +428,7 @@ really mean to say that something is random?
 
 <% end_sec() %>
 <% end_sec() %>
-<% begin_sec("Probability Distributions",4,'prob-dist') %>\index{probability distributions}
+<% begin_sec("Probability distributions",4,'prob-dist') %>\index{probability distributions}
 <% marg(0) %>
 <%
   fig(
@@ -604,7 +604,7 @@ average squared deviation from the average value).
 
 <% end_sec() %>
 <% end_sec() %>
-<% begin_sec("Exponential Decay and Half-Life",3,'exponential-decay') %>
+<% begin_sec("Exponential decay and half-life",3,'exponential-decay') %>
 \index{decay!exponential}\index{exponential decay}
 \index{half-life}\index{radioactivity}
 
@@ -884,7 +884,7 @@ completely depend on how much of the substance you have?
 
 <% end_sec() %>
 <% end_sec %>
-<% begin_sec("Applications of Calculus",3,'probability-calculus',{'calc'=>true}) %>
+<% begin_sec("Applications of calculus",3,'probability-calculus',{'calc'=>true}) %>
 
 The area under the probability distribution is of course an
 integral. If we call the random number $x$ and the

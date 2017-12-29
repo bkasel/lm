@@ -1579,7 +1579,7 @@ Similar reasoning shows why Benjamin Franklin used a sharp
 <% end_sec() %> % Resistors
 <% end_sec() %> % Voltmeter
 <% end_sec() %>
-<% begin_sec("Applications of Calculus",0,'current-calculus',{'calc'=>true}) %>
+<% begin_sec("Applications of calculus",0,'current-calculus',{'calc'=>true}) %>
 
 As discussed in example \ref{eg:dq-dt} on page \pageref{eg:dq-dt}, the
 definition of current as the rate of change of charge with respect to
@@ -1614,7 +1614,7 @@ change is not constant,
 
 
 <% end_sec() %>
-<% begin_sec("Series and Parallel Circuits") %>
+<% begin_sec("Series and parallel circuits") %>
 <% begin_sec("Schematics") %>\index{schematics}
 
         I see a chess position; Kasparov sees an interesting Ruy

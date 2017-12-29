@@ -12,7 +12,7 @@
 %>
 
 \epigraphlong{I think, therefore I am.\par\noindent{}I hope that posterity will judge me kindly, not only as to the things which I have explained, but also to those which I have intentionally omitted so as to leave to others the pleasure of discovery. }{Ren\'e Descartes}\index{Descartes, Ren\'e}
-<% begin_sec("Momentum in One Dimension",0) %>\index{momentum}
+<% begin_sec("Momentum in one dimension",0) %>\index{momentum}
 <% begin_sec("Mechanical momentum") %>
         In the martial arts movie \emph{Crouching Tiger, Hidden Dragon},
         those who had received mystical enlightenment are able to violate the
@@ -1139,7 +1139,7 @@ duration of the impact.
 
 <% end_sec() %>
 <% end_sec() %>
-<% begin_sec("Force in One Dimension") %>
+<% begin_sec("Force in one dimension") %>
 <% begin_sec("Momentum transfer") %>
         For every conserved quantity, we can define an associated rate of flow.
         An open system can have mass transferred in or out of it, and we can measure the
@@ -2592,7 +2592,7 @@ increase at high speeds?
 
 \pagebreak
 
-<% begin_sec("Simple machines") %>
+<% begin_sec("Simple Machines") %>
 
 <% marg(-55) %>
 <%
@@ -3466,7 +3466,7 @@ and satisfy yourself that the result is proportional to $Q$. Why is $A_{res}\pro
 <% end_sec() %>
 <% end_sec() %>
 <% end_sec %>
-<% begin_sec("Motion in Three Dimensions",4,'motion-in-three-d') %>
+<% begin_sec("Motion in three dimensions",4,'motion-in-three-d') %>
 <% begin_sec("The Cartesian perspective") %>
         When my friends and I were bored in high school, we used to play a paper-and-pencil
         game which, although we never knew it, was Very Educational --- in fact, it

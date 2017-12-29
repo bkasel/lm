@@ -39,7 +39,7 @@
         cars and my saxophone, every technological tool in our
         modern life-support system was electronic rather than mechanical.
 
-<% begin_sec("Current and Voltage",0,'iv') %>
+<% begin_sec("Current and voltage",0,'iv') %>
  % ---------------------------------------------- 
 <% begin_sec("Current") %>
         <% begin_sec("Unity of all types of electricity") %>
@@ -1457,7 +1457,7 @@ What would happen to the battery in this kind of short
 <% end_sec() %>
 <% end_sec() %>
 <% end_sec %>
-<% begin_sec("Parallel and Series Circuits",4) %>
+<% begin_sec("Parallel and series circuits",4) %>
 
         In section \ref{sec:iv}, we limited ourselves to relatively
         simple circuits, essentially nothing more than a battery and

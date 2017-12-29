@@ -55,7 +55,7 @@ we've been calling particles, such as electrons, are really waves!\footnote{Spea
 more carefully, I should say that every basic building block of light and matter
 has both wave and particle properties.}
  % 
-<% begin_sec("Free Waves",0) %>
+<% begin_sec("Free waves",0) %>
  % 
 <% begin_sec("Wave motion",nil,'wave-motion') %>
 
@@ -1386,7 +1386,7 @@ you see in figures \figref{shock-wave} and
 <% end_sec() %>
 <% end_sec() %>
 <% end_sec %>
-<% begin_sec("Bounded Waves",4) %>\label{sec:bounded-waves}
+<% begin_sec("Bounded waves",4) %>\label{sec:bounded-waves}
 Speech is what separates humans most decisively from
 animals. No other species can master syntax, and even though
 chimpanzees can learn a vocabulary of hand signs, there is
@@ -2484,7 +2484,7 @@ and therefore got a result that didn't have the correct factor of $\sqrt{\gamma}
 
 <% end_sec() %>
 <% end_sec() %>
-<% begin_sec("Some Technical Aspects of Reflection",nil,'technical-reflection',{'optional'=>true}) %>
+<% begin_sec("Some technical aspects of reflection",nil,'technical-reflection',{'optional'=>true}) %>
 In this section we address some technical details of the treatment of reflection
 and transmission of waves.
 <% begin_sec("Dependence of reflection on other variables besides velocity",nil,'wave-reflection-impedance') %>

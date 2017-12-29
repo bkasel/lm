@@ -12,7 +12,7 @@
 %>
 
 
-<% begin_sec("Symmetry and Conservation Laws",0) %>
+<% begin_sec("Symmetry and conservation laws",0) %>
 
 <% marg(0) %>
 
@@ -136,7 +136,7 @@ Physicists were thus forced to change their opinions about what constituted
 common sense.
 
 <% end_sec() %>
-<% begin_sec("Conservation of Mass",0) %>\index{mass!conservation of}\index{conservation!of mass}
+<% begin_sec("Conservation of mass",0) %>\index{mass!conservation of}\index{conservation!of mass}
 We intuitively feel that matter shouldn't appear or disappear out of nowhere: that
 the amount of matter should be a conserved quantity.
 If that was to happen, then it seems as though atoms would have to be created or destroyed,
@@ -288,9 +288,9 @@ to measure it. This will lead us to a brief digression on the metric system, aft
 come back to physics.
 
 <% end_sec() %>
-<% begin_sec("Review of the Metric System and Conversions",0) %>
+<% begin_sec("Review of the metric system and conversions",0) %>
 
-<% begin_sec("The Metric System") %>
+<% begin_sec("The metric system") %>
 
 Every country in the world besides the U.S. has adopted a
 system of units known colloquially as the ``metric system.''
@@ -348,7 +348,7 @@ You may also encounter the prefixes mega- (a million) and
 micro- (one millionth).
 
 <% end_sec() %>
-<% begin_sec("Scientific Notation",nil,'scientific-notation') %>\index{scientific notation}
+<% begin_sec("Scientific notation",nil,'scientific-notation') %>\index{scientific notation}
 
 Most of the interesting phenomena in our universe
 are not on the human scale. It would take about 1,000,000,000,000,000,000,000
@@ -529,7 +529,7 @@ each case, explain what the error is.
 <% end_sec() %>
 <% end_sec() %>
 <% end_sec %>
-<% begin_sec("Conservation of Energy",0) %>
+<% begin_sec("Conservation of energy",0) %>
 
 <% begin_sec("Energy") %>
 
@@ -1142,7 +1142,7 @@ through the same height.
 
 <% end_sec() %>
 <% end_sec() %>
-<% begin_sec("Newton's Law of Gravity",0) %>\index{gravity!Newton's law of}
+<% begin_sec("Newton's law of gravity",0) %>\index{gravity!Newton's law of}
 Why does the gravitational field on our planet have the particular value it does? 
 For insight, let's compare with the strength of gravity elsewhere in the
 universe:\index{Newton, Isaac!law of gravity}\index{gravitational field!Newton's law of gravity}
@@ -1264,7 +1264,7 @@ so this fit perfectly with an inverse-square law: $60\times60=3600$.
 <% end_marg %>
 
 <% end_sec() %>
-<% begin_sec("Noether's Theorem for Energy",0,'noether-energy') %>
+<% begin_sec("Noether's theorem for energy",0,'noether-energy') %>
 \index{Noether's theorem!for energy}\index{energy!Noether's theorem}
 Now we're ready for our first full-fledged example of Noether's theorem.
 Conservation of energy is a law of physics, and Noether's theorem
@@ -1342,7 +1342,7 @@ be proved without a  model of light and matter more detailed than the one
 currently at our disposal.
 
 <% end_sec() %>
-<% begin_sec("Equivalence of Mass and Energy",0,'massenergy') %>
+<% begin_sec("Equivalence of mass and energy",0,'massenergy') %>
 
 <% begin_sec("Mass-energy") %>\index{mass-energy}\index{mass!equivalence to energy}\index{energy!equivalence to mass}
 You've encountered two conservation laws so far: conservation of mass and conservation

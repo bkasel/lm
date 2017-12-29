@@ -57,7 +57,7 @@
         science when Newton's contemporary \index{Hooke}Hooke
         discovered that living things were made out of cells.
 
-<% begin_sec("The Quest for the Atomic Force",0,'quest-for-atomic-force') %>
+<% begin_sec("The quest for the atomic force",0,'quest-for-atomic-force') %>
 
         \epigraph{Newton was not the first of the age of reason. He was the
         last of the magicians.}{John Maynard \index{Keynes, John Maynard}Keynes}
@@ -145,7 +145,7 @@
 
 
 <% end_sec() %>
-<% begin_sec("Charge, Electricity and Magnetism",0) %>
+<% begin_sec("Charge, electricity and magnetism",0) %>
         <% begin_sec("Charge") %>\index{charge}
 
         ``Charge'' is the technical term used to
