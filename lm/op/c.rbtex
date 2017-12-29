@@ -157,7 +157,7 @@ consistently in all three dimensions.
 
 <% end_hw_sec %>
 
-<% begin_ex("Object and Image Distances") %>
+<% begin_ex("Object and image distances") %>
 __incl(text/object_and_image_distances)
 <% end_ex %>
 

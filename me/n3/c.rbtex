@@ -272,7 +272,7 @@ __incl(text/n3c)
 
 
 
-<% begin_ex("Vectors and Motion") %>
+<% begin_ex("Vectors and motion") %>
 
 Each diagram on page \pageref{fig:ex-knightish} shows the motion of an object in
 an $x-y$ plane. Each dot is one location of the object at

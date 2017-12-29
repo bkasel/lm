@@ -180,7 +180,7 @@ New Horizons: 465.0 kg
 
 <% end_hw_sec %>
 
-<% begin_ex("The Shell Theorem") %>
+<% begin_ex("The shell theorem") %>
 
 This exercise is an approximate numerical test of the shell
 theorem. There are seven masses A-G, each being one

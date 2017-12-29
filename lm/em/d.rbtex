@@ -1795,7 +1795,7 @@ properties X and Y when it is reflected. (This is the
 principle behind polarizing sunglasses.)
 <% end_ex %>
 
-<% begin_ex("Events and Spacetime","B") %>
+<% begin_ex("Events and spacetime","B") %>
 
 \includegraphics[width=168mm]{../share/relativity/figs/spacetime-ex-0.png}
 

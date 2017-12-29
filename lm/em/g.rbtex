@@ -47,7 +47,7 @@ __incl(text/relativity_general)
 
 <% end_hw_sec %>
 
-<% begin_ex("Misconceptions About Relativity") %>
+<% begin_ex("Misconceptions about relativity") %>
 __incl(text/relativity_misconceptions)
 <% end_ex %>
 

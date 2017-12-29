@@ -1727,7 +1727,7 @@ if it was unrolled and flattened out.]
 
 <% end_hw_sec %>
 
-<% begin_ex("Field Vectors") %>
+<% begin_ex("Field vectors") %>
 \noindent Apparatus:
 \begin{indentedblock}
 

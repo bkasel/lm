@@ -968,7 +968,7 @@ Tunneling is discussed in more detail in the next section.
 
 <% end_sec() %>
 <% end_sec() %>
-<% begin_sec("The schr\\\"odinger Equation",nil,'schrodinger',{'optional'=>true,'calc'=>true}) %>
+<% begin_sec("The Schr\\\"odinger equation",nil,'schrodinger',{'optional'=>true,'calc'=>true}) %>
 \index{Schr\"odinger equation}
 
 In section \ref{sec:e-in-e-fields} we were able to apply conservation

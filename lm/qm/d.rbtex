@@ -872,7 +872,7 @@ spectrum would you expect to find the absorption lines?\hwendpart
 <% end_hw_sec %>
 
 
-<% begin_ex("Quantum Versus Classical Randomness") %>
+<% begin_ex("Quantum versus classical randomness") %>
 
 \noindent 1. Imagine the classical version of the particle in a one-dimensional box. Suppose you insert the particle in the
  box and give it a known, predetermined energy, but a random initial position and a

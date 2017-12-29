@@ -2879,7 +2879,7 @@ wires in the circuit?
 <% end_hw_sec %>
 
 
-<% begin_ex("Electrical Measurements","A") %>
+<% begin_ex("Electrical measurements","A") %>
 1. How many different currents could you measure in this
 circuit? Make a prediction, and then try it.
 
@@ -2914,7 +2914,7 @@ What do you notice? Interpret this using the roller coaster
 metaphor, and color in parts of the circuit that represent constant voltages.
 <% end_ex %>
 
-<% begin_ex("Voltage and Current","B",2) %>
+<% begin_ex("Voltage and current","B",2) %>
 
 This exercise is based on one created by Virginia Roundy.
 
@@ -3092,7 +3092,7 @@ diagrams.
 \circuittabletwocols{bulb a}{bulb b}
 
 <% end_ex %>
-<% begin_ex("Reasoning About Circuits","C") %>
+<% begin_ex("Reasoning about circuits","C") %>
 The questions in this exercise can all be solved using some
 combination of the following approaches:
 

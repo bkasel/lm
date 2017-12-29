@@ -1727,11 +1727,11 @@ multiply when the velocities are combined. (3) The identity $v\mygamma=(1/D-D)/2
 \end{itemize}
 <% end_ex %>
 
-<% begin_ex("Nuclear Decay","B") %>
+<% begin_ex("Nuclear decay","B") %>
 __incl(text/ex_chart_of_nuclei)
 <% end_ex %>
 
-<% begin_ex("Misconceptions about Relativity","C") %>
+<% begin_ex("Misconceptions about relativity","C") %>
 __incl(../../share/relativity/text/relativity_misconceptions)
 <% end_ex %>
 

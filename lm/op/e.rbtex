@@ -144,7 +144,7 @@ fringes as in any other type of diffraction.
 % Advance to an even-numbered (left) page:
 \ifthenelse{\isodd{\value{page}}}{}{\pagebreak\hbox{}\newpage}
 
-<% begin_ex("Double-Source Interference","A") %>
+<% begin_ex("Double-source interference","A") %>
 
 1. Two sources separated by a distance $d=2$ cm make circular ripples
 with a wavelength of $\lambda=1$ cm.
@@ -199,7 +199,7 @@ diffraction of light?
 \anonymousinlinefig{ripples}
 <% end_ex %>
 %====================================================================
-<% begin_ex("Single-slit Diffraction","B") %>
+<% begin_ex("Single-slit diffraction","B") %>
 
 \noindent Equipment:
 
@@ -271,7 +271,7 @@ The class will discuss why the results came out the way they did.
 
 <% end_ex %>
 %====================================================================
-<% begin_ex("Diffraction of Light","C") %>
+<% begin_ex("Diffraction of light","C") %>
 
 \noindent Equipment:
 

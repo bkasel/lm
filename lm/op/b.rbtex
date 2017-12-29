@@ -125,7 +125,7 @@ other type of image?
 
 <% end_hw_sec %>
 
-<% begin_ex("Exploring Images With a Curved Mirror") %>
+<% begin_ex("Exploring images with a curved mirror") %>
 \noindent Equipment:
 
 \begin{indentedblock}
