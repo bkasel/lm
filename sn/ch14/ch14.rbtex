@@ -2813,6 +2813,16 @@ implies quantum mechanics, at least in this technical sense.
 
 <% begin_hw_sec %>
 
+<% begin_hw('oxygen-22-predict-spin-4') %>__incl(hw/oxygen-22-predict-spin-4)<% end_hw() %>
+
+<% begin_hw('lin-alg-vector-space-or-not') %>__incl(hw/lin-alg-vector-space-or-not)<% end_hw() %>
+
+<% begin_hw('lin-alg-basis-or-not') %>__incl(hw/lin-alg-basis-or-not)<% end_hw() %>
+
+<% begin_hw('lin-alg-units',2) %>__incl(hw/lin-alg-units)<% end_hw() %>
+
+\pagebreak
+
 <% begin_hw('ho-orthogonal') %>__incl(hw/ho-orthogonal)<% end_hw() %>
 
 <% begin_hw('trivial-observable') %>__incl(hw/trivial-observable)<% end_hw() %>
@@ -2821,13 +2831,15 @@ implies quantum mechanics, at least in this technical sense.
 
 <% begin_hw('ho-orthogonal2') %>__incl(hw/ho-orthogonal2)<% end_hw() %>
 
-\pagebreak
-
 <% begin_hw('trivial-nonhermitian') %>__incl(hw/trivial-nonhermitian)<% end_hw() %>
 
 <% begin_hw('ammonia') %>__incl(hw/ammonia)<% end_hw() %>
 
+\vfill
+
 <% begin_hw('ammonia2') %>__incl(hw/ammonia2)<% end_hw() %>
+
+\vfill
 
 <% begin_hw('particle-in-a-box-superpos') %>__incl(hw/particle-in-a-box-superpos)<% end_hw() %>
 
