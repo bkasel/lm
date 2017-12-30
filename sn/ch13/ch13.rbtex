@@ -3046,6 +3046,8 @@ a possible wavefunction, and we can notate this as a vector, $\langle\alpha,\bet
 vector space.
 <% end_sec('linearity-of-schrodinger') %>
 
+\vfill
+
 \startdqs
 
 \begin{dq}
@@ -3057,8 +3059,11 @@ pattern like the one in figure \figref{ccd-diffraction} on p.~\pageref{fig:ccd-d
 if we then redefine the zero-level of $U$ so that the electrons have $E<0$?
 \end{dq}
 
+\pagebreak
+
 \begin{dq}\label{dq:qm-cons-of-prob}
-The figure shows a series of snapshots in the motion of two pulses on a coil spring, one negative and one positive,
+The top panel of the
+figure shows a series of snapshots in the motion of two pulses on a coil spring, one negative and one positive,
 as they move toward one another and superpose. The final image is very close to the moment at which
 the two pulses cancel completely. 
 The following discussion is simpler if we consider infinite sine waves rather than pulses.
@@ -3070,8 +3075,8 @@ i.e., if there's initially a 100\%
 probability that a particle exists somewhere, we don't want the probability to be more than or
 less than 100\%
 at some later time. What happens when the colliding waves have
-real-valued wavefunctions $\Psi$? Complex ones?
-What happens with standing waves?
+real-valued wavefunctions $\Psi$? Now consider the sketches of complex-valued wave pulses
+shown in the bottom panel of the figure as they are getting ready to collide.
 \end{dq}
 <% marg(30) %>
 <%

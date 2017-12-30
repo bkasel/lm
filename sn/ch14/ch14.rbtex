@@ -296,9 +296,9 @@ can be poorer when the quantum numbers are small.
   )
 %>
 
-In the case of the $n$th excited state of a vibrator, the energy is $(n+1/2)hf$, where the $+1/2$ term represents
+In the case of the $n$th excited state of a vibrator, the energy is $(n+1/2)\hbar\omega$, where the $+1/2$ term represents
 a quantum correction to the semiclassical approximation. This shifts the entire ladder upward in energy by half
-a step. In particular, the energy of the ground state is not zero but rather $(1/2)hf$. This can be verified
+a step. In particular, the energy of the ground state is not zero but rather $(1/2)\hbar\omega$. This can be verified
 quantitatively by calculating the energy for the solution to the Schr\"odinger discussed using the guess-and-check method
 in problem \ref{hw:quantumho}, p.~\pageref{hw:quantumho}. It is easy to see why the answer cannot be zero, for
 if it were, then the particle in the ground state would have zero kinetic energy and zero potential energy.
