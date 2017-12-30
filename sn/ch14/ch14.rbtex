@@ -1376,8 +1376,7 @@ $\langle e u|u\rangle = \langle  u|e u\rangle$, and
 $e^*\langle u|u\rangle = e\langle  u| u\rangle$,                   
 so $e^*=e$, meaning that $e$ is real.}
 Being hermitian is, for an operator, analogous to being real for a number.
-(Problem \ref{hw:trivial-observable}, p.~\pageref{hw:trivial-observable}, explores this
-analogy further.) Just as a randomly chosen
+(Cf.~problem \ref{hw:trivial-nonhermitian}, p.~\pageref{hw:trivial-nonhermitian}.) Just as a randomly chosen
 complex number is unlikely to be real, a randomly chosen linear operator will almost never be hermitian.
 Like love, patriotism, or beauty, a nonhermitian operator fails to translate into anything a physicist
 can measure.
@@ -2012,7 +2011,7 @@ his students that there was no energy-time uncertainty relation,
 because ``I can measure the energy, and look at my watch; then I know
 both energy and time!'' One good way of interpreting it is that if
 there is a transfer of energy between two systems, then it relates
-the uncertainty $\Delta E$ in the amount of energy transferred to the
+the uncertainty $\Delta E$ in the amount of energy transferred during the
 duration $\Delta t$ of the interaction.
 
 For example, suppose we wish to bounce a photon off of a hydrogen atom
@@ -2274,7 +2273,7 @@ in 2017 in which a coherence length of 1200 km was demonstrated using
 photons.\footnote{Yin \emph{et al.}, \url{arxiv.org/abs/1707.01339}}
 
 The insight about decoherence was the following. Consider the most massive material
-object that has so far been successfully diffracted through a grating,
+object that has so far been successfully dif\-fracted through a grating,
 which was a molecule consisting of about 810 atoms in an experiment by
 Eibenberger \emph{et al.} in 2013.\footnote{\url{arxiv.org/abs/1310.8343}}
 While this molecule was propagating through the apparatus as a wave, the experimenters
@@ -2283,6 +2282,29 @@ For this reason, they had to do the experiment inside a vacuum chamber, with an 
 good vacuum. But even then, the molecule was being bombarded by photons of infrared light
 emitted from the walls of the chamber. The effect of this bombardment is to disrupt the
 molecule's wavefunction and reduce its coherence length.
+
+<%
+  fig(
+    'decohering-wave-packet',
+    %q{%
+      A large molecule such as the one in the Eibenberger experiment is represented by its
+      wavepacket. (This is only a schematic representation, with the wavepacket shown as being
+      many orders of magnitude bigger than its actual size in relation to the vacuum chamber.)
+      As the molecule starts out, its coherence length, shown by the arrows, is quite long.
+      As it flies to the right, it is bombarded by infrared photons, which
+      randomize its phase, causing its coherence length to shorten exponentially: by a factor
+      of two in the second panel, and by a further factor of two in the final one. When the
+      packet enters the double slit, its coherence length is on the same order of magnitude
+      as the slits' spacing $d$, which will worsen but not entirely eliminate the observability
+      of interference fringes.
+    },
+    {
+      'width'=>'wide',
+      'sidecaption'=>true
+    }
+  )
+%>
+
 
 Although the detailed mathematics
 of this decoherence effect is beyond the scope of this book, it is not too hard to understand
