@@ -2194,72 +2194,19 @@ principle be reconstructed by observing all the molecules and tracing their traj
 in time using Newton's laws.\label{unitarity-phase-randomization}
 
 <% end_sec('et-phase-randomization-meas') %>
-<% begin_sec("A classical example",nil,'classical-decoherence') %>
-
-If we spy on one slit in the double-slit experiment, as in figure
-\figref{double-slit-spying-on-one-slit}, we randomize the phase
-relationship between the parts of the wave that pass through the two
-slits. This sort of thing occurs in a much broader context, including classical ones.
-For example, figure \subfigref{air-wedge}{1} shows an thin-film interference pattern
-created by the air wedge between two pieces of very flat glass, where the top piece
-is placed at a very small angle relative to the bottom one, \subfigref{air-wedge}{2}.
-The phase relationship between the two reflected waves is determined by the extra
-distance traveled by the ray that is reflected by the bottom plate (as well as the fact that
-one of the two reflections will be inverting). This is a purely classical
-example of wave interference.
-
-If the angle is opened up too much, \subfigref{air-wedge}{3}, we will
-no longer see fringes where the air layer is too thick. This is because the incident wave train has
-only a certain length, and the extra distance traveled is now so great that the two reflected wave
-trains no longer overlap in space. In general, if the incident wave trains are $n$ wavelengths
-long, then we can see at most $n$ bright and $n$ dark fringes. The fact that about 18 fringes are
-visible in \subfigref{air-wedge}{1} shows that the light source used (let's say a sodium gas discharge tube)
-made wave trains at least 18 wavelengths in length.
-
-<% marg(30) %>
-<%
-  fig(
-    'air-wedge',
-    %q{%
-      1.~Interference in an air wedge. 2.~Side view. 3.~If the wedge is thicker than the coherence length of the light, the interference pattern disappears.
-    }
-  )
-%>
-<% end_marg %>
-
-If the air layer is too thick, as in \subfigref{air-wedge}{3}, then it is still
-possible for a reflected wave to overlap with another reflected wave --- but this
-will not happen for two reflected waves that, like the ones in the figure, originated
-from the same incident wave train. Two completely different incident waves, emitted
-by two different sodium atoms in the light source, would have to coincide by chance, perhaps
-after one was reflected from the top of the air layer and one from the bottom. The phase
-relationship between them would be random, and we will not see dark or bright fringes due
-to such random coincidences.
-
-Comparing the examples in figures \figref{double-slit-spying-on-one-slit} and
-\figref{air-wedge}, we see that there is a great deal of similarity in the physics.
-In both cases, we have a distance scale, such as the distance between the slits
-or twice the thickness of the air layer. The question then is whether parts of the
-wave separated by this distance do or do not have a definite phase relationship
-with one another. The distance over which there is such a phase relationship is
-called the \emph{coherence length}. For example, the coherence length in \figref{air-wedge}
-is at least 18 wavelengths, so for light emitted by this source,
-two points separated by a distance of $7.5$ wavelengths
-in the direction of propagation will have a definite phase relationship: they will
-be $180\degunit$ out of phase.
-
-
-<% end_sec('classical-decoherence') %>
 
 <% begin_sec("Decoherence",nil,'decoherence') %>\index{decoherence}
 Starting around 1970, physicists began to realize that ideas involve a loss of coherence,
 or ``decoherence,'' could help to explain some things about quantum mechanics that
-had previously seemed mysterious. (Decoherence was briefly introduced on p.~\pageref{decoherence-brief}.)
-One example is the fact that it is difficult to
+had previously seemed mysterious.  The classical notions of coherence and coherence length
+were described in sec.~\ref{subsec:coherence}, p.~\pageref{subsec:coherence}, and quantum-mechanical
+decoherence was briefly introduced on p.~\pageref{decoherence-brief}.
+
+One mystery was the fact that it is difficult to
 demonstrate wave interference effects with large objects. This is partly because
 the wavelength $\lambda=h/p=h/mv$ tends to be small for an object with a large mass.
 But even taking this into account, we do not seem to have much luck observing,
-for example, double-slit diffraction of large molecules,
+for example, double-slit diffraction of very large molecules, even
 when we use slits with appropriate dimensions and a detector with a good enough angular
 resolution.
 
@@ -2281,15 +2228,14 @@ needed to keep it from simply being stopped by a collision with an air molecule.
 For this reason, they had to do the experiment inside a vacuum chamber, with an extremely
 good vacuum. But even then, the molecule was being bombarded by photons of infrared light
 emitted from the walls of the chamber. The effect of this bombardment is to disrupt the
-molecule's wavefunction and reduce its coherence length.
+molecule's wavefunction and reduce its coherence length (p.~\pageref{fig:coherence}).
 
 <%
   fig(
     'decohering-wave-packet',
     %q{%
       A large molecule such as the one in the Eibenberger experiment is represented by its
-      wavepacket. (This is only a schematic representation, with the wavepacket shown as being
-      many orders of magnitude bigger than its actual size in relation to the vacuum chamber.)
+      wavepacket. 
       As the molecule starts out, its coherence length, shown by the arrows, is quite long.
       As it flies to the right, it is bombarded by infrared photons, which
       randomize its phase, causing its coherence length to shorten exponentially: by a factor
@@ -2297,6 +2243,9 @@ molecule's wavefunction and reduce its coherence length.
       packet enters the double slit, its coherence length is on the same order of magnitude
       as the slits' spacing $d$, which will worsen but not entirely eliminate the observability
       of interference fringes.
+      (This is only a schematic representation, with the wavepacket shown as being
+      many orders of magnitude bigger than its actual size in relation to the vacuum chamber.
+      Also, the real experiment used a reflecting grating, not a transmitting double slit.)
     },
     {
       'width'=>'wide',
@@ -2305,10 +2254,7 @@ molecule's wavefunction and reduce its coherence length.
   )
 %>
 
-
-Although the detailed mathematics
-of this decoherence effect is beyond the scope of this book, it is not too hard to understand
-qualitatively what is going on, by using the analogy with the situation illustrated in
+This causes an effect similar to the one in the situation illustrated in
 figure \figref{double-slit-spying-on-one-slit}, where we spy on one slit of a double-slit
 apparatus. The microscope would operate by bouncing photons off of the electron, and the result
 is to disrupt the coherence of the electron's wavefunction, so that the coherence length is

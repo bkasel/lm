@@ -935,6 +935,97 @@ that use visible light to form images?
 \end{dq}
 
 <% end_sec() %>
+
+m4_ifelse(__sn,1,[:
+
+<% begin_sec("Coherence",nil,'coherence') %>
+
+Up until now, we have avoided too much detailed discussion of two facts that sometimes make
+interference and diffraction effects unobservable, and that historically made them
+more difficult to discover. First there is the fact that white light is a mixture of all the
+visible wavelengths. This is why, for example, the thin-film interference pattern of
+a soap bubble looks like a rainbow. To simplify things, we need a source of light that
+is monochromatic, i.e., contains only a single wavelength or a small range of wavelengths.
+We could do this either by filtering a white light source or by using a source of light that
+is intrinsically monochromatic, such as a laser or some gas discharge tubes.
+
+But even with a monochromatic light source, we encounter a separate issue, which is that
+most light sources do not emit light waves that are perfect,
+infinitely long sine waves. Sunlight and candlelight, for example, can be thought of as being composed
+of separate little spurts of light, referred to as wave packets or wave trains. Each wave
+packet is emitted by a separate atom of the gas. It contains some number of wavelengths, and
+it has no fixed phase relationship to any other wave packet. The wave trains emitted by a laser
+are much longer, but still not infinitely long.
+
+As an example of an experiment that can show these
+effects, figure \subfigref{air-wedge}{1} shows a thin-film interference pattern
+created by the air wedge between two pieces of very flat glass, where the top piece
+is placed at a very small angle relative to the bottom one, \subfigref{air-wedge}{2}.
+The phase relationship between the two reflected waves is determined by the extra
+distance traveled by the ray that is reflected by the bottom plate (as well as the fact that
+one of the two reflections will be inverting).
+
+<% marg(300) %>
+<%
+  fig(
+    'air-wedge',
+    %q{%
+      1.~Interference in an air wedge. 2.~Side view. 3.~If the wedge is thicker than the coherence length of the light, the interference pattern disappears.
+    }
+  )
+%>
+<% end_marg %>
+
+If the angle is opened up too much, \subfigref{air-wedge}{3}, we will
+no longer see fringes where the air layer is too thick. This is because the incident wave train has
+only a certain length, and the extra distance traveled is now so great that the two reflected wave
+trains no longer overlap in space. In general, if the incident wave trains are $n$ wavelengths
+long, then we can see at most $n$ bright and $n$ dark fringes. The fact that about 18 fringes are
+visible in \subfigref{air-wedge}{1} shows that the light source used (let's say a sodium gas discharge tube)
+made wave trains at least 18 wavelengths in length.
+<%
+  fig(
+    'coherence',
+    %q{%
+      Waves with three different coherence lengths, indicated by the arrows.
+      Note that although there is a superficial difference between these pictures and figure
+      \subfigref{air-wedge}{1}, they represent completely different things. Figure \subfigref{air-wedge}{1}
+      is an actual photograph of interference fringes, whose brightness is proportional to the square
+      of the amplitude. This figure is a picture of the wave's amplitude, not the squared amplitude, and
+      is analogous to the little sine waves in \subfigref{air-wedge}{2} and \subfigref{air-wedge}{3}.
+      These are waves that are \emph{traveling} across the page at the speed of light.
+    },
+    {
+      'width'=>'wide',
+      'sidecaption'=>true,
+      'sidepos'=>'b',
+      'floatpos'=>'b!'
+    }
+  )
+%>
+
+In real-world light sources, the wave packets may not be as neat and
+tidy as the ones in figure \figref{air-wedge}. They may not look like
+sine waves with clean cut-offs at the ends, and they may overlap one
+another. The result will look more like the examples in figure
+\figref{coherence}.  Such a wave pattern has a property called its
+coherence length $L$. On scales small compared to $L$, the wave
+appears like a perfect sine wave. On scales large compared to $L$, we
+lose all phase correlations.  For example, the middle wave in figure
+\figref{coherence} has $L\approx5\lambda$. If we pick two points
+within this wave separated by a distance of $\lambda$ in the
+left-right direction, they are likely to be very nearly in phase. But
+if the separation is $20\lambda$, approximately the width of the
+entire figure, the phase relationship is essentially random. If the
+light comes from a flame or a gas discharge tube, then this lack of
+a phase relationship would be because the parts of
+the wave at these large separations from one another probably
+originated from different atoms in the source. 
+
+
+<% end_sec('coherence') %>
+:],[::]) % end conditional, only gets included in SN
+
 <% begin_sec("The principle of least time",nil,'',{'optional'=>true,'calc'=>true}) %>
 
 In m4_ifelse(__sn,1,[:subsection:],[:section:]) 
@@ -958,7 +1049,7 @@ wavelength is much shorter than the distances involved ---
 for the sake of this numerical example, let's say that a
 wavelength is 1/10 of the shortest reflected path from A to
 B. The table, 2, shows the distances traveled by the 25 rays.
-m4_ifelse(__sn,0,[:
+
 <% marg(0) %>
 <%
   fig(
@@ -967,8 +1058,6 @@ m4_ifelse(__sn,0,[:
   )
 %>
 <% end_marg %>
-:])
-
 
 Note how similar are the distances traveled by the group of
 7 rays, indicated with a bracket, that come closest to
@@ -1001,16 +1090,6 @@ that come out close to this angle have very nearly the same
 $L$, and remain very nearly in phase when they reach B.
 This is the basic reason why the discrete table, \subfigref{reflection-least-time}{2}, turned
 out to have a group of rays that all traveled nearly the same distance.
-m4_ifelse(__sn,1,[:
-<% marg(150) %>
-<%
-  fig(
-    'reflection-least-time',
-    %q{Light could take many different paths from A to B.}
-  )
-%>
-<% end_marg %>
-:])
 
 As discussed in __subsection_or_section(least-time-reflection), the principle of least time is
 really a principle of least \emph{or greatest} time. This
