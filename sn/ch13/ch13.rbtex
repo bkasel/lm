@@ -1772,7 +1772,7 @@ itself. In particular, we get the same result by squaring
 either a positive number or its negative, so there is no way
 to determine the positive or negative sign of an electron wave.
 This unobservability of the phase of the wavefunction is discussed
-in more detail on p.~\pageref{subsubsec:linearity-of-schrodinger}.\label{phase-unobservable-basic}
+in more detail on p.~\pageref{subsubsec:linearity-of-schrodinger}.\label{phase-unobservable-basic}\index{phase in quantum mechanics!not observable}
 
 Most physicists tend toward the school of philosophy known
 as operationalism, which says that a concept is only
@@ -3009,7 +3009,8 @@ Linearity guarantees that the phase of a wavefunction makes no difference as to 
 as a solution to the Schr\"odinger equation. If $\sin kx$ is a solution, then so is the sine wave
 $-\sin kx$ with the opposite phase. This fact is logically interdependent with the fact that,
 as discussed on p.~\pageref{phase-unobservable-basic}, the phase
-of a wavefunction is unobservable. For measuring devices and humans are material objects
+of a wavefunction is unobservable.\index{phase in quantum mechanics!not observable}
+For measuring devices and humans are material objects
 that can be described by wavefunctions. So suppose, for example, that we flip the phase of
 all the particles inside the entire laboratory. By linearity,
 the evolution of this measurement process is still a valid  solution of the Schr\"odinger equation.

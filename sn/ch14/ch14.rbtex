@@ -489,20 +489,41 @@ sooner. Knowing the initial wavefunction $\Psi(0)$ to be that of the ground stat
 lets us say as much as can be said about the future time-evolution $\Psi(t)$, and it's
 neither necessary nor helpful to know the time derivative $\Psi'(t)$.
 
-This is an example of a more general idea about the interpretation of quantum mechanics,
-which is that the wavefunction is a complete description of any
-system. There isn't more information that can be known about the system.
-(The phase and normalization of the wavefunction are not considered to give
-any information, since the phase is unobservable, and the normalization can be standardized
-so that the total probability is 1.) This principle seems to be widely agreed upon by
-physicists, but doesn't seem to have a standard name.
+This is an example of a more general idea about the interpretation of
+quantum mechanics, which is that the wavefunction is a complete
+description of any system. There isn't more information that can be
+known about the system.  This principle seems to be widely agreed upon
+by physicists, but doesn't seem to have a standard name.  (The phase
+and normalization of the wavefunction are not considered to
+give\index{phase in quantum mechanics!not observable} any information,
+since the phase is unobservable, and the normalization can be
+standardized so that the total probability is 1. See the sidebar for more detail.)
 
 <% marg() %>
+<% fig(
+  'phase-and-norm-not-observable','',{'anonymous'=>true,'title'=>"Unobservability of phase and normalization",
+  'text'=>
+    %q{%
+When we say that phase and normalization don't count as knowledge of a system, we're
+saying something very mathematically specific: that $\Psi$ and $c\Psi$ represent
+the same state, where $c\ne0$ is a complex number; the magnitude of $c$ would only affect
+the normalization, and its argument would only affect the phase. We do not mean, for example,
+that wavefunctions like $\sin x$ and $\cos x$ are indistinguishable. The sine and cosine give different
+probability distributions, so they are distinguishable. For example, the $\sin x$ wavefunction
+gives zero probability of detection at $x=0$. See also
+problem \ref{hw:moat-orthogonal-standing-waves}, p.~\pageref{hw:moat-orthogonal-standing-waves}
+and example \ref{eg:phase-not-observable}, p.~\pageref{eg:phase-not-observable}.
+    }
+  })
+%>
+\spacebetweenfigs
 <% fig(
   'vec-app-v-space','',{'anonymous'=>true,'title'=>"Linear algebra application",
   'text'=>
     %q{%
-      States can be described by vectors in a vector space (p.~\pageref{lin-alg-vector-space}).
+      Wavefunctions can be described by vectors in a vector space (p.~\pageref{lin-alg-vector-space}).
+      A state is a one-dimensional subspace of the vector space, i.e., the set of all wavefunctions
+      of the form $c\Psi$ for some fixed $\Psi$.
     }
   })
 %>
@@ -951,7 +972,7 @@ independently dial in the desired values of a particle's position and momentum. 
 two variables that are independent of one another. Therefore we don't have a phase space, so an observable
 has to be represented by a function whose input is a wavefunction.
 Furthermore, we expect that:
-\begin{itemize}\label{operator-criteria}
+\begin{itemize}\label{operator-criteria}\index{phase in quantum mechanics!not observable}
 \item The output shouldn't depend on the phase\footnote{``Phase'' as in the phase of a wave, not as in ``phase space.''} of the wavefunction.
 \item The output shouldn't depend on amplitude (because a different amplitude might just mean an incorrectly normalized state).
 \item The output should be well defined when we superpose any two states.
@@ -1153,7 +1174,7 @@ both of these possibilities, but each atom is guaranteed have its spin either ex
 the magnetic field or exactly antiparallel to it. Then the effect of the magnetic field is simply
 to sort out the two types of atoms according to spin, without having the slightest effect on those spins.
 
-\begin{eg}{Phase is not an observable}\label{eg:phase-not-observable}
+\begin{eg}{Phase is not an observable}\label{eg:phase-not-observable}\index{phase in quantum mechanics!not observable}
 On p.~\pageref{operator-criteria} we listed three criteria for implementing the concept
 of an observable in quantum mechanics, and one of these was that since wavefunctions that differ
 only by a phase describe the same state, the result of an observation should not depend on phase.
@@ -2309,14 +2330,20 @@ by snoops, even in theory. In contrast, current classical methods of encryption 
 eavesdropping on an information packet as it hops across the internet, but to make the copy
 useless to prying eyes because it cannot be decoded.
 
-The theoretical key to this application of quantum computing is the counterintuitive \emph{no-cloning theorem}, which
-states that it is not possible to make a copy of an unknown quantum state.
-To see why this works, suppose that we implement a qubit using the spin 1/2 of a silver atom,
-with the convention that the 0 state is represented by $s_x=-1/2$ and 1 by $s_x=+1/2$.
-If you provide me with an atom that you have prepared, then it might seem straightforward, at least
-in principle, for me to copy its state. I can shoot it through a magnetic spectrometer, as in the
-Stern-Gerlach experiment, and measure its $s_x$. Then I prepare
-another silver atom in the same state. What's the problem?
+The theoretical key to this application of quantum computing is the
+counterintuitive \emph{no-cloning theorem},\index{no-cloning theorem}\label{no-cloning-original}
+which states that it is
+not possible to make a copy of an unknown quantum state.\footnote{The prohibition actually
+only applies to making a copy that can be separated from the original. For the complete
+statement of this, see p.~\pageref{no-cloning-separable}.}  To see why
+this works, suppose that we implement a qubit using the spin 1/2 of a
+silver atom, with the convention that the 0 state is represented by
+$s_x=-1/2$ and 1 by $s_x=+1/2$.  If you provide me with an atom that
+you have prepared, then it might seem straightforward, at least in
+principle, for me to copy its state. I can shoot it through a magnetic
+spectrometer, as in the Stern-Gerlach experiment, and measure its
+$s_x$. Then I prepare another silver atom in the same state. What's
+the problem? 
 
 The problem is that if the state of the atom is truly unknown to me, then I have no way of knowing
 that it is actually in one of the two states $s_x=-1/2$ and $s_x=+1/2$. It could instead be
@@ -2528,6 +2555,37 @@ two DVDs. That doesn't always work for a quantum computer. It \emph{might} work 
 part of the data was separable from another part, but we would need a computer
 program to scan through the data and figure out whether this was in fact possible.
 This is called the separability problem, and unfortunately it is known to be intractable.
+
+<% marg(-10) %>
+<%
+  fig(
+    'pion-decay-paradox',
+    %q{%
+      An attempt to measure $L_x$ and $L_z$ simultaneously.
+    }
+  )
+%>
+<% end_marg %>
+
+The no-cloning theorem\index{no-cloning theorem}\label{no-cloning-separable}
+described on p.~\pageref{no-cloning-original} is only a prohibition on making
+a \emph{separable} copy of an unknown state. To see why, consider an experiment
+like the one in figure \figref{pion-decay-paradox}, in which we set up the detectors
+so that their spin-detecting axes are in perpendicular orientations. Say one detector
+measures the spin of the electron along the $x$ axis, while the other measures the
+positron's $z$ spin. Now it seems that we can infer simultaneous values of both $L_x$ and $L_z$
+for each particle, but that is impossible because
+$L_x$ and $L_z$ are incompatible observables (p.~\pageref{proof-lx-and-lz-incompatible}).
+Well, suppose that we measure the electron's $L_x$ first, and then the positron's $L_z$.
+This is actually equivalent to measuring $-L_x$ for the the \emph{positron}, and then
+$L_z$ for the positron. No paradox arises, because one of the measurements will inevitably
+have changed the positron's spin. Going back to the version of the experiment using the entangled
+electron and positron, the same thing happens. For example, measuring the electron's spin
+has the ability to change the \emph{positron's} spin, because they're entangled.
+The no-cloning theorem cannot possibly prohibit making
+\emph{entangled} copies, because then it would forbid entanglement itself. 
+Only making \emph{separable} copies inevitably leads to paradoxes.
+
 <% end_sec('more-entanglement') %>
 
 
@@ -2819,9 +2877,9 @@ implies quantum mechanics, at least in this technical sense.
 
 <% begin_hw('three-entangled-spins') %>__incl(hw/three-entangled-spins)<% end_hw() %>
 
-<% begin_hw('funky-norm') %>__incl(hw/funky-norm)<% end_hw() %>
-
 \pagebreak
+
+<% begin_hw('funky-norm') %>__incl(hw/funky-norm)<% end_hw() %>
 
 <% begin_hw('moat-normalize-traveling-waves') %>__incl(hw/moat-normalize-traveling-waves)<% end_hw() %>
 
