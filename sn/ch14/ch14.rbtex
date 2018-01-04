@@ -694,13 +694,10 @@ one in which the atom has decayed and your brain has observed that fact, and one
 not yet decayed and that fact is instead recorded in your brain. 
 
 To get more of a feeling for what is meant by unitarity, it may be helpful to consider some examples of
-how it could be violated. Because physicists in the early days of quantum mechanics were
-offended by examples like Schr\"odinger's cat, they came up with an idea called the
-Copenhagen interpretation, according to which
-measurement causes the wavefunction to collapse to one randomly chosen
-possibility. The other possibilities disappear, and there is no way to tell that they ever existed.
-Along with the many other problems with the Copenhagen interpretation, this shows that it requires
-nonunitarity.\index{Copenhagen interpretation} Another example of nonunitarity is
+how it could be violated. One is the mythical ``collapse'' of the wavefunction in naive
+interpretations of the
+Copenhagen approximation (p.~\pageref{copenhagen-introduced}).\index{Copenhagen approximation!nonunitary}
+Another example of nonunitarity is
 given in example \ref{eg:non-hermitian-energy} on p.~\pageref{eg:non-hermitian-energy}.
 
 A more exotic example is the disappearance of matter into a black hole.

@@ -48,27 +48,25 @@ no & yes \\
 yes & no 
 \end{tabular}
 
-\noindent One camera always detects the photon, but there seems to be
-no way to predict which.  There is no limit in principle on how far
-away the two cameras can be placed.  (Real-world experiments of this
-type have been done over distances of a thousand kilometers, with the
-photons traveling either through outer space or through fiber-optic
-cables.) 
-
-What we \emph{never} observe is an outcome in which both A and B
-detect a photon, or one in which neither detects it. That is, the
-occurrence of event A (camera A sees a photon) and event B (camera B
-sees one) are both random, but they are not independent. Intuitively
-this may seem as though there is some sort of conspiracy being carried
-out over arbitrarily large distances and with no time delay. It seems
-as though the two parts of the wave are like a pair of criminal
+\noindent An instant before the moment of detection, the photon is a
+wave pattern that just happens to consist of two widely separated
+pieces, each carrying half the energy.  The situation seems perfectly
+symmetric, but then a moment later we find that B has detected the
+photon and A hasn't. If B's detection of the photon is random, then
+how does the information get to A that it had better \emph{not} detect
+it?  This seems as though there is some sort of conspiracy being
+carried out over arbitrarily large distances and with no time delay.
+It's as though the two parts of the wave are a pair of criminal
 suspects who would like to line up their stories but are being kept in
 separate jail cells so that they can't communicate.  If the part of
-the wave at A is going to be detected (at full strength, carrying
-100\% of the energy $E=hf$), how does the part at B get the message
-that it had better not be detected, fading away like the Cheshire cat?
-Einstein derisively referred to this apparent coordination as ``spooky
-action at a distance.''
+the wave at B is going to be detected (at full strength, carrying
+100\% of the energy $E=hf$), how does the part at A get the message
+that it should fade away like the Cheshire cat?
+This coordination would have to occur over very large distances ---
+real-world experiments of this type have been done over distances of a
+thousand kilometers, with the photons traveling either through outer
+space or through fiber-optic cables.  Einstein derisively referred to
+this apparent coordination as ``spooky action at a distance.''
 
 Niels Bohr and two collaborators proposed in 1924 the
 seemingly reasonable solution that there \emph{can't} be any such
@@ -90,6 +88,11 @@ figure \figref{beam-splitter}, but with x-rays rather than visible
 light.  Their results, published in 1926, showed that if one detector
 saw the x-ray photon, the other did not, so that energy was always
 conserved at the microscopic level, not just on the average.
+We \emph{never} observe an outcome in which both A and B
+detect a photon, or one in which neither detects it. That is, the
+occurrence of event A (camera A sees a photon) and event B (camera B
+sees one) are both random, but they are not independent. 
+
 <% end_sec('nonlocality') %>
 
 <% begin_sec("Entanglement",nil,'entanglement') %>
@@ -294,7 +297,7 @@ able to use additional photons to ``read out'' the quantum states in
 only 0.5 ps, before decoherence occurred, and verify that there were
 wave interference effects in which one diamond's quantum-mechanical
 wave had a definite phase relationship with the other's.  Although
-these experiments are difficult, they show that there is no
+these experiments are difficult, they suggest that there is no
 obstruction in principle to observing quantum-mechanical effects such
 as superposition in arbitrarily large objects. 
 
@@ -304,4 +307,63 @@ Entanglement is discussed in more mathematical detail in sec.~\ref{sec:more-enta
 %
 :])
 <% end_sec('entanglement') %>
+<% begin_sec("The Copenhagen and many-worlds approximations",nil,'ci-and-mwi') %>
+When we last saw Alice and Bob, they were in this superposition of states,
+\begin{equation*}
+ c\fbox{\parbox{38mm}{Alice saw a photon and Bob didn't. They consider this result to have been random.}}
++c'\fbox{\parbox{38mm}{Bob saw a photon and Alice didn't. They consider this result to have been random.}},
+\end{equation*}
+with
+\begin{equation*}
+  |c|=|c'|.
+\end{equation*}
+Let's focus on Bob number one --- the sad Bob --- who didn't see a photon. This is just one of the disappointments
+that Bob has experienced in his life, which include breaking up with his college crush and failing
+to summit Kilimanjaro due to altitude sickness. But Bob is a sane, normal person, and he's not going
+to spend the rest of his life obsessing over how things might have been, in another world. 
+Like a banker writing off a bad debt, Bob decides to stop maintaining all the bookkeeping that is,
+to him, irrelevant going forward. He now rewrites history and says that
+\begin{equation*}
+  |c|=1 \qquad \text{and} \qquad |c'|=0.
+\end{equation*}
+Technically speaking, this is wrong, because it is in principle still possible to have wave interference
+effects between sad Bob and happy Bob. But in reality such effects are impractical to observe with
+macroscopic objects, due to effects like short wavelengths and decoherence, so what Bob is doing
+by ``clearing the books''
+is an extremely good approximation. We will refer to this approximation by two different names,
+the \emph{Copenhagen approximation} and the \emph{many-worlds approximation}, for the following historical and
+psychological reasons.
+
+In the early years of quantum mechanics, the school of
+physicists\label{copenhagen-introduced}\index{Copenhagen approximation}\index{Copenhagen interpretation|see {Copenhagen approximation}} 
+centering on Niels Bohr in Copenhagen were horribly confused about how
+to interpret quantum mechanics. They had all kinds of wrong ideas,
+such as the idea that quantum mechanics applied to individual atoms
+but not to light or to macroscopic objects. They didn't know about
+decoherence. They thought there was a clear dividing line between
+microscopic things and macroscopic things (there isn't), and they
+hypothesized that quantum mechanics only applied to microscopic ones
+(it applies to both). They claimed that clearing the books was an
+actual physical process, which they described as the ``collapse'' of
+the wave. This was referred to as the Copenhagen interpretation, but
+we can now see that it is an approximation. There are cases where it
+is a bad approximation, e.g., at $t=3\ \zu{ps}$ during the experiment
+by Lee \emph{et al.} (p.~\pageref{macroscopic-entanglement}), when
+decoherence had started to happen but was only about half-way
+complete.
+
+The many-worlds approximation came along a little later.\footnote{It was
+originally proposed in a 1957 PhD thesis by Hugh Everett, who called it
+the relative state interpretation of quantum mechanics. Later it began
+to be referred to as the many-worlds interpretation.} It consists of
+making the same kind of ``clearing the books'' approximation, but recognizing
+that there is no physical process of collapse.\index{many-worlds approximation}\index{many-worlds interpretation|see {many-worlds approximation}} 
+
+Many physicists are philosophically attached to one or the other of these
+approximations, and would object to my description of them as approximations.
+My main purpose in writing this explanation is to immunize you against the
+impression, which can be mistakenly picked up from many descriptions of quantum
+mechanics, that a particular point of view on these topics (often the Copenhagen
+approximation) is somehow ``standard.''
+<% end_sec('ci-and-mwi') %>
 <% end_sec('nonlocality-and-entanglement') %>

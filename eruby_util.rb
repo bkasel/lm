@@ -1294,13 +1294,14 @@ def alter_titlecase(title,section_level)
   result = title
   warn = false
   if section_level>=$config['titlecase_above'] then
-    result = remove_titlecase(title) 
-    warn = (result != title) && section_level>0
+    # don't warn or try to fix; this happens for any proper noun that isn't in the list
+    # result = remove_titlecase(title) 
+    # warn = (result != title) && section_level>0
   else
     result = add_titlecase(title)
     warn = (result != title)
   end
-  if warn then $stderr.print "warning from alter_titlecase in eruby_util.rb: title #{title} has wrong case, was automatically fixed; ch=#{$ch}\n" end
+  if warn then $stderr.print "warning from alter_titlecase in eruby_util.rb: title #{title} appears to have the wrong case, was automatically fixed ch=#{$ch}\n" end
   return result
 end
 
