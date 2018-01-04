@@ -307,6 +307,7 @@ Entanglement is discussed in more mathematical detail in sec.~\ref{sec:more-enta
 %
 :])
 <% end_sec('entanglement') %>
+m4_ifelse(__sn,1,[:
 <% begin_sec("The Copenhagen and many-worlds approximations",nil,'ci-and-mwi') %>
 When we last saw Alice and Bob, they were in this superposition of states,
 \begin{equation*}
@@ -324,11 +325,11 @@ to spend the rest of his life obsessing over how things might have been, in anot
 Like a banker writing off a bad debt, Bob decides to stop maintaining all the bookkeeping that is,
 to him, irrelevant going forward. He now rewrites history and says that
 \begin{equation*}
-  |c|=1 \qquad \text{and} \qquad |c'|=0.
+  |c|=1 \qquad \text{and} \qquad c'=0.
 \end{equation*}
 Technically speaking, this is wrong, because it is in principle still possible to have wave interference
-effects between sad Bob and happy Bob. But in reality such effects are impractical to observe with
-macroscopic objects, due to effects like short wavelengths and decoherence, so what Bob is doing
+effects between sad Bob and happy Bob. But such effects are impractical to observe,
+due to effects like short wavelengths and decoherence, so what Bob is doing
 by ``clearing the books''
 is an extremely good approximation. We will refer to this approximation by two different names,
 the \emph{Copenhagen approximation} and the \emph{many-worlds approximation}, for the following historical and
@@ -345,7 +346,7 @@ microscopic things and macroscopic things (there isn't), and they
 hypothesized that quantum mechanics only applied to microscopic ones
 (it applies to both). They claimed that clearing the books was an
 actual physical process, which they described as the ``collapse'' of
-the wave. This was referred to as the Copenhagen interpretation, but
+the wave. This has traditionally been referred to as the Copenhagen ``interpretation,'' but
 we can now see that it is an approximation. There are cases where it
 is a bad approximation, e.g., at $t=3\ \zu{ps}$ during the experiment
 by Lee \emph{et al.} (p.~\pageref{macroscopic-entanglement}), when
@@ -366,4 +367,5 @@ impression, which can be mistakenly picked up from many descriptions of quantum
 mechanics, that a particular point of view on these topics (often the Copenhagen
 approximation) is somehow ``standard.''
 <% end_sec('ci-and-mwi') %>
+:]) 
 <% end_sec('nonlocality-and-entanglement') %>
