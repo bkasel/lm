@@ -916,6 +916,13 @@ Dividing both sides by $X(x)Y(y)$ simplifies this equation to
 But if $X$ and $Y$ are solutions of the one-dimensional equation, then both terms on the left are
 constants, so we have a valid solution to the two-dimensional equation.
 
+As an example, we know that $\sin kx$ is a solution to the one-dimensional Schr\"odinger equation,
+so the function $\sin kx \sin ky$ is also a solution. The result, shown in figure
+\figref{separable-s-eqn}, can be chopped off and made into a solution of the two-dimensional
+particle in a box. Solutions similar to this one are found in real-life examples such as
+microwave photons in a microwave oven. For more about separability, and how it compares with
+entanglement, see sec.~\ref{sec:more-entanglement}, p.~\pageref{sec:more-entanglement}.
+
 <% marg(300) %>
 <%
   fig(
@@ -927,12 +934,6 @@ constants, so we have a valid solution to the two-dimensional equation.
   )
 %>
 <% end_marg %>
-As an example, we know that $\sin kx$ is a solution to the one-dimensional Schr\"odinger equation,
-so the function $\sin kx \sin ky$ is also a solution. The result, shown in figure
-\figref{separable-s-eqn}, can be chopped off and made into a solution of the two-dimensional
-particle in a box. Solutions similar to this one are found in real-life examples such as
-microwave photons in a microwave oven. For more about separability, and how it compares with
-entanglement, see sec.~\ref{sec:more-entanglement}, p.~\pageref{sec:more-entanglement}.
 <% end_sec('s-eqn-separability') %>
 <% end_sec('solving-s-eqn') %>
 
@@ -1090,6 +1091,8 @@ as
 \begin{equation*}
   \mathcal{O}_p=-i\hbar\frac{\der}{\der x}.
 \end{equation*}
+A further note about the momentum operator is example \ref{eg:imaginary-momentum} on
+p.~\pageref{eg:imaginary-momentum}.
 \end{eg}
 
 \begin{eg}{A nonexample}\label{eg:not-an-observable}
@@ -1475,6 +1478,32 @@ This is easily seen to be zero without an explicit calculation,
 because when we take the antiderivative of $e^{-2i\theta}$, we will get the same
 type of exponential, whose values when we plug in the upper and lower
 limits of integration will cancel each other out.
+\end{eg}
+
+\begin{eg}{Imaginary momentum?}\label{eg:imaginary-momentum}
+Here's a paradox. If we take a wavefunction $e^{rx}$, where $r$ is a constant, then applying
+the momentum operator $\hat{p}=-i\der/\der x$ (example \ref{eg:momentum-operator}, p.~\pageref{eg:momentum-operator}) gives
+\begin{equation*}
+  \hat{p} e^{rx} = -ir e^{rx}.
+\end{equation*}
+For a state of definite momentum, we normally have in mind, as in examples \ref{eg:momentum-operator}
+and \ref{eg:moat-orthogonal-traveling-waves},
+an oscillating wave where $r=ik$ is purely imaginary. But what if $r$ is real, say $r=1$ (ignoring units)? Then
+our wavefunction is $e^x$, and it's a state of definite momentum --- \emph{imaginary} momentum.
+Oh no, what's going on? Nice polite observables like momentum aren't supposed to have imaginary eigenvalues.
+
+The resolution to this paradox lies in the fundamental principles of quantum mechanics that we've learned.
+Wavefunctions are supposed to belong to a vector space in
+which we have a well-defined inner product. A wavefunction like $\Psi=e^x$ is ruled out by this requirement,
+because $\langle \Psi|\Psi\rangle$ is infinite, and therefore undefined.
+
+Of course we could raise the same objection to a wavefunction like $\Phi=e^{ikx}$ defined for all real values
+of $x$. But when we work with wavefunctions like $\Phi$, we usually just have in mind a computational
+shortcut, with the actual wavefunction being some kind of wavepacket or wave train consisting of a finite
+number of wavelengths. (Or we could be talking about rotation, as in the quantum moat
+of example \ref{eg:moat-orthogonal-traveling-waves}. Note that in such an example, oscillating functions
+can be made to join smoothly to themselves as they wrap around, but this doesn't work with
+functions like $e^x$.)
 \end{eg}
 
 <% end_sec('qm-inner-product') %>
