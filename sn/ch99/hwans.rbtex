@@ -2,10 +2,6 @@
   require "../eruby_util.rb"
 %>
 
-\refstepcounter{appendixctr}\label{hwansappendix}%
-\appendix\chapter{Appendix \ref{hwansappendix}: Hints and Solutions}
-
-
 %==================================================================
 %==================================================================
 %========================= Hints ==================================
@@ -53,12 +49,6 @@
 %========================= Self-Checks ============================
 %==================================================================
 %==================================================================
-
-
-
-
-\noindent\formatlikesection{Answers to Self-Checks}
-
 
 <% self_check_answer("psychic") %>
 <% self_check_answer("cathode-rays") %>
@@ -201,9 +191,6 @@
 %==================================================================
 %==================================================================
 
-\noindent\formatlikesection{Solutions}
-
-
 <% answer("mg-to-kg") %>
 <% answer("geometric-mean") %>
 <% answer("triangle-formula") %>
@@ -275,3 +262,10 @@
 
 <% answer("square-wavefunction") %>
 <% answer("bogus-laplacian") %>
+
+%%%%%%%%%% FIXME: the following should be split by volumes, as in LM
+
+<% print_answers_of_one_type(0,14,'hint','Hints') %>
+<% print_answers_of_one_type(0,14,'answer','Solutions to selected problems') %>
+<% print_answers_of_one_type(0,14,'self_check','Answers to self-checks') %>
+<% print_answers_of_one_type(0,14,'bare_answer','Answers') %>
