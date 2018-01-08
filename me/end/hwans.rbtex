@@ -111,7 +111,6 @@
 <% self_check_answer("bacteria-queue") %>
 <% self_check_answer("nigeria") %>
 <% self_check_answer("count-sig-figs") %>
-
 <% self_check_answer("yd2-yd3") %>
 <% self_check_answer("axle-ratios") %>
 
