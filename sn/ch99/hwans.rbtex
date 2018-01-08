@@ -252,233 +252,26 @@
 <% answer("angular-defect") %>
 <% answer("tossed-clock") %>
 
-\noindent\formatlikesubsection{Hints for Chapter \ref{ch:atomem}}\\
-\hwanshdr{nacl}\label{hwhint:nacl}
-The force
-on the lithium ion is the vector sum of all the forces of
-all the quadrillions of sodium and chlorine atoms, which
-would obviously be too laborious to calculate.  Nearly all
-of these forces, however, are canceled by a force from an
-ion on the opposite side of the lithium.
+<% answer("nacl") %>
 
-\noindent\formatlikesubsection{Solutions for Chapter \ref{ch:dccircuits}}\\
 <% answer("timebetweenelectrons") %>
-$\Delta t = \Delta q / I = e/I = 0.16\ \mu \zu{s}$
-
-
- 
-
 <% answer("combine-unequal-resistors") %>
-In series, they give 11 $\zu{k}\Omega$. 
-In parallel, they give $(1/1\ \zu{k}\Omega+1/10\ \zu{k}\Omega)^{-1} = 0.9\ \zu{k}\Omega$.
-
 <% answer("tetrahedron") %>
-The actual shape is irrelevant; all we care about is what's connected to
-what. Therefore, we can draw the circuit flattened into a plane. Every
-vertex of the tetrahedron is adjacent to every other vertex, so any two
-vertices to which we connect will give the same resistance. Picking two
-arbitrarily, we have this:
-
-\anonymousinlinefig{tetrahedronsoln}
-
-This is unfortunately a circuit that cannot be converted into parallel
-and series parts, and that's what makes this a hard problem! However, we
-can recognize that by symmetry, there is zero current in the resistor
-marked with an asterisk. Eliminating this one, we recognize the whole
-arrangement as a triple parallel circuit consisting of resistances $R$,
-$2R$, and $2R$. The resulting resistance is $R/2$.
-
 <% answer("electrongun") %>
-(a) Conservation of energy gives
-\begin{align*}
-	U_A		&= U_B+K_B\\
-	K_B		&= U_A-U_B\\
-	\frac{1}{2}mv^2 &= e\Delta V\\
-	v &= \sqrt{\frac{2e\Delta V}{m}}
-\end{align*}\\
-(b) Plugging in numbers, we get $5.9\times10^7$ m/s. This is about
-20\% of the speed of light, so the nonrelativistic assumption
-was good to at least a rough approximation.
-
 <% answer("measure-on-printed-circuit") %>
- It's much more practical to measure voltage differences.
-To measure a current, you have to break the circuit
-somewhere and insert the meter there, but it's not possible
-to disconnect the circuits sealed inside the board.
 
-\noindent\formatlikesubsection{Solutions for Chapter \ref{ch:efield}}\\
 <% answer("screened") %>
-By symmetry, the field is always directly toward or away from the center.
-We can therefore calculate it along the $x$ axis, where $r=x$, and the
-result will be valid for any location at that distance from the center.
-\begin{align*}
-	E	&= -\frac{\der V}{\der x} \\
-		&= -\frac{\der}{\der x}\left(x^{-1}e^{-x}\right) \\
-		&= x^{-2}e^{-x}+x^{-1}e^{-x} \\
-\end{align*}
-At small $x$, near the proton, the first term dominates, and the exponential
-is essentially 1, so we have $E\propto x^{-2}$, as we expect from the Coulomb
-force law. At large $x$, the second term dominates, and
-the field approaches zero faster than an exponential.
-
 <% answer("addition-theorem-for-sine") %>
-\begin{align*}
-\sin(a+b) &= \left(e^{i(a+b)}-e^{-i(a+b)}\right)/2i \\
-          &= \left(e^{ia}e^{ib}-e^{-ia}e^{-ib}\right)/2i \\
-          &= \left[(\cos a+i\sin a)(\cos b+i\sin b)-(\cos a-i\sin a)(\cos b-i\sin b)\right]/2i \\
-          &= \cos a\sin b +\sin a\cos b
-\end{align*}
-By a similar computation, we find $\cos(a+b)=\cos a\cos b-\sin a\sin b$.
-
 <% answer("cube-roots-of-unity") %>
-If $z^3=1$, then we know that $|z|=1$, since cubing $z$ cubes its magnitude. Cubing $z$ triples
-its argument, so the argument of $z$ must be a number that, when tripled, is equivalent to an
-angle of zero. There are three possibilities: $0\times 3=0$, $(2\pi/3)\times 3=2\pi$,
-and $(4\pi/3)\times 3=4\pi$. (Other possibilities, such as $(32\pi/3)$, are equivalent to
-one of these.) The solutions are:
-\begin{equation*}
-z = 1,\ e^{2\pi i/3},\ e^{4\pi i/3}
-\end{equation*}
-
 <% answer("factor-cubic") %>
-We can think of this as a polynomial in $x$ or a polynomial in $y$ --- their roles are symmetric. Let's call $x$ the variable.
-By the fundamental theorem of algebra, it must be possible to factor it into a product of three
-linear factors, if the coefficients are allowed to be complex. Each of these factors causes the
-product to be zero for a certain value of $x$. But the condition for the expression to be
-zero is $x^3=y^3$, which basically means that the ratio of $x$ to $y$ must be a third root of 1.
-The problem, then, boils down to finding the three third roots of 1, as in
-problem \ref{hw:cube-roots-of-unity}. Using the result of that problem, we find that there
-are zeroes when $x/y$ equals $1$, $e^{2\pi i/3}$, and $e^{4\pi i/3}$. This tells us that
-the factorization is $(x-y)(x-e^{2\pi i/3}y)(x-e^{4\pi i/3}y)$.
 
-The second part of the problem asks us to factorize as much as possible using real coefficients.
-Our only hope of doing this is to multiply out the two factors that involve complex coefficients,
-and see if they produce something real. In fact, we can anticipate that it will work, because
-the coefficients are complex conjugates of one another, and when a quadratic has two complex
-roots, they are conjugates. The result is $(x-y)(x^2+xy+y^2)$.
-
-\noindent\formatlikesubsection{Solutions for Chapter \ref{ch:em}}\\
 <% answer("timereversalem") %>
-(a) For a material object, $\vc{p}=m\vc{v}$. The velocity vector reverses
-itself, but mass is still positive, so the momentum vector is reversed.\\
-(b) In the forward-time universe, conservation of momentum is
-$\vc{p}_{1,i}+\vc{p}_{2,i}=\vc{p}_{1,f}+\vc{p}_{2,f}$. In the backward-time
-universe, all the momenta are reversed, but that just negates both sides
-of the equation, so momentum is still conserved.
-
 <% answer("biot-savart-spiral") %>
-Note that in the Biot-Savart law, the variable $\vc{r}$ is defined as a vector
-that points from the current to the point at which the field is being calculated,
-whereas in the polar coordinates used to express the equation of the spiral, the
-vector more naturally points the opposite way. This requires some fiddling with
-signs, which I'll suppress, and simply identify $\der\bell$ with $\der\vc{r}$.
-\begin{align*}
-  \vc{B} &= \frac{kI}{c^2}\int \frac{\der\bell\times\vc{r}}{r^3}
-\end{align*}
-The vector $\der\vc{r}$ has components $\der x=w(\cos\theta-\theta\sin\theta)$ and
-$\der y=w(\sin\theta+\theta\cos\theta)$. Evaluating the vector cross product, and
-substituting $\theta/w$ for $r$, we find
-\begin{align*}
-  \vc{B} &= \frac{kI}{c^2w}\int \frac{\theta(\cos\theta\sin\theta-\theta\sin^2\theta-\cos\theta\sin\theta-\theta\cos^2\theta)\der\theta}{\theta^3} \\
-         &= \frac{kI}{c^2w}\int \frac{\der\theta}{\theta} \\
-         &= \frac{kI}{c^2w}\ln\frac{\theta_2}{\theta_1} \\
-         &= \frac{kI}{c^2w}\ln\frac{b}{a}
-\end{align*}
 
-
-
-\noindent\formatlikesubsection{Solutions for Chapter \ref{ch:optics}}\\
 <% answer("virtual-image-location") %>
- See the ray diagram below. Decreasing $\theta_o$ decreases
-$\theta_i$, so the equation $\theta_f=\pm\theta_i+\pm\theta_o$
-must have opposite signs on the right. Since $\theta_o$ is bigger
-than $\theta_i$, the only way to get a positive $\theta_f$ is if
-the signs are $\theta_f=-\theta_i+\theta_o$.
-This gives $1/f=-1/d_i+1/d_o$.
-
-\anonymousinlinefig{soln-virtual-image-location}
-
 <% answer("image-combinations") %>
-(a) The object distance is less than the focal length, so the
-image is virtual: because the object is so close, the cone of rays
-is diverging too strongly for the mirror to bring it back to a focus.
-(b) At an object distance of 30 cm, it's clearly going to be real.
-With the object distance of 20 cm, we're right at the crossing-point between
-real and virtual. For this object position, the reflected rays will be
-parallel. We could consider this to be an image at infinity.
-(c),(d) A diverging mirror can only make virtual images.
-
 <% answer("field-of-view") %>
-Since $d_o$ is much greater than $d_i$, the lens-film
-distance $d_i$ is essentially the same as $f$. (a) Splitting
-the triangle inside the camera into two right triangles,
-straightforward trigonometry gives
-\begin{equation*}
-		 \theta =  2 \tan^{-1}\frac{w}{2f}
-\end{equation*}
- for the field of view. This comes out to be $39\degunit$ and
-$64\degunit$ for the two lenses. (b) For small angles, the
-tangent is approximately the same as the angle itself,
-provided we measure everything in radians. The equation
-above then simplifies to
-\begin{equation*}
-		 \theta  =  \frac{w}{f}
-\end{equation*}
-The results for the two lenses are $.70\ \text{rad}=40\degunit$, and
-$1.25\ \text{rad}=72\degunit$. This is a decent approximation.
-
-(c) With the 28-mm lens, which is closer to the film, the
-entire field of view we had with the 50-mm lens is now
-confined to a small part of the film. Using our small-angle
-approximation $\theta =w/f$, the amount of light contained
-within the same angular width $\theta $ is now striking a
-piece of the film whose linear dimensions are smaller by the
-ratio 28/50. Area depends on the square of the linear
-dimensions, so all other things being equal, the film would
-now be overexposed by a factor of $(50/28)^2=3.2$. To
-compensate, we need to shorten the exposure by a factor of 3.2.
-
 <% answer("constant-thickness") %>
-One surface is curved outward and one inward. Therefore the minus sign
-applies in the lensmaker's equation. Since the radii of curvature are
-equal, the quantity $1/r_1-1/r_2$ equals zero, and the resulting focal
-length is infinite. A big focal length indicates a weak lens. An infinite
-focal length tells us that the lens is infinitely weak --- it doesn't
-focus or defocus rays at all.
-
-\noindent\formatlikesubsection{Solutions for Chapter \ref{ch:quantum}}\\
 
 <% answer("square-wavefunction") %>
-The expressions $|\Psi|^2$ and $|\Psi^2|$ are identical, because the
-magnitude of a product is the product of the magnitudes. These expressions
-give positive real numbers as their results, which makes sense for
-a probability density. The expression $\Psi^2$ need not be real, and
-if it is real, it may be negative. It cannot be interpreted as a probability
-density. As a concrete example, suppose that $\Psi= b i$, where $b$ is a real
-number with units.
-Then $|\Psi|^2=|\Psi^2|=b^2$, which is real and positive, but $\Psi^2=-b^2$,
-which clearly can't be interpreted probabilistically, because it's negative.
-
 <% answer("bogus-laplacian") %>
-(a) The quantity $x-y$ vanishes along the line $y=x$ lying in the
-first quadrant at a 45-degree angle between the axes. Squaring produces
-a trough parallel to this line, with a parabolic cross-section. Geometrically,
-the Laplacian can be interpreted as a measure of how much the value of $f$
-at a point differs from its average value on a small circle centered on
-that point. The trough is concave up, so we can predict that the Laplacian
-will be positive everywhere.\\
-(b) The zero result is clearly wrong because it disagrees with our conclusion
-from part a that the Laplacian is positive. A correct calculation gives
-$\partial^2(x-y)^2/\partial x^2+\partial^2(x-y)^2/\partial y^2=4$.\\
-(c) If we rotate our coordinate axes counterclockwise by 45 degrees, then we have a parabolic
-trough oriented along the $x$ axis. In terms of these new coordinates,
-$\partial f/\partial x=0$, while $\partial f/\partial y$ is nonzero almost
-everywhere.\\
-Remark: The mistake described in the question is a common one, and is apparently
-based on the idea that the notation $\nabla^2$ must mean applying an operator
-$\nabla$ twice. For those with some exposure to vector calculus, it may be
-of interest to note that the Laplacian \emph{is} equivalent to the divergence
-of the gradient, which can be notated either $\operatorname{div}(\operatorname{grad} f)$ or
-$\nabla\cdot(\nabla f)$. The important thing to recognize is that the gradient,
-notated $\operatorname{grad} f$ or $\nabla f$, outputs a \emph{vector}, not a scalar
-like the quantity $Q$ defined in this problem.
