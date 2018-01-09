@@ -240,4 +240,7 @@ In the problem itself, put a line like this:
   <% hw_solution %>
   <% hw_hint("foo") %>
   <% hw_answer %>
+Figures should be made using anonymousinlinefig, and should be in
+directories such as ch99/figs or end2/figs. Currently they need
+to be duplicated if they appear in more than one book.
 
