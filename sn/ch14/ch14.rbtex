@@ -2907,12 +2907,21 @@ implies quantum mechanics, at least in this technical sense.
 
 <% begin_hw('funky-norm') %>__incl(hw/funky-norm)<% end_hw() %>
 
+\vfill
+
 <% begin_hw('moat-normalize-traveling-waves') %>__incl(hw/moat-normalize-traveling-waves)<% end_hw() %>
+
+\vfill
 
 <% begin_hw('moat-orthogonal-standing-waves') %>__incl(hw/moat-orthogonal-standing-waves)<% end_hw() %>
 
+\vfill
+
 <% begin_hw('sinusoidal-no-preferred-basis') %>__incl(hw/sinusoidal-no-preferred-basis)<% end_hw() %>
 
+\pagebreak
+
+<% begin_hw('reflection-from-impenetrable-wall') %>__incl(hw/reflection-from-impenetrable-wall)<% end_hw() %>
 
 
 
