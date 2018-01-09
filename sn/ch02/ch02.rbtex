@@ -2732,7 +2732,7 @@ warning, K= -5.7482907323e-12 <0
 
 <% begin_hw('pulley') %>
         What ratio of masses will balance the pulley system shown in the figure?
-        \hwhint{hwhint:pulley}
+        <% hw_hint("pulley") %>
 <% end_hw() %>
 
 <% begin_hw('tightropish',2) %>__incl(hw/tightropish)<% end_hw() %>

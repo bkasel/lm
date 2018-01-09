@@ -153,10 +153,11 @@
 
 \newcommand{\hwanssection}[1]{\vspace{4mm}\noindent\formatlikesection{#1}}
 
-\newcommand{\hwsolnhdr}[1]{\noindent\textbf{Page \pageref{hw:#1}, problem \ref{hw:#1}:}\label{soln:#1}\ }
-\newcommand{\hwanshdr}[1]{\noindent\textbf{Page \pageref{hw:#1}, problem \ref{hw:#1}:}\ }
-\newcommand{\scanshdr}[1]{\noindent\textbf{Page \pageref{sc:#1}:}\ \label{scans:#1}}
-\newcommand{\hinthdr}[1]{\hwanshdr{#1}\label{hwhint:#1}}
+\newcommand{\kludgyblankfooter}{\thispagestyle{plain}}
+\newcommand{\hwsolnhdr}[1]{\kludgyblankfooter\noindent\textbf{Page \pageref{hw:#1}, problem \ref{hw:#1}:}\label{soln:#1}\ }
+\newcommand{\hwanshdr}[1]{\kludgyblankfooter\noindent\textbf{Page \pageref{hw:#1}, problem \ref{hw:#1}:}\ \label{hwans:#1}}
+\newcommand{\scanshdr}[1]{\kludgyblankfooter\noindent\textbf{Page \pageref{sc:#1}:}\ \label{scans:#1}}
+\newcommand{\hinthdr}[1]{\kludgyblankfooter\noindent\textbf{Page \pageref{hw:#1}, problem \ref{hw:#1}:}\ \label{hwhint:#1}}
 
 %-------------------- fancyhdr -------------------
 \newcommand{\yesiwantarabic}{\renewcommand{\thepage}{\arabic{page}}}

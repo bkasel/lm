@@ -4297,8 +4297,8 @@ an electric version of such a spectrometer.
         these configurations with the energy when the solenoids are
         far apart. Based on this reasoning, which configuration is
         stable, and in which configuration will the little solenoid
-        tend to get twisted around or spit out? 
-        \hwhint{hwhint:nestedsolenoids}
+        tend to get twisted around or spit out?
+        <% hw_hint("nestedsolenoids") %>
 <% end_hw() %>
 
 <% marg(0) %>

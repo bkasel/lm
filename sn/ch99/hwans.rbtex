@@ -41,6 +41,8 @@
 <% hint_text("circularcap") %>
 <% hint_text("timereversalem") %>
 <% hint_text("very-weak-refraction") %>
+<% hint_text("nacl") %>
+
 	
 	
 %==================================================================
@@ -174,10 +176,12 @@
 <% bare_answer("fluorocarbon") %>
 <% bare_answer("heart-efficiency") %>
 <% bare_answer("violin-helmholtz") %>
+
 <% bare_answer("wave-on-hanging-string") %>
 <% bare_answer("flute") %>
 <% bare_answer("lasso") %>
 <% bare_answer("maxtransmission") %>
+
 <% bare_answer("estrips") %>
 <% bare_answer("linechargecurrent") %>
 <% bare_answer("forcebetweentwowires") %>
@@ -237,8 +241,6 @@
 <% answer("congruent-four-vectors") %>
 <% answer("angular-defect") %>
 <% answer("tossed-clock") %>
-
-<% answer("nacl") %>
 
 <% answer("timebetweenelectrons") %>
 <% answer("combine-unequal-resistors") %>

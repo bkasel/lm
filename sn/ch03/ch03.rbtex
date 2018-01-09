@@ -5476,7 +5476,7 @@ towards the center)?
         tug's propellers.\hwendpart
         (a) If the force acting on the tug's propeller is
         $F$, what is the tension, $T$, in the cable connecting the two
-        ships? \hwhint{hwhint:tugboat}\answercheck\hwendpart
+        ships? <% hw_hint("tugboat") %>\answercheck\hwendpart
         (b) Interpret your answer in the special cases of $M=0$ and
         $M=\infty$.
 <% end_hw() %>

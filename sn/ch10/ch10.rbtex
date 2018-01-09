@@ -4788,7 +4788,7 @@ at various locations in the sine-wave field.
         whose electrical properties increase the amount of energy
         that must be stored. For the sake of this analysis, ignore
         this fact.) 
-        \hwhint{hwhint:neuronenergy}\answercheck\hwendpart
+        <% hw_hint("neuronenergy") %>\answercheck\hwendpart
         (b) An organism's evolutionary fitness should be better if
         it needs less energy to operate its nervous system. Based on
         your answer to part a, what would you expect evolution to

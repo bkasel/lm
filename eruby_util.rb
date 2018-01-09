@@ -934,6 +934,8 @@ end
 def hw_hint(label)
   print "\\hwhint{hwhint:#{label}}"
   write_to_answer_data('hint')
+  #debug = (label=='nestedsolenoids' || label=='erbium')
+  #if debug then $stderr.print "hw_hint: wrote to answer data, label=#{label}\n" end
 end
 
 def hw_answer()
@@ -989,6 +991,8 @@ def print_answers_of_one_type(lo_ch,hi_ch,type,header)
   for ch in lo_ch..hi_ch do
     $answer_data.each { |a|
       #$stderr.print "type=",type,' ',a.join(','),"\n" if ch==0 && a[0]==0
+      #debug = (a[1]=='nestedsolenoids' || a[1]=='erbium')
+      #if debug then $stderr.print "debugging, ch=#{ch}, a=#{a}\n" end
       name = a[1]
       if ch==a[0] && type==a[2] then
         if last_ch!=ch then
@@ -1063,6 +1067,8 @@ def set_answer_text(label,long_label,text,type)
   text = handle_m4_in_answer_file(text)
   $answer_text[type][long_label] = text
   $answer_long_label_to_short[long_label] = label 
+  #debug = (label=~/nestedsolenoids/ || label=~/erbium/)
+  #if debug then $stderr.print "set_answer_text: label=#{label}\n" end
 end
 
 def handle_m4_in_answer_file(text)

@@ -1518,7 +1518,7 @@ __incl(text/nucleosynthesis)
         a charge of $+e$, what is the direction and magnitude of the
         total force on it?  Assume there are no other defects nearby
         in the crystal besides the two shown here. 
-        \hwhint{hwhint:nacl}\answercheck
+        <% hw_hint("nacl") %>\answercheck
 <% end_hw() %>
 
 \pagebreak

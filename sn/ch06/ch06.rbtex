@@ -2694,7 +2694,7 @@ directly perpendicular to the surface.The speeds of light in air and water are
 $3.0\times10^8$ and $2.2\times10^8$ m/s, respectively.\hwendpart
 (b) Find the energy of the reflected wave as a fraction of
 the incident energy.
-\hwhint{hwhint:airwaterrefl}\answercheck
+<% hw_hint("airwaterrefl") %>\answercheck
 <% end_hw() %>
 
 \vfill
