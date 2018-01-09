@@ -259,6 +259,21 @@
 <% answer("image-combinations") %>
 <% answer("field-of-view") %>
 <% answer("constant-thickness") %>
+<% answer("stealth") %>
+<% answer("alien-pool") %>
+<% answer("parabolic") %>
+<% answer("telescopemovehead") %>
+<% answer("flatmirrormagnification") %>
+<% answer("magnificationdependsondistance") %>
+<% answer("infinitemagnification") %>
+<% answer("underwaterlens") %>
+<% answer("explainlens") %>
+<% answer("goggles") %>
+<% answer("funkylenses") %>
+<% answer("microscopeblue") %>
+<% answer("compare-diffraction-same-light") %>
+<% answer("star") %>
+<% answer("compare-double-slits") %>
 
 <% answer("square-wavefunction") %>
 <% answer("bogus-laplacian") %>

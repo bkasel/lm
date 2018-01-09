@@ -151,10 +151,12 @@
 \newcommand{\summarych}[2]{\noindent\formatlikesection{Chapter \ref{#1}, #2, page \pageref{#1}}\label{summary#1}\\}
 \newcommand{\sumem}[1]{\emph{#1}}
 
+\newcommand{\hwanssection}[1]{\vspace{4mm}\noindent\formatlikesection{#1}}
 
-\newcommand{\hwanshdr}[1]{\noindent\textbf{Page \pageref{hw:#1}, problem \ref{hw:#1}:}\ }
 \newcommand{\hwsolnhdr}[1]{\noindent\textbf{Page \pageref{hw:#1}, problem \ref{hw:#1}:}\label{soln:#1}\ }
+\newcommand{\hwanshdr}[1]{\noindent\textbf{Page \pageref{hw:#1}, problem \ref{hw:#1}:}\ }
 \newcommand{\scanshdr}[1]{\noindent\textbf{Page \pageref{sc:#1}:}\ \label{scans:#1}}
+\newcommand{\hinthdr}[1]{\hwanshdr{#1}\label{hwhint:#1}}
 
 %-------------------- fancyhdr -------------------
 \newcommand{\yesiwantarabic}{\renewcommand{\thepage}{\arabic{page}}}
