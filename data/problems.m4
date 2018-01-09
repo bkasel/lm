@@ -2272,3 +2272,4 @@ m4_define(__hw_sn_14_funky-norm,15)m4_dnl
 m4_define(__hw_sn_14_moat-normalize-traveling-waves,16)m4_dnl
 m4_define(__hw_sn_14_moat-orthogonal-standing-waves,17)m4_dnl
 m4_define(__hw_sn_14_sinusoidal-no-preferred-basis,18)m4_dnl
+m4_define(__hw_sn_14_reflection-from-impenetrable-wall,19)m4_dnl
