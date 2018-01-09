@@ -36,7 +36,6 @@
 <% hint_text("vedgedisk") %>
 <% hint_text("neuronenergy") %>
 <% hint_text("epointinfty") %>
-<% hint_text("dipole-in-nonuniform-field") %>
 <% hint_text("nestedsolenoids") %>
 <% hint_text("solarconstant") %>
 <% hint_text("circularcap") %>
@@ -246,6 +245,7 @@
 <% answer("tetrahedron") %>
 <% answer("electrongun") %>
 <% answer("measure-on-printed-circuit") %>
+<% answer("dipole-in-nonuniform-field") %>
 
 <% answer("screened") %>
 <% answer("addition-theorem-for-sine") %>

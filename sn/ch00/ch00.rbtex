@@ -1,6 +1,9 @@
 <%
   require "../eruby_util.rb"
 %>
+
+<% clear_answer_data %>
+
 <%
   chapter(
     '00',
