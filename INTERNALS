@@ -228,3 +228,16 @@ problems book
 
 The problems book, in the subdirectory problems, has its own, different software
 setup. See problems/README for an explanation of how it works.
+
+==================================================================
+solutions, hints, answers, and self-checks in the back of the book
+==================================================================
+
+Let the name of the problem be foo.
+Put a file foo.tex or hint-foo.tex containing the answer in share/answers.
+Put an appropriate line, such as <% answer("foo") %>, in hwans.rbtex.
+In the problem itself, put a line like this:
+  <% hw_solution %>
+  <% hw_hint("foo") %>
+  <% hw_answer %>
+

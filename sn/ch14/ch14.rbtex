@@ -2867,9 +2867,9 @@ implies quantum mechanics, at least in this technical sense.
 
 <% begin_hw('oxygen-22-predict-spin-4') %>__incl(hw/oxygen-22-predict-spin-4)<% end_hw() %>
 
-<% begin_hw('lin-alg-vector-space-or-not') %>__incl(hw/lin-alg-vector-space-or-not)<% end_hw() %>
-
 <% begin_hw('lin-alg-basis-or-not') %>__incl(hw/lin-alg-basis-or-not)<% end_hw() %>
+
+<% begin_hw('lin-alg-vector-space-or-not') %>__incl(hw/lin-alg-vector-space-or-not)<% end_hw() %>
 
 <% begin_hw('lin-alg-units',2) %>__incl(hw/lin-alg-units)<% end_hw() %>
 

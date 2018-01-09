@@ -280,6 +280,10 @@
 <% answer("square-wavefunction") %>
 <% answer("bogus-laplacian") %>
 
+<% answer("lin-alg-vector-space-or-not") %>
+<% answer("lin-alg-basis-or-not") %>
+<% answer("lin-alg-units") %>
+
 %%%%%%%%%% FIXME: the following should be split by volumes, as in LM
 
 <% print_answers_of_one_type(0,14,'hint','Hints') %>
