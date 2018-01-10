@@ -1411,6 +1411,23 @@ $\langle \mathcal{O} u|v\rangle = \langle u|\mathcal{O}v\rangle$, so
 $e_1^*\langle u|v\rangle=e_2 \langle u|v\rangle$. But since $e_1$ and $e_2$ are real and unequal, we must have
 $\langle u|v\rangle=0$.}
 
+<%
+  fig(
+    'inner-product-interpretation',
+    %q{%
+      Some examples of interpretation of the inner product. The first three examples
+      are explained immediately below. The fourth, about averages, is justified on
+      p.~\pageref{subsubsec:qm-inner-product-averages}.
+    },
+    {
+      'width'=>'wide',
+      'sidecaption'=>true
+    }
+  )
+%>
+
+% The 0.81 is 8/pi^2, because a triangle wave is \Sum (1/n^2)\cos(nx), for n odd.
+
 Suppose that $u$ and $v$ are both properly normalized wavefunctions. If $|\langle u|v \rangle|=1$, then the
 states are identical.\footnote{If the inner product is, for example, $-1$, then the wavefunctions differ only by
 an unobservable difference in phase, so they really describe the same state.}
@@ -1440,6 +1457,7 @@ gives us the probability that we will have observed the state to be $v$. This fi
 to a probability interpretation, has felt mysterious to several generations of physicists, but recent
 work has clarified the situation somewhat. We will have more to say about this on pp.~\pageref{sec:et-phase-randomization}
 and \pageref{sec:qbit-measurement-problem}.\index{quantum mechanics!measurement problem}
+
 
 On p.~\pageref{exclusion-principle-nonrigorous} we stated the Pauli exclusion principle
 by saying that two particles with half-integer spins
@@ -1482,9 +1500,9 @@ limits of integration will cancel each other out.
 
 \begin{eg}{Imaginary momentum?}\label{eg:imaginary-momentum}
 Here's a paradox. If we take a wavefunction $e^{rx}$, where $r$ is a constant, then applying
-the momentum operator $\hat{p}=-i\der/\der x$ (example \ref{eg:momentum-operator}, p.~\pageref{eg:momentum-operator}) gives
+the momentum operator $\mathcal{O}_p=-i\der/\der x$ (example \ref{eg:momentum-operator}, p.~\pageref{eg:momentum-operator}) gives
 \begin{equation*}
-  \hat{p} e^{rx} = -ir e^{rx}.
+  \mathcal{O}_p e^{rx} = -ir e^{rx}.
 \end{equation*}
 For a state of definite momentum, we normally have in mind, as in examples \ref{eg:momentum-operator}
 and \ref{eg:moat-orthogonal-traveling-waves},
@@ -1505,6 +1523,63 @@ of example \ref{eg:moat-orthogonal-traveling-waves}. Note that in such an exampl
 can be made to join smoothly to themselves as they wrap around, but this doesn't work with
 functions like $e^x$.)
 \end{eg}
+
+<% begin_sec("Averages",nil,'qm-inner-product-averages') %>
+The average family lives down the street from me. Their family income in 2014 was \$72,641,
+and they have 2.5 kids. This joke depends on the fact that you can't superpose families to
+make a single family --- but we \emph{can} do this for wavefunctions. Suppose that the
+particle-in-a-box wavefunction $\eqnimage{eqn-wave1}$ has a definite energy of 1 unit,
+$\mathcal{O}_E\eqnimage{eqn-wave1}=1\eqnimage{eqn-wave1}$. This says that $\eqnimage{eqn-wave1}$
+is a state of definite energy 1, so that when we act on it with the energy operator
+$\mathcal{O}_E$, the result is just to multiply the wave by 1 (the eigenvalue).
+
+If this is true, then shortening the wavelength by a factor of
+2 means increasing the momentum by a factor of 2, and increasing the energy by a factor
+of 4. Therefore the wavefunction $\eqnimage{eqn-wave2}$ has 4 units of energy
+$\mathcal{O}_E\eqnimage{eqn-wave2}=4\eqnimage{eqn-wave2}$.
+
+Now there is nothing wrong with mixing these together to get a state 
+$\Psi=c\eqnimage{eqn-wave1}+c'\eqnimage{eqn-wave2}$. If both $c$ and $c'$ are nonzero,
+then we expect to get a state with properties in between those of
+$\eqnimage{eqn-wave1}$ and $\eqnimage{eqn-wave2}$.  If we measure the energy
+of such a state, then our wavefunction becomes entangled with that of the
+particle, and we look like this:
+\begin{equation*}
+ c\fbox{\parbox{30mm}{We measured the energy to be 1.}}
++c'\fbox{\parbox{30mm}{We measured the energy to be 4.}}.
+\end{equation*}
+Suppose we make the mixture an equal one, $c=c'$. Then the average should be $(1+4)/2=2.5$.
+This turns out to be easily expressible using an inner product:
+\begin{equation*}
+  \langle \Psi|\mathcal{O}_E \Psi \rangle = 2.5.
+\end{equation*}
+It's a good exercise to work this out for yourself. The key point is that
+$\Psi$ can be expressed as a superposition of states of definite energy
+$\Psi=c\eqnimage{eqn-wave1}+c'\eqnimage{eqn-wave2}$, and when
+the operator $\mathcal{O}_E$ works on $\Psi$, it gives
+$\mathcal{O}_E\Psi=c\eqnimage{eqn-wave1}+4c'\eqnimage{eqn-wave2}$. (And remember
+that by normalization, $|c|=|c'|=1/\sqrt{2}$.)
+
+This is a general rule for calculating averages: for a state $\Psi$, the
+average value for an observable $\mathcal{O}$ is $\langle \Psi|\mathcal{O} \Psi \rangle $.
+Because observables are hermitian, this is the same as $\langle \mathcal{O}\Psi| \Psi \rangle $.
+
+<% end_sec('qm-inner-product-averages') %>
+
+\startdqs
+
+\begin{dq}\label{dq:naughty-dot-product}
+Suppose that by rotating vectors we could change the results of dot products. Explain why this would
+be very naughty, first by using an example in which $\vc{u}\cdot\vc{u}=1$, and then, just to make
+it naughtier, one where $\vc{u}\cdot\vc{v}=0$.
+\end{dq}
+
+\begin{dq}
+Suppose that as a system evolved over time, inner products of wavefunctions could change.
+As in discussion question \ref{dq:naughty-dot-product}, give shockingly naughty examples
+where initially we have $\langle \Psi|\Psi \rangle=1$ and $\langle \Psi|\Phi \rangle=0$,
+but later these inner products change.
+\end{dq}
 
 <% end_sec('qm-inner-product') %>
 
@@ -1796,23 +1871,6 @@ value of, say, $s_x$ can be written as some kind of linear combination of the fo
 $\alpha|\uparrow\rangle+\beta|\downarrow\rangle$, and we then have
 $\hat{H}=\alpha\emat |\uparrow\rangle-\beta\emat|\downarrow\rangle$.
 
-Now suppose that the magnetic field is not parallel to the $z$ axis. One way to handle
-this situation would be simply to redefine the coordinate system so that the $z$ axis
-was back in alignment with the direction of the field. But suppose that's not convenient.
-Then the Hamiltonian will have a different form. But because the Hamiltonian must be Hermitian
-(see p.~\pageref{hermitian}), there is not much freedom in choosing this form. It must
-look something like this:
-\begin{align*}
-  \hat{H} |\uparrow\rangle =    &\emat|\uparrow\rangle + \fmat|\downarrow\rangle \\
-  \hat{H} |\downarrow\rangle =  &\fmat^*|\uparrow\rangle-\emat|\downarrow\rangle.
-\end{align*}
-Here the constant $\fmat$ is a complex number with units of energy. The interpretation is
-that $\emat$ tells us how much energy splitting we would have had if the magnetic field
-had not had any $x$ or $y$ components, while $\fmat$ brings in the effect of those components.
-We could go ahead and work out the eigenvalues of this operator by writing down the eigenvalue
-equation and solving it by brute force, but the result is likely to seem less mysterious if
-we instead apply the following physical argument.
-
 <% marg() %>
 <% fig(
   'nmr-applications','',{'anonymous'=>true,'title'=>"Application to MRI scans",
@@ -1840,6 +1898,24 @@ we instead apply the following physical argument.
   })
 %>
 <% end_marg %>
+
+
+Now suppose that the magnetic field is not parallel to the $z$ axis. One way to handle
+this situation would be simply to redefine the coordinate system so that the $z$ axis
+was back in alignment with the direction of the field. But suppose that's not convenient.
+Then the Hamiltonian will have a different form. But because the Hamiltonian must be Hermitian
+(see p.~\pageref{hermitian}), there is not much freedom in choosing this form. It must
+look something like this:
+\begin{align*}
+  \hat{H} |\uparrow\rangle =    &\emat|\uparrow\rangle + \fmat|\downarrow\rangle \\
+  \hat{H} |\downarrow\rangle =  &\fmat^*|\uparrow\rangle-\emat|\downarrow\rangle.
+\end{align*}
+Here the constant $\fmat$ is a complex number with units of energy. The interpretation is
+that $\emat$ tells us how much energy splitting we would have had if the magnetic field
+had not had any $x$ or $y$ components, while $\fmat$ brings in the effect of those components.
+We could go ahead and work out the eigenvalues of this operator by writing down the eigenvalue
+equation and solving it by brute force, but the result is likely to seem less mysterious if
+we instead apply the following physical argument.
 
 Although $\fmat$ lies at some point in the complex plane with some
 phase angle $\operatorname{arg}\fmat$, such phase angles in quantum
@@ -1874,7 +1950,7 @@ They do not depend on any facts about the system other than the fact that it is 
 with two states. To see the full power and generality of this approach, we will apply it to the ammonia
 molecule, $\zu{NH}_3$, shown in figure \figref{ammonia}.
 
-<% marg(300) %>
+<% marg() %>
 <%
   fig(
     'ammonia',
