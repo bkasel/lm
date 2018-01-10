@@ -1553,7 +1553,9 @@ This turns out to be easily expressible using an inner product:
 \begin{equation*}
   \langle \Psi|\mathcal{O}_E \Psi \rangle = 2.5.
 \end{equation*}
-It's a good exercise to work this out for yourself. The key point is that
+It's a good exercise to work this out for yourself 
+(problem \ref{hw:two-point-five-kids}, p.~\pageref{hw:two-point-five-kids}).\label{two-point-five-kids}
+The key point is that
 $\Psi$ can be expressed as a superposition of states of definite energy
 $\Psi=c\eqnimage{eqn-wave1}+c'\eqnimage{eqn-wave2}$, and when
 the operator $\mathcal{O}_E$ works on $\Psi$, it gives
@@ -2998,6 +3000,8 @@ implies quantum mechanics, at least in this technical sense.
 \pagebreak
 
 <% begin_hw('reflection-from-impenetrable-wall') %>__incl(hw/reflection-from-impenetrable-wall)<% end_hw() %>
+
+<% begin_hw('two-point-five-kids') %>__incl(hw/two-point-five-kids)<% end_hw() %>
 
 
 
