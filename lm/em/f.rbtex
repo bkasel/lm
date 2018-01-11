@@ -1565,59 +1565,17 @@ existence.
 
 <% begin_hw_sec %>
 
-<% begin_hw('foodtoatoms') %>
-Use the nutritional information on some packaged food to
-make an order-of-magnitude estimate of the amount of
-chemical energy stored in one atom of food, in units of
-joules. Assume that a typical atom has a mass of $10^{-26}$
-kg. This constitutes a rough estimate of the amounts of
-energy there are on the atomic scale. [See chapter \ref{ch:scaling}
-for help on how to do order-of-magnitude
-estimates. Note that a nutritional ``calorie'' is really a 
-kilocalorie.]\answercheck
-<% end_hw() %>
+<% begin_hw('foodtoatoms') %>__incl(hw/foodtoatoms)<% end_hw() %>
 
 <% begin_hw('beta-decay-charge-conservation') %>__incl(hw/beta-decay-charge-conservation)<% end_hw() %>
 
 <% begin_hw('pu-decay-products') %>__incl(hw/pu-decay-products)<% end_hw() %>
 
-
-<% begin_hw('uelec') %>
-        (a) Recall that the gravitational energy of two gravitationally
-        interacting spheres is given by $PE=-Gm_1m_2/r$, where $r$ is the
-        center-to-center distance. What would be the analogous
-        equation for two electrically interacting spheres? Justify
-        your choice of a plus or minus sign on physical grounds,
-        considering attraction and repulsion.\\
-        (b) Use this
-        expression to estimate the energy required to pull apart a
-        raisin-cookie atom of the one-electron type, assuming a
-        radius of $10^{-10}$ m.\answercheck\\
-        (c) Compare this with the result of
-         problem \ref{hw:foodtoatoms}.
-<% end_hw() %>
+<% begin_hw('uelec') %>__incl(hw/uelec)<% end_hw() %>
 
 \enlargethispage{\baselineskip}
 
-<% begin_hw('neonaccel') %>
-        A neon light consists of a long glass tube full of neon,
-        with metal caps on the ends.  Positive charge is placed on
-        one end of the tube, negative on the other.  The
-        electric forces generated can be strong enough to strip
-        electrons off of a certain number of neon atoms.  Assume for
-        simplicity that only one electron is ever stripped off of
-        any neon atom.  When an electron is stripped off of an atom,
-        both the electron and the neon atom (now an ion) have
-        electric charge, and they are accelerated by the forces
-        exerted by the charged ends of the tube.  (They do not feel
-        any significant forces from the other ions and electrons
-        within the tube, because only a tiny minority of neon atoms
-        ever gets ionized.)  Light is finally produced when ions are
-        reunited with electrons.  Give a numerical comparison of the magnitudes and
-        directions of the accelerations of the electrons and ions.
-        [You may need some data from page \pageref{datatable}.]
-        \answercheck
-<% end_hw() %>
+<% begin_hw('neonaccel') %>__incl(hw/neonaccel)<% end_hw() %>
 
 <% begin_hw('hatomscancellation') %>__incl(hw/hatomscancellation)<% end_hw() %>
 

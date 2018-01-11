@@ -126,6 +126,7 @@
 21,typesofcharge,self_check
 21,inductionneg,self_check
 21,killbattery,self_check
+21,nacl,hint
 21,hail-an-electron-cab,answer
 21,measure-on-printed-circuit,answer
 21,combine-unequal-resistors,answer
