@@ -3,5 +3,6 @@
   "tipbox":"hwtipbox",
   "pulley-table-two-blocks-rotation":"pulley-table-two-blocks-energy",
   "atwood-energy":"hw-atwood",
-  "fwhm":""
+  "fwhm":"",
+  "neuron-stick":"hw-neuron"
 }

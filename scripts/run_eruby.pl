@@ -196,7 +196,7 @@ foreach (<$d/*.rbtex>) {
   my $cmd = "m4 -P -D __web='$web_flag' -D __share='../share/$shared_text' $prepend_m4_files $file >$postm4";
   #print "----------------cmd=$cmd\n              ---------- book=$book, ch=$ch, topic_map=",($topic_map{$book}->{$ch+0}),"\n" if $file=~/^em/;
   do_system($cmd,$file,'m4');
-  my $sharing = "SHARED_FIGS='$shared_dirs[1]' SHARED_FIGS2='$shared_dirs[2]'";
+  my $sharing = "SHARED_FIGS='$shared_dirs[1]' SHARED_FIGS2='$shared_dirs[2]' SHARED_FIGS3='$shared_dirs[3]'";
   my $cmd = "BK='$book' DIR='$d' $sharing CALC='$calc' BOOK_OUTPUT_FORMAT='print' $eruby $postm4 >$outfile_base.tex"; # is always executed by sh, not bash or whatever
   #print "$cmd\n";
   do_system($cmd,$file,'eruby (print)');

@@ -235,9 +235,11 @@ def find_fig_for_problem(prob,files_list) # returns [boolean,"foo","/.../.../foo
   places.push($original_dir+"/../../lm/end2/figs")
   places.push($original_dir+"/../../sn/ch99/figs")
   possible_names = []
+  figure_explicitly_named = false
   if $fig_exceptional_naming.key?(prob) then
     if $fig_exceptional_naming[prob]=='' then return [false,nil,nil] end
     possible_names.push($fig_exceptional_naming[prob])
+    figure_explicitly_named = true
   else
     ['','hw-','eg-'].each { |prefix|
       possible_names.push("#{prefix}#{prob}")
@@ -249,6 +251,9 @@ def find_fig_for_problem(prob,files_list) # returns [boolean,"foo","/.../.../foo
       if r[0] then return r end
     }
   }
+  if figure_explicitly_named then
+    fatal_error("problem #{prob} has explicitly named figure #{$fig_exceptional_naming[prob]} in fig_exceptional_naming, but no such figure was found in any of the following places: #{places}\nTypically this means that the figure is in a particular book's chNN/figs directory.")
+  end
   return [false,nil,nil]
 end
 

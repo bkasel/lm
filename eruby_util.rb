@@ -187,7 +187,7 @@ end
 # for use when generating screen-resolution figures
 # e.g., ../9share/optics
 def shared_figs
-  return [ENV['SHARED_FIGS'],ENV['SHARED_FIGS2']]
+  return [ENV['SHARED_FIGS'],ENV['SHARED_FIGS2'],ENV['SHARED_FIGS3']]
 end
 
 def is_print
@@ -502,8 +502,9 @@ def find_directory_where_figure_is(name)
   if figure_exists_in_my_own_dir?(name) then return dir = "\\figprefix\\chapdir/figs" end
   # bug: doesn't support \figprefix
   s = shared_figs()
-  if figure_exists_in_this_dir?(name,s[0]) then return s[0] end
-  if figure_exists_in_this_dir?(name,s[1]) then return s[1] end
+  s.each { |ss|
+    if figure_exists_in_this_dir?(name,ss) then return ss end
+  }
   return nil
 end
 
@@ -615,7 +616,7 @@ def fig(name,caption=nil,options={})
     options['anonymous']=!has_caption
   end
   dir = find_directory_where_figure_is(name)
-  if dir.nil? && options['text'].nil? then fatal_error("figure #{name} not found in #{dir()}/figs, #{shared_figs()[0]}, or #{shared_figs()[1]}") end
+  if dir.nil? && options['text'].nil? then fatal_error("figure #{name} not found in #{dir()}/figs or #{shared_figs()}") end
   #------------------------------------------------------------
   if is_print then fig_print(name,caption,options,dir) end
   #------------------------------------------------------------
