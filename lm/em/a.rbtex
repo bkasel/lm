@@ -2687,13 +2687,7 @@ circuit being tested.
   )
 %>
 <% end_marg %>
-<% begin_hw('measure-on-printed-circuit') %>
-<% hw_solution %> You have to do different things with a circuit to
-measure current than to measure a voltage difference. Which
-would be more practical for a printed circuit board, in
-which the wires are actually strips of metal inlaid on the
-surface of the board?
-<% end_hw() %>
+<% begin_hw('measure-on-printed-circuit') %>__incl(hw/measure-on-printed-circuit)<% end_hw() %>
 
 <% begin_hw('teardrop') %>Problem \ref{hw:teardrop} has been replaced with problem \ref{hw:lightning-rod}.<% end_hw() %>
 
@@ -2702,17 +2696,7 @@ surface of the board?
 <% begin_hw('equilateralcharges') %>__incl(hw/equilateralcharges)<% end_hw() %>
 
 
-<% begin_hw('vnacl',2) %>
-        Referring back to problem \ref{hw:nacl} on page \pageref{hw:nacl}
-        about the sodium chloride crystal, suppose the lithium ion
-        is going to jump from the gap it is occupying to one of the
-        four closest neighboring gaps.  Which one will it jump to,
-        and if it starts from rest, how fast will it be going by the
-        time it gets there?  (It will keep on moving and accelerating
-        after that, but that does not concern us.) You will need the result
-        of problem \ref{hw:pe-of-point-charges}.
-        \answercheck
-<% end_hw() %>
+<% begin_hw('vnacl',2) %>__incl(hw/vnacl)<% end_hw() %>
 
 <% begin_hw('negative-resistance') %>__incl(hw/negative-resistance)<% end_hw() %>
 
@@ -2828,14 +2812,7 @@ surface of the board?
 
 <% end_marg %>
 
-<% begin_hw('many-v-measurements') %>
-The figure shows a circuit containing five lightbulbs
-connected to a battery. Suppose you're going to connect one
-probe of a voltmeter to the circuit at the point marked with
-a dot. How many unique, nonzero voltage differences could
-you measure by connecting the other probe to other
-wires in the circuit?
-<% end_hw() %>
+<% begin_hw('many-v-measurements') %>__incl(hw/many-v-measurements)<% end_hw() %>
 
 \vfill
 

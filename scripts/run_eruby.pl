@@ -153,6 +153,10 @@ sub find_topic {
     if ($share2) {
       push @$dirs,"../share/$share2/figs";
     }
+    my $share3 = $topic_map3{$book}->{$ch+0};
+    if ($share3) {
+      push @$dirs,"../share/$share3/figs";
+    }
   }
 }
 

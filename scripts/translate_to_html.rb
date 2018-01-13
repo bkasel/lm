@@ -2215,6 +2215,11 @@ def find_topic(ch,book,own)
   t2 = $topic_map['2']
   x = t2[book]
   if x!=nil and x[ch_string]!=nil then own.push("../share/#{x[ch_string]}/figs") end
+
+  t3 = $topic_map['3']
+  x = t3[book]
+  if x!=nil and x[ch_string]!=nil then own.push("../share/#{x[ch_string]}/figs") end
+
   return own
 end
 

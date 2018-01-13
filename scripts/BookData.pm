@@ -6,7 +6,7 @@ use Exporter;
 use JSON;
 
 @ISA = ('Exporter');
-@EXPORT = qw( @list_of_book_directories @list_of_book_names %book_name_to_directory %topic_map %topic_map2);
+@EXPORT = qw( @list_of_book_directories @list_of_book_names %book_name_to_directory %topic_map %topic_map2 %topic_map3);
 
 @list_of_book_directories = ('cp','lm','sn','me'); 
 @list_of_book_names = ('cp','lm','sn','me'); 
@@ -27,6 +27,8 @@ my $get_json = sub {
   %topic_map = %$t1;
   my $t2 = $topic_maps->{'2'};
   %topic_map2 = %$t2;
+  my $t3 = $topic_maps->{'3'};
+  %topic_map3 = %$t3;
 };
 &$get_json;
 
