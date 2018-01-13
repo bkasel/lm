@@ -4685,21 +4685,7 @@ at various locations in the sine-wave field.
 
 <% begin_hw('screened') %>__incl(hw/screened)<% end_hw() %>
 
-<% begin_hw('carbondioxide',0) %>
-        A carbon dioxide molecule is structured like O-C-O, with
-        all three atoms along a line. The oxygen atoms grab a little
-        bit of extra negative charge, leaving the carbon positive. 
-        The molecule's symmetry, however, means that it has no
-        overall dipole moment, unlike a V-shaped water molecule, for
-        instance.    Whereas the voltage of a dipole of magnitude
-        $D$ is proportional to $D/r^2$ (see problem \ref{hw:dipolev}), it
-        turns out that the voltage of a carbon dioxide molecule
-        at a distant point along the molecule's
-         axis equals $b/r^3$, where $r$ is the distance
-        from the molecule and $b$ is a constant (cf. problem \ref{hw:quadrupole}).  What would be the
-        electric field of a carbon dioxide molecule at a point
-        on the molecule's axis, at a distance $r$ from the molecule?\answercheck
-<% end_hw() %>
+<% begin_hw('carbondioxide',0) %>__incl(hw/carbondioxide)<% end_hw() %>
 
 <% begin_hw('electron-cloud') %>__incl(hw/electron-cloud)<% end_hw() %>
 
@@ -4737,23 +4723,7 @@ at various locations in the sine-wave field.
 <% end_marg %>
 <% begin_hw('halfinfinitecylinder') %>__incl(hw/halfinfinitecylinder)<% end_hw() %>
 
-<% begin_hw('lightning') %>
-        In an electrical storm, the cloud and the ground act like
-        a parallel-plate capacitor, which typically charges up due
-        to frictional electricity in collisions of ice particles in
-        the cold upper atmosphere. Lightning occurs when the
-        magnitude of the electric field builds up to a critical
-        value, $E_c$, at which air is ionized.\hwendpart
-        (a) Treat the cloud as a flat square with sides of length
-        $L$. If it is at a height $h$ above the ground, find the
-        amount of energy released in the lightning strike.\answercheck\hwendpart
-        (b) Based on your answer from part a, which is more
-        dangerous, a lightning strike from a high-altitude cloud
-        or a low-altitude one?\hwendpart
-        (c) Make an order-of-magnitude estimate of the energy
-        released by a typical lightning bolt, assuming reasonable
-        values for its size and altitude.  $E_c$ is about $10^6$  V/m.
-<% end_hw() %>
+<% begin_hw('lightning') %>__incl(hw/lightning)<% end_hw() %>
 
 <% begin_hw('epointinfty') %>__incl(hw/epointinfty)<% end_hw() %>
 
@@ -4773,28 +4743,7 @@ at various locations in the sine-wave field.
   )
 %>
 <% end_marg %>
-<% begin_hw('neuronenergy') %>
-        The neuron in the figure has been drawn fairly short, but
-        some neurons in your spinal cord have tails (axons) up to a
-        meter long. The inner and outer surfaces of the membrane act
-        as the ``plates'' of a capacitor. (The fact that it has been
-        rolled up into a cylinder has very little effect.) In order
-        to function, the neuron must create a voltage difference $V$
-        between the inner and outer surfaces of the membrane. Let
-        the membrane's thickness, radius, and length be $t$, $r$, and $L$.
-        (a) Calculate the energy that must be stored in the electric
-        field for the neuron to do its job. (In real life, the
-        membrane is made out of a substance called a dielectric,
-        whose electrical properties increase the amount of energy
-        that must be stored. For the sake of this analysis, ignore
-        this fact.) 
-        <% hw_hint("neuronenergy") %>\answercheck\hwendpart
-        (b) An organism's evolutionary fitness should be better if
-        it needs less energy to operate its nervous system. Based on
-        your answer to part a, what would you expect evolution to
-        do to the dimensions $t$ and $r?$ What other constraints
-        would keep these evolutionary trends from going too far?
-<% end_hw() %>
+<% begin_hw('neuronenergy') %>__incl(hw/neuronenergy)<% end_hw() %>
 
  % 
 <% begin_hw('cubecaps') %>__incl(hw/cubecaps)<% end_hw() %>
@@ -4821,24 +4770,15 @@ at various locations in the sine-wave field.
 
 <% begin_hw('complex-trig') %>__incl(hw/complex-trig)<% end_hw() %>
 
-<% begin_hw('lrcunits',0) %>
-        (a) Show that the equation  $V_L=L\der I/\der t$ has the right units.\hwendpart
-        (b) Verify that $RC$ has units of time.\hwendpart
-        (c) Verify that $L/R$ has units of time.
-<% end_hw() %>
- % 
- % 
+<% begin_hw('lrcunits',0) %>__incl(hw/lrcunits)<% end_hw() %>
+
 <% begin_hw('parallelinductors') %>__incl(hw/parallelinductors)<% end_hw() %>
 
 <% begin_hw('i-to-the-i') %>__incl(hw/i-to-the-i)<% end_hw() %>
 
 <% begin_hw('strayimpedance',0) %>__incl(hw/strayimpedance)<% end_hw() %>
 
-<% begin_hw('lomega',0) %>
-        Starting from the relation $V=L\der I/\der t$ for the
-        voltage difference across an inductor, show that an inductor
-        has an impedance equal to $L\omega$.
-<% end_hw() %>
+<% begin_hw('lomega',0) %>__incl(hw/lomega)<% end_hw() %>
 
 <% begin_hw('charged-long-box',1) %>__incl(hw/charged-long-box)<% end_hw() %>
 
@@ -4873,37 +4813,15 @@ at various locations in the sine-wave field.
 <% begin_hw('cylindrical-charge-given-field') %>__incl(hw/cylindrical-charge-given-field)<% end_hw() %>
   % answer: c/2ku (units check)
 
-<% begin_hw('addition-theorem-for-sine') %>
-Use Euler's theorem to derive the addition theorems that express
-$\sin(a+b)$ and $\cos(a+b)$ in terms of the sines and cosines of
-$a$ and $b$.
-<% hw_solution %>
-<% end_hw() %>
+<% begin_hw('addition-theorem-for-sine') %>__incl(hw/addition-theorem-for-sine)<% end_hw() %>
 
-<% begin_hw('cube-roots-of-unity') %>
-Find every complex number $z$ such that $z^3=1$.
-<% hw_solution %>
-<% end_hw() %>
+<% begin_hw('cube-roots-of-unity') %>__incl(hw/cube-roots-of-unity)<% end_hw() %>
 
-<% begin_hw('factor-cubic') %>
-Factor the expression $x^3-y^3$ into factors of the lowest possible
-order, using complex coefficients. (Hint: use the result of problem \ref{hw:cube-roots-of-unity}.) Then do the same using real
-coefficients.
-<% end_hw() %>
+<% begin_hw('factor-cubic') %>__incl(hw/factor-cubic)<% end_hw() %>
 
+<% begin_hw('dipole-in-nonuniform-field') %>__incl(hw/dipole-in-nonuniform-field)<% end_hw() %>
 
-<% begin_hw('dipole-in-nonuniform-field') %>
-A dipole consists of two point charges lying on the $x$ axis,
-a charge $-q$ at the origin, and a $+q$ at $x=\ell$.  The dipole is
-immersed in an externally imposed, nonuniform electric field with $E_x=bx$, where
-$b$ is a constant. Add the forces acting on the dipole. Verify that
-the total force depends only on the dipole moment, not on $q$ or $\ell$ individually,
-and that the result is the same as the one found by a fancier method in example
-\ref{eg:dipole-in-nonuniform-field-fancy} on p.~\pageref{eg:dipole-in-nonuniform-field-fancy}.
-<% hw_solution %>
-<% end_hw() %>
-
-
+<% begin_hw('cosmic-ray-lightning') %>__incl(hw/cosmic-ray-lightning)<% end_hw() %>
 
 <% end_hw_sec %>
 

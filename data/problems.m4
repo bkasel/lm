@@ -2090,6 +2090,7 @@ m4_define(__hw_sn_10_addition-theorem-for-sine,56)m4_dnl
 m4_define(__hw_sn_10_cube-roots-of-unity,57)m4_dnl
 m4_define(__hw_sn_10_factor-cubic,58)m4_dnl
 m4_define(__hw_sn_10_dipole-in-nonuniform-field,59)m4_dnl
+m4_define(__hw_sn_10_cosmic-ray-lightning,60)m4_dnl
 m4_define(__hw_sn_11_ebforce,1)m4_dnl
 m4_define(__hw_sn_11_righthandmodel,2)m4_dnl
 m4_define(__hw_sn_11_moveandcurve,3)m4_dnl

@@ -1627,78 +1627,25 @@ results and the new one must be used.
 
 <% begin_hw('ring-field-on-axis',2) %>__incl(hw/ring-field-on-axis)<% end_hw() %>
 
+\enlargethispage{\baselineskip}
+
+<% begin_hw('field-of-sheet-by-scaling',2) %>__incl(hw/field-of-sheet-by-scaling)<% end_hw() %>
+
 \pagebreak
 
-<% begin_hw('field-of-sheet-by-scaling',2) %>
-Example \ref{eg:line-charge-radial-dependence} on p.~\pageref{eg:line-charge-radial-dependence} showed
-that the electric field of a long, uniform line of charge falls off with distance as $1/r$. By a similar
-technique, show that the electric field of a uniformly charged plane has \emph{no} dependence on the
-distance from the plane.
-<% end_hw() %>
+\enlargethispage{\baselineskip}
 
 <% begin_hw('dipoleetov',nil,{'calc'=>true}) %>__incl(hw/dipoleetov)<% end_hw() %>
 
-<% begin_hw('carbondioxide',nil,{'calc'=>true}) %> A carbon dioxide molecule is structured like O-C-O, with
-all three atoms along a line. The oxygen atoms grab a little
-bit of extra negative charge, leaving the carbon positive.
-The molecule's symmetry, however, means that it has no
-overall dipole moment, unlike a V-shaped water molecule, for
-instance. Whereas the voltage of a dipole of magnitude
-$D$ is proportional to $D/r^2$ (problem \ref{hw:dipoleetov}), it
-turns out that the voltage of a carbon dioxide molecule
-along its axis equals $k/r^3$, where $r$ is the distance
-from the molecule and $k$ is a constant. What would be the
-electric field of a carbon dioxide molecule at a distance $r?$\answercheck
-<% end_hw() %>
+<% begin_hw('carbondioxide',nil,{'calc'=>true}) %>__incl(hw/carbondioxide)<% end_hw() %>
 
 <% begin_hw('proton-in-nonuniform-field',nil,{'calc'=>true}) %>__incl(hw/proton-in-nonuniform-field)<% end_hw() %>
 
 <% begin_hw('field-at-mouth-of-cylinder',nil,{'calc'=>true}) %>__incl(hw/field-at-mouth-of-cylinder)<% end_hw() %>
 
-<% begin_hw('lightning') %>
-        In an electrical storm, the cloud and the ground act like
-        a parallel-plate capacitor, which typically charges up due
-        to frictional electricity in collisions of ice particles in
-        the cold upper atmosphere. Lightning occurs when the
-        magnitude of the electric field builds up to a critical
-        value, $E_c$, at which air is ionized.\hwendpart
-        (a) Treat the cloud as a flat square with sides of length
-        $L$. If it is at a height $h$ above the ground, find the
-        amount of energy released in the lightning strike.\answercheck\hwendpart
-        (b) Based on your answer from part a, which is more
-        dangerous, a lightning strike from a high-altitude cloud
-        or a low-altitude one?\hwendpart
-        (c) Make an order-of-magnitude estimate of the energy
-        released by a typical lightning bolt, assuming reasonable
-        values for its size and altitude.  $E_c$ is about $10^6$  V/m.
+<% begin_hw('lightning') %>__incl(hw/lightning)<% end_hw() %>
 
-See problem \ref{hw:cosmic-ray-lightning} for a note on how recent research affects this estimate.
-<% end_hw() %>
-
-<% begin_hw('neuronenergy') %>
-        The neuron in the figure has been drawn fairly short, but
-        some neurons in your spinal cord have tails (axons) up to a
-        meter long. The inner and outer surfaces of the membrane act
-        as the ``plates'' of a capacitor. (The fact that it has been
-        rolled up into a cylinder has very little effect.) In order
-        to function, the neuron must create a voltage difference $V$
-        between the inner and outer surfaces of the membrane. Let
-        the membrane's thickness, radius, and length be $t$, $r$, and $L$.
-        (a) Calculate the energy that must be stored in the electric
-        field for the neuron to do its job. (In real life, the
-        membrane is made out of a substance called a dielectric,
-        whose electrical properties increase the amount of energy
-        that must be stored. For the sake of this analysis, ignore
-        this fact.) 
-[Hint: The volume of the membrane is essentially the same as
-if it was unrolled and flattened out.]
-        \answercheck\hwendpart
-        (b) An organism's evolutionary fitness should be better if
-        it needs less energy to operate its nervous system. Based on
-        your answer to part a, what would you expect evolution to
-        do to the dimensions $t$ and $r?$ What other constraints
-        would keep these evolutionary trends from going too far?
-<% end_hw() %>
+<% begin_hw('neuronenergy') %>__incl(hw/neuronenergy)<% end_hw() %>
 <% marg(110) %>
 <%
   fig(
