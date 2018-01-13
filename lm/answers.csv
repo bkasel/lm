@@ -141,6 +141,7 @@
 23,gamma-approx-si,answer
 24,alternator,self_check
 24,doppler-approaching,self_check
+24,nestedsolenoids,hint
 24,force-on-wire-in-b,answer
 24,force-between-wires,answer
 24,b-from-photo,answer

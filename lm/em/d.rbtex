@@ -1529,22 +1529,7 @@ out the way it does.\answercheck
 
 \vfill
 
-<% begin_hw('nestedsolenoids') %>
-Consider two solenoids, one of which is smaller so that
-it can be put inside the other. Assume they are long enough
-so that each one only contributes significantly to the field
-inside itself, and the interior fields are nearly uniform.
-Consider the configuration where the small one is inside the
-big one with their currents circulating in the same
-direction, and a second configuration in which the currents
-circulate in opposite directions. Compare the energies of
-these configurations with the energy when the solenoids are
-far apart. Based on this reasoning, which configuration is
-stable, and in which configuration will the little solenoid
-tend to get twisted around or spit out? [Hint: A stable
-system has low energy; energy would have to be added to
-change its configuration.]
-<% end_hw() %>
+<% begin_hw('nestedsolenoids') %>__incl(hw/nestedsolenoids)<% end_hw() %>
 
 \vfill
 
@@ -1560,35 +1545,7 @@ change its configuration.]
 
 \pagebreak
 
-<% begin_hw('atom') %>
-One model of the hydrogen atom has the electron circling
-around the proton at a speed of $2.2\times10^6$ m/s, in an
-orbit with a radius of 0.05 nm. (Although the electron and
-proton really orbit around their common center of mass, the
-center of mass is very close to the proton, since it is 2000
-times more massive. For this problem, assume the proton is
-stationary.) In homework problem \ref{hw:lpcurrent} on page \pageref{hw:lpcurrent}, you
-calculated the electric current created.\hwendpart
-(a) Now estimate the magnetic field created at the center 
-of the atom by the electron. We are treating the circling
-electron as a current loop, even though it's only a single particle.\answercheck\hwendpart
-(b) Does the proton experience a nonzero force from the
-electron's magnetic field? Explain.\hwendpart
-(c) Does the electron experience a magnetic field from
-the proton? Explain.\hwendpart
-(d) Does the electron experience a magnetic field created by
-its own current? Explain.\hwendpart
-(e) Is there an electric force acting between the proton 
-and electron? If so, calculate it.\answercheck\hwendpart
-(f) Is there a gravitational force acting between the proton
-and electron? If so, calculate it.\hwendpart
-(g) An inward force is required to keep the electron in its
-orbit -- otherwise it would obey Newton's first law and go
-straight, leaving the atom. Based on your answers to the
-previous parts, which force or forces (electric, magnetic
-and gravitational) contributes significantly to this inward force?\hwendpart
-[Based on a problem by Arnold Arons.]
-<% end_hw() %>
+<% begin_hw('atom') %>__incl(hw/atom)<% end_hw() %>
 
 \vfill
 
@@ -1604,24 +1561,7 @@ and gravitational) contributes significantly to this inward force?\hwendpart
 
 \pagebreak
 
-<% begin_hw('solenoid-sex') %>
-Consider two solenoids, one of which is smaller so that
-it can be put inside the other. Assume they are long enough
-to act like ideal solenoids, so that each one only
-contributes significantly to the field inside itself, and
-the interior fields are nearly uniform. Consider the
-configuration where the small one is partly inside and
-partly hanging out of the big one, with their currents
-circulating in the same direction. Their axes are constrained to coincide.
-
-(a) Find the magnetic potential energy as a function of the
-length $x$ of the part of the small solenoid that is inside
-the big one. (Your equation will include other relevant
-variables describing the two solenoids.)
-
-(b) Based on your answer to part (a), find the force acting
-between the solenoids.
-<% end_hw() %>
+<% begin_hw('solenoid-sex') %>__incl(hw/solenoid-sex)<% end_hw() %>
 
 <%
   fig(
@@ -1663,22 +1603,7 @@ between the solenoids.
   )
 %>
 <% end_marg %>
-<% begin_hw('helmholtzcoil') %>
-A Helmholtz coil is defined as a pair of identical
-circular coils separated by a distance, $h$, equal to their
-radius, $b$. (Each coil may have more than one turn of
-wire.) Current circulates in the same direction in each
-coil, so the fields tend to reinforce each other in the
-interior region. This configuration has the advantage of
-being fairly open, so that other apparatus can be easily
-placed inside and subjected to the field while remaining
-visible from the outside. The choice of $h=b$ results in the
-most uniform possible field near the center. (a) Find the
-percentage drop in the field at the center of one coil,
-compared to the full strength at the center of the whole
-apparatus. (b) What value of $h$ (not equal to $b)$ would
-make this percentage difference equal to zero?
-<% end_hw() %>
+<% begin_hw('helmholtzcoil') %>__incl(hw/helmholtzcoil)<% end_hw() %>
 
 \vfill
 

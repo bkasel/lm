@@ -4193,35 +4193,7 @@ an electric version of such a spectrometer.
   )
 %>
 
-<% begin_hw('atom') %>
-        One model of the hydrogen atom has the electron circling
-        around the proton at a speed of $2.2\times10^6$  m/s, in an
-        orbit with a radius of 0.05 nm.  (Although the electron and
-        proton really orbit around their common center of mass, the
-        center of mass is very close to the proton, since it is 2000
-        times more massive.  For this problem, assume the proton is
-        stationary.)  \hwendpart
-        (a) Treat the circling electron as a current loop, and calculate
-        the current.\hwendpart
-        (b) Estimate the magnetic field created at the center
-        of the atom by the electron.\answercheck\hwendpart
-        (c) Does the proton experience a nonzero force from the
-        electron's magnetic field? Explain.\hwendpart
-        (d) Does the electron experience a magnetic field from
-        the proton?  Explain.\hwendpart
-        (e) Does the electron experience a magnetic field created by
-        its own current?  Explain.\hwendpart
-        (f) Is there an electric force acting between the proton
-        and electron?  If so, calculate it.\answercheck\hwendpart
-        (g) Is there a gravitational force acting between the proton
-        and electron?  If so, calculate it.\hwendpart
-        (h) An inward force is required to keep the electron in its
-        orbit -- otherwise it would obey Newton's first law and go
-        straight, leaving the atom.  Based on your answers to the
-        previous parts, which force or forces (electric, magnetic
-        and gravitational) contributes significantly to this inward force?
-        (Based on a problem by Arnold Arons.)
-<% end_hw() %>
+<% begin_hw('atom') %>__incl(hw/atom)<% end_hw() %>
 
 <% begin_hw('dipole-units-proof',0) %>__incl(hw/dipole-units-proof)<% end_hw() %>
 
@@ -4237,26 +4209,7 @@ an electric version of such a spectrometer.
   )
 %>
 <% end_marg %>
-<% begin_hw('helmholtzcoil') %>
-        A Helmholtz coil is defined as a pair of identical
-        circular coils lying in parallel planes and
-        separated by a distance, $h$, equal to their
-        radius, $b$. (Each coil may have more than one turn of
-        wire.) Current circulates in the same direction in each
-        coil, so the fields tend to reinforce each other in the
-        interior region. This configuration has the advantage of
-        being fairly open, so that other apparatus can be easily
-        placed inside and subjected to the field while remaining
-        visible from the outside. The choice of $h=b$ results in the
-        most uniform possible field near the center. A photograph of a Helmholtz coil
-        was shown in figure \figref{circular-orbit} on page \pageref{fig:circular-orbit}.\hwendpart
-        (a) Find the
-        percentage drop in the field at the center of one coil,
-        compared to the full strength at the center of the whole
-        apparatus. \answercheck\hwendpart
-        (b) What value of $h$ (not equal to $b)$ would
-        make this percentage difference equal to zero?\answercheck
-<% end_hw() %>
+<% begin_hw('helmholtzcoil') %>__incl(hw/helmholtzcoil)<% end_hw() %>
 
 <% marg(0) %>
 <%
@@ -4285,21 +4238,7 @@ an electric version of such a spectrometer.
 
 <% begin_hw('sheetz') %>__incl(hw/sheetz)<% end_hw() %>
 
-<% begin_hw('nestedsolenoids') %>
-        Consider two solenoids, one of which is smaller so that
-        it can be put inside the other. Assume they are long enough
-        so that each one only contributes significantly to the field
-        inside itself, and the interior fields are nearly uniform.
-        Consider the configuration where the small one is inside the
-        big one with their currents circulating in the same
-        direction, and a second configuration in which the currents
-        circulate in opposite directions. Compare the energies of
-        these configurations with the energy when the solenoids are
-        far apart. Based on this reasoning, which configuration is
-        stable, and in which configuration will the little solenoid
-        tend to get twisted around or spit out?
-        <% hw_hint("nestedsolenoids") %>
-<% end_hw() %>
+<% begin_hw('nestedsolenoids') %>__incl(hw/nestedsolenoids)<% end_hw() %>
 
 <% marg(0) %>
 <%
@@ -4330,24 +4269,7 @@ an electric version of such a spectrometer.
 
 <% begin_hw('solenoidinductance') %>__incl(hw/solenoidinductance)<% end_hw() %>
 
-<% begin_hw('solenoid-sex') %>
-        Consider two solenoids, one of which is smaller so that
-        it can be put inside the other. Assume they are long enough
-        to act like ideal solenoids, so that each one only
-        contributes significantly to the field inside itself, and
-        the interior fields are nearly uniform. Consider the
-        configuration where the small one is partly inside and
-        partly hanging out of the big one, with their currents
-        circulating in the same direction. Their axes are constrained to coincide.\hwendpart
-        (a) Find the difference in the magnetic  energy between the configuration where the
-        solenoids are separate and the configuration where the small one is inserted into the
-        big one. Your equation will include the
-        length $x$ of the part of the small solenoid that is inside
-        the big one, as well as other relevant
-        variables describing the two solenoids.\answercheck\hwendpart
-        (b) Based on your answer to part a, find the force acting
-        between the solenoids.\answercheck
-<% end_hw() %>
+<% begin_hw('solenoid-sex') %>__incl(hw/solenoid-sex)<% end_hw() %>
 
 <% marg(3) %>
 <%
