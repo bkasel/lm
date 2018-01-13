@@ -1,13 +1,24 @@
 %%%%%
 %%%%% This problem is used by: 0sn,10,estrips
 %%%%%
-        (a) Example \ref{eg:chargedrodside} on page \pageref{eg:chargedrodside}
+        m4_ifelse(__problems,1,[:%
+          (a) A rod of length $L$ is uniformly charged with charge $Q$.
+          It can be shown by integration that the field at a point lying in the midplane of the rod
+          at a distance $R$ is  $E =  k\lambda L/\left[R^2\sqrt{1+ L^2/4 R^2}\right]$, where $\lambda$
+          is the charge per unit length.
+        :],[:%
+          (a) Example \ref{eg:chargedrodside} on page \pageref{eg:chargedrodside}
         gives the field of a charged rod in its midplane.
+        :])%
         Starting from this result, take the limit as the length of the rod approaches infinity.
         Note that $\lambda$ is not changing, so as $L$ gets bigger, the total charge $Q$ increases.
         <% hw_answer %>\hwendpart
-        (b) In the text, I have shown (by several different methods)
-        that the field of an infinite,
+        m4_ifelse(__problems,1,[:
+          (b) It can be shown that
+        :],[:%
+          (b) In the text, I have shown (by several different methods) that
+        :])%
+        the field of an infinite,
         uniformly charged plane is $2\pi k\sigma$. Now you're going to
         rederive the same result by a different method.
         Suppose that it is the $x-y$ plane that is charged, and we
