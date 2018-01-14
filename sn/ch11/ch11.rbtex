@@ -4295,9 +4295,13 @@ an electric version of such a spectrometer.
 <% end_marg %>
 <% begin_hw('rolling-wire') %>__incl(hw/rolling-wire)<% end_hw() %>
 
+\enlargethispage{\baselineskip}
+
 <% begin_hw('minimum-em-force') %>__incl(hw/minimum-em-force)<% end_hw() %>
 
 \pagebreak
+
+\enlargethispage{\baselineskip}
 
 <% marg(3) %>
 <%
