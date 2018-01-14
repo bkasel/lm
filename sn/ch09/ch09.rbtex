@@ -2199,14 +2199,6 @@ over all.
 
 <% begin_hw('amradio') %>__incl(hw/amradio)<% end_hw() %>
 
-<% marg(0) %>
-<%
-  fig(
-    'hw-teardrop-conductor',
-    %q{Problem \ref{hw:teardrop}.}
-  )
-%>
-<% end_marg %>
 <% begin_hw('teardrop') %>Problem \ref{hw:teardrop} has been deleted.<% end_hw() %>
 
 <% begin_hw('pointchargevoltage',0) %>__incl(hw/pointchargevoltage)<% end_hw() %>

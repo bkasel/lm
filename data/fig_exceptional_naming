@@ -5,5 +5,6 @@
   "atwood-energy":"hw-atwood",
   "fwhm":"",
   "neuron-stick":"hw-neuron",
-  "neuronfield":"hw-neuron"
+  "neuronfield":"hw-neuron",
+  "many-v-measurements":"hw-many-measurements"
 }
