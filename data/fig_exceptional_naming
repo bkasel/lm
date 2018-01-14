@@ -4,5 +4,6 @@
   "pulley-table-two-blocks-rotation":"pulley-table-two-blocks-energy",
   "atwood-energy":"hw-atwood",
   "fwhm":"",
-  "neuron-stick":"hw-neuron"
+  "neuron-stick":"hw-neuron",
+  "neuronfield":"hw-neuron"
 }
