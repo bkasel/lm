@@ -390,7 +390,7 @@
         more carefully about what goes on in the battery and bulb circuit.
 
 <% end_sec() %>
-<% begin_sec("The voltage concept in general") %>\label{subsubsec:voltage}
+<% begin_sec("The concept of voltage (electrical potential) in general") %>\label{subsubsec:voltage}
 
         To do work on a charged particle, the battery apparently
         must be exerting forces on it. How does it do this? Well,
@@ -448,15 +448,18 @@
         in electrical energy between A and B. This
         electrical energy is what is being converted into other forms
         of energy such as heat and light. We therefore define
-        voltage in general as electrical energy per unit charge:
+        $\Delta V$ in general as electrical energy per unit charge:
 
-        The difference in voltage between two points in space is defined as\index{voltage!defined}
+        The $\Delta V$ between two points in space is defined as\index{voltage!defined}
         \begin{equation*}
                 \Delta V=\Delta U_{elec}/q\eqquad,
         \end{equation*}
         where $\Delta U_{elec}$ is the change in the electrical
         energy of a particle with charge $q$ as it moves from the
         initial point to the final point.
+        In this context, where we think of the voltage as being a scalar function that is
+        defined everywhere in space, it is more common in formal writing to refer to
+        it as the electrical \emph{potential}.\index{potential!electrical}
 
         The amount of power dissipated (i.e., rate at which energy is
         transformed by the flow of electricity) is then given by the equation
@@ -858,7 +861,7 @@
 \end{eg}
 
 <% end_sec() %>
-<% begin_sec("Constant voltage throughout a conductor") %>
+<% begin_sec("Constant potential throughout a conductor") %>
 
 
         The idea of a superconductor leads us to the question of how
@@ -872,7 +875,7 @@
         top equals zero. This tells us that if we pick any two
         points in a perfect conductor, the voltage difference
         between them must be zero. In other words, the entire
-        conductor must be at the same voltage.
+        conductor must be at the same potential.
 
 \pagebreak
 
@@ -901,7 +904,7 @@
   )
 %>
 
-        Constant voltage means that no work would be done on a
+        Constant potential means that no work would be done on a
         charge as it moved from one point in the conductor to
         another. If zero work was done only along a certain path
         between two specific points, it might mean that positive
@@ -935,7 +938,7 @@
         repelling each other. A proof is given in example \ref{eg:no-charge-on-interior} on 
         p.~\pageref{eg:no-charge-on-interior}.\label{assert-no-charge-on-interior}
 
-      Since wires are good conductors, constancy of voltage throughout a conductor provides
+      Since wires are good conductors, constancy of potential throughout a conductor provides
       a convenient freedom in hooking up a voltmeter to a circuit. In figure \figref{voltmeter-doesnt-care},
       points B and C are on the same piece of conducting wire, so $V_B=V_C$.
       Measuring $V_B-V_A$ gives the same result as measuring $V_C-V_A$.
@@ -985,7 +988,7 @@
 
 To understand the reason for this pattern, consider \subfigref{lightning-rod}{3}.
 Two conducting spheres are connected by a conducting wire. Since the whole apparatus
-is conducting, it must all be at one voltage. As shown in problem \ref{hw:lightning-rod}
+is conducting, it must all be at one potential. As shown in problem \ref{hw:lightning-rod}
 on p.~\pageref{hw:lightning-rod}, the density of charge is greater on the smaller
 sphere. This is an example of a more general fact observed in \subfigref{lightning-rod}{2}, which is that the charge on
 a conductor packs itself more densely in areas that are more sharply curved.
@@ -1025,7 +1028,7 @@ Similar reasoning shows why Benjamin Franklin used a sharp
         solve for $\Delta V=IR$. An ordinary-sized current
         will make a very small result when we multiply it by the
         resistance of a good conductor such as a metal wire. The
-        voltage throughout the wire will then be nearly constant.
+        potential throughout the wire will then be nearly constant.
         If, on the other hand, the current is extremely large, we
         can have a significant voltage difference. This is what
         happens in a \index{circuit!short}\index{short circuit!defined}\emph{short-circuit:\/}

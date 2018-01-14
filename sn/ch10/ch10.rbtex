@@ -897,13 +897,13 @@ ions shown in the figure.
  % ------------------------------------------------------------------------------------ 
 <% end_sec() %>
 <% end_sec %>
-<% begin_sec("Voltage related to field") %>%
+<% begin_sec("Potential related to field") %>%
         \index{electric field!related to voltage}\index{voltage!related to electric field}
         <% begin_sec("One dimension") %>
-        Voltage is electrical energy per unit charge, and electric
+        Electrical potential (voltage) is electrical energy per unit charge, and electric
         field is force per unit charge. For a particle moving in one
         dimension, along the $x$ axis, we can therefore relate
-        voltage and field if we start from the relationship between
+        potential and field if we start from the relationship between
         interaction energy and force,
         \begin{equation*}
                         \der U    =    -F_x\der x\eqquad,   
@@ -921,7 +921,7 @@ ions shown in the figure.
                                 \frac{\der V}{\der x}    =    -E_x\eqquad.
         \end{equation*}                                                
         The interpretation is that a strong
-        electric field occurs in a region of space where the voltage is
+        electric field occurs in a region of space where the potential is
         rapidly changing. By analogy, a steep hillside is a place on
         the map where the altitude is rapidly changing.
 
@@ -946,14 +946,14 @@ ions shown in the figure.
 
 \enlargethispage{-6\baselineskip}
 
-\begin{eg}{Relating the units of electric field and voltage}
+\begin{eg}{Relating the units of electric field and potential}
         From our original definition of the electric field, we
         expect it to have units of newtons per coulomb, N/C. The
         example above, however, came out in volts per meter, V/m.
         Are these inconsistent? Let's reassure ourselves that this
         all works. In this kind of situation, the best strategy is
         usually to simplify the more complex units so that they
-        involve only mks units and coulombs. Since voltage is
+        involve only mks units and coulombs. Since potential is
         defined as electrical energy per unit charge, it has units of J/C:
         \begin{align*}
                         \frac{\zu{V}}{\zu{m}}         &=   \frac{\zu{J/C}}{\zu{m}}   \\
@@ -968,15 +968,15 @@ ions shown in the figure.
         As with other such difficulties with electrical units, one
         quickly begins to recognize frequently occurring combinations.
 \end{eg}
-\begin{eg}{Voltage associated with a point charge}
+\begin{eg}{Potential associated with a point charge}
         \egquestion
-        What is the voltage associated with a point charge?
+        What is the potential associated with a point charge?
 
 \eganswer As derived previously in self-check \ref{sc:pointchargefield} on page \pageref{sc:pointchargefield}, the field is
         \begin{equation*}
                         |\vc{E}|         =    \frac{ kQ}{ r^2}     
         \end{equation*}
-        The difference in voltage between two points on the same radius line is
+        The difference in potential between two points on the same radius line is
         \begin{align*}
                         \Delta  V         &=      -\int \der  V \\
                                                 &= -\int  E_{x} \der  x
@@ -991,7 +991,7 @@ ions shown in the figure.
                                  &= \frac{ kQ}{ r_2}-\frac{ kQ}{ r_1}\eqquad.
         \end{align*}
         The standard convention is to use $r_1=\infty$ as a reference
-        point, so that the voltage at any distance $r$ from the charge is
+        point, so that the potential at any distance $r$ from the charge is
         \begin{equation*}
                          V         =   \frac{ kQ}{ r}\eqquad.  
         \end{equation*}
@@ -1036,12 +1036,12 @@ its properties in this way. Another, similar example along these lines is descri
 <% end_sec() %>
 <% begin_sec("Two or three dimensions",nil,'evthreed') %>
         The topographical map in figure \figref{topo} suggests a good
-        way to visualize the relationship between field and voltage
+        way to visualize the relationship between field and potential
         in two dimensions. Each contour on the map is a line of
         constant height; some of these are labeled with their
         elevations in units of feet. Height is related to gravitational
          energy, so in a gravitational analogy, we can
-        think of height as representing voltage. Where the contour
+        think of height as representing potential. Where the contour
         lines are far apart, as in the town, the slope is gentle.
         Lines close together indicate a steep slope.
 <% marg(70) %>
@@ -1059,7 +1059,7 @@ its properties in this way. Another, similar example along these lines is descri
   fig(
     'voltageofpointcharge',
     %q{%
-      The constant-voltage curves surrounding a point charge.
+      The constant-potential curves surrounding a point charge.
               Near the charge, the curves are so closely spaced that they blend
               together on this drawing due to the finite width with which they were
               drawn. Some electric fields are shown as arrows.
@@ -1069,7 +1069,7 @@ its properties in this way. Another, similar example along these lines is descri
 <% end_marg %>
 
         If we walk along a straight line, say straight east from the
-        town, then height (voltage) is a function of the east-west
+        town, then height (potential) is a function of the east-west
         coordinate $x$. Using the usual mathematical definition of
         the slope, and writing $V$ for the height in order to remind
         us of the electrical analogy, the slope along such a line is
@@ -1079,11 +1079,11 @@ its properties in this way. Another, similar example along these lines is descri
         flows downhill. Notice how the streams on the map cut
         perpendicularly through the lines of constant height.
 
-        It is possible to map voltages in the same way, as shown in
+        It is possible to map potentials in the same way, as shown in
         figure \figref{voltageofpointcharge}. The electric field is strongest where the
-        constant-voltage curves are closest together, and the
+        constant-potential curves are closest together, and the
         electric field vectors always point perpendicular to the
-        constant-voltage curves.
+        constant-potential curves.
 
         The one-dimensional relationship $E=-\der V/\der x$ generalizes
         to three dimensions as follows: 
@@ -1096,7 +1096,7 @@ its properties in this way. Another, similar example along these lines is descri
         \begin{equation*}
                         \vc{E} = \nabla V\eqquad,
         \end{equation*}
-        and if we know the field and want to find the voltage, we can
+        and if we know the field and want to find the potential, we can
         use a line integral,
         \begin{equation*}
                         \Delta V         =    \int_C \vc{E}\cdot\der\vc{r}\eqquad,  
@@ -1104,7 +1104,7 @@ its properties in this way. Another, similar example along these lines is descri
         where the quantity inside the integral is a vector dot product.
 
         <% self_check('topointerp',<<-'SELF_CHECK'
-Imagine that figure \figref{topo} represents voltage rather
+Imagine that figure \figref{topo} represents potential rather
         than height. (a) Consider the stream the starts near the
         center of the map. Determine the positive and negative signs
         of $\der V/\der x$ and $\der V/\der y$, and relate these to the direction of
@@ -1118,22 +1118,22 @@ Imagine that figure \figref{topo} represents voltage rather
 
         Figure \figref{twodvmaps} %on page \pageref{fig:twodvmaps} % convinced it to put on same page
         shows some examples of ways
-        to visualize field and voltage patterns.
+        to visualize field and potential patterns.
         
 <%
   fig(
     'twodvmaps',
     %q{%
-      Two-dimensional field and voltage patterns.
+      Two-dimensional field and potential patterns.
       Top: A uniformly charged rod. Bottom: A dipole.
-      In each case, the diagram on the left shows the field vectors and constant-voltage curves, while the one on the right shows
-      the voltage (up-down coordinate) as a function of x and y.
+      In each case, the diagram on the left shows the field vectors and constant-potential curves, while the one on the right shows
+      the potential (up-down coordinate) as a function of x and y.
       Interpreting the field diagrams: Each arrow represents the field at the point where its tail has been positioned. For clarity,
       some of the arrows in regions of very strong field strength are not shown --- they would be too long to show.
-      Interpreting the constant-voltage curves: In regions of very strong fields, the curves are not shown because they would
+      Interpreting the constant-potential curves: In regions of very strong fields, the curves are not shown because they would
       merge together to make solid black regions.
       Interpreting the perspective plots: Keep in mind that even though we're visualizing things in three dimensions, these are
-      really two-dimensional voltage patterns being represented. The third (up-down) dimension represents voltage, not position.
+      really two-dimensional potential patterns being represented. The third (up-down) dimension represents potential, not position.
     },
     {
       'width'=>'wide',
@@ -1219,8 +1219,8 @@ Imagine that figure \figref{topo} represents voltage rather
 
         Example \ref{eg:chargedrod} was one-dimensional. In the general three-dimensional
         case, we might have to integrate all three components of the field. However,
-        there is a trick that lets us avoid this much complication. The voltage is a scalar,
-        so we can find the voltage by doing just a single integral, then use the voltage
+        there is a trick that lets us avoid this much complication. The potential is a scalar,
+        so we can find the potential by doing just a single integral, then use the potential
         to find the field.
         
 <% marg(0) %>
@@ -1231,7 +1231,7 @@ Imagine that figure \figref{topo} represents voltage rather
   )
 %>
 <% end_marg %>
-        \begin{eg}{Voltage, then field}\label{eg:chargedrodside}
+        \begin{eg}{Potential, then field}\label{eg:chargedrodside}
         \egquestion
         A rod of length $L$ is uniformly charged with charge $Q$.
         Find the field at a point lying in the midplane of the rod
@@ -1244,8 +1244,8 @@ Imagine that figure \figref{topo} represents voltage rather
         where $\der\vc{E}$ is the contribution to the field from a charge $\der q$ at some
         point along the rod, and $\theta$ is the angle $\der\vc{E}$ makes with the radial line.
         
-        It's easier, however, to find the voltage first, and then find the field from the
-        voltage. Since the voltage is a scalar,
+        It's easier, however, to find the potential first, and then find the field from the
+        potential. Since the potential is a scalar,
         we simply integrate the contribution $\der V$ from each charge $\der q$, without
         even worrying about angles and directions. Let $z$ be the coordinate that measures distance
         up and down along the rod, with $z=0$ at the center of the rod. Then the distance
@@ -1295,8 +1295,8 @@ Imagine that figure \figref{topo} represents voltage rather
         \end{eg}
         The preceding example, although it involved some messy algebra, required only straightforward
         calculus, and no vector operations at all, because we only had to integrate a scalar
-        function to find the voltage. The next example is one in which
-        we can integrate either the field or the voltage without too much complication.
+        function to find the potential. The next example is one in which
+        we can integrate either the field or the potential without too much complication.
         
 <% marg(0) %>
 <%
@@ -1308,10 +1308,10 @@ Imagine that figure \figref{topo} represents voltage rather
 <% end_marg %>
         \begin{eg}{On-axis field of a ring of charge}\label{eg:ring}
                 \egquestion
-                Find the voltage and field along the axis of a uniformly charged ring.
+                Find the potential and field along the axis of a uniformly charged ring.
                 
                 \eganswer
-                Integrating the voltage is straightforward.
+                Integrating the potential is straightforward.
                 \begin{align*}
                          V        &= \int \frac{ k\der q}{ r} \\
                                         &=  k \int \frac{\der q}{\sqrt{ b^2+ z^2}} \\
@@ -4702,7 +4702,7 @@ at various locations in the sine-wave field.
 <% marg(0) %>
 <%
   fig(
-    'hwhyperbolic',
+    'hw-hyperbolic',
     %q{Problem \ref{hw:hyperbolic}.}
   )
 %>

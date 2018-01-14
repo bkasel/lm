@@ -730,7 +730,7 @@ are discussed in section \ref{sec:current-calculus}.
 <% end_marg %>
 
 <% end_sec() %>
-<% begin_sec("The voltage concept in general") %>
+<% begin_sec("The concept of voltage (electrical potential) in general") %>
 
         To do work on a charged particle, the battery apparently
         must be exerting forces on it. How does it do this? Well,
@@ -788,18 +788,20 @@ are discussed in section \ref{sec:current-calculus}.
         in electrical energy between A and B. This
         electrical energy is what is being converted into other forms
         of energy such as heat and light. We therefore define
-        voltage in general as electrical energy per unit charge:
+        $\Delta V$ in general as electrical energy per unit charge:
 
-\begin{lessimportant}[definition of voltage difference]\index{voltage!defined}
-        The difference in voltage between two points in space is defined as
+\begin{lessimportant}[definition of potential difference]\index{voltage!defined}
+        The $\Delta V$ between two points in space is defined as
         \begin{equation*}
                 \Delta V=\Delta PE_{elec}/q\eqquad,
         \end{equation*}
         where $\Delta PE_{elec}$ is the change in the electrical
         energy of a particle with charge $q$ as it moves from the
         initial point to the final point.
-
 \end{lessimportant}
+        \noindent In this context, where we think of the voltage as being a scalar function that is
+        defined everywhere in space, it is more common in formal writing to refer to
+        it as the electrical \emph{potential}.\index{potential!electrical}
 
         The amount of power dissipated (i.e., rate at which energy is
         transformed by the flow of electricity) is then given by the equation

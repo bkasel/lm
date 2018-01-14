@@ -788,11 +788,11 @@ chemistry and the periodic table.
         defined using a similar approach.
 
 <% end_sec() %>
-<% begin_sec("Voltage related to electric field") %>\index{electric field!related to voltage}\index{voltage!related to electric field}
+<% begin_sec("Potential related to electric field") %>\index{electric field!related to voltage}\index{voltage!related to electric field}
 
-Voltage is potential energy per unit charge, and electric
+Voltage (electric potential) is potential energy per unit charge, and electric
 field is force per unit charge. We can therefore relate
-voltage and field if we start from the relationship between
+potential and field if we start from the relationship between
 potential energy and force,
 \begin{multline*}
                 \Delta PE    =    -Fd\eqquad, \hfill \shoveright{\text{[assuming constant force and}}\\
@@ -808,10 +808,10 @@ giving
                                              \text{motion parallel to the force]}
 \end{multline*}
 
-\noindent In other words, the difference in voltage between two points
+\noindent In other words, the difference in potential between two points
 equals the electric field strength multiplied by the
 distance between them. The interpretation is that a strong
-electric field is a region of space where the voltage is
+electric field is a region of space where the potential is
 rapidly changing. By analogy, a steep hillside is a place on
 the map where the altitude is rapidly changing.
 
@@ -835,7 +835,7 @@ the map where the altitude is rapidly changing.
 One of the reasons hammerhead sharks have their heads shaped the way they
 do is that, like quite a few other fish, they can sense electric fields
 as a way of finding prey, which may for example be hidden in the sand. From the equation $E=\Delta V/\Delta x$, we can
-see that if the shark is sensing the voltage difference between two points,
+see that if the shark is sensing the potential difference between two points,
 it will be able to detect smaller electric fields if those two points are
 farther apart. The shark has a network of sensory organs, called the
 ampullae of Lorenzini, on the skin of its head. Since the network is spread
@@ -851,14 +851,14 @@ fields as weak as 50 \emph{pico}volts per meter!
 %>
 <% end_marg %>
 
-\begin{eg}{Relating the units of electric field and voltage}
+\begin{eg}{Relating the units of electric field and potential}
         From our original definition of the electric field, we
         expect it to have units of newtons per coulomb, N/C. The
         example above, however, came out in volts per meter, V/m.
         Are these inconsistent? Let's reassure ourselves that this
         all works. In this kind of situation, the best strategy is
         usually to simplify the more complex units so that they
-        involve only mks units and coulombs. Since voltage is
+        involve only mks units and coulombs. Since potential is
         defined as electrical energy per unit charge, it has units of J/C:
         \begin{equation*}
                         \frac{\zu{V}}{\zu{m}}         =   \frac{\zu{J/C}}{\zu{m}}   
@@ -1140,10 +1140,10 @@ the gravitational energy of two equal masses.
 
 <% end_sec() %> % Calculating energy in fields
 
-<% begin_sec("Voltage for nonuniform fields",4,'v-e-nonuniform',{'calc'=>true}) %>
+<% begin_sec("Potential for nonuniform fields",4,'v-e-nonuniform',{'calc'=>true}) %>
 
 The calculus-savvy reader will have no difficulty generalizing
-the field-voltage relationship to the case of a varying
+the field-potential relationship to the case of a varying
 field. The potential energy associated with a varying force is
 \begin{equation*}
                 \Delta PE         =   -\int F \der x\eqquad, \qquad \text{[one dimension]}
@@ -1157,14 +1157,14 @@ Applying the fundamental theorem of calculus yields
   E = -\frac{\der V}{\der x}\eqquad. \qquad \text{[one dimension]}
 \end{equation*}
 
-\begin{eg}{Voltage associated with a point charge}
-\egquestion What is the voltage associated with a point charge?
+\begin{eg}{Potential associated with a point charge}
+\egquestion What is the potential associated with a point charge?
 
 \eganswer As derived previously in self-check \ref{sc:pointchargefield} on page \pageref{sc:pointchargefield}, the field is
         \begin{equation*}
                         |\vc{E}|         =    \frac{ kQ}{ r^2}     
         \end{equation*}
-        The difference in voltage between two points on the same radius line is
+        The difference in potential between two points on the same radius line is
         \begin{align*}
                         \Delta  V         &=      \int \der  V \\
                                                 &= -\int  E_{x} \der  x
@@ -1179,7 +1179,7 @@ Applying the fundamental theorem of calculus yields
                                  &= \frac{ kQ}{ r_2}-\frac{ kQ}{ r_1}\eqquad.
         \end{align*}
         The standard convention is to use $r_1=\infty$ as a reference
-        point, so that the voltage at any distance $r$ from the charge is
+        point, so that the potential at any distance $r$ from the charge is
         \begin{equation*}
                          V         =   \frac{ kQ}{ r}\eqquad.  
         \end{equation*}
@@ -1214,17 +1214,17 @@ Show that you can recover the expression for the field of a
 <% end_sec() %>
 <% begin_sec("Two or three dimensions",0) %>
 The topographical map shown in figure \figref{topo-map} suggests a good
-way to visualize the relationship between field and voltage
+way to visualize the relationship between field and potential
 in two dimensions. Each contour on the map is a line of
 constant height; some of these are labeled with their
 elevations in units of feet. Height is related to gravitational
 potential energy, so in a gravitational analogy, we can
-think of height as representing voltage. Where the contour
+think of height as representing potential. Where the contour
 lines are far apart, as in the town, the slope is gentle.
 Lines close together indicate a steep slope.
 
 If we walk along a straight line, say straight east from the
-town, then height (voltage) is a function of the east-west
+town, then height (potential) is a function of the east-west
 coordinate $x$. Using the usual mathematical definition of
 the slope, and writing $V$ for the height in order to remind
 us of the electrical analogy, the slope along such a line is
@@ -1236,7 +1236,7 @@ talk about the derivative $\der V/\der x$.
   fig(
     'map-point-charge',
     %q{%
-      The constant-voltage curves surrounding a point charge.
+      The constant-potential curves surrounding a point charge.
               Near the charge, the curves are so closely spaced that they blend
               together on this drawing due to the finite width with which they were
               drawn. Some electric fields are shown as arrows.
@@ -1249,16 +1249,16 @@ What if everything isn't confined to a straight line? Water
 flows downhill. Notice how the streams on the map cut
 perpendicularly through the lines of constant height.
 
-It is possible to map voltages in the same way, as shown in
+It is possible to map potentials in the same way, as shown in
 figure \figref{map-point-charge}. The electric field is strongest where the
-constant-voltage curves are closest together, and the
+constant-potential curves are closest together, and the
 electric field vectors always point perpendicular to the
-constant-voltage curves.
+constant-potential curves.
 
 Figure \figref{rod-and-dipole-2-d} 
  %%%%%%%%%%%%%%%%%%%%%%%%%  on page \pageref{fig:rod-and-dipole-2-d}
   shows some examples of ways
-to visualize field and voltage patterns.
+to visualize field and potential patterns.
 
 Mathematically, the calculus of section \ref{sec:v-e-nonuniform}
 generalizes to three dimensions as follows:
@@ -1269,7 +1269,7 @@ generalizes to three dimensions as follows:
 \end{align*}
 
 <% self_check('topointerp',<<-'SELF_CHECK'
-Imagine that the topographical map in figure \figref{sc-topo-map} represents voltage rather than height.
+Imagine that the topographical map in figure \figref{sc-topo-map} represents potential rather than height.
 (a) Consider the stream that starts near the center of the
 map. Determine the positive and negative signs of $dV/dx$
 and $dV/dy$, and relate these to the direction of the force
@@ -1295,16 +1295,16 @@ charge on this map, where would you look?
   fig(
     'rod-and-dipole-2-d',
     %q{%
-      Two-dimensional field and voltage patterns.
+      Two-dimensional field and potential patterns.
       Top: A uniformly charged rod. Bottom: A dipole.
-      In each case, the diagram on the left shows the field vectors and constant-voltage curves, while the one on the right shows
-      the voltage (up-down coordinate) as a function of x and y.
+      In each case, the diagram on the left shows the field vectors and constant-potential curves, while the one on the right shows
+      the potential (up-down coordinate) as a function of x and y.
       Interpreting the field diagrams: Each arrow represents the field at the point where its tail has been positioned. For clarity,
       some of the arrows in regions of very strong field strength are not shown --- they would be too long to show.
-      Interpreting the constant-voltage curves: In regions of very strong fields, the curves are not shown because they would
+      Interpreting the constant-potential curves: In regions of very strong fields, the curves are not shown because they would
       merge together to make solid black regions.
       Interpreting the perspective plots: Keep in mind that even though we're visualizing things in three dimensions, these are
-      really two-dimensional voltage patterns being represented. The third (up-down) dimension represents voltage, not position.
+      really two-dimensional potential patterns being represented. The third (up-down) dimension represents potential, not position.
     },
     {
       'width'=>'wide',
@@ -1580,10 +1580,12 @@ the force per unit charge. These fields are vectors, and the
 fields generated by multiple sources add according to the
 rules of vector addition.
 
-When the electric field is constant, the voltage difference
+When the electric field is constant, the $\Delta V$
 between two points lying on a line parallel to the field is
 related to the field by the equation $\Delta V=-Ed$,
-where $d$ is the distance between the two points.
+where $d$ is the distance between the two points. In this
+context, one usually refers to $V$ as the electrical potential
+rather than ``the voltage.''
 
 Fields of force contain energy. The density of energy is
 proportional to the square of the magnitude of the field. In
