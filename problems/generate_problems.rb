@@ -213,7 +213,8 @@ def find_fig_file_in_dir(dir,f) # returns [boolean,"foo","/.../.../foo.png",widt
   return [false,nil,nil,nil]
 end
 
-def find_fig_for_problem(prob,files_list) # returns [boolean,"foo","/.../.../foo.png",width]
+def find_fig_for_problem(prob,files_list,ignore_exceptional_naming=false) 
+  # returns [boolean,"foo","/.../.../foo.png",width]
   # files_list = a list of directories, can be relative, with /figs implied on the end, or absolute
   # return value width is "narrow", "wide", or "fullpage"
   # For exceptions to the naming convention (e.g., figures that need to be duplicated in the book
@@ -236,7 +237,7 @@ def find_fig_for_problem(prob,files_list) # returns [boolean,"foo","/.../.../foo
   places.push($original_dir+"/../../sn/ch99/figs")
   possible_names = []
   figure_explicitly_named = false
-  if $fig_exceptional_naming.key?(prob) then
+  if $fig_exceptional_naming.key?(prob) && !ignore_exceptional_naming then
     if $fig_exceptional_naming[prob]=='' then return [false,nil,nil] end
     possible_names.push($fig_exceptional_naming[prob])
     figure_explicitly_named = true
@@ -251,6 +252,13 @@ def find_fig_for_problem(prob,files_list) # returns [boolean,"foo","/.../.../foo
       if r[0] then return r end
     }
   }
+  # failed to find it
+  if $fig_exceptional_naming.key?(prob) && !ignore_exceptional_naming then
+    # Possible fallback for cases where the solution uses
+    # non-exceptional naming. This happens with many-v-measurements.
+    fallback = find_fig_for_problem(prob,files_list,true)
+    if fallback[0] then return fallback end
+  end
   if figure_explicitly_named then
     fatal_error("problem #{prob} has explicitly named figure #{$fig_exceptional_naming[prob]} in fig_exceptional_naming, but no such figure was found in any of the following places: #{places}\nTypically this means that the figure is in a particular book's chNN/figs directory.")
   end
