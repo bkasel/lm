@@ -1697,6 +1697,15 @@ m4_define(__hw_problems_13_solidchargedcylinder,m2)m4_dnl
 m4_define(__hw_problems_13_gauss-simple-e,m3)m4_dnl
 m4_define(__hw_problems_13_gauss-em-wave,m4)m4_dnl
 m4_define(__hw_problems_13_cylindrical-charge-given-field,m5)m4_dnl
+m4_define(__hw_problems_14_sparkplug,a1)m4_dnl
+m4_define(__hw_problems_14_neuronfield,a2)m4_dnl
+m4_define(__hw_problems_14_neuronenergy,a3)m4_dnl
+m4_define(__hw_problems_14_screened,d1)m4_dnl
+m4_define(__hw_problems_14_dipolev,d2)m4_dnl
+m4_define(__hw_problems_14_carbondioxide,d3)m4_dnl
+m4_define(__hw_problems_14_proton-in-nonuniform-field,d4)m4_dnl
+m4_define(__hw_problems_14_hyperbolic,g1)m4_dnl
+m4_define(__hw_problems_14_quadraticvoltage,g2)m4_dnl
 m4_define(__hw_sn_0_calculator,1)m4_dnl
 m4_define(__hw_sn_0_units,2)m4_dnl
 m4_define(__hw_sn_0_backyard,3)m4_dnl

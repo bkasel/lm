@@ -559,3 +559,12 @@ problems,13,m2,solidchargedcylinder,0
 problems,13,m3,gauss-simple-e,0
 problems,13,m4,gauss-em-wave,0
 problems,13,m5,cylindrical-charge-given-field,0
+problems,14,a1,sparkplug,0
+problems,14,a2,neuronfield,0
+problems,14,a3,neuronenergy,0
+problems,14,d1,screened,1
+problems,14,d2,dipolev,0
+problems,14,d3,carbondioxide,0
+problems,14,d4,proton-in-nonuniform-field,0
+problems,14,g1,hyperbolic,0
+problems,14,g2,quadraticvoltage,0
