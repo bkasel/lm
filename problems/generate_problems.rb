@@ -549,7 +549,8 @@ def process_fig(fig_file,width,caption,allow_time_travel,if_path,anonymous)
       macro='figwide'
       if if_path then macro='figwidepath' end
       if allow_time_travel then
-        add_before="\n\\begin{timetravel}\n"+add_before;add_after=add_after+"\n\\end{timetravel}\n" 
+        add_before="\n\\begin{timetravel}\n"+add_before
+        add_after=add_after+"\n\\end{timetravel}\n" 
       end
     end
   end

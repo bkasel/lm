@@ -1739,6 +1739,12 @@ m4_define(__hw_problems_15_switchingmethods,g14)m4_dnl
 m4_define(__hw_problems_15_tricky-unlit-bulb,g15)m4_dnl
 m4_define(__hw_problems_15_network,g16)m4_dnl
 m4_define(__hw_problems_15_junctions,g17)m4_dnl
+m4_define(__hw_problems_16_six-tenths-c-twice,a1)m4_dnl
+m4_define(__hw_problems_16_agreeontime,a2)m4_dnl
+m4_define(__hw_problems_16_gammafornegativev,a3)m4_dnl
+m4_define(__hw_problems_16_voyagergamma,a4)m4_dnl
+m4_define(__hw_problems_16_earth-lorentz-contraction,a5)m4_dnl
+m4_define(__hw_problems_16_gammasimplefraction,a6)m4_dnl
 m4_define(__hw_sn_0_calculator,1)m4_dnl
 m4_define(__hw_sn_0_units,2)m4_dnl
 m4_define(__hw_sn_0_backyard,3)m4_dnl

@@ -16,6 +16,7 @@
 \titlespacing*{\chapter}{0pt}{0pt}{10pt} % left, above, below
 %%%%%%%%%%%%%%%%% math %%%%%%%%%%%%%%%%%%%
 \newcommand{\eqquad}{}
+\renewcommand{\mygamma}{\gamma}
 %%%%%%%%%%%%%%%%% figures %%%%%%%%%%%%%%%%%%%
 % When making a figure by hand (e.g., in the main text), typically use \fignarrow.
 % Typically such a figure would be in a location such as share/mechanics/figs.
