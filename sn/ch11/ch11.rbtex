@@ -4185,7 +4185,7 @@ an electric version of such a spectrometer.
         %
 <%
   fig(
-    'hwdottodot',
+    'hw-dottodot',
     %q{Problem \ref{hw:dottodot}.},
     {
       'width'=>'wide'
@@ -4271,7 +4271,9 @@ an electric version of such a spectrometer.
 
 <% begin_hw('solenoid-sex') %>__incl(hw/solenoid-sex)<% end_hw() %>
 
-<% marg(3) %>
+<% begin_hw('amperian-rectangle') %>__incl(hw/amperian-rectangle)<% end_hw() %>
+
+<% marg(300) %>
 <%
   fig(
     'hw-amperian-rectangle',
@@ -4279,7 +4281,6 @@ an electric version of such a spectrometer.
   )
 %>
 <% end_marg %>
-<% begin_hw('amperian-rectangle') %>__incl(hw/amperian-rectangle)<% end_hw() %>
 
 <% begin_hw('transformer') %>__incl(hw/transformer)<% end_hw() %>
 

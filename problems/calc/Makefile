@@ -26,6 +26,19 @@ all: $(SCRIPTS)/photocredits.json
 	@make post
 	@echo "Both versions of the book are made and posted. You can do a make clean if you like."
 
+quick: $(SCRIPTS)/photocredits.json
+	@make preflight
+	@make init-timetravel
+	@cp ../preamble.tex $(BOOK).m4
+	$(SCRIPTS)/generate_problems.rb problems $(SPOTTER_DIR) 0 $(DATA_DIR) >>$(BOOK).m4
+	m4 -P ../problems.m4 book.m4 $(BOOK).m4 >$(BOOK).tex
+	@$(GET_CLS)
+	@echo "Running pdflatex..."
+	@$(SCRIPTS)/timetravel.rb $(BOOK).tex
+	@$(DO_PDFLATEX_RAW)
+        #
+	@$(RM_CLS)
+
 student: $(SCRIPTS)/photocredits.json
 	@make preflight
 	@make init-timetravel

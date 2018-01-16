@@ -6,5 +6,7 @@
   "fwhm":"",
   "neuron-stick":"hw-neuron",
   "neuronfield":"hw-neuron",
-  "many-v-measurements":"hw-many-measurements"
+  "many-v-measurements":"hw-many-measurements",
+  "circularorbitphoto":"circular-orbit",
+  "withdraw-dielectric":"studfinder"
 }
