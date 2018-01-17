@@ -1796,6 +1796,15 @@ m4_define(__hw_problems_19_complex-arithmetic-4,a4)m4_dnl
 m4_define(__hw_problems_19_complex-arithmetic-5,a5)m4_dnl
 m4_define(__hw_problems_19_complex-trig,d1)m4_dnl
 m4_define(__hw_problems_19_i-to-the-i,d2)m4_dnl
+m4_define(__hw_problems_19_lrcunits,g1)m4_dnl
+m4_define(__hw_problems_19_parallelinductors,g2)m4_dnl
+m4_define(__hw_problems_19_strayimpedance,g3)m4_dnl
+m4_define(__hw_problems_19_lomega,g4)m4_dnl
+m4_define(__hw_problems_19_fmradiolrc,g5)m4_dnl
+m4_define(__hw_problems_19_rc-par-impedance,g6)m4_dnl
+m4_define(__hw_problems_19_lrc-z-plot,g7)m4_dnl
+m4_define(__hw_problems_19_series-to-parallel,g8)m4_dnl
+m4_define(__hw_problems_19_lc-e-sharing,g9)m4_dnl
 m4_define(__hw_sn_0_calculator,1)m4_dnl
 m4_define(__hw_sn_0_units,2)m4_dnl
 m4_define(__hw_sn_0_backyard,3)m4_dnl

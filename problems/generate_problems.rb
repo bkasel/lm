@@ -219,6 +219,8 @@ def find_fig_for_problem(prob,files_list,ignore_exceptional_naming=false)
   # return value width is "narrow", "wide", or "fullpage"
   # For exceptions to the naming convention (e.g., figures that need to be duplicated in the book
   # in more than one place), edit fig_exceptional_naming.
+  debug = false
+  #debug = (prob=~/tetrahedron/ || prob=~/complex\-arithmetic\-2/)
   places = []
   files_list.each { |files|
     if !files.nil? then
@@ -246,6 +248,7 @@ def find_fig_for_problem(prob,files_list,ignore_exceptional_naming=false)
       possible_names.push("#{prefix}#{prob}")
     }
   end
+  #$stderr.print "in find_fig_for_problem, possible_names=#{possible_names}, places=#{places}\n" if debug
   possible_names.each { |f|
     places.each { |dir| 
       r = find_fig_file_in_dir(dir,f)
@@ -299,24 +302,26 @@ end
 
 # This function is duplicated in whiz.rb.
 def find_figs_for_solution(prob,orig,label,instr_dir=nil)
-  #debug = (prob=~/truck/)
   debug = false
-  $stderr.print "in find_figs_for_solution, prob=#{prob}" if debug
+  #debug = (prob=~/tetrahedron/ || prob=~/complex\-arithmetic\-2/)
+  $stderr.print "in find_figs_for_solution, prob=#{prob}, instr_dir=#{instr_dir}\n" if debug
   tex = orig.clone
   figs_dir = nil
   if !(instr_dir.nil?) then found,solution,figs_dir = find_instructor_solution(prob,instr_dir) end
+  $stderr.print "in find_figs_for_solution, figs_dir=#{figs_dir}\n" if debug
   macros = ["anonymousinlinefig","fig"]
   macros.each { |m|
     tex.gsub!(/\\#{m}{([^}]*)}/) {
       fig_name = $1
       f = ''
+      $stderr.print "in find_figs_for_solution, calling find_fig_for_problem, fig_name=#{fig_name}, figs_dir=#{figs_dir}\n" if debug
       find = find_fig_for_problem(fig_name,[figs_dir])
       if find[0] then 
         f=find[2]
       else
-        fatal_error("fig not found by find_figs_for_solution, prob=#{prob}, fig_name=#{fig_name}, figs_dir=#{figs_dir}")
+        fatal_error("find_figs_for_solution: fig not found by find_figs_for_solution, prob=#{prob}, fig_name=#{fig_name}, figs_dir=#{figs_dir}, instr_dir=#{instr_dir}; see README for info on what directory to use for figures in solutions")
       end
-      $stderr.print "in find_figs_for_solution, prob=#{prob}, f=#{f}" if debug
+      $stderr.print "in find_figs_for_solution, prob=#{prob}, f=#{f}\n" if debug
       result = "\n\n\\noindent\\begin{center}\\anonymousinlinefig{#{f}}\\end{center}\n\n" # narrow, not floating
       width = fig_width(fig_name)
       if width!='narrow' then
@@ -377,9 +382,10 @@ def generate_prob_tex(prob,group,k,solutions,files_list,counters)
   #   adds to $credits_tex
   #   adds to spotter output in $spotter1 and $spotter2
   #   appends to own_problems_solns.csv if the problem is marked with a meta tag as having a solution
+  debug = false
+  #debug = (prob=~/tetrahedron/ || prob=~/complex\-arithmetic\-2/)
   file,err = find_problem_file(prob,files_list)
   if file.nil? then fatal_error(err) end
-  debug = false # (prob=~/pluto/)
   label = group+k.to_s
   tex = slurp_file(file)
   meta = extract_meta(tex)
@@ -404,12 +410,12 @@ def generate_prob_tex(prob,group,k,solutions,files_list,counters)
   end
   result = result + "\\end{hw}\n"
   has_fig,fig_file,fig_path,width = find_fig_for_problem(prob,files_list)
+  #$stderr.print "in generate_prob_tex, prob=#{prob}, has_fig=#{has_fig}, fig_file=#{fig_file}, fig_path=#{fig_path}\n" if debug
   if has_fig then
     if fig_path.nil? || fig_path=='' then fatal_error("error in generate_prob_tex, fig_path is null, prob=#{prob}") end
     result = result+process_fig(fig_path,width,generate_caption_for_hw_fig(prob,fig_file),true,true,true)
   end
   if !($spotter_dir.nil?) then
-    if debug then $stderr.print "looking for spotter stuff for #{prob}" end
     bogus_xml_filename = "#{$spotter_dir}/xml/#{prob}.tex" # misnaming it .tex, which I always do by mistake
     if File.exist?(bogus_xml_filename) then fatal_error("File #{bogus_xml_filename} exists, should end in .xml, not .tex") end
     xml_fragment = "#{$spotter_dir}/xml/#{prob}.xml"

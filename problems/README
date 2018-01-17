@@ -83,10 +83,14 @@ more about figures
             book, so for those, edit data/fig_widths_by_hand.
     Can prevent timetravel by using "timetravel":0
   in solutions
-    looks at source code of solutions for the macros \anonymousinlinefig and \fig; filters out this
-         macro and replaces it with \anonymousinlinefig{/.../.../solns/mechanics/figs/foo}
-    this generates an inline figure, not a floating one
-    Doesn't work properly for wide figs, e.g., fossil. Howdy also botches these.
+    instructor's solutions
+      looks at source code of solutions for the macros \anonymousinlinefig and \fig; filters out this
+           macro and replaces it with \anonymousinlinefig{/.../.../solns/mechanics/figs/foo}
+      this generates an inline figure, not a floating one
+      Doesn't work properly for wide figs, e.g., fossil. Howdy also botches these.
+    solutions in the back of the book
+      put these in sn/ch99/figs or lm/end2/figs, name them soln-foo
+      example: tetrahedron
   sizes
     automatically known based on data/fig_widths and data/fig_widths_by_hand
     can be narrow (52 mm), medium (1 column, used only in problems book),
