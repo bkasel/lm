@@ -1789,6 +1789,13 @@ m4_define(__hw_problems_18_surfing,d5)m4_dnl
 m4_define(__hw_problems_18_timereversalem,d6)m4_dnl
 m4_define(__hw_problems_18_timereversalem2,d7)m4_dnl
 m4_define(__hw_problems_18_spherical-shielding,g1)m4_dnl
+m4_define(__hw_problems_19_complex-arithmetic-1,a1)m4_dnl
+m4_define(__hw_problems_19_complex-arithmetic-2,a2)m4_dnl
+m4_define(__hw_problems_19_complex-arithmetic-3,a3)m4_dnl
+m4_define(__hw_problems_19_complex-arithmetic-4,a4)m4_dnl
+m4_define(__hw_problems_19_complex-arithmetic-5,a5)m4_dnl
+m4_define(__hw_problems_19_complex-trig,d1)m4_dnl
+m4_define(__hw_problems_19_i-to-the-i,d2)m4_dnl
 m4_define(__hw_sn_0_calculator,1)m4_dnl
 m4_define(__hw_sn_0_units,2)m4_dnl
 m4_define(__hw_sn_0_backyard,3)m4_dnl

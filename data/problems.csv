@@ -1789,6 +1789,13 @@ problems,18,d5,surfing,0
 problems,18,d6,timereversalem,1
 problems,18,d7,timereversalem2,0
 problems,18,g1,spherical-shielding,0
+problems,19,a1,complex-arithmetic-1,0
+problems,19,a2,complex-arithmetic-2,0
+problems,19,a3,complex-arithmetic-3,0
+problems,19,a4,complex-arithmetic-4,0
+problems,19,a5,complex-arithmetic-5,0
+problems,19,d1,complex-trig,0
+problems,19,d2,i-to-the-i,0
 sn,0,1,calculator,0
 sn,0,2,units,0
 sn,0,3,backyard,0
