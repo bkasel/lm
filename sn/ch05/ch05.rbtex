@@ -1428,7 +1428,7 @@ a low-entropy value like $R=0$ or $R=6$.
     'space-junk',
     %q{%
       Earth orbit is becoming cluttered with space junk, and the pieces can be thought of as the ``molecules'' comprising an exotic kind
-      of gas. These image shows the evolution of a cloud of debris arising from a 2007 Chinese test of an anti-satellite
+      of gas. These images show the evolution of a cloud of debris arising from a 2007 Chinese test of an anti-satellite
       rocket. Panels 1-4 show the cloud five minutes, one hour, one day, and one month after the impact. The entropy
       seems to have maximized by panel 4.
     },

@@ -2736,7 +2736,8 @@ partial derivative symbol $\partial$, introduced on page \pageref{partial-der}, 
 when differentiating with respect to a particular variable, the other variables are to be considered
 as constants. This operation
 on the function $\Psi$ is notated $\nabla^2\Psi$, and the derivative-like
-operator $\nabla^2=\partial^2/\partial x^2+ \partial^2/\partial y^2+ \partial^2/\partial z^2$ is called the Laplacian.\index{Laplacian} It occurs elswehere in physics.
+operator $\nabla^2=\partial^2/\partial x^2+ \partial^2/\partial y^2+ \partial^2/\partial z^2$ is called the Laplacian, and was introduced briefly
+on p.~\pageref{laplacian-em}.\index{Laplacian}\label{laplacian-qm} It occurs elswehere in physics.
 For example, in classical electrostatics,
 the voltage in a region of vacuum must be a solution of the equation $\nabla^2V=0$.
 Like the second derivative, the Laplacian is essentially a measure of curvature.

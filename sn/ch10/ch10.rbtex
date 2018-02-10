@@ -4355,6 +4355,7 @@ any charged surface, regardless of the existence of other charges nearby.\label{
 <% end_sec() %>
 <% end_sec %>
 <% begin_sec("Gauss' law in differential form",4,'gaussdiff') %>
+<% begin_sec("Gauss's law as a local law",nil,'gauss-local') %>
 Gauss' law is a bit spooky. It relates the field on the Gaussian surface
 to the charges inside the surface. What if the charges have been moving
 around, and the field at the surface right now is the one that was created
@@ -4374,14 +4375,6 @@ around each \emph{small} patch. The equation $E_{\perp}=2\pi k\sigma$
 then related a particular property of the \emph{local} electric field to
 the \emph{local} charge density.
 
-<% marg(0) %>
-<%
-  fig(
-    'divcube',
-    %q{A tiny cubical Gaussian surface.}
-  )
-%>
-<% end_marg %>
 In general, charge distributions need not be confined to a flat surface ---
 life is three-dimensional --- but the general approach of defining
 very small Gaussian surfaces is still a good one. Our strategy is
@@ -4390,6 +4383,16 @@ to divide up space into tiny cubes, like the one on page
 which may contain some charge. Again we approximate the field using
 its six values at the center of each of the six sides. Let the
 cube extend from $x$ to $x+\der x$, from $y$ to $y+\der y$, and from $y$ to $y+\der y$.
+
+<% marg(0) %>
+<%
+  fig(
+    'divcube',
+    %q{A tiny cubical Gaussian surface.}
+  )
+%>
+<% end_marg %>
+
 
 The sides at $x$ and $x+\der x$ have area vectors $-\der y\der z\hat{\vc{x}}$
 and $\der y\der z\hat{\vc{x}}$, respectively.
@@ -4623,6 +4626,62 @@ the surface.
 As suggested by the figure, discuss the results you would get by inserting the div-meter
 at various locations in the sine-wave field.
 \end{dq}
+<% end_sec('gauss-local') %>
+<% begin_sec("Poisson's equation and Laplace's equation",nil,'poisson-eqn') %>
+Gauss's law, $\divg \vc{E}=4\pi k \rho$, can also be stated in terms of the potential.
+Since $\vc{E} = \nabla V$, we have $\divg\nabla V=4\pi k \rho$. If we work out
+the combination of operators $\divg\nabla$ in a Cartesian coordinate system, we get 
+$\partial^2/\partial x^2+\partial^2/\partial y^2+\partial^2/\partial z^2$, which is called
+the Laplacian and notated $\nabla^2$.\label{laplacian-em}\index{Laplacian} The Laplacian
+is discussed in more detail on p.~\pageref{laplacian-qm}. The version of Gauss's law
+written in terms of the potential,
+\begin{equation*}
+  \nabla^2 V = 4\pi k \rho,
+\end{equation*}
+is called Poisson's equation, while in the special case of a vacuum, with $\rho=0$, we have
+\begin{equation*}
+  \nabla^2 V = 0,
+\end{equation*}
+known as Laplace's equation. Many problems in electrostatics can be stated in terms of
+finding  potential that satisfies Laplace's equation, usually with some set of
+\emph{boundary conditions}. For example, if an infinite parallel-plate capacitor has plates parallel
+to the $x$-$y$ plane at  certain given potentials, then these plates form a boundary for the region
+between the plates, and Laplace's equation has a solution in this region of the form
+$V=az+b$. It's easy to verify that this is a solution of Laplace's equation, since
+all three of the  partial derivatives vanish.
+
+<% end_sec('poisson-eqn') %>
+
+<% begin_sec("The method of images",nil,'electrostatics-images') %>
+A car's radio antenna is usually in the form of a whip sticking up above its metal roof.
+This is an example involving radio waves, which are time-varying electric and magnetic fields,
+but a similar, simpler electrostatic example is the following. Suppose that we position a charge $q>0$
+at a distance $\ell$ from a conducting plane. What is the resulting electric field? The conductor has
+charges that are free to move, and due to the field of the charge $q$, we will end up with a
+net concentration of negative charge in the part of the plane near $q$. The field in the vacuum surrounding
+$q$ will be a sum of fields due to $q$ and fields due to these charges in the conducting plane.
+The problem can be stated as that of finding a solution to Poisson's equation with the boundary
+condition that $V=0$ at the conducting plane. Figure \subfigref{method-of-images}{1} shows the
+kind of field lines we expect.
+
+<% marg(0) %>
+<%
+  fig(
+    'method-of-images',
+    %q{The method of images.}
+  )
+%>
+<% end_marg %>
+
+
+This looks like a very complicated problem, but there is trick that allows us to find
+a simple solution. We can convert the problem into an equivalent one in which the conductor
+isn't present, but a fictitious \emph{image} charge $-q$ is placed at an equal distance behind
+the plane, like a reflection in a mirror, as in figure
+\subfigref{method-of-images}{2}. The field is then simply the sum of the fields of the
+charges $q$ and $-q$, so we can either add the field vectors or add the potentials. By symmetry, the
+field lines are perpendicular to the plane, so the plane is an surface of constant potential, as required.
+<% end_sec('electrostatics-images') %>
 
 \backofchapterboilerplate{efield}
 
