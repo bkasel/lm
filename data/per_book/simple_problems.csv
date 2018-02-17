@@ -314,6 +314,7 @@ sn,8,14,hydrogencancelforce,0
 sn,8,15,nacl,0
 sn,8,16,hands-repulsion,0
 sn,8,17,molecule-in-beta-decay,0
+sn,8,18,escaping-charge,0
 sn,9,1,timebetweenelectrons,1
 sn,9,2,neuroncurrent,0
 sn,9,3,bulbresistance,0
@@ -413,6 +414,8 @@ sn,10,57,cube-roots-of-unity,1
 sn,10,58,factor-cubic,0
 sn,10,59,dipole-in-nonuniform-field,1
 sn,10,60,cosmic-ray-lightning,0
+sn,10,61,image-charge-unstable,0
+sn,10,62,image-charge-corner,0
 sn,11,1,ebforce,0
 sn,11,2,righthandmodel,0
 sn,11,3,moveandcurve,0

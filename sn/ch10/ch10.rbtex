@@ -4884,6 +4884,15 @@ field lines are perpendicular to the plane, so the plane is an surface of consta
 
 <% begin_hw('image-charge-unstable') %>__incl(hw/image-charge-unstable)<% end_hw() %>
 
+<% marg(0) %>
+<%
+  fig(
+    'hw-image-charge-corner',
+    %q{Problem \ref{hw:image-charge-corner}.}
+  )
+%>
+<% end_marg %>
+
 <% begin_hw('image-charge-corner',2) %>__incl(hw/image-charge-corner)<% end_hw() %>
 
 <% end_hw_sec %>

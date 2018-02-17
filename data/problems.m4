@@ -2121,6 +2121,7 @@ m4_define(__hw_sn_8_hydrogencancelforce,14)m4_dnl
 m4_define(__hw_sn_8_nacl,15)m4_dnl
 m4_define(__hw_sn_8_hands-repulsion,16)m4_dnl
 m4_define(__hw_sn_8_molecule-in-beta-decay,17)m4_dnl
+m4_define(__hw_sn_8_escaping-charge,18)m4_dnl
 m4_define(__hw_sn_9_timebetweenelectrons,1)m4_dnl
 m4_define(__hw_sn_9_neuroncurrent,2)m4_dnl
 m4_define(__hw_sn_9_bulbresistance,3)m4_dnl
@@ -2220,6 +2221,8 @@ m4_define(__hw_sn_10_cube-roots-of-unity,57)m4_dnl
 m4_define(__hw_sn_10_factor-cubic,58)m4_dnl
 m4_define(__hw_sn_10_dipole-in-nonuniform-field,59)m4_dnl
 m4_define(__hw_sn_10_cosmic-ray-lightning,60)m4_dnl
+m4_define(__hw_sn_10_image-charge-unstable,61)m4_dnl
+m4_define(__hw_sn_10_image-charge-corner,62)m4_dnl
 m4_define(__hw_sn_11_ebforce,1)m4_dnl
 m4_define(__hw_sn_11_righthandmodel,2)m4_dnl
 m4_define(__hw_sn_11_moveandcurve,3)m4_dnl
