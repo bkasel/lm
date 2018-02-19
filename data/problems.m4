@@ -2122,6 +2122,7 @@ m4_define(__hw_sn_8_nacl,15)m4_dnl
 m4_define(__hw_sn_8_hands-repulsion,16)m4_dnl
 m4_define(__hw_sn_8_molecule-in-beta-decay,17)m4_dnl
 m4_define(__hw_sn_8_escaping-charge,18)m4_dnl
+m4_define(__hw_sn_8_charge-swings-up,19)m4_dnl
 m4_define(__hw_sn_9_timebetweenelectrons,1)m4_dnl
 m4_define(__hw_sn_9_neuroncurrent,2)m4_dnl
 m4_define(__hw_sn_9_bulbresistance,3)m4_dnl

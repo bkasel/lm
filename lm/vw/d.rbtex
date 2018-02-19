@@ -1386,14 +1386,7 @@ superposition of sine waves moving in opposite direction.
 
 \vfill
 
-<% begin_hw('mirage') %>
-Light travels faster in warmer air. Use this fact to
-explain the formation of a mirage appearing like the shiny
-surface of a pool of water when there is a layer of
-hot air above a road. (For simplicity, pretend that there
-is actually a sharp boundary between the hot layer and the
-cooler layer above it.)
-<% end_hw() %>
+<% begin_hw('mirage') %>__incl(hw/mirage)<% end_hw() %>
 
 \vfill
 

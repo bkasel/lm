@@ -2677,12 +2677,7 @@ What are its period and wavelength?
 
 \vfill
 
-<% begin_hw('mirage',0) %>
-Light travels faster in warmer air. Use this fact to
-explain the formation of a mirage appearing like the shiny
-surface of a pool of water when there is a layer of hot air
-above a road.
-<% end_hw() %>
+<% begin_hw('mirage',0) %>__incl(hw/mirage)<% end_hw() %>
 
 \vfill
 

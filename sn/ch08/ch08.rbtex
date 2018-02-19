@@ -1463,6 +1463,17 @@ __incl(text/nucleosynthesis)
 
 <% begin_hw('escaping-charge',2) %>__incl(hw/escaping-charge)<% end_hw() %>
 
+<% marg() %>
+<%
+  fig(
+    'hw-charge-swings-up',
+    %q{Problem \ref{hw:charge-swings-up}.}
+  )
+%>
+<% end_marg %>
+
+<% begin_hw('charge-swings-up',2) %>__incl(hw/charge-swings-up)<% end_hw() %>
+
         <% end_hw_sec %>
 \begin{exsection}
 \extitle{A}{Nuclear decay}

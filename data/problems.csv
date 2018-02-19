@@ -50,8 +50,8 @@ cp,6,4,analyzecircularorbit,0
 cp,6,5,microscopy,0
 cp,6,6,microwave-oven,0
 cp,6,7,correspondence-principle-with-light,0
-cp,7,1,alien-pool,0
-cp,7,2,parabolic,0
+cp,7,1,alien-pool,1
+cp,7,2,parabolic,1
 cp,7,3,rays-cross-but-no-image,0
 cp,7,4,convexraytracing,0
 cp,7,5,diffuse,0
@@ -59,11 +59,11 @@ cp,7,6,mirrorspeed,0
 cp,7,7,belowthebelt,0
 cp,7,8,listmirrorimages,0
 cp,7,9,invertedforehead,0
-cp,7,10,telescopemovehead,0
+cp,7,10,telescopemovehead,1
 cp,7,11,moose,0
 cp,7,12,gps,0
 cp,7,13,lightwithatomwavelength,0
-cp,7,14,stealth,0
+cp,7,14,stealth,1
 cp,8,1,sperm,0
 cp,8,2,pendulum,0
 cp,8,3,alterations,0
@@ -2122,6 +2122,7 @@ sn,8,15,nacl,0
 sn,8,16,hands-repulsion,0
 sn,8,17,molecule-in-beta-decay,0
 sn,8,18,escaping-charge,0
+sn,8,19,charge-swings-up,0
 sn,9,1,timebetweenelectrons,1
 sn,9,2,neuroncurrent,0
 sn,9,3,bulbresistance,0
