@@ -1712,6 +1712,8 @@ m4_define(__hw_problems_14_quadraticvoltage,g2)m4_dnl
 m4_define(__hw_problems_14_earthcap,j1)m4_dnl
 m4_define(__hw_problems_14_capenergy,j2)m4_dnl
 m4_define(__hw_problems_14_cap-fom,j3)m4_dnl
+m4_define(__hw_problems_14_image-charge-unstable,m1)m4_dnl
+m4_define(__hw_problems_14_image-charge-corner,m2)m4_dnl
 m4_define(__hw_problems_15_timebetweenelectrons,a1)m4_dnl
 m4_define(__hw_problems_15_neuroncurrent,a2)m4_dnl
 m4_define(__hw_problems_15_lightningcurrent,a3)m4_dnl
@@ -1729,7 +1731,7 @@ m4_define(__hw_problems_15_measure-on-printed-circuit,g2)m4_dnl
 m4_define(__hw_problems_15_many-v-measurements,g3)m4_dnl
 m4_define(__hw_problems_15_many-i-measurements,g4)m4_dnl
 m4_define(__hw_problems_15_short-across-bulb,g5)m4_dnl
-m4_define(__hw_problems_15_messywires,g6)m4_dnl
+m4_define(__hw_problems_15_messy-wires,g6)m4_dnl
 m4_define(__hw_problems_15_toaster,g7)m4_dnl
 m4_define(__hw_problems_15_stove,g8)m4_dnl
 m4_define(__hw_problems_15_circuit-puzzle,g9)m4_dnl
@@ -1737,7 +1739,7 @@ m4_define(__hw_problems_15_threeresistors,g10)m4_dnl
 m4_define(__hw_problems_15_tetrahedron,g11)m4_dnl
 m4_define(__hw_problems_15_extensioncord,g12)m4_dnl
 m4_define(__hw_problems_15_two-batteries,g13)m4_dnl
-m4_define(__hw_problems_15_switchingmethods,g14)m4_dnl
+m4_define(__hw_problems_15_two-switching-methods,g14)m4_dnl
 m4_define(__hw_problems_15_tricky-unlit-bulb,g15)m4_dnl
 m4_define(__hw_problems_15_network,g16)m4_dnl
 m4_define(__hw_problems_15_junctions,g17)m4_dnl

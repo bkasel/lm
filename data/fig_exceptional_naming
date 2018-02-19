@@ -8,5 +8,6 @@
   "neuronfield":"hw-neuron",
   "many-v-measurements":"hw-many-measurements",
   "circularorbitphoto":"circular-orbit",
-  "withdraw-dielectric":"studfinder"
+  "withdraw-dielectric":"studfinder",
+  "tandem":"hw-tandem-accel"
 }

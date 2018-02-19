@@ -4652,7 +4652,7 @@ all three of the  partial derivatives vanish.
 
 <% end_sec('poisson-eqn') %>
 
-<% begin_sec("The method of images",nil,'electrostatics-images') %>
+<% begin_sec("The method of images",nil,'electrostatics-images') %>\index{images!method of (electrostatics)}
 A car's radio antenna is usually in the form of a whip sticking up above its metal roof.
 This is an example involving radio waves, which are time-varying electric and magnetic fields,
 but a similar, simpler electrostatic example is the following. Suppose that we position a charge $q>0$

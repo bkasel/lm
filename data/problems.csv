@@ -1712,6 +1712,8 @@ problems,14,g2,quadraticvoltage,0
 problems,14,j1,earthcap,0
 problems,14,j2,capenergy,0
 problems,14,j3,cap-fom,0
+problems,14,m1,image-charge-unstable,0
+problems,14,m2,image-charge-corner,0
 problems,15,a1,timebetweenelectrons,1
 problems,15,a2,neuroncurrent,0
 problems,15,a3,lightningcurrent,0
@@ -1729,7 +1731,7 @@ problems,15,g2,measure-on-printed-circuit,1
 problems,15,g3,many-v-measurements,0
 problems,15,g4,many-i-measurements,0
 problems,15,g5,short-across-bulb,0
-problems,15,g6,messywires,0
+problems,15,g6,messy-wires,0
 problems,15,g7,toaster,0
 problems,15,g8,stove,0
 problems,15,g9,circuit-puzzle,0
@@ -1737,7 +1739,7 @@ problems,15,g10,threeresistors,0
 problems,15,g11,tetrahedron,1
 problems,15,g12,extensioncord,0
 problems,15,g13,two-batteries,0
-problems,15,g14,switchingmethods,0
+problems,15,g14,two-switching-methods,0
 problems,15,g15,tricky-unlit-bulb,0
 problems,15,g16,network,0
 problems,15,g17,junctions,0
