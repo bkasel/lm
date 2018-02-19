@@ -1676,6 +1676,7 @@ m4_define(__hw_problems_13_muonic,a6)m4_dnl
 m4_define(__hw_problems_13_earthmoonelec,a7)m4_dnl
 m4_define(__hw_problems_13_nacl,a8)m4_dnl
 m4_define(__hw_problems_13_croquet,a9)m4_dnl
+m4_define(__hw_problems_13_charge-swings-up,a10)m4_dnl
 m4_define(__hw_problems_13_chargemotioninfield,d1)m4_dnl
 m4_define(__hw_problems_13_esquare,d2)m4_dnl
 m4_define(__hw_problems_13_lightning,d3)m4_dnl
