@@ -440,6 +440,7 @@ lm,21,41,falling-charged-string,0
 lm,21,42,pe-of-point-charges,0
 lm,21,43,lightning-rod,0
 lm,21,44,disguised-parallel,0
+lm,21,45,dirty-contacts,0
 lm,22,1,neuronfield,0
 lm,22,2,sparkplug,0
 lm,22,3,chargemotioninfield,0

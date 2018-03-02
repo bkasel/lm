@@ -2855,6 +2855,8 @@ circuit being tested.
 <% begin_hw('disguised-parallel') %>__incl(hw/disguised-parallel)<% end_hw() %>
 
 
+<% begin_hw('dirty-contacts') %>__incl(hw/dirty-contacts)<% end_hw() %>
+
 <% end_hw_sec %>
 
 

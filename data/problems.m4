@@ -512,6 +512,7 @@ m4_define(__hw_lm_21_falling-charged-string,41)m4_dnl
 m4_define(__hw_lm_21_pe-of-point-charges,42)m4_dnl
 m4_define(__hw_lm_21_lightning-rod,43)m4_dnl
 m4_define(__hw_lm_21_disguised-parallel,44)m4_dnl
+m4_define(__hw_lm_21_dirty-contacts,45)m4_dnl
 m4_define(__hw_lm_22_neuronfield,1)m4_dnl
 m4_define(__hw_lm_22_sparkplug,2)m4_dnl
 m4_define(__hw_lm_22_chargemotioninfield,3)m4_dnl
@@ -2166,6 +2167,7 @@ m4_define(__hw_sn_9_falling-charged-string,36)m4_dnl
 m4_define(__hw_sn_9_lightning-rod,37)m4_dnl
 m4_define(__hw_sn_9_pe-of-point-charges,38)m4_dnl
 m4_define(__hw_sn_9_disguised-parallel,39)m4_dnl
+m4_define(__hw_sn_9_dirty-contacts,40)m4_dnl
 m4_define(__hw_sn_10_sparkplug,1)m4_dnl
 m4_define(__hw_sn_10_distantrsquared,2)m4_dnl
 m4_define(__hw_sn_10_galaxy-mass,3)m4_dnl
