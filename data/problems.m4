@@ -437,6 +437,7 @@ m4_define(__hw_lm_16_challenger-deep,11)m4_dnl
 m4_define(__hw_lm_16_fusion,12)m4_dnl
 m4_define(__hw_lm_16_half-brick,13)m4_dnl
 m4_define(__hw_lm_16_inversion-layer,14)m4_dnl
+m4_define(__hw_lm_16_entropy-stirring-coffee,15)m4_dnl
 m4_define(__hw_lm_17_shmfreq,1)m4_dnl
 m4_define(__hw_lm_17_sperm,2)m4_dnl
 m4_define(__hw_lm_17_pendulum,3)m4_dnl
@@ -1744,6 +1745,7 @@ m4_define(__hw_problems_15_two-switching-methods,g14)m4_dnl
 m4_define(__hw_problems_15_tricky-unlit-bulb,g15)m4_dnl
 m4_define(__hw_problems_15_network,g16)m4_dnl
 m4_define(__hw_problems_15_junctions,g17)m4_dnl
+m4_define(__hw_problems_15_dirty-contacts,g18)m4_dnl
 m4_define(__hw_problems_15_withdraw-dielectric,j1)m4_dnl
 m4_define(__hw_problems_15_withdraw-dielectric-open,j2)m4_dnl
 m4_define(__hw_problems_16_six-tenths-c-twice,a1)m4_dnl

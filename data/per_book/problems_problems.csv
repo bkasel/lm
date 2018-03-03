@@ -605,6 +605,7 @@ problems,15,g14,two-switching-methods,0
 problems,15,g15,tricky-unlit-bulb,0
 problems,15,g16,network,0
 problems,15,g17,junctions,0
+problems,15,g18,dirty-contacts,0
 problems,15,j1,withdraw-dielectric,0
 problems,15,j2,withdraw-dielectric-open,0
 problems,16,a1,six-tenths-c-twice,0

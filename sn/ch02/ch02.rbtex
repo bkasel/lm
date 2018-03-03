@@ -2371,8 +2371,11 @@ on this.
 \end{dq}
 
 <% end_sec() %>
+__incl(text/energy_zoo_applications)
+\enlargethispage{\baselineskip}
 <% end_sec() %>
-<% begin_sec("Oscillations",3,'oscillations') %>\index{oscillations}
+<% begin_sec("Oscillations",4,'oscillations') %>\index{oscillations}
+\enlargethispage{\baselineskip}
 <% marg(80) %>
 <%
   fig(
@@ -2382,6 +2385,13 @@ on this.
                       required in order to compress or stretch it, 2 and 3. A mass attached to the spring
                       will oscillate around the equilibrium, 4-13.
     }
+  )
+%>
+\spacebetweenfigs
+<%
+  fig(
+    'curvature',
+    %q{Three functions with the same curvature at $x$=0.}
   )
 %>
 <% end_marg %>
@@ -2434,14 +2444,6 @@ on this.
         for small values of $x$, so if we want to analyze small oscillations, it doesn't even
         matter which function we assume. For simplicity, we'll just use $U(x)=(1/2)kx^2$
         from now on.  
-<% marg(150) %>
-<%
-  fig(
-    'curvature',
-    %q{Three functions with the same curvature at $x$=0.}
-  )
-%>
-<% end_marg %>
 
         Now we're ready to analyze the mass-on-a-spring system, while keeping in mind
         that it's really only a representative example of a whole class of similar

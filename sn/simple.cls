@@ -204,6 +204,7 @@
 \newcommand{\myoptionalsection}[2][4]{\pagebreak[#1]\section{$\star$ #2}\myeqnspacing}
 \newcommand{\mysubsection}[2][4]{\pagebreak[#1]\subsection{#2}}
 \newcommand{\myoptionalsubsection}[2][3]{\pagebreak[#1]\subsection{$\star$ #2}}
+\newcommand{\myssssection}[2][3]{\pagebreak[#1]\noindent\ensuremath{\triangleright}\ #2}
 %-------------------- homework remark -------------------
 \newcommand{\hwremark}[1]{\par\noindent\footnotesize{\textit{Remark:\/} #1}}
 %-------------------- photo credit command -------------------

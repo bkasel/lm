@@ -117,6 +117,8 @@ magnitude.
 
 <% begin_hw('inversion-layer') %>__incl(hw/inversion-layer)<% end_hw() %>
 
+<% begin_hw('entropy-stirring-coffee') %>__incl(hw/entropy-stirring-coffee)<% end_hw() %>
+
 
 <% end_hw_sec %>
 <% end_chapter() %>
