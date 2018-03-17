@@ -2117,6 +2117,7 @@ m4_define(__hw_sn_7_tossed-clock,28)m4_dnl
 m4_define(__hw_sn_7_sphere-angular-defect,29)m4_dnl
 m4_define(__hw_sn_7_side-by-side-lasers,30)m4_dnl
 m4_define(__hw_sn_7_gamma-decay-energy-comparisons,31)m4_dnl
+m4_define(__hw_sn_7_gamma-approx-si,32)m4_dnl
 m4_define(__hw_sn_8_neuron-stick,1)m4_dnl
 m4_define(__hw_sn_8_earthmoonelec,2)m4_dnl
 m4_define(__hw_sn_8_heline,3)m4_dnl

@@ -2117,6 +2117,7 @@ sn,7,28,tossed-clock,1
 sn,7,29,sphere-angular-defect,0
 sn,7,30,side-by-side-lasers,0
 sn,7,31,gamma-decay-energy-comparisons,0
+sn,7,32,gamma-approx-si,1
 sn,8,1,neuron-stick,0
 sn,8,2,earthmoonelec,0
 sn,8,3,heline,0

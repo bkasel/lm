@@ -490,14 +490,23 @@ defined in figure \figref{gamma-as-projection} is given by the equation
 \begin{equation*}
   \mygamma = \frac{1}{\sqrt{1-v^2}}\eqquad.
 \end{equation*}
-If you've had good training in physics, the first thing you probably think when you look at this equation is that it must be
-nonsense, because its units don't make sense. How can we take something with units of velocity squared, and subtract it from
-a unitless 1? But remember that this is expressed in our special relativistic units, in which the same units are used for
-distance and time. In this system, velocities are always unitless. This sort of thing happens frequently in physics. For
-instance, before James Joule discovered conservation of energy, nobody knew that heat and mechanical energy were different
-forms of the same thing, so instead of measuring them both in units of joules as we would do now, they measured heat in
-one unit (such as calories) and mechanical energy in another (such as foot-pounds). In ordinary metric units, we just need
-an extra conversion factor $c$, and the equation becomes
+If you've had good training in physics, the first thing you probably
+think when you look at this equation is that it must be nonsense,
+because its units don't make sense. How can we take something with
+units of velocity squared, and subtract it from a unitless 1? But
+remember that this is expressed in our special relativistic units, in
+which the same units are used for distance and time.
+We refer to
+these as \emph{natural} units.\index{units!natural relativistic}\index{natural units}\label{natural-units}
+In this system,
+velocities are always unitless. This sort of thing happens frequently
+in physics. For instance, before James Joule discovered conservation
+of energy, nobody knew that heat and mechanical energy were different
+forms of the same thing, so instead of measuring them both in units of
+joules as we would do now, they measured heat in one unit (such as
+calories) and mechanical energy in another (such as foot-pounds). In
+ordinary metric units, we just need an extra conversion factor $c$,
+and the equation becomes
 \begin{equation*}
   \mygamma = \frac{1}{\sqrt{1-\left(\frac{v}{c}\right)^2}}\eqquad.
 \end{equation*}
@@ -553,14 +562,45 @@ A meter-stick appears longest to an observer who is at rest relative to it. An o
 meter-stick at $v$ observes the stick to be shortened by a factor of $\mygamma$.
 \end{lessimportant}
 
-\vfill
-
 <% self_check('gammaatvzero',<<-'SELF_CHECK'
 What is $\\mygamma$ when $v=0$? What does this mean?
   SELF_CHECK
   ) %>
 
-\vfill
+\pagebreak
+
+Figure \figref{gamma-graph-small} shows the behavior of $\gamma$ as a function of $v$.
+
+\begin{eg}{Changing an equation from natural units to SI}\label{eg:natural-to-si-1}
+Often it is easier to do all of our algebra in natural units, which are simpler because $c=1$, and
+all factors of $c$ can therefore be omitted. For example, suppose we want to solve for $v$ in terms of $\mygamma$.
+In natural units, we have $\mygamma=1/\sqrt{1-v^2}$, so $\mygamma^{-2}=1-v^2$, and $v=\sqrt{1-\mygamma^{-2}}$.
+
+This form of the result might be fine for many purposes, but if we wanted to find a value of $v$ in SI units,
+we would need to reinsert factors of $c$ in the final result. There is no need to do this throughout the whole
+derivation. By looking at the final result, we see that there is only one possible way to do this so that the
+results make sense in SI, which is to write $v=c\sqrt{1-\mygamma^{-2}}$.
+\end{eg}
+
+<% marg(300) %>
+<%
+  fig(
+    'gamma-graph-small',
+    %q{A graph of $\gamma$ as a function of $v$.}
+  )
+%>
+<% end_marg %>
+
+
+\begin{eg}{Motion of a ray of light}\label{eg:natural-to-si-2}
+\egquestion The motion of a certain ray of light is given by the equation $x=-t$. Is this expressed in
+natural units, or in SI units? Convert to the other system.
+
+\eganswer The equation is in natural units. It wouldn't make sense in SI units, because we would have
+meters on the left and seconds on the right. To convert to SI units, we insert a factor of $c$ in the only
+possible place that will cause the equation to make sense: $x=-ct$.
+\end{eg}
+
 
 \begin{eg}{An interstellar road trip}\label{eg:interstellar-road-trip}
 Alice stays on earth while her twin Betty
@@ -590,6 +630,25 @@ We need to take into account length contraction.
 Betty sees the distance between the sun and Tau Ceti
 to be shrunk by a factor of 2. The same thing occurs for Alice, who observes
 Betty and her spaceship to be foreshortened.
+\end{eg}
+
+\begin{eg}{The correspondence principle}\label{eg:gamma-for-low-v}
+The correspondence principle requires that $\mygamma$ be close to 1
+for the velocities much less than $c$ encountered in everyday life.
+In natural units, $\mygamma=(1-v^2)^{-1/2}$.
+For small values of $\epsilon$, the approximation 
+$(1+\epsilon)^p\approx 1+p\epsilon$ holds (see p.~\pageref{math-approx-exp-and-log}).
+Applying this approximation, we find $\mygamma\approx1+v^2/2$.
+
+As expected, this gives approximately 1 when $v$ is small compared to 1 (i.e., compared to $c$, which equals 1
+in natural units).
+
+In problem \ref{hw:gamma-approx-si} on p.~\pageref{hw:gamma-approx-si} we rewrite
+this in SI units.
+
+Figure \figref{gamma-graph-small} on p.~\pageref{fig:gamma-graph-small} shows that the approximation
+is \emph{not} valid for large values of $v/c$. In fact, $\mygamma$
+blows up to infinity as $v$ gets closer and closer to $c$.
 \end{eg}
 
 <% marg(m4_ifelse(__me,1,-8,-8)) %>

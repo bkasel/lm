@@ -243,6 +243,8 @@
 <% answer("congruent-four-vectors") %>
 <% answer("angular-defect") %>
 <% answer("tossed-clock") %>
+<% answer("gamma-approx-si") %>
+
 
 <% answer("timebetweenelectrons") %>
 <% answer("combine-unequal-resistors") %>
