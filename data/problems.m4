@@ -2353,6 +2353,7 @@ m4_define(__hw_sn_12_peaucellier,58)m4_dnl
 m4_define(__hw_sn_12_constant-thickness,59)m4_dnl
 m4_define(__hw_sn_12_very-weak-refraction,60)m4_dnl
 m4_define(__hw_sn_12_close-to-focal-length,61)m4_dnl
+m4_define(__hw_sn_12_max-intensifying-of-transmitted-ray,62)m4_dnl
 m4_define(__hw_sn_13_wholelife,1)m4_dnl
 m4_define(__hw_sn_13_snakeeyes,2)m4_dnl
 m4_define(__hw_sn_13_exponentiationapprox,3)m4_dnl

@@ -339,6 +339,12 @@ other type of image?
 
 <% begin_hw('close-to-focal-length') %>__incl(hw/close-to-focal-length)<% end_hw() %>
 
+\pagebreak
+
+<% begin_hw('max-intensifying-of-transmitted-ray',2) %>__incl(hw/max-intensifying-of-transmitted-ray)<% end_hw() %>
+
+
+
 <% end_hw_sec %>
 
  % ==================================================================== 

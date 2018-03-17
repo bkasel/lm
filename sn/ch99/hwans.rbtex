@@ -188,6 +188,7 @@
 <% bare_answer("forcebetweentwowires") %>
 <% bare_answer("close-to-focal-length") %>
 <% bare_answer("photon-mass") %>
+<% bare_answer("max-intensifying-of-transmitted-ray") %>
 
 %==================================================================
 %==================================================================
