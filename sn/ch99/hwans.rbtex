@@ -280,6 +280,7 @@
 <% answer("compare-diffraction-same-light") %>
 <% answer("star") %>
 <% answer("compare-double-slits") %>
+<% answer("unphysical-diffraction") %>
 
 <% answer("square-wavefunction") %>
 <% answer("bogus-laplacian") %>
