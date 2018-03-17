@@ -17,6 +17,9 @@
 %%%%%%%%%%%%%%%%% math %%%%%%%%%%%%%%%%%%%
 \newcommand{\eqquad}{}
 \renewcommand{\mygamma}{\gamma}
+\newcommand{\eqnimage}[1]{\raisebox{-.2\height}{\includegraphics[resolution=300]{utility-figs/#1}}}
+% used in two-point-five-kids
+% also defined in SN ch. 14
 %%%%%%%%%%%%%%%%% figures %%%%%%%%%%%%%%%%%%%
 % When making a figure by hand (e.g., in the main text), typically use \fignarrow.
 % Typically such a figure would be in a location such as share/mechanics/figs.

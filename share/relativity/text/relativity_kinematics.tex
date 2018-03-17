@@ -962,6 +962,42 @@ relate to discussion question \ref{dq:rhic}?
 m4_ifelse(__me,1,\pagebreak,\vspace{0mm})
 m4_ifelse(__sn,1,\pagebreak,\vspace{0mm})
 
+% LM also has this DQ, but doesn't use this file, so only do the following if it's SN.
+% Instructions are above the figure so I can project figure on whiteboard, instructions on screen.
+m4_ifelse(__sn,1,[:
+
+\begin{dq}\label{dq:galaxies-signaling}
+The graph shows three galaxies. The axes are drawn according to an observer at rest relative to
+the galaxy 2, so that that galaxy is always at the same $x$ coordinate. 
+Intelligent species in the three different galaxies develop radio technology independently,
+and at some point each begins to actively send out signals in an attempt to communicate with other civilizations.
+Events a, b, and c mark the points at which these
+signals begin spreading out across the universe at the speed of light. Find the events
+at which the inhabitants of galaxy 2 detect
+the signals from galaxies 1 and 3. According to 2, who developed radio
+first, 1 or 3? On top of the graph,
+draw a new pair of position and time axes, for the frame in which galaxy 3 is at rest.
+According to 3, in what order did events a, b, and c happen?
+\end{dq}
+
+<%
+  fig(
+    'galaxies-signaling',
+    %q{Discussion question \ref{dq:galaxies-signaling}.
+    },
+    {
+      'width'=>'wide',
+      'sidecaption'=>true,
+      'anonymous'=>true
+    }
+  )
+%>
+
+\vfill
+
+:])
+% ... endif for galaxies-signaling
+
 \begin{dq}\label{dq:machine-gun-ftl}
 The machine-gunner in the figure sends out a spray of bullets. Suppose that the bullets are being shot into
        outer space, and that the distances traveled are trillions of miles (so that the human figure
@@ -984,7 +1020,6 @@ The machine-gunner in the figure sends out a spray of bullets. Suppose that the 
     }
   )
 %>
-
 
 m4_ifelse(__me,1,\pagebreak[4])
 m4_ifelse(__lm_series,1,\vspace{30mm})
