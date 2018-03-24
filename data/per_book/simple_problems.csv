@@ -299,6 +299,7 @@ sn,7,29,sphere-angular-defect,0
 sn,7,30,side-by-side-lasers,0
 sn,7,31,gamma-decay-energy-comparisons,0
 sn,7,32,gamma-approx-si,1
+sn,7,33,ball-through-hole,0
 sn,8,1,neuron-stick,0
 sn,8,2,earthmoonelec,0
 sn,8,3,heline,0
@@ -528,7 +529,7 @@ sn,12,51,star,1
 sn,12,52,compare-double-slits,1
 sn,12,53,grating,0
 sn,12,54,kidney,0
-sn,12,55,unphysical-diffraction,0
+sn,12,55,unphysical-diffraction,1
 sn,12,56,ultrasound-imaging-versus-heating,0
 sn,12,57,illuminable,0
 sn,12,58,peaucellier,0

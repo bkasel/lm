@@ -537,6 +537,7 @@ m4_define(__hw_lm_23_voyagergamma,4)m4_dnl
 m4_define(__hw_lm_23_earth-lorentz-contraction,5)m4_dnl
 m4_define(__hw_lm_23_sr-from-length-contraction,6)m4_dnl
 m4_define(__hw_lm_23_gamma-approx-si,7)m4_dnl
+m4_define(__hw_lm_23_ball-through-hole,8)m4_dnl
 m4_define(__hw_lm_24_six-tenths-c-twice,1)m4_dnl
 m4_define(__hw_lm_24_side-by-side-lasers,2)m4_dnl
 m4_define(__hw_lm_24_nestedsolenoids,3)m4_dnl
@@ -2118,6 +2119,7 @@ m4_define(__hw_sn_7_sphere-angular-defect,29)m4_dnl
 m4_define(__hw_sn_7_side-by-side-lasers,30)m4_dnl
 m4_define(__hw_sn_7_gamma-decay-energy-comparisons,31)m4_dnl
 m4_define(__hw_sn_7_gamma-approx-si,32)m4_dnl
+m4_define(__hw_sn_7_ball-through-hole,33)m4_dnl
 m4_define(__hw_sn_8_neuron-stick,1)m4_dnl
 m4_define(__hw_sn_8_earthmoonelec,2)m4_dnl
 m4_define(__hw_sn_8_heline,3)m4_dnl

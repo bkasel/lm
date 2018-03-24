@@ -218,6 +218,9 @@ of $\kgunit\unitdot\munit/\sunit$.\answercheck\hwendpart
 
 <% begin_hw('gamma-approx-si') %> __incl(hw/gamma-approx-si) <% end_hw() %>
 
+<% begin_hw('ball-through-hole') %> __incl(hw/ball-through-hole) <% end_hw() %>
+
+
 <% end_hw_sec %>
 
 \begin{exsection}

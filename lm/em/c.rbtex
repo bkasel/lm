@@ -1195,6 +1195,8 @@ moving charges with other moving charges.
 
 <% begin_hw('gamma-approx-si') %>__incl(../../share/relativity/hw/gamma-approx-si)<% end_hw() %>
 
+<% begin_hw('ball-through-hole') %> __incl(../../share/relativity/hw/ball-through-hole) <% end_hw() %>
+
 
 <% end_hw_sec %>
 
