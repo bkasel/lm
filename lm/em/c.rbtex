@@ -17,10 +17,164 @@
 Many people imagine Einstein's theory of relativity as something exotic and speculative. It's certainly
 not speculative at this point in history, since you use it every time you use a GPS receiver. But it's
 even less exotic than that. Every time you stick a magnet to your refrigerator, you're making use of
-relativity. The title of this chapter is ``Electromagnetism,'' but we'll start out by digging a little deeper
+relativity. Let's dig a little deeper
 into relativity as preparation for understanding what magnetism is and where it comes from.
 
-<% begin_sec("Relativistic distortion of space and time") %>\label{sec:x-t-distortion}
+<% begin_sec("Spacetime",nil,'spacetime') %>
+Let's compare how Aristotle, Galileo, and Einstein would describe space and time.
+
+Aristotle: All observers agree on whether or not two things happen at the same \emph{time}, and also
+on whether they happen at the same \emph{place}.
+
+Galileo: Observers always agree on simultaneity, but not necessarily on whether things happen in the same
+place.
+
+The reason for the disagreement is shown in figure \figref{cow-and-car}. Aristotle says that the
+only legitimate observers are those that are at rest relative to the ground,
+while Galileo is willing to accept any inertial frame of reference, such as the driver's.
+Galileo ended up winning this argument because of experiments verifying the principle of inertia.
+
+<% marg(30) %>
+<%
+  fig(
+    'cow-and-car',
+    %q{As time passes, the driver says the car stays in the same place, but the cow says the car 
+       is moving forward.}
+  )
+%>
+<% end_marg %>
+
+Einstein: Observers need not agree on whether two things happen at the same time \emph{or} the same place.
+
+We accept Einstein's view because of evidence such as the atomic clock
+experiment described on p.~\pageref{hafele-keating}.
+Such experiments rule out both the instantaneous transmission of signals (p.~\pageref{subsec:time-delays})
+and, as we will argue in more detail on p.~\pageref{hk-implies-nonsimultaneity}, Galileo's claim
+about universal agreement on simultaneity.
+
+One of the reasons that nineteenth-century Europeans found Marxism alarming was because it
+was atheistic, and they felt that without the framework of religion, there could be no basis
+for morality. For similar reasons, I was deeply disoriented when I first encountered relativity.
+The idea had been firmly inculcated that the universe was described by mathematical functions,
+and the natural habitat of those functions was graph paper. The graph paper provided what seemed
+like a necessary framework. For a position-time graph, the vertical lines meant ``same time,''
+and the horizontal ones ``same place.'' Somehow it didn't bother me much when Galileo
+erased the same-place lines (or at least relegated them to subjectivity), but without the same-time
+lines I felt lost, as if I were wandering in a landscape of Hieronymus Bosch's hell or
+Dali's melting watches.
+
+<% marg(300) %>
+<%
+  fig(
+    'bosch',
+    %q{Hell, according to Hieronymus Bosch (1450-1516).}
+  )
+%>
+<% end_marg %>
+
+One of the disorienting things about this vision of the universe is that it takes away the notion
+that we can have a literal ``vision'' of the universe. We no longer have the idea of a
+snapshot of the landscape at a certain moment frozen in time. The sense of vision is merely
+a type of optical measurement, in which we receive signals that have traveled to our eyes
+at some finite speed (the speed of light). What relativity substitutes for the Galilean
+instantaneous snapshot is the concept of \emph{spacetime}, which is like the graph paper
+when its lines have been erased. Every point on the paper is called an \emph{event}. How can we
+even agree on the existence of an event, or define which one we are talking about, if we can't
+necessarily agree on its time or position? The relativist's attitude is that if a firecracker
+pops, that's an event, everyone agrees that it's an event, and $x$ and $t$ coordinates are just
+an optional and arbitrary name or label for the event. Labeling an event with coordinates is like
+God asking Adam to name all the birds and animals: the animals weren't consulted and didn't care.
+%       Genesis 20:19, "Out of the ground Yahweh God formed every animal of the field,
+%       and every bird of the sky, and brought them to the man to see what he would call
+%       them. Whatever the man called every living creature became its name." -- http://ebible.org/web/GEN02.htm#V0
+
+My grandparents' German shepherd lived for a certain amount of time. When your phone transmits a 1 or 0
+to the nearest cell tower, the radio beep exists in flight for a certain (very short) time.
+Since the dog and the beep extend over time, they are not just pointlike events
+in spacetime. Way back in ch.~\ref{ch:motion}, we saw how to represent the motion of such things
+as curves on an $x$-$t$ graph. From the point of view of relativity, the curve \emph{is} the thing ---
+we make no distinction between the dog and the dog's track through spacetime. Such a track is called
+a \emph{world-line}.\index{world-line} A world-line is a set of events strung together continuously:
+the dog as a puppy in Walnut Creek in 1964, the dog dozing next to the TV in 1970, and so on. The
+strange terminology is translated from German, and is supposed to be a description of the idea that
+the line is the thing's track \emph{through} the world, i.e., through spacetime.
+
+Sometimes if we want to describe an event, we can describe it as the beginning or end of a world-line:
+the dog's birth, or the firecracker's self-destruction. More commonly, we pick out an event of interest
+as the intersection of two world-lines, as in figure \figref{cell-phone-signal}. In this figure, as is
+common in relativity, we omit any indications of the axes, since the idea is that events and world-lines
+are primary, and coordinates secondary. In this book, to be consistent with the familiar depiction of
+$x$-$t$ graphs, we will use the convention that
+later times on an object's world-line are to the right, but it is actually more common in relativity to
+show time progressing from the bottom of the diagram to the top.
+
+<% marg() %>
+<%
+  fig(
+    'cell-phone-signal',
+    %q{A phone transmits a 1 or 0 to a cell tower. The phone, the tower, and the signal
+       all have world-lines. Two events, corresponding to the transmission and reception of
+       the signal, can be defined by the intersections of the world-lines.}
+  )
+%>
+<% end_marg %>
+
+All observers agree on whether or not two world-lines intersect, and another aid in holding on to
+our sanity is that they agree on whether or not world-lines are \emph{straight}. A straight world-line
+is an object moving inertially, with no forces acting on it.\label{agreement-on-intersection}
+
+<% marg(300) %>
+<%
+  fig(   
+    'light-cone',
+    %q{%
+      Normally we only try to represent one spatial dimension in a depiction of spacetime, as in
+      panel 1, where a light bulb is momentarily turned on, producing flashes of light that spread
+      out in both directions.
+      In panel 2 we attempt to show a second spatial dimension, so that the world-line becomes a
+      surface: a ``world-sheet'' shaped like a cone.
+    }
+  )
+%>
+<% end_marg %>
+
+
+If we wish to, we are able to draw a graph-paper grid on our picture of spacetime, and
+assign $x$ and $t$ coordinates to events, but these are not built into the structure of spacetime,
+and they are observer-dependent --- even more so than in Galilean spacetime.
+They are best thought of as the sophisticated results of a laborious
+process of collecting and analyzing data obtained by methods such as
+consulting clocks or exchanging signals between different places.
+Figure \figref{surveying} outlines such a process in a cartoonish way.
+A fleet of rocket ships, carrying surveyors,
+is sent out from Earth and dispersed throughout a vast region of space. The surveyors
+look through their theodolites at images, which are formed by light rays (dashed lines)
+that have arrived after traveling at a finite speed. Such light rays carry old, stale information
+about various events. A nuclear war has broken out. Rock and roll music has arrived on Saturn.
+The resulting data are then transmitted by various means (passenger pigeon, Morse-coded radio,
+paper mail) and consolidated at the surveying office. At the office, workers at a long
+row of desks crunch the numbers and produce a chart with the events marked in according to
+their calculated coordinates.
+
+<%
+  fig(   
+    'surveying',
+    %q{%
+      Coordinates like $x$ and $t$ are the after-the-fact result of a complicated process analogous
+      to surveying.
+    },
+    {
+      'width'=>'fullpage'
+    }
+  )
+%>
+
+In the next section we turn to a more quantitative treatment of how time and distance
+behave in relativity.
+
+<% end_sec('spacetime') %> % 
+
+<% begin_sec("Relativistic distortion of space and time",4) %>\label{sec:x-t-distortion}
 <% begin_sec("Time distortion arising from motion and gravity") %>
 Let's refer back to the results of the Hafele-Keating experiment described on
 p.~\pageref{hafele-keating}. Hafele and Keating were testing specific quantitative predictions of relativity, and they verified them to within
@@ -81,6 +235,15 @@ focus on right now is the distortion of time due to motion, not gravity.\label{i
   )
 %>
 
+<% marg(80) %>
+<%
+  fig(
+    'correspondence-dramatized',
+    %q{The correspondence principle requires that the relativistic distortion of time become small for small velocities.}
+  )
+%>
+<% end_marg %>
+
 We can now see in more detail how to apply the correspondence principle. The behavior of the three clocks in the
 Hafele-Keating experiment shows that the amount of time distortion increases as the speed of the clock's motion
 increases. Newton lived in an era when the fastest
@@ -98,14 +261,6 @@ situation to serve a particular purpose. The faster the motion, the worse the Ne
 absolute time. Whether the approximation is good enough depends on what you're trying to accomplish.
 The correspondence principle says that the approximation must have been good enough to explain
 all the experiments done in the centuries before Einstein came up with relativity.
-<% marg(80) %>
-<%
-  fig(
-    'correspondence-dramatized',
-    %q{The correspondence principle requires that the relativistic distortion of time become small for small velocities.}
-  )
-%>
-<% end_marg %>
 
 By the way, don't get an inflated idea of the importance of these atomic clock
 experiments. Special relativity had already been confirmed by a vast and varied body of experiments decades
@@ -134,6 +289,7 @@ object. We may, for example, just want to talk about events, depicted as points 
 figure \figref{joan-of-arc}. A distortion of the Cartesian grid underlying the graph can arise for
 perfectly ordinary reasons that Newton would have readily accepted. For example, we can simply
 change the units used to measure time and position, as in figure \figref{change-of-units}. 
+
 <% marg(50) %>
 <%
   fig(
@@ -160,8 +316,6 @@ change the units used to measure time and position, as in figure \figref{change-
 %>
 <% end_marg %>
 
-\enlargethispage{-3\baselineskip}
-
 We're going to
 have quite a few examples of this type, so I'll adopt the convention shown in figure \figref{change-of-units-convention}
 for depicting them. Figure \figref{change-of-units-convention} summarizes the relationship between figures
@@ -169,6 +323,8 @@ for depicting them. Figure \figref{change-of-units-convention} summarizes the re
 original coordinate grid of figure \figref{joan-of-arc}, while the grid of black lines represents the new version
 from figure \figref{change-of-units}. Omitting the grid from the gray rectangle makes the diagram easier
 to decode visually.
+
+\enlargethispage{-3\baselineskip}
 
 Our goal of unraveling the mysteries of special relativity amounts to nothing more than finding out how to
 draw a diagram like \figref{change-of-units-convention} in the case where the two different sets of coordinates represent
@@ -191,6 +347,8 @@ Experiments show that:\label{spacetime-properties}
 \item Time depends on the state of motion of the observer.
 \end{enumerate}
 
+\enlargethispage{-3\baselineskip}
+
 Most of these are not very subversive. Properties 1 and 2 date back to the time when Galileo and Newton started
 applying the same universal laws of motion to the solar system and to the earth; this contradicted
 Aristotle, who believed that, for example, a rock would naturally want to move in a certain special
@@ -206,7 +364,7 @@ but the Hafele-Keating experiment forces it upon us.
 
 \enlargethispage{-2\baselineskip}
 
-If it were not for property 5, we could imagine that figure \figref{galilean-boost} would
+If it were not for property 5, the relativity of time, we could imagine that figure \figref{galilean-boost} would
 give the correct transformation between frames of reference in motion relative to one another.
 Let's say that observer 1, whose grid coincides with the gray rectangle, is a hitch-hiker standing
 by the side of a road. Event A is a raindrop hitting his head, and event B is another raindrop hitting
@@ -233,7 +391,8 @@ behavior, but it also happens to be wrong, because it violates property 5. The d
 the coordinate grid has only moved the vertical lines up and down, so both observers agree
 that events like B and C are simultaneous. If this was really the way things worked, then
 all observers could synchronize all their clocks with one another for once and for all, and
-the clocks would never get out of sync. This contradicts the results of the Hafele-Keating
+the clocks would never get out of sync.\label{hk-implies-nonsimultaneity}
+This contradicts the results of the Hafele-Keating
 experiment, in which all three clocks were initially synchronized in Washington, but later
 went out of sync because of their different states of motion.
 
@@ -242,11 +401,24 @@ form of the distortion. It turns out, however, that properties 1-5 are sufficien
 is only one answer, which is the one found by Einstein in 1905. To see why this is, let's work by
 a process of elimination.
 
+<% marg() %>
+<%
+  fig(
+    'bowtie',
+    %q{A transformation that leads to disagreements about whether two events occur at the same time and place.
+       This is not just a matter of opinion. Either the arrow hit the bull's-eye or it didn't.}
+  )
+%>
+<% end_marg %>
+
 Figure \figref{bowtie} shows a transformation that might
 seem at first glance to be as good a candidate as any other,
 but it violates property 3, that motion is relative, for the following
 reason. In observer 2's frame of reference, some of the grid lines cross one another.
 This means that observers 1 and 2 disagree on whether or not certain events are the same.
+But as described on p.~\pageref{agreement-on-intersection}, the intersection of world-lines
+is supposed to be something that all observers agree on, and this means that they must be
+able to agree whether two events are the same or different.
 For instance, suppose that event A marks the arrival of an arrow at the bull's-eye of a
 target, and event B is the location and time when the bull's-eye is punctured.
 Events A and B occur
@@ -257,15 +429,8 @@ property 3, because all inertial frames of reference are supposed to be equally 
 To avoid problems like this, we clearly need to make sure that none of the grid lines ever cross
 one another.
 
+
 <% marg(70) %>
-<%
-  fig(
-    'bowtie',
-    %q{A transformation that leads to disagreements about whether two events occur at the same time and place.
-       This is not just a matter of opinion. Either the arrow hit the bull's-eye or it didn't.}
-  )
-%>
-\spacebetweenfigs
 <%
   fig(
     'nonlinear-transformation',
@@ -287,8 +452,6 @@ frames of reference here, as specified in property 3, so we can't have rotation;
 has to be moving in a straight line at constant speed.
 For frames related in this way, there is nothing that could single out an event like A for special
 treatment compared to B, so transformation \figref{nonlinear-transformation} violates property 1.
-
-\enlargethispage{-3\baselineskip}
 
 The examples in figures \figref{bowtie} and \figref{nonlinear-transformation} show that the transformation
 we're looking for must be linear, meaning that it must transform lines into lines, and furthermore that

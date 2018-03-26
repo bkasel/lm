@@ -161,7 +161,7 @@ this statement about causality.
 <% end_sec %> % Causality
 <% begin_sec("Time delays in forces exerted at a distance",nil,'time-delays') %>
 Relativity is closely related to electricity and magnetism, and we will go into
-relativity in more detail in chapters \ref{ch:em}-\ref{ch:genrel}. What we care about for now is that
+relativity in more detail in chapters \ref{ch:relativity}-\ref{ch:genrel}. What we care about for now is that
 relativity forbids Newton's instantaneous action at a distance. For suppose that instantaneous action at a distance
 existed. It would then be possible to send signals from one place in the universe to another without any time lag.
 This would allow perfect synchronization of all clocks. But the Hafele-Keating experiment demonstrates that
