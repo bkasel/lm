@@ -25,6 +25,16 @@ Photo credits to NEI refer to photos from the National Eye Institute, part of th
 <% if false then toc_photo_credit("Radio telescopes","Wikimedia Commons, CC-BY-SA, user Hajor") end %>%http://commons.wikimedia.org/wiki/Image:USA.NM.VeryLargeArray.02.jpg
 <% if false then toc_photo_credit("Soap bubble","Wikimedia Commons, CC-BY-SA, user Tagishsimon") end %>%http://commons.wikimedia.org/wiki/Image:Soap_Bubble_-_foliage_background_-_iridescent_colours_-_Traquair_040801.jpg
 <% if false then toc_photo_credit("Colliding nuclei","courtesy of RHIC") end %>
+<% photo_credit("surveying","Surveyors","Don Swanson, public domain; Owais Khursheed, CC-BY-SA; Paul Peterson, public domain; British Royal Navy, public domain") %>
+% https://commons.wikimedia.org/wiki/File:Theodolite_measurement_on_Ruapehu_volcano.jpg
+% https://commons.wikimedia.org/wiki/File:Survey_Camp_in_Haridwar_2014-08-09_23-49.jpg
+% https://commons.wikimedia.org/wiki/File:Claiming_the_beach,_Marines_pioneer_subsurface_survey_program_140714-M-ZB219-098.jpg
+% https://commons.wikimedia.org/wiki/File:The_Royal_Navy_during_the_Second_World_War_A21601.jpg
+<% photo_credit("surveying","Pigeon","Wikimedia commons user nitramtrebla, CC-BY-SA") %>% https://de.wikipedia.org/wiki/Brieftaube#/media/File:Brieftauben_im_Anflug.jpg
+<% photo_credit("surveying","Mushroom cloud","USGS, public domain") %>% https://commons.wikimedia.org/wiki/File:MtRedoubtedit1.jpg
+<% photo_credit("cow-and-car","Cow","Redrawn from a photo by Wikimedia Commons user Cgoodwin, CC-BY-SA") %>% http://commons.wikimedia.org/wiki/File:Adaptaur.jpg
+<% photo_credit("cow-and-car","Car","Redrawn from a photo by Wikimedia Commons user Auregann, CC-BY-SA") %>% http://commons.wikimedia.org/wiki/File:Voiture_embourb%C3%A9e.JPG
+<% photo_credit("bosch","Hell","Hieronymus Bosch, public domain") %>
 <% photo_credit("qbert","Crab","From a photo by Hans Hillewaert, CC-BY-SA") %>% https://commons.wikimedia.org/wiki/File:Liocarcinus_vernalis.jpg
 <% photo_credit("galaxies-signaling","Galaxies","Ville Koistinen, CC-BY-SA") %>% http://commons.wikimedia.org/wiki/File:Hubble_sequence_photo.png
 <% photo_credit("salamander","Salamander","Redrawn from an 18th century illustration by J.D.~Meyer") %>% https://commons.wikimedia.org/wiki/File:Meyer_Zeit-Vertreib_1_Tafel_054.jpg
