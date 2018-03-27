@@ -89,6 +89,7 @@ my $ppm = 'z-1.ppm'; # only 1 page in pdf
 push @temp_files,$ppm;
 if (system("pdftoppm -r 300 $pdf z")!=0) {finit("Error in render_one_figure.pl, pdftoppm")}
 if (system("convert $ppm $png")!=0) {finit("Error in render_one_figure.pl, ImageMagick's convert")}
+if (system("mogrify -density 300x300 -units PixelsPerInch $png")!=0) {finit("Error in render_one_figure.pl, ImageMagick's mogrify")}
 
 print "\n";
 finit();

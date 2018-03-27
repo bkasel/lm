@@ -70,6 +70,7 @@
 <% self_check_answer("killbattery") %>
 
 
+<% self_check_answer("grandparents-house") %>
 <% self_check_answer("gammaatvzero") %>
 <% self_check_answer("pointchargefield") %>
 <% self_check_answer("pointchargevtoe") %>
