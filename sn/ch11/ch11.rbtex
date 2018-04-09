@@ -4296,13 +4296,11 @@ an electric version of such a spectrometer.
 <% end_marg %>
 <% begin_hw('rolling-wire') %>__incl(hw/rolling-wire)<% end_hw() %>
 
-\enlargethispage{\baselineskip}
+\pagebreak
 
 <% begin_hw('minimum-em-force') %>__incl(hw/minimum-em-force)<% end_hw() %>
 
-\pagebreak
-
-\enlargethispage{\baselineskip}
+\vfill
 
 <% marg(3) %>
 <%
@@ -4314,13 +4312,17 @@ an electric version of such a spectrometer.
 <% end_marg %>
 <% begin_hw('dropping-circuit') %>__incl(hw/dropping-circuit)<% end_hw() %>
 
+\vfill
+
 <% begin_hw('cap-fom') %>__incl(hw/cap-fom)<% end_hw() %>
+
+\vfill
 
 <% begin_hw('everyday-maxwell') %>__incl(hw/everyday-maxwell)<% end_hw() %>
 
-<% begin_hw('poynting') %>__incl(hw/poynting)<% end_hw() %>
-
 \pagebreak
+
+<% begin_hw('poynting') %>__incl(hw/poynting)<% end_hw() %>
 
 <% begin_hw('solarconstant') %>__incl(hw/solarconstant)<% end_hw() %>
 
@@ -4343,8 +4345,6 @@ an electric version of such a spectrometer.
 <% begin_hw('boundary-eb') %>__incl(hw/boundary-eb)<% end_hw() %>
 
 <% begin_hw('spherical-shielding',3) %>__incl(hw/spherical-shielding)<% end_hw() %>
-
-\pagebreak
 
 <% begin_hw('sandwich') %>__incl(hw/sandwich)<% end_hw() %>
 
