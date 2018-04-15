@@ -149,6 +149,8 @@ than, the least accurate piece of data.
 
 <% begin_hw('units-taylor') %>__incl(hw/units-taylor)<% end_hw() %>
 
+<% begin_hw('neanderthal-calories') %>__incl(hw/neanderthal-calories)<% end_hw() %>
+
 
 <% end_hw_sec %>
 

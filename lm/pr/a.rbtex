@@ -150,6 +150,8 @@ than, the least accurate piece of data.
 
 <% begin_hw('triangle-formula') %>__incl(hw/triangle-formula)<% end_hw() %>
 
+<% begin_hw('neanderthal-calories') %>__incl(hw/neanderthal-calories)<% end_hw() %>
+
 <% end_hw_sec %>
 
 
