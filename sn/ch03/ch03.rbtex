@@ -485,7 +485,7 @@ it loses out the back?
         ways. In our first example, conservation of momentum is all
         that is required.
         
-        \begin{eg}{Getting rear-ended}
+        \begin{eg}{Getting rear-ended}\label{eg:rear-ended}
         \egquestion
         Ms.\ Chang is rear-ended at a stop light by Mr.\ Nelson,
         and sues to make him pay her medical bills. He
@@ -541,8 +541,11 @@ it loses out the back?
         energy is converted to other forms of energy, can thus be
         analyzed more thoroughly, because they have $K_f=K_i$, as
         opposed to the less useful inequality $K_f<K_i$ for a case
-        like a tennis ball bouncing on grass.
-        
+        like a tennis ball bouncing on grass.\label{elastic-and-inelastic}
+These two types of collisions are referred to, respectively, as elastic
+and inelastic.\index{collision!elastic}\index{collision!inelastic}
+The extreme inelastic case is discussed further on p.~\pageref{subsec:totally-inelastic}.
+
 \begin{eg}{Pool balls colliding head-on}\label{eg:pool-balls}
 \egquestion Two pool balls collide head-on, so that the
 collision is restricted to one dimension. Pool balls are
@@ -1138,8 +1141,42 @@ duration of the impact.
  \end{dq}
 
 <% end_sec() %>
+
+<% begin_sec("Totally inelastic collisions",0,'totally-inelastic') %>
+On p.~\pageref{elastic-and-inelastic} we discussed collisions that were totally elastic (no
+conversion of KE into other types of energy). A useful application of the
+center of mass frame of reference is to the description of the opposite extreme,
+a totally \emph{inelastic} collision.
+
+A totally inelastic collision cannot just be defined
+as one in which all the KE is converted into other forms, both because the definition
+would depend on our frame of reference and because
+there is a constraint imposed by conservation of momentum. Let's say that
+a golfer hits a ball. In the frame of reference of the grass,
+it would violate conservation of momentum if
+the ball were to stay put while the club simply stopped moving. If such a complete
+cessation of motion is to happen, then it must occur in the center of mass frame
+of reference. In the c.m.~frame, there is zero total momentum both before and after
+the collision. Thus if we observe no motion at all after the collision, we must be in the
+c.m.~frame. 
+
+Therefore we define a totally inelastic collision as one in which there is no
+motion in the c.m.~frame in the final state.\index{collision!totally inelastic}
+An observer watching such a collision, in any frame, will see that
+the amount of KE transformed into other forms of energy is
+as great as possible subject to conservation of momentum.
+
+When objects touch physically (possibly crumpling or changing shape during
+the collision) in a totally elastic collision, the final state in the c.m.~frame
+is one in which the two objects are at rest and touching. In other frames of reference,
+we see the objects stick to each other and travel away together after the collision.
+An example of this type was example \ref{eg:rear-ended}
+on p.~\pageref{eg:rear-ended}, in which one car rear-ended another, and they stuck
+together as a unit after the crash.
 <% end_sec() %>
-<% begin_sec("Force in one dimension") %>
+
+<% end_sec() %>
+<% begin_sec("Force in one dimension",4) %>
 <% begin_sec("Momentum transfer") %>
         For every conserved quantity, we can define an associated rate of flow.
         An open system can have mass transferred in or out of it, and we can measure the
@@ -1419,18 +1456,6 @@ Here are some suggestions for avoiding misapplication of Newton's third law:
 \item The two forces involve exactly two objects, in the pattern A on B, B on A.
 \item The two forces are always of the same type, e.g., friction and friction, or gravity and gravity.
 \end{enumerate}
-<% marg(60) %>
-<%
-  fig(
-    'swimming',
-    %q{%
-      A swimmer doing the breast stroke pushes backward
-      against the water. By Newton's third law, the water pushes
-      forward on him. 
-    }
-  )
-%>
-<% end_marg %>
 
 <% end_sec() %>
 <% begin_sec("Directions of forces") %>
@@ -1448,7 +1473,18 @@ line. For example, suppose a coin is sliding to the right across a table, \figre
 $x$ axis that points to the right. The coin's motion is along a horizontal line, and its momentum is
 positive and decreasing. Because the momentum is decreasing, its time derivative $\der p/\der t$ is negative. This
 derivative equals the horizontal force of friction $F_1$, and its negative sign tells us that this force on the coin is to the left.
-<% marg(30) %>
+<% marg(60) %>
+<%
+  fig(
+    'swimming',
+    %q{%
+      A swimmer doing the breast stroke pushes backward
+      against the water. By Newton's third law, the water pushes
+      forward on him. 
+    }
+  )
+%>
+\spacebetweenfigs
 <%
   fig(
     'unavoidable-crosswise-forces',
@@ -1479,8 +1515,6 @@ moving and keeps on moving without having any total force on
 it, but that can only happen when there's no friction,
 like in outer space.''
 \end{dq}
-
-\pagebreak
 
 \begin{dq}\label{dq:johnson}
 The table gives laser timing data for Ben

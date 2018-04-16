@@ -82,6 +82,7 @@ m4_define(__hw_lm_0_sars,9)m4_dnl
 m4_define(__hw_lm_0_pretzels,10)m4_dnl
 m4_define(__hw_lm_0_horizon,11)m4_dnl
 m4_define(__hw_lm_0_triangle-formula,12)m4_dnl
+m4_define(__hw_lm_0_neanderthal-calories,13)m4_dnl
 m4_define(__hw_lm_1_cubicft,1)m4_dnl
 m4_define(__hw_lm_1_dogbrain,2)m4_dnl
 m4_define(__hw_lm_1_lasf,3)m4_dnl
