@@ -470,7 +470,7 @@ is that all of these situations can be attacked mathematically
 using the same conservation laws in similar ways. In the
 first example, conservation of momentum is all that is required.
 
-\begin{eg}{Getting rear-ended}
+\begin{eg}{Getting rear-ended}\label{eg:rear-ended}
 \egquestion Ms. Chang is rear-ended at a stop light by Mr.
 Nelson, and sues to make him pay her medical bills. He
 testifies that he was only going 35 miles per hour when he
@@ -524,8 +524,10 @@ Collisions of the superball type, in which almost no kinetic
 energy is converted to other forms of energy, can thus be
 analyzed more thoroughly, because they have $KE_f=KE_i$, as
 opposed to the less useful inequality $KE_f<KE_i$ for a
-case like a tennis ball bouncing on grass.
-
+case like a tennis ball bouncing on grass.\label{elastic-and-inelastic}
+m4_ifelse(__me,1,[:These two types of collisions are referred to, respectively, as elastic
+and inelastic.\index{collision!elastic}\index{collision!inelastic}
+The extreme inelastic case is discussed further on p.~\pageref{subsubsec:totally-inelastic}.:])
 
 \begin{eg}{Pool balls colliding head-on}\label{eg:pool-balls}
 \egquestion Two pool balls collide head-on, so that the
@@ -969,6 +971,42 @@ duration of the impact.
 \end{dq}
 
 <% end_sec() %>
+
+m4_ifelse(__me,1,[:
+<% begin_sec("Totally inelastic collisions",0,'totally-inelastic') %>
+On p.~\pageref{elastic-and-inelastic} we discussed collisions that were totally elastic (no
+conversion of KE into other types of energy). A useful application of the
+center of mass frame of reference is to the description of the opposite extreme,
+a totally \emph{inelastic} collision.
+
+A totally inelastic collision cannot just be defined
+as one in which all the KE is converted into other forms, both because the definition
+would depend on our frame of reference and because
+there is a constraint imposed by conservation of momentum. Let's say that
+a golfer hits a ball. In the frame of reference of the grass,
+it would violate conservation of momentum if
+the ball were to stay put while the club simply stopped moving. If such a complete
+cessation of motion is to happen, then it must occur in the center of mass frame
+of reference. In the c.m.~frame, there is zero total momentum both before and after
+the collision. Thus if we observe no motion at all after the collision, we must be in the
+c.m.~frame. 
+
+Therefore we define a totally inelastic collision as one in which there is no
+motion in the c.m.~frame in the final state.\index{collision!totally inelastic}
+An observer watching such a collision, in any frame, will see that
+the amount of KE transformed into other forms of energy is
+as great as possible subject to conservation of momentum.
+
+When objects touch physically (possibly crumpling or changing shape during
+the collision) in a totally elastic collision, the final state in the c.m.~frame
+is one in which the two objects are at rest and touching. In other frames of reference,
+we see the objects stick to each other and travel away together after the collision.
+An example of this type was example \ref{eg:rear-ended}
+on p.~\pageref{eg:rear-ended}, in which one car rear-ended another, and they stuck
+together as a unit after the crash.
+<% end_sec() %>
+:])
+
 <% end_sec('p-and-cm') %>
 <% begin_sec("Momentum transfer",0,'momentum-transfer') %>
 \index{momentum!rate of change of}\index{momentum!transfer of}
@@ -1193,14 +1231,13 @@ momentum considerations?
 \end{dq}
 
 <% end_sec('momentum-transfer') %>
-<% begin_sec("Momentum in three dimensions",nil,'momentum-in-3d') %>\index{momentum!examples in three dimensions}
+<% begin_sec("Momentum in three dimensions",m4_ifelse(__me,1,4,nil),'momentum-in-3d') %>\index{momentum!examples in three dimensions}
 
 In this section we discuss how the concepts applied
 previously to one-dimensional situations can be used as well
 in three dimensions. Often vector addition is all that is
 needed to solve a problem:
 
-\begin{eg}{An explosion}\label{eg:kaboom}
 <% marg(0) %>
 <%
   fig(
@@ -1209,6 +1246,8 @@ needed to solve a problem:
   )
 %>
 <% end_marg %>%
+
+\begin{eg}{An explosion}\label{eg:kaboom}
 \egquestion Astronomers observe the planet Mars as the
 Martians fight a nuclear war. The Martian bombs are so
 powerful that they rip the planet into three separate pieces
@@ -1335,6 +1374,8 @@ together is unaffected by factors such as whether the cars
 collide center-to-center or catch each other a little off-center.
 \end{eg}
 
+m4_ifelse(__me,1,[:\vfill:])
+
 \begin{eg}{Shooting pool}
 Two pool balls collide, and as before we assume there is no
 decrease in the total kinetic energy, i.e., no energy
@@ -1372,12 +1413,16 @@ ball, making it go into a pocket, but may also have the
 undesired side-effect of making the cue ball go in a pocket.
 \end{eg}
 
+m4_ifelse(__me,1,[:\vfill:])
+
 <% end_sec() %>
 <% begin_sec("Calculations with the momentum vector") %>
 
-The following example illustrates how a force is required to
+The following example illustrates how a force is required in order to
 change the direction of the momentum vector, just as one
 would be required to change its magnitude.
+
+m4_ifelse(__me,1,[:\pagebreak:])
 
 <% marg(0) %>
 <%
