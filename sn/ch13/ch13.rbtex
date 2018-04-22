@@ -2620,7 +2620,7 @@ for the tunneling probability on page \pageref{tunneling-probability}
 can still be used as a rough guide to our thinking. Essentially the tunneling probability is so small
 because $U-E$ is fairly big, typically about 30 MeV at the peak of the barrier.
 \end{eg}
-<% marg(190) %>
+<% marg(150) %>
 <%
   fig(
     'alpha-potential',
@@ -2788,8 +2788,6 @@ $\nabla^2 B<0$ is because $B$ is concave down. Function $C$ is shaped like a sad
 Since its curvature along one axis is concave up, but the curvature along the other is
 down and equal in magnitude, the function is considered to have zero concavity over all.
 \end{eg}
-
-\pagebreak
 
 \begin{eg}{A classically allowed region with constant $U$}
 In a classically allowed region with constant $U$, we expect the solutions
