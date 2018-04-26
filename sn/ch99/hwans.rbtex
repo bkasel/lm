@@ -39,6 +39,7 @@
 <% hint_text("nestedsolenoids") %>
 <% hint_text("solarconstant") %>
 <% hint_text("circularcap") %>
+<% hint_text("i-to-the-i") %>
 <% hint_text("timereversalem") %>
 <% hint_text("very-weak-refraction") %>
 <% hint_text("nacl") %>

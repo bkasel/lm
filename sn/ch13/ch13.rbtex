@@ -4034,7 +4034,8 @@ a problem from PSSC Physics.]
 <% begin_hw('pelightsensor') %>__incl(hw/pelightsensor)<% end_hw() %>
  %  
 
-\pagebreak[4]% otherwise table in next problem is split out of problem
+
+\enlargethispage{\baselineskip}
 
 <% begin_hw('cancer') %>
 The photoelectric effect can occur not just for metal
@@ -4054,6 +4055,8 @@ electromagnetic waves might pose such a hazard? Explain.
                 x-rays
 \end{tabular}
 
+\pagebreak
+
 <% end_hw() %>
 
 <% marg(0) %>
@@ -4072,6 +4075,8 @@ electromagnetic waves might pose such a hazard? Explain.
 %>
 <% end_marg %>
 <% begin_hw('comparephotons') %>__incl(hw/comparephotons)<% end_hw() %>
+
+\enlargethispage{\baselineskip}
 
 
 <% begin_hw('wavespeedingup') %>__incl(hw/wavespeedingup)<% end_hw() %>
@@ -4106,7 +4111,9 @@ absorb this amount of energy, and explain why your result
 constitutes strong evidence that there is something wrong
 with the classical theory.\answercheck
 <% end_hw() %>
- % 
+
+\pagebreak
+
 <% begin_hw('tv') %>__incl(hw/tv)<% end_hw() %>
  % 
 <% begin_hw('lead') %>
