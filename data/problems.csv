@@ -2244,6 +2244,7 @@ sn,10,59,dipole-in-nonuniform-field,1
 sn,10,60,cosmic-ray-lightning,0
 sn,10,61,image-charge-unstable,0
 sn,10,62,image-charge-corner,0
+sn,10,63,complex-cube-root,0
 sn,11,1,ebforce,0
 sn,11,2,righthandmodel,0
 sn,11,3,moveandcurve,0
