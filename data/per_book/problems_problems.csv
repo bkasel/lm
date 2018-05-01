@@ -667,7 +667,8 @@ problems,19,a3,complex-arithmetic-3,1
 problems,19,a4,complex-arithmetic-4,1
 problems,19,a5,complex-arithmetic-5,1
 problems,19,d1,complex-trig,0
-problems,19,d2,i-to-the-i,0
+problems,19,d2,complex-cube-root,0
+problems,19,d3,i-to-the-i,0
 problems,19,g1,lrcunits,0
 problems,19,g2,parallelinductors,0
 problems,19,g3,strayimpedance,0

@@ -3391,7 +3391,7 @@ complete argument:\label{proof-lx-and-lz-incompatible}
 definite values of both $L_z$ and $L_x$, then it is a wavefunction
 that is constant everywhere, so $\vc{L}=0$.
 
-\noindent Lemma 1: If component of $\ell_A$ 
+\noindent Lemma 1: If the component of $\ell_A$ 
 along a certain axis A has a definite value and is nonzero, then (a)
 $\Psi=0$ at the poles, and (b) $\Psi$ is of the form $Ae^{i\ell_A\phi}$ on any circle in
 a plane perpendicular to the axis. Part a holds because $\vc{L}=0$ if $r_\perp=0$.

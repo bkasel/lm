@@ -1810,7 +1810,8 @@ m4_define(__hw_problems_19_complex-arithmetic-3,a3)m4_dnl
 m4_define(__hw_problems_19_complex-arithmetic-4,a4)m4_dnl
 m4_define(__hw_problems_19_complex-arithmetic-5,a5)m4_dnl
 m4_define(__hw_problems_19_complex-trig,d1)m4_dnl
-m4_define(__hw_problems_19_i-to-the-i,d2)m4_dnl
+m4_define(__hw_problems_19_complex-cube-root,d2)m4_dnl
+m4_define(__hw_problems_19_i-to-the-i,d3)m4_dnl
 m4_define(__hw_problems_19_lrcunits,g1)m4_dnl
 m4_define(__hw_problems_19_parallelinductors,g2)m4_dnl
 m4_define(__hw_problems_19_strayimpedance,g3)m4_dnl
