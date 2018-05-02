@@ -4895,7 +4895,18 @@ field lines are perpendicular to the plane, so the plane is an surface of consta
 
 <% begin_hw('image-charge-corner',2) %>__incl(hw/image-charge-corner)<% end_hw() %>
 
+\pagebreak
+
 <% begin_hw('complex-cube-root') %>__incl(hw/complex-cube-root)<% end_hw() %>
+
+<% marg(300) %>
+<%
+  fig(
+    'hw-complex-cube-root',
+    %q{Problem \ref{hw:complex-cube-root}.}
+  )
+%>
+<% end_marg %>
 
 <% end_hw_sec %>
 
