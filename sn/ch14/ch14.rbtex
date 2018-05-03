@@ -143,7 +143,7 @@ throwing away the emerging parts with $\ell_x=-1$ and $+1$ to make a beam of the
 Now we let this beam pass through a second spectrometer that is identical
 but oriented along the $z$ axis. Can we produce a beam in which
 every molecule has both $\ell_x=0$ and $\ell_z=+1$? 
-Hint: See example \ref{eg:completeness-ylm}, p.~\pageref{eg:completeness-ylm}.
+Hint: See the example in fig.~\figref{completeness-ylm}, p.~\pageref{completeness-ylm}.
 \end{dq}
 
 <% end_sec() %>
@@ -1612,6 +1612,8 @@ exists a set of compatible observables, called a complete set, such that
 any state of the system can be expressed as a sum of wavefunctions having definite values of these 
 observables. 
 \end{important}
+
+\noindent The completeness postulate was discussed at a more elementary level in section \ref{subsec:quantum-numbers}, p.~\pageref{subsec:quantum-numbers}.
 
 <% marg(30) %>
 <% fig(

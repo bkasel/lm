@@ -3417,11 +3417,19 @@ Let $\ell_z$ be the one that is zero.
 By 1a, $\Psi=0$ at the $x$-axis pole, so by 2, $\Psi=0$ on the great circle perpendicular to $z$.
 But then 1b tells us that $\Psi=0$ everywhere.
 
+<% end_sec() %>
+
+<% begin_sec("Quantum numbers",4,'quantum-numbers') %>
+
+<% begin_sec("Completeness",nil) %>
+
 <%
   fig(
     'completeness-ylm',
     %q{%
-      Example \ref{eg:completeness-ylm}.
+      The three states inside the box are a complete set of quantum numbers for $\ell=1$.
+      Other states with $\ell=1$, such as the one on the right, are not really new: they can
+      be expressed as superpositions of the original three we chose.
     },
     {
       'width'=>'wide',
@@ -3430,11 +3438,9 @@ But then 1b tells us that $\Psi=0$ everywhere.
   )
 %>
 
-\pagebreak
 
-\begin{eg}{Completeness}\label{eg:completeness-ylm}
-For a given value of $\ell$, consider the set of angular momentum states with $|\vc{L}|=\hbar\ell$
-and the various possible values of the angular momentum's component along some fixed axis.
+For a given $\ell$, consider the set of states with all the
+possible values of the angular momentum's component along some fixed axis.
 This set of states is \emph{complete}, meaning that they encompass all the possible states with this
 $\ell$.
 
@@ -3466,12 +3472,22 @@ not a state that we didn't possess before. We can obtain it as the sum of the
 $\ell_z=-1$ and $\ell_z=1$ states, divided by an appropriate normalization factor. Although
 I'm avoiding making this example an exercise in manipulating formulae, it is easy to check
 that the sum does work out properly at the three sample points.
-\end{eg}
+
+<% end_sec() %>
+
+<% begin_sec("Sets of compatible quantum numbers",nil) %>
+
+Figure \figref{compatible-quantum-numbers} shows some examples in which we can completely describe
+a wavefunction by giving a few numbers. These are referred to as ``quantum numbers.'' It is important
+that the quantum numbers we use in describing a state be compatible. By analogy, ``Bond, James, 007''
+would be a clear and consistent definition of the famous fictional spy, but in general this identification
+scheme would not work, because although almost everyone has a first and last name, most people do not have
+a license to kill with a corresponding double-oh number.
 
 <%
   fig(
     'compatible-quantum-numbers',
-    %q{Compatible quantum numbers.},
+    %q{Three examples of sets of compatible quantum numbers.},
     {
       'width'=>'wide',
       'sidecaption'=>true
@@ -3479,28 +3495,35 @@ that the sum does work out properly at the three sample points.
   )
 %>
 
-\begin{eg}{Compatible quantum numbers}
-Figure \figref{compatible-quantum-numbers} shows some examples in which we can completely describe
-a wavefunction by giving a few numbers. These are referred to as ``quantum numbers.'' It is important
-that the quantum numbers we use in describing a state be compatible. By analogy, ``Bond, James, 007''
-would be a clear and consistent definition of the famous fictional spy, but in general this identification
-scheme would not work, because although almost everyone has a first and last name, most people do not have
-a license to kill with a corresponding double-oh number. The laser beam in the figure is a state described
+The laser beam in the figure is a state described
 according to its definite values $p_x$ and $y$, so we have the vanishing uncertainties $\Delta p_x=0$ and $\Delta y=0$.
-Since the Heisenberg uncertainty principle doesn't like an $x$ momentum to a $y$ position, this is OK.
+Since the Heisenberg uncertainty principle doesn't talk about an $x$ momentum in relation to a $y$ position, this is OK.
 If we had been in doubt about whether this violated the uncertainty principle, we would have been
-reasured by our ability to draw the picture.
+reassured by our ability to draw the picture.
 
 It is also possible to have \emph{incompatible} quantum numbers. The combination of $p_x$ with $x$ would be
 an incompatible set of quantum numbers, because a state can't have a definite $p_x$ and also a definite $x$.
-If we try to draw such a wave, we fail. $L_x$ and $L_z$ would also be an incompatible set.
-\end{eg}
+If we try to draw such a wave, we fail. $L_x$ and $L_z$ would also be an incompatible set. 
+<% end_sec() %>
 
-\vfill
+<% begin_sec("Complete and compatible sets of quantum numbers") %>
+Let's summarize. Just as we expect everyone to have a first and last name,
+we expect there to be a complete and compatible set of quantum numbers for any
+given quantum-mechanical system. Completeness means that we have enough quantum
+numbers to uniquely describe every possible state of the system, although we may
+need to describe a state as a superposition, as with the state $\ell_x=0$ in
+figure \figref{completeness-ylm} on p.~\pageref{fig:completeness-ylm}. Compatibility
+means that when we specify a set of quantum numbers, we aren't making a set of
+demands that can't be met. These ideas are revisited in a slightly fancier mathematical
+way on p.~\pageref{qm-completeness-stated}.
+<% end_sec() %>
 
-\pagebreak
 
- % Used this figure at beginning of section, without caption 
+<% end_sec('quantum-numbers') %>
+
+<% begin_sec("The hydrogen atom") %>
+
+ % This figure was also used at the beginning of the whole section, without caption 
  % or label. 
 <%
   fig(
@@ -3511,9 +3534,7 @@ If we try to draw such a wave, we fail. $L_x$ and $L_z$ would also be an incompa
     }
   )
 %>
-<% end_sec() %>
 
-<% begin_sec("The hydrogen atom") %>
 \index{hydrogen atom}\index{hydrogen atom!quantum numbers}
 Deriving all the wavefunctions of the states of the hydrogen
 atom from first principles would be mathematically too
