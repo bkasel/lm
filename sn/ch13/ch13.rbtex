@@ -3468,6 +3468,34 @@ I'm avoiding making this example an exercise in manipulating formulae, it is eas
 that the sum does work out properly at the three sample points.
 \end{eg}
 
+<%
+  fig(
+    'compatible-quantum-numbers',
+    %q{Compatible quantum numbers.},
+    {
+      'width'=>'wide',
+      'sidecaption'=>true
+    }
+  )
+%>
+
+\begin{eg}{Compatible quantum numbers}
+Figure \figref{compatible-quantum-numbers} shows some examples in which we can completely describe
+a wavefunction by giving a few numbers. These are referred to as ``quantum numbers.'' It is important
+that the quantum numbers we use in describing a state be compatible. By analogy, ``Bond, James, 007''
+would be a clear and consistent definition of the famous fictional spy, but in general this identification
+scheme would not work, because although almost everyone has a first and last name, most people do not have
+a license to kill with a corresponding double-oh number. The laser beam in the figure is a state described
+according to its definite values $p_x$ and $y$, so we have the vanishing uncertainties $\Delta p_x=0$ and $\Delta y=0$.
+Since the Heisenberg uncertainty principle doesn't like an $x$ momentum to a $y$ position, this is OK.
+If we had been in doubt about whether this violated the uncertainty principle, we would have been
+reasured by our ability to draw the picture.
+
+It is also possible to have \emph{incompatible} quantum numbers. The combination of $p_x$ with $x$ would be
+an incompatible set of quantum numbers, because a state can't have a definite $p_x$ and also a definite $x$.
+If we try to draw such a wave, we fail. $L_x$ and $L_z$ would also be an incompatible set.
+\end{eg}
+
 \vfill
 
 \pagebreak
@@ -3487,10 +3515,11 @@ that the sum does work out properly at the three sample points.
 
 <% begin_sec("The hydrogen atom") %>
 \index{hydrogen atom}\index{hydrogen atom!quantum numbers}
-Deriving the wavefunctions of the states of the hydrogen
+Deriving all the wavefunctions of the states of the hydrogen
 atom from first principles would be mathematically too
-complex for this book, but it's not hard to understand the
-logic behind such a wavefunction in visual terms. Consider
+complex for this book. (The ground state is not too hard, and we
+analyze it on p.~\pageref{subsubsec:exact-h-gs}.). But it's not hard to understand the
+logic behind the wavefunctions in visual terms. Consider
 the wavefunction from the beginning of the section, which is
 reproduced in figure \figref{hwavefnlowres}.
  Although the graph looks three-dimensional,
