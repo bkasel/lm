@@ -588,6 +588,7 @@ sn,13,46,easy-partials,0
 sn,13,47,am-radio-photon-density,0
 sn,13,48,square-wavefunction,1
 sn,13,49,bogus-laplacian,1
+sn,13,50,easy-laplacian,0
 sn,14,1,oxygen-22-predict-spin-4,0
 sn,14,2,lin-alg-basis-or-not,1
 sn,14,3,lin-alg-vector-space-or-not,1

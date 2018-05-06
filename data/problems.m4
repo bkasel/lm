@@ -2411,6 +2411,7 @@ m4_define(__hw_sn_13_easy-partials,46)m4_dnl
 m4_define(__hw_sn_13_am-radio-photon-density,47)m4_dnl
 m4_define(__hw_sn_13_square-wavefunction,48)m4_dnl
 m4_define(__hw_sn_13_bogus-laplacian,49)m4_dnl
+m4_define(__hw_sn_13_easy-laplacian,50)m4_dnl
 m4_define(__hw_sn_14_oxygen-22-predict-spin-4,1)m4_dnl
 m4_define(__hw_sn_14_lin-alg-basis-or-not,2)m4_dnl
 m4_define(__hw_sn_14_lin-alg-vector-space-or-not,3)m4_dnl
