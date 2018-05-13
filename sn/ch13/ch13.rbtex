@@ -1658,7 +1658,7 @@ for all the fundamental building blocks of light and matter,
 not just for photons and electrons.
 
 The second equation, which I soft-pedaled in the previous
-chapter, takes on a greater important for electrons. This is
+chapter, takes on a greater importance for electrons. This is
 first of all because the momentum of matter is more likely
 to be significant than the momentum of light under ordinary
 conditions, and also because force is the transfer of
@@ -2300,7 +2300,7 @@ the limit imposed by the uncertainty principle?
 
 \eganswer If we assume the electron moves in all directions
 with equal probability, the uncertainty in its momentum is
-roughly twice its typical momentum. This only an order-of-magnitude
+roughly twice its typical momentum. This is only an order-of-magnitude
 estimate, so we take $\Delta p$ to be the same as a typical momentum:
 \begin{align*}
  \Delta p \Delta x         &=    p_{typical} \Delta x   \\
@@ -4196,7 +4196,7 @@ effects become important.
  % 
 <% begin_hw('hydrogen-scale') %>__incl(hw/hydrogen-scale)<% end_hw() %>
  % 
-<% marg(80) %>
+<% marg() %>
 <%
   fig(
     'hw-h-transitions',
@@ -4229,26 +4229,7 @@ that the electron could be described nonrelativistically?
 
 <% begin_hw('energysum') %>__incl(hw/energysum)<% end_hw() %>
 
-<% begin_hw('electroninproton') %>
-The wavefunction of the electron in the ground state
-of a hydrogen atom is 
-\begin{equation*}
-  \Psi  =  \pi^{-1/2} a^{-3/2} e^{-r/a}\eqquad,
-\end{equation*}
-where $r$ is the distance from the proton, and $a=5.3\times10^{-11}$ m
-is a constant that sets the size of the wave. \hwendpart
-(a) Calculate symbolically, without plugging in numbers, the
-probability that at any moment, the electron is inside the
-proton.  Assume the proton is a sphere with a radius of
-$b=0.5$ fm. Do not use calculus. [Hint: Does it matter if you plug in $r=0$ or
-$r=b$ in the equation for the wavefunction?]\answercheck\hwendpart
-(b) Calculate the probability numerically.\answercheck\hwendpart
-(c) Based on the equation for the wavefunction, is it valid
-to think of a hydrogen atom as having a finite size? Can $a$
-be interpreted as the size of the atom, beyond which there
-is nothing? Or is there any limit on how far the electron
-can be from the proton?
-<% end_hw() %>
+<% begin_hw('electroninproton') %>__incl(hw/electroninproton)<% end_hw() %>
  % 
 <% begin_hw('hydrogenlike') %>__incl(hw/hydrogenlike)<% end_hw() %>
  % 
@@ -4377,6 +4358,148 @@ than the helium-4 nucleus, and the difference in binding energy reduces the ener
 
 \noindent 5. Summarize: Are the classical probability distributions 
 accurate? What qualitative features are possessed by the classical diagrams but not by the quantum mechanical ones, or vice-versa?
+
+\pagebreak
+
+\newcommand{\abox}{\fbox{\rule{0.8cm}{0pt}\rule[-0.5ex]{0pt}{2.7ex}}\:}
+\newcommand{\aboxfilledin}[1]{\fbox{#1\rule[-0.5ex]{0pt}{2.7ex}}\:}
+
+\extitle{B}{Choice of quantum numbers}
+
+We could choose to identify a human by their first and last names, or by their social security number.
+We're free to choose any set of labels, as long as they're compatible.
+
+\noindent 1. Warm-up, nothing to do with quantum mechanics:
+
+{\centering \anonymousinlinefig{ex-rotate-90-degrees} \par}
+
+Express the $x',y'$ coordinates in terms of the $x,y$ coordinates:
+\begin{align*}
+  x' &= \abox x + \abox y \\
+  y' &= \abox x + \abox y
+\end{align*}
+
+\noindent 2. Consider these four $\ell=1$ wavefunctions on the ``quantum moat:''
+\begin{align*}
+  \Psi_\circlearrowleft = \abox e^{i\theta} \qquad\qquad & \Psi_\circlearrowright = \abox e^{-i\theta} \\
+  \Psi_\text{s}  = \abox\sin\theta          \qquad\qquad & \Psi_\text{c} = \abox\cos\theta
+\end{align*}
+Determine the normalization factor for your group's wave.
+
+\noindent 3. We now want to discuss the standing waves in terms of the traveling waves:
+\begin{align*}
+  \Psi_\text{c} &= \abox\Psi_\circlearrowleft + \abox\Psi_\circlearrowright \\
+  \Psi_\text{s} &= \abox\Psi_\circlearrowleft + \abox\Psi_\circlearrowright .
+\end{align*}
+Determine the coefficients assigned to your group, and check your equation at the
+value of $\theta$ assigned to your group: $\theta=0$, $\pi/2$, $\pi$, or $3\pi/2$.
+
+\noindent 4. An electron is initially in state $\Psi_\text{c}$, and Jane then measures
+its angular momentum. Discuss what happens to the electron's wavefunction and to Jane's,
+as in sec.~\ref{subsec:nonlocality-and-entanglement}, p.~\pageref{schrodingers-cat}, on
+entanglement.
+
+\noindent 5. Discuss the probability interpretation and normalization.
+
+\pagebreak
+
+\extitle{C}{Rotation around different axes}
+
+This exercise refers to the example at the beginning of section 
+\ref{subsec:quantum-numbers} on p.~\pageref{subsec:quantum-numbers}, which analyzes the
+figure below:
+
+{\centering \anonymousinlinefig{../../../share/quantum/figs/completeness-ylm-ex} \par}
+
+To simplify the writing:
+\begin{itemize}
+\item $\Psi_{-1}$ means the state with $\ell_z=-1$, $\Psi_0$ has $\ell_z=0$, etc.
+\item States with definite values of $\ell_x$ are notated as $\Psi_{\ell_x=0}$, etc.
+\end{itemize}
+
+\noindent 1. The wavefunctions are shown 
+with values of the wavefunction written at the north pole and
+at two points on the equator. Fill in the south poles.
+Why do the results make sense physically for the $\ell_z=1$ and $-1$ wavefunctions?
+
+\noindent 2.
+By rotating the pictures 90 degrees counterclockwise, we can make states of definite $\ell_x$.
+We now want to express the states of definite $\ell_x$ in terms of the states of definite $\ell_z$.
+
+\anonymousinlinefig{../../../share/quantum/figs/completeness-ylm-ex-3a} \qquad
+    $\Psi_{\ell_x=0} =  \aboxfilledin{$1/\sqrt2$}\Psi_{-1}
+                       +\aboxfilledin{$0\quad$}\Psi_0
+                       +\aboxfilledin{$1/\sqrt2$}\Psi_1 \qquad \text{Done on p.~\pageref{subsec:quantum-numbers}.} $
+
+\noindent\anonymousinlinefig{../../../share/quantum/figs/completeness-ylm-ex-3b} \qquad
+    $\Psi_{\ell_x=1} =  \abox\Psi_{-1}
+                       +\abox\Psi_0
+                       +\abox\Psi_1 \qquad \text{Demonstrated by the instructor.} $
+
+\noindent\anonymousinlinefig{../../../share/quantum/figs/completeness-ylm-ex-3c} \qquad
+    $\Psi_{\ell_x=-1} =  \abox\Psi_{-1}
+                       +\abox\Psi_0
+                       +\abox\Psi_1 \qquad \text{Done by the students.}$
+
+\noindent 3.
+Fred takes a molecule known to have $\ell=1$, and measures its $\ell_x$. (This can be
+done by passing it through a magnetic field, as described in more detail in section
+\ref{sec:stern-gerlach}.) If the molecule is not prepared in any particular orientation,
+then the result is random, and can be $\ell_x=-1$, $0$, or $1$. (The probabilities are
+all $1/3$, although this is not obvious.) Suppose he measures $\ell_x=0$, so that
+\emph{after} measurement, he is sure that the wavefunction is $\Psi_{\ell_x=0}$.
+(Fred may now be superimposed with other versions of himself who saw $\ell_x=-1$ or
+1, but we stop keeping track of them now.)
+
+Now suppose that Fred follows up with a second measurement, on the same molecule,
+but this time he orients the magnetic field so that he's measuring $\ell_z$.
+What are the probabilities of the three possible results? Check normalization.
+
+\pagebreak
+
+\extitle{D}{The Einstein-Podolsky-Rosen paradox}
+
+A nucleus having zero angular momentum undergoes symmetric fission into two
+fragments, each with $\ell=1$. By conservation of momentum, they fly off back
+to back, and by conservation of angular momentum their angular momenta are also
+opposite. Let's say that except for this correlation, the two angular momentum vectors
+are randomly oriented.
+
+\noindent 1. Warm-up: Suppose Alice measures the $\ell_x$ of particle A,
+and Bob measures $\ell_x$ of fragment B. Make a table of the probabilities
+of the outcomes.
+
+\begin{tabular}{ll|lll}
+ & & \multicolumn{3}{c}{particle B} \\
+ & & $\ell_x=-1$ & $\ell_x=0$ & $\ell_x=1$ \\
+\hline
+           & $\ell_x=-1$ \\
+particle A & $\ell_x=0$ \\
+           & $\ell_x=1$ 
+\end{tabular}
+
+\noindent 2. 
+In a 1935 paper that ended up being one of the most frequently cited physics papers of all time,
+Einstein and his collaborators considered a scenario similar to the following.
+Suppose now that Alice measures $\ell_x$, but Bob measures $\ell_z$. It shouldn't
+matter who goes first, but let's say that Alice does. Using the results of exercise C,
+compute the probabilities in the row assigned to your group. Take into account the factor
+of $1/3$, because in this table, as in the first one, we're talking about the probability
+of a certain result for A \emph{and} a certain result for B.
+
+\begin{tabular}{l|lll}
+ & \multicolumn{3}{c}{Bob's probabilities} \\
+ & $\ell_z=-1$ & $\ell_z=0$ & $\ell_z=1$ \\
+\hline
+1/3 of the time, Alice gets $\ell_x=-1\:$ $\implies$  \\
+1/3 of the time, Alice gets $\ell_x=0$ \quad $\implies$  \\
+1/3 of the time, Alice gets $\ell_x=1$ \quad $\implies$  \\
+\hline
+total probabilities for Bob
+\end{tabular}
+
+\noindent 3. Can Alice send information to Bob by deciding whether or not to measure
+her particle's $\ell_x$?
 
 \end{exsection}
 <% end_chapter() %>
