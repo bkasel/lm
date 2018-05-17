@@ -2470,7 +2470,7 @@ would happen to the state of the ``blank'' atom on which we had hoped to impose 
 Its state would have been overwritten, but this would imply a loss of information, which is forbidden
 by the unitarity postulate of quantum mechanics (p.~\pageref{unitarity-postulate}).
 
-The no-cloning theorem would seem to severely limit the practicability of a quantum computing.
+The no-cloning theorem would seem to severely limit the practicability of quantum computing.
 When you run a program on a classical computer, the very first step to be performed by the operating
 system is to copy the program's code and data from storage into random-access memory. If a quantum
 computer can't copy anything, then how do we perform this initial step? But the no-cloning theorem doesn't
