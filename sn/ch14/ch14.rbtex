@@ -1455,9 +1455,7 @@ We interpret squares of amplitudes as probabilities, so
 \end{equation*}
 gives us the probability that we will have observed the state to be $v$. This final leap in the logic,
 to a probability interpretation, has felt mysterious to several generations of physicists, but recent
-work has clarified the situation somewhat. We will have more to say about this on pp.~\pageref{sec:et-phase-randomization}
-and \pageref{sec:qbit-measurement-problem}.\index{quantum mechanics!measurement problem}
-
+work has clarified the situation somewhat.
 
 On p.~\pageref{exclusion-principle-nonrigorous} we stated the Pauli exclusion principle
 by saying that two particles with half-integer spins
@@ -2322,7 +2320,7 @@ in time using Newton's laws.\label{unitarity-phase-randomization}
 <% end_sec('et-phase-randomization-meas') %>
 
 <% begin_sec("Decoherence",nil,'decoherence') %>\index{decoherence}
-Starting around 1970, physicists began to realize that ideas involve a loss of coherence,
+Starting around 1970, physicists began to realize that ideas involving a loss of coherence,
 or ``decoherence,'' could help to explain some things about quantum mechanics that
 had previously seemed mysterious.  The classical notions of coherence and coherence length
 were described in sec.~\ref{subsec:coherence}, p.~\pageref{subsec:coherence}, and quantum-mechanical
