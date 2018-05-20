@@ -1074,6 +1074,10 @@ In quantum mechanics, any observable is represented by a linear operator that ta
 a wavefunction as an input and has real eigenvalues.
 \end{important}
 
+\noindent Some important examples of observables are momentum (example \ref{eg:momentum-operator} below),
+position (example \ref{eg:x-is-observable}),
+energy, and angular momentum. These are represented by linear operators $\mathcal{O}_x$,
+$\mathcal{O}_p$, $\mathcal{O}_E$, and $\mathcal{O}_L$, respectively.
 
 \begin{eg}{The momentum operator}\label{eg:momentum-operator}
 Quantum mechanics represents motion as a dependence of the wavefunction on
