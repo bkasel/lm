@@ -1155,7 +1155,7 @@ fields such as electrical engineering. Because it was useful, mathematicians fel
 define a theory in which functions are generalized to things called distributions or generalized functions.
 \end{eg}
 
-Becase we represent an observable as an operator that changes a wavefunction into a new wavefunction,
+Because we represent an observable as an operator that changes a wavefunction into a new wavefunction,
 a common misconception is that this change represents the effect of measurement on the system.
 Although it is often true that microscopic systems are delicate, so that the act of measurement may have a
 significant effect on them, that action of the operator on the wavefunction does not represent
@@ -1446,7 +1446,7 @@ where $\langle v|w \rangle=0$. We then have
 \begin{equation*}
   \langle u|v \rangle = (\alpha \langle v | + \beta \langle w |)|v \rangle = \alpha.
 \end{equation*}
-Now suppose that we make measurements capable of determining whether or the system
+Now suppose that we make measurements capable of determining whether or not the system
 is in the state $v$. If the system is prepared in state $u$, and we make these measurements on it, then
 by the linearity of the Schr\"odinger equation, the result is that the measuring apparatus or observer ends up in
 a Schr\"odinger's-cat state that looks like
@@ -1490,9 +1490,9 @@ and the clockwise $|\text{cw}\rangle=e^{-i\theta}$. These states are distinguish
 by their angular momenta $\ell_z=\pm 1$, so we expect them to be orthogonal. Let's
 check that directly.
 \begin{align*}
-  \langle \text{ccw} | \text{cw} \rangle &= \int_0^{2\pi} \left[(e^{i\theta})^*\right]e^{-i\theta} \der x \\
-            &= \int_0^{2\pi} e^{-i\theta}e^{-i\theta} \der x \\
-            &= \int_0^{2\pi} e^{-2i\theta} \der x \\
+  \langle \text{ccw} | \text{cw} \rangle &= \int_0^{2\pi} \left[(e^{i\theta})^*\right]e^{-i\theta} \der \theta \\
+            &= \int_0^{2\pi} e^{-i\theta}e^{-i\theta} \der \theta \\
+            &= \int_0^{2\pi} e^{-2i\theta} \der \theta \\
 \end{align*}
 This is easily seen to be zero without an explicit calculation,
 because when we take the antiderivative of $e^{-2i\theta}$, we will get the same
@@ -1642,7 +1642,7 @@ An example of this principle is the fact that we habitually talk about ``up'' an
 ``down'' for the spin of an electron, which we are free to do, although it would
 be equally permissible to talk about left and right. Another good example
 is the discussion of the double degeneracy of the quantum moat on p.~\pageref{subsubsec:degeneracy},
-where we were free to talk about a basis consistig of either two standing waves or two traveling waves.
+where we were free to talk about a basis consisting of either two standing waves or two traveling waves.
 
 As an example of the completeness principle, we have seen in example
 \ref{eg:completeness-ylm} on p.~\pageref{eg:completeness-ylm} that for

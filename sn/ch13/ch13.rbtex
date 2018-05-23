@@ -2954,7 +2954,7 @@ is \emph{not} different at different points on the figure, because we are using 
 as a visual encoding of the complex numbers --- so, for example, a red point on the figure is
 not a point where the wave has a longer wavelength than it does at a blue point.
 
-Figure \subfigref{rainbow}{3} represents a wave travaling to the left.
+Figure \subfigref{rainbow}{3} represents a wave traveling to the left.
 
 Figure \subfigref{rainbow}{4} shows a standing wave created by superimposing the traveling
 waves from \subfigref{rainbow}{2} and \subfigref{rainbow}{3}, $\Psi_4=(\Psi_2+\Psi_3)/2$. (The reason
@@ -3448,7 +3448,7 @@ For example, figure \figref{completeness-ylm} shows wavefunctions with $\ell=1$ 
 the Schr\"odinger equation for a particle that is confined to the surface of a sphere. Although the
 formulae for these wavefunctions are not particularly complicated,\footnote{They are 
 $\Psi_{1,-1}=\sin\theta e^{-i\phi}$, $\Psi_{10}=\sqrt{2}\cos\theta$,
-and $\Psi_{11}=\sin\theta e^{i\phi}$, wher $\theta$ is the angle measured down from the $z$
+and $\Psi_{11}=\sin\theta e^{i\phi}$, where $\theta$ is the angle measured down from the $z$
 axis, and $\phi$ is the angle running counterclockwise around the $z$ axis. These functions are
 called spherical harmonics.\index{spherical harmonics}} they are not our main
 focus here, so to help with getting a feel for the idea of completeness, I have simply
@@ -3776,7 +3776,7 @@ electron has $s=1/2$ and $s_z=+1/2$ or $-1/2$.
 Taking electron spin into account, we need a total of four
 quantum numbers to label a state of an electron in the
 hydrogen atom: $n$, $\ell$, $\ell_z$, and $s_z$. (We omit $s$ because it
-always has the same value.) The symbols  and  include only
+always has the same value.) The symbols $\ell$  and $\ell_z$  include only
 the angular momentum the electron has because it is moving
 through space, not its spin angular momentum. The availability
 of two possible spin states of the electron leads to a
