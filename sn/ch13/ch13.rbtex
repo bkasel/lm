@@ -2737,7 +2737,7 @@ when differentiating with respect to a particular variable, the other variables 
 as constants. This operation
 on the function $\Psi$ is notated $\nabla^2\Psi$, and the derivative-like
 operator $\nabla^2=\partial^2/\partial x^2+ \partial^2/\partial y^2+ \partial^2/\partial z^2$ is called the Laplacian, and was introduced briefly
-on p.~\pageref{laplacian-em}.\index{Laplacian}\label{laplacian-qm} It occurs elswehere in physics.
+on p.~\pageref{laplacian-em}.\index{Laplacian}\label{laplacian-qm} It occurs elsewhere in physics.
 For example, in classical electrostatics,
 the voltage in a region of vacuum must be a solution of the equation $\nabla^2V=0$.
 Like the second derivative, the Laplacian is essentially a measure of curvature.
@@ -2892,7 +2892,7 @@ of rotation that depends on its direction of travel.
 \egquestion
 The right side of figure \subfigref{complex-wavefunction}{3} is a cartoonish representation of
 double-slit interference; it depicts the situation at the center, where symmetry guarantees that
-the interference is constuctive. Suppose that at some off-center point, the two wavefunctions
+the interference is constructive. Suppose that at some off-center point, the two wavefunctions
 being superposed are $\Psi_1=b$ and $\Psi_2=bi$, where $b$ is a real number with units.
 Compare the probability of finding the electron at this position with what it would have been
 if the superposition had been purely constructive, $b+b=2b$.

@@ -554,7 +554,7 @@ so wavefunction fundamentalism implies complex wavefunctions.
 Given the wavefunction at some initial time, we can predict its evolution into the future
 by making use of the principle that $E=hf$. Suppose for example that we have a sinusoidal plane wave
 traveling to the right. Then we expect the value of the wavefunction at a particular point in space
-to rotate clockwise about the origin in the complex plane at the appropriate freqency $f$, showing
+to rotate clockwise about the origin in the complex plane at the appropriate frequency $f$, showing
 a time dependence $e^{-i\omega t}$ (where, as usual, $\omega=2\pi f$). Thus the time derivative
 of the wavefunction is $\Psi'=-i\omega\Psi=-i(E/\hbar)\Psi$, so that $E\Psi=i\hbar\Psi'$. Then to
 generalize the time-independent Schr\"odinger equation to its time-dependent version, the most
@@ -1017,7 +1017,7 @@ Given an operator $\mathcal{O}$ that describes a certain observable,
 a state $\Psi$ with a definite value $c$ of that observable is one for which
 $\mathcal{O}(\Psi)=c\Psi$. Although it's common to use parentheses when notating functions,
 as in $\cos(\pi)=-1$, they are optional, and we can write $\cos\pi=-1$, so we will often
-use notationa like $\mathcal{O}\Psi$ instead of $\mathcal{O}(\Psi)$, but keep in mind
+use notations like $\mathcal{O}\Psi$ instead of $\mathcal{O}(\Psi)$, but keep in mind
 that this not multiplication, just as $\cos\pi$ doesn't mean multiplying $\cos$ by $\pi$.
 
 When we carried over the classical kinetic energy observable to quantum mechanics, we weren't
@@ -1268,7 +1268,7 @@ If we have two observables, it may or may not be possible to measure them both o
 and get exact and meaningful results. Position and momentum $p$ and $x$ are incompatible observables, as expressed
 by the Heisenberg uncertainty principle. No state is simultaneously a state of definite $p$ and of definite
 $x$. The magnitude of an angular momentum $L$ and its component along
-some axis $L_z$ are compatible. It is common to have a state thare is simultaneously a state of definite
+some axis $L_z$ are compatible. It is common to have a state that is simultaneously a state of definite
 $L$ and of definite $L_z$. Another example of \emph{incompatible} observables is $L_z$ and $L_x$, as proved
 on p.~\pageref{proof-lx-and-lz-incompatible}.
 
@@ -2512,7 +2512,7 @@ round-trip, e.g., $1\ \munit\rightarrow100\ \zu{cm}\rightarrow1\
 could completely encode qbits into bits, then we could make a second
 copy of the bits and violate no-cloning by converting back to qbits.
 This is a contradiction, so we conclude that lossless conversion of
-classial information to quantum information is impossible. 
+classical information to quantum information is impossible. 
 <% end_sec('no-cloning') %>
 
 <% begin_sec("More about entanglement",nil,'more-entanglement') %>\index{entanglement}\index{separability!of a quantum state}
