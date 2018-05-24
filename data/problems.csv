@@ -2432,4 +2432,5 @@ sn,14,17,moat-orthogonal-standing-waves,0
 sn,14,18,sinusoidal-no-preferred-basis,0
 sn,14,19,reflection-from-impenetrable-wall,0
 sn,14,20,two-point-five-kids,1
-sn,14,21,ic-time-dependent-s-eqn,0
+sn,14,21,nonunitary,0
+sn,14,22,ic-time-dependent-s-eqn,0

@@ -14,6 +14,8 @@ use FindBin qw($Bin);
 
 our ($input_pdf,$nchunks,$kmax,$label);
 
+my $debug = 0;
+
 my $input_pdf = shift @ARGV; # first command-line argument
 die "input file $input_pdf not found" unless  -e $input_pdf;
 my $chunk_size = 50;
@@ -46,6 +48,7 @@ for (my $p=1; $p<=$npages; $p+=$chunk_size) {
 
 # This version takes n log n time.
 if (1) {
+  system("rm -f split_temp_*.pdf"); # otherwise any such files left over (e.g., from an aborted run) are assumed to be good
   $nchunks = int($npages/$chunk_size);
   ++$nchunks if ($nchunks*$chunk_size<$npages);
   $kmax = log2ceiling($nchunks); # number of binary digits needed to represent nchunks
@@ -64,9 +67,10 @@ if (1) {
 
 sub get_chunk {
     my $n = shift;
-    my $k = shift;
+    my $k = shift; # recursion depth
     return $input_pdf if $k==0;
     my $t = temp_file_name($n,$k);
+    print "entering get_chunk, n=$n, k=$k, t=$t\n" if $debug;
     if (! -e $t) {
       my $mommy_n = int($n/2);
       my $mommy = get_chunk($mommy_n,$k-1);
@@ -83,6 +87,14 @@ sub get_chunk {
       print "$cmd\n";
       system($cmd)==0 or die "error executing command $cmd, $!";
       #system("echo \"\" >$t");
+    }
+    else {
+      print "          file $t already existed\n" if $debug;
+    }
+    if ($debug) {
+      print "          counting pages in file $t...\n";
+      my $npages = `$Bin/pdf_page_count.rb $t`;
+      print "          leaving get_chunk, n=$n, k=$k, t=$t, npages=$npages\n";
     }
     return $t;
 }

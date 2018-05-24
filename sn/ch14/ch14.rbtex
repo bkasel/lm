@@ -2755,7 +2755,15 @@ Only making \emph{separable} copies inevitably leads to paradoxes.
 
 <% begin_hw('reflection-from-impenetrable-wall') %>__incl(hw/reflection-from-impenetrable-wall)<% end_hw() %>
 
+\vfill
+
 <% begin_hw('two-point-five-kids') %>__incl(hw/two-point-five-kids)<% end_hw() %>
+
+\vfill
+
+<% begin_hw('nonunitary') %>__incl(hw/nonunitary)<% end_hw() %>
+
+\pagebreak
 
 <% begin_hw('ic-time-dependent-s-eqn') %>__incl(hw/ic-time-dependent-s-eqn)<% end_hw() %>
 
