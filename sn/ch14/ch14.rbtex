@@ -2757,6 +2757,8 @@ Only making \emph{separable} copies inevitably leads to paradoxes.
 
 <% begin_hw('two-point-five-kids') %>__incl(hw/two-point-five-kids)<% end_hw() %>
 
+<% begin_hw('ic-time-dependent-s-eqn') %>__incl(hw/ic-time-dependent-s-eqn)<% end_hw() %>
+
 
 
 <% end_hw_sec %>
