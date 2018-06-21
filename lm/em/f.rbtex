@@ -1635,6 +1635,8 @@ eliminate the velocities in favor of the corresponding Doppler-shift factors $D$
 multiply when the velocities are combined. (3) The identity $v\mygamma=(1/D-D)/2$ is handy here.
 <% end_hw() %>
 
+<% begin_hw('double-voltage') %>__incl(../../share/relativity/hw/energy-to-traverse-galaxy)<% end_hw() %>
+
 <% end_hw_sec %>
 
 <% begin_ex("Sports in Slowlightland","A") %>
