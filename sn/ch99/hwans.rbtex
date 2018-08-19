@@ -282,6 +282,7 @@
 <% answer("star") %>
 <% answer("compare-double-slits") %>
 <% answer("unphysical-diffraction") %>
+<% answer("best-precision-n") %>
 
 <% answer("square-wavefunction") %>
 <% answer("bogus-laplacian") %>
