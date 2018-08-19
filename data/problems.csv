@@ -2124,6 +2124,7 @@ sn,7,30,side-by-side-lasers,0
 sn,7,31,gamma-decay-energy-comparisons,0
 sn,7,32,gamma-approx-si,1
 sn,7,33,ball-through-hole,0
+sn,7,34,energy-to-traverse-galaxy,0
 sn,8,1,neuron-stick,0
 sn,8,2,earthmoonelec,0
 sn,8,3,heline,0
@@ -2362,6 +2363,7 @@ sn,12,59,constant-thickness,1
 sn,12,60,very-weak-refraction,0
 sn,12,61,close-to-focal-length,0
 sn,12,62,max-intensifying-of-transmitted-ray,0
+sn,12,63,best-precision-n,0
 sn,13,1,wholelife,0
 sn,13,2,snakeeyes,0
 sn,13,3,exponentiationapprox,0

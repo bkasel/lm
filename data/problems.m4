@@ -2124,6 +2124,7 @@ m4_define(__hw_sn_7_side-by-side-lasers,30)m4_dnl
 m4_define(__hw_sn_7_gamma-decay-energy-comparisons,31)m4_dnl
 m4_define(__hw_sn_7_gamma-approx-si,32)m4_dnl
 m4_define(__hw_sn_7_ball-through-hole,33)m4_dnl
+m4_define(__hw_sn_7_energy-to-traverse-galaxy,34)m4_dnl
 m4_define(__hw_sn_8_neuron-stick,1)m4_dnl
 m4_define(__hw_sn_8_earthmoonelec,2)m4_dnl
 m4_define(__hw_sn_8_heline,3)m4_dnl
@@ -2362,6 +2363,7 @@ m4_define(__hw_sn_12_constant-thickness,59)m4_dnl
 m4_define(__hw_sn_12_very-weak-refraction,60)m4_dnl
 m4_define(__hw_sn_12_close-to-focal-length,61)m4_dnl
 m4_define(__hw_sn_12_max-intensifying-of-transmitted-ray,62)m4_dnl
+m4_define(__hw_sn_12_best-precision-n,63)m4_dnl
 m4_define(__hw_sn_13_wholelife,1)m4_dnl
 m4_define(__hw_sn_13_snakeeyes,2)m4_dnl
 m4_define(__hw_sn_13_exponentiationapprox,3)m4_dnl
