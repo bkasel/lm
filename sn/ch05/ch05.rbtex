@@ -60,7 +60,7 @@ the direction of time's arrow --- why we can remember the past
 but not the future, and why it's easier to break Humpty Dumpty than
 to put him back together again.
 
-<% begin_sec("Pressure and temperature",0) %>\index{pressure}\index{temperature}
+<% begin_sec("Pressure, temperature, and heat",0) %>\index{pressure}\index{temperature}\index{heat}
 When we heat an object, we speed up the mind-bogglingly
 complex random motion of its molecules. One method for
 taming complexity is the conservation laws, since they tell
@@ -355,12 +355,8 @@ of the volcano, 3000 m below the surface of the pool?
 \eganswer
 \begin{align*}
         \Delta P         &=  \rho g\Delta y\\
-                        &= ( 4.1\ \zu{g}/\zu{cm}^3)( 9.8\ \munit/\sunit^2)(3000\ \zu{m})\\
-                        &= ( 4.1\times10^6\ \zu{g}/\zu{m}^3)
-                                        ( 9.8\ \munit/\sunit^2)(3000\ \zu{m})\\
                         &= ( 4.1\times10^3\ \zu{kg}/\zu{m}^3)
                                         ( 9.8\ \munit/\sunit^2)(3000\ \zu{m})\\
-                        &= 1.2\times10^8\ \nunit/\munit^2 \\
                         &= 1.2\times10^8\ \zu{Pa}
 \end{align*}
 This is the difference between the pressure we want to find and
@@ -376,8 +372,7 @@ constant is discussed on page \pageref{subsec:pvnrt}, but for now let's just
 call it $k$, $\rho= kP$. Using this fact, we can find the variation of
 atmospheric pressure with altitude, assuming constant temperature:
 \begin{align*}
-        \der P &= -\rho g\der y\\
-        \der P &= - kPg\der y\\
+        \der P &= -\rho g\der y = - kPg\der y\\
         \frac{\der P}{ P} &= - kg\der y\\
         \zu{ln}\: P &= - kgy+\text{constant} \qquad \text{[integrating both sides]}\\
          P &= (\text{constant}) e^{- kgy} \qquad \text{[exponentiating both sides]}
@@ -401,7 +396,7 @@ ten or a hundred miles up.
   )
 %>
 <% end_marg %>
-<% begin_sec("Temperature") %>
+<% begin_sec("Temperature",0,'temperature') %>
 <% begin_sec("Thermal equilibrium") %>
 We use the term temperature casually, but what is it
 exactly? Roughly speaking, temperature is a measure of how
@@ -589,7 +584,56 @@ to define temperature. We will construct a more fundamental
 scale of temperature in section \ref{sec:mic-entropy}.
 
 <% end_sec() %>
-<% end_sec() %>
+<% end_sec('temperature') %>
+
+<% begin_sec("Heat",0,'heat') %>\index{heat}
+``Heat,'' notated $Q$, is used in thermodynamics as a term for an
+amount of thermal energy that is transferred. When you put a bite of food in your mouth that is too hot,
+the pain is caused by the heat transferred from the food to your
+mouth. People discussing the weather may say ``What about this heat
+today?'' or ``What about this temperature today?'' as if the words
+were synonyms, but to a physicist they are distinct. Temperature is
+not additive, but heat is: two sips of hot coffee have the same
+temperature as one, but two sips will transfer twice the heat to your
+mouth. Temperature is measured in degrees, heat in joules. 
+
+If I give you an object, you can measure its temperature ---
+physicists call temperature a ``property of state,'' i.e., you can
+tell what it is from the current state of the object. Heat is a
+description of a \emph{process} of energy transfer, not a property of
+state. 
+
+It's relatively easy to detect and measure a \emph{transfer} of thermal energy
+(the hot bite of food), but to say how much thermal energy an object
+\emph{has} is much harder --- sometimes even impossible in principle.
+
+Heat is distinguished from mechanical work (\ref{subsec:work},
+p.~\pageref{subsec:work}) because work is the transfer of energy by a
+macroscopically measurable force, e.g., the force of a baseball bat on
+the ball. No such force is needed in order to melt an ice cube; the
+forces are in microscopic collisions of water molecules with ice molecules.
+
+Heat, like the flow of money or water, is a signed quantity, but the
+sign is a matter of definition. The bank's debit 
+is the customer's withdrawal. It is an arbitrary choice whether to
+call $Q$ positive when it flows from object A to object B or from B to
+A, and likewise for the work $W$.  Similar choices arise in the
+description of flowing fluids (example \ref{eg:faucet},
+p.~\pageref{eg:faucet}) or electric currents
+(sec.~\ref{subsec:electric-current},
+p.~\pageref{subsec:electric-current}). We will usually adopt
+definitions such that as many heats and works as possible are
+positive. So by our definition, a cute 19th-century steam locomotive takes
+in positive heat from its boiler, does positive work to pull the cars,
+and spews out positive heat through its smokestack.
+When only a single object is being discussed, such as a cylinder of
+compressed air, we define a heat input as positive and a work output
+as positive, which is again in accord with the picture of the cute steam engine.
+No universally consistent convention is possible, since, e.g., if objects A, B,
+and C all interact, we will always have opposite signs for A's work on B and B's
+work on A, etc.\label{thermo-sign-conventions}
+
+<% end_sec('heat') %>
 \startdqs
 
 \begin{dq}\label{dq:heat-cond-propto}
@@ -600,7 +644,7 @@ We expect that the rate at which heat is transferred into object 1
 will be given by some equation $\der E_1/\der t=k(\ldots)$, where
 $k$ is a positive constant of proportionality and ``$\ldots$'' is some expression that depends
 on the temperatures. Suppose that the following six forms are
-proposed for ``\ldots:''
+proposed for the ``\ldots'' in $\der E_1/\der t=k(\ldots)$.
 \begin{enumerate}
 \item $T_1$
 \item $T_2$
@@ -652,8 +696,8 @@ Why does matter have the thermal properties it does? The
 basic answer must come from the fact that matter is made of
 atoms.
 How, then, do the atoms give rise to the bulk properties we
-observe? Gases, whose thermal properties are so simple,
-offer the best chance for us to construct a simple
+observe? Gases, whose thermal properties are simple,
+offer the best opportunity for us to construct a simple
 connection between the microscopic and macroscopic worlds.
 
 A crucial observation is that although solids and liquids
@@ -879,8 +923,8 @@ lower grade of energy than other forms such as mechanical
 energy.
 
 Of course it is possible to convert heat into other forms of
-energy such as mechanical energy, and that is what a car
-engine does with the heat created by exploding the air-gasoline
+energy such as mechanical energy, and that is what a gasoline car's
+engine does with the heat created by exploding the air-gas
 mixture. But a car engine is a tremendously inefficient
 device, and a great deal of the heat is simply wasted
 through the radiator and the exhaust. Engineers have never
@@ -888,8 +932,6 @@ succeeded in creating a perfectly efficient device for
 converting heat energy into mechanical energy, and we now
 know that this is because of a deeper physical principle
 that is far more basic than the design of an engine.
-
-\pagebreak[4]
 
 <%
   fig(
@@ -930,7 +972,7 @@ candles, very much like the setup shown in figure \figref{turbine}.
   fig(
     'angel-chimes',
     %q{%
-      A heat engine. Hot air from the candles rises through the fan blades, and makes
+      A heat engine. Hot air from the candles rises through the fan blades and makes
       the angels spin.
     }
   )
@@ -958,8 +1000,7 @@ efficiency of a heat engine equals the amount of useful work
 extracted, $W$, divided by the amount of energy we had to pay
 for in order to heat the hot reservoir. This latter amount
 of heat is the same as the amount of heat the engine
-extracts from the high-temperature reservoir, $Q_H$. (The
-letter $Q$ is the standard notation for a transfer of heat.)
+extracts from the high-temperature reservoir, $Q_H$.
 By conservation of energy, we have $Q_H=W+Q_L$, where $Q_L$ is the
 amount of heat expelled into the low-temperature reservoir,
 so the efficiency of a heat engine, $W/Q_H$, can be rewritten
@@ -968,6 +1009,7 @@ as
         \text{efficiency}        =  1-\frac{Q_L}{Q_H}\eqquad. \qquad \text{[efficiency of any heat
 engine]}
 \end{equation*}
+(As described on p.~\pageref{thermo-sign-conventions}, we take $Q_L$, $Q_H$, and $W$ all to be positive.)
 
 It turns out that there is a particular type of heat engine,
 the Carnot engine,\index{Carnot engine}\index{engine!Carnot} which, although not 100\% efficient, is
@@ -989,6 +1031,12 @@ its cold reservoir. In general, any heat engine that expels
 heat at an intermediate temperature can be made more
 efficient by changing it so that it expels heat only at the
 temperature of the cold reservoir.
+
+
+Similarly, any heat engine that absorbs some energy at an
+intermediate temperature can be made more efficient by
+adding an auxiliary heat engine to it which will operate
+between the hot reservoir and this intermediate temperature.
 
 <% marg(100) %>
 <%
@@ -1038,11 +1086,6 @@ temperature of the cold reservoir.
 %>
 <% end_marg %>
 
-Similarly, any heat engine that absorbs some energy at an
-intermediate temperature can be made more efficient by
-adding an auxiliary heat engine to it which will operate
-between the hot reservoir and this intermediate temperature.
-
 Based on these arguments, we define a Carnot engine as a
 heat engine that absorbs heat only from the hot reservoir
 and expels it only into the cold reservoir. Figures \figref{carnota}-\figref{carnotd}
@@ -1088,20 +1131,6 @@ We would like to have some numerical way of measuring the
 grade of energy in a system. We want this quantity, called
 entropy, to have the following two properties:
 
-<% marg(0) %>
-<%
-  fig(
-    'waterwheel',
-    %q{%
-      Entropy can be understood using the metaphor of a water
-      wheel. Letting the water levels equalize is like letting the
-      entropy maximize. Taking water from the high side and
-      putting it into the low side increases the entropy. Water levels in this
-      metaphor correspond to temperatures in the actual definition of entropy.
-    }
-  )
-%>
-<% end_marg %>
 (1) Entropy is additive. When we combine two systems and
 consider them as one, the entropy of the combined system
 equals the sum of the entropies of the two original systems.
@@ -1126,6 +1155,21 @@ follows:\index{entropy!macroscopic definition}
                                                 {\text{$\Delta S$ is negative if heat is taken out]}}
 \end{multline*}
 A system with a higher grade of energy has a lower entropy.
+
+<% marg(300) %>
+<%
+  fig(
+    'waterwheel',
+    %q{%
+      Entropy can be understood using the metaphor of a water
+      wheel. Letting the water levels equalize is like letting the
+      entropy maximize. Taking water from the high side and
+      putting it into the low side increases the entropy. Water levels in this
+      metaphor correspond to temperatures in the actual definition of entropy.
+    }
+  )
+%>
+<% end_marg %>
 
 \begin{eg}{Entropy is additive.}
 Since changes in entropy are defined by an additive quantity
@@ -1289,13 +1333,12 @@ still there inside the black hole, but being able to
 ``hide'' entropy there amounts to the same thing as being
 able to destroy entropy.
 
-The physicist Steven Hawking was bothered by this question,
+The physicist Steven Hawking was bothered by this,
 and finally realized that although the actual stuff that
 enters a black hole is lost forever, the black hole will
 gradually lose energy  in the form of light emitted from
 just outside the event horizon. This light ends up
-reintroducing the original entropy back into the universe at
-large.
+reintroducing the original entropy back into the universe.
 \end{eg}
 
 \enlargethispage{-\baselineskip}
@@ -1324,24 +1367,27 @@ of energy gives
 \end{equation*}
 and the relative proportions of $Q_L$ and $W$ are usually about
 90\% to 10\%. (Actually it depends quite a bit on the type of car, the
-driving conditions, etc.)
+driving conditions, etc.) Here, $Q_H$, $Q_L$, and $W$ are all positive
+according to the sign convention defined on p.~\pageref{thermo-sign-conventions}.
 
-(1) $Q_L$ is obviously undesirable: you pay for it, but all it does is
-heat the neighborhood. Suppose that engineers do a really good job
-of getting rid of the effects that create $Q_L$, such as friction. Could
-$Q_L$ ever be reduced to zero, at least theoretically?
-
-(2) A gallon of gas releases about 140 MJ of heat $Q_H$ when burned.
+(1) A gallon of gas releases about 140 MJ of heat $Q_H$ when burned.
 Estimate the change in entropy of the universe due to running a typical
-car engine and burning one gallon of gas. (You'll have to estimate how
+car engine and burning one gallon of gas. Note that you'll have to introduce
+appropriate plus and minus signs, as defined in the relation $\Delta S=Q/T$,
+in which heat input raises an object's entropy and heat output lowers it.
+(You'll have to estimate how
 hot the environment is. For the sake of argument, assume that the work
 done by the engine, $W$, remains in the form of mechanical energy,
 although in reality it probably ends up being changed into heat when you step
 on the brakes.) Is your result consistent with the second law of
 thermodynamics?
 
-(3) What would happen if you redid the calculation in \#2, but assumed
-$Q_L=0$? Is this consistent with your answer to \#1?
+(2) $Q_L$ is obviously undesirable: you pay for it, but all it does is
+heat the neighborhood. Suppose that engineers do a really good job
+of getting rid of the effects that create $Q_L$, such as friction. Could
+$Q_L$ ever be reduced to zero, at least theoretically?
+What would happen if you redid the calculation in \#1, but assumed
+$Q_L=0$?
 \end{dq}
 
 \begin{dq}

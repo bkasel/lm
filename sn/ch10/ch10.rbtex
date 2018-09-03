@@ -4908,6 +4908,8 @@ field lines are perpendicular to the plane, so the plane is an surface of consta
 %>
 <% end_marg %>
 
+<% begin_hw('complex-hundredth-derivative') %>__incl(hw/complex-hundredth-derivative)<% end_hw() %>
+
 <% end_hw_sec %>
 
  % ==================================================================== 

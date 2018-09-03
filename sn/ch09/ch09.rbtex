@@ -41,7 +41,7 @@
 
 <% begin_sec("Current and voltage",0,'iv') %>
  % ---------------------------------------------- 
-<% begin_sec("Current") %>
+<% begin_sec("Current",nil,'electric-current') %>
         <% begin_sec("Unity of all types of electricity") %>
 
         We are surrounded by things we have been \emph{told} are

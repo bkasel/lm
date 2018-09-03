@@ -2272,7 +2272,7 @@ transmitted in the sense of the word used in this section?
 
 \vspace{20mm}
 
-<% begin_sec("Work") %>
+<% begin_sec("Work",nil,'work') %>
         <% begin_sec("Energy transferred to a particle") %>
         To change the kinetic energy, $K=(1/2)mv^2$, of a particle moving in one dimension, 
         we must change its velocity. That will entail a change in its momentum, $p=mv$, as
