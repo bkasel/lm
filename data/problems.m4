@@ -584,6 +584,7 @@ m4_define(__hw_lm_26_ultrarelativistic,12)m4_dnl
 m4_define(__hw_lm_26_relativity-max-tension,13)m4_dnl
 m4_define(__hw_lm_26_double-voltage,14)m4_dnl
 m4_define(__hw_lm_26_rel-momentum-cons-frame-invariant,15)m4_dnl
+m4_define(__hw_lm_26_energy-to-traverse-galaxy,16)m4_dnl
 m4_define(__hw_lm_27_angular-defect,1)m4_dnl
 m4_define(__hw_lm_27_cone-intrinsic-curvature,2)m4_dnl
 m4_define(__hw_lm_27_grav-doppler-units,3)m4_dnl
