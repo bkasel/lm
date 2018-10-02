@@ -868,6 +868,7 @@ m4_define(__hw_me_6_tossup,6)m4_dnl
 m4_define(__hw_me_6_cliff-pond,7)m4_dnl
 m4_define(__hw_me_6_two-footballs,8)m4_dnl
 m4_define(__hw_me_6_shoot-bullet-from-cylinder,10)m4_dnl
+m4_define(__hw_me_6_battleship-two-angles,11)m4_dnl
 m4_define(__hw_me_7_tiptotail,1)m4_dnl
 m4_define(__hw_me_7_bangkok,2)m4_dnl
 m4_define(__hw_me_7_walking,3)m4_dnl
