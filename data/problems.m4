@@ -1287,6 +1287,7 @@ m4_define(__hw_problems_3_acceleration-xy-plane,s13)m4_dnl
 m4_define(__hw_problems_3_launch-from-ramp-1,s14)m4_dnl
 m4_define(__hw_problems_3_launch-from-ramp-2,s15)m4_dnl
 m4_define(__hw_problems_3_shoot-bullet-from-cylinder,s16)m4_dnl
+m4_define(__hw_problems_3_battleship-two-angles,s17)m4_dnl
 m4_define(__hw_problems_4_prove-mg,a1)m4_dnl
 m4_define(__hw_problems_4_mass-or-weight,a2)m4_dnl
 m4_define(__hw_problems_4_waterbottle-in-space,a3)m4_dnl
