@@ -181,7 +181,7 @@ __incl(text/n3c)
 
 <% begin_hw('stemming') %>__incl(hw/stemming)<% end_hw() %>
 
-<% marg(300) %>
+<% marg(-300) %>
 <%
   fig(
     'hw-applied-force-below-horizontal',
