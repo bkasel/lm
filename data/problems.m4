@@ -908,6 +908,7 @@ m4_define(__hw_me_8_applied-force-below-horizontal,28)m4_dnl
 m4_define(__hw_me_8_ramp-force-probe,29)m4_dnl
 m4_define(__hw_me_8_stemming,30)m4_dnl
 m4_define(__hw_me_8_rock-roof-2,31)m4_dnl
+m4_define(__hw_me_8_block-with-two-forces-one-angled,32)m4_dnl
 m4_define(__hw_me_9_circularaccelunits,1)m4_dnl
 m4_define(__hw_me_9_loop,2)m4_dnl
 m4_define(__hw_me_9_tilt-a-whirl,3)m4_dnl
@@ -1370,6 +1371,7 @@ m4_define(__hw_problems_5_wedge-yanked-away,p7)m4_dnl
 m4_define(__hw_problems_5_ropeslopes,p8)m4_dnl
 m4_define(__hw_problems_5_slide-uphill-with-pulley,p9)m4_dnl
 m4_define(__hw_problems_5_slide-uphill-with-pulley-2,p10)m4_dnl
+m4_define(__hw_problems_5_block-with-two-forces-one-angled,p11)m4_dnl
 m4_define(__hw_problems_5_mechanical-advantage,s1)m4_dnl
 m4_define(__hw_problems_5_three-pulleys,s2)m4_dnl
 m4_define(__hw_problems_5_other-pulleys,s3)m4_dnl
@@ -1390,6 +1392,7 @@ m4_define(__hw_problems_6_conicalpendulum,g3)m4_dnl
 m4_define(__hw_problems_6_circling-blocks,g4)m4_dnl
 m4_define(__hw_problems_6_wall-of-death,g5)m4_dnl
 m4_define(__hw_problems_6_toy-no-slide-merry-go-round,g6)m4_dnl
+m4_define(__hw_problems_6_gemini-heart,g7)m4_dnl
 m4_define(__hw_problems_6_mixer,j1)m4_dnl
 m4_define(__hw_problems_6_paradox,j2)m4_dnl
 m4_define(__hw_problems_6_rodent,j3)m4_dnl

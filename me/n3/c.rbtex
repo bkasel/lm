@@ -265,6 +265,18 @@ __incl(text/n3c)
 
 <% begin_hw('rock-roof-2',nil,{'credit'=>'B.~Shotwell'}) %>__incl(hw/rock-roof-2)<% end_hw() %>
 
+<% marg(-10) %>
+<%
+  fig(
+    'hw-block-with-two-forces-one-angled',
+    %q{Problem \ref{hw:block-with-two-forces-one-angled}.}
+  )
+%>
+<% end_marg %>
+
+
+<% begin_hw('block-with-two-forces-one-angled',nil) %>__incl(hw/block-with-two-forces-one-angled)<% end_hw() %>
+
 <% end_hw_sec %>
 
 % Advance to an even-numbered (left) page so the following ex comes out on facing pages:

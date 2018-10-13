@@ -203,6 +203,7 @@ me,8,28,applied-force-below-horizontal,0
 me,8,29,ramp-force-probe,0
 me,8,30,stemming,1
 me,8,31,rock-roof-2,0
+me,8,32,block-with-two-forces-one-angled,0
 me,9,1,circularaccelunits,0
 me,9,2,loop,0
 me,9,3,tilt-a-whirl,1

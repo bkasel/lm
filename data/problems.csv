@@ -908,6 +908,7 @@ me,8,28,applied-force-below-horizontal,0
 me,8,29,ramp-force-probe,0
 me,8,30,stemming,1
 me,8,31,rock-roof-2,0
+me,8,32,block-with-two-forces-one-angled,0
 me,9,1,circularaccelunits,0
 me,9,2,loop,0
 me,9,3,tilt-a-whirl,1
@@ -1370,6 +1371,7 @@ problems,5,p7,wedge-yanked-away,0
 problems,5,p8,ropeslopes,0
 problems,5,p9,slide-uphill-with-pulley,0
 problems,5,p10,slide-uphill-with-pulley-2,0
+problems,5,p11,block-with-two-forces-one-angled,0
 problems,5,s1,mechanical-advantage,0
 problems,5,s2,three-pulleys,0
 problems,5,s3,other-pulleys,0
@@ -1390,6 +1392,7 @@ problems,6,g3,conicalpendulum,0
 problems,6,g4,circling-blocks,0
 problems,6,g5,wall-of-death,0
 problems,6,g6,toy-no-slide-merry-go-round,0
+problems,6,g7,gemini-heart,0
 problems,6,j1,mixer,0
 problems,6,j2,paradox,0
 problems,6,j3,rodent,0
