@@ -281,6 +281,7 @@ m4_define(__hw_lm_9_sirius-centrifugal,14)m4_dnl
 m4_define(__hw_lm_9_wall-of-death,15)m4_dnl
 m4_define(__hw_lm_9_car-top-of-hill,16)m4_dnl
 m4_define(__hw_lm_9_brick-circle,17)m4_dnl
+m4_define(__hw_lm_9_gemini-heart,18)m4_dnl
 m4_define(__hw_lm_10_laurie,1)m4_dnl
 m4_define(__hw_lm_10_eclipse,2)m4_dnl
 m4_define(__hw_lm_10_moon2,3)m4_dnl

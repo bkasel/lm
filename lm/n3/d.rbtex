@@ -141,7 +141,16 @@ __incl(text/n3d)
     %q{Problem \ref{hw:brick-circle}.}  
   )
 %>
+\spacebetweenfigs
+<%
+  fig(
+    'hw-gemini-heart',  
+    %q{Problem \ref{hw:gemini-heart}.}  
+  )
+%>
 <% end_marg %>
+
+<% begin_hw('gemini-heart',nil,) %>__incl(hw/gemini-heart)<% end_hw() %>
 
 <% end_hw_sec %>
 
