@@ -179,6 +179,19 @@ This problem is now number \ref{hw:jack-on-hill} in ch.~\ref{ch:energy-zoo}, p.~
 
 <% begin_hw('brick-circle',nil,{'credit'=>'B.~Shotwell'}) %>__incl(hw/brick-circle)<% end_hw() %>
 
+\pagebreak
+
+<% marg(300) %>
+<%
+  fig(
+    'hw-gemini-heart',  
+    %q{Problem \ref{hw:gemini-heart}.}  
+  )
+%>
+<% end_marg %>
+
+<% begin_hw('gemini-heart',nil,) %>__incl(hw/gemini-heart)<% end_hw() %>
+
 <% end_hw_sec %>
 
 

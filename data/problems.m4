@@ -928,6 +928,7 @@ m4_define(__hw_me_9_wall-of-death,17)m4_dnl
 m4_define(__hw_me_9_bead-on-circular-wire,18)m4_dnl
 m4_define(__hw_me_9_car-top-of-hill,19)m4_dnl
 m4_define(__hw_me_9_brick-circle,20)m4_dnl
+m4_define(__hw_me_9_gemini-heart,21)m4_dnl
 m4_define(__hw_me_10_ceres,1)m4_dnl
 m4_define(__hw_me_10_laurie,2)m4_dnl
 m4_define(__hw_me_10_alien-gangster,3)m4_dnl
