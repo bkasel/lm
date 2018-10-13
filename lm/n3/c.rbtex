@@ -217,7 +217,7 @@ __incl(text/n3c)
 %>
 <% end_marg %>
 
-<% begin_hw('block-with-two-forces-one-angled',nil) %>__incl(hw/block-with-two-forces-one-angled)<% end_hw() %>
+<% begin_hw('block-with-two-forces-one-angled',nil,{'calc'=>true}) %>__incl(hw/block-with-two-forces-one-angled)<% end_hw() %>
 
 <% end_hw_sec %>
 
