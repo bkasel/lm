@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
+
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -13,9 +14,10 @@
    height="1052.3622047"
    id="svg3643"
    sodipodi:version="0.32"
-   inkscape:version="0.46"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="new-horizons.svg"
-   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   version="1.1">
   <defs
      id="defs3645">
     <linearGradient
@@ -157,7 +159,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.7742067"
-     inkscape:cx="245.50565"
+     inkscape:cx="238.62934"
      inkscape:cy="579.83556"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -165,7 +167,8 @@
      inkscape:window-width="1278"
      inkscape:window-height="996"
      inkscape:window-x="3"
-     inkscape:window-y="4" />
+     inkscape:window-y="4"
+     inkscape:window-maximized="0" />
   <metadata
      id="metadata3648">
     <rdf:RDF>
@@ -189,13 +192,13 @@
        x="37.957355"
        y="412.13013" />
     <image
-       y="600.82312"
-       x="227.87283"
-       id="image2491"
-       height="21.434113"
+       sodipodi:absref="/home/bcrowell/Documents/writing/books/physics/share/mechanics/figs/new-horizons-bitmaps/probe.jpg"
+       xlink:href="new-horizons-bitmaps/probe.jpg"
        width="22.72016"
-       sodipodi:absref="/home/bcrowell/Documents/writing/books/physics/1np/ch10/figs/new-horizons-bitmaps/probe.jpg"
-       xlink:href="new-horizons-bitmaps/probe.jpg" />
+       height="21.434113"
+       id="image2491"
+       x="227.87283"
+       y="600.82312" />
     <path
        style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#f9f9f9;stroke-width:0.625;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dashoffset:0;stroke-opacity:1;display:inline;stroke-dasharray:none"
        d="M 237.20194,595.42031 C 191.75841,589.45611 159.73939,547.56493 165.73092,501.91321 C 171.72244,456.26149 213.46682,424.05133 258.91035,430.01552 C 304.35388,435.97972 336.37289,477.87091 330.38137,523.52262 C 324.38985,569.17435 282.64547,601.38451 237.20194,595.42031 z"
@@ -277,14 +280,14 @@
          y="627.04596">8.00043x10   km to the sun</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
-       x="104.87856"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="96.878563"
        y="622.34387"
        id="text2419"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan2421"
-         x="104.87856"
+         x="96.878563"
          y="622.34387">8</tspan></text>
     <text
        xml:space="preserve"
@@ -299,14 +302,14 @@
          y="570.58801">2.30494x10   km</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
-       x="305.18124"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="297.18124"
        y="564.58728"
        id="text3197"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3199"
-         x="305.18124"
+         x="297.18124"
          y="564.58728">6</tspan></text>
     <g
        id="g3271">
