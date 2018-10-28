@@ -2311,6 +2311,7 @@ m4_define(__hw_sn_11_timereversalem,51)m4_dnl
 m4_define(__hw_sn_11_timereversalem2,52)m4_dnl
 m4_define(__hw_sn_11_bwork,53)m4_dnl
 m4_define(__hw_sn_11_biot-savart-spiral,54)m4_dnl
+m4_define(__hw_sn_11_capacitor-paradox,55)m4_dnl
 m4_define(__hw_sn_12_diffuse,1)m4_dnl
 m4_define(__hw_sn_12_gps,2)m4_dnl
 m4_define(__hw_sn_12_lightwithatomwavelength,3)m4_dnl

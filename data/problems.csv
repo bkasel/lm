@@ -2311,6 +2311,7 @@ sn,11,51,timereversalem,1
 sn,11,52,timereversalem2,0
 sn,11,53,bwork,0
 sn,11,54,biot-savart-spiral,1
+sn,11,55,capacitor-paradox,0
 sn,12,1,diffuse,0
 sn,12,2,gps,0
 sn,12,3,lightwithatomwavelength,0

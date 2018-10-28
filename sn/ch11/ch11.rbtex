@@ -4368,6 +4368,8 @@ an electric version of such a spectrometer.
 <% end_marg %>
 <% begin_hw('biot-savart-spiral') %>__incl(hw/biot-savart-spiral)<% end_hw() %>
 
+<% begin_hw('capacitor-paradox') %>__incl(hw/capacitor-paradox)<% end_hw() %>
+
 
 <% end_hw_sec %>
 
