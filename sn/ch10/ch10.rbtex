@@ -2844,13 +2844,6 @@ our solution is
     %q{An RL circuit.}
   )
 %>
-\spacebetweenfigs
-<%
-  fig(
-    'spark-gap-transmitter',
-    'Example \ref{eg:spark-gap-transmitter}.'
-  )
-%>
 <% end_marg %>
 <% end_sec() %>
 <% begin_sec("The RL circuit") %>\index{RL circuit}
@@ -2895,6 +2888,15 @@ might go through your body instead, since your body might have a lower
 resistance.
 \end{eg}
 
+<% marg(-10) %>
+<%
+  fig(
+    'spark-gap-transmitter',
+    'Example \ref{eg:spark-gap-transmitter}.'
+  )
+%>
+<% end_marg %>
+
 \begin{eg}{A spark-gap radio transmitter}\label{eg:spark-gap-transmitter}
 Figure \figref{spark-gap-transmitter} shows a primitive type of radio transmitter, called
 a spark gap transmitter, used to send Morse code around the turn of the twentieth century. The high voltage
@@ -2907,6 +2909,7 @@ The LC circuit then oscillates at its resonant frequency (typically about 1 MHz)
 rapidly radiated away by the antenna, A, which sends out radio waves (chapter \ref{ch:em}).
 \end{eg}
 
+\pagebreak
 
 \startdqs
 
