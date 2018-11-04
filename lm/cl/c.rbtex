@@ -101,7 +101,7 @@ __incl(text/work_summary)
 
 <% begin_hw('microwaveice') %>__incl(hw/microwaveice)<% end_hw() %>
 
-<% begin_hw('escape-velocity') %>__incl(hw/escape-velocity)<% end_hw() %>
+<% begin_hw('escape-velocity',{'calc'=>true}) %>__incl(hw/escape-velocity)<% end_hw() %>
 
 <% marg(0) %>
 <%

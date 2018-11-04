@@ -379,19 +379,51 @@ prohibitively complex.
 
 <% begin_sec("Restriction to rotation in a plane") %>
 
-Is angular momentum a vector, or a scalar? It does have a
-direction in space, but it's a direction of rotation, not a
-straight-line direction like the directions of vectors such
-as velocity or force. It turns out (see problem \ref{hw:check-mg-at-cm}) that there is a way of
+Is angular momentum a vector, or is it a scalar?  On
+p.~\pageref{define-vector}, we defined the distinction between a
+vector and a scalar in terms of the quantity's behavior when rotated.
+If rotation doesn't change it, it's a scalar. If rotation affects it
+in the same way that it would affect an arrow, then it's a vector.
+Using these definitions, figure \figref{man-on-bike-flipping} shows
+that angular momentum cannot be a scalar. 
+
+<%
+  fig(
+    'man-on-bike-flipping',
+    %q{Angular momentum is not a scalar. If we turn the picture around, the angular momentum does change:
+       the counterclockwise motion of the wheels becomes clockwise from our new point of view.},
+    {
+      'width'=>'wide',
+      'sidecaption'=>true
+    }
+  )
+%>
+
+It turns out that there is a way of
 defining angular momentum as a vector, but 
 m4_ifelse(__lm_series,1,[:in this book:],[:until section \ref{sec:amthreed}:])
-the
-examples will be confined to a single plane of rotation,
-i.e., effectively two-dimensional situations. In this special
-case, we can choose to visualize the plane of rotation from
-one side or the other, and to define clockwise and
-counterclockwise rotation as having opposite signs
-of angular momentum.
+the examples will be confined to a single plane of rotation, i.e.,
+effectively two-dimensional situations. In this special case, we can
+choose to visualize the plane of rotation from one side or the other,
+and to define clockwise and counterclockwise rotation as having
+opposite signs of angular momentum. 
+
+Figure \figref{can-rolling-with-axis} shows a can rolling down a board.
+Although the can is three-dimensional, we can view it from the side and project out
+the third dimension, reducing the motion to rotation in a plane.
+This means that the axis is a \emph{point}, even though the word ``axis''
+often connotes a line in students' minds, as in an $x$ or $y$ axis.
+
+<%
+  fig(
+    'can-rolling-with-axis',
+    %q{We reduce the motion to rotation in a plane, and the axis is then a point.},
+    {
+      'width'=>'wide',
+      'sidecaption'=>true
+    }
+  )
+%>
 
 \startdq
 
@@ -577,6 +609,8 @@ axis, then it will also be conserved for any other choice.
 Likewise, any inertial frame of reference may be used.
 \end{lessimportant}
 
+\pagebreak
+
 <% marg(20) %>
 <%
   fig(
@@ -671,6 +705,7 @@ that it is the same for all such choices.)
 
 
 m4_ifelse(__lm_series,1,[:
+\pagebreak
 \begin{eg}{Angular momentum of a rigid object}
 \egquestion A motorcycle wheel has almost all its mass
 concentrated at the outside. If the wheel has mass $m$ and
@@ -727,7 +762,7 @@ Nature. Do not memorize these equations!
 
 %--- In Mechanics, these two examples are in the section on rigid-body rotation:
 __incl(eg/hammer-throw)
-\pagebreak[4]
+
 __incl(eg/toppling-rod)
 :])
 
@@ -809,7 +844,7 @@ designed so that their forces are balanced on the left and
 right. Their forces are all in the same direction, but the
 clockwise torques of two of the engines are canceled by the
 counterclockwise torques of the other two, giving zero total torque.
-<% marg(m4_ifelse(__me,1,80,10)) %>
+<% marg(m4_ifelse(__me,1,-90,10)) %>
 <%
   fig(
     'airplane',
@@ -821,7 +856,6 @@ counterclockwise torques of the other two, giving zero total torque.
 %>
 <% end_marg %>
 
-\enlargethispage{-2\baselineskip}
 
 Conversely we can have zero total force and nonzero total
 torque. A merry-go-round's engine needs to supply a nonzero
@@ -830,9 +864,10 @@ total force on it. If there was not zero total force on it,
 its center of mass would accelerate!
 
 <% end_sec() %>
-<% begin_sec("Relationship between force and torque") %>\index{torque!relationship to force}
 
-\enlargethispage{-2\baselineskip}
+m4_ifelse(__lm_series,1,[:\pagebreak:],[::])
+
+<% begin_sec("Relationship between force and torque") %>\index{torque!relationship to force}
 
 How do we calculate the amount of torque produced by a given
 force? Since it depends on leverage, we should expect it to
@@ -885,6 +920,18 @@ the line that would produce a torque,
 Although this result was proved under a simplified set of
 circumstances, it is more generally valid:
 
+<% marg(0) %>
+<%
+  fig(
+    'wrench-geometry',
+    %q{%
+      The geometric relationships referred to
+      in the relationship between force and torque.
+    }
+  )
+%>
+<% end_marg %>
+
 \begin{lessimportant}[relationship between force and torque]
 The rate at which a force transfers angular momentum to an object,
 i.e., the torque produced by the force, is given by
@@ -897,17 +944,6 @@ the force that is perpendicular to the line joining the axis
 to the point of application.
 \end{lessimportant}
 
-<% marg(0) %>
-<%
-  fig(
-    'wrench-geometry',
-    %q{%
-      The geometric relationships referred to
-      in the relationship between force and torque.
-    }
-  )
-%>
-<% end_marg %>
 The equation is stated with absolute value signs because the
 positive and negative signs of force and torque indicate
 different things, so there is no useful relationship between
@@ -941,8 +977,6 @@ in the figure.
     }
   )
 %>
-
-m4_ifelse(__me,1,,[:\pagebreak[4]:])
 
 \begin{eg}{How torque depends on the direction of the force}
 \egquestion How can the torque applied to the wrench in the
@@ -1123,8 +1157,6 @@ The main practical issue with cow tipping is that cows generally sleep lying dow
 Falling on its side can also seriously injure a cow.
 \end{eg}
 
-\pagebreak[4]
-
 \startdqs
 
 \begin{dq}
@@ -1156,6 +1188,18 @@ torques cancel out.''\\
 comet is speeding up.''
 \end{dq}
 
+<% marg(0) %>
+<%
+  fig(
+    'dq-claw-hammer',
+    %q{Discussion question \ref{dq:claw-hammer}.},
+    {
+      'anonymous'=>true
+    }
+  )
+%>
+<% end_marg %>
+
 \begin{dq}\label{dq:claw-hammer}
 Which claw hammer would make it easier to get the nail
 out of the wood if the same force was applied in the same direction?
@@ -1168,29 +1212,7 @@ radius in half. What happens to the rock's angular momentum?
 What changes occur in its speed, the time required for one
 revolution, and its acceleration? Why might the string break?
 \end{dq}
-<% marg(130) %>
-<%
-  fig(
-    'dq-claw-hammer',
-    %q{Discussion question \ref{dq:claw-hammer}.},
-    {
-      'anonymous'=>true
-    }
-  )
-%>
 
-\spacebetweenfigs
-
-<%
-  fig(
-    'dq-twoarm-ride',
-    %q{Discussion question \ref{dq:twoarm-ride}.},
-    {
-      'anonymous'=>true
-    }
-  )
-%>
-<% end_marg %>
 
 \begin{dq}
 A helicopter has, in addition to the huge fan blades on
@@ -1202,6 +1224,18 @@ a vertical plane. Why?
 The photo shows an amusement park ride whose two cars
 rotate in opposite directions. Why is this a good design?
 \end{dq}
+
+<% marg(300) %>
+<%
+  fig(
+    'dq-twoarm-ride',
+    %q{Discussion question \ref{dq:twoarm-ride}.},
+    {
+      'anonymous'=>true
+    }
+  )
+%>
+<% end_marg %>
 
 <% end_sec() %>
 <% end_sec() %>
