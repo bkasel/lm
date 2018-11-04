@@ -287,6 +287,14 @@ does it hit the ground?
 
 \vfill
 
+<% marg(-300) %>
+<%
+  fig(
+    'hw-jack-on-hill',
+    %q{Problem \ref{hw:jack-on-hill}.}
+  )
+%>
+<% end_marg %>
 <% begin_hw('jack-on-hill',2) %>__incl(hw/jack-on-hill)<% end_hw() %>
 
 \pagebreak
