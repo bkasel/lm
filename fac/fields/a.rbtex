@@ -1,0 +1,30 @@
+<%
+  require "../eruby_util.rb"
+%>
+
+<% clear_answer_data %>
+
+<%
+  chapter(
+    '01',
+    %q{Electric and Magnetic Fields},
+    'ch:fields-intro',
+    %q{A telescopic view of an energetic eruption on the sun, August 2012. The bright loops at 
+     the upper left are
+     ionized gas following the sun's magnetic field lines.},
+    {'opener'=>'coronal-mass-ejection','sidecaption'=>true,'anonymous'=>true}
+  )
+%>
+
+<% begin_sec("A universe made of fields",0,'universe-of-fields') %>
+<% end_sec('universe-of-fields') %>
+
+<% begin_hw_sec %>
+
+
+<% end_hw_sec %>
+
+<% end_chapter() %>
+ %%----------------------------------------------------------
+
+

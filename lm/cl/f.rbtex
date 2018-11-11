@@ -36,7 +36,7 @@ as helium's heat capacity at constant volume.) \answercheck
 <% begin_hw('airconditioner') %>
 Refrigerators, air conditioners, and heat pumps are heat engines that
 work in reverse.
-You put in mechanical work, and it the effect is to take heat out of
+You put in mechanical work, and the effect is to take heat out of
 a cooler reservoir and deposit heat in a warmer one: $Q_L+W=Q_H$.
 As with the heat engines discussed previously, the efficiency is
 defined as the energy transfer you want ($Q_L$ for a refrigerator or

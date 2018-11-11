@@ -8,10 +8,10 @@ use JSON;
 @ISA = ('Exporter');
 @EXPORT = qw( @list_of_book_directories @list_of_book_names %book_name_to_directory %topic_map %topic_map2 %topic_map3);
 
-@list_of_book_directories = ('cp','lm','sn','me'); 
-@list_of_book_names = ('cp','lm','sn','me'); 
+@list_of_book_directories = ('cp','lm','sn','me','fac'); 
+@list_of_book_names = ('cp','lm','sn','me','fac'); 
 
-%book_name_to_directory = ('cp'=>'cp','lm'=>'lm','sn'=>'sn','me'=>'me');
+%book_name_to_directory = ('cp'=>'cp','lm'=>'lm','sn'=>'sn','me'=>'me','fac'=>'fac');
 
 # Topic maps are also used in translate_to_html.rb.
 %topic_map = ();

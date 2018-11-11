@@ -1,0 +1,18 @@
+<%
+  require "../eruby_util.rb"
+%>
+
+\thispagestyle{plain}<% print_photo_credits_section_header("Photo Credits") %>
+
+\footnotesize
+
+\photocreditsboilerplate
+
+\begin{sloppypar}
+\noindent
+\textbf{Cover} Crystal: Hans-Joachim Engelhardt, CC-BY-SA licensed. % https://commons.wikimedia.org/wiki/File:(2015-12-11)_ANHYDRIT_01_PWA_DL.jpg
+<% photo_credit("coronal-mass-ejection","Coronal mass ejection","NASA, CC-BY licensed") %> % https://commons.wikimedia.org/wiki/File:Magnificent_CME_Erupts_on_the_Sun_-_August_31.jpg
+<% print_photo_credits() %>
+
+\end{sloppypar}\normalsize
+\thispagestyle{plain}
