@@ -1,4 +1,4 @@
 BOOK = fac
 CLASS_FILE = lmseries.cls
-FIRST_CHAPTER = 0
+FIRST_CHAPTER = 1
 DIRECTORIES = fields end

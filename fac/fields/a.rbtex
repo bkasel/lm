@@ -16,11 +16,169 @@
   )
 %>
 
-<% begin_sec("A universe made of fields",0,'universe-of-fields') %>
-<% end_sec('universe-of-fields') %>
+A college campus. Many, perhaps most, of the people walking by are
+doing something with their phones. They are sending and receiving
+invisible radio signals, which are disturbances in the electric and
+magnetic \emph{fields}, sort of like disturbances in ``the force'' in
+Star Wars. Surrounding and penetrating the landscape of people, trees,
+and buildings, there is a second, hidden landscape of fields.  This
+hidden aspect of reality has no mass and is not made of material
+particles such as electrons. 
+
+<% begin_sec("A surprising link to the nature of time",0,'time') %>
+
+Bear with me for a page while I describe some seemingly unrelated
+ideas about the nature of time, which will turn out to tie back in
+logically to our study of fields.  The phone signals in the college
+campus scene are structured in complex ways and carry information
+using codes like English and binary, but often the signal can carry
+all the needed information simply because of the \emph{time} when it
+arrives. My wife worries about my safety when I head out for a day of
+rock climbing, so when her phone rings late in the afternoon, the
+simple fact of the arrival of a signal from me carries the information
+that I'm safe. This suggests that we consider the nature of
+\emph{time} as a basic question when embarking on our study of
+electricity and magnetism. 
+
+A colorful experiment demonstrating the nature of time was done by
+Hafele and Keating in 1971 (figure \figref{hk-in-cabin}).  The two
+physicists brought atomic clocks with them on round-the-world flights
+aboard commercial passenger jets, then compared the clocks with other
+clocks that had been left at home. When the clocks were reunited, they
+\emph{disagreed} by $\sim 100\ \zu{ns}$. The results were consistent
+with Einstein's 1915 theory of relativity, and were interpreted as a
+combined effect from motion and gravity. Because it's difficult to
+move a clock very fast without putting it on an airplane, it wasn't
+until 2010 that Chou \emph{et al.}\footnote{Science 329 (2010) 1630}
+succeeded in carrying out a conceptually simpler tabletop experiment
+in which a clock was simply moved around (at speeds on the order of 10
+m/s) without taking it to high elevation, thus isolating the effect of
+motion from the gravitational effect. It is the effect of motion that
+will be of interest to us here.
+
+<% marg(50) %>
+<%   
+  fig(
+    'hk-in-cabin',
+    %q{The clock took up two seats, and two tickets were bought for it under the name of ``Mr.~Clock.''}
+  )
+%>
+<% end_marg %>
+
+It would be natural to try to explain this effect of motion on time as
+arising from the clocks' sensitivity to noise, cabin pressure, or
+vibration. But exactly the same effect is observed with other,
+completely different types of clocks under completely different
+circumstances, and even with processes such as the decay of elementary
+particles moving at high speeds --- the radioactive half-life is
+prolonged if the particles are in motion. 
+
+The conclusion is that \emph{time itself} is not absolute: when one
+observer is in motion relative to another observer, they will disagree
+on the rate at which time passes. A clock appears to tick at its
+normal rate according to an observer who is at rest relative to the
+clock, while observers moving relative to the clock say that the clock
+is slow. 
+
+We are now ready to connect these observations about time back to our
+main subjects of study, which are the electric and magnetic fields.
+We will prove that if time is relative, then disturbances in the
+electric and magnetic fields must propagate (travel or spread out) at
+some finite speed, not instantaneously. The logic works like this.
+Suppose that observers Alice and Betty are both aboard spaceships, and
+moving at velocities that are different from each other, but both
+constant.  Alice is free to choose her own ship as a frame of
+reference, in which case she considers herself to be at rest while
+Betty moves.  But the situation is completely symmetrical, so Betty
+can say the same thing. Because motion is relative, we can't say who
+is ``really'' moving and who is ``really'' at rest. Alice says Betty's
+time is slowed down due to the effect of motion on time, but Betty
+says Alice is slowed down. This seems paradoxical, since it seems that
+they should be able to get in contact by radio and resolve the
+disagreement. But our experience talking on cell phones misleads us
+into assuming that radio communication is instantaneous. It isn't.  I
+haven't demonstrated in mathematical detail exactly how logical
+consistency is restored by the fact that signals take time to
+propagate. (That would take us too far afield into a discussion of
+relativity, which is not our main topic right now.) But this example
+is sufficient to show that logical consistency cannot be preserved if
+there is some mechanism for sending signals instantaneously, as in the
+``subspace radio'' of the Star Trek universe. Thus we can never send
+signals simultaneously. 
+
+In your previous study of mechanics, you were probably briefly exposed
+to the concept of a field through mentions of the gravitational field.
+From that experience, it would be easy to get the impression that
+fields are an optional concept, and that changes in the gravitational
+field (e.g., due to the motion of a planet in its orbit) would take
+effect immediately, throughout the universe. This is what Isaac Newton
+believed, but it is not how the universe actually turns out to work.
+
+The maximum speed at which signals can propagate is notated $c$, and
+it has the numerical value of about $3.0\times10^8\ \munit/\sunit$.
+We often refer to it as the speed of light, since visible light travels at $c$.
+Light is a wave disturbance in the electric and magnetic fields, and
+the visible spectrum from red to violet constitutes one part of a much
+larger electromagnetic spectrum, which includes phenomena as apparently disparate
+as radio waves and x-rays. Different parts of the spectrum are distinguished
+either by their frequency (the number of vibrations per unit time) or, equivalently, by their
+wavelength (the distance between successive wave crests). Fundamentally,
+it's best to think of $c$ not as the speed of light but as a maximum
+speed of cause and effect, or as a sort of conversion factor between time
+and space units.
+<% end_sec('time') %>
+
+<% begin_sec("Basic properties of fields",0,'fields-basic-properties') %>
+In order to get started with our study of the electric and magnetic fields,
+we present three basic assumptions:
+
+\begin{enumerate}
+\item The electric and magnetic fields are \emph{observable}. We can measure them.
+\item The electric and magnetic fields are \emph{vectors}.
+\item \emph{Superposition:\/} When fields are created by two effects, the fields contributed
+by the two effects at a particular point add as vectors, and it is the vector sum that is actually
+observed at that location in space.
+\end{enumerate}
+
+To see the significance of these assumptions, it may be helpful to see examples of how
+they do not hold for other phenomena besides electricity and magnetism. These are a little
+exotic and are just for fun.
+
+Our universe does contain fields that are scalars rather than vectors. One example is
+dark energy, discovered in 1998, which drives the accelerating expansion of the universe.
+Another example is the Higgs field, whose existence was predicted theoretically in 1964
+and which was detected experimentally at the Large Hadron Collider in 2012.
+
+<%
+  fig(
+    'ep',
+    'The gravitational field is not observable.',
+    {'width'=>'wide','sidecaption'=>true}
+  )
+%>
+
+One of the considerations that led Einstein to his general theory of
+relativity is that the gravitational field is \emph{not} necessarily
+observable.  Consider Cathy, the girl in figure \figref{ep}.  She is shown in a
+cutaway view, sealed inside a well-lit and air-conditioned box, which
+happens to be her favorite place to go and think about physics. (It's
+small, but it's private and it's all hers.)  She feels pressure from
+the seat of the chair, and this would normally suggest that she was
+experiencing a gravitational force, perhaps from a nearby planet,
+\subfigref{ep}{2}. But Cathy can't infer this without peeking outside at her
+surroundings.  It's equally possible that the box is in deep space,
+\subfigref{ep}{3}, with no gravity whatsoever, but is being towed by a rocket
+ship, so that it accelerates constantly. No possible experiment done
+inside the box can tell her which of these is the
+case.
+
+
+
+<% end_sec('fields-basic-properties') %>
+
 
 <% begin_hw_sec %>
-
+<% begin_hw('b-field-dip',nil) %>__incl(hw/b-field-dip)<% end_hw() %>
 
 <% end_hw_sec %>
 

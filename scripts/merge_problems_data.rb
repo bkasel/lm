@@ -89,7 +89,7 @@ Dir.glob('*problems.csv').each { |filename| # for all books except problems book
 }
 if n_ch_files_read==0 then fatal_error("no files matching *problems.csv -- build the book before running me") end
 sort_problems!(problems)
-if problems.length==0 then fatal_error("no problems found in *problems.csv") end
+if problems.length==0 then warning("no problems found in *problems.csv; unless this is a new book that actually has no problems in it, this indicates a serious error") end
 
 hash_new = {}
 

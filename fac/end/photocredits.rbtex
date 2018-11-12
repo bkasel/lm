@@ -12,6 +12,10 @@
 \noindent
 \textbf{Cover} Crystal: Hans-Joachim Engelhardt, CC-BY-SA licensed. % https://commons.wikimedia.org/wiki/File:(2015-12-11)_ANHYDRIT_01_PWA_DL.jpg
 <% photo_credit("coronal-mass-ejection","Coronal mass ejection","NASA, CC-BY licensed") %> % https://commons.wikimedia.org/wiki/File:Magnificent_CME_Erupts_on_the_Sun_-_August_31.jpg
+<% photo_credit("ep","Girl","Georges H\\'ebert, L'\\'education Physique f\\'eminine, 1921, public domain") %> % http://commons.wikimedia.org/wiki/File:Bonne_et_mauvaises_attitudes_en_station_assise.png
+<% photo_credit("ep","M100","European Southern Observatory, CC-BY-SA") %> % http://en.wikipedia.org/wiki/File:M100.jpg
+<% photo_credit("ep","Saturn","NASA, public domain") %> % http://en.wikipedia.org/wiki/File:Saturn_PIA06077.jpg
+
 <% print_photo_credits() %>
 
 \end{sloppypar}\normalsize
