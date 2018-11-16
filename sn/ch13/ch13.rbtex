@@ -1306,7 +1306,7 @@ wave and particle models of light under the same roof: the
 left side is the energy of one \emph{particle} of light,
 while the right side is the frequency of the same light,
 interpreted as a \emph{wave}. The constant $h$ is known as
-\index{Planck, Max}\index{Planck's constant}Planck's constant,
+\index{Planck, Max}\index{Planck's constant}Planck's constant,\label{planck-constant}
 for historical reasons explained in the footnote beginning on the preceding
 page.
 
