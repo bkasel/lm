@@ -153,7 +153,10 @@ observed at that location in space.
 As a typical example of assumption 3, superposition, one can allow laser beams to intersect.
 If the three beams in figure \figref{lasers-intersecting} are aimed so as to intersect at a point,
 then they will pass through one another. The electric and magnetic fields in
-the region of intersection will add as vectors but not otherwise interact.
+the region of intersection will add as vectors but not otherwise interact. The beams will
+emerge unscathed on the other side. (The beams in figure \figref{lasers-intersecting} appear to be
+parallel, so in the perspective view of the camera, we see them recede toward a vanishing point
+without actually intersecting.)
 
 To see the significance of assumptions 1 and 2, the observability and vector nature of the fields,
 it may be helpful to see examples of how
@@ -419,7 +422,16 @@ Any other definition of multiplication either will not yield a scalar
 or vector, will not be rotationally invariant, or will be a trivial
 variation on the dot or cross products in which the definitions are
 multiplied by some scalar, e.g., $7\vc{A}\cdot\vc{B}$ or
-$-\vc{A}\times\vc{B}$. 
+$-\vc{A}\times\vc{B}$.
+
+Unlike ordinary multiplication of real numbers, the cross product is anticommutative,
+$\vc{A}\times\vc{B}=-\vc{B}\times\vc{A}$. The magnitude of the cross product can be expressed as
+$|\vc{A}||\vc{B}|\sin\theta_{AB}$. In terms of the components, we have
+\begin{align*}
+        \vc{C}_x        &=  A_yB_z - B_yA_z\\
+        \vc{C}_y        &=  A_zB_x - B_zA_x\\
+        \vc{C}_z        &=  A_xB_y - B_xA_y.
+\end{align*}
 
 <% end_sec('dot-and-cross-product') %>
 

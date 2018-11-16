@@ -661,26 +661,6 @@ already know about, and to do the self-checks in those sections.
 
 <% begin_sec("The metric system") %>\index{metric system}
 
-Units were not standardized until fairly recently in
-history, so when the physicist \index{Newton, Isaac}Isaac
-Newton gave the result of an experiment with a pendulum, he
-had to specify not just that the string was 37  $^7/_8$
-inches long but that it was ``37  $^7/_8$ London inches
-long.'' The inch as defined in Yorkshire would have been
-different. Even after the British Empire standardized its
-units, it was still very inconvenient to do calculations
-involving money, volume, distance, time, or weight, because
-of all the odd conversion factors, like 16 ounces in a
-pound, and 5280 feet in a mile. Through the nineteenth
-century, schoolchildren squandered most of their mathematical
-education in preparing to do calculations such as making
-change when a customer in a shop offered a one-crown note
-for a book costing two pounds, thirteen shillings and
-tuppence. The dollar has always been decimal, and British
-money went decimal decades ago, but the United States is
-still saddled with the antiquated system of feet, inches,
-pounds, ounces and so on.
-
 Every country in the world besides the U.S.~uses a
 system of units known in English as the ``metric system.\footnote{Liberia and Myanmar have not legally adopted metric units, but use them
 in everyday life.}''
@@ -688,13 +668,8 @@ This system is entirely decimal, thanks to the same
 eminently logical people who brought about the \index{French
 Revolution}French Revolution. In deference to France, the
 system's official name is the Syst\`{e}me International, or SI,
-meaning International System. (The phrase ``SI system'' is
-therefore redundant.)
-
-The wonderful thing about the SI is that people who live in
-countries more modern than ours do not need to memorize how
-many ounces there are in a pound, how many cups in a pint,
-how many feet in a mile, etc. The whole system works with a
+meaning International System.
+The system uses a
 single, consistent set of Greek and Latin \index{metric system!prefixes}\index{mega-
 (metric prefix)}\index{kilo- (metric prefix)}\index{centi-
 (metric prefix)}\index{milli- (metric prefix)}\index{micro-
@@ -705,8 +680,8 @@ that can be combined with the symbol for the unit. For
 instance, the meter is a unit of distance. The prefix kilo-
 stands for $10^3$, so a kilometer, 1 km, is a thousand meters.
 
-The basic units of the metric system are the meter for
-distance, the second for time, and the gram for mass.
+The basic units of the SI are the meter for
+distance, the second for time, and the kilogram (not the gram) for mass.
 
 The following are the most common metric prefixes. You
 should memorize them.
@@ -776,15 +751,21 @@ most working scientists wanted to carry out. Fairly soon, a
 standard was created in the form of a metal bar with two
 scratches on it. This was replaced by an atomic standard in
 1960, and finally in 1983 by the
-current definition, which is that
-the \index{meter (metric unit)}meter is the
-distance traveled by light in a vacuum over a period of
-(1/299792458) seconds.
+current definition, which is that the speed of light has a defined value
+in units of m/s.
 <% marg(m4_ifelse(__sn,1,[:0:],[:47:])) %>
 <%
   fig(
     'france',
     %q{The original definition of the meter.}
+  )
+%>
+\spacebetweenfigs
+<%
+  fig(
+    'standard-kilogram',
+    %q{A duplicate of the Paris kilogram, maintained at the Danish National Metrology Institute.
+       As of 2019, the kilogram is no longer defined in terms of a physical standard.}
   )
 %>
 <% end_marg %>
@@ -799,35 +780,12 @@ definition. Bathroom scales work by measuring our planet's
 gravitational attraction for the object being weighed, but
 using that type of scale to define mass operationally would
 be undesirable because gravity varies in strength from place
-to place on the earth.
-
-There's a surprising amount of disagreement among physics
-textbooks about how mass should be defined, but here's how
-it's actually handled by the few working physicists who
-specialize in ultra-high-precision measurements. They
-maintain a physical object in Paris, which is the standard
-kilogram, a cylinder made of platinum-iridium alloy.
-Duplicates are checked against this mother of all kilograms
-by putting the original and the copy on the two opposite
-pans of a balance. Although this method of comparison
-depends on gravity, the problems associated with differences
-in gravity in different geographical locations are bypassed,
-because the two objects are being compared in the same
-place. The duplicates can then be removed from the Parisian
-kilogram shrine and transported elsewhere in the world.
-It would be desirable to replace this at some point with a
-universally accessible atomic standard rather than one based on
-a specific artifact, but as of 2010 the technology for automated counting
-of large numbers of atoms has not gotten good
-enough to make that work with the desired precision.
-<% marg(m4_ifelse(__sn,1,[:0:],[:71:])) %>
-<%
-  fig(
-    'standard-kilogram',
-    %q{A duplicate of the Paris kilogram, maintained at the Danish National Metrology Institute.}
-  )
-%>
-<% end_marg %>
+to place on the earth. The kilogram was for a long time defined
+by a physical artifact (figure \figref{standard-kilogram}),
+but in 2019 it was redefined by giving a defined value
+to Planck's constant
+(p.~\pageref{planck-constant}), which plays a fundamental
+role in the description of the atomic world.
 
 <% end_sec() %>
 m4_ifelse(__sn,1,,[:\vfill:])
@@ -850,8 +808,6 @@ m4_ifelse(__sn,1,,[:\vfill:])
 
 A useful technique for finding mistakes in one's algebra is to analyze
 the units associated with the variables.
-
-m4_ifelse(__sn,1,,[:\pagebreak[4]:])
 
 \begin{eg}{Checking units}\label{eg:checking-units}
 \egquestion
