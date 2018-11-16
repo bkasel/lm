@@ -132,6 +132,15 @@ and space units.
 In order to get started with our study of the electric and magnetic fields,
 we present three basic assumptions:
 
+<% marg(-300) %>
+<%   
+  fig(
+    'coil-spring-superposition-two-pos',
+    %q{Wave pulses on a coil spring travel toward each other, superpose, and reemerge.}
+  )
+%>
+<% end_marg %>
+
 \begin{enumerate}
 \item The electric and magnetic fields are \emph{observable}. We can measure them.
 \item The electric and magnetic fields are \emph{vectors}.
@@ -140,23 +149,12 @@ by the two effects at a particular point add as vectors, and it is the vector su
 observed at that location in space.
 \end{enumerate}
 
-<% marg(50) %>
-<%   
-  fig(
-    'lasers-intersecting',
-    %q{Three laser beams are fired simultaneously at the Starfire Optical Range, a US military project
-       developing lasers for communication and as weapons.}
-  )
-%>
-<% end_marg %>
-
-As a typical example of assumption 3, superposition, one can allow laser beams to intersect.
-If the three beams in figure \figref{lasers-intersecting} are aimed so as to intersect at a point,
-then they will pass through one another. The electric and magnetic fields in
-the region of intersection will add as vectors but not otherwise interact. The beams will
-emerge unscathed on the other side. (The beams in figure \figref{lasers-intersecting} appear to be
-parallel, so in the perspective view of the camera, we see them recede toward a vanishing point
-without actually intersecting.)
+Assumption 3, superposition, is typical of wave phenomena, as shown in figure \figref{coil-spring-superposition-two-pos}.
+As an example involving electric and magnetic fields,
+the lens in figure \figref{converging-rays} brings the three beams of light together at a point,
+then the waves will pass through one another. The electric and magnetic fields in
+the region of intersection add as vectors but not otherwise interact. The beams
+emerge unscathed on the other side.
 
 To see the significance of assumptions 1 and 2, the observability and vector nature of the fields,
 it may be helpful to see examples of how
@@ -168,6 +166,15 @@ Our universe does contain fields that are scalars rather than vectors. One examp
 dark energy, discovered in 1998, which drives the accelerating expansion of the universe.
 Another example is the Higgs field, whose existence was predicted theoretically in 1964
 and which was detected experimentally at the Large Hadron Collider in 2012.
+
+<% marg(60) %>
+<%   
+  fig(
+    'converging-rays',
+    %q{Three rays of light converge.}
+  )
+%>
+<% end_marg %>
 
 <%
   fig(
@@ -194,7 +201,7 @@ case.
 
 <% end_sec('fields-basic-properties') %>
 
-<% begin_sec("Vectors",4,'vectors') %>
+<% begin_sec("Review of vectors",4,'vectors') %>
 
 <% begin_sec("Definition of vectors and scalars",0,'vectors-and-scalars') %>
 
@@ -221,7 +228,48 @@ Figure \figref{vectors-and-scalars} shows two examples.
 %>
 A vector $\vc{A}$ has a magnitude $|\vc{A}|$, which means its size, length, or amount. Rotating a vector
 can change the vector, but will never change its magnitude.
+
+<%
+  fig(
+    'earth-field-three-components',
+    %q{A magnetic compass and dip meter are used to find the direction of the earth's field in three dimensions.},
+    {'width'=>'wide','sidecaption'=>true}
+  )
+%>
+
+In figure \figref{earth-field-three-components}, a compass is first used to find the vertical plane
+containing the earth's magnetic field. The needle defines the magnetic north-south direction
+(differing from true north, which is defined by the earth's rotation). Once this plane has been determined,
+a magnetic dip meter is used to find the three-dimensional direction of the field. The field
+has a large vertical component.
+
 <% end_sec('vectors-and-scalars') %>
+
+<% begin_sec("Components of vectors",0,'vector-components') %>
+A component of a vector is a signed real number giving its projection onto a line
+such as a coordinate axis.
+In two dimensions,
+when a vector $\vc{A}$ lies in the $x$-$y$ plane, at an angle $\theta$ counterclockwise from the $x$
+axis, its components are $A_x=A\cos\theta$ and $A_y=A\sin\theta$, where $A$ is a shorthand notation for 
+$|\vc{A}|$.
+
+In figure \figref{horseshoe-magnet-components}, the 
+magnetic field sensor only measures the component of the field parallel to the wand,
+at its tip. At the point being tested, the
+component along the horseshoe's axis of symmetry is nearly zero. Rotating the sensor
+by 90 degrees gives a large reading, showing that the field is perpendicular to the
+axis of symmetry. If the magnetic field had been a scalar, then these two measurements
+would have had to give the same result.
+<%
+  fig(
+    'horseshoe-magnet-components',
+    'A magnetic field sensor measures two perpendicular components of the field of a horseshoe magnet.',
+    {'width'=>'wide','sidecaption'=>true}
+  )
+%>
+
+
+<% end_sec('vector-components') %>
 
 <% begin_sec("Vector addition",0,'vector-addition') %>
 
@@ -243,18 +291,13 @@ that has the same direction but twice the magnitude. Multiplying by $-1$ is
 the same as flipping the vector, $-\vc{A}=(-1)\vc{A}$. Vector subtraction can be
 accomplished by flipping and adding.
 
-Often it is convenient to work with components of a vector along the coordinate axes.
-If we pick a Cartesian coordinate system
-with $x$, $y$, and $z$ axes, then any vector can be specified according to its
-$x$, $y$, and $z$ components. We have previously given a graphical definition for
-vector addition. This is equivalent to adding components, which is called
+The tip-to-tail method of adding vectors is called graphical addition.
+It is equivalent to adding components, which is called
 analytic addition. The following example demonstrates analytic addition in
-an example where it is necessary to do conversions back and forth between
+a case where it is necessary to do conversions back and forth between
 the magnitude-direction and Cartesian descriptions of the vectors. If you have
 any trouble following this example, then you should review vector addition
 from a source that provides more detail than this brief review.
-
-\pagebreak
 
 \begin{eg}{Analytic addition of vectors}\label{eg:la-vegas}
 \egquestion
