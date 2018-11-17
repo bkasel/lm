@@ -16,6 +16,14 @@
 <% photo_credit("ep","M100","European Southern Observatory, CC-BY-SA") %> % http://en.wikipedia.org/wiki/File:M100.jpg
 <% photo_credit("ep","Saturn","NASA, public domain") %> % http://en.wikipedia.org/wiki/File:Saturn_PIA06077.jpg
 <% photo_credit("converging-rays","Converging rays","Wikipedia user Fir0002, CC-BY-SA") %> % https://commons.wikimedia.org/wiki/File:Large_convex_lens.jpg
+<% photo_credit("fields-detection-collage","Man on phone","Ian Camp, CC-BY-SA") %> % https://commons.wikimedia.org/wiki/File:Ghanaian_Cocoa_Farmer_on_Phone.jpg
+<% photo_credit("fields-detection-collage","Compass","Wikimedia Commons user Arpingstone, public domain") %> % https://commons.wikimedia.org/wiki/File:Walkers_compass_arp.jpg
+<% photo_credit("fields-detection-collage","Photovoltaics","Klaus Holl, CC-BY-SA") %> % https://commons.wikimedia.org/wiki/File:Photovoltaikanlage.jpg
+<% photo_credit("fields-detection-collage","Multimeter","Wikimedia Commons user Binarysequence, CC-BY-SA") %> % https://commons.wikimedia.org/wiki/File:Fluke87-V_Multimeter.jpg
+<% photo_credit("fields-detection-collage","Geiger counter","Wikipedia user Changlc, public domain") %> % https://en.wikipedia.org/wiki/File:Geiger_counter_in_use.jpg
+<% photo_credit("fields-detection-collage","X-ray","Roentgen, ca.~1895") %> % https://commons.wikimedia.org/wiki/File:PSM_V48_D860_Rontgen_picture_of_the_hand.jpg
+<% photo_credit("bar-magnet-field-lines","Iron filings around bar magnet","Windell Oskay, CC-BY") %> % https://www.flickr.com/photos/oskay/4580563691/in/photostream/
+<% photo_credit("faraday-portrait","Faraday","Painting by Thomas Phillips, 1842") %>
 
 <% print_photo_credits() %>
 

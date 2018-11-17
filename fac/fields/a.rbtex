@@ -128,18 +128,17 @@ speed of cause and effect, or as a sort of conversion factor between time
 and space units.
 <% end_sec('time') %>
 
+<%
+  fig(
+    'fields-detection-collage',
+    'Tools for detecting, measuring, or exploiting electric and magnetic fields.',
+    {'width'=>'wide','sidecaption'=>true}
+  )
+%>
+
 <% begin_sec("Basic properties of fields",0,'fields-basic-properties') %>
 In order to get started with our study of the electric and magnetic fields,
 we present three basic assumptions:
-
-<% marg(-300) %>
-<%   
-  fig(
-    'coil-spring-superposition-two-pos',
-    %q{Wave pulses on a coil spring travel toward each other, superpose, and reemerge.}
-  )
-%>
-<% end_marg %>
 
 \begin{enumerate}
 \item The electric and magnetic fields are \emph{observable}. We can measure them.
@@ -149,12 +148,42 @@ by the two effects at a particular point add as vectors, and it is the vector su
 observed at that location in space.
 \end{enumerate}
 
-Assumption 3, superposition, is typical of wave phenomena, as shown in figure \figref{coil-spring-superposition-two-pos}.
-As an example involving electric and magnetic fields,
-the lens in figure \figref{converging-rays} brings the three beams of light together at a point,
-then the waves will pass through one another. The electric and magnetic fields in
-the region of intersection add as vectors but not otherwise interact. The beams
-emerge unscathed on the other side.
+Figure \figref{fields-detection-collage} shows the wide variety of
+tools that are used for dealing with electric and magnetic fields. All
+of these can be used to detect the presence of fields, and some can
+actually measure the fields quantitatively.  Many of them (the
+photovoltaic panels, Geiger counter, 19th-century x-ray film, and
+human eye) work by taking in the energy of the fields.  Some of them
+are specialized for constant fields and others for oscillating ones.
+Among those that work with oscillating fields, there is further
+specialization by frequency.  For example, the Geiger counter can
+detect gamma rays, which are a form of very high frequency light, but
+not radio waves. 
+
+Assumption 3, superposition, is typical of wave phenomena, as shown in
+figure \figref{coil-spring-superposition-two-pos}.  As an example
+involving electric and magnetic fields, the lens in figure
+\figref{converging-rays} brings the three beams of light together at a
+point, then the waves will pass through one another. The electric and
+magnetic fields in the region of intersection add as vectors but not
+otherwise interact. The beams emerge unscathed on the other side. 
+
+<% marg(-300) %>
+<%   
+  fig(
+    'coil-spring-superposition-two-pos',
+    %q{Wave pulses on a coil spring travel toward each other, superpose, and reemerge without interacting.}
+  )
+%>
+\spacebetweenfigs
+<%   
+  fig(
+    'converging-rays',
+    %q{Three rays of light converge.}
+  )
+%>
+<% end_marg %>
+
 
 To see the significance of assumptions 1 and 2, the observability and vector nature of the fields,
 it may be helpful to see examples of how
@@ -167,14 +196,6 @@ dark energy, discovered in 1998, which drives the accelerating expansion of the 
 Another example is the Higgs field, whose existence was predicted theoretically in 1964
 and which was detected experimentally at the Large Hadron Collider in 2012.
 
-<% marg(60) %>
-<%   
-  fig(
-    'converging-rays',
-    %q{Three rays of light converge.}
-  )
-%>
-<% end_marg %>
 
 <%
   fig(
@@ -479,6 +500,197 @@ $|\vc{A}||\vc{B}|\sin\theta_{AB}$. In terms of the components, we have
 <% end_sec('dot-and-cross-product') %>
 
 <% end_sec('vectors') %>
+
+<% begin_sec("Field lines",0,'field-lines') %>
+
+The photograph in figure \subfigref{bar-magnet-field-lines}{1} provides a
+visually compelling image of the magnetic field of a bar magnet. The magnet
+itself is underneath a thin piece of white cardboard. What we see, on top,
+are iron filings, which become magnetized by the bar magnet, orient themselves
+along the field, and join up in chains. This type of visualization made a deep
+impression on the British physicist Michael Faraday, who was the mathematically
+untrained son of a poor blacksmith.
+
+<%
+  fig(
+    'bar-magnet-field-lines',
+    %q{Three representations of the magnetic field in and around a bar magnet.},
+    {'width'=>'fullpage'}
+  )
+%>
+
+In general, we have two equally valid ways of conceptualizing an
+electric or magnetic field --- not just visually, but mathematically.
+In the ``sea of arrows'' picture,
+\subfigref{bar-magnet-field-lines}{2}, the field at a particular point
+is represented by an arrow whose length and direction give the
+magnitude and direction of the field. In
+\subfigref{bar-magnet-field-lines}{3}, we instead have Faraday's
+favored representation in terms of \emph{field lines}. 
+
+<% marg() %>
+<%
+  fig(
+    'faraday-portrait-oil-painting',
+    %q{%
+      Michael Faraday (1791-1867). When Queen Victoria asked him what the
+        electrical devices in his lab were good for, he famously replied,
+        ``Madam, what good is a baby?''
+    }
+  )
+%>
+<% end_marg %>
+
+The two pictures carry the same information. Given the sea of arrows
+representation, we essentially just link up the arrows to form the field lines.
+Given the field lines, we can also find the field vectors: each field vector is
+tangent to the field line at the given point, and its magnitude is proportional
+to the \emph{density} of the field lines. For example, the field lines are very
+dense on the interior of the bar magnet, so the field is very strong there.
+
+<% end_sec('field-lines') %>
+
+<% begin_sec("Energy in fields",0,'energy-in-fields') %>
+
+We have not yet said anything about how to define and measure fields
+quantitatively, or what units would be used. One way to approach this
+is through the fact that fields carry energy. Energy is a scalar, but
+the fields are vectors. There is only one reasonable way to form a
+scalar out of a vector, and that is the dot product. Therefore a pure
+electric field $\vc{E}$, unaccompanied by any magnetic field, must
+have an energy density that depends only on $\vc{E}\cdot\vc{E}$, i.e.,
+the field's squared magnitude $E^2$. Similarly for an magnetic field
+$\vc{B}$, we expect an energy density that goes like
+$\vc{B}\cdot\vc{B}$. When the two fields are both present in a certain
+location, we could in principle have an additional term in the energy
+like $\vc{E}\cdot\vc{B}$, but such a term leads to predictions of
+phenomena that are not actually observed, e.g., an electrical device
+like a battery would tend to align itself with the earth's magnetic
+field, as a compass does.
+
+Therefore we have only an electric-field energy density proportional
+to $E^2$ and a corresponding magnetic one like $B^2$. The constants of
+proportionality depend on the units we define for the fields.
+Historically, there was a confusing variety of different and
+incompatible systems of units used for electricity and magnetism, and
+if you look through old books and scientific papers you can find a
+bewildering array of funky electrical units such as the abamp and the
+statcoulomb. Although some particle physicists and astrophysicists
+continue to use some of the less common systems (mostly the one referred
+to as cgs), today most scientists
+and engineers have settled on the version of the metric system called the
+SI. One way of notating the energy densities in SI units is the following.
+\begin{align*}
+  \der U_E &= \frac{1}{8\pi k} E^2 \der v \qquad \text{and} \\
+  \der U_B &= \frac{1}{8\pi k} (cB)^2 \der v .
+\end{align*}
+Here $U$ stands for energy (to avoid a notational clash with $\vc{E}$
+for the electric field), $k$ is a constant called the Coulomb
+constant, $c$ is the speed of light, and $v$ indicates volume. The ``$\der$'' notation looks like
+the Leibniz notation for a derivative, but these are not derivatives.
+In these expressions d just means ``a
+little bit of.'' The reason for the
+$\der$'s is that in general the fields are nonuniform, so that we
+can't speak of ``the'' value of $E^2$ or $B^2$ over some large volume.
+Only by taking an infinitesimal volume near one point can we
+speak of the field as having a definite value. The quantity $\der U$ is
+then understood as the infinitesimal energy contained within this volume.
+
+If we had the luxury of being the first people to define the units for
+the fields, we would be free to choose $k=1$, or even $1/8\pi k=1$,
+which would simplify these expressions; the electric field would then
+have units of $\zu{J}^{1/2}/\munit^3$. However, in the SI we have
+units for $\vc{E}$ and $\vc{B}$ that result in a value for $k$ that
+has both nontrivial units and a nontrivial numerical value. Although
+this is a disadvantage when calculating energies, it does simplify
+certain other equations that we'll encounter later. The SI units of
+the magnetic field are teslas (T), named after the Serbian-American
+inventor and prototypical mad scientist Nikola Tesla. We can tell from
+the equations for the energy densities that $E$ has the same units as
+$cB$, so that one way of expressing the units of the electric field
+would be $\zu{T}\unitdot\munit/\sunit$. In reality nobody does this,
+nor is there any convenient name or symbol for the relevant unit.  It
+is instead expressed in terms of other electrical units, either the
+volt or the coulomb, which we'll encounter later. The SI units of the
+electric field can be written as newtons per coulomb (N/C) or as volts
+per meter (V/m), and these expressions are equivalent, 1 N/C=1 V/m. In
+the SI, the Coulomb constant has the value
+$k=8.987551787368\times10^9\ \nunit\unitdot\munit^2/\zu{C}^2$.  These
+days the SI units have been redefined so that this numerical value of
+$k$ is exact. It is also a pleasant coincidence that it can be
+approximated as $9\times10^9$ while incurring an error of only 0.1\%,
+which is good enough for almost all applications. 
+
+If we are to be logically rigorous, the question arises of how to
+\emph{define} the electric and magnetic fields. Rather than conceptual
+definitions in the style of a dictionary, physicists typically use
+operational definitions, meaning definitions that specify the
+operations that need to be carried out in order to measure the
+quantity. For example, an operational definition of time is that time
+is what a clock meaures. The equations for the energy densities of the
+fields can be taken as operational definitions of the fields, except
+that they only seem to define the magnitudes of the fields, not their
+directions. Actually, the following example shows that they define more
+than they seem to define.
+
+<% marg(-10) %>
+<%   
+  fig(
+    'horseshoe-magnets-polarity',
+    %q{Example \ref{eg:horseshoe-magnets-polarity}.}
+  )
+%>
+<% end_marg %>
+
+\begin{eg}{Direction of the field of a horseshoe magnet}\label{eg:horseshoe-magnets-polarity}
+Figure \subfigref{horseshoe-magnets-polarity}{1} shows the horseshoe magnet of
+figure \figref{horseshoe-magnet-components} on p.~\pageref{fig:horseshoe-magnet-components},
+where we saw that in its plane of symmetry, the field was entirely perpendicular to the plane.
+In this figure we show the densely packed field lines that resulted in this observation, in
+the region near the pole tips where the field is very intense. There are no arrowheads drawn
+in the figure to show the direction of the field, because our definition of the field in terms
+of its energy density does not immediately seem to define any such thing or any way of determining it.
+
+Now suppose that we have another such magnet, but there is still no
+indication of which pole is which. We bring the magnets close
+together, \subfigref{horseshoe-magnets-polarity}{2}, so that their
+fields superpose. There are two possibilities. Either the two magnets'
+contributions to the field are aligned, so that in the plane of symmetry
+the total field is $2B$, or they are reversed relative to one another,
+giving zero field in the midplane.
+
+Although the field lines curve around, and it is only in the midplane that
+the two fields are collinear, we can tell that there will be a large difference
+between the energy stored in the field in these two cases. For simplicity, let's
+pretend that there is some volume $v$ near the pole tips where the field is large.
+and let's approximate it as being uniform and perpendicular to the midplane.
+When the magnets are far away from one another, each has energy $(c^2/8\pi k)B^2v$
+stored in this region, so the total energy is double that,
+\begin{equation*}
+  U_1 = 2(c^2/8\pi k)B^2v. \qquad \text{[total energy, apart]}
+\end{equation*}
+In the case where the magnets are brought near to each other with their fields
+reversed in relation to each other, the fields cancel (subject to our crude approximations),
+and we have
+\begin{equation*}
+  U_2 = 0. \qquad \text{[total energy, reversed]}
+\end{equation*}
+With the fields cooperating, we replace $B$ with $2B$, the result being
+\begin{equation*}
+  U_3 = 8(c^2/8\pi k)B^2v. \qquad \text{[total energy, aligned]}
+\end{equation*}
+
+These three energies are all different. If the orientation of each magnet is reversed compared to
+the other, then
+they can reduce their magnetic energy from $U_1$ to $U_2$ by leaping toward
+each other. They attract, and the decrease in magnetic energy is transformed into
+kinetic energy. If the orientation is aligned, then energy is released if
+they fly apart, reducing their total energy from $U_3$ to $U_1$. In this configuration,
+the magnets repel.
+\end{eg}
+
+<% end_sec('energy-in-fields') %>
+
 
 <% begin_hw_sec %>
 <% begin_hw('b-field-dip',nil) %>__incl(hw/b-field-dip)<% end_hw() %>
