@@ -23,7 +23,7 @@
 <% photo_credit("fields-detection-collage","Geiger counter","Wikipedia user Changlc, public domain") %> % https://en.wikipedia.org/wiki/File:Geiger_counter_in_use.jpg
 <% photo_credit("fields-detection-collage","X-ray","Roentgen, ca.~1895") %> % https://commons.wikimedia.org/wiki/File:PSM_V48_D860_Rontgen_picture_of_the_hand.jpg
 <% photo_credit("bar-magnet-field-lines","Iron filings around bar magnet","Windell Oskay, CC-BY") %> % https://www.flickr.com/photos/oskay/4580563691/in/photostream/
-<% photo_credit("faraday-portrait","Faraday","Painting by Thomas Phillips, 1842") %>
+<% photo_credit("faraday-portrait-oil-painting","Faraday","Painting by Thomas Phillips, 1842") %>
 
 <% print_photo_credits() %>
 
