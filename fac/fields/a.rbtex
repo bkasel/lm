@@ -550,6 +550,7 @@ dense on the interior of the bar magnet, so the field is very strong there.
 
 <% end_sec('field-lines') %>
 
+<% begin_sec("Energy in fields and electrical units",0,'energy-in-fields-and-units') %>
 <% begin_sec("Energy in fields",0,'energy-in-fields') %>
 
 We have not yet said anything about how to define and measure fields
@@ -595,7 +596,9 @@ can't speak of ``the'' value of $E^2$ or $B^2$ over some large volume.
 Only by taking an infinitesimal volume near one point can we
 speak of the field as having a definite value. The quantity $\der U$ is
 then understood as the infinitesimal energy contained within this volume.
+<% end_sec('energy-in-fields') %>
 
+<% begin_sec("Units of the fields",0,'units-of-the-fields') %>
 If we had the luxury of being the first people to define the units for
 the fields, we would be free to choose $k=1$, or even $1/8\pi k=1$,
 which would simplify these expressions; the electric field would then
@@ -605,22 +608,38 @@ has both nontrivial units and a nontrivial numerical value. Although
 this is a disadvantage when calculating energies, it does simplify
 certain other equations that we'll encounter later. The SI units of
 the magnetic field are teslas (T), named after the Serbian-American
-inventor and prototypical mad scientist Nikola Tesla. We can tell from
-the equations for the energy densities that $E$ has the same units as
-$cB$, so that one way of expressing the units of the electric field
-would be $\zu{T}\unitdot\munit/\sunit$. In reality nobody does this,
-nor is there any convenient name or symbol for the relevant unit.  It
-is instead expressed in terms of other electrical units, either the
-volt or the coulomb, which we'll encounter later. The SI units of the
-electric field can be written as newtons per coulomb (N/C) or as volts
-per meter (V/m), and these expressions are equivalent, 1 N/C=1 V/m. In
-the SI, the Coulomb constant has the value
-$k=8.987551787368\times10^9\ \nunit\unitdot\munit^2/\zu{C}^2$.  These
+inventor and prototypical mad scientist Nikola Tesla.
+
+We can tell from the equations for the energy densities that $E$ has
+the same units as $cB$, so that one way of expressing the units of the
+electric field would be $\zu{T}\unitdot\munit/\sunit$. In reality
+nobody does this, nor is there any convenient name or symbol for the
+relevant unit.  It is instead expressed in terms of other electrical
+units, either the volt or the coulomb, which we'll encounter later.
+The coulomb is a unit of electrical charge, a property of material
+objects that measures how strongly they participate in electrical
+interactions.  The SI units of the electric field can be written as
+newtons per coulomb (N/C) or as volts per meter (V/m), and these
+expressions are equivalent, 1 N/C=1 V/m.
+
+The Coulomb constant is
+$k=8.987551787368\times10^9\ \nunit\unitdot\munit^2/\zu{C}^2$ in SI units.  These
 days the SI units have been redefined so that this numerical value of
 $k$ is exact. It is also a pleasant coincidence that it can be
 approximated as $9\times10^9$ while incurring an error of only 0.1\%,
 which is good enough for almost all applications. 
 
+When analyzing the units of an expression, we usually break the defined
+units down into the more basic ones, e.g., in a mechanical calculation
+we might replace newtons, N, with $\kgunit\unitdot\munit/\sunit^{-2}$.
+In the SI, the coulomb is (perhaps somewhat arbitrarily) considered to be more basic than
+the units of the fields. Therefore we would typically reduce electric
+field units to N/C, and if you're the type of person who enjoys crossword
+puzzles, you can convince yourself from the
+foregoing discussion that for the magnetic field, $1\ \zu{T}=1\ \nunit\unitdot\sunit/\zu{C}\unitdot\munit$.
+<% end_sec('units-of-the-fields') %>
+
+<% begin_sec("Direction of a field",0,'direction-of-field') %>
 If we are to be logically rigorous, the question arises of how to
 \emph{define} the electric and magnetic fields. Rather than conceptual
 definitions in the style of a dictionary, physicists typically use
@@ -659,17 +678,34 @@ contributions to the field are aligned, so that in the plane of symmetry
 the total field is $2B$, or they are reversed relative to one another,
 giving zero field in the midplane.
 
+<% marg(300) %>
+<%   
+  fig(
+    'horseshoe-magnets-polarity-destructive',
+    %q{The case where the fields cancel, producing $U_2=0$.}
+  )
+%>
+\spacebetweenfigs
+<%   
+  fig(
+    'horseshoe-magnets-polarity-constructive',
+    %q{One of the magnets is turned around. The fields reinforce, producing the large energy $U_3$.}
+  )
+%>
+<% end_marg %>
+
 Although the field lines curve around, and it is only in the midplane that
 the two fields are collinear, we can tell that there will be a large difference
 between the energy stored in the field in these two cases. For simplicity, let's
-pretend that there is some volume $v$ near the pole tips where the field is large.
-and let's approximate it as being uniform and perpendicular to the midplane.
+pretend that there is only some volume $v$ near the pole tips where the field is large enough to matter,
+and let's approximate the field within this volume as being uniform and perpendicular to the midplane.
 When the magnets are far away from one another, each has energy $(c^2/8\pi k)B^2v$
 stored in this region, so the total energy is double that,
 \begin{equation*}
   U_1 = 2(c^2/8\pi k)B^2v. \qquad \text{[total energy, apart]}
 \end{equation*}
-In the case where the magnets are brought near to each other with their fields
+Now suppose that the magnets are brought near to each other, so that the volumes $v$ coincide.
+In the case where the fields are
 reversed in relation to each other, the fields cancel (subject to our crude approximations),
 and we have
 \begin{equation*}
@@ -677,7 +713,7 @@ and we have
 \end{equation*}
 With the fields cooperating, we replace $B$ with $2B$, the result being
 \begin{equation*}
-  U_3 = 8(c^2/8\pi k)B^2v. \qquad \text{[total energy, aligned]}
+  U_3 = 4(c^2/8\pi k)B^2v. \qquad \text{[total energy, aligned]}
 \end{equation*}
 
 These three energies are all different. If the orientation of each magnet is reversed compared to
@@ -689,7 +725,45 @@ they fly apart, reducing their total energy from $U_3$ to $U_1$. In this configu
 the magnets repel.
 \end{eg}
 
-<% end_sec('energy-in-fields') %>
+\begin{eg}{Estimating the force from the field}
+Let's use the analysis of example \ref{eg:horseshoe-magnets-polarity} to find a rough
+numerical estimate of the force of attraction or repulsion. From figure \figref{horseshoe-magnet-components}
+on p.~\pageref{fig:horseshoe-magnet-components}, we take $B\sim6\ \zu{mT}$, and we let the
+volume $v$ be a cube, $v=\ell^3$, with $\ell=4\ \zu{cm}$. The absolute value of the work done
+when the magnets are brought together or apart is $\Delta U=U_1-U_2=U_3-U_1=2(c^2/8\pi k)B^2v$. (The
+fact that $U_1-U_2=U_3-U_1$ tells us that the strength of the force will be of the same magnitude
+in the repulsive and attractive cases.) To the precision allowed by our crude approximations,
+we can approximate $F=\der W/\der x\approx \Delta U/\Delta x=\Delta U/\ell$. Plugging in numbers, we get
+\begin{align*}
+  F &\approx 2\frac{c^2}{8\pi k}B^2\ell^2 \\
+    &= 2\frac{(3\times10^8\ \munit/\sunit)^2}{8\pi (9\times10^9\ \nunit\unitdot\munit^2/\zu{C}^2)}
+               (6\times10^{-3}\ \zu{T})^2(4\times10^{-2}\ \munit)^2 \\
+    &= 0.05 \frac{\munit^2/\sunit^2}{\nunit\unitdot\munit^2\unitdot\zu{C}^{-2}}\zu{T}^2\unitdot\munit^2.
+\end{align*}
+To unroll the hairball of units, we use the fact that $1\ \zu{T}=1\ \nunit\unitdot\sunit/\zu{C}\unitdot\munit$,
+and verify that the result turns out to be a force in units of newtons, as expected because when we plug in
+SI units, we expect to get a result in SI.
+
+A force of $0.05\ \nunit$ is considerably too low for such massive magnets,
+and this is probably because the magnetic field in figure \figref{horseshoe-magnet-components} was measured
+rather far away from the magnet in order to keep from overloading the sensor.
+\end{eg}
+
+We can abstract out the insight provided by example \ref{eg:horseshoe-magnets-polarity}
+in the following way. If we have a way of measuring the magnitude of a field, say
+the electric field, then we automatically get a way of determining the orientation
+of any electric field vector $\vc{E}$ in relation to some chosen reference field $\vc{E}_\zu{o}$.
+This follows because we are free to superpose the two fields in any relative orientation
+we like, producing a total field $\vc{E}+\vc{E}_\zu{o}$. The squared magnitude of this
+total field is $(\vc{E}+\vc{E}_\zu{o})\cdot(\vc{E}+\vc{E}_\zu{o})$, which we can measure.
+But this equals $\vc{E}\cdot\vc{E}+\vc{E}_\zu{o}\cdot\vc{E}_\zu{o}+2|\vc{E}||\vc{E}_\zu{o}|\cos\theta$,
+where $\theta$ is the angle between the vectors. (This is essentially the law of cosines, stated
+in vector language.) Since all of the quantities in these expressions are assumed to be measurable,
+we can determined the unknown $\theta$, which gives the orientation of $\vc{E}$ relative
+to $\vc{E}_\zu{o}$.
+<% end_sec('direction-of-field') %>
+
+<% end_sec('energy-in-fields-and-units') %>
 
 
 <% begin_hw_sec %>
