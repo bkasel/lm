@@ -1,0 +1,235 @@
+<%
+  require "../eruby_util.rb"
+%>
+
+<%
+  chapter(
+    '02',
+    %q{Gauss's law},
+    'ch:gauss-law'
+  )
+%>
+
+<% begin_sec("Gauss's law",0,'gauss-law') %>
+<% begin_sec("Resolving the flip-the-arrowsheads ambiguity",0,'flip-arrowheads') %>
+Continuing the train of thought from section
+\ref{sec:energy-in-fields-and-units}, it would seem that by defining
+expressions for the energy density of the fields, we have effectively
+provided an operational definition for the fields, provided that we
+have some reference field somewhere that has a known direction. In
+fact, this reference field would be needed only in order to resolve
+the ambiguity that exists because we could always, e.g., define some
+field $\vc{F}=-\vc{E}$, which is the same as the electric field but
+with the opposite direction. This would be like flipping the
+arrowheads on all of our drawings. This ``flip-the-arrowheads''
+ambiguity is entirely an arbitrary matter of definition, and for
+electric fields it was effectively fixed by Benjamin Franklin around
+1750 (although we will give a description in a form that he would
+probably not have recognized). 
+
+<% marg() %>
+<%   
+  fig(
+    'twotapes-fields',
+    %q{1.~Place a piece of sticky tape on a tabletop, then stick another on top of it.
+       2.~Lift them off the tabletop as a unit, then separate them. The result is
+          that they attract one another.
+       3.~Interpretation of this type of experiment in terms of the fields surrounding
+          the two objects.}
+  )
+%>
+<% end_marg %>
+
+It would have been a nuisance if Franklin had had to maintain some
+physical artifact in Philadelphia that had some magnetic field
+surrounding it, forcing other people to come there in order to consult
+it.What he did instead was to specify a procedure that could be
+followed, using materials commonly available at the time, in order to
+reproduce his standard. His prescription was to rub a piece of amber
+with wool. (Figures \subfigref{twotapes-fields}{1} and
+\subfigref{twotapes-fields}{2} show an easy way to do a similar
+procedure using more commonly available modern materials.)  Once this
+has been done, we observe that the amber and the wool attract each
+other electrically, and we find that the attraction is about the same
+regardless of the orientations of the two objects. This suggests that
+each object must be surrounded by a sea of arrows that is
+approximately spherically symmetric, pointing either inward or
+outward, \subfigref{twotapes-fields}{3}.  Franklin arbitrarily defined
+things so that the electric field surrounding the wool would point
+outward, while the field around the amber pointed inward. 
+
+By the way, almost any pair of substances will exhibit this kind of effect
+when rubbed or touched together, but amber is particularly good at producing
+a strong field. The Greek word for amber is ``ilektron,'' which is the origin
+of English words like ``electricity.''
+
+\begin{eg}{Explaining the attraction}\label{eg:two-charges-pe}
+To explain the attraction between the two objects, we can employ an
+argument very similar to the one used in the case of the two horseshoe
+magnets, example \ref{eg:horseshoe-magnets-polarity},
+p.~\pageref{eg:horseshoe-magnets-polarity}.  We idealize each of the
+two objects as a point.  When the objects are far apart, each has some
+electric field energy, and these add up to some nonzero amount $U_1$.
+For our present purposes, we do not even need to know yet the function
+$E(r)$ that gives the magnitude of the electric field as a function of
+the distance away from the object. For simplicity, we will assume that
+the two objects have fields that are equal in strength but opposite in
+magnitude.  (A qualitatively similar result is obtained even if we
+relax this requirement.)  Now suppose the two objects are brought so
+close together that they are right on top of each other. The fields
+will cancel everywhere, and we will have the energy $U_2=0$. This loss
+of electric field energy means that we can do mechanical work by
+allowing the objects to come together, or if the objects were released
+in free space, they could convert this field energy into kinetic
+energy as they accelerated toward each other. Our conclusion is that the
+force is attractive. 
+
+We have not considered the intermediate case where the distance
+between the charges is nonzero but still small enough so that the
+fields overlap appreciably, as in figure \figref{eg-two-charges-pe}.
+In the region indicated approximately by the shading in the figure,
+the superposing fields of the two charges undergo partial cancellation
+because they are in opposing directions. The energy in the shaded
+region is reduced by this effect. In the unshaded region, the fields
+reinforce, and the energy is increased. 
+
+<% marg(300) %>
+<%   
+  fig(
+    'eg-two-charges-pe',
+    %q{Example \ref{eg:two-charges-pe}. The labels $+$ and $-$ are explained in the following subsection.}
+  )
+%>
+<% end_marg %>
+
+ It would be quite a project to do the integral in order to find the
+energy gained and lost in the two regions, but it is fairly easy to
+convince oneself that the energy is less when the charges are closer,
+as expected from interpolation between $U_1$ and $U_2$. This is
+because bringing the charges together shrinks the high-energy unshaded
+region and enlarges the low-energy shaded region.
+\end{eg}
+
+<% end_sec('flip-arrowheads') %>
+
+<%
+  fig(
+    'field-line-concept',
+    %q{The sea-of-arrows and field-line representation of the field surrounding a pointlike source and 
+       a pointlike sink.},
+    {'width'=>'fullpage'}
+  )
+%>
+
+<% begin_sec("Sources and sinks",0,'sources-and-sinks') %>
+
+We reasoned on p.~\pageref{field-lines-never-cross} that field lines can never
+cross at a point where the field is well defined. However, if we draw both the
+sea-of-arrows and field-line representations of the situation we have just been
+discussing, and make the objects pointlike, as in figure \figref{field-line-concept},
+we find that the field lines begin at one point and terminate on the other. They
+do not literally cross, since they don't pass through one another, but our earlier
+logic still holds, and we find that the field must be undefined at these two points.
+It is undefined because it is infinite. When the field lines flow out of an object,
+we call that object a source of the field, and when they flow in we call it a sink.
+At a pointlike source, the field blows up to infinity.
+<% end_sec('sources-and-sinks') %>
+
+<% begin_sec("Gauss's law, in terms of field lines",0,'gauss-field-lines') %>
+In figures \figref{eg-two-charges-pe} and \figref{field-line-concept}, we labeled
+sources with the symbol $+$ and sinks with $-$. It is natural to want to extend this
+to a description of the \emph{strength} of a source or sink. This leads to
+a pair of statements called Gauss's law, whose character is partly that of a
+definition and partly that of a law of physics. Our initial statement of Gauss's
+law is phrased in terms of the number of field lines passing out through a chosen surface,
+counting a field line that comes inward as minus one.
+
+\begin{lessimportant}[Gauss's law (in terms of field lines)]
+The sources of the electric field are called electric charges. The net number of electric field
+lines passing out through any closed surface is proportional to the charge enclosed by the surface.
+
+The magnetic field has no sources or sinks: the net number of magnetic field lines passing out
+through any closed surface is zero.
+\end{lessimportant}
+
+Electric charge is notated $q$ and measured in units of coulombs (C). One of our first requirements for
+electric fields (sec.~\ref{sec:fields-basic-properties}, p.~\pageref{sec:fields-basic-properties})
+was that they be observable. Since we do our observations using tools that are material objects,
+this requires that electric fields interact with matter. Gauss's law is the fundamental principle
+underlying this relationship between matter and electric fields.
+
+Gauss's law for the magnetic field is a little sad and depressing. It claims that, for reasons
+unknown to us, our universe does not come equipped with objects having ``magnetic charge.''
+Such an object would be referred to as a magnetic \emph{monopole}. It is in fact possible
+that, at some point in the future, we will discover magnetic monopoles, perhaps in cosmic rays
+or particle accelerator experiments.
+
+<% end_sec('gauss-field-lines') %>
+
+<% begin_sec("Electric force on a charge",0,'force-on-a-charge') %>
+In cases like example \ref{eg:horseshoe-force} on p.~\pageref{eg:horseshoe-force} and
+example \ref{eg:two-charges-pe} on p.~\pageref{eg:two-charges-pe}, we have been able to explain
+the force between two objects in terms of the energy of their superposed fields. Let's
+use a similar style of reasoning to think about the force acting on an object with charge $q$
+when it is inserted into an electric field $\vc{E}$. We imagine that this ambient field is
+created by some other objects, and that the charge $q$ is small enough so that its own reaction
+on these other objects is not enough to disturb them. That is, the background contribution
+$\vc{E}$ to the field does not change just because we insert $q$. When $q$ is small enough
+to make this a good approximation, we call it a test charge. Now when we insert the test charge,
+the total field at any given point in space becomes the vector sum $\vc{E}+\vc{E}_q$,
+where $\vc{E}_q$ is the field contributed by the test charge itself. The energy density at this
+point is proportional to the squared magnitude
+of this field, $(\vc{E}+\vc{E}_q)\cdot(\vc{E}+\vc{E}_q)$. Multiplying this expression
+out, we get terms $\vc{E}\cdot\vc{E}$ and $\vc{E}_q\cdot\vc{E}_q$, which are constants
+and therefore don't have any effect on our analysis, but in addition we get a term
+$2\vc{E}\cdot\vc{E}_q$. It is only this latter term than can change if we move $q$ around,
+so the force $\vc{F}$ on $q$ is proportional to it. Since $\vc{E}_q$ is proportional to $q$
+(as we can easily prove by Gauss's law), it follows that $\vc{F}$ is proportional both to
+$\vc{E}$ and to $q$. We conclude that $\vc{F}\propto q\vc{E}$. Since we have not yet fixed
+our definition of the Coulomb, we are free to choose any constant of proportionality in this
+relationship. We choose it to be 1, so that the electric force on a test charge $q$, from
+an ambient field $\vc{E}$, is
+\begin{equation*}
+  \vc{F}= q\vc{E}.
+\end{equation*}
+If we liked, we could take this as the definition of the electric field (and most books do).
+This also explains why, in the system of units we have constructed, the units of the electric
+field can be written as newtons per coulomb (N/C).
+
+example: find the force on an electron in an electrical discharge
+
+<% end_sec('force-on-a-charge') %>
+
+<% begin_sec("Charge",0,'charge') %>
+
+<% begin_sec("Invariance of charge",0,'charge-invariant') %>
+Ever since Galileo we have known that different observers could have frames of reference
+in motion relative to one another, and that the results of some measurements would depend
+on the frame of reference while others were not. Velocity is the classic example of a frame-dependent
+quantity. For example, your copy of this book is at rest in a frame of reference tied to your
+desk, but in the frame of reference of a Martian it's whizzing through space at high speed.
+A quantity that does not depend on the frame of reference is called invariant.
+Time is approximately invariant, but not exactly (sec.~\ref{sec:time}, p.~\pageref{sec:time}).
+
+Electric charge is, according to the best experimental evidence, perfectly invariant:
+observers agree on the charge of an object, regardless of their frame of reference.
+Another way of saying this is that when we start or stop an object's motion, its charge does
+not change at all. It is possible to do incredibly rigorous tests of this statement, because
+atoms are made of charged particles (protons and electrons), and the electrons in many atoms
+are orbiting at a significant fraction of the speed of light. If the charge of an electron depended
+on its state of motion, then dropping an electron into orbit in an atom would change its charge,
+but experiments rule out such a change to the level of one part in $10^{20}$.
+<% end_sec('charge-invariant') %>
+
+<% begin_sec("Conservation of charge",0,'charge-conserved') %>
+Electric charge is conserved in all known physical processes.
+<% end_sec('charge-conserved') %>
+
+<% begin_sec("Quantization of charge",0,'charge-quantized') %>
+Electric charge is quantized.
+<% end_sec('charge-quantized') %>
+
+<% end_sec('charge') %>
+
+
+<% end_sec('gauss-law') %>

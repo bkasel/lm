@@ -71,6 +71,7 @@ cp,8,4,waterpulse,0
 cp,8,5,superpositionexperiment,0
 cp,8,6,middlec,0
 fac,1,1,b-field-dip,0
+fac,1,2,horseshoe-units,0
 lm,0,1,calculator,0
 lm,0,2,units,0
 lm,0,3,backyard,0

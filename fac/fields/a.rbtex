@@ -7,7 +7,7 @@
 <%
   chapter(
     '01',
-    %q{Electric and Magnetic Fields},
+    %q{Electric and magnetic fields},
     'ch:fields-intro',
     %q{A telescopic view of an energetic eruption on the sun, August 2012. The bright loops at 
      the upper left are
@@ -574,7 +574,7 @@ enough around the curve of the earth's surface, and its strength also falls off 
 
 <% end_sec('field-lines') %>
 
-<% begin_sec("Energy in fields and electrical units",0,'energy-in-fields-and-units') %>
+<% begin_sec("Energy in fields and measurement of fields",0,'energy-in-fields-and-units') %>
 <% begin_sec("Energy in fields",0,'energy-in-fields') %>
 
 We have not yet said anything about how to define and measure fields
@@ -751,7 +751,7 @@ they fly apart, reducing their total energy from $U_3$ to $U_1$. In this configu
 the magnets repel.
 \end{eg}
 
-\begin{eg}{Estimating the force from the field}
+\begin{eg}{Estimating the force from the field}\label{eg:horseshoe-force}
 Let's use the analysis of example \ref{eg:horseshoe-magnets-polarity} to find a rough
 numerical estimate of the force of attraction or repulsion. From figure \figref{horseshoe-magnet-components}
 on p.~\pageref{fig:horseshoe-magnet-components}, we take $B\sim6\ \zu{mT}$, and we let the
@@ -768,8 +768,10 @@ we can approximate $F=\der W/\der x\approx \Delta U/\Delta x=\Delta U/\ell$. Plu
 \end{align*}
 %%%% calc -x -e "B=6 mT; L=4 cm; 2[c^2/(8pik)]B^2L^2"
 To unroll the hairball of units, we use the fact that $1\ \zu{T}=1\ \nunit\unitdot\sunit/\zu{C}\unitdot\munit$,
-and verify that the result turns out to be a force in units of newtons, as expected because when we plug in
-SI units, we expect to get a result in SI.
+and verify that the result turns out to be a force in units of newtons
+(problem \ref{hw:horseshoe-units}, p.~\pageref{hw:horseshoe-units}), which is
+as expected because when we plug in
+SI units, we should get a result in SI.
 
 A force of $0.05\ \nunit$ is considerably too low for such massive magnets,
 and this is probably because the magnetic field in figure \figref{horseshoe-magnet-components} was measured
@@ -788,6 +790,12 @@ where $\theta$ is the angle between the vectors. (This is essentially the law of
 in vector language.) Since all of the quantities in these expressions are assumed to be measurable,
 we can determined the unknown $\theta$, which gives the orientation of $\vc{E}$ relative
 to $\vc{E}_\zu{o}$.
+
+We therefore have a way of defining any field's direction relative to the direction
+of any other field. What we do not yet have is an absolute definition of the direction of
+a field, and in particular there is an ambiguity because we could always flip the direction
+of all our field vectors, simply as a matter of definition. This ambiguity will be resolved
+in section \ref{sec:gauss-law}.
 
 <% end_sec('direction-of-field') %>
 
@@ -808,161 +816,12 @@ following proposed expressions for the energy density of the electric field?
 
 <% end_sec('energy-in-fields-and-units') %>
 
-<% begin_sec("Gauss's law",0,'gauss-law') %>
-<% begin_sec("Resolving the flip-the-arrowsheads ambiguity",0,'flip-arrowheads') %>
-Continuing the train of thought from section
-\ref{sec:energy-in-fields-and-units}, it would seem that by defining
-expressions for the energy density of the fields, we have effectively
-provided an operational definition for the fields, provided that we
-have some reference field somewhere that has a known direction. In
-fact, this reference field would be needed only in order to resolve
-the ambiguity that exists because we could always, e.g., define some
-field $\vc{F}=-\vc{E}$, which is the same as the electric field but
-with the opposite direction. This would be like flipping the
-arrowheads on all of our drawings. This ``flip-the-arrowheads''
-ambiguity is entirely an arbitrary matter of definition, and for
-electric fields it was effectively fixed by Benjamin Franklin around
-1750 (although we will give a description in a form that he would
-probably not have recognized). 
-
-<% marg() %>
-<%   
-  fig(
-    'twotapes-fields',
-    %q{1.~Place a piece of sticky tape on a tabletop, then stick another on top of it.
-       2.~Lift them off the tabletop as a unit, then separate them. The result is
-          that they attract one another.
-       3.~Interpretation of this type of experiment in terms of the fields surrounding
-          the two objects.}
-  )
-%>
-<% end_marg %>
-
-It would have been a nuisance if Franklin had had to maintain some
-physical artifact in Philadelphia that had some magnetic field
-surrounding it, forcing other people to come there in order to consult
-it.What he did instead was to specify a procedure that could be
-followed, using materials commonly available at the time, in order to
-reproduce his standard. His prescription was to rub a piece of amber
-with wool. (Figures \subfigref{twotapes-fields}{1} and
-\subfigref{twotapes-fields}{2} show an easy way to do a similar
-procedure using more commonly available modern materials.)  Once this
-has been done, we observe that the amber and the wool attract each
-other electrically, and we find that the attraction is about the same
-regardless of the orientations of the two objects. This suggests that
-each object must be surrounded by a sea of arrows that is
-approximately spherically symmetric, pointing either inward or
-outward, \subfigref{twotapes-fields}{3}.  Franklin arbitrarily defined
-things so that the electric field surrounding the wool would point
-outward, while the field around the amber pointed inward. 
-
-By the way, almost any pair of substances will exhibit this kind of effect
-when rubbed or touched together, but amber is particularly good at producing
-a strong field. The Greek word for amber is ``ilektron,'' which is the origin
-of English words like ``electricity.''
-
-\begin{eg}{Explaining the attraction}\label{eg:two-charges-pe}
-To explain the attraction between the two objects, we can employ an
-argument very similar to the one used in the case of the two horseshoe
-magnets, example \ref{eg:horseshoe-magnets-polarity},
-p.~\pageref{eg:horseshoe-magnets-polarity}.  We idealize each of the
-two objects as a point.  When the objects are far apart, each has some
-electric field energy, and these add up to some nonzero amount $U_1$.
-For our present purposes, we do not even need to know yet the function
-$E(r)$ that gives the magnitude of the electric field as a function of
-the distance away from the object. For simplicity, we will assume that
-the two objects have fields that are equal in strength but opposite in
-magnitude.  (A qualitatively similar result is obtained even if we
-relax this requirement.)  Now suppose the two objects are brought so
-close together that they are right on top of each other. The fields
-will cancel everywhere, and we will have the energy $U_2=0$. This loss
-of electric field energy means that we can do mechanical work by
-allowing the objects to come together, or if the objects were released
-in free space, they could convert this field energy into kinetic
-energy as they accelerated toward each other. Our conclusion is that the
-force is attractive. 
-
-We have not considered the intermediate case where the distance
-between the charges is nonzero but still small enough so that the
-fields overlap appreciably, as in figure \figref{eg-two-charges-pe}.
-In the region indicated approximately by the shading in the figure,
-the superposing fields of the two charges undergo partial cancellation
-because they are in opposing directions. The energy in the shaded
-region is reduced by this effect. In the unshaded region, the fields
-reinforce, and the energy is increased. 
-
-<% marg(300) %>
-<%   
-  fig(
-    'eg-two-charges-pe',
-    %q{Example \ref{eg:two-charges-pe}. The labels $+$ and $-$ are explained in the following subsection.}
-  )
-%>
-<% end_marg %>
-
- It would be quite a project to do the integral in order to find the
-energy gained and lost in the two regions, but it is fairly easy to
-convince oneself that the energy is less when the charges are closer,
-as expected from interpolation between $U_1$ and $U_2$. This is
-because bringing the charges together shrinks the high-energy unshaded
-region and enlarges the low-energy shaded region.
-\end{eg}
-
-<% end_sec('flip-arrowheads') %>
-
-<%
-  fig(
-    'field-line-concept',
-    %q{The sea-of-arrows and field-line representation of the field surrounding a pointlike source and 
-       a pointlike sink.},
-    {'width'=>'fullpage'}
-  )
-%>
-
-<% begin_sec("Sources and sinks",0,'sources-and-sinks') %>
-
-We reasoned on p.~\pageref{field-lines-never-cross} that field lines can never
-cross at a point where the field is well defined. However, if we draw both the
-sea-of-arrows and field-line representations of the situation we have just been
-discussing, and make the objects pointlike, as in figure \figref{field-line-concept},
-we find that the field lines begin at one point and terminate on the other. They
-do not literally cross, since they don't pass through one another, but our earlier
-logic still holds, and we find that the field must be undefined at these two points.
-It is undefined because it is infinite. When the field lines flow out of an object,
-we call that object a source of the field, and when they flow in we call it a sink.
-At a pointlike source, the field blows up to infinity.
-<% end_sec('sources-and-sinks') %>
-
-<% begin_sec("Gauss's law, in terms of field lines",0,'gauss-field-lines') %>
-In figures \figref{eg-two-charges-pe} and \figref{field-line-concept}, we labeled
-sources with the symbol $+$ and sinks with $-$. It is natural to want to extend this
-to a description of the \emph{strength} of a source or sink. This leads to
-a pair of statements called Gauss's law, whose character is partly that of a
-definition and partly that of a law of physics. Our initial statement of Gauss's
-law is phrased in terms of the number of field lines passing out through a chosen surface,
-counting a field line that comes inward as minus one.
-
-\begin{lessimportant}[Gauss's law (in terms of field lines)]
-The sources of the electric field are called electric charges. The net number of electric field
-lines passing out through any closed surface is proportional to the charge enclosed by the surface.
-
-The magnetic field has no sources or sinks: the net number of magnetic field lines passing out
-through any closed surface is zero.
-\end{lessimportant}
-
-Electric charge is measured in units of coulombs (C). One of our first requirements for
-electric fields (sec.~\ref{sec:fields-basic-properties}, p.~\pageref{sec:fields-basic-properties})
-was that they be observable. Since we do our observations using tools that are material objects,
-this requires that electric fields interact with matter. Gauss's law is the fundamental principle
-underlying this relationship between matter and electric fields.
-
-<% end_sec('gauss-field-lines') %>
-
-
-<% end_sec('gauss-law') %>
 
 <% begin_hw_sec %>
 <% begin_hw('b-field-dip',nil) %>__incl(hw/b-field-dip)<% end_hw() %>
+
+<% begin_hw('horseshoe-units',nil) %>__incl(hw/horseshoe-units)<% end_hw() %>
+
 
 <% end_hw_sec %>
 
