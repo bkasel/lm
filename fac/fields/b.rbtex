@@ -233,5 +233,54 @@ Electric charge is quantized.
 
 <% end_sec('charge') %>
 
+<% begin_lab("Gauss's law for magnetism",2) %>
+
+\begin{labapparatus}
+magnetic field sensor\\
+box containing unknown magnet\\
+graph paper with 1 cm grid
+\end{labapparatus}
+
+\begin{labgoal}
+Verify Gauss's law for magnetism, using an unknown magnet sealed inside a box.
+\end{labgoal}
+
+The unknown will be provided to you inside a cubical cardboard box about
+17 cm on a side. The magnetic field sensor is a wand like the one shown in
+figure \figref{horseshoe-magnet-components} on p.~\pageref{fig:horseshoe-magnet-components},
+which displays the component of the field parallel to the wand's axis, at a point
+near the tip.
+
+The following technique can be used to determine the flux through one
+side of the box.  Orient the box with that side up. Place the graph
+paper on top of it. Watching the second hand on a clock, get a
+one-second beat going. It may be helpful to have your partner rap
+their knuckles on the table. In the software, initiate a period data
+collection preset to last 17 seconds.\footnote{If using LoggerPro, do
+this using Experiment:Data collection.} Start collecting data, and
+simultaneuosly begin scanning the sensor down the rows of the graph
+paper, covering a 1 cm by 17 cm strip in one second. Use the software
+to average the data, which gives a measure of the total
+flux.\footnote{In LoggerPro, this is done through Analyze:Statistics.}
+(Conceptually flux is really a sum, not an average, but that doesn't
+matter in this experiment because Gauss's law for magnetism doesn't
+depend on whether the fluxes are measured in different units or scaled
+by some arbitrary factor.)
+
+Adding the fluxes through all six sides of the cube provides a test of
+Gauss's law.
+
+Theoretically the validity of Gauss's law should not depend on whether
+there are additional contributions to the magnetic field from the ambient
+field in the room. However, it is easier physically to rotate the box
+rather than scanning the different sides while the box stays in one orientation.
+This means that there can be a contribution from the ambient field, which
+we need to get rid of. This can be achieved by waving the wand in the air
+where the top of the box \emph{would} be, but with the box removed.
+The result is the contribution to each flux measurement from the ambient
+field, so the final result can be corrected by subtracting six times this
+number.
+
+<% end_lab %>
 
 <% end_sec('gauss-law') %>
