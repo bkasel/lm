@@ -196,6 +196,8 @@ If we liked, we could take this as the definition of the electric field (and mos
 This also explains why, in the system of units we have constructed, the units of the electric
 field can be written as newtons per coulomb (N/C).
 
+relegate most of this proof to somewhere else
+
 example: find the force on an electron in an electrical discharge
 
 <% end_sec('force-on-a-charge') %>

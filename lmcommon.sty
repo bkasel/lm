@@ -395,14 +395,15 @@ me permission to use it, but that doesn't mean you have permission to use it.}
   \vfill
   \normalparafmt
 }
-\newenvironment{handson}[3]{
+\newenvironment{handson}[3]{\begin{activity}{#1}{#2}{#3}{Exercise \thechapter#1: }}{\end{activity}}
+\newenvironment{activity}[4]{
     \setcounter{secnumdepth}{0}          % Don't number this section.
     \renewcommand{\printthesection}{}    % Footers should read ``Problems,'' not ``Section X.Y Problems''
     \hwcaptions                          % figures in this section don't have a, b, c, labels
     \setcounter{figure}{0}               %
     \nomarginlayout                      %
     #3                                   % Normally \onecolumn. I don't understand why this is necessary, but it is. If I don't do it, no change in format occurs.
-    \mysection{Exercise \thechapter#1: #2}            % Has the side-effect of generating a page break.
+    \mysection{#4#2}                     % Has the side-effect of generating a page break.
     \setcounter{secnumdepth}{2}          % Start numbering sections again.
                                          % The \setcounter{secnumdepth} stuff is the way the author of titlesec suggests doing
                                          % this. Using section* messes up footers & toc. 
