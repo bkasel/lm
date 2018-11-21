@@ -395,6 +395,20 @@ me permission to use it, but that doesn't mean you have permission to use it.}
   \vfill
   \normalparafmt
 }
+% The lab... stuff is used by FAC.
+\newenvironment{labapparatus}{%
+                \setlength{\saveleftskip}{\leftskip}%
+                \formatlikesubsubsection{Apparatus}\par
+                \addtolength{\leftskip}{\egindent}%
+}{%
+  \par%
+  \setlength{\leftskip}{\saveleftskip}%
+  \par%
+}
+\newenvironment{labgoal}{%
+                \emph{Goal:\/} 
+}{}
+\newcommand{\prelab}{\formatlikesubsubsection{Prelab}}
 \newenvironment{handson}[3]{\begin{activity}{#1}{#2}{#3}{Exercise \thechapter#1: }}{\end{activity}}
 \newenvironment{activity}[4]{
     % #1, label is ignored

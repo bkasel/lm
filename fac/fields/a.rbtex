@@ -827,13 +827,16 @@ following proposed expressions for the energy density of the electric field?
 
 <% begin_lab('Magnetic field of a bar magnet as a function of distance',2) %>
 
-Equipment:
+\begin{labapparatus}
 bar magnet\\
 compass\\
 2-meter stick
+\end{labapparatus}
 
-Goal: Find how the magnetic field of a magnet changes with
+\begin{labgoal}
+Find how the magnetic field of a magnet changes with
 distance along one of the magnet's lines of symmetry.
+\end{labgoal}
 
 You can infer the strength of the bar magnet's field at a
 given point by putting the compass there and seeing how
@@ -892,7 +895,7 @@ and largest distances that it is practical to do. Graph the data on a log-log
 plot (i.e., with the log of $B$ on one axis and the log of $r$ on the other),
 and test whether your hypothesis actually holds.
 
-Prelab
+\prelab
 
 P1. Suppose that
 when the compass is 11.0 cm from the magnet, it is
