@@ -825,6 +825,10 @@ following proposed expressions for the energy density of the electric field?
 
 <% end_hw_sec %>
 
+<% begin_lab('Magnetic field of a bar magnet as a function of distance','b-vs-r') %>
+foo
+<% end_lab %>
+
 <% end_chapter() %>
  %%----------------------------------------------------------
 

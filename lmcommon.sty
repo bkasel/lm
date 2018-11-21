@@ -397,6 +397,7 @@ me permission to use it, but that doesn't mean you have permission to use it.}
 }
 \newenvironment{handson}[3]{\begin{activity}{#1}{#2}{#3}{Exercise \thechapter#1: }}{\end{activity}}
 \newenvironment{activity}[4]{
+    % #1, label is ignored
     \setcounter{secnumdepth}{0}          % Don't number this section.
     \renewcommand{\printthesection}{}    % Footers should read ``Problems,'' not ``Section X.Y Problems''
     \hwcaptions                          % figures in this section don't have a, b, c, labels
