@@ -1132,7 +1132,7 @@ def end_ex
 end
 
 # The following are used in FAC:
-def begin_lab(title,columns=1,label='',type='mini',number='')
+def begin_lab(title,columns=2,label='',type='mini',number='')
   title = alter_titlecase(title,1)
   if type=='mini' then
     typename = 'Minilab'
@@ -1147,6 +1147,16 @@ def begin_lab(title,columns=1,label='',type='mini',number='')
 end
 
 def end_lab
+  print "\\end{activity}"
+end
+
+def begin_notes(columns=2)
+  title = "Notes for chapter \\thechapter"
+  column_command = (columns==1 ? "\\onecolumn" : "\\twocolumn");
+  print "\\begin{activity}{}{#{title}}{#{column_command}}{}"
+end
+
+def end_notes
   print "\\end{activity}"
 end
 

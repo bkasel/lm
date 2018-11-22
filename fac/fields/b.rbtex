@@ -60,8 +60,12 @@ outward, while the field around the amber pointed inward.
 
 By the way, almost any pair of substances will exhibit this kind of effect
 when rubbed or touched together, but amber is particularly good at producing
-a strong field. The Greek word for amber is ``ilektron,'' which is the origin
+a strong field. The Greek word for amber is ``elektron,'' which is the origin
 of English words like ``electricity.''
+
+% The initial ``e'' is an eta, normally transliterated as ``e,'' which in ancient greek was like "met,"
+% later becoming like "neat." So although a modern Greek speaker would say "ilektro" or something,
+% this shouldn't be transliterated as "ilekton."
 
 \begin{eg}{Explaining the attraction}\label{eg:two-charges-pe}
 To explain the attraction between the two objects, we can employ an
@@ -233,7 +237,7 @@ Electric charge is quantized.
 
 <% end_sec('charge') %>
 
-<% begin_lab("Gauss's law for magnetism",2) %>
+<% begin_lab("Gauss's law for magnetism") %>
 
 \begin{labapparatus}
 magnetic field sensor\\

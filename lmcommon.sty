@@ -103,6 +103,25 @@
 
 \newcommand{\degfunit}{\degunit\textup{F}}
 
+%----------------------------------------------------------------------------------
+% Notes for FAC.
+%
+% This could conceivably conflict with a \danger macro defined in the stix fonts.
+% https://tex.stackexchange.com/a/262549/6853
+% https://tex.stackexchange.com/a/18160/6853}
+% The anchor and jumplink macros are from the navigator package, https://tex.stackexchange.com/a/200073/6853 .
+\DeclareFontFamily{U}{stixbbit}{}
+\DeclareFontShape{U}{stixbbit}{m}{it}{<-> stix-mathbbit}{}
+\DeclareRobustCommand{\stixdangerousbend}{%
+  {\usefont{U}{stixbbit}{m}{it}\symbol{"F6}}%
+}
+\newcommand{\dangerousbend}{\rotatebox[origin=c]{-10}{\stixdangerousbend}}
+\newcommand{\note}[1]{\link{note-#1}{\dangerousbend\pageref{note:#1}}\label{notebackref:#1}\anchor{anchor-noteback-#1}}
+\newcommand{\notetext}[2]{\textbf{\link{noteback-#1}{\dangerousbend\pageref{notebackref:#1}}\label{note:#1}\anchor{anchor-note-#1}\quad{}#2}\par}
+% ... first arg is label, second is title
+\newcommand{\notesummary}[1]{\emph{#1}\par}
+%----------------------------------------------------------------------------------
+
 % ----------------
 \newcommand{\zerosizebox}[3]{
   \makebox[0mm][l]{%
@@ -410,6 +429,7 @@ me permission to use it, but that doesn't mean you have permission to use it.}
 }{}
 \newcommand{\prelab}{\formatlikesubsubsection{Prelab}}
 \newenvironment{handson}[3]{\begin{activity}{#1}{#2}{#3}{Exercise \thechapter#1: }}{\end{activity}}
+% Activity environment is used by exercises in LM et al., minilabs in FAC, notes section in FAC.
 \newenvironment{activity}[4]{
     % #1, label is ignored
     \setcounter{secnumdepth}{0}          % Don't number this section.

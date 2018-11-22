@@ -625,6 +625,7 @@ then understood as the infinitesimal energy contained within this volume.
 <% end_sec('energy-in-fields') %>
 
 <% begin_sec("Units of the fields",0,'units-of-the-fields') %>
+
 If we had the luxury of being the first people to define the units for
 the fields, we would be free to choose $k=1$, or even $1/8\pi k=1$,
 which would simplify these expressions; the electric field would then
@@ -648,12 +649,15 @@ interactions.  The SI units of the electric field can be written as
 newtons per coulomb (N/C) or as volts per meter (V/m), and these
 expressions are equivalent, 1 N/C=1 V/m.
 
-The Coulomb constant is
-$k=8.987551787368\times10^9\ \nunit\unitdot\munit^2/\zu{C}^2$ in SI units.  These
-days the SI units have been redefined so that this numerical value of
-$k$ is exact. It is also a pleasant coincidence that it can be
-approximated as $9\times10^9$ while incurring an error of only 0.1\%,
-which is good enough for almost all applications. 
+The Coulomb constant is approximately $k=8.988\times10^9\
+\nunit\unitdot\munit^2/\zu{C}^2$ in SI units.  The SI is set up in
+such a way that $k$'s numerical value is equal to $10^{-7}c^2$, and
+since $c$ has a defined value these days in the SI, $k$ also has a
+defined value (which takes 17 decimal digits to express exactly).
+Because of the same pleasant coincidence that makes $c$ so close to
+$3\times10^8\ \munit/\sunit$, $k$ can be approximated as $9\times10^9$
+while incurring an error of only 0.1\%, which is good enough for
+almost all applications. 
 
 When analyzing the units of an expression, we usually break the defined
 units down into the more basic ones, e.g., in a mechanical calculation
@@ -678,15 +682,6 @@ that they only seem to define the magnitudes of the fields, not their
 directions. Actually, the following example shows that they define more
 than they seem to define.
 
-<% marg(-10) %>
-<%   
-  fig(
-    'horseshoe-magnets-polarity',
-    %q{Example \ref{eg:horseshoe-magnets-polarity}.}
-  )
-%>
-<% end_marg %>
-
 \begin{eg}{Direction of the field of a horseshoe magnet}\label{eg:horseshoe-magnets-polarity}
 Figure \subfigref{horseshoe-magnets-polarity}{1} shows the horseshoe magnet of
 figure \figref{horseshoe-magnet-components} on p.~\pageref{fig:horseshoe-magnet-components},
@@ -705,6 +700,13 @@ the total field is $2B$, or they are reversed relative to one another,
 giving zero field in the midplane.
 
 <% marg(300) %>
+<%   
+  fig(
+    'horseshoe-magnets-polarity',
+    %q{Example \ref{eg:horseshoe-magnets-polarity}.}
+  )
+%>
+\spacebetweenfigs
 <%   
   fig(
     'horseshoe-magnets-polarity-destructive',
@@ -778,20 +780,9 @@ and this is probably because the magnetic field in figure \figref{horseshoe-magn
 rather far away from the magnet in order to keep from overloading the sensor.
 \end{eg}
 
-We can abstract out the insight provided by example \ref{eg:horseshoe-magnets-polarity}
-in the following way. If we have a way of measuring the magnitude of a field, say
-the electric field, then we automatically get a way of determining the orientation
-of any electric field vector $\vc{E}$ in relation to some chosen reference field $\vc{E}_\zu{o}$.
-This follows because we are free to superpose the two fields in any relative orientation
-we like, producing a total field $\vc{E}+\vc{E}_\zu{o}$. The squared magnitude of this
-total field is $(\vc{E}+\vc{E}_\zu{o})\cdot(\vc{E}+\vc{E}_\zu{o})$, which we can measure.
-But this equals $\vc{E}\cdot\vc{E}+\vc{E}_\zu{o}\cdot\vc{E}_\zu{o}+2|\vc{E}||\vc{E}_\zu{o}|\cos\theta$,
-where $\theta$ is the angle between the vectors. (This is essentially the law of cosines, stated
-in vector language.) Since all of the quantities in these expressions are assumed to be measurable,
-we can determined the unknown $\theta$, which gives the orientation of $\vc{E}$ relative
-to $\vc{E}_\zu{o}$.
-
-We therefore have a way of defining any field's direction relative to the direction
+Generalizing the idea of example \ref{eg:horseshoe-magnets-polarity}
+(details \note{field-orientation-defined}),
+we can define any field's direction relative to the direction
 of any other field. What we do not yet have is an absolute definition of the direction of
 a field, and in particular there is an ambiguity because we could always flip the direction
 of all our field vectors, simply as a matter of definition. This ambiguity will be resolved
@@ -816,6 +807,32 @@ following proposed expressions for the energy density of the electric field?
 
 <% end_sec('energy-in-fields-and-units') %>
 
+<% begin_notes %>
+
+\notetext{field-orientation-defined}{Defining the direction of a field}
+\notesummary{If we know the energy density in terms of the field,
+we automatically also get a definition of one field's direction relative to another's.}
+We can abstract out the insight
+provided by example \ref{eg:horseshoe-magnets-polarity}, p.~\pageref{eg:horseshoe-magnets-polarity}, in the
+following way. If we have a way of measuring the magnitude of a field,
+say the electric field, then we automatically get a way of determining
+the orientation of any electric field vector $\vc{E}$ in relation to
+some chosen reference field $\vc{E}_\zu{o}$.  This follows because we
+are free to superpose the two fields in any relative orientation we
+like, producing a total field $\vc{E}+\vc{E}_\zu{o}$. The squared
+magnitude of this total field is
+$(\vc{E}+\vc{E}_\zu{o})\cdot(\vc{E}+\vc{E}_\zu{o})$, which we can
+measure.  But this equals
+$\vc{E}\cdot\vc{E}+\vc{E}_\zu{o}\cdot\vc{E}_\zu{o}+2|\vc{E}||\vc{E}_\zu{o}|\cos\theta$,
+where $\theta$ is the angle between the vectors. (This is essentially
+the law of cosines, stated in vector language.) Since all of the
+quantities in these expressions are assumed to be measurable, we can
+determined the unknown $\theta$, which gives the orientation of
+$\vc{E}$ relative to $\vc{E}_\zu{o}$. 
+
+
+<% end_notes %>
+
 
 <% begin_hw_sec %>
 <% begin_hw('b-field-dip',nil) %>__incl(hw/b-field-dip)<% end_hw() %>
@@ -825,7 +842,7 @@ following proposed expressions for the energy density of the electric field?
 
 <% end_hw_sec %>
 
-<% begin_lab('Magnetic field of a bar magnet as a function of distance',2) %>
+<% begin_lab('Magnetic field of a bar magnet as a function of distance') %>
 
 \begin{labapparatus}
 bar magnet\\
