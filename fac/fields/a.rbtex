@@ -528,6 +528,20 @@ magnitude and direction of the field. In
 \subfigref{bar-magnet-field-lines}{3}, we instead have Faraday's
 favored representation in terms of \emph{field lines}. 
 
+The two pictures carry the same information. Given the sea of arrows
+representation, we essentially just link up the arrows to form the
+field lines (\note{link-up-field-vectors}).  Given the field lines, we can also find the field
+vectors: each field vector is tangent to the field line at the given
+point, and its magnitude is proportional to the \emph{density} of the
+field lines. We'll have more to say in ch.~\ref{ch:gauss-law} about
+why this works (it's not obvious), but for now we'll just note that it
+does. For example, the field lines are very dense on the interior of
+the bar magnet in figure \subfigref{bar-magnet-field-lines}{3}, so the
+field is very strong there. Near the top of
+\subfigref{bar-magnet-field-lines}{3}, the field lines are far apart,
+and indeed if we check back in \subfigref{bar-magnet-field-lines}{2},
+the field vectors are very weak there. 
+
 <% marg() %>
 <%
   fig(
@@ -541,12 +555,13 @@ favored representation in terms of \emph{field lines}.
 %>
 <% end_marg %>
 
-The two pictures carry the same information. Given the sea of arrows
-representation, we essentially just link up the arrows to form the field lines.
-Given the field lines, we can also find the field vectors: each field vector is
-tangent to the field line at the given point, and its magnitude is proportional
-to the \emph{density} of the field lines. For example, the field lines are very
-dense on the interior of the bar magnet, so the field is very strong there.
+Ch.~\ref{ch:gauss-law} says more about how to define the density of
+field lines numerically. Because space has three dimensions and paper
+only two, we will often ``fake it'' by drawing cross-sections like figure
+\figref{bar-magnet-field-lines}. This only works if the lines stay
+within the plane of the page, and even then we should not expect to get more than
+a rough conceptual idea of what actually happens in three dimensions, partly
+because density means something different in two dimensions than in three (figure \figref{bamboo}).
 
 Field lines should not normally cross.\label{field-lines-never-cross}
 If they did cross, then
@@ -562,7 +577,15 @@ The earth's gravitational field is approximately
 uniform on small scales, but it does change its direction appreciably if we move far
 enough around the curve of the earth's surface, and its strength also falls off with elevation.
 
-<% marg() %>
+<% marg(50) %>
+<%   
+  fig(
+    'bamboo',
+    %q{In three dimensions, the density of bamboo stalks would be measured as stalks
+       per unit area, while in two dimensions we would have stalks per unit length.}
+  )
+%>
+\spacebetweenfigs
 <%   
   fig(
     'uniform-field',
@@ -785,7 +808,7 @@ Generalizing the idea of example \ref{eg:horseshoe-magnets-polarity}
 we can define any field's direction relative to the direction
 of any other field. What we do not yet have is an absolute definition of the direction of
 a field, and in particular there is an ambiguity because we could always flip the direction
-of all our field vectors, simply as a matter of definition. This ambiguity will be resolved
+of all our field vectors, simply as a matter of definition. This final ambiguity will be resolved
 in section \ref{sec:gauss-law}.
 
 <% end_sec('direction-of-field') %>
@@ -808,6 +831,23 @@ following proposed expressions for the energy density of the electric field?
 <% end_sec('energy-in-fields-and-units') %>
 
 <% begin_notes %>
+
+\notetext{link-up-field-vectors}{Linking up field vectors}
+\notesummary{A more careful definition of what it means to ``link up'' the field vectors to form field lines.}
+To define this more rigorously, imagine starting at a certain point in an electric field $\vc{E}(x,y,z)$.
+We now move some small distance $\epsilon$ in the direction of the field, to a new point. At this new point,
+we calculate the new and slightly different electric field, move $\epsilon$ in that direction, and continue
+indefinitely. It is intuitively plausible that if the field is smooth and well behaved,
+then in the limit as $\epsilon\rightarrow0$, the
+path connecting these points converges
+to a uniquely defined curve such that the elecric field is everywhere tangent to the curve.
+
+The thing that we have constructed is called the integral curve of a vector field,
+and its existence and uniqueness, for smooth fields, follows from standard theorems about
+first-order differential equations. Physically, we may often consider fields that are not
+so smooth and well-behaved. For example, the field of a point charge
+(ch.~\ref{ch:gauss-law}) blows up to infinity at the point where the charge is, and
+the field lines can't be extended through that point.
 
 \notetext{field-orientation-defined}{Defining the direction of a field}
 \notesummary{If we know the energy density in terms of the field,

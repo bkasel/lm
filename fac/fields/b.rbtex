@@ -13,14 +13,15 @@
 <% begin_sec("Gauss's law",0,'gauss-law') %>
 <% begin_sec("Resolving the flip-the-arrowsheads ambiguity",0,'flip-arrowheads') %>
 Continuing the train of thought from section
-\ref{sec:energy-in-fields-and-units}, it would seem that by defining
-expressions for the energy density of the fields, we have effectively
-provided an operational definition for the fields, provided that we
-have some reference field somewhere that has a known direction. In
-fact, this reference field would be needed only in order to resolve
-the ambiguity that exists because we could always, e.g., define some
-field $\vc{F}=-\vc{E}$, which is the same as the electric field but
-with the opposite direction. This would be like flipping the
+\ref{sec:energy-in-fields-and-units} and
+\notewithoutbackref{field-orientation-defined}, it would seem that by
+defining expressions for the energy density of the fields, we have
+effectively provided an operational definition for the fields,
+provided that we have some reference field somewhere that has a known
+direction. In fact, this reference field would be needed only in order
+to resolve the ambiguity that exists because we could always, e.g.,
+define some field $\vc{F}=-\vc{E}$, which is the same as the electric
+field but with the opposite direction. This would be like flipping the
 arrowheads on all of our drawings. This ``flip-the-arrowheads''
 ambiguity is entirely an arbitrary matter of definition, and for
 electric fields it was effectively fixed by Benjamin Franklin around
@@ -41,9 +42,9 @@ probably not have recognized).
 <% end_marg %>
 
 It would have been a nuisance if Franklin had had to maintain some
-physical artifact in Philadelphia that had some magnetic field
+physical artifact in Philadelphia that had some electric field
 surrounding it, forcing other people to come there in order to consult
-it.What he did instead was to specify a procedure that could be
+it. What he did instead was to specify a procedure that could be
 followed, using materials commonly available at the time, in order to
 reproduce his standard. His prescription was to rub a piece of amber
 with wool. (Figures \subfigref{twotapes-fields}{1} and
@@ -67,8 +68,11 @@ of English words like ``electricity.''
 % later becoming like "neat." So although a modern Greek speaker would say "ilektro" or something,
 % this shouldn't be transliterated as "ilekton."
 
+\pagebreak
+
 \begin{eg}{Explaining the attraction}\label{eg:two-charges-pe}
-To explain the attraction between the two objects, we can employ an
+To explain the attraction between two objects in an observation like the one in
+figure \figref{twotapes-fields}, we can employ an
 argument very similar to the one used in the case of the two horseshoe
 magnets, example \ref{eg:horseshoe-magnets-polarity},
 p.~\pageref{eg:horseshoe-magnets-polarity}.  We idealize each of the
@@ -95,7 +99,7 @@ In the region indicated approximately by the shading in the figure,
 the superposing fields of the two charges undergo partial cancellation
 because they are in opposing directions. The energy in the shaded
 region is reduced by this effect. In the unshaded region, the fields
-reinforce, and the energy is increased. 
+reinforce, so the energy there is increased. 
 
 <% marg(300) %>
 <%   
@@ -106,7 +110,7 @@ reinforce, and the energy is increased.
 %>
 <% end_marg %>
 
- It would be quite a project to do the integral in order to find the
+It would be quite a project to do the integral in order to find the
 energy gained and lost in the two regions, but it is fairly easy to
 convince oneself that the energy is less when the charges are closer,
 as expected from interpolation between $U_1$ and $U_2$. This is
@@ -127,17 +131,135 @@ region and enlarges the low-energy shaded region.
 
 <% begin_sec("Sources and sinks",0,'sources-and-sinks') %>
 
-We reasoned on p.~\pageref{field-lines-never-cross} that field lines can never
-cross at a point where the field is well defined. However, if we draw both the
-sea-of-arrows and field-line representations of the situation we have just been
-discussing, and make the objects pointlike, as in figure \figref{field-line-concept},
-we find that the field lines begin at one point and terminate on the other. They
-do not literally cross, since they don't pass through one another, but our earlier
-logic still holds, and we find that the field must be undefined at these two points.
-It is undefined because it is infinite. When the field lines flow out of an object,
+When the field lines flow out of an object,
 we call that object a source of the field, and when they flow in we call it a sink.
-At a pointlike source, the field blows up to infinity.
+The electric field has sources and sinks, but as far as we are able to tell, there
+are no magnetic sources or sinks in our universe.
+We can quantify the strength of an electric-field source
+by assigning an object a number called its electric charge,
+which is, roughly speaking, proportional to the number of field lines that begin or end on it.
+Of course the number of field lines is actually infinite, and it's just that we're
+picking a certain finite and representative sample of them to draw in our pictures,
+so a little more work is needed in order to make this into a real definition. We will
+do so later in the chapter. The SI unit of charge is the coulomb (C). Positive charges
+are conventionally assigned to sources, negative to sinks. Material particles such as
+protons and electrons have charge. The electric and magnetic fields are themselves
+uncharged, and are not made of material particles.
+
+If we consider the possibility of pointlike charged particles, then in a figure like
+\figref{field-line-concept}, we have a bunch of electric field lines that all either
+begin or end at the same point. This is not, as it might seem, in contradiction with
+our proof on p.~\pageref{field-lines-never-cross} that field lines never cross
+(\note{field-lines-terminating}).
+
 <% end_sec('sources-and-sinks') %>
+
+
+<% begin_sec("Gauss's law, in terms of field lines, in a vacuum",0,'gauss-field-lines-vac') %>
+It is natural to want to know how the electric field of a particle
+such as a proton falls off with distance. This would be a law of
+physics that would play a role analogous to that of Newton's law of
+gravity in the case of the gravitational field. But in fact Newton's
+law of gravity is false, and any law of this type \emph{must}
+ultimately be false (or at best be some kind of approximation), for
+the reasons described in section \ref{sec:time},
+p.~\pageref{sec:time}. It is not possible for cause and effect to
+propagate faster than $c$, so we can't really have the kind of
+instantaneous action at a distance described by Newton's law of
+gravity, which has no $t$ in it. The shortcomings of Newton's law of gravity
+turn out to be relatively inconsequential unless you're a physicist studying
+phenomena like black holes and gravitational waves, but the corresponding issues
+in electricity and magnetism are very real and practical. If electricity and magnetism
+worked the way Newton envisioned, then for example radio wouldn't exist.
+<%
+  fig(
+    'new-york-field-line-bundle',
+    %q{A bundle of gravitational field lines rise up through New York City.},
+    {'width'=>'fullpage'}
+  )
+%>
+
+Since gravity is more familiar, let's see how we could find an
+alternative way of describing the strength of gravity that would not
+fall prey to these objections.  In figure
+\subfigref{new-york-field-line-bundle}{1}, we see a bundle of
+gravitational field lines rising up through New York City. The earth
+is the source of these field lines, but we are looking at them outside
+the earth, which means that we are contemplating the behavior of
+gravitational fields in a vacuum. (The mass of the air is negligible.)
+Because the earth is round, the field lines spread farther apart as they
+rise. At the bottom of the picture, near the streets of Manhattan, these
+lines pass through a square with a certain area, while farther up, at the
+top of the drawing, the same number of lines pass through a square with
+a larger area.
+
+Now the area of any geometrical shape is proportional to the square
+of its linear dimensions, so these areas are proportional to $r^2$, where $r$
+is the distance from the center of the earth. (If this doesn't seem clear,
+it may help to imagine the situation for complete spherical surfaces.) The density
+of the field lines is the strength of the field, so we conclude that the earth's
+gravitational field falls off as $1/r^2$, as in Newton's law of gravity.
+
+This derivation is so pat that it makes it seem a little mysterious how any
+field could \emph{not} have $1/r^2$ behavior, and in fact there are such fields,
+including the fields associated with nuclear forces. To see how this would work,
+consider figures \subfigref{new-york-field-line-bundle}{2} and \subfigref{new-york-field-line-bundle}{3}.
+In \subfigref{new-york-field-line-bundle}{2} we have just simplified
+\subfigref{new-york-field-line-bundle}{1} a little, making it easier to see
+what's going on by drawing only a single flat fan of field lines --- but the other
+ones in front and behind are still there. We can have a field that falls off faster
+than $1/r^2$, but then we would need a picture like \subfigref{new-york-field-line-bundle}{3},
+where some of the field lines simply die out, randomly, at some point in the air. In this example,
+we imagine that they are not terminating on material particles, but simply at random points in
+empty space. Figure \subfigref{new-york-field-line-bundle}{3} is not inherently silly, and
+in fact it is a pretty good representation of a nuclear field, but it is not how electric and
+magnetic fields work. We state this as a law of physics.
+
+\begin{lessimportant}[Gauss's law, in terms of field lines, in a vacuum]
+In a vacuum, electric and magnetic field lines never begin or end.
+\end{lessimportant}
+
+<% marg() %>
+<%   
+  fig(
+    'b-div-violation',
+    %q{A field that violates Gauss's law in a vacuum.}
+  )
+%>
+<% end_marg %>
+It seems as though Newton's law of gravity is logically equivalent to
+Gauss's law for gravity, so that it wouldn't matter much which one we
+used. But the two laws make different predictions in cases where masses
+are moving around, and they also have a very different character. Newton's law
+of gravity is \emph{global}: it says that mass \emph{here} has an
+effect right \emph{now} on mass \emph{there}, possibly very far away.
+Gauss's law, on the other hand, is \emph{local}.
+
+To see the
+distinction, consider the naughty field shown in figure
+\figref{b-div-violation}. Most of the field lines form closed loops,
+which is legal according to Gauss's law and as we will see is typical
+behavior for a magnetic field. But one of the field lines is
+disobeying Gauss's law: it starts at a point inside the tiny box
+marked 1. Even if we were restricted to a keyhold view through an
+extremely powerful microscope, we could still locate the violation if
+we carefully scanned the entire figure. 
+
+As a linguistic analogy for this distinction between local and global
+laws, consider this sentence: MY KATS EATS \reflectbox{R}ATS. There
+are three errors, but if we're restricted to looking at the letters
+one at a time, without the larger context, the only one we can detect
+is the flipped letter ``R.'' The rule against flipping letters is a
+local law. 
+
+It is true that there are other ways to detect the violation in
+\figref{b-div-violation}. We could, for example, check the larger box
+labeled 2, and note that although no field lines pass in through the
+edges of this box, one passes out. So a local law can lead to global
+predictions, and in a way we have the best of both worlds. 
+
+
+<% end_sec('gauss-field-lines-vac') %>
 
 <% begin_sec("Gauss's law, in terms of field lines",0,'gauss-field-lines') %>
 In figures \figref{eg-two-charges-pe} and \figref{field-line-concept}, we labeled
@@ -204,6 +326,7 @@ relegate most of this proof to somewhere else
 
 example: find the force on an electron in an electrical discharge
 
+
 <% end_sec('force-on-a-charge') %>
 
 <% begin_sec("Charge",0,'charge') %>
@@ -225,6 +348,8 @@ atoms are made of charged particles (protons and electrons), and the electrons i
 are orbiting at a significant fraction of the speed of light. If the charge of an electron depended
 on its state of motion, then dropping an electron into orbit in an atom would change its charge,
 but experiments rule out such a change to the level of one part in $10^{20}$.
+
+See text in SR 1.3.1.
 <% end_sec('charge-invariant') %>
 
 <% begin_sec("Conservation of charge",0,'charge-conserved') %>
@@ -236,6 +361,23 @@ Electric charge is quantized.
 <% end_sec('charge-quantized') %>
 
 <% end_sec('charge') %>
+
+<% begin_notes %>
+
+\notetext{field-lines-terminating}{Field lines terminating at a point}
+\notesummary{Field lines don't cross. This is not in contradiction with the fact that multiple
+field lines can begin or end at a point charge.}
+We reasoned on p.~\pageref{field-lines-never-cross} that field lines
+can never cross at a point where the field is well defined. However,
+if we draw the field-line representation of positive and negative point charges, as in
+figure \figref{field-line-concept} on p.~\pageref{fig:field-line-concept},
+we find that the field lines begin at one point and terminate on the
+other. They do not literally cross, since they don't pass through one
+another, but our earlier logic still holds, and we find that the field
+must be undefined at these two points.  It is undefined because it is
+infinite.  At a pointlike source, the field blows up to infinity. 
+
+<% end_notes %>
 
 <% begin_lab("Gauss's law for magnetism") %>
 
