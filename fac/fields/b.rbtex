@@ -155,7 +155,7 @@ our proof on p.~\pageref{field-lines-never-cross} that field lines never cross
 <% end_sec('sources-and-sinks') %>
 
 
-<% begin_sec("Gauss's law, in terms of field lines, in a vacuum",0,'gauss-field-lines-vac') %>
+<% begin_sec("Gauss's law for field lines, in a vacuum",0,'gauss-field-lines-vac') %>
 It is natural to want to know how the electric field of a particle
 such as a proton falls off with distance. This would be a law of
 physics that would play a role analogous to that of Newton's law of
@@ -170,7 +170,7 @@ gravity, which has no $t$ in it. The shortcomings of Newton's law of gravity
 turn out to be relatively inconsequential unless you're a physicist studying
 phenomena like black holes and gravitational waves, but the corresponding issues
 in electricity and magnetism are very real and practical. If electricity and magnetism
-worked the way Newton envisioned, then for example radio wouldn't exist.
+worked the way Newton thought the universe worked, radio wouldn't exist.
 <%
   fig(
     'new-york-field-line-bundle',
@@ -215,7 +215,7 @@ empty space. Figure \subfigref{new-york-field-line-bundle}{3} is not inherently 
 in fact it is a pretty good representation of a nuclear field, but it is not how electric and
 magnetic fields work. We state this as a law of physics.
 
-\begin{lessimportant}[Gauss's law, in terms of field lines, in a vacuum]
+\begin{lessimportant}[Gauss's law for field lines, in a vacuum]
 In a vacuum, electric and magnetic field lines never begin or end.
 \end{lessimportant}
 
@@ -238,8 +238,8 @@ Gauss's law, on the other hand, is \emph{local}.
 To see the
 distinction, consider the naughty field shown in figure
 \figref{b-div-violation}. Most of the field lines form closed loops,
-which is legal according to Gauss's law and as we will see is typical
-behavior for a magnetic field. But one of the field lines is
+which is legal according to Gauss's law (and typical
+behavior for a magnetic field). But one of the field lines is
 disobeying Gauss's law: it starts at a point inside the tiny box
 marked 1. Even if we were restricted to a keyhold view through an
 extremely powerful microscope, we could still locate the violation if
@@ -261,60 +261,47 @@ predictions, and in a way we have the best of both worlds.
 
 <% end_sec('gauss-field-lines-vac') %>
 
-<% begin_sec("Gauss's law, in terms of field lines",0,'gauss-field-lines') %>
-In figures \figref{eg-two-charges-pe} and \figref{field-line-concept}, we labeled
-sources with the symbol $+$ and sinks with $-$. It is natural to want to extend this
-to a description of the \emph{strength} of a source or sink. This leads to
-a pair of statements called Gauss's law, whose character is partly that of a
-definition and partly that of a law of physics. Our initial statement of Gauss's
-law is phrased in terms of the number of field lines passing out through a chosen surface,
-counting a field line that comes inward as minus one.
-
-\begin{lessimportant}[Gauss's law (in terms of field lines)]
-The sources of the electric field are called electric charges. The net number of electric field
-lines passing out through any closed surface is proportional to the charge enclosed by the surface.
-
-The magnetic field has no sources or sinks: the net number of magnetic field lines passing out
-through any closed surface is zero.
-\end{lessimportant}
-
-Electric charge is notated $q$ and measured in units of coulombs (C). One of our first requirements for
-electric fields (sec.~\ref{sec:fields-basic-properties}, p.~\pageref{sec:fields-basic-properties})
-was that they be observable. Since we do our observations using tools that are material objects,
-this requires that electric fields interact with matter. Gauss's law is the fundamental principle
-underlying this relationship between matter and electric fields.
-
-Gauss's law for the magnetic field is a little sad and depressing. It claims that, for reasons
-unknown to us, our universe does not come equipped with objects having ``magnetic charge.''
-Such an object would be referred to as a magnetic \emph{monopole}. It is in fact possible
-that, at some point in the future, we will discover magnetic monopoles, perhaps in cosmic rays
-or particle accelerator experiments.
-
-<% end_sec('gauss-field-lines') %>
+<% begin_sec("Field of a point charge at rest",0,'field-of-point-charge') %>
+Our argument that the earth's field was proportional to $1/r^2$ depended on
+only two ingredients, Gauss's law and spherical symmetry. The spherical symmetry existed
+because the earth is (approximately) a sphere and because we were discussing the earth in
+the frame where it is at rest. If we consider a charged particle such as an electron
+as an idealized pointlike object, and discuss it in the frame of reference where it
+is at rest, then spherical symmetry again holds, and since Gauss's law is also valid
+for electric fields, we obtain exactly the same result. The electric field surrounding
+a point charge is proportional to $1/r^2$, where $r$ is the distance from the charge. If
+the charge is $q$, then filling in the constants of proportionality gives
+\begin{equation*}
+  E = \frac{kq}{r^2}
+\end{equation*}
+for the magnitude of the field. Here $q$ is the charge in coulombs, and $k$ is the same
+Coulomb constant that we originally introduced in the context of the energy density of
+a field. It's not hard to show that the same $k$ should pop up in the way it does in
+this equation and in the equation for the energy density; proving the factors of $\pi$ and
+such is a little extra work, and will be more easily taken care of later, when we have
+other techniques at our disposal. It may sometimes be useful to express not just the magnitude
+but also the direction of the electric field in this equation. We let $\hat{\vc{r}}$ be the
+unit vector in the direction from the charge to the point at which the electric field is
+being evaluated. Then the electric field at that point is
+\begin{equation*}
+  \vc{E} = \frac{kq}{r^2}\hat{\vc{r}}.
+\end{equation*}
+In the case where $q<0$, the scalar factor is negative, and the electric field points inward.
+<% end_sec('field-of-point-charge') %>
 
 <% begin_sec("Electric force on a charge",0,'force-on-a-charge') %>
-In cases like example \ref{eg:horseshoe-force} on p.~\pageref{eg:horseshoe-force} and
-example \ref{eg:two-charges-pe} on p.~\pageref{eg:two-charges-pe}, we have been able to explain
-the force between two objects in terms of the energy of their superposed fields. Let's
-use a similar style of reasoning to think about the force acting on an object with charge $q$
-when it is inserted into an electric field $\vc{E}$. We imagine that this ambient field is
+In addition to describing the electric field made by a charge, it is natural to consider
+the action of some externally imposed field on a charge.
+We imagine that this ambient field is
 created by some other objects, and that the charge $q$ is small enough so that its own reaction
 on these other objects is not enough to disturb them. That is, the background contribution
 $\vc{E}$ to the field does not change just because we insert $q$. When $q$ is small enough
-to make this a good approximation, we call it a test charge. Now when we insert the test charge,
-the total field at any given point in space becomes the vector sum $\vc{E}+\vc{E}_q$,
-where $\vc{E}_q$ is the field contributed by the test charge itself. The energy density at this
-point is proportional to the squared magnitude
-of this field, $(\vc{E}+\vc{E}_q)\cdot(\vc{E}+\vc{E}_q)$. Multiplying this expression
-out, we get terms $\vc{E}\cdot\vc{E}$ and $\vc{E}_q\cdot\vc{E}_q$, which are constants
-and therefore don't have any effect on our analysis, but in addition we get a term
-$2\vc{E}\cdot\vc{E}_q$. It is only this latter term than can change if we move $q$ around,
-so the force $\vc{F}$ on $q$ is proportional to it. Since $\vc{E}_q$ is proportional to $q$
-(as we can easily prove by Gauss's law), it follows that $\vc{F}$ is proportional both to
-$\vc{E}$ and to $q$. We conclude that $\vc{F}\propto q\vc{E}$. Since we have not yet fixed
-our definition of the Coulomb, we are free to choose any constant of proportionality in this
-relationship. We choose it to be 1, so that the electric force on a test charge $q$, from
-an ambient field $\vc{E}$, is
+to make this a good approximation, we call it a test charge. 
+In cases like example \ref{eg:horseshoe-force} on p.~\pageref{eg:horseshoe-force} and
+example \ref{eg:two-charges-pe} on p.~\pageref{eg:two-charges-pe}, we have been able to explain
+the force between two objects in terms of the energy of their superposed fields.
+Using a similar style of reasoning (\note{force-on-point-charge}), we find that
+the force of an electric field on a test charge is
 \begin{equation*}
   \vc{F}= q\vc{E}.
 \end{equation*}
@@ -322,12 +309,33 @@ If we liked, we could take this as the definition of the electric field (and mos
 This also explains why, in the system of units we have constructed, the units of the electric
 field can be written as newtons per coulomb (N/C).
 
-relegate most of this proof to somewhere else
+
 
 example: find the force on an electron in an electrical discharge
 
 
 <% end_sec('force-on-a-charge') %>
+
+<% begin_sec("Coulomb's law",0,'coulomb-law') %>
+Suppose that we have \emph{two} point charges, $q_1$ and $q_2$, both at rest and separated by a distance
+$r$. The electric field is the sum of the fields contributed by the two charges. If we want to find the
+force acting on one of the charges, say 2, then it doesn't make sense to try to take into account
+the contribution to the field from charge 2 itself (\note{self-force}). Let $\hat{\vc{r}}_{21}$
+be the unit vector in the direction from 1 to 2. The contribution to the field
+from charge 1, at the position of charge 2, is $\vc{E} = (kq_1/r^2)\hat{\vc{r}}_{21}$, and
+the resulting force on 2 is
+\begin{equation*}
+  \vc{F}_2 = \frac{kq_1q_2}{r^2}\hat{\vc{r}}_{21}.
+\end{equation*}
+For the force $\vc{F}_1$ acting on 1, we have the same expression but with
+$\hat{\vc{r}}_{21}=-\hat{\vc{r}}_{21}$. Newton's third law applies, which is not to be taken
+for granted and is not necessarily true if the charges are moving or have been moving at some time in
+the past.
+
+This equation is known as Coulomb's law. It plays the same role in electrical interactions that
+Newton's laws of gravity plays in gravity, and it has the same form, but because charge, unlike
+mass, can have either sign, electrical forces can be either attractive or repulsive.
+<% end_sec('coulomb-law') %>
 
 <% begin_sec("Charge",0,'charge') %>
 
@@ -376,6 +384,24 @@ other. They do not literally cross, since they don't pass through one
 another, but our earlier logic still holds, and we find that the field
 must be undefined at these two points.  It is undefined because it is
 infinite.  At a pointlike source, the field blows up to infinity. 
+
+\notetext{force-on-point-charge}{Electric force on a test charge}
+\notesummary{The force on a test charge is $\textbf{F}=q\textbf{E}$.}
+When we insert a test charge in an ambient field,
+the total field at any given point in space becomes the vector sum $\vc{E}+\vc{E}_q$,
+where $\vc{E}_q$ is the field contributed by the test charge itself. The energy density at this
+point is proportional to the squared magnitude
+of this field, $(\vc{E}+\vc{E}_q)\cdot(\vc{E}+\vc{E}_q)$. Multiplying this expression
+out, we get terms $\vc{E}\cdot\vc{E}$ and $\vc{E}_q\cdot\vc{E}_q$, which are constants
+and therefore don't have any effect on our analysis, but in addition we get a term
+$2\vc{E}\cdot\vc{E}_q$. It is only this latter term than can change if we move $q$ around,
+so the force $\vc{F}$ on $q$ is proportional to it. Since $\vc{E}_q$ is proportional to $q$
+(as we can easily prove by Gauss's law), it follows that $\vc{F}$ is proportional both to
+$\vc{E}$ and to $q$. We conclude that $\vc{F}\propto q\vc{E}$. Since we have not yet fixed
+our definition of the Coulomb, we are free to choose any constant of proportionality in this
+relationship. We choose it to be 1, so that the electric force on a test charge $q$, from
+an ambient field $\vc{E}$, is $\vc{F}= q\vc{E}$.
+
 
 <% end_notes %>
 
