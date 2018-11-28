@@ -4278,6 +4278,7 @@ become a famous physicist.
 <% begin_hw('three-d-forbidden') %>__incl(hw/three-d-forbidden)<% end_hw %>
 
 <% begin_hw('three-d-box') %>
+\emph{This problem generalizes the one-dimensional result from problem \ref{hw:particleinabox}.}\\
 Find the energy levels of a particle in a three-dimensional rectangular box with sides
 of length $a$, $b$, and $c$.\answercheck
 <% end_hw %>

@@ -453,6 +453,14 @@ The result is the contribution to each flux measurement from the ambient
 field, so the final result can be corrected by subtracting six times this
 number.
 
+Next: Nobody works by drawing field lines. We want to state G's law in terms
+of fields. This is a hassle in 3 dim because it's not obvious how to draw the
+sum of two field-line diagrams. But doing G's law in 3 dim with vectors is
+complicated. For insight, do it in 1 dim.
+
+Application: harshaw's theorem in one dimension for electric fields.
+Show photos of magnets, just make loose analogy.
+
 <% end_lab %>
 
 <% end_sec('gauss-law') %>
