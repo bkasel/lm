@@ -123,8 +123,8 @@ region and enlarges the low-energy shaded region.
 <%
   fig(
     'field-line-concept',
-    %q{The sea-of-arrows and field-line representation of the field surrounding a pointlike source and 
-       a pointlike sink.},
+    %q{The sea-of-arrows and field-line representation of the field surrounding a source and 
+       a sink.},
     {'width'=>'fullpage'}
   )
 %>
@@ -227,6 +227,8 @@ In a vacuum, electric and magnetic field lines never begin or end.
   )
 %>
 <% end_marg %>
+We have developed our statement and interpretation of Gauss's law for electricity and
+magnetism by exploiting the analogy with gravity.
 It seems as though Newton's law of gravity is logically equivalent to
 Gauss's law for gravity, so that it wouldn't matter much which one we
 used. But the two laws make different predictions in cases where masses
@@ -256,8 +258,14 @@ It is true that there are other ways to detect the violation in
 \figref{b-div-violation}. We could, for example, check the larger box
 labeled 2, and note that although no field lines pass in through the
 edges of this box, one passes out. So a local law can lead to global
-predictions, and in a way we have the best of both worlds. 
+predictions, and this can be helpful.
+But because cause and effect can never propagate faster than $c$, the
+ultimate laws of physics must be local ones.
 
+The form of Gauss's law stated above is very specialized. Later we will
+see how it can be generalized so it describes regions of space in which
+charge exists. We will also learn how to state it in terms of the field
+vectors rather than the field lines.
 
 <% end_sec('gauss-field-lines-vac') %>
 
@@ -272,7 +280,7 @@ for electric fields, we obtain exactly the same result. The electric field surro
 a point charge is proportional to $1/r^2$, where $r$ is the distance from the charge. If
 the charge is $q$, then filling in the constants of proportionality gives
 \begin{equation*}
-  E = \frac{kq}{r^2}
+  E = \frac{kq}{r^2} \qquad \text{[point charge at rest]}
 \end{equation*}
 for the magnitude of the field. Here $q$ is the charge in coulombs, and $k$ is the same
 Coulomb constant that we originally introduced in the context of the energy density of
@@ -287,6 +295,13 @@ being evaluated. Then the electric field at that point is
   \vc{E} = \frac{kq}{r^2}\hat{\vc{r}}.
 \end{equation*}
 In the case where $q<0$, the scalar factor is negative, and the electric field points inward.
+
+There is a subtle point about the logic leading to these equations for the field of a point
+charge, which is that we obtained them without ever using any laws of physics that described
+the point charge itself. We used the only form of Gauss's law currently at our disposal, the vacuum form,
+which applies only to the empty space \emph{around} the charge. By doing this, we found the
+proportionality $E\propto1/r^2$, and it is in some sense arbitrary that we chose to refer to
+the proportionality constant as ``charge.''
 <% end_sec('field-of-point-charge') %>
 
 <% begin_sec("Electric force on a charge",0,'force-on-a-charge') %>
@@ -309,9 +324,18 @@ If we liked, we could take this as the definition of the electric field (and mos
 This also explains why, in the system of units we have constructed, the units of the electric
 field can be written as newtons per coulomb (N/C).
 
+\begin{eg}{A spark plug}
+\egquestion In a car with a gas-burning engine, the air-gas mixture is exploded by a spark from a spark plug.
+Suppose that the electric field required in order to create the spark is $2.0\times10^7\ \nunit/\zu{C}$.
+Estimate the acceleration of an octane molecule having a charge of $3.2\times10^{-19}\ \zu{C}$ and
+a mass of $1.9\times10^{-25}\ \kgunit$.
 
+% calc -x -e "V=20000 V; x=1 mm; E=V/x; m=(114 g->kg)/(6.0 10^23); q=2e; qE/m"
 
-example: find the force on an electron in an electrical discharge
+\eganswer The magnitude of the force is $qE$, and by Newton's second law the resulting acceleration is
+$a=(q/m)E=3.4\times10^{13}\ \munit/\sunit^2$. This is an enormous acceleration! Note that the motion
+of the molecule depends only on the ratio $q/m$ of its charge to its mass.
+\end{eg}
 
 
 <% end_sec('force-on-a-charge') %>
@@ -327,6 +351,8 @@ the resulting force on 2 is
 \begin{equation*}
   \vc{F}_2 = \frac{kq_1q_2}{r^2}\hat{\vc{r}}_{21}.
 \end{equation*}
+The force is repulsive if the charges have the same sign, and attractive if they have opposite
+signs.
 For the force $\vc{F}_1$ acting on 1, we have the same expression but with
 $\hat{\vc{r}}_{21}=-\hat{\vc{r}}_{21}$. Newton's third law applies, which is not to be taken
 for granted and is not necessarily true if the charges are moving or have been moving at some time in
@@ -335,6 +361,31 @@ the past.
 This equation is known as Coulomb's law. It plays the same role in electrical interactions that
 Newton's laws of gravity plays in gravity, and it has the same form, but because charge, unlike
 mass, can have either sign, electrical forces can be either attractive or repulsive.
+
+If one charge is kept fixed while another is moved toward or away from it, then the
+work done by the electric force is the definite integral of Coulomb's law, while the
+potential energy is minus the indefinite integral, or
+\begin{equation*}
+  U = \frac{kq_1q_2}{r},
+\end{equation*}   
+where the constant of integration is arbitrarily chosen to be zero, so that
+$U\rightarrow0$ as $r\rightarrow\infty$.
+
+Next: Nobody works by drawing field lines. We want to state G's law in terms
+of fields. This is a hassle in 3 dim because it's not obvious how to draw the
+sum of two field-line diagrams. But doing G's law in 3 dim with vectors is
+complicated. For insight, do it in 1 dim.
+
+Application: harshaw's theorem in one dimension for electric fields.
+Show photos of magnets, just make loose analogy.
+
+\startdq
+
+\begin{dq}
+For two interacting point charges, the electrical potential energy is
+$U=kq_1q_2/r$. What is the corresponding expression for gravity?
+Explain how the signs work.
+\end{dq}
 <% end_sec('coulomb-law') %>
 
 <% begin_sec("Charge",0,'charge') %>
@@ -366,6 +417,16 @@ Electric charge is conserved in all known physical processes.
 
 <% begin_sec("Quantization of charge",0,'charge-quantized') %>
 Electric charge is quantized.
+
+\begin{eg}{The energy scale for chemistry and atomic physics}\label{eg:energy-scale}
+The sizes of atoms were originally estimated based on a variety of techniques,
+one example being the determination of the thinnest layer of oil that cold be
+deposited on the surface of water. The results are on the order of a fraction of
+a nanometer. The smallest atom, hydrogen, has a radius of roughly 0.05 nm.
+A hydrogen atom is composed of a proton, with charge $e$, and an electron,
+with charge $-e$. As a result, we can estimate the electrical potential
+energy of a hydrogen atom to be $5\times10^{-18}\ \junit$.
+\end{eg}
 <% end_sec('charge-quantized') %>
 
 <% end_sec('charge') %>
@@ -404,6 +465,13 @@ an ambient field $\vc{E}$, is $\vc{F}= q\vc{E}$.
 
 
 <% end_notes %>
+
+<% begin_hw_sec %>
+<% begin_hw('energy-scale',nil) %>
+Verify the calculation in example \ref{eg:energy-scale}, p.~\pageref{eg:energy-scale},
+that estimated the energy scale for chemistry and atomic physics.
+<% end_hw() %>
+<% end_hw_sec %>
 
 <% begin_lab("Gauss's law for magnetism") %>
 
@@ -453,13 +521,6 @@ The result is the contribution to each flux measurement from the ambient
 field, so the final result can be corrected by subtracting six times this
 number.
 
-Next: Nobody works by drawing field lines. We want to state G's law in terms
-of fields. This is a hassle in 3 dim because it's not obvious how to draw the
-sum of two field-line diagrams. But doing G's law in 3 dim with vectors is
-complicated. For insight, do it in 1 dim.
-
-Application: harshaw's theorem in one dimension for electric fields.
-Show photos of magnets, just make loose analogy.
 
 <% end_lab %>
 
