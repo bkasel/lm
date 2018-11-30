@@ -254,20 +254,83 @@ one at a time, without the larger context, the only one we can detect
 is the flipped letter ``R.'' The rule against flipping letters is a
 local law. 
 
-It is true that there are other ways to detect the violation in
+The form of Gauss's law stated above is very specialized. Later we will
+see how it can be generalized so it describes regions of space in which
+charged matter exists. We will also learn how to state it in terms of the field
+vectors rather than the field lines.
+<% end_sec('gauss-field-lines-vac') %>
+
+<% begin_sec("A global form of Gauss's law",0,'gauss-global') %>
+There are other ways to detect the violation in
 \figref{b-div-violation}. We could, for example, check the larger box
 labeled 2, and note that although no field lines pass in through the
 edges of this box, one passes out. So a local law can lead to global
 predictions, and this can be helpful.
 But because cause and effect can never propagate faster than $c$, the
-ultimate laws of physics must be local ones.
+ultimate laws of physics must be local ones. A practical realization of
+this kind of global test is shown in figure \figref{gauss-law-lab}, and you will
+carry it out in Minilab \ref{ch:gauss-law}, p.~\pageref{lab:gauss-law}.
+A magnet is inside the cubical box. At one of the centimeter squares,
+we measure the component of the magnetic field perpendicular to the box.
+The intensity of the field is proportional to the number of field lines
+per $\zu{cm}^2$, so by measuring the field, we are essentially counting
+the number of field lines that exit the box through this square centimeter
+(or that enter it, if the field is inward). By adding up all of these
+measurements on a computer, for all six sides of the box,
+we get a count of the net number of field lines that exit
+the box, counting a line that enters as $-1$. Gauss's law for magnetism
+predicts that the total is zero.
 
-The form of Gauss's law stated above is very specialized. Later we will
-see how it can be generalized so it describes regions of space in which
-charge exists. We will also learn how to state it in terms of the field
-vectors rather than the field lines.
+<% marg(300) %>
+<%   
+  fig(
+    'gauss-law-lab',
+    %q{A practical experiment that tests Gauss's law for magnetism, globally.}
+  )
+%>
+<% end_marg %>
+The sort of sum described above is called the \emph{flux}, $\Phi$ (capital Greek letter phi). When it's
+not clear from context whether we're talking about the magnetic field's flux from the electric field's,
+we write $\Phi_E$ and $\Phi_B$. To define the flux through a surface, we break up
+the surface into small areas $A_1$, $A_2$, \ldots, such as the squares in figure
+\figref{gauss-law-lab}. For each of these areas, we define a unit normal vector $\hat{\vc{n}}_i$,
+which points outward. ``Unit'' means that $|\hat{\vc{n}}_i|=1$, and ``normal'' means that it is
+perpendicular to the surface. What the wand measures in figure \figref{gauss-law-lab} is
+the component of the magnetic field perpendicular to the box, $\vc{B}_i\cdot\hat{\vc{n}}_i$.
+The magnetic flux $\Phi_B$ is then defined as the sum $A_1 \vc{B}_1\hat{\vc{n}}_1+A_2 \vc{B}_2\hat{\vc{n}}_2+\ldots$.
+To make the notation less unwieldy, we can define area vectors $\vc{A}_i=A_i\hat{\vc{n}}_i$
+and use sigma notation, $\Phi_B=\sum \vc{B}_i\cdot\vc{A}_i$. Using a finite number of small
+areas gives an approximation to the flux, but the exact flux is given by the limit of such an
+expression as the number of area elements goes to infinity and each area becomes very small,
+$\Phi_B = \lim \sum \vc{B}_i\cdot\vc{A}_i$. This kind of continuous sum of infinitely
+many infinitesimal things is an integral, so we notate it as one,
+\begin{equation*}
+  \Phi_B = \int \vc{B}\cdot\der\vc{A}.
+\end{equation*}
+A similar definition is used for the flux of the electric field. 
+Because the dot product is a scalar, the flux is is a scalar.
+Like the kind of ordinary definite integral from freshman calculus, this notation defines a number.
+(If you're used to interpreting an integral sign without limits of integration as
+an indefinite integral, then you would be misled into thinking that this was an indefinite
+integral, which would be a function rather than a number.
+Also keep in mind that the notation $\der\vc{A}$ does not mean that we're integrating
+with respect to some variable $\vc{A}$; it just means an infinitesimal area.)
 
-<% end_sec('gauss-field-lines-vac') %>
+A closed surface is one that has no edges, like a box rather than a piece of paper.
+Gauss's law can be stated in terms of the field vectors, in global form, by saying that
+the magnetic flux through any closed surface is zero, 
+\begin{equation*}
+  \Phi_B = 0,
+\end{equation*}
+while the electric flux through a closed surface is proportional to the total charge inside the
+surface
+\begin{equation*}
+  \Phi_E = 4\pi k q_\text{in}.
+\end{equation*}
+
+TO DO: don't use charge before even formally talking about it
+<% end_sec('gauss-global') %>
+
 
 <% begin_sec("Field of a point charge at rest",0,'field-of-point-charge') %>
 Our argument that the earth's field was proportional to $1/r^2$ depended on
@@ -525,7 +588,7 @@ that estimated the energy scale for chemistry and atomic physics.
 <% end_hw() %>
 <% end_hw_sec %>
 
-<% begin_lab("Gauss's law for magnetism") %>
+<% begin_lab("Gauss's law for magnetism") %>\label{lab:gauss-law}
 
 \begin{labapparatus}
 magnetic field sensor\\
@@ -541,7 +604,7 @@ The unknown will be provided to you inside a cubical cardboard box about
 17 cm on a side. The magnetic field sensor is a wand like the one shown in
 figure \figref{horseshoe-magnet-components} on p.~\pageref{fig:horseshoe-magnet-components},
 which displays the component of the field parallel to the wand's axis, at a point
-near the tip.
+near the tip, as in figure \figref{gauss-law-lab} on p.~\pageref{fig:gauss-law-lab}.
 
 The following technique can be used to determine the flux through one
 side of the box.  Orient the box with that side up. Place the graph
