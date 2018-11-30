@@ -333,9 +333,12 @@ a mass of $1.9\times10^{-25}\ \kgunit$.
 % calc -x -e "V=20000 V; x=1 mm; E=V/x; m=(114 g->kg)/(6.0 10^23); q=2e; qE/m"
 
 \eganswer The magnitude of the force is $qE$, and by Newton's second law the resulting acceleration is
-$a=(q/m)E=3.4\times10^{13}\ \munit/\sunit^2$. This is an enormous acceleration! Note that the motion
-of the molecule depends only on the ratio $q/m$ of its charge to its mass.
+$a=(q/m)E=3.4\times10^{13}\ \munit/\sunit^2$. This is an enormous acceleration! Note that the properties
+of the molecule influence its motion
+only through the ratio $q/m$ of its charge to its mass.
 \end{eg}
+
+TO DO: Add a photo of a spark plug.
 
 
 <% end_sec('force-on-a-charge') %>
@@ -425,11 +428,60 @@ deposited on the surface of water. The results are on the order of a fraction of
 a nanometer. The smallest atom, hydrogen, has a radius of roughly 0.05 nm.
 A hydrogen atom is composed of a proton, with charge $e$, and an electron,
 with charge $-e$. As a result, we can estimate the electrical potential
-energy of a hydrogen atom to be $5\times10^{-18}\ \junit$.
+energy of a hydrogen atom to be $5\times10^{-18}\ \junit$. To within an order 
+of magnitude, this is the energy scale of all of chemistry and atomic physics.
+For example, a human body contains some number of atoms in the form of fat molecules,
+and multiplying this by the energy scale found above results in a rough estimate
+of the size of the energy reserve we all carry around with us --- typically
+on the order of 100,000 food calories, or several months' worth of survival without food.
 \end{eg}
 <% end_sec('charge-quantized') %>
 
 <% end_sec('charge') %>
+
+<% begin_sec("Gauss's law when the number of dimensions is effectively less than three",0,'gauss-in-lt-3-dim') %>
+Our world is three-dimensional, but it is full of physical systems that are effectively one- or
+two-dimensional. Pool and car racing are effectively two-dimensional sports. When a
+locomotive pulls a string of freight cars up a steep grade, the situation is effectively one-dimensional.
+Figure \figref{porcupine} sketches the field of a point charge in three, two, and one dimensions.
+These occur in practice. For example, the two-dimensional field pattern in figure \figref{porcupine}
+exists in the layer of transparent insulator in figure \figref{coax}, if we take a cross-section
+perpendicular to the cable's central axis.
+
+<% marg(300) %>
+<%   
+  fig(
+    'porcupine',
+    %q{The field of a point charge in three, two, and one dimensions.}
+  )
+%>
+\spacebetweenfigs
+<%   
+  fig(
+    'coax',
+    %q{A coaxial cable.}
+  )
+%>
+<% end_marg %>
+
+In three dimensions, our previous analysis showed that the field of a point charge was proportional
+to $1/r^2$. This was because the field was proportional to the density of field lines, as measured
+by number of field lines per unit area, and area has units of distance squared.
+
+In two dimensions, the density of field lines is measured by the number of field lines per unit
+length, so the field of a point charge is proportional to $1/r$. If charge is spread out along a
+line, like the central wire of the cable in figure \figref{coax}, then a cross-section perpendicular
+to the wire intersects the wire only at one point, and we can therefore treat the wire as
+a point charge.
+
+The simplest analysis of all is in one dimension. Here the field lines can't spread at all --- there is
+nowhere for them to escape. The ``density'' of field lines is simply the number of field lines, and
+this doesn't change with distance from the charge. The field varies as $1/r^0$, i.e., it is constant.
+This analysis applies to the field of a flat sheet of charge.
+
+
+<% end_sec('gauss-in-lt-3-dim') %>
+
 
 <% begin_notes %>
 
