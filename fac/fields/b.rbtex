@@ -10,8 +10,8 @@
   )
 %>
 
-<% begin_sec("Gauss's law",0,'gauss-law') %>
-<% begin_sec("Resolving the flip-the-arrowsheads ambiguity",0,'flip-arrowheads') %>
+<% begin_sec("Gauss's law",nil,'gauss-law') %>
+<% begin_sec("Resolving the flip-the-arrowsheads ambiguity",nil,'flip-arrowheads') %>
 Continuing the train of thought from section
 \ref{sec:energy-in-fields-and-units} and
 \notewithoutbackref{field-orientation-defined}, it would seem that by
@@ -129,7 +129,7 @@ region and enlarges the low-energy shaded region.
   )
 %>
 
-<% begin_sec("Sources and sinks",0,'sources-and-sinks') %>
+<% begin_sec("Sources and sinks",nil,'sources-and-sinks') %>
 
 When the field lines flow out of an object,
 we call that object a source of the field, and when they flow in we call it a sink.
@@ -155,7 +155,7 @@ our proof on p.~\pageref{field-lines-never-cross} that field lines never cross
 <% end_sec('sources-and-sinks') %>
 
 
-<% begin_sec("Gauss's law for field lines, in a vacuum",0,'gauss-field-lines-vac') %>
+<% begin_sec("Gauss's law for field lines, in a vacuum",nil,'gauss-field-lines-vac') %>
 It is natural to want to know how the electric field of a particle
 such as a proton falls off with distance. This would be a law of
 physics that would play a role analogous to that of Newton's law of
@@ -259,8 +259,9 @@ see how it can be generalized so it describes regions of space in which
 charged matter exists. We will also learn how to state it in terms of the field
 vectors rather than the field lines.
 <% end_sec('gauss-field-lines-vac') %>
+<% end_sec('gauss-law') %>
 
-<% begin_sec("A global form of Gauss's law",0,'gauss-global') %>
+<% begin_sec("A global form of Gauss's law",nil,'gauss-global') %>
 There are other ways to detect the violation in
 \figref{b-div-violation}. We could, for example, check the larger box
 labeled 2, and note that although no field lines pass in through the
@@ -297,7 +298,8 @@ the surface into small areas $A_1$, $A_2$, \ldots, such as the squares in figure
 which points outward. ``Unit'' means that $|\hat{\vc{n}}_i|=1$, and ``normal'' means that it is
 perpendicular to the surface. What the wand measures in figure \figref{gauss-law-lab} is
 the component of the magnetic field perpendicular to the box, $\vc{B}_i\cdot\hat{\vc{n}}_i$.
-The magnetic flux $\Phi_B$ is then defined as the sum $A_1 \vc{B}_1\hat{\vc{n}}_1+A_2 \vc{B}_2\hat{\vc{n}}_2+\ldots$.
+The magnetic flux $\Phi_B$ is then defined as the sum
+$A_1 \vc{B}_1\cdot\hat{\vc{n}}_1+A_2 \vc{B}_2\cdot\hat{\vc{n}}_2+\ldots$.
 To make the notation less unwieldy, we can define area vectors $\vc{A}_i=A_i\hat{\vc{n}}_i$
 and use sigma notation, $\Phi_B=\sum \vc{B}_i\cdot\vc{A}_i$. Using a finite number of small
 areas gives an approximation to the flux, but the exact flux is given by the limit of such an
@@ -305,7 +307,7 @@ expression as the number of area elements goes to infinity and each area becomes
 $\Phi_B = \lim \sum \vc{B}_i\cdot\vc{A}_i$. This kind of continuous sum of infinitely
 many infinitesimal things is an integral, so we notate it as one,
 \begin{equation*}
-  \Phi_B = \int \vc{B}\cdot\der\vc{A}.
+  \Phi_B = \int \vc{B}\cdot\der\vc{A}. \qquad \text{[definition of magnetic flux]}
 \end{equation*}
 A similar definition is used for the flux of the electric field. 
 Because the dot product is a scalar, the flux is is a scalar.
@@ -317,22 +319,58 @@ Also keep in mind that the notation $\der\vc{A}$ does not mean that we're integr
 with respect to some variable $\vc{A}$; it just means an infinitesimal area.)
 
 A closed surface is one that has no edges, like a box rather than a piece of paper.
-Gauss's law can be stated in terms of the field vectors, in global form, by saying that
+Gauss's law in a vacuum can be stated in terms of the field vectors, in global form, by saying that
 the magnetic flux through any closed surface is zero, 
 \begin{equation*}
-  \Phi_B = 0,
-\end{equation*}
-while the electric flux through a closed surface is proportional to the total charge inside the
-surface
-\begin{equation*}
-  \Phi_E = 4\pi k q_\text{in}.
+  \Phi_B = 0,\quad \Phi_E=0. \qquad \text{[Gauss's law in a vacuum]}
 \end{equation*}
 
-TO DO: don't use charge before even formally talking about it
+\begin{eg}{Flux above New York}
+Often for problems that have a symmetry, we can apply Gauss's law without actually having to
+do an integral to calculate the flux. In figure \figref{new-york-field-flux} we have constructed
+a surface (a surface used for this purpose is
+referred to as a Gaussian surface) that takes advantage of the spherical symmetry of
+the earth's gravitational field $\vc{g}$. The top and bottom surfaces are sections of the spheres with
+radii $r_1$ and $r_2$, while the sides are vertical. By this construction, the field is parallel
+to the surface at the sides and perpendicular to it at the top and bottom. The flux therefore has
+contributions only from the top and bottom, not from the sides.
+
+<% marg() %>
+<%   
+  fig(
+    'new-york-field-flux',
+    %q{A Gaussian surface in the earth's gravitational field.}
+  )
+%>
+<% end_marg %>
+If we consider a small portion of the area at the
+top, the area vector $\der\vc{A}$ is parallel to the field, so for the integrand,
+$\vc{g}\cdot\der\vc{A}=|\vc{g}||\der\vc{A}|\cos0=g\der A$. When we evaluate the integral
+to find the flux over the top surface, we then have
+\begin{equation*}
+  \int_\text{top} g\der A = g_2 \int_\text{top} \der A,
+\end{equation*}
+since $g$ on the top is a constant, which we call $g_2$. But the
+remaining integral is simply the area of the top surface, $A_2$, so we can find the
+integral without actually using any of the techniques of calculus.
+The calculation at the bottom surface is similar, except that the cosine factor is $\cos180\degunit=-1$,
+so we pick up a minus sign, indicating that the flux passes in through the bottom. Adding up the
+positive flux through the top and the negative flux through the bottom, the result for the total
+flux is
+\begin{equation*}
+  \Phi_g = g_2 A_2-g_1 A_1.
+\end{equation*}
+Setting this equal to zero gives
+\begin{equation*}
+  \frac{g_2}{g_1} = \frac{A_1}{A_2} = \left(\frac{r_2}{r_1}\right)^{-2},
+\end{equation*}
+i.e., $g\propto r^{-2}$, as expected.
+\end{eg}
+
 <% end_sec('gauss-global') %>
 
 
-<% begin_sec("Field of a point charge at rest",0,'field-of-point-charge') %>
+<% begin_sec("Field of a point charge at rest",nil,'field-of-point-charge') %>
 Our argument that the earth's field was proportional to $1/r^2$ depended on
 only two ingredients, Gauss's law and spherical symmetry. The spherical symmetry existed
 because the earth is (approximately) a sphere and because we were discussing the earth in
@@ -367,7 +405,7 @@ proportionality $E\propto1/r^2$, and it is in some sense arbitrary that we chose
 the proportionality constant as ``charge.''
 <% end_sec('field-of-point-charge') %>
 
-<% begin_sec("Electric force on a charge",0,'force-on-a-charge') %>
+<% begin_sec("Electric force on a charge",nil,'force-on-a-charge') %>
 In addition to describing the electric field made by a charge, it is natural to consider
 the action of some externally imposed field on a charge.
 We imagine that this ambient field is
@@ -406,7 +444,7 @@ TO DO: Add a photo of a spark plug.
 
 <% end_sec('force-on-a-charge') %>
 
-<% begin_sec("Coulomb's law",0,'coulomb-law') %>
+<% begin_sec("Coulomb's law",nil,'coulomb-law') %>
 Suppose that we have \emph{two} point charges, $q_1$ and $q_2$, both at rest and separated by a distance
 $r$. The electric field is the sum of the fields contributed by the two charges. If we want to find the
 force acting on one of the charges, say 2, then it doesn't make sense to try to take into account
@@ -437,11 +475,6 @@ potential energy is minus the indefinite integral, or
 where the constant of integration is arbitrarily chosen to be zero, so that
 $U\rightarrow0$ as $r\rightarrow\infty$.
 
-Next: Nobody works by drawing field lines. We want to state G's law in terms
-of fields. This is a hassle in 3 dim because it's not obvious how to draw the
-sum of two field-line diagrams. But doing G's law in 3 dim with vectors is
-complicated. For insight, do it in 1 dim.
-
 Application: harshaw's theorem in one dimension for electric fields.
 Show photos of magnets, just make loose analogy.
 
@@ -454,9 +487,58 @@ Explain how the signs work.
 \end{dq}
 <% end_sec('coulomb-law') %>
 
-<% begin_sec("Charge",0,'charge') %>
+<% begin_sec("Charge",nil,'charge') %>
 
-<% begin_sec("Invariance of charge",0,'charge-invariant') %>
+<% begin_sec("Gauss's law with charge",nil,'gauss-charge') %>
+The vacuum form of Gauss's law can be generalized to handle the case where charges are present.
+In terms of field lines, Gauss's law states that field lines begin and end only on charges, and
+the number of field lines that begin or end on a charge is proportional to the charge.
+
+<% marg(-10) %>
+<%
+  fig(
+    'gauss-field-lines',
+    %q{The number of field lines coming in and out of each region depends on the total charge it encloses.}
+  )
+%>
+<% end_marg %>
+\begin{eg}{Gauss's law with field lines and charges}
+Figure \subfigref{field-line-concept}{2} shows eight lines at each
+charge, so we know that $q_1/q_2=(-8)/8=-1$. Because lines never begin
+or end except on a charge, we can always find the total charge inside
+any given region by subtracting the number of lines that go in from
+the number that come out and multiplying by the appropriate constant
+of proportionality. Ignoring the constant, we can apply this technique
+to figure \figref{gauss-field-lines} to find $q_A=-8$, $q_B=2-2=0$,
+and $q_C=5-5=0$. 
+\end{eg}
+
+The global form of Gauss's law for electric fields says that the flux through a closed surface is
+\begin{equation*}
+  \Phi_E = 4\pi k q_\text{in},
+\end{equation*}
+where $q_\text{in}$ is the total charge inside the surface.
+
+\begin{eg}{A point charge}
+If we enclose a point charge $q$ with a spherical Gaussian surface of radius
+$r$, Gauss's law gives
+\begin{align*}
+  4\pi k q &= \int \vc{E}\cdot\der\vc{A} \\
+           &= \int \frac{kq}{r^2} \der A.
+\end{align*}
+Taking the constant factor outside, we have
+\begin{align*}
+  4\pi k q &= \frac{kq}{r^2} \int \der A \\
+           &= \frac{kq}{r^2} \cdot 4\pi r^2.
+\end{align*}
+The two sides of the equation are equal, so we have verified Gauss's law and
+proved that the proportionality constant of $4\pi k$ in Gauss's law is the
+correct one.
+\end{eg}
+
+<% end_sec('gauss-charge') %>
+
+<% begin_sec("Invariance of charge",nil,'charge-invariant') %>
 Ever since Galileo we have known that different observers could have frames of reference
 in motion relative to one another, and that the results of some measurements would depend
 on the frame of reference while others were not. Velocity is the classic example of a frame-dependent
@@ -477,11 +559,11 @@ but experiments rule out such a change to the level of one part in $10^{20}$.
 See text in SR 1.3.1.
 <% end_sec('charge-invariant') %>
 
-<% begin_sec("Conservation of charge",0,'charge-conserved') %>
+<% begin_sec("Conservation of charge",nil,'charge-conserved') %>
 Electric charge is conserved in all known physical processes.
 <% end_sec('charge-conserved') %>
 
-<% begin_sec("Quantization of charge",0,'charge-quantized') %>
+<% begin_sec("Quantization of charge",nil,'charge-quantized') %>
 Electric charge is quantized.
 
 \begin{eg}{The energy scale for chemistry and atomic physics}\label{eg:energy-scale}
@@ -502,7 +584,7 @@ on the order of 100,000 food calories, or several months' worth of survival with
 
 <% end_sec('charge') %>
 
-<% begin_sec("Gauss's law when the number of dimensions is effectively less than three",0,'gauss-in-lt-3-dim') %>
+<% begin_sec("Gauss's law when the number of dimensions is effectively less than three",nil,'gauss-in-lt-3-dim') %>
 Our world is three-dimensional, but it is full of physical systems that are effectively one- or
 two-dimensional. Pool and car racing are effectively two-dimensional sports. When a
 locomotive pulls a string of freight cars up a steep grade, the situation is effectively one-dimensional.
@@ -541,10 +623,20 @@ The simplest analysis of all is in one dimension. Here the field lines can't spr
 nowhere for them to escape. The ``density'' of field lines is simply the number of field lines, and
 this doesn't change with distance from the charge. The field varies as $1/r^0$, i.e., it is constant.
 This analysis applies to the field of a flat sheet of charge.
-
-
 <% end_sec('gauss-in-lt-3-dim') %>
 
+<% begin_sec("Gauss's law in local form, with field vectors",nil,'gauss-div',{'optional'=>true}) %>
+The laws of physics are ultimately local, but so far our only local way of stating Gauss's
+law locally is in terms of field lines: in a vacuum, they don't end.
+Reasoning about field lines is often less practical than working with field vectors,
+so we would like to have a local statement of Gauss's law that is expressed in terms of field vectors.
+
+
+Next: Nobody works by drawing field lines. We want to state G's law in terms
+of fields. This is a hassle in 3 dim because it's not obvious how to draw the
+sum of two field-line diagrams. But doing G's law in 3 dim with vectors is
+complicated. For insight, do it in 1 dim.
+<% end_sec('gauss-div') %>
 
 <% begin_notes %>
 
@@ -639,4 +731,3 @@ number.
 
 <% end_lab %>
 
-<% end_sec('gauss-law') %>

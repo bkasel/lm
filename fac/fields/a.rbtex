@@ -25,7 +25,7 @@ and buildings, there is a second, hidden landscape of fields.  This
 hidden aspect of reality has no mass and is not made of material
 particles such as electrons. 
 
-<% begin_sec("A surprising link to the nature of time",0,'time') %>
+<% begin_sec("A surprising link to the nature of time",nil,'time') %>
 
 Bear with me for a page while I describe some seemingly unrelated
 ideas about the nature of time, which will turn out to tie back in
@@ -136,7 +136,7 @@ and space units.
   )
 %>
 
-<% begin_sec("Basic properties of fields",0,'fields-basic-properties') %>
+<% begin_sec("Basic properties of fields",nil,'fields-basic-properties') %>
 In order to get started with our study of the electric and magnetic fields,
 we present three basic assumptions:
 
@@ -224,7 +224,7 @@ case.
 
 <% begin_sec("Review of vectors",4,'vectors') %>
 
-<% begin_sec("Definition of vectors and scalars",0,'vectors-and-scalars') %>
+<% begin_sec("Definition of vectors and scalars",nil,'vectors-and-scalars') %>
 
 Because the electric and magnetic fields are vectors, we present a brief review of the topic, starting
 with a definition that may be different from the one you've seen previously, but
@@ -266,7 +266,7 @@ has a large vertical component.
 
 <% end_sec('vectors-and-scalars') %>
 
-<% begin_sec("Components of vectors",0,'vector-components') %>
+<% begin_sec("Components of vectors",nil,'vector-components') %>
 A component of a vector is a signed real number giving its projection onto a line
 such as a coordinate axis.
 In two dimensions,
@@ -292,7 +292,7 @@ would have had to give the same result.
 
 <% end_sec('vector-components') %>
 
-<% begin_sec("Vector addition",0,'vector-addition') %>
+<% begin_sec("Vector addition",nil,'vector-addition') %>
 
 <% marg() %>
 <%   
@@ -372,7 +372,7 @@ Consulting a sketch shows that the first of these values is the correct one.
 
 <% end_sec('vector-addition') %>
 
-<% begin_sec("Unit vector notation",0,'unit-vector-notation') %>
+<% begin_sec("Unit vector notation",nil,'unit-vector-notation') %>
 Suppose we want to tell someone that a certain vector $\vc{A}$ in two dimensions
 has components $A_x=3$ and $A_y=7$. A more compact way of notating this is
 $\vc{A}=3\hat{\vc{x}}+7\hat{\vc{y}}$, where $\hat{\vc{x}}$ and $\hat{\vc{y}}$, read ``x-hat'' and ``y-hat,''
@@ -381,7 +381,7 @@ directions. Some authors notate the unit vectors as $\hat{\vc{i}}$, $\hat{\vc{j}
 rather than $\hat{\vc{x}}$, $\hat{\vc{y}}$, and $\hat{\vc{z}}$.
 <% end_sec('unit-vector-notation') %>
 
-<% begin_sec("Rotational invariance",0,'rotational-invariance') %>
+<% begin_sec("Rotational invariance",nil,'rotational-invariance') %>
 Certain vector operations
 are useful and others are not. Consider the operation of
 multiplying two vectors component by component to produce a third vector:
@@ -443,7 +443,7 @@ have the same magnitude, satisfying rotational invariance.
 \end{eg}
 <% end_sec('rotational-invariance') %>
 
-<% begin_sec("Dot and cross product",0,'dot-and-cross-product') %>
+<% begin_sec("Dot and cross product",nil,'dot-and-cross-product') %>
 The vector dot product\index{dot product} $\vc{A}\cdot\vc{B}$ is
 defined as the (signed) component of $\vc{A}$ parallel to $\vc{B}$. It
 is a scalar. If we know the magnitudes of the vectors and the angle
@@ -501,7 +501,7 @@ $|\vc{A}||\vc{B}|\sin\theta_{AB}$. In terms of the components, we have
 
 <% end_sec('vectors') %>
 
-<% begin_sec("Field lines",0,'field-lines') %>
+<% begin_sec("Field lines",nil,'field-lines') %>
 
 The photograph in figure \subfigref{bar-magnet-field-lines}{1} provides a
 visually compelling image of the magnetic field of a bar magnet. The magnet
@@ -597,8 +597,8 @@ enough around the curve of the earth's surface, and its strength also falls off 
 
 <% end_sec('field-lines') %>
 
-<% begin_sec("Energy in fields and measurement of fields",0,'energy-in-fields-and-units') %>
-<% begin_sec("Energy in fields",0,'energy-in-fields') %>
+<% begin_sec("Energy in fields and measurement of fields",nil,'energy-in-fields-and-units') %>
+<% begin_sec("Energy in fields",nil,'energy-in-fields') %>
 
 We have not yet said anything about how to define and measure fields
 quantitatively, or what units would be used. One way to approach this
@@ -647,7 +647,7 @@ speak of the field as having a definite value. The quantity $\der U$ is
 then understood as the infinitesimal energy contained within this volume.
 <% end_sec('energy-in-fields') %>
 
-<% begin_sec("Units of the fields",0,'units-of-the-fields') %>
+<% begin_sec("Units of the fields",nil,'units-of-the-fields') %>
 
 If we had the luxury of being the first people to define the units for
 the fields, we would be free to choose $k=1$, or even $1/8\pi k=1$,
@@ -692,7 +692,7 @@ puzzles, you can convince yourself from the
 foregoing discussion that for the magnetic field, $1\ \zu{T}=1\ \nunit\unitdot\sunit/\zu{C}\unitdot\munit$.
 <% end_sec('units-of-the-fields') %>
 
-<% begin_sec("Defining the magnitude and direction of a field",0,'direction-of-field') %>
+<% begin_sec("Defining the magnitude and direction of a field",nil,'direction-of-field') %>
 If we are to be logically rigorous, the question arises of how to
 \emph{define} the electric and magnetic fields. Rather than conceptual
 definitions in the style of a dictionary, physicists typically use
