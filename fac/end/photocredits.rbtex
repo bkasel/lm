@@ -30,6 +30,7 @@
 <% photo_credit("new-york-field-line-bundle","New York City","Petr Kratochvil, publicdomainpictures.net, CC0 license") %> % https://www.publicdomainpictures.net/en/view-image.php?image=242030&picture=new-york-city-view
 <% photo_credit("new-york-field-flux","New York City","Petr Kratochvil, publicdomainpictures.net, CC0 license") %>
 <% photo_credit("coax","Coaxial cable","Wikimedia Commons user FDominec, CC-BY-SA licensed") %> % https://commons.wikimedia.org/wiki/File:Coaxial_cable_cut.jpg
+<% photo_credit("variable-capacitor","Variable capacitor","Wikimedia Commons user Solaris2006, CC-BY-SA licensed") %> % https://commons.wikimedia.org/wiki/File:Air_variable_capacitor.jpg
 
 <% print_photo_credits() %>
 

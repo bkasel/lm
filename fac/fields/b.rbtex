@@ -625,17 +625,125 @@ this doesn't change with distance from the charge. The field varies as $1/r^0$, 
 This analysis applies to the field of a flat sheet of charge.
 <% end_sec('gauss-in-lt-3-dim') %>
 
-<% begin_sec("Gauss's law in local form, with field vectors",nil,'gauss-div',{'optional'=>true}) %>
+<% begin_sec("Gauss's law in local form, with field vectors (optional)",nil,'gauss-div',{'optional'=>true}) %>
 The laws of physics are ultimately local, but so far our only local way of stating Gauss's
 law locally is in terms of field lines: in a vacuum, they don't end.
 Reasoning about field lines is often less practical than working with field vectors,
 so we would like to have a local statement of Gauss's law that is expressed in terms of field vectors.
 
+To figure out how to translate from the field-line picture to field vectors, it will
+be helpful to simplify to one dimension and then generalize back to three dimensions
+at the end. In one dimension, field lines can't spread out because there is nowhere for
+them to escape. If multiple field lines are superposed, we have to draw them slightly
+offset so that we can see them separately. The ``density'' of field lines is simply the
+number of field lines that pass through a given point.
 
-Next: Nobody works by drawing field lines. We want to state G's law in terms
-of fields. This is a hassle in 3 dim because it's not obvious how to draw the
-sum of two field-line diagrams. But doing G's law in 3 dim with vectors is
-complicated. For insight, do it in 1 dim.
+In the example shown in figure \subfigref{field-lines-1-dim}{1}, three equal positive charges are shown
+with their field lines. The constants of proportionality are chosen such that each field
+has exactly two field lines coming out of it, and a field line ``density'' of 1 is just an
+electric field of 1 unit. In one-dimensional examples like this, it's easy to take field-line
+patterns and superpose them, as in \subfigref{field-lines-1-dim}{2}. Figure \subfigref{field-lines-1-dim}{3}
+is a graph of the field as a function of position. It looks like a staircase, with a discontinuity
+at each charge.
+
+<% marg(300) %>
+<%   
+  fig(
+    'field-lines-1-dim',
+    %q{1.~Three equal positive charges, in one dimensions, with their field lines.
+       2.~The superposition of the fields.
+       3.~A graph of the electric field, for the same example.
+       4.~A similar graph with a larger number of charges.
+       5.~The field of a continuous charge distribution.}
+  )
+%>
+\spacebetweenfigs
+<%   
+  fig(
+    'variable-capacitor',
+    %q{This variable capacitor acts effectively like the kind of one-dimensional system described
+       in figure \figref{field-lines-1-dim}.}
+  )
+%>
+<% end_marg %>
+
+We would like to find a local law that describes the behavior of the field at any point.
+In the vacuum regions between the charges, this is easy: the field is constant, and if
+we like, we can describe this by saying that $\der E/\der x=0$. \emph{At} a charge, this
+becomes awkward, because the field behaves badly. We therefore consider the limit as
+the number of charges becomes large, \subfigref{field-lines-1-dim}{4}, and finally
+infinite, \subfigref{field-lines-1-dim}{5}. The slope of the graph is the charge density,
+\begin{equation*}
+  \frac{\der E}{\der x} \propto \frac{\der q}{\der x}.
+\end{equation*}
+In the notation $\der q$, the $\der$ is to be interpreted as ``a little bit of,'' i.e.,
+we are talking about the infinitesimal amount of charge contained within the infinitesimal
+distance $\der x$. The idea is that if $\der q/\der x$ is large, we have a lot of densely
+packed stair steps, making the slope of the staircase $\der E/\der x$ steeper. In a region
+of vacuum, the density of charge is zero, and we get a constant field. This is the local
+form of Gauss's law, for field vectors, in one dimension.
+
+Although our main goal in developing this theory in one dimension was
+to immediately turn around and generalize it to three dimensions,
+effectively one-dimensional systems do exist in real life. For example
+in figure \figref{variable-capacitor}, charge can be deposited on the
+series of metal plates, and if the charge on one of the plates is $q$,
+then it acts as a linear charge density $q/h$, where $h$ is the
+spacing between the plates. A linear charge density, with units of
+coulombs per meter, is often notated $\lambda$.
+
+We would now like to generalize to find the three-dimensional, local form of Gauss's law.
+Such a law needs to reduce to the correct one-dimensional law, along the $x$ axis, in the
+case where a device like the one in figure \figref{variable-capacitor} is oriented as shown.
+However, it also needs to work if we orient the same device along the $y$ or $z$ axis, or,
+equivalently, if we just choose a different coordinate system in which the $x$ axis is labeled
+as $y$ or $z$. A law that satisfies these criteria is the following
+\begin{equation*}
+  \frac{\partial E_x}{\partial x}+\frac{\partial E_y}{\partial y}+\frac{\partial E_z}{\partial z} = 4\pi k\rho,
+\end{equation*}
+where $\rho$ is the three-dimensional density of electric charge, in units of coulombs per cubic meter.
+This is the local form of Gauss's law, also referred to as the differential form of the law.
+The symbol $\partial$, called a partial derivative, is like the usual $\der$ in calculus, but it
+says that only the specified variable is being differentiated with respect to, while other variables
+are held constant. A theorem called Gauss's theorem says that the local and global forms of
+Gauss's law are equivalent. The thing being done to the field in this equation is a kind of
+derivative, called the divergence, and to save writing we often write it as $\operatorname{div}$
+(or, in some books, $\nabla\cdot$). In this notation, Gauss's law becomes simply
+\begin{equation*}
+  \operatorname{div}\vc{E} = 4\pi k\rho.
+\end{equation*}
+As implied by the name, it measures how much a field diverges.
+
+<% marg(300) %>
+<%   
+  fig(
+    'divmeter',
+    %q{A meter for measuring $\operatorname{div}\vc{E}$.}
+  )
+%>
+<% end_marg %>
+Figure \figref{divmeter} shows an intuitive way of visualizing the meaning
+of the divergence. The meter consists of some electrically charged balls
+connected by springs. If the divergence is positive, then the whole cluster will
+expand, and it will contract its volume if it is placed at a point where the
+field has $\divg\vc{E}<0$. What if the field is constant? We know based on the
+definition of the divergence that we should have $\divg\vc{E}=0$ in this case,
+and the meter does give the right result: all the balls
+will feel a force in the same direction, but they will neither expand nor contract.
+
+\begin{eg}{Calculating a divergence}
+\egquestion Find the divergence of the field $\vc{E}=bx\hat{\vc{x}}+bx\hat{\vc{y}}$, where
+$b$ is a constant.
+
+\eganswer The field has $E_x=bx$, $E_y=by$, and $E_z=0$. The partial derivatives referred to
+in the definition of the divergence are $\partial E_x/\partial x=b$,
+$\partial E_y/\partial y=b$, and $\partial E_z/\partial z=0$. The divergence is $2b$.
+The divergence is a constant, so this is a possible field pattern in a region of space
+containing a uniform distribution of charge.
+\end{eg}
+
+TO DO: make a figure for this example
+
 <% end_sec('gauss-div') %>
 
 <% begin_notes %>
@@ -691,6 +799,14 @@ graph paper with 1 cm grid
 \begin{labgoal}
 Verify Gauss's law for magnetism, using an unknown magnet sealed inside a box.
 \end{labgoal}
+
+<%  
+  fig(
+    'gauss-law-lab',
+    %q{Measuring the flux through the box.},
+    {'suffix'=>'2'}
+  )
+%> 
 
 The unknown will be provided to you inside a cubical cardboard box about
 17 cm on a side. The magnetic field sensor is a wand like the one shown in
