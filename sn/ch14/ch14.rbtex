@@ -2519,7 +2519,7 @@ classical information to quantum information is impossible.
 
 A basic difference between classical computing and quantum computing
 is that qubits can be entangled with each other. We've only discussed
-entanglement briefly in sec.\ref{subsec:nonlocality-and-entanglement},
+entanglement briefly in sec.~\ref{subsec:nonlocality-and-entanglement},
 p.~\pageref{subsubsec:entanglement}, where the basic idea was that
 either Alice or Bob could detect a certain photon, but not both. Alice
 and Bob's states were entangled, as were the macroscopic diamonds in

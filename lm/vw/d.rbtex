@@ -1121,7 +1121,7 @@ is adjusting from being a plane wave to being a spherical wave.
 The reflections at
 the open ends are density-inverting, \subfigref{lowest-modes-of-air-column}{2},
 so the wave pattern is pinched off at the ends.
-Comparing panels 1 and 2 of the figure, we see that although the wave pattens
+Comparing panels 1 and 2 of the figure, we see that although the wave patterns
 are different, in both cases the wavelength is the same: in the lowest-frequency
 standing wave, half a wavelength fits inside the tube. Thus, it isn't necessary
 to memorize which type of reflection is inverting and which is uninverting. It's
@@ -1229,7 +1229,7 @@ and important example is the case of sound waves, for which $z=\rho v$ depends n
 wave velocity $v$ but also on the density $\rho$. A practical example occurs in medical ultrasound
 scans, where the contrast of the image is made possible because of the very large differences in
 impedance between different types of tissue. The speed of sound in various tissues such as bone
-and muscle varies by abount a factor of 2, which is not a particularly huge factor, but there are
+and muscle varies by about a factor of 2, which is not a particularly huge factor, but there are
 also large variations in density. The lung, for example, is basically a sponge or sack filled with
 air. For this reason, the acoustic impedances of the tissues show a huge amount of variation,
 with, e.g., $z_\zu{bone}/z_\zu{lung}\approx 40$.
