@@ -301,7 +301,7 @@ the component of the magnetic field perpendicular to the box, $\vc{B}_i\cdot\hat
 The magnetic flux $\Phi_B$ is then defined as the sum
 $A_1 \vc{B}_1\cdot\hat{\vc{n}}_1+A_2 \vc{B}_2\cdot\hat{\vc{n}}_2+\ldots$.
 To make the notation less unwieldy, we can define area vectors $\vc{A}_i=A_i\hat{\vc{n}}_i$
-and use sigma notation, $\Phi_B=\sum \vc{B}_i\cdot\vc{A}_i$. Using a finite number of small
+and use sigma notation, $\Phi_B=\sum \vc{B}_i\cdot\vc{A}_i$. Using a large number of small
 areas gives an approximation to the flux, but the exact flux is given by the limit of such an
 expression as the number of area elements goes to infinity and each area becomes very small,
 $\Phi_B = \lim \sum \vc{B}_i\cdot\vc{A}_i$. This kind of continuous sum of infinitely
@@ -310,7 +310,7 @@ many infinitesimal things is an integral, so we notate it as one,
   \Phi_B = \int \vc{B}\cdot\der\vc{A}. \qquad \text{[definition of magnetic flux]}
 \end{equation*}
 A similar definition is used for the flux of the electric field. 
-Because the dot product is a scalar, the flux is is a scalar.
+Because the dot product is a scalar, flux is a scalar.
 Like the kind of ordinary definite integral from freshman calculus, this notation defines a number.
 (If you're used to interpreting an integral sign without limits of integration as
 an indefinite integral, then you would be misled into thinking that this was an indefinite
@@ -846,4 +846,3 @@ number.
 
 
 <% end_lab %>
-
