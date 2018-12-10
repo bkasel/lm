@@ -425,7 +425,7 @@ If we liked, we could take this as the definition of the electric field (and mos
 This also explains why, in the system of units we have constructed, the units of the electric
 field can be written as newtons per coulomb (N/C).
 
-\begin{eg}{A spark plug}
+\begin{eg}{A spark plug}\label{eg:spark-plug}
 \egquestion In a car with a gas-burning engine, the air-gas mixture is exploded by a spark from a spark plug.
 Suppose that the electric field required in order to create the spark is $2.0\times10^7\ \nunit/\zu{C}$.
 Estimate the acceleration of an octane molecule having a charge of $3.2\times10^{-19}\ \zu{C}$ and
@@ -483,7 +483,7 @@ Show photos of magnets, just make loose analogy.
 \begin{dq}
 For two interacting point charges, the electrical potential energy is
 $U=kq_1q_2/r$. What is the corresponding expression for gravity?
-Explain how the signs work.
+Explain how the signs work, and sketch graphs for the various cases.
 \end{dq}
 <% end_sec('coulomb-law') %>
 
@@ -565,24 +565,217 @@ Electric charge is conserved in all known physical processes.
 
 <% begin_sec("Quantization of charge",nil,'charge-quantized') %>
 Electric charge is quantized.
+<% end_sec('charge-quantized') %>
+<% end_sec('charge') %>
 
-\begin{eg}{The energy scale for chemistry and atomic physics}\label{eg:energy-scale}
+<% begin_sec("Models of matter",nil,'models-of-matter') %>
+
+<% begin_sec("The discovery of the electron, and the raisin cookie model",nil,'thomson') %>
+Static electricity experiments such as the one with the sticky tape
+(figure \figref{twotapes-fields}, p.~\pageref{fig:twotapes-fields})
+work with essentially any substance (although they do produce bigger
+effects with some substances than with others).  This suggests that
+electric charge is a built-in feature of all matter. Quantization of
+charge seems like a hint that this charge occurs because matter is
+made out of particles, and those particles have charges that are
+integer multiples of $e$.
+
+Until about 1897, it was assumed that all
+such particles were about the size and mass of an atom. But in that
+year, J.J.~Thomson did the experiment shown in figure \figref{thomson-simplified},
+in which he produced a beam of
+charged particles in a vacuum tube, subjected them to a transverse
+electric field, and measured their deflection. The particles are
+initially accelerated from C to A, at which point
+they are moving along the $x$ axis with velocity $u$. Let's assume
+that this velocity is known, although the actual technique Thomson
+used to determine it is one that we are not ready to describe using
+the physics presented so far. The electric field between D and E is in the negative
+$y$ direction.  This field produces a force along the $y$ axis, but
+does not affect the $x$ motion, just as the earth's gravity does not
+affect the horizontal velocity of a baseball. To travel the length
+$\ell$ of electrodes D and E, the time required is $t=\ell/u$. Now $t$
+turns out to be many orders of magnitude too short to be detectable by
+eye, but during this interval the acceleration $a_y=qE/m$ caused by
+the electric field deflects the beam by a distance $y=(1/2)a_yt^2$.
+Since $y$ is known, we can infer the value of $q/m$. As we have seen
+in example \ref{eg:spark-plug}, p.~\pageref{eg:spark-plug} (the spark
+plug), this charge-to-mass-ratio is the \emph{only} property of a
+particle that we can ever infer from its motion in an electric field. 
+
+<%
+  fig(
+    'thomson-simplified',
+    %q{%
+      Thomson's experiment proving cathode rays had electric charge
+              (redrawn and simplified from his original paper). Panel 1 shows the
+              glass vacuum tube, metal electrodes, and electric field lines.
+              Electric charge is introduced to the electrodes through wires (not shown) that feed
+              through the nipples in the glass. This creates the electric fields.
+              Panel 2 shows the beam of electrons. Because the electrons are negatively
+              charged, they accelerate in the direction opposite to that of the electric field.
+    },
+    {
+      'width'=>'wide',
+      'sidecaption'=>true
+    }
+  )
+%>
+
+<% marg(0) %>
+<%
+  fig(
+    'raisincookie',
+    %q{%
+      The raisin cookie model of the atom with four units of charge,
+              which we now know to be beryllium.
+    }
+  )
+%>
+<% end_marg %>
+
+The value that Thomson found for the $q/m$ of his mystery particles
+was negative, and, more importantly, thousands of times bigger than
+the $q/m$ ratio of charged atoms (ions) as determined from chemistry
+experiments. Thomson guessed (without actually knowing for sure) that
+the charge of the particles was $-e$, and that therefore they had masses
+thousands of times smaller than the mass of an atom. He interpreted this
+as evidence that he had discovered the first subatomic particle, which
+was later named the electron.
+
+
+Based on his experiments, Thomson proposed a picture of the
+atom which became known as the \index{atom!raisin-cookie
+model of}\index{raisin cookie model}raisin cookie model.
+In the neutral atom, figure \figref{raisincookie}, there are four
+electrons with a total charge of $-4e$, sitting in a sphere
+(the ``cookie'') with a charge of $+4e$ spread throughout
+it. It was known that chemical reactions could not change
+one element into another, so in Thomson's scenario, each
+element's cookie sphere had a permanently fixed radius,
+mass, and positive charge, different from those of other
+elements. The electrons, however, were not a permanent
+feature of the atom, and could be tacked on or pulled out to
+make charged ions.
+
+<% end_sec('thomson') %>
+
+<% begin_sec("The energy scale for chemistry and atomic physics",nil,'matter-atomic-e-scale') %>
 The sizes of atoms were originally estimated based on a variety of techniques,
 one example being the determination of the thinnest layer of oil that cold be
 deposited on the surface of water. The results are on the order of a fraction of
 a nanometer. The smallest atom, hydrogen, has a radius of roughly 0.05 nm.
-A hydrogen atom is composed of a proton, with charge $e$, and an electron,
-with charge $-e$. As a result, we can estimate the electrical potential
-energy of a hydrogen atom to be $5\times10^{-18}\ \junit$. To within an order 
+A hydrogen atom is composed of charges $+e$ and $-e$, so
+we can estimate the electrical potential
+energy of a hydrogen atom to be something like $5\times10^{-18}\ \junit$. To within an order 
 of magnitude, this is the energy scale of all of chemistry and atomic physics.
 For example, a human body contains some number of atoms in the form of fat molecules,
 and multiplying this by the energy scale found above results in a rough estimate
 of the size of the energy reserve we all carry around with us --- typically
 on the order of 100,000 food calories, or several months' worth of survival without food.
-\end{eg}
-<% end_sec('charge-quantized') %>
+<% end_sec('matter-atomic-e-scale') %>
 
-<% end_sec('charge') %>
+<% begin_sec("The nucleus and the planetary model",nil,'matter-nucleus') %>
+<% marg() %>
+<%
+  fig(
+    'rutherfordsetup',
+    %q{Rutherford's apparatus.}
+  )
+%>
+\spacebetweenfigs
+<%
+  fig(
+    'planetarymodel',
+    %q{The planetary model of the atom.}
+  )
+%>
+<% end_marg %>
+In 1909, a new experiment by Ernest Rutherford and collaborators
+forced a revision of the raisin cookie model. As shown in figure
+\figref{rutherfordsetup}, the experiment used a lump of radium, which
+was known to emit radioactivity in a form known as alpha particles,
+another name for a helium atom that has been stripped of both its
+electrons.  The alpha particles, moving at a significant fraction of
+the speed of light, struck a very thin gold foil, and most of them
+passed almost straight through it. But some were deflected by
+measurable angles, and the experimenters found, to their great
+surprise, that some rebounded at angles approaching 180 degrees.
+Rutherford said, ``We have been able to get some of the alpha
+particles coming backwards. It was almost as incredible as if you
+fired a 15-inch shell at a piece of tissue paper and it came back to
+hit you.''
+
+This observation proved impossible to explain in the raisin cookie
+model, because the kinetic energies of the alpha particles were many
+orders of magnitude greater than the energy scale estimated in
+sec.~\ref{subsec:matter-atomic-e-scale}.  At this point, the
+Rutherford group dusted off an unpopular and neglected model of the
+atom, in which all the electrons orbited around a small, positively
+charged core or ``nucleus,'' just like the planets orbiting around the
+sun. All the positive charge and nearly all the mass of the atom would
+be concentrated in the nucleus, rather than spread throughout the atom
+as in the raisin cookie model. The positively charged alpha particles
+would be repelled by the gold atom's nucleus, but most of the alphas
+would not come close enough to any nucleus to have their paths
+drastically altered. The few that did come close to a nucleus,
+however, could rebound backwards from a single such encounter, since
+the nucleus of a heavy gold atom would be fifty times more massive
+than an alpha particle.
+
+The nucleus was later found to be a cluster of particles called
+protons, with charge $+e$, and electrically neutral particles called
+neutrons.  The number of protons is notated $Z$, and referred to as
+the atomic number. The total number of neutrons and protons is notated
+$A$, and for light, stable nuclei is usually about equal to $2Z$,
+i.e., the numbers of neutrons and protons are roughly equal.
+
+The trouble with the planetary model was that, as we will see in
+ch.~\ref{ch:radiation}, an accelerating electric charge radiates
+light. This would have caused the orbiting electrons to lose energy
+and spiral into the nucleus. The resolution of this problem would have
+to wait until the classical picture of the atom was replaced by one involving
+the new field of quantum physics.
+<% end_sec('matter-nucleus') %>
+
+<% begin_sec("The energy scale for nuclear physics",nil,'matter-nuclear-e-scale') %>
+
+For nuclear reactions, experiments show that the energy scale is about
+$10^{-13}\ \junit$ per neutron or proton, or about 6 orders of
+magnitudes more than the scale for chemical reactions discussed in
+sec.~\ref{subsec:matter-atomic-e-scale}. Let's compare this with the
+electrical energy that we expect a nucleus to have. The radius of a
+medium-sized nucleus is on the order of $r\sim 3\times10^{-15}\
+\munit$, and we can take this as a typical distance between the
+electrically interacting protons.  Using this distance as an input, we
+can estimate (\note{estimate-elec-energy-in-nucleus}) the electrical
+energy of a nucleus, divided by the number of neutrons and protons, to
+be $\sim (+2\times 10^{-14}\ \junit)(Z-1)$. 
+
+Subject to all the crude assumptions that went into this
+order-of-magnitude estimate, this is in the right ballpark.  It would
+therefore be tempting therefore to try to interpret nuclear processes
+as involving purely electrical interactions, just like chemical
+processes. On this interpretation, the vast disparity between chemical
+and nuclear energy scales would be solely due to the very different
+values of $1/r$.
+
+But there are two things that prevent this from working.  First, we do
+observe energetic nuclear reactions and excitations that occur when
+there is only one proton on the scene, but in such cases the
+electrical energy, which is proportional to $Z-1$, would be zero ---
+there is nothing for the proton to interact with electrically.
+Second, the sign of the energy is positive, indicating that energy is
+required in order to assemble the system and could be released by
+letting it fly apart. The purely repulsive electrical interaction
+between the like charges of the protons can never explain why nuclei
+are \emph{bound}. We conclude that although electrical energy may
+often be big enough to matter in nuclear processes, there must be some
+other interaction involved as well. This is called the strong nuclear
+force. 
+
+<% end_sec('matter-nuclear-e-scale') %>
+<% end_sec('models-of-matter') %>
 
 <% begin_sec("Gauss's law when the number of dimensions is effectively less than three",nil,'gauss-in-lt-3-dim') %>
 Our world is three-dimensional, but it is full of physical systems that are effectively one- or
@@ -778,12 +971,33 @@ our definition of the Coulomb, we are free to choose any constant of proportiona
 relationship. We choose it to be 1, so that the electric force on a test charge $q$, from
 an ambient field $\vc{E}$, is $\vc{F}= q\vc{E}$.
 
+\notetext{estimate-elec-energy-in-nucleus}{Estimate of the electrical energy in a nucleus}
+\notesummary{Starting from a rough estimate of the size of a typical nucleus, we make
+an order-of-magnitude estimate of its electrical energy.}
+To estimate
+the energy, we need to know how many pairs of protons are repelling one another.
+For example, a lithium nucleus, with $Z=3$, has three protons, which we can label
+A, B, and C, so there are three energies to add up: A with B, B with C, and A with C.
+More generally, we want to know how many pairs we can make out of a pool of $Z$ objects.
+We have $Z$ choices for the first object and $Z-1$ for the second one, so if the order
+was significant, there would be $Z(Z-1)$ pairs. But order is not significant, so we have
+$Z(Z-1)/2$ pairs. (You may want to verify that this works for $Z=1$, 2, and 3.)
+
+To estimate the electrical energy of a nucleus, per neutron or proton, we can therefore calculate
+\begin{align*}
+  \frac{k[Z(Z-1)/2]e^2}{r}\cdot\frac{1}{A} &\approx \frac{ke^2}{r}\cdot\frac{Z(Z-1)}{2}\cdot\frac{1}{2Z} \\
+                     &= \frac{k(Z-1)e^2}{4r} \\
+                     &\sim (+2\times 10^{-14}\ \junit)(Z-1).
+% calc -x -e "ke^2/(4(3 10^-15 m))"
+\end{align*}
+
+
 
 <% end_notes %>
 
 <% begin_hw_sec %>
 <% begin_hw('energy-scale',nil) %>
-Verify the calculation in example \ref{eg:energy-scale}, p.~\pageref{eg:energy-scale},
+Verify the calculation in sec.~\ref{subsec:matter-atomic-e-scale}, p.~\pageref{eg:energy-scale},
 that estimated the energy scale for chemistry and atomic physics.
 <% end_hw() %>
 <% end_hw_sec %>

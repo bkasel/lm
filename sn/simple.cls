@@ -21,7 +21,7 @@
 %   \subsubsection{}, only first in title word capitalized
 %
 % Notes about design:
-%	Subsections and subsubsections are not numbered.
+%	Subsubsections are not numbered.
 %	Only capitalize first word of example titles, subsections.
 %	Panels within figures are numbered 1, 2, etc, in 9-point sans.
 %	Figures are numbered within sections. (This could result in high letters,
@@ -133,6 +133,7 @@
   {\normalfont\Large\bfseries\sffamily}{\showsubsecnum{\thesection}}{0.6em}{}
 \titleformat{\subsection}
   {\normalfont\normalsize\bfseries\sffamily}{\showsubsecnum{\thesubsection}}{0.6em}{}
+%   ... show subsection numbers (different from LM)
 \titleformat{\subsubsection}
   {\normalfont\normalsize\slshape}{\thesubsubsection}{1em}{}
 

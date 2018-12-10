@@ -103,8 +103,14 @@ propagate. (That would take us too far afield into a discussion of
 relativity, which is not our main topic right now.) But this example
 is sufficient to show that logical consistency cannot be preserved if
 there is some mechanism for sending signals instantaneously, as in the
-``subspace radio'' of the Star Trek universe. Thus we can never send
-signals simultaneously. 
+``subspace radio'' of the Star Trek universe.
+
+Thus we can never send signals simultaneously. The style of reasoning
+here is called proof by contradiction. In this example, we have propositions
+A (that time is relative) and B (that instantaneous communication is possible),
+and if both A and B hold, then we reach a paradox, or logical contradiction.
+We can therefore conclude that either A is false or B is false. But A has been
+proved experimentally, so B must be false.
 
 In your previous study of mechanics, you were probably briefly exposed
 to the concept of a field through mentions of the gravitational field.
@@ -114,18 +120,40 @@ field (e.g., due to the motion of a planet in its orbit) would take
 effect immediately, throughout the universe. This is what Isaac Newton
 believed, but it is not how the universe actually turns out to work.
 
-The maximum speed at which signals can propagate is notated $c$, and
+Since by now your physical intuition has been strongly influenced by Newton's
+world-view, it's worth noting that what I have given above as
+a tricky disproof of Newton is also backed up by empirical evidence. Nobody
+has ever succeeded in finding a method of instantaneously transmitting signals,
+or any type of cause and effect, with infinite speed.
+
+Not only that but, experiments show that there is a fixed speed limit.
+This maximum speed at which signals can propagate is notated $c$, and
 it has the numerical value of about $3.0\times10^8\ \munit/\sunit$.
-We often refer to it as the speed of light, since visible light travels at $c$.
-Light is a wave disturbance in the electric and magnetic fields, and
-the visible spectrum from red to violet constitutes one part of a much
-larger electromagnetic spectrum, which includes phenomena as apparently disparate
-as radio waves and x-rays. Different parts of the spectrum are distinguished
-either by their frequency (the number of vibrations per unit time) or, equivalently, by their
-wavelength (the distance between successive wave crests). Fundamentally,
-it's best to think of $c$ not as the speed of light but as a maximum
-speed of cause and effect, or as a sort of conversion factor between time
-and space units.
+We often refer to it as the speed of light, since visible light
+travels at $c$.  Light is a wave disturbance in the electric and
+magnetic fields, and the visible spectrum from red to violet
+constitutes one part of a much larger electromagnetic spectrum, which
+includes phenomena as apparently disparate as radio waves and x-rays.
+Different parts of the spectrum are distinguished either by their
+frequency (the number of vibrations per unit time) or, equivalently,
+by their wavelength (the distance between successive wave crests).
+Fundamentally, it's best to think of $c$ not as the speed of light but
+as a maximum speed of cause and effect, or as a sort of conversion
+factor between time and space units.
+
+As an example of the kind of experimental work that has tested these claims,
+there was a dramatic incident in 2011 in which particle physicists believed
+they had detected signals at a laboratory near Rome that had been emitted in
+an accelerator experiment in the Alps at a distance of 731.296 km (measured with GPS), and that these signals
+had arrived with a time delay of 2.43928 ms. The speed implied by these measurements
+exceeded $c$ by 0.002\%. Although this might seem like only a tiny discrepancy, the
+theory it violated had by then been so firmly established by decades of
+experiments that the claim set off a frenzy of theoretical and experimental
+work to try to disprove it, explain it, or use it as evidence for new theories
+of physics. A year later, the scientific collaboration that had found the
+observed result announced publicly, and with considerable embarrassment, that
+they had found the result to be due to two mistakes: a loose cable and a faulty
+electronic clock.
 <% end_sec('time') %>
 
 <%

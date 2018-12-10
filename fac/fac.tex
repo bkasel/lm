@@ -25,6 +25,9 @@
  {\bf \it \setprotcode \font}
  \pdfprotrudechars=1
 }{}
+% Override lmcommon.cls, show subsection numbers:
+\titleformat{\subsection}
+  {\normalfont\normalsize\bfseries\sffamily\raggedright\protect\sansmath}{\showsecnum{\thesubsection}}{0.6em}{}   
 %========================= frontmatter =========================
 \formatchtoc{\Large}{}{4mm}
 \frontmatter

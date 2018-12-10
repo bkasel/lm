@@ -101,8 +101,7 @@
 \normalsectiontitleformat
 \titleformat{\subsection}
   {\normalfont\normalsize\bfseries\sffamily\raggedright\protect\sansmath}{\lmserifmath}{0em}{}
-%\titleformat{\subsubsection}
-%  {\normalfont\normalsize\textsl}{\thesubsubsection}{1em}{}
+%   ... don't show subsection numbers (different from SN); overridden for FAC in fac.tex
 \titleformat{\subsubsection}
   {\normalfont\normalsize\slshape\raggedright}{\thesubsubsection}{1em}{}
 %-------------------- sections and subsections -------------------------
