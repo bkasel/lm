@@ -73,15 +73,6 @@ are confused. This continues through the end of the chapter.
 Narrowfigwidecaption doesn't reliably detect even/odd page.
 Goofy typesetting of symbols at end of hw in SN.
   Don't use \hwendpart macro at the very end of a problem.
-'Make prepress' dies with an error from ghostscript,
-  "ExtGState 's6' is unknown".
-  This happens with some figures when the figure is saved as
-  pdf by inkscape, e.g., gravity-probe-g-geodetic. The workaround
-  is to save it as a bitmap. The error can be detected by opening
-  the file with xpdf; uses same lib as gs, gives same error.
-  https://bugs.launchpad.net/inkscape/+bug/681512
-  This is a problem with cairo, can be fixed by upgrading from
-  ubuntu maverick to natty.
 Figure positioning doesn't work, no feedback loop.
   This can happen because there is no end_chapter in the rbtex file.
 
