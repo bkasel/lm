@@ -476,9 +476,6 @@ potential energy is minus the indefinite integral, or
 where the constant of integration is arbitrarily chosen to be zero, so that
 $U\rightarrow0$ as $r\rightarrow\infty$.
 
-Application: harshaw's theorem in one dimension for electric fields.
-Show photos of magnets, just make loose analogy.
-
 \startdq
 
 \begin{dq}
@@ -1011,7 +1008,7 @@ example must be the sum of the ones in examples 1 and 2, i.e., the divergence mu
 \end{eg}
 
 Example \ref{eg:div-examples} makes it clear that the form of the divergence operator in three
-dimensions is fixed, up to a constant of proportionality, by linearity, rotational invariance,
+dimensions is fixed, up to a constant of proportionality, by superposition, rotational invariance,
 and consistency with the one-dimensional expression. Detailed calculations with
 the divergence operator are not part of the logical backbone of this book,
 so the remaining details of the discussion are relegated to a note (\note{div-three-d}).
@@ -1022,7 +1019,7 @@ reads
 \end{equation*}
 where $\rho$ is the density of charge, in units of coulombs per cubic meter.
 
-<% marg(-5) %>
+<% marg(-7) %>
 <%   
   fig(
     'magnets-on-pencil',
@@ -1054,6 +1051,7 @@ solely out of point charges.
 \end{eg}
 
 <% end_sec('gauss-div') %>
+
 
 <% begin_notes %>
 
@@ -1116,7 +1114,7 @@ form of the divergence operator should be
 \end{equation*}
 If the generalization of the one-dimensional operator to three dimensions exists, then it must
 have this form.  If it is to be local, then it can only depend on the field and its derivatives.
-Linearity in the field rules out expressions such as
+Superposition rules out expressions such as
 $(\vc{E}\cdot\vc{E})(\partial E_x/\partial x)$ in which the field is combined with its derivatives.
 Only first derivatives are possible, because otherwise the units would not work out.
 Rotational invariance rules out derivatives such as $\partial E_x/\partial y$. There is nothing
@@ -1141,6 +1139,7 @@ proportionality in Gauss's law is $4\pi k$, we can apply Gauss's theorem to
 a spherical region centered on a point charge.
 
 
+
 <% end_notes %>
 
 <% begin_hw_sec %>
@@ -1152,6 +1151,11 @@ that estimated the energy scale for chemistry and atomic physics.
 Thomson
 
 Millikan
+
+co2 molecule modeled as Q q Q, find q/Q for unstable static equilibrium [ans:-1/4], and show
+that this is impossible if the molecule is neutral
+
+
 
 <% end_hw_sec %>
 

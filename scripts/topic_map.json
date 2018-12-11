@@ -2,7 +2,8 @@
     "1":    {
       "fac": {
         "1":"em-fields",
-        "2":"em-fields"
+        "2":"em-fields",
+        "3":"em-fields"
       },
       "cp":      {
         "1":"mechanics",
@@ -95,7 +96,8 @@
     "2":    {
       "fac": {
         "1":"relativity",
-        "2":"em-general"
+        "2":"em-general",
+        "3":"relativity"
       },
       "cp":      {
         "1":"relativity",
@@ -123,7 +125,8 @@
     },
     "3":    {
       "fac": {
-        "1":"mechanics"
+        "1":"mechanics",
+        "3":"mechanics"
       },
       "lm":      {
         "22":"em-general",

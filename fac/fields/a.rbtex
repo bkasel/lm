@@ -196,7 +196,7 @@ point, then the waves will pass through one another. The electric and
 magnetic fields in the region of intersection add as vectors but not
 otherwise interact. The beams emerge unscathed on the other side. 
 
-<% marg(-300) %>
+<% marg(300) %>
 <%   
   fig(
     'coil-spring-superposition-two-pos',
@@ -229,7 +229,7 @@ and which was detected experimentally at the Large Hadron Collider in 2012.
   fig(
     'ep',
     'The gravitational field is not observable.',
-    {'width'=>'wide','sidecaption'=>true}
+    {'width'=>'wide','sidecaption'=>false}
   )
 %>
 
@@ -660,7 +660,7 @@ and engineers have settled on the version of the metric system called the
 SI. One way of notating the energy densities in SI units is the following.
 \begin{align*}
   \der U_E &= \frac{1}{8\pi k} E^2 \der v \qquad \text{and} \\
-  \der U_B &= \frac{1}{8\pi k} (cB)^2 \der v .
+  \der U_B &= \frac{c^2}{8\pi k} B^2 \der v .
 \end{align*}
 Here $U$ stands for energy (to avoid a notational clash with $\vc{E}$
 for the electric field), $k$ is a constant called the Coulomb

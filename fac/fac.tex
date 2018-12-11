@@ -77,8 +77,9 @@
 \setcounter{chapter}{0}
 \wugga%used to be needed after preface
     \renewcommand{\chapdir}{fields}\include{fields/atemp}
-	\formatchtoc{\large}{\quad\contentspage}{4mm} % This has to go before the last chapter.
     \renewcommand{\chapdir}{fields}\include{fields/btemp}
+	\formatchtoc{\large}{\quad\contentspage}{4mm} % This has to go before the last chapter.
+    \renewcommand{\chapdir}{fields}\include{fields/ctemp}
         \addtocontents{toc}{\vspace{5mm}}% For reasons I don't understand, this actually comes *after* the final chapter.
 %
     \widelayout
