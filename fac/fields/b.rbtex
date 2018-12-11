@@ -423,7 +423,8 @@ the force of an electric field on a test charge is
 \end{equation*}
 If we liked, we could take this as the definition of the electric field (and most books do).
 This also explains why, in the system of units we have constructed, the units of the electric
-field can be written as newtons per coulomb (N/C).
+field can be written as newtons per coulomb (N/C). If the charge is positive, the force is
+in the direction of the field, while a negative charge feels a force in the opposite direction.
 
 \begin{eg}{A spark plug}\label{eg:spark-plug}
 \egquestion In a car with a gas-burning engine, the air-gas mixture is exploded by a spark from a spark plug.
@@ -978,7 +979,7 @@ this essentially ties down the form of the divergence operator.
 <%
   fig(
     'div-examples',
-    %q{Some diverging fields in two dimensions.},
+    %q{Example \ref{eg:div-examples}: some diverging fields in two dimensions.},
     {'width'=>'wide'}
   )
 %>
@@ -1011,8 +1012,8 @@ example must be the sum of the ones in examples 1 and 2, i.e., the divergence mu
 
 Example \ref{eg:div-examples} makes it clear that the form of the divergence operator in three
 dimensions is fixed, up to a constant of proportionality, by linearity, rotational invariance,
-and consistency with the one-dimensional expression. Detailed problem-solving with
-the divergence operator is not part of the logical backbone of this book,
+and consistency with the one-dimensional expression. Detailed calculations with
+the divergence operator are not part of the logical backbone of this book,
 so the remaining details of the discussion are relegated to a note (\note{div-three-d}).
 Filling in the necessary constant of proportionality, in SI units, the local form of Gauss's law
 reads
@@ -1020,6 +1021,37 @@ reads
   \operatorname{div}\vc{E} = 4\pi k\rho,
 \end{equation*}
 where $\rho$ is the density of charge, in units of coulombs per cubic meter.
+
+<% marg(-5) %>
+<%   
+  fig(
+    'magnets-on-pencil',
+    %q{The magnetic repulsion between the two doughnut magnets cannot create a stable equilibrium
+       by itself. An additional constraint has to be provided by the pencil.}
+  )
+%>
+<% end_marg %>
+
+\begin{eg}{Earnshaw's theorem}
+When kids first start playing with magnets, one of the first things they usually attempt,
+unsuccessfully, is to levitate a magnet in the air, by using a second magnet either to attract
+it from above or to repel it from below.
+
+For the electrical version of this, we could place
+a negative charge in the field of figure \subfigref{div-examples}{3}. The equilibrium at the
+center is stable, because if the charge is displaced by some small distance in any direction,
+it will experience an electrical force pointing back toward the center. But Gauss's law guarantees
+that this field pattern can never exist in empty space; it can only exist when some density of
+positive charge is present. This is a special case of Earnshaw's theorem, which states that a system
+of point charges can never be in stable static equilibrium.
+
+There are more general versions of the theorem
+that apply to magnetic forces made by permanent magnets such as the ones in figure \figref{magnets-on-pencil}.
+
+If you were inclined to dismiss the raisin cookie model of the atom (sec.~\ref{subsec:thomson},
+p.~\pageref{subsec:thomson}) as silly, note that it evades Earnshaw's theorem, since it is not made
+solely out of point charges.
+\end{eg}
 
 <% end_sec('gauss-div') %>
 
