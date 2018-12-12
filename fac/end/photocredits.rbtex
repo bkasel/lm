@@ -33,7 +33,7 @@
 <% photo_credit("variable-capacitor","Variable capacitor","Wikimedia Commons user Solaris2006, CC-BY-SA licensed") %> % https://commons.wikimedia.org/wiki/File:Air_variable_capacitor.jpg
 <% photo_credit("bridge-tower","Golden gate bridge","Wikimedia Commons user Calibas, CC-BY-SA") %> % https://en.wikipedia.org/wiki/File:Golden_Gate_bridge_pillar.jpg
 <% photo_credit("salt-crystal","Salt crystal","Wikimedia Commons user Benjah-bmm27, public domain") %> % https://commons.wikimedia.org/wiki/File:Sodium-chloride-3D-ionic.png
-<% photo_credit("halley","Halley's comet","NASA/W.~Liller, public domain") %>
+<% photo_credit("halley","Halley's comet","NASA/W.~Liller, public domain") %> % https://commons.wikimedia.org/wiki/File:Lspn_comet_halley.jpg
 
 <% print_photo_credits() %>
 
