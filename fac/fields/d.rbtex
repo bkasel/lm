@@ -1,0 +1,42 @@
+<%
+  require "../eruby_util.rb"
+%>
+
+<%
+  chapter(
+    '04',
+    %q{The electric potential},
+    'ch:potential'
+  )
+%>
+
+<% begin_sec("Something is missing",nil,'something-is-missing') %>
+Sometimes in physics, as in life, we may not realize that there is a piece
+missing from a puzzle. To see that there is such a missing piece in our
+description of the electric field, consider the following seemingly minor
+technical issue.
+
+<% marg() %>
+<%
+  fig(
+    'capacitor-possible-and-impossible',
+    %q{%
+      foo
+    }
+  )
+%>
+<% end_marg %>
+
+<% end_sec('something-is-missing') %>
+
+
+<% begin_notes %>
+<% end_notes %>
+
+<% begin_hw_sec %>
+
+<% end_hw_sec() %>
+
+
+
+<% end_chapter() %>

@@ -1,0 +1,724 @@
+<%
+  require "../eruby_util.rb"
+%>
+
+<%
+  chapter(
+    '03',
+    %q{Electromagnetism},
+    'ch:electromagnetism',
+    %q{A tower and cables of the Golden Gate Bridge. The pressure and tension in the tower and
+       cables are properties of the electric and magnetic fields at the atomic level.},
+    {'opener'=>'bridge-tower','sidecaption'=>false,'anonymous'=>true,'width'=>'fullpage'}
+  )
+%>
+
+<% begin_sec("Current and magnetic fields",nil,'current-and-b') %>
+At this stage, you understand roughly as much about the classification
+of interactions as physicists understood around the year 1800. There
+appear to be three fundamentally different types of interactions:
+gravitational, electrical, and magnetic. Many types of interactions
+that appear superficially to be distinct --- stickiness, chemical
+interactions, the energy an archer stores in a bow --- are really the
+same: they're manifestations of electrical interactions between atoms.
+Is there any way to shorten the list any further? The prospects seem
+dim at first. For instance, we find that if we rub a piece of fur on a
+rubber rod, the fur does not attract or repel a magnet.  The fur has
+an electric field, and the magnet has a magnetic field. The two are
+completely separate, and don't seem to affect one another. Likewise we
+can test whether magnetizing a piece of iron changes its weight. The
+weight doesn't seem to change by any measurable amount, so magnetism
+and gravity seem to be unrelated. 
+
+That was where things stood until 1820, when the Danish physicist Hans
+Christian\index{Oersted, Hans Christian} Oersted was delivering a
+lecture at the University of Copenhagen, and he wanted to give his
+students a demonstration that would illustrate the cutting edge of
+research. He used a battery to make charge flow through a wire, and
+held the wire near a magnetic compass. The ideas was to give an
+example of how one could search for a previously undiscovered link
+between electricity (the charge flowing in the wire) and magnetism.
+One never knows how much to believe from these dramatic legends, but
+the story is that the experiment he'd expected to turn out negative
+instead turned out positive: when he held the wire near the compass,
+the current in the wire caused the compass to twist!
+
+Oersted was led to the conclusion that when matter creates magnetic
+fields, it happens because the matter contains moving charges.  A
+permanent magnet, he inferred, contained currents on a microscopic
+scale that simply weren't practical to measure with an ammeter. Today
+this seems natural to us based on the planetary model of the atom. As
+shown in figure \figref{magnetized}, a magnetized piece of iron is
+different from an unmagnetized piece because the atoms in the
+unmagnetized piece are jumbled in random orientations, whereas the
+atoms in the magnetized piece are at least partially organized to face
+in a certain direction. 
+
+<% marg(300) %>
+<%
+  fig(
+    'oersted',
+    %q{1.~When no charge flows through the wire, and the magnet is
+       unaffected. It points in the direction of the Earth's magnetic field.
+       2.~Charge flows through the wire. There is a strong effect on the magnet, which turns almost perpendicular
+       to it. If the earth's field could be removed entirely, the compass would point exactly perpendicular to the
+       wire; this is the direction of the wire's field.}
+  )
+%>
+\spacebetweenfigs
+<%
+  fig(
+    'magnetized',
+    %q{A schematic representation of an unmagnetized material, 1, and a magnetized one, 2.}
+  )
+%>
+<% end_marg %>
+
+Not until later in this book will we get into the mathematical
+and geometrical details of the magnetic fields created by moving charges.
+However, we can immediately make some far-reaching conclusions. Figure
+\subfigref{field-transformation-cartoon}{1} shows, in a cartoonish way,
+the fact that a line of positive charges, at rest, makes an electric field
+in the surrounding space. If we approximate the charges as a continuous line
+with no gaps, then the electric field is one we have already studied in sec.~\ref{sec:gauss-in-lt-3-dim},
+p.~\pageref{sec:gauss-in-lt-3-dim}: it points outward, and its magnitude is
+proportional to $1/r$, where $r$ is the distance from the line.
+
+But now let's switch to a different frame of reference, as in figure
+\subfigref{field-transformation-cartoon}{2}. In this frame, the charges are moving,
+so there is both an electric field and a magnetic field. We are led to the following
+important conclusion:
+
+\begin{important}[Electromagnetism]
+A certain mixture of electric and magnetic fields will be measured as a different
+mixture by an observer in a different state of motion.
+\end{important}
+
+This shows that electric and magnetic fields are not entirely separate things, but
+are instead two sides of the same coin. The conclusion holds regardless of whether
+matter is present. For these reasons, the entire subject of electricity and magnetism is
+often referred to by the term electromagnetism. We often refer loosely to ``the electromagnetic
+field,'' meaning both $\vc{E}$ and $\vc{B}$ collectively.
+
+In the language of section \ref{subsec:charge-invariant}, p.~\pageref{subsec:charge-invariant}, the fields
+are not invariant quantities. They depend on the frame of reference,
+as do other more familiar quantities such as velocity. When we want to
+convert a velocity vector from one frame of reference to another, we
+have a rule for doing so, which is simple vector addition. In fancy
+language, this is called ``transforming'' the velocity vector. The
+rules for transforming electric and magnetic fields are more
+complicated, and we will wait until later to discuss them. However,
+one thing we can say about the transformations is that they must
+\emph{additive}, because the laws of physics obey the principle of
+superposition, and we want the laws of physics to be equally valid in
+all frames of reference.
+
+<% marg(300) %>
+<%
+  fig(
+    'field-transformation-cartoon',
+    %q{1.~A line of positive charges is at rest. There is an electric field.
+       2.~In a different frame of reference, the same charges are seen as moving to the right.
+          There is both an electric field and a magnetic field.}
+  )
+%>
+\spacebetweenfigs
+<%
+  fig(
+    'salt-crystal',
+    %q{A salt crystal, example \ref{eg:salt-crystal}.}
+  )
+%>
+<% end_marg %>
+
+
+By the way, the concepts that we are describing using the words ``superposition''
+and ``additive'' are usually referred to by mathematicians using the terms
+``linearity'' and ``linear.'' For example, a mathematician would describe
+the derivative rule $(f+g)'=f'+g'$ from freshman calculus as the linearity
+of the derivative.
+
+\begin{eg}{Throwing salt doesn't make a magnet}\label{eg:salt-crystal}
+Figure \figref{salt-crystal} shows a salt crystal. The smaller, darker
+spheres are sodium atoms.  Bigger, lighter ones are chlorine. When
+these disparate atoms assemble themselves into a solid, some charge
+is transferred from the chlorines to the sodiums. This is essentially
+the same thing that is going on in static electricity examples such as
+the sticky tape in figure \figref{twotapes-fields}, p.~\pageref{fig:twotapes-fields}:
+different substances ``like electrons'' to different extents, so when they are
+put in contact, one steals from the other.
+
+In the frame of reference where the crystal is at rest, it has an outward electric
+field $\vc{E}_1$ due to the sodiums and an inward field $\vc{E}_2$ from the chlorines.
+These two fields are theoretically incredibly intense, but due to superposition,
+they almost exactly cancel at the macroscopic scale, and cannot be detected outside
+the crystal. (At the microscopic scale, where it is evident that the positive and
+negative charge distributions aren't exactly the same, the cancellation fails, and
+there are intense fields. These fields are what hold the crystal together.)
+
+If we throw the salt crystal, then the field $\vc{E}_1$ of the sodiums
+transforms to some mixture of an electric field plus a magnetic field
+$\vc{B}_1$, and similarly we have a $\vc{B}_2$ from the chlorines. 
+But because $\vc{E}_1+\vc{E}_2=0$, and because the transformation is
+additive, we have $\vc{B}_1+\vc{B}_2=0$ as well, and no observable magnetic
+field is produced.
+\end{eg}
+
+\begin{eg}{Magnetic field of a wire}\label{eg:field-of-wire}
+Since the electric field in
+\subfigref{field-transformation-cartoon}{1} is proportional to $1/r$, the electric
+and magnetic fields in \subfigref{field-transformation-cartoon}{2} are also proportional to $1/r$.
+
+Now consider a wire such as the one in figure \subfigref{oersted}{2}. Such a wire is electrically neutral,
+containing equal numbers of positive and negative charges. In the condition where charge
+is flowing, the charges of one sign are standing still while the ones with the other
+sign move. (In a metal wire, the moving charges are the electrons and the stationary
+ones are the nuclei.) This is essentially the situation in figure
+\subfigref{field-transformation-cartoon}{2}, except that the electric fields cancel out,
+leaving a purely magnetic field. We conclude that when charges flow through a wire, the
+magnetic field surrounding the wire is proportional to $1/r$.
+
+<% marg(55) %>
+<%
+  fig(
+    'field-lines-of-wire',
+    %q{Example \ref{eg:field-of-wire}. The field pattern is shown in the plane perpendicular
+       to the wire. The white circle at the center is the cross-section of the wire.}
+  )
+%>
+<% end_marg %>
+
+We have not yet developed enough of the math and geometry to be able to predict the
+direction of this field, but it is clear from Oersted's experimental evidence
+(figure \figref{oersted}, p.~\pageref{fig:oersted}) that it is not in the radial direction.
+Rather, it circulates around the wire as shown in figure \figref{field-lines-of-wire}.
+\end{eg}
+
+In cases such as example \ref{eg:field-of-wire}, we find that the magnetic field
+depends only (\note{b-propto-i}) on an electrical quantity called the \emph{current},\index{current}
+defined as the number of coulombs per second that flow past a given point.
+As with a river or a pipe carrying water, the same current could be created by a large amount
+of charge moving slowly, or a small amount with a high velocity. Current is notated $I$,
+and is defined formally as
+\begin{equation*}
+  I = \frac{\der q}{\der t}.
+\end{equation*}
+Its units are normally abbreviated as amperes (``amps''), 1 A=1 C/s.
+
+Current is of great practical interest in electrical circuits, which we will study
+more intensively later in this course.
+To measure current, there is a device called an ammeter. (Today, people usually use
+a device called a multimeter, which has multiple functions including working as
+an ammeter.)
+
+<% end_sec('current-and-b') %>
+
+<% begin_sec("Energy, pressure, tension, and momentum in fields",nil,'stress-energy') %>
+<% begin_sec("Momentum",nil,'momentum-of-em-fields') %>
+Material objects can have energy, momentum, pressure, and tension.  We
+have already seen that electric and magnetic fields have energy, and
+we will soon see that they carry the other properties on this list as
+well. Indeed, for an object like the suspension bridge in the photo on
+p.~\pageref{ch:electromagnetism}, it is an illusion that the pressure
+in the towers and the tension in the cables are provided by the steel.
+Matter is essentially empty space with a sprinkling of pointlike subatomic
+particles, and the pressure and tension in the bridge are in fact
+properties of the electric and magnetic fields that exist in this
+empty space. (Try not to think about this the next time you drive across
+a bridge.)
+
+There is a reason that we discussed the energy density of fields way
+back in chapter \ref{ch:fields-intro}, but are only now getting to the
+momentum density. This is because, for straightforward mathematical
+reasons, momentum can never be carried by a pure electric or pure
+magnetic field, but only by a combination of both. That is, the
+momentum density is an electromagnetic property. To see this, consider
+the fact that we have only two ways of multiplying vectors: the dot
+product, which is a scalar, and the cross product, which is a vector.
+(These operations were reviewed in sec.~\ref{subsec:dot-and-cross-product},
+p.~\pageref{subsec:dot-and-cross-product}.)
+Energy is a scalar, so it makes sense that the energy in the fields
+goes like $\vc{E}\cdot\vc{E}$ and $\vc{B}\cdot\vc{B}$, i.e., like the
+squared magnitudes of the fields. Momentum is a vector, so the
+momentum density must be a cross product of the fields. But the cross
+product of parallel vectors is always zero, so expressions like
+$\vc{E}\times\vc{E}$ and $\vc{B}\times\vc{B}$ vanish identically and
+are useless for our purposes. The momentum density must therefore be
+proportional to $\vc{E}\times\vc{B}$, so it is a joint property of the
+two fields. Filling in the correct constant of proportionality, which we'll come back
+to in a moment, it turns
+out that the momentum is given by
+\begin{equation*}
+  \der\vc{p} = \frac{c^2}{4\pi k} \vc{E}\times\vc{B} \der v.
+\end{equation*}
+The momentum density $\der\vc{p}/\der v$ is often notated $\vc{S}$, and
+is referred to as the Poynting vector, after John Henry Poynting --- a wonderful
+coincidence, because the vector \emph{points} in the direction of the momentum.
+
+For convenient reference, we recapitulate the energy densities here as well:
+\begin{align*}
+  \der U_E &= \frac{1}{8\pi k} E^2 \der v \\
+  \der U_B &= \frac{c^2}{8\pi k} B^2 \der v .
+\end{align*}
+
+The argument given above only demonstrated that the momentum density
+had to be proportional to $\vc{E}\times\vc{B}$, but it didn't fix the
+proportionality constant of $c^2/4\pi k$. The $c^2/k$ has to be there
+because of units, but we might wonder why the unitless factor isn't
+simply zero rather than $1/4\pi$.  After all, we don't notice this
+momentum in everyday life; for example, when we turn on a flashlight,
+it doesn't recoil like a gun. The answer is that the physical quantities
+on the list we've been discussing --- energy, momentum, pressure, and tension --- are
+not independent things. They're all intimately related.
+For example, if we want to change the kinetic energy
+of a car, we have to change its momentum as well (\note{p-related-to-ke}).
+If a radio signal comes along and pumps kinetic energy into the electrons
+in the antenna of your phone, then it's also transferring momentum to them,
+and therefore it must have some momentum itself.
+
+It is in fact plausible that the proportionality constant occurring in
+the equation for the Poynting vector is such that the momentum of
+light is too small to notice in everyday life. For material objects
+moving at speeds small compared to $c$, the kinetic energy and
+momentum are given by $K=(1/2)mv^2$ and $p=mv$, so that the ratio of
+momentum to energy is $p/K=2/v$. Therefore objects moving very fast
+have very little momentum in proportion to their energy. We see this,
+for example, in an old-fashioned CRT television tube, in which the
+electron beam moves at extremely high speeds (perhaps $10^6\
+\munit/\sunit$); the energy is enough to make a bright image on the
+screen, but the device doesn't recoil from the beam's momentum when we
+turn it on, nor does it shake and rattle as the the beam is steered
+back and forth across the screen to paint the picture.  Although the
+the equations above do not actually hold in detail for light (the
+final result ends up being off by a factor of 2), it still makes sense
+that the momentum-to-energy ratio is extremely small, because the
+speed, $c$, is so big.
+
+\begin{eg}{Halley's comet}\label{eg:halley}\index{Halley's comet}\index{comet}
+Halley's comet, shown
+in figure \figref{halley}, has a very elongated elliptical orbit, like those of
+many other comets. About once per century, its orbit brings
+it close to the sun. The comet's head, or nucleus, is
+composed of dirty ice, so the energy deposited by the
+intense sunlight gradually removes ice from the surface and turns it into water vapor.
+
+<% marg() %>
+<%
+  fig(
+    'halley',
+    %q{%
+      Halley's comet, example \ref{eg:halley}.
+    }
+  )
+%>
+\spacebetweenfigs
+<%
+  fig(
+    'nichols-radiometer',          
+    %q{Example \ref{eg:nichols-radiometer}.}
+  )
+%>
+<% end_marg %>%
+
+The sunlight does not just carry energy, however. If it only carried
+energy, then the water vapor would just form a spherical halo that
+would surround the nucleus and travel along with it.  The light also
+carries momentum. Once the steam comes off, the momentum of the
+sunlight impacting on it pushes it away from the sun, forming a tail
+as shown in in the top image.  (Some comets also have a second tail,
+which is propelled by electrical forces rather than by the momentum of
+sunlight.)
+\end{eg}
+
+\begin{eg}{The Nichols radiometer}\label{eg:nichols-radiometer}
+Figure \figref{nichols-radiometer} shows a simplified drawing of the
+1903 experiment by Nichols and Hull that verified the predicted
+momentum of light waves. Two circular mirrors were hung from a fine
+quartz fiber, inside an evacuated bell jar. A 150 mW beam of light was
+shone on one of the mirrors for 6 s, producing a tiny rotation, which
+was measurable by an optical lever (not shown). The force was within
+0.6\% of the theoretically predicted value of $0.001\
+\mu\nunit$.\index{Nichols-Hull experiment on momentum of light} For
+comparison, a short clipping of a human hair weighs $\sim 1\
+\mu\nunit$. 
+\end{eg}
+
+Having gone to all this trouble justifying the fact that the coefficient in
+the equation for the momentum density makes sense in its nonzero value, units,
+and order of magnitude, we will defer the justification for the unitless
+factor of $1/4\pi$, which will be much more easily explained when we have
+delved further into relativity.
+
+Because the momentum of light waves is so small in cases like examples
+\ref{eg:halley} and \ref{eg:nichols-radiometer}, one might wonder why
+we should even bother discussing it. Is it purely an impractical and
+theoretical consideration? The answer is that it is very practical in
+the sense that it helps us to understand important practical facts
+about these waves. 
+
+One such fact is that disturbances in the electric and magnetic fields
+are never purely electric waves or magnetic waves. They carry
+momentum, and therefore they must contain an oscillation of both
+fields. This is why phenomena like light and radio waves are referred
+to as electromagnetic waves. 
+
+We can also see that such waves must have fields with nonvanishing
+components perpendicular to the direction in which the wave is
+traveling, because the cross product $\vc{E}\times\vc{B}$ is
+perpendicular to both $\vc{E}$ and $\vc{B}$.  In fact, for the simplest
+wave patterns (such as a laser beam or a small enough piece of sunlight),
+we will see that the fields are purely perpendicular to the direction
+of propagation --- they have no component at all parallel to the momentum.
+<% end_sec('momentum-of-em-fields') %>
+<% begin_sec("Pressure and tension",nil,'pressure-of-em-fields') %>
+Pressure is defined as the force per unit area, applied perpendicular to the
+area. It has units of newtons per square meter, which can also be abbreviated
+as pascals, 1 Pa=1 N/m. The earth's atmospheric pressure is about 100 kPa, and
+car tires are usually inflated to about 250 kPa over atmospheric pressure.
+
+Whenever momentum is transferred from one region of space to another,
+pressure is involved, and in fact this is an equally valid definition
+of pressure. For example, when a bat hits a baseball, the rate at which
+momentum is transferred into the ball, per unit area, is the pressure.
+
+Some materials can sustain tension, which is negative pressure. For example,
+a rod can sustain either tension or pressure, but a rope can only sustain
+tension --- you can't push with a rope.
+
+In all of the examples above involving material objects, the pressure and tension
+are in fact properties not of the objects but of the electric and magnetic fields,
+which are the glue holding the atoms together. Although it is possible to give
+formulas for the pressure and tension in the electromagnetic field, we will find
+it more useful in this course to develop some visual rules for making accurate
+inferences based on pictures of the fields.
+
+<% marg() %>
+<%
+  fig(
+    'capacitor-pressure-and-tension',
+    %q{%
+      Pressure and tension in the field of a parallel-plate capacitor. Side view.
+    }
+  )
+%>
+<% end_marg %>
+
+As a simple first example of these visual rules, consider the
+arrangement in figure \figref{capacitor-pressure-and-tension}, in
+which positive and negative charges are spread across two parallel
+metal plates. This is called a capacitor.  The field is drawn by hand
+to have roughly the features we would find if we added up the fields
+of a large number of point charges on the two plates. The field lines
+begin on the positive charges, which are the sources of the electric
+field, and end on the negative ones, which are the sinks. The field is
+nearly uniform on the interior and nearly zero on the exterior. To
+understand the reason for this behavior, recall that for an infinite
+plane of charge, the field is constant on both sides
+(sec.~\ref{sec:gauss-in-lt-3-dim},
+p.~\pageref{sec:gauss-in-lt-3-dim}). Since the two plates are
+finite, their individual contributions to the total field are nearly
+constant on either side of each one. If they were infinite, then these
+fields would be exactly constant, and their sum would exactly cancel
+on the exterior, while reinforcing on the interior.
+
+We know from Coulomb's law that the positive and negative charges are
+attracting one another, so the plates are being pulled toward each other.
+The capacitor wants to collapse, and must be prevented from doing so
+by some external structure (not shown). This is a tension in the vertical
+direction. The field lines act like taut ropes.
+
+We also know that within each plate, the like charges are all repelling
+each other, and this would cause the plate to explode in the horizontal
+direction, except that again there must be something else holding it together.
+This is a kind of pressure. We see that pressure is exerted in the direction
+perpendicular to the field lines, as if they were physical objects trying to
+stay away from one another.
+
+These are general rules, which apply to both the electric and the magnetic fields:
+field lines sustain tension parallel to themselves, and pressure in the perpendicular
+direction.
+
+
+<%
+  fig(
+    'two-charges-pressure-and-tension',
+    %q{Tension and pressure, for two-charge systems.},
+    {'width'=>'wide','sidecaption'=>true}
+  )
+%>
+
+Figure \figref{two-charges-pressure-and-tension} shows two examples. In
+\subfigref{two-charges-pressure-and-tension}{1}, the highlighted area between the
+opposite charges contains field lines oriented horizontally, which create tension
+in that direction. The charges attract one another. There is also pressure in the
+vertical direction, but this is in the wrong direction to produce any effect on the
+charges, which are separated from each other horizontally.
+
+In  \subfigref{two-charges-pressure-and-tension}{2}, the highlighted area
+between the two positive charges contains field lines that vertical pressure,
+causing a repulsion between the charges, along with a horizontal tension which
+has no effect on them.
+
+To see the advantage of this mode of reasoning, compare with the much
+more complicated logic that we had to do on
+p.~\pageref{fig:eg-two-charges-pe} in order to analyze
+the situation \subfigref{two-charges-pressure-and-tension}{1} by talking about the change in the
+fields' energy that would have occurred if they were moved closer together or farther apart
+(\note{energy-pitfalls}).
+
+
+
+<% end_sec('pressure-of-em-fields') %>
+<% end_sec('stress-energy') %>
+
+<% begin_sec("The dipole",nil,'dipole') %>
+
+<% marg() %>
+<%
+  fig(
+    'compass-misaligned-field-lines',
+    %q{A compass needle in the earth's field.}
+  )
+%>
+<% end_marg %>
+Figure \figref{compass-misaligned-field-lines} shows the superposition
+of a compass needle's magnetic field (essentially the field of figure
+\figref{bar-magnet-field-lines}, p.~\pageref{fig:bar-magnet-field-lines})
+with the earth's magnetic field. The compass is not aligned with the earth's
+field, and from what we know about magnetic compasses we expect that there will
+be a torque that will tend to bring it into alignment.
+It could in principle be very difficult to find this torque, since the magnetic field
+pattern is so complicated. But by using the visual techniques of section
+\ref{subsec:pressure-of-em-fields}, it's pretty easy to get the right answer for its sign.
+There is tension at the top right and bottom left of the needle because of the
+densely packed field lines. This tension will create a counterclockwise torque.
+
+A real-world hiking compass is usually filled with water in order to create friction.
+The needle vibrates about an equilibrium, but this friction rapidly kills the oscillations,
+and it ends up in a state of lowest energy, in which it is aligned with the earth's
+field (\note{compass-energy}). If we were to redraw figure \figref{compass-misaligned-field-lines}
+for the equilibrium condition, it would have a left-right mirror symmetry, so the
+torque must vanish, and this is consistent with equilibrium.
+
+The reason we can treat the earth's field as uniform in this example is that the compass
+is so small compared the earth. In this approximation, which is an excellent one in this
+example, we can think of the compass as an idealized, very small object which feels no
+net force from the field, only a torque.\footnote{To get a nonvanishing force from the earth's
+magnetic field, we would have to have an isolated ``magnetic charge,'' and the apparent
+nonexistence of such things is expressed by Gauss's law for magnetism.}
+Such an idealized object is called a \emph{dipole}. There can be both electric and magnetic
+dipoles. An electric dipole tends to align itself with the electric field.
+
+If we change the orientation of a dipole, say a magnetic one, then its own contribution
+to the field, $\vc{B}_1$ rotates along with it. Meanwhile, the uniform external field
+$\vc{B}_2$ remains constant. For a given orientation, the superposition of the two fields may be
+something complicated like figure \figref{compass-misaligned-field-lines}. But regardless
+of how complicated it is, the total energy of this field will always vary with orientation
+in a very simple way: it is proportional to the cosine of the angle between the external field
+and an axis, such as the long axis of the compass needle, determined by the structure of the
+dipole (proof \note{dipole-energy-proof}). This is the behavior of a vector dot product, so
+we have for the energy
+\begin{equation*}
+  U = -\vc{m}\cdot\vc{B},
+\end{equation*}
+where $\vc{m}$ is a vector called the dipole moment, and the minus sign is a matter of convention.
+
+A mechanical analogy is that if a pendulum has length $\ell$ and mass $M$ at the end, then
+we can define a vector with magnitude $\ell M$ and direction pointing from the axis
+to the mass, and an identical expression holds for the energy of the pendulum in the
+earth's gravitational field, since the height of the mass is just $-\ell\cos\theta$,
+where $\theta$ is the displacement from equilibrium. But there is no such thing as
+a pure gravitational dipole, because any material object in a gravitational field will
+experience a net force as well as a torque.
+
+We could try to be whimsical and get around this by putting a mass at one end of a stick
+and a helium balloon at the other, tuning up the setup so that the whole thing was
+neutrally buoyant. Less whimsically, this is similar to the simplest way of making an
+\emph{electric} dipole: attach  charges $q$ and $-q$ to opposite ends of a stick of length $\ell$.
+The result is an electric dipole moment, notated $\vc{D}$, with magnitude $\ell q$ and energy
+\begin{equation*}
+  U = -\vc{D}\cdot\vc{E}
+\end{equation*}
+in an external electric field.
+
+\begin{eg}{Dipole moment of a molecule of NaCl gas}
+        \egquestion
+        In a molecule of NaCl gas (cf.~example \ref{eg:salt-crystal}, p.~\pageref{eg:salt-crystal}), the center-to-center
+        distance between the two atoms is about 0.24 nm. Assuming
+        that the chlorine completely steals one of the sodium's
+        electrons, compute the magnitude of this molecule's dipole moment.
+
+        \eganswer
+        The total charge is zero, so it doesn't matter where we choose the
+        origin of our coordinate system. For convenience, let's choose
+        it to be at one of the atoms, so that the charge on that atom 
+        doesn't contribute to the dipole moment.
+         The magnitude of the dipole moment is then
+        \begin{align*}
+                         D         &=    (2.4\times10^{-10}\ \zu{m})( e)  \\
+                                 &=    (2.4\times10^{-10}\ \zu{m})( 1.6\times10^{-19}\ \zu{C})  \\
+                                 &\approx    4\times10^{-29}\ \zu{C}\cdot\zu{m}.
+        \end{align*}
+        The experimentally measured value is $3.0\times10^{-29}\ \zu{C}\cdot\zu{m}$, which shows
+        that the electron is not completely ``stolen.''
+% McCaffrey, https://www.era.lib.ed.ac.uk/bitstream/1842/2601/2/McCaffrey%20PD%20thesis%2007.pdf
+% someone else's measurement, quoted on p. 167 of pdf
+% 8.97 Debye units; 1 D=10^-18 statC.cm
+% calc -e "d=3.3 10^-30 C.m; 8.97d"
+\end{eg}
+
+\begin{eg}{Molecules with zero and nonzero dipole moments}\label{eg:molecular-dipoles}
+It can be useful to know whether or not a molecule is polar, i.e., has a nonzero dipole moment.
+A polar molecule such as water is readily heated in a microwave oven, while a nonpolar one is not.
+Polar molecules are attracted to one another, so polar substances dissolve in other polar substances,
+but not in nonpolar substances, i.e., ``like dissolves like.'' 
+
+<%
+  fig(
+    'molecular-dipoles',
+    %q{%
+      Example \ref{eg:molecular-dipoles}. The positive $x$ axis is to the right, $y$ is up,
+      and $z$ is out of the page. Dark gray atoms are carbon, and the small light gray ones are hydrogen.
+      Some other elements are labeled when their identity would otherwise not be clear.
+    },
+    {
+      'width'=>'wide',
+      'sidecaption'=>true,
+      'sidepos'=>'b'
+    }
+  )
+%>
+
+In a symmetric molecule such as carbon disulfide, figure
+\subfigref{molecular-dipoles}{1}, the dipole moment vanishes.
+For if we rotate the molecule by 180 degrees about any one
+of the three coordinate axes defined in the caption of the figure, the molecule is unchanged, which means
+that its dipole moment is unchanged. The only vector that has these properties is
+the zero vector.
+
+Similar symmetry arguments show that sulfur hexafluoride, \subfigref{molecular-dipoles}{2}, and
+benzene \subfigref{molecular-dipoles}{3}, have vanishing dipole moments.
+
+The formaldehyde molecule, \subfigref{molecular-dipoles}{4}, does not have enough symmetry to guarantee
+that its dipole moment must vanish, but it does have enough to dictate it must be equivalent
+to a two-charge dipole lying along the left-right axis.
+Chloroform, \subfigref{molecular-dipoles}{5}, is a front-to-back dipole for the
+orientation drawn in the figure.
+
+From these considerations we can tell, for example, that
+carbon disulfide will be soluble in benzene, but chloroform will not.
+
+Symmetry arguments are not enough to determine, for example, whether 
+formaldehyde's dipole moment points to the left or to the right in the
+figure. This requires some knowledge of
+chemistry and the periodic table.
+\end{eg}
+
+<% end_sec('dipole') %>
+
+<% begin_notes %>
+\notetext{b-propto-i}{Proportionality of magnetic field to current}
+\notesummary{The magnetic field created by a current is exactly proportional to the current.}
+It is not surprising that the magnetic field of a current-carrying wire, as in example
+\ref{eg:field-of-wire}, p.~\pageref{eg:field-of-wire}, is approximately proportional to
+the current. This must be so based on the fact that the transformation of the fields
+is additive and is smooth as a function of the velocity. What is more remarkable is
+that this proportionality to the current is \emph{exact} at all velocities. We will
+see later that there is theoretical justification for this fact.
+
+\notetext{p-related-to-ke}{Newtonian relation between momentum and kinetic energy}
+\notesummary{As an example of the intimate relationship between momentum and kinetic
+energy, the momentum of material objects must be conserved in Newtonian mechanics if
+conservation of energy is to hold in all frames of reference.}
+The basic insight can be extracted from the special case where there
+are only two particles interacting, and they only move in one dimension,
+Conservation of energy says
+\begin{equation*}
+        K_{1i}+K_{2i}+U_i = K_{1f}+K_{2f}+U_f\eqquad.
+\end{equation*}
+For simplicity, let's assume that the interactions start after the time we're calling
+initial, and end before the instant we choose as final. Then there is no change in
+potential energy, $U_i=U_f$, and we can subtract the
+potential energies from both sides, giving.
+\begin{align*}
+        K_{1i}+K_{2i} &= K_{1f}+K_{2f}  \\
+        \frac{1}{2}m_1v_{1i}^2+\frac{1}{2}m_2v_{2i}^2 
+                        &= \frac{1}{2}m_1v_{1f}^2+\frac{1}{2}m_2v_{2f}^2\eqquad.
+\end{align*}
+In a frame of reference moving at velocity $u$
+relative to the first one, the velocities all have $u$ added onto them:
+\begin{multline*}
+                        \frac{1}{2}m_1(v_{1i}+u)^2+\frac{1}{2}m_2(v_{2i}+u)^2 \\
+                                = \frac{1}{2}m_1(v_{1f}+u)^2+\frac{1}{2}m_2(v_{2f}+u)^2 
+\end{multline*}
+When we square a quantity like $(v_{1i}+u)^2$, we get the same $v_{1i}^2$ that
+occurred in the original frame of reference, plus two $u$-dependent terms,
+$2v_{1i}u+u^2$. Subtracting the original conservation of energy equation
+from the  version in the new frame of reference, we have
+        \begin{align*}
+                m_1v_{1i}u+m_2v_{2i}u = m_1v_{1f}u+m_2v_{2f}u\eqquad, \\
+                \intertext{or, dividing by $u$,}
+                m_1v_{1i}+m_2v_{2i} = m_1v_{1f}+m_2v_{2f}\eqquad.
+        \end{align*}
+This is a statement of conservation of momentum.
+
+\notetext{energy-pitfalls}{Pitfalls in reasoning about forces based on energy changes}
+\notesummary{We discuss what can go wrong when we try to reason about electromagnetic forces
+between objects by considering the change in the fields' energy when the objects are moved.}
+On p.~\pageref{fig:eg-two-charges-pe} we showed that unlike charges attracted, by reasoning
+about how the energy in the electric field would be reduced if the charges were brought closer.
+This is inherently a complicated mode of reasoning, and is also easy to get wrong, for the following
+reason. When we integrate the field of some arrangement of point charges, we will get an improper
+integral. It's improper both because the energy density blows up near the charges and because
+the integration reaches out to infinite distances. This integral may or may not converge. Of
+course, we may thing that \emph{physically} it can't diverge, and that may be because the charges
+aren't really pointlike, or other things may happen to the field far away. But this is nevertheless
+a significant obstacle to getting the answer right.
+
+For example, suppose we want to find, by this method, the force
+on a point charge that exists in a uniform field. The total energy in the uniform field is infinite,
+with or without the point charge, because it fills an infinite amount of space. The energy of the
+point charge's own field is also infinite because it blows up like $1/r^2$ close to the charge.
+It also seems as though this infinite total energy should be the same regardless of where the
+charge is. So if we displace the charge by some distance, we're effectively trying to calculate
+$\infty-\infty$, which is an indeterminate form. To make it meaningful, we would be forced to do
+something like artificially introducing some finite size for the pointlike charge, and restricting
+the uniform field to some finite region of space, such as the interior of a parallel-plate capacitor.
+This does work, and it is not hard to convince oneself qualitatively that it does produce a force
+in the correct direction. Nevertheless, it is far from the easiest method.
+
+\notetext{compass-energy}{Minimizing the energy of a compass needle}
+\notesummary{We discuss the minimization of the energy in the magnetic field of a compass needle.}
+The result of our analysis of figure \figref{compass-misaligned-field-lines} on
+p.~\pageref{fig:compass-misaligned-field-lines} tells us that the compass needle will
+tend to align itself so that its own internal field is in the same direction as the
+ambient field. This is a little surprising, since the energy stored in the magnetic
+field on the interior is then increased. However, the needle also contributes to the
+field \emph{outside} itself, and this field is predominantly in the opposite direction
+compared to the interior field. It's true but not obvious that this smaller exterior
+field, integrated over the large exterior volume, ends up being the dominant effect.
+
+\notetext{dipole-energy-proof}{Dipole's energy proportional to cosine of an angle}
+\notesummary{We prove that the energy of a dipole in an external field is proportional
+to the cosine of the angle between the field and some internal axis determined by the structure of the
+dipole.}
+In the notation introduced in the main text, $\vc{B}_1$ is the field of the dipole,
+$\vc{B}_2$ the uniform external field. The  energy density of the total magnetic field at
+any given point is proportional to $(\vc{B}_1+\vc{B}_2)\cdot(\vc{B}_1+\vc{B}_2)$, with the
+only variation occurring because the whole field pattern represented by $\vc{B}_1$ can be
+rigidly rotated. Multiplying out the factors of the dot product, and discarding constant
+terms, we have $2\vc{B}_1\cdot\vc{B}_2$. The variable part of the
+total energy is found by integrating this expression over all space, but $\vc{B}_2$ is a constant,
+so we can take it outside the integral, the result being $\vc{B}_2\int \ldots \der v$, where $\ldots$
+represents whatever field is going on inside the dipole. This has the form of a vector dot product,
+which is proportional to the cosine of the angle between the two factors.
+
+<% end_notes %>
+
+<% begin_hw_sec %>
+
+<% end_hw_sec() %>
+
+
+
+<% end_chapter() %>

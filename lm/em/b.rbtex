@@ -703,7 +703,7 @@ This is done in example \ref{eg:line-charge-gauss} on p.~\pageref{eg:line-charge
         \begin{align*}
                          D         &=    (2.4\times10^{-10}\ \zu{m})( e)  \\
                                  &=    (2.4\times10^{-10}\ \zu{m})( 1.6\times10^{-19}\ \zu{C})  \\
-                                 &\approx    4\times10^{-29}\ \zu{C}\cdot\zu{m}
+                                 &\approx    4\times10^{-29}\ \zu{C}\cdot\zu{m}.
         \end{align*}
         The experimentally measured value is $3.0\times10^{-29}\ \zu{C}\cdot\zu{m}$, which shows
         that the electron is not completely ``stolen.''
