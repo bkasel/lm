@@ -34,6 +34,9 @@
 <% photo_credit("bridge-tower","Golden gate bridge","Wikimedia Commons user Calibas, CC-BY-SA") %> % https://en.wikipedia.org/wiki/File:Golden_Gate_bridge_pillar.jpg
 <% photo_credit("salt-crystal","Salt crystal","Wikimedia Commons user Benjah-bmm27, public domain") %> % https://commons.wikimedia.org/wiki/File:Sodium-chloride-3D-ionic.png
 <% photo_credit("halley","Halley's comet","NASA/W.~Liller, public domain") %> % https://commons.wikimedia.org/wiki/File:Lspn_comet_halley.jpg
+<% photo_credit("green-simple","Electric quadrupole field","Wikimedia Commons user Geek3, CC-BY-SA") %> % https://commons.wikimedia.org/wiki/File:VFPt_four_charges.svg
+<% photo_credit("using-voltmeter","Multimeter","Wikimedia Commons user Binarysequence, CC-BY-SA") %> % https://en.wikipedia.org/wiki/Multimeter#/media/File:Fluke87-V_Multimeter.jpg
+<% photo_credit("using-voltmeter","Using multimeter","US Navy/Robert Winn, public domain") %> % https://commons.wikimedia.org/wiki/File:US_Navy_091004-N-8960W-014_Interior_Communications_Electrician_3rd_Class_Karla_Martinez_inspects_wiring_aboard_the_aircraft_carrier_USS_Nimitz_(CVN_68).jpg
 
 <% print_photo_credits() %>
 

@@ -449,7 +449,8 @@ TO DO: Add a photo of a spark plug.
 Suppose that we have \emph{two} point charges, $q_1$ and $q_2$, both at rest and separated by a distance
 $r$. The electric field is the sum of the fields contributed by the two charges. If we want to find the
 force acting on one of the charges, say 2, then it doesn't make sense to try to take into account
-the contribution to the field from charge 2 itself (\note{self-force}). Let $\hat{\vc{r}}_{21}$
+the contribution to the field from charge 2 itself (\note{self-force}), just the force
+that 1 makes on 2. Let $\hat{\vc{r}}_{21}$
 be the unit vector in the direction from 1 to 2. The contribution to the field
 from charge 1, at the position of charge 2, is $\vc{E} = (kq_1/r^2)\hat{\vc{r}}_{21}$, and
 the resulting force on 2 is
@@ -1029,7 +1030,7 @@ where $\rho$ is the density of charge, in units of coulombs per cubic meter.
 %>
 <% end_marg %>
 
-\begin{eg}{Earnshaw's theorem}
+\begin{eg}{Earnshaw's theorem}\label{eg:earnshaw-theorem}
 When kids first start playing with magnets, one of the first things they usually attempt,
 unsuccessfully, is to levitate a magnet in the air, by using a second magnet either to attract
 it from above or to repel it from below.
@@ -1125,6 +1126,38 @@ gives
 If we let $h$ be the height of the charge above the lower boundary and fix $H=|a|+|b|$,
 then $|a|=h$ and $|b|=H-h$, so $|b|-|a|=H-2h$ and $U=-Eqh+\text{const}$. Varying $h$ is equivalent
 to moving the charge up or down, so the force is $F=-\der U/\der h=Eq$, which is what we wanted to prove.
+
+\notetext{self-force}{No force on a charge from its own field}
+\notesummary{The force acting on a point charge is only that due to the field created by other charges.}
+
+In classical, as opposed to quantum, physics, an object always has a
+well-defined position in space at any given time. This book is about
+classical electromagnetism, and it is ultimately impossible to
+incorporate pointlike charged particles in such a theory. If a
+pointlike particle exists at a certain position in space, then the
+field blows up to infinity at that point, and this leads to all kinds
+of bad things. For example, the integral $\int E^2\der v$ diverges, so
+the energy of the field is infinite, and this implies via Einstein's
+$E=mc^2$ that the particle has infinite inertia, which it doesn't in
+reality.  Quantum physics eliminates these problems, for example by
+replacing a pointlike electron at a definite point in space with a
+fuzzy, probabilistic electron cloud. 
+
+It is nevertheless convenient to be able to talk about point charges
+in classical electromagnetism, and we can get away with it as long as
+we don't try to describe any phenomena below a certain length scale
+(known as the classical electron radius) and keep in mind some fairly
+common-sensical rules. One of these rules is that it certainly
+wouldn't make sense to try to calculate the force of an electric field
+on a charge without excluding the charge's own contribution to the
+field. Such a force would be infinite, and it wouldn't have a
+well-defined direction. (A less definitive argument for this rule is
+that according to Newton's third law, objects can't make forces on
+themselves. The trouble with this is that Newton's third law is in
+general false in electromagnetism. What is true is that momentum is
+conserved, and this momentum has to include the momentum of the fields
+themselves.  See sec.~\ref{subsec:momentum-of-em-fields},
+p.~\pageref{subsec:momentum-of-em-fields}.)
 
 \notetext{estimate-elec-energy-in-nucleus}{Estimate of the electrical energy in a nucleus}
 \notesummary{Starting from a rough estimate of the size of a typical nucleus, we make

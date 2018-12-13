@@ -14,26 +14,393 @@
 Sometimes in physics, as in life, we may not realize that there is a piece
 missing from a puzzle. To see that there is such a missing piece in our
 description of the electric field, consider the following seemingly minor
-technical issue.
+technical issue. In figures \subfigref{capacitor-possible-and-impossible}{1}
+and \subfigref{capacitor-possible-and-impossible}{2}, we have two fields, either
+of which we could imagine was the correct field for a parallel-plate capacitor
+in a state of static equilibrium. 
 
 <% marg() %>
 <%
   fig(
     'capacitor-possible-and-impossible',
     %q{%
-      foo
+      Which is the correct electric field for the parallel-plate capacitor?
     }
   )
 %>
 <% end_marg %>
 
+We would expect some physical law to tell us which was correct, but either
+is consistent with Gauss's law, because the field lines begin on positive
+charges and end on negative ones. This is a hint that we need some additional
+law of physics if we are to be able to fully predict the behavior of electric
+fields.
+
+Experiments show that \subfigref{capacitor-possible-and-impossible}{2}
+is right and \subfigref{capacitor-possible-and-impossible}{1} is
+wrong, and a hint as to what's going on is provided by the following
+argument. Suppose we take a positive test charge and move it around
+the rectangular closed path ABCDA, shown in figure
+\subfigref{capacitor-possible-and-impossible}{3} superimposed on the
+simpler-looking field pattern from
+\subfigref{capacitor-possible-and-impossible}{1}, in which the field is zero
+outside the capacitor. The field does positive
+work on the charge from B to C, but zero work along the other edges of
+the rectangle. Energy is released, but nothing has changed about the field
+pattern, so we can repeat the cycle as many times as we like. This is
+a perpetual motion machine, and it violates conservation of energy.
+
+The field in figure \subfigref{capacitor-possible-and-impossible}{2}
+fixes the problem. Although the field is weaker outside the capacitor, it does
+some negative work along DA. Furthermore, the field has horizontal components
+that do negative work along AB and CD. The field has been carefully contrived
+so that the total work done by the field around the rectangle is zero.
+
+For a static field, i.e., one that doesn't change as a function of time,
+we want this to be true in general:
+
+\begin{lessimportant}
+The work done by a static electric field on a test charge, as the charge
+moves around a closed loop, is always zero.
+\end{lessimportant}
+
+A field that satisfies this criterion is referred to as conservative or,
+for reasons that will become clear soon, irrotational.
+
+Non-static electric fields do not have to be conservative. For
+example, when you go out in the sun on a hot day, the sunlight heats
+your skin. As the light wave oscillates, it does work on the charged
+particles in your body, and it does so over and over again, for as
+long as you continue your sunbath. Although we refer to this electric
+field as ``nonconservative,'' there is no violation of conservation of
+energy. The energy gained by your body as heat is balanced by the loss
+of the electric and magnetic energy of the light waves, which pass
+into nonexistence as they are absorbed.
+
+We expect the laws of physics to be expressible in a way that is purely
+local, so it should be good enough if the conservative property of a static electric
+field holds in the limit of very small closed loops. In fact, we will see that
+if the conservative property holds for small loops, then it is also automatically
+satisfied for small ones as well. This is guaranteed by a theorem called Green's
+theorem, which looks scary when expressed in fancy mathematical notation, but
+expresses a fact that turns out to be visually obvious.
+
+<% marg() %>
+<%
+  fig(
+    'curlmeter-fac',
+    %q{%
+      The curl-meter, and the right-hand rule for making its reading into a vector.
+    }
+  )
+%>
+<% end_marg %>
+
+To make these ideas more concrete, we define an imaginary device called the
+curl-meter, shown in figure \figref{curlmeter-fac}. A set of positive charges
+is mounted around the circumference of a wheel, and a coil spring connects
+the wheel to its supporting axle, so that in the absence of any electrical
+forces, the wheel turns to a certain equilibrium orientation. If the curl-meter
+is immersed in a nonconservative electric field, then it may respond by rotating, and
+the torque that it measures is an indication of how badly nonconservative
+the field is. This is obviously not a practical, real-world device, but it is
+easy to make one in the real world out of an oscilloscope and a coil of wire.
+The basic idea of such devices is that they are like paddlewheels that will spin
+if inserted in a whirlpool.
+
+The reading on the curl-meter, called the ``curl'' of the field,
+depends on its orientation, and this suggests that
+its reading is a vector, not a scalar like the divergence.
+Indeed, in the physical realization of figure \figref{curlmeter-fac}, the
+reading comes out as a torque, and torque is a vector. Therefore we have
+a right-hand rule for expressing the curl, which is the same as the right-hand
+rule for torques. It is possible to express the curl in terms of the partial
+derivatives of the field's components, but detailed mathematical manipulations
+in that style are not necessary in order to follow the logical backbone of the
+presentation in this book. Figure \figref{div-and-curl-examples} shows some visual examples.
+<%
+  fig(
+    'div-and-curl-examples',
+    %q{Some electric fields with zero and nonzero divergences and curls.},
+    {'width'=>'wide'}
+  )
+%>
+
+In turns of the curl, we have the following local law of physics:
+
+\begin{lessimportant}
+For a static electric field, $\operatorname{curl}\vc{E}=0$.
+\end{lessimportant}
+
+\noindent This means that the work done around any \emph{small} closed loop is zero.
+Let's see how this generalizes to large loops. Green's theorem comes in a variety of
+versions and different levels of generality (e.g., there is a version that works in
+four dimensions, which is helpful in relativity, where time is treated as a dimension).
+For now we'll content ourselves with the special case that covers two dimensions, in the case
+where the curl is zero. (More general versions of Green's theorem tell us interesting
+things in the more general case where the curl can be nonzero.) For a field in a two-dimensional
+plane, the curl would point in the direction perpendicular to the plane, but we're now
+talking about the case where the curl is zero, so that issue doesn't arise.
+
+<% marg() %>
+<%
+  fig(
+    'green-simple',
+    %q{%
+      A basic version of Green's theorem.
+    }
+  )
+%>
+<% end_marg %>
+In figure \figref{green-simple}, we construct the small square path ABCDA. This is small
+enough so that our local law $\operatorname{curl}\vc{E}=0$ guarantees, to good enough
+precision, that the work done on a charge around this path is zero. This approximation can
+be made as good as desired by making the squares small enough. The same thing works for
+the adjoining square DCEFD, using the same counterclockwise direction of motion.
+Now when we join the two squares together to make the rectangle ABEFA, something
+nice happens: the work done around the rectangle equals the \emph{sum} of the works done
+around the two squares. The reason this is true is that in the first square we go up from C to
+D, while in the other we go down, so when we add the works for the two squares, these two
+contributions cancel. By the way, there is nothing special about squares --- this holds for
+any shapes having an adjoining boundary.
+
+It is now clear that we can continue in this way and construct a grid that covers a piece
+of the plane of unlimited size, so that, for example, we know there is zero work done around
+the perimeter of the irregular shape shown in the figure. By making the grid fine enough,
+we can approximate any shape to the desired level of approximation, so the work done around any
+closed path is zero.
+
+
 <% end_sec('something-is-missing') %>
 
 
+<% begin_sec("The electric potential",nil,'potential') %>
+The earth's gravitational field has zero curl, and this is why it makes sense to define the
+gravitational potential energy of a test mass in the earth's field.
+If we lift the ball in figure \figref{path-independent-gravity} along path 1, then
+lower it by completing the loop along path 2, the total work done by the
+gravitational field is zero. This implies that if we lift along path 2, reversing
+the sign of the work, the amount of work done is the same as along path 1. That is,
+the work done by gravity is \emph{path-independent}. We can therefore pick some reference point,
+such as the lower position, define the ball's gravitational potential energy to be
+zero there, and define the potential energy at any other point to be the work done by
+the hand to get from the reference point to that point. The definition is unambiguous
+because its result does not depend on the path taken.
+
+<% marg() %>
+<%
+  fig(
+    'path-independent-gravity',
+    %q{%
+      The work done by gravity along paths 1 and 2 is the same.
+    }
+  )
+%>
+<% end_marg %>
+
+In the context of the gravitational field, it is of interest to define the gravitational
+potential energy per unit mass; we don't need a special scientific name for this, because
+it is simply the height relative to the reference point.
+
+Making the analogy with static electric fields, we define an electric
+potential $\phi$, which is the energy per unit charge required in
+order to move a test charge to a certain point, from a reference point. It has units
+of joules per coulomb, which can be abbreviated as volts, 1 V=1 J/C.
+In real-life electrical work, we may take the reference point to be a
+convenient object such as a water pipe. In theoretical contexts, it is
+often convenient to take the reference point to be infinitely far
+away. In informal contexts, people often refer to potential as voltage,
+and the notation $V$ can also be used instead of $\phi$.
+
+\begin{eg}{Potential surrounding a point charge}
+Given a point charge $Q$, the potential energy of a test charge $q$ at a distance
+$r$ is $kQq/r$. Dividing by the test charge, we find that the potential is
+\begin{equation*}
+  \phi = \frac{kQ}{r}.
+\end{equation*}
+\end{eg}
+
+A battery is a device that maintains a desired potential difference between
+its two terminals.
+
+The instrument for measuring electric potentials is called a
+voltmeter (these days usually implemented as one of the functions of
+a multimeter). The voltmeter has no way of knowing what mental choice we had
+in mind as our reference potential, so all it can do is tell us the
+potential \emph{difference} between two points,
+\begin{equation*}
+  \Delta\phi = \frac{\Delta U}{q}.
+\end{equation*}
+The meter has two plugs, which can be connected with wires to the two
+points of interest. The meter allows a tiny trickle of charge to flow
+in one wire, through the meter, and out the other, and it measures the
+work done by the electric field along this path. The potential difference
+$\Delta\phi$ is then minus the work divided by the charge.
+
+Figure \figref{using-voltmeter} shows a multimeter set up to be used as a
+voltmeter, and a person using such a meter to measure a potential difference.
+In the close-up, we see that one wire has been plugged into the COM plug
+(so called because it is used for all functions of the meter), while the
+other wire is plugged into the one marked V. The rotary dial is turned to V
+for a voltage measurement. (The position marked V with the sine wave icon would be used for
+measuring an alternating current, i.e., a voltage that was oscillating over
+time rather than static. The marked mV would be used for measuring small voltages.)
+The digital readout reads the potential difference (V plug minus COM plug), in units
+of volts.
+Such meters are more or less standardized, so this description applies to all multimeters,
+with minor variations such as the possible use of an analog display with a needle, or
+pushbuttons rather than a rotary dial.
+<%
+  fig(
+    'using-voltmeter',
+    %q{A multimeter set up to be used as a voltmeter, and a person using such a meter.},
+    {'width'=>'wide'}
+  )
+%>
+
+In the right-hand side of figure \figref{using-voltmeter}, the woman using the
+voltmeter is touching the metal tips of the two probes to two different points,
+a piece of exposed wire in the rat's nest of wiring, and a point on the chassis.
+The reading on the meter will be the difference in electric potential between these
+two points.
+
+<% end_sec('potential') %>
+
+<% begin_sec("Constant potential throughout a conductor",nil,'const-v-in-conductor') %>
+In figure \figref{using-voltmeter}, the woman is using a point on the metal chassis of the
+electrical box as a reference. It looks like she's chosen a screw hole as a convenient
+place to make good electrical contact. This choice of a reference potential is arbitrary, and so
+we might imagine that although it would be equally valid to pick some other point on the chassis
+as a reference, the readings might then all be offset by some constant. In fact, we would find
+that the readings were all the same, because there will be no difference in potential between one
+point on the box and another.
+
+The reason for this has to do with the fact
+that a metal contains a large number of electrons that are free to move.
+A substance like this that has many free charge carriers is called a conductor. The living cells
+in your body (although not the dead ones in the dry outer layer of skin) are pretty good conductors,
+because they have free charge carriers such as positively charged sodium ions and negatively charged
+chlorine ions, coming from the salt in your body. A good conductor cannot sustain a potential
+difference between different points within itself. If such a difference were set up, the
+charges would immediately begin to flow. Any positive charges would move toward the lower
+potential (as water, with positive mass, flows downhill), while negative charges would flow
+toward the higher potential. The system would rapidly reach an equilibrium in which the potential
+differences were eliminated. In the study of electrostatics, there are by definition no currents
+or time-varying fields, and therefore all charges must be in equilibrium, and this would be impossible
+if there were any differences in potential within a conductor.
+
+<%
+  fig(
+    'doorknob',
+    %q{%
+      1. The finger deposits charges on the solid, spherical, metal doorknob and is then withdrawn.
+      2. Almost instantaneously, the charges' mutual repulsion makes them redistribute themselves
+         uniformly on the surface of the sphere. The only \emph{excess} charge is on the surface;
+         charges do exist in the atoms that form the interior of
+         the sphere, but they are balanced. Charges on
+         the interior feel zero total electrical force from the ones at the surface. Charges at the surface
+         experience a net outward repulsion, but this is canceled out by the force that keeps them from
+         escaping into the air.
+      3. A voltmeter shows zero difference in voltage between any two points
+         on the interior or surface of the sphere. If the voltage difference wasn't
+         zero, then energy could be released by the flow of charge from one point to the other; this
+         only happens before equilibrium is reached.
+    },
+    {
+      'width'=>'wide',
+      'sidecaption'=>false,
+      'sidepos'=>'t'
+    }
+  )
+%>
+
+        Excess charge placed on a conductor, once it
+        reaches its equilibrium configuration, is entirely on the
+        surface, not on the interior (proof \note{no-charge-on-interior}). This should be intuitively reasonable
+        in figure \figref{doorknob}, for example, since the charges are all
+        repelling each other. 
+
+\begin{eg}{The lightning rod}\label{eg:lightning-rod}
+ Suppose you have a pear-shaped conductor like the one
+        in figure \subfigref{lightning-rod}{1}.  Since the pear is a conductor,
+        there are free charges everywhere inside it. Panels 1 and 2 of the figure show
+        a computer simulation with 100 identical electric charges. In 1, the charges
+        are released at random positions inside the pear. Repulsion causes them all
+        to fly outward onto the surface and then settle down into an orderly but nonuniform
+        pattern. 
+
+        We might not have been able to guess the pattern in advance, but we can
+        verify that some of its features make sense. For example, charge A has more neighbors
+        on the right than on the left, which would tend to make it accelerate off to the left.
+        But when we look at the picture as a whole, it appears reasonable that this is prevented
+        by the larger number of more distant charges on its left than on its right.
+
+        There also seems to be a pattern to the nonuniformity: the charges collect more
+        densely in areas like B, where the surface is strongly curved, and less densely in flatter areas like C.
+<% marg(130) %>
+<%
+  fig(
+    'lightning-rod',
+    %q{%
+      Example \ref{eg:lightning-rod}. In 1 and 2, charges that are visible on the front surface of the conductor
+      are shown as solid dots; the others would have to be seen through the conductor, which we
+      imagine is semi-transparent.
+    }
+  )
+%>
+<% end_marg %>
+
+To understand the reason for this pattern, consider \subfigref{lightning-rod}{3}.
+Two conducting spheres are connected by a conducting wire. Since the whole apparatus
+is conducting, it must all be at one voltage. As shown in problem \ref{hw:lightning-rod}
+on p.~\pageref{hw:lightning-rod}, the density of charge is greater on the smaller
+sphere. This is an example of a more general fact observed in \subfigref{lightning-rod}{2}, which is that the charge on
+a conductor packs itself more densely in areas that are more sharply curved.
+
+Similar reasoning shows why Benjamin Franklin used a sharp
+        tip when he invented the lightning rod. The charged stormclouds
+        induce positive and negative charges to move to opposite
+        ends of the rod.  At the pointed upper end of the rod, the
+        charge tends to concentrate at the point, and this charge
+        attracts the lightning. The same effect can sometimes be seen when
+        a scrap of aluminum foil is inadvertently put in a microwave oven. Modern experiments (Moore \emph{et al.},
+        Journal of Applied Meteorology 39 (1999) 593) show that although
+        a sharp tip is best at starting a spark, a more moderate curve,
+        like the right-hand tip of the pear in this example, is better
+        at successfully sustaining the spark for long enough to connect
+        a discharge to the clouds.
+
+\end{eg}
+
+<% end_sec('const-v-in-conductor') %>
+
 <% begin_notes %>
+\notetext{no-charge-on-interior}{No charge on the interior of a conductor}
+\notesummary{For a conductor in equilibrium, any charge is on its surface, never in its interior.}
+The proof of this assertion is essentially Earnshaw's theorem (example \ref{eg:earnshaw-theorem},
+p.~\pageref{eg:earnshaw-theorem}).
+Suppose that a charge $q$ in the conductor. For concreteness, let's say $q$ is positive.
+By assumption, this charge is in a stable equilibrium.
+If the charge is at the surface, then this equilibrium can be created by
+both (1) the electric field, and (2) the force that keeps charges from getting out
+through the surface. But if the charge is in the interior, then only electrical
+forces can be involved, not other forces of type 2; this is essentially what we mean
+by saying that the substance is a conductor. The electric field acting on $q$ would be
+the field contributed by all the other charges, not by $q$ itself
+(\notewithoutbackref{self-force}). But now everything plays out as in the original
+argument proving Earnshaw's theorem: a stable equilibrium would require $\operatorname{div}\vc{E}<0$,
+Gauss's law forbids this negative divergence from being created by external sources.
 <% end_notes %>
 
 <% begin_hw_sec %>
+
+<% begin_hw('lightning-rod') %>
+In example \ref{eg:lightning-rod} on p.~\pageref{eg:lightning-rod}, suppose that the
+larger sphere has radius $a$, the smaller one $b$. (a) Show that the ratio of the charges on the two spheres
+is $q_a/q_b=a/b$. (b) Show that the density of charge (charge per unit area)
+is the other way around: the charge density on the smaller sphere is \emph{greater}
+than that on the larger sphere in the ratio $a/b$.
+<% end_hw() %>
 
 <% end_hw_sec() %>
 
