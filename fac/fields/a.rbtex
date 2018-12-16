@@ -107,10 +107,10 @@ there is some mechanism for sending signals instantaneously, as in the
 
 Thus we can never send signals simultaneously. The style of reasoning
 here is called proof by contradiction. In this example, we have propositions
-A (that time is relative) and B (that instantaneous communication is possible),
-and if both A and B hold, then we reach a paradox, or logical contradiction.
-We can therefore conclude that either A is false or B is false. But A has been
-proved experimentally, so B must be false.
+1 (that time is relative) and 2 (that instantaneous communication is possible),
+and if both 1 and 2 hold, then we reach a paradox, or logical contradiction.
+We can therefore conclude that either 1 is false or 2 is false. But 1 has been
+proved experimentally, so 2 must be false.
 
 In your previous study of mechanics, you were probably briefly exposed
 to the concept of a field through mentions of the gravitational field.

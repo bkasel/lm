@@ -403,6 +403,70 @@ the point charge itself. We used the only form of Gauss's law currently at our d
 which applies only to the empty space \emph{around} the charge. By doing this, we found the
 proportionality $E\propto1/r^2$, and it is in some sense arbitrary that we chose to refer to
 the proportionality constant as ``charge.''
+
+<% marg(-300) %>
+<%   
+  fig(
+    'e-dipole-mid-plane',
+    %q{Example \ref{eg:e-dipole-mid-plane}.}
+  )
+%>
+\spacebetweenfigs
+<%   
+  fig(
+    'e-dipole-mid-plane-2',
+    ''
+  )
+%>
+<% end_marg %>
+\begin{eg}{Field of an electric dipole, in its mid-plane}\label{eg:e-dipole-mid-plane}
+Consider figure \figref{e-dipole-mid-plane}, which is
+an example of a type of charge distribution called an electric \emph{dipole}. Dipoles
+will be discussed in more detail in sec.~\ref{sec:dipole}, p.~\pageref{sec:dipole}.
+We wish to calculate the electric field in the dipole's mid-plane, at a point on the $x$ axis with
+coordinates $(x,0)$.
+
+The principle of superposition says that the field at this point can be found by
+adding the fields due to the two charges, and adding means vector
+addition, because the fields are vectors. In analytic addition of vectors, we add
+components. The component $E_z$, perpendicular to the page, is clearly zero by
+symmetry --- neither charge's field has any component out of the plane of the diagram.
+It would also be a waste of time to calculate the $x$ components, since these too
+are guaranteed to cancel. This means that all we really need to do is calculate the
+$y$ components and add them.
+
+
+The distance from the top, positive charge to our point of interest is $r=\sqrt{x^2+(\ell/2)^2}$.
+The magnitude of the field contributed by this charge is
+\begin{equation*}
+  E = \frac{kq}{r^2} 
+\end{equation*}
+In terms of the angle $\theta$ that the field vector makes with the $y$ axis, the $y$ component is
+\begin{equation*}
+  E_y = E\cos\theta = E\frac{\ell/2}{r} = \frac{kq\ell}{2r^3}.
+\end{equation*}
+The negative charge's field has an equal $E_y$, so the total field at our point is double this, or
+\begin{equation*}
+  E_y = \frac{kq\ell}{r^3}.
+\end{equation*}
+If we wished to, we could substitute in our expression for $r$ to get this in terms of $x$, but
+the expression is actually nicer in terms of $r$.
+
+
+<% marg(20) %>
+<%   
+  fig(
+    'e-dipole-mid-plane-3',
+    ''
+  )
+%>
+<% end_marg %>
+
+This result has the interesting property that for large distances, where $r\approx x$,
+it depends on the charge distribution only through the product $q\ell$, which is referred
+to as the dipole moment.
+\end{eg}
+
 <% end_sec('field-of-point-charge') %>
 
 <% begin_sec("Electric force on a charge",nil,'force-on-a-charge') %>
@@ -477,6 +541,137 @@ potential energy is minus the indefinite integral, or
 where the constant of integration is arbitrarily chosen to be zero, so that
 $U\rightarrow0$ as $r\rightarrow\infty$.
 
+\begin{eg}{Energy of a set of charges}\label{eg:chlorine-pentafluoride}
+\egquestion Consider the molecule shown in figure \figref{chlorine-pentafluoride}, with an atom of
+a certain element in the middle, surrounded by five atoms of a different element, arranged
+along perpendicular axes, all at equal distances $\ell$ from the central one.
+Let's take the charge of the central atom to be $5q$, and the charge of each of the
+others to be $-q$, so that the molecule is electrically neutral. If we approximate the
+atoms as point charges, what is the total electrical energy released when the atom is
+assembled, starting with its constituent parts all far away from each other?
+
+\eganswer Each charge interacts with \emph{all} the others, not just the ones shown as
+connected to it in this ball-and-stick diagram. If we number the atoms 1 through 6, then
+we have to compute an interaction for each of the combinations, such as 12, 23, and so on.
+We don't want to count the self-energies like 11 or 22, and we also don't want to double-count
+any energies, i.e., 12 and 21 are not two separate terms in the sum. In sigma notation, we
+can notate this conveniently in either of the following equivalent forms:
+\begin{equation*}
+  \sum_i \sum_{j>i} U_{ij} = \frac{1}{2} \sum_i \sum_{j\ne i}  U_{ij}.
+\end{equation*}
+In the second version, we double-count, but then divide by two at the end to compensate.
+
+This particular example has $n=6$ charges, but we can see in general, using the second
+form of the sum above, that the total number of energies will be $(n^2-n)/2$, since we have
+$n^2$ choices for the indices $i$ and $j$, $n$ of which are ruled out by the condition $i\ne j$.
+This formula, which you may want to verify for $n=1$, 2, and 3, can also be written as $n(n-1)/2$.
+It is the number of combinations of $n$ things taken 2 at a time, disregarding their order, and is
+notated $\binom{n}{2}$, also known as a binomial coefficient. In our example, we
+have $\binom{6}{2}=15$.
+
+<% marg() %>
+<%
+  fig(
+    'chlorine-pentafluoride',
+    %q{A molecule.}
+  )
+%>
+<% end_marg %>
+
+Numbering the atoms as shown in the figure, we have the following contributions to the sum:
+\begin{align*}
+  U= &  U_{12} + \text{four more similar terms, for a total of five} \\
+  +& U_{23} + \text{three more similar terms, for a total of four} \\
+  +& U_{24} + \text{one more similar terms, for a total of two} \\
+  +& U_{26} + \text{three more similar terms, for a total of four}  \\
+   &= 5U_{12}+4U_{23}+2U_{24}+4U_{26}.
+\end{align*}
+This is a total of 15 terms, which checks. Computing these explicitly, we have
+\begin{align*}
+  U &= kq^2\left(\frac{5(-5)}{r_{12}}+\frac{4}{r_{23}}+\frac{2}{r_{24}}+\frac{4}{r_{26}}\right) \\
+    &= \frac{kq^2}{\ell}\left(\frac{-25}{1}+\frac{4}{\sqrt2}+\frac{2}{2}+\frac{4}{\sqrt2}\right) \\
+    &= \frac{kq^2}{\ell}\left(-24+\frac{8}{\sqrt2}\right).
+\end{align*}
+The negative sign indicates that the system is bound with respect to complete dissociation:
+it would not be possible without an
+input of energy to pull it apart and
+separate all the ions from one another.
+
+Being able to do the calculation does not mean that this is a good model of any real-world molecule.
+There are molecules such as $\zu{ClF}_5$ that have this geometry, but our model is not consistent
+with their having this shape as a stable equilibrium, for the energy could be made more negative either by
+making $\ell$ smaller or by moving the small charges so that they were more uniformly distributed
+on the sphere, rather than clustered in a half-sphere. This is an example of a more general fact,
+which is that classical (as opposed to quantum) physics cannot explain the stability of matter.
+The electrostatic energy we have calculated \emph{does} come into play, and is roughly right for
+this molecule, but other factors are present as well.
+\end{eg}
+
+<% marg(-30) %>
+<%
+  fig(
+    'long-molecule',
+    %q{An idealized model of a long molecule.}
+  )
+%>
+<% end_marg %>
+
+\begin{eg}{A long molecule}\label{eg:long-molecule}
+Bulk matter, as opposed to an individual molecule, contains a large number of charges, and
+in many cases it makes sense to consider the material as infinite in extent and compute quantities
+such as electrical energy per unit of material. A simple example that has some of these
+characteristics is a long molecule, which is one-dimensional but can be idealized as
+infinite. An idealized, classical version of such a molecule is shown in figure
+\figref{long-molecule}, in which positive and negative charges alternate along a straight line.
+There are real-world long molecules, although most are not exactly
+linear (for example, DNA or a type of plastic known by the trade name Delrin), and many
+(including DNA and Delrin) cannot reasonably be modeled by this type of charge distribution.
+However, there are some compounds such as cyclopentadienyllithium that are somewhat like
+figure \figref{long-molecule}, albeit with some of the charges actually being molecules like
+pentane rather than individual atoms. In any case, let's play with this as a ``toy model''
+of bulk matter.
+% https://chemistry.stackexchange.com/questions/105183/long-linear-molecule-with-alternating-elements
+
+As in example \ref{eg:chlorine-pentafluoride}, the total energy is a sum
+\begin{equation*}
+  U = \sum_i \sum_{j>i} U_{ij}.
+\end{equation*}
+Surprisingly, this comes out to be quite a bit simpler to evaluate than
+the one in example \ref{eg:chlorine-pentafluoride}. We are actually interested
+not in the total energy, which would be infinite, but in the energy per atom.
+If we fix the index $i$ to some arbitrary value, then we have singled out one
+atom, and the inside sum
+\begin{equation*}
+  \sum_{j>i} U_{ij}
+\end{equation*}
+can be interpreted as the energy per atom. If we label each atom by an integer, in
+sequence, then the restriction of the sum to $j>i$, to avoid double-counting,
+means that we can evaluate the
+interaction of this atom only with the ones on its right. If the charges are $\pm q$ and
+the inter-atomic spacing $\ell$, then the total energy is
+\begin{equation*}
+  U_\text{per atom} = \frac{kq^2}{\ell}\left(-1+\frac{1}{2}-\frac{1}{3}+\ldots\right).
+\end{equation*}
+The sum in parentheses is a famous one with a name, the alternating harmonic series,
+and it has the value $-\ln 2$, which can be proved, if you know about Taylor series,
+by taking the Taylor series of $\ln(1+x)$ and evaluating it at $x=1$.
+The result is
+\begin{equation*}
+  U_\text{per atom} = -\frac{kq^2\ln 2}{\ell}.
+\end{equation*}
+
+Although this toy model has the same shortcomings as the one in example \ref{eg:chlorine-pentafluoride},
+it does provide some interesting insight by showing us, correctly, that the electrical energy
+of matter is not very localized, as you might have expected from ball-and-stick models.
+The sum contains contributions from pairs of atoms at arbitrarily large distances, and
+contributions from very distant terms in the series make quite big contributions --- if you
+try evaluating the alternating harmonic series on a calculator, you will find that it
+is extremely slow to converge.
+
+For a similar description of a three-dimensional solid, see Purcell, Electricity and
+Magnetism, section 1.6.
+\end{eg}
+
 \startdq
 
 \begin{dq}
@@ -488,7 +683,7 @@ Explain how the signs work, and sketch graphs for the various cases.
 
 <% begin_sec("Charge",nil,'charge') %>
 
-<% begin_sec("Gauss's law with charge",nil,'gauss-charge') %>
+<% begin_sec("Gauss's law, not in vacuum",nil,'gauss-charge') %>
 The vacuum form of Gauss's law can be generalized to handle the case where charges are present.
 In terms of field lines, Gauss's law states that field lines begin and end only on charges, and
 the number of field lines that begin or end on a charge is proportional to the charge.
@@ -1138,7 +1333,8 @@ pointlike particle exists at a certain position in space, then the
 field blows up to infinity at that point, and this leads to all kinds
 of bad things. For example, the integral $\int E^2\der v$ diverges, so
 the energy of the field is infinite, and this implies via Einstein's
-$E=mc^2$ that the particle has infinite inertia, which it doesn't in
+$E=mc^2$ (sec.~\ref{sec:mass-energy-equivalence}, p.~\pageref{sec:mass-energy-equivalence})
+that the particle has infinite inertia, which it doesn't in
 reality.  Quantum physics eliminates these problems, for example by
 replacing a pointlike electron at a definite point in space with a
 fuzzy, probabilistic electron cloud. 
@@ -1164,12 +1360,8 @@ p.~\pageref{subsec:momentum-of-em-fields}.)
 an order-of-magnitude estimate of its electrical energy.}
 To estimate
 the energy, we need to know how many pairs of protons are repelling one another.
-For example, a lithium nucleus, with $Z=3$, has three protons, which we can label
-A, B, and C, so there are three energies to add up: A with B, B with C, and A with C.
-More generally, we want to know how many pairs we can make out of a pool of $Z$ objects.
-We have $Z$ choices for the first object and $Z-1$ for the second one, so if the order
-was significant, there would be $Z(Z-1)$ pairs. But order is not significant, so we have
-$Z(Z-1)/2$ pairs. (You may want to verify that this works for $Z=1$, 2, and 3.)
+This is the binomial coefficient $\binom{Z}{2}=Z(Z-1)/2$, as in example
+\ref{eg:chlorine-pentafluoride}, p.~\pageref{eg:chlorine-pentafluoride}.
 
 To estimate the electrical energy of a nucleus, per neutron or proton, we can therefore calculate
 \begin{align*}
@@ -1220,6 +1412,13 @@ a spherical region centered on a point charge.
 <% begin_hw('energy-scale',nil) %>
 Verify the calculation in sec.~\ref{subsec:matter-atomic-e-scale}, p.~\pageref{eg:energy-scale},
 that estimated the energy scale for chemistry and atomic physics.
+<% end_hw() %>
+
+<% begin_hw('dipole-axis',nil) %>
+Example \ref{eg:e-dipole-mid-plane} on p.~\pageref{eg:e-dipole-mid-plane} calculated the field
+of a dipole in its mid-plane. (a) Calculate its field at a point on its axis, at a distance $r$
+from the center. (b) Show that your result from part a is approximately proportional to
+$1/r^3$, as in the mid-plane.
 <% end_hw() %>
 
 Thomson

@@ -294,7 +294,7 @@ Criticize the following statement: ``There are two types of
         destroyed, then conservation of charge is inevitable.
 
 <% end_sec() %>
-<% begin_sec("Electrical forces involving neutral objects") %>
+<% begin_sec("Electrical forces involving neutral objects",nil,'e-forces-on-neutral-objects') %>
 <% marg(20) %>
 <%
   fig(
@@ -333,7 +333,7 @@ Criticize the following statement: ``There are two types of
 What would have happened if the tape was negatively charged?
   SELF_CHECK
   ) %>
-<% end_sec() %>
+<% end_sec('e-forces-on-neutral-objects') %>
 <% begin_sec("The path ahead") %>
 
         We have begun to encounter complex electrical behavior that

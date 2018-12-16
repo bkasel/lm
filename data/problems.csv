@@ -73,6 +73,7 @@ cp,8,6,middlec,0
 fac,1,1,b-field-dip,0
 fac,1,2,horseshoe-units,0
 fac,2,1,energy-scale,0
+fac,4,1,lightning-rod,0
 lm,0,1,calculator,0
 lm,0,2,units,0
 lm,0,3,backyard,0

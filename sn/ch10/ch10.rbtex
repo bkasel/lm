@@ -806,7 +806,9 @@ carbon disulfide will be soluble in benzene, but chloroform will not.
         components.
 
         This principle can be used as a way of measuring the unknown dipole moments of a beam of particles, as
-        in figure \figref{dipole-spectrometer}.
+        in figure \figref{dipole-spectrometer}. At a more pedestrian level, this is one way of explaining
+        the fact that we can use a charged object to pick up uncharged
+        scraps of paper (p.~\pageref{subsubsec:e-forces-on-neutral-objects}).
         \end{eg}
 
 <% marg(0) %>

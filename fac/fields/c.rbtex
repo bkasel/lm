@@ -188,10 +188,12 @@ magnetic field surrounding the wire is proportional to $1/r$.
 %>
 <% end_marg %>
 
-We have not yet developed enough of the math and geometry to be able to predict the
-direction of this field, but it is clear from Oersted's experimental evidence
-(figure \figref{oersted}, p.~\pageref{fig:oersted}) that it is not in the radial direction.
-Rather, it circulates around the wire as shown in figure \figref{field-lines-of-wire}.
+What is the direction of this field? 
+It is not hard to show based on symmetry arguments that the radial component of the field
+must be zero (\note{b-wire-not-radial}), and this is also suggested by
+Oersted's experimental evidence
+(figure \figref{oersted}, p.~\pageref{fig:oersted}).
+Rather, the magnetic field circulates around the wire as shown in figure \figref{field-lines-of-wire}.
 \end{eg}
 
 In cases such as example \ref{eg:field-of-wire}, we find that the magnetic field
@@ -463,15 +465,59 @@ To see the advantage of this mode of reasoning, compare with the much
 more complicated logic that we had to do on
 p.~\pageref{fig:eg-two-charges-pe} in order to analyze
 the situation \subfigref{two-charges-pressure-and-tension}{1} by talking about the change in the
-fields' energy that would have occurred if they were moved closer together or farther apart
-(\note{energy-pitfalls}).
+fields' energy that would have occurred if they were moved closer together or farther apart.
+(Cf.~also the complicated handling of the limits of integration in
+note \notewithoutbackref{force-on-point-charge}.)
 
 
 
 <% end_sec('pressure-of-em-fields') %>
 <% end_sec('stress-energy') %>
 
-<% begin_sec("The dipole",nil,'dipole') %>
+<% begin_sec("Force of a magnetic field on a charge",nil,'b-force-on-current') %>
+
+<% marg(300) %>
+<%
+  fig(
+    'wire-in-uniform-field',
+    %q{A uniform magnetic field superposed on the field of a wire carrying current into the page.}
+  )
+%>
+<% end_marg %>
+Figure \figref{wire-in-uniform-field} shows the superposition of two magnetic fields. 
+One is a uniform field pointing to the left, and the other is the field of a wire carrying
+a current that flows into the page. (The circle with a cross is a standard way of indicating
+a direction into the page, meant to evoke the tail feathers of an arrow. A circle with a dot
+would mean a direction out of the page.) To construct this diagram, we only needed vector
+addition plus the facts about the magnetic field of a wire proved in example \ref{eg:field-of-wire}
+on p.~\pageref{eg:field-of-wire}. Since that example did not include any derivation of the
+constant of proportionality in the relationship $B\propto 1/r$, we can't say, in any particular
+set of units, what is the current in the wire that would produce exactly this field pattern.
+
+Since the pressure is greater below the wire than above
+it, there is an upward force on the wire. Summarizing the geometrical relationship, we have:
+\begin{align*}
+  &\text{current into the page} \\
+  &\text{$\vc{B}$ to the left} \\
+  &\text{force up}.
+\end{align*}
+This is a right-hand rule, which smells like a cross product.
+Since the cross product is the only rotationally invariant way to multiply two
+vectors in order to get a third vector, the only possible force law consistent
+with these observations is that
+when a charged particle moves with velocity $\vc{v}$
+through a magnetic field $\vc{B}$, the force acting on the particle is proportional
+to $q\vc{v}\times\vc{B}$. The constant of proportionality has to be unitless,
+and although we haven't yet proved it, this constant equals 1. Taking into account
+the possibility that the particle is also acted on by an electric field, we have
+\begin{equation*}
+  \vc{F} = q\vc{E}+q\vc{v}\times\vc{B},
+\end{equation*}
+which is known as the Lorentz force law.
+
+<% end_sec('b-force-on-current') %>
+
+<% begin_sec("The dipole",4,'dipole') %>
 
 <% marg() %>
 <%
@@ -510,7 +556,7 @@ Such an idealized object is called a \emph{dipole}. There can be both electric a
 dipoles. An electric dipole tends to align itself with the electric field.
 
 If we change the orientation of a dipole, say a magnetic one, then its own contribution
-to the field, $\vc{B}_1$ rotates along with it. Meanwhile, the uniform external field
+to the field, $\vc{B}_1$ rotates along with it. Meanwhile, the external field
 $\vc{B}_2$ remains constant. For a given orientation, the superposition of the two fields may be
 something complicated like figure \figref{compass-misaligned-field-lines}. But regardless
 of how complicated it is, the total energy of this field will always vary with orientation
@@ -567,6 +613,66 @@ in an external electric field.
 % calc -e "d=3.3 10^-30 C.m; 8.97d"
 \end{eg}
 
+<% marg() %>
+<%
+  fig(
+    'dipoles-add',
+    %q{Dipoles add like vectors. When a two-charge dipole is superposed on another two-charge dipole,
+       we can cancel two of the charges, and the result is that the displacement vectors add.}
+  )
+%>
+<% end_marg %>
+Because the dot product has the linear property
+$(\vc{D}_1+\vc{D}_2)\cdot\vc{E}=\vc{D}_1\cdot\vc{E}+\vc{D}_2\cdot\vc{E}$, it follows
+from our definition of the dot product that dipole moments add like vectors (and otherwise
+it would not have been legitimate to call them vectors).\footnote{This does not necessarily
+hold for cases with infinitely many charges, as in example \ref{eg:long-molecule},
+p.~\pageref{eg:long-molecule}.} Figure \figref{dipoles-add} shows a less abstract
+justification for this, using dipoles made of charges $\pm q$.
+
+Of course a complicated set of charges really is complicated, when you see it up close.
+Figure \subfigref{dipole-zoomed-out}{1} shows the field pattern made by two positive charges
+and two negative ones. It's very complicated, and it's not the same as the field pattern of
+any two-charge dipole. But when we see it from far away, \subfigref{dipole-zoomed-out}{2}, it looks
+very simple. It's common sense that you can't easily see the internal structure of an object
+when you only look at it from far away.
+
+<%
+  fig(
+    'dipole-zoomed-out',
+    %q{1.~The field pattern made by two positive and two negative charges.
+       2.~Seen from 10 times far away, the pattern looks much simpler, like the field of any dipole.
+          The dashed rectangle shows the field of view from the left-hand panel.},
+    {'width'=>'fullpage'}
+  )
+%>
+
+So it's believable that all electric dipoles should have a similar field pattern at large distances
+(taking into account their dipole moment and orientation), but what is that field pattern?
+We've already seen in example \ref{eg:e-dipole-mid-plane} on p.~\pageref{eg:e-dipole-mid-plane}
+and problem \ref{hw:dipole-axis} on p.~\pageref{hw:dipole-axis} that the field of a two-charge
+dipole varies like $1/r^3$ at large distances, both in the mid-plane and on the axis.
+This also holds true along any line through the dipole, not just lines like these that
+are oriented in symmetrical ways. (To see this, express the dipole moment as a sum of components
+perpendicular and parallel to the line.)
+
+So in general, if we throw a bunch of charged particles in a sock, their field at large distances will
+be proportional to the total charge, and will fall off like $1/r^2$, as we expect from Couolomb's
+law. There will also be a dipole
+field, but it falls off more quickly at large distances, so the Coulomb part dominates. But if we
+happen to throw particles in the sock whose total charge is zero, then there is no $1/r^2$ part,
+and the dominant field at large distance is the $1/r^3$ dipole field.
+This is what happens, for example, with molecules that have nonzero dipole moments.
+
+We might expect on these grounds that subatomic particles in general would have electric dipole
+moments. For example, a neutron is believed to be composed of
+three charged particles called quarks. The neutron's total charge is zero, but it could
+have a dipole moment. The neutron does in fact have a \emph{magnetic} dipole moment, but
+its \emph{electric} dipole moment is too small to have been measurable in any experiment
+so far (less than $\sim 10^{-46}\ \zu{C}\cdot\munit$). This is believed to be an indication
+of an approximate or exact symmetry in the laws of physics, but efforts to detect a dipole
+moment continue.
+
 \begin{eg}{Molecules with zero and nonzero dipole moments}\label{eg:molecular-dipoles}
 It can be useful to know whether or not a molecule is polar, i.e., has a nonzero dipole moment.
 A polar molecule such as water is readily heated in a microwave oven, while a nonpolar one is not.
@@ -614,9 +720,127 @@ figure. This requires some knowledge of
 chemistry and the periodic table.
 \end{eg}
 
+<% marg() %>
+<%
+  fig(
+    'attracting-induced-electric-and-magnetic-dipoles',
+    %q{1.~A charged piece of plastic pipe attracts an uncharged piece of paper.
+       2.~The mechanism for the effect.
+       3.~The analogous magnetic effect.}
+  )
+%>
+<% end_marg %>
+Often we observe static electrical interactions between a charged object and an object
+that has zero total charge, \subfigref{attracting-induced-electric-and-magnetic-dipoles}{1}.
+The mechanism is shown in figure \subfigref{attracting-induced-electric-and-magnetic-dipoles}{2}.
+Although the scrap of paper has zero total charge, it does contain charges that can move.
+The positive charges in the pipe attract the negative charges and repel the positive one,
+turning the paper into a dipole. This is called an induced dipole moment.
+The attraction is stronger than the repulsion, due to the
+shorter distance, so the net force is attractive.
+
+A fancier mathematical treatment of the effect is as follows.
+If a dipole with zero total charge is placed in a uniform field, it may experience a torque, but
+it will not experience any \emph{force}. The situation changes if the field is nonuniform.
+The force in the $x$ direction is
+\begin{equation*}
+  F_x = -\frac{\partial U}{\partial x}.
+\end{equation*}
+We then have
+\begin{equation*}
+  F_x = -\frac{\partial }{\partial x}(\vc{D}\cdot\vc{E}) = \vc{D}\cdot\frac{\partial \vc{E}}{\partial x},
+\end{equation*}
+which depends on the dipole's properties only through $\vc{D}$. Similar expressions apply for the $y$ and $z$
+components.
+
+This principle can be used as a way of measuring the unknown dipole
+moments of a beam of particles, as in figure
+\figref{dipole-spectrometer-sideways}.  A magnetic version of this device was
+used in the historic Stern-Gerlach experiment that discovered the spin
+of the electron. 
+
+<%
+  fig(
+    'dipole-spectrometer-sideways',
+    %q{An electric dipole spectrometer. A beam of randomly oriented dipoles is shot through a ``croquet hoop''
+       consisting of two fixed positive charges. Although the field along the central axis of symmetry equals zero,
+       the field is nonuniform, and therefore the dipoles feel a nonvanishing force, and are sorted out according
+       to their orientations.},
+    {'width'=>'wide','sidecaption'=>true}
+  )
+%>
+
+
+
 <% end_sec('dipole') %>
 
+<% begin_sec("Mass-energy equivalence",nil,'mass-energy-equivalence') %>
+Suppose you're given a black box. You're not allowed to open it, but you're able
+shake it around and measure its momentum.
+By trial and error, you find that there is some frame in which 
+its momentum is zero. (If there are things moving around inside, this
+may not be the frame in which the externally visible cardboard sides of the
+box are at rest.) This is what we might as well call the box's rest frame,
+the frame in which it is at rest, in some over-all sense.
+
+Next you can measure its nonzero momentum $p$ when you shake it around at various
+velocities. Knowing $p$ at a particular $v$ allows you to infer the mass.
+
+Now suppose you do this, not knowing that inside the box is a line of charge, where the charges themselves
+have \emph{zero} mass. The energies and momenta you measure are those of the \emph{fields} alone.
+You will find a frame in which the momentum is zero. This is the frame in which the field
+is purely electric. If you now set the box in motion, in the direction parallel to the line,
+the original electric field pattern turns into a new electric field plus
+a magnetic field pattern like the one shown in figure \figref{field-lines-of-wire}.
+Because these electric and magnetic fields are perpendicular to one another, they
+have some momentum. You measure this momentum. You infer a certain mass.
+
+Hm. This seems like mass without mass. None of the material particles that went into
+the box had mass, and yet the box acts like it has mass.
+
+If we increase the density of the charge, then both the energy of the field and the
+mass we infer increase by the same amount. For example, if we increase the charge by
+a factor of 3, then the electric field gets 3 times bigger, and the energy goes up
+by a fatcor of 9. But when the box is moving, this also has the effect of multiplying
+$\vc{E}\times\vc{B}$ by 9 times.
+
+In this example, energy and mass are \emph{equivalent}. Based on units, the relation
+must be of the form $E=(\text{constant})mc^2$, where the constant is unitless.
+Einstein showed that the unitless constant was equal to 1, and was the same for
+all systems. This is the famous $E=mc^2$.
+
+Summarizing what we know so far about relativity, we have the following:
+
+\begin{itemize}
+\item Time is relative. The rate at which a clock runs is greatest in the frame where the clock is at rest.
+\item For consistency with item 1, nothing can go faster than $c$.
+\item Mass and energy are equivalent, $E=mc^2$.
+\end{itemize}
+
+<% end_sec('mass-energy-equivalence') %>
+
 <% begin_notes %>
+\notetext{b-wire-not-radial}{Direction of the magnetic field of a wire}
+\notesummary{The magnetic field of a current-carrying wire has no radial component.}
+Let a line of charge, with constant positive charge density, lie along the $x$ axis,
+at rest in frame of reference 1. In frame 1, at a certain point on the $y$
+axis, there is a radial electric field $E_y$ and no magnetic field.
+
+Now let frame 2 be moving to the right with speed $u$,
+and suppose that the magnetic field this point did have a nonzero radial
+component $B_y$ in this frame.
+
+Or, reversing the direction of motion, let frame 3 be moving with velocity $-u$ in the $x$ direction.
+Because the magnetic field is proportional to the current, the magnetic field
+at our point of interest must be $-B_y$, as described by an observer in this frame.
+
+But this is untenable, because the transformation of the fields must take as its inputs
+only the vectors $\vc{E}$ and $\vc{u}$, the velocity of the frame of reference relative to
+the original frame. The vector $\vc{u}$ could have any direction in the $x$-$z$ plane, and
+there is not enough information in these inputs to determine, by any rotationally
+invariant function, the sign of $B_y$.
+
+
 \notetext{b-propto-i}{Proportionality of magnetic field to current}
 \notesummary{The magnetic field created by a current is exactly proportional to the current.}
 It is not surprising that the magnetic field of a current-carrying wire, as in example
@@ -662,31 +886,6 @@ from the  version in the new frame of reference, we have
         \end{align*}
 This is a statement of conservation of momentum.
 
-\notetext{energy-pitfalls}{Pitfalls in reasoning about forces based on energy changes}
-\notesummary{We discuss what can go wrong when we try to reason about electromagnetic forces
-between objects by considering the change in the fields' energy when the objects are moved.}
-On p.~\pageref{fig:eg-two-charges-pe} we showed that unlike charges attracted, by reasoning
-about how the energy in the electric field would be reduced if the charges were brought closer.
-This is inherently a complicated mode of reasoning, and is also easy to get wrong, for the following
-reason. When we integrate the field of some arrangement of point charges, we will get an improper
-integral. It's improper both because the energy density blows up near the charges and because
-the integration reaches out to infinite distances. This integral may or may not converge. Of
-course, we may thing that \emph{physically} it can't diverge, and that may be because the charges
-aren't really pointlike, or other things may happen to the field far away. But this is nevertheless
-a significant obstacle to getting the answer right.
-
-For example, suppose we want to find, by this method, the force
-on a point charge that exists in a uniform field. The total energy in the uniform field is infinite,
-with or without the point charge, because it fills an infinite amount of space. The energy of the
-point charge's own field is also infinite because it blows up like $1/r^2$ close to the charge.
-It also seems as though this infinite total energy should be the same regardless of where the
-charge is. So if we displace the charge by some distance, we're effectively trying to calculate
-$\infty-\infty$, which is an indeterminate form. To make it meaningful, we would be forced to do
-something like artificially introducing some finite size for the pointlike charge, and restricting
-the uniform field to some finite region of space, such as the interior of a parallel-plate capacitor.
-This does work, and it is not hard to convince oneself qualitatively that it does produce a force
-in the correct direction. Nevertheless, it is far from the easiest method.
-
 \notetext{compass-energy}{Minimizing the energy of a compass needle}
 \notesummary{We discuss the minimization of the energy in the magnetic field of a compass needle.}
 The result of our analysis of figure \figref{compass-misaligned-field-lines} on
@@ -716,6 +915,8 @@ which is proportional to the cosine of the angle between the two factors.
 <% end_notes %>
 
 <% begin_hw_sec %>
+
+calculate dipole field on axis
 
 <% end_hw_sec() %>
 
