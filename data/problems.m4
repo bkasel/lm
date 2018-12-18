@@ -73,6 +73,7 @@ m4_define(__hw_cp_8_middlec,6)m4_dnl
 m4_define(__hw_fac_1_b-field-dip,1)m4_dnl
 m4_define(__hw_fac_1_horseshoe-units,2)m4_dnl
 m4_define(__hw_fac_2_energy-scale,1)m4_dnl
+m4_define(__hw_fac_2_dipole-axis,2)m4_dnl
 m4_define(__hw_fac_4_lightning-rod,1)m4_dnl
 m4_define(__hw_lm_0_calculator,1)m4_dnl
 m4_define(__hw_lm_0_units,2)m4_dnl

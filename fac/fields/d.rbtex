@@ -170,6 +170,11 @@ the perimeter of the irregular shape shown in the figure. By making the grid fin
 we can approximate any shape to the desired level of approximation, so the work done around any
 closed path is zero.
 
+Although our main topic in this chapter is the electric field, it is also true that
+static magnetic fields in a vacuum obey the same equations: 
+$\operatorname{div} \vc{B}=0$ and $\operatorname{curl}\vc{B}=0$. This is the underlying reason
+why, at large distances, electric and magnetic dipole fields have the same universal form:
+the same equations have the same solutions.\label{e-b-dipole-same}
 
 <% end_sec('something-is-missing') %>
 
@@ -373,6 +378,41 @@ Similar reasoning shows why Benjamin Franklin used a sharp
 \end{eg}
 
 <% end_sec('const-v-in-conductor') %>
+
+
+<% begin_sec("Potential related to field",nil,'e-related-to-potential') %>%
+<% begin_sec("One dimension",nil,'e-v-one-dim') %>
+Work equals force times distance, $\der W=F\der x$, so when the electric field does work
+on a test charge, the energy lost by the field is $\der U = -Eq\der x$,
+and dividing by $q$ and solving for $E$ gives
+\begin{equation*}
+  E = -\frac{\der\phi}{\der x}.
+\end{equation*}
+The minus sign reflects the plumber's basic aphorism that shit flows downhill:
+if we release a positive charge at rest in an electric field, the field will
+accelerate the charge in the direction of lower $\phi$ --- lower ``height.''
+In a different gravitational analogy, the two skateboarders in figure
+\figref{skaters-on-different-slopes} will have very different net forces
+acting on them. The one on the steep positive slope will be accelerated
+much more rapidly in the negative direction.
+
+<% marg(40) %>
+<%
+  fig(
+    'skaters-on-different-slopes',
+    %q{%
+      The potential is analogous to the height, and the electric field to the slope.
+    }
+  )
+%>
+<% end_marg %>
+
+For a static field, in a vacuum
+
+second derivative, refer back to one-dim gauss's law
+
+<% end_sec('e-v-one-dim') %>
+<% end_sec('e-related-to-potential') %>
 
 <% begin_notes %>
 \notetext{no-charge-on-interior}{No charge on the interior of a conductor}

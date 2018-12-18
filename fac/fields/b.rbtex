@@ -860,7 +860,7 @@ particle that we can ever infer from its motion in an electric field.
     },
     {
       'width'=>'wide',
-      'sidecaption'=>true
+      'sidecaption'=>false
     }
   )
 %>

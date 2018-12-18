@@ -207,11 +207,49 @@ and is defined formally as
 \end{equation*}
 Its units are normally abbreviated as amperes (``amps''), 1 A=1 C/s.
 
-Current is of great practical interest in electrical circuits, which we will study
-more intensively later in this course.
-To measure current, there is a device called an ammeter. (Today, people usually use
-a device called a multimeter, which has multiple functions including working as
-an ammeter.)
+<% marg() %>
+<%
+  fig(
+    'solenoid',
+    %q{A solenoid, and its magnetic field pattern. Connections on the right,
+       not shown, are required in order to complete the circuit and provide
+       a source of energy such as a battery.}
+  )
+%>
+<% end_marg %>
+A straight wire like the one in figure \figref{field-lines-of-wire} is not
+usually a very efficient or compact way of making a strong magnetic field.
+A more practical device is a solenoid, figure \figref{solenoid}. When very
+strong fields are required, the field can be increased by an additional large
+factor by adding a core made of a magnetic material such as iron. The mathematics
+for calculating such fields will be deferred to later in this course.
+
+The creation of magnetic fields is not the only effect associated with
+currents.  For example, a current normally causes heating, as in an
+electric heater or an old-fashioned incandescent lightbulb. Currents
+can carry information.  Your nervous system operates using electric
+currents carried by ions in your nerve cells.  So current is of great
+practical interest in electrical circuits, which we will study more
+intensively later in this course.  To measure current, there is a
+device called an ammeter. (Today, people usually use a device called a
+multimeter, which has multiple functions including working as an
+ammeter.)
+
+Currents are formed by matter, and are \emph{not} the same thing as
+electromagnetic fields, which can exist in a vacuum. For example, the
+current in a copper wire is carried by electrons, whereas sunlight, an
+electromagnetic wave, travels to the earth through outer space, which
+is a vacuum.
+
+When the current in an electric circuit is constant, so that charge is
+flowing at a constant rate, this is referred to as direct current, or
+DC. Household wall sockets are alternating current, AC, meaning that
+the current oscillates as a function of time. In the US, electrical
+power is transmitted as a sine wave with a frequency of 60 Hz. Radio
+transmitting antennas use AC currents to create an electromagnetic
+wave, and receiving antennas change the radio signal back to a
+current. The frequency used in a cell phone is typically about $10^9\
+\zu{Hz}$. 
 
 <% end_sec('current-and-b') %>
 
@@ -296,14 +334,6 @@ final result ends up being off by a factor of 2), it still makes sense
 that the momentum-to-energy ratio is extremely small, because the
 speed, $c$, is so big.
 
-\begin{eg}{Halley's comet}\label{eg:halley}\index{Halley's comet}\index{comet}
-Halley's comet, shown
-in figure \figref{halley}, has a very elongated elliptical orbit, like those of
-many other comets. About once per century, its orbit brings
-it close to the sun. The comet's head, or nucleus, is
-composed of dirty ice, so the energy deposited by the
-intense sunlight gradually removes ice from the surface and turns it into water vapor.
-
 <% marg() %>
 <%
   fig(
@@ -313,14 +343,14 @@ intense sunlight gradually removes ice from the surface and turns it into water 
     }
   )
 %>
-\spacebetweenfigs
-<%
-  fig(
-    'nichols-radiometer',          
-    %q{Example \ref{eg:nichols-radiometer}.}
-  )
-%>
 <% end_marg %>%
+\begin{eg}{Halley's comet}\label{eg:halley}\index{Halley's comet}\index{comet}
+Halley's comet, shown
+in figure \figref{halley}, has a very elongated elliptical orbit, like those of
+many other comets. About once per century, its orbit brings
+it close to the sun. The comet's head, or nucleus, is
+composed of dirty ice, so the energy deposited by the
+intense sunlight gradually removes ice from the surface and turns it into water vapor.
 
 The sunlight does not just carry energy, however. If it only carried
 energy, then the water vapor would just form a spherical halo that
@@ -331,6 +361,15 @@ as shown in in the top image.  (Some comets also have a second tail,
 which is propelled by electrical forces rather than by the momentum of
 sunlight.)
 \end{eg}
+
+<% marg() %>
+<%
+  fig(
+    'nichols-radiometer',          
+    %q{Example \ref{eg:nichols-radiometer}.}
+  )
+%>
+<% end_marg %>%
 
 \begin{eg}{The Nichols radiometer}\label{eg:nichols-radiometer}
 Figure \figref{nichols-radiometer} shows a simplified drawing of the
@@ -438,8 +477,11 @@ stay away from one another.
 
 These are general rules, which apply to both the electric and the magnetic fields:
 field lines sustain tension parallel to themselves, and pressure in the perpendicular
-direction.
-
+direction. Pressure and tension only produce mechanical effects when there is a
+\emph{difference} in pressure or tension. For example, a car with a flat tire has
+air pressure inside the tire, but there is no difference capable of creating
+a net outward mechanical force on the rubber. In figure \figref{capacitor-pressure-and-tension},
+the mechanical stresses on the capacitor exist because there is no field on the outside.
 
 <%
   fig(
@@ -461,6 +503,10 @@ between the two positive charges contains field lines that vertical pressure,
 causing a repulsion between the charges, along with a horizontal tension which
 has no effect on them.
 
+In both examples in figure \figref{two-charges-pressure-and-tension}, we have highlighted
+an area between the charges, but it also matters that there is a difference between the
+pressure or tension in this area and that on the outside.
+
 To see the advantage of this mode of reasoning, compare with the much
 more complicated logic that we had to do on
 p.~\pageref{fig:eg-two-charges-pe} in order to analyze
@@ -469,14 +515,59 @@ fields' energy that would have occurred if they were moved closer together or fa
 (Cf.~also the complicated handling of the limits of integration in
 note \notewithoutbackref{force-on-point-charge}.)
 
+\pagebreak
+
+<% marg() %>
+<%
+  fig(
+    'joule-magnetostriction',
+    %q{Example \ref{eg:joule-magnetostriction}. The apparatus was about half a meter tall.}
+  )
+%>
+<% end_marg %>
+\begin{eg}{Magnetostriction}\label{eg:joule-magnetostriction}
+The examples discussed above involved pressure and tension made by electric fields,
+but an exactly analogous effect occurs for magnetism.
+If you've ever heard a transformer buzzing, you've observed it.
+
+Figure \figref{joule-magnetostriction} shows part of a sensitive experiment carried
+out by James Joule in 1842 which discovered the effect. Joule writes, ``About the close of the year
+1841, Mr.~F.D.~Arstall, an ingenious machinist of this town, suggested to me a new form
+of electro-magnetic engine. He was of the opinion that a bar of iron experienced an increase
+of bulk by receiving the magnetic condition.'' Joule first constructed a delicate experiment
+to look for a change in the length of an iron bar when it was used as the core of a solenoid.
+In an iron bar about half a meter tall, he found a \emph{decrease} in length of a little more than one
+part per million, with the strongest field he could make. This effect is called
+magnetostriction.
+
+This would suggest a decrease in volume as well, but there was no sufficiently accurate way to
+measure the small diameter of the bar. Therefore Joule created the apparatus in figure
+\figref{joule-magnetostriction}, in which the bar was submerged in water, with a thin capillary
+tube at the top to take the volume of any small displacement of water and amplify it
+into a visible change in height. The result was no detectable volume change.
+
+These results seem natural in view of our picture of fields as carrying tension in the longitudinal
+direction and pressure in the transverse direction. 
+The interior field of the solenoid, as shown in figure \figref{solenoid}, runs in the vertical direction.
+The lengthwise tension reduced the length of the
+bar, but the transverse pressure expanded its diamater, and the result was that the volume stayed the same.
+
+In the more familiar modern example of the
+buzzing transformer, an AC current at 60 Hz creates oscillations at a frequency of 120 Hz.
+This doubling of the frequency occurs
+because the energy, pressure, and tension of a field all depend on the square
+of the field, so that for a magnetic field, $\vc{B}$ produces the same effect as $-\vc{B}$. This means that
+the maximum magnetostriction occurs twice per cycle, at both the peak and the trough of
+the sine wave.
+\end{eg}
 
 
 <% end_sec('pressure-of-em-fields') %>
 <% end_sec('stress-energy') %>
 
-<% begin_sec("Force of a magnetic field on a charge",nil,'b-force-on-current') %>
+<% begin_sec("Force of a magnetic field on a charge",4,'b-force-on-current') %>
 
-<% marg(300) %>
+<% marg() %>
 <%
   fig(
     'wire-in-uniform-field',
@@ -641,7 +732,8 @@ when you only look at it from far away.
   fig(
     'dipole-zoomed-out',
     %q{1.~The field pattern made by two positive and two negative charges.
-       2.~Seen from 10 times far away, the pattern looks much simpler, like the field of any dipole.
+       2.~Seen from 10 times far away, the pattern looks much simpler. This is what the
+          generic, distant field of any dipole looks like.
           The dashed rectangle shows the field of view from the left-hand panel.},
     {'width'=>'fullpage'}
   )
@@ -664,14 +756,8 @@ happen to throw particles in the sock whose total charge is zero, then there is 
 and the dominant field at large distance is the $1/r^3$ dipole field.
 This is what happens, for example, with molecules that have nonzero dipole moments.
 
-We might expect on these grounds that subatomic particles in general would have electric dipole
-moments. For example, a neutron is believed to be composed of
-three charged particles called quarks. The neutron's total charge is zero, but it could
-have a dipole moment. The neutron does in fact have a \emph{magnetic} dipole moment, but
-its \emph{electric} dipole moment is too small to have been measurable in any experiment
-so far (less than $\sim 10^{-46}\ \zu{C}\cdot\munit$). This is believed to be an indication
-of an approximate or exact symmetry in the laws of physics, but efforts to detect a dipole
-moment continue.
+The universal form of electric dipole fields at large distances also holds for magnetic dipoles,
+as discussed on p.~\pageref{e-b-dipole-same}.
 
 \begin{eg}{Molecules with zero and nonzero dipole moments}\label{eg:molecular-dipoles}
 It can be useful to know whether or not a molecule is polar, i.e., has a nonzero dipole moment.
