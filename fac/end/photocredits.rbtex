@@ -38,8 +38,9 @@
 <% photo_credit("green-simple","Electric quadrupole field","Wikimedia Commons user Geek3, CC-BY-SA") %> % https://commons.wikimedia.org/wiki/File:VFPt_four_charges.svg
 <% photo_credit("using-voltmeter","Multimeter","Wikimedia Commons user Binarysequence, CC-BY-SA") %> % https://en.wikipedia.org/wiki/Multimeter#/media/File:Fluke87-V_Multimeter.jpg
 <% photo_credit("using-voltmeter","Using multimeter","US Navy/Robert Winn, public domain") %> % https://commons.wikimedia.org/wiki/File:US_Navy_091004-N-8960W-014_Interior_Communications_Electrician_3rd_Class_Karla_Martinez_inspects_wiring_aboard_the_aircraft_carrier_USS_Nimitz_(CVN_68).jpg
-<% photo_credit("skater-rolls-off-pipe","Skateboarder on top of pipe","Oula Lehtinen, Wikimedia Commons, CC-BY-SA") %>
-<% photo_credit("pool-skater","Skater in pool","Courtesy of J.D. Rogge") %>
+<% photo_credit("skaters-on-different-slopes","Skateboarder on top of pipe","Oula Lehtinen, Wikimedia Commons, CC-BY-SA") %>
+<% photo_credit("skaters-on-different-slopes","Skater in pool","Courtesy of J.D. Rogge") %>
+<% photo_credit("topo","Topographic map","USGS, public domain") %>
 
 <% print_photo_credits() %>
 

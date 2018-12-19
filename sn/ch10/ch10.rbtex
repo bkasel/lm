@@ -1096,12 +1096,12 @@ its properties in this way. Another, similar example along these lines is descri
         \end{align*}
         This can be notated as a gradient (page \pageref{gradandlineintegral}),
         \begin{equation*}
-                        \vc{E} = \nabla V\eqquad,
+                        \vc{E} = -\nabla V\eqquad,
         \end{equation*}
         and if we know the field and want to find the potential, we can
         use a line integral,
         \begin{equation*}
-                        \Delta V         =    \int_C \vc{E}\cdot\der\vc{r}\eqquad,  
+                        \Delta V         =    -\int_C \vc{E}\cdot\der\vc{r}\eqquad,  
         \end{equation*}
         where the quantity inside the integral is a vector dot product.
 

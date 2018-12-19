@@ -182,7 +182,8 @@ magnetic field surrounding the wire is proportional to $1/r$.
 <%
   fig(
     'field-lines-of-wire',
-    %q{Example \ref{eg:field-of-wire}. The field pattern is shown in the plane perpendicular
+    %q{Example \ref{eg:field-of-wire}, the magnetic field of a current-carrying wire.
+       The field pattern is shown in the plane perpendicular
        to the wire. The white circle at the center is the cross-section of the wire.}
   )
 %>
@@ -550,7 +551,7 @@ These results seem natural in view of our picture of fields as carrying tension 
 direction and pressure in the transverse direction. 
 The interior field of the solenoid, as shown in figure \figref{solenoid}, runs in the vertical direction.
 The lengthwise tension reduced the length of the
-bar, but the transverse pressure expanded its diamater, and the result was that the volume stayed the same.
+bar, but the transverse pressure expanded its diameter, and the result was that the volume stayed the same.
 
 In the more familiar modern example of the
 buzzing transformer, an AC current at 60 Hz creates oscillations at a frequency of 120 Hz.
@@ -605,6 +606,13 @@ the possibility that the particle is also acted on by an electric field, we have
   \vc{F} = q\vc{E}+q\vc{v}\times\vc{B},
 \end{equation*}
 which is known as the Lorentz force law.
+
+As an application, we can now describe how Thomson was able to measure the velocity
+of the electrons in the experiment in which he discovered the electron. As
+described in sec.~\ref{subsec:thomson}, p~\pageref{subsec:thomson}, he measured the
+deflection of the electrons in an electric field, but he also determined how much
+magnetic field, applied perpendicular to the beam, was necessary in order to produce
+the same deflection. He then had $v=E/B$.
 
 <% end_sec('b-force-on-current') %>
 
@@ -757,7 +765,8 @@ and the dominant field at large distance is the $1/r^3$ dipole field.
 This is what happens, for example, with molecules that have nonzero dipole moments.
 
 The universal form of electric dipole fields at large distances also holds for magnetic dipoles,
-as discussed on p.~\pageref{e-b-dipole-same}.
+as discussed on p.~\pageref{e-b-dipole-same}. In mini-lab \ref{lab:bar-magnet-b-vs-r} you probably
+found that the field went approximately like $1/r^2$ at the larger distances.
 
 \begin{eg}{Molecules with zero and nonzero dipole moments}\label{eg:molecular-dipoles}
 It can be useful to know whether or not a molecule is polar, i.e., has a nonzero dipole moment.

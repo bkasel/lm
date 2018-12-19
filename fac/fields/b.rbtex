@@ -832,8 +832,9 @@ electric field, and measured their deflection. The particles are
 initially accelerated from C to A, at which point
 they are moving along the $x$ axis with velocity $u$. Let's assume
 that this velocity is known, although the actual technique Thomson
-used to determine it is one that we are not ready to describe using
-the physics presented so far. The electric field between D and E is in the negative
+used to determine it is one that we will not describe until sec.~\ref{sec:b-force-on-current},
+p.~\pageref{sec:b-force-on-current}.
+The electric field between D and E is in the negative
 $y$ direction.  This field produces a force along the $y$ axis, but
 does not affect the $x$ motion, just as the earth's gravity does not
 affect the horizontal velocity of a baseball. To travel the length

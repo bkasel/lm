@@ -105,7 +105,7 @@ is sufficient to show that logical consistency cannot be preserved if
 there is some mechanism for sending signals instantaneously, as in the
 ``subspace radio'' of the Star Trek universe.
 
-Thus we can never send signals simultaneously. The style of reasoning
+Thus we can never send signals instantaneously. The style of reasoning
 here is called proof by contradiction. In this example, we have propositions
 1 (that time is relative) and 2 (that instantaneous communication is possible),
 and if both 1 and 2 hold, then we reach a paradox, or logical contradiction.
@@ -910,7 +910,7 @@ $\vc{E}$ relative to $\vc{E}_\zu{o}$.
 
 <% end_hw_sec %>
 
-<% begin_lab('Magnetic field of a bar magnet as a function of distance') %>
+<% begin_lab('Magnetic field of a bar magnet as a function of distance') %>\label{lab:bar-magnet-b-vs-r}
 
 \begin{labapparatus}
 bar magnet\\
