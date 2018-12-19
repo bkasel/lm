@@ -559,7 +559,7 @@ Lines close together indicate a steep slope.
   fig(
     'voltageofpointcharge',
     %q{%
-      The constant-potential curves surrounding a point charge.
+      The equipotentials surrounding a point charge.
       Near the charge, the curves are so closely spaced that they blend
       together on this drawing due to the finite width with which they were
       drawn. Some electric fields are shown as arrows.
@@ -579,10 +579,22 @@ flows downhill. Notice how the streams on the map cut
 perpendicularly through the lines of constant height.
 
 It is possible to map potentials in the same way, as shown in
-figure \figref{voltageofpointcharge}. The electric field is strongest where the
-constant-potential curves are closest together, and the
+figure \figref{voltageofpointcharge}. Each curve is a line of constant
+potential, called an equipotential. In the full three-dimensional representation,
+the equipotentials would be surfaces. Moving along an equipotential is like
+walking along a hillside without moving up or down. The electric field is strongest where the
+equipotentials are closest together, and the
 electric field vectors always point perpendicular to the
-constant-potential curves.
+equipotentials. Figure \figref{dipole-equipotentials} shows a representation in this style
+for the field of a dipole, overlaid with the field lines.
+
+<%
+  fig(
+    'dipole-equipotentials',
+    %q{The field lines (solid) and equipotentials (dashed lines) of a dipole.},
+    {'width'=>'wide','sidecaption'=>true}
+  )
+%>
 
 The one-dimensional relationship $E=-\der \phi/\der x$ generalizes
 to three dimensions as follows: 
@@ -687,6 +699,89 @@ https://physics.stackexchange.com/questions/449297/characteristic-curve-of-a-sol
 
 <% end_hw_sec() %>
 
+<% begin_lab("Mapping electric fields") %>\label{lab:e-field}
+\begin{labapparatus}
+board and U-shaped probe\\
+DC power supply\\
+multimeter\\
+stencils for drawing electrode shapes on paper
+\end{labapparatus}
+
+\begin{labgoal}
+Visualize electric fields using equipotential curves.
+
+Test approximately whether the fringing fields of a capacitor are such that the
+curl of the electric field is zero.
+\end{labgoal}
+
+<%  
+  fig(
+    'e-field-lab-schematic',
+    %q{Circuit diagram.},
+    {'width'=>'column','float'=>true}
+  )
+%> 
+
+<%  
+  fig(
+    'e-field-lab-photo',
+    %q{Photo of the apparatus, showing a different electrode pattern (two point charges).},
+    {'width'=>'column','float'=>true}
+  )
+%> 
+
+Figure \figref{e-field-lab-schematic} shows a circuit diagram of the apparatus. The
+power supply provides an 8 V potential difference between the two metal
+electrodes, drawn in black.  A voltmeter measures the potential
+difference between an arbitrary reference voltage and a point of
+interest in the gray area around the electrodes. The result will be
+somewhere between 0 and 8 V.
+
+The photo in figure \figref{e-field-lab-photo} shows the actual apparatus. The electrodes are painted with
+silver paint on a detachable board, which goes underneath the big
+board. What you actually see on top is just a piece of paper on which
+you'll trace the equipotentials with a pen. The voltmeter is connected
+to a U-shaped probe with a metal contact that slides underneath the
+board, and a hole in the top piece for your pen. 
+
+Turn your large board upside down. Find the small detachable board
+with the parallel-plate capacitor pattern on it, and screw it to the underside of the
+equipotential board, with the silver-painted side facing down toward
+the tabletop. Use the washers to protect the silver paint so that it
+doesn't get scraped off when you tighten the screws. Now connect the
+voltage source (using the provided wires) to the two large screws on
+either side of the board. Connect the multimeter so that you can
+measure the voltage difference across the terminals of the voltage
+source. Adjust the voltage source to give 8 volts. 
+
+If you press down on the board, you can slip the paper
+between the board and the four buttons you see at the
+corners of the board. Tape the paper to your board, because the buttons aren't
+very dependable. There are plastic stencils in some of the envelopes,
+and you can use these to draw the electrodes accurately onto your paper
+so you know where they are. The photo, for example, shows a pattern
+with two point charges
+traced onto the paper.
+
+Each group will be assigned to trace one equipotential curve. Let's
+say yours is 1.0 V.
+Now put the U-probe in place so that
+the top is above the equipotential board and the bottom of
+it is below the board. You will first be looking for places
+on the pattern board where the voltage is one volt --- look
+for places where the meter reads 1.0 and mark them through
+the hole on the top of your U-probe with a pencil or pen.
+You should find a whole bunch of places there the voltage
+equals one volt, so that you can draw a nice constant-voltage
+curve connecting them. (If the line goes very far or curves
+strangely, you may have to do more.) 
+
+If you're using the PRO-100 meters, they will try to outsmart you by automatically
+choosing a range. Most people find this annoying. To defeat this misfeature,
+press the RANGE button, and you'll see the AUTO indicator on the screen turn off.
+
+
+<% end_lab %>
 
 
 <% end_chapter() %>

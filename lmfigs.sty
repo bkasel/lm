@@ -128,6 +128,8 @@
   \normalcaptions
 %
 \newcommand{\marg}[1]{\margdown{0mm}{#1}}
+\newlength{\columnfigwidth}
+\setlength{\columnfigwidth}{76.5mm}
 % The \figinindentedcorr length is to fix a problem where marginal figures are offset when used inside an indented
 % block of text, such as an example. The eg environment changes this length to a nonzero value at the beginning, and
 % then resets it to zero at the end. Problem:
@@ -357,6 +359,48 @@
            % #1 = directory (optional)
            % #2 = file
         \noindent\widefigspecial[#1]{\textwidth}{#2}%
+}
+\newcommand{\columnfignocaptionnofloat}[2][\figprefix\chapdir/figs]{ %
+           % #1 = directory (optional)
+           % #2 = file
+        \noindent\widefigspecial[#1]{82.6mm}{#2}%
+}
+\newcommand{\columnfignofloat}[3][\figprefix\chapdir/figs]{ %
+           % #1 = directory (optional)
+           % #2 = file
+           % #3 = caption
+        \noindent\widefigspecial[#1]{82.6mm}{#2}\\
+        \formatlikecaption{#3}
+}
+\newcommand{\columnfignofloatanon}[3][\figprefix\chapdir/figs]{ %
+           % #1 = directory (optional)
+           % #2 = file
+           % #3 = caption
+        \noindent\widefigspecial[#1]{82.6mm}{#2}\\
+        \formatlikecaption{#3}
+}
+\newcommand{\columnfig}[6][h]{ %
+         % modeled on widefig; is floating
+         % #1 -- float location
+         % #2 -- file
+         % #3 -- caption
+         % #4 -- suffix
+         % #5 -- labeled or anonymous
+         % #6 -- directory
+	\spaceabovewidefig
+	\begin{figure}[#1]
+        \recordpos{fig:#2#4}{begin}
+	\includegraphics[width=\columnfigwidth]{#6/#2} %
+        \recordpos{fig:#2#4}{endgraphic}
+        \ifthenelse{\equal{#5}{labeled}}{%
+          \docaption{#3}%
+          \recordpos{fig:#2#4}{endcaption}
+        }{%
+          \formatlikecaption{#3}%
+          \recordpos{fig:#2#4}{endcaption}
+        }%
+	\label{fig:#2#4} %
+	\end{figure}
 }
 \newcommand{\inlinefignocaption}[1]{ %
 	\spaceabovewidefig

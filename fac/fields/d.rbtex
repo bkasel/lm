@@ -184,7 +184,9 @@ magnetic field surrounding the wire is proportional to $1/r$.
     'field-lines-of-wire',
     %q{Example \ref{eg:field-of-wire}, the magnetic field of a current-carrying wire.
        The field pattern is shown in the plane perpendicular
-       to the wire. The white circle at the center is the cross-section of the wire.}
+       to the wire. The orientation is rotated by 90 degrees relative to
+       figure \figref{field-transformation-cartoon}.
+       The white circle at the center is the cross-section of the wire.}
   )
 %>
 <% end_marg %>
