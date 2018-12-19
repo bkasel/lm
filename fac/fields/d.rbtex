@@ -4,7 +4,7 @@
 
 <%
   chapter(
-    '03',
+    '04',
     %q{Electromagnetism},
     'ch:electromagnetism',
     %q{A tower and cables of the Golden Gate Bridge. The pressure and tension in the tower and

@@ -4,7 +4,7 @@
 
 <%
   chapter(
-    '04',
+    '03',
     %q{The electric potential},
     'ch:potential'
   )
