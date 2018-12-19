@@ -98,8 +98,8 @@
       "fac": {
         "1":"relativity",
         "2":"em-general",
-        "3":"relativity",
-        "4":"em-dc"
+        "3":"em-dc",
+        "4":"relativity"
       },
       "cp":      {
         "1":"relativity",
@@ -128,7 +128,7 @@
     "3":    {
       "fac": {
         "1":"mechanics",
-        "3":"mechanics"
+        "4":"mechanics"
       },
       "lm":      {
         "22":"em-general",
