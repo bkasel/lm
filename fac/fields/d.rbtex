@@ -1017,6 +1017,86 @@ calculate dipole field on axis
 
 <% end_hw_sec() %>
 
+<% begin_lab("The dipole and superposition") %>\label{lab:dipole}
+\begin{labapparatus}
+6 Nd magnets\\
+2 solenoids\\
+1.5 V battery\\
+battery holder\\
+stopwatch\\
+string\\
+scissors\\
+alligator clips\\
+330 $\Omega$ resistor
+\end{labapparatus}
+
+\begin{labgoal}
+Measure the change in the period of oscillation of a magnetic dipole as the
+external field is doubled, and compare with theory.
+\end{labgoal}
+
+<%  
+  fig(
+    'dipole-lab',
+    %q{The stack of neodymium magnets hangs by a thread in the end-plane of the solenoid.
+        Cross-sectional side view.},
+    {'width'=>'column','float'=>true}
+  )
+%> 
+
+The figure shows a cross-sectional side view of a solenoid. The central axis
+runs from left to right. The idea of this lab is to hang a permanent magnet, which
+acts as a magnetic dipole, from a string, precisely located in the end-plane of
+the solenoid. The oscillation of the magnet about the solenoid's axis is exactly
+mathematically equivalent to the motion of a pendulum, so the period $T$ and
+the magnetic field $B$ supplied by the solenoid are related by $T\propto B^{-1/2}$.
+If superposition holds, then
+the field can be precisely doubled by bringing in a second solenoid, oriented the
+same way, so that one of its end-planes coincides with the dipole as well.
+
+In order to create the magnetic field of the solenoid, a current is needed.
+When this current is established, and the magnetic field pops up, the field takes
+in some energy. This energy comes from a 1.5 V battery. In addition, once the circuit is hooked
+up, there is a continuous slow dissipation of energy to heat as the current flows
+through the copper wires, and the battery supplies this energy as well. The rate
+of heat dissipation is only about a milliwatt, so there is no danger that the battery
+will die. To make this work, you need to make a \emph{complete circuit}, meaning that
+there is a closed loop of wire going from one terminal of the battery to one terminal
+of the solenoid, through the solenoid, back through another wire, and ending up
+at the other terminal of the battery.
+
+In order to keep the current exactly constant, it is necessary to hook up both
+solenoids to the battery throughout the whole lab, not just when the second solenoid
+is needed. The cables are long enough so that it can be put far enough away (half a
+meter or so) so that its small external field will have no effect on the results
+when only the original solenoid's field is desired.
+
+The solenoids should be wired
+in \emph{series}, so that any charge that passes through one must also pass through
+the other. A series circuit is like a necklace with beads on it. The opposite of
+a series circuit is a parallel circuit, which has junctions giving the electrons
+choices about which way to go at certain points.
+
+Furthermore, the oscillations of the permanent magnet are rather fast and rapidly
+damped unless the current is reduced a little. We will do this by adding a component
+called a resistor to the circuit. The resistor dissipates additional energy as heat.
+
+So, including all the parts, your series circuit will look like a necklace with the
+following ``beads'' around its circumference: battery, resistor, solenoid, solenoid,
+and back to the battery again. The order of the circuit elements in the loop actually
+has no effect on the results; because charge is conserved, it is not possible for charge
+to get lost or used up on its way around the circuit.
+
+A complication comes from the ambient field in the room, which is a combination of the
+earth's field and the field of the building materials. This field is a fraction of that
+of the solenoids, but still significant enough to affect the results. To deal with this,
+we will intentionally align the solenoids with the horizontal component of the ambient field, so that the
+vector addition of the horizontal fields is equivalent to addition of real numbers.
+Then we will take data with the current flowing in both directions, so that in one
+cases the ambient field adds to the field of the solenoid(s) and in the other it subtracts.
+Averaging the periods in these two conditions eliminates the effect of the ambient field.
+
+<% end_lab %>
 
 
 <% end_chapter() %>
