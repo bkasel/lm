@@ -41,6 +41,8 @@
 <% photo_credit("skaters-on-different-slopes","Skateboarder on top of pipe","Oula Lehtinen, Wikimedia Commons, CC-BY-SA") %>
 <% photo_credit("skaters-on-different-slopes","Skater in pool","Courtesy of J.D. Rogge") %>
 <% photo_credit("topo","Topographic map","USGS, public domain") %>
+<% photo_credit("eve","Eve and the serpent","Lemercier and Co., after Walter Crane, 1899") %> % https://commons.wikimedia.org/wiki/File:The_serpent_entwines_itself_around_the_body_of_Eve;_it_whisp_Wellcome_V0034190.jpg
+<% photo_credit("coil-spring-pulse","PSSC Physics","") %>
 
 <% print_photo_credits() %>
 

@@ -4,7 +4,8 @@
         "1":"em-fields",
         "2":"em-fields",
         "3":"em-fields",
-        "4":"em-fields"
+        "4":"em-fields",
+        "5":"em-fields"
       },
       "cp":      {
         "1":"mechanics",
@@ -99,7 +100,8 @@
         "1":"relativity",
         "2":"em-general",
         "3":"em-dc",
-        "4":"relativity"
+        "4":"relativity",
+        "5":"relativity"
       },
       "cp":      {
         "1":"relativity",
@@ -128,7 +130,8 @@
     "3":    {
       "fac": {
         "1":"mechanics",
-        "4":"mechanics"
+        "4":"mechanics",
+        "5":"waves"
       },
       "lm":      {
         "22":"em-general",

@@ -1,0 +1,172 @@
+<%
+  require "../eruby_util.rb"
+%>
+
+<%
+  chapter(
+    '05',
+    %q{Radiation},
+    'ch:radiation',
+    '',
+    {'opener'=>'../../../share/optics/figs/crepuscular-rays','width'=>'fullpage'}
+  )
+%>
+
+Way back at the beginning of this book, on the second page of the very
+first chapter, we proved, based only on experiments demonstrating the
+relative nature of time, that the universe could not operate as
+envisioned in Newton's picture of instantaneous action at a distance.
+Electromagnetic forces must propagate as wave disturbances in the
+fields. Later we saw that the only rotationally invariant way of finding the
+direction of propagation of such a wave was the vector cross product
+$\vc{E}\times\vc{B}$, and argued (p.~\pageref{waves-not-pure-e-or-b})
+that therefore these wave disturbances must contain oscillations of
+both the electric and magnetic field.  In this chapter we will take up
+the description of these electromagnetic waves in more detail. 
+
+<% marg(-300) %>
+<%
+  fig(
+    'eve',
+    %q{``Why?''}
+  )
+%>
+<% end_marg %>
+
+By the way, although I'm offering answers to ``why'' questions about
+these waves, it's important to understand that in mathematics and the
+hard sciences, a ``why'' question can have more than one answer. This
+is different from other fields such as religion. If you ask a
+theologically well-informed Christian why humans have to endure pain
+and suffering, there is one definite answer, which is that that it's a
+punishment for Eve's original sin of obtaining an unauthorized
+education from a professorial serpent. Done. Explained.  But in math
+and science, we have the problem of how to prove things rigorously
+without ever being allowed to appeal to some supernatural authority
+for basic principles to use as starting points. We do this by
+explicitly stating some set of assumptions, and making it clear that
+all our later reasoning holds only \emph{conditionally}, \emph{if}
+those assumptions are true. 
+
+A familiar example is the question of why the distance between two
+points in space is given by $\sqrt{(x_1-x_2)^2+(y_1-y_2)^2}$. There is more
+than one answer to this ``why'' question. One is that if we accept Euclid's
+postulates, then it follows as a theorem, the Pythagorean theorem. But
+in the Cartesian approach, this formula for the distance is taken as
+an assumption, and some of Euclid's postulates become theorems that can be
+proved. These are two totally different answers to the same ``why'' question,
+and they are both valid.
+
+The point of this digression, in the context of our study of electromagnetism,
+is that if you look in different books, you will find different logical
+developments of the subject, starting from different sets of assumptions.
+In this book, we start from some of the assumptions described above,
+derive facts about electromagnetic waves, and then end up using those facts
+to infer the full set of physical laws for electromagnetism, known as Maxwell's
+equations. Other books might take Maxwell's equations as assumptions (perhaps
+with some experimental or logical justification) and use them to prove the
+properties of electromagnetic waves.
+
+<% begin_sec("Wave patterns",nil,'wave-patterns') %>
+
+Waves spread out in all directions
+from every point on the disturbance that created them. If
+the disturbance is small, we may consider it as a single
+point, and in the case of water waves the resulting wave
+pattern is the familiar circular ripple, \figref{wave-patterns}/1. If, on the other
+hand, we lay a pole on the surface of the water and wiggle
+it up and down, we create a linear wave pattern, \figref{wave-patterns}/2. For a
+three-dimensional wave such as a sound wave, the analogous
+patterns would be spherical waves and plane waves,
+\figref{wave-patterns-three-d}.
+
+
+<% marg(-300) %>
+<%
+  fig(
+    'wave-patterns',
+    %q{Circular and linear wave patterns.}
+  )
+%>
+\spacebetweenfigs
+<%
+  fig(
+    'wave-patterns-three-d',
+    %q{Plane and spherical wave patterns.}
+  )
+%>
+<% end_marg %>
+
+Infinitely many patterns are possible, but linear or plane
+waves are often the simplest to analyze, because the
+velocity vector is in the same direction no matter what part
+of the wave we look at. Because of the geometrical relationship
+of the Poynting vector to $\vc{E}\times\vc{B}$, we need a full
+three dimensions in order to describe an electromagnetic wave,
+so there is no hope of treating anything as effectively two-dimensional,
+and the simplest wave pattern is therefore the plane wave.
+
+For convenience throughout this chapter, we will always take our
+waves to be propagating along the $z$ axis. The definition of a
+plane wave then becomes very simple: it is an electromagnetic field
+pattern in which the fields are both functions only of $z$ and $t$,
+$\vc{E}=\vc{E}(t,z)$ and $\vc{B}=\vc{B}(t,z)$.
+
+<% end_sec('wave-patterns') %>
+
+<% begin_sec("What waves",nil,'what-vibrates') %>
+
+<% marg(-8) %>
+<%
+  fig(
+    'coil-spring-pulse',
+    %q{A force acts on a coil spring at the left end, producing a mechanical wave pulse that propagates to
+       the right.}
+  )
+%>
+<% end_marg %>
+
+In a vibration, such as the motion of a pendulum or a mass on a
+spring, we would define the amplitude either as the position of the
+object relative to equilibrium, or as some other, closely related
+quantity such as the object's velocity. In these examples, position
+and velocity are not independent measures of amplitide. They are
+closely related, and we can't change one without changing the other
+proportionately.  A wave is a kind of vibration that exists across a
+whole region of space, so the same ideas recur. For example, the
+amplitude of a sound wave could be defined in multiple ways: in terms
+of the displacement of the air, its velocity, or the pressure or
+density. Again, all of these things are related and cannot be
+controlled independently.
+
+In the case of an electromagnetic wave, we could define the amplitude
+in terms of either the electric field or the magnetic field. We have
+already seen that in an electromagnetic wave we can't have one of
+these be zero while the other is nonzero.  Shortly we will see that in
+a plane wave, they are in fact directly proportional to each other. 
+
+An electromagnetic wave, unlike a sound wave or the waves on a coil
+spring in figure \figref{coil-spring-pulse}, is not a mechanical wave,
+i.e., it isn't a vibration of any material medium such as the air or
+the spring. What vibrates is the fields --- invisible, intangible, and
+massless. We will see that electromagnetic waves are transverse, i.e.,
+they vibrate from side to side (like the waves on a spring) rather
+than along the direction of propagation (like a sound wave). But
+because they are not vibrations of a material medium, this vibration
+doesn't mean that anything is actually \emph{traveling} from side to
+side. A bug sitting on the spring in figure \figref{coil-spring-pulse}
+moves to the side and then back as the pulse passes through, but nothing
+analogous happens in an electromagnetic wave. The bug would simply notice
+a change in the fields over time, but would not move.
+<% end_sec('what-vibrates') %>
+
+<% begin_notes %>
+
+<% end_notes %>
+
+<% begin_hw_sec %>
+
+<% end_hw_sec() %>
+
+
+<% end_chapter() %>

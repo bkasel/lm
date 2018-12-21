@@ -404,7 +404,7 @@ One such fact is that disturbances in the electric and magnetic fields
 are never purely electric waves or magnetic waves. They carry
 momentum, and therefore they must contain an oscillation of both
 fields. This is why phenomena like light and radio waves are referred
-to as electromagnetic waves. 
+to as electromagnetic waves.\label{waves-not-pure-e-or-b}
 
 We can also see that such waves must have fields with nonvanishing
 components perpendicular to the direction in which the wave is
