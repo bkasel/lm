@@ -69,16 +69,18 @@ properties of electromagnetic waves.
 
 <% begin_sec("Wave patterns",nil,'wave-patterns') %>
 
-Waves spread out in all directions
-from every point on the disturbance that created them. If
-the disturbance is small, we may consider it as a single
-point, and in the case of water waves the resulting wave
-pattern is the familiar circular ripple, \figref{wave-patterns}/1. If, on the other
-hand, we lay a pole on the surface of the water and wiggle
-it up and down, we create a linear wave pattern, \figref{wave-patterns}/2. For a
-three-dimensional wave such as a sound wave, the analogous
+Waves spread out in all directions from every point on the disturbance
+that created them, and this is why we refer to electromagnetic
+``radiation'' --- the wave radiates out in all directions. 
+
+If such a wave disturbance is small, we may consider it as a single
+point, and in the case of water waves the resulting wave pattern is
+the familiar circular ripple, \figref{wave-patterns}/1. If, on the
+other hand, we lay a pole on the surface of the water and wiggle it up
+and down, we create a linear wave pattern, \figref{wave-patterns}/2.
+For a three-dimensional wave such as a sound wave, the analogous
 patterns would be spherical waves and plane waves,
-\figref{wave-patterns-three-d}.
+\figref{wave-patterns-three-d}. 
 
 
 <% marg(-300) %>
@@ -97,7 +99,7 @@ patterns would be spherical waves and plane waves,
 %>
 <% end_marg %>
 
-Infinitely many patterns are possible, but linear or plane
+All kinds of wave patterns are possible, but linear or plane
 waves are often the simplest to analyze, because the
 velocity vector is in the same direction no matter what part
 of the wave we look at. Because of the geometrical relationship
@@ -158,7 +160,305 @@ side. A bug sitting on the spring in figure \figref{coil-spring-pulse}
 moves to the side and then back as the pulse passes through, but nothing
 analogous happens in an electromagnetic wave. The bug would simply notice
 a change in the fields over time, but would not move.
+
+Early physicists working on the description of electromagnetic
+radiation had never had any previous experience with waves that were
+not mechanical vibrations of a physical medium. James Clerk Maxwell
+gave a complete and correct mathematical description of
+electromagnetism in 1865, and his equations worked just fine as a
+description of radiation purely in terms of non-material fields. But
+old habits died hard, and as late as the 1930's, it was common to hear
+physicists referring to electromagnetic waves as vibrations in a
+mysterious medium called the ``aether.''
+
 <% end_sec('what-vibrates') %>
+
+<% begin_sec("Geometry of the fields in a plane wave",nil,'plane-wave-geom') %>
+
+<% begin_sec("$\\vc{E}$ and $\\vc{B}$ perpendicular to the direction of propagation",nil,'e-b-perp-p') %>
+The Poynting vector $\vc{S}=(c^2/4\pi k)\vc{E}\times\vc{B}$ gives the momentum density of our plane wave,
+and therefore points in the direction of propagation. Since a vector cross product is perpendicular
+to both of the vectors, it follows that both fields lie in the plane perpendicular to the direction
+of propagation.
+<% end_sec('e-b-perp-p') %>
+
+<% begin_sec("$\\vc{E}$ and $\\vc{B}$ equal in energy",nil,'e-b-equal-energy') %>
+
+<% marg() %>
+<%
+  fig(
+    'e-b-equal-energy',
+    %q{Are these possible fields for electromagnetic plane waves?}
+  )
+%>
+<% end_marg %>
+Figure \figref{e-b-equal-energy} shows two examples of electric and magnetic fields that
+we imagine as possible fields in an electromagnetic plane wave. We draw the arrows for the
+$\vc{E}$ and $\vc{B}$ vectors with equal lengths on the page, which suggests that they are
+``equal'' in the sense of carrying equal energy, which we are now going to prove. The angle
+$\theta$ is drawn as an arbitrary angle, although we will prove later that it must be a right
+angle. The first example is drawn with $\vc{E}$ clockwise from $\vc{B}$, so that by the right-hand
+rule, the direction of propagation is out of the page. The second example has been flipped around
+so that the Poynting vector is into the page, and has also been rotated in the plane of the page.
+
+Our argument for equal energy sharing between the electric and magnetic fields works by
+colliding these two waves head-on. Before the waves collide, they each carry energy $U_\vc{E}+U_\vc{B}$,
+for a total energy of $2U_\vc{E}+2U_\vc{B}$. Now suppose that the rotation is chosen as in the figure,
+so that when the waves superpose, the electric fields cancel. At this moment, the total energy
+is $U_{\vc{B}'}$, where $\vc{B}'$ is the result of vector addition of the two magnetic field vectors
+at an angle of $\pi-2\theta$ relative to each other.
+
+That was one possible choice of the rotation. But we can also choose the rotation such that
+the \emph{magnetic} fields cancel, so that the total energy is $U_{\vc{E}'}$, where $\vc{E}'$ is the
+result of a similar vector addition problem involving the same angle.
+
+Requiring conservation of energy in both examples, we have $U_\vc{E}+U_\vc{B}=U_{\vc{B}'}=U_{\vc{E}'}$,
+but since the two vector addition problems involve the same angle, we must have $U_\vc{E}=U_\vc{B}$,
+as claimed.
+
+Since the energy densities are $(1/8\pi k)E^2$ and $(c^2/8\pi k)B^2$, it follows that
+$E=cB$. With a couple of centuries of hindsight, it would have been better if we had constructed
+a system of units in which $E$ and $B$ had the same units, and in fact they do have the same
+units in the cgs system. In the SI their units are different, but ignoring the factor of $c$,
+we can say that this means the magnitudes of the electric and magnetic fields in a plane wave
+are ``equal.''
+
+<% end_sec('e-b-equal-energy') %>
+
+<% begin_sec("$\\vc{E}$ and $\\vc{B}$ perpendicular to each other",nil,'e-b-perp') %>
+<% marg() %>
+<%
+  fig(
+    'e-b-perpendicular',
+    %q{The geometry of a plane wave.}
+  )
+%>
+<% end_marg %>
+Continuing the analysis of the colliding waves, we find that the angle $\theta$
+between $\vc{E}$ and $\vc{B}$ must be a right angle. We have four units of energy
+before the waves collide: one unit in each wave's electric field, and one unit in each
+magnetic field. When the waves collide in an orientation such that the electric fields
+cancel, then $U_{\vc{B}'}$ has a value, in these units, of $4\sin^2\theta$, which gives
+conservation of energy only if $\theta$ is a right angle. We arrive at the geometry shown
+in figures \figref{e-b-perpendicular} and \figref{plane-wave-propagating}.
+
+<%
+  fig(
+    'plane-wave-propagating',
+    %q{A plane wave propagating to the right, shown at one time (top) and a later one (bottom).},
+    {'width'=>'wide','sidecaption'=>true}
+  )
+%>
+
+<% end_sec('e-b-perp') %>
+
+<% end_sec('plane-wave-geom') %>
+
+<% begin_sec("Maxwell's equations in a vacuum",nil,'maxwell-vacuum') %>
+<% marg() %>
+<%
+  fig(
+    'bug-in-plane-wave',
+    %q{A bug makes local observations of the leading edge of the wave from figure
+       \figref{plane-wave-propagating}. The wave is moving to the right, and the
+        magnetic field is perpendicular to the page.}
+  )
+%>
+<% end_marg %>
+The laws of physics are local, so if we zoom in on an electromagnetic wave, as in
+figure \figref{bug-in-plane-wave}, and take on the role of the bug, we must be able
+to make sense of the evolution of the wave pattern as time goes on. The structure of
+the laws of physics for electromagnetism is that they talk about the curl and divergence
+of the fields. It's not arbitrary that they have this structure, because the curl and
+divergence are the only rotationally invariant derivative operators we can define that take
+a vector-valued field as an input.
+
+What the bug observes at this moment in time is that the electric field has a curl
+that points into the page. (You should verify this yourself by visualization, using the
+right-hand rule, if necessary referring to the drawing of the curl-meter in
+figure \figref{curlmeter-fac} on p.~\pageref{fig:curlmeter-fac}.) She also observes that
+the magnetic field's curl is up. For static fields, we're supposed to have
+$\operatorname{curl}\vc{E}=0$ and $\operatorname{curl}\vc{B}=0$, so this would be impossible.
+But this is not a static field, it's a field that is changing over time.
+The bug needs some laws of physics that relate the time-varying nature of the fields to their
+curls. With this motivation, we state Maxwell's equations in a vacuum:
+\begin{align*}
+  \operatorname{div}\vc{E} &=  0 \\
+  \operatorname{div}\vc{B} &=  0 \\
+  \operatorname{curl}\vc{E} &=  -\frac{\partial\vc{B}}{\partial t} \\
+  \operatorname{curl}\vc{B} &=  \frac{1}{c^2}\frac{\partial\vc{E}}{\partial t}.
+\end{align*}
+There is not much else we could write down that would satisfy the bug's
+requirements. The signs are the ones that make the geometry of figure \figref{bug-in-plane-wave}
+work.\footnote{The fact that the two signs are opposite is what gives us solutions that are oscillating
+waves, rather than exponential freak-outs. We could make the signs $+$ and $-$ rather than $-$ and $+$,
+but this would be equivalent to redefining the magnetic field like $\vc{B}\rightarrow-\vc{B}$.}
+The factor of $1/c^2$ has to be there because of units. We could throw in some other unitless
+factor and make it $7/c^2$, for example, but $1/c^2$ is the choice that turns out to make the
+wave propagate at $c$.
+
+The physics embodied in these two new terms of Maxwell's equations is referred to as
+induction (a different usage of the term than the one introduced for static fields
+on p.~\pageref{fig:attracting-induced-electric-and-magnetic-dipoles}). A changing
+magnetic field induces a curly electric field, and a changing electric field
+induces a curly magnetic field.
+
+\begin{eg}{The generator}\index{generator}
+A generator, \figref{generator}, consists of a permanent magnet that
+rotates within a coil of wire. The magnet is turned by a
+motor or crank, (not shown). As it spins, the nearby
+magnetic field changes. This changing magnetic field results in an
+electric field, which has a curly pattern. This electric
+field pattern creates a current that whips around the coils
+of wire, and we can tap this current to light the lightbulb.
+\end{eg}
+<% marg(33) %>
+<%
+  fig(
+    'generator',
+    %q{A generator.}
+  )
+%>
+<% end_marg %>
+
+<% end_sec('maxwell-vacuum') %>
+
+<% begin_sec("Einstein's motorcycle",nil,'einstein-motorcycle') %>
+It seems as though we have a nice, tidy picture of electromagnetism all wrapped up. There should
+only be only a few loose ends to tie up, such as how to incorporate charges and currents into
+Maxwell's equations, and how to connect Maxwell's equations to
+some practical problem-solving, such as the computation of the field of a solenoid.
+
+But at the Swiss Federal Polytechnic school, a physics student, about 20 years old,
+was sitting in the back of a classroom, absorbing a lecture on material similar to this,
+when he came back to a troubling, half-formed fantasy that he had originally imagined
+at the age of 16. Suppose, Albert Einstein daydreamed, that I ride on a motorcycle
+at nearly the speed of light, chasing a light wave as it passes over me. What would I
+observe? And what would happen if I rode \emph{at} the speed of light? It would seem that
+in the case where he rode at $c$, he should be at rest with respect to the wave, so that in
+his frame of reference the fields would don't change with time. But this violates Maxwell's
+equations.
+With the benefit of hindsight, let's untangle this paradox that Einstein only finally
+resolved five years later, with the publication of his special theory of relativity.
+
+The field that we observe, as we move in the $z$ direction with velocity $v$, has nonzero
+components $E_x$ and $B_y$. On a graph with $E_x$ and $cB_y$ on its axes, figure \figref{lorentz-1}, a particular
+spot in the field pattern of an electromagnetic wave is represented by a point on the diagonal
+that runs through the origin with a slope of 1. (The factors of $c$ that occur in this discussion
+are only because of the inconvenience of the SI. Ignore them as you read. I'll say things like
+``the $E$ field and the $B$ field are equal,'' with the understanding that this is really only
+true if the factors of $c$ are filled in.) A pure electric field is a point on the horizontal
+axis, and pure magnetic field is a point on the vertical axis.
+
+<% marg(300) %>
+<%
+  fig(
+    'lorentz-1',
+    %q{Two electromagnetic field configurations represented as dots on a graph of $B_y$ versus $E_x$.
+       (To avoid clutter, factors of $c$ are suppressed; the vertical axis should really be $cB_y$ in
+       SI units.)}
+  )
+%>
+\spacebetweenfigs
+<%
+  fig(
+    'lorentz-2',
+    %q{Changing between two frames of reference.}
+  )
+%>
+<% end_marg %>
+We already know that if we change our frame of reference, a particular combination of electric
+and magnetic fields looks like some other set of fields. We know that these transformations are
+linear, and we also know from examples like figure \figref{field-transformation-cartoon}
+on p.~\pageref{fig:field-transformation-cartoon}, involving a line of charges, what happens to a point
+on the horizontal axis. We could represent this kind of information by drawing pictures of how
+the points move around on a fixed graph-paper grid, but it turns out to be much easier to keep
+the points fixed and move the axes, as in figure \figref{lorentz-2}.The slope of the new
+$E_x'$ axis is $v/c$, where $v$ is
+the velocity of the new frame relative to the old one as it moves in the $z$ direction.
+
+For practice, let's interpret the two points in figure \figref{lorentz-2}. The bottom point is a purely
+electric field in the original frame of reference. For an observer moving in the positive $z$ direction
+at velocity $v$, we use the $(E_x',B_y')$ axes to determine the fields. Although we haven't yet marked
+in tick marks, so we can't tell whether $E_x'$ is bigger or smaller than $E_x$, we can
+see that the dot is below the new ``horizontal'' axis, so $B_y'<0$, and this is consistent with
+our earlier analysis of figure \figref{field-transformation-cartoon}
+on p.~\pageref{fig:field-transformation-cartoon}.
+
+The other point lies on the diagonal, so it's a combination of fields that we could have in
+a plane wave propagating in the $z$ direction. An electromagnetic wave that obeys the laws of
+physics in one frame should also obey the laws of physics in another frame, and therefore
+it makes sense that in the tilted axes representing $(E_x',B_y')$, it again lies on the diagonal.
+To make this part of the example come out right, we are forced to make the two axes tilt by equal
+angles, like the blades of a pair of scissors as they close in from both sides.
+
+<% marg() %>
+<%
+  fig(
+    'boost',
+    %q{How a square on the $(E_x,B_y)$ graph paper changes as we change frames of reference.
+       The area stays the same.}
+  )
+%>
+<% end_marg %>
+
+We still haven't specified how much the axes stretch or shrink, i.e., how far apart the tick marks
+should be. It's fairly straightforward to prove that the area of a square on the original
+graph paper must keep the same area as we distort it into a parallelogram on the new graph paper.
+The form of the transformation is now completely determined, and algebra shows it to be
+\begin{align*}
+  E_x' &=  \quad \mygamma E_x - \frac{v}{c}\mygamma cB_y  \\
+  cB_y' &= -\frac{v}{c}\mygamma E_x + \mygamma cB_y ,
+\end{align*}
+where $\mygamma$ (Greek letter gamma, which gakes the `g' sound) is shorthand for
+$1/\sqrt{1-(v/c)^2}$. The form of these equations is pretty rather simple if you
+ignore all the factors of $c$ and realize that there is just an over-all factor of $\gamma$.
+The factors of $c$ occur in front of every magnetic field, and also under every $v$, so
+that all velocities are being measured as a fraction of the speed of light.
+
+\begin{eg}{The trivial transformation}
+In the case where $v=0$, we have $\gamma=1$, and the transformations become
+$E_x'=E_x$ and $B_y'=B_y$, i.e., nothing changes. This makes sense, because we haven't actually
+changed our frame of reference.
+\end{eg}
+
+
+<% end_sec('einstein-motorcycle') %>
+
+<% begin_sec("Implications for the structure of space and time",nil,'spacetime') %>
+<% marg() %>
+<%
+  fig(
+    'two-boosts',
+    %q{Transforming twice in a row by $3/5$ of $c$.}
+  )
+%>
+<% end_marg %>
+These apparently innocuous ideas now lead us to some extremely subversive conclusions
+about time and space. We are now led back, full circle, to the starting point of this
+book, in which we began by considering the nature of time.
+
+Figure \figref{two-boosts} shows the result of doing two transformations in a row,
+each represented by its effect on a square of the original graph paper.
+For covenience, each of these is chosen to be a transformation that lengthens
+one diagonal by a factor of two, while cutting the other in half. With a little
+arithmetic, it can be shown that each of these corresponds to a velocity change $v$ equal to $3/5$ of
+$c$. That is, we have our original frame A, a frame B that moves at $v$ relative to A
+and another frame C that moves at $v$ relative to B. According to the conception of
+space and time created by Galileo and Newton, velocities should add, so the result should
+be $3/5+3/5=6/5$, i.e., a speed 20\% greater than the speed of light. But this isn't
+what we actually see in the diagram. In each of the three parallelograms, the slope
+of the bottom edge represents that frame's velocity in units of $c$. The first slope
+is 0, and the second is $3/5$, but the third is clearly less than 1. Einstein
+recalled that this was the point that had prevented him from putting together the
+special theory of relativity for several years. He had been assuming that velocities
+had to add. It turns out that they don't. Addition is just an approximation, which happens
+to work at velocities that are small compared to $c$.
+
+
+
+<% end_sec('spacetime') %>
+
 
 <% begin_notes %>
 
