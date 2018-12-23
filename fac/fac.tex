@@ -49,7 +49,8 @@
 \brieftocentry[\hfill]{ch:gauss-law}{Gauss's law}\\
 \brieftocentry[\hfill]{ch:potential}{The electric potential}\\
 \brieftocentry[\hfill]{ch:electromagnetism}{Electromagnetism}\\
-\brieftocentry[\hfill]{ch:radiation}{Radiation}
+\brieftocentry[\hfill]{ch:radiation}{Radiation}\\
+\brieftocentry[\hfill]{ch:relativity}{Relativity}
 \end{tabular}
 
 
@@ -84,8 +85,9 @@
     \renewcommand{\chapdir}{fields}\include{fields/btemp}
     \renewcommand{\chapdir}{fields}\include{fields/ctemp}
     \renewcommand{\chapdir}{fields}\include{fields/dtemp}
-	\formatchtoc{\large}{\quad\contentspage}{4mm} % This has to go before the last chapter.
     \renewcommand{\chapdir}{fields}\include{fields/etemp}
+	\formatchtoc{\large}{\quad\contentspage}{4mm} % This has to go before the last chapter.
+    \renewcommand{\chapdir}{fields}\include{fields/ftemp}
         \addtocontents{toc}{\vspace{5mm}}% For reasons I don't understand, this actually comes *after* the final chapter.
 %
     \widelayout

@@ -196,7 +196,7 @@ Figure \figref{e-b-equal-energy} shows two examples of electric and magnetic fie
 we imagine as possible fields in an electromagnetic plane wave. We draw the arrows for the
 $\vc{E}$ and $\vc{B}$ vectors with equal lengths on the page, which suggests that they are
 ``equal'' in the sense of carrying equal energy, which we are now going to prove. The angle
-$\theta$ is drawn as an arbitrary angle, although we will prove later that it must be a right
+$\phi$ is drawn as an arbitrary angle, although we will prove later that it must be a right
 angle. The first example is drawn with $\vc{E}$ clockwise from $\vc{B}$, so that by the right-hand
 rule, the direction of propagation is out of the page. The second example has been flipped around
 so that the Poynting vector is into the page, and has also been rotated in the plane of the page.
@@ -206,7 +206,7 @@ colliding these two waves head-on. Before the waves collide, they each carry ene
 for a total energy of $2U_\vc{E}+2U_\vc{B}$. Now suppose that the rotation is chosen as in the figure,
 so that when the waves superpose, the electric fields cancel. At this moment, the total energy
 is $U_{\vc{B}'}$, where $\vc{B}'$ is the result of vector addition of the two magnetic field vectors
-at an angle of $\pi-2\theta$ relative to each other.
+at an angle of $\pi-2\phi$ relative to each other.
 
 That was one possible choice of the rotation. But we can also choose the rotation such that
 the \emph{magnetic} fields cancel, so that the total energy is $U_{\vc{E}'}$, where $\vc{E}'$ is the
@@ -234,14 +234,18 @@ are ``equal.''
   )
 %>
 <% end_marg %>
-Continuing the analysis of the colliding waves, we find that the angle $\theta$
+Continuing the analysis of the colliding waves, we find that the angle $\phi$
 between $\vc{E}$ and $\vc{B}$ must be a right angle. We have four units of energy
 before the waves collide: one unit in each wave's electric field, and one unit in each
 magnetic field. When the waves collide in an orientation such that the electric fields
-cancel, then $U_{\vc{B}'}$ has a value, in these units, of $4\sin^2\theta$, which gives
-conservation of energy only if $\theta$ is a right angle. We arrive at the geometry shown
+cancel, then $U_{\vc{B}'}$ has a value, in these units, of $4\sin^2\phi$, which gives
+conservation of energy only if $\phi$ is a right angle. We arrive at the geometry shown
 in figure \figref{e-b-perpendicular}.
 
+Because the angle $\phi$ is fixed at $90\degunit$, it's not a property like color or brightness
+that can distinguish one light wave from another. But we are always free to take a diagram
+like figure \figref{e-b-perpendicular} and simply spin the whole book around by an angle $\theta$.
+This is referred to as the polarization of the wave.
 <% end_sec('e-b-perp') %>
 
 <% begin_sec("Propagation at a fixed velocity",nil,'propagation-at-c') %>
@@ -290,7 +294,7 @@ Theoretically, we have the following argument. In general, the ratio of an objec
 momentum depends on its speed (cf.~p.~\pageref{energy-momentum-ratio}). But the geometrical facts
 we've found about electromagnetic waves guarantee that the energy and momentum scale up and down
 with amplitude in exactly the same way, and are independent of the shape of the wave. For example,
-if the angle $\theta$ between the $\vc{E}$ and $\vc{B}$ vectors could vary, or if $|\vc{E}|$ and
+if the angle $\phi$ between the $\vc{E}$ and $\vc{B}$ vectors could vary, or if $|\vc{E}|$ and
 $|\vc{B}|$ could vary independently, then we could get different momenta for the same energy --- but
 these things are \emph{not} independently variable. Since electromagnetic waves have a fixed ratio
 of energy to momentum, they must travel at a fixed speed,\label{em-waves-fixed-v}
@@ -381,218 +385,10 @@ was sitting in the back of a classroom, absorbing a lecture on material similar 
 when he came back to a troubling, half-formed fantasy that he had originally imagined
 at the age of 16. Suppose, Albert Einstein daydreamed, that I ride on a motorcycle
 at nearly the speed of light, chasing a light wave as it passes over me. What would I
-observe? And what would happen if I rode \emph{at} the speed of light? It would seem that
-in the case where he rode at $c$, he should be at rest with respect to the wave, so that in
-his frame of reference the fields would don't change with time. But this violates Maxwell's
-equations.
-With the benefit of hindsight, let's untangle this paradox that Einstein only finally
-resolved five years later, with the publication of his special theory of relativity.
-
-The field that we observe, as we move in the $z$ direction with velocity $v$, has nonzero
-components $E_x$ and $B_y$. On a graph with $E_x$ and $cB_y$ on its axes, figure \figref{lorentz-1}, a particular
-spot in the field pattern of an electromagnetic wave is represented by a point on the diagonal
-that runs through the origin with a slope of 1. (The factors of $c$ that occur in this discussion
-are only because of the inconvenience of the SI. Ignore them as you read. I'll say things like
-``the $E$ field and the $B$ field are equal,'' with the understanding that this is really only
-true if the factors of $c$ are filled in.) A pure electric field is a point on the horizontal
-axis, and pure magnetic field is a point on the vertical axis.
-
-<% marg(300) %>
-<%
-  fig(
-    'lorentz-1',
-    %q{Two electromagnetic field configurations represented as dots on a graph of $B_y$ versus $E_x$.
-       (To avoid clutter, factors of $c$ are suppressed; the vertical axis should really be $cB_y$ in
-       SI units.)}
-  )
-%>
-\spacebetweenfigs
-<%
-  fig(
-    'lorentz-2',
-    %q{Changing between two frames of reference.}
-  )
-%>
-<% end_marg %>
-We already know that if we change our frame of reference, a particular combination of electric
-and magnetic fields looks like some other set of fields. We know that these transformations are
-linear, and we also know from examples like figure \figref{field-transformation-cartoon}
-on p.~\pageref{fig:field-transformation-cartoon}, involving a line of charges, what happens to a point
-on the horizontal axis. We could represent this kind of information by drawing pictures of how
-the points move around on a fixed graph-paper grid, but it turns out to be much easier to keep
-the points fixed and move the axes, as in figure \figref{lorentz-2}.The slope of the new
-$E_x'$ axis is $v/c$, where $v$ is
-the velocity of the new frame relative to the old one as it moves in the $z$ direction.
-
-For practice, let's interpret the two points in figure \figref{lorentz-2}. The bottom point is a purely
-electric field in the original frame of reference. For an observer moving in the positive $z$ direction
-at velocity $v$, we use the $(E_x',B_y')$ axes to determine the fields. Although we haven't yet marked
-in tick marks, so we can't tell whether $E_x'$ is bigger or smaller than $E_x$, we can
-see that the dot is below the new ``horizontal'' axis, so $B_y'<0$, and this is consistent with
-our earlier analysis of figure \figref{field-transformation-cartoon}
-on p.~\pageref{fig:field-transformation-cartoon}.
-
-The other point lies on the diagonal, so it's a combination of fields that we could have in
-a plane wave propagating in the $z$ direction. An electromagnetic wave that obeys the laws of
-physics in one frame should also obey the laws of physics in another frame, and therefore
-it makes sense that in the tilted axes representing $(E_x',B_y')$, it again lies on the diagonal.
-To make this part of the example come out right, we are forced to make the two axes tilt by equal
-angles, like the blades of a pair of scissors as they close in from both sides.
-
-<% marg() %>
-<%
-  fig(
-    'boost',
-    %q{How a square on the $(E_x,B_y)$ graph paper changes as we change frames of reference.
-       The area stays the same.}
-  )
-%>
-<% end_marg %>
-
-We still haven't specified how much the axes stretch or shrink, i.e., how far apart the tick marks
-should be. It's fairly straightforward to prove that the area of a square on the original
-graph paper must keep the same area as we distort it into a parallelogram on the new graph paper.
-The form of the transformation is now completely determined, and algebra shows it to be
-\begin{align*}
-  E_x' &=  \quad \mygamma E_x - \frac{v}{c}\mygamma cB_y  \\
-  cB_y' &= -\frac{v}{c}\mygamma E_x + \mygamma cB_y ,
-\end{align*}
-where $\mygamma$ (Greek letter gamma, which gakes the `g' sound) is shorthand for
-$1/\sqrt{1-(v/c)^2}$. The form of these equations is pretty rather simple if you
-ignore all the factors of $c$ and realize that there is just an over-all factor of $\gamma$.
-The factors of $c$ occur in front of every magnetic field, and also under every $v$, so
-that all velocities are being measured as a fraction of the speed of light.
-
-\begin{eg}{The trivial transformation}
-In the case where $v=0$, we have $\gamma=1$, and the transformations become
-$E_x'=E_x$ and $B_y'=B_y$, i.e., nothing changes. This makes sense, because we haven't actually
-changed our frame of reference.
-\end{eg}
-
+observe? And what would happen if I rode \emph{at} the speed of light? We take up this
+train of thought again in ch.~\ref{ch:relativity}.
 
 <% end_sec('einstein-motorcycle') %>
-
-<% begin_sec("Implications for the structure of space and time",nil,'spacetime') %>
-<% begin_sec("Combination of velocities",nil,'v-addition') %>
-These apparently innocuous ideas now lead us to some extremely subversive conclusions
-about time and space. We are now led back, full circle, to the starting point of this
-book, in which we began by considering the nature of time.
-
-<% marg(-10) %>
-<%
-  fig(
-    'two-boosts',
-    %q{Transforming twice in a row by $3/5$ of $c$. The slope of the bottom edge of each
-       parallelogram is its velocity, in units of $c$.}
-  )
-%>
-<% end_marg %>
-Figure \figref{two-boosts} shows the result of doing two transformations in a row,
-each represented by its effect on a square of the original graph paper.
-For covenience, each of these is chosen to be a transformation that lengthens
-one diagonal by a factor of two, while cutting the other in half. With a little
-arithmetic, it can be shown that each of these corresponds to a velocity change $v$ equal to $3/5$ of
-$c$. That is, we have our original frame A, a frame B that moves at $v$ relative to A
-and another frame C that moves at $v$ relative to B. According to the conception of
-space and time created by Galileo and Newton, velocities should add, so the result should
-be $3/5+3/5=6/5$, i.e., a speed 20\% greater than the speed of light. But this isn't
-what we actually see in the diagram. In each of the three parallelograms, the slope
-of the bottom edge represents that frame's velocity in units of $c$. The first slope
-is 0, and the second is $3/5$, but the third is clearly less than 1.
-
-Einstein
-recalled that this was the point that had prevented him from putting together the
-special theory of relativity for several years. He had been assuming that velocities
-had to add. It turns out that they don't. Addition is just an approximation, which happens
-to work at velocities that are small compared to $c$.
-
-This was also the resolution of the motorcycle paradox that had been bothering him for
-years. Any continuous process of acceleration acts like figure \figref{two-boosts}.
-The motorcycle can speed up and speed up, but it will never reach the speed of light.
-(Let's not detour into a detailed description right now, but the rider sees the
-wave reduced in amplitude, as we can see from figure \figref{boost}. He also sees
-the wave's oscillations slowed down in time, an effect called the Doppler shift
-that also occurs for other waves such as water waves and sound waves, although the
-mathematics works out differently due to the existence of a medium.)
-
-Slopes on these diagrams represent velocities, in units of $c$, but the only slopes that
-stay the same when we change frames of reference are the $\pm 1$ slopes of the diagonals.
-We therefore find that all observers agree on $c$. Since we've already shown on
-p.~\pageref{em-waves-fixed-v} that electromagnetic waves travel at a fixed speed, it follows
-that this speed must be $c$, and this is why $c$ is often referred to as the speed 
-of light.\label{em-waves-propagate-at-c}
-<% end_sec('v-addition') %>
-
-<% begin_sec("Length contraction",nil,'length-contraction') %>
-<% marg(-5) %>
-<%
-  fig(
-    'boost-line-of-charge',
-    %q{A line of charge creates an electric field.}
-  )
-%>
-<% end_marg %>
-The nonlinear way that velocities combine is not compatible with our ordinary assumptions
-about how space and time work, but a more direct and obvious violation of our intuition arises
-if we consider figure \figref{boost-line-of-charge}. A line of charges parallel to the $z$ axis
-creates an electric field pattern. We pick a point on the right side of the line, where the
-electric field $E_x$ has some positive value. If we now change to a frame of reference moving at velocity
-$v$ in the positive $z$ direction, then the equations for the transformation of the fields give
-us $E_x'=\mygamma E_x$ and $B_y'=-(v\mygamma/c^2)E_x$. The magnetic field is no surprise ---
-a current exists in the new frame, and it makes a magnetic field (cf.~example \ref{eg:field-of-wire},
-p.~\pageref{eg:field-of-wire}).
-
-But the electric field has been intensified by a factor $\mygamma$,
-which is greater than 1. What is going on here? Based on Gauss's law,
-this is the field we would expect from charges that were more closely
-packed, with more coulombs per meter. But charge is invariant when we change frames
-of reference (sec.~\ref{subsec:charge-invariant}, p.~\pageref{subsec:charge-invariant}).
-The only possible conclusion is to the observer who is moving relative to the line of charges,
-the distances along the line have all been contracted by a factor of $\mygamma$.
-
-\begin{lessimportant}[Length contraction]
-A measuring stick has the greatest length according to an observer at rest relative to
-the stick. An observer in motion relative to the stick, in the direction parallel to it,
-finds its length to be reduced by a factor of $\mygamma$.
-\end{lessimportant}
-
-<% end_sec('length-contraction') %>
-
-<% begin_sec("Time dilation",nil,'time-dilation') %>
-Alice stays on earth while her twin Betty
-heads off in a spaceship for Tau Ceti, a nearby star. Tau Ceti is 12 light-years
-away, so even though Betty travels at 87\% of the speed of light, it will take
-her a long time to get there: 14 years, according to Alice.
-
-<%
-  fig('interstellar-road-trip',
-    %q{Betty's interstellar road trip.},
-    {
-      'width'=>'wide',
-      'sidecaption'=>true
-    }
-  )
-%>
-
-Betty is moving relative to the stars, so in her frame of reference, the length
-of the trip is length-contracted. At this speed, her $\mygamma$ is 2.0, so that the voyage will
-seem half as long, and to her it will only last 7 years. 
-
-This example shows that the relativistic effect on length must be accompanied by
-a similar effect on time.
-
-\begin{lessimportant}[Time dilation]
-A clock seems to run fastest according to an observer at rest relative to
-the clock. An observer in motion relative to the clock
-finds its speed to be reduced by a factor of $\mygamma$.
-\end{lessimportant}
-
-<% end_sec('time-dilation') %>
-
-
-
-<% end_sec('spacetime') %>
-
 
 <% begin_notes %>
 
@@ -602,5 +398,94 @@ finds its speed to be reduced by a factor of $\mygamma$.
 
 <% end_hw_sec() %>
 
+<% begin_lab("Polarization") %>\label{lab:polarization}
+\begin{labapparatus}
+sodium gas discharge tube\\
+2 polarizing films\\
+photovoltaic cell and collimator\\
+protractor
+\end{labapparatus}
+
+\begin{labgoal}
+Test quantitatively the hypothesis that polarization
+relates to the direction of the field vectors in an
+electromagnetic wave.
+\end{labgoal}
+
+Turn on the sodium gas discharge tube immediately so that it starts
+warming up. This tube acts as a lamp emitting bright light in little
+isolated pulses, each of which has a randomly oriented polarization.
+
+The polarizing films are essentially transparent pieces of plastic
+with microscopic parallel lines on them.  If you hold one of the
+polarizing films up to your eye and look around, you will see that in
+general it reduces the brightness of what you see.  But if you make
+more detailed observation, you will see that more is going on. For
+some light sources, such as the sodium discharge tube, the orientation
+of the film makes no difference, but for other sources the orientation
+does have an effect. Two good examples are the light from a cell
+phone's LCD screen and light that has undergone a glancing reflection
+from a glossy tabletop. These are polarized sources of light, and the
+film preferentially transmits different polarizations.
+
+It would not make sense for the film simply to throw away any waves
+that were not perfectly aligned with it, because a field oriented on a
+slant can be analyzed into two vector components, at 0 and
+$90\degunit$ with respect to the film. Even if one component is
+entirely absorbed, the other component should still be transmitted. 
+
+Based on these considerations, now think about what will
+happen if you look through two polarizing films at an angle
+to each other, as shown in the figure above. What will
+happen as you change the angle $\theta $?
+
+<%  
+  fig(
+    'crossed-polaroids',
+    %q{Two polarizing films oriented at an angle $\theta$ relative to each other.},
+    {'width'=>'column','float'=>true}
+  )
+%> 
+
+The idea of this lab is to make numerical measurements of the
+transmission of initially unpolarized light transmitted through two
+polarizing films at an angle $\theta$ to each other. To measure the
+intensity of the light that gets through, you will use a photocell,
+which is a device that converts light energy into a potential difference. 
+
+You will use a voltmeter to measure the potential across the
+photocell when light is shining on it. A photovoltaic cell is
+a complicated nonlinear device, but I've found empirically
+that under the conditions we're using in this experiment,
+the potential is proportional to the power of the light striking
+the cell: twice as much light results in twice the potential.
+
+This measurement requires a source of light that is
+unpolarized, constant in intensity, and comes from a
+specific direction so it can't get to the photocell without
+going through the polaroids. The ambient light in the room
+is nearly unpolarized, but varies randomly as people walk in
+front of the light fixtures, etc. A suitable source of light is the
+sodium gas discharge tube. Make sure you have allowed it to
+warm up for at least 15-20 minutes before using it; before
+it warms up, it makes a reddish light, and the polarizing films do
+not work very well on that color.
+
+Each group will be assigned an angle $\theta$.
+Measure the power $P(\theta)$ of the light
+transmitted through the two polarizing films, 
+and also measure $P(0)$ for comparison, and tabulate
+your result for $P(\theta)/P(0)$ on the board.
+Don't assume that the notches
+on the plastic housing of the polarizing films are a good
+indication of the orientation of the films themselves.
+
+Calculate a theoretical value for $P(\theta)/P(0)$ based
+on a model in which the polaroid passes only the component
+of the field vectors along a certain axis.
+
+Compare the class's results with theory.
+
+<% end_lab %>
 
 <% end_chapter() %>
