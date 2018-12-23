@@ -35,8 +35,8 @@ the description of these electromagnetic waves in more detail.
 
 By the way, although I'm offering answers to ``why'' questions about
 these waves, it's important to understand that in mathematics and the
-hard sciences, a ``why'' question can have more than one answer. This
-is different from other fields such as religion. If you ask a
+hard sciences, a ``why'' question can have more than one answer. It's
+different in other fields such as religion. If you ask a
 theologically well-informed Christian why humans have to endure pain
 and suffering, there is one definite answer, which is that that it's a
 punishment for Eve's original sin of obtaining an unauthorized
@@ -173,7 +173,7 @@ mysterious medium called the ``aether.''
 
 <% end_sec('what-vibrates') %>
 
-<% begin_sec("Geometry of the fields in a plane wave",nil,'plane-wave-geom') %>
+<% begin_sec("Geometry of a plane wave",nil,'plane-wave-geom') %>
 
 <% begin_sec("$\\vc{E}$ and $\\vc{B}$ perpendicular to the direction of propagation",nil,'e-b-perp-p') %>
 The Poynting vector $\vc{S}=(c^2/4\pi k)\vc{E}\times\vc{B}$ gives the momentum density of our plane wave,
@@ -240,8 +240,44 @@ before the waves collide: one unit in each wave's electric field, and one unit i
 magnetic field. When the waves collide in an orientation such that the electric fields
 cancel, then $U_{\vc{B}'}$ has a value, in these units, of $4\sin^2\theta$, which gives
 conservation of energy only if $\theta$ is a right angle. We arrive at the geometry shown
-in figures \figref{e-b-perpendicular} and \figref{plane-wave-propagating}.
+in figure \figref{e-b-perpendicular}.
 
+<% end_sec('e-b-perp') %>
+
+<% begin_sec("Propagation at a fixed velocity",nil,'propagation-at-c') %>
+If we look at the speed of waves in general, we see two main types of behavior. In one type,
+exemplified by sound waves or waves on a coil spring as in figure \figref{coil-spring-pulse},
+all waves travel at the same speed, regardless of their amplitude or frequency.
+Water waves are a good example of another type, called a dispersive wave. A dispersive
+wave travels at different velocities depending on its frequency. Only a perfect sine wave
+has a definite frequency, so typically if we generate a wave with some randomly chosen
+shape, it will act like a mixture of different frequencys. (There is a mathematical theorem
+called Fourier's theorem that says we can always analyze any wave as a superposition of sine
+waves.) These different frequencies will travel at different speeds, so the wave acts like
+a bunch of runners over the course of a long-distance race: at the start they're all crowded
+together, but as time goes on, the faster ones pull ahead, the slower ones fall behind, and
+the pack spreads out in space, often to the point where people are running all alone and can't
+see their competitors. In a wave, this causes the wave pattern to spread out, or disperse. We
+can tell that the wave pulse on the coil spring in figure \figref{coil-spring-pulse} is propagating
+nondispersively, because it maintains its shape as it moves.
+
+<% marg() %>
+<%
+  fig(
+    'vacuum-dispersion',
+    %q{Arrival times of waves with different frequencies from gamma-ray burst 160625B, from
+       Wei \emph{et. al}, 2018. In this histogram, the vertical axis is a count of the
+       number of wave pulses arriving per unit time.}
+  )
+%>
+<% end_marg %>
+We know on both theoretical and empirical grounds that
+electromagnetic waves are nondispersive when they travel in a vacuum.
+Figure \figref{vacuum-dispersion} shows some astronomical evidence that is
+extremely impressive for its accuracy. Electromagnetic waves (gamma rays) with different frequencies,
+spanning several orders of magnitude, were generated, probably by matter falling into a black hole.
+These waves then traveled for 9 billion years before reaching earth, where the different frequencies
+arrived within seconds of one another.
 <%
   fig(
     'plane-wave-propagating',
@@ -250,7 +286,17 @@ in figures \figref{e-b-perpendicular} and \figref{plane-wave-propagating}.
   )
 %>
 
-<% end_sec('e-b-perp') %>
+Theoretically, we have the following argument. In general, the ratio of an object's energy to its
+momentum depends on its speed (cf.~p.~\pageref{energy-momentum-ratio}). But the geometrical facts
+we've found about electromagnetic waves guarantee that the energy and momentum scale up and down
+with amplitude in exactly the same way, and are independent of the shape of the wave. For example,
+if the angle $\theta$ between the $\vc{E}$ and $\vc{B}$ vectors could vary, or if $|\vc{E}|$ and
+$|\vc{B}|$ could vary independently, then we could get different momenta for the same energy --- but
+these things are \emph{not} independently variable. Since electromagnetic waves have a fixed ratio
+of energy to momentum, they must travel at a fixed speed,\label{em-waves-fixed-v}
+which we will show on p.~\pageref{em-waves-propagate-at-c} is $c$. They are nondispersive, so
+a plane wave glides along rigidly as in figure \figref{plane-wave-propagating}, without changing shape.
+<% end_sec('propagation-at-c') %>
 
 <% end_sec('plane-wave-geom') %>
 
@@ -301,7 +347,8 @@ The physics embodied in these two new terms of Maxwell's equations is referred t
 induction (a different usage of the term than the one introduced for static fields
 on p.~\pageref{fig:attracting-induced-electric-and-magnetic-dipoles}). A changing
 magnetic field induces a curly electric field, and a changing electric field
-induces a curly magnetic field.
+induces a curly magnetic field. This has many important technological applications,
+but since those are not our topic right now, we give a single qualitative example.
 
 \begin{eg}{The generator}\index{generator}
 A generator, \figref{generator}, consists of a permanent magnet that
@@ -426,18 +473,20 @@ changed our frame of reference.
 <% end_sec('einstein-motorcycle') %>
 
 <% begin_sec("Implications for the structure of space and time",nil,'spacetime') %>
-<% marg() %>
-<%
-  fig(
-    'two-boosts',
-    %q{Transforming twice in a row by $3/5$ of $c$.}
-  )
-%>
-<% end_marg %>
+<% begin_sec("Combination of velocities",nil,'v-addition') %>
 These apparently innocuous ideas now lead us to some extremely subversive conclusions
 about time and space. We are now led back, full circle, to the starting point of this
 book, in which we began by considering the nature of time.
 
+<% marg(-10) %>
+<%
+  fig(
+    'two-boosts',
+    %q{Transforming twice in a row by $3/5$ of $c$. The slope of the bottom edge of each
+       parallelogram is its velocity, in units of $c$.}
+  )
+%>
+<% end_marg %>
 Figure \figref{two-boosts} shows the result of doing two transformations in a row,
 each represented by its effect on a square of the original graph paper.
 For covenience, each of these is chosen to be a transformation that lengthens
@@ -449,11 +498,96 @@ space and time created by Galileo and Newton, velocities should add, so the resu
 be $3/5+3/5=6/5$, i.e., a speed 20\% greater than the speed of light. But this isn't
 what we actually see in the diagram. In each of the three parallelograms, the slope
 of the bottom edge represents that frame's velocity in units of $c$. The first slope
-is 0, and the second is $3/5$, but the third is clearly less than 1. Einstein
+is 0, and the second is $3/5$, but the third is clearly less than 1.
+
+Einstein
 recalled that this was the point that had prevented him from putting together the
 special theory of relativity for several years. He had been assuming that velocities
 had to add. It turns out that they don't. Addition is just an approximation, which happens
 to work at velocities that are small compared to $c$.
+
+This was also the resolution of the motorcycle paradox that had been bothering him for
+years. Any continuous process of acceleration acts like figure \figref{two-boosts}.
+The motorcycle can speed up and speed up, but it will never reach the speed of light.
+(Let's not detour into a detailed description right now, but the rider sees the
+wave reduced in amplitude, as we can see from figure \figref{boost}. He also sees
+the wave's oscillations slowed down in time, an effect called the Doppler shift
+that also occurs for other waves such as water waves and sound waves, although the
+mathematics works out differently due to the existence of a medium.)
+
+Slopes on these diagrams represent velocities, in units of $c$, but the only slopes that
+stay the same when we change frames of reference are the $\pm 1$ slopes of the diagonals.
+We therefore find that all observers agree on $c$. Since we've already shown on
+p.~\pageref{em-waves-fixed-v} that electromagnetic waves travel at a fixed speed, it follows
+that this speed must be $c$, and this is why $c$ is often referred to as the speed 
+of light.\label{em-waves-propagate-at-c}
+<% end_sec('v-addition') %>
+
+<% begin_sec("Length contraction",nil,'length-contraction') %>
+<% marg(-5) %>
+<%
+  fig(
+    'boost-line-of-charge',
+    %q{A line of charge creates an electric field.}
+  )
+%>
+<% end_marg %>
+The nonlinear way that velocities combine is not compatible with our ordinary assumptions
+about how space and time work, but a more direct and obvious violation of our intuition arises
+if we consider figure \figref{boost-line-of-charge}. A line of charges parallel to the $z$ axis
+creates an electric field pattern. We pick a point on the right side of the line, where the
+electric field $E_x$ has some positive value. If we now change to a frame of reference moving at velocity
+$v$ in the positive $z$ direction, then the equations for the transformation of the fields give
+us $E_x'=\mygamma E_x$ and $B_y'=-(v\mygamma/c^2)E_x$. The magnetic field is no surprise ---
+a current exists in the new frame, and it makes a magnetic field (cf.~example \ref{eg:field-of-wire},
+p.~\pageref{eg:field-of-wire}).
+
+But the electric field has been intensified by a factor $\mygamma$,
+which is greater than 1. What is going on here? Based on Gauss's law,
+this is the field we would expect from charges that were more closely
+packed, with more coulombs per meter. But charge is invariant when we change frames
+of reference (sec.~\ref{subsec:charge-invariant}, p.~\pageref{subsec:charge-invariant}).
+The only possible conclusion is to the observer who is moving relative to the line of charges,
+the distances along the line have all been contracted by a factor of $\mygamma$.
+
+\begin{lessimportant}[Length contraction]
+A measuring stick has the greatest length according to an observer at rest relative to
+the stick. An observer in motion relative to the stick, in the direction parallel to it,
+finds its length to be reduced by a factor of $\mygamma$.
+\end{lessimportant}
+
+<% end_sec('length-contraction') %>
+
+<% begin_sec("Time dilation",nil,'time-dilation') %>
+Alice stays on earth while her twin Betty
+heads off in a spaceship for Tau Ceti, a nearby star. Tau Ceti is 12 light-years
+away, so even though Betty travels at 87\% of the speed of light, it will take
+her a long time to get there: 14 years, according to Alice.
+
+<%
+  fig('interstellar-road-trip',
+    %q{Betty's interstellar road trip.},
+    {
+      'width'=>'wide',
+      'sidecaption'=>true
+    }
+  )
+%>
+
+Betty is moving relative to the stars, so in her frame of reference, the length
+of the trip is length-contracted. At this speed, her $\mygamma$ is 2.0, so that the voyage will
+seem half as long, and to her it will only last 7 years. 
+
+This example shows that the relativistic effect on length must be accompanied by
+a similar effect on time.
+
+\begin{lessimportant}[Time dilation]
+A clock seems to run fastest according to an observer at rest relative to
+the clock. An observer in motion relative to the clock
+finds its speed to be reduced by a factor of $\mygamma$.
+\end{lessimportant}
+
+<% end_sec('time-dilation') %>
 
 
 
