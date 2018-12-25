@@ -117,7 +117,8 @@ a right-hand rule for expressing the curl, which is the same as the right-hand
 rule for torques. It is possible to express the curl in terms of the partial
 derivatives of the field's components, but detailed mathematical manipulations
 in that style are not necessary in order to follow the logical backbone of the
-presentation in this book. Figure \figref{div-and-curl-examples} shows some visual examples.
+presentation in this book, so we relegate this material to a note
+(\note{curl-component-form}). Figure \figref{div-and-curl-examples} shows some visual examples.
 <%
   fig(
     'div-and-curl-examples',
@@ -668,6 +669,57 @@ field lines are perpendicular to the plane, so the plane is an surface of consta
 <% end_sec('bc-conductor') %>
 
 <% begin_notes %>
+\notetext{curl-component-form}{The curl operator in terms of the field's components}
+\notesummary{Fixing a Cartesian coordinate system, we find how to express the curl's components in terms
+of the derivatives of the field's components with respect to the coordinates.}
+Because we want the curl to be a kind of first derivative operator, we expect it to depend
+only on the derivatives of the field's components with respect to the coordinates. 
+The field has three components, and there are three coordinates that we can differentiate
+with respect to, so there are nine possible partial derivatives that could consider.
+Because the curl is intended to be a kind of derivative, and derivatives are additive,
+we can isolate these partial derivatives from each other and add them. E.g., it's
+conceivable (although not true, as we'll see shortly) that the $y$ component of the
+curl is $3\partial E_x/\partial x-7\partial E_y/\partial z$, but we don't have to
+consider possibilities such as $\sin(\partial E_y/\partial x)$.
+
+The partial derivative $\partial E_x/\partial x$ contributes to the
+divergence, but it can't contribute to the curl because of symmetry.
+For example, in the field $x\hat{\vc{x}}$, this is the only partial
+derivative that would be nonzero, but by symmetry the curl-meter won't
+rotate when placed in this field. By rotational invariance, we can
+immediately conclude that there is no contribution from the other
+``self'' terms, $\partial E_y/\partial y$ and $\partial E_z/\partial z$.
+
+Visualizing the field $y\hat{\vc{z}}$ with a curl-meter and applying the
+right-hand rule, we can tell that its curl must have a positive $x$ component.
+Up until now we have never specified the units of the curl-meter, but
+now we need to decide. We define the curl so that the result in this case
+is $+1$, so that $\partial E_z/\partial y$ occurs in the expression for the
+$x$ component of the curl. Similar reasoning produces the term $-\partial E_y/\partial z$.
+
+
+<%
+  fig(
+    'cyclicperm',
+    %q{A cyclic permutation of $x$, $y$, and $z$.},
+    {'width'=>'column','float'=>true}
+  )
+%>
+
+The remainder of the result follows from rotational invariance.
+It is possible to take the $x$, $y$, and $z$ axes and rotate them rigidly
+in the manner shown in the figure, called a cyclic permutation. Therefore
+if a derivative like $\partial E_z/\partial y$ occurs in the $x$ component of
+the curl, then we must have the others obtained from it by cyclic permutation,
+such as $\partial E_x/\partial z$ in the $y$ component. The result is:
+
+\begin{align*}
+                (\operatorname{curl}\,\vc{E})_x &= \frac{\partial E_z}{\partial y}-\frac{\partial E_y}{\partial z} \\ 
+                (\operatorname{curl}\,\vc{E})_y &= \frac{\partial E_x}{\partial z}-\frac{\partial E_z}{\partial x}  \\ 
+                (\operatorname{curl}\,\vc{E})_z &= \frac{\partial E_y}{\partial x}-\frac{\partial E_x}{\partial y}.
+\end{align*}
+
+
 \notetext{no-charge-on-interior}{No charge on the interior of a conductor}
 \notesummary{For a conductor in equilibrium, any charge is on its surface, never in its interior.}
 The proof of this assertion is essentially Earnshaw's theorem (example \ref{eg:earnshaw-theorem},
