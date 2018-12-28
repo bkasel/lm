@@ -116,7 +116,7 @@ $\vc{E}=\vc{E}(t,z)$ and $\vc{B}=\vc{B}(t,z)$.
 
 <% end_sec('wave-patterns') %>
 
-<% begin_sec("What waves",nil,'what-vibrates') %>
+<% begin_sec("What it is that waves",nil,'what-vibrates') %>
 
 <% marg(-8) %>
 <%
@@ -230,7 +230,7 @@ are ``equal.''
 <%
   fig(
     'e-b-perpendicular',
-    %q{The geometry of a plane wave.}
+    %q{The geometry of a plane wave, with $\phi=90\degunit$.}
   )
 %>
 <% end_marg %>
