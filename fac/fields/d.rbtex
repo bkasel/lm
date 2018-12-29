@@ -166,7 +166,8 @@ field is produced.
 
 \begin{eg}{Magnetic field of a wire}\label{eg:field-of-wire}
 Since the electric field in
-\subfigref{field-transformation-cartoon}{1} is proportional to $1/r$, the electric
+\subfigref{field-transformation-cartoon}{1} is proportional to $1/r$ (sec.~\ref{sec:gauss-in-lt-3-dim}
+and example \ref{eg:e-line-of-charge}, p.~\pageref{eg:e-line-of-charge}), the electric
 and magnetic fields in \subfigref{field-transformation-cartoon}{2} are also proportional to $1/r$.
 
 Now consider a wire such as the one in figure \subfigref{oersted}{2}. Such a wire is electrically neutral,
@@ -176,7 +177,8 @@ sign move. (In a metal wire, the moving charges are the electrons and the statio
 ones are the nuclei.) This is essentially the situation in figure
 \subfigref{field-transformation-cartoon}{2}, except that the electric fields cancel out,
 leaving a purely magnetic field. We conclude that when charges flow through a wire, the
-magnetic field surrounding the wire is proportional to $1/r$.
+magnetic field surrounding the wire is proportional to $1/r$. We'll work out the 
+constants of proportionality in example \ref{eg:b-wire} on p.~\pageref{eg:b-wire}.
 
 <% marg(55) %>
 <%
@@ -519,16 +521,6 @@ fields' energy that would have occurred if they were moved closer together or fa
 (Cf.~also the complicated handling of the limits of integration in
 note \notewithoutbackref{force-on-point-charge}.)
 
-\pagebreak
-
-<% marg() %>
-<%
-  fig(
-    'joule-magnetostriction',
-    %q{Example \ref{eg:joule-magnetostriction}. The apparatus was about half a meter tall.}
-  )
-%>
-<% end_marg %>
 \begin{eg}{Magnetostriction}\label{eg:joule-magnetostriction}
 The examples discussed above involved pressure and tension made by electric fields,
 but an exactly analogous effect occurs for magnetism.
@@ -543,6 +535,15 @@ to look for a change in the length of an iron bar when it was used as the core o
 In an iron bar about half a meter tall, he found a \emph{decrease} in length of a little more than one
 part per million, with the strongest field he could make. This effect is called
 magnetostriction.
+
+<% marg(50) %>
+<%
+  fig(
+    'joule-magnetostriction',
+    %q{Example \ref{eg:joule-magnetostriction}. The apparatus was about half a meter tall.}
+  )
+%>
+<% end_marg %>
 
 This would suggest a decrease in volume as well, but there was no sufficiently accurate way to
 measure the small diameter of the bar. Therefore Joule created the apparatus in figure

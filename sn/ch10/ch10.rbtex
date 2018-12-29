@@ -4306,7 +4306,7 @@ Gauss' law gives
 \intertext{In the limit where the strips are infinitely narrow, the surface becomes a
 cylinder, with (area)=(circumference)(length)=$2\pi RL$.}
         4\pi k \lambda L        &= |\vc{E}| \times 2\pi RL \\
-        |\vc{E}|                        &= \frac{2k\lambda}{R} \\
+        |\vc{E}|                        &= \frac{2k\lambda}{R} 
 \end{align*}
 
 <% end_sec() %>

@@ -1060,6 +1060,57 @@ The simplest analysis of all is in one dimension. Here the field lines can't spr
 nowhere for them to escape. The ``density'' of field lines is simply the number of field lines, and
 this doesn't change with distance from the charge. The field varies as $1/r^0$, i.e., it is constant.
 This analysis applies to the field of a flat sheet of charge.
+
+<% marg(-20) %>
+<%
+  fig(
+    'e-line-of-charge',
+    %q{Applying Gauss' law to an infinite line of charge.}
+  )
+%>
+<% end_marg %>
+
+\begin{eg}{Electric field of a line of charge}\label{eg:e-line-of-charge}
+The reasoning above about proportionalitites was an extremely simple way to find the
+exponent with which the electric field varied as a function of distance in several cases.
+However, this technique will never determine unitless constants of proportionality such
+as 2 and $\pi$. In this example we apply Gauss's law in more detail to determine the
+correct numerical factors in the case of a line of charge.
+
+Consider the field of an infinitely long line of charge, holding a uniform
+charge per unit length $\lambda$. 
+The problem has two types of symmetry. The line of charge, and therefore the resulting
+field pattern, look the same if we rotate them about the line. The second symmetry
+occurs because the line is infinite: if we slide the line along its own length,
+nothing changes. This sliding symmetry, known as a translation symmetry,
+tells us that the field must point directly away from the line at any given point.
+
+Based on these symmetries, we choose the Gaussian surface shown in
+figure \figref{e-line-of-charge}. If we want to know the field at a distance $R$ from
+the line, then we choose this surface to have a radius $r$, as shown in the
+figure. The length, $L$, of the surface is irrelevant.
+
+The field is parallel to the surface on the end caps,
+and therefore perpendicular to the end caps' area vectors, so there is no
+contribution to the flux. On the long, thin strips that make up the rest of
+the surface, the field is perpendicular to the surface, and therefore parallel
+to the area vector of each strip, so that the dot product occurring in the
+definition of the flux is $\vc{E}_j\cdot\vc{A}_j=|\vc{E}_j||\vc{A}_j||\cos\ 0\degunit=|\vc{E}_j||\vc{A}_j|$.
+Gauss' law gives
+\begin{align*}
+        4\pi k q_{in}        &= \sum \vc{E}_j\cdot\vc{A}_j \\
+        4\pi k \lambda L        &= \sum |\vc{E}_j||\vc{A}_j|\eqquad.\\
+\intertext{The magnitude of the field is the same on every strip, so we can take it outside the sum.}
+        4\pi k \lambda L        &= |\vc{E}| \sum |\vc{A}_j| \\
+\intertext{In the limit where the strips are infinitely narrow, the surface becomes a
+cylinder, with (area)=(circumference)(length)=$2\pi rL$.}
+        4\pi k \lambda L        &= |\vc{E}| \times 2\pi rL \\
+        |\vc{E}|                        &= \frac{2k\lambda}{r} 
+\end{align*}
+We had already found the $1/r$ nature of the field, and the factor of $k\lambda$ has to be
+there because of units, so the only new accomplishment in this calculation to determine
+that the unitless constant was 2.
+\end{eg}
 <% end_sec('gauss-in-lt-3-dim') %>
 
 <% begin_sec("Gauss's law in local form, with field vectors",nil,'gauss-div') %>
@@ -1411,7 +1462,7 @@ a spherical region centered on a point charge.
 
 <% begin_hw_sec %>
 <% begin_hw('energy-scale',nil) %>
-Verify the calculation in sec.~\ref{subsec:matter-atomic-e-scale}, p.~\pageref{eg:energy-scale},
+Verify the calculation in sec.~\ref{subsec:matter-atomic-e-scale}, p.~\pageref{subsec:matter-atomic-e-scale},
 that estimated the energy scale for chemistry and atomic physics.
 <% end_hw() %>
 
