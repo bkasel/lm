@@ -1173,7 +1173,17 @@ def begin_lab(title,columns=2,label='',type='mini',number='')
     number = "\\thechapter"    
   end
   column_command = (columns==1 ? "\\onecolumn" : "\\twocolumn");
-  print "\\begin{activity}{#{label}}{#{title}}{#{column_command}}{#{typename} #{number}: }\\normalcaptions\\zapcounters"
+  t = "\\begin{activity}{#{label}}{#{title}}{#{column_command}}{#{typename} #{number}: }"
+  t = t+"\\normalcaptions\\zapcounters"
+  if label=='' then label=$ch end
+  full_label = "activity-#{type}:"+label
+  if is_prepress then
+    t = t + "\\addcontentsline{toc}{section}{#{title}}"
+  else
+    t = t + "\\addcontentsline{toc}{section}{\\protect\\link{#{full_label}}{#{typename} #{number}: #{title}}}"
+    t = t + "\\anchor{anchor-#{full_label}}"
+  end
+  print t
 end
 
 def end_lab
@@ -1183,7 +1193,15 @@ end
 def begin_notes(columns=2)
   title = "Notes for chapter \\thechapter"
   column_command = (columns==1 ? "\\onecolumn" : "\\twocolumn");
-  print "\\begin{activity}{}{#{title}}{#{column_command}}{}"
+  t = "\\begin{activity}{}{#{title}}{#{column_command}}{}"
+  full_label = "notes:#{$ch}"
+  if is_prepress then
+    t = t + "\\addcontentsline{toc}{section}{#{title}}"
+  else
+    t = t + "\\addcontentsline{toc}{section}{\\protect\\link{#{full_label}}{#{title}}}"
+    t = t + "\\anchor{anchor-#{full_label}}"
+  end
+  print t
 end
 
 def end_notes

@@ -1500,7 +1500,7 @@ Verify Gauss's law for magnetism, using an unknown magnet sealed inside a box.
   fig(
     'gauss-law-lab',
     %q{Measuring the flux through the box.},
-    {'suffix'=>'2'}
+    {'suffix'=>'2','width'=>'narrow','float'=>true}
   )
 %> 
 

@@ -476,7 +476,7 @@ happen as you change the angle $\theta $?
   fig(
     'crossed-polaroids',
     %q{Two polarizing films oriented at an angle $\theta$ relative to each other.},
-    {'width'=>'column','float'=>true}
+    {'width'=>'narrow','float'=>true}
   )
 %> 
 
