@@ -107,8 +107,9 @@ convert a velocity vector from one frame of reference to another, we
 have a rule for doing so, which is simple vector addition. In fancy
 language, this is called ``transforming'' the velocity vector. The
 rules for transforming electric and magnetic fields are more
-complicated, and we will wait until later to discuss them. However,
-one thing we can say about the transformations is that they must
+complicated, and we will postpone discussing them until sec.~\ref{sec:einstein-motorcycle2},
+p.~\pageref{sec:einstein-motorcycle2}. However,
+one thing we can say about the transformations is that they must be
 \emph{additive}, because the laws of physics obey the principle of
 superposition, and we want the laws of physics to be equally valid in
 all frames of reference.
@@ -873,8 +874,17 @@ of the electron.
 
 <% end_sec('dipole') %>
 
-<% begin_sec("Mass-energy equivalence",nil,'mass-energy-equivalence') %>
-Suppose you're given a black box. You're not allowed to open it, but you're able
+<% begin_sec("$E=mc^2$",nil,'mass-energy-equivalence') %>
+<% begin_sec("Fields carry inertia",nil,'fields-carry-inertia') %>
+<% marg() %>
+<%
+  fig(
+    'mass-energy',
+    %q{The black box has electromagnetic fields inside. If we shake it, it has inertia.}
+  )
+%>
+<% end_marg %>
+Suppose you're given a black box, figure \figref{mass-energy}. You're not allowed to open it, but you're able
 shake it around and measure its momentum.
 By trial and error, you find that there is some frame in which 
 its momentum is zero. (If there are things moving around inside, this
@@ -883,30 +893,119 @@ box are at rest.) This is what we might as well call the box's rest frame,
 the frame in which it is at rest, in some over-all sense.
 
 Next you can measure its nonzero momentum $p$ when you shake it around at various
-velocities. Knowing $p$ at a particular $v$ allows you to infer the mass.
+velocities. Knowing $p$ at a particular $v$ allows you to infer the mass, $m=p/v$.
 
-Now suppose you do this, not knowing that inside the box is a line of charge, where the charges themselves
-have \emph{zero} mass. The energies and momenta you measure are those of the \emph{fields} alone.
-You will find a frame in which the momentum is zero. This is the frame in which the field
-is purely electric. If you now set the box in motion, in the direction parallel to the line,
+Now suppose you do this, not knowing that inside the box is an electromagnetic field, which
+has \emph{zero} mass. The energies and momenta you measure are those of the \emph{fields} alone.
+You will find a frame in which the momentum is zero. This could be a frame in which the field
+is purely electric. If you now set the box in motion, 
 the original electric field pattern turns into a new electric field plus
-a magnetic field pattern like the one shown in figure \figref{field-lines-of-wire}.
-Because these electric and magnetic fields are perpendicular to one another, they
-have some momentum. You measure this momentum. You infer a certain mass.
+a magnetic field pattern.
+These electric and magnetic fields
+have some momentum density, proportional to $\vc{E}\times\vc{B}$.
+You measure the total momentum. You infer a certain mass.
 
-Hm. This seems like mass without mass. None of the material particles that went into
-the box had mass, and yet the box acts like it has mass.
+Hm. This seems like mass without mass. There are no material particles inside the box,
+and yet the box acts like it has mass.
 
-If we increase the density of the charge, then both the energy of the field and the
-mass we infer increase by the same amount. For example, if we increase the charge by
-a factor of 3, then the electric field gets 3 times bigger, and the energy goes up
-by a fatcor of 9. But when the box is moving, this also has the effect of multiplying
-$\vc{E}\times\vc{B}$ by 9 times.
+Suppose that we have a way to make the electric field, in the box's
+rest frame, stronger or weaker.  When we do this, the energy of the
+field and the mass we infer change by equal factors. For example, if
+we increase the electric field by a factor of 3, then the energy goes
+up by a factor of 9. But when the box is moving, this also has the
+effect of multiplying $\vc{E}\times\vc{B}$ by 9 times.
+<% end_sec('fields-carry-inertia') %>
 
+<% begin_sec("Equivalence of fields' energy to mass",nil,'mass-energy-equiv-for-fields') %>
 In this example, energy and mass are \emph{equivalent}. Based on units, the relation
 must be of the form $E=(\text{constant})mc^2$, where the constant is unitless.
 Einstein showed that the unitless constant was equal to 1, and was the same for
-all systems. This is the famous $E=mc^2$.
+all systems. This is the famous $E=mc^2$, which states that mass and energy are
+equivalent, and gives the relevant conversion factor.
+
+A full treatment of this topic would be outside the scope of this
+book, but it's fairly easy to see that if mass is equivalent to one
+form of energy, then it must be equivalent to all other forms of
+energy, with the same conversion factor.  Let's take heat as an
+example.  Suppose a rocket ship contains some electrical energy stored
+in a battery. What if we believed that $E=mc^2$ applied to electromagnetic
+energy but not to heat. Then the pilot of the rocket could use a battery
+to run a heater, decreasing the mass of the ship. Since momentum $p=mv$ is conserved,
+this would require that the ship speed up!
+
+This would not only be strange, but it would violate the principle
+that motion is relative, because the result of the experiment would be
+different depending on whether the ship was at rest or not. The only
+logical conclusion is that all forms of energy are equivalent to mass.
+Running the heater then has no effect on the motion of the ship,
+because the total energy in the ship was unchanged; one form of energy
+(electrical) was simply converted to another (heat).
+
+A somewhat different, and equally valid, way of looking at $E=mc^2$ is that
+energy and mass are not separately conserved. Therefore we can have processes
+that convert one to the other.
+
+\begin{eg}{A rusting nail}\label{eg:rustingnail}
+\egquestion
+An iron nail is left in a cup of water
+until it turns entirely to rust. The energy released is
+about 0.5 MJ. In theory, would a sufficiently
+precise scale register a change in mass? If so, how much?
+
+\eganswer
+ The energy will appear as heat, which will be lost
+to the environment. The total mass-energy of the cup,
+water, and iron will indeed be lessened by 0.5 MJ. (If it
+had been perfectly insulated, there would have been no
+change, since the heat energy would have been trapped in the
+cup.) The speed of light is
+$c=3\times10^8$ meters per second, so converting to mass units, we have
+\begin{align*}
+                m         &=    \frac{E}{c^2}  \\
+                        &= \frac{0.5\times10^6\ \junit}{\left(3\times10^8\ \munit/\sunit\right)^2} \\
+                         &=    6\times10^{-12}\  \text{kilograms}\eqquad.
+\end{align*}
+The change in mass is too small to measure with any
+practical technique. This is because the square of the speed
+of light is such a large number.
+\end{eg}
+
+\begin{eg}{Electron-positron annihilation}\label{eg:eplus-eminus}\index{positron}
+Natural radioactivity in the earth produces positrons, which are like electrons but have the
+opposite charge. A form of antimatter, positrons annihilate with electrons to produce gamma
+rays, a form of high-frequency light. Such a process would have been considered impossible
+before Einstein, because conservation of mass and energy were believed to be separate
+principles, and this process eliminates 100\% of the original mass. The amount of energy
+produced by annihilating 1 kg of matter with 1 kg of antimatter is
+\begin{align*}
+ E &= mc^2\\
+   &= (2\ \kgunit)\left(3.0\times10^8\ \munit/\sunit\right)^2\\
+   &= 2\times10^{17}\ \junit\eqquad,
+\end{align*}
+which is on the same order of magnitude as a day's energy consumption for the
+entire world's population!
+
+Positron annihilation forms the basis for the medical imaging technique called
+a PET (positron emission tomography) scan, in which a positron-emitting chemical
+is injected into the patient and map\-ped by the emission of gamma rays from the parts
+of the body where it accumulates.
+\end{eg}
+<% marg(200) %>
+<%
+  fig(
+    'pet',
+    %q{Top: A PET scanner. Middle: Each positron annihilates with an electron, producing two gamma-rays that fly off back-to-back.
+       When two gamma rays are observed simultaneously in the ring of detectors, they are assumed to come from the same
+       annihilation event, and the point at which they were emitted must lie on the line connecting the two detectors.
+       Bottom: A scan of a person's torso. The body has concentrated the radioactive tracer around the stomach, indicating
+       an abnormal medical condition.}
+  )
+%>
+<% end_marg %>
+
+<% end_sec('mass-energy-equiv-for-fields') %>
+
+<% begin_sec("Summary of relativity",nil,'summary-of-relativity') %>
 
 Summarizing what we know so far about relativity, we have the following:
 
@@ -915,6 +1014,7 @@ Summarizing what we know so far about relativity, we have the following:
 \item For consistency with item 1, nothing can go faster than $c$.
 \item Mass and energy are equivalent, $E=mc^2$.
 \end{itemize}
+<% end_sec('summary-of-relativity') %>
 
 <% end_sec('mass-energy-equivalence') %>
 
