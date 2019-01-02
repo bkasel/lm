@@ -903,9 +903,44 @@ $\vc{E}$ relative to $\vc{E}_\zu{o}$.
 
 
 <% begin_hw_sec %>
-<% begin_hw('b-field-dip',nil) %>__incl(hw/b-field-dip)<% end_hw() %>
+<% begin_hw('b-field-dip') %>__incl(hw/b-field-dip)<% end_hw() %>
 
-<% begin_hw('horseshoe-units',nil) %>__incl(hw/horseshoe-units)<% end_hw() %>
+<% begin_hw('perpendicular-b-fields-fac') %>__incl(hw/perpendicular-b-fields-fac)<% end_hw() %>
+
+<% begin_hw('add-b-fields-range-of-magnitudes') %>__incl(hw/add-b-fields-range-of-magnitudes)<% end_hw() %>
+
+<% begin_hw('add-e-field-vectors') %>__incl(hw/add-e-field-vectors)<% end_hw() %>
+
+<% begin_hw('xnonsense') %>__incl(../../share/mechanics/hw/xnonsense)<% end_hw() %>
+
+<% begin_hw('energy-density-not-x-product') %>__incl(hw/energy-density-not-x-product)<% end_hw() %>
+
+<% begin_hw('anglebetween') %>__incl(../../share/mechanics/hw/anglebetween)<% end_hw() %>
+
+<% begin_hw('findperp') %>__incl(../../share/mechanics/hw/findperp)<% end_hw() %>
+
+<% begin_hw('b-energy-in-classroom') %>__incl(hw/b-energy-in-classroom)<% end_hw() %>
+
+<% begin_hw('h3-vs-he3-e-field-energy-fac') %>__incl(hw/h3-vs-he3-e-field-energy-fac)<% end_hw() %>
+
+<% begin_hw('antarctica-vs-paraguay') %>__incl(hw/antarctica-vs-paraguay)<% end_hw() %>
+
+<% begin_hw('angle-from-energy-density') %>__incl(hw/angle-from-energy-density)<% end_hw() %>
+
+<% begin_hw('horseshoe-units') %>__incl(hw/horseshoe-units)<% end_hw() %>
+
+<% begin_hw('zero-x-not-same-direction') %>__incl(../../share/mechanics/hw/zero-x-not-same-direction)<% end_hw() %>
+
+<% begin_hw('triangle-area-strategy') %>__incl(../../share/mechanics/hw/triangle-area-strategy)<% end_hw() %>
+
+<% begin_hw('proveanticommutative') %>__incl(../../share/mechanics/hw/proveanticommutative)<% end_hw() %>
+
+<% begin_hw('xnotassociative') %>__incl(../../share/mechanics/hw/xnotassociative)<% end_hw() %>
+
+<% begin_hw('perp-in-plane',2) %>__incl(../../share/mechanics/hw/perp-in-plane)<% end_hw() %>
+
+<% begin_hw('vector-plus-scalar-fac',2) %>__incl(hw/vector-plus-scalar-fac)<% end_hw() %>
+
 
 
 <% end_hw_sec %>
@@ -979,16 +1014,7 @@ and test whether your hypothesis actually holds.
 
 \prelab
 
-P1. Suppose that
-when the compass is 11.0 cm from the magnet, it is
-45 degrees away from north. What is
-the strength of the bar magnet's field at this location in space,
-in units of the ambient field $B_a$?
-
-P2. Find $B_m/B_a$ in terms of the deflection angle $\theta$ measured in part A. As a special
-case, you should be able to recover your answer to P1.
-
-P3. If the bar magnet's field follows the power law $B\propto r^p$, for some constant $p$,
+P1. If the bar magnet's field follows the power law $B\propto r^p$, for some constant $p$,
 predict how the log-log plot should look.
 
 <% end_lab %>

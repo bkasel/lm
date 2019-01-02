@@ -874,7 +874,7 @@ of the electron.
 
 <% end_sec('dipole') %>
 
-<% begin_sec("$E=mc^2$",nil,'mass-energy-equivalence') %>
+<% begin_sec("E=mc$^2$",nil,'mass-energy-equivalence') %>
 <% begin_sec("Fields carry inertia",nil,'fields-carry-inertia') %>
 <% marg() %>
 <%

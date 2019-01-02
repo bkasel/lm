@@ -52,7 +52,6 @@ book1:
 	@make preflight
 	@../scripts/before_each.rb
 	@../scripts/translate_to_html.rb --write_config_and_exit
-	#@rm -f marg.pos  ### might want to do this the very first time, or just make a habit of doing a make clean
 	$(RUN_ERUBY) - $(FIRST_CHAPTER) $(DIRECTORIES)
 	@../scripts/harvest_code_listings.pl
 	@$(GET_CLS)
@@ -115,7 +114,7 @@ update_problems:
 
 web:
 	# To make html versions for blind people, don't do this; do 'make blind.'
-	#@[ `which footex` ] || echo "******** footex is not installed, so html cannot be generated; get footex from http://www.lightandmatter.com/footex/footex.html"
+	@[ `which footex` ] || echo "******** footex is not installed, so html cannot be generated; get footex from http://www.lightandmatter.com/footex/footex.html"
 	@[ `which footex` ] || exit 1
 	@make preflight
 	@cp ../custom_html.yaml .
@@ -219,7 +218,7 @@ preflight:
 	@perl -e 'foreach $$g("scripts/check_ruby_version.rb","scripts/run_eruby.pl","fruby","mv_silent","scripts/translate_to_html.rb","process_geom_file.pl","scripts/harvest_aux_files.rb","scripts/latex_table_to_html.pl","scripts/equation_to_image.pl","check_for_colliding_figures.rb","scripts/harvest_code_listings.pl") {$$f="../$$g"; die "file $$g is not executable; fix this with chmod +x $$g" unless -e $$f && -x $$f}'
 	@../scripts/check_ruby_version.rb
 	@perl -e 'if (-e "../scripts/custom/enable") {system("chmod +x ../scripts/custom/*"); foreach $$f(<../scripts/custom/*.pl>) {$$c="$$f $(BOOK) $(PROBLEMS_CSV)"; system($$c)}}'
-	#@[ `which footex` ] || echo "******** warning: footex is not installed, so html cannot be generated; get footex from http://www.lightandmatter.com/footex/footex.html"
+	@#[ `which footex` ] || echo "******** warning: footex is not installed, so html cannot be generated; get footex from http://www.lightandmatter.com/footex/footex.html"
 
 handheld:
 	# see meki/zzz_misc/publishing for notes on how far I've progressed with this

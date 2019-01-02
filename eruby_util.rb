@@ -1162,7 +1162,8 @@ def end_ex
 end
 
 # The following are used in FAC:
-def begin_lab(title,columns=2,label='',type='mini',number='')
+def begin_lab(title,columns=2,suffix='',type='mini',number='')
+  # suffix is, e.g., B for ex. 3B in ch. 3
   title = alter_titlecase(title,1)
   if type=='mini' then
     typename = 'Minilab'
@@ -1172,11 +1173,11 @@ def begin_lab(title,columns=2,label='',type='mini',number='')
   if number==''
     number = "\\thechapter"    
   end
-  column_command = (columns==1 ? "\\onecolumn" : "\\twocolumn");
-  t = "\\begin{activity}{#{label}}{#{title}}{#{column_command}}{#{typename} #{number}: }"
-  t = t+"\\normalcaptions\\zapcounters"
-  if label=='' then label=$ch end
+  column_command = (columns==1 ? "\\onecolumn" : "\\twocolumn")
+  label = $ch+suffix
   full_label = "activity-#{type}:"+label
+  t = "\\begin{activity}{#{suffix}}{#{title}}{#{column_command}}{#{typename} #{number}: }"
+  t = t+"\\normalcaptions\\zapcounters"
   if is_prepress then
     t = t + "\\addcontentsline{toc}{section}{#{title}}"
   else

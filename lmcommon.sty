@@ -434,7 +434,7 @@ me permission to use it, but that doesn't mean you have permission to use it.}
 \newenvironment{handson}[3]{\begin{activity}{#1}{#2}{#3}{Exercise \thechapter#1: }}{\end{activity}}
 % Activity environment is used by exercises in LM et al., minilabs in FAC, notes section in FAC.
 \newenvironment{activity}[4]{
-    % #1, label, is ignored
+    % #1 is a suffix, e.g., B if this is activity 3B in ch. 3
     \setcounter{secnumdepth}{0}          % Don't number this section.
     \renewcommand{\printthesection}{}    % Footers should read ``Problems,'' not ``Section X.Y Problems''
     \hwcaptions                          % figures in this section don't have a, b, c, labels; is overridden for labs
@@ -450,6 +450,7 @@ me permission to use it, but that doesn't mean you have permission to use it.}
                                          % The \setcounter{secnumdepth} stuff is the way the author of titlesec suggests doing
                                          % this. Using section* messes up footers & toc. 
     \setlength{\parindent}{0mm}%undone by normalparafmt
+    \def\@currentlabel{\thechapter#1}    % so that any \label{...} after this works correctly
     \sloppypar\par
 }%
 {%
