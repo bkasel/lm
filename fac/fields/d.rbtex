@@ -895,33 +895,55 @@ the frame in which it is at rest, in some over-all sense.
 Next you can measure its nonzero momentum $p$ when you shake it around at various
 velocities. Knowing $p$ at a particular $v$ allows you to infer the mass, $m=p/v$.
 
-Now suppose you do this, not knowing that inside the box is an electromagnetic field, which
-has \emph{zero} mass. The energies and momenta you measure are those of the \emph{fields} alone.
-You will find a frame in which the momentum is zero. This could be a frame in which the field
-is purely electric. If you now set the box in motion, 
-the original electric field pattern turns into a new electric field plus
-a magnetic field pattern.
-These electric and magnetic fields
-have some momentum density, proportional to $\vc{E}\times\vc{B}$.
-You measure the total momentum. You infer a certain mass.
+Now suppose you do this, not knowing that inside the box is an
+electromagnetic field, which has \emph{zero} mass. The energies and
+momenta you measure are those of the \emph{fields} alone.  You will
+find a frame in which the momentum is zero. This could be a frame in
+which the field is purely electric. If you now set the box in motion,
+the original electric field pattern turns into a new electric field
+plus a magnetic field pattern.\footnote{We assume that the fields are
+transported with the cardboard box, so that the result of moving the
+box at velocity $v$ is the same as if we left the box unaccelerated
+and simply took our measurements while \emph{we} were moving at $v$.
+In reality the results of accelerating the box would depend on the details of how the fields were
+created and sustained.}  These electric and magnetic fields have some
+momentum density, proportional to $\vc{E}\times\vc{B}$.  You measure
+the total momentum. You infer a certain mass. 
 
 Hm. This seems like mass without mass. There are no material particles inside the box,
 and yet the box acts like it has mass.
 
-Suppose that we have a way to make the electric field, in the box's
-rest frame, stronger or weaker.  When we do this, the energy of the
-field and the mass we infer change by equal factors. For example, if
+Suppose that the field is purely electric in the box's rest frame, and we have
+a way to make this electric field stronger or weaker.  When we do this and
+then set the box in motion, the energy of the
+fields and the mass we infer change by equal factors. For example, if
 we increase the electric field by a factor of 3, then the energy goes
 up by a factor of 9. But when the box is moving, this also has the
-effect of multiplying $\vc{E}\times\vc{B}$ by 9 times.
+effect of multiplying $\vc{B}$ by a factor of 3, so $\vc{E}\times\vc{B}$ goes up
+by a factor of 9. This means that the momentum goes up by 9 times, and so does
+the mass that we infer at a given velocity.
 <% end_sec('fields-carry-inertia') %>
 
-<% begin_sec("Equivalence of fields' energy to mass",nil,'mass-energy-equiv-for-fields') %>
-In this example, energy and mass are \emph{equivalent}. Based on units, the relation
-must be of the form $E=(\text{constant})mc^2$, where the constant is unitless.
-Einstein showed that the unitless constant was equal to 1, and was the same for
-all systems. This is the famous $E=mc^2$, which states that mass and energy are
-equivalent, and gives the relevant conversion factor.
+<% begin_sec("Equivalence of mass and energy",nil,'mass-energy-equiv-for-fields') %>
+In this example, energy and mass are \emph{equivalent}. Based on
+units, the relation must be of the form $E=(\text{constant})mc^2$,
+where the constant is unitless.  Einstein showed that the unitless
+constant was equal to 1, and was the same for any system, regardless
+of what type or types of energy are involved.\footnote{Here the
+``system'' has to be an isolated one. If the system is not isolated,
+then it can be exchanging energy and momentum with the outside world.
+The analysis then gets more complicated, and $E=mc^2$ can be false.} This is the famous $E=mc^2$,
+which states that mass and energy are equivalent.
+
+The equation $E=mc^2$ tells us how much energy is equivalent to how
+much mass: the conversion factor is the square of the speed of light,
+$c$. Since $c$ a big number, you get a really really big number when
+you multiply it by itself to get $c^2$. This means that even a small
+amount of mass is equivalent to a very large amount of energy.
+Conversely, an ordinary amount of energy corresponds to an extremely
+small mass (example \ref{eg:rustingnail}), and this is why nobody
+discovered mass-energy equivalence experimentally hundreds of years before
+Einstein.
 
 A full treatment of this topic would be outside the scope of this
 book, but it's fairly easy to see that if mass is equivalent to one

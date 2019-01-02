@@ -255,7 +255,7 @@ all waves travel at the same speed, regardless of their amplitude or frequency.
 Water waves are a good example of another type, called a dispersive wave. A dispersive
 wave travels at different velocities depending on its frequency. Only a perfect sine wave
 has a definite frequency, so typically if we generate a wave with some randomly chosen
-shape, it will act like a mixture of different frequencys. (There is a mathematical theorem
+shape, it will act like a mixture of different frequencies. (There is a mathematical theorem
 called Fourier's theorem that says we can always analyze any wave as a superposition of sine
 waves.) These different frequencies will travel at different speeds, so the wave acts like
 a bunch of runners over the course of a long-distance race: at the start they're all crowded
