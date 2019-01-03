@@ -351,10 +351,37 @@ multiplied by $c^2$, is often notated $\vc{S}$, and
 is referred to as the Poynting vector, after John Henry Poynting --- a wonderful
 coincidence, because the vector \emph{points} in the direction of the momentum
 and energy flow. The magnitude of the Poynting vector is power per unit area.
+
+<%
+  fig(
+    'wave-poynting',
+    %q{The Poynting vector of a sinusoidal plane wave, example \ref{eg:wave-poynting}.
+       There is a net flow of energy out of region A, and a net
+       flow into B.},
+    {'width'=>'wide','sidecaption'=>true}
+  )
+%>
+
+\begin{eg}{Poynting vector of a plane wave}\label{eg:wave-poynting}
+Figure \figref{wave-poynting} shows the Poynting vector, in the sea-of-arrows representation,
+for the example of a sinusoidal plane wave. In a coordinate system where $+z$ is to the right, frozen at one
+point in time, this wave could be described by $\vc{E}=A\hat{\vc{x}}\sin kz$
+and $c\vc{B}=A\hat{\vc{y}}\sin kz$, so that $\vc{S}=(A^2c/4\pi k)\hat{\vc{z}}\sin^2 kz$.
+The figure shows examples of regions that have a net flow of energy in or out.
+\end{eg}
+
+In example \ref{eg:wave-poynting}, we have regions of space that are
+gaining energy, and others that are losing it. It's because there are
+``winners and losers'' that these energy flows are physically
+observable.  As a technical aside, it is also possible to have examples in which the
+Poynting vector is nonzero, but there is no physically observable flow
+of energy, because every region of space is having energy flow in as
+fast as it flows out (\note{static-poynting}).
+
 <% end_sec('poynting') %>
 <% end_sec('p-and-energy-flow') %>
 
-<% begin_sec("Maxwell's equations in a vacuum",nil,'maxwell-vacuum') %>
+<% begin_sec("Maxwell's equations in a vacuum",4,'maxwell-vacuum') %>
 <% marg() %>
 <%
   fig(
@@ -403,7 +430,7 @@ induction (a different usage of the term than the one introduced for static fiel
 on p.~\pageref{fig:attracting-induced-electric-and-magnetic-dipoles}). A changing
 magnetic field induces a curly electric field, and a changing electric field
 induces a curly magnetic field. This has many important technological applications,
-but since those are not our topic right now, we give a single qualitative example.
+but since those are not our topic right now, we give two qualitative examples.
 
 \begin{eg}{The generator}\index{generator}
 A generator, \figref{generator}, consists of a permanent magnet that
@@ -422,6 +449,77 @@ of wire, and we can tap this current to light the lightbulb.
   )
 %>
 <% end_marg %>
+
+\begin{eg}{Radiation from a dipole antenna}\label{eg:dipole-radiation-pattern}
+Figure \figref{dipole-radiation-pattern} shows the electric fields in
+the radiation pattern of an antenna, shown in the photo superimposed
+in the background. This type of antenna is called a dipole antenna,
+meaning that as a source, it acts like an electric dipole whose dipole
+vector oscillates sinusoidally. The magnetic field is perpendicular to
+the page and is shown only at six arbitrarily chosen points in the
+midplane. Let's verify that this pattern appears to satisfy 
+Maxwell's equations in a vacuum. 
+
+The electric field lines 
+never begin or end at any point in the air surrounding on the antenna, only at points on the antenna,
+which means that they satisfy $\operatorname{div}\vc{E}=0$ everwhere that they should. (And where they reach
+the antenna, which is a conductor, they are perpendicular to the surface.)
+<%
+  fig(
+    'dipole-radiation-pattern',
+    %q{The radiation pattern emitted by a dipole antenna, example \ref{eg:dipole-radiation-pattern}.},
+    {'width'=>'wide','sidecaption'=>true}
+  )
+%>
+
+Although the magnetic field lines are not shown, they are simply circles centered on the dipole axis
+and perpendicular to it. Each magnetic field vector shown on the left wraps around and connects to the
+symmetrically placed field vector on the right. Because these circles close on themselves, there are
+no magnetic sources or sinks, as required by $\operatorname{div}\vc{B}=0$.
+
+In order to check $\operatorname{curl}\vc{E} = -\partial\vc{B}/\partial t$, we pick points A, B, and C,
+of which only B coincides with a point where the magnetic field was drawn. Here is a table, to be justified
+afterward, describing the behavior of the fields and their derivatives at these points.
+
+\begin{tabular}{lllll}
+    & $\vc{E}$ & $\operatorname{curl}\vc{E}$ & $\vc{B}$ & $\partial\vc{B}/\partial t$ \\
+A   & 0        & max (out)                   & 0        & max (in) \\
+B   & max (up) & 0                           & max (in) & 0 \\
+C   & 0        & max (in)                    & 0        & max (out)
+\end{tabular}
+
+Points A, B, and C are chosen to be ones at which the electric field
+is at a zero, a maximum, and a minimum, hence the values in the first
+column. We can tell, for example, that $\vc{E}$ is small at A because
+the field lines are far apart, and we know that $\vc{E}=0$ must occur
+somewhere near A because as the field pattern has been
+spreading outward, the field has been changing from down to (soon) up. 
+
+The second column comes from visualizing a curl-meter inserted in the figure. The curl is nearly zero at
+B because the curl is flipping directions near there at this time.
+
+The third column comes from our expectation that the Poynting vector
+should point outward, which requires that $\vc{E}$ and $\vc{B}$ reach
+their maxima at similar times, i.e., be at least approximately in
+phase, as in example \ref{eg:wave-poynting} on
+p.~\pageref{eg:wave-poynting} (Poynting vector of a plane
+wave).\footnote{This expectation cannot be valid everywhere on the
+figure. Close up to the antenna, we can find places where the electric
+field points directly inward or outward, so that the Poynting vector
+cannot be straight outward. However, far from the antenna
+the pattern begins to look locally more and more like a plane wave, so
+this kind of thing can't happen.}
+
+The fourth column follows from the fact that the time variation of the wave
+is sinusoidal, and the derivative of a sine wave is also a sine wave, shifted
+90 degrees forward in phase (e.g., $\sin'=\cos$).
+
+We can now verify that these estimates are consistent with
+$\operatorname{curl}\vc{E} = -\partial\vc{B}/\partial t$ since the
+second and fourth columns match up except for the flipped direction
+arising from the minus sign.
+\end{eg}
+
 
 <% end_sec('maxwell-vacuum') %>
 
@@ -442,6 +540,20 @@ train of thought again in ch.~\ref{ch:relativity}.
 <% end_sec('einstein-motorcycle') %>
 
 <% begin_notes %>
+
+\notetext{static-poynting}{Unobservable Poynting vectors}
+\notesummary{Cases exist where the Poynting vector is nonzero, but there is no
+flow of energy that is actually observable.}
+One such example would be the static field of a
+bar magnet immersed in a uniform ambient magnetic field along the
+magnet's axis. If you work out the right-hand rule for yourself at
+various points in space, you should be able to convince yourself that
+the energy flow goes in circles, like a game of musical chairs. Thus
+although it seems weird that a static field can ``have'' momentum and
+a flow of energy, there are no observable consequences because no
+region of space can gather up the energy. It's a bit like the
+situation of a rich teenager who ``has'' a few million dollars in a
+trust fund, but can't touch it until she's 21. 
 
 \notetext{maxwell-c}{Maxwell's equations and propagation at $c$}
 \notesummary{Maxwell's equations give electromagnetic waves that propagate at $c$.}

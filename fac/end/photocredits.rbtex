@@ -43,6 +43,8 @@
 <% photo_credit("topo","Topographic map","USGS, public domain") %>
 <% photo_credit("eve","Eve and the serpent","Lemercier and Co., after Walter Crane, 1899") %> % https://commons.wikimedia.org/wiki/File:The_serpent_entwines_itself_around_the_body_of_Eve;_it_whisp_Wellcome_V0034190.jpg
 <% photo_credit("window-flux","Window","Redrawn from a photo by Wikimedia Commons user Rudiger Muller, CC-BY-SA") %> % https://en.wikipedia.org/wiki/File:German_House.jpg
+<% photo_credit("dipole-radiation-pattern","Dipole radiation pattern","Redrawn from an animation by Wikimedia Commons user Chetvorno, public domain") %> % https://commons.wikimedia.org/wiki/File:Dipole_xmting_antenna_animation_4_408x318x150ms.gif
+<% photo_credit("dipole-radiation-pattern","Antenna","Wikimedia Commons user Schwarzbeck Mess-Elektronik, CC-BY-SA") %> % https://en.wikipedia.org/wiki/File:Half_%E2%80%93_Wave_Dipole.jpg
 <% photo_credit("coil-spring-pulse","PSSC Physics","") %>
 <% photo_credit("cern-muon-storage-ring","Muon storage ring at CERN","(c) 1974 by CERN; used here under the U.S. fair use doctrine") %>
 
