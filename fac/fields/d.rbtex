@@ -346,8 +346,8 @@ screen, but the device doesn't recoil from the beam's momentum when we
 turn it on, nor does it shake and rattle as the the beam is steered
 back and forth across the screen to paint the picture.  Although the
 the equations above do not actually hold in detail for light (the
-final result ends up being off by a factor of 2, as shown in sec.~\ref{sec:p-plane-wave},
-p.~\pageref{sec:p-plane-wave}), it still makes sense
+final result ends up being off by a factor of 2, as shown in sec.~\ref{subsec:p-plane-wave},
+p.~\pageref{subsec:p-plane-wave}), it still makes sense
 that the momentum-to-energy ratio is extremely small, because the
 speed, $c$, is so big.
 

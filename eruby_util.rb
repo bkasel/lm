@@ -1512,7 +1512,8 @@ def chapter(number,title,label,caption='',options={})
     'sidecaption'=>false,
     'special_width'=>nil,  # used in CL4, to let part of the figure hang out into the margin
     'short_title'=>nil,      # used in TOC; if omitted, taken from title
-    'very_short_title'=>nil  # used in running headers; if omitted, taken from short_title
+    'very_short_title'=>nil,  # used in running headers; if omitted, taken from short_title
+    'optional'=>false
   }
   $section_level += 1
   $ch = number
@@ -1546,14 +1547,16 @@ def chapter(number,title,label,caption='',options={})
   if is_web   then   chapter_web(number,title,label,caption,options) end
 end
 
-def chapter_web(number,title,label,caption,options)
+def chapter_web(number,raw_title,label,caption,options)
+  if options['optional'] then title="* "+raw_title else title=raw_title  end
   if options['opener']!='' then
     process_fig_web(options['opener'],caption,options)
   end
   print "\\mychapter{#{title}}\n"
 end
 
-def chapter_print(number,title,label,caption,options)
+def chapter_print(number,raw_title,label,caption,options)
+  if options['optional'] then title="$\\star$"+raw_title else title=raw_title  end
   opener = options['opener']
   has_opener = (opener!='')
   result = nil
