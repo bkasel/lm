@@ -363,6 +363,8 @@ def marg_print(delta_y)
 end
 
 # options is normally {}
+# Used in Fundamentals of Calulus, looks like a shaded box with >Box 2.2  Title.
+# Won't work in physics books, which don't have the necessary macros. For them, do a fig() with a 'text' option.
 def marginbox(delta_y,name,caption,options,text)
   options['text'] = text
   options['textbox'] = true

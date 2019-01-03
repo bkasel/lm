@@ -917,6 +917,8 @@ $\vc{E}$ relative to $\vc{E}_\zu{o}$.
 
 <% begin_hw('anglebetween') %>__incl(../../share/mechanics/hw/anglebetween)<% end_hw() %>
 
+\pagebreak
+
 <% begin_hw('findperp') %>__incl(../../share/mechanics/hw/findperp)<% end_hw() %>
 
 <% begin_hw('b-energy-in-classroom') %>__incl(hw/b-energy-in-classroom)<% end_hw() %>
@@ -928,6 +930,8 @@ $\vc{E}$ relative to $\vc{E}_\zu{o}$.
 <% begin_hw('angle-from-energy-density') %>__incl(hw/angle-from-energy-density)<% end_hw() %>
 
 <% begin_hw('horseshoe-units') %>__incl(hw/horseshoe-units)<% end_hw() %>
+
+\pagebreak
 
 <% begin_hw('zero-x-not-same-direction') %>__incl(../../share/mechanics/hw/zero-x-not-same-direction)<% end_hw() %>
 

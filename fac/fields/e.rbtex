@@ -103,7 +103,7 @@ All kinds of wave patterns are possible, but linear or plane
 waves are often the simplest to analyze, because the
 velocity vector is in the same direction no matter what part
 of the wave we look at. Because of the geometrical relationship
-of the Poynting vector to $\vc{E}\times\vc{B}$, we need a full
+of the momentum density to $\vc{E}\times\vc{B}$, we need a full
 three dimensions in order to describe an electromagnetic wave,
 so there is no hope of treating anything as effectively two-dimensional,
 and the simplest wave pattern is therefore the plane wave.
@@ -176,7 +176,8 @@ mysterious medium called the ``aether.''
 <% begin_sec("Geometry of a plane wave",nil,'plane-wave-geom') %>
 
 <% begin_sec("$\\vc{E}$ and $\\vc{B}$ perpendicular to the direction of propagation",nil,'e-b-perp-p') %>
-The Poynting vector $\vc{S}=(c^2/4\pi k)\vc{E}\times\vc{B}$ gives the momentum density of our plane wave,
+The momentum density $(1/4\pi k)\vc{E}\times\vc{B}$ is proportional
+to the momentum density of our plane wave,
 and therefore points in the direction of propagation. Since a vector cross product is perpendicular
 to both of the vectors, it follows that both fields lie in the plane perpendicular to the direction
 of propagation.
@@ -199,7 +200,7 @@ $\vc{E}$ and $\vc{B}$ vectors with equal lengths on the page, which suggests tha
 $\phi$ is drawn as an arbitrary angle, although we will prove later that it must be a right
 angle. The first example is drawn with $\vc{E}$ clockwise from $\vc{B}$, so that by the right-hand
 rule, the direction of propagation is out of the page. The second example has been flipped around
-so that the Poynting vector is into the page, and has also been rotated in the plane of the page.
+so that the momentum vector is into the page, and has also been rotated in the plane of the page.
 
 Our argument for equal energy sharing between the electric and magnetic fields works by
 colliding these two waves head-on. Before the waves collide, they each carry energy $U_\vc{E}+U_\vc{B}$,
@@ -248,6 +249,19 @@ like figure \figref{e-b-perpendicular} and simply spin the whole book around by 
 This is referred to as the polarization of the wave.
 <% end_sec('e-b-perp') %>
 
+<% end_sec('plane-wave-geom') %>
+
+<% marg(-300) %>
+<%
+  fig(
+    'vacuum-dispersion',
+    %q{Arrival times of waves with different frequencies from gamma-ray burst 160625B, from
+       Wei \emph{et. al}, 2018. In this histogram, the vertical axis is a count of the
+       number of wave pulses arriving per unit time.}
+  )
+%>
+<% end_marg %>
+
 <% begin_sec("Propagation at a fixed velocity",nil,'propagation-at-c') %>
 If we look at the speed of waves in general, we see two main types of behavior. In one type,
 exemplified by sound waves or waves on a coil spring as in figure \figref{coil-spring-pulse},
@@ -265,16 +279,6 @@ see their competitors. In a wave, this causes the wave pattern to spread out, or
 can tell that the wave pulse on the coil spring in figure \figref{coil-spring-pulse} is propagating
 nondispersively, because it maintains its shape as it moves.
 
-<% marg() %>
-<%
-  fig(
-    'vacuum-dispersion',
-    %q{Arrival times of waves with different frequencies from gamma-ray burst 160625B, from
-       Wei \emph{et. al}, 2018. In this histogram, the vertical axis is a count of the
-       number of wave pulses arriving per unit time.}
-  )
-%>
-<% end_marg %>
 We know on both theoretical and empirical grounds that
 electromagnetic waves are nondispersive when they travel in a vacuum.
 Figure \figref{vacuum-dispersion} shows some astronomical evidence that is
@@ -302,7 +306,53 @@ which we will show on p.~\pageref{em-waves-propagate-at-c} is $c$. They are nond
 a plane wave glides along rigidly as in figure \figref{plane-wave-propagating}, without changing shape.
 <% end_sec('propagation-at-c') %>
 
-<% end_sec('plane-wave-geom') %>
+<% begin_sec("Momentum and rate of energy flow",nil,'p-and-energy-flow') %>
+<% begin_sec("Momentum of a plane wave",nil,'p-plane-wave') %>
+Recalling the relations $\der\vc{p}/\der v =(1/4\pi k)$,
+$\der U_E/\der v=(1/8\pi k)E^2$, and $\der U_B/\der v=(c^2/8\pi k)B^2$, it is
+straightforward to show that for a plane wave, the energy and momentum are related
+by
+\begin{equation*}
+  \der U = c \der p.
+\end{equation*}
+This turns out to be a more general relation that, according to relativity, applies
+to anything without mass.
+<% end_sec('p-plane-wave') %>
+<% begin_sec("Rate of energy flow",nil,'poynting') %>
+Intuitively we feel that sunlight \emph{flows} through a window. We have been focusing
+on the momentum density as a measure of this rate of flow, but it would be equally valid
+to quantify it in units of power per unit area ($\text{watts}/\text{meter}^2$). These
+two figures must somehow be equivalent, since we can't change one without changing the
+other by the same factor. The relationship between them is
+\begin{equation*}
+  \frac{\text{power}}{\text{area}} = \frac{\text{momentum}}{\text{volume}} \times c^2.
+\end{equation*}
+To see this, consider an imaginary rectangular box of length $\ell$, with the window
+of area $A$ forming one end. Its volume is $v=\ell A$. Let's say the light is flowing
+directly along the length of this box, striking the window flat-on. At a given instant, the box contains
+momentum $p$ and energy $cp$. The time it will take for this entire box worth of light to
+flow through the window is $t=\ell/c$, so that the power per unit area is
+$(cp/t)/A=c^2p/(\ell A)=(p/v)c^2$.
+
+<% marg(30) %>
+<%
+  fig(
+    'window-flux',
+    %q{Light fills an imaginary rectangular box, flowing through a window of area $A$.}
+  )
+%>
+<% end_marg %>
+
+Summarizing, we find that the vector cross product $\vc{E}\times\vc{B}$ can be interpreted
+either as a measure of momentum density or as a measure of the rate of flow of energy.
+
+The quantity $(c^2/4\pi k)\vc{E}\times\vc{B}$, which is just the momentum density
+multiplied by $c^2$, is often notated $\vc{S}$, and
+is referred to as the Poynting vector, after John Henry Poynting --- a wonderful
+coincidence, because the vector \emph{points} in the direction of the momentum
+and energy flow. The magnitude of the Poynting vector is power per unit area.
+<% end_sec('poynting') %>
+<% end_sec('p-and-energy-flow') %>
 
 <% begin_sec("Maxwell's equations in a vacuum",nil,'maxwell-vacuum') %>
 <% marg() %>

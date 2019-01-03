@@ -295,17 +295,26 @@ two fields. Filling in the correct constant of proportionality, which we'll come
 to in a moment, it turns
 out that the momentum is given by
 \begin{equation*}
-  \der\vc{p} = \frac{c^2}{4\pi k} \vc{E}\times\vc{B} \der v.
+  \der\vc{p} = \frac{1}{4\pi k} \vc{E}\times\vc{B} \der v.
 \end{equation*}
-The momentum density $\der\vc{p}/\der v$ is often notated $\vc{S}$, and
-is referred to as the Poynting vector, after John Henry Poynting --- a wonderful
-coincidence, because the vector \emph{points} in the direction of the momentum.
 
-For convenient reference, we recapitulate the energy densities here as well:
-\begin{align*}
-  \der U_E &= \frac{1}{8\pi k} E^2 \der v \\
-  \der U_B &= \frac{c^2}{8\pi k} B^2 \der v .
-\end{align*}
+<% marg(300) %>
+<%
+  fig(
+    'summary-of-e-p-densities',nil,
+    {
+      'title'=>'Summary of energy and momentum densities',
+      'text'=>%q{
+        \begin{align*}
+          \der U_E &= \frac{1}{8\pi k} E^2 \der v \\\\
+          \der U_B &= \frac{c^2}{8\pi k} B^2 \der v \\\\
+          \der\vc{p} &= \frac{1}{4\pi k} \vc{E}\times\vc{B} \der v
+        \end{align*}
+      }
+    }
+  )
+%>
+<% end_marg %>%
 
 The argument given above only demonstrated that the momentum density
 had to be proportional to $\vc{E}\times\vc{B}$, but it didn't fix the
@@ -323,7 +332,7 @@ in the antenna of your phone, then it's also transferring momentum to them,
 and therefore it must have some momentum itself.
 
 It is in fact plausible that the proportionality constant occurring in
-the equation for the Poynting vector is such that the momentum of
+the equation for the momentum density is such that the momentum of
 light is too small to notice in everyday life. For material objects
 moving at speeds small compared to $c$, the kinetic energy and
 momentum are given by $K=(1/2)mv^2$ and $p=mv$, so that the ratio of
@@ -337,21 +346,12 @@ screen, but the device doesn't recoil from the beam's momentum when we
 turn it on, nor does it shake and rattle as the the beam is steered
 back and forth across the screen to paint the picture.  Although the
 the equations above do not actually hold in detail for light (the
-final result ends up being off by a factor of 2), it still makes sense
+final result ends up being off by a factor of 2, as shown in sec.~\ref{sec:p-plane-wave},
+p.~\pageref{sec:p-plane-wave}), it still makes sense
 that the momentum-to-energy ratio is extremely small, because the
 speed, $c$, is so big.
 
-<% marg() %>
-<%
-  fig(
-    'halley',
-    %q{%
-      Halley's comet, example \ref{eg:halley}.
-    }
-  )
-%>
-<% end_marg %>%
-\begin{eg}{Halley's comet}\label{eg:halley}\index{Halley's comet}\index{comet}
+\begin{eg}{A comet's tail}\label{eg:halley}\index{Halley's comet}\index{comet}
 Halley's comet, shown
 in figure \figref{halley}, has a very elongated elliptical orbit, like those of
 many other comets. About once per century, its orbit brings
@@ -369,7 +369,16 @@ which is propelled by electrical forces rather than by the momentum of
 sunlight.)
 \end{eg}
 
-<% marg() %>
+<% marg(300) %>
+<%
+  fig(
+    'halley',
+    %q{%
+      Halley's comet, example \ref{eg:halley}.
+    }
+  )
+%>
+\spacebetweenfigs
 <%
   fig(
     'nichols-radiometer',          
@@ -377,7 +386,6 @@ sunlight.)
   )
 %>
 <% end_marg %>%
-
 \begin{eg}{The Nichols radiometer}\label{eg:nichols-radiometer}
 Figure \figref{nichols-radiometer} shows a simplified drawing of the
 1903 experiment by Nichols and Hull that verified the predicted
@@ -390,12 +398,6 @@ was measurable by an optical lever (not shown). The force was within
 comparison, a short clipping of a human hair weighs $\sim 1\
 \mu\nunit$. 
 \end{eg}
-
-Having gone to all this trouble justifying the fact that the coefficient in
-the equation for the momentum density makes sense in its nonzero value, units,
-and order of magnitude, we will defer the justification for the unitless
-factor of $1/4\pi$, which will be much more easily explained when we have
-delved further into relativity.
 
 Because the momentum of light waves is so small in cases like examples
 \ref{eg:halley} and \ref{eg:nichols-radiometer}, one might wonder why
