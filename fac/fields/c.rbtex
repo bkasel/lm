@@ -229,6 +229,14 @@ $r$ is $kQq/r$. Dividing by the test charge, we find that the potential is
 A battery is a device that maintains a desired potential difference between
 its two terminals.
 
+<%
+  fig(
+    'using-voltmeter',
+    %q{A multimeter set up to be used as a voltmeter, and a person using such a meter.},
+    {'width'=>'wide'}
+  )
+%>
+
 The instrument for measuring electric potentials is called a
 voltmeter (these days usually implemented as one of the functions of
 a multimeter). The voltmeter has no way of knowing what mental choice we had
@@ -256,13 +264,6 @@ of volts.
 Such meters are more or less standardized, so this description applies to all multimeters,
 with minor variations such as the possible use of an analog display with a needle, or
 pushbuttons rather than a rotary dial.
-<%
-  fig(
-    'using-voltmeter',
-    %q{A multimeter set up to be used as a voltmeter, and a person using such a meter.},
-    {'width'=>'wide'}
-  )
-%>
 
 In the right-hand side of figure \figref{using-voltmeter}, the woman using the
 voltmeter is touching the metal tips of the two probes to two different points,

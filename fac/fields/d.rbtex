@@ -41,12 +41,13 @@ between electricity (the charge flowing in the wire) and magnetism.
 One never knows how much to believe from these dramatic legends, but
 the story is that the experiment he'd expected to turn out negative
 instead turned out positive: when he held the wire near the compass,
-the current in the wire caused the compass to twist!
+the charge flowing through the wire caused the compass to twist!
 
 Oersted was led to the conclusion that when matter creates magnetic
 fields, it happens because the matter contains moving charges.  A
-permanent magnet, he inferred, contained currents on a microscopic
-scale that simply weren't practical to measure with an ammeter. Today
+permanent magnet, he inferred, contained moving charges on a microscopic
+scale, but their motion simply wasn't practical to detect using
+human-scale measuring devices in the lab. Today
 this seems natural to us based on the planetary model of the atom. As
 shown in figure \figref{magnetized}, a magnetized piece of iron is
 different from an unmagnetized piece because the atoms in the
@@ -185,7 +186,7 @@ constants of proportionality in example \ref{eg:b-wire} on p.~\pageref{eg:b-wire
 <%
   fig(
     'field-lines-of-wire',
-    %q{Example \ref{eg:field-of-wire}, the magnetic field of a current-carrying wire.
+    %q{Example \ref{eg:field-of-wire}, the magnetic field of a wire with charge flowing through it.
        The field pattern is shown in the plane perpendicular
        to the wire. The orientation is rotated by 90 degrees relative to
        figure \figref{field-transformation-cartoon}.
@@ -207,7 +208,7 @@ depends only (\note{b-propto-i}) on an electrical quantity called the \emph{curr
 defined as the number of coulombs per second that flow past a given point.
 As with a river or a pipe carrying water, the same current could be created by a large amount
 of charge moving slowly, or a small amount with a high velocity. Current is notated $I$,
-and is defined formally as
+and is defined formally as\label{current-defined}
 \begin{equation*}
   I = \frac{\der q}{\der t}.
 \end{equation*}
@@ -239,7 +240,10 @@ practical interest in electrical circuits, which we will study more
 intensively later in this course.  To measure current, there is a
 device called an ammeter. (Today, people usually use a device called a
 multimeter, which has multiple functions including working as an
-ammeter.)
+ammeter.)\label{ammeter-intro} We will discuss the ammeter and its use
+in more detail in sec.~\ref{subsec:measuring-current},
+p.~\pageref{subsec:measuring-current}, when we begin our study of
+electric circuits. 
 
 Currents are formed by matter, and are \emph{not} the same thing as
 electromagnetic fields, which can exist in a vacuum. For example, the
