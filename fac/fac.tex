@@ -44,13 +44,22 @@
 \newcommand{\brieftochoriz}{\hspace{20mm}}
 \newcommand{\brieftoctabularwidth}{90mm}
 
-\noindent\brieftochoriz\brieftocchstyle\begin{tabular}{rp{\brieftoctabularwidth}}
+\noindent\brieftochoriz%
+\brieftocchstyle\begin{tabular}{rp{\brieftoctabularwidth}}
+& \textit{\brieftocpartstyle Electric and magnetic fields}\\
 \brieftocentry[\hfill]{ch:fields-intro}{The electric and magnetic fields} \\
 \brieftocentry[\hfill]{ch:gauss-law}{Gauss's law}\\
 \brieftocentry[\hfill]{ch:potential}{The electric potential}\\
 \brieftocentry[\hfill]{ch:electromagnetism}{Electromagnetism}\\
 \brieftocentry[\hfill]{ch:radiation}{Radiation}\\
 \brieftocentry[\hfill]{ch:relativity}{$\star$ More about relativity (optional)}
+\end{tabular}
+
+\vspace{\brieftocvert}\noindent\brieftochoriz%
+\brieftocchstyle\begin{tabular}{rp{\brieftoctabularwidth}}
+& \textit{\brieftocpartstyle DC circuits}\\
+\brieftocentry[\hfill]{ch:resistance}{Electrical resistance}\\
+\brieftocentry[\hfill]{ch:dc-circuits}{Parallel and series circuits}
 \end{tabular}
 
 
@@ -86,8 +95,10 @@
     \renewcommand{\chapdir}{fields}\include{fields/ctemp}
     \renewcommand{\chapdir}{fields}\include{fields/dtemp}
     \renewcommand{\chapdir}{fields}\include{fields/etemp}
-	\formatchtoc{\large}{\quad\contentspage}{4mm} % This has to go before the last chapter.
     \renewcommand{\chapdir}{fields}\include{fields/ftemp}
+    \renewcommand{\chapdir}{fields}\include{dc/atemp}
+	\formatchtoc{\large}{\quad\contentspage}{4mm} % This has to go before the last chapter.
+    \renewcommand{\chapdir}{fields}\include{dc/btemp}
         \addtocontents{toc}{\vspace{5mm}}% For reasons I don't understand, this actually comes *after* the final chapter.
 %
     \widelayout

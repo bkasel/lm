@@ -4,6 +4,8 @@
 
 <% clear_answer_data %>
 
+<% part_title("Electric and magnetic fields") %>
+
 <%
   chapter(
     '01',

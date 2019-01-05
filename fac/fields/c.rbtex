@@ -423,7 +423,7 @@ $\der\ldots/\der\ldots$ can always be approximated by an expression of the
 form $\Delta\ldots/\Delta\ldots$ when the value of the derivative is constant, i.e.,
 you don't need calculus to find a rate of change that is constant. Therefore we have
 \begin{align*}
- |E| &\approx \frac{\Delta V}{\Delta  x} \\
+ |E| &\approx \frac{\Delta \phi}{\Delta  x} \\
      &=    1000\ \zu{V/m}.
 \end{align*}
 \end{eg}
