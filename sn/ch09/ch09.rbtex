@@ -2393,7 +2393,13 @@ over all.
 1. How many different currents could you measure in this
 circuit? Make a prediction, and then try it.
 
-\hspace{20mm}\anonymousinlinefig{ex-how-many-currents}
+<%
+  fig(
+    'how-many-currents',
+    '',
+    {'width'=>'narrow','float'=>false}
+  )
+%>
 
 What do you notice? How does this make sense in terms of the
 roller coaster metaphor introduced in discussion question \ref{subsubsec:voltage}\ref{dq:roller-coaster}
@@ -2405,7 +2411,13 @@ What is being \emph{used up} in the resistor?
 you measure a voltage? How many of them would be different
 numbers? Make a prediction, and then do it.
 
-\hspace{20mm}\anonymousinlinefig{ex-how-many-voltages}
+<%
+  fig(
+    'how-many-voltages',
+    '',
+    {'width'=>'narrow','float'=>false}
+  )
+%>
 
 What do you notice? Interpret this using the roller coaster
 metaphor, and color in parts of the circuit that represent constant voltages.
@@ -2413,7 +2425,13 @@ metaphor, and color in parts of the circuit that represent constant voltages.
 3. The resistors are unequal. How many \emph{different}
 voltages and currents can you measure? Make a prediction, and then try it.
 
-\hspace{20mm}\anonymousinlinefig{ex-series}
+<%
+  fig(
+    'series',
+    '',
+    {'width'=>'narrow','float'=>false}
+  )
+%>
 
 What do you notice? Interpret this using the roller coaster
 metaphor, and color in parts of the circuit that represent constant voltages.

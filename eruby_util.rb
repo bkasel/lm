@@ -555,7 +555,7 @@ def fig(name,caption=nil,options={})
     'anonymous'=>'default',# true means figure has no figure number, but still gets labeled (which is, e.g., 
                            #      necessary for photo credits)
                            # default is false, except if caption is a null string, in which case it defaults to true
-    'width'=>'narrow',     # 'narrow'=52 mm, 'column'=76.5 mm,
+    'width'=>'narrow',     # 'native'=whatever the figure says it is, 'narrow'=52 mm, 'column'=76.5 mm,
                            #   'wide'=113 mm, 'fullpage'=171 mm
                            #   refers to graphic, not graphic plus caption (which is greater for sidecaption option)
     'sidecaption'=>false,
@@ -619,7 +619,7 @@ def fig(name,caption=nil,options={})
     options['anonymous']=!has_caption
   end
   dir = find_directory_where_figure_is(name)
-  if dir.nil? && options['text'].nil? then fatal_error("figure #{name} not found in #{dir()}/figs or #{shared_figs()}") end
+  if dir.nil? && options['text'].nil? then fatal_error("figure #{name} not found in #{dir()}/figs or #{shared_figs()}, ch=#{$ch}") end
   #------------------------------------------------------------
   if is_print then fig_print(name,caption,options,dir) end
   #------------------------------------------------------------
@@ -707,6 +707,10 @@ def fig_print(name,caption,options,dir)
       if has_caption then m = "finishtextfig" else m = "finishtextfignocaption" end
       spit("\\starttextfig{#{name}}#{text}\n\\#{m}{#{name}}{%\n#{caption}}\n")
     end
+  end
+  #----------------------- native ----------------------
+  if width=='native' then
+    spit("\\fignocaptionnativewidth{#{name}}{#{dir}}\n")
   end
   #----------------------- narrow ----------------------
   if width=='narrow' and options['text']==nil then

@@ -2864,7 +2864,14 @@ circuit being tested.
 1. How many different currents could you measure in this
 circuit? Make a prediction, and then try it.
 
-\hspace{20mm}\anonymousinlinefig{how-many-currents}
+<%
+  fig(
+    'how-many-currents',
+    '',
+    {'width'=>'narrow','float'=>false}
+  )
+%>
+
 
 What do you notice? How does this make sense in terms of the
 roller coaster metaphor introduced in discussion question \ref{sec:voltage}\ref{dq:roller-coaster} on p.~\pageref{dq:roller-coaster}?
@@ -2877,7 +2884,13 @@ What is being \emph{used up} in the resistor?
 you measure a voltage? How many of them would be different
 numbers? Make a prediction, and then do it.
 
-\hspace{20mm}\anonymousinlinefig{how-many-voltages}
+<%
+  fig(
+    'how-many-voltages',
+    '',
+    {'width'=>'narrow','float'=>false}
+  )
+%>
 
 
 What do you notice? Interpret this using the roller coaster
@@ -2888,15 +2901,19 @@ metaphor, and color in parts of the circuit that represent constant voltages.
 3. The resistors are unequal. How many \emph{different}
 voltages and currents can you measure? Make a prediction, and then try it.
 
-\hspace{20mm}\anonymousinlinefig{series}
-
+<%
+  fig(
+    'series',
+    '',
+    {'width'=>'narrow','float'=>false}
+  )
+%>
 
 What do you notice? Interpret this using the roller coaster
 metaphor, and color in parts of the circuit that represent constant voltages.
 <% end_ex %>
 
 <% begin_ex("Voltage and current","B",2) %>
-
 This exercise is based on one created by Virginia Roundy.
 
 \noindent Apparatus:
@@ -2935,7 +2952,7 @@ A second piece of the circuit, at some other voltage, could be highlighted in bl
 kind of diagram, height corresponds to voltage --- that's why the wires are drawn as horizontal
 tracks.
 
-\anonymousinlinefig{analyzing-rollercoaster}
+<% fig('analyzing-rollercoaster','',{'width'=>'native','float'=>false}) %>
 
 \emph{A Bulb and a Switch}
 
@@ -2946,7 +2963,7 @@ When you build the circuit, you don't need an actual switch like a light switch;
 connect and disconnect the banana plugs. Use one of the 1.5 volt batteries as your voltage
 source.
 
-\newcommand{\circuittablestrut}{\raisebox{0mm}[0mm][25mm]{}}
+\newcommand{\circuittablestrut}{\raisebox{0mm}[0mm][24mm]{}}
 \newcommand{\circuittabletwocols}[2]{
 \begin{tabular}{|p{20mm}|p{42mm}|}
 \hline
@@ -2993,7 +3010,7 @@ explanation  & \\
 \end{tabular}
 }
 
-\anonymousinlinefig{analyzing-simple}\\*
+<% fig('analyzing-simple','',{'width'=>'native','float'=>false}) %>
 \textsf{Circuit 1}
 
 \vfill\pagebreak[4]
@@ -3005,21 +3022,21 @@ hindsight, and write your explanation in the table above.
 
 \vfill\pagebreak[4]
 
-\anonymousinlinefig{analyzing-switch-shorts}\\*
+<% fig('analyzing-switch-shorts','',{'width'=>'native','float'=>false}) %>
 \textsf{Circuit 2 (Don't leave the switch closed for a long time!)}
 
 \circuittabletwocols{switch open}{switch closed}
 
 \vfill\pagebreak[4]
 
-\anonymousinlinefig{analyzing-irrelevant}\\*
+<% fig('analyzing-irrelevant','',{'width'=>'native','float'=>false}) %>
 \textsf{Circuit 3}
 
 \circuittabletwocols{switch open}{switch closed}
 
 \vfill\pagebreak[4]
 
-\anonymousinlinefig{analyzing-far-side}\\*
+<% fig('analyzing-far-side','',{'width'=>'native','float'=>false}) %>
 \textsf{Circuit 4}
 
 \circuittabletwocols{switch open}{switch closed}
@@ -3033,14 +3050,14 @@ Instead of a battery, use the DC power supply, set to
 Analyze this one both by highlighting and by drawing a
 rollercoaster diagram.
 
-\anonymousinlinefig{analyzing-series}\\*
+<% fig('analyzing-series','',{'width'=>'native','float'=>false}) %>
 \textsf{Circuit 5}
 
 \circuittabletwocols{bulb a}{bulb b}
 
 \vfill\pagebreak[4]\vfill
 
-\anonymousinlinefig{analyzing-corner}\\*
+<% fig('analyzing-corner','',{'width'=>'native','float'=>false}) %>
 \textsf{Circuit 6}
 
 \circuittabletwocols{bulb a}{bulb b}
@@ -3053,12 +3070,12 @@ Use batteries for circuits 7-9.
 Circuits 7 and 8 are both good candidates for rollercoaster
 diagrams. 
 
-\anonymousinlinefig{analyzing-two-batteries}\\*
+<% fig('analyzing-two-batteries','',{'width'=>'native','float'=>false}) %>
 \textsf{Circuit 7}
 
 \circuittableonecol
 
-\anonymousinlinefig{analyzing-reversed}\\*
+<% fig('analyzing-reversed','',{'width'=>'native','float'=>false}) %>
 \textsf{Circuit 8}
 
 \circuittableonecol
@@ -3067,7 +3084,7 @@ diagrams.
 
 \emph{A Final Challenge}
 
-\anonymousinlinefig{analyzing-inside}\\*
+<% fig('analyzing-inside','',{'width'=>'native','float'=>false}) %>
 \textsf{Circuit 9}
 
 \circuittabletwocols{bulb a}{bulb b}

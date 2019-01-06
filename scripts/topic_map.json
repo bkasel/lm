@@ -139,7 +139,9 @@
         "6":"waves"
       },
       "lm":      {
+        "21":"em-fields",
         "22":"em-general",
+        "24":"waves",
         "26":"em-dc"
       }
     }

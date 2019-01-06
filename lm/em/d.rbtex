@@ -1242,7 +1242,7 @@ mirror images of ours.
 \spacebetweenfigs
 <%
   fig(
-    '../../../lm/vw/figs/doppler',
+    'doppler',
     %q{%
       The pattern of waves made by a point source moving to the right
       across the water. Note the shorter wavelength of the forward-emitted waves and the longer
