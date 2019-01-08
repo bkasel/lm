@@ -703,7 +703,7 @@ $x$ component of the curl. Similar reasoning produces the term $-\partial E_y/\p
   fig(
     'cyclicperm',
     %q{A cyclic permutation of $x$, $y$, and $z$.},
-    {'width'=>'column','float'=>true}
+    {'width'=>'narrow','float'=>true}
   )
 %>
 
