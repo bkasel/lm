@@ -282,19 +282,31 @@ as a reference, the readings might then all be offset by some constant. In fact,
 that the readings were all the same, because there will be no difference in potential between one
 point on the box and another.
 
-The reason for this has to do with the fact
-that a metal contains a large number of electrons that are free to move.
-A substance like this that has many free charge carriers is called a conductor. The living cells
-in your body (although not the dead ones in the dry outer layer of skin) are pretty good conductors,
-because they have free charge carriers such as positively charged sodium ions and negatively charged
-chlorine ions, coming from the salt in your body. A good conductor cannot sustain a potential
-difference between different points within itself. If such a difference were set up, the
-charges would immediately begin to flow. Any positive charges would move toward the lower
-potential (as water, with positive mass, flows downhill), while negative charges would flow
-toward the higher potential. The system would rapidly reach an equilibrium in which the potential
-differences were eliminated. In the study of electrostatics, there are by definition no currents
-or time-varying fields, and therefore all charges must be in equilibrium, and this would be impossible
-if there were any differences in potential within a conductor.
+The reason for this has to do with the fact that a metal contains a
+large number of electrons that are free to move.  A substance like
+this that has many free charge carriers is called a
+\emph{conductor},\index{conductor!defined} the opposite being an
+insulator. The living cells in your body are pretty good conductors,
+because they have free charge carriers such as positively charged
+sodium ions and negatively charged chlorine ions, coming from the salt
+in your body.  The outer layer of your skin is an insulator because it
+consists of dry, dead cells in which ions are not free to move because
+the material is a solid rather than a liquid. These distinctions between
+conductors and insulators are quantitative rather than absolute, as we
+will see in more detail in section \ref{sec:resistance}, p.~\pageref{sec:resistance}.
+
+A good
+conductor cannot sustain a potential difference between different
+points within itself. If such a difference were set up, the charges
+would immediately begin to flow. Any positive charges would move
+toward the lower potential (as water, with positive mass, flows
+downhill), while negative charges would flow toward the higher
+potential. The system would rapidly reach an equilibrium in which the
+potential differences were eliminated. In the study of electrostatics,
+there are by definition no currents or time-varying fields, and
+therefore all charges must be in equilibrium, and this would be
+impossible if there were any differences in potential within a
+conductor.
 
 <%
   fig(
@@ -453,6 +465,8 @@ on an electron that cancel out. Setting the magnitudes of these forces
 equal to each other, we have $eE=mg$, and since (ignoring signs) $E=\Delta \phi/L$, we
 predict a potential difference $\Delta \phi=(m/q)gL$. For a one-meter rod,
 the predicted effect is $\sim10^{-10}\ \zu{V}$. 
+% calc -x -e "m=9.1 10^-31 kg; g=9.8 m/s2; L=1 m; V=(m/e)gL->V"
+%    V = 5.56617829287959*10^-11 V
 
 This is quite small, but not impossible to measure, and the
 theoretical prediction was confirmed for a similar experiment by
@@ -463,10 +477,8 @@ any electrical circuit, e.g., a slight twitching of a flashlight when
 we turn it on or off, but these will be much too small to notice
 except with exceptionally delicate and sensitive
 tools.\index{Tolman-Stewart experiment}
-% calc -x -e "m=9.1 10^-31 kg; g=9.8 m/s2; L=1 m; V=(m/e)gL->V"
-%    V = 5.56617829287959*10^-11 V
 It is surprising that we can get information about the microscopic structure of a metal merely by measuring
-its properties in this way.
+its bulk electrical properties in this way.
 \end{eg}
 
 In a vacuum in one dimension, Gauss's law is that $\der E/\der x=0$, and since $E=-\der\phi/\der x$,

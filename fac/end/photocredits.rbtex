@@ -48,6 +48,7 @@
 <% photo_credit("coil-spring-pulse","PSSC Physics","") %>
 <% photo_credit("cern-muon-storage-ring","Muon storage ring at CERN","(c) 1974 by CERN; used here under the U.S. fair use doctrine") %>
 <% photo_credit("ammeter-practical","Multimeter","Wikimedia Commons user Wdwd, CC-BY-SA") %> % https://commons.wikimedia.org/wiki/File:Multimeter_Strommessung.JPG
+<% photo_credit("chain-drive","Chain drive","Based on art by Wikimedia Commons user Keithonearth, CC-BY-SA") %> % https://commons.wikimedia.org/wiki/File:Derailleur_Bicycle_Drivetrain.svg
 
 <% print_photo_credits() %>
 

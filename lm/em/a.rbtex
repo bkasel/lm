@@ -993,7 +993,7 @@ are discussed in section \ref{sec:current-calculus}.
         converted into heat, not into perpetually increasing the
         charged particles' kinetic energy. Changing energy into heat
         may be a nuisance in some circuits, such as a computer chip,
-        but it is vital in a lightbulb, which must get hot enough to
+        but it is vital in an incandescent lightbulb, which must get hot enough to
         glow. Whether we like it or not, this kind of heating effect
         is going to occur any time charged particles move through matter.
 
@@ -1418,26 +1418,32 @@ Similar reasoning shows why Benjamin Franklin used a sharp
     %q{An example of a resistor with a color code.}
   )
 %>
-        \spacebetweenfigs
-        \begin{minipage}[t]{52mm}
-        \begin{tabular}{ll}
-                color                & meaning\\
-                black        & 0 \\
-                brown        & 1\\
-                red                & 2\\
-                orange        & 3\\
-                yellow        & 4\\
-                green        & 5\\
-                blue                & 6\\
-                violet        & 7\\
-                gray                & 8\\
-                white        & 9\\
-                silver        & $\pm 10\%$\\
-                gold                & $\pm 5\%$\\
-        \end{tabular}
-        \docaption{Color codes used on resistors.} %
-        \label{fig:colorcodetable} %
-        \end{minipage}
+%\spacebetweenfigs %%%% makes too much space
+<%
+  fig(
+    'colorcodetable',
+    %q{Color codes used on resistors.},
+    {
+      'text'=>
+      %q{
+\begin{tabular}{ll}
+black& 0 \\\\
+brown& 1\\\\
+red& 2\\\\
+orange& 3\\\\
+yellow& 4\\\\
+green& 5\\\\
+blue& 6\\\\
+violet& 7\\\\
+gray& 8\\\\
+white& 9\\\\
+silver& $\pm 10\%$\\\\
+gold& $\pm 5\%$\\\\
+\end{tabular}
+      }
+    }
+  )
+%>
         
 <% end_marg %>
         Many electrical devices are based on electrical resistance
