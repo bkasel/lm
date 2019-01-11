@@ -1968,7 +1968,7 @@ change is not constant,
         and $R_v$ in parallel. It is for this reason that voltmeters
         are built with the largest possible internal resistance. As
         a numerical example, if we use a voltmeter with an internal
-        resistance of 1 $M\Omega $ to measure the voltage drop
+        resistance of 1 $\zu{M}\Omega $ to measure the voltage drop
         across a one-ohm resistor, the equivalent resistance is
         0.999999 $\Omega $, which is not different enough to make
         any difference. But if we tried to use the same voltmeter to
@@ -2076,7 +2076,7 @@ change is not constant,
 
 \begin{lessimportant}[the loop rule]
         Assuming the standard convention for plus and minus signs, the sum of the
-        voltage drops around any closed loop in a circuit must be zero.
+        voltage drops around any closed loop in a DC circuit must be zero.
 \end{lessimportant}
 
         Looking for an exception to the \index{loop rule}loop rule

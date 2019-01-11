@@ -59,7 +59,7 @@ so that the total work done by the field around the rectangle is zero.
 For a static field, i.e., one that doesn't change as a function of time,
 we want this to be true in general:
 
-\begin{lessimportant}
+\begin{lessimportant}\label{zero-work-around-closed-loop}
 The work done by a static electric field on a test charge, as the charge
 moves around a closed loop, is always zero.
 \end{lessimportant}

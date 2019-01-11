@@ -51,6 +51,7 @@
 <% photo_credit("chain-drive","Chain drive","Based on art by Wikimedia Commons user Keithonearth, CC-BY-SA") %> % https://commons.wikimedia.org/wiki/File:Derailleur_Bicycle_Drivetrain.svg
 <% photo_credit("railroad-switches","Railroad switching yard","Arne Hueckelheim, CC-BY-SA") %> % https://commons.wikimedia.org/wiki/File:SunsetTracksCrop.JPG
 <% photo_credit("einzel-lens","Einzel lens","Based on a figure by Wikimedia Commons user Schnieri, CC-BY-SA") %> % https://en.wikipedia.org/wiki/File:Einzel_lens_schematic_drawing.svg
+<% photo_credit("penrose-stairs","Impossible staircase","Philip Ronan, public domain") %> % https://commons.wikimedia.org/wiki/File:Impossible_staircase.svg
 
 <% print_photo_credits() %>
 
