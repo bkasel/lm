@@ -305,7 +305,7 @@ and use sigma notation, $\Phi_B=\sum \vc{B}_i\cdot\vc{A}_i$. Using a large numbe
 areas gives an approximation to the flux, but the exact flux is given by the limit of such an
 expression as the number of area elements goes to infinity and each area becomes very small,
 $\Phi_B = \lim \sum \vc{B}_i\cdot\vc{A}_i$. This kind of continuous sum of infinitely
-many infinitesimal things is an integral, so we notate it as one,
+many infinitesimal things is an integral, so we notate it as one,\label{flux-defined}
 \begin{equation*}
   \Phi_B = \int \vc{B}\cdot\der\vc{A}. \qquad \text{[definition of magnetic flux]}
 \end{equation*}
@@ -1265,7 +1265,8 @@ reads
 \begin{equation*}
   \operatorname{div}\vc{E} = 4\pi k\rho,
 \end{equation*}
-where $\rho$ is the density of charge, in units of coulombs per cubic meter.
+where $\rho$ (Greek letter ``rho,'' which makes the ``r'' sound)
+is the density of charge, in units of coulombs per cubic meter.
 
 <% marg(-7) %>
 <%   
