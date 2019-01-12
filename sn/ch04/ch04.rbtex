@@ -1,6 +1,8 @@
+
 <%
   require "../eruby_util.rb"
 %>
+
 <%
   chapter(
     '04',
@@ -12,7 +14,9 @@
 %>
 
 <% begin_sec("Angular momentum in two dimensions",0,'ang-mom-2d') %>
-  <% begin_sec("Angular momentum",nil,'ang-mom') %>
+
+<% begin_sec("Angular momentum",nil,'ang-mom') %>
+
 ``Sure, and maybe the sun won't come up tomorrow.'' Of
 course, the sun only appears to go up and down because the
 earth spins, so the cliche should really refer to the
@@ -161,8 +165,10 @@ instead.
     }
   )
 %>
-        \spacebetweenfigs
-        %
+
+\spacebetweenfigs
+%
+
 <%
   fig(
     'putty-radial',
@@ -174,6 +180,7 @@ instead.
   )
 %>
 <% end_marg %>
+
 Imagine a 1 kg blob of putty, thrown at the door at a speed
 of 1 m/s, which hits the door at a distance of 1 m from the
 hinge. We define this blob to have 1 unit of angular
@@ -242,6 +249,7 @@ rotation.
   )
 %>
 <% end_marg %>
+
 We find that this equation agrees with the definition of the
 original putty blob as having one unit of angular momentum,
 and we can now see that the units of angular momentum are
@@ -283,6 +291,7 @@ conservation of mass, energy, and momentum.
   )
 %>
 <% end_marg %>
+
 \begin{eg}{A figure skater pulls her arms in.}
 When a figure skater is twirling, there is very little
 friction between her and the ice, so she is essentially a
@@ -357,7 +366,9 @@ itself would be prohibitively complex.
   )
 %>
 <% end_marg %>
-    <% begin_sec("Restriction to rotation in a plane",nil,'ang-mom-in-plane') %>
+
+<% begin_sec("Restriction to rotation in a plane",nil,'ang-mom-in-plane') %>
+
 Is angular momentum a vector, or a scalar? It does have a
 direction in space, but it's a direction of rotation, not a
 straight-line direction like the directions of vectors such
@@ -389,9 +400,12 @@ something external must act on a closed system to keep its
 angular momentum from ``running down.''
 \end{dq}
 
-    <% end_sec('ang-mom-in-plane') %>
-  <% end_sec('ang-mom') %>
-  <% begin_sec("Application to planetary motion",nil,'ang-mom-planetary') %>
+<% end_sec('ang-mom-in-plane') %>
+
+<% end_sec('ang-mom') %>
+
+<% begin_sec("Application to planetary motion",nil,'ang-mom-planetary') %>
+
 We now discuss the application of conservation of angular
 momentum to planetary motion, both because of its intrinsic
 importance and because it is a good way to develop a visual
@@ -417,6 +431,7 @@ angular momentum stays constant.
   )
 %>
 <% end_marg %>
+
 There is no simple geometrical rule for the area of a pie
 wedge cut out of an ellipse, but if we consider a very short
 time interval, as shown in figure \figref{area-swept-out}, the shaded shape
@@ -495,6 +510,7 @@ object at a constant rate?
   )
 %>
 <% end_marg %>
+
 \begin{dq}\label{dq:conical-pendulum}
 The figure is a strobe photo of a pendulum bob,
 taken from underneath the pendulum looking straight up. The
@@ -506,8 +522,10 @@ us. Does the bob's angular momentum appear to remain
 constant if we consider the center to be the axis of rotation?
 \end{dq}
 
-  <% end_sec('ang-mom-planetary') %>
-  <% begin_sec("Two theorems about angular momentum",nil,'ang-mom-theorems') %>
+<% end_sec('ang-mom-planetary') %>
+
+<% begin_sec("Two theorems about angular momentum",nil,'ang-mom-theorems') %>
+
 With plain old momentum, $\vc{p}$, we had the freedom to work in
 any inertial frame of reference we liked. The same object
 could have different values of momentum in two different
@@ -548,7 +566,9 @@ closed, but the total external force is zero.\index{choice of axis theorem}
     %q{Two asteroids collide.}
   )
 %>
+
 \spacebetweenfigs
+
 <%
   fig(
     'diver',
@@ -560,7 +580,9 @@ closed, but the total external force is zero.\index{choice of axis theorem}
     }
   )
 %>
+
 \spacebetweenfigs
+
 <%
   fig(
     'spin-theorem',
@@ -572,6 +594,7 @@ closed, but the total external force is zero.\index{choice of axis theorem}
   )
 %>
 <% end_marg %>
+
 \begin{eg}{Colliding asteroids described with different axes}
 Observers on planets A and B both see the two asteroids
 colliding. The asteroids are of equal mass and their impact
@@ -671,8 +694,10 @@ $v_{\perp}$ and $r$ factors in the contribution of each of its
 parts to the total angular momentum, resulting in an overall
 factor of four increase.
 
-  <% end_sec('ang-mom-theorems') %>
-  <% begin_sec("Torque",nil,'torque') %>
+<% end_sec('ang-mom-theorems') %>
+
+<% begin_sec("Torque",nil,'torque') %>
+
 Force is the rate of transfer of
 momentum. The corresponding quantity in the case of angular momentum is
 called torque (rhymes with ``fork''). Where force tells us
@@ -695,7 +720,8 @@ eagerly compare engines' torques, and there is a tool called
 a torque wrench which allows one to apply a desired amount
 of torque to a screw and avoid overtightening it.
 
-    <% begin_sec("Torque distinguished from force",nil,'torque-vs-force') %>
+<% begin_sec("Torque distinguished from force",nil,'torque-vs-force') %>
+
 Of course a force is necessary in order to create a torque ---
 you can't twist a screw without pushing on the wrench --- but
 force and torque are two different things. One distinction
@@ -721,7 +747,9 @@ these two cases.
     }
   )
 %>
+
 \spacebetweenfigs
+
 <%
   fig(
     'torque-derivation',
@@ -735,6 +763,7 @@ these two cases.
   )
 %>
 <% end_marg %>
+
 It's possible to have a zero total torque with a nonzero
 total force. An airplane with four jet engines would be
 designed so that their forces are balanced on the left and
@@ -749,8 +778,10 @@ torque on it to bring it up to speed, but there is zero
 total force on it. If there was not zero total force on it,
 its center of mass would accelerate!
 
-    <% end_sec('torque-vs-force') %>
-    <% begin_sec("Relationship between force and torque",nil,'force-and-torque') %>
+<% end_sec('torque-vs-force') %>
+
+<% begin_sec("Relationship between force and torque",nil,'force-and-torque') %>
+
 How do we calculate the amount of torque produced by a given
 force? Since it depends on leverage, we should expect it to
 depend on the distance between the axis and the point of
@@ -850,6 +881,7 @@ technically correct.
     }
   )
 %>
+
 <% self_check('torque',<<-'SELF_CHECK'
 Compare the magnitudes and signs of the four torques shown
 in figure \figref{wrenchselfcheck}.
@@ -891,6 +923,7 @@ equations for torque. Starting from any one of them you
 could easily derive the other two using trigonometry.
 Familiarizing yourself with them can however clue you in to
 easier avenues of attack on certain problems.
+
 <% marg(70) %>
 <%
   fig(
@@ -900,8 +933,10 @@ easier avenues of attack on certain problems.
 %>
 <% end_marg %>
 
-    <% end_sec('force-and-torque') %>
-    <% begin_sec("The torque due to gravity",nil,'gravitational-torque') %>
+<% end_sec('force-and-torque') %>
+
+<% begin_sec("The torque due to gravity",nil,'gravitational-torque') %>
+
 Up until now we've been thinking in terms of a force that
 acts at a single point on an object, such as the force of
 your hand on the wrench. This is of course an approximation,
@@ -919,6 +954,7 @@ calculation. It turns out that for purposes of computing the
 total gravitational torque on an object, you can get the
 right answer by just pretending that the whole gravitational
 force acts at the object's center of mass.
+
 <% marg(80) %>
 <%
   fig('arm-outstretched','Example \ref{eg:arm-outstretched}.')
@@ -982,6 +1018,7 @@ torques cancel out.''
 (c) Incorrect answer to part (2): ``Increasing, because the
 comet is speeding up.''
 \end{dq}
+
 <% marg(120) %>
 <%
   fig(
@@ -989,7 +1026,9 @@ comet is speeding up.''
     %q{Discussion question \ref{dq:claw-hammer}.}
   )
 %>
+
 \spacebetweenfigs
+
 <%
   fig(
     'dq-twoarm-ride',
@@ -1032,9 +1071,12 @@ The photo shows an amusement park ride whose two cars
 rotate in opposite directions. Why is this a good design?
 \end{dq}
 
-    <% end_sec('gravitational-torque') %>
-  <% end_sec('torque') %>
-  <% begin_sec("Applications to statics",nil,'statics') %>
+<% end_sec('gravitational-torque') %>
+
+<% end_sec('torque') %>
+
+<% begin_sec("Applications to statics",nil,'statics') %>
+
 In chapter \ref{ch:2} I defined
 equilibrium as a situation where the interaction energy is minimized. This
 is the same as a condition of zero total force, or constant momentum.
@@ -1054,6 +1096,7 @@ momentum, we say that it is in equilibrium. Again, this is a
 scientific redefinition of the common English word, since in
 ordinary speech nobody would describe a car spinning out on
 an icy road as being in equilibrium.\index{equilibrium!redefined}
+
 <% marg(80) %>
 <%
   fig(
@@ -1108,6 +1151,7 @@ an answer.
   )
 %>
 <% end_marg %>
+
 \begin{eg}{A flagpole}\label{eg:flagpole}
 \egquestion
 A 10-kg flagpole is being held up by a lightweight
@@ -1181,14 +1225,18 @@ which allows us to find
     %q{Example \ref{eg:modern-art}.}
   )
 %>
+
 \spacebetweenfigs
+
 <%
   fig(
     'stable-and-unstable',
     %q{Stable and unstable equilibria.}
   )
 %>
+
 \spacebetweenfigs
+
 <%
   fig(
     'swan-lake',
@@ -1269,8 +1317,9 @@ Nancy is going to have to decide which half she wants to go with.
 %>
 <% end_marg %>
 
-  <% end_sec('statics') %>
-  <% begin_sec("Proof of Kepler's elliptical orbit law",nil,'elliptical-orbit-proof') %>
+<% end_sec('statics') %>
+
+<% begin_sec("Proof of Kepler's elliptical orbit law",nil,'elliptical-orbit-proof') %>
 
 Kepler determined purely empirically that the planets'
 orbits were ellipses, without understanding the underlying
@@ -1375,7 +1424,8 @@ of the form
 where $p$ and $q$ are positive constants that depend on the size and
 shape of the ellipse.
 
-    <% begin_sec("Proof of part (2)",nil,'elliptical-orbit-proof-lemma') %>
+<% begin_sec("Proof of part (2)",nil,'elliptical-orbit-proof-lemma') %>
+
 The component of the planet's velocity vector that is
 perpendicular to the \vc{r} vector is $v_\perp=v \sin\varphi$, so conservation
 of angular momentum tells us that $L = mrv \sin \varphi$ is a
@@ -1405,8 +1455,11 @@ energy is negative.
   )
 %>
 <% end_marg %>
-    <% end_sec('elliptical-orbit-proof-lemma') %>
-    <% begin_sec("Proof of part (3)",nil,'elliptical-orbit-proof-lemma2') %>
+
+<% end_sec('elliptical-orbit-proof-lemma') %>
+
+<% begin_sec("Proof of part (3)",nil,'elliptical-orbit-proof-lemma2') %>
+
 We define the quantities $\alpha$, $d$, and $s$ as shown in figure \figref{proof-c}.
 The law of cosines gives
 \begin{equation*}
@@ -1428,9 +1481,13 @@ which is equivalent to the desired form.
 
 \vfill
  % ------------------------rigid-body rotation----------------------------- 
-    <% end_sec('elliptical-orbit-proof-lemma2') %>
-  <% end_sec('elliptical-orbit-proof') %>
+
+<% end_sec('elliptical-orbit-proof-lemma2') %>
+
+<% end_sec('elliptical-orbit-proof') %>
+
 <% end_sec('ang-mom-2d') %>
+
 __incl(text/rigid_body_rotation)
 __incl(text/am_three_d)
  %  
@@ -1447,14 +1504,18 @@ __incl(text/am_three_d)
     %q{Problem \ref{hw:pliers}.}
   )
 %>
+
 \spacebetweenfigs
+
 <%
   fig(
     'hw-tiptoe',
     %q{Problem \ref{hw:foot}.}
   )
 %>
+
 \spacebetweenfigs
+
 <%
   fig(
     'hwtipbox',
@@ -1462,13 +1523,17 @@ __incl(text/am_three_d)
   )
 %>
 <% end_marg %>
+
 <% begin_hw('pliers') %>
+
 The figure shows scale drawing of a pair of pliers
 being used to crack a nut, with an appropriately reduced
 centimeter grid. Warning: do not attempt this at home; it is
 bad manners. If the force required to crack the nut is 300
 N, estimate the force required of the person's hand.
+
 <% hw_solution %>
+
 <% end_hw() %>
 
 <% begin_hw('rv',0) %>__incl(hw/rv)<% end_hw() %>
@@ -1494,7 +1559,9 @@ N, estimate the force required of the person's hand.
     %q{Problems \ref{hw:laddera} and \ref{hw:ladderb}.}
   )
 %>
+
 \spacebetweenfigs
+
 <%
   fig(
     'hw-wheel-over-step',
@@ -1502,6 +1569,7 @@ N, estimate the force required of the person's hand.
   )
 %>
 <% end_marg %>
+
 <% begin_hw('laddera') %>__incl(hw/laddera)<% end_hw() %>
 
 <% begin_hw('ladderb',2) %>__incl(hw/ladderb)<% end_hw() %>
@@ -1515,6 +1583,7 @@ N, estimate the force required of the person's hand.
 \pagebreak[4]
 
 <% begin_hw('barandrope') %>__incl(hw/barandrope)<% end_hw() %>
+
 <% marg(0) %>
 <%
   fig(
@@ -1522,21 +1591,27 @@ N, estimate the force required of the person's hand.
     %q{Problem \ref{hw:barandrope}.}
   )
 %>
+
 \spacebetweenfigs
+
 <%
   fig(
     'hangingbars',
     %q{Problem \ref{hw:hangingbars}.}
   )
 %>
+
 \spacebetweenfigs
+
 <%
   fig(
     'hw-hinge-on-cylinder',
     %q{Problem \ref{hw:hingeoncylinder}.}
   )
 %>
+
 \spacebetweenfigs
+
 <%
   fig(
     'hwship',
@@ -1576,6 +1651,7 @@ N, estimate the force required of the person's hand.
 \pagebreak
 
 <% begin_hw('whitedwarf') %>__incl(hw/whitedwarf)<% end_hw() %>
+
 <% marg(100) %>
 <%
   fig(
@@ -1583,7 +1659,9 @@ N, estimate the force required of the person's hand.
     %q{Problem \ref{hw:whitedwarf}.}
   )
 %>
+
 \pagebreak
+
 <%
   fig(
     'hwmolecules',
@@ -1595,16 +1673,19 @@ N, estimate the force required of the person's hand.
 <% begin_hw('molecules') %>__incl(hw/molecules)<% end_hw() %>
 
 <% begin_hw('yoyo',2) %>
+
 A yo-yo of total mass $m$ consists of two solid
 cylinders of radius $R$, connected by a small spindle of
 negligible mass and radius $r$. The top of the string is held
 motionless while the string unrolls from the spindle. Show
 that the acceleration of the yo-yo is $g/(1+R^2/2r^2)$. 
+
 <% end_hw() %>
 
 <% begin_hw('rolling-ratio') %>__incl(hw/rolling-ratio)<% end_hw() %>
 
 <% begin_hw('bowling') %>
+
 Suppose a bowling ball is initially thrown so that it
 has no angular momentum at all, i.e., it is initially just
 sliding down the lane. Eventually kinetic friction will
@@ -1612,6 +1693,7 @@ bring its angular velocity up to the point where it is
 rolling without slipping. Show that the final velocity of
 the ball equals 5/7 of its initial velocity. You'll
 need the result of problem \ref{hw:rolling-ratio}.
+
 <% end_hw() %>
 
 <% begin_hw('amcrossprodplugin',0) %>__incl(hw/amcrossprodplugin)<% end_hw() %>
@@ -1639,6 +1721,7 @@ need the result of problem \ref{hw:rolling-ratio}.
 \vspace{10mm}
 
 <% begin_hw('conemoi') %>__incl(hw/conemoi)<% end_hw() %>
+
 <% marg(30) %>
 <%
   fig(
@@ -1659,18 +1742,24 @@ need the result of problem \ref{hw:rolling-ratio}.
 <% begin_hw('ellipsoidmoi',2) %>__incl(hw/ellipsoidmoi)<% end_hw() %>
 
 <% begin_hw('toppling-rod',2) %>
+
 In example \ref{eg:toppling-rod} on page \pageref{eg:toppling-rod}, prove that if the rod is sufficiently thin, it can
 be toppled without scraping on the floor.
-<% hw_solution %> 
+
+<% hw_solution %>
+
 <% end_hw() %>
 
 <% begin_hw('parallel-axis-theorem',2) %>
+
 Suppose an object has mass $m$, and moment of inertia $I_\zu{o}$ for rotation about some axis A
 passing through its center of mass. Prove that for an axis B, parallel to A and lying at a distance $h$ from
 it, the object's moment of inertia is given by $I_\zu{o}+mh^2$. This is known as the parallel axis theorem.\index{parallel axis theorem}
+
 <% end_hw() %>
 
 <% begin_hw('triangle-moment-of-inertia',2) %>
+
 Let two sides of a triangle be given by the vectors $\vc{A}$ and $\vc{B}$, with their tails
 at the origin, and
 let mass $m$ be uniformly distributed
@@ -1683,9 +1772,11 @@ is $\frac{m}{6}(A^2+B^2)$.\hwendpart
 (c) Show that the moment of inertia for rotation about an axis perpendicular to
 the plane of the original triangle, and passing through its center of mass, is $\frac{m}{18}(A^2+B^2-\vc{A}\cdot\vc{B})$.
 Hint: Combine the results of parts a and b with the result of problem \ref{hw:parallel-axis-theorem}.
+
 <% end_hw() %>
 
 <% begin_hw('centrifuge') %>
+
 When we talk about rigid-body rotation, the concept of a perfectly rigid body can only be
 an idealization. In reality, any object will compress, expand, or deform to some extent when
 subjected to the strain of rotation. However, if we let it settle down for a while, perhaps
@@ -1698,13 +1789,16 @@ and because the part at the floor has the greatest amount of material pressing `
 outward) on it. The linear density $\der m/\der r$, in units of kg/m, should therefore increase
 as a function of $r$. Suppose that we have $\der m/\der r=\mu e^{r/\ell}$, where $\mu$ is a constant.
 Find the moment of inertia.\answercheck
+
 <% end_hw() %>
 
 <% begin_hw('rolling-coin',3) %>
+
 When we release an object such as a bicycle wheel or a coin on an inclined plane, we can observe
 a variety of different behaviors. Characterize these behaviors empirically and try to list the physical
 parameters that determine which behavior occurs. Try to form a conjecture about the behavior
 using simple closed-form expressions. Test your conjecture experimentally.
+
 <% end_hw() %>
 
 \pagebreak
@@ -1716,7 +1810,9 @@ using simple closed-form expressions. Test your conjecture experimentally.
     %q{Problem \ref{hw:moment-of-inertia-lab}.}
   )
 %>
+
 \spacebetweenfigs
+
 <%
   fig(
     'hw-cube-statics',
@@ -1765,4 +1861,5 @@ the other members of the group pull on the scale and take readings.
 In each case, calculate the total torque on the ruler, and find out
 whether it equals zero to roughly within the accuracy of the experiment.
 \end{exsection}
+
 <% end_chapter() %>

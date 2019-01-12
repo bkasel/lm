@@ -1,6 +1,8 @@
+
 <%
   require "../eruby_util.rb"
 %>
+
 <%
   chapter(
     '12',
@@ -11,27 +13,38 @@
   )
 %>
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 <% begin_sec("The ray model of light",0,'ray-model') %>
+
   __incl(text/1_ray_model)
+
 <% end_sec %>
 
 <% begin_sec("Images by reflection",4,'images-1') %>
+
 __incl(text/2_images_by_reflection)
+
 <% end_sec %>
 
 <% begin_sec("Images, quantitatively",4,'images-2') %>
+
 __incl(text/3_images_quantitatively)
+
 <% end_sec %>
 
 <% begin_sec("Refraction",4,'refraction') %>
+
 __incl(text/4_refraction)
+
 <% end_sec %>
 
 <% begin_sec("Wave optics",4,'wave-optics') %>
+
 __incl(text/5_wave_optics)
+
 <% end_sec %>
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 <% begin_hw_sec %>
@@ -39,6 +52,7 @@ __incl(text/5_wave_optics)
 <% begin_hw('diffuse') %>__incl(hw/diffuse)<% end_hw() %>
 
 <% begin_hw('gps') %>
+
 A Global Positioning System (GPS) receiver is a device
 that lets you figure out where you are by receiving timed radio
 signals from satellites. It works by measuring the
@@ -48,6 +62,7 @@ ranges to several different satellites in this way, it can
 pin down your location in three dimensions to within a few
 meters. How accurate does the measurement of the time delay
 have to be to determine your position to this accuracy?
+
 <% end_hw() %>
 
 <% begin_hw('lightwithatomwavelength') %>__incl(hw/lightwithatomwavelength)<% end_hw() %>
@@ -87,6 +102,7 @@ have to be to determine your position to this accuracy?
 \pagebreak
 
 <% begin_hw('convexraytracing') %>
+
 In section \ref{sec:images-1} we've only done examples of mirrors with
 hollowed-out shapes (called concave mirrors). Now draw a ray
 diagram for a curved mirror that has a bulging outward shape
@@ -96,6 +112,7 @@ from the mirror? From this comparison, determine whether the
 magnification is greater than or less than one. (b) Is the
 image real, or virtual? Could this mirror ever make the
 other type of image?
+
 <% end_hw() %>
 
 <% begin_hw('listmirrorimages') %>__incl(hw/listmirrorimages)<% end_hw() %>
@@ -112,6 +129,7 @@ other type of image?
   )
 %>
 <% end_marg %>
+
 <% begin_hw('rays-cross-but-no-image') %>__incl(hw/rays-cross-but-no-image)<% end_hw() %>
 
 <% begin_hw('moose') %>__incl(hw/moose)<% end_hw() %>
@@ -130,6 +148,7 @@ other type of image?
   )
 %>
 <% end_marg %>
+
 <% begin_hw('rank-focal-lengths') %>__incl(hw/rank-focal-lengths)<% end_hw() %>
 
 <% begin_hw('image-combinations') %>__incl(hw/image-combinations)<% end_hw() %>
@@ -149,8 +168,8 @@ other type of image?
     %q{Problem \ref{hw:soldier}.}
   )
 %>
-
 <% end_marg %>
+
 <% begin_hw('soldier',2) %>__incl(hw/soldier)<% end_hw() %>
 
 <% begin_hw('range-of-magnifications') %>__incl(hw/range-of-magnifications)<% end_hw() %>
@@ -174,6 +193,7 @@ other type of image?
 <% begin_hw('imagelocation1') %>__incl(hw/imagelocation1)<% end_hw() %>
 
 <% begin_hw('funkylenses') %>__incl(hw/funkylenses)<% end_hw() %>
+
 <% marg(80) %>
 <%
   fig(
@@ -184,6 +204,7 @@ other type of image?
 <% end_marg %>
 
 <% begin_hw('eyefocallength',2) %>__incl(hw/eyefocallength)<% end_hw() %>
+
 <% marg(35) %>
 <%
   fig(
@@ -210,6 +231,7 @@ other type of image?
   )
 %>
 <% end_marg %>
+
 <% begin_hw('field-of-view') %>__incl(hw/field-of-view)<% end_hw() %>
 
 \pagebreak
@@ -231,6 +253,7 @@ other type of image?
     }
   )
 %>
+
 <% begin_hw('binoculars',2) %>__incl(hw/binoculars)<% end_hw() %>
 
 \vfill
@@ -239,10 +262,10 @@ other type of image?
 
 \pagebreak
 
-
 %-------------- wave optics -----------------------------
 
 <% begin_hw('label-fringes') %>__incl(hw/label-fringes)<% end_hw() %>
+
 <% marg(33) %>
 <%
   fig(
@@ -290,6 +313,7 @@ other type of image?
     }
   )
 %>
+
 <% begin_hw('star') %>__incl(hw/star)<% end_hw() %>
 
 <% begin_hw('compare-double-slits') %>__incl(hw/compare-double-slits)<% end_hw() %>
@@ -312,6 +336,7 @@ other type of image?
   )
 %>
 <% end_marg %>
+
 <% begin_hw('illuminable',2) %>__incl(hw/illuminable)<% end_hw() %>
 
 <% marg(0) %>
@@ -326,6 +351,7 @@ other type of image?
 <% begin_hw('peaucellier',2) %>__incl(hw/peaucellier)<% end_hw() %>
 
 <% begin_hw('constant-thickness') %>__incl(hw/constant-thickness)<% end_hw() %>
+
 <% marg(50) %>
 <%
   fig(
@@ -345,8 +371,6 @@ other type of image?
 
 <% begin_hw('best-precision-n') %>__incl(hw/best-precision-n)<% end_hw() %>
 
-
-
 <% end_hw_sec %>
 
  % ==================================================================== 
@@ -363,11 +387,11 @@ other type of image?
 \noindent Equipment:
 
 \begin{indentedblock}
-	concave mirrors with deep curvature
+        concave mirrors with deep curvature
 
-	concave mirrors with gentle curvature
+concave mirrors with gentle curvature
 
-	convex mirrors
+        convex mirrors
 \end{indentedblock}
 
 1. Obtain a curved mirror from your instructor. If it is
@@ -467,16 +491,16 @@ This exercise was created by Dan MacIsaac.
 \noindent Equipment:
 
 \begin{indentedblock}
-	eyeglasses
+        eyeglasses
 
-	diverging lenses for students who don't wear glasses, or
+        diverging lenses for students who don't wear glasses, or
 who use  glasses with converging lenses
 
-	rulers and metersticks
+rulers and metersticks
 
-	scratch paper
+scratch paper
 
-	marking pens
+        marking pens
 \end{indentedblock}
 
 Most people who wear glasses have glasses whose lenses are
@@ -519,20 +543,20 @@ with a wavelength of $\lambda=1$ cm.
 On a piece of paper, make a life-size drawing of the two
 sources in the default setup, and locate the following points:
 
-	A. The point that is 10 wavelengths from source \#1 and 10
+        A. The point that is 10 wavelengths from source \#1 and 10
 wavelengths from source \#2.
 
-        B. The point that is 10.5 wavelengths from \#1 and 10.5 from \#2.
+B. The point that is 10.5 wavelengths from \#1 and 10.5 from \#2.
 
-	C. The point that is 11 wavelengths from \#1 and 11 from \#2.
+C. The point that is 11 wavelengths from \#1 and 11 from \#2.
 
-	D. The point that is 10 wavelengths from \#1 and 10.5 from \#2.
+D. The point that is 10 wavelengths from \#1 and 10.5 from \#2.
 
-	E. The point that is 11 wavelengths from \#1 and 11.5 from \#2.
+E. The point that is 11 wavelengths from \#1 and 11.5 from \#2.
 
-	F. The point that is 10 wavelengths from \#1 and 11 from \#2.
+F. The point that is 10 wavelengths from \#1 and 11 from \#2.
 
-	G. The point that is 11 wavelengths from \#1 and 12 from \#2.
+G. The point that is 11 wavelengths from \#1 and 12 from \#2.
 
 You can do this either using a compass or by putting the
 next page under your paper and tracing. It is not necessary to trace
@@ -574,9 +598,9 @@ diffraction of light?
 \noindent Equipment:
 
 \begin{indentedblock}
-	rulers
+        rulers
 
-	computer with web browser
+        computer with web browser
 \end{indentedblock}
 
 The following page is a diagram of a single slit and a
@@ -698,4 +722,5 @@ you to control the filament's temperature. Sketch graphs of intensity as a funct
  inability of the wave model of light to explain the mathematical shapes of these curves was historically one of the reasons
  for creating a new model, in which light is both a particle and a wave.
 \end{exsection}
+
 <% end_chapter() %>

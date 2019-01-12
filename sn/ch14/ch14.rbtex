@@ -1,6 +1,8 @@
+
 <%
   require "../eruby_util.rb"
 %>
+
 <%
   chapter(
     '14',
@@ -12,6 +14,7 @@
 %>
 
 <% begin_sec("The Stern-Gerlach experiment",nil,'stern-gerlach') %>
+
 In 1921, Otto Stern proposed an experiment about angular momentum, shown in figure \figref{stern-gerlach}
 on p.~\pageref{fig:stern-gerlach}, that his
 boss at the University of Frankfurt
@@ -24,7 +27,6 @@ the Nazi coup was still in the future, so that Stern, a Jew, had not yet been fo
 Because of the difficult economic situation, Stern and his colleague Walther Gerlach scraped
 up some of the funds to carry out the experiment from US banker Henry Goldman, cofounder of the
 investment house Goldman-Sachs.
-
 
 \pagebreak
 
@@ -151,6 +153,7 @@ Hint: See the example in fig.~\figref{completeness-ylm}, p.~\pageref{completenes
 <% begin_sec("Rotation and vibration",4,'qm-rot-and-vib') %>
 
 <% begin_sec("Types of excitations",nil,'types-of-excitations') %>
+
 Figure \figref{n2-spectrum} shows the visible-light spectrum of the molecule $\zu{N}_2$.
 Because this particular chemical bond is unusually strong, the molecule does not break apart, even at the high
 temperature of a gas discharge tube, so we see the spectrum of the molecule, not of monoatomic nitrogen.
@@ -199,6 +202,7 @@ energy state could occur in $\zu{N}_2$:
 <% end_sec('types-of-excitations') %>
 
 <% begin_sec("Vibration",nil,'qm-vibration') %>
+
 Particle excitations would produce the type of very complex, disorganized spectrum that we normally see in atoms
 that have many electrons, so that isn't what we're seeing in figure \figref{n2-spectrum}. What about vibrations?
 For a classical harmonic oscillator, we know that the frequency of vibration is independent of the amplitude.
@@ -232,6 +236,7 @@ red lines all have slightly different wavelengths.
 <% end_sec('qm-vibration') %>
 
 <% begin_sec("Rotation",nil,'qm-rotation') %>
+
 What about rotation? An interesting thing happens here due to the structure of quantum mechanics. Quantum
 mechanics can describe motion only as a wave, with the value of the wave oscillating from one place to another.
 But this implies that according to quantum mechanics, no object can rotate about one
@@ -247,6 +252,7 @@ because in such a rotation the nuclei would not move. The energies involved woul
 and the photons would lie approximately in the visible region of the spectrum. No such visible lines are actually observed.
 
 <% marg(-300) %>
+
 <%
   fig(
     'hf-rotation',
@@ -270,6 +276,7 @@ Note that only even multiples of $\hbar$ are observed in collective rotation in 
 This is because the nucleus's shape has an additional mirror symmetry, so that it is unaffected by
 a 180-degree rotation. This means that the wavefunction describing the collective rotation
 must oscillate twice as we pass through a full rotation.
+
 <% end_sec('qm-rotation') %>
 
 <% begin_sec("Corrections to semiclassical energies",nil,'qm-corrections') %>
@@ -380,6 +387,7 @@ using a cart on an air track that vibrates back and forth between two springs?
 <% end_sec() %>
 
 <% begin_sec("A tiny bit of linear algebra",nil,'linear-algebra',{'optional'=>true}) %>
+
 This optional section is a self-contained presentation of a very small amount of
 linear algebra. None of the later physics requires this material, but reading it
 may be helpful as review for the reader who has already had an entire linear algebra
@@ -470,6 +478,7 @@ one brick on top of another, but at this point it will be advantageous to pause 
 consider the broader blueprint.
 
 <% begin_sec("The time-dependent Schr\\\"odinger equation",nil,'time-dependent-s-eqn') %>
+
 For simplicity, our discussion of the Schr\"odinger equation in section
 \ref{subsec:schrodinger}, p.~\pageref{s-eqn-simplest-initial-statement}, was limited to standing waves, allowing us to avoid
 explicitly discussing how the wavefunction changed with passing time. Let's consider
@@ -500,6 +509,7 @@ since the phase is unobservable, and the normalization can be
 standardized so that the total probability is 1. See the sidebar for more detail.)
 
 <% marg() %>
+
 <% fig(
   'phase-and-norm-not-observable','',{'anonymous'=>true,'title'=>"Unobservability of phase and normalization",
   'text'=>
@@ -516,7 +526,9 @@ and example \ref{eg:phase-not-observable}, p.~\pageref{eg:phase-not-observable}.
     }
   })
 %>
+
 \spacebetweenfigs
+
 <% fig(
   'vec-app-v-space','',{'anonymous'=>true,'title'=>"Linear algebra application",
   'text'=>
@@ -528,7 +540,6 @@ and example \ref{eg:phase-not-observable}, p.~\pageref{eg:phase-not-observable}.
   })
 %>
 <% end_marg %>
-
 
 \begin{important}[Wavefunction fundamentalism]
 All knowable information about a system is encoded in its wavefunction (ignoring phase
@@ -655,6 +666,7 @@ an aircraft carrier.
 <% end_sec('time-dependent-s-eqn') %>
 
 <% begin_sec("Unitarity",nil,'s-eqn-unitarity') %>
+
 The Schr\"odinger equation is completely deterministic, so that if we know
 $\Psi$ initially, we can always predict it in the future. We can also ``predict'' backward in time,
 so that the system's history can always be recovered
@@ -663,6 +675,7 @@ it can be shown that probability is always conserved, in the sense that if the w
 normalized, it will also be normalized at all later times. 
 
 <% marg() %>
+
 <% fig(
   'vec-app-time-evol-linear','',{'anonymous'=>true,'title'=>"Linear algebra application",
   'text'=>
@@ -709,13 +722,14 @@ theory of gravity (Einstein's theory of general relativity) and a completely suc
 the microscopic world (quantum mechanics), the two theories are irreconcilable, and
 we can only make educated guesses, for example, about the behavior of a hypothetical microscopic black hole.
 
-
 <% end_sec('s-eqn-unitarity') %>
 
 <% end_sec('qm-structure-1') %>
 
 <% begin_sec("Methods for solving the Schr\\\"odinger equation",nil,'solving-s-eqn') %>
+
 <% begin_sec("Cut-and-paste solutions",nil,'s-eqn-cut-and-paste') %>
+
 Quite a few of the interesting phenomena of quantum mechanics can be demonstrated by
 finding solutions to the one-dimensional Schr\"odinger equation using the following ``cut and paste''
 method. We break up the $x$ axis into pieces, where the potential $U(x)$ does different things,
@@ -724,7 +738,9 @@ We then splice together the different parts of the solution, requiring that no d
 occur in the wavefunction $\Psi$ or its derivative $\partial\Psi/\partial x$. (If the momentum
 and kinetic energy are to be finite, and $U$ is finite, then we need all derivatives up to the second to be
 defined.)
+
 <% begin_sec("Partial reflection at a step",nil,'s-eqn-partial-refl') %>
+
 The simplest example of this kind is a potential step,
 \begin{equation*}
   U(x) = \begin{cases}
@@ -822,9 +838,11 @@ the total incident flux to equal the total outgoing flux, we need
   k = k R^2 +k' T^2,
 \end{equation*}
 which is straightforward to verify.
+
 <% end_sec('s-eqn-partial-refl') %>
 
 <% begin_sec("Infinite potential well",nil,'s-eqn-inf-well') %>
+
 In sec.~\ref{subsec:qm-bound-states}, p.~\pageref{subsec:qm-bound-states}, we analyzed the one-dimensional
 particle in a box. There was nothing wrong with those results, but it is of interest to see how
 they fit into the framework of the time-dependent Schr\"odinger equation. If we want the walls of the box
@@ -840,6 +858,7 @@ shown in figure \subfigref{infinite-potential-well}{1}. Because the potential is
 we expect that there is no tunneling, and zero probability of finding the particle outside.
 
 <% marg(-30) %>
+
 <%
   fig(
     'infinite-potential-well',
@@ -882,10 +901,13 @@ Schr\"odinger equation that we have already found, e.g.,
 figure \subfigref{infinite-potential-well}{3}. Imposing the additional constraint that
 $\Psi$ be continuous at $x=L$, we get the condition $kL=n\pi$, where $n$ is an integer, and this makes the
 energies quantized, as we found before.
+
 <% end_sec('s-eqn-inf-well') %>
 
 <% end_sec('s-eqn-cut-and-paste') %>
-<% begin_sec("Separability",nil,'s-eqn-separability') %>\index{separability!Schr\"odinger equation}
+
+<% begin_sec("Separability",nil,'s-eqn-separability') %>
+\index{separability!Schr\"odinger equation}
 When we first generalized the Schr\"odinger equations from one dimension to two and three dimensions,
 a trick for finding solutions was to take solutions to the one-dimensional equation and
 multiply them. For example, we knew that in the case of a constant potential (a free particle), the
@@ -934,14 +956,15 @@ entanglement, see sec.~\ref{sec:more-entanglement}, p.~\pageref{sec:more-entangl
   )
 %>
 <% end_marg %>
+
 <% end_sec('s-eqn-separability') %>
+
 <% end_sec('solving-s-eqn') %>
-
-
 
 <% begin_sec("The underlying structure of quantum mechanics, part 2",nil,'qm-structure-2') %>
 
 <% begin_sec("Observables",nil,'qm-observables') %>
+
 By the time my first-year mechanics students have been in class for a week, they know how to answer
 when I ask them the velocity of the tape dispenser at the front of the classroom: ``We don't know, it
 depends on your frame of reference.'' The \emph{absolute} velocity of an object is a meaningless concept,
@@ -1057,6 +1080,7 @@ wavefunctions in quantum mechanics, which is that a state with positive
 energy twirls clockwise in the complex plane. (See also example \ref{eg:non-hermitian-energy}, p.~\pageref{eg:non-hermitian-energy}.)
 
 <% marg() %>
+
 <% fig(
   'vec-app-lin-observables','',{'anonymous'=>true,'title'=>"Linear algebra application",
   'text'=>
@@ -1067,7 +1091,6 @@ energy twirls clockwise in the complex plane. (See also example \ref{eg:non-herm
   })
 %>
 <% end_marg %>
-
 
 \begin{important}[Observables]
 In quantum mechanics, any observable is represented by a linear operator that takes
@@ -1275,6 +1298,7 @@ on p.~\pageref{proof-lx-and-lz-incompatible}.
 <% end_sec('qm-observables') %>
 
 <% begin_sec("The inner product",nil,'qm-inner-product') %>
+
 We've defined the normalization of a wavefunction as the requirement $\int_{-\infty}^{+\infty}\Psi^*\Psi\der x=1$,
 which means that the total probability that the particle is \emph{somewhere} equals 1.
 (Another way of writing $\Psi^*\Psi$ would be $|\Psi|^2$.) This assumes that the wavefunction is written as
@@ -1295,6 +1319,7 @@ conjugation of the thing inside it. The operation $\langle\ldots|\ldots\rangle$ 
 \emph{inner product}.\index{inner product!in quantum mechanics}
 
 <% marg() %>
+
 <% fig(
   'vec-app-bra-ket','',{'anonymous'=>true,'title'=>"Linear algebra application",
   'text'=>
@@ -1312,7 +1337,6 @@ conjugation of the thing inside it. The operation $\langle\ldots|\ldots\rangle$ 
   })
 %>
 <% end_marg %>
-
 
 Because negative probabilities don't make sense, we require that the inner product of a wavefunction with itself
 always be positive,
@@ -1470,7 +1494,6 @@ if one electron's wavefunction is $u$ and another's is $v$, then $\langle u|v\ra
 In other words, we are ruling out not just the case where $u$ and $v$ are the same wavefunction,
 $\langle u|v\rangle=1$, but also the intermediate case where $\langle u|v\rangle$ is greater than 0 but less than 1.
 
-
 A unitary transformation\index{unitary operator}\label{unitary-operator}
 is one that preserves inner products. That is,
 $\langle\mathcal{O}u|\mathcal{O}v\rangle=\langle u|v\rangle$. This is similar to the way in which
@@ -1527,6 +1550,7 @@ functions like $e^x$.)
 \end{eg}
 
 <% begin_sec("Averages",nil,'qm-inner-product-averages') %>
+
 The average family lives down the street from me. Their family income in 2014 was \$72,641,
 and they have 2.5 kids. This joke depends on the fact that you can't superpose families to
 make a single family --- but we \emph{can} do this for wavefunctions. Suppose that the
@@ -1588,6 +1612,7 @@ but later these inner products change.
 <% end_sec('qm-inner-product') %>
 
 <% begin_sec("Completeness",nil,'qm-completeness') %>
+
 We have used math to back up our claim that distinguishable states are orthogonal.
 Going in the opposite direction, suppose that $\langle u|v\rangle=0$. How can we then conclude that
 there exists some observable $\mathcal{O}$ that can distinguish them? There is no straightforward
@@ -1667,6 +1692,7 @@ expressed as $|\ell_z=-1\rangle/\sqrt{2}+|\ell_z=1\rangle/\sqrt{2}$.
   )
 %>
 <% end_marg %>
+
 Translating this scenario into a hypothetical real-world experiment, suppose that, as in
 figure \figref{stern-gerlach-twice}, we pass a beam of randomly oriented oxygen molecules
 (referred to as an unpolarized beam)
@@ -1707,10 +1733,11 @@ example, the motion of the electron through space is not even of
 interest, and a complete set of observables simply consists of $L$ and
 $L_z$ (or $s$ and $s_z$, in notation that emphasizes that we're
 talking about intrinsic spin).
+
 <% end_sec('qm-completeness') %>
 
-
-<% begin_sec("The Schr\\\"odinger equation in general",nil,'s-eqn-general') %>\index{Schr\"odinger equation!time-dependent}
+<% begin_sec("The Schr\\\"odinger equation in general",nil,'s-eqn-general') %>
+\index{Schr\"odinger equation!time-dependent}
 This raises the question of what we mean by ``the Schr\"odinger equation'' in cases where nothing is being expressed as a function
 of $x$. The basic idea of the Schr\"odinger equation is that a particle's energy is related to its frequency by $E=hf$, or $E=\hbar\omega$.
 In the form of the time-dependent Schr\"odinger equation that we have discussed on p.~\pageref{s-eqn-time-dep},
@@ -1804,17 +1831,16 @@ exists a set of compatible observables, called a complete set, such that
 any state of the system can be expressed as a sum of wavefunctions having definite values of these 
 observables.
 
-
 \end{enumerate}
-
-
 
 <% end_sec('qm-summary') %>
 
 <% end_sec('qm-structure-2') %>
 
 <% begin_sec("Applications to the two-state system",nil,'qm-2-state') %>
+
 <% begin_sec("A proton in a magnetic field",nil,'qm-proton-in-b') %>
+
 As an application of the ideas discussed in section \ref{sec:qm-structure-2}, let us consider the example
 of a proton at rest in a uniform magnetic field. We will find that this very simple example
 has surprising properties, and also that it throws light on much more general ideas than
@@ -1878,6 +1904,7 @@ $\alpha|\uparrow\rangle+\beta|\downarrow\rangle$, and we then have
 $\hat{H}=\alpha\emat |\uparrow\rangle-\beta\emat|\downarrow\rangle$.
 
 <% marg() %>
+
 <% fig(
   'nmr-applications','',{'anonymous'=>true,'title'=>"Application to MRI scans",
   'text'=>
@@ -1904,7 +1931,6 @@ $\hat{H}=\alpha\emat |\uparrow\rangle-\beta\emat|\downarrow\rangle$.
   })
 %>
 <% end_marg %>
-
 
 Now suppose that the magnetic field is not parallel to the $z$ axis. One way to handle
 this situation would be simply to redefine the coordinate system so that the $z$ axis
@@ -1957,6 +1983,7 @@ with two states. To see the full power and generality of this approach, we will 
 molecule, $\zu{NH}_3$, shown in figure \figref{ammonia}.
 
 <% marg() %>
+
 <%
   fig(
     'ammonia',
@@ -2075,14 +2102,15 @@ the set consisting of a single observable, the energy. The
 particular observable. If the ammonia molecule had just broken off from some larger molecule,
 then it would be oriented in a specific direction, and we would probably find it more
 convenient to describe it in the \{1,2\} basis.
-<% end_sec('qm-ammonia') %>
 
+<% end_sec('qm-ammonia') %>
 
 <% end_sec('qm-2-state') %>
 
-
 <% begin_sec("Energy-time uncertainty",nil,'et-uncertainty') %>
+
 <% begin_sec("Classical uncertainty relations",nil,'classical-uncertainty') %>
+
 Consider the following classical system of analogies.
 
 \begin{tabular}{llll}
@@ -2117,9 +2145,11 @@ pulse is to be, say, a microsecond, then the signal's spread in
 frequency much be at least on the order of 1 MHz. This is why we use
 the term ``bandwidth'' to describe the speed of a communication
 channel. 
+
 <% end_sec('classical-uncertainty') %>
 
 <% begin_sec("Energy-time uncertainty",nil,'et-uncertainty-subsubsec') %>
+
 In a quantum-mechanical context, we have $E=\hbar\omega$, so there is
 an energy-time uncertainty relation,
 \begin{equation*}
@@ -2202,6 +2232,7 @@ through a telescope.
 \end{eg}
 
 <% marg(-25) %>
+
 <%
   fig(
     'lissajous-figure',
@@ -2229,13 +2260,15 @@ a double-slit interference pattern, that is exactly what we are doing: observing
 difference between two phases. As a loose conceptual analogy, this is like the idea that a figure-eight
 Lissajous pattern has an identifiable feature where it crosses itself, the crossing being like the tick
 of a clock.
+
 <% end_sec('et-uncertainty-subsubsec') %>
 
 <% end_sec('et-uncertainty') %>
 
-
 <% begin_sec("Randomization of phase",nil,'et-phase-randomization') %>
+
 <% begin_sec("Randomization of phase in a measurement",nil,'et-phase-randomization-meas') %>
+
 The energy-time uncertainty relation can help us to understand one of the most
 puzzling issues in quantum mechanics, which is the problem of measurement.\index{quantum mechanics!measurement problem}
 What happens
@@ -2323,7 +2356,8 @@ in time using Newton's laws.\label{unitarity-phase-randomization}
 
 <% end_sec('et-phase-randomization-meas') %>
 
-<% begin_sec("Decoherence",nil,'decoherence') %>\index{decoherence}
+<% begin_sec("Decoherence",nil,'decoherence') %>
+\index{decoherence}
 Starting around 1970, physicists began to realize that ideas involving a loss of coherence,
 or ``decoherence,'' could help to explain some things about quantum mechanics that
 had previously seemed mysterious.  The classical notions of coherence and coherence length
@@ -2399,11 +2433,13 @@ what has happened to the phase information that appears to have been erased by d
 violating unitarity. The resolution is the same (p.~\pageref{unitarity-phase-randomization}):
 the information has flowed out into the environment, but is no longer in a form in which it
 is practical to recover it.
+
 <% end_sec('decoherence') %>
 
 <% end_sec('et-phase-randomization') %>
 
 <% begin_sec("Quantum computing and the no-cloning theorem",nil,'no-cloning') %>
+
 Computers and information transmission systems such as the internet are currently implemented
 as classical devices. For example, the wavelengths of the electrons that carry signals in a computer
 chip are currently orders of magnitude shorter than the size of the logic gates, so that
@@ -2513,9 +2549,11 @@ could completely encode qbits into bits, then we could make a second
 copy of the bits and violate no-cloning by converting back to qbits.
 This is a contradiction, so we conclude that lossless conversion of
 classical information to quantum information is impossible. 
+
 <% end_sec('no-cloning') %>
 
-<% begin_sec("More about entanglement",nil,'more-entanglement') %>\index{entanglement}\index{separability!of a quantum state}
+<% begin_sec("More about entanglement",nil,'more-entanglement') %>
+\index{entanglement}\index{separability!of a quantum state}
 
 A basic difference between classical computing and quantum computing
 is that qubits can be entangled with each other. We've only discussed
@@ -2613,7 +2651,6 @@ the electron and positron don't have any orbital angular momentum, then
 by conservation of angular momentum, the spin-1/2 of the electron must be in the opposite
 direction compared to that of the positron. 
 
-
 The electron and positron fly off in opposite directions due to
 conservation of momentum, and they could be detected by two different
 particle detectors lying at macroscopic distances from the place where
@@ -2664,6 +2701,7 @@ program to scan through the data and figure out whether this was in fact possibl
 This is called the separability problem, and unfortunately it is known to be intractable.
 
 <% marg(-10) %>
+
 <%
   fig(
     'pion-decay-paradox',
@@ -2766,8 +2804,6 @@ Only making \emph{separable} copies inevitably leads to paradoxes.
 \pagebreak
 
 <% begin_hw('ic-time-dependent-s-eqn') %>__incl(hw/ic-time-dependent-s-eqn)<% end_hw() %>
-
-
 
 <% end_hw_sec %>
 

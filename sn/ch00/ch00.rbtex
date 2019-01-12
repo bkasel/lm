@@ -1,3 +1,4 @@
+
 <%
   require "../eruby_util.rb"
 %>
@@ -25,13 +26,21 @@ information to NASA. Conversions are important!},
 %>
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 <% begin_sec("Introduction and review") %>
+
   __incl(text/1_intro_and_review)
-<% end_sec %> % end intro and review
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-<% begin_sec("Scaling and order-of-magnitude estimates",4,'scaling') %>
-  __incl(text/2_scaling_and_estimation)
+
 <% end_sec %>
+ % end intro and review
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+<% begin_sec("Scaling and order-of-magnitude estimates",4,'scaling') %>
+
+  __incl(text/2_scaling_and_estimation)
+
+<% end_sec %>
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 <% begin_hw_sec %>
@@ -62,11 +71,13 @@ information to NASA. Conversions are important!},
   )
 %>
 <% end_marg %>
+
 <% begin_hw('pretzels') %>__incl(hw/pretzels)<% end_hw() %>
 
 <% begin_hw('horizon') %>__incl(hw/horizon)<% end_hw() %>
 
 <% begin_hw('triangle-formula') %>__incl(hw/triangle-formula)<% end_hw() %>
+
 <% marg(34) %>
 <%
   fig(
@@ -139,7 +150,9 @@ information to NASA. Conversions are important!},
     %q{Albert Einstein, and his moustache, problem \ref{hw:hairmass}.}
   )
 %>
+
 \spacebetweenfigs
+
 <%
   fig(
     'hw-liter-cube',
@@ -161,7 +174,9 @@ information to NASA. Conversions are important!},
     %q{Problem \ref{hw:e-coli}.}
   )
 %>
+
 \spacebetweenfigs
+
 <%
   fig(
     'hw-droppingballs',
@@ -177,7 +192,6 @@ information to NASA. Conversions are important!},
 <% begin_hw('units-taylor') %>__incl(hw/units-taylor)<% end_hw() %>
 
 <% begin_hw('neanderthal-calories') %>__incl(hw/neanderthal-calories)<% end_hw() %>
-
 
 <% end_hw_sec %>
 

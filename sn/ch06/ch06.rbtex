@@ -15,6 +15,7 @@
 <%
   require "../eruby_util.rb"
 %>
+
 <%
   chapter(
     '06',
@@ -55,8 +56,11 @@ we've been calling particles, such as electrons, are really waves!\footnote{Spea
 more carefully, I should say that every basic building block of light and matter
 has both wave and particle properties.}
  % 
+
 <% begin_sec("Free waves",0) %>
+
  % 
+
 <% begin_sec("Wave motion",nil,'wave-motion') %>
 
 <% marg(0) %>
@@ -123,7 +127,8 @@ the motion of objects made of matter.
   )
 %>
 
-<% begin_sec("1. Superposition") %>\index{waves!superposition of}\index{superposition!of waves}
+<% begin_sec("1. Superposition") %>
+\index{waves!superposition of}\index{superposition!of waves}
 If you watched the water in the cup carefully, you noticed the
 ghostlike behavior of the
 reflected ripples coming back toward the center of the cup and
@@ -178,7 +183,9 @@ approximation for low-energy waves.
 %>
 
 <% end_sec() %>
-<% begin_sec("2. The medium is not transported with the wave.") %>\index{waves!medium not transported with}
+
+<% begin_sec("2. The medium is not transported with the wave.") %>
+\index{waves!medium not transported with}
 The sequence of three photos in figure \figref{pete} shows a series of water
 waves before it has reached a rubber duck (left), having
 just passed the duck (middle) and having progressed about a
@@ -205,6 +212,7 @@ the wave progresses through space.
   )
 %>
 <% end_marg %>
+
 <% self_check('coilspringvel',<<-'SELF_CHECK'
 In figure \figref{ribbon-on-spring},
 you can detect the side-to-side
@@ -237,7 +245,9 @@ wave would quickly part company.
 \end{eg}
 
 <% end_sec() %>
-<% begin_sec("3. A wave's velocity depends on the medium.") %>\index{waves!velocity of}
+
+<% begin_sec("3. A wave's velocity depends on the medium.") %>
+\index{waves!velocity of}
 
 <% marg(49) %>
 <%
@@ -249,14 +259,18 @@ wave would quickly part company.
     }
   )
 %>
+
 \spacebetweenfigs
+
 <%
   fig(
     'breaking-wave',
     %q{Example \ref{eg:breaking-wave}: a breaking wave.}
   )
 %>
+
 \spacebetweenfigs
+
 <%
   fig(
     'hull-speed',
@@ -268,6 +282,7 @@ wave would quickly part company.
   )
 %>
 <% end_marg %>
+
 A material object can move with any velocity, and can be
 sped up or slowed down by a force that increases or
 decreases its kinetic energy. Not so with waves. The
@@ -332,17 +347,21 @@ hull speeds will be high.
     %q{Circular and linear wave patterns.}
   )
 %>
+
 \spacebetweenfigs
+
 <%
   fig(
     'wave-patterns-three-d',
     %q{Plane and spherical wave patterns.}
   )
 %>
-
 <% end_marg %>
+
 <% end_sec() %>
-<% begin_sec("Wave patterns") %>\index{waves!patterns}
+
+<% begin_sec("Wave patterns") %>
+\index{waves!patterns}
 If the magnitude of a wave's velocity vector is preordained,
 what about its direction? Waves spread out in all directions
 from every point on the disturbance that created them. If
@@ -369,15 +388,15 @@ it can be done without too much complication.
 
 \startdqs
 
-                \begin{dq}\label{dq:superposition}
-                The left panel of the figure shows a sequence of snapshots of
-                two positive pulses on a coil spring as they move through each other.
-                In the right panel, which shows a positive pulse and a negative one,
-                the fifth frame has the spring
-                just about perfectly flat. If the two pulses have essentially
-                canceled each other out perfectly, then why does the motion
-                pick up again? Why doesn't the spring just stay flat?
-                \end{dq}
+        \begin{dq}\label{dq:superposition}
+        The left panel of the figure shows a sequence of snapshots of
+        two positive pulses on a coil spring as they move through each other.
+        In the right panel, which shows a positive pulse and a negative one,
+        the fifth frame has the spring
+        just about perfectly flat. If the two pulses have essentially
+        canceled each other out perfectly, then why does the motion
+        pick up again? Why doesn't the spring just stay flat?
+        \end{dq}
 
 <%
   fig(
@@ -389,27 +408,30 @@ it can be done without too much complication.
   )
 %>
 
-                \begin{dq}
-                Sketch two positive wave pulses on a string that are
-                overlapping but not right on top of each other, and draw
-                their superposition. Do the same for a positive pulse
-                running into a negative pulse.
-                \end{dq}
+        \begin{dq}
+        Sketch two positive wave pulses on a string that are
+        overlapping but not right on top of each other, and draw
+        their superposition. Do the same for a positive pulse
+        running into a negative pulse.
+        \end{dq}
 
-                \begin{dq}
-                A traveling wave pulse is moving to the right on a
-                string. Sketch the velocity vectors of the various parts of
-                the string. Now do the same for a pulse moving to the left.
-                \end{dq}
+        \begin{dq}
+        A traveling wave pulse is moving to the right on a
+        string. Sketch the velocity vectors of the various parts of
+        the string. Now do the same for a pulse moving to the left.
+        \end{dq}
 
-                \begin{dq}
-                In a spherical sound wave spreading out from a point, how
-                would the energy of the wave fall off with distance?
-                \end{dq}
+        \begin{dq}
+        In a spherical sound wave spreading out from a point, how
+        would the energy of the wave fall off with distance?
+        \end{dq}
 
 <% end_sec() %>
+
 <% end_sec() %>
-<% begin_sec("Waves on a string") %>\index{waves!on a string}
+
+<% begin_sec("Waves on a string") %>
+\index{waves!on a string}
 So far you've learned some counterintuitive things about
 the behavior of waves, but intuition can be trained. The
 first half of this subsection aims to build your intuition by
@@ -436,7 +458,9 @@ bounded ones, we pretend that our string is infinitely long.
     }
   )
 %>
+
 \spacebetweenfigs
+
 <%
   fig(
     'pulse-on-string',
@@ -446,7 +470,9 @@ bounded ones, we pretend that our string is infinitely long.
     }
   )
 %>
+
 \spacebetweenfigs
+
 <%
   fig(
     'ball-and-spring-model',
@@ -457,6 +483,7 @@ bounded ones, we pretend that our string is infinitely long.
   )
 %>
 <% end_marg %>
+
 After the qualitative discussion, we will use simple
 approximations to investigate the speed of a wave pulse on a
 string. This quick and dirty treatment is then followed by a
@@ -464,6 +491,7 @@ rigorous attack using the methods of calculus, which
 turns out to be both simpler and more general.
 
 <% begin_sec("Intuitive ideas") %>
+
 Consider a string that has been struck, \figref{pulse-on-string}/1, resulting in
 the creation of two wave pulses, \figref{pulse-on-string}/2, one traveling to the
 left and one to the right. This is analogous to the way
@@ -491,7 +519,9 @@ of the string need not remain motionless. It may move at
 constant velocity to either side.
 
 <% end_sec() %>
+
 <% begin_sec("Approximate treatment") %>
+
 We now carry out an approximate treatment of the speed at
 which two pulses will spread out from an initial indentation
 on a string. For simplicity, we imagine a hammer blow that
@@ -513,6 +543,7 @@ $T$, and the mass per unit length, $\mu$ (Greek letter mu).
   )
 %>
 <% end_marg %>
+
 If we consider the part of the string encompassed by the
 initial dent as a single object, then this object has a mass
 of approximately $\mu w$ (mass/length $\times\ \text{length}$=mass). (Here, and
@@ -586,7 +617,9 @@ constant, when actually the total force on the segment would
 diminish as it flattened out.
 
 <% end_sec() %>
+
 <% begin_sec("Treatment using calculus") %>
+
 After expending considerable effort for an approximate
 solution, we now display the power of calculus with a
 rigorous and completely general treatment that is
@@ -644,9 +677,13 @@ by
 \end{equation*}
 
 <% end_sec() %>
+
 <% end_sec() %>
+
 <% begin_sec("Sound and light waves") %>
-<% begin_sec("Sound waves") %>\index{waves!sound}\index{sound!waves}
+
+<% begin_sec("Sound waves") %>
+\index{waves!sound}\index{sound!waves}
 The phenomenon of sound is easily found to have all the
 characteristics we expect from a wave phenomenon:
 
@@ -691,7 +728,9 @@ roars and whooshes of space ships in Hollywood movies are
 fun, but scientifically wrong.
 
 <% end_sec() %>
-<% begin_sec("Light waves") %>\index{light!waves}\index{waves!light}
+
+<% begin_sec("Light waves") %>
+\index{light!waves}\index{waves!light}
 Entirely similar observations lead us to believe that light
 is a wave, although the concept of light as a wave had a
 long and tortuous history.  It is interesting to note that
@@ -740,11 +779,17 @@ explained as a wave pattern made up of electrical and
 magnetic fields.
 
  % 
+
 <% end_sec() %>
+
 <% end_sec() %>
-<% begin_sec("Periodic waves") %>\index{waves!period of}\index{waves!frequency of}%
+
+<% begin_sec("Periodic waves") %>
+\index{waves!period of}\index{waves!frequency of}%
 \index{period!of waves}\index{frequency!of waves}
+
 <% begin_sec("Period and frequency of a periodic wave") %>
+
 You choose a radio station by selecting a certain frequency.
 We have already defined period and frequency for vibrations,
 \begin{align*}
@@ -772,6 +817,7 @@ is a high note. The sounds that really define the musical
 notes of a song are only the ones that are periodic. It is
 not possible to sing a nonperiodic sound like ``sh'' with a
 definite pitch.
+
 <% marg(80) %>
 <%
   fig(
@@ -782,21 +828,27 @@ definite pitch.
     }
   )
 %>
+
 \spacebetweenfigs
+
 <%
   fig(
     'shhhh',
     %q{A similar graph for a nonperiodic wave, ``sh.''}
   )
 %>
+
 \spacebetweenfigs
+
 <%
   fig(
     'strip-chart-recorder',
     %q{A strip chart recorder.}
   )
 %>
+
 \spacebetweenfigs
+
 <%
   fig(
     'repeatingpulses',
@@ -820,7 +872,9 @@ Past the violet end, we have ultraviolet, x-rays, and gamma
 rays.
 
 <% end_sec() %>
+
 <% begin_sec("Graphs of waves as a function of position") %>
+
 Some waves, like sound waves, are easy to study by placing
 a detector at a certain location in space and studying the
 motion as a function of time. The result is a graph whose
@@ -847,7 +901,9 @@ shape, knowing the wave motion as a function of time is
 equivalent to knowing it as a function of position.
 
 <% end_sec() %>
-<% begin_sec("Wavelength") %>\index{waves!wavelength}\index{wavelength}
+
+<% begin_sec("Wavelength") %>
+\index{waves!wavelength}\index{wavelength}
 Any wave that is periodic will also display a repeating
 pattern when graphed as a function of position. The distance
 spanned by one repetition is referred to as one wavelength.
@@ -855,7 +911,9 @@ The usual notation for wavelength is $\lambda$, the Greek letter
 lambda. Wavelength is to space as period is to time.
 
 <% end_sec() %>
+
 <% begin_sec("Wave velocity related to frequency and wavelength") %>
+
 Suppose that we create a repetitive disturbance by kicking
 the surface of a swimming pool. We are essentially making a
 series of wave pulses. The wavelength is simply the distance
@@ -871,7 +929,9 @@ written in terms of the frequency,
 \begin{equation*}
         v  =  f\lambda\eqquad.
 \end{equation*}
+
 <% marg() %>
+
 <%
   fig(
     'wavelengthtwod',
@@ -942,7 +1002,9 @@ a change in wavelength.
     }
   )
 %>
+
 \spacebetweenfigs
+
 <%
   fig(
     'wavelengthshortening',
@@ -953,6 +1015,7 @@ a change in wavelength.
   )
 %>
 <% end_marg %>
+
 The velocity of water waves depends on the depth of the
 water, so based on $\lambda=v/f$, we see that water waves that move
 into a region of different depth must change their
@@ -962,7 +1025,9 @@ the deceleration of the wave pattern is sudden enough, the
 tip of the wave can curl over, resulting in a breaking wave.
 
 <% end_sec() %>
-<% begin_sec("A note on dispersive waves") %>\index{dispersive waves}\index{waves!dispersive}
+
+<% begin_sec("A note on dispersive waves") %>
+\index{dispersive waves}\index{waves!dispersive}
 The discussion of wave velocity
 given here is actually a little bit of an oversimplification
 for a wave whose velocity depends on its frequency and
@@ -972,7 +1037,9 @@ but the issue becomes important in chapter \ref{ch:quantum},
 where it is discussed in detail.
 
 <% end_sec() %>
+
 <% begin_sec("Sinusoidal waves") %>
+
 Sinusoidal waves are the most important special case of
 periodic waves. In fact, many scientists and engineers would
 be uncomfortable with defining a waveform like the ``ah''
@@ -999,14 +1066,15 @@ colors) only if it is a sine wave.
 
 \startdqs
 
-                 \begin{dq}\label{dq:beats}
-                Suppose we superimpose two sine waves with equal amplitudes
-                but slightly different frequencies, as shown in the figure.
-                What will the superposition look like? What would this sound
-                like if they were sound waves?
-                \end{dq}
+         \begin{dq}\label{dq:beats}
+        Suppose we superimpose two sine waves with equal amplitudes
+        but slightly different frequencies, as shown in the figure.
+        What will the superposition look like? What would this sound
+        like if they were sound waves?
+        \end{dq}
 
-                %
+        %
+
 <%
   fig(
     'dq-beats',
@@ -1018,8 +1086,11 @@ colors) only if it is a sine wave.
 %>
 
 <% end_sec() %>
+
 <% end_sec() %>
-<% begin_sec("The Doppler effect",nil,'doppler') %>\index{Doppler shift}
+
+<% begin_sec("The Doppler effect",nil,'doppler') %>
+\index{Doppler shift}
 Figure \figref{doppler} shows the wave pattern made by the tip of a
 vibrating rod which is moving across the water. If the rod
 had been vibrating in one place, we would have seen the
@@ -1041,6 +1112,7 @@ other. This is known as the Doppler effect.
   )
 %>
 <% end_marg %>
+
 Note that the velocity of the waves is a fixed property of
 the medium, so for example the forward-going waves do not
 get an extra boost in speed as would a material object like
@@ -1141,7 +1213,9 @@ the universe.
     }
   )
 %>
+
 \spacebetweenfigs
+
 <%
   fig(
     'mount-wilson',
@@ -1150,7 +1224,8 @@ the universe.
 %>
 <% end_marg %>
 
-<% begin_sec("The Big Bang",nil,'hubble') %>\label{bigbang}\index{Big Bang!evidence for}
+<% begin_sec("The Big Bang",nil,'hubble') %>
+\label{bigbang}\index{Big Bang!evidence for}
 As soon as astronomers began looking at the sky through
 telescopes, they began noticing certain objects that looked
 like clouds in deep space. The fact that they looked the
@@ -1218,6 +1293,7 @@ whole universe can be envisioned as a rising loaf of raisin
 bread. As the bread expands, there is more and more space
 between the raisins. The farther apart two raisins are, the
 greater the speed with which they move apart.
+
 <% marg(110) %>
 <%
   fig(
@@ -1299,8 +1375,11 @@ starting a few minutes after the Big Bang, and we may be
 able to push back to milliseconds or microseconds after it,
 but we cannot use the methods of science to deal with the
 beginning of time itself.
+
 <% end_sec() %>
+
 <% begin_sec("A note on Doppler shifts of light") %>
+
 If Doppler shifts depend only on the relative motion of
 the source and receiver, then there is no way for a person
 moving with the source and another person moving with the
@@ -1332,7 +1411,9 @@ relative to the air, which is the medium of the sound waves.
     }
   )
 %>
+
 \spacebetweenfigs
+
 <%
   fig(
     'sonic-boom',
@@ -1344,8 +1425,8 @@ relative to the air, which is the medium of the sound waves.
     }
   )
 %>
-
 <% end_marg %>
+
 Einstein realized that this solved the problem for sound or
 water waves, but would not salvage the principle of relative
 motion in the case of light waves, since light is not a
@@ -1372,21 +1453,25 @@ you see in figures \figref{shock-wave} and
 \figref{sonic-boom}?
                 \end{dq}
 
-                \begin{dq}
-                If bullets go slower than the speed of sound, why can a
-                supersonic fighter plane catch up to its own sound, but
-                not to its own bullets?
-                \end{dq}
+        \begin{dq}
+        If bullets go slower than the speed of sound, why can a
+        supersonic fighter plane catch up to its own sound, but
+        not to its own bullets?
+        \end{dq}
 
-                \begin{dq}
-                If someone inside a plane is talking to you, should their
-                speech be Doppler shifted?
-                \end{dq}
+        \begin{dq}
+        If someone inside a plane is talking to you, should their
+        speech be Doppler shifted?
+        \end{dq}
 
 <% end_sec() %>
+
 <% end_sec() %>
+
 <% end_sec %>
-<% begin_sec("Bounded waves",4) %>\label{sec:bounded-waves}
+
+<% begin_sec("Bounded waves",4) %>
+\label{sec:bounded-waves}
 Speech is what separates humans most decisively from
 animals. No other species can master syntax, and even though
 chimpanzees can learn a vocabulary of hand signs, there is
@@ -1404,7 +1489,9 @@ production of complex speech sounds.
     }
   )
 %>
+
 \spacebetweenfigs
+
 <%
   fig(
     'circular-reflection-upright',
@@ -1415,6 +1502,7 @@ production of complex speech sounds.
   )
 %>
 <% end_marg %>
+
 Since speech sounds are instinctive for us, we seldom think
 about them consciously. How do we control sound waves so
 skillfully? Mostly we do it by changing the shape of a
@@ -1429,11 +1517,14 @@ wave pattern encounters the boundary between two different
 media, such as when a light wave moving through air
 encounters a glass windowpane.
 
-<% begin_sec("Reflection, transmission, and absorption") %>%
+<% begin_sec("Reflection, transmission, and absorption") %>
+%
 \index{waves!reflection of}\index{reflection!of waves}%
 \index{waves!transmission of}\index{transmission!of waves}%
 \index{waves!absorption of}\index{absorption!of waves}
+
 <% begin_sec("Reflection and transmission") %>
+
 Sound waves can echo back from a cliff, and light waves are
 reflected from the surface of a pond. We use the word
 reflection, normally applied only to light waves in ordinary
@@ -1502,6 +1593,7 @@ wave speed is different.
     }
   )
 %>
+
 Reflections such as \figref{circular-reflection-upright} and \figref{reflspring}/1,
 where a wave encounters a
 massive fixed object, can usually be understood on the same
@@ -1567,7 +1659,9 @@ the sun at our feet is simply that the rough surface blurs
 the image so drastically.
 
 <% end_sec() %>
-<% begin_sec("Inverted and uninverted reflections") %>\index{reflections!inverted and uninverted}%
+
+<% begin_sec("Inverted and uninverted reflections") %>
+\index{reflections!inverted and uninverted}%
 \index{inverted reflection}\label{wave-inversion}
 Notice how the pulse reflected back to the right in example
  \figref{reflspring}/2 comes back upside-down, whereas the one reflected back
@@ -1588,7 +1682,9 @@ noninverting.
     }
   )
 %>
+
 \spacebetweenfigs
+
 <%
   fig(
     'inverted',
@@ -1598,8 +1694,8 @@ noninverting.
     }
   )
 %>
-
 <% end_marg %>
+
 It's important to realize that when we discuss inverted and
 uninverted reflections on a string, we are talking about
 whether the wave is flipped across the direction of motion
@@ -1612,7 +1708,9 @@ the left --- it's just that ``ahead'' is now in the opposite
 direction.
 
 <% end_sec() %>
+
 <% begin_sec("Absorption") %>
+
 So far we have tacitly assumed that wave energy remains as
 wave energy, and is not converted to any other form. If this
 was true, then the world would become more and more full of
@@ -1636,6 +1734,7 @@ as with a vibrating object, $E\propto A^2$.\index{wave!energy related to amplitu
   )
 %>
 <% end_marg %>
+
 The wave suffers a decrease in amplitude, as shown in figure
 \figref{attenuation}. The decrease in amplitude amounts to the same
 fractional change for each unit of distance covered. For
@@ -1755,8 +1854,11 @@ energy will eventually exit through the antenna.
                 \end{dq}
 
 <% end_sec() %>
+
 <% end_sec() %>
+
 <% begin_sec("Quantitative treatment of reflection",nil,'quantitative-reflection') %>
+
 In this section we use the example of waves on a string to analyze the reasons why a
 reflection occurs at the boundary between media, predict
 quantitatively the intensities of reflection and transmission,
@@ -1765,6 +1867,7 @@ reflections are inverting and which are noninverting. Some technical details
 are relegated to sec.~\ref{subsec:technical-reflection}, p.~\pageref{subsec:technical-reflection}.
 
 <% begin_sec("Why reflection occurs") %>
+
 To understand the fundamental reasons for what does occur at
 the boundary between media, let's first discuss what doesn't
 happen. For the sake of concreteness, consider a sinusoidal
@@ -1791,6 +1894,7 @@ the frequency remains constant, \figref{kink-and-discontinuity}/2.
   )
 %>
 <% end_marg %>
+
 But there is still something unphysical about figure \figref{kink-and-discontinuity}/2.
 The sudden change in the shape of the wave has resulted in a
 sharp kink at the boundary. This can't really happen,
@@ -1821,7 +1925,9 @@ valid solution involving a reflected pulse, we will have
 ended up with what amounts to a proof of reflection.
 
 <% end_sec() %>
+
 <% begin_sec("Intensity of reflection",nil,'intensity-of-reflection') %>
+
 I will now show, in the case of waves on a string, that it
 is possible to satisfy the physical requirements given above
 by constructing a reflected wave, and as a bonus this will
@@ -1849,6 +1955,7 @@ sufficiently small amplitude.
   )
 %>
 <% end_marg %>
+
 Let the unknown amplitudes of the reflected and transmitted
 waves be $R$ and $T$, respectively. An inverted reflection would
 be represented by a negative value of $R$. We can without loss
@@ -1938,8 +2045,11 @@ The following aspects of our analysis may need to be modified for different type
 \end{itemize}
 
 <% end_sec('intensity-of-reflection') %>
+
 <% end_sec('quantitative-reflection') %>
-<% begin_sec("Interference effects") %>\index{waves!interference}
+
+<% begin_sec("Interference effects") %>
+\index{waves!interference}
 If you look at the front of a pair of high-quality
 binoculars, you will notice a greenish-blue coating on the
 lenses. This is advertised as a coating to prevent
@@ -1963,7 +2073,9 @@ effects.
     %q{A pulse encounters two boundaries.}
   )
 %>
+
 \spacebetweenfigs
+
 <%
   fig(
     'inverted-sine-wave-trailing',
@@ -2052,30 +2164,31 @@ on a puddle.
 
 \startdqs
 
-                \begin{dq}
-                Is it possible to get \emph{complete} destructive interference
-                in an optical coating, at least for light of one specific wavelength?
-                \end{dq}
+        \begin{dq}
+        Is it possible to get \emph{complete} destructive interference
+        in an optical coating, at least for light of one specific wavelength?
+        \end{dq}
 
-                \begin{dq}
-                Sunlight consists of sinusoidal wave-trains containing on
-                the order of a hundred cycles back-to-back, for a length of
-                something like a tenth of a millimeter. What happens if you
-                try to make an optical coating thicker than this?
-                \end{dq}
+        \begin{dq}
+        Sunlight consists of sinusoidal wave-trains containing on
+        the order of a hundred cycles back-to-back, for a length of
+        something like a tenth of a millimeter. What happens if you
+        try to make an optical coating thicker than this?
+        \end{dq}
 
-                \begin{dq}\label{dq:air-wedge}
-                Suppose you take two microscope slides and lay one on top
-                of the other so that  one of its edges is resting on the
-                corresponding edge of the bottom one. If you insert a sliver
-                of paper or a hair at the opposite end, a wedge-shaped layer
-                of air will exist in the middle, with a thickness that
-                changes gradually from one end to the other. What would you
-                expect to see if the slides were illuminated from above by
-                light of a single color? How would this change if you
-                gradually lifted the lower edge of the top slide until the
-                two slides were finally parallel?
-                \end{dq}
+        \begin{dq}\label{dq:air-wedge}
+        Suppose you take two microscope slides and lay one on top
+        of the other so that  one of its edges is resting on the
+        corresponding edge of the bottom one. If you insert a sliver
+        of paper or a hair at the opposite end, a wedge-shaped layer
+        of air will exist in the middle, with a thickness that
+        changes gradually from one end to the other. What would you
+        expect to see if the slides were illuminated from above by
+        light of a single color? How would this change if you
+        gradually lifted the lower edge of the top slide until the
+        two slides were finally parallel?
+        \end{dq}
+
 <% marg(0) %>
 <%
   fig(
@@ -2083,7 +2196,9 @@ on a puddle.
     %q{A pulse bounces back and forth.}
   )
 %>
+
 \spacebetweenfigs
+
 <%
   fig(
     'guitar-and-model',
@@ -2096,17 +2211,19 @@ on a puddle.
 %>
 <% end_marg %>
 
-                \begin{dq}
-                An observation like the one described in 
-                discussion question \ref{dq:air-wedge} was used by Newton as evidence \emph{against}
-                the wave theory of light! If Newton didn't know about
-                inverting and noninverting reflections, what would have
-                seemed inexplicable to him about the region where the air
-                layer had zero or nearly zero thickness?
-                \end{dq}
+        \begin{dq}
+        An observation like the one described in 
+        discussion question \ref{dq:air-wedge} was used by Newton as evidence \emph{against}
+        the wave theory of light! If Newton didn't know about
+        inverting and noninverting reflections, what would have
+        seemed inexplicable to him about the region where the air
+        layer had zero or nearly zero thickness?
+        \end{dq}
 
 <% end_sec() %>
+
 <% begin_sec("Waves bounded on both sides") %>
+
 In the example of the previous section, it was theoretically
 true that a pulse would be trapped permanently in the middle
 medium, but that pulse was not central to our discussion,
@@ -2169,6 +2286,7 @@ frequency of the sound it produces, expressed in terms of  L
 and  v, the velocity of the wave?
   SELF_CHECK
   ) %>
+
 <% marg(90) %>
 <%
   fig(
@@ -2179,7 +2297,9 @@ and  v, the velocity of the wave?
     }
   )
 %>
+
 \spacebetweenfigs
+
 <%
   fig(
     'fourier',
@@ -2245,6 +2365,7 @@ column within the human vocal tract. Because sounds composed
 of this kind of pattern of frequencies are so common, our
 ear-brain system has evolved so as to perceive them as a
 single, fused sensation of tone.
+
 <% marg(300) %>
 <%
   fig(
@@ -2261,7 +2382,8 @@ single, fused sensation of tone.
 %>
 <% end_marg %>
 
-<% begin_sec("Musical applications") %>\index{fourier-spectra}\index{dissonance}
+<% begin_sec("Musical applications") %>
+\index{fourier-spectra}\index{dissonance}
 Many musicians claim to be able to pick out by ear
 several of the frequencies $2f_\zu{o}$, $3f_\zu{o}$, ..., called
 \index{fourier-spectra}overtones or \index{harmonics}\emph{harmonics} of the fundamental $f_\zu{o}$,\index{fundamental}
@@ -2298,6 +2420,7 @@ knowledgeable people do not usually use the word
 they are really saying is that the dissonance has been used in a
 clumsy way, or without providing any contrast between
 dissonance and consonance.
+
 <%
   fig(
     'standing-waves-on-floor',
@@ -2310,7 +2433,9 @@ dissonance and consonance.
 %>
 
 <% end_sec() %>
-<% begin_sec("Standing waves") %>\index{waves!standing}\index{standing waves}
+
+<% begin_sec("Standing waves") %>
+\index{waves!standing}\index{standing waves}
 Figure \figref{standing-waves-on-floor} shows sinusoidal wave patterns made by
 shaking a rope. I used to enjoy doing this at the bank with
 the pens on chains, back in the days when people actually
@@ -2353,7 +2478,9 @@ really standing-wave patterns of electron waves. You are a
 standing wave!
 
 <% end_sec() %>
+
 <% begin_sec("Standing-wave patterns of air columns") %>
+
 The air column inside a wind instrument 
 behaves very much like the wave-on-a-string example
 we've been concentrating on so far, the main difference
@@ -2385,6 +2512,7 @@ are different, in both cases the wavelength is the same: in the lowest-frequency
 standing wave, half a wavelength fits inside the tube. Thus, it isn't necessary
 to memorize which type of reflection is inverting and which is uninverting. It's
 only necessary to know that the tubes are symmetric.
+
 <% marg(80) %>
 <%
   fig(
@@ -2395,7 +2523,9 @@ only necessary to know that the tubes are symmetric.
     }
   )
 %>
+
 \spacebetweenfigs
+
 <%
   fig(
     'lowest-modes-of-air-column',
@@ -2466,7 +2596,9 @@ and therefore got a result that didn't have the correct factor of $\sqrt{\gamma}
     }
   )
 %>
+
 \spacebetweenfigs
+
 <%
   fig(
     'flute',
@@ -2483,11 +2615,16 @@ and therefore got a result that didn't have the correct factor of $\sqrt{\gamma}
  % ============================= homework ==============================  
 
 <% end_sec() %>
+
 <% end_sec() %>
+
 <% begin_sec("Some technical aspects of reflection",nil,'technical-reflection',{'optional'=>true}) %>
+
 In this section we address some technical details of the treatment of reflection
 and transmission of waves.
+
 <% begin_sec("Dependence of reflection on other variables besides velocity",nil,'wave-reflection-impedance') %>
+
 In section \ref{subsec:quantitative-reflection} we derived the expressions for the transmitted
 and reflected amplitudes by demanding that two things match up on both sides of the boundary:
 the height of the wave and the slope of the wave. These requirements were stated purely
@@ -2524,8 +2661,8 @@ also large variations in density. The lung, for example, is basically a sponge o
 air. For this reason, the acoustic impedances of the tissues show a huge amount of variation,
 with, e.g., $z_\zu{bone}/z_\zu{lung}\approx 40$.
 
-
 <% end_sec('wave-reflection-impedance') %>
+
 <% begin_sec("Inverted and uninverted reflections in general",nil,'wave-inversion-in-general') %>
 
 For waves on a string, reflections back into a faster medium
@@ -2541,7 +2678,9 @@ wave you are discussing.
     %q{A disturbance in freeway traffic.}
   )
 %>
+
 \spacebetweenfigs
+
 <%
   fig(
     'traffic',
@@ -2550,6 +2689,7 @@ wave you are discussing.
   )
 %>
 <% end_marg %>
+
 Let's start by considering wave disturbances of freeway
 traffic. Anyone who has driven frequently on crowded
 freeways has observed the phenomenon in which one driver
@@ -2620,13 +2760,18 @@ In the other,
 the electric field is uninverted and the magnetic field inverted.
 
 <% end_sec('wave-inversion-in-general') %>
+
 <% end_sec('technical-reflection') %>
+
 <% end_sec() %>
+
 <% begin_hw_sec %>
 
 <% begin_hw('middlec',0) %>
+
 The musical note middle C has a frequency of 262 Hz. 
 What are its period and wavelength?
+
 <% end_hw() %>
 
 <% begin_hw('changesinewave') %>__incl(hw/changesinewave)<% end_hw() %>
@@ -2638,7 +2783,9 @@ What are its period and wavelength?
     %q{Problem \ref{hw:reversepulse}}
   )
 %>
-<% end_marg %> % reversepulse
+<% end_marg %>
+ % reversepulse
+
 <% begin_hw('reversepulse') %>__incl(hw/reversepulse)<% end_hw() %>
 
 <% begin_hw('sinwavekinem') %>__incl(hw/sinwavekinem)<% end_hw() %>
@@ -2652,7 +2799,9 @@ What are its period and wavelength?
     %q{Problem \ref{hw:sinexva}.}
   )
 %>
-<% end_marg %> % sinexva
+<% end_marg %>
+ % sinexva
+
 <% begin_hw('sinexva') %>__incl(hw/sinexva)<% end_hw() %>
 
 <% begin_hw('dopplerf',0) %>__incl(hw/dopplerf)<% end_hw() %>
@@ -2667,6 +2816,7 @@ What are its period and wavelength?
   )
 %>
 <% end_marg %>
+
 <% begin_hw('lasso',2) %>__incl(hw/lasso)<% end_hw() %>
 
 <% begin_hw('wave-on-hanging-string',2) %>__incl(hw/wave-on-hanging-string)<% end_hw() %>
@@ -2682,6 +2832,7 @@ What are its period and wavelength?
 \vfill
 
 <% begin_hw('airwaterrefl',0) %>
+
 (a) Compute the amplitude of light that is reflected back into
 air at an air-water interface, relative to the amplitude of
 the incident wave. Assume that the light arrives in the direction
@@ -2689,7 +2840,10 @@ directly perpendicular to the surface.The speeds of light in air and water are
 $3.0\times10^8$ and $2.2\times10^8$ m/s, respectively.\hwendpart
 (b) Find the energy of the reflected wave as a fraction of
 the incident energy.
-<% hw_hint("airwaterrefl") %>\answercheck
+
+<% hw_hint("airwaterrefl") %>
+\answercheck
+
 <% end_hw() %>
 
 \vfill
@@ -2727,6 +2881,7 @@ the incident energy.
 \pagebreak
 
 <% begin_hw('fabryperot') %>__incl(hw/fabryperot)<% end_hw() %>
+
 <% marg(150) %>
 <%
   fig(
@@ -2743,4 +2898,5 @@ the incident energy.
 <% begin_hw('half-reflected') %>__incl(hw/half-reflected)<% end_hw() %>
 
 <% end_hw_sec %>
+
 <% end_chapter() %>

@@ -1,6 +1,8 @@
+
 <%
   require "../eruby_util.rb"
 %>
+
 <%
   chapter(
     '07',
@@ -16,12 +18,18 @@ __incl(text/relativity_kinematics)
 \pagebreak
 __incl(text/relativity_no_action_at_a_distance)
 __incl(text/relativity_light_cone)
-<% end_sec %> % Distortion of Space and Time -- begin_sec is inside relativity_kinematics.tex
+
+<% end_sec %>
+ % Distortion of Space and Time -- begin_sec is inside relativity_kinematics.tex
 \pagebreak
 __incl(text/relativity_dynamics)
+
 <% begin_sec("General relativity",4,'genrel',{'optional'=>true}) %>
+
 __incl(text/relativity_general)
-<% end_sec %> % General relativity
+
+<% end_sec %>
+ % General relativity
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 <% begin_hw_sec %>
@@ -50,16 +58,19 @@ __incl(text/relativity_general)
 <% begin_hw('voyagergamma') %>__incl(hw/voyagergamma)<% end_hw() %>
 
 <% begin_hw('enterprise-ke') %>
+
 In example \ref{eg:cern-muons} on page \pageref{eg:cern-muons}, I remarked that accelerating a macroscopic
 (i.e., not microscopic) object to close to the speed of light would require an unreasonable amount of energy.
 Suppose that the starship Enterprise from Star Trek has a mass of $8.0\times10^7$ kg, about the same as the Queen Elizabeth 2.
 Compute the kinetic energy it would have to have if it was moving at half the speed of light. Compare with the total
 energy content of the world's nuclear arsenals, which is about $10^{21}$ J.\answercheck
+
 <% end_hw() %>
 
 <% begin_hw('earth-lorentz-contraction') %>__incl(hw/earth-lorentz-contraction)<% end_hw() %>
 
 <% begin_hw('gamma-derivation') %>__incl(hw/gamma-derivation)<% end_hw() %>
+
 <% marg(50) %>
 <%
   fig(
@@ -72,6 +83,7 @@ energy content of the world's nuclear arsenals, which is about $10^{21}$ J.\answ
 \pagebreak
 
 <% begin_hw('freeneutron') %>
+
 (a) A free neutron (as opposed to a neutron bound into
 an atomic nucleus) is unstable, and undergoes beta decay (which you
 may want to review).
@@ -104,8 +116,8 @@ Although such a process
 can occur within a nucleus, explain why it cannot happen to
 a free proton. (If it could, hydrogen would be radioactive, and you
 wouldn't exist!)
-<% end_hw() %>
 
+<% end_hw() %>
 
 \vfill
 
@@ -114,13 +126,16 @@ wouldn't exist!)
 \vfill
 
 <% begin_hw('gammasimplefraction') %>
+
 (a) Show that for $v=(3/5)c$, $\gamma$ comes out to be a simple fraction.\\
 (b) Find another value of $v$ for which $\gamma$ is a simple fraction.
+
 <% end_hw() %>
 
 \pagebreak
 
-<% begin_hw('ultrarelativistic') %>\index{momentum!of light}\index{light!momentum of}
+<% begin_hw('ultrarelativistic') %>
+\index{momentum!of light}\index{light!momentum of}
 An object moving at a speed very close to the speed of light is referred to as
 ultrarelativistic. Ordinarily (luckily) the only ultrarelativistic objects
 in our universe are subatomic particles, such as cosmic rays or particles
@@ -136,6 +151,7 @@ that's sufficiently close to the speed of light! Suppose you turn on a one-watt 
 on for one second, and then turn it off. Compute the momentum of the recoiling flashlight, in units
 of $\kgunit\unitdot\munit/\sunit$.\answercheck\hwendpart
 (f) Discuss how part e relates to the correspondence principle.
+
 <% end_hw() %>
 
 <% begin_hw('relativity-max-tension') %>__incl(hw/relativity-max-tension)<% end_hw() %>
@@ -146,7 +162,9 @@ of $\kgunit\unitdot\munit/\sunit$.\answercheck\hwendpart
 
 \vfill
 
-<% begin_hw('velocity-addition-double-limit') %>Problem \ref{hw:velocity-addition-double-limit} has been deleted.<% end_hw() %>
+<% begin_hw('velocity-addition-double-limit') %>
+Problem \ref{hw:velocity-addition-double-limit} has been deleted.
+<% end_hw() %>
 
 \vfill
 
@@ -163,6 +181,7 @@ of $\kgunit\unitdot\munit/\sunit$.\answercheck\hwendpart
 \vfill
 
 <% begin_hw('congruent-four-vectors') %>__incl(hw/congruent-four-vectors)<% end_hw() %>
+
 <% marg(17) %>
 <%
   fig(
@@ -182,15 +201,16 @@ of $\kgunit\unitdot\munit/\sunit$.\answercheck\hwendpart
 
 <% begin_hw('doppler-taylor') %>__incl(hw/doppler-taylor)<% end_hw() %>
 
-<% begin_hw('angular-defect') %> __incl(hw/angular-defect) <% end_hw() %>
+<% begin_hw('angular-defect') %>__incl(hw/angular-defect)<% end_hw() %>
 
-<% begin_hw('cone-intrinsic-curvature') %>  __incl(hw/cone-intrinsic-curvature) <% end_hw() %>
+<% begin_hw('cone-intrinsic-curvature') %>__incl(hw/cone-intrinsic-curvature)<% end_hw() %>
 
-<% begin_hw('grav-doppler-units') %> __incl(hw/grav-doppler-units) <% end_hw() %>
+<% begin_hw('grav-doppler-units') %>__incl(hw/grav-doppler-units)<% end_hw() %>
 
 \vspace{-\baselineskip}
 
-<% begin_hw('pound-rebka') %> __incl(hw/pound-rebka) <% end_hw() %>
+<% begin_hw('pound-rebka') %>__incl(hw/pound-rebka)<% end_hw() %>
+
 <% marg(43) %>
 <%
   fig(
@@ -202,26 +222,25 @@ of $\kgunit\unitdot\munit/\sunit$.\answercheck\hwendpart
 
 \pagebreak
 
-<% begin_hw('iss-time-dilation') %> __incl(hw/iss-time-dilation)<% end_hw() %>
+<% begin_hw('iss-time-dilation') %>__incl(hw/iss-time-dilation)<% end_hw() %>
 
-<% begin_hw('earth-black-hole') %> __incl(hw/earth-black-hole) <% end_hw %>
+<% begin_hw('earth-black-hole') %>__incl(hw/earth-black-hole)<% end_hw() %>
 
-<% begin_hw('tossed-clock') %> __incl(hw/tossed-clock) <% end_hw %>
+<% begin_hw('tossed-clock') %>__incl(hw/tossed-clock)<% end_hw() %>
 
-<% begin_hw('sphere-angular-defect') %> __incl(hw/sphere-angular-defect) <% end_hw() %>
+<% begin_hw('sphere-angular-defect') %>__incl(hw/sphere-angular-defect)<% end_hw() %>
 
-<% begin_hw('side-by-side-lasers') %> __incl(hw/side-by-side-lasers) <% end_hw() %>
+<% begin_hw('side-by-side-lasers') %>__incl(hw/side-by-side-lasers)<% end_hw() %>
 
-<% begin_hw('gamma-decay-energy-comparisons') %> __incl(hw/gamma-decay-energy-comparisons) <% end_hw() %>
+<% begin_hw('gamma-decay-energy-comparisons') %>__incl(hw/gamma-decay-energy-comparisons)<% end_hw() %>
 
 \pagebreak
 
-<% begin_hw('gamma-approx-si') %> __incl(hw/gamma-approx-si) <% end_hw() %>
+<% begin_hw('gamma-approx-si') %>__incl(hw/gamma-approx-si)<% end_hw() %>
 
-<% begin_hw('ball-through-hole') %> __incl(hw/ball-through-hole) <% end_hw() %>
+<% begin_hw('ball-through-hole') %>__incl(hw/ball-through-hole)<% end_hw() %>
 
-<% begin_hw('energy-to-traverse-galaxy') %> __incl(hw/energy-to-traverse-galaxy) <% end_hw() %>
-
+<% begin_hw('energy-to-traverse-galaxy') %>__incl(hw/energy-to-traverse-galaxy)<% end_hw() %>
 
 <% end_hw_sec %>
 
@@ -365,4 +384,5 @@ __incl(text/relativity_misconceptions)
 __incl(text/laurent)
 
 \end{exsection}
+
 <% end_chapter() %>

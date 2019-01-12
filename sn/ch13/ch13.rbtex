@@ -1,6 +1,8 @@
+
 <%
   require "../eruby_util.rb"
 %>
+
 <%
   chapter(
     '13',
@@ -12,6 +14,7 @@
 %>
 
 <% begin_sec("Rules of randomness",0,'randomness') %>
+
 \epigraphlong{Given for one instant an intelligence which could comprehend
 all the forces by which nature is animated and the
 respective positions of the things which compose it...nothing
@@ -41,6 +44,7 @@ dice.}{Albert Einstein}\index{Einstein, Albert}
   )
 %>
 <% end_marg %>
+
 However radical \index{Newton!Isaac}Newton's clockwork
 universe seemed to his contemporaries, by the early
 twentieth century it had become a sort of smugly accepted
@@ -163,7 +167,9 @@ determinism in economics?
 \end{dq}
 
 <% end_sec() %>
+
 <% begin_sec("Calculating randomness",nil,'calculating-randomness') %>
+
 You should also realize that even if something is random, we
 can still understand it, and we can still calculate
 probabilities numerically. In other words, physicists are
@@ -172,7 +178,8 @@ that a horse will win a race much more accurately that an
 inexperienced one, but nevertheless cannot predict what will
 happen in any particular race.
 
-<% begin_sec("Statistical independence") %>\index{independence!statistical}
+<% begin_sec("Statistical independence") %>
+\index{independence!statistical}
 As an illustration of a general technique for calculating
 odds, suppose you are playing a 25-cent slot machine. Each
 of the three wheels has one chance in ten of coming up with
@@ -258,7 +265,9 @@ way for an atom to be changed by the experiences it
 has in its lifetime.
 
 <% end_sec() %>
-<% begin_sec("Addition of probabilities") %>\index{probabilities!addition of}
+
+<% begin_sec("Addition of probabilities") %>
+\index{probabilities!addition of}
 
 The law of independent probabilities tells us to use
 multiplication to calculate the probability that both A and
@@ -278,7 +287,9 @@ I have a 90\% chance of eating lunch on any given day, and a
 eat either lunch or dinner is not 180\%.  
 
 <% end_sec() %>
-<% begin_sec("Normalization") %>\index{probabilities!normalization of}\index{normalization}
+
+<% begin_sec("Normalization") %>
+\index{probabilities!normalization of}\index{normalization}
 If I spin a globe and randomly pick a point on it, I have
 about a 70\% chance of picking a point that's in an ocean
 and a 30\% chance of picking a point on land. The probability
@@ -290,6 +301,7 @@ It works the same if there are more than two possibilities
 of mutually exclusive results, then all the probabilities
 have to add up to 1, or 100\%. This property of probabilities
 is known as normalization.
+
 <% marg(20) %>
 <%
   fig(
@@ -302,7 +314,9 @@ is known as normalization.
 %>
 <% end_marg %>
 
-\index{averages}<% end_sec() %>
+\index{averages}
+<% end_sec() %>
+
 <% begin_sec("Averages") %>
 
 Another way of dealing with randomness is to take averages.
@@ -376,6 +390,7 @@ rolling dice to be random?
 \end{dq}
 
 <% marg(-300) %>
+
 <%
   fig(
     'dice',
@@ -421,8 +436,11 @@ really mean to say that something is random?
 \end{dq}
 
 <% end_sec() %>
+
 <% end_sec('calculating-randomness') %>
-<% begin_sec("Probability distributions") %>\index{probability distributions}
+
+<% begin_sec("Probability distributions") %>
+\index{probability distributions}
 So far we've discussed random processes having only two
 possible outcomes: yes or no, win or lose, on or off. More
 generally, a random process could have a result that is a
@@ -438,7 +456,9 @@ seconds that a uranium-238 atom will exist before undergoing radioactive decay.
     %q{Probability distribution for the result of rolling a single die.}
   )
 %>
+
 \spacebetweenfigs
+
 <%
   fig(
     'two-dice',
@@ -446,6 +466,7 @@ seconds that a uranium-238 atom will exist before undergoing radioactive decay.
   )
 %>
 <% end_marg %>
+
 Consider a throw of a die. If the die is ``honest,'' then we
 expect all six values to be equally likely. Since all six
 probabilities must add up to 1, then probability of any
@@ -510,14 +531,18 @@ interpreted as probability per unit time, not probability.
     }
   )
 %>
+
 \spacebetweenfigs
+
 <%
   fig(
     'human-height-tail',
     %q{Example \ref{eg:basketball}.}
   )
 %>
+
 \spacebetweenfigs
+
 <%
   fig(
     'average',
@@ -525,6 +550,7 @@ interpreted as probability per unit time, not probability.
   )
 %>
 <% end_marg %>
+
 Figure \figref{human-height} shows another example, a probability distribution
 for people's height. This kind of bell-shaped curve is quite common.
 
@@ -541,7 +567,9 @@ __incl(eg/basketball)
 
 \index{probability  distributions!widths of}
 \index{probability  distributions!averages of}
+
 <% begin_sec("Average and width of a probability distribution") %>
+
 If the next Martian you meet asks you, ``How tall is an
 adult human?,'' you will probably reply with a statement
 about the average human height, such as ``Oh, about 5 feet 6
@@ -575,6 +603,7 @@ them, and to inoculate you against the misuse of certain definitions.
   )
 %>
 <% end_marg %>
+
 The average is not the only possible way to say what is a
 typical value for a quantity that can vary randomly; another
 possible definition is the median,\index{median} defined as the value that
@@ -588,11 +617,17 @@ standard deviation (defined as the square root of the
 average squared deviation from the average value).
 
  % 
+
 <% end_sec() %>
+
 <% end_sec() %>
+
 <% begin_sec("Exponential decay and half-life",nil,'half-life') %>
+
 \index{decay!exponential}\index{exponential decay}
-<% begin_sec("Half-life") %>\index{half-life}
+
+<% begin_sec("Half-life") %>
+\index{half-life}
 Most people know that radioactivity ``lasts a certain amount
 of time,'' but that simple statement leaves out a lot. As an
 example, consider the following medical procedure used to
@@ -726,6 +761,7 @@ result is about 2500 years.
     }
   )
 %>
+
 \begin{eg}{$^{14}\zu{C}$ \index{carbon-14 dating}Dating}
 Almost all the carbon on Earth is $^{12}\zu{C}$, but not quite.
 The isotope $^{14}\zu{C}$, with a half-life of 5600 years, is
@@ -748,7 +784,9 @@ some had claimed on religious grounds.
 \end{eg}
 
 <% end_sec() %>
-<% begin_sec("Rate of decay") %>\label{rate-of-decay}\index{exponential decay!rate of}
+
+<% begin_sec("Rate of decay") %>
+\label{rate-of-decay}\index{exponential decay!rate of}
 If you want to find how many radioactive decays occur within
 a time interval lasting from time $t$ to time $t+\Delta t$,
 the most straightforward approach is to calculate it like this:
@@ -782,7 +820,6 @@ atoms that remain available to decay.
   i.e., decays per unit time.
   SELF_CHECK
   ) %>
-
 
 \begin{eg}{The hot potato}
 \egquestion A nuclear physicist with a demented sense of humor
@@ -836,8 +873,11 @@ completely depend on how much of the substance you have?
 \end{dq}
 
 <% end_sec() %>
+
 <% end_sec() %>
+
 <% begin_sec("Applications of calculus") %>
+
 The area under the probability distribution is of course an
 integral. If we call the random number $x$ and the
 probability distribution $D(x)$, then the probability that
@@ -923,6 +963,7 @@ which is, as expected, longer than one half-life.
  % --------------------------------------------------------------------- 
  % --------------------------------------------------------------------- 
 \vfill\pagebreak[4]
+
 <%
   fig(
     'ozone',
@@ -935,8 +976,11 @@ which is, as expected, longer than one half-life.
     }
   )
 %>
+
 <% end_sec() %>
+
 <% end_sec() %>
+
 <% begin_sec("Light as a particle",0,'light-as-a-particle') %>
 
 \epigraph{The only thing that interferes with my learning is my 
@@ -979,6 +1023,7 @@ is not at all what ultraviolet light does when it passes
 through the ozone layer, or the layer would offer no protection at all!
 
 <% begin_sec("Evidence for light as a particle") %>
+
 For a long time, physicists tried to explain away the
 problems with the classical theory of light as arising from
 an imperfect understanding of atoms and the interaction of
@@ -1004,6 +1049,7 @@ fundamental nature of light itself.
     }
   )
 %>
+
 In those days the data were sketchy, the ideas vague, and
 the experiments difficult to interpret; it took a genius
 like Einstein to cut through the thicket of confusion and
@@ -1029,21 +1075,24 @@ tinted plastic used in sunglasses. Going from \figref{ccd-spot}/1 to \figref{ccd
 \figref{ccd-spot}/3, more and more light energy is being thrown away by the absorbers.
 
 <% marg(0) %>
-
 <%
   fig(
     'attenuation-wave',
     %q{A wave is partially absorbed.}
   )
 %>
+
 \spacebetweenfigs
+
 <%
   fig(
     'attenuation-bullets',
     %q{A stream of particles is partially absorbed.}
   )
 %>
+
 \spacebetweenfigs
+
 <%
   fig(
     'seurat',
@@ -1054,6 +1103,7 @@ tinted plastic used in sunglasses. Going from \figref{ccd-spot}/1 to \figref{ccd
   )
 %>
 <% end_marg %>
+
 The results are drastically different from what we would
 expect based on the wave theory of light. If light was a
 wave and nothing but a wave, \figref{attenuation-wave},
@@ -1112,8 +1162,11 @@ observations and concepts discussed in this section.
 \end{dq}
 
 <% end_sec() %>
+
 <% begin_sec("How much light is one photon?",4,'how-much-light-is-one-photon') %>
-<% begin_sec("The photoelectric effect") %>\index{photoelectric effect}
+
+<% begin_sec("The photoelectric effect") %>
+\index{photoelectric effect}
 We have seen evidence that light energy comes in little
 chunks, so the next question to be asked is naturally how
 much energy is in one chunk. The most straightforward
@@ -1143,6 +1196,7 @@ back more and more strongly.)
   )
 %>
 <% end_marg %>
+
 Figure \figref{photoelectric-apparatus-a} shows a practical method for detecting the
 photoelectric effect. Two very clean parallel metal plates
 (the electrodes of a capacitor) are sealed inside a vacuum
@@ -1165,6 +1219,7 @@ around the circuit, passing through an ammeter. The ammeter
 allows a measurement of the strength of the photoelectric effect.
 
 <% end_sec() %>
+
 <% begin_sec("An unexpected dependence on frequency") %>
 
 The photoelectric effect was discovered serendipitously by
@@ -1206,6 +1261,7 @@ order to reconcile them.
   )
 %>
 <% end_marg %>
+
  % 
 To make any progress, we need to consider the physical
 process by which a photon would eject an electron from the
@@ -1253,7 +1309,9 @@ photoelectric current continues to increase with the
 frequency of the light because of effects (1) and (3).
 
 <% end_sec() %>
+
 <% begin_sec("Numerical relationship between energy and frequency") %>
+
 Figure \figref{photoelectric-apparatus-b} shows an experiment that is used sometimes in
 college laboratory courses to probe the relationship between the energy and frequency
 of a photon. The idea is simply to illuminate
@@ -1267,14 +1325,15 @@ so the voltage will keep on increasing for as long as
 electrons are making it across the vacuum tube.
 
 <% marg(0) %>
-
 <%
   fig(
     'photoelectric-apparatus-b',
     %q{A different way of studying the photoelectric effect.}
   )
 %>
+
 \spacebetweenfigs
+
 <%
   fig(
     'photoelectric-graph',
@@ -1284,8 +1343,8 @@ electrons are making it across the vacuum tube.
     }
   )
 %>
-
 <% end_marg %>
+
 At a moment when the voltage difference has a reached a
 value $\Delta $V, the minimum energy required by an electron
 to make it out of the bottom plate and across the gap to the
@@ -1353,7 +1412,6 @@ The experiments that established the classical theory of optics
 weren't wrong. They were right, within their domain of applicability, in which
 the number of photons was so large as to be indistinguishable from a continuous beam.
 \end{eg}
-
 
 \begin{eg}{Measuring the wave}\label{eg:am-radio-photon-density}
 When surfers are out on the water waiting for their chance to catch a wave, they're interested
@@ -1443,15 +1501,19 @@ substance with a different index of refraction?
 \end{dq}
 
 <% end_sec() %>
+
 <% end_sec() %>
 
 <% begin_sec("Wave-particle duality",4,'wave-particle-duality') %>
+
 __incl(text/wave-particle-duality)
+
 <% end_sec('wave-particle-duality') %>
 
 __incl(text/nonlocality)
 
 <% begin_sec("Photons in three dimensions") %>
+
 \index{photon!in three dimensions}
 
 Up until now I've been sneaky and avoided a full discussion
@@ -1481,6 +1543,7 @@ $(\text{area})=(\text{height})(\text{width})=\zu{m}^{-1}\cdot\zu{m}$.
   )
 %>
 <% end_marg %>
+
 Now suppose we have a two-dimensional problem, e.g., the
 probability distribution for the place on the surface of a
 digital camera chip where a photon will be detected. The
@@ -1512,9 +1575,13 @@ $P\:=\:\int D\der x \der y\der z$.
  % --------------------------------------------------------------------- 
 \pagebreak[4]
 \inlinefignocaption{melting-witch}
+
 <% end_sec() %>
+
 <% end_sec() %>
-<% begin_sec("Matter as a wave",0,'matter-as-a-wave') %>\index{matter!as a wave}
+
+<% begin_sec("Matter as a wave",0,'matter-as-a-wave') %>
+\index{matter!as a wave}
 
 \epigraphlong{[In] a few minutes I shall be all melted... I have been
 wicked in my day, but I never thought a little girl like you
@@ -1552,7 +1619,9 @@ to classical physics.
 Quantum physics to the rescue! As we'll see shortly, the
 whole problem is solved by applying the same quantum
 concepts to electrons that we have already used for photons.
+
 <% begin_sec("Electrons as waves") %>
+
 \index{electron!as a wave}
 We started our journey into quantum physics by studying the
 random behavior of \emph{matter} in radioactive decay, and
@@ -1606,6 +1675,7 @@ lines (a transmission grating).
     }
   )
 %>
+
 Although we will concentrate on the wave-particle duality of
 electrons because it is important in chemistry and the
 physics of atoms, all the other ``particles'' of matter
@@ -1735,6 +1805,7 @@ wavelength that might be more convenient to work with?
   ) %>
 
 <% begin_sec("What kind of wave is it?") %>
+
 \index{wavefunction!of the electron}\index{electron!wavefunction}
 If a sound wave is a vibration of matter, and a photon is a
 vibration of electric and magnetic fields, what kind of a
@@ -1759,6 +1830,7 @@ electron wave directly.
   )
 %>
 <% end_marg %>
+
 We can of course detect the energy (or momentum) possessed
 by an electron just as we could detect the energy of a
 photon using a digital camera. (In fact I'd imagine that an
@@ -1823,8 +1895,11 @@ separate.)
 \end{dq}
 
 <% end_sec() %>
+
 <% end_sec() %>
+
 <% begin_sec("Dispersive waves",nil,'dispersive-waves') %>
+
 \index{wave!dispersive}\index{dispersion}
 A colleague of mine who teaches chemistry loves to tell the
 story about an exceptionally bright student who, when told
@@ -1859,22 +1934,26 @@ the accepted one, which is after all solidly based on experiment.
     %q{Part of an infinite sine wave.}
   )
 %>
+
 \spacebetweenfigs
+
 <%
   fig(
     'sine-wave-pulse',
     %q{A finite-length sine wave.}
   )
 %>
+
 \spacebetweenfigs
+
 <%
   fig(
     'beats',
     %q{A beat pattern created by superimposing two sine waves with slightly different wavelengths.}
   )
 %>
-
 <% end_marg %>
+
 The mistaken assumption is that we can figure everything out
 in terms of pure sine waves. Mathematically, the only wave
 that has a perfectly well defined wavelength and frequency
@@ -1975,7 +2054,9 @@ that differs by a factor of two from what we would have expected,
 but the phase velocity is not the physically important thing.
 
 <% end_sec() %>
+
 <% begin_sec("Bound states",nil,'qm-bound-states') %>
+
 \index{states!bound}\index{bound states}
 Electrons are at their most interesting when they're in
 atoms, that is, when they are bound within a small region of
@@ -2000,6 +2081,7 @@ undergoes 100\% reflection at the boundaries of the box.
   )
 %>
 <% end_marg %>
+
 Like generations of physics students before me, I rolled my
 eyes when initially introduced to the unrealistic idea of
 putting a particle in a box. It seemed completely impractical,
@@ -2060,6 +2142,7 @@ long wavelengths give lower energies.
   )
 %>
 <% end_marg %>
+
 \begin{eg}{Spectra of thin gases}\label{eg:spectra-of-thin-gases}
 \index{spectrum!absorption}\index{spectrum!emission}\index{absorption}
 \index{emission spectrum}\index{gas!spectrum of}
@@ -2124,6 +2207,7 @@ state for it to go to.
   )
 %>
 <% end_marg %>
+
 \begin{eg}{Chemical bonds}\label{h2-bond}\index{chemical bonds!quantum explanation for hydrogen}
 I began this section with a classical argument that chemical
 bonds, as in an $\zu{H}_2$ molecule, should not exist. Quantum
@@ -2159,12 +2243,14 @@ that have similar structures, e.g., they are all spherical in shape.)
 \end{dq}
 
 <% end_sec('qm-bound-states') %>
+
 <% begin_sec('The uncertainty principle',nil,'uncertainty-principle') %>
+
 \index{Heisenberg!Werner}\index{Heisenberg uncertainty
 principle}\index{uncertainty principle}
 
-
 <% begin_sec("Eliminating randomness through measurement?") %>
+
 A common reaction to quantum physics, among both early-twentieth-century
 physicists and modern students, is that we should be able to
 get rid of randomness through accurate measurement. If I
@@ -2204,6 +2290,7 @@ would be enough to change its behavior significantly.
 <% end_marg %>
 
 <% begin_sec("The Heisenberg uncertainty principle") %>
+
 This insight, that measurement changes the thing being
 measured, is the kind of idea that clove-cigarette-smoking
 intellectuals outside of the physical sciences like to claim
@@ -2322,8 +2409,8 @@ numerical value of Planck's constant?
   SELF_CHECK
   ) %>
 
-
 <% end_sec() %>
+
 \startdqs
 
 \begin{dq}
@@ -2341,6 +2428,7 @@ measured with perfect accuracy if we don't care about the other?
 \end{dq}
 
 <% end_sec() %>
+
 <% begin_sec("Electrons in electric fields",nil,'electrons-in-fields') %>
 
 So far the only electron wave patterns we've considered have
@@ -2380,7 +2468,9 @@ magnitude the rate at which the wavelength changes.)
     }
   )
 %>
+
 \spacebetweenfigs
+
 <%
   fig(
     'kinks',
@@ -2422,7 +2512,9 @@ correctly to conservation of energy.
   )
 %>
 
-\index{tunneling}<% begin_sec("Tunneling") %>
+\index{tunneling}
+<% begin_sec("Tunneling") %>
+
 We implicitly assumed that the particle-in-a-box wavefunction
 would cut off abruptly at the sides of the box, \figref{kinks}/1, but
 that would be unphysical. A kink has infinite curvature, and
@@ -2439,8 +2531,11 @@ electrical energy nuclei need in order to get close together!
 Tunneling is discussed in more detail in the following subsection.
 
 <% end_sec() %>
+
 <% end_sec() %>
+
 <% begin_sec("The Schr\\\"odinger equation",nil,'schrodinger') %>
+
 \index{Schr\"odinger equation}
 In subsection \ref{subsec:electrons-in-fields} we were able to apply conservation
 of energy to an electron's wavefunction, but only by using
@@ -2550,6 +2645,7 @@ exponential gives positive ones, $a=r^2$. The former applies
 to the classically allowed region with $U<E$.
 
 \label{quantitativetunneling}
+
 <% marg(60) %>
 <%
   fig(
@@ -2562,6 +2658,7 @@ to the classically allowed region with $U<E$.
   )
 %>
 <% end_marg %>
+
 This leads us to a quantitative calculation of the tunneling
 effect discussed briefly in the preceding subsection. The
 wavefunction evidently tails off exponentially in the
@@ -2620,6 +2717,7 @@ for the tunneling probability on page \pageref{tunneling-probability}
 can still be used as a rough guide to our thinking. Essentially the tunneling probability is so small
 because $U-E$ is fairly big, typically about 30 MeV at the peak of the barrier.
 \end{eg}
+
 <% marg(150) %>
 <%
   fig(
@@ -2651,6 +2749,7 @@ probability of 1 in the classical limit. The expression derived on p.~\pageref{t
 doesn't apply here, because it was derived under the assumption that the wavefunction
 inside the barrier was an exponential; in the classically allowed case, the barrier
 isn't classically forbidden, and the wavefunction inside it is a sine wave.
+
 <% marg(10) %>
 <%
   fig(
@@ -2659,7 +2758,9 @@ isn't classically forbidden, and the wavefunction inside it is a sine wave.
        classically allowed. A reflected wave exists, but is not shown in the figure.}
   )
 %>
+
 \spacebetweenfigs
+
 <%
   fig(
     'marble-no-reflection',
@@ -2667,7 +2768,9 @@ isn't classically forbidden, and the wavefunction inside it is a sine wave.
        (This example has $U<0$, not $U>0$ as in figures \figref{step-potential} and \figref{step-potential-smoother}).}
   )
 %>
+
 \spacebetweenfigs
+
 <%
   fig(
     'step-potential-smoother',
@@ -2719,6 +2822,7 @@ compared to the wavelength.
 \enlargethispage{-\baselineskip}
 
 <% begin_sec("Three dimensions",4) %>
+
 For simplicity, we've been considering the Schr\"odinger equation in one dimension,
 so that $\Psi$ is only a function of $x$, and has units of $\munit^{-1/2}$ rather
 than  $\munit^{-3/2}$.
@@ -2745,6 +2849,7 @@ Or, as shown in figure \figref{laplacian-geometrical}, we can think of it as a m
 of a function at a certain point differs from the average of its value on nearby points.
 
 <% marg(-300) %>
+
 <%
   fig(
     'laplacian-geometrical',
@@ -2759,7 +2864,6 @@ of a function at a certain point differs from the average of its value on nearby
   )
 %>
 <% end_marg %>
-
 
 \enlargethispage{-\baselineskip}
 
@@ -2836,6 +2940,7 @@ side is manifestly positive.
 %>
 
 <% begin_sec("Use of complex numbers",nil,'complex-wavefunction') %>
+
 \index{wavefunction!complex numbers in}\index{complex numbers!in quantum physics}
 In a classically forbidden region, a particle's total
 energy, $U+K$, is less than its $U$, so
@@ -2922,6 +3027,7 @@ tends to perceive color as a circle rather than a line, with violet and red bein
 similar. One of the limitations of this representation is that brightness is limited, so we
 can't represent complex numbers with arbitrarily large magnitudes.
 %
+
 <%
   fig(
     'rainbow',
@@ -2993,9 +3099,10 @@ It has to be a complex number with a rotating phase angle in the complex plane, 
 \emph{constant} magnitude.
 \end{eg}
 
-
 <% end_sec('complex-wavefunction') %>
+
 <% begin_sec("Linearity of the Schr\\\"odinger equation",nil,'linearity-of-schrodinger') %>
+
 Some mathematical relationships and operations are \emph{linear}, and some are not.
 For example, $2\times(3+2)$ is the same as $2\times3+2\times2$, but $\sqrt{1+1}\ne\sqrt{1}+\sqrt{1}$.
 Differentiation is a linear operation, $(f+g)'=f'+g'$. The Schr\"odinger equation is
@@ -3044,6 +3151,7 @@ $\Psi_2$ is its state after the decay, then any superposition $\alpha\Psi_1+\bet
 coefficients $\alpha$ and $\beta$, is
 a possible wavefunction, and we can notate this as a vector, $\langle\alpha,\beta\rangle$, in a two-dimensional
 vector space.
+
 <% end_sec('linearity-of-schrodinger') %>
 
 \vfill
@@ -3078,6 +3186,7 @@ at some later time. What happens when the colliding waves have
 real-valued wavefunctions $\Psi$? Now consider the sketches of complex-valued wave pulses
 shown in the bottom panel of the figure as they are getting ready to collide.
 \end{dq}
+
 <% marg(30) %>
 <%
   fig(
@@ -3118,6 +3227,7 @@ of finding the electron in one side or the other? Does this obey the corresponde
  % --------------------------------------------------------------------- 
  % \fullpagewidthfignocaption{hwavefnlowres} 
 \vfill\pagebreak[4]
+
 <%
   fig(
     'hwavefnlowres',
@@ -3129,9 +3239,13 @@ of finding the electron in one side or the other? Does this obey the corresponde
     }
   )
 %>
+
 <% end_sec() %>
+
 <% end_sec %>
+
 <% begin_sec("The atom",0,'atom') %>
+
 You can learn a lot by taking a car engine apart, but you
 will have learned a lot more if you can put it all back
 together again and make it run. Half the job of reductionism
@@ -3158,6 +3272,7 @@ goal of this chapter is to give a gentle and visually
 oriented guide to some of the simpler results about atoms.
 
 <% begin_sec("Classifying states") %>
+
 We'll focus our attention first on the simplest atom,
 \index{hydrogen atom!classification of states}hydrogen, with
 one proton and one electron. We know in advance a little of
@@ -3198,6 +3313,7 @@ good approximation.)
   )
 %>
 <% end_marg %>
+
 \index{hydrogen atom!angular momentum in}Angular momentum
 does help with classification. There is no transfer of
 angular momentum between the proton and the electron, since
@@ -3248,6 +3364,7 @@ the beginning of the section?
   ) %>
 
 <% begin_sec("Degeneracy",nil,'degeneracy') %>
+
 Comparing the oversimplified figure \subfigref{moat-rainbow}{1} with the more realistic
 depiction in \subfigref{moat-rainbow}{2} using complex numbers, we see that there is
 a direction of rotation, which was drawn as counterclockwise in the figure. As in figures
@@ -3285,11 +3402,13 @@ the two states behave like oppositely oriented magnetic dipoles with an addition
 potential energy $-\vc{m}\cdot\vc{B}$, which lowers the energy of one state and raises the
 energy of the other. The existence of the magnetic field breaks the symmetry, which was the
 reason for the degeneracy.
+
 <% end_sec('degeneracy') %>
 
-
 <% end_sec() %>
+
 <% begin_sec("Three dimensions") %>
+
 \index{angular momentum!and the uncertainty principle}\index{angular
 momentum!in three dimensions}
 
@@ -3342,6 +3461,7 @@ moving directly away from the origin.
   )
 %>
 <% end_marg %>
+
 Suppose, on the other hand, a particle finds itself, \figref{particle-a-m-examples}/2, at
 a position $x$ along the $x$ axis, and it is moving parallel
 to the $y$ axis with momentum $p_y$. It has angular momentum
@@ -3364,6 +3484,7 @@ Both are quantized in units of $\hbar$.
 \end{important}
 
 <% marg() %>
+
 <%
   fig(
     'spherical-harmonic',
@@ -3438,7 +3559,6 @@ But then 1b tells us that $\Psi=0$ everywhere.
   )
 %>
 
-
 For a given $\ell$, consider the set of states with all the
 possible values of the angular momentum's component along some fixed axis.
 This set of states is \emph{complete}, meaning that they encompass all the possible states with this
@@ -3504,9 +3624,11 @@ reassured by our ability to draw the picture.
 It is also possible to have \emph{incompatible} quantum numbers. The combination of $p_x$ with $x$ would be
 an incompatible set of quantum numbers, because a state can't have a definite $p_x$ and also a definite $x$.
 If we try to draw such a wave, we fail. $L_x$ and $L_z$ would also be an incompatible set. 
+
 <% end_sec() %>
 
 <% begin_sec("Complete and compatible sets of quantum numbers") %>
+
 Let's summarize. Just as we expect everyone to have a first and last name,
 we expect there to be a complete and compatible set of quantum numbers for any
 given quantum-mechanical system. Completeness means that we have enough quantum
@@ -3516,8 +3638,8 @@ figure \figref{completeness-ylm} on p.~\pageref{fig:completeness-ylm}. Compatibi
 means that when we specify a set of quantum numbers, we aren't making a set of
 demands that can't be met. These ideas are revisited in a slightly fancier mathematical
 way on p.~\pageref{qm-completeness-stated}.
-<% end_sec() %>
 
+<% end_sec() %>
 
 <% end_sec('quantum-numbers') %>
 
@@ -3525,6 +3647,7 @@ way on p.~\pageref{qm-completeness-stated}.
 
  % This figure was also used at the beginning of the whole section, without caption 
  % or label. 
+
 <%
   fig(
     'hwavefnlowres',
@@ -3568,6 +3691,7 @@ energy. The ground state has $n=1$ (a single node only at
 $r=\infty$), and higher-energy states have higher $n$
 values. There is a simple equation relating $n$ to energy,
 which we will discuss in subsection \ref{subsec:hydrogen-energies}.
+
 <% marg(40) %>
 <%
   fig(
@@ -3705,11 +3829,15 @@ cloud in of the $n=2$, $\ell=1$ state is split into two parts.
 \end{dq}
 
 <% end_sec() %>
+
 <% begin_sec("Energies of states in hydrogen",nil,'hydrogen-energies') %>
+
 __incl(text/h-energy)
 
 <% end_sec() %>
-<% begin_sec("Electron spin",nil,'electron-spin') %>\index{spin}
+
+<% begin_sec("Electron spin",nil,'electron-spin') %>
+\index{spin}
 
 It's disconcerting to the novice ping-pong player to
 encounter for the first time a more skilled player who can
@@ -3725,6 +3853,7 @@ An important historical experiment of this type, the Stern-Gerlach
 experiment, is described in detail in section \ref{sec:stern-gerlach}.
 
 <% marg(m4_ifelse(__sn,1,[:30:],[:0:])) %>
+
 <%
   fig(
     'spin-vs-orbital',
@@ -3737,6 +3866,7 @@ experiment, is described in detail in section \ref{sec:stern-gerlach}.
   )
 %>
 <% end_marg %>
+
 This may seem paradoxical because the quantum moat, for
 instance, gave only angular momenta that were integer
 multiples of $\hbar$, not half-units, and I claimed that angular
@@ -3791,7 +3921,8 @@ doubling of the numbers of states:
 \hline
 \end{tabular}
 
-<% begin_sec("A note about notation") %>\label{quantumnotation}
+<% begin_sec("A note about notation") %>
+\label{quantumnotation}
 There are unfortunately two inconsistent systems of notation
 for the quantum numbers we've been discussing. The notation
 I've been using is the one that is used in nuclear
@@ -3857,8 +3988,11 @@ often contains a mixture of $\ell$ and $s$ values, while remaining
 fairly pure in terms of $j$.
 
 <% end_sec() %>
+
 <% end_sec() %>
+
 <% begin_sec("Atoms with more than one electron") %>
+
 \index{atoms!with many electrons}
 What about other atoms besides hydrogen? It would seem that
 things would get much more complex with the addition of a
@@ -3909,7 +4043,8 @@ half-integer spin. Thus two neutrons can never occupy the
 same state, and likewise for two protons. Photons, however,
 are immune to the exclusion principle because their spin is an integer.
 
-<% begin_sec("Deriving the periodic table",nil,'deriving-periodic-table') %>\index{periodic table}
+<% begin_sec("Deriving the periodic table",nil,'deriving-periodic-table') %>
+\index{periodic table}
 We can now account for the structure of the periodic table,
 which seemed so mysterious even to its inventor Mendeleev.
 The first row consists of atoms with electrons only
@@ -3946,7 +4081,9 @@ In the third row we start in on the $n=3$ levels:
     %q{The beginning of the periodic table.}
   )
 %>
+
 \spacebetweenfigs
+
 <%
   fig(
     'hindenburg',
@@ -3954,6 +4091,7 @@ In the third row we start in on the $n=3$ levels:
   )
 %>
 <% end_marg %>
+
 We can now see a logical link between the filling of the
 energy levels and the structure of the periodic table.
 Column 0, for example, consists of atoms with the right
@@ -3997,37 +4135,54 @@ of attracting protons is only partly counteracted by the
 increase in the number of repelling electrons, because the
 forces exerted on an electron by the other electrons are in
 many different directions and cancel out partially.
-        
+
  % ============================================================= 
  % ============================================================= 
  % ============================================================= 
  % ============================================================= 
  % ============================================================= 
+
 <% end_sec() %>
+
 <% end_sec() %>
+
 <% end_sec() %>
 
 <% begin_hw_sec %>
 
 <% begin_hw('wholelife') %>__incl(hw/wholelife)<% end_hw() %>
+
  % 
+
 <% begin_hw('snakeeyes') %>
+
 What is the probability of rolling a pair of dice and
 getting ``snake eyes,'' i.e., both dice come up with ones?
+
 <% end_hw() %>
+
  % 
+
 <% begin_hw('exponentiationapprox') %>
+
 Problem \ref{hw:exponentiationapprox} has been deleted.
+
 <% end_hw() %>
+
  % 
+
 <% begin_hw('rateofdecayapprox') %>
+
 Problem \ref{hw:rateofdecayapprox} has been deleted.
+
 <% end_hw() %>
 
 \enlargethispage{\baselineskip}
 
 <% begin_hw('heightdistribution') %>__incl(hw/heightdistribution)<% end_hw() %>
+
  % 
+
 <% marg(15) %>
 <%
   fig(
@@ -4036,6 +4191,7 @@ Problem \ref{hw:rateofdecayapprox} has been deleted.
   )
 %>
 <% end_marg %>
+
 <% begin_hw('unknownisotopes') %>__incl(hw/unknownisotopes)<% end_hw() %>
 
 <% begin_hw('craps') %>__incl(hw/craps)<% end_hw() %>
@@ -4043,7 +4199,9 @@ Problem \ref{hw:rateofdecayapprox} has been deleted.
 \enlargethispage{\baselineskip}
 
 <% begin_hw('blindfold-target') %>__incl(hw/blindfold-target)<% end_hw() %>
+
  % 
+
 <% begin_hw('truncated-half-life') %>__incl(hw/truncated-half-life)<% end_hw() %>
 
 <% begin_hw('maxwellian') %>__incl(hw/maxwellian)<% end_hw() %>
@@ -4051,6 +4209,7 @@ Problem \ref{hw:rateofdecayapprox} has been deleted.
 \pagebreak
 
 <% begin_hw('lava') %>
+
 All helium on earth is from the decay of naturally occurring heavy radioactive elements
  such as uranium. Each alpha particle that is emitted ends up claiming two electrons,
  which makes it a helium atom. If the original $^{238}\zu{U}$ atom is in solid
@@ -4069,9 +4228,13 @@ stable nucleus $^{206}\zu{Pb}$.  Almost all natural
 (b) How many electrons are emitted per decay chain?
   [Hint: Use conservation of charge.]\hwendpart
 (c) How long has it been since the lava originally hardened?\answercheck
+
 <% end_hw() %>
+
  % 
+
 <% begin_hw('mirrorphotons') %>
+
 When light is reflected from a mirror, perhaps only 80\%
 of the energy comes back. One could try to explain this in
 two different ways: (1) 80\% of the photons are reflected,
@@ -4079,15 +4242,19 @@ or (2) all the photons are reflected, but each loses 20\% of
 its energy. Based on your everyday knowledge about mirrors,
 how can you tell which interpretation is correct? [Based on
 a problem from PSSC Physics.]
-<% end_hw() %>
- % 
-<% begin_hw('pelightsensor') %>__incl(hw/pelightsensor)<% end_hw() %>
- %  
 
+<% end_hw() %>
+
+ % 
+
+<% begin_hw('pelightsensor') %>__incl(hw/pelightsensor)<% end_hw() %>
+
+ %  
 
 \enlargethispage{\baselineskip}
 
 <% begin_hw('cancer') %>
+
 The photoelectric effect can occur not just for metal
 cathodes but for any substance, including living tissue. 
 Ionization of DNA molecules can cause cancer or birth
@@ -4116,7 +4283,9 @@ electromagnetic waves might pose such a hazard? Explain.
     %q{Problem \ref{hw:comparephotons}.}
   )
 %>
+
 \spacebetweenfigs
+
 <%
   fig(
     'wavespeedingup',
@@ -4124,22 +4293,29 @@ electromagnetic waves might pose such a hazard? Explain.
   )
 %>
 <% end_marg %>
+
 <% begin_hw('comparephotons') %>__incl(hw/comparephotons)<% end_hw() %>
 
 \enlargethispage{\baselineskip}
 
-
 <% begin_hw('wavespeedingup') %>__incl(hw/wavespeedingup)<% end_hw() %>
+
  % 
+
 <% begin_hw('projector') %>
+
 The beam of a 100-W overhead projector covers an area of
 $1\ \zu{m}\times1\ \zu{m}$ when it hits the screen 3 m away. Estimate
 the number of photons that are in flight at any given time.
 (Since this is only an estimate, we can ignore the fact that
 the beam is not parallel.)\answercheck
+
 <% end_hw() %>
+
  % 
+
 <% begin_hw('pe') %>
+
 In the photoelectric effect, electrons are observed with
 virtually no time delay ($\sim10$ ns), even when the light
 source is very weak. (A weak light source does however only
@@ -4160,23 +4336,33 @@ $10^{-19}$ J. Find how long it would take the electron to
 absorb this amount of energy, and explain why your result
 constitutes strong evidence that there is something wrong
 with the classical theory.\answercheck
+
 <% end_hw() %>
 
 \pagebreak
 
 <% begin_hw('tv') %>__incl(hw/tv)<% end_hw() %>
+
  % 
+
 <% begin_hw('lead') %>
+
 Use the Heisenberg uncertainty principle to estimate the
 minimum velocity of a proton or neutron in a $^{208}\zu{Pb}$
 nucleus, which has a diameter of about 13 fm (1 fm=$10^{-15}$
  m). Assume that the speed is nonrelativistic, and then
 check at the end whether this assumption was warranted.\answercheck
+
 <% end_hw() %>
+
  % 
+
 <% begin_hw('particleinabox') %>__incl(hw/particleinabox)<% end_hw() %>
+
  % 
+
 <% begin_hw('chip-qm') %>
+
 A free electron that contributes to the current in an
 ohmic material typically has a speed of $10^5$  m/s (much
 greater than the drift velocity).\hwendpart
@@ -4190,13 +4376,21 @@ about wave effects such as diffraction?\hwendpart
 (d) Estimate the maximum number of electric circuits that
 can fit on a 1 $\zu{cm}^2$ computer chip before quantum-mechanical
 effects become important.
+
 <% end_hw() %>
+
  % 
+
 <% begin_hw('quantumho') %>__incl(hw/quantumho)<% end_hw() %>
+
  % 
+
 <% begin_hw('hydrogen-scale') %>__incl(hw/hydrogen-scale)<% end_hw() %>
+
  % 
+
 <% marg() %>
+
 <%
   fig(
     'hw-h-transitions',
@@ -4204,17 +4398,25 @@ effects become important.
   )
 %>
 <% end_marg %>
+
 <% begin_hw('hydrogenlevels') %>__incl(hw/hydrogenlevels)<% end_hw() %>
 
 <% begin_hw('hydrogenphoton') %>
+
 Find an equation for the wavelength of the photon emitted
 when the electron in a hydrogen atom makes a transition from
 energy level $n_1$ to level $n_2$.\answercheck
+
 <% end_hw() %>
+
  % 
+
 <% begin_hw('basketball') %>__incl(hw/basketball)<% end_hw() %>
+
  % 
+
 <% begin_hw('hydrogennonrelativistic') %>
+
 Assume that the kinetic energy of an electron in the $n=1$
 state of a hydrogen atom is on the same order of magnitude
 as the absolute value of its total energy, and estimate a
@@ -4224,16 +4426,21 @@ interaction energy trade off at different distances from the
 proton, but this is just a rough estimate of a typical
 speed.) Based on this speed, were we justified in assuming
 that the electron could be described nonrelativistically?
-<% end_hw() %>
 
+<% end_hw() %>
 
 <% begin_hw('energysum') %>__incl(hw/energysum)<% end_hw() %>
 
 <% begin_hw('electroninproton') %>__incl(hw/electroninproton)<% end_hw() %>
+
  % 
+
 <% begin_hw('hydrogenlike') %>__incl(hw/hydrogenlike)<% end_hw() %>
+
  % 
+
 <% begin_hw('muonic-spectrum') %>
+
 A muon is a subatomic particle that acts exactly like
 an electron except that its mass is 207 times greater. Muons
 can be created by cosmic rays, and it can happen that one of
@@ -4247,16 +4454,21 @@ compare with the size of the normal atom?\hwendpart
 searching for muonic atoms in the sun or in the earth's
 atmosphere by spectroscopy, in what part of the electromagnetic
 spectrum would you expect to find the absorption lines?
+
 <% end_hw() %>
 
 \pagebreak
 
 <% begin_hw('compton') %>__incl(hw/compton)<% end_hw() %>
+
  % 
+
 <% begin_hw('compton-any-angle') %>__incl(hw/compton-any-angle)<% end_hw() %>
+
  % 
 
 <% begin_hw('wkb',2) %>
+
 On page \pageref{quantitativetunneling} we derived an expression for the
 probability that a particle would tunnel through a
 rectangular barrier, i.e., a region in which the interaction
@@ -4271,21 +4483,25 @@ curve. Show that this is still true for a series of
 rectangular barriers, and generalize using an integral.]  If
 you had done this calculation in the 1930's you could have
 become a famous physicist.
+
 <% end_hw() %>
 
 <% begin_hw('h-atom-normalization') %>__incl(hw/h-atom-normalization)<% end_hw() %>
 
-<% begin_hw('three-d-forbidden') %>__incl(hw/three-d-forbidden)<% end_hw %>
+<% begin_hw('three-d-forbidden') %>__incl(hw/three-d-forbidden)<% end_hw() %>
 
 <% begin_hw('three-d-box') %>
+
 \emph{This problem generalizes the one-dimensional result from problem \ref{hw:particleinabox}.}\\
 Find the energy levels of a particle in a three-dimensional rectangular box with sides
 of length $a$, $b$, and $c$.\answercheck
-<% end_hw %>
+
+<% end_hw() %>
 
 \pagebreak
 
 <% begin_hw('tritium-decay') %>
+
 Americium-241 is an artificial isotope used in smoke detectors. It undergoes alpha decay, with a half-life of 432 years.
 As discussed in example \ref{eg:alpha-tunneling} on page \pageref{eg:alpha-tunneling}, alpha decay can be understood
 as a tunneling process, and although the barrier is not rectangular in shape, the equation for the tunneling
@@ -4297,9 +4513,10 @@ This higher probability is contrary to the empirical observation that this
 nucleus is not observed to decay by tritium emission with any significant probability, and in general
 tritium emission is almost unknown in nature; this is mainly because the tritium nucleus is far less stable
 than the helium-4 nucleus, and the difference in binding energy reduces the energy available for the decay.
-<% end_hw %>
 
-<% begin_hw('photon-mass') %>__incl(hw/photon-mass)<% end_hw %>
+<% end_hw() %>
+
+<% begin_hw('photon-mass') %>__incl(hw/photon-mass)<% end_hw() %>
 
 <% begin_hw('hydrogen-ratio') %>__incl(hw/hydrogen-ratio)<% end_hw() %>
 
@@ -4308,6 +4525,7 @@ than the helium-4 nucleus, and the difference in binding energy reduces the ener
 \pagebreak
 
 <% begin_hw('generalize-hydrogen') %>__incl(hw/generalize-hydrogen)<% end_hw() %>
+
 <% marg(150) %>
 <%
   fig(
@@ -4317,7 +4535,7 @@ than the helium-4 nucleus, and the difference in binding energy reduces the ener
 %>
 <% end_marg %>
 
-<% begin_hw('neutron-as-proton-plus-electron') %> __incl(hw/neutron-as-proton-plus-electron)<% end_hw() %>
+<% begin_hw('neutron-as-proton-plus-electron') %>__incl(hw/neutron-as-proton-plus-electron)<% end_hw() %>
 
 \pagebreak
 
@@ -4503,4 +4721,5 @@ total probabilities for Bob
 her particle's $\ell_x$?
 
 \end{exsection}
+
 <% end_chapter() %>
