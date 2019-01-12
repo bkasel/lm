@@ -475,7 +475,7 @@ This is equivalent to the vector cross product $\btau=\vc{m}_t\times\vc{B}$.
 \end{important}
 
 Let's show that this is consistent with the previous definition, using the
-geometry shown in figure \figref{squaretorque}. The velocity vector that point in
+geometry shown in figure \figref{squaretorque}. The velocity vectors that point in
 and out of the page are shown using the convention defined
 in figure \figref{inout}.
 Let the mobile charge carriers in the wire have linear
@@ -1481,7 +1481,7 @@ have the identity
 \end{equation*}
 (where $\vc{m}$ is the dipole moment, while $m$ is the mass). The left-hand side
 is called the $g$ factor. We expect $g=2$
-for single orbiting particle.
+for a single orbiting particle.
 
 Now suppose that we have a collection of particles with identical values of $q/m$ (or
 a continuous distribution of charge and mass in which the ratio of the charge and mass
@@ -1524,7 +1524,7 @@ supply enough energy to shake up their internal structure, like shaking a gift-w
 Merely by measuring the external, aggregate properties of the ``box,'' we can get clues about the
 structure inside. This is closely analogous to the Tolman-Stewart experiment (example \ref{eg:tolman-stewart}, p.~\pageref{eg:tolman-stewart}),
 in which the subatomic structure of metals was probed by measuring inertial effects in an electric circuit.
-A more famous and important imperiment using these ideas, by Stern and Gerlach, is described in
+A more famous and important experiment using these ideas, by Stern and Gerlach, is described in
 sec.~\ref{sec:stern-gerlach}, p.~\pageref{sec:stern-gerlach}.
 
 <% end_sec('g-factor') %>

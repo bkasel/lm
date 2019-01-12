@@ -13,6 +13,7 @@
 %>
 
 <% begin_sec("The magnetic dipole",nil,'b-dipole') %>
+<% begin_sec("Modeling the dipole using a current loop",nil,'b-dipole-current-loop') %>
 Our discussion of the dipole in sec.~\ref{sec:dipole}, p.~\pageref{sec:dipole}, focused mainly
 on the electric dipole. Here we discuss the magnetic dipole in more detail. We've defined
 two types of dipoles in terms of the energy they have when they interact with an external field,
@@ -40,6 +41,15 @@ vectors.
     %q{Adding two dipole vectors. The dipole moment increases in proportion to the area.}
   )
 %>
+\spacebetweenfigs
+<%
+  fig(
+    'squaretorque-fac',
+    %q{Side view of a square current dipole, with the direction of the current as indicated,
+       coming out of the page on one side and going back in on the other. The dipole is immersed
+       in an externally imposed uniform field shown by the vertical arrows.}
+  )
+%>
 <% end_marg %>
 
 But this is somewhat abstract, and it's nice to have a more concrete
@@ -50,46 +60,173 @@ embodiment of a magnetic dipole would be something like the current
 loop shown in figure \figref{current-loop}.  Figure
 \figref{adddipoles} shows an example of why it makes sense that dipole
 moments add as vectors, and that the dipole moment is proportional to
-the area of the loop. 
+the area of the loop. You should take a moment and verify using the right-hand
+rule that the torque in figure \figref{squaretorque-fac} is in the direction
+that tends to align the dipole vector with the magnetic field. A calculation
+(\note{b-dipole-torque}) shows that the dipole moment is $\vc{m}=I\vc{A}$, where
+$I$ is the current and $\vc{A}$ is the area vector.
 
-        Let's show that this is consistent with the previous definition, using the
-        geometry shown in figure \figref{squaretorque}. The velocity vector that point in
-        and out of the page are shown using the convention defined
-        in figure \figref{inout}.
-        Let the mobile charge carriers in the wire have linear
-        density $\lambda$, and
-        let the sides of the loop have
-        length $h$, so that we have $I=\lambda v$, and
-        $m=h^2\lambda v$. The only nonvanishing torque comes from the forces on the
-        left and right sides. The currents in these sides are perpendicular to the field,
-        so the magnitude of the cross product $\vc{F}=q\vc{v}\times\vc{B}$ is simply
-        $|\vc{F}|=qvB$. The torque supplied by each of these forces
-        is $\vc{r}\times\vc{F}$, where the lever arm $\vc{r}$ has length $h/2$,
-        and makes an angle $\theta$ with respect to the force vector. The magnitude of the total torque
-        acting on the loop is therefore
-        \begin{align*}
-          |\btau|        &=2\frac{h}{2}|\vc{F}|\sin\theta \\
+\begin{eg}{The magnetic dipole moment of an atom}\label{eg:estimate-atomic-dipole}
+Let's make an order-of-magnitude estimate of the magnetic dipole moment of an atom.
+A hydrogen atom is about $10^{-10}$ m in diameter, and the electron moves at speeds
+of about $10^{-2} c$. We don't know the shape of the orbit, and indeed it turns out that
+according to the principles of quantum mechanics, the electron doesn't even have a well-defined
+orbit, but if we're brave, we can still estimate the dipole moment using the
+cross-sectional area of the atom, which will be on the order of 
+$(10^{-10}\ \zu{m})^2=10^{-20}\ \zu{m}^2$.
+The electron is a single particle, not a steady current, but again we throw caution to
+the winds, and estimate the current it creates as $e/\Delta t$,
+where $\Delta t$, the time for one orbit, can be estimated by dividing the
+size of the atom by the electron's velocity. (This is only a rough estimate,
+and we don't know the shape of the orbit, so it would be silly, for instance,
+to bother with multiplying the diameter by $\pi$ based on our intuitive visualization
+of the electron as moving around the circumference of a circle.)
+The result for the dipole moment is $m\sim10^{-23}\ \zu{A}\unitdot\zu{m}^2$. 
+
+Should we
+be impressed with how small this dipole moment is, or with how big it is, considering
+that it's being made by a single atom? 
+Very large or very small numbers are never very interesting by themselves. To get a
+feeling for what they mean, we need to compare them to something else. An interesting
+comparison here is to think in terms of the total number of atoms in a typical object,
+which might be on the order of $10^{26}$ (Avogadro's number). Suppose we had this
+many atoms, with their moments all aligned. The total dipole moment would be on the
+order of $10^3\ \zu{A}\unitdot\zu{m}^2$, which is a pretty big number. To get
+a dipole moment this strong using human-scale devices,
+we'd have to send a thousand amps of current through a
+one-square meter loop of wire! The insight to be gained here is that, even in
+a permanent magnet, we must not have all the atoms perfectly aligned, because that
+would cause more spectacular magnetic effects than we really observe. Apparently, nearly
+all the atoms in such a magnet are oriented randomly, and do not contribute to the
+magnet's dipole moment.
+\end{eg}
+
+
+<% end_sec('b-dipole-current-loop') %>
+<% begin_sec("Dipole moment related to angular momentum",nil,'g-factor') %>
+
+In example \ref{eg:estimate-atomic-dipole} we made a crude estimate of the typical
+magnetic dipole moment of an atom. There is another way of going about this,
+which is potentially much more accurate and of interest as a way of probing the structure
+of the atom.
+
+Suppose that a particle of charge $q$
+and mass $m$ is whizzing around and around some closed path. We don't
+even care whether the trajectory is a square or a circle, an orbit or a random wiggle.
+But let's say for convenience that it's a planar shape. The magnetic
+dipole moment (averaged over time) is $\vc{m}=I\vc{A}$. But the angular
+momentum of a unit mass can also be interpreted as twice the area it sweeps out per unit time.
+Aside from the factor of two, which is just a historical glitch in the definitions,
+this mathematical analogy is exact: mass is to
+charge as angular momentum $\vc{L}$ is to magnetic dipole moment $\vc{m}$. Therefore we
+have the identity
+\begin{equation*}
+  \frac{q}{m}\cdot\frac{|\vc{L}|}{|\vc{m}|} = 2
+\end{equation*}
+(where $\vc{m}$ is the dipole moment, while $m$ is the mass). The left-hand side
+is called the $g$ factor. We expect $g=2$
+for a single orbiting particle.
+
+Now suppose that we have a collection of particles with identical values of $q/m$ (or
+a continuous distribution of charge and mass in which the ratio of the charge and mass
+densities is constant). Then vector addition of the $\vc{L}$ and $\vc{m}$ values
+gives the same $g=2$ for the system as a whole. On the other hand, if the different
+members of the system do \emph{not} all have the same $q/m$, then the $g$ of the system
+as a whole need not be 2. For example, a collection of positive and negative charges
+could easily have zero net charge but $\vc{m}\ne0$, giving $g=0$.
+
+Particles such as the electron, the neutron, and the proton may be pointlike, or they
+may be composites of other particles.
+The electon and proton, which are charged, have the expected $g$ factors
+of exactly 2 when we measure the $\vc{L}$ and $\vc{m}$ that they have due
+to their motion through space. But we also find that electrons, neutrons, and protons all come equipped
+with a built-in angular momentum, present even when they are at rest.
+This intrinsic angular momentum, called spin,\index{spin}
+is fixed in magnitude but can vary in direction, like that of a gyroscope.
+Thus if we measure the $\vc{L}$ and $\vc{m}$ of these particles when they
+are \emph{at rest}, they have fixed $g$ factors, which are as follows:
+
+\begin{tabular}{ll}
+electron & 2.002319304361 \\
+neutron & 0 \\
+proton & 5.58569471 
+\end{tabular}
+
+The electron's intrinsic $g$ factor is extremely close to 2, and if we ignore the small discrepancy for
+now, we are led to imagine that the electron is either a pointlike particle or a composite
+of smaller particles, each of which has the same charge-to-mass ratio. The neutron does have a
+nonvanishing dipole moment, so its zero $g$ factor suggests that it is a composite of other
+particles whose charges cancel. The proton's $g$ factor is quite different from 2, so we
+infer that it, too, is composite. The current theory is that protons and neutrons
+are clusters of particles called quarks.\index{quark} Quarks come in different types,
+and the different types have different values of $q/m$.
+
+The magnetic dipole moment of the proton is of considerable importance in our lives because
+of its use in the MRI (magnetic resonance imaging) scans used in medicine.
+As described on p.~\pageref{fig:mri}, a large DC magnetic field, generated by
+superconducing magnets, is used to cause the protons in the body's hydrogen
+atoms to align partially (about $10^{-5}$ of full alignment). These magnetic
+moments are then manipulated and observed using AC fields.
+
+From a physicist's point of view, it is also remarkable that we can infer these facts about the internal
+structures of neutrons and protons without having to do any
+experiments that directly probe their interior structure.  We don't
+need a super-powerful microscope, nor do we need a particle
+accelerator that can supply enough energy to shake up their internal
+structure, like shaking a gift-wrapped box to tell what's inside.
+Merely by measuring the external, aggregate properties of the ``box,''
+we can get clues about the structure inside.\footnote{This is closely analogous
+to the Tolman-Stewart experiment (example \ref{eg:tolman-stewart},
+p.~\pageref{eg:tolman-stewart}), in which the subatomic structure of
+metals was probed by measuring inertial effects in an electric
+circuit.}
+
+<% end_sec('g-factor') %>
+<% end_sec('b-dipole') %>
+
+<% begin_notes %>
+
+\notetext{b-dipole-torque}{Magnetic dipole moment of a current loop}
+\notesummary{The magnetic dipole moment of a square current loop is given by $\vc{m}=I\vc{A}$.}
+
+<%
+  fig(
+    'squaretorque-fac',
+    %q{Side view of a square current dipole, with the direction of the current as indicated,
+       coming out of the page on one side and going back in on the other. The dipole is immersed
+       in an externally imposed uniform field shown by the vertical arrows.},
+    {'suffix'=>2,'width'=>'narrow'}
+  )
+%>
+
+Consider the
+geometry shown in figure \figref{squaretorque-fac}.
+Let the mobile charge carriers in the wire have linear
+density $\lambda$, and
+let the sides of the loop have
+length $h$, so that we have $I=\lambda v$. We want to show that
+$m=IA=h^2\lambda v$ is consistent with the definition of the dipole moment
+$U=-\vc{m}\cdot\vc{B}$, where $\vc{B}$ is an externally applied field.
+We do this by computing the torque and then finding the work done when
+the dipole is reoriented.
+
+The only nonvanishing torque comes from the forces on the
+left and right sides. The currents in these sides are perpendicular to the field,
+so the magnitude of the cross product $\vc{F}=q\vc{v}\times\vc{B}$ is simply
+$|\vc{F}|=qvB$. The torque supplied by each of these forces
+is $\vc{r}\times\vc{F}$, where the lever arm $\vc{r}$ has length $h/2$,
+and makes an angle $\theta$ with respect to the force vector. The magnitude of the total torque
+acting on the loop is therefore
+\begin{align*}
+  |\btau|        &=2\frac{h}{2}|\vc{F}|\sin\theta \\
                                   &=h\:qvB\:\sin\theta\eqquad,\\
          \intertext{and substituting $q=\lambda h$ and $v=m/h^2\lambda$, we have}
                   |\btau|        &= h\:\lambda h\:\frac{m}{h^2\lambda} B\sin\theta \\
-                                  &=m B\sin\theta\eqquad,\\
-        \end{align*}
-        which is consistent with the second definition of the field.
-
-\startdq
-
-\begin{dq}
-Consider a square current loop, immersed in an ambient magnetic field,
-whose dipole vector is not aligned with the field. Work out the forces
-on the loop using the right-hand rule and verify that the torque will
-tend to bring the dipole into alignment with the field.
-\end{dq}
-
-
-<% end_sec('b-dipole') %>
-
-
-<% begin_notes %>
+                                  &=m B\sin\theta\eqquad.\\
+\end{align*}
+The work done to reorient the dipole is $W=\int \tau\der\theta=-mB\cos\theta$
+(ignoring the irrelevant constant of integration), and this
+is the same as $U=-\vc{m}\cdot\vc{B}$.
 
 <% end_notes %>
 

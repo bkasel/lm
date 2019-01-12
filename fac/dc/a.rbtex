@@ -157,6 +157,50 @@ Ideally has infinite resistance (sec.~\ref{subsec:resistance}, p.~\pageref{subse
         Ideally has zero resistance. 
 \end{tabular}
 
+\begin{eg}{Magnetic levitation}\label{eg:battery-wire-magnet}
+      In figure \figref{battery-wire-magnet}, a small, disk-shaped permanent magnet is stuck on the side of a
+      battery, and a wire is clasped loosely around the battery, shorting it.
+      A large current flows. The electrons moving through the
+      wire feel a force from the magnetic field made by the permanent magnet,
+      and this force levitates the wire.
+
+      From the photo, it's possible to find the direction of the magnetic field made by the permanent magnet.
+      The electrons in the copper wire are negatively charged, so they flow from the negative (flat) terminal
+      of the battery to the positive terminal (the one with the bump, in front). As the electrons pass by the
+      permanent magnet, we can imagine that they would experience a field either toward the magnet, or away from
+      it, depending on which way the magnet was flipped when it was stuck onto the battery.
+      If $q$ had been positive, then $q\vc{v}\times\vc{B}$ would have been in the direction of
+      $\vc{v}\times\vc{B}$, determined by the right-hand rule. Since $q<0$ here, the right-hand
+      rule flips its handedness, as shown in the bottom panel of the figure.
+      The field must be toward the battery.
+
+      This example is very similar to the design of the simplified ammeter in figure
+      \subfigref{basiccircuits-2}{1}. The main difference is that the roles of the known
+      and unknown quantities is reversed: we know something about the direction of the current,
+      and we use it to find out about the unknown direction of the magnetic field of the permanent magnet.
+\end{eg}
+
+<% marg(50) %>
+<%
+  fig(
+    'battery-wire-magnet',
+    %q{%
+      Example \ref{eg:battery-wire-magnet}.
+    }
+  )
+%>
+<% end_marg %>
+
+\startdq
+
+\begin{dq}
+What would have happened if we had analyzed example \ref{eg:battery-wire-magnet}
+by assuming that the charge carriers were positively charged? If we already knew
+the polarity of the magnet, would we be able to use this experiment to prove that
+the mobile charge carriers in a copper wire are negatively charged? What happens
+inside the battery, where both positive and negative ions may be flowing?
+\end{dq}
+
 <% end_sec('measuring-current') %>
 <% end_sec('circuits') %>
 

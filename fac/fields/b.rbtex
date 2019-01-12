@@ -419,7 +419,7 @@ the proportionality constant as ``charge.''
   )
 %>
 <% end_marg %>
-\begin{eg}{Field of an electric dipole, in its mid-plane}\label{eg:e-dipole-mid-plane}
+\begin{eg}{Field of an electric dipole, in its mid-plane}\label{eg:e-dipole-mid-plane}\index{dipole!electric!field in mid-plane}
 Consider figure \figref{e-dipole-mid-plane}, which is
 an example of a type of charge distribution called an electric \emph{dipole}. Dipoles
 will be discussed in more detail in sec.~\ref{sec:dipole}, p.~\pageref{sec:dipole}.
@@ -434,7 +434,6 @@ symmetry --- neither charge's field has any component out of the plane of the di
 It would also be a waste of time to calculate the $x$ components, since these too
 are guaranteed to cancel. This means that all we really need to do is calculate the
 $y$ components and add them.
-
 
 The distance from the top, positive charge to our point of interest is $r=\sqrt{x^2+(\ell/2)^2}$.
 The magnitude of the field contributed by this charge is
@@ -465,7 +464,11 @@ the expression is actually nicer in terms of $r$.
 This result has the interesting property that for large distances, where $r\approx x$,
 it depends on the charge distribution only through the product $q\ell$, which is referred
 to as the dipole moment.
+The on-axis field of an electric dipole is calculated in problem \ref{hw:dipole-axis},
+p.~\pageref{hw:dipole-axis}. Dipoles are discussed in more detail in secs.~\ref{sec:dipole},
+p.~\pageref{sec:dipole}, and \ref{sec:b-dipole}, p.~\pageref{sec:b-dipole}.
 \end{eg}
+
 
 <% end_sec('field-of-point-charge') %>
 
@@ -919,6 +922,8 @@ of the size of the energy reserve we all carry around with us --- typically
 on the order of 100,000 food calories, or several months' worth of survival without food.
 <% end_sec('matter-atomic-e-scale') %>
 
+\vspace{17mm}
+
 <% begin_sec("The nucleus and the planetary model",nil,'matter-nucleus') %>
 <% marg() %>
 <%
@@ -982,6 +987,8 @@ to wait until the classical picture of the atom was replaced by one involving
 the new field of quantum physics.
 <% end_sec('matter-nucleus') %>
 
+\vspace{17mm}
+
 <% begin_sec("The energy scale for nuclear physics",nil,'matter-nuclear-e-scale') %>
 
 For nuclear reactions, experiments show that the energy scale is about
@@ -1021,7 +1028,7 @@ force.
 <% end_sec('matter-nuclear-e-scale') %>
 <% end_sec('models-of-matter') %>
 
-<% begin_sec("Gauss's law when the number of dimensions is effectively less than three",nil,'gauss-in-lt-3-dim') %>
+<% begin_sec("Gauss's law when the number of dimensions is effectively less than three",4,'gauss-in-lt-3-dim') %>
 Our world is three-dimensional, but it is full of physical systems that are effectively one- or
 two-dimensional. Pool and car racing are effectively two-dimensional sports. When a
 locomotive pulls a string of freight cars up a steep grade, the situation is effectively one-dimensional.
@@ -1060,15 +1067,6 @@ The simplest analysis of all is in one dimension. Here the field lines can't spr
 nowhere for them to escape. The ``density'' of field lines is simply the number of field lines, and
 this doesn't change with distance from the charge. The field varies as $1/r^0$, i.e., it is constant.
 This analysis applies to the field of a flat sheet of charge.
-
-<% marg(-20) %>
-<%
-  fig(
-    'e-line-of-charge',
-    %q{Applying Gauss' law to an infinite line of charge.}
-  )
-%>
-<% end_marg %>
 
 \begin{eg}{Electric field of a line of charge}\label{eg:e-line-of-charge}
 The reasoning above about proportionalitites was an extremely simple way to find the
@@ -1111,6 +1109,16 @@ We had already found the $1/r$ nature of the field, and the factor of $k\lambda$
 there because of units, so the only new accomplishment in this calculation to determine
 that the unitless constant was 2.
 \end{eg}
+
+<% marg(300) %>
+<%
+  fig(
+    'e-line-of-charge',
+    %q{Applying Gauss' law to an infinite line of charge.}
+  )
+%>
+<% end_marg %>
+
 <% end_sec('gauss-in-lt-3-dim') %>
 
 <% begin_sec("Gauss's law in local form, with field vectors",nil,'gauss-div') %>
@@ -1467,7 +1475,7 @@ Verify the calculation in sec.~\ref{subsec:matter-atomic-e-scale}, p.~\pageref{s
 that estimated the energy scale for chemistry and atomic physics.
 <% end_hw() %>
 
-<% begin_hw('dipole-axis',nil) %>
+<% begin_hw('dipole-axis',nil) %>\index{dipole!electric!field on axis}
 Example \ref{eg:e-dipole-mid-plane} on p.~\pageref{eg:e-dipole-mid-plane} calculated the field
 of a dipole in its mid-plane. (a) Calculate its field at a point on its axis, at a distance $r$
 from the center. (b) Show that your result from part a is approximately proportional to
