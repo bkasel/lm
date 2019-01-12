@@ -62,6 +62,13 @@
 \brieftocentry[\hfill]{ch:dc-circuits}{Parallel and series circuits}
 \end{tabular}
 
+\vspace{\brieftocvert}\noindent\brieftochoriz%
+\brieftocchstyle\begin{tabular}{rp{\brieftoctabularwidth}}
+& \textit{\brieftocpartstyle Sources of magnetism}\\
+\brieftocentry[\hfill]{ch:b-superpos}{Magnetic fields by superposition}\\
+\brieftocentry[\hfill]{ch:green}{Maxwell's equations and Green's theorem}
+\end{tabular}
+
 
 
 \onecolumn\vfill
@@ -97,8 +104,9 @@
     \renewcommand{\chapdir}{fields}\include{fields/etemp}
     \renewcommand{\chapdir}{fields}\include{fields/ftemp}
     \renewcommand{\chapdir}{dc}\include{dc/atemp}
-	\formatchtoc{\large}{\quad\contentspage}{4mm} % This has to go before the last chapter.
     \renewcommand{\chapdir}{dc}\include{dc/btemp}
+	\formatchtoc{\large}{\quad\contentspage}{4mm} % This has to go before the last chapter.
+    \renewcommand{\chapdir}{magnetism}\include{magnetism/atemp}
         \addtocontents{toc}{\vspace{5mm}}% For reasons I don't understand, this actually comes *after* the final chapter.
 %
     \widelayout

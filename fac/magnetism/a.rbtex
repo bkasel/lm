@@ -1,0 +1,105 @@
+<%
+  require "../eruby_util.rb"
+%>
+
+<% part_title("Sources of magnetism") %>
+
+<%
+  chapter(
+    '09',
+    %q{Magnetic fields by superposition},
+    'ch:b-superpos'
+  )
+%>
+
+<% begin_sec("The magnetic dipole",nil,'b-dipole') %>
+Our discussion of the dipole in sec.~\ref{sec:dipole}, p.~\pageref{sec:dipole}, focused mainly
+on the electric dipole. Here we discuss the magnetic dipole in more detail. We've defined
+two types of dipoles in terms of the energy they have when they interact with an external field,
+\begin{align*}
+  U &= -\vc{D}\cdot\vc{E} \qquad \text{[definition of the electric dipole moment $\vc{D}$]}\\
+  U &= -\vc{m}\cdot\vc{B} \qquad \text{[definition of the magnetic dipole moment $\vc{m}$]},
+\end{align*}
+and the perfect mathematical analogy between the two definitions automatically implies that
+electric and magnetic dipoles have many of the same properties. Both dipole moments are measured by vectors,
+and this implies that they behave as vectors when we rotate them, and also that they add like
+vectors.
+
+<% marg() %>
+<%
+  fig(
+    'current-loop',
+    %q{A magnetic dipole made out of a square current loop. The dipole vector is perpendicular to the
+       loop and is related to the direction of the current by a right-hand rule.}
+  )
+%>
+\spacebetweenfigs
+<%
+  fig(
+    'adddipoles',
+    %q{Adding two dipole vectors. The dipole moment increases in proportion to the area.}
+  )
+%>
+<% end_marg %>
+
+But this is somewhat abstract, and it's nice to have a more concrete
+physical picture in mind.  Because our universe doesn't seem to come
+equipped with magnetic charges, we can't make a magnetic dipole by
+gluing such charges to the ends of a stick. Instead, the simplest
+embodiment of a magnetic dipole would be something like the current
+loop shown in figure \figref{current-loop}.  Figure
+\figref{adddipoles} shows an example of why it makes sense that dipole
+moments add as vectors, and that the dipole moment is proportional to
+the area of the loop. 
+
+        Let's show that this is consistent with the previous definition, using the
+        geometry shown in figure \figref{squaretorque}. The velocity vector that point in
+        and out of the page are shown using the convention defined
+        in figure \figref{inout}.
+        Let the mobile charge carriers in the wire have linear
+        density $\lambda$, and
+        let the sides of the loop have
+        length $h$, so that we have $I=\lambda v$, and
+        $m=h^2\lambda v$. The only nonvanishing torque comes from the forces on the
+        left and right sides. The currents in these sides are perpendicular to the field,
+        so the magnitude of the cross product $\vc{F}=q\vc{v}\times\vc{B}$ is simply
+        $|\vc{F}|=qvB$. The torque supplied by each of these forces
+        is $\vc{r}\times\vc{F}$, where the lever arm $\vc{r}$ has length $h/2$,
+        and makes an angle $\theta$ with respect to the force vector. The magnitude of the total torque
+        acting on the loop is therefore
+        \begin{align*}
+          |\btau|        &=2\frac{h}{2}|\vc{F}|\sin\theta \\
+                                  &=h\:qvB\:\sin\theta\eqquad,\\
+         \intertext{and substituting $q=\lambda h$ and $v=m/h^2\lambda$, we have}
+                  |\btau|        &= h\:\lambda h\:\frac{m}{h^2\lambda} B\sin\theta \\
+                                  &=m B\sin\theta\eqquad,\\
+        \end{align*}
+        which is consistent with the second definition of the field.
+
+\startdq
+
+\begin{dq}
+Consider a square current loop, immersed in an ambient magnetic field,
+whose dipole vector is not aligned with the field. Work out the forces
+on the loop using the right-hand rule and verify that the torque will
+tend to bring the dipole into alignment with the field.
+\end{dq}
+
+
+<% end_sec('b-dipole') %>
+
+
+<% begin_notes %>
+
+<% end_notes %>
+
+
+
+<% begin_hw_sec %>
+
+
+<% end_hw_sec %>
+
+
+<% end_chapter() %>
+
