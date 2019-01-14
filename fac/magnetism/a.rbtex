@@ -8,11 +8,392 @@
   chapter(
     '09',
     %q{Magnetic fields by superposition},
-    'ch:b-superpos'
+    'ch:b-superpos',
+    %q{This electric doorbell ringer uses two electromagnets made out of coils of copper wire
+       with a layer of enamel or polymer insulation. The main practical goal of this chapter is to
+       be able to calculate the magnetic field made by currents.},
+    {'opener'=>'doorbell','sidecaption'=>true,'anonymous'=>true}
   )
 %>
 
+<% begin_sec("The current density",nil,'current-density') %>
+
+<% begin_sec("Definition",nil,'current-density-def') %>
+
+We've interpreted the junction rule (sec.~\ref{sec:junction-rule}, p.~\pageref{sec:junction-rule})
+as a statement of conservation of
+charge, but this interpretation only works if we assume that no charge
+ever gets stashed away temporarily at some location in the circuit and
+then brought back into action later. By analogy, the junction rule can
+be disobeyed by cars, if there are lots of cars coming into a parking
+garage in the morning and staying there all day until they leave after
+working hours. Circuits can actually accumulate charge, e.g., on the
+plates of a capacitor, so we would like to have a more general way of
+describing conservation of charge (which is always true) than the
+junction rule (which is only sometimes true). 
+
+<% marg(0) %>
+<%
+  fig(
+    'faucet',
+    %q{The mass of water is conserved.}
+  )
+%>
+<% end_marg %>
+
+By the way, this kind of thing arises in many physical situations, not just in electricity and
+magnetism.  In figure \figref{faucet},
+the stream of water is fatter near the mouth of the
+faucet, and skinnier lower down. This is because the water speeds up as
+it falls. If the cross-sectional area of the stream was equal all
+along its length, then the rate of flow (kilograms per second) through
+a lower cross-section would be greater than the rate of flow through a
+cross-section higher up. Since the flow is \emph{steady}, the amount of water
+between the two cross-sections stays constant. Conservation of mass
+therefore requires that the cross-sectional area of the stream shrink
+in inverse proportion to the increasing speed of the falling water.
+Notice how we had to assume a \emph{steady} flow, so that no region
+of space had any net influx or outflow of water.
+
+The first step in formulating this sort of thing mathematically for
+electric charge and currents is to recognize that we're describing
+a law of physics --- conservation of charge --- and the
+laws of physics are really always \emph{local}. This means that the
+electric current, $I$, in units of amperes, is fundamentally ill suited
+to our purposes, since the definition of current involves the net charge
+flowing across some surface, which can be large. We want some way of talking
+about the flow of current at a particular \emph{point} in space, which
+would be a kind of current \emph{density} and should be a vector. The mathematical
+setup is the same as as the one occurring in the definition of flux (sec.~\ref{sec:gauss-global},
+p.~\pageref{flux-defined}), but with different variables. The current through an
+infinitesimal area, with area vector $\der\vc{A}$, is
+\begin{equation*}
+  \der I = \vc{j}\cdot\der\vc{A},
+\end{equation*}
+which implicitly defines the current density $\vc{j}$. Integrating this gives
+the current through a finite surface, $I=\int \vc{j}\cdot\der\vc{A}$, which looks
+just like our definition of flux, but with different letters of the alphabet and
+a different physical interpretation. The current density has SI units of $\zu{A}/\munit^2$.
+It is a vector pointing in the net direction of flow of electric charge, with the flow
+of negative charge being represented by a vector in the opposite direction.
+
+\begin{eg}{Current density in a copper wire}
+\egquestion Electrical codes in the U.S.~require that a copper wire carrying 20 A
+should be at least of a certain size (called 12 gauge),
+which has a cross-sectional area of $3.31\ \zu{mm}^2$. What is the corresponding
+current density, assuming that the current is uniformly distributed across the
+wire's entire cross-section?
+
+\eganswer Since the current density
+is stated to be constant, we can take it outside the integral,
+$I=\int \vc{j}\cdot\der\vc{A}=\vc{j}\cdot\int \vc{A}=\vc{j}\cdot\vc{A}$.
+The cross-sectional area is stated for a cross-section perpendicular to the
+wire, so that the area vector points along the wire's axis, and therefore
+$\vc{j}$ and $\vc{A}$ are parallel, meaning that the dot product $\vc{j}\cdot\vc{A}$
+is simply the product of the magnitudes $jA$. We then have
+\begin{align*}
+  j &= \frac{I}{A} \\
+    &= 6.0\times10^6\ \zu{A}/\munit^2.
+\end{align*}
+Comparing with the requirements in the code for other amounts of current, we find that the area is
+required to scale up somewhat faster than the current, so that the current density has to be somewhat smaller
+for thicker wires. This is presumably because a thicker wire has a smaller surface-to-volume ratio,
+and therefore cannot get rid of its heat as quickly.
+\end{eg}
+
+<% end_sec('current-density-def') %>
+
+<% begin_sec("Continuity equation",nil,'continuity') %>
+
+We can now imagine a ``div-meter'' (figure \figref{divmeter}, p.~\pageref{fig:divmeter})
+that measures the divergence of the current density rather than the divergence of
+the electric field. If $\operatorname{div}\vc{j}$ is nonzero --- let's say positive --- at a certain
+point, then either conservation of charge is being violated at that point, or
+charge that was stored in that location is being taken out, like the cars in the
+parking garage leaving at the end of the day. Conservation of charge can now be stated
+succinctly as
+\begin{equation*}
+  \operatorname{div}\vc{j} = -\frac{\partial\rho}{\partial t},
+\end{equation*}
+where $\rho$ is the charge density. An equation of this form also holds in other
+physical cases such as the flow of water, and is known more generally as an equation
+of continuity.
+
+
+\begin{eg}{Skin depth}\label{eg:skin-depth}
+There is a general phenomenon in AC circuits that the flow of current
+in a wire is nonuniform: the current density is higher as we get closer to the surface
+of the wire. This is referred to as the ``skin effect,'' and it occurs because of
+induced electric fields. Figure \figref{skin-depth} shows a typical profile of current
+density throughout a wire. If we visualize a div-meter in this field, we can see that
+although it would tend to spin and be swept downstream, it would not change its volume,
+which is how a div-meter registers a divergence. Therefore 
+$\operatorname{div}\vc{j}=0$ in this example, and by conservation of charge
+we find that $\partial\rho/\partial t=0$, i.e., charge is not being stored or taken
+out of storage anywhere in the wire.
+\end{eg}
+
+<%
+  fig(
+    'div-focusing',
+    %q{%
+      Example \ref{eg:possible-and-impossible-flows}. Each sea-of-arrows diagram represents
+      a current density $\vc{j}$. Which are physically possible?
+    },
+    {
+      'width'=>'wide',
+      'sidecaption'=>true
+    }
+  )
+%>
+<% marg(300) %>
+<%
+  fig(
+    'skin-depth',
+    %q{Example \ref{eg:skin-depth}.}
+  )
+%>
+<% end_marg %>
+
+\begin{eg}{Possible and impossible patterns of steady flow}\label{eg:possible-and-impossible-flows}
+For a steady flow of electric charge, nothing is changing over time, so
+$\partial\rho/\partial t=0$ and therefore the continuity equation
+requires $\operatorname{div}\vc{j}=0$ everywhere:
+the flow must be divergence-free. Figure \figref{div-focusing} shows some possible and impossible
+examples.
+
+Example \subfigref{div-focusing}{1} is impossible. The current density is of the form
+$\vc{j}=bx\hat{\vc{x}}$, with $b>0$, and we showed in example \ref{eg:div-examples}, p.~\pageref{eg:div-examples},
+that such a field has a divergence equal to $b$, which is nonzero.
+
+The flow in \subfigref{div-focusing}{2} is also impossible. This is like $\vc{j}=-by\hat{\vc{y}}$,
+which can be obtained from \subfigref{div-focusing}{1} by rotating 90 degrees and then reversing
+all the vectors. Because the divergence is a scalar, the 90-degree rotation doesn't change the divergence.
+The divergence is also a \emph{linear} operator (like any kind of derivative operator), so flipping
+the arrows works like $\operatorname{div}(-\vc{j})=-\operatorname{div}\vc{j}$, i.e., it flips the
+sign of the result. We therefore find that the divergence of this flow is $-b$, and this is also
+impossible for a steady flow.
+
+The flow in figure \subfigref{div-focusing}{3} is the point-by-point vector sum of \subfigref{div-focusing}{1}
+and \subfigref{div-focusing}{2}. Since the divergence is again a linear operator,
+we have $\operatorname{div}(\vc{j}_1+\vc{j}_2)=\operatorname{div}\vc{j}_1+\operatorname{div}\vc{j}_2$.
+But this is $b-b=0$, so this \emph{is} a possible steady flow of charges.
+\end{eg}
+
+<%
+  fig(
+    'einzel-lens',
+    %q{%
+      An einzel lens, example \ref{eg:einzel-lens}.
+    },
+    {
+      'width'=>'wide',
+      'sidecaption'=>true
+    }
+  )
+%>
+
+\begin{eg}{The einzel lens}\label{eg:einzel-lens}
+Figure \figref{einzel-lens} shows a common electrostatic focusing
+device called an einzel lens.  Einzel lenses are used to focus beams
+of charged particles in, for example, scanning electron microscopes
+and old-fashioned CRT video tubes. This one consists of three
+cylindrical pieces of metal. The axes coincide, and run from left to
+right in the figure, which shows a cross-sectional view. The two dark
+lines on the left are the top and bottom of the left-hand cylinder,
+and similarly in the middle and right.
+The left and right cylinders
+are kept at the ground potential, while the one in the middle
+is at a different potential $\phi<0$.
+
+The silhouette of the beam of electrons is shown as a white highlight
+in the figure.  As the electrons enter from the left side, they first
+encounter strong electric fields when they reach the gap between the
+left and middle cylinders. If we consider an electron at the top edge
+of the beam, the field initially decelerates it and moves it away
+from the axis, to point A. Continuing from A to B, the electron is reaccelerated
+and deflected toward a point on the right at which the beam reaches a
+focus on the axis. 
+
+It might seem like an accident that the electron speeds up as it travels from
+A to B, but in fact this this required by the equation of continuity.
+The physics is identical to that of the faucet in figure \figref{faucet}, and
+to right-hand portion of figure \subfigref{div-focusing}{3}. In all of these
+examples, the speeding-up and the coming-together are logically related. If we
+had a coming together without a speeding up, we would violate the equation of
+continuity.
+\end{eg}
+
+<% end_sec('continuity') %>
+
+<% begin_sec("Transformation properties (optional)",nil,'j-transformation',{'optional'=>true}) %>
+
+Clearly the values of $\rho$ and $\vc{j}$ depend on our frame of reference.
+By analogy with the flow of water, if Huck and Jim are floating down the Mississippi River
+on a raft, the current density is zero in their frame of reference. If this analogy were
+to hold in detail, then we would expect, however, that $\rho$ would stay the same.
+This turns out not to be true. The purpose of this optional section is to work out
+the transformation properties of $\rho$ and $\vc{j}$ correctly. Some of the discussion
+will only be understandable to the reader who has studied optional chapter \ref{ch:relativity}.
+
+Suppose that in a certain frame of reference, a long, straight rod holds charge density
+$\rho$ and carries a uniform current density $j_z$ in the longitudinal direction.
+It will be surrounded by an electric field that is proportional to $\rho$, and a magnetic
+field proportional to $j_z$. Even if you haven't read ch.~\ref{ch:relativity}, you know
+that when we change frames of reference, we will have a new mix of electric and magnetic
+fields. Therefore if we know the transformation of the electric and magnetic fields, we
+can immediately infer the same transformation properties for $\rho$ and $j_z$. We have
+worked out the transformation of the fields on p.~\pageref{transformation-e-b}, so we
+obtain the transformation of $\rho$ and $j_z$ simply by swapping in the new variables
+and putting in factors of $c$ to make the units work:
+\begin{align*}\label{transformation-e-b}
+  c\rho' &=  \quad \mygamma c\rho - \frac{v}{c}\mygamma j_z  \\
+  j_z' &= -\frac{v}{c}\mygamma c\rho + \mygamma j_z .
+\end{align*}
+Because $\rho$ and $\vc{j}$ are things we can measure at a point in space, they have
+their own independent physical existence, and therefore these relationships hold regardless
+of whether the physical context is the one involving the straight rod.
+
+\begin{eg}{Length contraction}
+Suppose that in a certain frame of reference, a wire carries zero current but has a charge.
+Setting $j_z=0$ in the equation above for $\rho'$ gives $\rho'=\mygamma\rho$. This is
+the result of relativistic length contraction (sec.~\ref{subsec:length-contraction},
+p.~\pageref{subsec:length-contraction}).
+\end{eg}
+
+<% end_sec('j-transformation') %>
+
+<% end_sec('current-density') %>
+
+<% begin_sec("Maxwell's equations",nil,'maxwell-full') %>
+<% begin_sec("Adding a current term",nil,'maxwell-current') %>
+
+In sec.~\ref{sec:maxwell-vacuum} we studied Maxwell's equations in a vacuum. Now we wish to
+generalize them to their full form, including the possibility that there are both charges
+and currents. We've already seen in sec.~\ref{sec:gauss-div} how to incorporate a charge
+density $\rho$, which acts as a source of electric fields. The only finishing touch left
+is to add a term describing how a current density $\vc{j}$ produces a curly magnetic field.
+We first present Maxwell's equations and then give some justification. They are:
+\begin{align*}\index{Maxwell's equations!full version}
+  \operatorname{div}\vc{E} &=  4\pi k\rho \\
+  \operatorname{div}\vc{B} &=  0 \\
+  \operatorname{curl}\vc{E} &=  -\frac{\partial\vc{B}}{\partial t} \\
+  \operatorname{curl}\vc{B} &=  \frac{1}{c^2}\frac{\partial\vc{E}}{\partial t}+\frac{4\pi k}{c^2}\vc{j}.
+\end{align*}
+The only new feature is the final term involving $\vc{j}$. 
+Something like this is required physically because we know that currents create magnetic fields.
+The $k/c^2$ has to be there because of units. The positive sign of this term expresses the
+right-hand relationship between the direction of the current and the curliness of the magnetic field
+it creates, which was proved in \notewithoutbackref{slope-is-v}. (If aliens on another planet define
+their magnetic field to be the opposite direction compared to ours, then they can flip all the signs
+of terms involving $\vc{B}$, but they have to do so in a consistent way.)
+
+The only thing left to justify is the factor of $4\pi$. A nice way to do this, which is
+fundamentally of more physical interest than the $4\pi$, is to show that Maxwell's equations
+imply conservation of charge. The $4\pi$ then arises as the correct factor to put
+in so that charge conservation comes out correctly. 
+This can be done in the following vector calculus
+calculation, which requires almost no real knowledge of vector calculus other than understanding generic
+ideas about the linearity of derivatives. 
+You can skip ahead to sec.~\ref{subsec:maxwell-round-up} if this kind of thing doesn't seem exciting.
+
+We take the divergence of both sides of the fourth Maxwell's equation:
+\begin{equation*}
+  \operatorname{div}(\operatorname{curl}\vc{B}) =  
+        \operatorname{div}\left[\frac{1}{c^2}\frac{\partial\vc{E}}{\partial t}+\frac{4\pi k}{c^2}\vc{j}\right].
+\end{equation*}
+The left side is zero by symmetry (\note{div-of-curl-is-zero}). On the right-hand side, we can
+use the fact that the divergence is a kind of derivative, so it's linear, just like with a
+plain old derivative, which has $(c_1f+c_2g)'=c_1f'+c_2g'$. This gives
+\begin{equation*}
+  0 = \operatorname{div}\frac{\partial\vc{E}}{\partial t}+4\pi k\operatorname{div} \vc{j}.
+\end{equation*}
+In general it's legitimate to swap the order of derivative operators
+(\note{order-of-derivatives}), so we can make this into
+\begin{equation*}
+  0 = \frac{\partial}{\partial t}\operatorname{div}\vc{E}+4\pi k\operatorname{div} \vc{j}.
+\end{equation*}
+But now the first Maxwell's equation $\operatorname{div}\vc{E}=4\pi k\rho$ allows us to make this
+into
+\begin{equation*}
+  0 = \frac{\partial\rho}{\partial t}+\operatorname{div} \vc{j},
+\end{equation*}
+which is the equation of continuity, stating that charge is conserved.
+<% end_sec('maxwell-current') %>
+
+<% begin_sec("The view from the top of the mountain",nil,'maxwell-round-up') %>
+In a similar way, it is also possible to show from Maxwell's equations
+that energy is conserved, a result known as Poynting's theorem.  The
+basic concept is the same as in sec.~\ref{subsec:poynting}, where we
+showed that the Poynting vector could be interpreted as a rate of
+energy flow, but extending it to apply more generally than in the case of
+a plane wave in vacuum.\label{maxwell-logic-roundup} Way back at the beginning of
+ch.~\ref{ch:radiation},
+p.~\pageref{maxwell-logic-promise}, I claimed that we would eventually
+lay out the full set of tightly interlocking logical relationships
+behind Maxwell's equations. Here's how that works.  The logical
+development up until now has been the following:
+
+\begin{tabular}{lp{80mm}}
+  Assumptions: & 1.~Time is relative (sec.~\ref{sec:time}, p.~\pageref{sec:time}).\\
+               & 2.~All frames of reference are equally valid, regardless of their motion how we orient them.\\
+               & 3.~Charge is conserved.\\
+               & 4.~Energy is conserved.\\
+               & 5.~Electric and magnetic fields have some basic properties (observability, vectors, and
+                 superposition --- sec.~\ref{sec:fields-basic-properties},
+                 p.~\pageref{sec:fields-basic-properties}). \\
+  Results:     & 6.~Maxwell's equations\\
+               & 7.~$E=mc^2$ (sec.~\ref{sec:mass-energy-equivalence}, p.~\pageref{sec:mass-energy-equivalence}) \\
+               & 8.~Time dilation, length contraction, and other facts about the structure of space
+                    and time (sec.~\ref{sec:spacetime}, p.~\pageref{sec:spacetime}).
+\end{tabular}
+
+On the other hand, we can see that it's possible to run the logic in the opposite
+direction as well. If we consider Maxwell's equations to be a starting assumption
+(originally deduced by Maxwell from experimentalists' observations), then we can
+deduce facts such as conservation of charge. Historically, the
+idea of Einstein's two ground-breaking 1905 papers on relativity was to show that,
+starting from facts 2-6 as assumptions, he could prove facts 1, 7, and 8.
+
+<% marg(-8) %>
+<%
+  fig(
+    'out-of-nowhere',
+    %q{Example \ref{eg:out-of-nowhere}. A current distribution describing
+       a segment of wire, isolated and hanging in space.}
+  )
+%>
+<% end_marg %>
+\begin{eg}{Out of nowhere?}\label{eg:out-of-nowhere}
+Adding the final current term to Maxwell's equations means that we know enough laws
+of physics that it should be possible, in principle, to predict the magnetic field
+made by a set of currents, as in the doorbell ringer on p.~\pageref{ch:b-superpos}.
+A seemingly reasonable approach would be to break down the wire into short segments,
+like a dot-to-dot puzzle, find the field of one such segment, and then add up the fields
+of all the segments. This divide-and-conquer technique would then reduce the hard problem
+to the easier problem of finding the magnetic field created by a current distribution like the
+one in figure \figref{out-of-nowhere}.
+
+The trouble here is that the laws of physics can't predict the magnetic field in this
+situation, because the laws of physics forbid this situation from happening. Although
+the total amount of charge in the figure is staying constant, charge is springing into
+existence on the left and disappearing into nothingness on the right. If Maxwell's equations
+are true, then the continuity equation is true as well, and the continuity equation is a
+\emph{local} law of physics: it forbids us from creating or destroying charge in one place,
+even if we try to make up for it somewhere else.
+\end{eg}
+
+<% end_sec('maxwell-round-up') %>
+
+<% end_sec('maxwell-full') %>
+
 <% begin_sec("The magnetic dipole",nil,'b-dipole') %>
+
+Example \ref{eg:out-of-nowhere}, p.~\pageref{eg:out-of-nowhere}, shows that if we want to
+find the field made by a current distribution like the one in the doorbell ringer, we can't
+necessarily chop up the current distribution into building blocks that look like little
+line segments. Let's instead investigate magnetic dipoles as building blocks.
+
 <% begin_sec("Modeling the dipole using a current loop",nil,'b-dipole-current-loop') %>
 Our discussion of the dipole in sec.~\ref{sec:dipole}, p.~\pageref{sec:dipole}, focused mainly
 on the electric dipole. Here we discuss the magnetic dipole in more detail. We've defined
@@ -185,6 +566,55 @@ circuit.}
 <% end_sec('b-dipole') %>
 
 <% begin_notes %>
+
+\notetext{div-of-curl-is-zero}{Divergence of a curl}
+\notesummary{The divergence of a curl is zero}
+The kind of field that looks like it would have a nonvanishing value of this
+operation is something like $\vc{F}=zx\hat{\vc{y}}$, the idea being that we take
+a field like $x\hat{\vc{y}}$ that has a curl in the $z$ direction, and then we
+give it some $z$ dependence so that there could be a divergence. In fact, any
+field that is differentiable near the origin can have its components approximated in that neighborhood
+by a function of this general form (a second-order mixed polynomial), so if we can prove
+that $\operatorname{div}(\operatorname{curl}\vc{F})=0$ for this particular $\vc{F}$, it
+follows that the div of a curl is zero for any $\vc{F}$.
+
+Now we show based on symmetry that $\operatorname{div}(\operatorname{curl}\vc{F})=0$ for this $\vc{F}$.
+Suppose we rotate our coordinate system by 180 degrees about the $y$ axis. 
+This doesn't change the field or its components, but the curl
+lies in the $x$-$z$ plane, so the output of the curl operation has its components sign-flipped
+because of the new coordinate system used to describe it.
+This is an over-all reversal of the curl's direction, and since
+the div is linear, the effect is to sign-flip $\operatorname{div}(\operatorname{curl}\vc{F})$.
+
+But the divergence is a scalar, so the final result of taking $\operatorname{div}(\operatorname{curl}\vc{F})$
+cannot change just because we change our coordinates.
+
+We have proved that $\operatorname{div}(\operatorname{curl}\vc{F})$ flips its sign, but also
+that it doesn't change its sign. This is only possible if it is zero, as claimed.
+
+\notetext{order-of-derivatives}{Order of derivatives}
+\notesummary{Typically it's OK to freely interchange the order of derivative operations}
+Of course an example doesn't prove a general rule, but let's consider a simple example in order
+to get the idea of what is being discussed. We have
+\begin{equation*}
+  \frac{\partial}{\partial x} \left(\frac{\partial}{\partial y}(xy)\right)
+        = \frac{\partial}{\partial x}(x) = 1
+\end{equation*}
+but also
+\begin{equation*}
+  \frac{\partial}{\partial y} \left(\frac{\partial}{\partial x}(xy)\right)
+        = \frac{\partial}{\partial y}(y) = 1.
+\end{equation*}
+In this example, it didn't matter which derivative we applied first.
+A theorem called Clairaut's theorem says that a function $f(x,y)$ is well-behaved,
+in the sense that all its second derivatives
+($\partial^2f/\partial x^2$, $\partial(\partial f/\partial x)/\partial y$, and
+$\partial(\partial f/\partial y)/\partial x$)
+are continuous at a certain point, then the first derivatives can be interchanged at that point,
+so that $\partial(\partial f/\partial x)/\partial y=\partial(\partial f/\partial y)/\partial x$.
+
+Because derivative operators like div, grad, and curl can be expressed in terms of partial
+derivatives, it follows that they can also be interchanged under the same conditions.
 
 \notetext{b-dipole-torque}{Magnetic dipole moment of a current loop}
 \notesummary{The magnetic dipole moment of a square current loop is given by $\vc{m}=I\vc{A}$.}

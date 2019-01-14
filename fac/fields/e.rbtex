@@ -65,7 +65,10 @@ derive facts about electromagnetic waves, and then end up using those facts
 to infer the full set of physical laws for electromagnetism, known as Maxwell's
 equations. Other books might take Maxwell's equations as assumptions (perhaps
 with some experimental or logical justification) and use them to prove the
-properties of electromagnetic waves.
+properties of electromagnetic waves. By p.~\pageref{maxwell-logic-roundup}, we'll
+finish making all the connections, and it will become clear there is a system of
+tightly interlocking logical relationships, very much like the Euclidean/Cartesian 
+example.\label{maxwell-logic-promise}
 
 <% begin_sec("Wave patterns",nil,'wave-patterns') %>
 
@@ -408,7 +411,7 @@ the magnetic field's curl is up. For static fields, we're supposed to have
 $\operatorname{curl}\vc{E}=0$ and $\operatorname{curl}\vc{B}=0$, so this would be impossible.
 But this is not a static field, it's a field that is changing over time.
 The bug needs some laws of physics that relate the time-varying nature of the fields to their
-curls. With this motivation, we state Maxwell's equations in a vacuum:
+curls. With this motivation, we state Maxwell's equations in a vacuum:\index{Maxwell's equations!in a vacuum}
 \begin{align*}
   \operatorname{div}\vc{E} &=  0 \\
   \operatorname{div}\vc{B} &=  0 \\
