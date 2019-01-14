@@ -869,6 +869,15 @@ particle that we can ever infer from its motion in an electric field.
   )
 %>
 
+The value that Thomson found for the $q/m$ of his mystery particles
+was negative, and, more importantly, thousands of times bigger than
+the $q/m$ ratio of charged atoms (ions) as determined from chemistry
+experiments. Thomson guessed (without actually knowing for sure) that
+the charge of the particles was $-e$, and that therefore they had masses
+thousands of times smaller than the mass of an atom. He interpreted this
+as evidence that he had discovered the first subatomic particle, which
+was later named the electron.
+
 <% marg(0) %>
 <%
   fig(
@@ -880,16 +889,6 @@ particle that we can ever infer from its motion in an electric field.
   )
 %>
 <% end_marg %>
-
-The value that Thomson found for the $q/m$ of his mystery particles
-was negative, and, more importantly, thousands of times bigger than
-the $q/m$ ratio of charged atoms (ions) as determined from chemistry
-experiments. Thomson guessed (without actually knowing for sure) that
-the charge of the particles was $-e$, and that therefore they had masses
-thousands of times smaller than the mass of an atom. He interpreted this
-as evidence that he had discovered the first subatomic particle, which
-was later named the electron.
-
 
 Based on his experiments, Thomson proposed a picture of the
 atom which became known as the \index{atom!raisin-cookie

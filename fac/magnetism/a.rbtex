@@ -120,6 +120,14 @@ physical cases such as the flow of water, and is known more generally as an equa
 of continuity.
 
 
+<% marg(-5) %>
+<%
+  fig(
+    'skin-depth',
+    %q{Example \ref{eg:skin-depth}.}
+  )
+%>
+<% end_marg %>
 \begin{eg}{Skin depth}\label{eg:skin-depth}
 There is a general phenomenon in AC circuits that the flow of current
 in a wire is nonuniform: the current density is higher as we get closer to the surface
@@ -146,14 +154,6 @@ out of storage anywhere in the wire.
     }
   )
 %>
-<% marg(300) %>
-<%
-  fig(
-    'skin-depth',
-    %q{Example \ref{eg:skin-depth}.}
-  )
-%>
-<% end_marg %>
 
 \begin{eg}{Possible and impossible patterns of steady flow}\label{eg:possible-and-impossible-flows}
 For a steady flow of electric charge, nothing is changing over time, so
@@ -561,9 +561,107 @@ to the Tolman-Stewart experiment (example \ref{eg:tolman-stewart},
 p.~\pageref{eg:tolman-stewart}), in which the subatomic structure of
 metals was probed by measuring inertial effects in an electric
 circuit.}
-
 <% end_sec('g-factor') %>
+
+<% begin_sec("Field of a dipole",nil,'dipole-field') %>
+An electric dipole, unlike a magnetic
+one, can be built out of two opposite monopoles, i.e., charges, separated by a certain
+distance, and it is then straightforward to show by vector addition that the
+field of an electric dipole, far away, is\index{dipole!electric!field of}\index{electric dipole!field of}
+\begin{align*}
+        E_z        &= kD\left(3\cos^2\theta-1\right)r^{-3}\\
+        E_R        &= kD\left(3\sin\theta\:\cos\theta\right)r^{-3}\eqquad,
+\end{align*}
+where $r$ is the distance from the dipole to the point of interest, $\theta$
+is the angle between the dipole vector and the line connecting the dipole to this
+point, and $E_z$ and $E_R$ are, respectively, the components of the field
+parallel to and perpendicular to the dipole vector. We have already found this field in
+the special cases of $\theta=\pi/2$ (example \ref{eg:e-dipole-mid-plane},
+p.~\pageref{eg:e-dipole-mid-plane}) and $\theta=0$ (problem \ref{hw:dipole-axis},
+p.~\pageref{hw:dipole-axis}).
+
+<% marg() %>
+<%
+  fig(
+    'field-of-point-dipole',
+    %q{The field of a dipole.}
+  )
+%>
+<% end_marg %>
+
+This is the field pattern that exists far away from the dipole, in empty space.
+Because the vacuum form of Maxwell's equations treats the electric and magnetic
+fields totally symmetrically, the magnetic field of a magnetic dipole has to have
+the same form. With the correct constant of proportionality, it turns out to be
+\index{dipole!magnetic!field of}\index{magnetic dipole!field of}
+\begin{align*}
+        B_z        &= \frac{km}{c^2}\left(3\cos^2\theta-1\right)r^{-3}\\
+        B_R        &= \frac{km}{c^2}\left(3\sin\theta\:\cos\theta\right)r^{-3}\eqquad.
+\end{align*}
+<% end_sec('dipole-field') %>
 <% end_sec('b-dipole') %>
+
+<% begin_sec("Magnetic fields found by summing dipoles",nil,'sum-dipoles') %>
+Many real-world electromagnets are built out of multiple circular loops of wire. In this section
+we use a trick to calculate the useful result for the field at the center of
+a single circular loop. Usually I'm not a big fan of tricks, but we'll see later
+that this trick can be generalized in a useful way.
+
+We start by considering a problem, figure \subfigref{counterrotating}{1},
+that looks harder but is actually easier. We have not one but two loops of wire, with
+slightly different radii $r$ and $r+\der r$. Here the ``d'' just means ``a little bit of,''
+i.e., writing the radii this way is just a way of saying that they're almost, but not quite, the same.
+The currents in the two rings are both $I$, but they flow in opposite directions. This is actually a reasonably
+realistic setup; the inset \subfigref{counterrotating}{2} shows a type of cable,
+called ``twin lead,'' that is often used in this way, with current flowing one way through one
+conductor and then coming back through the other conductor in the opposite direction.
+
+<% marg(0) %>
+<%
+  fig(
+    'counterrotating',
+    %q{Two counterrotating rings of current.}
+  )
+%>
+<% end_marg %>
+
+The trick, as shown in \subfigref{counterrotating}{3}, is to take the circular strip between the
+rings and break it up into imaginary squares, then place a square current loop with current $I$ on each one.
+These are all dipoles, and each one contributes a field at the center which we can calculate
+by plugging $\theta=\pi/2$ in to our expressions from section \ref{subsec:dipole-field}. The result is that
+each tiny dipole $\der m$ contributes $-(k/c^2r^3)\der m$, where the minus sign means that the field
+points out of the page (in the opposite direction compared to the vector $\der\vc{m}$). The total
+field is found by adding up all these small contributions to the field,
+\begin{equation*}
+  B = -\int \frac{k}{c^2r^3} \der m.
+\end{equation*}
+This integral, like any integral, represents a sum of infinitely many infinitesimal things.
+We're not integrating with respect to some variable $m$, though; $\der m$ here just means an infinitesimal
+dipole moment of one of the squares. But we don't actually need any calculus to do this integral.
+Moving all the constants outside and substituting $\der m=I\der A$, we have
+\begin{equation*}
+  B = -\frac{kI}{c^2r^3} \int \der A,
+\end{equation*}
+where $\int\der A$ is the area of the strip,
+$A=(\text{width})(\text{circumference})=(\der r)(2\pi r)$. Our final result is
+\begin{equation*}
+  B = -\frac{2\pi kI}{c^2r^2} \der r \qquad \text{[field at the center of figure \subfigref{counterrotating}{1}]}.
+\end{equation*}
+
+We weren't actually that excited about finding the field in the somewhat artificial example
+of figure \figref{counterrotating}. What would be more useful would be to find the field of
+a \emph{single} circular loop. Now we just play a similar trick again. We imagine an infinite
+set of concentric rings, extending from some radius $a$ all the way out to infinity. The current
+on the outer edge of each ring is canceled out by the current in the overlapping inner edge of
+the next ring, so that the only loop of current that \emph{doesn't} cancel out is the very 
+innermost one, at $r=a$. The result is then that the field at the center of a circular loop
+is $\int_a^\infty [-(2\pi kI)/(c^2 r^2)]\der r$, or
+\begin{equation*}
+  B = \frac{2\pi kI}{c^2a} \qquad \text{[field at the center of a ring of current]}.
+\end{equation*}
+The positive sign means that the direction of the field is right-handed, e.g., out of the page
+if the current is counterclockwise.
+<% end_sec('sum-dipoles') %>
 
 <% begin_notes %>
 
