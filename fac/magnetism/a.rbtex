@@ -615,12 +615,16 @@ The currents in the two rings are both $I$, but they flow in opposite directions
 realistic setup; the inset \subfigref{counterrotating}{2} shows a type of cable,
 called ``twin lead,'' that is often used in this way, with current flowing one way through one
 conductor and then coming back through the other conductor in the opposite direction.
+Of course in the real circuit we would have to have a battery and connections to the loops from the outside,
+and we would probably hook up the two loops in series so that their currents were guaranteed to be
+exactly equal in absolute value. These complications are not shown in the diagram.
 
 <% marg(0) %>
 <%
   fig(
     'counterrotating',
-    %q{Two counterrotating rings of current.}
+    %q{Two counterrotating rings of current. The inset photo 2 shows a twin lead cable with the insulation
+       stripped off of its ends.}
   )
 %>
 <% end_marg %>
@@ -663,6 +667,96 @@ The positive sign means that the direction of the field is right-handed, e.g., o
 if the current is counterclockwise.
 <% end_sec('sum-dipoles') %>
 
+<% begin_sec("Magnetic fields for some practical examples",nil,'b-fields-practical') %>
+
+Figure \figref{magnetic-field-equations} shows the equations for some of the more commonly
+encountered configurations in which wires produce a magnetic field, with illustrations of their
+field patterns. Of these three results, we've only previously derived the first and a special case
+of the second. The remaining derivations are given later in the book, but the results
+are presented together at this point for reference.
+
+<% marg(-15) %>
+<%
+  fig(
+    'magnetic-field-equations',
+    %q{Some magnetic fields.}
+  )
+%>
+<% end_marg %>
+
+\noindent\textit{Field created by a long, straight wire carrying current $I$:}
+\begin{equation*}
+ B = \frac{k}{c^2}\cdot\frac{2I}{r}
+\end{equation*}
+Here $r$ is the distance from the center of the wire. The field vectors trace
+circles in planes perpendicular to the wire, in a direction given by a right-hand
+rule where the thumb is the current and the fingers are the field.
+
+\noindent\textit{Field created by a single circular loop of current:}\\
+The field vectors form a dipole-like pattern, coming through the loop and back
+around on the outside. The orientation of the loops is such that in the middle
+region there is a right-hand relationship in which the thumb is the field; or, alternatively,
+one can use the same right-hand rule as for a straight wire, applying it to the area
+close to the wire.
+There is no simple equation for a field at an arbitrary point in space, but
+for a point lying \emph{along the central axis} perpendicular to the loop,
+the field is
+\begin{equation*}
+  B = \frac{k}{c^2}\cdot 2\pi Ib^2\left(b^2+z^2\right)^{-3/2}\eqquad,
+\end{equation*}
+where $b$ is the radius of the loop and $z$ is the distance of the point
+from the plane of the loop.
+
+\noindent\textit{Field created by a solenoid (cylindrical coil):}\\
+The field pattern is similar to that of a single loop, but for a long solenoid
+the field lines become very straight on the inside of the coil
+and on the outside immediately next to the coil. For a sufficiently long solenoid,
+the interior field also becomes very nearly uniform, with a magnitude of
+\begin{equation*}
+  B = \frac{k}{c^2}\cdot 4\pi I N/\ell\eqquad,
+\end{equation*}
+where $N$ is the number of turns of wire and $\ell$ is the length of the
+solenoid. The field near the mouths or outside the coil is not constant, and
+is more difficult to calculate. For a long solenoid, the exterior field is
+much smaller than the interior field.
+
+Some other cases of interest can be solved by superposing the fields
+above. An example is the Helmholtz coil (problem \ref{hw:helmholtzcoil-center},
+p.~\pageref{hw:helmholtzcoil-center}).
+
+<% end_sec('b-fields-practical') %>
+
+<% begin_sec("The Biot-Savart law",4,'biot-savart') %>
+
+In sec.~\ref{sec:sum-dipoles}, p.~\pageref{sec:sum-dipoles}, we were able to find the magnetic
+field at  the center of a current loop by the trick of turning the current distribution into
+a superposition of small, square dipoles. It's usually a waste of time to learn a trick that
+only works in one case, but this trick can be extended to apply more generally. Consider the
+wire loop shown in figure \subfigref{potato-chip}{1}, which has a randomly chosen, asymmetric
+shape like a potato chip. If it carries a steady current, it will create a static magnetic field pattern. (The
+assumption of a steady current is necessary, since otherwise, e.g., it could act like an antenna
+and radiate electromagnetic waves.)
+
+<% marg(0) %>
+<%
+  fig(
+    'potato-chip',
+    %q{Extending the dipole trick to handle a randomly chosen, asymmetric current loop.}
+  )
+%>
+<% end_marg %>
+
+Figure \subfigref{potato-chip}{2} shows an idea for extending our dipole trick to handle this case.
+We form an imaginary tube that starts on the loop and extends off to infinity, then split it up
+into strips like railroad tracks, where each railroad track contains an infinite number of square
+dipoles, \subfigref{potato-chip}{3}. The key here is that although each track has a pair
+of long, straight rails that bring current in from infinity and then send it back out,
+the currents along these rails cancel when we overlay each track with its neighbor. Therefore
+all we really need to do is find the magnetic field of \emph{one} such semi-infinite strip,
+and by adding it up we can find the field of an arbitrary object like the potato-chip loop.
+
+<% end_sec('biot-savart') %>
+
 <% begin_notes %>
 
 \notetext{div-of-curl-is-zero}{Divergence of a curl}
@@ -696,15 +790,15 @@ Of course an example doesn't prove a general rule, but let's consider a simple e
 to get the idea of what is being discussed. We have
 \begin{equation*}
   \frac{\partial}{\partial x} \left(\frac{\partial}{\partial y}(xy)\right)
-        = \frac{\partial}{\partial x}(x) = 1
+        = \frac{\partial}{\partial x}x = 1
 \end{equation*}
 but also
 \begin{equation*}
   \frac{\partial}{\partial y} \left(\frac{\partial}{\partial x}(xy)\right)
-        = \frac{\partial}{\partial y}(y) = 1.
+        = \frac{\partial}{\partial y}y = 1.
 \end{equation*}
 In this example, it didn't matter which derivative we applied first.
-A theorem called Clairaut's theorem says that a function $f(x,y)$ is well-behaved,
+A theorem called Clairaut's theorem says that if a function $f(x,y)$ is well-behaved,
 in the sense that all its second derivatives
 ($\partial^2f/\partial x^2$, $\partial(\partial f/\partial x)/\partial y$, and
 $\partial(\partial f/\partial y)/\partial x$)
@@ -762,6 +856,16 @@ is the same as $U=-\vc{m}\cdot\vc{B}$.
 
 <% begin_hw_sec %>
 
+<% marg(0) %>
+<%
+  fig(
+    'hw-helmholtz-coil',
+    %q{Problem \ref{hw:helmholtzcoil-center}.}
+  )
+%>
+<% end_marg %>
+
+<% begin_hw('helmholtzcoil-center') %>__incl(hw/helmholtzcoil-center)<% end_hw() %>
 
 <% end_hw_sec %>
 

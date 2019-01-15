@@ -1740,7 +1740,7 @@ it won't work.
 
 <% begin_sec("Magnetic fields by amp\\\`ere's law",nil,'ampere') %>
 
-<% begin_sec("Amp\\\`ere's law") %>
+<% begin_sec("Amp\\\`ere's law") %>\index{Amp\`ere's law}
 
 As discussed at the end of subsection \ref{subsec:biot}, 
 our goal now is to find an equation
