@@ -2108,7 +2108,7 @@ The constant of proportionality is given on p.~\pageref{benergy}.
 
 <% end_sec() %>
 
-<% begin_sec("Lrc circuits",4) %>
+<% begin_sec("LRC circuits",4) %>
 
 The long road leading from the light bulb to the computer
 started with one very important step: the introduction of
