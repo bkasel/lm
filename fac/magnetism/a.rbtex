@@ -989,6 +989,143 @@ is the same as $U=-\vc{m}\cdot\vc{B}$.
 
 <% end_hw_sec %>
 
+<% begin_lab('Charge-to-mass ratio of the electron',2,'','lab') %>\label{lab:charge-to-mass}
+
+\begin{labapparatus}
+vacuum tube with Helmholtz coils\\
+high-voltage power supply\\
+DC power supply\\
+multimeter
+\end{labapparatus}
+
+\begin{labgoal}
+Measure the charge-to-mass ratio of the electron.
+\end{labgoal}
+
+Why should you believe electrons exist? By the turn of the
+twentieth century, not all scientists believed in the
+literal reality of atoms, and few could imagine smaller
+objects from which the atoms themselves were constructed.
+Over two thousand years had elapsed since the Greeks first
+speculated that atoms existed based on philosophical
+arguments without experimental evidence. During the Middle
+Ages in Europe, ``atomism'' had been considered highly
+suspect, and possibly heretical. Finally by the Victorian
+era, enough evidence had accumulated from chemical
+experiments to make a persuasive case for atoms, but
+subatomic particles were not even discussed.
+
+If it had taken two millennia to settle the question of
+atoms, it is remarkable that another, subatomic level of
+structure was brought to light over a period of only about
+five years, from 1895 to 1900. Most of the crucial work was
+carried out in a series of experiments by J.J. Thomson, who
+is therefore often considered the discoverer of the electron.
+
+<%
+  fig(
+    'lab-charge-to-mass',
+    %q{The vacuum tube apparatus used in this lab.},
+    {'width'=>'column','float'=>false}
+  )
+%>
+
+In this lab, you will carry out a variation on a crucial
+experiment by Thomson, in which he measured the ratio of the
+charge of the electron to its mass, $q/m$. The basic idea is
+to observe a beam of electrons in a region of space where
+there is an approximately uniform magnetic field, B. The
+electrons are emitted perpendicular to the field, and, it
+turns out, travel in a circle in a plane perpendicular to
+it. The force of the magnetic field on the electrons is
+\begin{equation*}
+      F  =  qvB \qquad ,  \qquad (1)  
+\end{equation*}
+
+directed towards the center of the circle. Their acceleration is
+\begin{equation*}
+      a  =  \frac{v^2}{r}  \qquad ,  \qquad  (2)  
+\end{equation*}
+so using $F=ma$, we can write
+\begin{equation*}
+      qvB  =  \frac{mv^2}{r} \qquad .  \qquad  (3)  
+\end{equation*}
+If the initial velocity of the electrons is provided by
+accelerating them through a voltage difference $V$, they
+have a kinetic energy equal to $qV$, so
+\begin{equation*}
+   \frac{1}{2}mv^2 = qV \qquad . \qquad   (4)
+\end{equation*}
+From equations 3 and 4, you can determine $q/m$. Note that
+since the force of a magnetic field on a moving charged
+particle is always perpendicular to the direction of the
+particle's motion, the magnetic field can never do any work
+on it, and the particle's KE and speed are therefore constant.
+
+You will be able to see where the electrons are going,
+because the vacuum tube is filled with a hydrogen gas at a
+low pressure. Most electrons travel large distances through
+the gas without ever colliding with a hydrogen atom, but a
+few do collide, and the atoms then give off blue light,
+which you can see. Although I will loosely refer to ``seeing
+the beam,'' you are really seeing the light from the
+collisions, not the beam of electrons itself. The manufacturer
+of the tube has put in just enough gas to make the beam
+visible; more gas would make a brighter beam, but would
+cause it to spread out and become too broad to measure it precisely.
+
+The field is supplied by an electromagnet consisting of two
+circular coils, each with 130 turns of wire (the same on all
+the tubes we have). The coils are placed on the same axis,
+with the vacuum tube at the center. A pair of coils arranged
+in this type of geometry are called Helmholtz coils. Such a
+setup provides a nearly uniform field in a large volume of
+space between the coils, and that space is more accessible
+than the inside of a solenoid.
+
+\labsection{Setup}
+
+Heater circuit: As with all vacuum tubes, the cathode is
+heated to make it release electrons more easily.
+There is a separate low-voltage power supply built into
+the high-voltage supply. It has a set of green plugs that, in different
+combinations, allow you to get various low voltage values.
+Use it to supply 6 V to the terminals
+marked ``heater'' on the vacuum tube.
+The tube should start to glow.
+
+Electromagnet circuit: Connect the other DC power
+supply, in series with an ammeter, to the terminals marked
+``coil.'' The current from this power supply goes through
+both coils to make the magnetic field. Verify that the
+magnet is working by using it to deflect a nearby compass.
+
+High-voltage circuit: 
+Connect the high voltage supply to the
+terminals marked ``anode.'' Ask your instructor to check
+your circuit. Now plug in the HV supply and turn up the
+voltage to 300 V. You should see the electron beam. If you
+don't see anything, try it with the lights dimmed.
+
+\labsection{Observations}
+
+Make the necessary observations in order to find $q/m$,
+carrying out your plan to deal with the effects of the
+Earth's field. The high voltage is supposed to be 300 V,
+but to get an accurate measurement of what it really is
+you'll need to use a multimeter rather than the poorly
+calibrated meter on the front of the high voltage supply.
+
+The beam can be measured accurately by using the glass
+rod inside the tube, which has a centimeter scale marked
+on it.
+
+Be sure to compute $q/m$ before you leave the lab. That way
+you'll know you didn't forget to measure something
+important, and that your result is reasonable compared to
+the currently accepted value.
+
+<% end_lab %>
 
 <% end_chapter() %>
 

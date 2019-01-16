@@ -1018,7 +1018,7 @@ and largest distances that it is practical to do. Graph the data on a log-log
 plot (i.e., with the log of $B$ on one axis and the log of $r$ on the other),
 and test whether your hypothesis actually holds.
 
-\prelab
+\labsection{Prelab}
 
 P1. If the bar magnet's field follows the power law $B\propto r^p$, for some constant $p$,
 predict how the log-log plot should look.

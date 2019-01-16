@@ -1665,7 +1665,6 @@ vector. By symmetry, the only nonvanishing component of the field is along the $
 \end{eg}
 
 <% marg(-300) %>
-
 <%
   fig(
     'biotloopaxis',
