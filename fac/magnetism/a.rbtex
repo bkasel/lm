@@ -726,7 +726,7 @@ p.~\pageref{hw:helmholtzcoil-center}).
 
 <% end_sec('b-fields-practical') %>
 
-<% begin_sec("The Biot-Savart law",4,'biot-savart') %>
+<% begin_sec("The Biot-Savart law (optional)",4,'biot-savart',{'optional'=>true}) %>
 
 In sec.~\ref{sec:sum-dipoles}, p.~\pageref{sec:sum-dipoles}, we were able to find the magnetic
 field at  the center of a current loop by the trick of turning the current distribution into
@@ -746,14 +746,134 @@ and radiate electromagnetic waves.)
 %>
 <% end_marg %>
 
-Figure \subfigref{potato-chip}{2} shows an idea for extending our dipole trick to handle this case.
-We form an imaginary tube that starts on the loop and extends off to infinity, then split it up
-into strips like railroad tracks, where each railroad track contains an infinite number of square
-dipoles, \subfigref{potato-chip}{3}. The key here is that although each track has a pair
-of long, straight rails that bring current in from infinity and then send it back out,
-the currents along these rails cancel when we overlay each track with its neighbor. Therefore
-all we really need to do is find the magnetic field of \emph{one} such semi-infinite strip,
-and by adding it up we can find the field of an arbitrary object like the potato-chip loop.
+Figure \subfigref{potato-chip}{2} shows an idea for extending our
+dipole trick to handle this case.  We form an imaginary tube that
+starts on the loop and extends off to infinity, then split it up into
+strips like railroad tracks, where each railroad track contains an
+infinite number of square dipoles, \subfigref{potato-chip}{3}. The key
+here is that although each track has a pair of long, straight rails
+that bring current in from infinity and then send it back out, the
+currents along these rails cancel when we overlay each track with its
+neighbor. Therefore all we really need to do is find the magnetic
+field of \emph{one} such semi-infinite strip, and by adding it up we
+can find the field of an arbitrary object like the potato-chip loop. 
+
+The field of such a strip is probably pretty complicated, and likely
+to be mainly the field due to the two long rails. However, the
+currents in the rails are destined to cancel out when we add
+everything up, sort of like a politically opposed married couple who
+vote in every election and cancel each other out --- they might as
+well have stayed home. We therefore conjecture that the correct final
+result can be found by adding up fields that depend only on the
+properties of the little end-caps. This is not guaranteed to be
+correct, for the reasons described in example \ref{eg:out-of-nowhere}
+on p.~\pageref{eg:out-of-nowhere}, but let's go ahead based on this
+questionable assumption and see where it gets us.
+
+Given some point in space, we want to find the contribution to the field
+at that point coming from a particular end-cap. Let the vector from the
+end-cap to our point be $\vc{r}$. The contribution to the field
+has to be of the form $\text{function}(\vc{j},\vc{r})\der v$, where
+the $\der v$ is the volume of the wire constituting the end-cap.
+The mystery function has to be proportional to its two vector inputs,
+and as its output it has to give a vector with units of tesla. This
+severely constrains the form of the function. The only rotationally
+invariant way to combine two vectors like this is the cross product,
+and the only way of getting the right units is by throwing in a factor
+of $kc^{-2}r^{-3}$. The only wiggle room is a possible unitless factor
+in front. This unitless factor turns out to be 1, which we will prove
+later, in example \ref{eg:biot-savart-center-of-loop},
+by comparing with a configuration whose field we already know.
+So the contribution to the field from this end-cap is
+\begin{equation*}
+  \frac{k}{c^2} \frac{\vc{j}\times\vc{r}}{r^3}\der v.
+\end{equation*}
+Within the small volume of the end-cap, the integrand is constant,
+and the end-cap is approximately straight, so that it forms a
+cylinder with volume $\der v=\der A\der\ell$, where $\der A$ is the
+cross-sectional area.
+We also assume that, within this short segment of wire,
+the current flows in the direction of the wire and is uniform across
+the wire's cross-sectional area. This allows us to rewrite
+the end-cap's field as
+\begin{equation*}
+  \frac{Ik}{c^2} \frac{\der\bell\times\vc{r}}{r^3}.
+\end{equation*}
+Integrating over the contributions of all the end-caps gives the formula
+known as the Biot-Savart law (rhymes with ``Leo bazaar''),
+\begin{equation*}
+  \vc{B} = \frac{Ik}{c^2} \int\frac{\der\bell\times\vc{r}}{r^3}.
+\end{equation*}
+
+<% marg(60) %>
+<%
+  fig(
+    'biotgeom',
+    %q{%
+      The geometry of the Biot-Savart law. The small arrows show the result
+              of the Biot-Savart law at various positions relative to the current segment $\der\bell$.
+              The Biot-Savart law involves a cross product, and the right-hand rule for this cross
+              product is demonstrated for one case.
+    }
+  )
+%>
+<% end_marg %>
+
+\begin{eg}{The field at the center of a circular loop}\label{eg:biot-savart-center-of-loop}
+In section \ref{sec:sum-dipoles} we had to use a trick
+to find the the field at the center
+of a circular loop of current of radius $a$. The Biot-Savart law routinizes the trick
+for us and eliminates the need for that kind of creativity. Dividing the loop
+into many short segments, each $\der\bell$ is perpendicular to the 
+$\vc{r}$ vector that goes from it to the center of the circle, and
+every $\vc{r}$ vector has magnitude $a$. Therefore 
+every cross product $\der\bell\times\vc{r}$ has the same magnitude,
+$a\der \ell$, as well as the same direction along the axis perpendicular to the loop.
+The field is
+\begin{align*}
+        B        &= \int \frac{ kIa\der \ell}{ c^2 a^3}\\
+                &= \frac{ kI}{ c^2 a^2} \int \der \ell \\
+                &= \frac{ kI}{ c^2 a^2} (2\pi a) \\
+                &= \frac{2\pi kI}{ c^2 a}.
+\end{align*}
+\end{eg}
+
+The fact that the field in example \ref{eg:biot-savart-center-of-loop} comes out the same as in the previous calculation verifies
+that we have the right unitless factor in the Biot-Savart law.
+
+Although the Biot-Savart law seems to have given us a correct result, we highlighted
+an assumption in its derivation that was not guaranteed to be correct. To give
+a full proof of the law, we would really need to prove that when we plug the
+result back in to Maxwell's equations, it gives a solution. That unfortunately
+requires a level of vector calculus beyond the scope of this book.
+
+\begin{eg}{Out-of-the-plane field of a circular loop}\label{eg:biotloop}
+\egquestion
+What is the magnetic field of a circular loop of current at a point on the axis
+perpendicular to the loop,  lying a distance $z$ from the loop's center?
+
+\eganswer
+Again, let's write $a$ for the loop's radius. The \vc{r} vector now has
+magnitude $\sqrt{ a^2+ z^2}$, but it is still perpendicular to the $\der\bell$
+vector. By symmetry, the only nonvanishing component of the field is along the $z$ axis,
+\begin{align*}
+         B_{z}        &= \int |\der\vc{B}|\:\zu{cos}\:\alpha\\
+                &= \int \frac{ kI\,r\,\der \ell}{ c^2 r^3}\frac{ a}{ r}\\
+                &= \frac{ kIa}{ c^2 r^3} \int \der \ell \\
+                &= \frac{2\pi kIa^2}{ c^2( a^2+ z^2)^{3/2}}\eqquad.
+\end{align*}
+For $z=0$ we recover the result of example \ref{eg:biot-savart-center-of-loop}.
+\end{eg}
+
+<% marg(300) %>
+<%
+  fig(
+    'biotloopaxis',
+    %q{Example \ref{eg:biotloop}.}
+  )
+%>
+<% end_marg %>
+
 
 <% end_sec('biot-savart') %>
 
