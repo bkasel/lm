@@ -65,7 +65,13 @@
 \vspace{\brieftocvert}\noindent\brieftochoriz%
 \brieftocchstyle\begin{tabular}{rp{\brieftoctabularwidth}}
 & \textit{\brieftocpartstyle Sources of magnetism}\\
-\brieftocentry[\hfill]{ch:b-superpos}{Magnetic fields by superposition}\\
+\brieftocentry[\hfill]{ch:b-superpos}{Sources of magnetism}\\
+\end{tabular}
+
+\vspace{\brieftocvert}\noindent\brieftochoriz%
+\brieftocchstyle\begin{tabular}{rp{\brieftoctabularwidth}}
+& \textit{\brieftocpartstyle AC circuits}\\
+\brieftocentry[\hfill]{ch:ac}{AC circuits}\\
 \end{tabular}
 
 
@@ -104,8 +110,9 @@
     \renewcommand{\chapdir}{fields}\include{fields/ftemp}
     \renewcommand{\chapdir}{dc}\include{dc/atemp}
     \renewcommand{\chapdir}{dc}\include{dc/btemp}
-	\formatchtoc{\large}{\quad\contentspage}{4mm} % This has to go before the last chapter.
     \renewcommand{\chapdir}{magnetism}\include{magnetism/atemp}
+	\formatchtoc{\large}{\quad\contentspage}{4mm} % This has to go before the last chapter.
+    \renewcommand{\chapdir}{magnetism}\include{ac/atemp}
         \addtocontents{toc}{\vspace{5mm}}% For reasons I don't understand, this actually comes *after* the final chapter.
 %
     \widelayout

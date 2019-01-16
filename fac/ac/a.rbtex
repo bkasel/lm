@@ -1,0 +1,28 @@
+<%
+  require "../eruby_util.rb"
+%>
+
+<% part_title("AC circuits") %>
+
+<%
+  chapter(
+    '10',
+    %q{AC circuits},
+    'ch:ac'
+  )
+%>
+
+
+<% begin_notes %>
+
+
+<% end_notes %>
+
+
+
+<% begin_hw_sec %>
+
+<% end_hw_sec %>
+
+<% end_chapter() %>
+

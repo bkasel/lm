@@ -7,7 +7,7 @@
 <%
   chapter(
     '09',
-    %q{Magnetic fields by superposition},
+    %q{Sources of magnetism},
     'ch:b-superpos',
     %q{This electric doorbell ringer uses two electromagnets made out of coils of copper wire
        with a layer of enamel or polymer insulation. The main practical goal of this chapter is to
@@ -999,7 +999,7 @@ multimeter
 \end{labapparatus}
 
 \begin{labgoal}
-Measure the charge-to-mass ratio of the electron.
+Measure the $q/m$ ratio of the electron.
 \end{labgoal}
 
 Why should you believe electrons exist? By the turn of the
