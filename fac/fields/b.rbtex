@@ -152,6 +152,10 @@ begin or end at the same point. This is not, as it might seem, in contradiction 
 our proof on p.~\pageref{field-lines-never-cross} that field lines never cross
 (\note{field-lines-terminating}).
 
+By the way, figures \figref{eg-two-charges-pe} and \figref{field-line-concept} are the
+simplest examples of a type of charge distribution called an electric \emph{dipole},\index{dipole!electric} which
+more generally is a kind of unbalanced arrangement of positive and negative charges.
+
 <% end_sec('sources-and-sinks') %>
 
 
@@ -289,6 +293,13 @@ predicts that the total is zero.
     %q{A practical experiment that tests Gauss's law for magnetism, globally.}
   )
 %>
+\spacebetweenfigs
+<%   
+  fig(
+    'avector-fac',
+    %q{An area vector can be defined for a sufficiently small part of a curved surface.}
+  )
+%>
 <% end_marg %>
 The sort of sum described above is called the \emph{flux}, $\Phi$ (capital Greek letter phi). When it's
 not clear from context whether we're talking about the magnetic field's flux from the electric field's,
@@ -366,6 +377,44 @@ Setting this equal to zero gives
 \end{equation*}
 i.e., $g\propto r^{-2}$, as expected.
 \end{eg}
+
+<%
+  fig(
+    'dq-gauss-examples-fac',
+    %q{%
+      Discussion questions \ref{dq:gauss-example1} and \ref{dq:gauss-example2}.
+    },
+    {
+      'width'=>'wide',
+      'sidecaption'=>false
+    }
+  )
+%>
+
+\startdqs
+
+
+\begin{dq}\label{dq:gauss-example1}
+One question that might naturally occur to you about Gauss's law is
+what happens for charge that is exactly on the surface --- should it
+be counted toward the enclosed charge, or not? If charges can be
+perfect, infinitesimal points, then this could be a physically
+meaningful question. Suppose we approach this question by way of a
+limit: start with charge $q$ spread out over a sphere of finite size,
+and then make the size of the sphere approach zero.  Figure \subfigref{dq-gauss-examples-fac}{A} shows
+a uniformly charged sphere that's exactly half-way in and half-way out
+of the cubical Gaussian surface.  What is the flux through the cube,
+compared to what it would be if the charge was entirely enclosed?
+(There are at least three ways to find this flux: by direct
+integration, by Gauss's law, or by the additivity of flux by region.)
+\end{dq}
+
+\begin{dq}\label{dq:gauss-example2}
+The dipole in figure \subfigref{dq-gauss-examples-fac}{B} is completely enclosed in the cube. What does Gauss's law
+say about the flux through the cube? If you imagine the dipole's field
+pattern, can you verify that this makes sense? 
+\end{dq}
+
 
 <% end_sec('gauss-global') %>
 
@@ -506,9 +555,21 @@ $a=(q/m)E=3.4\times10^{13}\ \munit/\sunit^2$. This is an enormous acceleration! 
 of the molecule influence its motion
 only through the ratio $q/m$ of its charge to its mass.
 \end{eg}
+<% marg(50) %>
+<%   
+  fig(
+    'spark-plug',
+    %q{A spark plug, example \ref{eg:spark-plug}.}
+  )
+%>
+<% end_marg %>
 
-TO DO: Add a photo of a spark plug.
+\startdq
 
+\begin{dq}
+In figure \figref{spark-plug} we see a very small air gap between the positively and negatively charged
+electrodes. Why should it be small?
+\end{dq}
 
 <% end_sec('force-on-a-charge') %>
 

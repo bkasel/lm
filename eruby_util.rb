@@ -1288,7 +1288,7 @@ def begin_sec(title,pagebreak=nil,label='',options={})
   end
   title = alter_titlecase(title,$section_level)
   cmd = "\\#{macro}#{pagebreak}{#{title}}"
-  t = sectioning_command_with_href(cmd,$section_level,label,label_level,title)
+  t = sectioning_command_with_href(cmd,$section_level,label,label_level,title,options['optional'])
   #$stderr.print t
   print t
   $section_most_recently_begun = title
@@ -1315,7 +1315,7 @@ def end_hw_sec
   print '\end{hwsection}'
 end
 
-def sectioning_command_with_href(cmd,section_level,label,label_level,title)
+def sectioning_command_with_href(cmd,section_level,label,label_level,title,optional)
   # http://tex.stackexchange.com/a/200940/6853
   name_level = {0=>'chapter',1=>'section',2=>'subsection',3=>'subsubsection',4=>'subsubsubsection'}[section_level]
   label_command = ''
@@ -1353,8 +1353,9 @@ def sectioning_command_with_href(cmd,section_level,label,label_level,title)
     \\let\\addcontentsline\\oldacl
     TEX
   if section_level<4 then
+    if optional then toc_title = "$\\star$"+title else toc_title=title  end
     t4 = <<-TEX
-      \\#{toc_macro}{#{name_level}}{#{complete_label}}{#{title}}{\\the#{name_level}}
+      \\#{toc_macro}{#{name_level}}{#{complete_label}}{#{toc_title}}{\\the#{name_level}}
       TEX
   else
     t4 = ''
@@ -1560,7 +1561,7 @@ def chapter_web(number,raw_title,label,caption,options)
 end
 
 def chapter_print(number,raw_title,label,caption,options)
-  if options['optional'] then title="$\\star$"+raw_title else title=raw_title  end
+  if options['optional'] then title = "$\\star$"+raw_title else title=raw_title end
   opener = options['opener']
   has_opener = (opener!='')
   result = nil
@@ -1618,7 +1619,7 @@ def chapter_print(number,raw_title,label,caption,options)
     $stderr.print "**************************************** Error, ch #{$ch}, processing chapter header. ****************************************\n"
     exit(-1)
   end
-  print sectioning_command_with_href(result,0,bare_label,'ch',title)
+  print sectioning_command_with_href(result,0,bare_label,'ch',raw_title,options['optional'])
   #print "#{result}\\label{#{label}}\n"
 end
 

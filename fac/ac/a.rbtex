@@ -763,11 +763,37 @@ What happens when the physicist at the bottom in figure \figref{inductor-voltage
 getting tired, and decreases the current?
 \end{dq}
 
-\vfill
+<%
+  fig(
+    'dq-gauss-examples-induction',
+    %q{%
+      Discussion questions \ref{dq:gauss-examples-induction1} and \ref{dq:gauss-examples-induction2}.
+    },
+    {
+      'width'=>'wide',
+      'sidecaption'=>false
+    }
+  )
+%>
 
- %  
+\begin{dq}\label{dq:gauss-examples-induction1}
+The wire passes in through one side of the cube and out through the other. If the current through the wire is
+increasing, then the wire will act like an inductor, and there will be a voltage difference between its ends.
+(The inductance will be relatively small, since the wire isn't coiled up, and the $\Delta V$ will therefore
+also be fairly small, but still not zero.) The $\Delta V$ implies the
+existence of electric fields, and yet Gauss's law says the flux must be zero, since there is no charge inside
+the cube. Why isn't Gauss's law violated?
+\end{dq}
 
- % ------------------------------------------ 
+\begin{dq}\label{dq:gauss-examples-induction2}
+The charge has been loitering near the edge of the cube, but is then suddenly hit with a mallet, causing it to
+fly off toward the left side of the cube. We haven't yet discussed in detail how disturbances in the electric and magnetic fields
+ripple outward through space, but it turns out that they do so at the speed of light. (In fact, that's what light
+is: ripples in the electric and magnetic fields.) Because the charge is closer to the left side of the cube,
+the change in the electric field occurs there before the information reaches the right side. 
+This would seem certain to lead to a violation of Gauss's law. How can the ideas explored in
+discussion question \ref{dq:gauss-examples-induction1} show the resolution to this paradox?
+\end{dq}
 
 <% end_sec() %>
 
@@ -1577,7 +1603,7 @@ for a resistor.
 
 <% end_sec() %>
 
-<% begin_sec("Rms quantities") %>
+<% begin_sec("RMS quantities") %>
 
 Suppose one day the electric company decided to start supplying your electricity as
 DC rather than AC. How would the DC voltage have to be related to the amplitude

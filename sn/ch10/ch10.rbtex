@@ -3675,7 +3675,7 @@ for a resistor.
 
 <% end_sec() %>
 
-<% begin_sec("Rms quantities") %>
+<% begin_sec("RMS quantities") %>
 
 Suppose one day the electric company decided to start supplying your electricity as
 DC rather than AC. How would the DC voltage have to be related to the amplitude

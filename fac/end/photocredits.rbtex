@@ -22,6 +22,7 @@
 <% photo_credit("fields-detection-collage","Multimeter","Wikimedia Commons user Binarysequence, CC-BY-SA") %> % https://commons.wikimedia.org/wiki/File:Fluke87-V_Multimeter.jpg
 <% photo_credit("fields-detection-collage","Geiger counter","Wikipedia user Changlc, public domain") %> % https://en.wikipedia.org/wiki/File:Geiger_counter_in_use.jpg
 <% photo_credit("fields-detection-collage","X-ray","Roentgen, ca.~1895") %> % https://commons.wikimedia.org/wiki/File:PSM_V48_D860_Rontgen_picture_of_the_hand.jpg
+<% photo_credit("spark-plug","Spark plug","Norris Wong, CC-BY") %> % https://commons.wikimedia.org/wiki/File:Bougie3.jpg
 <% photo_credit("bar-magnet-field-lines","Iron filings around bar magnet","Windell Oskay, CC-BY") %> % https://www.flickr.com/photos/oskay/4580563691/in/photostream/
 <% photo_credit("chlorine-pentafluoride","Molecule","Wikimedia Commons user Benjah-bmm27, public domain") %> % https://commons.wikimedia.org/wiki/File:Chlorine-pentafluoride-3D-balls.png
 <% photo_credit("faraday-portrait-oil-painting","Faraday","Painting by Thomas Phillips, 1842") %>
