@@ -120,50 +120,36 @@ compared to the dimensions of the plates. What is the
 capacitance?
 
 \eganswer
-Since the plates are metal, the charges on each plate are free to
-move, and will tend to cluster themselves more densely near the edges due to the
-mutual repulsion of the other charges in the same plate. However, it turns out
-that if the gap is small, this is a small effect, so we can get away with
-assuming uniform charge density on each plate. 
-The result of example \ref{eg:numparplate} then applies, and
-for the region between the plates, we have $E=4\pi k\sigma=4\pi kq/ A$ and
-$U_{e} = (1/8\pi k) E^2 Ah$. Substituting the
+Using the result of problem \ref{hw:capacitor-field},
+$E=4\pi k\sigma=4\pi kq/ A$. 
+The energy stored in the field is $U_{e} = (1/8\pi k) E^2 Ah$. Substituting the
 first expression into the second, we find $U_{e}=2\pi kq^2 h/ A$.
-Comparing this to the definition of capacitance, we end up with
-$C= A/4\pi kh$.
+Comparing this to the definition of capacitance, we end up with $C=A/4\pi kh$. 
 
 \end{eg}
 
-<% marg(10) %>
+<% marg() %>
 <%
   fig(
-    'coilshapes',
-    %q{%
-      Two common geometries for inductors. The cylindrical
-      shape on the left is called a solenoid.\index{solenoid}
-    }
-  )
-%>
-
-\spacebetweenfigs
-
-<%
-  fig(
-    'indsymbol',
-    %q{The symbol for an inductor.}
-  )
-%>
-
-  \spacebetweenfigs
-
-<%
-  fig(
-    'inductors-photo',
-    %q{Some inductors.}
+    'capacitors-not-lumped-circuit',
+    %q{A configuration of capacitors for which the lumped circuit approximation might be bad.}
   )
 %>
 <% end_marg %>
-
+If you look at the printed circuit board in a typical piece
+of consumer electronics, there are many capacitors, often placed fairly close together.
+Life is a made a lot simpler by the fact that each capacitor's field tends to be
+concentrated on its own interior.
+If their exterior fields are not so small, then each capacitor interacts
+with its neighbors in a complicated way, and the behavior of the circuit depends
+on the exact physical layout, since the interaction would be stronger or weaker depending
+on distance. The resulting behavior of the circuit then depends in detail on the three-dimensional
+geometry of the circuit, as in figure \figref{capacitors-not-lumped-circuit}.
+In reality, a capacitor does create weak external electric fields, but their
+effects are often negligible, and we can then use the \emph{lumped-circuit approximation},
+\index{lumped-circuit approximation!for capacitors}\label{lumped-circuit-approx}
+which states that each component's behavior depends only on the currents that flow in
+and out of it, not on the interaction of its fields with the other components.
 <% end_sec() %>
 
 <% begin_sec("Inductors") %>
@@ -204,10 +190,62 @@ ampere squared. This clumsy combination of units is more
 commonly abbreviated as the henry, 1 henry = 1 $\zu{J}/\zu{A}^2$.
 Rather than memorizing this definition, it makes more sense
 to derive it when needed from the definition of inductance.
-Many people know inductors simply as ``coils,'' or
-``chokes,'' and will not understand you if you refer to an
-``inductor,'' but they will still refer to $L$ as the
-``inductance,'' not the ``coilance''  or ``chokeance!''
+
+<% marg(300) %>
+<%
+  fig(
+    'coilshapes',
+    %q{%
+      Two common geometries for inductors. The cylindrical
+      shape on the left is called a solenoid.\index{solenoid}
+    }
+  )
+%>
+
+\spacebetweenfigs
+
+<%
+  fig(
+    'indsymbol',
+    %q{The symbol for an inductor.}
+  )
+%>
+
+  \spacebetweenfigs
+
+<%
+  fig(
+    'inductors-photo',
+    %q{Some inductors.}
+  )
+%>
+<% end_marg %>
+
+Many people know inductors simply as ``coils,'' or ``chokes,'' and
+will not understand you if you refer to an ``inductor,'' but they will
+still refer to $L$ as the ``inductance,'' not the ``coilance'' or
+``chokeance!'' The term ``choke'' is derived from the fact that, as
+we'll see in sec.~\ref{sec:impedance}, an inductance tends to pass low
+frequencies while ``choking off'' high frequencies.  This is the
+opposite of a capacitor: a capacitor has vacuum or an insulator
+between the plates, and therefore will not pass DC. Therefore
+capacitors and inductors are often used as filters to get rid of
+certain frequencies in a signal (example
+\ref{eg:low-pass-and-high-pass},
+p.~\pageref{eg:low-pass-and-high-pass}). If you're listening to music
+on a pair of stereo speakers while reading this, then there is
+probably a set of filters, called the cross-over filter, that send low
+frequencies to the woofers and highs to the tweeters. 
+
+The type of air-core coil described above is a good one for many applications,
+such as a stereo speaker's cross-over filter. For other applications, however,
+this technology would be too expensive, too bulky to use in miniaturized
+electronics, or too hard to integrate into a printed-circuit board. For
+some applications, this can be remedied by adding an iron core, while
+for others the behavior of an inductor can be achieved using a combination
+of transistors (an op-amp) and a capacitor. When we consider the behavior of
+these things as circuit elements, the same equations apply regardless of 
+the implementation.
 
 There is a lumped circuit approximation for inductors, just like the one
 for capacitors (p. \pageref{lumped-circuit-approx}).
@@ -1455,7 +1493,7 @@ Summarizing, the impedances of resistors, capacitors, and inductors are
                 Z_L &= i\omega L\eqquad.
         \end{align*}
 
-\begin{eg}{Low-pass and high-pass filters}
+\begin{eg}{Low-pass and high-pass filters}\label{eg:low-pass-and-high-pass}
         An LRC circuit only responds to a certain range (band) of
 frequencies centered around its resonant frequency. As a
 filter, this is known as a bandpass filter. If you turn down

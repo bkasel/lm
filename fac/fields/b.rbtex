@@ -155,6 +155,8 @@ our proof on p.~\pageref{field-lines-never-cross} that field lines never cross
 By the way, figures \figref{eg-two-charges-pe} and \figref{field-line-concept} are the
 simplest examples of a type of charge distribution called an electric \emph{dipole},\index{dipole!electric} which
 more generally is a kind of unbalanced arrangement of positive and negative charges.
+Dipoles
+will be discussed in more detail in sec.~\ref{sec:dipole}, p.~\pageref{sec:dipole}.
 
 <% end_sec('sources-and-sinks') %>
 
@@ -469,9 +471,7 @@ the proportionality constant as ``charge.''
 %>
 <% end_marg %>
 \begin{eg}{Field of an electric dipole, in its mid-plane}\label{eg:e-dipole-mid-plane}\index{dipole!electric!field in mid-plane}
-Consider figure \figref{e-dipole-mid-plane}, which is
-an example of a type of charge distribution called an electric \emph{dipole}. Dipoles
-will be discussed in more detail in sec.~\ref{sec:dipole}, p.~\pageref{sec:dipole}.
+Consider the dipole in figure \figref{e-dipole-mid-plane}.
 We wish to calculate the electric field in the dipole's mid-plane, at a point on the $x$ axis with
 coordinates $(x,0)$.
 
@@ -1154,7 +1154,7 @@ contribution to the flux. On the long, thin strips that make up the rest of
 the surface, the field is perpendicular to the surface, and therefore parallel
 to the area vector of each strip, so that the dot product occurring in the
 definition of the flux is $\vc{E}_j\cdot\vc{A}_j=|\vc{E}_j||\vc{A}_j||\cos\ 0\degunit=|\vc{E}_j||\vc{A}_j|$.
-Gauss' law gives
+Gauss's law gives
 \begin{align*}
         4\pi k q_{in}        &= \sum \vc{E}_j\cdot\vc{A}_j \\
         4\pi k \lambda L        &= \sum |\vc{E}_j||\vc{A}_j|\eqquad.\\
@@ -1174,10 +1174,34 @@ that the unitless constant was 2.
 <%
   fig(
     'e-line-of-charge',
-    %q{Applying Gauss' law to an infinite line of charge.}
+    %q{Applying Gauss's law to an infinite line of charge.}
   )
 %>
 <% end_marg %>
+
+<% marg(0) %>
+<%
+  fig(
+    'pillbox',
+    %q{Applying Gauss's law to an infinite sheet of charge.}
+  )
+%>
+<% end_marg %>
+
+\begin{eg}{Field of a charged plane}\label{eg:pillbox}
+\egquestion Suppose we want to find the field of an infinite, uniformly sheet of charge, with charge
+density $\sigma$ in units of coulombs per square meter.
+As in example \ref{eg:e-line-of-charge}, we know in advance, by visualizing the
+way the field lines spread out, that the result must be of a form with a certain exponent ---
+the exponent is zero, so that the field is independent of the distance $r$. If we are
+to fix the constant of proportionality by the same technique, then we need to start by
+picking a Gaussian surface. What would be an advantageous choice?
+
+\eganswer Figure \figref{pillbox} shows a shape that works, called a Gaussian pillbox.
+It respects the planar symmetry of the problem, and is chosen so that the field on the two flat
+faces is always parallel to $\der\vc{A}$.  This calculation is completed in problem
+\ref{hw:pillbox}, p.~\pageref{hw:pillbox}.
+\end{eg}
 
 <% end_sec('gauss-in-lt-3-dim') %>
 
@@ -1540,6 +1564,27 @@ Example \ref{eg:e-dipole-mid-plane} on p.~\pageref{eg:e-dipole-mid-plane} calcul
 of a dipole in its mid-plane. (a) Calculate its field at a point on its axis, at a distance $r$
 from the center. (b) Show that your result from part a is approximately proportional to
 $1/r^3$, as in the mid-plane.
+<% end_hw() %>
+
+<% begin_hw('pillbox',nil) %>
+Example \ref{eg:pillbox} on p.~\pageref{eg:pillbox} described the choice of a Gaussian surface
+in order to calculate the electric field of a uniformly charged plane, with charge
+density $\sigma$ in units of coulombs per square meter. (a) Complete the calculation in order
+to find the field. (b) Check that the units of your answer make sense.<% hw_solution %>
+<% end_hw() %>
+
+<% begin_hw('capacitor-field',nil) %>
+Suppose a capacitor consists of two parallel metal plates with area
+$A$, and the gap between them is $h$. The gap is small compared to the
+dimensions of the plates. Since the plates are metal, the charges on
+each plate are free to move, and will tend to cluster themselves more
+densely near the edges due to the mutual repulsion of the other
+charges in the same plate. However, it turns out that if the gap is
+small, this is a small effect, so we can get away with assuming
+uniform charge density on each plate.  Find the field between the
+plates when the charges on the plates are $q$ and $-q$. Use the result
+of problem \ref{hw:pillbox}, which has a solution in the back of the
+book.\answercheck
 <% end_hw() %>
 
 Thomson
