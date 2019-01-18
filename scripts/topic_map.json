@@ -10,7 +10,8 @@
         "7":"em-dc",
         "8":"em-dc",
         "9":"em-fields",
-        "10":"em-fields"
+        "10":"em-fields",
+        "11":"em-fields"
       },
       "cp":      {
         "1":"mechanics",
@@ -109,7 +110,8 @@
         "5":"relativity",
         "6":"relativity",
         "7":"em-fields",
-        "9":"mechanics"
+        "9":"mechanics",
+        "10":"mechanics"
       },
       "cp":      {
         "1":"relativity",

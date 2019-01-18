@@ -2116,7 +2116,7 @@ feedback into electronic circuits. Although the principle of
 feedback has been understood and and applied to mechanical
 systems for centuries, and to electrical ones since the
 early twentieth century, for most of us the word evokes an
-image of Jimi Hendrix (or some more recent guitar hero)
+image of Jimi Hendrix
 intentionally creating earsplitting screeches, or of the
 school principal doing the same inadvertently in the
 auditorium. In the guitar example, the musician stands in
@@ -3068,8 +3068,7 @@ $RC$ time constant?
 <% begin_sec("Review of complex numbers",nil,'complex-numbers') %>
 \index{complex numbers}
 For a more detailed treatment of complex numbers, see ch. 3 of
-James Nearing's free book at \\
-http://www.physics.miami.edu/nearing/mathmethods/.
+James Nearing's free book at \url{physics.miami.edu/~nearing}.
 
 <% marg(50) %>
 <%
@@ -3090,16 +3089,13 @@ http://www.physics.miami.edu/nearing/mathmethods/.
     }
   )
 %>
-
+\spacebetweenfigs
 <%
   fig(
     'complex-conjugate',
     %q{A complex number and its conjugate.}
   )
 %>
-
-\spacebetweenfigs
-
 <% end_marg %>
 
 We assume there is a number, $i$, such that $i^2=-1$.
