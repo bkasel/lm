@@ -481,8 +481,8 @@ permanent characteristics:
 \end{align*}
 
 Since the mechanical
-system naturally oscillates with a frequency\footnote{As in chapter \ref{ch:2},
-we use the word ``frequency'' to mean either $f$ or $\omega=2\pi f$
+system naturally oscillates with a frequency\footnote{We
+use the word ``frequency'' to mean either $f$ or $\omega=2\pi f$
 when the context makes it clear which is being referred to.}
  $\omega\approx\sqrt{k/m}$ , we can immediately solve the
 electrical version by analogy, giving
@@ -672,39 +672,40 @@ the energy lost by the inductor is being turned into heat by
 the resistor. 
 The junction rule tells us that both circuit
 elements have the same current through them, so $I$ could refer
-to either one, and likewise the loop rule tells us
+to either one.
+
+Experience with the loop rule would also lead us to expect that
 $V_{inductor}+V_{black\ box}=0$, so the two voltage drops
-have the same absolute value, which we can refer to as $V$.
+have the same absolute value, which we could then notate simply as $V$.
+In real-world circuits, this is indeed what we would find, to a good
+approximation, using an AC voltmeter, although the loop rule can actually
+be violated in an AC circuit (\note{ac-circuit-loop-rule}).
+
 Whatever the black box is, the rate at which it
-is taking energy from the inductor is given by $|P|=|IV|$, so
+is taking energy from the inductor is given by $P=IV$, so
 \begin{align*}
-        |IV| &= \left|\frac{\der U_L}{\der t}\right| \\
-                &= \left|\frac{\der}{\der t}\left( \frac{1}{2}LI^2\right) \right| \\
-                &= \left|LI\frac{\der I}{\der t}\right|\eqquad,\\
+        IV &= -\frac{\der U_L}{\der t} \\
+                &= -\frac{\der}{\der t}\left( \frac{1}{2}LI^2\right)  \\
+                &= -LI\frac{\der I}{\der t}\eqquad,\\
 \intertext{or}
-        |V|        &= \left|L\frac{\der I}{\der t}\right|\eqquad, \\
+        V        &= -L\frac{\der I}{\der t}\eqquad \\
 \end{align*}
 which in many books is taken to be the definition of inductance. The
-direction of the voltage drop (plus or minus sign) is such
-that the inductor resists the change in current.
+sign indicates that the inductor resists the change in current.
 
-There's one very intriguing thing about this result. Suppose, for
+To someone who knew only about DC circuits, this would be a surprising result. Suppose, for
 concreteness, that the black box in figure \figref{indv} is a resistor,
 and that the inductor's energy is decreasing, and being converted into heat
 in the resistor. The voltage drop across the resistor indicates that
 it has an electric field across it, which is driving the current.
 But where is this electric field coming from? There are no charges anywhere
-that could be creating it! What we've discovered is one special case of
-a more general principle, the principle of induction: a changing magnetic
-field creates an electric field, which is in addition to any electric
-field created by charges.\index{induction} (The reverse is also true:
-any electric field that changes over time creates a magnetic field.)
-Induction forms the basis for such technologies as the generator\index{generator}
-and the transformer,\index{transformer} and ultimately it leads to the
-existence of light, which is a wave pattern in the electric and magnetic fields.
-These are all topics for chapter \ref{ch:em}, but it's truly remarkable
-that we could come to this conclusion without yet having learned any details about
-magnetism.\label{inductorinduction}
+that could be creating it! The answer, of course, is that this is an example
+of electromagnetic induction.
+One of Maxwell's equations (sec.~\ref{sec:maxwell-vacuum}, p.~\pageref{sec:maxwell-vacuum})
+is that $\operatorname{curl}\vc{E}=-\partial\vc{B}/\partial t$, which tells us
+that the change in the magnetic field will cause a curly electric field,
+If we hadn't already known about induction, this example would have forced us
+to invent it.
 
 <%
   fig(
@@ -1010,8 +1011,6 @@ causes a spark, partially discharging the RC circuit, but charging the LC circui
 The LC circuit then oscillates at its resonant frequency (typically about 1 MHz), but the energy of these oscillations is
 rapidly radiated away by the antenna, A, which sends out radio waves (chapter \ref{ch:em}).
 \end{eg}
-
-\pagebreak
 
 \startdqs
 
@@ -1901,6 +1900,31 @@ and the power is proportional to $\omega^{-4}$.
 
 <% begin_notes %>
 
+\notetext{ac-circuit-loop-rule}{The loop rule in an AC circuit}
+\notesummary{Why does the loop rule work at all in AC circuits?}
+
+When we take measurements with an AC voltmeter, we find in practice that the
+loop rule often holds for AC circuits.
+But this is a little bit like
+the story of the centipede who is asked how he keeps all his legs coordinated
+and replies, ``You know, I never thought about that before,'' after which he
+is no longer able to walk. The loop rule is essentially a statement that
+the electric field has $\curl\vc{E}=0$, but this is false when we have
+induction. One of Maxwell's equations (sec.~\ref{sec:maxwell-vacuum}, p.~\pageref{sec:maxwell-vacuum})
+is that $\operatorname{curl}\vc{E}=-\partial\vc{B}/\partial t$, which tells us
+that the change in the magnetic field will cause a curly electric field.
+There is thus no well-defined electric potential, and the loop rule should
+be invalid. So why does it seem to work here when it shouldn't? The answer is that
+when the lumped circuit approximation is valid, the external magnetic fields of
+circuit elements like inductors are negligible, and therefore it is approximately
+true, in the empty space surrounding the circuit where we place our voltmeters, that
+$\curl\vc{E}=0$. Because of these issues, many writers will define a symbol
+such as $\mathcal{E}$, referred to as ``emf,''\footnote{standing for ``electromotive force,''
+a horrifically bad piece of
+terminology, since it doesn't even have units of force} which is minus the work done by an electric field between
+one point in space and another. This is essentially the same as the definition of
+a voltage difference, but without the connotation that there is a well-defined
+electric potential.
 
 <% end_notes %>
 

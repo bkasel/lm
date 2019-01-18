@@ -478,6 +478,10 @@ More generally, this is known as the loop rule for analyzing circuits:
         voltage drops around any closed loop in a DC circuit must be zero.
 \end{lessimportant}
 
+The loop rule and junction rule are credited to Gustav Kirchoff and are therefore
+often referred to by names such as Kirchoff's rules, Kirchoff's loop rule, Kirchoff's junction rule,
+and acronyms such as KCL (for current) and KVL (for voltage).
+
 <% marg() %>
 
 <%
