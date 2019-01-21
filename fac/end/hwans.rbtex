@@ -35,6 +35,7 @@
 <% self_check_answer("caplabel") %>
 <% self_check_answer("complex-square-root") %>
 <% self_check_answer("represent-as-complex") %>
+<% self_check_answer("damping-energy") %>
 
 
 %==================================================================

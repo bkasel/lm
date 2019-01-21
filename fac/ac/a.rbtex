@@ -50,6 +50,25 @@ We assume there is a number, $i$, such that $i^2=-1$.
 The square roots of $-1$ are then $i$ and $-i$. (In electrical engineering work,
 where $i$ stands for current, $j$ is sometimes used instead.) This gives rise
 to a number system, called the complex numbers, containing the real numbers as a subset.
+
+If we calculate successive powers of $i$, we get the following:
+\begin{align*}
+  i^0 &= \quad 1 \qquad \text{[true for any base]} \\
+  i^1 &= \quad i \\
+  i^2 &= \, -1 \qquad \text{[definition of $i$]} \\
+  i^3 &= \, -i \\
+  i^4 &= \quad 1.
+\end{align*}
+By repeatedly multiplying $i$ by itself, we have wrapped around, returning
+to 1 after four iterations. If we keep going like this, we'll keep cycling around.
+This is how the complex number system models oscillations, which result from
+negative feedback.
+
+To model exponential behavior in the complex number system, we also use repeated
+multiplication. For example, if interest payments on your credit card debt cause
+it to double every decade (a positive feedback cycle), then your debt goes like
+$2^0=1$, $2^1=2$, $2^2=4$, and so on.
+
 Any complex number $z$ can be written in the form $z=a+bi$, where $a$ and $b$ are
 real, and $a$ and $b$ are then referred to as the real and imaginary parts of $z$.
 A number with a zero real part is called an imaginary number.
@@ -102,6 +121,8 @@ one complex number is greater than another. We can compare them in terms of thei
 magnitudes (their distances from the origin), but two distinct complex numbers may
 have the same magnitude, so, for example, we can't say whether $1$ is greater than
 $i$ or $i$ is greater than $1$.
+
+\pagebreak
 
 \begin{eg}{A square root of $i$}\label{eg:sqrt-i}
 \egquestion Prove that $1/\sqrt{2}+i/\sqrt{2}$ is a square root of $i$.
@@ -315,6 +336,193 @@ be a constant, which could be subsumed within the usual constant of integration.
 \end{eg}
 
 <% end_sec('euler-formula') %>
+
+<% begin_sec("Simple harmonic motion",nil,'shm') %>
+The simple harmonic oscillator should already be familiar to you. Here we show how
+complex numbers apply to the topic.
+
+Figure \subfigref{mass-on-spring}{1} shows a mass vibrating on a
+spring. If there is no friction, then the mass vibrates forever, and
+energy is transferred repeatedly back and forth between kinetic energy
+in the mass and potential energy in the spring. If we add friction,
+then the oscillations will dissipate these forms of energy into heat
+over time.  Figure \subfigref{mass-on-spring}{2} is the electrical
+analog of the mass on the spring.  Energy cycles back and forth
+between electrical energy in the field between the capacitor plates
+and magnetic energy in the field of the coil of wire, which in this
+context is referred to as an inductor. The electrical analog of
+friction is the resistance, which dissipates the energy of the
+oscillations into heat.
+<% marg(50) %>
+<%
+  fig(
+    'mass-on-spring',
+    %q{1.~A mass vibrating on a spring. 2.~A circuit displaying analogous electrical oscillations.}
+  )
+%>
+<% end_marg %>
+
+The dissipation of energy into heat is referred to as damping.
+This section covers simple harmonic motion, which is the case without
+damping. We consider the more general damped case in sec.~\ref{sec:damping}.
+
+
+The system of analogous variables is as follows:
+
+\begin{tabular}{lp{50mm}p{70mm}}
+\emph{mechanical} & \emph{electrical} \\
+$x=\text{position}$ & $q=\text{charge on one plate}$ \\
+$v=x'=\text{velocity}$ & $I=q'=\text{current}$ \\
+$a=x''=\text{acceleration}$ & $I'=\text{rate of change of current}$ 
+\end{tabular}
+
+Since this system of analogies is perfect, we'll discuss the behavior
+of the more familiar mechanical system. The mass is acted on by a force
+$-kx$ from the spring.
+Newton's second law can be written as
+\begin{equation*}
+  mx''+kx = 0.
+\end{equation*}
+An equation like this, which relates a function to its own derivatives, is
+called a \emph{differential equation}. This one is a \emph{linear} differential
+equation, meaning that if $x_1(t)$ and $x_2(t)$ are both solutions, then
+so is any linear combination of them, $c_1x_1(t)+c_2x_2(t)$.
+It's not hard to guess what the solutions are: sines and cosines
+work as solutions, because the sine and cosine are functions whose second derivative
+is the same as the original function, except for a sign flip. The most general
+solution is of the form
+\begin{equation*}
+  c_1\sin\omega t+c_2\cos\omega t,
+\end{equation*}
+where $\omega=\sqrt{k/m}$.
+It makes sense that there are two adjustable constants, because if we're given some
+the initial position and velocity of the mass, those are two numbers that we want
+to produce, and typically two equations in two unknowns will have a solution. Mathematically,
+this happens because the highest derivative in the differential equation is a second derivative.
+
+But we would like to have some more specific and convenient way of organizing our thoughts
+about the physical interpretation of the constants $c_1$ and $c_2$. Suppose we write down
+some examples of solutions on scraps of papers and then put them on a table and shuffle them
+around to try to see them in an organized way. As a loose analogy, this was how Mendeleev
+came up with the periodic table of the elements. Figure \figref{sine-wave-paper-scraps}
+shows what we might come up with for our ``periodic table of the sine waves.'' What we've
+created is a system in which the solution $c_1\sin+c_2\cos$ is represented as a square on
+a checkerboard or, more generally, a point in the plane. Beautiful things happen if we
+think of this plane as being the complex plane, as laid out in the following table
+of exact mathematical analogies.
+<% marg(50) %>
+<%
+  fig(
+    'sine-wave-paper-scraps',
+    %q{Organizing some solutions to the equations of motion for simple harmonic motion.}
+  )
+%>
+\spacebetweenfigs
+<%
+  fig(
+    'sinpluscos-fac',
+    %q{Example \ref{eg:sinpluscos}.}
+  )
+%>
+<% end_marg %>
+
+\begin{tabular}{p{40mm}p{60mm}}
+\emph{sine waves} & \emph{complex plane} \\
+amplitude            & magnitude \\
+phase                & argument \\
+addition             & addition \\
+differentiation      & multiplication by $-i\omega$
+\end{tabular}
+
+\begin{eg}{Sine compared to cosine}
+The sine function is the same as a cosine that has been delayed in phase by a quarter
+of a cycle, or 90 degrees. The two functions correspond to the complex numbers
+1 and $i$, which have the same magnitude but differ by 90 degrees in their arguments.
+\end{eg}
+
+\begin{eg}{Adding two sine waves}\label{eg:sinpluscos}
+The trigonometric fact $\cos\omega t+\sin\omega t=\sqrt{2}\sin(\omega t+\pi/4)$
+is visualized in figure \figref{sinpluscos-fac}.
+\end{eg}
+
+\begin{eg}{A function's first and second derivative}
+Differentiating $\sin 3x$ once gives $3\cos 3x$. In terms of the complex plane, the function
+$\sin 3x$ is represented by $i$. Differentiating it corresponds to multiplying this complex
+number by $-3i$, which gives $3$, and $3$ represents the function $3\cos 3x$ in our system.
+
+Differentiating $\sin 3x$ twice gives $-9\sin 3x$.
+In terms of complex numbers, this is $1(-3i)(-3i)=-9$.
+\end{eg}
+
+If we apply this system of analogies the the equation of motion $mx''+kx = 0$, for a solution
+with amplitude $A$, we get $(-m\omega^2+k)A=0$, and if $A$ is nonzero, this means that
+\begin{equation*}
+  -m\omega^2+k=0.
+\end{equation*}
+This is a big win, because now instead of solving a differential equation, we just have to
+analyze an equation using algebra. If $A$ is nonzero, then the factor in parentheses has to be
+zero, and that gives $\omega=\sqrt{k/m}$. (We could use the negative square root, but that doesn't
+actually give different solutions.)
+<% end_sec('shm') %>
+
+<% begin_sec("Damped oscillations",nil,'damping') %>
+We now extend the discussion to include damping.  If you haven't
+learned about damped oscillations before, you may want to look first
+at a treatment that doesn't use complex numbers, such as the one in
+ch.~15 of OpenStax University Physics, volume 1, which is free online. 
+
+In the mechanical case, we will assume for mathematical convenience
+that the frictional force is proportional to velocity. Although this
+is not realistic for the friction of a solid rubbing against a solid,
+it is a reasonable approximation for some forms of friction, and 
+anyhow it has the advantage of making the mechanical and electrical
+systems in figure \figref{mass-on-spring} exactly analogous
+mathematically.
+
+With this assumption, we add in to Newton's second law
+a frictional force $-bv$, where $b$ is a constant. The equation of motion
+is now
+\begin{equation*}
+  mx''+bx'+kx = 0.
+\end{equation*}
+Applying the trick with the complex-number analogy, this becomes
+$-m\omega^2-i\omega b+k=0$, which says that $\omega$ is a root of a polynomial.
+Since we're used to dealing with polynomials that have real coefficients,
+it's helpful to switch to the variable $r=i\omega$, which means that we're
+looking for solutions of the form $Ae^{rt}$. In terms of this variable,
+\begin{equation*}
+  mr^2+br+k=0.
+\end{equation*}
+The most common case is one where $b$ is fairly small, so that the
+quadratic formula produces two solutions for $r$ that are complex
+conjugates of each other. As a simple example without units, let's say
+that these two roots are $r_1=-1+i$ and $r_2=-1-i$. Then if $A=1$, our
+solution corresponding to $r_1$ is $x_1=e^{(-1+i)t}=e^{-t}e^{it}$.
+The $e^{it}$ spins in the complex plane, representing an oscillation,
+while the $e^{-t}$ factor makes it die out exponentially due to
+friction.  In reality, our solution should be a real number, and if we
+like, we can make this happen by adding up combinations, e.g.,
+$x_1+x_2=2e^{-t}\cos t$, but it's usually easier just to write down
+the $x_1$ solution and interpret it as a decaying oscillation. Figure
+\figref{sc-strongly-damped} shows an example.
+
+
+<% marg(0) %>
+<%
+  fig(
+    'sc-strongly-damped',
+    %q{The amplitude is halved with each cycle.}
+  )
+%>
+<% end_marg %>
+<% self_check('damping-energy',<<-'SELF_CHECK'
+Figure \figref{sc-strongly-damped} shows an x-t graph for a strongly damped
+vibration, which loses half of its amplitude with every
+cycle. What fraction of the energy is lost in each cycle?
+  SELF_CHECK
+  ) %>
+
+<% end_sec('damping') %>
 
 <% begin_notes %>
 
