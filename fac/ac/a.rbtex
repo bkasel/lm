@@ -522,7 +522,67 @@ cycle. What fraction of the energy is lost in each cycle?
   SELF_CHECK
   ) %>
 
+It is often convenient to describe the amount of damping in terms of the
+unitless \emph{quality factor} $Q=\sqrt{km}/b$, which can be interpreted as the
+number of oscillations required for the energy to fall of by a factor of
+$e^{2\pi}\approx535$.
+
 <% end_sec('damping') %>
+
+<% begin_sec("Resonance",nil,'resonance') %>
+When a sinusoidally oscillating external driving force is applied to
+our system, it will respond by settling into a pattern of vibration in
+which it oscillates at the driving frequency. A mother pushing her kid
+on a playground swing is a mechanical example (not quite a rigorous
+one, since her force as a function of time is not a sine wave).  An
+electrical example is a radio receiver driven by a signal picked up
+from the antenna. In both of these examples, it matters whether we
+pick the right driving force.  In the example of the playground swing,
+Mom needs to push in rhythm with the swing's pendulum frequency. In
+the radio receiver, we tune in a specific frequency and reject others.
+These are examples of resonance: the system responds most strongly to
+driving at its natural frequency of oscillation. If you haven't had
+a previous introduction to resonance in the mechanical context, this
+review will not be adequate, and you will first want to look at another book,
+such as OpenStax University Physics.
+
+With the addition of a driving force $F$, the equation of motion for the
+damped oscillator becomes
+\begin{equation*}
+  mx''+bx'+kx = F,
+\end{equation*}
+where $F$ is a function of time. In terms of complex amplitudes, this is
+$(-\omega^2m-i\omega b+k)A=\tilde{F}$. Here we introduce the notation $\tilde{F}$, which
+looks like a little sine wave above the $F$, to mean the complex number representing $F$'s
+amplitude. The result for the steady-state response of the oscillator is
+\begin{equation*}
+  A = \frac{\tilde{F}}{-\omega^2m-i\omega b+k}.
+\end{equation*}
+To see that this makes sense, consider the case where $b=0$. Then by setting $\omega$
+equal to the natural frequency $\sqrt{k/m}$ we can make $A$ blow up to infinity. This
+is exactly what would happen if Mom pushed Baby on the swing and there was no friction
+to keep the oscillations from building up indefinitely.
+
+<%
+  fig(
+    'resonance-fac',
+    %q{%
+      Dependence of the amplitude and phase angle
+              on the driving frequency. The undamped case is $Q=\infty$,
+              and the other curves represent $Q$=1, 3, and 10. $\tilde{F}$, $m$, and $\omega_\zu{o}=\sqrt{k/m}$
+              are all set to 1.  
+    },
+    {'width'=>'wide','sidecaption'=>true}
+  )
+%>
+
+Figure \figref{resonance-fac} shows how the response depends on the driving frequency.
+The peak in the graph of $|A|$ demonstrates that there is a resonance. Increasing $Q$,
+i.e., decreasing damping, makes the response at resonance greater, which is intuitively
+reasonable. What is a little more surprising is that it also changes the \emph{shape}
+of the resonance peak, making it narrower and spikier.
+
+<% end_sec('resonance') %>
 
 <% begin_notes %>
 
