@@ -24,7 +24,7 @@
    version="1.1"><svg:defs
      id="defs78" /><sodipodi:namedview
      inkscape:cy="57.741104"
-     inkscape:cx="124.58279"
+     inkscape:cx="121.85831"
      inkscape:zoom="3.9640546"
      inkscape:window-height="997"
      inkscape:window-width="1280"
@@ -205,13 +205,13 @@ piqtirsVdirsVdirsVdirsVdir//2Q==</xapGImg:image></rdf:li></rdf:Alt></xap:Thumbna
      d="m 124.60415,110.00995 c 11.58271,-13.977027 18.54629,-31.922557 18.54629,-51.493381 0,-11.148963 -2.25846,-21.769456 -6.34537,-31.430229"
      style="fill:none;stroke:#808080;stroke-width:0.62319523;stroke-dasharray:2.492781" /><svg:text
      id="text17"
-     x="77.689499"
+     x="80.968971"
      y="69.486305"
      style="font-size:14.95668602px"><svg:tspan
-       x="77.689499"
+       x="80.968971"
        y="69.486305"
        style="font-size:11.21751404px;font-family:Helvetica"
-       id="tspan19">cos </svg:tspan></svg:text>
+       id="tspan19">sin </svg:tspan></svg:text>
 <svg:text
      id="text21"
      x="97.920631"
@@ -256,13 +256,13 @@ piqtirsVdirsVdirsVdirsVdir//2Q==</xapGImg:image></rdf:li></rdf:Alt></xap:Thumbna
      cy="18.684423"
      cx="62.654804" /><svg:text
      id="text41"
-     x="27.450678"
+     x="25.180275"
      y="21.430843"
      style="font-size:14.95668602px"><svg:tspan
-       x="27.450678"
+       x="25.180275"
        y="21.430843"
        style="font-size:11.21751404px;font-family:Helvetica"
-       id="tspan43">sin </svg:tspan></svg:text>
+       id="tspan43">cos </svg:tspan></svg:text>
 <svg:text
      id="text45"
      x="44.744003"
@@ -289,40 +289,40 @@ piqtirsVdirsVdirsVdirsVdir//2Q==</xapGImg:image></rdf:li></rdf:Alt></xap:Thumbna
        x="107.46953"
        y="22.211082"
        style="font-size:11.21751404px;font-family:Helvetica"
-       id="tspan57">cos </svg:tspan></svg:text>
+       id="tspan57">sin </svg:tspan></svg:text>
 <svg:text
      id="text59"
-     x="128.16891"
+     x="123.88037"
      y="22.211082"
      style="font-size:14.95668602px"><svg:tspan
-       x="128.16891"
+       x="123.88037"
        y="22.211082"
        style="font-size:11.21751404px;font-family:Symbol"
        id="tspan61">ω</svg:tspan></svg:text>
 <svg:text
      id="text63"
-     x="137.436"
+     x="133.14746"
      y="22.211082"
      style="font-size:14.95668602px"><svg:tspan
-       x="137.436"
+       x="133.14746"
        y="22.211082"
        style="font-size:11.21751404px;font-family:Helvetica"
-       id="tspan65">t+sin </svg:tspan></svg:text>
+       id="tspan65">t+cos </svg:tspan></svg:text>
 <svg:text
      id="text67"
-     x="165.32495"
+     x="161.79321"
      y="22.211082"
      style="font-size:14.95668602px"><svg:tspan
-       x="165.32495"
+       x="161.79321"
        y="22.211082"
        style="font-size:11.21751404px;font-family:Symbol"
        id="tspan69">ω</svg:tspan></svg:text>
 <svg:text
      id="text71"
-     x="174.27823"
+     x="170.74649"
      y="22.211082"
      style="font-size:14.95668602px"><svg:tspan
-       x="174.27823"
+       x="170.74649"
        y="22.211082"
        style="font-size:11.21751404px;font-family:Helvetica"
        id="tspan73">t</svg:tspan></svg:text>

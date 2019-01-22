@@ -2537,7 +2537,7 @@ permanent characteristics:
 \begin{align*}
         k        &\leftrightarrow 1/C\\
         m        &\leftrightarrow L\\
-        b        &\leftrightarrow R\\
+        b        &\leftrightarrow R
 \end{align*}
 
 Since the mechanical
@@ -2846,12 +2846,9 @@ Until recently, it was common for a fluroescent light's ballast to be a simple i
 and for the whole device to be operated at the 60 Hz frequency of the electrical power lines. This caused
 the lights to flicker annoyingly at 120 Hz, and could also cause an audible hum, since
 the magnetic field surrounding the inductor could exert mechanical forces on things.
-These days, the trend is toward using a solid-state circuit that mimics the behavior
-of an inductor, but at a frequency in the kilohertz range, eliminating the flicker and
-hum. Modern compact fluorescent bulbs electronic have ballasts built into their bases,
-so they can be used as plug-in replacements for incandescent bulbs. A compact fluorescent bulb
-uses about 1/4 the electricity of an incandescent bulb, lasts ten times longer, and
-saves \$30 worth of electricity over its lifetime.
+Modern compact fluorescent bulbs have ballasts built into their bases that use
+a frequency in the kilohertz range, eliminating the flicker and    
+hum. 
 \end{eg}
 
 \startdq
@@ -2895,9 +2892,10 @@ mass never even makes it through one cycle. This is the case
 of overdamping, discussed on page \pageref{overdamped}.\index{oscillations!overdamped!electrical}%
         \index{overdamped oscillations!electrical}\index{damped oscillations!overdamped!electrical}
 
-Electrical circuits can exhibit all the same behavior. For
-simplicity we will analyze only the cases of LRC circuits
-with $L=0$ or $C=0$.
+Electrical circuits can exhibit all the same behavior. 
+For simplicity we will analyze only the
+cases where either the
+capacitor or the inductor is completely absent, giving $Q=0$.
 
 <% begin_sec("The RC circuit") %>
 \index{RC circuit}
@@ -3444,7 +3442,7 @@ In figure \figref{capvi}, for example, the voltage across the capacitor
 is a sine wave multiplied by a number that gives its amplitude, so we associate that
 function with a number $\tilde{V}$ lying on the real axis. Its magnitude, $|\tilde{V}|$,
 gives the amplitude in units of volts, while its argument $\arg \tilde{V}$, gives its
-phase angle, which is zero. The current is a multiple of a sine wave, so we identify
+phase angle, which is zero. The current is a multiple of the cosine, so we identify
 it with a number $\tilde{I}$ lying on the imaginary axis.
 We have $\arg\tilde{I}=90\degunit$, and $|\tilde{I}|$ is the amplitude of the current,
 in units of amperes. But comparing with our result above, we have $|\tilde{I}|=\omega C|\tilde{V}|$.

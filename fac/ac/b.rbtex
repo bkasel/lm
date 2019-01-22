@@ -10,35 +10,6 @@
   )
 %>
 
-The long road leading from the light bulb to the computer
-started with one very important step: the introduction of
-feedback into electronic circuits. Although the principle of
-feedback has been understood and and applied to mechanical
-systems for centuries, and to electrical ones since the
-early twentieth century, for most of us the word evokes an
-image of Jimi Hendrix (or some more recent guitar hero)
-intentionally creating earsplitting screeches, or of the
-school principal doing the same inadvertently in the
-auditorium. In the guitar example, the musician stands in
-front of the amp and turns it up so high that the sound
-waves coming from the speaker come back to the guitar string
-and make it shake harder. This is an example of \emph{positive}
-feedback: the harder the string vibrates, the stronger the
-sound waves, and the stronger the sound waves, the harder
-the string vibrates. The only limit is the power-handling
-ability of the amplifier.
-
-Negative feedback is equally important. Your thermostat, for
-example, provides negative feedback by kicking the heater
-off when the house gets warm enough, and by firing it up
-again when it gets too cold. This causes the house's
-temperature to oscillate back and forth within a certain
-range. Just as out-of-control exponential freak-outs are a
-characteristic behavior of positive-feedback systems,
-oscillation is typical in cases of negative feedback. You
-have already studied negative feedback extensively in section \ref{sec:resonance}
-in the case of a mechanical system, although we didn't call it that.
-
 <% begin_sec("Capacitance and inductance") %>
 %
 \index{capacitor}\index{capacitor!capacitance}\index{inductor}\index{inductor!inductance}
@@ -390,7 +361,7 @@ charge up the plates.
 
 <% end_sec() %>
 
-<% begin_sec("Oscillations") %>
+<% begin_sec("Oscillations",nil,'lrc-oscillations') %>
 
  % 
 Figure \figref{lrc} shows the simplest possible oscillating circuit.
@@ -418,17 +389,14 @@ Nevertheless, all the essential physics is there.
 <% end_marg %>
 
 We can analyze it without any sweat or tears whatsoever,
-simply by constructing an analogy with a mechanical system.
-In a mechanical oscillator, \figref{lrcanalogy}, we have two forms of stored energy,
+simply by filling in the rest of the system of analogies introduced in sections
+\ref{sec:shm}-\ref{sec:damping}, pp.~\pageref{sec:shm}-\pageref{end-sec-shm}, with a mechanical oscillator.
+In figure \figref{lrcanalogy}, we have two forms of stored energy,
 \begin{align*}
                 U_{spring}         &=            \frac{1}{2}kx^2                &(1)  \\
                 K                         &=     \frac{1}{2}mv^2\eqquad.        \qquad                &(2)  
 \end{align*}
-
-In the case of a mechanical oscillator, 
-we have usually assumed a friction force of the form that
-turns out to give the nicest mathematical results,
-$F=-bv$. In the circuit, the dissipation of energy
+In the circuit, the dissipation of energy
 into heat occurs via the resistor, with no mechanical force
 involved, so in order to make the analogy, we need to restate
 the role of the friction force in terms of energy. The power
@@ -456,33 +424,19 @@ and the rate of heat dissipation in the resistor is
 \begin{equation*}
                 \text{rate of heat dissipation}  =  -RI^2\eqquad.        \qquad        (3')  
 \end{equation*}
-Comparing the two sets of equations, we first form analogies
-between quantities that represent the state of the system at
-some moment in time:
-\begin{align*}
-        x        &\leftrightarrow q\\
-        v        &\leftrightarrow I\\
-\end{align*}
-
-<% self_check('xvqi',<<-'SELF_CHECK'
-How is $v$ related mathematically to $x$? How
-is $I$ connected to $q$? Are the two relationships analogous?
-  SELF_CHECK
-  ) %>
-
-Next we relate the ones that describe the system's
+We've previously discussed the analogies
+$x\leftrightarrow q$ and $v\leftrightarrow I$.
+Next we relate the variables that describe the system's
 permanent characteristics:
 \begin{align*}
         k        &\leftrightarrow 1/C\\
         m        &\leftrightarrow L\\
-        b        &\leftrightarrow R\\
+        b        &\leftrightarrow R
 \end{align*}
 
 Since the mechanical
-system naturally oscillates with a frequency\footnote{We
-use the word ``frequency'' to mean either $f$ or $\omega=2\pi f$
-when the context makes it clear which is being referred to.}
- $\omega\approx\sqrt{k/m}$ , we can immediately solve the
+system naturally oscillates with a frequency
+$\omega\approx\sqrt{k/m}$ , we can immediately solve the
 electrical version by analogy, giving
 \begin{equation*}
           \omega \approx \frac{1}{\sqrt{LC}}\eqquad.
@@ -537,20 +491,13 @@ a little tedious, but it builds character:
                                  &=    \zu{H}          
 \end{align*}
 The result is 25 mH (millihenries).
-
-        This is actually quite a large inductance value, and would
-require a big, heavy, expensive coil. In fact, there is a
-trick for making this kind of circuit small and cheap. There
-is a kind of silicon chip called an op-amp, which, among
-other things, can be used to simulate the behavior of an
-inductor. The main limitation of the op-amp is that it is
-restricted to low-power applications.\index{op-amp}\index{operational amplifier (op-amp)}
+(An inductance value this large would probably be imlemented with an op-amp, not a coil.)
 \end{eg}
  %  
 
  % ------------------------------------------ 
 
-<% end_sec() %>
+<% end_sec('lrc-oscillations') %>
 
 <% begin_sec("Voltage and current") %>
 
@@ -675,23 +622,28 @@ to either one.
 Experience with the loop rule would also lead us to expect that
 $V_{inductor}+V_{black\ box}=0$, so the two voltage drops
 have the same absolute value, which we could then notate simply as $V$.
-In real-world circuits, this is indeed what we would find, to a good
+In real-world circuits, this is indeed what we would usually find, to a good
 approximation, using an AC voltmeter, although the loop rule can actually
 be violated in an AC circuit (\note{ac-circuit-loop-rule}).
 
 Whatever the black box is, the rate at which it
-is taking energy from the inductor is given by $P=IV$, so
+is taking energy from the inductor is given by $P=IV$, so (ignoring signs)
 \begin{align*}
-        IV &= -\frac{\der U_L}{\der t} \\
-                &= -\frac{\der}{\der t}\left( \frac{1}{2}LI^2\right)  \\
-                &= -LI\frac{\der I}{\der t}\eqquad,\\
+        IV &= \frac{\der U_L}{\der t} \\
+                &= \frac{\der}{\der t}\left( \frac{1}{2}LI^2\right)  \\
+                &= LI\frac{\der I}{\der t}\eqquad,\\
 \intertext{or}
-        V        &= -L\frac{\der I}{\der t}\eqquad \\
+        V        &= L\frac{\der I}{\der t}, \qquad \text{[See below re sign.]}
 \end{align*}
-which in many books is taken to be the definition of inductance. The
-sign indicates that the inductor resists the change in current.
+which in many books is taken to be the definition of inductance. When applying
+this in a circuit, we insert a sign in front that 
+indicates that the inductor resists the change in current, i.e., that provides
+negative feedback. The choice of
+sign that accomplishes this is partly a matter of arbitrary choice, since
+the real-world measurements that ultimately define $V$ and $I$ depend on how we
+hook up the voltmeter and ammeter.
 
-To someone who knew only about DC circuits, this would be a surprising result. Suppose, for
+To someone who knew only about DC circuits, $V=L\der I/\der t$ would be a surprising result. Suppose, for
 concreteness, that the black box in figure \figref{indv} is a resistor,
 and that the inductor's energy is decreasing, and being converted into heat
 in the resistor. The voltage drop across the resistor indicates that
@@ -785,15 +737,27 @@ Until recently, it was common for a fluroescent light's ballast to be a simple i
 and for the whole device to be operated at the 60 Hz frequency of the electrical power lines. This caused
 the lights to flicker annoyingly at 120 Hz, and could also cause an audible hum, since
 the magnetic field surrounding the inductor could exert mechanical forces on things.
-These days, the trend is toward using a solid-state circuit that mimics the behavior
-of an inductor, but at a frequency in the kilohertz range, eliminating the flicker and
-hum. Modern compact fluorescent bulbs electronic have ballasts built into their bases,
-so they can be used as plug-in replacements for incandescent bulbs. A compact fluorescent bulb
-uses about 1/4 the electricity of an incandescent bulb, lasts ten times longer, and
-saves \$30 worth of electricity over its lifetime.
+Modern compact fluorescent bulbs have ballasts built into their bases that use
+a frequency in the kilohertz range, eliminating the flicker and
+hum.
 \end{eg}
 
-\startdq
+In section \ref{sec:lrc-oscillations} we analyzed the oscillations of a series LRC circuit
+simply by appealing to the mechanical analog, which we had already solved, but it's
+also interesting to write down the actual differential equation for the circuit.
+The loop rule is approximately valid under the lumped circuit approximation, so
+\begin{equation*}
+  V_L+V_R+V_C = 0.
+\end{equation*}
+We now want to express this in terms of $q$ and its derivatives, so we use
+$V_C=q/C$, $V_R=IR=Rq'$, and $|V_L|=L\der I/\der t=Lq''$, resulting in
+\begin{equation*}
+  Lq''+Rq'+\frac{1}{C}q = 0.
+\end{equation*}
+If we look for solutions of the form $q=e^{st}$, we find that $Ls^2+Rs+1/C=0$.\label{lrc-roots}
+When $R=0$, the solutions are $s=\pm i/\sqrt{LC}$, or $\omega=\mp\sqrt{LC}$, as expected.
+
+\startdqs
 
 \begin{dq}
 What happens when the physicist at the bottom in figure \figref{inductor-voltage}/3 starts
@@ -836,60 +800,26 @@ discussion question \ref{dq:gauss-examples-induction1} show the resolution to th
 
 <% begin_sec("Decay") %>
 
- % 
 Up until now I've soft-pedaled the fact that by changing the
 characteristics of an oscillator, it is possible to produce
 non-oscillatory behavior. For example, imagine taking the
 mass-on-a-spring system and making the spring weaker and
 weaker. In the limit of small $k$, it's as though there was
 no spring whatsoever, and the behavior of the system is that
-if you kick the mass, it simply starts slowing down. For
-friction proportional to $v$, as we've been assuming, the
-result is that the velocity approaches zero, but never
-actually reaches zero. This is unrealistic for the
-mechanical oscillator, which will not have vanishing
-friction at low velocities, but it is quite realistic in the
-case of an electrical circuit, for which the voltage drop
-across the resistor really does approach zero as the
-current approaches zero.
+if you kick the mass, it simply starts slowing down. Although the
+limit $k\rightarrow0$ is intuitively easy to imagine in the
+mechanical case, we get the non-oscillatory behavior
+whenever $Q<1/2$ (\note{overdamped-q}).
+In sections \ref{subsec:rc} and \ref{subsec:rl} we will analyze only the
+cases where either the
+capacitor or the inductor is completely absent, giving $Q=0$.
 
-We do not even have to reduce $k$ to exactly zero in order
-to get non-oscillatory behavior. There is actually a finite,
-critical value below which the behavior changes, so that the
-mass never even makes it through one cycle. This is the case
-of overdamping, discussed on page \pageref{overdamped}.\index{oscillations!overdamped!electrical}%
-        \index{overdamped oscillations!electrical}\index{damped oscillations!overdamped!electrical}
-
-Electrical circuits can exhibit all the same behavior. For
-simplicity we will analyze only the cases of LRC circuits
-with $L=0$ or $C=0$.
-
-<% begin_sec("The RC circuit") %>
+<% begin_sec("The RC circuit",nil,'rc') %>
 \index{RC circuit}
 We first analyze the RC circuit, \figref{rc}. In reality one would
 have to ``kick'' the circuit, for example by briefly
 inserting a battery, in order to get any interesting
-behavior. We start with Ohm's law and the equation for the
-voltage across a capacitor:
-\begin{align*}
-                V_R         &=    IR  \\
-                V_C         &=    q/C  
-\end{align*}
-
-<% marg(30) %>
-<%
-  fig(
-    'rc',
-    %q{An RC circuit.}
-  )
-%>
-<% end_marg %>
-
-The loop rule tells us
-\begin{equation*}
-                        V_R + V_C  =  0\eqquad,  
-\end{equation*}
-and combining the three equations results in a relationship between $q$ and $I$:
+behavior. Setting $L=0$ in our analysis from p.~\pageref{lrc-roots}, we have
 \begin{equation*}
                         I         =      -\frac{1}{RC}q
 \end{equation*}
@@ -906,6 +836,16 @@ second, it appears that the quantity $RC$ must have
 units of seconds, and you can check for yourself that this
 is correct. $RC$ is therefore referred to as the time
 constant of the circuit.\index{RC time constant}\index{time constant!RC}
+
+<% marg(30) %>
+<%
+  fig(
+    'rc',
+    %q{An RC circuit.}
+  )
+%>
+<% end_marg %>
+
 
 How exactly do $I$ and $q$ vary with time? Rewriting $I$ as
 $\der q/\der t$, we have
@@ -943,9 +883,9 @@ our solution is
 %>
 <% end_marg %>
 
-<% end_sec() %>
+<% end_sec('rc') %>
 
-<% begin_sec("The RL circuit") %>
+<% begin_sec("The RL circuit",nil,'rl') %>
 \index{RL circuit}
 The RL circuit, \figref{rl}, can be attacked by similar methods, and
 it can easily be shown that it gives
@@ -1013,6 +953,10 @@ rapidly radiated away by the antenna, A, which sends out radio waves.
 \startdqs
 
 \begin{dq}
+Carry out the analysis of the RL circuit explicitly.
+\end{dq}
+
+\begin{dq}
 A gopher gnaws through one of the wires in the DC lighting system in
 your front yard, and the lights turn off. At the instant when the circuit becomes open, we can
 consider the bare ends of the wire to be like the plates of a capacitor,
@@ -1024,67 +968,54 @@ $RC$ time constant?
 
  % ------------------------------------------ 
 
-<% end_sec() %>
+<% end_sec('rl') %>
 
 <% end_sec() %>
 
-<% begin_sec("Impedance",nil,'impedance') %>
-\index{impedance}
- % 
-So far we have been thinking in terms of the free oscillations
-of a circuit. This is like a mechanical oscillator that has
-been kicked but then left to oscillate on its own without
-any external force to keep the vibrations from dying out.
-Suppose an LRC circuit is driven with a sinusoidally varying
-voltage, such as will occur when a radio tuner is hooked up
-to a receiving antenna. We know that a current will flow in
-the circuit, and we know that there will be resonant
-behavior, but it is not necessarily simple to relate current
-to voltage in the most general case. Let's start instead
-with the special cases of LRC circuits consisting of only a
-resistance, only a capacitance, or only an inductance. We
-are interested only in the steady-state response.
-
-The purely resistive case is easy. Ohm's law gives
+<% begin_sec("Impedance",nil,'impedance') %>\index{impedance}
+When a resistor, capacitor, or inductor is driven by an oscillating
+voltage with amplitude $V$ and frequency $\omega$, current
+will flow through it (once the steady state has been achieved) with the same frequency and with some amplitude and
+phase. If we use the idea introduced in sec.~\ref{sec:shm}, p.~\pageref{sec:shm}
+of representing a sine wave with a complex number, then we have a complex number $\mytilde{V}$
+that completely embodies the voltage we apply, and another
+complex number $\mytilde{I}$ describing the outcome. As a notational convention,
+we write these symbols with tildes on top. The tilde looks like a little sine wave
+and reminds us that we're representing a sine wave. We can then define a complex number
 \begin{equation*}
-                I         =    \frac{V}{R}\eqquad.  
+  Z = \frac{\mytilde{V}}{\mytilde{I}}
 \end{equation*}
+called the \emph{impedance}. The impedance has units of ohms, and in the case of
+a resistor, $Z$ is a real number that equals the resistance.
 
 In the purely capacitive case, the relation $V=q/C$ lets us calculate
-\begin{align*}
-                I         &=    \frac{\der q}{\der t}  \\
-                         &=    C \frac{\der V}{\der t}\eqquad.  
-\end{align*}
-
-This is partly analogous to Ohm's law. For example, if we double the amplitude of a sinusoidally
-varying AC voltage, the derivative $\der V/\der t$ will also double, and the amplitude of the
-sinusoidally varying current will also double. However, it is not true that $I=V/R$, because
+$I=\frac{\der q}{\der t}=C \frac{\der V}{\der t}$.
+A capacitor does not follow Ohm's law, and it is not true that $I=V/R$, because
 taking the derivative of a sinusoidal function shifts its phase by 90 degrees.
+But we can still
 If the voltage varies as, for example, $V(t)=V_\zu{o}\sin (\omega t)$,
 then the current will be $I(t)=\omega C V_\zu{o}\cos (\omega t)$.
-The amplitude of the current is $\omega C V_\zu{o}$, which is proportional to $V_\zu{o}$, but
-it's not true that $I(t)=V(t)/R$ for some constant $R$.
-
-A second problem that crops up is that our entire analysis of DC resistive circuits was built
-on the foundation of the loop rule and the junction rule, both of which are statements about
-sums. To apply the junction rule to an AC circuit, for exampe, we would say that the sum of the
-sine waves describing the currents coming into the junction is equal (at every moment in time)
-to the sum of the sine waves going out.         Now sinusoidal functions have a remarkable property, which is that if you
-add two different sinusoidal functions having the same frequency, the result
-is also a sinusoid with that frequency.
-For example, $\cos\omega t+\sin\omega t=\sqrt{2}\sin(\omega t+\pi/4)$, which can be proved
-using trig identities. The trig identities can get very cumbersome, however, and there is
-a much easier technique involving complex numbers.
-
-Figure \figref{polar} shows a useful way to visualize what's going on.
-When a circuit is oscillating at a frequency $\omega$, we use points in
-the plane to represent sinusoidal functions with various phases and
-amplitudes.
-
-<% self_check('represent-as-complex',<<-'SELF_CHECK'
-Which of the following functions can be represented in this way? $\cos(6t-4)$, $\cos^2t$, $\tan t$
-  SELF_CHECK
-  ) %>
+We use the complex numbers 1 and $i$ represent the
+functions $\sin\omega t$ and $\cos\omega t$.
+In our example, $V(t)$
+is a sine wave multiplied by a number that gives its amplitude, so we associate that
+function with a number $\mytilde{V}$ lying on the real axis. Its magnitude, $|\mytilde{V}|$,
+gives the amplitude in units of volts, while its argument $\arg \mytilde{V}$, gives its
+phase angle, which is zero. The current is a multiple of the cosine, so we identify
+it with a number $\mytilde{I}$ lying on the imaginary axis.
+We have $\arg\mytilde{I}=90\degunit$, and $|\mytilde{I}|$ is the amplitude of the current,
+in units of amperes. But comparing with our result above, we have $|\mytilde{I}|=\omega C|\mytilde{V}|$.
+Bringing together the phase and magnitude information, we have $\mytilde{I}=i\omega C\mytilde{V}$.
+This looks very much like Ohm's law, so we write
+\begin{equation*}
+                \mytilde{I}         =    \frac{\mytilde{V}}{Z_C}\eqquad,  
+\end{equation*}
+where the quantity
+\begin{equation*}
+                Z_C    =     -\frac{i}{\omega C}\eqquad, \qquad \text{[impedance of a capacitor]}  
+\end{equation*}
+having units of ohms, is the \emph{impedance} of
+the capacitor at this frequency.
 
 <% marg(0) %>
 <%
@@ -1093,58 +1024,8 @@ Which of the following functions can be represented in this way? $\cos(6t-4)$, $
     %q{In a capacitor, the current is $90\degunit$ ahead of the voltage in phase.}
   )
 %>
-
-\spacebetweenfigs
-
-<%
-  fig(
-    'polar',
-    %q{Representing functions with points in polar coordinates.}
-  )
-%>
-
-\spacebetweenfigs
-%
-
-<%
-  fig(
-    'sinpluscos',
-    %q{Adding two sinusoidal functions.}
-  )
-%>
 <% end_marg %>
 
-The simplest examples of how to
-visualize this in polar coordinates are ones like $\cos \omega t+\cos \omega t=2\cos \omega t$,
-where everything has the same phase, so all the points
-lie along a single line in the polar plot, and addition is just like adding numbers
-on the number line.
-The less trivial example $\cos\omega t+\sin\omega t=\sqrt{2}\sin(\omega t+\pi/4)$,
-can be visualized as in figure \figref{sinpluscos}.
-
-Figure  \figref{sinpluscos} suggests that
-all of this can be tied together nicely if we identify our plane with the plane
-of complex numbers. For example, the complex numbers 1 and $i$ represent the
-functions $\sin\omega t$ and $\cos\omega t$.
-In figure \figref{capvi}, for example, the voltage across the capacitor
-is a sine wave multiplied by a number that gives its amplitude, so we associate that
-function with a number $\tilde{V}$ lying on the real axis. Its magnitude, $|\tilde{V}|$,
-gives the amplitude in units of volts, while its argument $\arg \tilde{V}$, gives its
-phase angle, which is zero. The current is a multiple of a sine wave, so we identify
-it with a number $\tilde{I}$ lying on the imaginary axis.
-We have $\arg\tilde{I}=90\degunit$, and $|\tilde{I}|$ is the amplitude of the current,
-in units of amperes. But comparing with our result above, we have $|\tilde{I}|=\omega C|\tilde{V}|$.
-Bringing together the phase and magnitude information, we have $\tilde{I}=i\omega C\tilde{V}$.
-This looks very much like Ohm's law, so we write
-\begin{equation*}
-                \tilde{I}         =    \frac{\tilde{V}}{Z_C}\eqquad,  
-\end{equation*}
-where the quantity
-\begin{equation*}
-                Z_C    =     -\frac{i}{\omega C}\eqquad, \qquad \text{[impedance of a capacitor]}  
-\end{equation*}
-having units of ohms, is called the \emph{impedance} of
-the capacitor at this frequency.
 
 It makes sense that
 the impedance becomes infinite at zero frequency. Zero
@@ -1157,11 +1038,6 @@ terminals. Since the electric fields between the plates are
 constant, there is no energy being added to or taken out of
 the field. A capacitor that can't exchange energy with any
 other circuit component is nothing more than a broken (open) circuit.
-
-Note that we have two types of complex numbers: those that represent sinusoidal functions
-of time, and those that represent impedances.
-The ones that represent sinusoidal functions have tildes on top, which look like little sine
-waves.
 
 <% self_check('caplabel',<<-'SELF_CHECK'
 Why can't a capacitor have its impedance printed on it along
@@ -1521,10 +1397,10 @@ act as if they were a single circuit element with an impedance
          Z        &=  Z_{L}+ Z_{C}\\
                         &=  i\omega L-\frac{ i}{\omega C}\eqquad.\\
 \intertext{The current is then}
-        \tilde{ I} = \frac{\tilde{ V}}{ i\omega L- i/\omega C}\eqquad.
+        \mytilde{ I} = \frac{\mytilde{ V}}{ i\omega L- i/\omega C}\eqquad.
 \end{align*}
 We don't care about the phase of the current, only its amplitude, which is
-represented by the absolute value of the complex number $\tilde{ I}$, and
+represented by the absolute value of the complex number $\mytilde{ I}$, and
 this can be maximized by making  
 $| i\omega L- i/\omega C|$ as small as possible.
 But there is some frequency at which this quantity is \emph{zero}\/ ---
@@ -1536,7 +1412,7 @@ But there is some frequency at which this quantity is \emph{zero}\/ ---
 At this frequency, the current is infinite! What is going on physically?
 This is an LRC circuit with $R=0$. It has a resonance at this frequency,
 and because there is no damping, the response at resonance is infinite.
-Of course, any real LRC circuit will have some damping, however small (cf. figure \figref{resonance} on page \pageref{fig:resonance}).
+Of course, any real LRC circuit will have some damping, however small.
 \end{eg}
 \begin{eg}{Resonance with damping}\index{LRC circuit}
 \egquestion
@@ -1545,9 +1421,9 @@ What is the amplitude of the current in a series LRC circuit?
 \eganswer
 Generalizing from  example \ref{eg:series-impedance}, we add a third, real impedance:
 \begin{align*}
-        |\tilde{ I}| &= \frac{|\tilde{ V}|}{| Z|} \\
-                &= \frac{|\tilde{ V}|}{| R+ i\omega L- i/\omega C|} \\
-                &= \frac{|\tilde{ V}|}{\sqrt{ R^2+(\omega L-1/\omega C)^2}} 
+        |\mytilde{ I}| &= \frac{|\mytilde{ V}|}{| Z|} \\
+                &= \frac{|\mytilde{ V}|}{| R+ i\omega L- i/\omega C|} \\
+                &= \frac{|\mytilde{ V}|}{\sqrt{ R^2+(\omega L-1/\omega C)^2}} 
 \end{align*}
 This result would have taken pages of algebra without the complex number technique!
 \end{eg}
@@ -1583,25 +1459,25 @@ analyze this circuit, we first calculate the total impedance:
                  Z  =   Z_{L}+( Z_{C}^{-1}+ Z_R^{-1})^{-1}  
 \end{equation*}
 All the current passes through the inductor, so if the driving voltage being supplied
-on the left is $\tilde{ V}_d$, we have
+on the left is $\mytilde{ V}_d$, we have
 \begin{equation*}
-                \tilde{ V}_d  =  \tilde{ I}_{L} Z\eqquad,  
+                \mytilde{ V}_d  =  \mytilde{ I}_{L} Z\eqquad,  
 \end{equation*}
 and we also have
 \begin{equation*}
-                \tilde{ V}_{L}  =  \tilde{ I}_{L} Z_L\eqquad.  
+                \mytilde{ V}_{L}  =  \mytilde{ I}_{L} Z_L\eqquad.  
 \end{equation*}
 The loop rule, applied to the outer perimeter of the circuit, gives
 \begin{equation*}
-                \tilde{ V}_{d}  = \tilde{ V}_{L}+\tilde{ V}_R\eqquad.  
+                \mytilde{ V}_{d}  = \mytilde{ V}_{L}+\mytilde{ V}_R\eqquad.  
 \end{equation*}
 Straightforward algebra now results in
 \begin{equation*}
-                \tilde{ V}_{R}  = \frac{\tilde{ V}_{d}}%
+                \mytilde{ V}_{R}  = \frac{\mytilde{ V}_{d}}%
                                                                 {1+ Z_L/ Z_{C}+ Z_{L}/ Z_R}\eqquad.  
 \end{equation*}
 At high frequencies, the $Z_{L}/ Z_C$ term, which varies as
-$\omega^2$, dominates, so $\tilde{ V}_R$ and $\tilde{ I}_R$
+$\omega^2$, dominates, so $\mytilde{ V}_R$ and $\mytilde{ I}_R$
  are proportional to $\omega^{-2}$,
 and the power is proportional to $\omega^{-4}$.
 
@@ -1640,6 +1516,19 @@ terminology, since it doesn't even have units of force} which is minus the work 
 one point in space and another. This is essentially the same as the definition of
 a voltage difference, but without the connotation that there is a well-defined
 electric potential.
+
+\notetext{overdamped-q}{Overdamping}
+\notesummary{Overdamping occurs for $Q<1/2$.}
+As shown on p.~\pageref{lrc-roots}, the solutions to the equation of
+motion for a series LRC circuit are of the form $q=e^{st}$, where
+$Ls^2+Rs+1/C=0$. The roots of this polynomial equation are given by
+the quadratic formula, which contains the square root of the
+discriminant $R^2-4L/C$. By analogy with the mechanical case
+(p.~\pageref{q-mechanical}), $Q=C^{-1/2}L^{1/2}R^{-1}$,\index{$Q$ (quality factor)!LRC circuit}%
+\index{quality factor ($Q$)!LRC circuit}
+so the discriminant is positive when $Q<1/2$, which is referred to as
+the case of overdamping.  
+
 
 <% end_notes %>
 

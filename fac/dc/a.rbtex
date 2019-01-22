@@ -204,7 +204,7 @@ inside the battery, where both positive and negative ions may be flowing?
 <% end_sec('measuring-current') %>
 <% end_sec('circuits') %>
 
-<% begin_sec("Power") %>
+<% begin_sec("Power",nil,'power') %>
 Electrical circuits can be used for sending signals, storing
 information, or doing calculations, but their most common
 purpose by far is to manipulate energy, as in the battery-and-bulb
@@ -301,7 +301,7 @@ combinations like $\zu{A}\cdot\zu{V}$ into simpler terms.
         difference across my hand. I was not injured. For what
         possible reason would the shock have had insufficient power to hurt me?
 \end{dq}
-<% end_sec() %>
+<% end_sec('power') %>
 
 <% begin_sec("Resistance",3,'resistance') %>
 <% begin_sec("Resistance",nil,'resistance') %>
@@ -761,7 +761,8 @@ circuit? Make a prediction, and then try it.
 %>
 
 What do you notice? How does this make sense in terms of the
-roller coaster metaphor introduced in discussion question \ref{sec:voltage}\ref{dq:roller-coaster} on p.~\pageref{dq:roller-coaster}?
+roller coaster metaphor introduced in discussion question
+\ref{sec:power}\ref{dq:roller-coaster} on p.~\pageref{dq:roller-coaster}?
 
 What is being \emph{used up} in the resistor?
 

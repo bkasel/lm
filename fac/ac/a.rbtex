@@ -394,7 +394,9 @@ solution is of the form
 \begin{equation*}
   c_1\sin\omega t+c_2\cos\omega t,
 \end{equation*}
-where $\omega=\sqrt{k/m}$.
+where the frequency\footnote{We
+use the word ``frequency'' to mean either $f$ or $\omega=2\pi f$
+when the context makes it clear which is being referred to.} is $\omega=\sqrt{k/m}$.
 It makes sense that there are two adjustable constants, because if we're given some
 the initial position and velocity of the mass, those are two numbers that we want
 to produce, and typically two equations in two unknowns will have a solution. Mathematically,
@@ -431,7 +433,7 @@ of exact mathematical analogies.
 amplitude            & magnitude \\
 phase                & argument \\
 addition             & addition \\
-differentiation      & multiplication by $-i\omega$
+differentiation      & multiplication by $i\omega$
 \end{tabular}
 
 \begin{eg}{Sine compared to cosine}
@@ -441,18 +443,23 @@ of a cycle, or 90 degrees. The two functions correspond to the complex numbers
 \end{eg}
 
 \begin{eg}{Adding two sine waves}\label{eg:sinpluscos}
-The trigonometric fact $\cos\omega t+\sin\omega t=\sqrt{2}\sin(\omega t+\pi/4)$
+The trigonometric fact $\sin\omega t+\cos\omega t=\sqrt{2}\sin(\omega t+\pi/4)$
 is visualized in figure \figref{sinpluscos-fac}.
 \end{eg}
 
 \begin{eg}{A function's first and second derivative}
-Differentiating $\sin 3x$ once gives $3\cos 3x$. In terms of the complex plane, the function
-$\sin 3x$ is represented by $i$. Differentiating it corresponds to multiplying this complex
-number by $-3i$, which gives $3$, and $3$ represents the function $3\cos 3x$ in our system.
+Differentiating $\sin 3x$ gives $3\cos 3x$. In terms of the complex plane, the function
+$\sin 3x$ is represented by 1. Differentiating it corresponds to multiplying this complex
+number by $3i$, which gives $3i$, and $3i$ represents the function $3\cos 3x$ in our system.
 
-Differentiating $\sin 3x$ twice gives $-9\sin 3x$.
-In terms of complex numbers, this is $1(-3i)(-3i)=-9$.
+Differentiating a second time gives $(\sin 3x)''=-9\sin 3x$.
+In terms of complex numbers, this is $1(3i)(3i)=-9$.
 \end{eg}
+
+<% self_check('represent-as-complex',<<-'SELF_CHECK'
+Which of the following functions can be represented in this way? $\cos(6t-4)$, $\cos^2t$, $\tan t$
+  SELF_CHECK
+  ) %>
 
 If we apply this system of analogies the the equation of motion $mx''+kx = 0$, for a solution
 with amplitude $A$, we get $(-m\omega^2+k)A=0$, and if $A$ is nonzero, this means that
@@ -462,7 +469,7 @@ with amplitude $A$, we get $(-m\omega^2+k)A=0$, and if $A$ is nonzero, this mean
 This is a big win, because now instead of solving a differential equation, we just have to
 analyze an equation using algebra. If $A$ is nonzero, then the factor in parentheses has to be
 zero, and that gives $\omega=\sqrt{k/m}$. (We could use the negative square root, but that doesn't
-actually give different solutions.)
+actually give different solutions.)\label{end-sec-shm}
 <% end_sec('shm') %>
 
 <% begin_sec("Damped oscillations",nil,'damping') %>
@@ -486,20 +493,20 @@ is now
   mx''+bx'+kx = 0.
 \end{equation*}
 Applying the trick with the complex-number analogy, this becomes
-$-m\omega^2-i\omega b+k=0$, which says that $\omega$ is a root of a polynomial.
+$-m\omega^2+i\omega b+k=0$, which says that $\omega$ is a root of a polynomial.
 Since we're used to dealing with polynomials that have real coefficients,
-it's helpful to switch to the variable $r=i\omega$, which means that we're
-looking for solutions of the form $Ae^{rt}$. In terms of this variable,
+it's helpful to switch to the variable $s=i\omega$, which means that we're
+looking for solutions of the form $Ae^{st}$. In terms of this variable,
 \begin{equation*}
-  mr^2+br+k=0.
+  ms^2+bs+k=0.
 \end{equation*}
 The most common case is one where $b$ is fairly small, so that the
 quadratic formula produces two solutions for $r$ that are complex
 conjugates of each other. As a simple example without units, let's say
-that these two roots are $r_1=-1+i$ and $r_2=-1-i$. Then if $A=1$, our
-solution corresponding to $r_1$ is $x_1=e^{(-1+i)t}=e^{-t}e^{it}$.
-The $e^{it}$ spins in the complex plane, representing an oscillation,
-while the $e^{-t}$ factor makes it die out exponentially due to
+that these two roots are $s_1=-1+i$ and $s_2=-1-i$. Then if $A=1$, our
+solution corresponding to $s_1$ is $x_1=e^{(-1+i)t}=e^{-t}e^{it}$.
+The $e^{it}$ factor spins in the complex plane, representing an oscillation,
+while the $e^{-t}$ makes it die out exponentially due to
 friction.  In reality, our solution should be a real number, and if we
 like, we can make this happen by adding up combinations, e.g.,
 $x_1+x_2=2e^{-t}\cos t$, but it's usually easier just to write down
@@ -523,9 +530,11 @@ cycle. What fraction of the energy is lost in each cycle?
   ) %>
 
 It is often convenient to describe the amount of damping in terms of the
-unitless \emph{quality factor} $Q=\sqrt{km}/b$, which can be interpreted as the
+unitless \emph{quality factor} $Q=\sqrt{km}/b$,\index{$Q$ (quality factor)!mechanical oscillator}%
+\index{quality factor ($Q$)!mechanical oscillator}
+which can be interpreted as the
 number of oscillations required for the energy to fall of by a factor of
-$e^{2\pi}\approx535$.
+$e^{2\pi}\approx535$.\label{q-mechanical}
 
 <% end_sec('damping') %>
 
@@ -552,11 +561,11 @@ damped oscillator becomes
   mx''+bx'+kx = F,
 \end{equation*}
 where $F$ is a function of time. In terms of complex amplitudes, this is
-$(-\omega^2m-i\omega b+k)A=\tilde{F}$. Here we introduce the notation $\tilde{F}$, which
+$(-\omega^2m+i\omega b+k)A=\mytilde{F}$. Here we introduce the notation $\mytilde{F}$, which
 looks like a little sine wave above the $F$, to mean the complex number representing $F$'s
 amplitude. The result for the steady-state response of the oscillator is
 \begin{equation*}
-  A = \frac{\tilde{F}}{-\omega^2m-i\omega b+k}.
+  A = \frac{\mytilde{F}}{-\omega^2m+i\omega b+k}.
 \end{equation*}
 To see that this makes sense, consider the case where $b=0$. Then by setting $\omega$
 equal to the natural frequency $\sqrt{k/m}$ we can make $A$ blow up to infinity. This
@@ -569,18 +578,30 @@ to keep the oscillations from building up indefinitely.
     %q{%
       Dependence of the amplitude and phase angle
               on the driving frequency. The undamped case is $Q=\infty$,
-              and the other curves represent $Q$=1, 3, and 10. $\tilde{F}$, $m$, and $\omega_\zu{o}=\sqrt{k/m}$
+              and the other curves represent $Q$=1, 3, and 10. $\mytilde{F}$, $m$, and $\omega_\zu{o}=\sqrt{k/m}$
               are all set to 1.  
     },
     {'width'=>'wide','sidecaption'=>true}
   )
 %>
 
+<% marg() %>
+<%
+  fig(
+    'fwhm',
+    %q{Definition of the FWHM of the resonance peak.}
+  )
+%>
+<% end_marg %>
+
 Figure \figref{resonance-fac} shows how the response depends on the driving frequency.
 The peak in the graph of $|A|$ demonstrates that there is a resonance. Increasing $Q$,
 i.e., decreasing damping, makes the response at resonance greater, which is intuitively
 reasonable. What is a little more surprising is that it also changes the \emph{shape}
-of the resonance peak, making it narrower and spikier.
+of the resonance peak, making it narrower and spikier. The width of the resonance peak
+is often described using the full width at half-maximum, or FWHM, defined in figure
+\figref{fwhm}. The FWHM is approximately equal to $1/Q$ times the resonant frequency,
+the approximation being a good one when $Q$ is large.
 
 <% end_sec('resonance') %>
 
