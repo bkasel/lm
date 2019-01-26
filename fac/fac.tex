@@ -73,6 +73,7 @@
 & \textit{\brieftocpartstyle AC circuits}\\
 \brieftocentry[\hfill]{ch:oscillations}{Review of oscillations, resonance, and complex numbers}\\
 \brieftocentry[\hfill]{ch:ac}{AC circuits}\\
+\brieftocentry[\hfill]{ch:impedance}{Impedance}\\
 \end{tabular}
 
 
@@ -114,8 +115,9 @@
     \renewcommand{\chapdir}{magnetism}\include{magnetism/atemp}
 	\formatchtoc{\large}{\quad\contentspage}{4mm} % This has to go before the last chapter.
     \renewcommand{\chapdir}{ac}\include{ac/atemp}
-        \addtocontents{toc}{\vspace{5mm}}% For reasons I don't understand, this actually comes *after* the final chapter.
     \renewcommand{\chapdir}{ac}\include{ac/btemp}
+        \addtocontents{toc}{\vspace{5mm}}% For reasons I don't understand, this actually comes *after* the final chapter.
+    \renewcommand{\chapdir}{ac}\include{ac/ctemp}
 %
     \widelayout
     \renewcommand{\chapdir}{end}

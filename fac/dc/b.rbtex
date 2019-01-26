@@ -398,7 +398,7 @@ floating digital voltmeter usually shows an error message.
 
 <% end_sec('junction-rule') %>
 
-<% begin_sec("Series resistances and the loop rule",4) %>
+<% begin_sec("Series resistances and the loop rule",4,'loop-rule') %>
 \index{resistance!in series}
 
 The two basic circuit layouts are parallel and series, so a
@@ -790,7 +790,7 @@ a ball of plasma --- a gas so hot that its atoms have been ionized.
         have to use to make this work?
 \end{dq}
 
-<% end_sec() %>
+<% end_sec('loop-rule') %>
 
 <% begin_notes %>
 

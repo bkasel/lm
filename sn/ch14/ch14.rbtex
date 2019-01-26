@@ -973,6 +973,7 @@ a break from Newton as Newton was from Aristotle, and similar care is required i
 are \emph{observables} --- meaningful things to talk about measuring.
 
 \newcommand{\eqnimage}[1]{\raisebox{-.2\height}{\includegraphics[resolution=300]{../share/quantum/figs/#1}}}
+% duplicated in FAC
 
 Classically, we describe the state of the system as a point in phase
 space (sec.~\ref{subsec:phase-space}, p.~\pageref{subsec:phase-space}) --- which is just a fancy way of
