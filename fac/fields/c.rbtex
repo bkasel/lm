@@ -77,13 +77,17 @@ energy. The energy gained by your body as heat is balanced by the loss
 of the electric and magnetic energy of the light waves, which pass
 into nonexistence as they are absorbed.
 
-We expect the laws of physics to be expressible in a way that is purely
-local, so it should be good enough if the conservative property of a static electric
-field holds in the limit of very small closed loops. In fact, we will see that
-if the conservative property holds for small loops, then it is also automatically
-satisfied for small ones as well. This is guaranteed by a theorem called Green's
-theorem, which looks scary when expressed in fancy mathematical notation, but
-expresses a fact that turns out to be visually obvious.
+For the rest of this chapter we restrict our attention to static
+electric fields, which are conservative.  We expect the laws of
+physics to be expressible in a way that is purely local, so it should
+be good enough if the conservative property of a static electric field
+holds in the limit of very small closed loops. In fact, we will see
+that if the conservative property holds for small loops, then it is
+also automatically satisfied for small ones as well. This is
+guaranteed by a theorem which, in its various flavors and levels of
+generality, is usually called Stokes's theorem or Green's theorem.
+Stokes's theorem looks scary when expressed in fancy mathematical
+notation, but expresses a fact that turns out to be visually obvious. 
 
 <% marg() %>
 <%
@@ -134,11 +138,11 @@ For a static electric field, $\operatorname{curl}\vc{E}=0$.
 \end{lessimportant}
 
 \noindent This means that the work done around any \emph{small} closed loop is zero.
-Let's see how this generalizes to large loops. Green's theorem comes in a variety of
+Let's see how this generalizes to large loops. Stokes's theorem comes in a variety of
 versions and different levels of generality (e.g., there is a version that works in
 four dimensions, which is helpful in relativity, where time is treated as a dimension).
 For now we'll content ourselves with the special case that covers two dimensions, in the case
-where the curl is zero. (More general versions of Green's theorem tell us interesting
+where the curl is zero. (More general versions of Stokes's theorem tell us interesting
 things in the more general case where the curl can be nonzero.) For a field in a two-dimensional
 plane, the curl would point in the direction perpendicular to the plane, but we're now
 talking about the case where the curl is zero, so that issue doesn't arise.
@@ -148,7 +152,8 @@ talking about the case where the curl is zero, so that issue doesn't arise.
   fig(
     'green-simple',
     %q{%
-      A basic version of Green's theorem.
+      A basic version of Stokes's theorem. The electric field in the background is just
+      an example; any static field would work.
     }
   )
 %>

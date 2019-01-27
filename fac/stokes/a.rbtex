@@ -1,0 +1,60 @@
+<%
+  require "../eruby_util.rb"
+%>
+
+<% part_title("Stokes's theorem") %>
+
+<%
+  chapter(
+    '13',
+    %q{Stokes's theorem},
+    'ch:stokes'
+  )
+%>
+
+\noindent\begin{minipagefullpagewidth}
+\noindent\begin{tabular}{p{40mm}p{40mm}p{46mm}p{46mm}}
+  & \multicolumn{3}{l}{
+    \noindent\includegraphics[width=132mm]{stokes/figs/vector-calculus-roundup}
+  }\\
+  \emph{region} & 1-dimensional & 2-dimensional  & 3-dimensional \\
+                &               & (oriented surface) & \\[2mm]
+  \emph{boundary} & 0-dimensional  & 1-dimensional  & 2-dimensional  \\
+                  &  (two points) &  (oriented curve) &  (closed surface) \\[2mm]
+  \emph{derivative operator} & grad & curl & div \\[2mm]
+  \emph{linearity} &
+     $\operatorname{grad}(\phi_1+\phi_2)$ &
+     $\operatorname{curl}(\vc{F}+\vc{G})$ &
+     $\operatorname{div}(\vc{F}+\vc{G})$ \\
+   &
+     \hspace{3mm}$=\operatorname{grad}\phi_1+\operatorname{grad}\phi_2$ &
+     \hspace{3mm}$=\operatorname{curl}\vc{F}+\operatorname{curl}\vc{G}$ &
+     \hspace{3mm}$=\operatorname{div}\vc{F}+\operatorname{div}\vc{G}$ \\[2mm]
+  \multicolumn{2}{l}{\emph{fundamental theorem of calculus:}}\\
+  \emph{\hspace{3mm}integral over interior} &
+        $\int \operatorname{grad}\phi\cdot\der\bell$ & 
+        $\int \operatorname{curl}\vc{F}\cdot\der\vc{A}$ &
+        $\int \operatorname{div}\vc{F}\:\der v$ \\
+  \emph{\hspace{3mm}$=$stuff on boundary} &
+        \hspace{3mm}$=\phi_B-\phi_A$ &
+        \hspace{3mm}$=\int\vc{F}\cdot\der\bell$ &
+        \hspace{3mm}$=\int\vc{F}\cdot\der\vc{A}$\\
+  & & (Stokes's theorem) & (Gauss's theorem) \\
+\end{tabular}
+\end{minipagefullpagewidth}
+
+
+
+<% begin_notes %>
+
+
+<% end_notes %>
+
+
+
+<% begin_hw_sec %>
+
+<% end_hw_sec %>
+
+<% end_chapter() %>
+

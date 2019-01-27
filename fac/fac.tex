@@ -65,7 +65,7 @@
 \vspace{\brieftocvert}\noindent\brieftochoriz%
 \brieftocchstyle\begin{tabular}{rp{\brieftoctabularwidth}}
 & \textit{\brieftocpartstyle Sources of magnetism}\\
-\brieftocentry[\hfill]{ch:b-superpos}{Sources of magnetism}\\
+\brieftocentry[\hfill]{ch:b-superpos}{Sources of magnetism}
 \end{tabular}
 
 \vspace{\brieftocvert}\noindent\brieftochoriz%
@@ -73,7 +73,13 @@
 & \textit{\brieftocpartstyle AC circuits}\\
 \brieftocentry[\hfill]{ch:oscillations}{Review of oscillations, resonance, and complex numbers}\\
 \brieftocentry[\hfill]{ch:ac}{AC circuits}\\
-\brieftocentry[\hfill]{ch:impedance}{Impedance}\\
+\brieftocentry[\hfill]{ch:impedance}{Impedance}
+\end{tabular}
+
+\vspace{\brieftocvert}\noindent\brieftochoriz%
+\brieftocchstyle\begin{tabular}{rp{\brieftoctabularwidth}}
+& \textit{\brieftocpartstyle Stokes's theorem}\\
+\brieftocentry[\hfill]{ch:stokes}{Stokes's theorem}\\
 \end{tabular}
 
 
@@ -113,11 +119,12 @@
     \renewcommand{\chapdir}{dc}\include{dc/atemp}
     \renewcommand{\chapdir}{dc}\include{dc/btemp}
     \renewcommand{\chapdir}{magnetism}\include{magnetism/atemp}
-	\formatchtoc{\large}{\quad\contentspage}{4mm} % This has to go before the last chapter.
     \renewcommand{\chapdir}{ac}\include{ac/atemp}
     \renewcommand{\chapdir}{ac}\include{ac/btemp}
-        \addtocontents{toc}{\vspace{5mm}}% For reasons I don't understand, this actually comes *after* the final chapter.
     \renewcommand{\chapdir}{ac}\include{ac/ctemp}
+	\formatchtoc{\large}{\quad\contentspage}{4mm} % This has to go before the last chapter.
+    \renewcommand{\chapdir}{stokes}\include{stokes/atemp}
+        \addtocontents{toc}{\vspace{5mm}}% For reasons I don't understand, this actually comes *after* the final chapter.
 %
     \widelayout
     \renewcommand{\chapdir}{end}
