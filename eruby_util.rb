@@ -568,6 +568,8 @@ def fig(name,caption=nil,options={})
     'text'=>nil,           # if it exists, puts the text in the figure rather than a graphic (name is still required for labeling)
                            #      see macros \starttextfig and \finishtextfig
                            # For an example of how to do this, see SN ch. 3, "Gory details of the proof..."
+                           # Tables and align* don't work in text, nor does \\, but paragraph breaks work;
+                           # may be able to get around this with minipage.
     'title'=>nil,          # for use with 'text', goes above the text
     'raw'=>false,          # used for anonymous inline figures, e.g., check marks; generates a raw call to includegraphics
     'textbox'=>false       # marginbox(), as used in Fund.; won't work in other books, which don't have the macros in their cls files

@@ -1737,7 +1737,7 @@ it won't work.
 
 <% end_sec %>
 
-<% begin_sec("Magnetic fields by amp\\\`ere's law",nil,'ampere') %>
+<% begin_sec("Magnetic fields by Amp\\\`ere's law",nil,'ampere') %>
 
 <% begin_sec("Amp\\\`ere's law") %>\index{Amp\`ere's law}
 
