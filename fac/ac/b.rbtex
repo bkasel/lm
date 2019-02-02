@@ -492,15 +492,11 @@ a little tedious, but it builds character:
 The result is 25 mH (millihenries).
 (An inductance value this large would probably be imlemented with an op-amp, not a coil.)
 \end{eg}
- %  
-
- % ------------------------------------------ 
 
 <% end_sec('lrc-oscillations') %>
 
 <% begin_sec("Voltage and current") %>
 
- % 
 What is physically happening in one of these oscillating
 circuits? Let's first look at the mechanical case, and then
 draw the analogy to the circuit. For simplicity, let's
@@ -938,7 +934,7 @@ resistance.
 %>
 <% end_marg %>
 
-\begin{eg}{A spark-gap radio transmitter}\label{eg:spark-gap-transmitter}
+\begin{eg}{A spark-gap radio transmitter}\label{eg:spark-gap-transmitter}\index{spark gap transmitter}
 Figure \figref{spark-gap-transmitter} shows a primitive type of radio transmitter, called
 a spark gap transmitter, used to send Morse code around the turn of the twentieth century. The high voltage
 source, V, is typically about 10,000 volts. When the telegraph
@@ -974,7 +970,7 @@ $RC$ time constant?
 
 <% begin_notes %>
 
-\notetext{ac-circuit-loop-rule}{The loop rule in an AC circuit}
+\notetext{ac-circuit-loop-rule}{The loop rule in an AC circuit}\index{loop rule!in AC circuits}
 \notesummary{Why does the loop rule work at all in AC circuits?}
 
 When we take measurements with an AC voltmeter, we find in practice that the
@@ -1000,7 +996,7 @@ one point in space and another. This is essentially the same as the definition o
 a voltage difference, but without the connotation that there is a well-defined
 electric potential.
 
-\notetext{overdamped-q}{Overdamping}
+\notetext{overdamped-q}{Overdamping}\index{overdamping}
 \notesummary{Overdamping occurs for $Q<1/2$.}
 As shown on p.~\pageref{lrc-roots}, the solutions to the equation of
 motion for a series LRC circuit are of the form $q=e^{st}$, where
