@@ -204,7 +204,7 @@ inside the battery, where both positive and negative ions may be flowing?
 <% end_sec('measuring-current') %>
 <% end_sec('circuits') %>
 
-<% begin_sec("Power",nil,'power') %>
+<% begin_sec("Power",nil,'power') %>\index{power!DC circuit}
 Electrical circuits can be used for sending signals, storing
 information, or doing calculations, but their most common
 purpose by far is to manipulate energy, as in the battery-and-bulb
@@ -346,7 +346,7 @@ lightbulb filaments are made, experiments show that the
 amount of current that will flow through it is directly
 proportional to the voltage difference placed across it. For
 an object made of such a substance, we define its electrical
-\index{resistance!defined}\emph{resistance} as follows:
+\index{resistance!defined}\emph{resistance} as follows:\index{Ohm, Georg Simon}
 <% marg(0) %>
 <%
   fig(
@@ -356,7 +356,7 @@ an object made of such a substance, we define its electrical
 %>
 <% end_marg %>
 
-\begin{lessimportant}[definition of resistance]
+\begin{lessimportant}[definition of resistance]\index{resistance!defined}
 If an object inserted in a circuit displays a current flow 
 proportional to the voltage difference across it, then we define
 its resistance as the constant ratio
@@ -366,7 +366,7 @@ its resistance as the constant ratio
 \end{lessimportant}
 
 \noindent The units of resistance are volts/ampere, usually abbreviated
-as ohms, symbolized with the capital Greek letter omega, $\Omega$. 
+as ohms, symbolized with the capital Greek letter omega, $\Omega$.\index{ohm (unit)}
 
 \begin{eg}{Resistance of a lightbulb}
 \egquestion
@@ -453,7 +453,7 @@ resistance than \ref{fig:resistance-depends-on-shape}/1 because
 the charged particles have less of it to get through.
 
 <% end_sec() %>
-<% begin_sec("Superconductors") %>
+<% begin_sec("Superconductors") %>\index{superconductor}
 
 
 All materials display some variation in resistance according
@@ -657,7 +657,7 @@ in as a replacement, defeating the safety feature.
 <% end_sec() %> % Resistors
 <% end_sec() %>
 
-<% begin_sec("Flow of energy",nil,'flow-of-energy') %>
+<% begin_sec("Flow of energy",nil,'flow-of-energy') %>\index{DC circuit!flow of energy}
 
 We use ``flipping a switch'' as a metaphor for making something happen
 instantly, but it's not obvious how this happens physically in an actual

@@ -1371,7 +1371,7 @@ is the density of charge, in units of coulombs per cubic meter.
 %>
 <% end_marg %>
 
-\begin{eg}{Earnshaw's theorem}\label{eg:earnshaw-theorem}
+\begin{eg}{Earnshaw's theorem}\label{eg:earnshaw-theorem}\index{Earnshaw's theorem}
 When kids first start playing with magnets, one of the first things they usually attempt,
 unsuccessfully, is to levitate a magnet in the air, by using a second magnet either to attract
 it from above or to repel it from below.
