@@ -528,7 +528,7 @@ arising from the minus sign.
 
 <% end_sec('maxwell-vacuum') %>
 
-<% begin_sec("Einstein's motorcycle",nil,'einstein-motorcycle') %>
+<% begin_sec("Einstein's motorcycle",nil,'einstein-motorcycle') %>\index{Einstein, Albert}
 It seems as though we have a nice, tidy picture of electromagnetism all wrapped up. There should
 only be only a few loose ends to tie up, such as how to incorporate charges and currents into
 Maxwell's equations, and how to connect Maxwell's equations to
