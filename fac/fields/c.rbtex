@@ -59,7 +59,7 @@ so that the total work done by the field around the rectangle is zero.
 For a static field, i.e., one that doesn't change as a function of time,
 we want this to be true in general:
 
-\begin{lessimportant}\label{zero-work-around-closed-loop}
+\begin{lessimportant}\label{zero-work-around-closed-loop}\index{electric field!static!conservative}
 The work done by a static electric field on a test charge, as the charge
 moves around a closed loop, is always zero.
 \end{lessimportant}
@@ -101,7 +101,8 @@ notation, but expresses a fact that turns out to be visually obvious.
 <% end_marg %>
 
 To make these ideas more concrete, we define an imaginary device called the
-curl-meter, shown in figure \figref{curlmeter-fac}. A set of positive charges
+curl-meter, shown in figure \figref{curlmeter-fac}.\index{curl}
+A set of positive charges
 is mounted around the circumference of a wheel, and a coil spring connects
 the wheel to its supporting axle, so that in the absence of any electrical
 forces, the wheel turns to a certain equilibrium orientation. If the curl-meter
@@ -138,7 +139,8 @@ For a static electric field, $\operatorname{curl}\vc{E}=0$.
 \end{lessimportant}
 
 \noindent This means that the work done around any \emph{small} closed loop is zero.
-Let's see how this generalizes to large loops. Stokes's theorem comes in a variety of
+Let's see how this generalizes to large loops. Stokes's theorem\index{Stokes's theorem!for zero curl}
+comes in a variety of
 versions and different levels of generality (e.g., there is a version that works in
 four dimensions, which is helpful in relativity, where time is treated as a dimension).
 For now we'll content ourselves with the special case that covers two dimensions, in the case
@@ -186,7 +188,7 @@ The magnetic dipole is discussed in more detail in sec.~\ref{sec:b-dipole}, p.~\
 <% end_sec('something-is-missing') %>
 
 
-<% begin_sec("The electric potential",nil,'potential') %>
+<% begin_sec("The electric potential",nil,'potential') %>\index{potential}
 The earth's gravitational field has zero curl, and this is why it makes sense to define the
 gravitational potential energy of a test mass in the earth's field.
 If we lift the ball in figure \figref{path-independent-gravity} along path 1, then
@@ -243,7 +245,7 @@ its two terminals.
   )
 %>
 
-The instrument for measuring electric potentials is called a
+The instrument for measuring electric potentials is called a\index{voltmeter}\index{multimeter}
 voltmeter (these days usually implemented as one of the functions of
 a multimeter). The voltmeter has no way of knowing what mental choice we had
 in mind as our reference potential, so all it can do is tell us the
@@ -292,7 +294,8 @@ The reason for this has to do with the fact that a metal contains a
 large number of electrons that are free to move.  A substance like
 this that has many free charge carriers is called a
 \emph{conductor},\index{conductor!defined} the opposite being an
-insulator. The living cells in your body are pretty good conductors,
+insulator.\index{conductor}
+The living cells in your body are pretty good conductors,
 because they have free charge carriers such as positively charged
 sodium ions and negatively charged chlorine ions, coming from the salt
 in your body.  The outer layer of your skin is an insulator because it
@@ -400,7 +403,7 @@ Similar reasoning shows why Benjamin Franklin used a sharp
 <% end_sec('const-v-in-conductor') %>
 
 
-<% begin_sec("Potential related to field",nil,'e-related-to-potential') %>%
+<% begin_sec("Potential related to field",nil,'e-related-to-potential') %>\index{potential!related to field}\index{electric field!related to potential}
 <% begin_sec("One dimension",nil,'e-v-one-dim') %>
 Work equals force times distance, $\der W=F\der x$, so when the electric field does work
 on a test charge, the energy lost by the field is $\der U = -Eq\der x$,
@@ -527,7 +530,8 @@ function is zero, so both are consistent with Laplace's equation.
 In terms of the fields, $E_2-E_1$ is a uniform field.
 
 To get a unique solution to this type of electrostatics problem, we need to specify some
-\emph{boundary conditions}. For example, if we required that the field be zero at large distances
+\emph{boundary conditions}.\index{boundary conditions}
+For example, if we required that the field be zero at large distances
 (as $x\rightarrow\pm\infty$), then we would have uniquely specified $E_1$ as a solution.
 
 If you haven't already had a course in differential equations, you may not have heard of
@@ -623,7 +627,7 @@ to three dimensions as follows:
   E_y  &=  -\frac{\partial \phi}{\partial y}  \\
   E_z  &=  -\frac{\partial \phi}{\partial z}  
 \end{align*}
-This can be notated using the symbol $\nabla$, called the gradient operator,
+This can be notated using the symbol $\nabla$, called the gradient operator,\index{gradient}
 \begin{equation*}
   \vc{E} = -\nabla \phi.
 \end{equation*}
@@ -688,7 +692,7 @@ field lines are perpendicular to the plane, so the plane is an surface of consta
 <% end_sec('bc-conductor') %>
 
 <% begin_notes %>
-\notetext{curl-component-form}{The curl operator in terms of the field's components}
+\notetext{curl-component-form}{The curl operator in terms of the field's components}\index{curl!component form}
 \notesummary{Fixing a Cartesian coordinate system, we find how to express the curl's components in terms
 of the derivatives of the field's components with respect to the coordinates.}
 Because we want the curl to be a kind of first derivative operator, we expect it to depend

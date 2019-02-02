@@ -212,7 +212,7 @@ and is defined formally as\label{current-defined}
 \begin{equation*}
   I = \frac{\der q}{\der t}.
 \end{equation*}
-Its units are normally abbreviated as amperes (``amps''), 1 A=1 C/s.
+Its units are normally abbreviated as amperes (``amps''), 1 A=1 C/s.\index{ampere (unit)}
 
 <% marg() %>
 <%
@@ -253,7 +253,8 @@ is a vacuum.
 
 When the current in an electric circuit is constant, so that charge is
 flowing at a constant rate, this is referred to as direct current, or
-DC. Household wall sockets are alternating current, AC, meaning that
+DC.\index{direct current (DC)}\index{DC|see {direct current}}\index{alternating current (AC)!defined}\index{AC|see {alternating current}}
+Household wall sockets are alternating current, AC, meaning that
 the current oscillates as a function of time. In the US, electrical
 power is transmitted as a sine wave with a frequency of 60 Hz. Radio
 transmitting antennas use AC currents to create an electromagnetic
@@ -264,7 +265,7 @@ current. The frequency used in a cell phone is typically about $10^9\
 <% end_sec('current-and-b') %>
 
 <% begin_sec("Energy, pressure, tension, and momentum in fields",nil,'stress-energy') %>
-<% begin_sec("Momentum",nil,'momentum-of-em-fields') %>
+<% begin_sec("Momentum",nil,'momentum-of-em-fields') %>\index{momentum!of electromagnetic fields}
 Material objects can have energy, momentum, pressure, and tension.  We
 have already seen that electric and magnetic fields have energy, and
 we will soon see that they carry the other properties on this list as
@@ -424,7 +425,7 @@ wave patterns (such as a laser beam or a small enough piece of sunlight),
 we will see that the fields are purely perpendicular to the direction
 of propagation --- they have no component at all parallel to the momentum.
 <% end_sec('momentum-of-em-fields') %>
-<% begin_sec("Pressure and tension",nil,'pressure-of-em-fields') %>
+<% begin_sec("Pressure and tension",nil,'pressure-of-em-fields') %>\index{pressure!of fields}\index{tension|see {pressure}}
 Pressure is defined as the force per unit area, applied perpendicular to the
 area. It has units of newtons per square meter, which can also be abbreviated
 as pascals, 1 Pa=1 N/m. The earth's atmospheric pressure is about 100 kPa, and
@@ -616,7 +617,7 @@ the possibility that the particle is also acted on by an electric field, we have
 \begin{equation*}
   \vc{F} = q\vc{E}+q\vc{v}\times\vc{B},
 \end{equation*}
-which is known as the Lorentz force law.
+which is known as the Lorentz force law.\index{Lorentz force law}\index{force!on a charge in a magnetic field}
 
 As an application, we can now describe how Thomson was able to measure the velocity
 of the electrons in the experiment in which he discovered the electron. As
@@ -627,7 +628,7 @@ the same deflection. He then had $v=E/B$.
 
 <% end_sec('b-force-on-current') %>
 
-<% begin_sec("The dipole",4,'dipole') %>
+<% begin_sec("The dipole",4,'dipole') %>\index{dipole}
 
 <% marg() %>
 <%
@@ -677,7 +678,8 @@ we have for the energy
 \begin{equation*}
   U = -\vc{m}\cdot\vc{B},
 \end{equation*}
-where $\vc{m}$ is a vector called the dipole moment, and the minus sign is a matter of convention.
+where $\vc{m}$ is a vector called the dipole moment, and the minus sign is a matter of 
+convention.\index{dipole!energy due to orientation}
 
 A mechanical analogy is that if a pendulum has length $\ell$ and mass $M$ at the end, then
 we can define a vector with magnitude $\ell M$ and direction pointing from the axis
@@ -779,7 +781,8 @@ This is what happens, for example, with molecules that have nonzero dipole momen
 
 The universal form of electric dipole fields at large distances also holds for magnetic dipoles,
 as discussed on p.~\pageref{e-b-dipole-same}. In mini-lab \ref{lab:bar-magnet-b-vs-r} you probably
-found that the field went approximately like $1/r^2$ at the larger distances.
+found that the field went approximately like $1/r^2$ at the larger 
+distances.\index{dipole!far field!universality of}
 
 \begin{eg}{Molecules with zero and nonzero dipole moments}\label{eg:molecular-dipoles}
 It can be useful to know whether or not a molecule is polar, i.e., has a nonzero dipole moment.
@@ -845,7 +848,7 @@ Although the scrap of paper has zero total charge, it does contain charges that 
 The positive charges in the pipe attract the negative charges and repel the positive one,
 turning the paper into a dipole. This is called an induced dipole moment.
 The attraction is stronger than the repulsion, due to the
-shorter distance, so the net force is attractive.
+shorter distance, so the net force is attractive.\index{induction!static electric and magnetic}
 
 A fancier mathematical treatment of the effect is as follows.
 If a dipole with zero total charge is placed in a uniform field, it may experience a torque, but
@@ -859,7 +862,7 @@ We then have
   F_x = -\frac{\partial }{\partial x}(\vc{D}\cdot\vc{E}) = \vc{D}\cdot\frac{\partial \vc{E}}{\partial x},
 \end{equation*}
 which depends on the dipole's properties only through $\vc{D}$. Similar expressions apply for the $y$ and $z$
-components.
+components.\index{dipole!force in nonuniform field}
 
 This principle can be used as a way of measuring the unknown dipole
 moments of a beam of particles, as in figure
@@ -883,7 +886,7 @@ of the electron.
 <% end_sec('dipole') %>
 
 <% begin_sec("E=mc$^2$",nil,'mass-energy-equivalence') %>
-<% begin_sec("Fields carry inertia",nil,'fields-carry-inertia') %>
+<% begin_sec("Fields carry inertia",nil,'fields-carry-inertia') %>\index{field!inertia of}
 <% marg() %>
 <%
   fig(
@@ -932,7 +935,7 @@ by a factor of 9. This means that the momentum goes up by 9 times, and so does
 the mass that we infer at a given velocity.
 <% end_sec('fields-carry-inertia') %>
 
-<% begin_sec("Equivalence of mass and energy",nil,'mass-energy-equiv-for-fields') %>
+<% begin_sec("Equivalence of mass and energy",nil,'mass-energy-equiv-for-fields') %>\index{energy!equivalence to mass}
 In this example, energy and mass are \emph{equivalent}. Based on
 units, the relation must be of the form $E=(\text{constant})mc^2$,
 where the constant is unitless.  Einstein showed that the unitless

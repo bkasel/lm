@@ -152,7 +152,7 @@ its boundary.
 
 <% end_sec('vector-calc-roundup') %>
 
-<% begin_sec("Stokes's theorem",nil,'stokes') %>
+<% begin_sec("Stokes's theorem",nil,'stokes') %>\index{Stokes's theorem!general form}
 
 The only new thing here is Stokes's theorem for the case where the curl is not zero,
 \begin{equation*}

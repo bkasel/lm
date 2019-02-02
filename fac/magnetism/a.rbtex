@@ -578,7 +578,7 @@ point, and $E_z$ and $E_R$ are, respectively, the components of the field
 parallel to and perpendicular to the dipole vector. We have already found this field in
 the special cases of $\theta=\pi/2$ (example \ref{eg:e-dipole-mid-plane},
 p.~\pageref{eg:e-dipole-mid-plane}) and $\theta=0$ (problem \ref{hw:dipole-axis},
-p.~\pageref{hw:dipole-axis}).
+p.~\pageref{hw:dipole-axis}).\index{dipole!far field!equations}
 
 <% marg() %>
 <%
