@@ -26,7 +26,7 @@ arrowheads on all of our drawings. This ``flip-the-arrowheads''
 ambiguity is entirely an arbitrary matter of definition, and for
 electric fields it was effectively fixed by Benjamin Franklin around
 1750 (although we will give a description in a form that he would
-probably not have recognized). 
+probably not have recognized).\index{Franklin, Benjamin}
 
 <% marg() %>
 <%   
@@ -221,7 +221,7 @@ empty space. Figure \subfigref{new-york-field-line-bundle}{3} is not inherently 
 in fact it is a pretty good representation of a nuclear field, but it is not how electric and
 magnetic fields work. We state this as a law of physics.
 
-\begin{lessimportant}[Gauss's law for field lines, in a vacuum]
+\begin{lessimportant}[Gauss's law for field lines, in a vacuum]\index{Gauss's law!field lines, in vacuum}
 In a vacuum, electric and magnetic field lines never begin or end.
 \end{lessimportant}
 
@@ -267,7 +267,7 @@ vectors rather than the field lines.
 <% end_sec('gauss-field-lines-vac') %>
 <% end_sec('gauss-law') %>
 
-<% begin_sec("A global form of Gauss's law",nil,'gauss-global') %>
+<% begin_sec("A global form of Gauss's law",nil,'gauss-global') %>\index{Gauss's law!global form}
 There are other ways to detect the violation in
 \figref{b-div-violation}. We could, for example, check the larger box
 labeled 2, and note that although no field lines pass in through the
@@ -303,7 +303,8 @@ predicts that the total is zero.
   )
 %>
 <% end_marg %>
-The sort of sum described above is called the \emph{flux}, $\Phi$ (capital Greek letter phi). When it's
+The sort of sum described above is called the \emph{flux},\index{flux}
+$\Phi$ (capital Greek letter phi). When it's
 not clear from context whether we're talking about the magnetic field's flux from the electric field's,
 we write $\Phi_E$ and $\Phi_B$. To define the flux through a surface, we break up
 the surface into small areas $A_1$, $A_2$, \ldots, such as the squares in figure
@@ -421,7 +422,7 @@ pattern, can you verify that this makes sense?
 <% end_sec('gauss-global') %>
 
 
-<% begin_sec("Field of a point charge at rest",nil,'field-of-point-charge') %>
+<% begin_sec("Field of a point charge at rest",nil,'field-of-point-charge') %>\index{Coulomb's law}
 Our argument that the earth's field was proportional to $1/r^2$ depended on
 only two ingredients, Gauss's law and spherical symmetry. The spherical symmetry existed
 because the earth is (approximately) a sphere and because we were discussing the earth in
@@ -521,7 +522,7 @@ p.~\pageref{sec:dipole}, and \ref{sec:b-dipole}, p.~\pageref{sec:b-dipole}.
 
 <% end_sec('field-of-point-charge') %>
 
-<% begin_sec("Electric force on a charge",nil,'force-on-a-charge') %>
+<% begin_sec("Electric force on a charge",nil,'force-on-a-charge') %>\index{force!on a charge in an electric field}
 In addition to describing the electric field made by a charge, it is natural to consider
 the action of some externally imposed field on a charge.
 We imagine that this ambient field is
@@ -796,7 +797,7 @@ correct one.
 
 <% end_sec('gauss-charge') %>
 
-<% begin_sec("Invariance of charge",nil,'charge-invariant') %>
+<% begin_sec("Invariance of charge",nil,'charge-invariant') %>\index{charge!invariance}
 Ever since Galileo we have known that different observers could have frames of reference
 in motion relative to one another, and that the results of some measurements would depend
 on the frame of reference while others were not. Velocity is the classic example of a frame-dependent
@@ -817,7 +818,7 @@ Physics Letters B137 (1984) 439.} rule out such a change to the incredible
 precision of one part in $10^{21}$.
 <% end_sec('charge-invariant') %>
 
-<% begin_sec("Quantization of charge",nil,'charge-quantized') %>
+<% begin_sec("Quantization of charge",nil,'charge-quantized') %>\index{charge!quantization}\index{Millikan, Robert}
 In 1909, Robert Millikan and coworkers published experimental results showing that
 electric charge seemed to come only in integer multiples of a certain amount,
 notated $e$ and referred to as the fundamental charge. Millikan is now known to
@@ -847,7 +848,7 @@ substance. In the SI, this is expressed by the fact that $e$ is a very small num
 when measured in practical units of coulombs.
 <% end_sec('charge-quantized') %>
 
-<% begin_sec("Conservation of charge",nil,'charge-conserved') %>
+<% begin_sec("Conservation of charge",nil,'charge-conserved') %>\index{charge!conservation}
 
 Electric charge is conserved in all known physical processes. When
 people say that their phone or laptop is ``out of charge,'' really
@@ -857,7 +858,7 @@ Usually in an electric circuit, we just send the same charge around
 and around, like the water being circulated through a fish tank or
 swimming pool by the filter pump. 
 
-As a more exotic example, consider the neutron, a subatomic particle
+As a more exotic example, consider the neutron, a subatomic particle\index{neutron}
 that is very common --- neutrons make up about half the mass of your
 body. Neutrons are never found by themselves in nature, because in a matter of minutes, a
 free neutron will spontaneously undergo the radioactive decay process
@@ -877,7 +878,7 @@ which satisfy conservation of charge.
 
 <% begin_sec("Models of matter",nil,'models-of-matter') %>
 
-<% begin_sec("The discovery of the electron, and the raisin cookie model",nil,'thomson') %>
+<% begin_sec("The discovery of the electron, and the raisin cookie model",nil,'thomson') %>\index{electron!discovery}
 Static electricity experiments such as the one with the sticky tape
 (figure \figref{twotapes-fields}, p.~\pageref{fig:twotapes-fields})
 work with essentially any substance (although they do produce bigger
@@ -889,7 +890,7 @@ integer multiples of $e$.
 
 Until about 1897, it was assumed that all
 such particles were about the size and mass of an atom. But in that
-year, J.J.~Thomson did the experiment shown in figure \figref{thomson-simplified},
+year, J.J.~Thomson did the experiment shown in figure \figref{thomson-simplified},\index{Thomson, J.J.}
 in which he produced a beam of
 charged particles in a vacuum tube, subjected them to a transverse
 electric field, and measured their deflection. The particles are
@@ -952,8 +953,7 @@ was later named the electron.
 <% end_marg %>
 
 Based on his experiments, Thomson proposed a picture of the
-atom which became known as the \index{atom!raisin-cookie
-model of}\index{raisin cookie model}raisin cookie model.
+atom which became known as the raisin cookie model.\index{atom!raisin cookie model}\index{raisin cookie model}
 In the neutral atom, figure \figref{raisincookie}, there are four
 electrons with a total charge of $-4e$, sitting in a sphere
 (the ``cookie'') with a charge of $+4e$ spread throughout
@@ -967,7 +967,7 @@ make charged ions.
 
 <% end_sec('thomson') %>
 
-<% begin_sec("The energy scale for chemistry and atomic physics",nil,'matter-atomic-e-scale') %>
+<% begin_sec("The energy scale for chemistry and atomic physics",nil,'matter-atomic-e-scale') %>\index{atom!energy scale}
 The sizes of atoms were originally estimated based on a variety of techniques,
 one example being the determination of the thinnest layer of oil that cold be
 deposited on the surface of water. The results are on the order of a fraction of
@@ -984,7 +984,7 @@ on the order of 100,000 food calories, or several months' worth of survival with
 
 \vspace{17mm}
 
-<% begin_sec("The nucleus and the planetary model",nil,'matter-nucleus') %>
+<% begin_sec("The nucleus and the planetary model",nil,'matter-nucleus') %>\index{atom!planetary model}\index{planetary model}\index{nucleus}
 <% marg() %>
 <%
   fig(
@@ -1001,7 +1001,8 @@ on the order of 100,000 food calories, or several months' worth of survival with
 %>
 <% end_marg %>
 In 1909, a new experiment by Ernest Rutherford and collaborators
-forced a revision of the raisin cookie model. As shown in figure
+forced a revision of the raisin cookie model.\index{Rutherford, Ernest}
+As shown in figure
 \figref{rutherfordsetup}, the experiment used a lump of radium, which
 was known to emit radioactivity in a form known as alpha particles,
 another name for a helium atom that has been stripped of both its
@@ -1205,7 +1206,7 @@ faces is always parallel to $\der\vc{A}$.  This calculation is completed in prob
 
 <% end_sec('gauss-in-lt-3-dim') %>
 
-<% begin_sec("Gauss's law in local form, with field vectors",nil,'gauss-div') %>
+<% begin_sec("Gauss's law in local form, with field vectors",nil,'gauss-div') %>\index{Gauss's law!local form}
 The laws of physics are ultimately local, but so far our only local way of stating Gauss's
 law locally is in terms of field lines: in a vacuum, they don't end.
 Reasoning about field lines is often less practical than working with field vectors,
@@ -1283,7 +1284,7 @@ in the \emph{same} direction, and the spring does not stretch (although the devi
 will accelerate to one side). Since this device measures how much the field diverges, we
 can refer to it as a ``div-meter'' (nobody actually uses this term), and we can also
 refer to $\der E/\der x$ as the \emph{divergence} of the electric field (people really
-do use this term).
+do use this term).\index{divergence!one dimension}
 
 <% marg(300) %>
 <%   
@@ -1311,7 +1312,7 @@ Because the divergence is a kind of derivative,
 we want it to have the same kind of additive property that the plain old derivative has:
 the divergence of a sum should be the sum of the divergences. Physically, this is the
 only way we can guarantee that superposition will work. The following example shows that
-this essentially ties down the form of the divergence operator.
+this essentially ties down the form of the divergence operator.\index{divergence!three dimensions}
 
 <%
   fig(
@@ -1516,7 +1517,7 @@ To estimate the electrical energy of a nucleus, per neutron or proton, we can th
 % calc -x -e "ke^2/(4(3 10^-15 m))"
 \end{align*}
 
-\notetext{div-three-d}{Divergence operator in three dimensions}
+\notetext{div-three-d}{Divergence operator in three dimensions}\index{divergence!component form}
 \notesummary{We present the form of the divergence operator and Gauss's law in three dimensions.}
 Example \ref{eg:div-examples} on p.~\pageref{eg:div-examples} suggests that the three-dimensional
 form of the divergence operator should be

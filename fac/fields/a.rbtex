@@ -43,7 +43,8 @@ that I'm safe. This suggests that we consider the nature of
 electricity and magnetism. 
 
 A colorful experiment demonstrating the nature of time was done by
-Hafele and Keating in 1971 (figure \figref{hk-in-cabin}).  The two
+Hafele and Keating in 1971 (figure \figref{hk-in-cabin}).\index{Hafele-Keating experiment}\index{atomic clock}
+The two
 physicists brought atomic clocks with them on round-the-world flights
 aboard commercial passenger jets, then compared the clocks with other
 clocks that had been left at home. When the clocks were reunited, they
@@ -75,7 +76,7 @@ circumstances, and even with processes such as the decay of elementary
 particles moving at high speeds --- the radioactive half-life is
 prolonged if the particles are in motion. 
 
-The conclusion is that \emph{time itself} is not absolute: when one
+The conclusion is that \emph{time itself} is not absolute: when one\index{time!not absolute}
 observer is in motion relative to another observer, they will disagree
 on the rate at which time passes. A clock appears to tick at its
 normal rate according to an observer who is at rest relative to the
@@ -141,7 +142,7 @@ frequency (the number of vibrations per unit time) or, equivalently,
 by their wavelength (the distance between successive wave crests).
 Fundamentally, it's best to think of $c$ not as the speed of light but
 as a maximum speed of cause and effect, or as a sort of conversion
-factor between time and space units.
+factor between time and space units.\index{light!electromagnetic wave}\index{light!speed}
 
 As an example of the kind of experimental work that has tested these claims,
 there was a dramatic incident in 2011 in which particle physicists believed
@@ -166,16 +167,16 @@ electronic clock.
   )
 %>
 
-<% begin_sec("Basic properties of fields",nil,'fields-basic-properties') %>
+<% begin_sec("Basic properties of fields",nil,'fields-basic-properties') %>\index{field!basic properties}
 In order to get started with our study of the electric and magnetic fields,
 we present three basic assumptions:
 
 \begin{enumerate}
 \item The electric and magnetic fields are \emph{observable}. We can measure them.
-\item The electric and magnetic fields are \emph{vectors}.
+\item The electric and magnetic fields are \emph{vectors}.\index{field!vector}
 \item \emph{Superposition:\/} When fields are created by two effects, the fields contributed
 by the two effects at a particular point add as vectors, and it is the vector sum that is actually
-observed at that location in space.
+observed at that location in space.\index{field!observability}
 \end{enumerate}
 
 Figure \figref{fields-detection-collage} shows the wide variety of
@@ -190,7 +191,7 @@ specialization by frequency.  For example, the Geiger counter can
 detect gamma rays, which are a form of very high frequency light, but
 not radio waves. 
 
-Assumption 3, superposition, is typical of wave phenomena, as shown in
+Assumption 3, superposition, is typical of wave phenomena, as shown in\index{superposition}
 figure \figref{coil-spring-superposition-two-pos}.  As an example
 involving electric and magnetic fields, the lens in figure
 \figref{converging-rays} brings the three beams of light together at a
@@ -224,7 +225,7 @@ feel free to skip ahead to section \ref{sec:vectors}.
 Our universe does contain fields that are scalars rather than vectors. One example is
 dark energy, discovered in 1998, which drives the accelerating expansion of the universe.
 Another example is the Higgs field, whose existence was predicted theoretically in 1964
-and which was detected experimentally at the Large Hadron Collider in 2012.
+and which was detected experimentally at the Large Hadron Collider in 2012.\index{field!scalar}
 
 
 <%
@@ -248,7 +249,7 @@ surroundings.  It's equally possible that the box is in deep space,
 \subfigref{ep}{3}, with no gravity whatsoever, but is being towed by a rocket
 ship, so that it accelerates constantly. No possible experiment done
 inside the box can tell her which of these is the
-case.
+case.\index{field!gravitational!not observable}
 
 <% end_sec('fields-basic-properties') %>
 
@@ -266,7 +267,7 @@ A \emph{scalar} is something
 that doesn't change when you turn it around, while a \emph{vector} does change
 when you rotate it, and the way in which it changes is the same as the way
 in which a pointer such as a pencil or an arrow would change.
-Figure \figref{vectors-and-scalars} shows two examples.
+Figure \figref{vectors-and-scalars} shows two examples.\index{vector!defined}\index{scalar!defined}
 <%
   fig(
     'vectors-and-scalars',
@@ -278,7 +279,7 @@ Figure \figref{vectors-and-scalars} shows two examples.
   )
 %>
 A vector $\vc{A}$ has a magnitude $|\vc{A}|$, which means its size, length, or amount. Rotating a vector
-can change the vector, but will never change its magnitude.
+can change the vector, but will never change its magnitude.\index{vector!magnitude}\index{magnitude}
 
 <%
   fig(
@@ -296,7 +297,7 @@ has a large vertical component.
 
 <% end_sec('vectors-and-scalars') %>
 
-<% begin_sec("Components of vectors",nil,'vector-components') %>
+<% begin_sec("Components of vectors",nil,'vector-components') %>\index{vector!components}\index{component}
 A component of a vector is a signed real number giving its projection onto a line
 such as a coordinate axis.
 In two dimensions,
@@ -322,7 +323,7 @@ would have had to give the same result.
 
 <% end_sec('vector-components') %>
 
-<% begin_sec("Vector addition",nil,'vector-addition') %>
+<% begin_sec("Vector addition",nil,'vector-addition') %>\index{vector!addition}
 
 <% marg() %>
 <%   
@@ -340,15 +341,15 @@ of the second vector. A vector can be multiplied by a scalar to give a new
 vector. For instance, if $\vc{A}$ is a vector, then $2\vc{A}$ is a vector
 that has the same direction but twice the magnitude. Multiplying by $-1$ is
 the same as flipping the vector, $-\vc{A}=(-1)\vc{A}$. Vector subtraction can be
-accomplished by flipping and adding.
+accomplished by flipping and adding.\index{vector!multiplication by a scalar}
 
-The tip-to-tail method of adding vectors is called graphical addition.
+The tip-to-tail method of adding vectors is called graphical addition.\index{vector!addition!graphical}
 It is equivalent to adding components, which is called
 analytic addition. The following example demonstrates analytic addition in
 a case where it is necessary to do conversions back and forth between
 the magnitude-direction and Cartesian descriptions of the vectors. If you have
 any trouble following this example, then you should review vector addition
-from a source that provides more detail than this brief review.
+from a source that provides more detail than this brief review.\index{vector!addition!analytic}
 
 \begin{eg}{Analytic addition of vectors}\label{eg:la-vegas}
 \egquestion
@@ -402,7 +403,7 @@ Consulting a sketch shows that the first of these values is the correct one.
 
 <% end_sec('vector-addition') %>
 
-<% begin_sec("Unit vector notation",nil,'unit-vector-notation') %>
+<% begin_sec("Unit vector notation",nil,'unit-vector-notation') %>\index{vector!unit}
 Suppose we want to tell someone that a certain vector $\vc{A}$ in two dimensions
 has components $A_x=3$ and $A_y=7$. A more compact way of notating this is
 $\vc{A}=3\hat{\vc{x}}+7\hat{\vc{y}}$, where $\hat{\vc{x}}$ and $\hat{\vc{y}}$, read ``x-hat'' and ``y-hat,''
@@ -411,7 +412,7 @@ directions. Some authors notate the unit vectors as $\hat{\vc{i}}$, $\hat{\vc{j}
 rather than $\hat{\vc{x}}$, $\hat{\vc{y}}$, and $\hat{\vc{z}}$.
 <% end_sec('unit-vector-notation') %>
 
-<% begin_sec("Rotational invariance",nil,'rotational-invariance') %>
+<% begin_sec("Rotational invariance",nil,'rotational-invariance') %>\index{rotational invariance}
 Certain vector operations
 are useful and others are not. Consider the operation of
 multiplying two vectors component by component to produce a third vector:
@@ -483,7 +484,7 @@ vectors in a particular coordinate system, we can express the dot
 product as $A_xB_x+A_yB_y+A_zB_z$. The dot product of a vector with
 itself is the square of its magnitude, $|\vc{A}|^2=\vc{A}\cdot\vc{A}$,
 and when we write $A^2$ as a notational shortcut, this is what we
-mean. 
+mean.\index{vector!dot product}\index{dot product}
 
 <% marg(300) %>
 <%   
@@ -508,7 +509,7 @@ the area of the parallelogram illustrated in figure
 \ref{fig:parallelogram}.  The direction of the cross product is
 perpendicular to the plane in which $\vc{A}$ and $\vc{B}$ lie.  There
 are two such directions, and of these two, we choose the one defined
-by the right-hand rule illustrated in figure \ref{fig:righthandxprod}. 
+by the right-hand rule illustrated in figure \ref{fig:righthandxprod}. \index{vector!cross product}\index{cross product}
 
 The dot and cross products are the \emph{only} useful ways of
 multiplying two vectors to form a scalar or a vector, respectively.
@@ -531,7 +532,7 @@ $|\vc{A}||\vc{B}|\sin\theta_{AB}$. In terms of the components, we have
 
 <% end_sec('vectors') %>
 
-<% begin_sec("Field lines",nil,'field-lines') %>
+<% begin_sec("Field lines",nil,'field-lines') %>\index{field!field-line representation}
 
 The photograph in figure \subfigref{bar-magnet-field-lines}{1} provides a
 visually compelling image of the magnetic field of a bar magnet. The magnet
@@ -539,7 +540,7 @@ itself is underneath a thin piece of white cardboard. What we see, on top,
 are iron filings, which become magnetized by the bar magnet, orient themselves
 along the field, and join up in chains. This type of visualization made a deep
 impression on the British physicist Michael Faraday, who was the mathematically
-untrained son of a poor blacksmith.
+untrained son of a poor blacksmith.\label{faraday-intro-bio}\index{Faraday, Michael}
 
 <%
   fig(
@@ -551,7 +552,7 @@ untrained son of a poor blacksmith.
 
 In general, we have two equally valid ways of conceptualizing an
 electric or magnetic field --- not just visually, but mathematically.
-In the ``sea of arrows'' picture,
+In the ``sea of arrows'' picture,\index{field!sea of arrows representation}
 \subfigref{bar-magnet-field-lines}{2}, the field at a particular point
 is represented by an arrow whose length and direction give the
 magnitude and direction of the field. In
@@ -628,7 +629,7 @@ enough around the curve of the earth's surface, and its strength also falls off 
 <% end_sec('field-lines') %>
 
 <% begin_sec("Energy in fields and measurement of fields",nil,'energy-in-fields-and-units') %>
-<% begin_sec("Energy in fields",nil,'energy-in-fields') %>
+<% begin_sec("Energy in fields",nil,'energy-in-fields') %>\index{field!energy content}\index{energy!of fields}
 
 We have not yet said anything about how to define and measure fields
 quantitatively, or what units would be used. One way to approach this
@@ -688,7 +689,7 @@ has both nontrivial units and a nontrivial numerical value. Although
 this is a disadvantage when calculating energies, it does simplify
 certain other equations that we'll encounter later. The SI units of
 the magnetic field are teslas (T), named after the Serbian-American
-inventor and prototypical mad scientist Nikola Tesla.
+inventor and prototypical mad scientist Nikola Tesla.\index{tesla (unit)}\index{magnetic field!unit}
 
 We can tell from the equations for the energy densities that $E$ has
 the same units as $cB$, so that one way of expressing the units of the
@@ -696,11 +697,12 @@ electric field would be $\zu{T}\unitdot\munit/\sunit$. In reality
 nobody does this, nor is there any convenient name or symbol for the
 relevant unit.  It is instead expressed in terms of other electrical
 units, either the volt or the coulomb, which we'll encounter later.
-The coulomb is a unit of electrical charge, a property of material
+The coulomb is a unit of electrical charge,\index{charge}
+a property of material
 objects that measures how strongly they participate in electrical
 interactions.  The SI units of the electric field can be written as
 newtons per coulomb (N/C) or as volts per meter (V/m), and these
-expressions are equivalent, 1 N/C=1 V/m.
+expressions are equivalent, 1 N/C=1 V/m.\index{electric field!unit}
 
 The Coulomb constant is approximately $k=8.988\times10^9\
 \nunit\unitdot\munit^2/\zu{C}^2$ in SI units.  The SI is set up in
@@ -710,7 +712,7 @@ defined value (which takes 17 decimal digits to express exactly).
 Because of the same pleasant coincidence that makes $c$ so close to
 $3\times10^8\ \munit/\sunit$, $k$ can be approximated as $9\times10^9$
 while incurring an error of only 0.1\%, which is good enough for
-almost all applications. 
+almost all applications. \index{Coulomb constant}
 
 When analyzing the units of an expression, we usually break the defined
 units down into the more basic ones, e.g., in a mechanical calculation

@@ -255,18 +255,8 @@ That is, when a changing magnetic field induces a curly electric field, the circ
 of the electric field around a closed loop equals minus the rate at which the
 magnetic flux through the loop is changing. This is called Faraday's law.
 
-<% marg(300) %>
-<%
-  fig(
-    'faraday-portrait-oil-painting',
-    %q{Michael Faraday (1791-1867).}
-  )
-%>
-<% end_marg %>
-
-Michael Faraday was the son of a
-blacksmith who had to struggle against the rigid class structure of 19th century England.
-His work preceded Maxwell's, so he didn't derive his result from Maxwell's equations --- it
+Michael Faraday, whom we met on p.~\pageref{faraday-intro-bio},\index{Faraday, Michael}
+worked before Maxwell's, so he didn't derive his result from Maxwell's equations --- it
 was the other way around, with Maxwell putting together Faraday's work on induction along with some
 other known ingredients to create Maxwell's equations. Faraday never learned calculus, trigonometry,
 or any math beyond the most basic algebra, so he probably visualized what we now call Faraday's
