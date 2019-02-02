@@ -82,7 +82,9 @@ potential of the left-hand E and the potential of the one on the right.
 
 <% begin_sec("Parallel resistances and the junction rule",0,'junction-rule') %>
 
-\index{resistance!in parallel}\index{junction rule}
+\index{resistance!in parallel}\index{junction rule}\index{charge!conservation!junction rule}
+\index{Kirchoff's voltage law|see {loop rule}}
+\index{Kirchoff's current law|see {junction rule}}
 
 One of the simplest examples to analyze is the parallel
 resistance circuit, of which figure \figref{constant-voltage-areas} was an example. In

@@ -16,7 +16,7 @@
   )
 %>
 
-<% begin_sec("The current density",nil,'current-density') %>
+<% begin_sec("The current density",nil,'current-density') %>\index{current!density}
 
 <% begin_sec("Definition",nil,'current-density-def') %>
 
@@ -103,7 +103,7 @@ and therefore cannot get rid of its heat as quickly.
 
 <% end_sec('current-density-def') %>
 
-<% begin_sec("Continuity equation",nil,'continuity') %>
+<% begin_sec("Continuity equation",nil,'continuity') %>\index{charge!conservation!continuity equation}
 
 We can now imagine a ``div-meter'' (figure \figref{divmeter}, p.~\pageref{fig:divmeter})
 that measures the divergence of the current density rather than the divergence of
@@ -193,7 +193,7 @@ But this is $b-b=0$, so this \emph{is} a possible steady flow of charges.
   )
 %>
 
-\begin{eg}{The einzel lens}\label{eg:einzel-lens}
+\begin{eg}{The einzel lens}\label{eg:einzel-lens}\index{Einzel lens}
 Figure \figref{einzel-lens} shows a common electrostatic focusing
 device called an einzel lens.  Einzel lenses are used to focus beams
 of charged particles in, for example, scanning electron microscopes
@@ -252,7 +252,7 @@ and putting in factors of $c$ to make the units work:
 \end{align*}
 Because $\rho$ and $\vc{j}$ are things we can measure at a point in space, they have
 their own independent physical existence, and therefore these relationships hold regardless
-of whether the physical context is the one involving the straight rod.
+of whether the physical context is the one involving the straight rod.\index{current density!transformation of}
 
 \begin{eg}{Length contraction}
 Suppose that in a certain frame of reference, a wire carries zero current but has a charge.
@@ -387,7 +387,7 @@ even if we try to make up for it somewhere else.
 
 <% end_sec('maxwell-full') %>
 
-<% begin_sec("The magnetic dipole",nil,'b-dipole') %>
+<% begin_sec("The magnetic dipole",nil,'b-dipole') %>\index{dipole!magnetic!further properties}
 
 Example \ref{eg:out-of-nowhere}, p.~\pageref{eg:out-of-nowhere}, shows that if we want to
 find the field made by a current distribution like the one in the doorbell ringer, we can't
@@ -484,7 +484,7 @@ magnet's dipole moment.
 
 
 <% end_sec('b-dipole-current-loop') %>
-<% begin_sec("Dipole moment related to angular momentum",nil,'g-factor') %>
+<% begin_sec("Dipole moment related to angular momentum",nil,'g-factor') %>\index{$g$ factor}
 
 In example \ref{eg:estimate-atomic-dipole} we made a crude estimate of the typical
 magnetic dipole moment of an atom. There is another way of going about this,
@@ -684,7 +684,7 @@ are presented together at this point for reference.
 %>
 <% end_marg %>
 
-\noindent\textit{Field created by a long, straight wire carrying current $I$:}
+\noindent\textit{Field created by a long, straight wire carrying current $I$:}\index{magnetic field!long, straight wire}
 \begin{equation*}
  B = \frac{k}{c^2}\cdot\frac{2I}{r}
 \end{equation*}
@@ -692,7 +692,7 @@ Here $r$ is the distance from the center of the wire. The field vectors trace
 circles in planes perpendicular to the wire, in a direction given by a right-hand
 rule where the thumb is the current and the fingers are the field.
 
-\noindent\textit{Field created by a single circular loop of current:}\\
+\noindent\textit{Field created by a single circular loop of current:}\\\index{magnetic field!circular loop of current}
 The field vectors form a dipole-like pattern, coming through the loop and back
 around on the outside. The orientation of the loops is such that in the middle
 region there is a right-hand relationship in which the thumb is the field; or, alternatively,
@@ -726,7 +726,7 @@ p.~\pageref{hw:helmholtzcoil-center}).
 
 <% end_sec('b-fields-practical') %>
 
-<% begin_sec("The Biot-Savart law (optional)",4,'biot-savart',{'optional'=>true}) %>
+<% begin_sec("The Biot-Savart law (optional)",4,'biot-savart',{'optional'=>true}) %>\index{Biot-Savart law}
 
 In sec.~\ref{sec:sum-dipoles}, p.~\pageref{sec:sum-dipoles}, we were able to find the magnetic
 field at  the center of a current loop by the trick of turning the current distribution into
