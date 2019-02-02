@@ -794,20 +794,22 @@ a ball of plasma --- a gas so hot that its atoms have been ionized.
 
 <% begin_notes %>
 
-\notetext{loop-rule-dc-necessary}{Loop rule violated by AC circuits}
+\notetext{loop-rule-dc-necessary}{Loop rule can be violated by AC circuits}
 \notesummary{The loop rule is valid only for static fields (DC circuits), and can be violated otherwise.}
-        To see why the assumption of a DC circuit is necessary, consider what happens
-        in an antenna, as in figure \figref{dipole-radiation-pattern} on 
-        p.~\pageref{eg:dipole-radiation-pattern}. In such an AC circuit,
-        a charge can oscillate back and forth repeatedly, having negative work
-        done on it in each cycle. This is not a violation of conservation of energy,
-        because the energy is being pumped out into an electromagnetic wave.
-        The electric field in the antenna's radiation pattern is curly (which is allowed
-        by Maxwell's equations because $\operatorname{curl}\vc{E}=-\partial\vc{B}/\partial t$),
-        so the work done by the field is path-dependent, and the construction of the electric
-        potential in \ref{sec:potential}, p.~\pageref{sec:potential}, breaks down. In the gravitational
-        metaphor, there is no way to even define a notion of height.
+To see why the assumption of a DC circuit is necessary, consider what happens
+in an antenna, as in figure \figref{dipole-radiation-pattern} on 
+p.~\pageref{eg:dipole-radiation-pattern}. In such an AC circuit,
+a charge can oscillate back and forth repeatedly, having negative work
+done on it in each cycle. This is not a violation of conservation of energy,
+because the energy is being pumped out into an electromagnetic wave.
+The electric field in the antenna's radiation pattern is curly (which is allowed
+by Maxwell's equations because $\operatorname{curl}\vc{E}=-\partial\vc{B}/\partial t$),
+so the work done by the field is path-dependent, and the construction of the electric
+potential in \ref{sec:potential}, p.~\pageref{sec:potential}, breaks down. In the gravitational
+metaphor, there is no way to even define a notion of height.
 
+However, it still often happens that the loop rule is approximately valid, even for
+AC circuits (\notewithoutbackref{ac-circuit-loop-rule}).
 <% end_notes %>
 
 <% begin_hw_sec %>

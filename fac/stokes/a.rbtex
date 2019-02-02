@@ -289,7 +289,7 @@ $\int\vc{E}\cdot\der\bell$ around the edge of the disk to be equal to
 minus the rate of change of the flux. This electric field exists regardless of whether there is
 anything physically present at our imaginary disk, but if we happen to have placed a circular loop
 of wire there, and we connect it to a voltmeter or an oscilloscope, we will measure
-an emf, which is some number in units of volts, equal to the integral defining the circulation
+a voltage, given by the integral defining the circulation
 of the electric field. The figure only shows a two-dimensional picture of a small
 number of magnetic field lines, but subject to this crude approximation, we could say that
 the number of field lines passing through the disk has doubled, from 2 to 4. This tells us
@@ -303,14 +303,15 @@ predicted by Faraday's law is proportional to the rate at which the field lines 
 the loop.
 
 For ease of visualization, I drew the surface in figure \figref{flux-linkage} as
-a simple disk, whose boundary is a circle. But if we were to form this circle from a loop
-of wire and connect it to an oscilloscope, the signal might be rather weak and hard to detect.
-This is a kind of primitive electric generator, but an extremely impractical one. The strength
+a simple disk, whose boundary is a circle. If we were to form this circle from a loop
+of wire and connect it to an oscilloscope, as in figure \figref{practical-faraday},
+the signal would probably be easily detectable. But as an electric generator, this
+is still somewhat impractical. The strength
 of the effect can be increased greatly by replacing the single loop with a coil.
 In example \ref{eg:amperesolenoid} on p.~\pageref{eg:amperesolenoid}, we saw that when we
 use a current in a coil of wire to \emph{create} a magnetic field, the effect was proportional
 to the number of turns of wire per unit length. Something similar is true when we \emph{expose} a coil of wire
-to a \emph{changing} magnetic field, in order to produce an emf. The effect is again proportional to
+to a \emph{changing} magnetic field, in order to produce a voltage. The effect is again proportional to
 the number of turns of wire.
 
 The easy way to visualize this is in terms of flux linkage and
@@ -322,6 +323,15 @@ have to make twice as many cuts through in the case where the cord is wrapped in
 Since the induction effect is proportional to the number of cuts, it is doubled.
 
 <% marg(300) %>
+<%
+  fig(
+    'practical-faraday',
+    %q{%
+      A real-world setup for measuring the scenario from figure \figref{flux-linkage}.
+    }
+  )
+%>
+\spacebetweenfigs
 <%
   fig(
     'finger-two-loops',
@@ -336,7 +346,7 @@ Since the induction effect is proportional to the number of cuts, it is doubled.
   fig(
     'bear-paws',
     %q{Transforming a single loop into a double loop.},
-    {'width'=>'fullpage'}
+    {'width'=>'fullpage','floatpos'=>'b'}
   )
 %>
 
@@ -344,7 +354,7 @@ The proportionality to the number of loops is not an exception or modification t
 law, and we don't have to appeal to the ``cutting'' interpretation to explain it if we don't
 want to. Figure \figref{bear-paws} shows the transformation of a single loop to a double one.
 During this process, the surface is like a soap
-bubble suspended across the wire forming the boundary. The surface is never torn or glued together.
+bubble suspended across the wire that forms the boundary. The surface is never torn or glued together.
 Although I find it a little difficult to visualize the final ``soap bubble'' surface, it is clearly
 true that each field line will pass through the surface twice, producing twice the flux compared to
 a single circular loop with the same circumference.

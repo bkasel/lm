@@ -744,7 +744,8 @@ hum.
 In section \ref{sec:lrc-oscillations} we analyzed the oscillations of a series LRC circuit
 simply by appealing to the mechanical analog, which we had already solved, but it's
 also interesting to write down the actual differential equation for the circuit.
-The loop rule is approximately valid under the lumped circuit approximation, so
+The loop rule is approximately valid under the lumped circuit approximation
+(\notewithoutbackref{ac-circuit-loop-rule}), so
 \begin{equation*}
   V_L+V_R+V_C = 0.
 \end{equation*}
