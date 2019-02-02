@@ -22,7 +22,8 @@ direction of propagation of such a wave was the vector cross product
 $\vc{E}\times\vc{B}$, and argued (p.~\pageref{waves-not-pure-e-or-b})
 that therefore these wave disturbances must contain oscillations of
 both the electric and magnetic field.  In this chapter we will take up
-the description of these electromagnetic waves in more detail. 
+the description of these electromagnetic waves in more 
+detail.\index{radiation|see {electromagnetic wave}}\index{wave, electromagnetic|see {electromagnetic wave}}
 
 <% marg(-300) %>
 <%
@@ -70,7 +71,7 @@ finish making all the connections, and it will become clear there is a system of
 tightly interlocking logical relationships, very much like the Euclidean/Cartesian 
 example.\label{maxwell-logic-promise}
 
-<% begin_sec("Wave patterns",nil,'wave-patterns') %>
+<% begin_sec("Wave patterns",nil,'wave-patterns') %>\index{wave!spherical}\index{wave!plane}
 
 Waves spread out in all directions from every point on the disturbance
 that created them, and this is why we refer to electromagnetic
@@ -119,7 +120,7 @@ $\vc{E}=\vc{E}(t,z)$ and $\vc{B}=\vc{B}(t,z)$.
 
 <% end_sec('wave-patterns') %>
 
-<% begin_sec("What it is that waves",nil,'what-vibrates') %>
+<% begin_sec("What it is that waves",nil,'what-vibrates') %>\index{electromagnetic wave!not a vibration of a medium}
 
 <% marg(-8) %>
 <%
@@ -172,11 +173,11 @@ electromagnetism in 1865, and his equations worked just fine as a
 description of radiation purely in terms of non-material fields. But
 old habits died hard, and as late as the 1930's, it was common to hear
 physicists referring to electromagnetic waves as vibrations in a
-mysterious medium called the ``aether.''
+mysterious medium called the ``aether.''\index{aether}
 
 <% end_sec('what-vibrates') %>
 
-<% begin_sec("Geometry of a plane wave",nil,'plane-wave-geom') %>
+<% begin_sec("Geometry of a plane wave",nil,'plane-wave-geom') %>\index{electromagnetic wave!geometry}
 
 <% begin_sec("$\\vc{E}$ and $\\vc{B}$ perpendicular to the direction of propagation",nil,'e-b-perp-p') %>
 The momentum density $(1/4\pi k)\vc{E}\times\vc{B}$ is proportional
@@ -186,7 +187,7 @@ to both of the vectors, it follows that both fields lie in the plane perpendicul
 of propagation.
 <% end_sec('e-b-perp-p') %>
 
-<% begin_sec("$\\vc{E}$ and $\\vc{B}$ equal in energy",nil,'e-b-equal-energy') %>
+<% begin_sec("$\\vc{E}$ and $\\vc{B}$ equal in energy",nil,'e-b-equal-energy') %>\index{electromagnetic wave!energy}
 
 <% marg() %>
 <%
@@ -265,7 +266,7 @@ This is referred to as the polarization of the wave.
 %>
 <% end_marg %>
 
-<% begin_sec("Propagation at a fixed velocity",nil,'propagation-at-c') %>
+<% begin_sec("Propagation at a fixed velocity",nil,'propagation-at-c') %>\index{electromagnetic wave!propagation at $c$}
 If we look at the speed of waves in general, we see two main types of behavior. In one type,
 exemplified by sound waves or waves on a coil spring as in figure \figref{coil-spring-pulse},
 all waves travel at the same speed, regardless of their amplitude or frequency.
@@ -310,7 +311,7 @@ a plane wave glides along rigidly as in figure \figref{plane-wave-propagating}, 
 <% end_sec('propagation-at-c') %>
 
 <% begin_sec("Momentum and rate of energy flow",nil,'p-and-energy-flow') %>
-<% begin_sec("Momentum of a plane wave",nil,'p-plane-wave') %>
+<% begin_sec("Momentum of a plane wave",nil,'p-plane-wave') %>\index{electromagnetic wave!momentum}
 Recalling the relations $\der\vc{p}/\der v =(1/4\pi k)$,
 $\der U_E/\der v=(1/8\pi k)E^2$, and $\der U_B/\der v=(c^2/8\pi k)B^2$, it is
 straightforward to show that for a plane wave, the energy and momentum are related
@@ -353,7 +354,8 @@ The quantity $(c^2/4\pi k)\vc{E}\times\vc{B}$, which is just the momentum densit
 multiplied by $c^2$, is often notated $\vc{S}$, and
 is referred to as the Poynting vector, after John Henry Poynting --- a wonderful
 coincidence, because the vector \emph{points} in the direction of the momentum
-and energy flow. The magnitude of the Poynting vector is power per unit area.
+and energy flow. The magnitude of the Poynting vector is power per unit 
+area.\index{Poynting, John Henry}\index{Poynting vector}
 
 <%
   fig(
@@ -384,7 +386,7 @@ fast as it flows out (\note{static-poynting}).
 <% end_sec('poynting') %>
 <% end_sec('p-and-energy-flow') %>
 
-<% begin_sec("Maxwell's equations in a vacuum",4,'maxwell-vacuum') %>
+<% begin_sec("Maxwell's equations in a vacuum",4,'maxwell-vacuum') %>\index{Maxwell's equations!in vacuum}
 <% marg() %>
 <%
   fig(
