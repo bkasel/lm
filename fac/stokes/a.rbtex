@@ -20,7 +20,9 @@ which was given in sec.~\ref{sec:something-is-missing}, p.~\pageref{sec:somethin
 only for the special case of a ``conservative'' field, i.e., one whose curl is zero. If you're
 a science or engineering major in the US, then most likely you are now at the end of a semester
 in which you're taking this electricity and magnetism course concurrently with a vector calculus
-course, in which this material has been presented in more depth.
+course, in which this material has been presented in more 
+depth.\index{gradient!fundamental theorem of calculus}
+\index{fundamental theorem of calculus!for div, grad, and curl}
 
 \noindent\label{vector-calc-roundup-table}\begin{minipagefullpagewidth}
 \noindent\begin{tabular}{p{38mm}p{38mm}p{44mm}p{44mm}}
@@ -231,7 +233,7 @@ What direction is the current in figure \figref{amperesolenoid}?
 
 <% end_sec('amperes-law') %>
 
-<% begin_sec("Faraday's law",4,'faradays-law') %>
+<% begin_sec("Faraday's law",4,'faradays-law') %>\index{Faraday's law}
 One of Maxwell's equations is $\operatorname{curl}\vc{E} =  -\partial\vc{B}/\partial t$.
 This states that a varying magnetic field induces a curly electric field (sec.~\ref{sec:maxwell-vacuum},
 p.~\pageref{sec:maxwell-vacuum}), and we've used it in the analysis of electromagnetic waves
