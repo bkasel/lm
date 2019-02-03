@@ -82,6 +82,18 @@
 \brieftocentry[\hfill]{ch:stokes}{Stokes's theorem}\\
 \end{tabular}
 
+\vspace{\brieftocvert}\noindent\brieftochoriz%
+\brieftocchstyle\begin{tabular}{rp{\brieftoctabularwidth}}
+& \textit{\brieftocpartstyle Electromagnetic properties of materials}\\
+\brieftocentry[\hfill]{ch:materials}{Electromagnetic properties of materials}\\
+\end{tabular}
+
+\vspace{\brieftocvert}\noindent\brieftochoriz%
+\brieftocchstyle\begin{tabular}{rp{\brieftoctabularwidth}}
+& \textit{\brieftocpartstyle Relativity}\\
+\brieftocentry[\hfill]{ch:relativity-standalone}{Relativity}\\
+\end{tabular}
+
 
 
 \onecolumn\vfill
@@ -100,6 +112,8 @@
 \end{multicols}
 \normallayout\onecolumn
 
+%========================= preface =========================
+    \include{preface/student}
 %========================= main matter =========================
 \mainmatter
 %-- I want the whole book numbered sequentially, arabic:
@@ -108,7 +122,6 @@
 \parafmt
 \myeqnspacing % Do this early and often, since it gets reset by \normalsize
 %========================= chapters =========================
-\setcounter{chapter}{0}
 \wugga%used to be needed after preface
     \renewcommand{\chapdir}{fields}\include{fields/atemp}
     \renewcommand{\chapdir}{fields}\include{fields/btemp}
@@ -122,8 +135,10 @@
     \renewcommand{\chapdir}{ac}\include{ac/atemp}
     \renewcommand{\chapdir}{ac}\include{ac/btemp}
     \renewcommand{\chapdir}{ac}\include{ac/ctemp}
-	\formatchtoc{\large}{\quad\contentspage}{4mm} % This has to go before the last chapter.
     \renewcommand{\chapdir}{stokes}\include{stokes/atemp}
+    \renewcommand{\chapdir}{materials}\include{materials/atemp}
+	\formatchtoc{\large}{\quad\contentspage}{4mm} % This has to go before the last chapter.
+    \renewcommand{\chapdir}{relativity}\include{relativity/atemp}
         \addtocontents{toc}{\vspace{5mm}}% For reasons I don't understand, this actually comes *after* the final chapter.
 %
     \widelayout

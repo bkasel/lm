@@ -185,6 +185,7 @@ foreach (<$d/*.rbtex>) {
   if ($book eq 'sn') {push @prepend_m4_files,"sn.m4"; $calc="1"}
   if ($book eq 'me') {push @prepend_m4_files,"me.m4"; $calc="1"}
   if ($book eq 'lm') {push @prepend_m4_files,"../lmseries.m4"}
+  if ($book eq 'fac') {push @prepend_m4_files,"fac.m4"; $calc="1"}
   $book =~ /\d(.*)/;
   push @prepend_m4_files,"book.m4";
   push @prepend_m4_files,"$d/chapter.m4";
@@ -194,7 +195,7 @@ foreach (<$d/*.rbtex>) {
   my $shared_text = "../share/" . ($topic_map{$book}->{$ch+0});
   my $web_flag = ($web==1 ? 1 : 0);
   my $cmd = "m4 -P -D __web='$web_flag' -D __share='../share/$shared_text' $prepend_m4_files $file >$postm4";
-  #print "----------------cmd=$cmd\n              ---------- book=$book, ch=$ch, topic_map=",($topic_map{$book}->{$ch+0}),"\n" if $file=~/^em/;
+  #print STDERR "----------------cmd=$cmd\n              ---------- book=$book, ch=$ch, topic_map=",($topic_map{$book}->{$ch+0}),"\n" if $file=~/^em/;
   do_system($cmd,$file,'m4');
   my $sharing = "SHARED_FIGS='$shared_dirs[1]' SHARED_FIGS2='$shared_dirs[2]' SHARED_FIGS3='$shared_dirs[3]'";
   my $cmd = "BK='$book' DIR='$d' $sharing CALC='$calc' BOOK_OUTPUT_FORMAT='print' $eruby $postm4 >$outfile_base.tex"; # is always executed by sh, not bash or whatever

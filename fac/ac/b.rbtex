@@ -882,7 +882,7 @@ our solution is
 <% end_sec('rc') %>
 
 <% begin_sec("The RL circuit",nil,'rl') %>
-\index{RL circuit}
+\index{RL circuit}\index{time constant!RL}
 The RL circuit, \figref{rl}, can be attacked by similar methods, and
 it can easily be shown that it gives
 \begin{equation*}

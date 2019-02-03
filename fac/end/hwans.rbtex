@@ -21,6 +21,12 @@
 <% answer("energy-density-not-x-product") %>
 <% answer("triangle-area-strategy") %>
 <% answer("pillbox") %>
+
+<% answer("rel-vel-addition") %>
+<% answer("congruent-four-vectors") %>
+<% answer("angular-defect") %>
+<% answer("tossed-clock") %>
+<% answer("gamma-approx-si") %>
 	
 
 %==================================================================
@@ -37,6 +43,11 @@
 <% self_check_answer("represent-as-complex") %>
 <% self_check_answer("damping-energy") %>
 <% self_check_answer("solenoiddirection") %>
+
+<% self_check_answer("gammaatvzero") %>
+<% self_check_answer("unequalcollisioncons") %>
+<% self_check_answer("doppler-approaching") %>
+<% self_check_answer("mass-energy") %>
 
 
 %==================================================================

@@ -76,8 +76,8 @@ print %q(
  & before the collision
        & after the collision  \\\\
 \\hline
-\\anonymousinlinefig{#5} & #1 & #2  \\\\
-\\anonymousinlinefig{#6} & #3 & #4  \\\\
+\\includegraphics{../../share/relativity/figs/#5} & #1 & #2  \\\\
+\\includegraphics{../../share/relativity/figs/#6} & #3 & #4  \\\\
 \\hline
 \\end{tabular}
 }
@@ -88,7 +88,7 @@ end
 <%
 def small_vel_table(a,b,c,d)
 if is_print then
-  return "\\smallvelocitytable{#{a}}{#{b}}{#{c}}{#{d}}{../../../share/relativity/figs/smallball}{../../../share/relativity/figs/bigball}"
+  return "\\smallvelocitytable{#{a}}{#{b}}{#{c}}{#{d}}{smallball}{bigball}"
 end
 if is_web then
 return %Q(
