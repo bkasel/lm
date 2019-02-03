@@ -26,8 +26,10 @@ A perfect conductor, such as a superconductor, has no DC electrical resistance. 
 inside it, because then charges would move in response to that field, and the motion of the charges would tend to reduce the field,
 contrary to the assumption that the field was static. Things are a little different at the surface of a perfect conductor than on
 the interior. We expect that any net charges that exist on the conductor will spread out under the influence of their mutual
-repulsion, and settle on the surface. As we saw in chapter \ref{ch:efield}, Gauss's law requires that the fields on the two
-sides of a sheet of charge have $|\vc{E}_{\perp,1}-\vc{E}_{\perp,2}|$ proportional to the surface charge density, and since the field inside
+repulsion, and settle on the surface.
+Gauss's law requires that the fields on the two
+sides of a sheet of charge have $|\vc{E}_{\perp,1}-\vc{E}_{\perp,2}|$
+proportional to the surface charge density, and since the field inside
 the conductor is zero, we infer that there can be a field on or immediately outside the conductor, with a nonvanishing component
 perpendicular to the surface. The component of the field parallel to the surface must vanish, however, since otherwise it would
 cause the charges to move along the surface.
@@ -124,18 +126,6 @@ are now available. Most of them do not use dielectric at all; the very high capa
 are not parallel metal plates at all, but exotic
 materials such as aerogels, which allows the spacing between the ``electrodes'' to be very small.
 
-<% marg(30) %>
-<%
-  fig(
-    'studfinder',
-    %q{A stud finder is used to locate the wooden beams, or studs, that form the frame behind the wallboard. It is
-       a capacitor whose capacitance changes when it is brought close to a substance with a particular permittivity.
-       Although the wall is external to the capacitor, a change in capacitance is still observed, because the capacitor has
-       ``fringing fields'' that extend outside the region between its plates.}
-  )
-%>
-<% end_marg %>
-
 Although figure \subfigref{dielectric2}{2} shows the dipoles in the dielectric being completely aligned, this is not a situation commonly
 encountered in practice. In such a situation, the material would be as polarized as it could possibly be, and if the field was increased
 further, it would not respond. In reality, a capacitor, for example, would normally be operated with fields that produced quite a small
@@ -150,6 +140,18 @@ is withdrawn. Predict the changes observed on the meters, and correlate them wit
 energy transformations involved, and determine whether positive or negative work is done in removing the dielectric.
   SELF_CHECK
   ) %>
+
+<% marg(30) %>
+<%
+  fig(
+    'studfinder',
+    %q{A stud finder is used to locate the wooden beams, or studs, that form the frame behind the wallboard. It is
+       a capacitor whose capacitance changes when it is brought close to a substance with a particular permittivity.
+       Although the wall is external to the capacitor, a change in capacitance is still observed, because the capacitor has
+       ``fringing fields'' that extend outside the region between its plates.}
+  )
+%>
+<% end_marg %>
 
 <% end_sec() %>
 
@@ -204,8 +206,6 @@ mu-metal         & 20,000
   )
 %>
 <% end_marg %>
-
-\pagebreak[4]
 
 \begin{eg}{An iron-core electromagnet}\label{eg:iron-core}
 \egquestion A solenoid has 1000 turns of wire wound along a cylindrical core with a length of 10 cm. If
@@ -508,15 +508,15 @@ nearly all the field is contributed by atoms near the surface. Our analogy with 
 we should instead construct a permanent magnet with a sharp edge.
 
 Figure \figref{sharp-magnet-poles} shows the cross-sectional shapes of two magnet poles used
-in the historic Stern-Gerlach experiment (sec.~\ref{sec:stern-gerlach}, p.~\pageref{sec:stern-gerlach}). 
+in the historic Stern-Gerlach experiment that discovered the spin of the electron.\index{Stern-Gerlach experiment}
 The external magnetic field is represented using field lines.
 The field lines enter and exit the surfaces perpendicularly, and they are particularly dense
 near the corner of the upper pole, indicating a strong field. The spreading of the field lines
 indicates that the field is strongly nonuniform, becoming much weaker toward the bottom of the
 gap between the poles. This strong nonuniformity was crucial for the experiment, in which the
-magnets were used as part of a dipole spectrometer. See example \ref{eg:dipole-in-nonuniform-field-fancy}
-and figure \figref{dipole-spectrometer} on p.~\pageref{fig:dipole-spectrometer} for an explanation of
-an electric version of such a spectrometer.
+magnets were used as part of a dipole spectrometer. See 
+figure  \figref{dipole-spectrometer-sideways} on p.~\pageref{fig:dipole-spectrometer-sideways}
+for an electric version of such a spectrometer.
 \end{eg}
 
 <% marg(50) %>

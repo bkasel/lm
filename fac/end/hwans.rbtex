@@ -49,6 +49,8 @@
 <% self_check_answer("doppler-approaching") %>
 <% self_check_answer("mass-energy") %>
 
+<% self_check_answer("withdraw-dielectric") %>
+
 
 %==================================================================
 %========================= Answers ================================

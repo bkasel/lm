@@ -867,8 +867,8 @@ components.\index{dipole!force in nonuniform field}
 This principle can be used as a way of measuring the unknown dipole
 moments of a beam of particles, as in figure
 \figref{dipole-spectrometer-sideways}.  A magnetic version of this device was
-used in the historic Stern-Gerlach experiment that discovered the spin
-of the electron. 
+used in the historic Stern-Gerlach experiment\index{Stern-Gerlach experiment} that discovered the spin
+of the electron.
 
 <%
   fig(
