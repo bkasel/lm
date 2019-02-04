@@ -61,8 +61,6 @@ energy content of the world's nuclear arsenals, which is about $10^{21}$ J.\answ
 
 <% begin_hw('earth-lorentz-contraction') %>__incl(hw/earth-lorentz-contraction)<% end_hw() %>
 
-<% begin_hw('gamma-derivation') %>__incl(hw/gamma-derivation)<% end_hw() %>
-
 <% marg(50) %>
 <%
   fig(
@@ -72,7 +70,7 @@ energy content of the world's nuclear arsenals, which is about $10^{21}$ J.\answ
 %>
 <% end_marg %>
 
-\pagebreak
+<% begin_hw('gamma-derivation') %>__incl(hw/gamma-derivation)<% end_hw() %>
 
 <% begin_hw('freeneutron') %>
 
@@ -111,11 +109,11 @@ wouldn't exist!)
 
 <% end_hw() %>
 
-\vfill
+
 
 <% begin_hw('vintermsofp') %>__incl(hw/vintermsofp)<% end_hw() %>
 
-\vfill
+
 
 <% begin_hw('gammasimplefraction') %>
 
@@ -146,31 +144,15 @@ of $\kgunit\unitdot\munit/\sunit$.\answercheck\hwendpart
 
 <% end_hw() %>
 
-<% begin_hw('relativity-max-tension') %>__incl(hw/relativity-max-tension)<% end_hw() %>
-
-\enlargethispage{\baselineskip}
-
 <% begin_hw('double-voltage') %>__incl(hw/double-voltage)<% end_hw() %>
-
-\vfill
 
 <% begin_hw('velocity-addition-double-limit') %>
 Problem \ref{hw:velocity-addition-double-limit} has been deleted.
 <% end_hw() %>
 
-\vfill
-
 <% begin_hw('ke-taylor') %>__incl(hw/ke-taylor)<% end_hw() %>
 
-\vfill
-
 <% begin_hw('p-rel-taylor') %>__incl(hw/p-rel-taylor)<% end_hw() %>
-
-\vfill
-
-<% begin_hw('rel-vel-addition') %>__incl(hw/rel-vel-addition)<% end_hw() %>
-
-\vfill
 
 <% begin_hw('congruent-four-vectors') %>__incl(hw/congruent-four-vectors)<% end_hw() %>
 
@@ -183,27 +165,16 @@ Problem \ref{hw:velocity-addition-double-limit} has been deleted.
 %>
 <% end_marg %>
 
-\vfill
 
 <% begin_hw('momentum-cone') %>__incl(hw/momentum-cone)<% end_hw() %>
-
-\pagebreak
 
 <% begin_hw('no-pe-in-vacuum') %>__incl(hw/no-pe-in-vacuum)<% end_hw() %>
 
 <% begin_hw('doppler-taylor') %>__incl(hw/doppler-taylor)<% end_hw() %>
 
-<% begin_hw('angular-defect') %>__incl(hw/angular-defect)<% end_hw() %>
-
-<% begin_hw('cone-intrinsic-curvature') %>__incl(hw/cone-intrinsic-curvature)<% end_hw() %>
-
-<% begin_hw('grav-doppler-units') %>__incl(hw/grav-doppler-units)<% end_hw() %>
-
 <% begin_hw('side-by-side-lasers') %>__incl(hw/side-by-side-lasers)<% end_hw() %>
 
 <% begin_hw('gamma-decay-energy-comparisons') %>__incl(hw/gamma-decay-energy-comparisons)<% end_hw() %>
-
-\pagebreak
 
 <% begin_hw('gamma-approx-si') %>__incl(hw/gamma-approx-si)<% end_hw() %>
 

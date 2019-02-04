@@ -375,7 +375,7 @@ the Doppler shift is
   D(v) = \sqrt{\frac{1-v}{1+v}}\eqquad.
 \end{equation*}
 Here $v>0$ is the case where the source and receiver are getting farther apart, $v<0$ the case where they are approaching.
-m4_ifelse(__fac,[::],[:%
+m4_ifelse(__fac,1,[::],[:%
   % FAC never does an equation for Doppler shift before the relativity chapter.
   (This is the opposite of the sign convention used in __subsection_or_section(doppler). It is convenient to change conventions here so that we can
   use positive values of $v$ in the case of cosmological red-shifts, which are the most important application.)%
@@ -452,6 +452,7 @@ The spectacular agreement with theory has made this experiment a lightning rod f
 anti-relativity kooks.
 \end{eg}
 
+m4_ifelse(__fac,1,[::],[:%
 We saw on p.~\pageref{relativistic-combination-of-vel} that relativistic velocities should not be expected to be exactly additive,
 and problem \ref{hw:six-tenths-c-twice} on p.~\pageref{hw:six-tenths-c-twice} verifies this in the special case where A moves relative to B
 at $0.6c$ and B relative to C at $0.6c$ --- the result \emph{not} being $1.2c$.\index{velocity!addition of!relativistic}
@@ -459,4 +460,5 @@ The relativistic Doppler shift provides a simple way of deriving a general equat
 of velocities;
 problem \ref{hw:rel-vel-addition} on p.~\pageref{hw:rel-vel-addition} guides you through the steps of this derivation,
 and the result is given on p.~\pageref{soln:rel-vel-addition}.\index{velocity!addition of!relativistic}
+:])
 <% end_sec %> % Doppler shifts of light
