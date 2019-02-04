@@ -46,6 +46,12 @@
 
 \noindent\brieftochoriz%
 \brieftocchstyle\begin{tabular}{rp{\brieftoctabularwidth}}
+ & Preface for the student \hfill \pageref{student-preface} \\
+ & Preface for the instructor \hfill \pageref{instructor-preface} \\
+\end{tabular}
+
+\vspace{\brieftocvert}\noindent\brieftochoriz%
+\brieftocchstyle\begin{tabular}{rp{\brieftoctabularwidth}}
 & \textit{\brieftocpartstyle Electric and magnetic fields}\\
 \brieftocentry[\hfill]{ch:fields-intro}{The electric and magnetic fields} \\
 \brieftocentry[\hfill]{ch:gauss-law}{Gauss's law}\\
@@ -91,7 +97,7 @@
 \vspace{\brieftocvert}\noindent\brieftochoriz%
 \brieftocchstyle\begin{tabular}{rp{\brieftoctabularwidth}}
 & \textit{\brieftocpartstyle Relativity}\\
-\brieftocentry[\hfill]{ch:relativity-standalone}{Relativity}\\
+\brieftocentry[\hfill]{ch:relativity-standalone}{Relativity (optional stand-alone chapter)}\\
 \end{tabular}
 
 
@@ -114,6 +120,7 @@
 
 %========================= preface =========================
     \include{preface/student}
+    \include{preface/instructor}
 %========================= main matter =========================
 \mainmatter
 %-- I want the whole book numbered sequentially, arabic:
