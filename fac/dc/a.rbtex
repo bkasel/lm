@@ -559,39 +559,6 @@ attached to the end.
     %q{The symbol used in schematics to represent a resistor.}
   )
 %>
-\spacebetweenfigs
-<%
-  fig(
-    'colorcode',
-    %q{An example of a resistor with a color code.}
-  )
-%>
-%\spacebetweenfigs %%%% makes too much space
-<%
-  fig(
-    'colorcodetable',
-    %q{Color codes used on resistors.},
-    {
-      'text'=>
-      %q{
-\begin{tabular}{ll}
-black& 0 \\\\
-brown& 1\\\\
-red& 2\\\\
-orange& 3\\\\
-yellow& 4\\\\
-green& 5\\\\
-blue& 6\\\\
-violet& 7\\\\
-gray& 8\\\\
-white& 9\\\\
-silver& $\pm 10\%$\\\\
-gold& $\pm 5\%$\\\\
-\end{tabular}
-      }
-    }
-  )
-%>
 <% end_marg %>
 Many electrical devices are based on electrical resistance
 and Ohm's law, even if they do not have little components in
@@ -626,6 +593,43 @@ polygraph testing job applicants, an abuse that ranks with
 such pseudoscience as handwriting analysis.
 
 <% end_sec() %>
+
+<% marg() %>
+<%
+  fig(
+    'colorcode',
+    %q{An example of a resistor with a color code.}
+  )
+%>
+%\spacebetweenfigs %%%% makes too much space
+<%
+  fig(
+    'colorcodetable',
+    %q{Color codes used on resistors.},
+    {
+      'text'=>
+      %q{
+\begin{tabular}{ll}
+black& 0 \\\\
+brown& 1\\\\
+red& 2\\\\
+orange& 3\\\\
+yellow& 4\\\\
+green& 5\\\\
+blue& 6\\\\
+violet& 7\\\\
+gray& 8\\\\
+white& 9\\\\
+silver& $\pm 10\%$\\\\
+gold& $\pm 5\%$\\\\
+\end{tabular}
+      }
+    }
+  )
+%>
+<% end_marg %>
+
+
 <% begin_sec("Fuse") %>
 
 A fuse is a device inserted in a circuit tollbooth-style in
