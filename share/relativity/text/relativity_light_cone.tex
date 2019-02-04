@@ -232,11 +232,11 @@ two events lie at coordinates
 Calculating the interval using these values, the result is \linebreak[4]
 $8^2-4^2=48$, which comes out the same as in the other frame.
 \end{eg}
-
-
-
 <% end_sec %> % The spacetime interval
-<% begin_sec("Four-vectors and the inner product",4,'',{'optional'=>true}) %>
+
+m4_ifelse(__fac,1,,\pagebreak)
+
+<% begin_sec("Four-vectors and the inner product",nil,'',m4_ifelse(__fac,1,,{'optional'=>true})) %>
 Example \ref{eg:pioneer-interval} makes it natural that we define a type of vector with four components,
 the first one relating to time and the others being spatial. These are known as four-vectors.\index{four-vector}\index{vector!four-vector}
 It's clear how we should define the equivalent of a dot product in
@@ -324,6 +324,8 @@ and infer that O must consider P and Q to be simultaneous, even if $\zu{O}'$ say
 
 
 <% end_sec %> % Four-vectors and the inner product
+
+m4_ifelse(__fac,1,,[:
 <% begin_sec("Doppler shifts of light and addition of velocities",nil,'doppler-light',{'optional'=>true}) %>\index{light!Doppler shift for}\index{Doppler shift!for light}
 When Doppler shifts happen to ripples on a pond or the sound waves from an airplane, they can depend on the relative motion of three
 different objects: the source, the receiver, and the medium. But light waves don't have a medium. Therefore Doppler shifts of
@@ -452,7 +454,6 @@ The spectacular agreement with theory has made this experiment a lightning rod f
 anti-relativity kooks.
 \end{eg}
 
-m4_ifelse(__fac,1,[::],[:%
 We saw on p.~\pageref{relativistic-combination-of-vel} that relativistic velocities should not be expected to be exactly additive,
 and problem \ref{hw:six-tenths-c-twice} on p.~\pageref{hw:six-tenths-c-twice} verifies this in the special case where A moves relative to B
 at $0.6c$ and B relative to C at $0.6c$ --- the result \emph{not} being $1.2c$.\index{velocity!addition of!relativistic}
@@ -460,5 +461,5 @@ The relativistic Doppler shift provides a simple way of deriving a general equat
 of velocities;
 problem \ref{hw:rel-vel-addition} on p.~\pageref{hw:rel-vel-addition} guides you through the steps of this derivation,
 and the result is given on p.~\pageref{soln:rel-vel-addition}.\index{velocity!addition of!relativistic}
-:])
 <% end_sec %> % Doppler shifts of light
+:])

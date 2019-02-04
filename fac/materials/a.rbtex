@@ -141,7 +141,7 @@ energy transformations involved, and determine whether positive or negative work
   SELF_CHECK
   ) %>
 
-<% marg(30) %>
+<% marg(300) %>
 <%
   fig(
     'studfinder',
@@ -153,6 +153,21 @@ energy transformations involved, and determine whether positive or negative work
 %>
 <% end_marg %>
 
+<% 
+  fig(
+    'permeability-sideways',
+    %q{%
+      The magnetic version of figure \figref{dielectric2}. A magnetically permeable material is placed at the 
+      center of a solenoid.
+    },
+    {
+      'width'=>'fullpage'
+    }
+  )
+%>
+
+
+
 <% end_sec() %>
 
 <% begin_sec("Magnetic materials") %>
@@ -161,8 +176,8 @@ energy transformations involved, and determine whether positive or negative work
 
 Atoms and molecules may have magnetic dipole moments as well as electric dipole moments. Just as an electric dipole contains
 bound charges, a magnetic dipole has bound currents, which come from
-the motion of the electrons as they orbit the nucleus, \subfigref{permeability}{1}. Such a substance, subjected to a magnetic field, tends to align
-itself, \subfigref{permeability}{2}, so that a sheet of current circulates around the externally applied field. Figure \subfigref{permeability}{3}
+the motion of the electrons as they orbit the nucleus, \subfigref{permeability-sideways}{1}. Such a substance, subjected to a magnetic field, tends to align
+itself, \subfigref{permeability-sideways}{2}, so that a sheet of current circulates around the externally applied field. Figure \subfigref{permeability-sideways}{3}
 is closely analogous to figure \subfigref{dielectric2}{3}; in the central gray area, the atomic currents cancel out, but the atoms at the outer surface
 form a sheet of bound current. However, whereas like charges repel and
 opposite charges attract, it works the other way around for currents: currents in the same direction attract, and currents
@@ -176,7 +191,7 @@ and rewrite Amp\`{e}re's law as
 \begin{equation*}
   \Gamma_H = I_{\text{through, free}}\eqquad.
 \end{equation*}
-The constant $\mu$ is the permeability,\index{permeability} 
+The constant $\mu$ is the permeability,\index{permeability-sideways} 
 with a vacuum value of $\mu_\zu{o}=4\pi k/c^2$. Here are the magnetic permeabilities of some substances:
 
 \begin{tabular}{ll}
@@ -190,15 +205,6 @@ mu-metal         & 20,000
 \end{tabular}
 
 <% marg(175) %>
-<%
-  fig(
-    'permeability',
-    %q{The magnetic version of figure \figref{dielectric2}. A magnetically permeable material is placed at the center of a solenoid.}
-  )
-%>
-
-\spacebetweenfigs
-
 <%
   fig(
     'iron-core',
@@ -245,25 +251,6 @@ currents dissipate energy strongly as heat. This behaves like a fairly large res
 Figure \figref{laminated-core} shows a method for reducing this effect. The iron core of this transformer
 has been constructed out of laminated layers, which has the effect of blocking the conduction of the eddy currents.
 
-<% marg(60) %>
-<%
-  fig(
-    'laminated-core',
-    %q{A transformer with a laminated iron core. The input and output coils are inside the paper wrapper. The
-     iron core is the black part that passes through the coils at the center, and also wraps around them on the outside.}
-  )
-%>
-
-\spacebetweenfigs
-
-<%
-  fig(
-    'ferrite-bead',
-    %q{Example \ref{eg:ferrite-bead}: ferrite beads. The top panel shows a clip-on type, while the bottom shows one built into a cable.}
-  )
-%>
-<% end_marg %>
-
 \begin{eg}{A ferrite bead}\label{eg:ferrite-bead}
 Cables designed to carry audio signals are typically made with two adjacent conductors, such that the current flowing out through
 one conductor comes back through the other one. Computer cables are similar, but usually have several such pairs bundled inside the
@@ -282,6 +269,25 @@ Figure \figref{ferrite-bead} shows a device for reducing common-mode interferenc
 the cable like a bead on a string. 
 Ferrite is a magnetically permeable alloy.
 In this application, the ohmic properties of the ferrite actually turn put to be advantageous.
+
+<% marg(60) %>
+<%
+  fig(
+    'laminated-core',
+    %q{A transformer with a laminated iron core. The input and output coils are inside the paper wrapper. The
+     iron core is the black part that passes through the coils at the center, and also wraps around them on the outside.}
+  )
+%>
+
+\spacebetweenfigs
+
+<%
+  fig(
+    'ferrite-bead',
+    %q{Example \ref{eg:ferrite-bead}: ferrite beads. The top panel shows a clip-on type, while the bottom shows one built into a cable.}
+  )
+%>
+<% end_marg %>
 
 Let's consider common-mode transmission of interference.
 The bare cable has some DC resistance, but is also surrounded by a magnetic field, so it has inductance as well. This means that it behaves like

@@ -6,12 +6,15 @@
 <%
   chapter(
     '15',
-    %q{Relativity (optional)},
+    %q{Relativity (optional stand-alone chapter)},
     'ch:relativity-standalone',
     '',
     {'opener'=>'','optional'=>true}
   )
 %>
+
+This optional chapter is a stand-alone presentation of special relativity. It can be read before,
+during, or after the rest of the book.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 __incl(text/relativity_kinematics)

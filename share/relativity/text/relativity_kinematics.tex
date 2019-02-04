@@ -567,7 +567,7 @@ What is $\\mygamma$ when $v=0$? What does this mean?
   SELF_CHECK
   ) %>
 
-\pagebreak
+m4_ifelse(__fac,1,,\pagebreak)
 
 Figure \figref{gamma-graph-small} shows the behavior of $\gamma$ as a function of $v$.
 
@@ -936,7 +936,8 @@ of ten billion years!
 
   <% end_sec('universal-speed') %> % Universality of $c$
 
-\vfill
+m4_ifelse(__fac,1,,\vfill)
+
 
 \startdqs
 \begin{dq}
