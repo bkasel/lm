@@ -339,7 +339,7 @@ the magnetic flux through any closed surface is zero,
   \Phi_B = 0,\quad \Phi_E=0. \qquad \text{[Gauss's law in a vacuum]}
 \end{equation*}
 
-\begin{eg}{Flux above New York}
+\begin{eg}{Flux above New York}\label{eg:flux-above-new-york}
 Often for problems that have a symmetry, we can apply Gauss's law without actually having to
 do an integral to calculate the flux. In figure \figref{new-york-field-flux} we have constructed
 a surface (a surface used for this purpose is
@@ -380,6 +380,13 @@ Setting this equal to zero gives
 \end{equation*}
 i.e., $g\propto r^{-2}$, as expected.
 \end{eg}
+
+An integral of the form $\int \ldots \cdot\der\vc{A}$ is called a surface integral.
+In example \ref{eg:flux-above-new-york}, we were able to evaluate a surface integral
+without really knowing any fancy calculus, because the integrand was basically a constant,
+and we know that for any kind of integral, we can take the constant outside the integral.
+Techniques for evaluating more complicated area integral are discussed in ch.~\ref{ch:iterated},
+p.~\pageref{ch:iterated}.
 
 <%
   fig(

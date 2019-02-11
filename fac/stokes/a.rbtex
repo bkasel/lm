@@ -6,7 +6,7 @@
 
 <%
   chapter(
-    '13',
+    '14',
     %q{Stokes's theorem},
     'ch:stokes'
   )

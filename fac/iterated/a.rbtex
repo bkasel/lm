@@ -1,0 +1,239 @@
+<%
+  require "../eruby_util.rb"
+%>
+
+<% part_title("Iterated integrals") %>
+
+<%
+  chapter(
+    '09',
+    %q{Iterated integrals (optional)},
+    'ch:iterated',
+    {'opener'=>'','optional'=>true}
+  )
+%>
+
+In sec.~\ref{sec:gauss-global}, p.~\pageref{sec:gauss-global}, we introduced the concept of
+flux, which we defined using a surface integral. We have avoided up until now
+any development of the toolbox of techniques that are needed in order to evaluate nontrivial
+surface integrals, restricting ourselves to cases like example \ref{eg:flux-above-new-york},
+p.~\pageref{eg:flux-above-new-york}, in which the integral could be broken down into a few
+pieces, and the integrand was a constant for each piece. In this optional chapter, we describe
+the main technique for explicitly evaluating a surface integral, which is to rewrite it as
+two plain old integrals, one nested inside the other like Russian dolls. These are called
+iterated integrals, and they have other applications besides the calculation of fluxes.
+We will also look at some of these other applications as they apply to electricity and magnetism.
+Knowledge of this material is not assumed later in the book.
+
+<% begin_sec("A warm-up: iterated sums",nil,'iterated-sums') %>
+
+A kindergarten teacher in Chicago is letting her kids out onto the
+snowy playground for recess. One little boy is wearing a nice red wool cardigan,
+but he doesn't know how to button it up. Mrs.~Kidlove uses the following algorithm
+to button it up for him:
+
+\begin{listing}{1}
+For each button,
+  push the button through the hole.
+\end{listing}
+
+This method of describing an algorithm is called pseudocode, because
+unlike actual programming code, it's written in a format meant to be
+read by humans. Line 1 introduces a repetitive action, known in
+programming as a ``loop,'' because after performing the action in line 2,
+we come back and do it again. Line 2 is the body of the loop --- the
+thing that we're going to do over and over --- and it's indented to
+show this. The effect is like modern poetry, but not as pretentious. 
+
+\pagebreak
+
+But wait, now Mrs.~Kidlove realizes it's not just this one kid. Red
+wool cardigans are in style this year, and every little kid needs to
+be buttoned up before going out. Now her algorithm looks like this:
+
+\begin{listing}{1}
+For each kid,
+  for each button,
+    push the button through the hole.
+\end{listing}
+
+To see how all this relates to surface integrals, let's consider the steps that would
+have been required in order to knit one of those sweaters by hand. For those unfamiliar
+with knitting, figure \figref{knitting} shows the idea:
+
+<% marg(50) %>
+<%   
+  fig(
+    'knitting',
+    %q{A knitted fabric.}
+  )
+%>
+\spacebetweenfigs
+<%
+  fig(
+    'gauss-law-lab',
+    %q{Measuring the flux through the box in minilab \ref{lab:gauss-law}, p.~\pageref{lab:gauss-law}.},
+    {'suffix'=>'3','width'=>'narrow','float'=>true}
+  )
+%>
+\spacebetweenfigs
+<%   
+  fig(
+    'a-corner-in-wheat',
+    %q{A puzzle involving a discrete sum over a surface.}
+  )
+%>
+<% end_marg %>
+
+\begin{listing}{1}
+For each row,
+  for each stitch,
+    do certain things with the knitting needles.
+\end{listing}
+
+\noindent We're now going systematically through all the locations in
+a surface, as in minilab \ref{lab:gauss-law}
+(fig.~\figref{gauss-law-lab3}), where we measured the flux through the
+top of the box:
+
+\begin{listing}{1}
+For each row,
+  for each column,
+    add the flux through the square to the total flux.
+\end{listing}
+
+This is still a discrete sum rather than an integral, but it clearly
+can be used to approximate an integral. As an example involving a
+discrete sum that we can write in mathematical notation, consider
+the following puzzle (figure \figref{a-corner-in-wheat}) posed by Sam Loyd, who was known around 1900 as
+the ``prince of puzzlers.''
+
+\begin{quote}
+According to encyclopediacal lore, the royal game, or what is now known as
+chess, was invented by \ldots Sessa, and the king of [the Gupta Empire],
+Shevan the Great, asked Sessa what reward he demanded for his wonderful
+game. Sessa astonished the king by the apparent moderation of his demand, viz.,
+one grain of wheat for the first square of the chess-board, two for the second,
+four for the third, eight for the fourth, and so on, always doubling for each
+square up to the sixty-fourth square of the chess board.
+\end{quote}
+
+This sum can be written as
+\begin{equation*}
+  \sum_{i=0}^7 \sum_{j=0}^7 2^{8i+j}.
+\end{equation*}
+Actually the two-dimensional nature of this sum is not really crucial to
+the statement or solution of the puzzle, but it's picturesque and illustrates
+the ideas and notation. The idea here is that we number the rows from 0 to 7,
+and also the columns. Going across row $i=0$, the terms in the sum go
+$2^0+\ldots+2^7$ as the column runs from $j=0$ to $j=7$. Then in row $i=1$ we have
+$2^8+\ldots+2^{15}$, and so on for $i$ running up to $7$. Loyd doesn't explicitly
+state what the reader is supposed to do in order to solve the puzzle, and figuring
+out the right trick isn't relevant to your study of electricity and magnetism, but
+if you enjoy this sort of thing:
+
+<% self_check('a-corner-in-wheat',<<-'SELF_CHECK'
+Simplify the sum and then approximate it in your head using scientific notation. (You will find
+it useful that $10^{10}=1024\approx 10^3$, ``one k.'')
+  SELF_CHECK
+  ) %>
+
+Although this puzzle can be fun to solve, the point here is really to introduce some
+concepts and notation, using discrete sums as a warm-up for integrals. The sums $\sum$ are
+like integrals $\int$, and the symbols $i$ and $j$ are like variables of integration
+such as $\der x$ and $\der y$. In both cases, the variables are ``bound.'' That is,
+in an expression like $\sum_{i}\ldots$, the symbol $i$ only has meaning \emph{inside} the
+sum, and similarly in an integral $\int\ldots \der x$, $x$ doesn't mean anything outside
+the integral.
+
+<% marg(50) %>
+<%   
+  fig(
+    'russian-dolls',
+    %q{Iterated sums involve nesting one sum inside another like Russian dolls, and similarly
+       for iterated integrals.}
+  )
+%>
+<% end_marg %>
+
+<% end_sec('iterated-sums') %>
+
+<% begin_sec("Iterated integrals",nil,'iterated-integrals') %>
+The continuous version of the sum in the Loyd puzzle would be
+\begin{equation*}
+  \int_{y=0}^8 \left( \int_{x=0}^8 2^{8x+y } \der x\right) \der y.
+\end{equation*}
+We have an ``integral sandwich.''
+Usually no ambiguity results if we simplify the notation a little:
+\begin{equation*}
+  \int_0^7 \int_0^7 2^{8x+y } \der x \der y.
+\end{equation*}
+This turns out to be of about the same order of magnitude as the discrete sum.
+% Is actually about 1/8 as big:
+% maxima -q --batch-string="1/float(integrate(integrate(2^(8*x+y),x,0,7),y,0,7)/(2^64-1));"
+
+<% marg(50) %>
+<%   
+  fig(
+    'e-to-x-plus-y',
+    %q{The function $e^{x+y}$.}
+  )
+%>
+<% end_marg %>
+
+To make this a little easier to visualize and work with, let's change it to the following:
+\begin{equation*}
+  \int_0^1 \left( \int_0^1 e^{x+y } \der x \right) \der y.
+\end{equation*}
+Just as an ordinary
+integral is the area under a curve, this iterated integral can be interpreted as
+the volume under the surface in figure \figref{e-to-x-plus-y}. We can handle this computation
+just by applying some algebra and the familiar methods of integration. First let's
+break up the exponential into two factors:
+\begin{equation*}
+  \int_0^1 \left( \int_0^1 e^x e^y \der x \right) \der y.
+\end{equation*}
+The advantage of doing this is that as far as the inside integral is concerned,
+$x$ is the variable of integration, and $y$ is just a constant. Then we can
+do as we are always allowed in integration and take the constant factor outside:
+\begin{equation*}
+  \int_0^1 \left( e^y \int_0^1 e^x \der x \right) \der y.
+\end{equation*}
+Now the innermost integral is just an ordinary one-dimensional integral,
+which we can evaluate as $\left.e^x\right|_0^1=e-1$. We then have
+\begin{align*}
+  &\int_0^1 \left( e^y (e-1) \right) \der y \\
+       &\qquad = (e-1) \int_0^1 e^y \der y \\
+       &\qquad = (e-1)^2 \\
+       &\qquad \approx 2.95.
+\end{align*}
+As a check to see that this is reasonable, the solid in the figure has a base that is
+$1\times1$ in area, so its volume should be equal to $1\times1$ multiplied by the average
+value of the function within this square. The function varies from $e^{0+0}=1$ at the lower
+corner to $e^{1+1}\approx 7.4$ at the top of the ski jump, so it's pretty plausible that
+its average value is 2.95.
+
+<% end_sec('iterated-integrals') %>
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+applications of 3-d integration:
+
+energy, momentum, charge, dipole moment
+
+applications of 2-d integration:
+
+flux, field and potential of a strip
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+<% begin_notes %>
+
+<% end_notes %>
+
+<% begin_hw_sec %>
+<% end_hw_sec %>
+
+
+<% end_chapter() %>

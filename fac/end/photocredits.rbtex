@@ -48,8 +48,11 @@
 <% photo_credit("dipole-radiation-pattern","Antenna","Wikimedia Commons user Schwarzbeck Mess-Elektronik, CC-BY-SA") %> % https://en.wikipedia.org/wiki/File:Half_%E2%80%93_Wave_Dipole.jpg
 <% photo_credit("coil-spring-pulse","PSSC Physics","") %>
 <% photo_credit("cern-muon-storage-ring","Muon storage ring at CERN","(c) 1974 by CERN; used here under the U.S. fair use doctrine") %>
+<% photo_credit("knitting","Knitting","Wikimedia Commons user Ikiwaner, CC-BY-SA") %> % https://commons.wikimedia.org/wiki/File:Gestrick_links-rechts_linke_Seite.jpeg
 <% photo_credit("ammeter-practical","Multimeter","Wikimedia Commons user Wdwd, CC-BY-SA") %> % https://commons.wikimedia.org/wiki/File:Multimeter_Strommessung.JPG
 <% photo_credit("chain-drive","Chain drive","Based on art by Wikimedia Commons user Keithonearth, CC-BY-SA") %> % https://commons.wikimedia.org/wiki/File:Derailleur_Bicycle_Drivetrain.svg
+<% photo_credit("puzzle","Puzzle","Sam Loyd, 1914, PD") %> % https://archive.org/details/CyclopediaOfPuzzlesLoyd/page/n68
+<% photo_credit("russian-dolls","Russian dolls","Wikimedia Commons users Fanghong and Gnomz007, CC-BY-SA") %> %http://commons.wikimedia.org/wiki/File:Russian-Matroshka_no_bg.jpg
 <% photo_credit("doorbell","Doorbell ringer","Wikimedia Commons user MNH, CC-BY-SA") %> % https://commons.wikimedia.org/wiki/File:DoorBell_001.jpg
 <% photo_credit("railroad-switches","Railroad switching yard","Arne Hueckelheim, CC-BY-SA") %> % https://commons.wikimedia.org/wiki/File:SunsetTracksCrop.JPG
 <% photo_credit("einzel-lens","Einzel lens","Based on a figure by Wikimedia Commons user Schnieri, CC-BY-SA") %> % https://en.wikipedia.org/wiki/File:Einzel_lens_schematic_drawing.svg

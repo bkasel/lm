@@ -6,7 +6,7 @@
 
 <%
   chapter(
-    '14',
+    '15',
     %q{Electromagnetic properties of materials},
     'ch:materials',
     '',

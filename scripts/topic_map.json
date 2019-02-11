@@ -14,8 +14,9 @@
         "11":"em-fields",
         "12":"em-fields",
         "13":"em-fields",
-        "14":"relativity",
-        "15":"relativity"
+        "14":"em-fields",
+        "15":"relativity",
+        "16":"relativity"
       },
       "cp":      {
         "1":"mechanics",
@@ -114,10 +115,10 @@
         "5":"relativity",
         "6":"relativity",
         "7":"em-fields",
-        "9":"mechanics",
         "10":"mechanics",
-        "14":"em-fields",
-        "15":"em-fields"
+        "11":"mechanics",
+        "15":"em-fields",
+        "16":"em-fields"
       },
       "cp":      {
         "1":"relativity",
@@ -150,8 +151,8 @@
         "4":"mechanics",
         "5":"waves",
         "6":"waves",
-        "14":"waves",
-        "15":"waves"
+        "15":"waves",
+        "16":"waves"
       },
       "lm":      {
         "21":"em-fields",

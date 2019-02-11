@@ -46,8 +46,8 @@
 
 \noindent\brieftochoriz%
 \brieftocchstyle\begin{tabular}{rp{\brieftoctabularwidth}}
- & Preface for the student \hfill \pageref{student-preface} \\
- & Preface for the instructor \hfill \pageref{instructor-preface} \\
+ & Preface for the student \hfill \pageref{anchor-student-preface} \\
+ & Preface for the instructor \hfill \pageref{anchor-instructor-preface} \\
 \end{tabular}
 
 \vspace{\brieftocvert}\noindent\brieftochoriz%
@@ -66,6 +66,12 @@
 & \textit{\brieftocpartstyle DC circuits}\\
 \brieftocentry[\hfill]{ch:resistance}{Electrical resistance}\\
 \brieftocentry[\hfill]{ch:dc-circuits}{Parallel and series circuits}
+\end{tabular}
+
+\vspace{\brieftocvert}\noindent\brieftochoriz%
+\brieftocchstyle\begin{tabular}{rp{\brieftoctabularwidth}}
+& \textit{\brieftocpartstyle Iterated integrals}\\
+\brieftocentry[\hfill]{ch:iterated}{Iterated integrals}
 \end{tabular}
 
 \vspace{\brieftocvert}\noindent\brieftochoriz%
@@ -138,6 +144,7 @@
     \renewcommand{\chapdir}{fields}\include{fields/ftemp}
     \renewcommand{\chapdir}{dc}\include{dc/atemp}
     \renewcommand{\chapdir}{dc}\include{dc/btemp}
+    \renewcommand{\chapdir}{iterated}\include{iterated/atemp}
     \renewcommand{\chapdir}{magnetism}\include{magnetism/atemp}
     \renewcommand{\chapdir}{ac}\include{ac/atemp}
     \renewcommand{\chapdir}{ac}\include{ac/btemp}
