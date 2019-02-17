@@ -51,7 +51,7 @@
 <% photo_credit("knitting","Knitting","Wikimedia Commons user Ikiwaner, CC-BY-SA") %> % https://commons.wikimedia.org/wiki/File:Gestrick_links-rechts_linke_Seite.jpeg
 <% photo_credit("ammeter-practical","Multimeter","Wikimedia Commons user Wdwd, CC-BY-SA") %> % https://commons.wikimedia.org/wiki/File:Multimeter_Strommessung.JPG
 <% photo_credit("chain-drive","Chain drive","Based on art by Wikimedia Commons user Keithonearth, CC-BY-SA") %> % https://commons.wikimedia.org/wiki/File:Derailleur_Bicycle_Drivetrain.svg
-<% photo_credit("puzzle","Puzzle","Sam Loyd, 1914, PD") %> % https://archive.org/details/CyclopediaOfPuzzlesLoyd/page/n68
+<% photo_credit("a-corner-in-wheat","Puzzle","Sam Loyd, 1914, PD") %> % https://archive.org/details/CyclopediaOfPuzzlesLoyd/page/n68
 <% photo_credit("russian-dolls","Russian dolls","Wikimedia Commons users Fanghong and Gnomz007, CC-BY-SA") %> %http://commons.wikimedia.org/wiki/File:Russian-Matroshka_no_bg.jpg
 <% photo_credit("doorbell","Doorbell ringer","Wikimedia Commons user MNH, CC-BY-SA") %> % https://commons.wikimedia.org/wiki/File:DoorBell_001.jpg
 <% photo_credit("railroad-switches","Railroad switching yard","Arne Hueckelheim, CC-BY-SA") %> % https://commons.wikimedia.org/wiki/File:SunsetTracksCrop.JPG
