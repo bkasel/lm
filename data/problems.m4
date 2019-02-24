@@ -2131,6 +2131,7 @@ m4_define(__hw_sn_5_half-brick,13)m4_dnl
 m4_define(__hw_sn_5_inversion-layer,14)m4_dnl
 m4_define(__hw_sn_5_photon-gas-equipartition,15)m4_dnl
 m4_define(__hw_sn_5_entropy-stirring-coffee,16)m4_dnl
+m4_define(__hw_sn_5_sun-heating,17)m4_dnl
 m4_define(__hw_sn_6_middlec,1)m4_dnl
 m4_define(__hw_sn_6_changesinewave,2)m4_dnl
 m4_define(__hw_sn_6_reversepulse,3)m4_dnl

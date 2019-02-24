@@ -52,7 +52,6 @@ __incl(text/5_wave_optics)
 <% begin_hw('diffuse') %>__incl(hw/diffuse)<% end_hw() %>
 
 <% begin_hw('gps') %>
-
 A Global Positioning System (GPS) receiver is a device
 that lets you figure out where you are by receiving timed radio
 signals from satellites. It works by measuring the
@@ -81,6 +80,8 @@ have to be to determine your position to this accuracy?
   )
 %>
 
+\enlargethispage{\baselineskip}
+
 \pagebreak
 
 <% begin_hw('parabolic') %>__incl(hw/parabolic)<% end_hw() %>
@@ -102,7 +103,6 @@ have to be to determine your position to this accuracy?
 \pagebreak
 
 <% begin_hw('convexraytracing') %>
-
 In section \ref{sec:images-1} we've only done examples of mirrors with
 hollowed-out shapes (called concave mirrors). Now draw a ray
 diagram for a curved mirror that has a bulging outward shape
@@ -112,7 +112,6 @@ from the mirror? From this comparison, determine whether the
 magnification is greater than or less than one. (b) Is the
 image real, or virtual? Could this mirror ever make the
 other type of image?
-
 <% end_hw() %>
 
 <% begin_hw('listmirrorimages') %>__incl(hw/listmirrorimages)<% end_hw() %>
@@ -188,6 +187,8 @@ other type of image?
 
 <% begin_hw('camera') %>__incl(hw/camera)<% end_hw() %>
 
+\pagebreak
+
 <% begin_hw('goggles') %>__incl(hw/goggles)<% end_hw() %>
 
 <% begin_hw('imagelocation1') %>__incl(hw/imagelocation1)<% end_hw() %>
@@ -219,6 +220,8 @@ other type of image?
 
 <% begin_hw('imagelocation3') %>__incl(hw/imagelocation3)<% end_hw() %>
 
+\enlargethispage{\baselineskip}
+
 <% begin_hw('imageunderwater',2) %>__incl(hw/imageunderwater)<% end_hw() %>
 
 <% begin_hw('least-time-refraction',2) %>__incl(hw/least-time-refraction)<% end_hw() %>
@@ -234,11 +237,7 @@ other type of image?
 
 <% begin_hw('field-of-view') %>__incl(hw/field-of-view)<% end_hw() %>
 
-\pagebreak
-
 <% begin_hw('nearsighted') %>__incl(hw/nearsighted)<% end_hw() %>
-
-\vspace{50mm}
 
 <% begin_hw('flatworm') %>__incl(hw/flatworm)<% end_hw() %>
 

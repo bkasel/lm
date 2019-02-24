@@ -583,7 +583,9 @@ greater than that of the incident wave. This does not
 violate conservation of energy, because this occurs when the
 second string is less massive, reducing its kinetic energy,
 and the transmitted pulse is broader and less strongly
-curved, which lessens its potential energy.
+curved, which lessens its potential energy. In other words,
+the constant of proportionality in $E\propto A^2$ is different
+in the two different media.
 
 We have attempted to develop some general facts about wave reflection by using
 the specific example of a wave on a string, which raises the question of whether

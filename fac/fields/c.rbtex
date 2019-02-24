@@ -772,6 +772,10 @@ than that on the larger sphere in the ratio $a/b$.
 
 https://physics.stackexchange.com/questions/449297/characteristic-curve-of-a-solar-panel
 
+find potential inside and outside a uniformly charged sphsre
+
+find potential of a dipole, on axis (involves abs val)
+
 <% end_hw_sec() %>
 
 <% begin_lab("Mapping electric fields") %>\label{lab:e-field}

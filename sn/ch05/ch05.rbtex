@@ -2542,6 +2542,8 @@ consistent with the second law of thermodynamics? \answercheck
 
 <% begin_hw('entropy-stirring-coffee') %>__incl(hw/entropy-stirring-coffee)<% end_hw() %>
 
+<% begin_hw('sun-heating',0) %>__incl(hw/sun-heating)<% end_hw() %>
+
 <% end_hw_sec %>
 
 <% end_chapter() %>
