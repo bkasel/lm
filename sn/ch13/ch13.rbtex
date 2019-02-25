@@ -2727,8 +2727,6 @@ because $U-E$ is fairly big, typically about 30 MeV at the peak of the barrier.
 %>
 <% end_marg %>
 
-\pagebreak
-
 \begin{eg}{The correspondence principle for $E>U$}\label{eg:step-correspondence}
 The correspondence principle demands that in the classical limit $h\rightarrow0$,
 we recover the correct result for a particle encountering a barrier $U$,
@@ -2737,8 +2735,6 @@ The $E<U$ case was analyzed in self-check \ref{sc:walkthroughwall}
 on p.~\pageref{sc:walkthroughwall}.
 In the remainder of this example, we analyze $E>U$, which
 turns out to be a little trickier. 
-
-\vfill
 
 The particle has enough energy to
 get over the barrier, and the classical result is that it continues forward
@@ -2779,8 +2775,6 @@ isn't classically forbidden, and the wavefunction inside it is a sine wave.
 %>
 <% end_marg %>
 
-\vfill
-
 We can simplify things a little by letting the width $w$ of the
 barrier go to infinity.  Classically, after all, there is no
 possibility that the particle will turn around, no matter how wide the
@@ -2799,13 +2793,9 @@ wave to that of the incident wave is $R = (v_2-v_1)/(v_2+v_1)$. The
 probability of reflection is $R^2$. (Counterintuitively, $R^2$ is
 nonzero even if $U<0$, i.e., $v_2>v_1$.) 
 
-\vfill
-
 This seems to violate the correspondence principle. There is
 no $m$ or $h$ anywhere in the result, so we seem to have the result that, even classically,
 the marble in figure \figref{marble-no-reflection} can be reflected!
-
-\vfill
 
 The solution to this paradox is that the step in figure \figref{step-potential} was taken to
 be completely abrupt --- an idealized mathematical discontinuity. Suppose we make the
@@ -2819,7 +2809,71 @@ results in zero reflection in the limit where the width of the ramp is large
 compared to the wavelength.
 \end{eg}
 
-\enlargethispage{-\baselineskip}
+\begin{eg}{Beta decay: a push or pull on the way out the door}
+The nucleus ${}^{64}\text{Cu}$ undergoes $\beta^+$ and $\beta^-$ decay with similar probabilities
+and energies. Each of these decays releases a fixed amount of energy $Q$ due to 
+the difference in mass between the parent nucleus and the decay products.
+This energy is shared randomly between the beta and the neutrino. In experiments,
+the beta's energy is easily measured, while the neutrino flies off without interacting.
+Figure \figref{cu64-betas}
+shows the energy spectrum of the $\beta^+$ and $\beta^-$ in these decays.\footnote{Redrawn
+from Cook and Langer, 1948.} There is a relatively
+high probability for the beta and neutrino each to carry off roughly half the kinetic energy,
+the reason being identical to the kind of phase-space argument discussed in sec.~\ref{subsec:phase-space},
+p.~\pageref{subsec:phase-space}. Therefore in each case we get a bell-shaped curve stretching from
+0 up to the energy $Q$, with $Q$ being slightly different in the two cases.
+
+<% marg(10) %>
+<%
+  fig(
+    'cu64-betas',
+    %q{$\beta^+$ and $\beta^-$ spectra of ${}^{64}\text{Cu}$.}
+  )
+%>
+<% end_marg %>
+
+So we expect the two bell curves to
+look almost the same except for a slight rescaling of the horizontal
+axis. Yes --- but we also see markedly
+different behavior at low energies. At very low energies, there is almost
+no chance to see a $\beta^+$ with very low energy, but
+quite a high probability for a $\beta^-$.
+
+We could try to explain this difference in terms of the release of
+electrical energy.  The $\beta^+$ is repelled by the
+nucleus, so it gets an extra push on the way out the door.  A
+$\beta^-$ should be held back as it exits, and so should lose some
+energy. The bell curves should be shifted up
+and down in energy relative to one another, as observed.
+
+But if we try to estimate this energy shift using classical
+physics, we come out with a wildly incorrect answer. This would be
+a process in which the beta and neutrino are
+released in a pointlike event inside the nucleus. 
+The radius $r$ of the ${}^{64}\text{Cu}$ nucleus is on the order of 4 fm 
+($1\ \zu{fm}=10^{-15}\ \munit$). Therefore the  energy lost or gained by the
+$\beta^+$ or $\beta^-$ on the way out would be $U\sim kZe^2/r\sim10\
+\text{MeV}$. The actual shift is much smaller.
+
+To understand what's really going on, we need quantum mechanics. A beta in
+the observed energy range has a
+wavelength of about 2000 fm, which is hundreds of times
+greater than the size of the nucleus. Therefore the beta cannot be
+much better localized than that when it is emitted.  This means that
+we should really use something more like $r\sim 500\ \text{fm}$ (a
+quarter of a wavelength) in our calculation of the electrical energy.
+This gives $U\sim0.08\ \text{MeV}$, which is about the right order of
+magnitude compared to observation. 
+
+A byproduct of this analysis is that a $\beta^+$ is always emitted
+within the classically forbidden region, and then has to tunnel out
+through the barrier. As in example \ref{eg:alpha-tunneling}, we have
+the counterintuitive fact about quantum
+mechanics that a repulsive force can \emph{hinder} the escape of a
+particle.
+\end{eg}
+
+\pagebreak
 
 <% begin_sec("Three dimensions",4) %>
 
