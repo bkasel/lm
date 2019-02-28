@@ -734,6 +734,76 @@ size and shape cannot matter (homework problem \ref{hw:distantrsquared}).
 
 <% end_sec('field-of-continuous-charge') %>
 
+
+<% begin_sec("Surface integrals",nil,'surface-integrals') %>
+<% begin_sec("Constant integrand",nil,'surface-integrals-constant') %>
+<% end_sec('surface-integrals-constant') %>
+<% begin_sec("Flat surface, varying field",nil,'surface-integrals-flat') %>
+<% end_sec('surface-integrals-flat') %>
+<% begin_sec("Curved surface, uniform field",nil,'surface-integrals-uniform') %>
+<% end_sec('surface-integrals-uniform') %>
+<% begin_sec("The general case",nil,'surface-integrals-general') %>
+<% marg(50) %>
+<%   
+  fig(
+    'eg-line-charge-flux-through-cylinder',
+    %q{The flux through a cylindrical circuit due to a line of charge.}
+  )
+%>
+<% end_marg %>
+In the most general case, the surface is not flat, and the field is nonuniform.
+As an example, we take the setup shown in figure \subfigref{eg-line-charge-flux-through-cylinder}{1}.
+There is a uniform, infinite line of charge with charge density $\lambda$, perpendicular to the
+page. As our Gaussian surface, we take a cylinder of radius $a$ and finite height $H$,
+whose axis is parallel to the line
+of charge and lies at a distance $\ell$ from it. We expect the flux to be zero, since the charge
+is outside the surface.
+
+Figure \subfigref{eg-line-charge-flux-through-cylinder}{2} shows the setup for directly calculating
+this flux. A certain point on the surface lies at a distance $r$ from the line of charge, and
+the electric field at this point has magnitude $E=2k\lambda/r$, and the direction shown by the
+arrow. We use cylindrical coordinates to describe the point: $z$ in the direction perpendicular to
+the page, and an angle $\theta$. For infinitesimal changes $\der z$ and $\der\theta$ in the coordinates,
+the area is $\der A=(\text{arc length})\der z=a\der\theta\der z$. We write $\varphi$ for
+the angle between the area vector and the field. Then the flux is given by
+\begin{align*}
+  \Phi &= \int \vc{E}\cdot\der\vc{A} \\
+       &= \int E\der A\cos\varphi \\
+       &= 2ka\lambda \int_0^H \int_0^{2\pi} \frac{\cos\varphi}{r} \der\theta\der z \\
+       &= 2kaH\lambda \int_0^{2\pi} \frac{\cos\varphi}{r} \der\theta . \\
+\end{align*}
+The law of cosines can be applied in two different ways here, as
+\begin{align*}
+  \ell^2 &=a^2+r^2-2ar\cos\varphi \qquad \text{and} \\
+  r^2 &= \ell^2+a^2+2a\ell\cos\theta .
+\end{align*}
+Since we expect to prove $\Phi$ is zero, let's drop the constant factors in front.
+Using the first of these to eliminate $\cos\varphi$, we have for our integral
+\begin{align*}
+  \Phi &\propto \int_0^{2\pi} \frac{a^2+r^2-\ell^2}{r^2} \der\theta \\
+       &=  \int_0^{2\pi} \left(1-\frac{\ell^2-a^2}{r^2}\right) \der\theta .
+\end{align*}
+Now using the second law of cosines equation to eliminate $r^2$, we have
+\begin{equation*}
+  \Phi \propto \int_0^{2\pi} \left(1-\frac{\ell^2-a^2}{\ell^2+a^2+2a\ell\cos\theta}\right) \der\theta.
+\end{equation*}
+The writing can be simplified by defining the dimensionless constant $c=a/\ell$, with $c<1$ because
+the cylinder doesn't contain the charge. Then
+\begin{equation*}
+  \Phi \propto \int_0^{2\pi} \left(1-\frac{1-c^2}{1+c^2+2c\cos\theta}\right) \der\theta.
+\end{equation*}
+To simplify this a little further, we let $\beta=2c/(1+c^2)$, which gives $\beta<1$. We then have
+\begin{equation*}
+  \Phi \propto 2\pi - \frac{1-c^2}{1+c^2}\int_0^{2\pi} \frac{1}{1+\beta\cos\theta} \der\theta.
+\end{equation*}
+I didn't know how to do this integral, so I resorted to computer software, which verified that the result
+was indeed just right in order to cancel out the $2\pi$ term.
+Later I learned that integrals of this form can be approached systematically by using a set of
+rules called Bioche's rules. There is a Wikipedia article on the topic, including a sketch of how
+to apply the rules to this example.
+<% end_sec('surface-integrals-general') %>
+<% end_sec('surface-integrals') %>
+
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 applications of 3-d integration:
