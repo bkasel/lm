@@ -52,6 +52,7 @@
 <% answer("explainlens") %>
 <% answer("goggles") %>
 <% answer("funkylenses") %>
+<% answer("real-image-conditions") %>
 <% answer("microscopeblue") %>
 <% answer("compare-diffraction-same-light") %>
 <% answer("star") %>

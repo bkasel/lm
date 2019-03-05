@@ -692,7 +692,7 @@ lm,31,18,eyeglasses-no-mag,0
 lm,31,19,back-silvered,0
 lm,31,20,constant-thickness,1
 lm,31,21,spider-focal-length,0
-lm,31,22,real-image-conditions,0
+lm,31,22,real-image-conditions,1
 lm,32,1,microscopeblue,1
 lm,32,2,matchpatterns,0
 lm,32,3,grating,0
