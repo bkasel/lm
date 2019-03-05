@@ -692,6 +692,7 @@ m4_define(__hw_lm_31_eyeglasses-no-mag,18)m4_dnl
 m4_define(__hw_lm_31_back-silvered,19)m4_dnl
 m4_define(__hw_lm_31_constant-thickness,20)m4_dnl
 m4_define(__hw_lm_31_spider-focal-length,21)m4_dnl
+m4_define(__hw_lm_31_real-image-conditions,22)m4_dnl
 m4_define(__hw_lm_32_microscopeblue,1)m4_dnl
 m4_define(__hw_lm_32_matchpatterns,2)m4_dnl
 m4_define(__hw_lm_32_grating,3)m4_dnl
