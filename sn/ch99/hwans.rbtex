@@ -283,6 +283,7 @@
 <% answer("compare-double-slits") %>
 <% answer("unphysical-diffraction") %>
 <% answer("best-precision-n") %>
+<% answer("real-image-conditions") %>
 
 <% answer("square-wavefunction") %>
 <% answer("bogus-laplacian") %>
