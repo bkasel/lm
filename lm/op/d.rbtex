@@ -180,6 +180,7 @@ values of $n$ and $t$ that would recover the case without any glass.
 
 <% begin_hw('spider-focal-length') %>__incl(hw/spider-focal-length)<% end_hw() %>
 
+<% begin_hw('real-image-conditions') %>__incl(hw/real-image-conditions)<% end_hw() %>
 
 <% end_hw_sec %>
 <% begin_ex("How strong are your glasses?") %>

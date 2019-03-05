@@ -1,4 +1,4 @@
-<% marg(m4_ifelse(m4_eval(__sn || __fac),1,[:300:],[:-6:])) %>
+<% marg(m4_ifelse(__sn,1,[:300:],m4_ifelse(__fac,1,[:300:],[:-6:]))) %>
 <%
   fig(
     'electrons-limiting-speed',

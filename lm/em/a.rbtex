@@ -499,7 +499,7 @@ end
 <%
   fig(
     'ampere',
-    %q{Andr\'{e} Marie Amp\`{e}re (1775-1836).}
+    %q{Andr\'{e} Marie Ampère (1775-1836).}
   )
 %>
 <% end_marg %>

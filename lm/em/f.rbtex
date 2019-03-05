@@ -803,7 +803,7 @@ Er	& 167.3	&Mn	& 54.9	&Sb 	& 121.8 	& & \\
 __incl(text/nucleus)
 __incl(text/biological_effects_of_radiation)
 __incl(text/nucleosynthesis)
-<% end_sec('nucleus') %>
+marg(m4_ifelse(__lm,1,[::],[:<% end_sec('nucleus') %>:]))
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 

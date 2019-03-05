@@ -370,6 +370,10 @@ other type of image?
 
 <% begin_hw('best-precision-n') %>__incl(hw/best-precision-n)<% end_hw() %>
 
+\pagebreak
+
+<% begin_hw('real-image-conditions') %>__incl(hw/real-image-conditions)<% end_hw() %>
+
 <% end_hw_sec %>
 
  % ==================================================================== 
