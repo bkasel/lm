@@ -1110,7 +1110,24 @@ is its preferred orientation because the charge close to the wire is attracted t
 wire, while the charge far from the wire is repelled by it.
 \end{eg}
 
-\startdq
+\startdqs
+
+\begin{dq}
+In the situation shown in figure \figref{magrelativity}, is there a frame in which
+the force $\vc{F}$ is a purely electric one, $\vc{F}_E$? Pure $\vc{F}_B$?\\
+Is there a frame in which the electromagnetic field is a pure $\vc{E}$? Pure $\vc{B}$?\\
+Is the charge density $\rho$ zero in both frames? One? Neither?\\
+What about the current $I$ (or charge density $\vc{j}$)?
+\end{dq}
+
+\begin{dq}
+For the situation shown in figure \figref{magrelativity}, draw a spacetime graph
+in the style demonstrated in sec.~\ref{sec:x-t-distortion}, p.~\pageref{sec:x-t-distortion},
+showing the positive charges as black world-lines and the negative as red, in the
+wire's rest frame. Use a ruler, and draw the spacing fairly accurately. Interpret this
+in the frame of the lone charge.
+\end{dq}
+
 \begin{dq}
 Resolve the following paradox concerning the argument given in this section.
 We would expect that at any given time,
