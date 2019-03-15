@@ -1011,14 +1011,12 @@ the case of overdamping.
 \notetext{fourier}{Fourier analysis}
 \notesummary{Any linear circuit element's behavior can be fully characterized by its behavior on sine waves.}
 
-\newcommand{\eqnimage}[1]{\raisebox{-.2\height}{\includegraphics[resolution=300]{../share/quantum/figs/#1}}}
-% duplicated in SN 14
-
 The idea is that according to a set of
 related mathematical results called Fourier's theorem and the Fourier inversion theorem, we expect to
 be able to write any sufficiently well-behaved function as a sum of sine waves. For periodic functions,
 the sum is in general an infinite series. For example, a square wave can be written as
-$\eqnimage{eqn-wave1}+\frac{1}{3}\eqnimage{eqn-wave3}+\frac{1}{5}\eqnimage{eqn-wave5}+\ldots$
+$<% eqn_image("eqn-wave1","../share/quantum/figs") %>
+   +\frac{1}{3}<% eqn_image("eqn-wave3","../share/quantum/figs") %>+\frac{1}{5}<% eqn_image("eqn-wave5","../share/quantum/figs") %>+\ldots$
 For nonperiodic functions, the sum will usually have to be an integral, i.e., a continuous sum.
 Although the mathematical theorems require the functions to have certain properties, physicists and
 engineers normally don't worry about them, or if necessary we generalize the notion of a function

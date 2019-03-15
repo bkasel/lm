@@ -550,6 +550,33 @@ def raw_fig(name)
   fig(name,'',{'raw'=>true})
 end
 
+def eqn_image(name,hardcoded_dir=nil)
+  # Embed an image inside an equation.
+  # Used in SN 14 and FAC ac/b.
+  dir = hardcoded_dir
+  if hardcoded_dir.nil? then
+    dir = find_directory_where_figure_is(name)
+    if dir.nil? then fatal_error("figure #{name} not found in #{dir()}/figs or #{shared_figs()}, ch=#{$ch}") end
+  end
+  file = "#{dir}/#{name}"
+  file_with_extension = file+".png"
+  # used to have \includegraphics[resolution=300], but that now causes an error:
+  #       https://tex.stackexchange.com/questions/301494/how-to-use-includegraphics
+  resolution = `identify -units PixelsPerInch -format "%x" #{file_with_extension}`.to_i
+  # ... generates an exception if this fails, e.g., if imagemagick isn't installed
+  if (resolution.nil? || resolution<299) then
+    do_system_command("mogrify -units PixelsPerInch -density 300 #{file_with_extension}")
+  end
+  print "\\raisebox{-.2\\height}{\\includegraphics{#{file}}}"
+end
+
+def do_system_command(c)
+  result = system(c)
+  if !($?.success?) then
+    die('do_system_command',"failed on command #{c}, error is #{$?}")
+  end
+end
+
 def fig(name,caption=nil,options={})
   default_options = {
     'anonymous'=>'default',# true means figure has no figure number, but still gets labeled (which is, e.g., 

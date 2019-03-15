@@ -972,8 +972,10 @@ part of the mythical dungeons-and-dragons cosmology of Aristotelian physics. Qua
 a break from Newton as Newton was from Aristotle, and similar care is required in redefining what concepts
 are \emph{observables} --- meaningful things to talk about measuring.
 
-\newcommand{\eqnimage}[1]{\raisebox{-.2\height}{\includegraphics[resolution=300]{../share/quantum/figs/#1}}}
-% duplicated in FAC
+\newcommand{\eqnimage}[1]{\raisebox{-.2\height}{\includegraphics{../share/quantum/figs/#1}}}
+% duplicated in FAC, ac/b.rbtex
+% used to have \includegraphics[resolution=300], but that now causes an error:
+%       https://tex.stackexchange.com/questions/301494/how-to-use-includegraphics
 
 Classically, we describe the state of the system as a point in phase
 space (sec.~\ref{subsec:phase-space}, p.~\pageref{subsec:phase-space}) --- which is just a fancy way of
@@ -982,11 +984,11 @@ and an observable is defined as a function that takes that
 point as an input and produces a real number as an output. (By the way, the word ``phase'' in ``phase space''
 doesn't refer directly to the phase of a wave, which we'll also be discussing below.)
 For example, kinetic energy is a classical observable, and 
-$K(\eqnimage{eqn-tennis-ball})=0$, where the picture represents
+$K(<% eqn_image("eqn-tennis-ball") %>)=0$, where the picture represents
 a tennis ball at rest. For a moving tennis ball with one unit of energy, 
-$K(\eqnimage{eqn-tennis-ball-moving})=1$.
+$K(<% eqn_image("eqn-tennis-ball-moving") %>)=1$.
 For a vibrating violin string, we could have 
-$U(\eqnimage{eqn-wave2-small-amp})=1$, and $U(\eqnimage{eqn-wave2})=4$ (where doubling the amplitude gives
+$U(<% eqn_image("eqn-wave2-small-amp") %>)=1$, and $U(<% eqn_image("eqn-wave2") %>)=4$ (where doubling the amplitude gives
 four times the energy).
 
 Quantum-mechanically, the Heisenberg uncertainty principle tells us that we can't
@@ -1005,9 +1007,9 @@ result of the measurement. We could decree that the input wavefunction is just
 required to be have the standard normalization, but there's no obvious
 way to define a standardization of phase. And suppose we have a
 particle in a one-dimensional box, with the two lowest energies being
-$E(\eqnimage{eqn-wave1})=1$ and $E(\eqnimage{eqn-wave2})=4$.
+$E(<% eqn_image("eqn-wave1") %>)=1$ and $E(<% eqn_image("eqn-wave2") %>)=4$.
 Then what should we define
-for the superposition $E(\eqnimage{eqn-wave1}+\eqnimage{eqn-wave2})$?
+for the superposition $E(<% eqn_image("eqn-wave1") %>+<% eqn_image("eqn-wave2") %>)$?
 We could define it to be the average, 2.5, but
 that isn't even a possible value of the measurement; in reality, the
 result of the measurement would be either 1 or 4, with equal
@@ -1128,15 +1130,15 @@ Consider the one-dimensional particle in a box, and restrict our attention to
 the two lowest-energy states and their superpositions.
 Define an operator $\mathcal{O}$ by the rule
 \begin{align*}
-  \mathcal{O}(\eqnimage{eqn-wave1}) &= \eqnimage{eqn-wave2} \\
-  \mathcal{O}(\eqnimage{eqn-wave2}) &= -(\eqnimage{eqn-wave1}) .
+  \mathcal{O}(<% eqn_image("eqn-wave1") %>) &= <% eqn_image("eqn-wave2") %> \\
+  \mathcal{O}(<% eqn_image("eqn-wave2") %>) &= -(<% eqn_image("eqn-wave1") %>) .
 \end{align*}
-Since $\mathcal{O}$ is linear, defining its action on $\eqnimage{eqn-wave1}$ and
-$\eqnimage{eqn-wave2}$ suffices to define its action on the superpositions of these
+Since $\mathcal{O}$ is linear, defining its action on $<% eqn_image("eqn-wave1") %>$ and
+$<% eqn_image("eqn-wave2") %>$ suffices to define its action on the superpositions of these
 states as well.
 This operator
 has eigenvalues, one of which is $i$, corresponding to the state
-$\eqnimage{eqn-wave1}-i\eqnimage{eqn-wave2}$.
+$<% eqn_image("eqn-wave1") %>-i<% eqn_image("eqn-wave2") %>$.
 (It also has a second eigenvalue, which is imaginary as well.)
 Because this operator doesn't have real eigenvalues, it is not a valid
 observable.
@@ -1400,7 +1402,7 @@ a discrete sum.
 Two wavefunctions have a zero inner product if and only if they are completely distinguishable from each other
 by the measurement of some observable. By analogy with vectors in Euclidean space, we say that
 the two wavefunctions are orthogonal.\label{orthogonal-wavefunctions}
-For example, $\langle \eqnimage{eqn-wave1} | \eqnimage{eqn-wave2} \rangle=0$, as can be verified
+For example, $\langle <% eqn_image("eqn-wave1") %> | <% eqn_image("eqn-wave2") %> \rangle=0$, as can be verified
 from the integral $\int_0^\pi \sin x \sin 2x \der x=0$. These states are also distinguishable by measuring
 either their momentum or their energy.
 
@@ -1555,20 +1557,20 @@ functions like $e^x$.)
 The average family lives down the street from me. Their family income in 2014 was \$72,641,
 and they have 2.5 kids. This joke depends on the fact that you can't superpose families to
 make a single family --- but we \emph{can} do this for wavefunctions. Suppose that the
-particle-in-a-box wavefunction $\eqnimage{eqn-wave1}$ has a definite energy of 1 unit,
-$\mathcal{O}_E\eqnimage{eqn-wave1}=1\eqnimage{eqn-wave1}$. This says that $\eqnimage{eqn-wave1}$
+particle-in-a-box wavefunction $<% eqn_image("eqn-wave1") %>$ has a definite energy of 1 unit,
+$\mathcal{O}_E<% eqn_image("eqn-wave1") %>=1<% eqn_image("eqn-wave1") %>$. This says that $<% eqn_image("eqn-wave1") %>$
 is a state of definite energy 1, so that when we act on it with the energy operator
 $\mathcal{O}_E$, the result is just to multiply the wave by 1 (the eigenvalue).
 
 If this is true, then shortening the wavelength by a factor of
 2 means increasing the momentum by a factor of 2, and increasing the energy by a factor
-of 4. Therefore the wavefunction $\eqnimage{eqn-wave2}$ has 4 units of energy
-$\mathcal{O}_E\eqnimage{eqn-wave2}=4\eqnimage{eqn-wave2}$.
+of 4. Therefore the wavefunction $<% eqn_image("eqn-wave2") %>$ has 4 units of energy
+$\mathcal{O}_E<% eqn_image("eqn-wave2") %>=4<% eqn_image("eqn-wave2") %>$.
 
 Now there is nothing wrong with mixing these together to get a state 
-$\Psi=c\eqnimage{eqn-wave1}+c'\eqnimage{eqn-wave2}$. If both $c$ and $c'$ are nonzero,
+$\Psi=c<% eqn_image("eqn-wave1") %>+c'<% eqn_image("eqn-wave2") %>$. If both $c$ and $c'$ are nonzero,
 then we expect to get a state with properties in between those of
-$\eqnimage{eqn-wave1}$ and $\eqnimage{eqn-wave2}$.  If we measure the energy
+$<% eqn_image("eqn-wave1") %>$ and $<% eqn_image("eqn-wave2") %>$.  If we measure the energy
 of such a state, then our wavefunction becomes entangled with that of the
 particle, and we look like this:
 \begin{equation*}
@@ -1584,9 +1586,9 @@ It's a good exercise to work this out for yourself
 (problem \ref{hw:two-point-five-kids}, p.~\pageref{hw:two-point-five-kids}).\label{two-point-five-kids}
 The key point is that
 $\Psi$ can be expressed as a superposition of states of definite energy
-$\Psi=c\eqnimage{eqn-wave1}+c'\eqnimage{eqn-wave2}$, and when
+$\Psi=c<% eqn_image("eqn-wave1") %>+c'<% eqn_image("eqn-wave2") %>$, and when
 the operator $\mathcal{O}_E$ works on $\Psi$, it gives
-$\mathcal{O}_E\Psi=c\eqnimage{eqn-wave1}+4c'\eqnimage{eqn-wave2}$. (And remember
+$\mathcal{O}_E\Psi=c<% eqn_image("eqn-wave1") %>+4c'<% eqn_image("eqn-wave2") %>$. (And remember
 that by normalization, $|c|=|c'|=1/\sqrt{2}$.)
 
 This is a general rule for calculating averages: for a state $\Psi$, the
@@ -1631,7 +1633,7 @@ suppose we throw a particle in the box, in such a way that its
 position is equally likely to be anywhere in the box, i.e., its wavefunction is supposed to
 be constant throughout the box. Ignoring normalization, this constant wavefunction can be expressed as an infinite
 series in terms of the states of definite energy as
-$\eqnimage{eqn-wave1}+\frac{1}{3}\eqnimage{eqn-wave3}+\frac{1}{5}\eqnimage{eqn-wave5}+\ldots$
+$<% eqn_image("eqn-wave1") %>+\frac{1}{3}<% eqn_image("eqn-wave3") %>+\frac{1}{5}<% eqn_image("eqn-wave5") %>+\ldots$
 This kind of representation of a function as an infinite sum of sine waves is called a Fourier series.}
 
 \begin{important}[Completeness]\label{qm-completeness-stated}
