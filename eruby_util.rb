@@ -204,7 +204,7 @@ end
 
 # argument can be 0, 1, true, or false; don't do, e.g., !__sn, because in ruby !0 is false
 def begin_if(condition)
-  if condition.class() == Fixnum then
+  if condition.class() == 1.class then
     if condition==1 then condition=true else condition=false end
   end
   if condition.class()!=TrueClass && condition.class()!=FalseClass then

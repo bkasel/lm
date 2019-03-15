@@ -3,7 +3,7 @@
 use strict;
 use Cwd;
 use IO::File;
-use POSIX qw(tmpnam);
+use File::Temp qw(tempfile);
 
 use BookData;
 use XML::Parser;
@@ -232,7 +232,7 @@ foreach (<$d/*.rbtex>) {
     if ($standalone==1) {$ext = '.html'}
     if (($config->{'html_file_extension'})=~/\w/) { $ext=$config->{'html_file_extension'} }
     $html = $html . $ext;
-    if ($no_write) {$html = tmpnam()}
+    if ($no_write) {$html = ((File::Temp::tempfile())[1])}
     print STDERR "writing $html\n";
     my $dir = "$html_dir/ch$ch";
     if (!-d $dir && !$wiki) {

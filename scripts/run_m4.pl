@@ -3,7 +3,6 @@
 use strict;
 use Cwd;
 use IO::File;
-use POSIX qw(tmpnam);
 
 use XML::Parser;
 use JSON;
