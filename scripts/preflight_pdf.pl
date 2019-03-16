@@ -44,8 +44,10 @@ sub check_fonts {
     $sub and push @errors,"font $font is subsetted";
   }
   if (@errors>0) {
-    return "errors in fonts:\n".join("\n",@errors)
-           ."\nSave a copy of fullembed.map and then do\n../scripts/create_fullembed_file <mybook.log >../fullembed.map\nand merge.";
+    my $result = "errors in fonts:\n".join("\n",@errors)."\n";
+    $result = $result . "If this font is OK to use:\n  Save a copy of fullembed.map and then do\n  ../scripts/create_fullembed_file <mybook.log >../fullembed.map\n  and merge.\n";
+    $result = $result . "If this font is not OK to use, then use find_page_where_font_is_used.rb to locate the page where it occurs.\n";
+    return $result;
   }
   return undef;
 }
