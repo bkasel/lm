@@ -142,10 +142,9 @@ giving
 \begin{equation*}
   a^x \approx 1+x\ln a.
 \end{equation*}
-We use this approximation on p.~\pageref{rate-of-decay-approx} in connection with radioactive decay.
 
 Finally, since $e^x \approx 1+x$, we also have
 \begin{equation*}
-  \ln(1+x) \approx x,
+  \ln(1+x) \approx x.
 \end{equation*}
-which is used in problem \ref{hw:qproof} on p.~\pageref{hw:qproof}, relating to damped oscillations.
+
