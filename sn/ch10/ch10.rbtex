@@ -2858,17 +2858,10 @@ What happens when the physicist at the bottom in figure \figref{inductor-voltage
 getting tired, and decreases the current?
 \end{dq}
 
-\vfill
-
- %  
-
- % ------------------------------------------ 
-
 <% end_sec() %>
 
 <% begin_sec("Decay") %>
 
- % 
 Up until now I've soft-pedaled the fact that by changing the
 characteristics of an oscillator, it is possible to produce
 non-oscillatory behavior. For example, imagine taking the
@@ -2884,6 +2877,15 @@ friction at low velocities, but it is quite realistic in the
 case of an electrical circuit, for which the voltage drop
 across the resistor really does approach zero as the
 current approaches zero.
+
+<% marg(30) %>
+<%
+  fig(
+    'rc',
+    %q{An RC circuit.}
+  )
+%>
+<% end_marg %>
 
 We do not even have to reduce $k$ to exactly zero in order
 to get non-oscillatory behavior. There is actually a finite,
@@ -2908,15 +2910,6 @@ voltage across a capacitor:
                 V_R         &=    IR  \\
                 V_C         &=    q/C  
 \end{align*}
-
-<% marg(30) %>
-<%
-  fig(
-    'rc',
-    %q{An RC circuit.}
-  )
-%>
-<% end_marg %>
 
 The loop rule tells us
 \begin{equation*}
@@ -3043,8 +3036,6 @@ The LC circuit then oscillates at its resonant frequency (typically about 1 MHz)
 rapidly radiated away by the antenna, A, which sends out radio waves (chapter \ref{ch:em}).
 \end{eg}
 
-\pagebreak
-
 \startdqs
 
 \begin{dq}
@@ -3062,6 +3053,8 @@ $RC$ time constant?
 <% end_sec() %>
 
 <% end_sec() %>
+
+\pagebreak
 
 <% begin_sec("Review of complex numbers",nil,'complex-numbers') %>
 \index{complex numbers}
@@ -3143,6 +3136,19 @@ ordering.
 \end{align*}
 \end{eg}
 
+Example \ref{eg:sqrt-i} showed one method of multiplying complex numbers.
+However, there is another nice interpretation of complex multiplication.
+We define the argument of a complex number as its angle in the complex plane, measured
+counterclockwise from the positive real axis.
+Multiplying two complex numbers then corresponds to multiplying their magnitudes,
+and adding their arguments.
+
+<% self_check('complex-square-root',<<-'SELF_CHECK'
+Using this interpretation of multiplication, how could you find the
+square roots of a complex number?
+  SELF_CHECK
+  ) %>
+
 <% marg(50) %>
 <%
   fig(
@@ -3164,18 +3170,6 @@ ordering.
 %>
 <% end_marg %>
 
-Example \ref{eg:sqrt-i} showed one method of multiplying complex numbers.
-However, there is another nice interpretation of complex multiplication.
-We define the argument of a complex number as its angle in the complex plane, measured
-counterclockwise from the positive real axis.
-Multiplying two complex numbers then corresponds to multiplying their magnitudes,
-and adding their arguments.
-
-<% self_check('complex-square-root',<<-'SELF_CHECK'
-Using this interpretation of multiplication, how could you find the
-square roots of a complex number?
-  SELF_CHECK
-  ) %>
 
 \begin{eg}{An identity} 
 The magnitude $|z|$ of a complex number $z$ obeys
@@ -3271,18 +3265,6 @@ a result known as Euler's formula.\index{Euler's formula}
 The geometrical interpretation in the complex
 plane is shown in figure \figref{euler}.
 
-Although the result may seem like something out of a freak show at first,
-applying the definition of the exponential function
-makes it clear how natural it is:
-\begin{align*}
-  e^x = \lim_{n\rightarrow \infty} \left(1+\frac{x}{n}\right)^n\eqquad.
-\end{align*}
-When $x=i\phi$ is imaginary, the quantity $(1+i\phi/n)$ represents a number
-lying just above 1 in the complex plane. For large $n$, $(1+i\phi/n)$
-becomes very close to the unit circle, and its argument is the small
-angle $\phi/n$. Raising this number to the nth power multiplies its
-argument by $n$, giving a number with an argument of $\phi$.
-
 <% marg(100) %>
 <%
   fig(
@@ -3300,6 +3282,18 @@ argument by $n$, giving a number with an argument of $\phi$.
   )
 %>
 <% end_marg %>
+
+Although the result may seem like something out of a freak show at first,
+applying the definition of the exponential function
+makes it clear how natural it is:
+\begin{align*}
+  e^x = \lim_{n\rightarrow \infty} \left(1+\frac{x}{n}\right)^n\eqquad.
+\end{align*}
+When $x=i\phi$ is imaginary, the quantity $(1+i\phi/n)$ represents a number
+lying just above 1 in the complex plane. For large $n$, $(1+i\phi/n)$
+becomes very close to the unit circle, and its argument is the small
+angle $\phi/n$. Raising this number to the nth power multiplies its
+argument by $n$, giving a number with an argument of $\phi$.
 
 Euler's formula is used frequently in physics and engineering.
 

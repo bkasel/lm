@@ -2004,6 +2004,20 @@ without crushing the rails, or damaging bridges.
 <% begin_sec("Fluid friction") %>
 \index{friction!fluid}
 
+<% marg(-50) %>
+<%
+  fig(
+    'hummer-vs-prius',
+    %q{%
+      The wheelbases of the Hummer H3 and the Toyota Prius are surprisingly similar,
+      differing by only 10\%. The main difference in shape is that the Hummer is much taller and wider.
+      It presents a much greater cross-sectional area to the wind, and this is the main
+      reason that it uses about 2.5 times more gas on the freeway.
+    }
+  )
+%>
+<% end_marg %>
+
 Try to drive a nail into a waterfall and you will be
 confronted with the main difference between solid friction
 and fluid friction. Fluid friction is purely kinetic; there
@@ -2022,19 +2036,6 @@ typically scales up with the cross-sectional area of the
 object, which is one of the main reasons that an SUV gets
 worse mileage on the freeway than a compact car.
 
-<% marg(80) %>
-<%
-  fig(
-    'hummer-vs-prius',
-    %q{%
-      The wheelbases of the Hummer H3 and the Toyota Prius are surprisingly similar,
-      differing by only 10\%. The main difference in shape is that the Hummer is much taller and wider.
-      It presents a much greater cross-sectional area to the wind, and this is the main
-      reason that it uses about 2.5 times more gas on the freeway.
-    }
-  )
-%>
-<% end_marg %>
 
 \startdq
 
