@@ -92,7 +92,7 @@ Photo credits to NEI refer to photos from the National Eye Institute, part of th
 <% photo_credit("topo-map","Topographical maps","Flat maps by USGS, public domain; perspective map by Wikipedia user Kbh3rd, CC-BY-SA licensed") %>
 <% if false then photo_credit("maxwell-and-wife","Maxwell and his wife","public domain contemporary photograph") end %>
 <% photo_credit("hertz","Hertz","Public domain contemporary photograph") %>
-<% photo_credit("faraday-portrait","Faraday","Painting by Thomas Phillips, 1842") %>
+<% photo_credit("faraday","Faraday","Painting by Thomas Phillips, 1842") %>
 <% photo_credit("capacitors-photo","Capacitors","Wikipedia user de:Benutzer:Honina, CC-BY-SA licensed") %>
 <% photo_credit("inductors-photo","Inductors","Wikipedia user de:Benutzer:Honina, CC-BY-SA licensed") %>
 <% photo_credit("crepuscular-rays","Rays of sunlight","Wikipedia user PiccoloNamek, CC-BY-SA") %>
