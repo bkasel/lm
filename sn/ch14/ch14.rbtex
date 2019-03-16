@@ -145,7 +145,7 @@ throwing away the emerging parts with $\ell_x=-1$ and $+1$ to make a beam of the
 Now we let this beam pass through a second spectrometer that is identical
 but oriented along the $z$ axis. Can we produce a beam in which
 every molecule has both $\ell_x=0$ and $\ell_z=+1$? 
-Hint: See the example in fig.~\figref{completeness-ylm}, p.~\pageref{completeness-ylm}.
+Hint: See the example in fig.~\figref{completeness-ylm}, p.~\pageref{fig:completeness-ylm}.
 \end{dq}
 
 <% end_sec() %>
@@ -1672,18 +1672,18 @@ be equally permissible to talk about left and right. Another good example
 is the discussion of the double degeneracy of the quantum moat on p.~\pageref{subsubsec:degeneracy},
 where we were free to talk about a basis consisting of either two standing waves or two traveling waves.
 
-As an example of the completeness principle, we have seen in example
-\ref{eg:completeness-ylm} on p.~\pageref{eg:completeness-ylm} that for
-a rotor, the state with $\ell=1$ and $\ell_x=0$ can be written as a
-sum of the states with $\ell_z=-1$ and $\ell_z=1$. In the language of
-the completeness postulate, we can express this as follows. Let our
-system be the set of possible states of a rotor. The observables $L$
-and $L_z$ are compatible, and they turn out (although we will not
-prove it here) to be a complete set of observables for this system.
-The completeness postulate is satisfied in this example because, as
-shown in example \ref{eg:completeness-ylm},
-p.~\pageref{eg:completeness-ylm}, the state with $\ell_x=0$ can be
-expressed as $|\ell_z=-1\rangle/\sqrt{2}+|\ell_z=1\rangle/\sqrt{2}$.
+As an example of the completeness principle, we have seen in the
+example in fig.~\figref{completeness-ylm},
+p.~\pageref{fig:completeness-ylm}, that for a rotor, the state with
+$\ell=1$ and $\ell_x=0$ can be written as a sum of the states with
+$\ell_z=-1$ and $\ell_z=1$. In the language of the completeness
+postulate, we can express this as follows. Let our system be the set
+of possible states of a rotor. The observables $L$ and $L_z$ are
+compatible, and they turn out (although we will not prove it here) to
+be a complete set of observables for this system.  The completeness
+postulate is satisfied in this example because the state
+with $\ell_x=0$ can be expressed as
+$|\ell_z=-1\rangle/\sqrt{2}+|\ell_z=1\rangle/\sqrt{2}$.
 
 <% marg(0) %>
 <%
