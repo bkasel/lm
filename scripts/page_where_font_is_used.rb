@@ -1,7 +1,7 @@
 #!/usr/bin/ruby
 
 # usage:
-#  find_page_where_font_is_used.rb file.pdf Nimbus
+#  page_where_font_is_used.rb file.pdf Nimbus
 # Finds the first page in file.pdf where a font with a name containing Nimbus is used.
 # Font names are matched in a case-insensitive way.
 # Requires pdffonts, qpdf.
