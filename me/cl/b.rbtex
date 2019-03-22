@@ -311,7 +311,21 @@ does it hit the ground?
 
 <% begin_hw('atwood-energy') %>__incl(hw/atwood-energy)<% end_hw() %>
 
+% Automatic positioning fails, I don't understand why.
+<% marg(-80) %>
+<%
+  fig(
+    'hw-rope-stretch',
+    %q{Problem \ref{hw:rope-stretch}.}
+  )
+%>
+<% end_marg %>
+
 <% begin_hw('norton-dome',2) %>__incl(hw/norton-dome)<% end_hw() %>
+
+\enlargethispage{2\baselineskip}
+
+<% begin_hw('rope-stretch') %>__incl(hw/rope-stretch)<% end_hw() %>
 
 <% end_hw_sec %>
 

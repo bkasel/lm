@@ -6175,6 +6175,19 @@ of energy. Solve the same problem using Newton's laws.
 
 <% begin_hw('g-field-of-curved-mass-filament',2) %>__incl(hw/g-field-of-curved-mass-filament)<% end_hw() %>
 
+\pagebreak
+
+<% marg() %>
+<%
+  fig(
+    'hw-rope-stretch',
+    %q{Problem \ref{hw:rope-stretch}.}
+  )
+%>
+<% end_marg %>
+
+<% begin_hw('rope-stretch') %>__incl(hw/rope-stretch)<% end_hw() %>
+
 <% end_hw_sec %>
 
  % ==================================================================== 

@@ -18,6 +18,7 @@
 <% if false then photo_credit("iss","International Space Station","NASA") end %>
 <% if false then photo_credit("space-ship-one","Space Ship One","courtesy of Scaled Composites LLC") end %>
 \textbf{Contents} See photo credits below, referring to the places where the images appear in the main text.
+<% photo_credit("hw-rope-stretch","Rock climber","Joseff Thomas, CC-BY") %> % https://www.flickr.com/photos/josefft/19783204388
 <% photo_credit("can-rolling-with-axis","Wooden board","Achim Raschka, CC-BY-SA") %> % https://commons.wikimedia.org/wiki/File:Wood_Pseudotsuga_taxifolia.jpg
 <% photo_credit("can-rolling-with-axis","Can","Wikimedia Commons user Sun Ladder, CC-BY-SA") %> % https://commons.wikimedia.org/wiki/File:Empty_tin_can2009-01-19.jpg
 <% photo_credit("man-on-bike-flipping","Cyclist","Unknown artist, 1868") %> % https://en.wikipedia.org/wiki/File:Michauxjun.jpg

@@ -66,9 +66,19 @@ __incl(text/energy_zoo_summary)
     {'suffix'=>'2'}
   )
 %> 
+\spacebetweenfigs
+<%
+  fig(
+    'hw-rope-stretch',
+    %q{Problem \ref{hw:rope-stretch}.}
+  )
+%>
 <% end_marg %>
 
 <% begin_hw('atwood-energy') %>__incl(hw/atwood-energy)<% end_hw() %>
+
+
+<% begin_hw('rope-stretch') %>__incl(hw/rope-stretch)<% end_hw() %>
 
 <% end_hw_sec %>
 

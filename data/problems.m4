@@ -395,6 +395,7 @@ m4_define(__hw_lm_12_sweat,14)m4_dnl
 m4_define(__hw_lm_12_throw-down-and-up,15)m4_dnl
 m4_define(__hw_lm_12_hoop,16)m4_dnl
 m4_define(__hw_lm_12_atwood-energy,17)m4_dnl
+m4_define(__hw_lm_12_rope-stretch,18)m4_dnl
 m4_define(__hw_lm_13_stoppingdistances,1)m4_dnl
 m4_define(__hw_lm_13_posnegwork,2)m4_dnl
 m4_define(__hw_lm_13_heliumescape,3)m4_dnl
@@ -1057,6 +1058,7 @@ m4_define(__hw_me_12_freeneutron,18)m4_dnl
 m4_define(__hw_me_12_jack-on-hill,19)m4_dnl
 m4_define(__hw_me_12_atwood-energy,20)m4_dnl
 m4_define(__hw_me_12_norton-dome,21)m4_dnl
+m4_define(__hw_me_12_rope-stretch,22)m4_dnl
 m4_define(__hw_me_13_stoppingdistances,1)m4_dnl
 m4_define(__hw_me_13_posnegwork,2)m4_dnl
 m4_define(__hw_me_13_workreverseaxis,3)m4_dnl
@@ -2071,6 +2073,7 @@ m4_define(__hw_sn_3_iss-apparent-gravity,87)m4_dnl
 m4_define(__hw_sn_3_g-field-of-straight-mass-filament,88)m4_dnl
 m4_define(__hw_sn_3_g-field-of-filament-order-of-limits,89)m4_dnl
 m4_define(__hw_sn_3_g-field-of-curved-mass-filament,90)m4_dnl
+m4_define(__hw_sn_3_rope-stretch,91)m4_dnl
 m4_define(__hw_sn_4_pliers,1)m4_dnl
 m4_define(__hw_sn_4_rv,2)m4_dnl
 m4_define(__hw_sn_4_therapy,3)m4_dnl

@@ -395,6 +395,7 @@ lm,12,14,sweat,0
 lm,12,15,throw-down-and-up,0
 lm,12,16,hoop,0
 lm,12,17,atwood-energy,0
+lm,12,18,rope-stretch,0
 lm,13,1,stoppingdistances,0
 lm,13,2,posnegwork,0
 lm,13,3,heliumescape,0
@@ -1057,6 +1058,7 @@ me,12,18,freeneutron,0
 me,12,19,jack-on-hill,0
 me,12,20,atwood-energy,0
 me,12,21,norton-dome,0
+me,12,22,rope-stretch,0
 me,13,1,stoppingdistances,0
 me,13,2,posnegwork,0
 me,13,3,workreverseaxis,0
@@ -2071,6 +2073,7 @@ sn,3,87,iss-apparent-gravity,0
 sn,3,88,g-field-of-straight-mass-filament,1
 sn,3,89,g-field-of-filament-order-of-limits,0
 sn,3,90,g-field-of-curved-mass-filament,0
+sn,3,91,rope-stretch,0
 sn,4,1,pliers,1
 sn,4,2,rv,0
 sn,4,3,therapy,0
