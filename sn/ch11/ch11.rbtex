@@ -3901,8 +3901,8 @@ with Maxwell's equations. If so, infer the direction of the magnetic field.
 \end{dq}
 
 \begin{dq}\label{dq:move-with-wave}
-Discuss what happens to the wave pattern shown in the diagram if we switch to a
-frame of reference moving along with the wave.
+What happens if we use Maxwell's equations to analyze the behavior of the wave
+in a frame of reference moving along with the wave?
 \end{dq}
 
 <% end_sec %>
