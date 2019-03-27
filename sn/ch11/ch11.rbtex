@@ -3760,8 +3760,7 @@ this is equivalent to a voltage difference $\Delta V=E\ell$ between the ends of 
 The wire obeys Ohm's law, and a current flows in response to the wave.\footnote{This current
 will soon come to a grinding halt, because we don't have a complete circuit, but let's
 say we're talking about the first picosecond during which the radio wave
-encounters the wire. This is why real radio antennas are \emph{not} very short compared
-to a wavelength!}
+encounters the wire.}
 Equating the expressions $\der U/\der t$ and $I\Delta V$ for the power dissipated by
 ohmic heating, we have
 \begin{equation*}

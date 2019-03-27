@@ -43,6 +43,7 @@ me permission to use it, but that doesn't mean you have permission to use it.
 \noindent
 \textbf{Cover} Eclipse: Luc Viatour, CC-BY-SA licensed.\quad%http://commons.wikimedia.org/wiki/Image:Solar_eclips_1999_4_NR.jpg
 <% if false then photo_credit("raft","Raft in neutrino detector","Kamioka Observatory, ICRR (Institute for Cosmic Ray Research), The University of Tokyo") end %>
+<% photo_credit("hw-rope-stretch","Rock climber","Redrawn from a photo by Joseff Thomas, CC-BY") %> % https://www.flickr.com/photos/josefft/19783204388
 <% photo_credit("air-wedge","Air wedge","Franklin D.~Jones, 1920, public domain") %> % https://commons.wikimedia.org/wiki/File:Optical_flat_interference_fringes.jpg
 <% photo_credit("lissajous-figure","Lissajous figure","Wikimedia Commons user Alessio Damato, CC-BY-SA") %> % https://en.wikipedia.org/wiki/File:Lissajous_curve_1by2.svg
 <% photo_credit("stern-gerlach","Stern-Gerlach photo","Gerlach's photo from 1922, public domain") %>
@@ -84,7 +85,7 @@ me permission to use it, but that doesn't mean you have permission to use it.
 <% photo_credit("hw-spider-oscillations","Spider oscillations","Emile, Le Floch, and Vollrath, \\emph{Nature} 440:621 (2006)") %>
 <% photo_credit("ion-drive","Ion drive","NASA") %>
 <% photo_credit("halley","Halley's comet","W. Liller") %>
-<% photo_credit("halley","Nucleus of Halley's comet","European Space Agency") %>
+<% photo_credit("halley","Nucleus of Halley's comet","Europen Space Agency") %>
 <% photo_credit("colliding-galaxies","Colliding galazies","NASA") %>
 <% photo_credit("wrench","Wrench","PSSC Physics") %>
 <% photo_credit("highjumper","Highjumper","Courtesy of Dunia Young") %>
