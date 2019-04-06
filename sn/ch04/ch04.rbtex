@@ -1524,17 +1524,7 @@ __incl(text/am_three_d)
 %>
 <% end_marg %>
 
-<% begin_hw('pliers') %>
-
-The figure shows scale drawing of a pair of pliers
-being used to crack a nut, with an appropriately reduced
-centimeter grid. Warning: do not attempt this at home; it is
-bad manners. If the force required to crack the nut is 300
-N, estimate the force required of the person's hand.
-
-<% hw_solution %>
-
-<% end_hw() %>
+<% begin_hw('pliers') %>__incl(hw/pliers)<% end_hw() %>
 
 <% begin_hw('rv',0) %>__incl(hw/rv)<% end_hw() %>
 
@@ -1672,29 +1662,11 @@ N, estimate the force required of the person's hand.
 
 <% begin_hw('molecules') %>__incl(hw/molecules)<% end_hw() %>
 
-<% begin_hw('yoyo',2) %>
-
-A yo-yo of total mass $m$ consists of two solid
-cylinders of radius $R$, connected by a small spindle of
-negligible mass and radius $r$. The top of the string is held
-motionless while the string unrolls from the spindle. Show
-that the acceleration of the yo-yo is $g/(1+R^2/2r^2)$. 
-
-<% end_hw() %>
+<% begin_hw('yoyo',2) %>__incl(hw/yoyo)<% end_hw() %>
 
 <% begin_hw('rolling-ratio') %>__incl(hw/rolling-ratio)<% end_hw() %>
 
-<% begin_hw('bowling') %>
-
-Suppose a bowling ball is initially thrown so that it
-has no angular momentum at all, i.e., it is initially just
-sliding down the lane. Eventually kinetic friction will
-bring its angular velocity up to the point where it is
-rolling without slipping. Show that the final velocity of
-the ball equals 5/7 of its initial velocity. You'll
-need the result of problem \ref{hw:rolling-ratio}.
-
-<% end_hw() %>
+<% begin_hw('bowling') %>__incl(hw/bowling)<% end_hw() %>
 
 <% begin_hw('amcrossprodplugin',0) %>__incl(hw/amcrossprodplugin)<% end_hw() %>
 
@@ -1775,31 +1747,9 @@ Hint: Combine the results of parts a and b with the result of problem \ref{hw:pa
 
 <% end_hw() %>
 
-<% begin_hw('centrifuge') %>
+<% begin_hw('centrifuge') %>__incl(hw/centrifuge)<% end_hw() %>
 
-When we talk about rigid-body rotation, the concept of a perfectly rigid body can only be
-an idealization. In reality, any object will compress, expand, or deform to some extent when
-subjected to the strain of rotation. However, if we let it settle down for a while, perhaps
-it will reach a new equilibrium. As an example, suppose we fill a centrifuge tube with some
-compressible substance like shaving cream or Wonder Bread. We can model the contents of the
-tube as a one-dimensional line of mass, extending from $r=0$ to $r=\ell$. Once the rotation starts,
-we expect that the contents will be most compressed near the ``floor'' of the tube at $r=\ell$; this
-is both because the inward force required for circular motion increases with $r$ for a fixed $\omega$,
-and because the part at the floor has the greatest amount of material pressing ``down'' (actually
-outward) on it. The linear density $\der m/\der r$, in units of kg/m, should therefore increase
-as a function of $r$. Suppose that we have $\der m/\der r=\mu e^{r/\ell}$, where $\mu$ is a constant.
-Find the moment of inertia.\answercheck
-
-<% end_hw() %>
-
-<% begin_hw('rolling-coin',3) %>
-
-When we release an object such as a bicycle wheel or a coin on an inclined plane, we can observe
-a variety of different behaviors. Characterize these behaviors empirically and try to list the physical
-parameters that determine which behavior occurs. Try to form a conjecture about the behavior
-using simple closed-form expressions. Test your conjecture experimentally.
-
-<% end_hw() %>
+<% begin_hw('rolling-coin',3) %>__incl(hw/rolling-coin)<% end_hw() %>
 
 \pagebreak
 
