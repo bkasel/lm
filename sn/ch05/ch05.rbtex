@@ -1565,7 +1565,7 @@ lie in the same half. For our present purposes, we can also ignore completely th
 $y$ and $z$ coordinates, and all three momentum components, $p_x$, $p_y$, and
 $p_z$.
 
-<% marg(60) %>
+<% marg(40) %>
 <%
   fig(
     'twobytwo',
