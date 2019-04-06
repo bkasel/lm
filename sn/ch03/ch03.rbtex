@@ -5933,9 +5933,9 @@ your destination. \answercheck
 
 <% begin_hw('fossil') %>__incl(hw/fossil)<% end_hw() %>
 
-<% begin_hw('bird') %>__incl(hw/bird)<% end_hw() %>
-
 \pagebreak
+
+<% begin_hw('bird') %>__incl(hw/bird)<% end_hw() %>
 
 <% marg(0) %>
 <%
@@ -5955,25 +5955,26 @@ your destination. \answercheck
 <% begin_hw('annieoakley') %>__incl(hw/annieoakley)<% end_hw() %>
 
 <% marg(-30) %>
-
 <%
   fig(
     'cargoplane',
     %q{Problem \ref{hw:cargoplane}}
   )
 %>
+<% end_marg %>
 
-\spacebetweenfigs
+<% begin_hw('cargoplane') %>__incl(hw/cargoplane)<% end_hw() %>
 
+\pagebreak
+
+<% marg(300) %>
 <%
   fig(
     'wagon',
     %q{Problem \ref{hw:wagon}}
   )
 %>
-
 \spacebetweenfigs
-
 <%
   fig(
     'hw-mixer',
@@ -5982,15 +5983,9 @@ your destination. \answercheck
 %>
 <% end_marg %>
 
-<% begin_hw('cargoplane') %>__incl(hw/cargoplane)<% end_hw() %>
-
-\enlargethispage{\baselineskip}
-
 <% begin_hw('wagon') %>__incl(hw/wagon)<% end_hw() %>
 
 <% begin_hw('reposeasteroid') %>__incl(hw/reposeasteroid)<% end_hw() %>
-
-\enlargethispage{\baselineskip}
 
 \vfill
 
@@ -6008,6 +6003,8 @@ your destination. \answercheck
 
 <% begin_hw('anglebetween',0) %>__incl(hw/anglebetween)<% end_hw() %>
 
+\pagebreak
+
 <% begin_hw('ropeslopes') %>__incl(hw/ropeslopes)<% end_hw() %>
 
 <% marg(50) %>
@@ -6019,10 +6016,6 @@ your destination. \answercheck
 %>
 <% end_marg %>
 
-\pagebreak
-
-\enlargethispage{\baselineskip}
-
 <% begin_hw('spider-oscillations') %>__incl(hw/spider-oscillations)<% end_hw() %>
 
 <%
@@ -6032,10 +6025,6 @@ your destination. \answercheck
     {'width'=>'wide'}
   )
 %>
-
-\pagebreak
-
-\enlargethispage{\baselineskip}
 
 <% begin_hw('skier-hits-dirt',2) %>__incl(hw/skier-hits-dirt)<% end_hw() %>
 
@@ -6052,8 +6041,6 @@ of energy. Solve the same problem using Newton's laws.
 
 <% begin_hw('bikeloop') %>__incl(hw/bikeloop)<% end_hw() %>
 
-\pagebreak
-
 <% begin_hw('maserati') %>__incl(hw/maserati)<% end_hw() %>
 
 <% begin_hw('board-on-counterrotating-wheels',2) %>__incl(hw/board-on-counterrotating-wheels)<% end_hw() %>
@@ -6067,22 +6054,14 @@ of energy. Solve the same problem using Newton's laws.
     }
   )
 %>
-<% end_marg %>
-
-\pagebreak
-
-<% begin_hw('climbing-anchors') %>__incl(hw/climbing-anchors)<% end_hw() %>
-
-<% marg(80) %>
+\spacebetweenfigs
 <%
   fig(
     'hw-climbing-anchors',
     %q{Problem \ref{hw:climbing-anchors}.}
   )
 %>
-
 \spacebetweenfigs
-
 <%
   fig(
     'hw-crevasse',
@@ -6091,9 +6070,10 @@ of energy. Solve the same problem using Newton's laws.
 %>
 <% end_marg %>
 
-<% begin_hw('crevasse') %>__incl(hw/crevasse)<% end_hw() %>
+<% begin_hw('climbing-anchors') %>__incl(hw/climbing-anchors)<% end_hw() %>
 
-\pagebreak
+
+<% begin_hw('crevasse') %>__incl(hw/crevasse)<% end_hw() %>
 
 <%
   fig(
@@ -6155,7 +6135,7 @@ of energy. Solve the same problem using Newton's laws.
   )
 %>
 
-<% marg(-30) %>
+<% marg() %>
 
 <%
   fig(
@@ -6169,15 +6149,18 @@ of energy. Solve the same problem using Newton's laws.
 
 <% begin_hw('iss-apparent-gravity') %>__incl(hw/iss-apparent-gravity)<% end_hw() %>
 
+\pagebreak
+
 <% begin_hw('g-field-of-straight-mass-filament') %>__incl(hw/g-field-of-straight-mass-filament)<% end_hw() %>
 
 <% begin_hw('g-field-of-filament-order-of-limits',2) %>__incl(hw/g-field-of-filament-order-of-limits)<% end_hw() %>
 
 <% begin_hw('g-field-of-curved-mass-filament',2) %>__incl(hw/g-field-of-curved-mass-filament)<% end_hw() %>
 
-\pagebreak
 
-<% marg() %>
+<% begin_hw('rope-stretch') %>__incl(hw/rope-stretch)<% end_hw() %>
+
+<% marg(300) %>
 <%
   fig(
     'hw-rope-stretch',
@@ -6185,8 +6168,6 @@ of energy. Solve the same problem using Newton's laws.
   )
 %>
 <% end_marg %>
-
-<% begin_hw('rope-stretch') %>__incl(hw/rope-stretch)<% end_hw() %>
 
 <% end_hw_sec %>
 
