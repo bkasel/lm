@@ -2317,7 +2317,7 @@ m4_define(__hw_sn_11_moveandcurve,3)m4_dnl
 m4_define(__hw_sn_11_describemotioninb,4)m4_dnl
 m4_define(__hw_sn_11_linechargecurrent,5)m4_dnl
 m4_define(__hw_sn_11_forcebetweentwowires,6)m4_dnl
-m4_define(__hw_sn_11_vfilter,7)m4_dnl
+m4_define(__hw_sn_11_velocityfilter,7)m4_dnl
 m4_define(__hw_sn_11_ambiguousb,8)m4_dnl
 m4_define(__hw_sn_11_ebnotpure,9)m4_dnl
 m4_define(__hw_sn_11_twowiresrepel,10)m4_dnl
@@ -2366,6 +2366,7 @@ m4_define(__hw_sn_11_timereversalem2,52)m4_dnl
 m4_define(__hw_sn_11_bwork,53)m4_dnl
 m4_define(__hw_sn_11_biot-savart-spiral,54)m4_dnl
 m4_define(__hw_sn_11_capacitor-paradox,55)m4_dnl
+m4_define(__hw_sn_11_sector-mass-spectrometer,56)m4_dnl
 m4_define(__hw_sn_12_diffuse,1)m4_dnl
 m4_define(__hw_sn_12_gps,2)m4_dnl
 m4_define(__hw_sn_12_lightwithatomwavelength,3)m4_dnl

@@ -713,7 +713,7 @@ can send a beam of charged particles through a space containing both an
  Such a \emph{velocity filter}\index{velocity filter} can be used either to determine the
  velocity of an unknown beam or particles, or to select from a beam of particles only
  those having velocities within a certain desired range.
- Homework problem \ref{hw:vfilter} is an analysis of this application.
+ Homework problem \ref{hw:velocityfilter} is an analysis of this application.
 \end{eg}
 
 <% end_sec() %>
@@ -4450,7 +4450,7 @@ an electric version of such a spectrometer.
 
 <% begin_hw('forcebetweentwowires') %>__incl(hw/forcebetweentwowires)<% end_hw() %>
 
-<% begin_hw('vfilter',0) %>__incl(hw/vfilter)<% end_hw() %>
+<% begin_hw('velocityfilter',0) %>__incl(hw/velocityfilter)<% end_hw() %>
 
 <% begin_hw('ambiguousb') %>__incl(hw/ambiguousb)<% end_hw() %>
 
@@ -4660,6 +4660,19 @@ an electric version of such a spectrometer.
 <% begin_hw('biot-savart-spiral') %>__incl(hw/biot-savart-spiral)<% end_hw() %>
 
 <% begin_hw('capacitor-paradox') %>__incl(hw/capacitor-paradox)<% end_hw() %>
+
+\pagebreak
+
+<% marg(0) %>
+<%
+  fig(
+    'hw-sector-mass-spectrometer',
+    %q{Problem \ref{hw:sector-mass-spectrometer}.}
+  )
+%>
+<% end_marg %>
+
+<% begin_hw('sector-mass-spectrometer') %>__incl(hw/sector-mass-spectrometer)<% end_hw() %>
 
 <% end_hw_sec %>
 
