@@ -4209,26 +4209,20 @@ many different directions and cancel out partially.
  % 
 
 <% begin_hw('snakeeyes') %>
-
 What is the probability of rolling a pair of dice and
 getting ``snake eyes,'' i.e., both dice come up with ones?
-
 <% end_hw() %>
 
  % 
 
 <% begin_hw('exponentiationapprox') %>
-
 Problem \ref{hw:exponentiationapprox} has been deleted.
-
 <% end_hw() %>
 
  % 
 
 <% begin_hw('rateofdecayapprox') %>
-
 Problem \ref{hw:rateofdecayapprox} has been deleted.
-
 <% end_hw() %>
 
 \enlargethispage{\baselineskip}
@@ -4263,7 +4257,6 @@ Problem \ref{hw:rateofdecayapprox} has been deleted.
 \pagebreak
 
 <% begin_hw('lava') %>
-
 All helium on earth is from the decay of naturally occurring heavy radioactive elements
  such as uranium. Each alpha particle that is emitted ends up claiming two electrons,
  which makes it a helium atom. If the original $^{238}\zu{U}$ atom is in solid
@@ -4282,13 +4275,11 @@ stable nucleus $^{206}\zu{Pb}$.  Almost all natural
 (b) How many electrons are emitted per decay chain?
   [Hint: Use conservation of charge.]\hwendpart
 (c) How long has it been since the lava originally hardened?\answercheck
-
 <% end_hw() %>
 
  % 
 
 <% begin_hw('mirrorphotons') %>
-
 When light is reflected from a mirror, perhaps only 80\%
 of the energy comes back. One could try to explain this in
 two different ways: (1) 80\% of the photons are reflected,
@@ -4296,7 +4287,6 @@ or (2) all the photons are reflected, but each loses 20\% of
 its energy. Based on your everyday knowledge about mirrors,
 how can you tell which interpretation is correct? [Based on
 a problem from PSSC Physics.]
-
 <% end_hw() %>
 
  % 
@@ -4308,7 +4298,6 @@ a problem from PSSC Physics.]
 \enlargethispage{\baselineskip}
 
 <% begin_hw('cancer') %>
-
 The photoelectric effect can occur not just for metal
 cathodes but for any substance, including living tissue. 
 Ionization of DNA molecules can cause cancer or birth
@@ -4325,10 +4314,9 @@ electromagnetic waves might pose such a hazard? Explain.
                 ultraviolet light\\
                 x-rays
 \end{tabular}
+<% end_hw() %>
 
 \pagebreak
-
-<% end_hw() %>
 
 <% marg(0) %>
 <%
@@ -4369,7 +4357,6 @@ the beam is not parallel.)\answercheck
  % 
 
 <% begin_hw('pe') %>
-
 In the photoelectric effect, electrons are observed with
 virtually no time delay ($\sim10$ ns), even when the light
 source is very weak. (A weak light source does however only
@@ -4390,7 +4377,6 @@ $10^{-19}$ J. Find how long it would take the electron to
 absorb this amount of energy, and explain why your result
 constitutes strong evidence that there is something wrong
 with the classical theory.\answercheck
-
 <% end_hw() %>
 
 \pagebreak
@@ -4400,13 +4386,11 @@ with the classical theory.\answercheck
  % 
 
 <% begin_hw('lead') %>
-
 Use the Heisenberg uncertainty principle to estimate the
 minimum velocity of a proton or neutron in a $^{208}\zu{Pb}$
 nucleus, which has a diameter of about 13 fm (1 fm=$10^{-15}$
  m). Assume that the speed is nonrelativistic, and then
 check at the end whether this assumption was warranted.\answercheck
-
 <% end_hw() %>
 
  % 
@@ -4416,7 +4400,6 @@ check at the end whether this assumption was warranted.\answercheck
  % 
 
 <% begin_hw('chip-qm') %>
-
 A free electron that contributes to the current in an
 ohmic material typically has a speed of $10^5$  m/s (much
 greater than the drift velocity).\hwendpart
@@ -4430,7 +4413,6 @@ about wave effects such as diffraction?\hwendpart
 (d) Estimate the maximum number of electric circuits that
 can fit on a 1 $\zu{cm}^2$ computer chip before quantum-mechanical
 effects become important.
-
 <% end_hw() %>
 
  % 
@@ -4456,11 +4438,9 @@ effects become important.
 <% begin_hw('hydrogenlevels') %>__incl(hw/hydrogenlevels)<% end_hw() %>
 
 <% begin_hw('hydrogenphoton') %>
-
 Find an equation for the wavelength of the photon emitted
 when the electron in a hydrogen atom makes a transition from
 energy level $n_1$ to level $n_2$.\answercheck
-
 <% end_hw() %>
 
  % 
@@ -4470,7 +4450,6 @@ energy level $n_1$ to level $n_2$.\answercheck
  % 
 
 <% begin_hw('hydrogennonrelativistic') %>
-
 Assume that the kinetic energy of an electron in the $n=1$
 state of a hydrogen atom is on the same order of magnitude
 as the absolute value of its total energy, and estimate a
@@ -4480,7 +4459,6 @@ interaction energy trade off at different distances from the
 proton, but this is just a rough estimate of a typical
 speed.) Based on this speed, were we justified in assuming
 that the electron could be described nonrelativistically?
-
 <% end_hw() %>
 
 <% begin_hw('energysum') %>__incl(hw/energysum)<% end_hw() %>
@@ -4494,7 +4472,6 @@ that the electron could be described nonrelativistically?
  % 
 
 <% begin_hw('muonic-spectrum') %>
-
 A muon is a subatomic particle that acts exactly like
 an electron except that its mass is 207 times greater. Muons
 can be created by cosmic rays, and it can happen that one of
@@ -4508,7 +4485,6 @@ compare with the size of the normal atom?\hwendpart
 searching for muonic atoms in the sun or in the earth's
 atmosphere by spectroscopy, in what part of the electromagnetic
 spectrum would you expect to find the absorption lines?
-
 <% end_hw() %>
 
 \pagebreak
@@ -4522,7 +4498,6 @@ spectrum would you expect to find the absorption lines?
  % 
 
 <% begin_hw('wkb',2) %>
-
 On page \pageref{quantitativetunneling} we derived an expression for the
 probability that a particle would tunnel through a
 rectangular barrier, i.e., a region in which the interaction
@@ -4537,7 +4512,6 @@ curve. Show that this is still true for a series of
 rectangular barriers, and generalize using an integral.]  If
 you had done this calculation in the 1930's you could have
 become a famous physicist.
-
 <% end_hw() %>
 
 <% begin_hw('h-atom-normalization') %>__incl(hw/h-atom-normalization)<% end_hw() %>
@@ -4545,17 +4519,14 @@ become a famous physicist.
 <% begin_hw('three-d-forbidden') %>__incl(hw/three-d-forbidden)<% end_hw() %>
 
 <% begin_hw('three-d-box') %>
-
 \emph{This problem generalizes the one-dimensional result from problem \ref{hw:particleinabox}.}\\
 Find the energy levels of a particle in a three-dimensional rectangular box with sides
 of length $a$, $b$, and $c$.\answercheck
-
 <% end_hw() %>
 
 \pagebreak
 
 <% begin_hw('tritium-decay') %>
-
 Americium-241 is an artificial isotope used in smoke detectors. It undergoes alpha decay, with a half-life of 432 years.
 As discussed in example \ref{eg:alpha-tunneling} on page \pageref{eg:alpha-tunneling}, alpha decay can be understood
 as a tunneling process, and although the barrier is not rectangular in shape, the equation for the tunneling
@@ -4567,7 +4538,6 @@ This higher probability is contrary to the empirical observation that this
 nucleus is not observed to decay by tritium emission with any significant probability, and in general
 tritium emission is almost unknown in nature; this is mainly because the tritium nucleus is far less stable
 than the helium-4 nucleus, and the difference in binding energy reduces the energy available for the decay.
-
 <% end_hw() %>
 
 <% begin_hw('photon-mass') %>__incl(hw/photon-mass)<% end_hw() %>
