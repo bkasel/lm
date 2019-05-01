@@ -1614,7 +1614,7 @@ and one for each momentum component).
 
 <% end_sec('phase-space') %>
 
-<% begin_sec("Microscopic definitions of entropy and temperature") %>
+<% begin_sec("Microscopic definitions of entropy and temperature",nil,'microscopic-entropy') %>
 
 Two more issues need to be resolved in order to make a microscopic
 definition of entropy.
@@ -1891,30 +1891,102 @@ The result for the average energy per atom is exactly the same as for an unmixed
 \end{eg}
 
 <% end_sec() %>
+<% end_sec('microscopic-entropy') %>
 
-<% begin_sec("Equipartition") %>
-\label{equipartition}
-Example \ref{eg:mix-two-gases} is a special case of a more general statement called the equipartition theorem.\index{equipartition theorem}
-Suppose we have only one argon atom, named Alice, and one helium atom, named Harry.
-Their total kinetic energy is $E=p_x^2/2m+p_y^2/2m+p_z^2/2m+{p'}_x^2/2m'+{p'}_y^2/2m'+{p'}_z^2/2m'$, where the primes
-indicate Harry. We have six terms that all look alike. The only difference among them is that the constant factors
-attached to the squares of the momenta have different values, but we've just proved that those differences don't matter.
-In other words, if we have any system at all whose energy is of the form $E=(\ldots)p_1^2+(\ldots)p_2^2+\ldots$, with any
-number of terms, then each term holds, on average, the same amount of energy, $\frac{1}{2}kT$.
-We say that the system consisting of Alice and Harry has six degrees of freedom.\index{degree of freedom}
+<% begin_sec("Equipartition",nil,'equipartition') %>\label{equipartition}
+Betsy Salazar of Redwood Cove, California, has 37 pet raccoons, which
+is theoretically illegal. She admits that she has trouble telling them
+apart, but she tries to give them all plenty of care and affection
+(which they reciprocate). There are only so many hours in a day, so
+there is a fixed total amount of love. The raccoons share this love
+unequally on any given day, but \emph{on the average} they all get the
+same amount. This kind of
+equal-sharing-on-the-average-out-of-some-total-amount is more
+concisely described using the term \emph{equipartition}, meaning equal
+partitioning, or equal sharing. If Betsy did keep track of how much
+love she lavished on each animal, using some numerical scale, we would
+have 37 numbers to keep track of. We say that the love is partitioned
+among 37 \emph{degrees of freedom}.
+
+For a monoatomic ideal gas, the analysis in section
+\ref{subsec:pvnrt}, p.~\pageref{subsec:pvnrt}, leads to the following
+simple and useful fact about how kinetic energy is shared among all
+the atoms' $x$, $y$, and $z$ degrees of freedom:
+
+\begin{lessimportant}[Equipartition theorem: restricted form]
+For a monoatomic ideal gas containing $n$ atoms, each of the $3n$ degrees of freedom contains, on the average,
+a kinetic energy $\frac{1}{2}kT$.
+\end{lessimportant}
+
+\noindent As applications of this fact, we can easily find the amount
+of heat needed to raise the temperature of the gas by one unit (its
+specific heat), or estimate the typical thermal velocities of the
+atoms given the temperature.\index{specific heat!monoatomic ideal gas}  Equipartition gives us a more rigorous
+and quantitative statement of the idea that temperature is a measure
+of how concentrated the heat is, or of how much energy there is per
+particle.
+
+We would now like to generalize this theorem. Example
+\ref{eg:mix-two-gases}, p.~\pageref{eg:mix-two-gases}, tells us
+that it doesn't matter whether the gas is a mixture of two
+different types of atoms --- Betsy doesn't give a raccoon more love
+just because it's big and fat. Equal energy sharing might seem obvious
+by symmetry if all the atoms are identical, but we see that it still
+holds when they are not identical. Symmetry was not a necessary
+assumption.
+
+<% marg() %>
+<%
+  fig(
+    'dulong-petit',
+    %q{%
+      Heat capacities of solids cluster around $3kT$ per atom. The elemental solids plotted are the ones originally
+      used by Dulong and Petit to infer empirically that the heat capacity of solids per atom was constant.
+      (Modern data.)\index{Dulong-Petit law}
+    }
+  )
+%>
+<% end_marg %>
+
+
+To generalize even further, let's look at what the necessary
+assumptions really were in example \ref{eg:mix-two-gases}.  For
+simplicity, suppose we have only one argon atom, named Alice, and one
+helium atom, named Harry.  Their total kinetic energy is
+$E=p_x^2/2m+p_y^2/2m+p_z^2/2m+{p'}_x^2/2m'+{p'}_y^2/2m'+{p'}_z^2/2m'$,
+where the primes indicate Harry.  The system consisting of Alice and
+Harry has six degrees of freedom (the six momenta), and the six terms
+in the energy all look alike. The only difference among them is that
+the constant factors attached to the squares of the momenta have
+different values, but we've just proved that those differences don't
+matter.  In other words, if we have any system at all whose energy is
+of the form $E=(\ldots)p_1^2+(\ldots)p_2^2+\ldots$, with any number of
+terms, then each term holds, on average, the same amount of energy,
+$\frac{1}{2}kT$.
+
 It doesn't even matter whether the things being
-squared are momenta: if you look back over the logical steps that went into the argument, you'll see that none of them
-depended on that. In a solid, for example, the atoms aren't free to wander around, but they can vibrate from side to
-side. If an atom moves away from its equilibrium position at $x=0$ to some other value of $x$, then its electrical
-energy is $(1/2)\kappa x^2$, where $\kappa$ is the spring constant (written as the Greek letter kappa to distinguish it
-from the Boltzmann constant $k$). We can conclude that each atom in the solid, on average, has $\frac{1}{2}kT$ of energy
-in the electrical energy due to its $x$ displacement along the $x$ axis, and equal amounts for $y$ and $z$.
-This is known as equipartition, meaning equal partitioning,
-or equal sharing. The equipartition theorem says that if the expression for the energy looks like a sum of squared
-variables, then each degree of freedom has an average energy of $\frac{1}{2}kT$. Thus, very generally, we can
-interpret temperature as the average energy per degree of freedom (times $k/2$).
+squared are momenta: if you look back over the logical steps that went
+into the argument, you'll see that none of them depended on that. In a
+solid, for example, the atoms aren't free to wander around, but they
+can vibrate from side to side. If an atom moves away from its
+equilibrium position at $x=0$ to some other value of $x$, then its
+electrical energy is $(1/2)\kappa x^2$, where $\kappa$ is the spring
+constant (written as the Greek letter kappa to distinguish it from the
+Boltzmann constant $k$). We can conclude that each atom in the solid,
+on average, has $\frac{1}{2}kT$ of energy in the electrical energy due
+to its $x$ displacement along the $x$ axis, and equal amounts for $y$
+and $z$. Thus for a solid, we expect there to be a total of \emph{six}
+energies per atom (three kinetic energies and six interaction energies),
+each of which carries an average energy $\frac{1}{2}kT$, for a total
+of $3kT$. In other words, a solid should have twice the heat capacity
+of a monoatomic gas. This was discovered empirically by Dulong and Petit
+in 1819, as shown in figure \figref{dulong-petit}.\index{specific heat!solids}
 
-<% end_sec() %>
+\begin{lessimportant}[Equipartition theorem: general form]\index{equipartition theorem}
+For a system whose energy can be written as the sum of the squares of $n$ variables,
+the average value of each term in the energy is $\frac{1}{2}kT$.
+\end{lessimportant}
+
 
 <% begin_sec("An unexpected glimpse of the microcosm") %>
 
@@ -2075,7 +2147,7 @@ therefore have
 
 <% end_sec() %>
 
-<% end_sec() %>
+<% end_sec('equipartition') %>
 
 <% begin_sec("The arrow of time, or ``this way to the Big Bang''") %>
 \index{Big Bang!and the arrow of time}
@@ -2503,6 +2575,10 @@ depends only on the relative heights of the top and bottom of the box.
 <% begin_hw('entropy-stirring-coffee') %>__incl(hw/entropy-stirring-coffee)<% end_hw() %>
 
 <% begin_hw('sun-heating',0) %>__incl(hw/sun-heating)<% end_hw() %>
+
+\pagebreak
+
+<% begin_hw('electron-speed-in-metal') %>__incl(hw/electron-speed-in-metal)<% end_hw() %>
 
 <% end_hw_sec %>
 
