@@ -73,7 +73,9 @@
 % of CM. I don't know whether it scales up 10 pt or scales down 12 pt, but anyway, it
 % works.
 
-\usepackage[french,english]{babel}
+%\usepackage[french,english]{babel}
+% ... if using this, need to install ubuntu package texlive-lang-french , see https://tex.stackexchange.com/a/139707/6853
+%     This is also in lmcommon.sty.
 
 \RequirePackage{makeidx,wrapfig,fancyhdr,calc,titlesec,titletoc,amssymb,moreverb,ifthen,framed,alphalph,
                 cancel,learn-cmd-syntax,url,xstring,comment,navigator,dutchcal,multirow}
