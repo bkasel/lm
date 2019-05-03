@@ -370,6 +370,26 @@ be toppled without scraping on the floor.
 
 <% begin_hw('ring-moi-about-diameter') %>__incl(hw/ring-moi-about-diameter)<% end_hw() %>
 
+<% marg() %>
+<%
+  fig(
+    'hw-bug-drop',
+    %q{Problem \ref{hw:bug-drop}.}
+  )
+%>
+\spacebetweenfigs
+<%
+  fig(
+    'hw-bug-trap-door',
+    %q{Problem \ref{hw:bug-trap-door}.}
+  )
+%>
+<% end_marg %>
+
+<% begin_hw('bug-drop') %>__incl(hw/bug-drop)<% end_hw() %>
+
+<% begin_hw('bug-trap-door') %>__incl(hw/bug-trap-door)<% end_hw() %>
+
 <% end_hw_sec %>
 
 <% begin_ex("Torque") %>

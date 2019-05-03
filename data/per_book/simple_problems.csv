@@ -235,6 +235,8 @@ sn,4,42,moment-of-inertia-lab,0
 sn,4,43,cube-statics,0
 sn,4,44,division-by-a-vector,0
 sn,4,45,ring-moi-about-diameter,1
+sn,4,46,bug-drop,0
+sn,4,47,bug-trap-door,0
 sn,5,1,stpvol,0
 sn,5,2,work-pdv,0
 sn,5,3,he,0

@@ -392,6 +392,8 @@ problems,9,d10,roll-down-without-slipping-up-with-slipping,0
 problems,9,d11,three-objects-race-down-ramp,0
 problems,9,d12,moment-of-inertia-lab,0
 problems,9,d13,ring-moi-about-diameter,1
+problems,9,d14,bug-drop,0
+problems,9,d15,bug-trap-door,0
 problems,9,e1,erbium,0
 problems,9,e2,centrifuge,0
 problems,9,e3,conemoi,0
@@ -629,7 +631,7 @@ problems,17,a3,moveandcurve,0
 problems,17,a4,describemotioninb,0
 problems,17,a5,linechargecurrent,0
 problems,17,a6,forcebetweentwowires,0
-problems,17,a7,vfilter,0
+problems,17,a7,velocityfilter,0
 problems,17,a8,ambiguousb,0
 problems,17,a9,ebnotpure,0
 problems,17,a10,twowiresrepel,0

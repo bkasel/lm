@@ -1990,6 +1990,8 @@ the average value of each term in the energy is $\frac{1}{2}kT$.
 
 <% begin_sec("An unexpected glimpse of the microcosm") %>
 
+These ideas about equipartition now lead us to some surprising insights into how
+the microscopic world manifests itself on the human scale.
 You may have the feeling at this point that of course Boltzmann was right about the literal
 existence of atoms, but only very sophisticated experiments could vindicate him definitively.
 After all, the microscopic and macroscopic definitions of entropy are equivalent, so it might

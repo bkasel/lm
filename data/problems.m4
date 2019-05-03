@@ -1175,6 +1175,8 @@ m4_define(__hw_me_15_rollers-on-inclined-plane,62)m4_dnl
 m4_define(__hw_me_15_vector-computations,63)m4_dnl
 m4_define(__hw_me_15_work-done-by-torque-in-second-revolution,64)m4_dnl
 m4_define(__hw_me_15_ring-moi-about-diameter,65)m4_dnl
+m4_define(__hw_me_15_bug-drop,66)m4_dnl
+m4_define(__hw_me_15_bug-trap-door,67)m4_dnl
 m4_define(__hw_me_16_sperm,2)m4_dnl
 m4_define(__hw_me_16_whistle,3)m4_dnl
 m4_define(__hw_me_16_pendulum,4)m4_dnl
@@ -1593,6 +1595,8 @@ m4_define(__hw_problems_9_roll-down-without-slipping-up-with-slipping,d10)m4_dnl
 m4_define(__hw_problems_9_three-objects-race-down-ramp,d11)m4_dnl
 m4_define(__hw_problems_9_moment-of-inertia-lab,d12)m4_dnl
 m4_define(__hw_problems_9_ring-moi-about-diameter,d13)m4_dnl
+m4_define(__hw_problems_9_bug-drop,d14)m4_dnl
+m4_define(__hw_problems_9_bug-trap-door,d15)m4_dnl
 m4_define(__hw_problems_9_erbium,e1)m4_dnl
 m4_define(__hw_problems_9_centrifuge,e2)m4_dnl
 m4_define(__hw_problems_9_conemoi,e3)m4_dnl
@@ -1830,7 +1834,7 @@ m4_define(__hw_problems_17_moveandcurve,a3)m4_dnl
 m4_define(__hw_problems_17_describemotioninb,a4)m4_dnl
 m4_define(__hw_problems_17_linechargecurrent,a5)m4_dnl
 m4_define(__hw_problems_17_forcebetweentwowires,a6)m4_dnl
-m4_define(__hw_problems_17_vfilter,a7)m4_dnl
+m4_define(__hw_problems_17_velocityfilter,a7)m4_dnl
 m4_define(__hw_problems_17_ambiguousb,a8)m4_dnl
 m4_define(__hw_problems_17_ebnotpure,a9)m4_dnl
 m4_define(__hw_problems_17_twowiresrepel,a10)m4_dnl
@@ -2119,6 +2123,8 @@ m4_define(__hw_sn_4_moment-of-inertia-lab,42)m4_dnl
 m4_define(__hw_sn_4_cube-statics,43)m4_dnl
 m4_define(__hw_sn_4_division-by-a-vector,44)m4_dnl
 m4_define(__hw_sn_4_ring-moi-about-diameter,45)m4_dnl
+m4_define(__hw_sn_4_bug-drop,46)m4_dnl
+m4_define(__hw_sn_4_bug-trap-door,47)m4_dnl
 m4_define(__hw_sn_5_stpvol,1)m4_dnl
 m4_define(__hw_sn_5_work-pdv,2)m4_dnl
 m4_define(__hw_sn_5_he,3)m4_dnl
