@@ -1502,10 +1502,7 @@ theory of relativity.)
 
 <% begin_hw('superpositionexperiment') %>__incl(hw/superpositionexperiment)<% end_hw() %>
 
-<% begin_hw('middlec') %>
- The musical note middle C has a frequency of 262 Hz.
-What are its period and wavelength?\answercheck
-<% end_hw() %>
+<% begin_hw('middlec') %>__incl(hw/middlec)<% end_hw() %>
 
 <% begin_hw('dopplersing') %>__incl(hw/dopplersing)<% end_hw() %>
 
