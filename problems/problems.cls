@@ -5,7 +5,7 @@
 \ProvidesClass{problems}
 \LoadClass[twocolumn]{book}
 \usepackage[paperwidth=8.5in,paperheight=11in]{geometry}
-\usepackage{shaddap,lmmath,amsmath,amssymb,cancel,titlesec,ifthen,makeidx,graphicx,url,moreverb}
+\usepackage{shaddap,lmmath,amsmath,amssymb,cancel,titlesec,ifthen,makeidx,graphicx,url,moreverb,multirow}
 % moreverb provides listing environment
 \usepackage{timetravel}
 %

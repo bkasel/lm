@@ -95,6 +95,7 @@ Macros I define:
   __sn         0,1
   __cp         0,1
   __me         0,1
+  __problems   0,1
   __pe         U,PE                sn.m4, lmseries.m4
 Conditionals:
   m4_ifelse(__calc,1,[:calculus:],[:no, calculus is scary:])

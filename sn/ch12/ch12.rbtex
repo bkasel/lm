@@ -51,18 +51,7 @@ __incl(text/5_wave_optics)
 
 <% begin_hw('diffuse') %>__incl(hw/diffuse)<% end_hw() %>
 
-<% begin_hw('gps') %>
-A Global Positioning System (GPS) receiver is a device
-that lets you figure out where you are by receiving timed radio
-signals from satellites. It works by measuring the
-travel time for the signals, which is related to the
-distance between you and the satellite. By finding the
-ranges to several different satellites in this way, it can
-pin down your location in three dimensions to within a few
-meters. How accurate does the measurement of the time delay
-have to be to determine your position to this accuracy?
-
-<% end_hw() %>
+<% begin_hw('gps') %>__incl(hw/gps)<% end_hw() %>
 
 <% begin_hw('lightwithatomwavelength') %>__incl(hw/lightwithatomwavelength)<% end_hw() %>
 
@@ -102,17 +91,7 @@ have to be to determine your position to this accuracy?
 
 \pagebreak
 
-<% begin_hw('convexraytracing') %>
-In section \ref{sec:images-1} we've only done examples of mirrors with
-hollowed-out shapes (called concave mirrors). Now draw a ray
-diagram for a curved mirror that has a bulging outward shape
-(called a convex mirror). (a) How does the image's distance
-from the mirror compare with the actual object's distance
-from the mirror? From this comparison, determine whether the
-magnification is greater than or less than one. (b) Is the
-image real, or virtual? Could this mirror ever make the
-other type of image?
-<% end_hw() %>
+<% begin_hw('convexraytracing') %>__incl(hw/convexraytracing)<% end_hw() %>
 
 <% begin_hw('listmirrorimages') %>__incl(hw/listmirrorimages)<% end_hw() %>
 
