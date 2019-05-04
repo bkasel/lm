@@ -4216,10 +4216,7 @@ many different directions and cancel out partially.
 
  % 
 
-<% begin_hw('snakeeyes') %>
-What is the probability of rolling a pair of dice and
-getting ``snake eyes,'' i.e., both dice come up with ones?
-<% end_hw() %>
+<% begin_hw('snakeeyes') %>__incl(hw/snakeeyes)<% end_hw() %>
 
  % 
 
@@ -4264,38 +4261,11 @@ Problem \ref{hw:rateofdecayapprox} has been deleted.
 
 \pagebreak
 
-<% begin_hw('lava') %>
-All helium on earth is from the decay of naturally occurring heavy radioactive elements
- such as uranium. Each alpha particle that is emitted ends up claiming two electrons,
- which makes it a helium atom. If the original $^{238}\zu{U}$ atom is in solid
- rock (as opposed to the earth's molten regions), the He atoms are unable to
- diffuse out of the rock. This problem involves dating a rock using the known
- decay properties of uranium 238. Suppose a geologist finds a sample of hardened lava,
- melts it in a furnace, and finds that it contains 1230 mg of uranium
- and 2.3 mg of helium.  $^{238}\zu{U}$ decays by alpha emission, with a half-life
- of $4.5\times10^9$ years.  The subsequent chain of alpha and electron (beta) decays involves
- much shorter half-lives, and terminates in the 
-stable nucleus $^{206}\zu{Pb}$.  Almost all natural
- uranium is $^{238}\zu{U}$, and the chemical composition
- of this rock indicates that there were
- no decay chains involved other than that of $^{238}\zu{U}$.\hwendpart
-(a) How many alphas are emitted per decay chain? [Hint: Use conservation of mass.]\hwendpart
-(b) How many electrons are emitted per decay chain?
-  [Hint: Use conservation of charge.]\hwendpart
-(c) How long has it been since the lava originally hardened?\answercheck
-<% end_hw() %>
+<% begin_hw('lava') %>__incl(hw/lava)<% end_hw() %>
 
  % 
 
-<% begin_hw('mirrorphotons') %>
-When light is reflected from a mirror, perhaps only 80\%
-of the energy comes back. One could try to explain this in
-two different ways: (1) 80\% of the photons are reflected,
-or (2) all the photons are reflected, but each loses 20\% of
-its energy. Based on your everyday knowledge about mirrors,
-how can you tell which interpretation is correct? [Based on
-a problem from PSSC Physics.]
-<% end_hw() %>
+<% begin_hw('mirrorphotons') %>__incl(hw/mirrorphotons)<% end_hw() %>
 
  % 
 
@@ -4305,24 +4275,7 @@ a problem from PSSC Physics.]
 
 \enlargethispage{\baselineskip}
 
-<% begin_hw('cancer') %>
-The photoelectric effect can occur not just for metal
-cathodes but for any substance, including living tissue. 
-Ionization of DNA molecules can cause cancer or birth
-defects. If the energy required to ionize DNA is on the same
-order of magnitude as the energy required to produce the
-photoelectric effect in a metal, which of the following types of
-electromagnetic waves might pose such a hazard? Explain.
-
-\begin{tabular}{l}
-                60 Hz waves from power lines\\
-                100 MHz FM radio\\
-                microwaves from a microwave oven\\
-                visible light\\
-                ultraviolet light\\
-                x-rays
-\end{tabular}
-<% end_hw() %>
+<% begin_hw('cancer') %>__incl(hw/cancer)<% end_hw() %>
 
 \pagebreak
 
@@ -4352,40 +4305,11 @@ electromagnetic waves might pose such a hazard? Explain.
 
  % 
 
-<% begin_hw('projector') %>
-
-The beam of a 100-W overhead projector covers an area of
-$1\ \zu{m}\times1\ \zu{m}$ when it hits the screen 3 m away. Estimate
-the number of photons that are in flight at any given time.
-(Since this is only an estimate, we can ignore the fact that
-the beam is not parallel.)\answercheck
-
-<% end_hw() %>
+<% begin_hw('projector') %>__incl(hw/projector)<% end_hw() %>
 
  % 
 
-<% begin_hw('pe') %>
-In the photoelectric effect, electrons are observed with
-virtually no time delay ($\sim10$ ns), even when the light
-source is very weak. (A weak light source does however only
-produce a small number of ejected electrons.) The purpose of
-this problem is to show that the lack of a significant time
-delay contradicted the classical wave theory of light, so
-throughout this problem you should put yourself in the shoes
-of a classical physicist and pretend you don't know about
-photons at all. At that time, it was thought that the
-electron might have a radius on the order of $10^{-15}$ m. 
-(Recent experiments have shown that if the electron has any
-finite size at all, it is far smaller.)\hwendpart
-(a) Estimate the power that would be soaked up by a single
-electron in a beam of light with an intensity of 1 $\zu{mW}/\zu{m}^2$.\answercheck\hwendpart
-(b) The energy, $E_s$, required for the electron to escape
-through the surface of the cathode is on the order of 
-$10^{-19}$ J. Find how long it would take the electron to
-absorb this amount of energy, and explain why your result
-constitutes strong evidence that there is something wrong
-with the classical theory.\answercheck
-<% end_hw() %>
+<% begin_hw('pe') %>__incl(hw/pe)<% end_hw() %>
 
 \pagebreak
 
@@ -4393,13 +4317,7 @@ with the classical theory.\answercheck
 
  % 
 
-<% begin_hw('lead') %>
-Use the Heisenberg uncertainty principle to estimate the
-minimum velocity of a proton or neutron in a $^{208}\zu{Pb}$
-nucleus, which has a diameter of about 13 fm (1 fm=$10^{-15}$
- m). Assume that the speed is nonrelativistic, and then
-check at the end whether this assumption was warranted.\answercheck
-<% end_hw() %>
+<% begin_hw('lead') %>__incl(hw/lead)<% end_hw() %>
 
  % 
 
@@ -4407,21 +4325,7 @@ check at the end whether this assumption was warranted.\answercheck
 
  % 
 
-<% begin_hw('chip-qm') %>
-A free electron that contributes to the current in an
-ohmic material typically has a speed of $10^5$  m/s (much
-greater than the drift velocity).\hwendpart
-(a) Estimate its de Broglie wavelength, in nm.\answercheck\hwendpart
-(b) If a computer memory chip contains $10^8$  electric
-circuits in a 1 $\zu{cm}^2$ area, estimate the linear size, in
-nm, of one such circuit.\answercheck\hwendpart
-(c) Based on your answers from parts a and b, does an
-electrical engineer designing such a chip need to worry
-about wave effects such as diffraction?\hwendpart
-(d) Estimate the maximum number of electric circuits that
-can fit on a 1 $\zu{cm}^2$ computer chip before quantum-mechanical
-effects become important.
-<% end_hw() %>
+<% begin_hw('chip-qm') %>__incl(hw/chip-qm)<% end_hw() %>
 
  % 
 
@@ -4526,11 +4430,7 @@ become a famous physicist.
 
 <% begin_hw('three-d-forbidden') %>__incl(hw/three-d-forbidden)<% end_hw() %>
 
-<% begin_hw('three-d-box') %>
-\emph{This problem generalizes the one-dimensional result from problem \ref{hw:particleinabox}.}\\
-Find the energy levels of a particle in a three-dimensional rectangular box with sides
-of length $a$, $b$, and $c$.\answercheck
-<% end_hw() %>
+<% begin_hw('three-d-box') %>__incl(hw/three-d-box)<% end_hw() %>
 
 \pagebreak
 
