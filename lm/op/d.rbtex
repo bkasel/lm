@@ -143,16 +143,7 @@ angle that satisfies Snell's law.
 
 \pagebreak
 
-<%
-  fig(
-    'hw-binoculars',
-    %q{Problem }+ref_workaround('hw:binoculars')+%q{.},
-    {
-      'width'=>'fullpage'
-    }
-  )
-%>
-<% begin_hw('binoculars',2) %>__incl(hw/binoculars)<% end_hw() %>
+<% begin_hw('deleted') %>__incl(hw/deleted)<% end_hw() %>
 
 \vfill
 

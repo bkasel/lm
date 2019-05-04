@@ -163,8 +163,6 @@ me permission to use it, but that doesn't mean you have permission to use it.
 <% photo_credit("eye-anatomy","Eye's anatomy","After a public-domain drawing from NEI") %>
 <% photo_credit("ulcer","Ulcer","Wikipedia user Aspersions, CC-BY-SA") %>
 <% photo_credit("refr-derivation","Water wave refracting","Original photo from PSSC") %>
-<% photo_credit("hw-binoculars","Binoculars","Wikimedia commons, CC-BY-SA") %>
-<% photo_credit("hw-binoculars","Porro prisms","Redrawn from a figure by Wikipedia user DrBob, CC-BY-SA") %>
 <% photo_credit("pleiades","Pleiades","NASA/ESA/AURA/Caltech, public domain") %>
 <% photo_credit("double-slit-water-waves","Diffraction of water waves","Assembled from photos in PSSC") %>
 <% photo_credit("huygens","Huygens","Contemporary painting?") %>
